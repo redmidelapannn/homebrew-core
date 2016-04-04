@@ -6,6 +6,13 @@ class GitMultipush < Formula
 
   head "https://github.com/gavinbeatty/git-multipush.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "dab6c9480077541aff39c6ba5b27a91bbc557faedd713178e9f6e8ea7daa5371" => :el_capitan
+    sha256 "83355d6549e7cf7d4a9d037cc44895487bb97019e5b810b42266af458302ce7d" => :yosemite
+    sha256 "79e81d0cf87bc9e37fee11a2cc39898afb8c52a3695108e6f53c903dcc9176d7" => :mavericks
+  end
+
   devel do
     url "https://github.com/gavinbeatty/git-multipush/archive/git-multipush-v2.4.rc2.tar.gz"
     sha256 "999d9304f322c1b97d150c96be64ecde30980f97eaaa9d66f365b8b11894c46d"
