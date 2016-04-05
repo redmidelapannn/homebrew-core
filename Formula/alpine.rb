@@ -5,10 +5,10 @@ class Alpine < Formula
   sha256 "ed639b6e5bb97e6b0645c85262ca6a784316195d461ce8d8411999bf80449227"
 
   bottle do
-    sha256 "730553f37f597097bbba910de04dd5b9327d5b5a920c26f29406eca2d31f540d" => :el_capitan
-    sha256 "cd774d63bf4327c4109a6b97fd7189f9618d53bd608bb314101f4880368f7662" => :yosemite
-    sha256 "b35c3667a183c86dfa769e1d9e53669524930fda371422ab1c8519d3d807b8d5" => :mavericks
-    sha256 "8f52d4ebe9e445ec975cabdd74c4a48cef80eebb21f18c33644e99de1a6d2173" => :mountain_lion
+    revision 1
+    sha256 "14bec6b9f8540e0395d98fb87a476d96e67fe5367ff9265b1febd89d1e308ced" => :el_capitan
+    sha256 "d6f26b91f2f243161b5526f912c224f0d909f13be28e4f8814e5ae9a4a755977" => :yosemite
+    sha256 "75434a0d012260a87ffeec6e6d500d453dba93eede90e7fbcd7b68eeb7f8cc4d" => :mavericks
   end
 
   depends_on "openssl"
