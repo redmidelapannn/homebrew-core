@@ -6,6 +6,13 @@ class PyenvCcache < Formula
 
   head "https://github.com/yyuu/pyenv-ccache.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "829dc27f70974f824509498ec590dcd852ecfc312dcfe3200aef970fd673212d" => :el_capitan
+    sha256 "ab2f5c4ed5358317f67b4e02bb865762750dddfec3cb37633db49bfdf84dd4cc" => :yosemite
+    sha256 "83ae7fa368aab7b264c935b4b65586ab8d92978635a63db32997bd4137f4da2c" => :mavericks
+  end
+
   depends_on "pyenv"
   depends_on "ccache" => :recommended
 
