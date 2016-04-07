@@ -5,6 +5,13 @@ class Txt2man < Formula
   sha256 "df9d972c6930576328b779e64aed6d3e0106118e5a4069172f06db290f32586a"
   head "https://github.com/mvertes/txt2man.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b21b275a37f0f8fd3623e3c5590326737f448f9cc2dd9f24556021d2326fef6c" => :el_capitan
+    sha256 "d3831605b2d3c5b40dcc9f9a24ab875015c399da283b09f4de61161752b7e590" => :yosemite
+    sha256 "9254727f3a7ee098c0949c6aa48e7941fe7493a8f67bc185608ccbbb94a17b4e" => :mavericks
+  end
+
   depends_on "gawk"
 
   def install
