@@ -5,10 +5,10 @@ class Alpine < Formula
   sha256 "ed639b6e5bb97e6b0645c85262ca6a784316195d461ce8d8411999bf80449227"
 
   bottle do
-    sha256 "730553f37f597097bbba910de04dd5b9327d5b5a920c26f29406eca2d31f540d" => :el_capitan
-    sha256 "cd774d63bf4327c4109a6b97fd7189f9618d53bd608bb314101f4880368f7662" => :yosemite
-    sha256 "b35c3667a183c86dfa769e1d9e53669524930fda371422ab1c8519d3d807b8d5" => :mavericks
-    sha256 "8f52d4ebe9e445ec975cabdd74c4a48cef80eebb21f18c33644e99de1a6d2173" => :mountain_lion
+    revision 1
+    sha256 "8b90ada2ebf7c4a52a3c43913e7930b378a0a4dd4bd49910d122b9e3c67774c8" => :el_capitan
+    sha256 "403996c4559e7fe2ac799b0e5efbf6930cc33aa562cf2150182be904e339acee" => :yosemite
+    sha256 "0196876a703fbdf05c1a1123b3d12ae9f6c9c6b69c1641a941fbbc99ece076e9" => :mavericks
   end
 
   option "with-maildir", "Compile with support for Maildir format mailboxes"
