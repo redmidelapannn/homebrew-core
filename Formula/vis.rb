@@ -6,6 +6,14 @@ class Vis < Formula
 
   head "https://github.com/martanne/vis.git"
 
+  bottle do
+    cellar :any
+    revision 1
+    sha256 "0d73e5a4db1e1904abfa8308409509d7f277466bcacd9ce704f0009799e46d7f" => :el_capitan
+    sha256 "3982779f40f565f65df06766857f23cc04f0569915f279158e78680847d7fe6e" => :yosemite
+    sha256 "f3db2e9acfc3d68801b0cfa92c92644a6a6207928e1fa37cd123720a9d93c394" => :mavericks
+  end
+
   depends_on "lua" => :recommended
   depends_on "libtermkey"
 
