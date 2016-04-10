@@ -8,6 +8,13 @@ class Dockward < Formula
 
   head "https://github.com/abiosoft/dockward.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "fb90d724adf3f6a4b406859922605561b2ecff7a85977119f9eb9ce47a7af7e4" => :el_capitan
+    sha256 "60a0a63811433ea2328267d4fbbbb003dd9e80ecac99a01e29029c9f4c4bef5a" => :yosemite
+    sha256 "81ba512949153e68328979927e0093d8933c7d4c4883effbab420540c3bea915" => :mavericks
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/Sirupsen/logrus" do
