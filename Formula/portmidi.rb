@@ -6,10 +6,10 @@ class Portmidi < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "5320b13b677108342e5153f86f3472a5dc988cd616e804bbe20ea19a237602b0" => :el_capitan
-    sha256 "091871a9be11e7af35cd455bb55e8020ce911ac768ac0569fa489d7b34fd715e" => :yosemite
-    sha256 "c950ba2eed6221f1734ab05fe44c263eedbabd7510bec2de3333c61984bfb87c" => :mavericks
+    revision 2
+    sha256 "3a5717407f97fa26eeb2186217dc7405945b616174fc155d01d959b99e92a665" => :el_capitan
+    sha256 "b329b20ceb6c458761a750d8bc2239cf5beebc38e5cca95bb61eb982d595e1f3" => :yosemite
+    sha256 "92ce5462dec0b01b9873729e638617b5a8560309ab273606665db5d8aee7ea8a" => :mavericks
   end
 
   option "with-java", "Build java based app and bindings. You need the Java SDK for this."
