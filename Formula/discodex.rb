@@ -7,9 +7,9 @@ class Discodex < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
+    revision 2
     sha256 "db8480576b20c59fbc2d7ff4bd23cd3cad3ac70df746604992f28328ebb3eedf" => :yosemite
-    sha256 "0baf75b7d7087763907bbbfc7f23e3985393a4e941b66f0d3595cd22b7fbbb29" => :mavericks
+    sha256 "3c66036007a7fe975a02041437fad758088d30dd92b4d81888aa0bb063dc9a90" => :mavericks
   end
 
   depends_on "disco"
