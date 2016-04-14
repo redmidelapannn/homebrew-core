@@ -16,9 +16,9 @@ class Zzuf < Formula
     patch :DATA
   end
   bottle do
-    sha256 "a713556c18e8b3415bd4b8ee19e501f7764c15a7fc7c907eefeb09afc582ba5b" => :el_capitan
-    sha256 "1a392bd97e6aaf5688d675d45f998d2b49a123c38e0bd4a5bee1f274644fc106" => :yosemite
-    sha256 "a624ccb43655ab0ae5a78721f08a05fb8ffe0d6cecbfae3e07e088cd6a5b8315" => :mavericks
+    sha256 "1a2dddf14f76e969617af40f94219c3c85027e788ddae03a541566ec4360914c" => :el_capitan
+    sha256 "f716bc48c5f845f3fdbfd39f5d90bb228d6b33655d6989dccc3cff2afb5b0688" => :yosemite
+    sha256 "16fc2c23e89bb59f90c5335ede797135dc52924640a8083b3cd5b435be787cd8" => :mavericks
   end
 
 
