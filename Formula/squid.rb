@@ -7,9 +7,10 @@ class Squid < Formula
   head "lp:squid", :using => :bzr
 
   bottle do
-    sha256 "225d224c1311ed6c2ef2e045c7cb2a6e372ac3303470baac3308bdee35fdeaa1" => :el_capitan
-    sha256 "d9a43039f5524ea5cabd9c6873b9d5ea528e75def324d303d59cd5f3093ea228" => :yosemite
-    sha256 "7bd77cb6b91182c23fa18b0a259eabb4b1534c865c13a3ed477193b24440747e" => :mavericks
+    revision 1
+    sha256 "5cb23d4d6aa377f7d57985aab74217df4d2f9189fe54f45a662fad1c8c974d9c" => :el_capitan
+    sha256 "24c14a50ec5de9bad824943f4e8b87f8cf67060267695a890d1d9ec5e4ea69d2" => :yosemite
+    sha256 "f06007a48471dc02eed668a96e8d7041d72e590548528537d1b9bbf59dc411e7" => :mavericks
   end
 
   head do
