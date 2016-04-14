@@ -5,6 +5,12 @@ class Thankios < Formula
   version "1.0.0"
   sha256 "e9aed4c539d6e93cbe16f58017bde4102c43b20dd6d5b9599e4bb15a237d6d40"
 
+  bottle do
+    cellar :any
+    sha256 "c0a89604dcc2ebdbcf832b955a8f47d52b56447672fc11ff41034ce51ad70c52" => :el_capitan
+    sha256 "6f6698474f24ca8b3febf185d10514e90de95e8a40d32092083aa5bdb07c991f" => :yosemite
+  end
+
   depends_on :xcode => ["7.2", :build]
 
   def install
