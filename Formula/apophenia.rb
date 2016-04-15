@@ -4,6 +4,13 @@ class Apophenia < Formula
   url "https://github.com/b-k/apophenia/archive/v1.0.tar.gz"
   sha256 "c753047a9230f9d9e105541f671c4961dc7998f4402972424e591404f33b82ca"
 
+  bottle do
+    cellar :any
+    sha256 "24eac72416c7f9646e3a1f310cadcd96e74d5bbcfdc7c2f3d2b6b89fd275d3a3" => :el_capitan
+    sha256 "c2c65476f1c93f931fe2400642624389e1658a6843018ed1edb8aee90f2b85f9" => :yosemite
+    sha256 "91e5a522379bc0f798d85385dc5d96685c5de557c1dd42d52af4d7fd9532855e" => :mavericks
+  end
+
   depends_on "gsl"
   depends_on "sqlite"
 
