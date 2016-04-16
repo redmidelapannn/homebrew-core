@@ -6,10 +6,10 @@ class Squashfs < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "769b85e62fea85488ff0e05915634bcbad67b545862800b563b6198f20a8b72e" => :el_capitan
-    sha256 "8d85f58d931af53e6baf4a7aa9a2c8254ffbb738bb6c559853345e7699cbdfef" => :yosemite
-    sha256 "c31a330128c85dc7fb8b2bd320f9a0f00469eff571323a6bbde435fa98496104" => :mavericks
+    revision 2
+    sha256 "c5ae0a8382713765b2272fd081a7e1364eba5d3bd132c425c7a41c5e9b203d67" => :el_capitan
+    sha256 "a40f570140d562fb0d2063194cd057f7a1b0540ec61f2cdc85083e6d6892c98c" => :yosemite
+    sha256 "e8f034d5863c4a6f236d6d69d840ce9fed03e3a0cb6dd7c7015ed2e93f65a591" => :mavericks
   end
 
   depends_on "lzo"
