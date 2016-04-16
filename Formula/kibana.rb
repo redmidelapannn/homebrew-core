@@ -9,9 +9,10 @@ class Kibana < Formula
   end
 
   bottle do
-    sha256 "70427af44d49688d5d4bfead4d1dcfd132e080013c2a114935c14de867da490a" => :el_capitan
-    sha256 "b6c945b9e19e1204b0b490fd44b27d4e5bf3ca6b726073766ffa99aaa4a52db6" => :yosemite
-    sha256 "d874d305e995f117f41477807381b9216efbbfa3a1fd802a617d1bc8ff3b3813" => :mavericks
+    revision 1
+    sha256 "fb3b7dc8630ac25c5d84102ce9408c79c5724f875ce239939cf90f9ee132323f" => :el_capitan
+    sha256 "a3bc87357a54a84d606bbed4fe11a837b9608f88d21d4c1e1a53acf035c42bb6" => :yosemite
+    sha256 "77af310430b4d3c0d80bf3461c8163f8c420d368ed7380cfc2bd54b9ea65e1c8" => :mavericks
   end
 
   resource "node" do
