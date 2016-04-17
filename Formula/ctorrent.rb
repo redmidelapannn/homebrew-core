@@ -7,9 +7,10 @@ class Ctorrent < Formula
 
   bottle do
     cellar :any
-    sha256 "948dc4f46a2df2581d812bc09430c635d13c589448791bd744cadfa77c739baa" => :el_capitan
-    sha256 "ee33a6af8447cbf0f71451dfad655a14a9b28f642c799ca7912eefe9e0fc2330" => :yosemite
-    sha256 "8979644a0390f763c081556298ba1997f0db2ff9eada13f686d698af57777f32" => :mavericks
+    revision 1
+    sha256 "f25530d1d49bf2744ba8d4c61bb74bad462dbd6d21090cecf6cd689c31db4af9" => :el_capitan
+    sha256 "ccb5ba57e067e57bd733d43e955276f0493d79f81988d1c111247df45775a085" => :yosemite
+    sha256 "0f499eea20ce5c27230abbfbfdb1c7aee429d8d26aee65d963abd9100fdbe2a2" => :mavericks
   end
 
   # This patch skips over negative integer values appearing before "info" section in torrent file
