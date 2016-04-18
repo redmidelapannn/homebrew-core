@@ -5,10 +5,10 @@ class Nylon < Formula
   sha256 "34c132b005c025c1a5079aae9210855c80f50dc51dde719298e1113ad73408a4"
 
   bottle do
+    revision 1
     sha256 "0c657dbac21a72af6fd3bfa839f188ed5b3bf223271ca6245a168f24f64cf982" => :el_capitan
-    sha256 "aad7532324d564e2581496cc6e097a3f9eb35f40d55349204060c6fbd88d7e96" => :yosemite
-    sha256 "5f3cb163129bc0a095c1fb89efaaa2e346aadd16497e14017d809cf1777492fb" => :mavericks
-    sha256 "3535d269b712d79968b3ce72ac7266d72aa93ad83df2c61b328d9a563b428497" => :mountain_lion
+    sha256 "165e92dcc5d247c209cba9e2a1c9603a77a90084adf8fbe5d51664c637ed24a6" => :yosemite
+    sha256 "64f9e103321f18143031cc256079506777d5a5dcf887c81c6fba8358dd9ac6d9" => :mavericks
   end
 
   depends_on "libevent"
