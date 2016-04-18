@@ -7,10 +7,10 @@ class Ngrep < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "f4688b249e7038b5ee288af4cc589a22914f1e1f2ba943fdbbebd9cc8acc078b" => :el_capitan
-    sha256 "e028924a9424a6f61a53c2cb850da0e1adfbde9914c63d85e0cae7cc9a88ed82" => :yosemite
-    sha256 "a86b9021fa54635f144c7de70ea7dba6bd35a872f19cae877c341a00730c9d17" => :mavericks
+    revision 2
+    sha256 "1efc5c089316a2aa2a92f43bb113300ea377b2b97e399d6833d96c721d4f8e21" => :el_capitan
+    sha256 "5d4ea09cf85a00ca758753f7cc1dff3b454521432a677478ca34553ce3c0e06a" => :yosemite
+    sha256 "ce4a90d989839ca2ccf4052deb642ad1d4ac53a8d78fd16c5fdbe72afd6037ee" => :mavericks
   end
 
   # https://sourceforge.net/p/ngrep/bugs/27/
