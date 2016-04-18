@@ -6,9 +6,10 @@ class Ngircd < Formula
   sha256 "99b8b67a975a9ae9b81c96bdee02133a10f515c718825d34cedcb64f1fc95e73"
 
   bottle do
-    sha256 "5ca03cd4c4b96553c0be0361311baad578ed5f33b0b70e510b2d503f2f5354b9" => :el_capitan
-    sha256 "32286cf3a53887c07293cc0d712aadd5ed7dc567d2f90bc3c9768d247d09061a" => :yosemite
-    sha256 "b8a848cce3bde15ed760b3c93065b5914dcd222cee5c11c4401e7901c929246e" => :mavericks
+    revision 1
+    sha256 "62bb9f3f786a46a013e4f3edeaf16a06d6c5cd0b8b1393bcd78b62555e4bf69a" => :el_capitan
+    sha256 "1851b6c9cb135a89e3ae00a478e08139d5d399306c9b018bd1fececf3a3977ab" => :yosemite
+    sha256 "db69ef88c3a7084864349d9af432b64b92c8530998e92d70c545f758edcb29ac" => :mavericks
   end
 
   option "with-iconv", "Enable character conversion using libiconv."
