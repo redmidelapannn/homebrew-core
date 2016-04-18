@@ -9,9 +9,10 @@ class Tmate < Formula
 
   bottle do
     cellar :any
-    sha256 "a7ee83971e4cc901b0c81e69fe32f205b7fa94bfb24cda381b9b368ea0a651ad" => :el_capitan
-    sha256 "dc86e6830f0c0f2293769e96613f92c6a6e6d9eedaea9a7534f46ce7518c8b1d" => :yosemite
-    sha256 "180601994c1bb11dbc90ee63fe08d77a9b9304810d444f98e4a5922946d1185a" => :mavericks
+    revision 1
+    sha256 "5053c0638645deb9eddfe43d3cae3a60a51c2d8fa2a03a8648a1b979ef45da38" => :el_capitan
+    sha256 "4817ca9f6ef770a53d05f815073b4dd68b767520ad2ac06ce59c6ea6414e444f" => :yosemite
+    sha256 "65e9239a142d18e9485e5a941c583cae30f0c708489bebafe0662e5f888c792d" => :mavericks
   end
 
   depends_on "pkg-config" => :build
