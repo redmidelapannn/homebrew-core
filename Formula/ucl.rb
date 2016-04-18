@@ -6,10 +6,10 @@ class Ucl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d56b0d36a68a2bc558742eac0c6632612180797cc45520389b5d87f09c23b1bd" => :el_capitan
-    sha256 "32a54309c092854fc5a4a443a1e9d33fb677ff257d983ea7d5b0eb7bb90d3b2e" => :yosemite
-    sha256 "3c334012766dce80dac49d279be1be1ae4a1fc5df188cc19a25ba1bec84305a9" => :mavericks
-    sha256 "4190f1602c52b934a93581741fcccba8dad4e8dc4f478342d71b1b564cd62834" => :mountain_lion
+    revision 1
+    sha256 "317a820874c48471d9327f7c0db2f422ede5b54656171b661c085f72709ce0ba" => :el_capitan
+    sha256 "3a5259dec96c86e5404eadedbd29a93d1e6daa0fd85d62c45b1eeef8310e8828" => :yosemite
+    sha256 "2cc2e3c01ff0ccd8c5e33cebc438ddedd998e1150aee5c3776b828b0b9ebee11" => :mavericks
   end
 
   def install
