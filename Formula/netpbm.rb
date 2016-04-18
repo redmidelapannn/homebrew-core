@@ -10,11 +10,10 @@ class Netpbm < Formula
 
   bottle do
     cellar :any
-    revision 2
-    sha256 "ad369fbec6067be0355b02aa02f5b542224cbf9835974de7d0d36ea2a1966e2f" => :el_capitan
-    sha256 "a3c04a8257065886cf7f19d246a586a011b8c7d8fd708e5e669b769340e007fa" => :yosemite
-    sha256 "5d668e7795efa192da1bf14e1cfc27f458b58a40dfaa63873d7a642b5ec06a4f" => :mavericks
-    sha256 "b0c160558d0f764360041069129877bfc7e6d9fc81b3dabfa6cf4fe9a9efc21b" => :mountain_lion
+    revision 3
+    sha256 "711a9b85fc3e0cff750e13b227d35dfdd586549559ab07768be31df7772eb54f" => :el_capitan
+    sha256 "d2de25214bccb8241fe8248b7faa4543ea2640155248e36ec2341876777b2dbf" => :yosemite
+    sha256 "bedba20e3f33974a59366801e791c96098c3e43309a52b39cbd91252a672d683" => :mavericks
   end
 
   option :universal
