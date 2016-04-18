@@ -21,9 +21,10 @@ class Scala < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "05a10bbcce35c526dba3b475bc53ad076b7b1bb5088751eec7a962f718274308" => :el_capitan
-    sha256 "2da6cd4894a9291c2fb0a341cc84f96522291d76644e35c9f00cf710eb6cb417" => :yosemite
-    sha256 "ddd6e527a6e93c326d761c61d9811648c1eba82044ef24ded32837fa37581c16" => :mavericks
+    revision 1
+    sha256 "a894e5153590a17e174cd719ab2cf20f793af2e40e9c70acd665af5aac06c238" => :el_capitan
+    sha256 "e9538ae8e40747faff19f567e4772d9ee717b01a16fe58e81644282d67831723" => :yosemite
+    sha256 "fbc1f3b5407b6b89ec1753d4722d53365ec84bf6403a6060f87cde6a26c2d200" => :mavericks
   end
 
   devel do
