@@ -7,10 +7,10 @@ class Wrk < Formula
 
   bottle do
     cellar :any
-    sha256 "a004d0027dbd7ff65be1590f3be9adb173bf9dc1ea486db5d724b295c0e73ee1" => :el_capitan
-    sha256 "982842de8ea8ff98e798a70b51f928e45d6ae17eabd96ba3a6112f4d4cceff50" => :yosemite
-    sha256 "fa18093d7236c1d2c68b4f41d633065d716b7bbfea8723605f8793afd2161e17" => :mavericks
-    sha256 "1890cb7b8fa9a9ce9ef1f495c407dba4bc5a082e5bcde939fa8d59e807c40499" => :mountain_lion
+    revision 1
+    sha256 "c47594f8311f903a9abcafe824d45a292cf2d7d4de86bd5366c131883b0c8491" => :el_capitan
+    sha256 "9089a59de784373ffebc39c520fc676ae07478db8c5e0db923938371331c0304" => :yosemite
+    sha256 "ad8e548aa4fffc08e4e1cfb7bdc102ede658305eba2b702089298169a1fc0602" => :mavericks
   end
 
   depends_on "openssl"
