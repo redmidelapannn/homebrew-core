@@ -5,9 +5,10 @@ class Rssh < Formula
   sha256 "f30c6a760918a0ed39cf9e49a49a76cb309d7ef1c25a66e77a41e2b1d0b40cd9"
 
   bottle do
+    revision 1
     sha256 "23891b0317ef29a36b0b8ee9f140193d17ae616983c13f2179d5b317b33e1eee" => :el_capitan
     sha256 "a63ead463b79c5375e0b919976173db13a236fcea06c4fa038a719375a550ca9" => :yosemite
-    sha256 "8b36773d40fb20e51fc0f277fe7930540dfc6e1cec0f6c5d19d20242ce1de3b9" => :mavericks
+    sha256 "603e4f5c2fd808d31e1a794573bc7c9949c87f6d0997851dc60d778282854a3e" => :mavericks
   end
 
   # Submitted upstream:
