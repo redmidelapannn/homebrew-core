@@ -6,10 +6,10 @@ class Tinyxml < Formula
 
   bottle do
     cellar :any
-    sha256 "16e6052892b43e68c45f5122b6802e9bc32001dc9478dfcd89511a24544660e5" => :el_capitan
-    sha256 "4b1df9cb229b04f9968621a52737d96e86fcd6c2ad8904ae8a5c324347845f50" => :yosemite
-    sha256 "75f79bb5d502e7be74de20e1cd3e3dcdd4702b37ef7de53d9d9a546a51776b50" => :mavericks
-    sha256 "2db8d34dafd503a2982dd9ca5ffb4a2a2740e0eb78195933cb121dd7b7836728" => :mountain_lion
+    revision 1
+    sha256 "8f85d49b5c118db26bf52ab9a5b5e2e8bed9b2f4f47ff97551c2b45e6dff27ab" => :el_capitan
+    sha256 "c040ca69795b97e3c70b5ce6b6100c315604d4cc55896d71aeb74cf719951e24" => :yosemite
+    sha256 "79e9b2ae408f14c2f50cdad876ed21b8138aded839d80a88bb018b7bbf02fcf2" => :mavericks
   end
 
   option :universal
