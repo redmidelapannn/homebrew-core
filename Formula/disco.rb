@@ -8,9 +8,10 @@ class Disco < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b675e3901b11433a43bfb6f874d09bc72ea64ad9effbcfaecf4ad97aa81eabef" => :el_capitan
-    sha256 "819da8a617292acd3166651f27f0984fc21668ee659e4b2c641555d87a15d5a9" => :yosemite
-    sha256 "fcbaa127872fa0949183383c8ece79bfdb87d985598dc783ecf17ed893410960" => :mavericks
+    revision 1
+    sha256 "fcd31961db1742d144f557e6abb6381a70de0cdde34b28e3b5ae4eb12c2ac449" => :el_capitan
+    sha256 "f4ab5873ec566f569866d9fdc5a45ca89edd3cd61d91c8e30a958cb0a4863258" => :yosemite
+    sha256 "470b9a136c9e687d7dddc8b7afdc0a98b21342bf52cc981e78c340448afc2210" => :mavericks
   end
 
   option "without-test", "Skip build-time tests (not recommended)"
