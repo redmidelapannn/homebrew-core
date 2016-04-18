@@ -6,10 +6,10 @@ class Ssldump < Formula
 
   bottle do
     cellar :any
-    sha256 "a468350638d8d0e66e8fe137b1473a25e300b967cadae1652e062f9cd92f2dbb" => :el_capitan
-    sha256 "714f3e5283285dea18ba6bfc27f3dda2fc9d1317c6fe269fd4ba84aba44fe44c" => :yosemite
-    sha256 "61b20e42893e904872f075064323366aa29e05fc3bab4a2d09265e6e05189532" => :mavericks
-    sha256 "835adb0d5cdf60701acfa0a760653149cc03eff2759e7c1c4766737ee1f64ac7" => :mountain_lion
+    revision 1
+    sha256 "5070dd38229ec583ea1cf7206af1dde909e37fee59eb155d0d9a1eecd94b9e5b" => :el_capitan
+    sha256 "08b65402e819ee731787d57aff9c01aa095e5b40372c6ba2e24f7e8e7facfbe6" => :yosemite
+    sha256 "804720abb380f4ad3a34096f8c4b8e701d6cc931246912674249510dbdcd3793" => :mavericks
   end
 
   depends_on "openssl"
