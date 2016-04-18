@@ -5,9 +5,10 @@ class Nload < Formula
   sha256 "c1c051e7155e26243d569be5d99c744d8620e65fa8a7e05efcf84d01d9d469e5"
 
   bottle do
-    sha256 "dd23e0631ece0bc06328be086993d030c8bf4e99d29898e59eb0e6f546c44990" => :el_capitan
-    sha256 "465b4d813588821d240dce65ffc46bc67d55f64044a26a33b5a49b810deea7f8" => :yosemite
-    sha256 "344b909ee8033a4ab27c1db04e9505b0bbf6d0141f391c470cc36b33e6dd7723" => :mavericks
+    revision 1
+    sha256 "02aebe91ca7afa571e248b24572ccba8f5eda055e1b80a32674b540a6df2b97e" => :el_capitan
+    sha256 "90497e35decef1b48c095d4e2232c0d185e9ac82204642d04656d27e2ae0bddf" => :yosemite
+    sha256 "07f6a83911a9e5aadd9d4985d9b528f3e36bbe1174142a007d1bedb9fb7b11c8" => :mavericks
   end
 
   fails_with :llvm do
