@@ -6,10 +6,10 @@ class Qd < Formula
 
   bottle do
     cellar :any
-    sha256 "1a1d73437a489b1f95810cce3e2ce221890d79dad7648b5055c8dadddcff60e0" => :el_capitan
-    sha256 "b1257ee410b078479bbdcb863cd8bf8a865c67190992c19606433ff29e77852f" => :yosemite
-    sha256 "2014943651c31b17c8f1463fe4f68175b2c3065a9533d7cc09c7b07a9621c51b" => :mavericks
-    sha256 "380ce7cce036b99f6d203cf1f2e7d2b8ae27a78f668d933a4579ba4c887e69d8" => :mountain_lion
+    revision 1
+    sha256 "4fe7df93be88b58216a42226173e95efad5b94a7f39fb40c9001eb9444625bb0" => :el_capitan
+    sha256 "deec764f01972a3b36792101452d03a21d970057edc9d89e12079ff0f1021bd3" => :yosemite
+    sha256 "059a485334481ce56b9563a5f2ee68dfeee9d88a5103191c2af0e4b066c84ac0" => :mavericks
   end
 
   depends_on :fortran => :recommended
