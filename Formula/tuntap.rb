@@ -11,8 +11,8 @@ class Tuntap < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "b10675e97a649c1730803486338780c05d3171df0f7c804603cd9206fe0b92cd" => :mavericks
+    revision 2
+    sha256 "c2fb87c9c09247cccd3ce96e403e211170a94ec26309424f2eddd368fe36b150" => :mavericks
   end
 
   head do
