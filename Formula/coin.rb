@@ -5,9 +5,10 @@ class Coin < Formula
   sha256 "583478c581317862aa03a19f14c527c3888478a06284b9a46a0155fa5886d417"
 
   bottle do
+    revision 1
     sha256 "f0f93e3c4a2b485866c9ec3a18931da88e86119854073c4e1c54ce93847f7f08" => :el_capitan
     sha256 "1b3e64aab7fe177f944b2ffcaccc3a068c992ebdd5f3047c15be513812797394" => :yosemite
-    sha256 "db9f40c702a1b6955f23582988dcefd5866fa4d06589e4e16ec50ec11e64e87d" => :mavericks
+    sha256 "3cf75843f1ee7c19c2f8d041671368ed62e3bfbb9ca27b57bd441e5851995615" => :mavericks
   end
 
   option "without-soqt", "Build without SoQt"
