@@ -8,10 +8,9 @@ class Pango < Formula
   end
 
   bottle do
-    revision 1
-    sha256 "171c0af90e6c519b65dbce8a3731ca1cb56a001cce9dc03bfae0e9cfcdd8442d" => :el_capitan
-    sha256 "c0a3065069a59fc1f2b130efed5874a8326d79801ab9c4b50aebda08e46089d9" => :yosemite
-    sha256 "cb66f05551ce2c348599417a5d0ae0acf43b4aeabfb7904b26c9bd5a8eb6c78e" => :mavericks
+    sha256 "bb60f556a8850cfb3af6d04000d89179f85c3560e9c8c35daaa73d6ed10b9581" => :el_capitan
+    sha256 "a27acbb7ce392509453caf9a9058adb434d5c186e1599c80f1e58f58dc8050de" => :yosemite
+    sha256 "7afeef0d7800cfaa4e06594e6d517f2ecf6dc5c971f86dae59a9d7768425af10" => :mavericks
   end
 
   head do
