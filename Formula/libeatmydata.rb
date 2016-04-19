@@ -6,6 +6,13 @@ class Libeatmydata < Formula
   url "https://www.flamingspork.com/projects/libeatmydata/libeatmydata-105.tar.gz"
   sha256 "bdd2d068b6b27cf47cd22aa4c5da43b3d4a05944cfe0ad1b0d843d360ed3a8dd"
 
+  bottle do
+    cellar :any
+    sha256 "96a8990427e1469613bc7ba57f4f41ba5e6cfadc09d098ee1d28d2b91072838b" => :el_capitan
+    sha256 "576e66aad57bffd4a19c568406b60aa6a6858adad3bf0307db7270fb30059af1" => :yosemite
+    sha256 "292236e0fa6285ad7729b80a4c622af7ad98994eee536da6d5f587ea7ff34c1c" => :mavericks
+  end
+
   depends_on "coreutils"
 
   # This patch fixes three things:
