@@ -5,9 +5,9 @@ class Devhelp < Formula
   sha256 "a23375c2e2b2ef6240994bc2327fcacfd42403af6d872d0cba2e16dd45ca1f1d"
 
   bottle do
-    sha256 "0a8fceef8356c847134a86553a469af6c4e48f72b9e8e9b6576e4bcfe80eca79" => :el_capitan
-    sha256 "3f052f305449b5f24d004c1b2561b3fa59c2354d2fb2b54ba61189e115fb91b9" => :yosemite
-    sha256 "81fd4026bae8091f1d8485b69189de7cb4184e87f4dadff8a779100c4d19534d" => :mavericks
+    sha256 "b15107fce321c75d6b49aea414858975409aea992f263243674ab034228e0ba2" => :el_capitan
+    sha256 "9436b744313c118745bae518746051b04946d92d3087d2ab8c2ca991fa07a46a" => :yosemite
+    sha256 "6da416ba2673721d968b1a10caec69dbbd38249729942fc257246d4d9e9843e0" => :mavericks
   end
 
   depends_on "pkg-config" => :build
