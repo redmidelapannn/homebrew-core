@@ -4,6 +4,12 @@ class Glade3 < Formula
   url "https://download.gnome.org/sources/glade/3.20/glade-3.20.0.tar.xz"
   sha256 "82d96dca5dec40ee34e2f41d49c13b4ea50da8f32a3a49ca2da802ff14dc18fe"
 
+  bottle do
+    sha256 "4013056f2ea397be5517c76d63c5608a37b62a13330677e929b1584e0e76cf4a" => :el_capitan
+    sha256 "5c82d6b06dd23f85b7f473776c954f430873d07ca0e4046b6795b1dba6bbb3db" => :yosemite
+    sha256 "8fd46a8c6e8acd94f48d7e227e3bbe3a726b0ebe45e48505a1bc98fd1f26fa86" => :mavericks
+  end
+
   depends_on "pkg-config" => :build
   depends_on "intltool" => :build
   depends_on "itstool" => :build
