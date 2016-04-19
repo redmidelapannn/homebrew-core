@@ -5,9 +5,9 @@ class Pygobject3 < Formula
   sha256 "31ab4701f40490082aa98af537ccddba889577abe66d242582f28577e8807f46"
 
   bottle do
-    sha256 "28dd19d1d32f8890d246b0e98fbb788438ee753f85e880eb754044752bc3e322" => :el_capitan
-    sha256 "bf85d0cccf9311f91909886745a6ea330868f2dff1045e8f2d53c01ae0531bc7" => :yosemite
-    sha256 "133386638620543280a54cbfe5ed9982b1a55fdeb79e33ab3c3516fb3e6a8033" => :mavericks
+    sha256 "df57bc1ca4663ea8e4183b6c30f3f6d8f122cac613458e305ed7f5ed4d658951" => :el_capitan
+    sha256 "01758d10fbf288896b2cba41ddafb7333e0d695a96e33e396814bda4ddca392c" => :yosemite
+    sha256 "527fd4758a5285bc024f0657b9abd992b3f8d3f11282bff378945399a169f576" => :mavericks
   end
 
   option :universal
