@@ -6,9 +6,9 @@ class YelpXsl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1c6aebcb7310ad6451c2410da48bdd43bd0b595ad6608ced1a787ad7307add57" => :el_capitan
-    sha256 "2a596d1ffc199375109a990a397a289a28530c1d6af7b79db443208f6b9f6c23" => :yosemite
-    sha256 "155670c085ed84002b69978bd679ff128a8be811fc686b8b0936cbae9634ad20" => :mavericks
+    sha256 "aeb96fe4c29ceebad023ef93a537d112eb4c49fc0de581e96a74d158350b201c" => :el_capitan
+    sha256 "c19c5c3c3476d24c33e234b93df7532f2f9b15a8d213750463716edc087cd7a6" => :yosemite
+    sha256 "d58ab05595c7ae95ba09c7b151782f242ca996d78e3b9f900f60d35666dfac0d" => :mavericks
   end
 
   depends_on "libxslt"
