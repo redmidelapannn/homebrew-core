@@ -3,6 +3,13 @@ class Libmf < Formula
   homepage "https://www.csie.ntu.edu.tw/~cjlin/libmf/"
   url "http://www.csie.ntu.edu.tw/~cjlin/libmf/libmf-2.01.zip"
   sha256 "75bb98a4e8f1a318d7d07556583727b4e301759904570bf527972d964d34ef30"
+  bottle do
+    cellar :any
+    sha256 "477d6c2081ee27c82ef965a3092dfcb91acaa5e906cb9d8663d833074ab66ae0" => :el_capitan
+    sha256 "b3e04172e94694de284753e57a83ffd44912ed06d1ba6733b56e18c4dc50d5ea" => :yosemite
+    sha256 "ebc432b2fe4790411bc8b1993215741a7578f5ab4302b1ec9ebeb5afce782e8b" => :mavericks
+  end
+
   patch :DATA
 
   def install
