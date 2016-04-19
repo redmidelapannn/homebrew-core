@@ -5,9 +5,9 @@ class Vala < Formula
   sha256 "07a2aa4ede040789b4b5af817a42249d703bfe8affccb7732ca2b53d00c1fb6e"
 
   bottle do
-    sha256 "b68681f676381035cdd85e944aa234f0566137bda514ec105477fbeed246a365" => :el_capitan
-    sha256 "752fe91460002b335c35084f073d6e3f3666017f6b7dea9f728a828a0dde911e" => :yosemite
-    sha256 "bf422cf5802d09413482943afac7cd0b7d19e2defa1955330acb11d644d61299" => :mavericks
+    sha256 "33600496362c493e97794307bb036f89539899c81274d37e156af1d6d071a5b9" => :el_capitan
+    sha256 "e839e6d70c4f37699e387e5b7a313eeaa5657c0014162fefb360fca63396113d" => :yosemite
+    sha256 "0b724096fcb4c2f3f6b33819f39cd44215b337ecc52d0a2cd23c3489d492fd07" => :mavericks
   end
 
   depends_on "pkg-config" => :run
