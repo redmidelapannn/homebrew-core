@@ -10,10 +10,10 @@ class Neko < Formula
   head "https://github.com/HaxeFoundation/neko.git"
 
   bottle do
+    revision 1
     sha256 "7e236b71ffeeffbcd7b900e8eca1d918506369f04b384db636193e8fc749e60a" => :el_capitan
-    sha256 "08e27a02801d60a36971ef04892c8737402d94611c8cce5e6abdfc0066f2d8ce" => :yosemite
-    sha256 "fd20435ab471a197439ef8b15bc22e20ed63e5bee586b0a64d811a8a178a4c3b" => :mavericks
-    sha256 "a45ce3f4eab713bea15f8b34045333462d3e6a971c10257b9789ffc8000951e2" => :mountain_lion
+    sha256 "8bbf27e753c49996fd8f2cdd86781af48b06d0403edf855b7af75191b6fb314d" => :yosemite
+    sha256 "2bd95d454e64a2cb01527fe6f8dc859aff9aba7fb7a2a15f39fc4bb6c1ab20bb" => :mavericks
   end
 
   head do
