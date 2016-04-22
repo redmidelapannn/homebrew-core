@@ -3,8 +3,8 @@ require "language/go"
 class Doctl < Formula
   desc "Command-line tool for DigitalOcean"
   homepage "https://github.com/digitalocean/doctl"
-  url "https://github.com/digitalocean/doctl/archive/v1.0.2.tar.gz"
-  sha256 "7a28bd0f9e68eee41761e32267a0d63329c6f0e16e0d8b5afb4a8286b914e98a"
+  url "https://github.com/digitalocean/doctl/archive/v1.1.0.tar.gz"
+  sha256 "c20d130ee3a64d8befbb816702a472469e063b60b75ee41384a66dfd2c97e409"
   head "https://github.com/digitalocean/doctl.git"
 
   bottle do
@@ -26,9 +26,9 @@ class Doctl < Formula
     doctl_version = version.to_s.split(/\./)
     base_flag = "-X github.com/digitalocean/doctl"
     ldflags = %W[
-      #{base_flag}.Major=#{doctl_version[0]}
+      #{base_flag}.Major=#{doctl_version[1]}
       #{base_flag}.Minor=#{doctl_version[1]}
-      #{base_flag}.Patch=#{doctl_version[2]}
+      #{base_flag}.Patch=#{doctl_version[0]}
       #{base_flag}.Label=release
     ].join(" ")
     system "go", "build", "-ldflags", ldflags, "github.com/digitalocean/doctl/cmd/doctl"
