@@ -9,6 +9,13 @@ class Wackycompressor < Formula
   version "1.2.0"
   sha256 "7fc69e91fe8cec29a5c9ea26b84691d87d4a4f48e88d900b67b368a9a8b8b61b"
 
+  bottle do
+    cellar :any
+    sha256 "b77fbd9fac8f439c109b911bdca302b2684c4bb2e27cd4ede4cab274589b3924" => :el_capitan
+    sha256 "29a4431b13ea619fa07c4809ff08868a5b828342cb02e077c8ccbf893cb2954c" => :yosemite
+    sha256 "c58265aa5d6461160ce6964af954faad7a9ddc1bf22ebfbe19b07cec81ad2023" => :mavericks
+  end
+
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
 
