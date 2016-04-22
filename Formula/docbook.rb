@@ -6,10 +6,10 @@ class Docbook < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 3
-    sha256 "3fb7e4070eaa9250fa947d38e3d7803d37c159d9765e3f71397702d5ad6bb578" => :el_capitan
-    sha256 "dfdb315404c98dca2682f63260f2996de101cb6b41de69ac268dcded110e2a3f" => :yosemite
-    sha256 "65925fda670fdb020fe9d52cd5891f8e3a2a44619e9129b30031127c7c2e998c" => :mavericks
+    revision 4
+    sha256 "1d483cd688e401cb1ea5db17b026ec227d51cfb328923092a26333630803d246" => :el_capitan
+    sha256 "be36c50af34fe7300cc9e938f75daf6dd06ed15a8ae9a6317dfae1dfad04fc5c" => :yosemite
+    sha256 "18d11de801f908a5078dccace0b5d52e59bb67a0e123e6fa1f1b35dafd670df9" => :mavericks
   end
 
   resource "xml412" do
