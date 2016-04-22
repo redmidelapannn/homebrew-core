@@ -5,9 +5,10 @@ class GstPluginsUgly < Formula
   sha256 "53657ffb7d49ddc4ae40e3f52e56165db4c06eb016891debe2b6c0e9f134eb8c"
 
   bottle do
-    sha256 "de81ae62cc34b67d54cb632dce97fb108e4dff3cf839cf99703c23415e64fa8b" => :el_capitan
-    sha256 "5b471670878ccc08926394d973d3ddb5904921e7739ef11bb0f4fe3c67b77f09" => :yosemite
-    sha256 "32c4fc7c2fa4a60390f4346f69b9f4d1bf3a260c94400319d122d2b4c634d5ad" => :mavericks
+    revision 1
+    sha256 "fce38748a85aca7d8230a91e4f0ab1b6073e6e92bc561beac827683bf13baea6" => :el_capitan
+    sha256 "2f571c2d9d10b8c5c6ad1d0094bce21a247eb243729c9476eaa77a4689c523f7" => :yosemite
+    sha256 "772c9d00e5b64d07d976b54f15ee8b355dc4f5b57671c7314ffc039cd8764468" => :mavericks
   end
 
   head do
