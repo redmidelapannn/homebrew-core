@@ -1,14 +1,24 @@
 class Cadubi < Formula
-  desc "Creative ASCII drawing utility"
-  homepage "https://github.com/statico/cadubi/"
-  url "https://github.com/statico/cadubi/releases/download/v1.3/cadubi-1.3.tar.gz"
-  sha256 "ca8b6ea305e0eccb11add7fc165beeee7ef33f9f0106e84efa1b364f082df0ab"
+  desc "Test"
+  homepage "http://ranger.nongnu.org/"
+  url "http://ranger.nongnu.org/ranger-1.7.2.tar.gz"
+  sha256 "94f6e342daee4445f15db5a7440a11138487c49cc25da0c473bbf1b8978f5b79"
 
-  bottle :unneeded
+  # requires 2.6 or newer; Leopard comes with 2.5
+  depends_on :python if MacOS.version <= :leopard
 
   def install
-    inreplace "cadubi", "$Bin/help.txt", "#{doc}/help.txt"
-    bin.install "cadubi"
-    doc.install "help.txt"
+    inreplace %w[ranger.py ranger/ext/rifle.py] do |s|
+      s.gsub! "#!/usr/bin/python", "#!#{PythonRequirement.new.which_python}"
+    end if MacOS.version <= :leopard
+
+    man1.install "doc/ranger.1"
+    libexec.install "ranger.py", "ranger"
+    bin.install_symlink libexec+"ranger.py" => "ranger"
+    doc.install "examples"
+  end
+
+  test do
+    assert_match version.to_s, shell_output("script -q /dev/null #{bin}/ranger -c exitcodecheck")
   end
 end
