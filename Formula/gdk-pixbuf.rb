@@ -5,10 +5,9 @@ class GdkPixbuf < Formula
   sha256 "d55e5b383ee219bd0e23bf6ed4427d56a7db5379729a6e3e0a0e0eba9a8d8879"
 
   bottle do
-    revision 1
-    sha256 "ed2b262389586d964b5054efb91caa0627d53706bc0b18a3337b83badcc45c74" => :el_capitan
-    sha256 "d0fbcabe793d595d424f11e078f621291f3a9556da793da2efd2f7e1e9ea543f" => :yosemite
-    sha256 "b48036231be2a0212a8e4a591ac6c355652d77391fc15b9a3dfd9c9857cf4a10" => :mavericks
+    sha256 "af087dc1b3752e0fa37a1a359c2f2227481c497fe43cd54b0e08b8a7e2581a4e" => :el_capitan
+    sha256 "a102ee9a0b9eea7dba6e7554a5c8d4ea3ccf7d93195aff292ea443055f69753e" => :yosemite
+    sha256 "d0b38d5bc5f9b53ed4fa2815b1b2882afd2af55971200f736ecb32c67bb8cf40" => :mavericks
   end
 
   option :universal
