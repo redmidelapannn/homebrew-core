@@ -7,9 +7,9 @@ class Pngxx < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7b01b3ff0af9e60f2887bb45ff5ba2f5823a9a440c2d78e51e69904d3edd80d8" => :el_capitan
-    sha256 "de37d7fadb7308b45ba0448308256d00bf36442bacbab1e734ee8398aea8a8dd" => :yosemite
-    sha256 "f2e242ee428f191645418a9897eb2fd729408dd67d04e7af4cefc7dcb5715250" => :mavericks
+    sha256 "d90191b266e39eee92a4a6c37b822ce3ecbeb090df4b91b2812339f69c1304d2" => :el_capitan
+    sha256 "dbb74dfcf5b27cc46d03dec9c6aac2fa20f6ef51b9d28fd45a5ed8b7423c35dd" => :yosemite
+    sha256 "0cda937f9a2da2b9e84a46fc9c28f6b0e3082bbbe7e7315475ef1c328f658043" => :mavericks
   end
 
   depends_on "libpng"
