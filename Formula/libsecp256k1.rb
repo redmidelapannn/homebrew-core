@@ -5,6 +5,13 @@ class Libsecp256k1 < Formula
     :revision => "7b549b1abc06fe1c640014603346b85c8bc83e0b"
   version "0.1"
 
+  bottle do
+    cellar :any
+    sha256 "a6f7aa00a74e369dce3e11675f50f7e064d4e78129d77891b7bb0c3148481b19" => :el_capitan
+    sha256 "e3bb8454640533130cc11d2b5892b2334412970a81502508528c48c350d771b7" => :yosemite
+    sha256 "c8a7aa8df78f75f99b5aef85c6d6628a2266a56b219ef100dad12e78593dd732" => :mavericks
+  end
+
   option :universal
   depends_on "autoconf" => :build
   depends_on "automake" => :build
