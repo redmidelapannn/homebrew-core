@@ -6,9 +6,10 @@ class Sbt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "fb230c178ae02ea07b175c425905453535466915574f9ef3d850850e4a12094a" => :el_capitan
-    sha256 "56bc9c0db2e8d225cf1218845bacfb7a2439898ac3dc1ca79c94919dd5c6f6fe" => :yosemite
-    sha256 "3559009c0349c7ea597f300477d2a85c1e37eb1e2413f5f794e43e1644f60f28" => :mavericks
+    revision 1
+    sha256 "cfa0a517b56a0156556fef371f340705fddb5b2fe6bfb89307096191be7459bc" => :el_capitan
+    sha256 "f769c3e132bc4a52c915cfc91e70900ca6b2a2441069c67b2fc7eda82ec35940" => :yosemite
+    sha256 "f57e7c2bc4810dc40b737e202ca49439d8f61afd86c68fd86d6ef22eebd3e45c" => :mavericks
   end
 
   depends_on :java => "1.6+"
