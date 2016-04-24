@@ -6,10 +6,10 @@ class Plzip < Formula
 
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "23e72d690f7e1984510c109a1076450df7604d012253c32d4cb028204d5455eb" => :el_capitan
-    sha256 "d6034ff78f2a1e85f7794450bdd06bc95b1a07e30ee99c1227bf642d5be09ad4" => :yosemite
-    sha256 "8cd3d1ac2c5b8c04a172188efdbc89dd1a7cfe936057d047d728484691e67adb" => :mavericks
-    sha256 "7e8f6bbcb52876b808fc247a46e9f189b1e8a04f829717dc27979d1393f7a15a" => :mountain_lion
+    sha256 "0029fa7acfff575a49bb00fa99f77ab77793c401ed2f7fcc0e9ba75c501c7951" => :yosemite
+    sha256 "242789875b4ac168ce5fb3b12911a378ccf6ece94c090d24bbe049d07efb2295" => :mavericks
   end
 
   devel do
