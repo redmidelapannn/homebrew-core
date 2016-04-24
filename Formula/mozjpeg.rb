@@ -6,10 +6,10 @@ class Mozjpeg < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "3e588bc24506e4b4a15dad591c57b5f937c0bf0c830244b4a9980502bee6c0fd" => :el_capitan
-    sha256 "b9b41960802e6a31de189de73d013c750317fb4b6b64cdab7fc40af8aaecb651" => :yosemite
-    sha256 "4670747d1beb2e197386e7e07ecc6fa3087818d6c305d23b688487d0038faab7" => :mavericks
+    revision 2
+    sha256 "3a01cac37b6ff9300f362f998c511761cb747c28ccadb30a3bf6fa09ec7b9097" => :el_capitan
+    sha256 "5334b5a58c06e831ddf4312f3620e5edf04b661f9b29ae6b296f3f49c223a69e" => :yosemite
+    sha256 "5d914a3fc3f0e44d51e3097f5b8c1d4e07ffd368870816d7cebd3c13198088a8" => :mavericks
   end
 
   head do
