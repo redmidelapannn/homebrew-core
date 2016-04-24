@@ -14,9 +14,10 @@ class GitExtras < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f820c2530817015aa26f4fd8879e67847496b4c958a232adfde962dcd7b5a488" => :el_capitan
-    sha256 "6a9555f8c96d1b2bc146eaf1778dee50787f44ee4d98b21a862b50a17556dc47" => :yosemite
-    sha256 "1b0d3064c639782265ed8180c3136e86cfc65e8fa607a3b347113320888e85fe" => :mavericks
+    revision 1
+    sha256 "af2957551e566fd9ae7c65cfd6a6612574dfc02c44a8543c583015d3e4409274" => :el_capitan
+    sha256 "99fdffd182d5e621d6d09ffa9a724e3b64be3f1f9d0d2882cdde1ca1fcfb211b" => :yosemite
+    sha256 "cffaaa2ed4631e4db86a671b1302af4a6d69eaf075723bd9d232d10b781606d9" => :mavericks
   end
 
   conflicts_with "git-town",
