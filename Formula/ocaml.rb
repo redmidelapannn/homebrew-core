@@ -30,10 +30,10 @@ class Ocaml < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "72fca832d91bda2ed37a72b11207c511f1b3291357ab508e5974431da1602bd7" => :el_capitan
-    sha256 "8b0f9c7ce7b8a710c00f3363709dfa7cee46d2c8d18af6a88affb348eb6a0adb" => :yosemite
-    sha256 "afa78cad62971725b4eab39e9d15bc49b7ae224f42c2a27e2bfbe6fad7b292a9" => :mavericks
-    sha256 "a0fcad6dc20417725ff9fefb0468ead98a6faa0bb4a99a63351171e4b0dc22b1" => :mountain_lion
+    revision 1
+    sha256 "07c8ffa755e5c6bd995f49a505b10575ac8fb29e56b8e5abdc972ce608f1d453" => :el_capitan
+    sha256 "bd9b0441d99f82124fa497ecc3d1c78878774bf87cd04750416c8b299743e556" => :yosemite
+    sha256 "ca4967621bc0ae69e9c5ec6de77dcc7a69fff705c668f57199fc5985f542e764" => :mavericks
   end
 
   option "with-x11", "Install with the Graphics module"
