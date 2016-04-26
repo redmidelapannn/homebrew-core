@@ -10,10 +10,10 @@ class Sfml < Formula
 
   bottle do
     cellar :any
-    sha256 "81cc6bd984a20caa5d84f99b3e0ca39446e1604adce36faa4690fcc0e4725217" => :el_capitan
-    sha256 "0a0cc94cda22f17201e54762c0bd8980b8814871c8d11b80d8bfd364d35d8651" => :yosemite
-    sha256 "16cdf91ca02e792578476b9d8023ea0c88b8918787eda5efff339b2344e05143" => :mavericks
-    sha256 "915c46a78ca356b9637b8e46821a6a58a0eebf9c960f143d40a92974757a5697" => :mountain_lion
+    revision 1
+    sha256 "69cc86fba954b096724a9271c66982c6c961d4960b1128d99a87786c050f78c7" => :el_capitan
+    sha256 "3b9c2131780eba7190e392c2b71d8943a12d65668244ecf74f466c8c5cf48058" => :yosemite
+    sha256 "6d9cefbd38aa5421cf6aec80529e4df95a2e6dd6cc8847fdc4dd603707564ce7" => :mavericks
   end
 
   # Fix incorrect handling of RPATH for a system-wide installation of SFML libraries
