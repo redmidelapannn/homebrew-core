@@ -10,6 +10,13 @@ class Dockness < Formula
 
   head "https://github.com/bamarni/dockness.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "644706c43e0faecd26c2c3a4c31e682ba5018ff60f50182056afd314eba1ffee" => :el_capitan
+    sha256 "69dd9bd078eeb476b61df6b102eb477b1a88950528fdb8f6f328400456870102" => :yosemite
+    sha256 "0a571793baae766c7fb9dbcac45e7d8d682c7ea4724f9a5d4688795b7b3b2a47" => :mavericks
+  end
+
   depends_on "go" => :build
   depends_on "docker-machine"
 
