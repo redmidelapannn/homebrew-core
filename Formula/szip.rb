@@ -6,10 +6,10 @@ class Szip < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "c2264ab5d3e0070040c9eb82ed44ff384d79d3e1c279266a1621172c44de1c0a" => :el_capitan
-    sha256 "b8ad0f2ea77da1bc013fd3ea10104f3958389c76aa11fe33d4c79111a3605918" => :yosemite
-    sha256 "df5cfb198d5fbdc45bf9e386ffcf25535b995ca32477afe03ca2d277443ef022" => :mavericks
+    revision 2
+    sha256 "9c9f11b25a8d99a2fd7155e318adb5408e8e3655646c55ae79b18117a28180b0" => :el_capitan
+    sha256 "1882838e825a71c59da94481a9e946f1b2c830aa8e69bd7c37e2c94d46124bd1" => :yosemite
+    sha256 "05748fdf7c8288c6b4a24a56ff9f814c9c4054e8dd1216799c7c1a1d3597893d" => :mavericks
   end
 
   option :universal
