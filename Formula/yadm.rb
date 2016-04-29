@@ -4,6 +4,13 @@ class Yadm < Formula
   url "https://github.com/TheLocehiliosan/yadm/archive/1.04.tar.gz"
   sha256 "a73aa51245866ce67aeb4322a62995ebbb13f29dc35508f486819dceb534968a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f17c810441865099e2f2b19adad97ac79e4d56c5beb2df90daff0a2b56458fc6" => :el_capitan
+    sha256 "7512077510434e3686b790126f5a6df2cb0cc5325a9ab666a10cc84e38f46962" => :yosemite
+    sha256 "73fafa186aa9a585dbfea1d383f4479f11daebd2c172fcb485533db489353a8b" => :mavericks
+  end
+
   def install
     bin.install "yadm"
     man1.install "yadm.1"
