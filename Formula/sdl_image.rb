@@ -7,9 +7,9 @@ class SdlImage < Formula
 
   bottle do
     cellar :any
-    sha256 "e2c29e2f54c49c4334e6c5315a89e134256716dbb01bbfb2c67b0354a8dca756" => :el_capitan
-    sha256 "b110f8bee989e5c2f33cc1cc180fb1c56b0ea9b11fe2f08a2db9911367c799d6" => :yosemite
-    sha256 "84272135304e7c475e8000a90af113127858273a4449ce6566805f5b4c2cb476" => :mavericks
+    sha256 "edea210884beb96eb7f4632e2b5d443a0e997dddb7fcb787c45abf4fd5bb907e" => :el_capitan
+    sha256 "6d6f8de0347c3ff00cf6c2ad7ce395fecdeaffb31ffa0f9e0b1c6bf4b612d87c" => :yosemite
+    sha256 "e8d8064dda664bdec53121858382cc94132f10f971638400bac79bf196844d35" => :mavericks
   end
 
   option :universal
