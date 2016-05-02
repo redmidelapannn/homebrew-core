@@ -6,10 +6,9 @@ class Aqbanking < Formula
   head "http://git.aqbanking.de/git/aqbanking"
 
   bottle do
-    revision 1
-    sha256 "3413c3854115dd4df8f37c62a1d93f1818a76b7c67e806c1c36d840026941561" => :el_capitan
-    sha256 "b3937077d7f8f7a5e451c2951119f1cd53cca98495f42b9a3af86f5a30ee960d" => :yosemite
-    sha256 "1e6acd66f0d6de60a379ed0a640a740db9fca41a3a114f346efc558f092a8a55" => :mavericks
+    sha256 "c4af32d0c7f9237c4d80ca9d45721daed14561092a1e5642d6cfcb5b511f5b74" => :el_capitan
+    sha256 "159ac35ecf1ba3c4dfb7729ae0337f86ce5cdcb5cf43c73ee92ec28821195a78" => :yosemite
+    sha256 "29008a066ef4c976df5484a9d5e780db74c494403a4e55c171e53f08a4674a86" => :mavericks
   end
 
   depends_on "gwenhywfar"
