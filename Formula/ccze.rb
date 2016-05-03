@@ -6,9 +6,10 @@ class Ccze < Formula
   sha256 "8263a11183fd356a033b6572958d5a6bb56bfd2dba801ed0bff276cfae528aa3"
 
   bottle do
-    sha256 "7eb127c4017e7530a53e3258f6b013e80fca1a0d30c577813bdc326b8b0e30d3" => :el_capitan
-    sha256 "3bf7f9c6ab3410d73348d4f0518f4778ca2e832904f992004bd3a438d2fcd036" => :yosemite
-    sha256 "8714d3dbc5bc165b505180b9833fbcdda609e978c6c821ac7a503cd4226619aa" => :mavericks
+    revision 1
+    sha256 "4ed4aa7cfcd5c8fc6db6c2b17cc094c6289156cb6d8a4b60e7af82516935a640" => :el_capitan
+    sha256 "0d4c55a52baeef22e75bcf34b21d2dab9799b16f2f9c55deb0aa52088747f96a" => :yosemite
+    sha256 "11256a972e3f3aaa0a29f78d707e5f3d81fb3d7150dda087b8f40bc54ad87f19" => :mavericks
   end
 
   depends_on "pcre"
