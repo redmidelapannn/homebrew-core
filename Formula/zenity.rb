@@ -5,9 +5,10 @@ class Zenity < Formula
   sha256 "089d45f8e82bb48ae80fcb78693bcd7a29579631234709d752afed6c5a107ba8"
 
   bottle do
-    sha256 "f0017ba4ecdcdb89d8339ea2efefed1c1d7753544899cde824cd59864761710e" => :el_capitan
-    sha256 "0e585f77e9f945c54a3257f3f212bc2f19aff927475090b73ffa83e98b32e3c4" => :yosemite
-    sha256 "8cf1d00ab9bedf112479aa4f503ec475379046e90916364a65e169766d87e0e8" => :mavericks
+    revision 1
+    sha256 "9bcf0800c03545b536c5bb02af16cec6831bfe3c80e53adea6b69a8ec3ecff71" => :el_capitan
+    sha256 "59c5f2690281de85d299dd974be9d8b310fd4743a2406b216b120df44f2026e2" => :yosemite
+    sha256 "bf8d506fa70116a0863c129255760666514795608f530ff3de321f702747ae9e" => :mavericks
   end
 
   depends_on "pkg-config" => :build
