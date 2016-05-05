@@ -8,6 +8,10 @@ class Spidermonkey < Formula
   head "https://hg.mozilla.org/tracemonkey/archive/tip.tar.gz"
 
   bottle do
+    cellar :any
+    sha256 "af3a04edb79c44c35558ea41f9f93a58a89a0bcdfb001aa2ef20fa897415840e" => :el_capitan
+    sha256 "16bca0ad213aa0e110b559880f3e1d2ebbeaca1b75f5f9bdbc434dc0791067b0" => :yosemite
+    sha256 "35cdf00cf67310c3fb292cc77a544346e6adeaa10416f0dc516ff02cefdd32dc" => :mavericks
   end
 
   conflicts_with "narwhal", :because => "both install a js binary"
