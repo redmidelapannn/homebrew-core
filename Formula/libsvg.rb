@@ -7,11 +7,10 @@ class Libsvg < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "4e7903c15847c2d07a2bdf16d6ddad5a0191ef452cf7733624703fd1b5fd7859" => :el_capitan
-    sha256 "05c230ab37e4f4a3b854373b5c71b275414f852d1b776a60351c0fd49c31674a" => :yosemite
-    sha256 "a6de74ce690bcc7dffd353139182dc0d896250cdca652c315356349f7e78729e" => :mavericks
-    sha256 "32f69e5b156747638e952ec45a3b12a7eead5e479a9881e9db30582ca06f880e" => :mountain_lion
+    revision 2
+    sha256 "b1f6207b248a9495828a63290a7503a11e5e9826c169e20416c39b680a7c19a9" => :el_capitan
+    sha256 "a0a44509e48fddc50a0202e1e9f5a3b09e319e36569c197f0cad2f2df1cb4833" => :yosemite
+    sha256 "d1bbb1379c95f8898ff6aaba0fda988700dec7f53cdd64a83e0631c94cb3d83a" => :mavericks
   end
 
   depends_on "libpng"
