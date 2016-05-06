@@ -7,10 +7,10 @@ class Py3cairo < Formula
   revision 2
 
   bottle do
-    sha256 "4966f5d8a46791b1a407ed16295eb64b921e9885face7fbcb09cf2abfdf1cae5" => :el_capitan
-    sha256 "57cb5e7d61589ab8761d54a1455e527227998f79251e60c279088ffc99d0ff1b" => :yosemite
-    sha256 "e3dd34a3a8bb72d817fd1a146a7b929bb41894aa6f1776943d62e5ab8b683394" => :mavericks
-    sha256 "d507a98dd41b604fd639f7e15c3e1d674fe83b52dec336189e71d3206c65ff3e" => :mountain_lion
+    revision 1
+    sha256 "6691035852e3fda338ec373654beea0f8b49ffc4cf67aa47657c85463ef8b793" => :el_capitan
+    sha256 "08bcc78a5bf4d846ec94125fac7fccbc627f8065c32e7631d14491d464c3fa96" => :yosemite
+    sha256 "e637e829b03f30da41b941bd12ff8bb4c0c0ac39f7dca6d6128162b47b3de5ae" => :mavericks
   end
 
   depends_on "pkg-config" => :build
