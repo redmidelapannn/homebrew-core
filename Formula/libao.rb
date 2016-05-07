@@ -5,11 +5,10 @@ class Libao < Formula
   sha256 "03ad231ad1f9d64b52474392d63c31197b0bc7bd416e58b1c10a329a5ed89caf"
 
   bottle do
-    revision 1
-    sha256 "159aa7704f0a3cd36bfdf659ca8ec9c399077274bff1b68aa0497fdda8b6da44" => :el_capitan
-    sha256 "08d568c4bed498b2920983d9b848213779164c15489c82cc61429533337d19f5" => :yosemite
-    sha256 "81b1d6c5d1920092fba0470db2840414eb99bba8ec63d6d22800e79090db8e4b" => :mavericks
-    sha256 "21aa15e92c5577a4a610de8fbb3f5a72638a0c37a40c4ebebc14826359932efa" => :mountain_lion
+    revision 2
+    sha256 "479ea56df4b49cf911dc7cb47b519720130d2f24956384e9958afb0852a119da" => :el_capitan
+    sha256 "7d42e638b642282e42c6989ceb3d9e719ee71de0282409ecd10abbb7fe25c6f2" => :yosemite
+    sha256 "b24042987ae45719e4df7ac18753c13d9a9fe17139735edd63c9203586d9c11c" => :mavericks
   end
 
   head do
