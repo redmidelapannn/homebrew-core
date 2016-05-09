@@ -5,10 +5,9 @@ class Tinyscheme < Formula
   sha256 "eac0103494c755192b9e8f10454d9f98f2bbd4d352e046f7b253439a3f991999"
 
   bottle do
-    revision 1
-    sha256 "fce84a2d2929ad1118015add67416e61b7d2911fbf99ab11c679aeebad6318f3" => :el_capitan
-    sha256 "d23514b5d1f4c1f3360ce6773bcb2aff49986c013da608989a169149357966b4" => :yosemite
-    sha256 "80d65369497ac62f490ec9818a11b8391db77382b924f67bbabc18f788fdf39e" => :mavericks
+    sha256 "a9da6a45e87b3a48789d2a7a89336c5a7ec86c47453bbf59a910f78434fd44f2" => :el_capitan
+    sha256 "29c90ebfbc60afeefc00377d0e6c086d2a467bab4a9a93953c14d90a1b299b72" => :yosemite
+    sha256 "497347cb45f213b66c5e9534ee7575c9ef6b07cd72858d92f9fbbf38d3380d4f" => :mavericks
   end
 
   # Modify compile flags for Mac OS X per instructions
