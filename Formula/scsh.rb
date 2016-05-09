@@ -5,10 +5,10 @@ class Scsh < Formula
   sha256 "c4a9f7df2a0bb7a7aa3dafc918aa9e9a566d4ad33a55f0192889de172d1ddb7f"
 
   bottle do
-    revision 1
-    sha256 "637b6d2b0055ffe923f913e43efd1859124facc4e73c5315310dc3813105ea3f" => :el_capitan
-    sha256 "093f70ab95855491d5a9ab8766ab11f9bee52588ccc07a30cb2e6a4fa9e81d02" => :yosemite
-    sha256 "8724dac1e3adb8b2cfd881042a550477054bd7c588fc7d531bad74ff62186b34" => :mavericks
+    revision 2
+    sha256 "1efe7ea27721ec41179a2918474cd1c6bec7096eb080d563800a645a6d764901" => :el_capitan
+    sha256 "4110f71cb8cab084c426b6f656fd385ea557da4e45c07e9a668bf5021c6cd009" => :yosemite
+    sha256 "c8cddeca34546e289d5830dce1834f845dc83f893af5a313af37263548bcf943" => :mavericks
   end
 
   head do
