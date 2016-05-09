@@ -1,8 +1,8 @@
 class Tinyscheme < Formula
   desc "Very small Scheme implementation"
   homepage "http://tinyscheme.sourceforge.net"
-  url "https://downloads.sourceforge.net/project/tinyscheme/tinyscheme/tinyscheme-1.40/tinyscheme-1.40.tar.gz"
-  sha256 "c594c84633b1dcfe832e0416cbc9f889b6bae352845e14503883119a941a12fc"
+  url "https://downloads.sourceforge.net/project/tinyscheme/tinyscheme/tinyscheme-1.41/tinyscheme-1.41.tar.gz"
+  sha256 "eac0103494c755192b9e8f10454d9f98f2bbd4d352e046f7b253439a3f991999"
 
   bottle do
     revision 1
@@ -20,13 +20,36 @@ class Tinyscheme < Formula
     share.install("init.scm")
     bin.install("scheme")
   end
+
+  test do
+    (testpath/"expected.txt").write <<-EOS.undent
+
+      ts> Hello, World!#t
+      ts> 
+      #t
+      ts> #<EOF>
+    EOS
+    (testpath/"hello.scm").write <<-EOS.undent
+      (display "Hello, World!") (newline)
+    EOS
+    system "echo", "A"
+    assert_match "Usage: tinyscheme", shell_output("#{bin}/scheme -?", 1)
+    system "echo", "B"
+    `#{bin}/scheme -?`
+    system "echo", "C"
+    `#{bin}/scheme hello.scm`
+    system "echo", "D"
+    assert_equal File.read(testpath/"expected.txt").chomp, pipe_output("#{bin}/scheme -", File.read(testpath/"hello.scm"))
+    system "echo", "E"
+    assert_equal "Hello, World!", shell_output("#{bin}/scheme hello.scm").chomp
+  end
 end
 
 __END__
---- a/makefile  2011-01-16 20:51:17.000000000 +1300
-+++ b/makefile  2012-04-08 22:38:11.000000000 +1200
+--- a/makefile
++++ b/makefile
 @@ -21,7 +21,7 @@
- CC = gcc -fpic
+ CC = gcc -fpic -pedantic
  DEBUG=-g -Wall -Wno-char-subscripts -O
  Osuf=o
 -SOsuf=so
@@ -34,21 +57,20 @@ __END__
  LIBsuf=a
  EXE_EXT=
  LIBPREFIX=lib
-@@ -34,7 +34,6 @@
+@@ -34,7 +34,6 @@ LD = gcc
  LDFLAGS = -shared
  DEBUG=-g -Wno-char-subscripts -O
- SYS_LIBS= -ldl
+ SYS_LIBS= -ldl -lm
 -PLATFORM_FEATURES= -DSUN_DL=1
 
  # Cygwin
  #PLATFORM_FEATURES = -DUSE_STRLWR=0
-@@ -50,8 +49,7 @@
+@@ -61,7 +60,7 @@ PLATFORM_FEATURES= -DSUN_DL=1
  #LIBPREFIX = lib
  #OUT = -o $@
 
--FEATURES = $(PLATFORM_FEATURES) -DUSE_DL=1 -DUSE_MATH=0 -DUSE_ASCII_NAMES=0
--
+-FEATURES = $(PLATFORM_FEATURES) -DUSE_DL=1 -DUSE_MATH=1 -DUSE_ASCII_NAMES=0
 +FEATURES = $(PLATFORM_FEATURES) -DUSE_DL=1 -DUSE_MATH=1 -DUSE_ASCII_NAMES=0 -DOSX -DInitFile="\"$(INITDEST)/init.scm"\"
+
  OBJS = scheme.$(Osuf) dynload.$(Osuf)
 
- LIBTARGET = $(LIBPREFIX)tinyscheme.$(SOsuf)
