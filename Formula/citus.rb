@@ -7,9 +7,10 @@ class Citus < Formula
   head "https://github.com/citusdata/citus.git"
 
   bottle do
+    revision 1
     sha256 "4d86305eb8e92e92d215710e6370fd54271d57f51caa7fbdcd5ae8f8473ab555" => :el_capitan
     sha256 "783da32bb249e4eea84a10d95c60fd1536801cd40c3b278f1da8ad3387902f33" => :yosemite
-    sha256 "de90aab4bf007570bfc4bc63f700e167670a99a8491333c2b98a724a6c34cfa4" => :mavericks
+    sha256 "5cb353147e6cc32aa1e7944d0532ac7e03acc792a115863e289f9c09e1d1c8f4" => :mavericks
   end
 
   devel do
