@@ -6,9 +6,10 @@ class Grt < Formula
 
   bottle do
     cellar :any
-    sha256 "f48b42fd6f856239fb1f004a700aec5a85c129dc0a4a2b5955ce6a9a9721b231" => :el_capitan
-    sha256 "aa26978c7029c36ab7d20a0e092968132e96255087f4155a1739db6dfcb9c170" => :yosemite
-    sha256 "a3170758b555fe767a6c9b75940cdd3b22fe17740c7902bc4058ab7bd01d575f" => :mavericks
+    revision 1
+    sha256 "afa3a71cc84e3931a06d28948456d1cf8aeee770ed19b7308ecbd4bd7b7218bf" => :el_capitan
+    sha256 "d35d948b9b0de73732ebd33fc90eda6444c59942d717625455355277f46d5118" => :yosemite
+    sha256 "baf0aa3fa36065e387e5031e1f6ec80689b16e57ad2df55f7db81766ff62cda1" => :mavericks
   end
 
   depends_on "cmake" => :build
