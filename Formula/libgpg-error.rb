@@ -7,9 +7,9 @@ class LibgpgError < Formula
 
   bottle do
     cellar :any
-    sha256 "6073da3448cb87c72a9c8db2cda4b9051296ad1a4bee076cd5994eefaf96e874" => :el_capitan
-    sha256 "1d608bacb312bf3a3bb32ac55f41d9b5479e1e07711f631141f7db446c7cb99f" => :yosemite
-    sha256 "eb0ed3990eb7a231078a99c69d53b72c83d54d1e3bf17fff78cac69804cc9fbe" => :mavericks
+    sha256 "f02dfc60d4bcc662c1b6333cb26f6c79b10ce73f21c255cbeb6778f4a77dc1c4" => :el_capitan
+    sha256 "22c014f9ea81569c480fd85d239333169c015c2c4599ecb2b2be1dc29571ac82" => :yosemite
+    sha256 "b10110b0b58d35711ca652aef827c504e7a0097768f1735cce2dadfab61f79c2" => :mavericks
   end
 
   option :universal
