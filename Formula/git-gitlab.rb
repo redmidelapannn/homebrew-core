@@ -7,6 +7,12 @@ class GitGitlab < Formula
   version "0.1.0"
   sha256 "3cb01102d8dcf523fa5c276719d386bc830c2d9050bfaa3911e166276f623783"
 
+  bottle do
+    sha256 "b1ac50005b351807660cf9e9e52f53d8aff3f1ae8a1c8efc4bc75116763fd9ff" => :el_capitan
+    sha256 "df6a6ce7998a04909bbc6abbe8727bc2351eecb3ab3d42b069fd504d9eb8e7f6" => :yosemite
+    sha256 "d0ccff4cd9233f7554314585be63bcf8848ce11aaf0650c35f9f8d468bd2de69" => :mavericks
+  end
+
   depends_on "libgit2" => :build
   depends_on "pkg-config" => :build
   depends_on "go" => :build
