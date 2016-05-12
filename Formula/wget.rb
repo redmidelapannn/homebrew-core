@@ -9,10 +9,9 @@ class Wget < Formula
   revision 1
 
   bottle do
-    revision 1
-    sha256 "a0c2cbc5ca625454bc7d85371d07cfec71efa64cc29f00ec8fe9f6f89cbfd7b9" => :el_capitan
-    sha256 "f0fa6b712b2ed89ff687f1c6ef47188511354c3dbd0d32cac8453c88e1775a9e" => :yosemite
-    sha256 "049e984bf8c795dcdeccabebc0fd3fd4c2c3e65b0215fe2fcaf2424c1f00b1e3" => :mavericks
+    sha256 "1a7f3deba119af9ab75c2f9b7600c39a0930b2236058f140d814b3dedeb02b47" => :el_capitan
+    sha256 "19a1cbfab687ae454bd4b589285c9fb9fb763c38350e5025350a562eb024c18a" => :yosemite
+    sha256 "518efd634284b73ef67940667793b9a96c2c94a10e45acdd039c21dcbc99fae7" => :mavericks
   end
 
   head do
