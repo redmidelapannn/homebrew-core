@@ -5,6 +5,13 @@ class QtGstreamer < Formula
   sha256 "9f3b492b74cad9be918e4c4db96df48dab9c012f2ae5667f438b64a4d92e8fd4"
   head "https://anongit.freedesktop.org/git/gstreamer/qt-gstreamer.git"
 
+  bottle do
+    cellar :any
+    sha256 "cce359b133c2bffa1ebc59493e9f86e22d1240f736574e021cda3b0a35ace74c" => :el_capitan
+    sha256 "5b16656a6a419f917d724a8f866ec8d0bc5e9d1849c0877ecd8ee9a1b5390e5e" => :yosemite
+    sha256 "8dd841953532e4ff8676ba79f611ee1016f59df5396bdea3977b6b04fc01e595" => :mavericks
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
 
