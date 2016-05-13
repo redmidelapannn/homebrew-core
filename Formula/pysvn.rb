@@ -4,6 +4,13 @@ class Pysvn < Formula
   url "http://pysvn.barrys-emacs.org/source_kits/pysvn-1.8.0.tar.gz"
   sha256 "39596f4884ed689cdb5a4e210e421724302a566c7ba756cc4d46bbfeb0c8326b"
 
+  bottle do
+    cellar :any
+    sha256 "f9839ab9843dfbf4346ac0b7e69d2a8e1a051038c2ffe500d312f5b6dca357b8" => :el_capitan
+    sha256 "dbba97bcb2c294a3470d443538e9b1735294f8ce1a394e3d61d80449461139ff" => :yosemite
+    sha256 "ecaa515b28cc309edb470bfb65fefc1ae492bfa2155180e92951b68cc7974f34" => :mavericks
+  end
+
   option "without-python", "Build without python2 support"
 
   depends_on :python => :recommended if MacOS.version <= :snow_leopard
