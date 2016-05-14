@@ -6,9 +6,10 @@ class Efl < Formula
   revision 2
 
   bottle do
-    sha256 "a8e51818234a137bc021469bf37a52c84608d4e399420b71ff360682c8a7a8ae" => :el_capitan
-    sha256 "a8fe89f450fc0328f84a442b138a93ebbdd516d03ccfe333e3c21fa080befd7f" => :yosemite
-    sha256 "4d1e000d79e426ffaf82e1b4603239b2c629c8eab5549b29d403a2b88eca24f5" => :mavericks
+    revision 1
+    sha256 "9e6cabf03c21ae231f2a4d99e0b72411f4133d3626a07d11cb46e81ae6c16b55" => :el_capitan
+    sha256 "9683718268021e52082b12be9b4e0e58fddd306c6155615b524f3c88c688a4d5" => :yosemite
+    sha256 "765906caeee1da95df41c6976a29ec3803f6ba28fe3f19c97b60cd62f57dae61" => :mavericks
   end
 
   conflicts_with "eina", :because => "efl aggregates formerly distinct libs, one of which is eina"
