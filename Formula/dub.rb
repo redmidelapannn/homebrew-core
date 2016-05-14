@@ -6,9 +6,10 @@ class Dub < Formula
   head "https://github.com/D-Programming-Language/dub.git", :shallow => false
 
   bottle do
-    sha256 "bf14b900869d28bc8140731ee81d04d9ee5b456603dea51353863bd76358f49d" => :el_capitan
-    sha256 "5cdd5f8c6729f3acf955afbd8d383daf196318bf1d2278085a28c28af00d33ce" => :yosemite
-    sha256 "33db147c048a39cad51569940ff489e015a08f3d17d0c299efcce89c064a8513" => :mavericks
+    revision 1
+    sha256 "c33df26bc3177d4cb751b6929abcc429e3e5ac3d3fd41c50e055863447bc1fbd" => :el_capitan
+    sha256 "353a8c3efe1232f4d62dcde6153f12cf398db01c2e0078137d1c7769866fe812" => :yosemite
+    sha256 "210ccbfcf14aad9312240aedf7ffe4d1cfded3bf4aec5ee168e01e8f1cd8d4a4" => :mavericks
   end
 
   devel do
