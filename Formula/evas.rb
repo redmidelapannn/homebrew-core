@@ -5,10 +5,10 @@ class Evas < Formula
   sha256 "9c6c8679608ab0f2aa78e83f2ac1f9133d5bb615dabd5491bbbd30fcec4fc82b"
 
   bottle do
-    sha256 "1ac0564c2241cef362a072490d02151bfa69ae1d1b2c0a592d34f5b2ca6d3fe2" => :el_capitan
-    sha256 "093a8fd311b0a6ab054dad8b5990fe1f901d18b942265d32b60a572bdfc5689d" => :yosemite
-    sha256 "27c30e2f0e52e7a3141f6dceca0daaf53cf34c50ecfef64aadb6b9774088b3ed" => :mavericks
-    sha256 "71e90d343bd3355ff57bdf84fb7ffdad0e8e060cdfc13c887216bd94b5f317c9" => :mountain_lion
+    revision 1
+    sha256 "331486eea5729506c3409ac93a8baeea9a22949d7a59de6aa8e585729c3696b8" => :el_capitan
+    sha256 "1362375aad073259ea98d5ca232a2b0e8c1a47f2662ab7bf32017ff0cae42b71" => :yosemite
+    sha256 "e148eea7dc392da7df7bd615e01e9a1b42d64f4eec8c6fbbb991e0dd76123ebb" => :mavericks
   end
 
   conflicts_with "efl", :because => "efl aggregates formerly distinct libs, one of which is evas"
