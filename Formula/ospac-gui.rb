@@ -4,6 +4,11 @@ class OspacGui < Formula
   url "https://github.com/sritterbusch/ospac/archive/v1.0.tar.gz"
   sha256 "793f0454cebe48dfa8364f26fa48469717954c31cb632a9c0b9dd24920d83f4c"
 
+  bottle do
+    cellar :any
+    sha256 "62a5edfcb138eb85e7c9f4428022ea3f75f0822d6c65b02c7f32d1fd9917faf2" => :mavericks
+  end
+
   depends_on "libsndfile"
   depends_on "fltk"
   depends_on "ospac"
