@@ -5,6 +5,13 @@ class NlohmannJson < Formula
   sha256 "ee3825841e6d6915428caf2cea53927c3e4d56315a23ee7d1a64bfe1c19a656f"
   head "https://github.com/nlohmann/json.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c19685f54d2fa35c77fadda85f98d6ce92801c2658ebdf6a6c54f88d59c21580" => :el_capitan
+    sha256 "004707af4c875d4048c30cd7da353eb56b9255dd1bd1801c2544e16219a24224" => :yosemite
+    sha256 "e36d65894bf3f0103f192d8185418fbf9889b3133e98dd59190bf5b0b16748d6" => :mavericks
+  end
+
   def install
     include.install "src/json.hpp"
     ohai "to use the library, please set your include path accordingly:"
