@@ -8,11 +8,10 @@ class Libtomcrypt < Formula
   head "https://github.com/libtom/libtomcrypt.git"
 
   bottle do
-    cellar :any
-    revision 2
-    sha256 "ad36e0538d35fe35f71a1c5d7c19945a2800e791911a53bf1168b9bbc6df8db1" => :yosemite
-    sha256 "108baa1e0008f5967f5dae0f670558bcb0bd679c94deb2d21d335525beda21ac" => :mavericks
-    sha256 "dd8857ae5f03d3e26c9f741b13522f0e868539264ab9c3dceb26f6019fe1996c" => :mountain_lion
+    cellar :any_skip_relocation
+    sha256 "12ac7a0eaa0e5e762c239701e7b423396f520b4d2e3a6a7543ad00a432a5e53a" => :el_capitan
+    sha256 "2152f09cdccbeb5da6fdf7810df6cd5be4c264afa80c1a4e41acc5f60448c8f2" => :yosemite
+    sha256 "b054c36f571b9b04a2bc3a34c7e239d6ff4e5b10054ca06d8a25fb876d7f3062" => :mavericks
   end
 
   depends_on "libtommath"
