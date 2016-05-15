@@ -6,10 +6,9 @@ class BerkeleyDb5 < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha1 "a134b5effaa73fd296b2601180520292c0a6d095" => :yosemite
-    sha1 "910660e253bf32a1ce730d4ba27e3090f645f5f6" => :mavericks
-    sha1 "aaafa41026335a6b7e6c0792d1511325c79409fa" => :mountain_lion
+    sha256 "10c32c7b598a0d0910be8a17c42907f98e1a44f9aca8fb0ca76ae86296d63de4" => :el_capitan
+    sha256 "81c4d15e05f7a8574d379c42323286fa89575f4b96551a55390a54e4cc4914f6" => :yosemite
+    sha256 "73851ea9d2ce5611b48a2f50d270da62c337af4100ad14a4cd134a6cb0e64302" => :mavericks
   end
 
   keg_only "BDB 5.3.28 is provided for software that doesn't compile against newer versions."
