@@ -20,10 +20,10 @@ class Rpm < Formula
   sha256 "d4ae5e9ed5df8ab9931b660f491418d20ab5c4d72eb17ed9055b80b71ef6c4ee"
 
   bottle do
-    sha256 "29c05e064c80738733182e6688a82cef3a2c933b40acbeb43d3a842693ca91f4" => :el_capitan
-    sha256 "ac5e32d13f8d61c4a7bfae758a98f4be00622e02a2db6e64430429a0ed17cc30" => :yosemite
-    sha256 "26cb3e750a1333f5c66fd2c125f34a546ed1a200eeee7c950a0616ea7699453b" => :mavericks
-    sha256 "67743955785cdb2f2c532d0a9cdd8c05adab1da9c10c9a2f5af18d53f3abaea5" => :mountain_lion
+    revision 1
+    sha256 "8b2e3a2b35693fa5008e9fb7fb9364711e82f5051f9b061c3f806e67bc21139b" => :el_capitan
+    sha256 "1feaa52e6d616f76b948587d14b7b0ca288441646c7738dc923ec1019b988336" => :yosemite
+    sha256 "81f5979e48071a6e35f16a6061a912bf27813d89981c7223d438aab56068c2ff" => :mavericks
   end
 
   depends_on "rpm2cpio" => :build
