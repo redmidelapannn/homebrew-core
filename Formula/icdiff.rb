@@ -6,10 +6,9 @@ class Icdiff < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "59413c9e1ef2ea94efa504c9b9e26b964904e36857d32a2f6f3e148aa092516e" => :el_capitan
-    sha256 "8fc01a5d2a039c9d657a868b6d916d01761effa1d3afa1e6f374f4a5ad266d3e" => :yosemite
-    sha256 "b8f8e3807628f0f687b6e8cac5b3bd7a9cbfd4d85371ad48d0fcb20288d90d23" => :mavericks
-    sha256 "3a47535005ba94fad4e344200e803f036cef1fb8bdb55f82bcbf014064bd58f2" => :mountain_lion
+    sha256 "14c80ae814b57c1bf5d7ff891788a2d8c72448036694f4f229f92ee791b6a0f7" => :el_capitan
+    sha256 "3ac72926d226e30dc52738591da6dc271ea271e4e4e278566b5338c69d6bc5df" => :yosemite
+    sha256 "0a925923306c71936f562542f06293dd796606192f90f80aa98038b3bc17aaf3" => :mavericks
   end
 
   def install
