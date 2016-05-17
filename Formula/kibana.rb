@@ -10,10 +10,10 @@ class Kibana < Formula
   head "https://github.com/elastic/kibana.git"
 
   bottle do
-    revision 1
-    sha256 "6af189c5637460bdd3d78492e85d89a11adf17b6d74cedbed58bd2498cd06f55" => :el_capitan
-    sha256 "785fd76f71b6fb27476a6d722e306edbf7ee5a8b473747c1a432d903c37ad766" => :yosemite
-    sha256 "bc8cadd81b4a31ea1084ae5835d8950a89c4547a97231f11d00858929ed32056" => :mavericks
+    revision 2
+    sha256 "b19875951462ee242da0799d7310f54c4ea7fcaa4da87d2b59736dff102e71cb" => :el_capitan
+    sha256 "dfb8ebce2ad2fea0c6be9e50648905b392b7545f45fc072c4006226614356c94" => :yosemite
+    sha256 "f703594a36427235f71e2f8280d839a6a780f05304f99b1e1a9d6e094f60f719" => :mavericks
   end
 
   devel do
