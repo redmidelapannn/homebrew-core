@@ -17,17 +17,15 @@ class Syncthing < Formula
   depends_on :hg => :build
 
   def install
-    ENV["GOPATH"] = cached_download
+    ENV["GOPATH"] = cached_download/".gopath"
     mv cached_download, "/tmp/.syncthing-build"
-    mkdir_p cached_download/"src/github.com/syncthing"
-    mv "/tmp/.syncthing-build", cached_download/"src/github.com/syncthing/syncthing"
+    mkdir_p cached_download/".gopath/src/github.com/syncthing"
+    mv "/tmp/.syncthing-build", cached_download/".gopath/src/github.com/syncthing/syncthing"
     ENV.append_path "PATH", "#{ENV["GOPATH"]}/bin"
 
-    cd cached_download/"src/github.com/syncthing/syncthing"
+    cd cached_download/".gopath/src/github.com/syncthing/syncthing"
     system "./build.sh", "noupgrade"
     bin.install "syncthing"
-    cd cached_download
-    rm_rf cached_download/"src/"
   end
 
   plist_options :manual => "syncthing"
