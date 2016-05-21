@@ -3,6 +3,7 @@ class Fop < Formula
   homepage "https://xmlgraphics.apache.org/fop/index.html"
   url "https://www.apache.org/dyn/closer.cgi?path=/xmlgraphics/fop/binaries/fop-2.1-bin.tar.gz"
   sha256 "a93b59aa4d0b6d573c9090d8f21dee6c7d0c449a4bd2d48a1723e233dfb423ea"
+  revision 1
 
   bottle do
     cellar :any_skip_relocation
@@ -10,6 +11,8 @@ class Fop < Formula
     sha256 "a3ce519cfe5f54a0823515e2e75f878373d47e8174f9d470976db9ca2f792759" => :yosemite
     sha256 "38602cef629a33f05149c3411ea6b82451deec872aa6cbe1fa8203ad2ee875fb" => :mavericks
   end
+
+  depends_on :java => "1.6+"
 
   resource "hyph" do
     url "https://downloads.sourceforge.net/project/offo/offo-hyphenation-utf8/0.1/offo-hyphenation-fop-stable-utf8.zip"
