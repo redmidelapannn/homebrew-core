@@ -5,6 +5,13 @@ class Butteraugli < Formula
   version "0.1"
   sha256 "79ce7ead4ccb159b84bbab05e8a3e569c3b98b032ee58bdfd13df25acc85d5a2"
 
+  bottle do
+    cellar :any
+    sha256 "aaf561efd8ffc9c5133366cdaa7f08cf91f2bc8964d04c58e41778c04700a288" => :el_capitan
+    sha256 "63120ca2c41ce3138b8196ac23b52ed57dae22d79ccd0fdcba0f8ea6bfe27e87" => :yosemite
+    sha256 "7974c24c0ee161283de948a936f968798edc01130dc483630898fdf401731075" => :mavericks
+  end
+
   depends_on "libpng"
 
   def install
