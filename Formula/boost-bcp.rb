@@ -8,9 +8,7 @@ class BoostBcp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b04e4f16118f1f9c1c955e1cd9cfbd70a7223d3cfe9d4eeb821231a9b62b44ce" => :el_capitan
-    sha256 "1dafec2ea159151006a5615ad710c61760bf3daad8f98d4fed905e198073e0fc" => :yosemite
-    sha256 "56e649ee9c17b6defb825e6577c009493ed7c463110c43ee0127bc1643c37c13" => :mavericks
+    sha256 "8f51d9ec153aa2c7250e09bdf30c7afabb753ce070e2123030bebdec08610f15" => :mavericks
   end
 
   depends_on "boost-build" => :build
