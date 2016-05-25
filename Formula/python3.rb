@@ -5,10 +5,10 @@ class Python3 < Formula
   sha256 "c6d57c0c366d9060ab6c0cdf889ebf3d92711d466cc0119c441dbf2746f725c9"
 
   bottle do
-    revision 3
-    sha256 "a15feed8e9ff551e8f8ec5d56298223dce898a832c446a34a0aa773b000e968c" => :el_capitan
-    sha256 "dbb3625c9cd6b31e496f78e776821d3c3e8f30a7db39f7dea1801a5b19187b64" => :yosemite
-    sha256 "228380b8fb1ed6f496c6b071443ecdf98b1130aa840a4e2bd9ccae3dc7bb2713" => :mavericks
+    revision 4
+    sha256 "ed6a40a559491d7c9bbc79c96d23be2b2592c8b4cfd323741b7673563df443c9" => :el_capitan
+    sha256 "fe1f8d6b62fa678bcaa44bea736bcc2d96a090944be88e3d52b933d77c7a7548" => :yosemite
+    sha256 "3af4720a4e2d0d7a3c37f85d50c3c6e6073953ad487d77d0a5ab9bb15e665ee8" => :mavericks
   end
 
   head "https://hg.python.org/cpython", :using => :hg
