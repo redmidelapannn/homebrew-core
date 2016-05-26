@@ -10,9 +10,10 @@ class Arx < Formula
   revision 1
 
   bottle do
-    sha256 "3c68700a3ddfaed0ce393599f7709066641a33fba11b718c2b50e12496bc2131" => :el_capitan
-    sha256 "0720dc2fe2b961a38f5c564a47469b941da92c619ef53f9c749cff628f628b93" => :yosemite
-    sha256 "c46582bde1998cd229a5e5361b32eb194386008ff38944eaf663fbe4c53a146d" => :mavericks
+    cellar :any_skip_relocation
+    sha256 "bfffe1c1e78fc9c0175b2fb66bdd534b9575d2634a66244acf04e78b317b8055" => :el_capitan
+    sha256 "460726a5405b0180be17f1e5cfc289840d3d965924f9bbf8dfdea68cc2bff5c1" => :yosemite
+    sha256 "abcc5a92ce896d6e326fffeb6fb0666cf5f880daedf4fc76d4c6b809fa2df375" => :mavericks
   end
 
   depends_on "ghc" => :build
