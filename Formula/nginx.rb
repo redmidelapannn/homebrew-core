@@ -11,9 +11,10 @@ class Nginx < Formula
   end
 
   bottle do
-    sha256 "69839647f12306f8756eb7934eed946e55ffb47c1a2813f126523d824cd53a9d" => :el_capitan
-    sha256 "af4b2cad55c8414c2c29db340c94da9270ec66044f8a52f1d0e0efe1f11adb9b" => :yosemite
-    sha256 "8bc5364108c213b062427a98b361d3caf91e8f5a8ef518f23954bdb41e10b9df" => :mavericks
+    revision 1
+    sha256 "fdb4353703c8764e7b5c0465179e8fad8024e92f75ffb7567c3f17c2f40aceff" => :el_capitan
+    sha256 "eb0e28d8aee1247dcd0ddea83ae9adf60bab8aaea1052a904beb2504829bf793" => :yosemite
+    sha256 "9c96a89c70f4bfbf39624ef3a898ffc886622aab761e98eea23fa34359327953" => :mavericks
   end
 
   # Before submitting more options to this formula please check they aren't
