@@ -4,6 +4,13 @@ class Oysttyer < Formula
   url "https://github.com/oysttyer/oysttyer/archive/2.7.0.tar.gz"
   sha256 "6b944413423871c6366a3bafd08a79579bce01c6b254df7ebed3394d48c2bb60"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "9702dd6f0e5fa5c65f0fa3f2d7ba6e1becdff018e0cf429ccadc5a28ec7f59d5" => :el_capitan
+    sha256 "cf86f0e5396f23a03b58485a53f268d28ab7402319ae608e603f9e33fb7dbff0" => :yosemite
+    sha256 "1099ff0d66b79a1938b2203e9a4af0dc508e6e7562870a6b7b585b271e335e24" => :mavericks
+  end
+
   depends_on "readline" => :optional
 
   resource "Term::ReadLine::TTYtter" do
