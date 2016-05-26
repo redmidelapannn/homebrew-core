@@ -10,9 +10,9 @@ class Mighttpd2 < Formula
   revision 1
 
   bottle do
-    sha256 "cd1946c30b560973e279d21b1a59e8b5d2d09d51d32283275ce876c21f627c7e" => :el_capitan
-    sha256 "e09fc4ac2f592186a0e865527dd55d7cb1baa8190d088b3ecc7f05e5be8036e2" => :yosemite
-    sha256 "e550287f94677fb7c7179e2aea9441cc7d46c54ea9c4176a2641d18396a0a463" => :mavericks
+    sha256 "b403e8798ebb88d064e84604fa61e5454f56d67d4e277fd1ffa9602f77fbde5d" => :el_capitan
+    sha256 "21190271e8b58beb58b80bfda431b5b59dcff2c5acba086448e54cd616861c3c" => :yosemite
+    sha256 "adca50136c5912bb17345e9d8ea6d1b44ce0f6f0dee08fdbafc09e6fa78d49db" => :mavericks
   end
 
   depends_on "ghc" => :build
