@@ -10,9 +10,9 @@ class Purescript < Formula
   revision 1
 
   bottle do
-    sha256 "9d9cf746058847a06cfbfdb7fb3a74c9a8c7eaf7dd1edafc604dfb720cdb8c83" => :el_capitan
-    sha256 "4e526d5e657750476c3b85f5e2574ac353ecd1afe8b48baba598002b34f9e960" => :yosemite
-    sha256 "9b0a0f6273917d86c9039025e92da4f88a74b678eac0810ae3cb27ae10746b77" => :mavericks
+    sha256 "de6d5e476a1738fea563a7ea142f0f28c658c7d92dd53d3431df2f5efc283b16" => :el_capitan
+    sha256 "c0ac7cfaedc4de5b082a6a3de75cf7a2475a000dcec77c84315ae46cf86f4185" => :yosemite
+    sha256 "563619bc58950f7f4fb3ff065ccf9df01f5a15190bc885718a3202425d654e20" => :mavericks
   end
 
   depends_on "ghc" => :build
