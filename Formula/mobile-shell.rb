@@ -12,10 +12,10 @@ class MobileShell < Formula
   end
 
   bottle do
-    sha256 "046b0c48cd1c573d57500e683122e3152a00556ad960938c6caa962b0c2ef460" => :el_capitan
-    sha256 "33719bc3df39cf2fdeb4589129f164f3500d2eac1e874666c747b612384545cf" => :yosemite
-    sha256 "9460c06ccef476ef1b3feed85168ea989ef4eced753cbd59ed53fd512f5c1aff" => :mavericks
-    sha256 "5a244c07094d5d3d30a95888a7bb0df6051fd81cfec7fd35ac861090f1897d6e" => :mountain_lion
+    revision 1
+    sha256 "deb44ced1784191f2c7748758e8db799ac0d1eba2c06d040edb4dca69ef4d25a" => :el_capitan
+    sha256 "ecb34dad1fc6ac55543cf99213b2f815f769407f2fc2884d2d622456a7a68905" => :yosemite
+    sha256 "1111e2540d8125b23d99ccac6902ffb0752d8e184e21efb19fb98c2036041479" => :mavericks
   end
 
   devel do
