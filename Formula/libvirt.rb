@@ -7,9 +7,10 @@ class Libvirt < Formula
   head "https://github.com/libvirt/libvirt.git"
 
   bottle do
-    sha256 "ddf44ea39669e5385ab669cccdf83da9085a9e1dfe690b0e402d334440cb3243" => :el_capitan
-    sha256 "aff8939d5b19080cc5b95bd5baead8f05bb2c807e6f7e6b3520474fbe08494b5" => :yosemite
-    sha256 "1a2775e24fe299eb67b869656e05fb5ae6f76749f7c42f3bb20ff2ebfcdddffd" => :mavericks
+    revision 1
+    sha256 "3a9b30322d84078375ff2205964bf1999f72c7ca5311a851a9d0df13bc98108b" => :el_capitan
+    sha256 "bf2aa852ded331251b0b6ba28290439d65156032a0e99c3aa618069b499cce0a" => :yosemite
+    sha256 "361229c02e9c69a8d4fa08dedbafee490cb9500a516e34eed86ae03b5d34334b" => :mavericks
   end
 
   devel do
