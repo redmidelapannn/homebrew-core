@@ -8,10 +8,8 @@ class Makepkg < Formula
   head "https://projects.archlinux.org/git/pacman.git"
 
   bottle do
-    sha256 "c7e03081bbffdbb982e85d7bb737adaa3a0d068a95564c026af5749b0389ca4b" => :el_capitan
-    sha256 "d2230e87184cdf11947f22aa9beaf588e4682fccfd964d2449b20213630fa129" => :yosemite
-    sha256 "3a5020efac5c5f9b7d4a74d950b8bcc5054a50f89b5049e711ec3aaee2c3bfe9" => :mavericks
-    sha256 "17dcf87394cd744c514133ddeff9de701082bb2563b70aa4f8820f6116f7938e" => :mountain_lion
+    sha256 "156dc892331260268043bb3d1555e972b970e9e71c68eb1b9f36c40b6d6f03f0" => :el_capitan
+    sha256 "70287b85e2cdc03cbcb5ea573bc549f571c4fd1f4dd3357ce4952f4ed15acd6c" => :yosemite
   end
 
   depends_on "automake" => :build
