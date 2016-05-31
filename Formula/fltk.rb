@@ -17,10 +17,10 @@ class Fltk < Formula
   end
 
   bottle do
-    revision 3
-    sha256 "4e1b9e5a401319d74b77aae46a12b2d3da3a2a8e0a50364ac9ac9aadbbf5fb50" => :el_capitan
-    sha256 "c2c1f6f6219979cb8864c2afb03ef5aed71b2df6fe232c0b8ad024b2a57d506f" => :yosemite
-    sha256 "c9891be771225c5729be4227f7da60ca7d199d90fa868c737bc7f0893f31947e" => :mavericks
+    revision 4
+    sha256 "3190b8dd4116158d5012a51c15a1b0afbf74432128a94da9f0d2f4334978f214" => :el_capitan
+    sha256 "2b14ffe0f8a4299b25dfc928a9cba7c33500f381ce36add4f7393b4f83e44681" => :yosemite
+    sha256 "4460bf4444ad3046e7e58f05d2defdb54f490ec81e8071cac679da5ca4dabc11" => :mavericks
   end
 
   devel do
