@@ -7,9 +7,10 @@ class Cairo < Formula
   revision 1
 
   bottle do
-    sha256 "dd4dc801ee427ca2d2305403cacf747a51b58d80a2cd2ebf20a9623229830278" => :el_capitan
-    sha256 "3ac3b4af558425ff4c3a9799bfb24ab70e41210d63323195db4a5e6feb790497" => :yosemite
-    sha256 "15ec1a777186dc6af988c9d1de94449ce730ec64a1588d63f3a1b95222d75a8d" => :mavericks
+    revision 1
+    sha256 "829b117f343ea7ed1eee3a617894d75503ff1cc16c8690f602cec43d9ecd7400" => :el_capitan
+    sha256 "0bf338d235e7da87cb3a3a7234474c4540d30af1f364a6624a7296c9cc4c999a" => :yosemite
+    sha256 "dc4408ec1250eb3418d06b7c208ecd4b5829ef87797783afee7eff820671409c" => :mavericks
   end
 
   devel do
