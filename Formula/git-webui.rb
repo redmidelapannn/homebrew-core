@@ -1,8 +1,8 @@
+
 class GitWebui < Formula
-  desc "A standalone local web based user interface for git repositories"
+  desc "Local web based user interface for git repositories"
   homepage "https://github.com/alberthier/git-webui"
   url "https://github.com/alberthier/git-webui/archive/v1.2.0.tar.gz"
-  version "1.2.0"
   sha256 "21faa8a018d7325bd3acb7e7da138a2a61b504698f96fd067fa0ee765f3f15dd"
   head "https://github.com/alberthier/git-webui.git"
 
