@@ -1,4 +1,3 @@
-
 class GitWebui < Formula
   desc "Local web based user interface for git repositories"
   homepage "https://github.com/alberthier/git-webui"
