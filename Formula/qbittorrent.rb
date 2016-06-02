@@ -5,6 +5,12 @@ class Qbittorrent < Formula
   sha256 "c822e938e36fc5956476f9a8f52beecf35d65df2ba502c671fa3e90f7d0be81f"
   head "https://github.com/qbittorrent/qBittorrent.git"
 
+  bottle do
+    sha256 "ce7e616a1ddcc1e23efa8374dc178104563d403907a3da3504db371a9c8b557d" => :el_capitan
+    sha256 "dbfcd6176add2ce87ac8a619ff41187ed75a13a47f3215be3eb963a3200ac212" => :yosemite
+    sha256 "5b608808ee99a3f1be7440a16ff0b536eb2affb1c0ed8d221eb59201d2bb244a" => :mavericks
+  end
+
   depends_on "pkg-config" => :build
   depends_on "libtorrent-rasterbar" => :build
   depends_on "qt5" => :build
