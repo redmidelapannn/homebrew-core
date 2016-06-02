@@ -6,6 +6,13 @@ class Bookkeeper < Formula
     url "https://www.apache.org/dyn/closer.cgi?path=bookkeeper/bookkeeper-4.4.0/bookkeeper-server-4.4.0-bin.tar.gz"
     sha256 "2ec1f34ae1f0be4ee54a9d986bbc7ff75bed831a0b47ec8e1cd90c82afe02951"
   end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e85029e3985f668df02d73abd59e7d228287c89b49d39eec0691def16bd91f43" => :el_capitan
+    sha256 "1cfa2701d9fe1ac182899371adecccc41b5b87b99ab1ee592005d2dd064cf9eb" => :yosemite
+    sha256 "b7b86f5ac285cc7df10bbb0621dfccdc7601eca69f7beb318d7d600db02daf65" => :mavericks
+  end
+
 
   depends_on :java => :recommended
 
