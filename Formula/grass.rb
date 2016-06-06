@@ -12,9 +12,9 @@ class Grass < Formula
   end
 
   bottle do
-    sha256 "9881162ad659b3e04e687933477fd10cf8726c53aa19fbfba9dfb3f685edaa25" => :el_capitan
-    sha256 "aa4db69f55a2fd3b5a09cebcc4706009743ba5d7e46ee46ad958f274799e33f6" => :yosemite
-    sha256 "42304f890bd466dfbbe4dcccde86ecd85c209ea38e908320f94d2a745233ef59" => :mavericks
+    sha256 "8ea5bc859e403e647a46a82cd21b97c305ac11966bde73433a884310684caa3f" => :el_capitan
+    sha256 "a9d489ee8dccac3c0f8e0685f83bcab6bcedf9aafb7d9bb0b69832759e7b0be8" => :yosemite
+    sha256 "a9aa8c97337265088e793d6beba6c089bd50cb032f08f37ccae552ca70c78dea" => :mavericks
   end
 
   head do
