@@ -6,10 +6,10 @@ class Pmdmini < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "0d0d98c981cc98801314be58685ef4019b2a0a73a2ff98e7353e4f1a311bd354" => :el_capitan
-    sha256 "f7faea3656b8ee02a2a51d8698f9906f9092ba9af2a884e8125de1840c9a00c0" => :yosemite
-    sha256 "0c59e61c2789433240c34f51e7e643559c3af24b9e588fe89140bbc5cdbe9d5e" => :mavericks
+    revision 2
+    sha256 "3bdb184f7fc5de0403f2f057764c8ca6a7917967b4970e6fe188f97b5a9fd82f" => :el_capitan
+    sha256 "500d3c11ee3ada6481b34e5a7b9d2eb2b9e23da239ca99c7ab0b5da70517bce7" => :yosemite
+    sha256 "dba758820ce854aa6780e8e4fe41dc201b618e784bb78f238706ad6dc46da08a" => :mavericks
   end
 
   option "with-lib-only", "Do not build commandline player"
