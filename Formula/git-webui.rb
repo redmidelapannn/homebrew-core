@@ -12,10 +12,12 @@ class GitWebui < Formula
     bin.install_symlink prefix/"libexec/git-core/git-webui"
 
     # make sure the original script resolves the path to the assets correctly
+    # a patch was submitted to change this in the upstream repo:
+    # https://github.com/tomas/git-webui/commit/fd6a9d5c064d5e58742a0078e7842bbf70f2de33
     inreplace libexec/"git-core/git-webui", ".abspath(sys.argv[0])", ".realpath(sys.argv[0])"
   end
 
   test do
-    system "git-webui", "--help"
+    assert_equal "No git repository found", `#{bin}/git-webui --repo-root /tmp 2>&1`.strip
   end
 end
