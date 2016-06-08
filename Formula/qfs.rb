@@ -5,6 +5,13 @@ class Qfs < Formula
   version "1.1.4-1"
   sha256 "fbced6b93ef4d74bc1deb66e89f67b3c2f8f6de902276ad1d443881343d9ac20"
 
+  bottle do
+    cellar :any
+    sha256 "f5f9a05df48fdbc309f0a51204b9633b41207505fc79e4e458ff3dc1f6eb7e4c" => :el_capitan
+    sha256 "e1e9f6b8c3ac8d1cc9c5c974be438a2500067932826bf0ee9ebcef58d3ab0c08" => :yosemite
+    sha256 "9b6868314035d4c0cc5918cb226661176805f8ce1fbb673f023ec9a40434b83c" => :mavericks
+  end
+
   depends_on "boost"
   depends_on "cmake" => :build
   depends_on "maven" => :build
