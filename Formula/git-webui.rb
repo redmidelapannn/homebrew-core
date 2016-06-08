@@ -4,7 +4,6 @@ class GitWebui < Formula
   url "https://github.com/alberthier/git-webui/archive/v1.2.0.tar.gz"
   sha256 "21faa8a018d7325bd3acb7e7da138a2a61b504698f96fd067fa0ee765f3f15dd"
   head "https://github.com/alberthier/git-webui.git"
-
   depends_on :python if MacOS.version <= :snow_leopard
 
   def install
