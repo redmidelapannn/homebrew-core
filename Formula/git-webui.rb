@@ -5,6 +5,13 @@ class GitWebui < Formula
   sha256 "21faa8a018d7325bd3acb7e7da138a2a61b504698f96fd067fa0ee765f3f15dd"
   head "https://github.com/alberthier/git-webui.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c083445b8aeb6deef1206fd625b9ea256e89ffaee6a75b04fc26b7b77e58231e" => :el_capitan
+    sha256 "d99b8f701d9b5d872f8c2c2f9b7f693e27e280ee95a5271e1fc20954210c5a70" => :yosemite
+    sha256 "c8037c6600d492b93ff641cb16522c3d1bb432eecff65c99c32526ce2a482300" => :mavericks
+  end
+
   depends_on :python if MacOS.version <= :snow_leopard
 
   def install
