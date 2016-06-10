@@ -6,9 +6,11 @@ class Watchman < Formula
   head "https://github.com/facebook/watchman.git"
 
   bottle do
-    sha256 "b630babd018142fb1fb8874444595a26ee99b361ba559308cf5cfd0df1486e7c" => :el_capitan
-    sha256 "bcd3b0f4ffaaebadd043fd928dd72aa6213d87b8af162e8853689200de6fc4c9" => :yosemite
-    sha256 "74c19390f79a0ca19faa5290f1e494cda14390606bb891a43cf8957d0098a3dd" => :mavericks
+    cellar :any
+    revision 1
+    sha256 "ce90fb6babf03eb1e45757e92e47dd17db3d2a23d898167243dde1626c6bbb6c" => :el_capitan
+    sha256 "22cf5a0b05464116dc2f81bccedab696ff868f9be2b50a013072beaeaeb9dc72" => :yosemite
+    sha256 "dd63f8d1283e2a3b625459865f601c821551e00093817154a58ea166c45e2488" => :mavericks
   end
 
   devel do
