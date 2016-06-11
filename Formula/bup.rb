@@ -9,10 +9,9 @@ class Bup < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bf2d8a6a88eb1684605159488740b8aa7bfab24a0bb82119b5073c9b99d024f7" => :el_capitan
-    sha256 "3cf4a28be9d177fe8db9be897981a61fddb98c5b4e98bddc6cc2b5a9967324b0" => :yosemite
-    sha256 "e37ae889d53612d81f29a747367595f8ef17e04aea91aee2a564d452c9b43cc1" => :mavericks
-    sha256 "9c7b4eda48367a6c62786e8c74aa1b455ecc9525a6431d2a2837d13fb592c0f6" => :mountain_lion
+    sha256 "bf639b7c9d23840a5300a35c54931979600f37a0da8d086830ceffa2b9e42066" => :el_capitan
+    sha256 "d668522c0696bc9bb600366192849bf5e85e2914004722171bf5d77f54951cba" => :yosemite
+    sha256 "b74dd0cd23946c06c8e95789ae9c000e28db2cd932f422172e23b11f9fc5befc" => :mavericks
   end
 
   patch :DATA
