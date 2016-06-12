@@ -5,6 +5,13 @@ class Vasm < Formula
   version "1.7e"
   sha256 "2878c9c62bd7b33379111a66649f6de7f9267568946c097ffb7c08f0acd0df92"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7c174b5d6f6a1245d179eba581629d4b2a785f1df2f59ea1b4705fd428e39e82" => :el_capitan
+    sha256 "27b884f0dfa5a3450f9ba97138962ce2f81450e56bbe26b4489df9778c532ad7" => :yosemite
+    sha256 "e087f4d587437c88d1ba85245248245b05393807b41278fd25a1b08c9907d0ef" => :mavericks
+  end
+
   option "with-6502", "Enable 6502 CPU target (binary vasm6502_SYNTAX)"
   option "with-6800", "Enable Motorola 6800 CPU target (binary vasm6800_SYNTAX)"
   option "with-arm", "Enable ARM CPU target (binary vasmarm_SYNTAX)"
