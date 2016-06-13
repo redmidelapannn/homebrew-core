@@ -7,9 +7,10 @@ class Czmq < Formula
 
   bottle do
     cellar :any
-    sha256 "9bbf6566cd74644ae22f5dd9338c1123bf3ecdf7a920dcaabf166aeb3902e3f7" => :el_capitan
-    sha256 "4a569da4e60f3b8252b4ef9a998e50153ac119108135ce832f2494b0edf7e87a" => :yosemite
-    sha256 "ae42e5b89ed47c00a3a45d9c3a4759a2f0a772c787f62b34cb024f489790efff" => :mavericks
+    revision 1
+    sha256 "d85743a74ca9e49ed50f3c66f8feab707f82c3ed0ede74dae18fc5f19726c744" => :el_capitan
+    sha256 "c3059e1e6cad3cc18c148f6e09d5a2c6daa6fe0f6a89134861c86627a87bcddc" => :yosemite
+    sha256 "96f7cf62ad4fbdb6fd2d4b29bfa6d529ff2ea42bbb5d06abb42b7d95d177256d" => :mavericks
   end
 
   conflicts_with "mono", :because => "both install `makecert` binaries"
