@@ -16,6 +16,13 @@ class Gox < Formula
       sha256 "673adfacf3fb4e0a224ee735392f4681715d0530905bfb88cd126574ee50930a"
     end
   end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e085d94d323eea5c93c99db32e8fa591f95261450c45112a33895d89298e2d7d" => :el_capitan
+    sha256 "fbd319ce61ea3cbd6a0d8df6b25f33be175ec27f72d63369c1b8a48294f08d85" => :yosemite
+    sha256 "b7d61bb20022538d9b6b62059a96a7ef3db02eb48c548e308362038bb4541081" => :mavericks
+  end
+
 
   depends_on "go" => :build
 
