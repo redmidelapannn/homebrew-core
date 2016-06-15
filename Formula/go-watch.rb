@@ -9,6 +9,13 @@ class GoWatch < Formula
 
   head "https://github.com/ostera/watch.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4e548153561529bebc9e2517a89bab351c6e2a6b0b63690df3bd830c8a197145" => :el_capitan
+    sha256 "ab17a463cb0cabf0fafaf0da3a4add6a8d5441cfde6aebfc435d7ea9e0930d73" => :yosemite
+    sha256 "45897fbe91e85b13e1f1e09b9a81b5880a1d6ca686bda549243404e0fd0e1798" => :mavericks
+  end
+
   depends_on "go"
 
   conflicts_with "watch"
