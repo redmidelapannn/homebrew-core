@@ -5,6 +5,13 @@ class Homeshick < Formula
   sha256 "8bd3c46f1cfd68d82d97fa72a68a07c966092c77f276d1335cb390b2ec6062bf"
   head "https://github.com/andsens/homeshick.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2cfc5f2022abb6f41e857dc47ec02c61e89421df244502d2855e72c066854917" => :el_capitan
+    sha256 "c4a4a9b643f25d48f2148d25ed33c75e2c94ce57e57e5a7a264126c0d98cf610" => :yosemite
+    sha256 "e2187cdf3bf3964ba33bb4fe4d3358e7a4ec92c1d8e77fc1a803c9cd1a79c083" => :mavericks
+  end
+
   option "with-fish", "Build fish bindings"
   option "with-csh", "Build csh bindings"
 
