@@ -9,9 +9,10 @@ class Go < Formula
   head "https://github.com/golang/go.git"
 
   bottle do
-    sha256 "d5bc857fefd343383d00cf6083bc56297e35a1e202bf4414c10562c9456db362" => :el_capitan
-    sha256 "d3ff36402dc9e1319ac5ae0b38d65ded681eeacc490160d626f9fa18e4f6994f" => :yosemite
-    sha256 "0cf1ef52a5ac93b20b5f8cce1d7f2fd470fd0af9ac70d5ecea77ec7a87dee92c" => :mavericks
+    revision 1
+    sha256 "02cd57af12c3c18ba594a371a3efb09f0625e7c39505d86edcbbf17c9e0bd0ec" => :el_capitan
+    sha256 "c6119fa747113e5cbdc5c3fef033b7dae58353c2def0de24da75c0a0f7097f13" => :yosemite
+    sha256 "2924f4c5a39945440c1bc5904bdaeb0b19f3f81152bc5797a06e23378e544189" => :mavericks
   end
 
   devel do
