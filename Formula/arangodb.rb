@@ -5,9 +5,9 @@ class Arangodb < Formula
   sha256 "cff21ca654056bed08781c5e462966f5f15acec7b6522191d286dee3339e327e"
 
   bottle do
-    sha256 "b048abb7d6c7ed967885375341dc141512cd498ec004c823f21979a9b9e96315" => :el_capitan
-    sha256 "e55fc36e8e167732f2160b1366edcee901fe380ad9deef92d963c2eb745f69c7" => :yosemite
-    sha256 "b3b0b09665fef2cc8dabfacd15110e8f1d72680aeeffa6e1dc72ab3cc2fa5376" => :mavericks
+    sha256 "8e762724e5082fd8f782e01b0f1a2eb5e04ce90642d75b29c14bc7b54f877f66" => :el_capitan
+    sha256 "becf19e0ed9da4938fee5421714c810987c5560509e68725c191b5a50d897319" => :yosemite
+    sha256 "4ff76cfc1eef4d16b5de8466793b8dccd094d603c60c2aa76ba9339a12758e47" => :mavericks
   end
 
   head do
