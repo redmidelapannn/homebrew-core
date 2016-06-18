@@ -6,11 +6,10 @@ class Gpp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "6925eb92be766ed9fe61a9a98dc7bc3c22793079abf63f462cb7001017cac28c" => :el_capitan
-    sha256 "e9bb30f85bd24890f97160649a3ed9ef8081d0e39154226487b29e4c58d154ab" => :yosemite
-    sha256 "90463e69adac31b694bbcac3e90ad494bb8e4ef4927d1a04e3a7246b87c0d55d" => :mavericks
-    sha256 "bfcf6ef95b33a600dc6471b4f80e3dbb8e4f4e3cf13aa21b67990576ade35414" => :mountain_lion
+    revision 2
+    sha256 "bbd1b8d52711c816f13638e738a13ddfd0442306fd96e1df6bc8c62adece449d" => :el_capitan
+    sha256 "54d8c354f541fa54e94dad303672a4fa6f2b254938d939ee47152a9ea15a0f0f" => :yosemite
+    sha256 "11b2c1d47fd6eca609a5eb4c7e88dfd027e476f862a5018d96d60616e6b8e309" => :mavericks
   end
 
   def install
