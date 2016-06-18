@@ -7,10 +7,10 @@ class Musepack < Formula
 
   bottle do
     cellar :any
-    sha256 "33e4734a8714484a2c506241d91ab45145c19228abe51d355e0cbd60020ee11a" => :el_capitan
-    sha256 "2e6bad894063f1178ff43b5cd10a899b82baa757228c3a51488793a4a22acdf2" => :yosemite
-    sha256 "4ff9d23d8631300ff2619d9f1a7d99e07f8636c6e8d8db8dbf1335a21c1f7e27" => :mavericks
-    sha256 "ac50f1100cdb2c91846a5d5a8d364cdb31abaeb7823ccbfc6614829f96540c6d" => :mountain_lion
+    revision 1
+    sha256 "aed8168fe26d4cf17e379eeda7adecca8921bc5d6b3f9b1bccaac2b2a3edeeb3" => :el_capitan
+    sha256 "2ef3f13177cb952f5d54ae9f146a1482df70d8533308de9b41aace2e202992a7" => :yosemite
+    sha256 "9fdd65075242c876099dfd23b0eafe8f316ff3b95b11f44c4ace78e9fb9206a2" => :mavericks
   end
 
   depends_on "cmake" => :build
