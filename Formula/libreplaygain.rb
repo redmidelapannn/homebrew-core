@@ -7,11 +7,10 @@ class Libreplaygain < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "58b52d360c2f37f3ab3a50c4a2fe72b9a370bd951d52939f8853a5ef49fcc322" => :el_capitan
-    sha256 "d47338c5b86daabf3e2e05ab9dd2443c04c1233f3319307e8e5d545b24dcf722" => :yosemite
-    sha256 "dc3f2c3823c5552bddad7b1727b9086dc2fe79e8fa13987b420d1621c97e2bce" => :mavericks
-    sha256 "4ce4390dc0c3ba503381bf256b942207dc706fc2e8e9e464aceb7ecf916f9841" => :mountain_lion
+    revision 2
+    sha256 "e5cd3766d4f886679813999d5bb9bdd92de797525f11785ee306ed51108c3f89" => :el_capitan
+    sha256 "67c4045710628ff131350fc3bd6c153a541e87b4afc90cf992317c704cec42db" => :yosemite
+    sha256 "a1a134ef390d33b549c35fb624ef92f7877786de79efa96be8ee136aa348ec6f" => :mavericks
   end
 
   depends_on "cmake" => :build
