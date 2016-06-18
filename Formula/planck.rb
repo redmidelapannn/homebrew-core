@@ -12,16 +12,26 @@ class Planck < Formula
     sha256 "7e2b80e0c2ce8269c6614209fe796b2286c217fc31a560b3491680ba655a490b" => :mavericks
   end
 
+  devel do
+    url "https://github.com/mfikes/planck/archive/2.0-alpha1.tar.gz"
+    version "2.0-alpha1"
+    sha256 "3a1438bbefa5bb6c48b8c5470a53b200198c21cb8186e42f89f93a71e9f6a072"
+  end
+
   depends_on "leiningen" => :build
   depends_on :xcode => :build
   depends_on :macos => :mavericks
 
   def install
+    # Fixes "No such file or directory - build/Release/planck"
+    # Reported 17 Jun 2016: https://github.com/mfikes/planck/issues/322
+    inreplace "script/build", "$(PWD)", "$PWD"
+
     system "./script/build-sandbox"
     bin.install "build/Release/planck"
   end
 
   test do
-    system "#{bin}/planck", "-e", "(- 1 1)"
+    system bin/"planck", "-e", "(- 1 1)"
   end
 end
