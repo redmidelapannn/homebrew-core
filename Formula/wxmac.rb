@@ -7,9 +7,9 @@ class Wxmac < Formula
 
   bottle do
     cellar :any
-    sha256 "3cc5a1c0a2c3a94fdc8ba9fc7664d55f936b95964227ab90a5ea19b904b91418" => :el_capitan
-    sha256 "61d719f4a7bd53e3105b8bd41bcf291cec122fe7fb2ab5991bbe462fca2b6d43" => :yosemite
-    sha256 "9b137f0338358bdce6afc21e94226a09aa32432563a95173f6f050709e5c8f37" => :mavericks
+    sha256 "61e4457e6973ef916dcb1b3797277e749cfa599f9c2d619327680a7566077918" => :el_capitan
+    sha256 "7839f0d2242bb9a2753f4a25b552114e5451939aa029b0c0d79c0eab908981fc" => :yosemite
+    sha256 "62e4d618da80a6a88e982a118a94a6fc424973295f08ec3b26f7d53920a998b8" => :mavericks
   end
 
   # Fix Issue: Creating wxComboCtrl without wxTE_PROCESS_ENTER style results in an assert.
