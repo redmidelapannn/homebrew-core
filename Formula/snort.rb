@@ -6,9 +6,10 @@ class Snort < Formula
 
   bottle do
     cellar :any
-    sha256 "770bb1f0ac42fb324dfc685aee480fd331a263444c3d3962c0b0603b4205849f" => :el_capitan
-    sha256 "2efee0c269ee5e986405041f18b448b61358a6aebff64fadce2ee27dc1abe6d6" => :yosemite
-    sha256 "d8f494f568eb79c84f2466c0bc63ad7ac49c7aed4ab6f38a88e41a4055e63d87" => :mavericks
+    revision 1
+    sha256 "aec477a17d884d17275ae2fb8c43de487ba811c20eedb212958720491bbad867" => :el_capitan
+    sha256 "985cd6016d904832854008d12b5ec81a4e6fe0a6790c797b89e1a1b59f56b273" => :yosemite
+    sha256 "823d3c0a58a9d1c3348b69e79de81046fdd210a6dce663cbebd804c883a76fe9" => :mavericks
   end
 
   option "with-debug", "Compile Snort with debug options enabled"
