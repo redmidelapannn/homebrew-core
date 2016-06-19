@@ -8,9 +8,9 @@ class Git < Formula
   head "https://github.com/git/git.git", :shallow => false
 
   bottle do
-    sha256 "6b230fa505e98f2947134271fee52d5fcd16eaff49d9dc0fd9ef933f568b92db" => :el_capitan
-    sha256 "076146d0cefd7643c02446a279da627cf290702472e7cd9d3756d6a38cf3c13c" => :yosemite
-    sha256 "396bb11465e7d13141bfa9c67f41a81628259060761df820193763b9e973fc61" => :mavericks
+    sha256 "8dc2f0019fa53cc9e51923259f832fc8f40949e52ae2cfbbd55ed7c68a7b23da" => :el_capitan
+    sha256 "3f5aafe899dab9b11ab482a8870237a11702a85b1878b061e10414a52778703a" => :yosemite
+    sha256 "2515a4309e266f79505d6865f3f560e7edbe243b13cbfda816ea50c4ab43e79f" => :mavericks
   end
 
   option "with-blk-sha1", "Compile with the block-optimized SHA1 implementation"
