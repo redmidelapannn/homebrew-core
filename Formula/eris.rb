@@ -6,9 +6,10 @@ class Eris < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f79939887e0337eab955c03d3abc4dc8003b02f780a600eefa4311f8da0eb354" => :el_capitan
-    sha256 "9e80b2b77b45fd997f07b6a622d48b6686e49421f75333b2a2eb878710b55c88" => :yosemite
-    sha256 "b859c6d4f18bc2310f9aa97be6b98b5a5e3d620eb7d9e3d386283ed70cbab665" => :mavericks
+    revision 1
+    sha256 "27c951edf6383463376462acf8befeba14f84213b7fab36bd4f5ccead4d49444" => :el_capitan
+    sha256 "0867ffcade9f901c0b489e3a9339f2202ee90bd0299d53a9118369c25f952039" => :yosemite
+    sha256 "5ec1b655c7e21b647f265ceac532341514b91172f4afed7d3133fe60482431e4" => :mavericks
   end
 
   devel do
