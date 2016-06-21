@@ -9,9 +9,9 @@ class GitSecret < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ed4081ea83e6f823c3c032726a1c732748624a6f2204fe21b8405ad8db26a7ec" => :el_capitan
-    sha256 "d2b22f2d87bc477fd404d18fd84b919b709aef1f6433d53a7637c97c752ddeb5" => :yosemite
-    sha256 "59c2d0dcfe4e00713bb2fe9e04f77ec29ab17b68213be76b20cbe2e908b356d4" => :mavericks
+    sha256 "c378d1e15aa96969876bdb40c46d4156c4ded79dafa762bba94fc3d05246a62f" => :el_capitan
+    sha256 "5286b9f107eaa78cf7e18c21a38c03dffc01af284a83b78b8781303073f73add" => :yosemite
+    sha256 "e11f5688d1a92e9c9af5c25aa8fbb3efd9fbd3c30cf7326ec6c5b92c204b4b4f" => :mavericks
   end
 
   depends_on :gpg => :recommended
