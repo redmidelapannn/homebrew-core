@@ -7,10 +7,10 @@ class Lbdb < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "1b7bfcbc6d961b138dbe30db866440bd6f56b5f6b7b503adc506665621b6a599" => :el_capitan
-    sha256 "442a646275cac874c93ca7edd9147ad084e286359ed90762296afb65492cb18e" => :yosemite
-    sha256 "a82a06c8e00a7188315891f06529f460fc995db9cdb65bf59c4b1a24e3366329" => :mavericks
+    revision 2
+    sha256 "051ef55619c9bde822984dd40db7b87e72865c2862211e63e73237a4233974bf" => :el_capitan
+    sha256 "c2e6905f8c0913bb191ad60909a2006dc28b0c280d6f1c867a44e5a631b70c95" => :yosemite
+    sha256 "4c3979ccffe5aff5f3cd03f8f46a46c61e3b2987425de3937f447074e1138efe" => :mavericks
   end
 
   depends_on "gnupg" => :optional
