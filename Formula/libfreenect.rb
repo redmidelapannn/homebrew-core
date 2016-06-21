@@ -8,11 +8,10 @@ class Libfreenect < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "b1a6522fbcfad660703f1f86bafded7cbe4050ecd95a53481e5ccaa5bae7b86f" => :el_capitan
-    sha256 "3747228221eaf4e35b18f07fb2f57dfb85cd1787d5b8534e7174d16820534cbf" => :yosemite
-    sha256 "0923504aaedced53b34a1a1d5a7b32a4b2573926ba462b4b44e9ba0cac85d61a" => :mavericks
-    sha256 "f1a1590a8ae0ad8baa18b82e95a2bd24fb5be9bae152f816780114c236ba85e6" => :mountain_lion
+    revision 2
+    sha256 "3ac390bc778627a3a92febdf1a9c8439417e5291367ca3d3d042e2edcb6781c2" => :el_capitan
+    sha256 "51b08746c38c43591cdeb1be6b71e5d546c118b35e0675d4a4f0cff2378f1818" => :yosemite
+    sha256 "ada48c982bc4e2425ddea8960815bb3290181c9599e85732af4cb8f6f91200c4" => :mavericks
   end
 
   option :universal
