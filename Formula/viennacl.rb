@@ -7,9 +7,10 @@ class Viennacl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0fa897aa195c281bc8aab8f14b5a824c9618f2bddc3fe859341d16a389223d52" => :el_capitan
-    sha256 "4cf0ec1d9cd95e267de40fd83977fa499c01aff3eeb5cac09fad245a6ed67f2f" => :yosemite
-    sha256 "9383c36ab840e0ce9599d283190711d7c3d6a25d1d3bd99970b409028ebb2bc9" => :mavericks
+    revision 1
+    sha256 "f7a6b5c9f1c1d25c52341e1a8cc03c58e986d952c67691581af8083bdcb5d53e" => :el_capitan
+    sha256 "52353934ef5ccaa467924a4f31a6eb553c69fa21b9cf9b520c892e2c66a67336" => :yosemite
+    sha256 "eb32ce84ba17a167cdcfce866e1352b5351fffc0ccebd951e5785976cb1c3536" => :mavericks
   end
 
   depends_on "cmake" => :build
