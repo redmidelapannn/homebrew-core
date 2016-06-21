@@ -6,9 +6,10 @@ class Mimetic < Formula
 
   bottle do
     cellar :any
-    sha256 "d836b7b260b8705617f0a7e49ad674c0e2428810fa6e8228913253e4e4e2e873" => :el_capitan
-    sha256 "0d3f1d86b2c73efdfad1e3c65e1cb9e0257c75d24cc46133730c2deb0b710319" => :yosemite
-    sha256 "bc076f799788cbb59f7c822d77a5693f7fbd1c11eb5cc3a6388bf11921b2e749" => :mavericks
+    revision 1
+    sha256 "e2813309b97984e8498b25cd56a514eb45e1cd6d12cf7aa765cbbc0559d9cde0" => :el_capitan
+    sha256 "8f74e080694bd20ebf4bd714ec18f5d11a626bc17ae7e5bcc15ce05cbc216e1a" => :yosemite
+    sha256 "1252dbaabfa34bb641dbbd6c4fa296807810e53a72f10770514a057e2299a31b" => :mavericks
   end
 
   depends_on "autoconf" => :build
