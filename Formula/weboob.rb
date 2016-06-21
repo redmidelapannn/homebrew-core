@@ -9,10 +9,9 @@ class Weboob < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "de891de1a4983a14f56a46686e1296a1c9bea8868f4fbb9f6e655c4c8c288734" => :el_capitan
-    sha256 "6c301ce9314dac5f56415d186d18eb8a749094c0cfa135495555af1d16b8642c" => :yosemite
-    sha256 "5899a8cbcd70b8f0607cd438f45b4cce6a91cdc8168fc26704abbbc1866eeb1b" => :mavericks
+    sha256 "3c7bdcc022f07724edbb128c97f239261fd8c0139c9292db1afc9bf5c34d7669" => :el_capitan
+    sha256 "3aac436209bcdcc237390434779a12a833950990c78ebea511fd25f329c5c1fe" => :yosemite
+    sha256 "a72d292237defb20555a9520e4cf5f6d3b73ae1e5905167ef637c3a363efc346" => :mavericks
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
