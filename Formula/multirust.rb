@@ -11,9 +11,9 @@ class Multirust < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6900a083146692e8d30fd94dbd969856bbee8186b945b328fa40068c5955c8cd" => :el_capitan
-    sha256 "0abc281d9aaf174e12c31c04f2c68af246cb21f094d87d41ab901f25c301b5f1" => :yosemite
-    sha256 "c7bd82c7f7efe53eb53a10aa97713f37913397d813e1637a1e21708dc41c57c3" => :mavericks
+    sha256 "f58b68e086a4942516a3c48dc1692f1ad5b6faff6f02bde3c7e86bd052858f73" => :el_capitan
+    sha256 "ec7eefd2f4c172059ce22acb5460c5bdb5192b0b90613879222ff8cef6b359d4" => :yosemite
+    sha256 "0ee26b2836581ec14bf52753b9f92010d86a1b23ab4f9460f32bcf73fe009acf" => :mavericks
   end
 
   depends_on :gpg => [:recommended, :run]
