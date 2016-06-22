@@ -8,9 +8,10 @@ class Dbus < Formula
   head "https://anongit.freedesktop.org/git/dbus/dbus.git"
 
   bottle do
-    sha256 "df858961c007d3f1bf7d2bc03856b4f1981b9c260837516da523e9d8162a3e46" => :el_capitan
-    sha256 "e3bd3fc1b0a8eee96eda8dedbb4f610ac8c8a4b303f05c0f31be6bff55d573cd" => :yosemite
-    sha256 "397cd888dcf08bd86c08e7c667663b896c65099c80ebe2901aa81050a9480541" => :mavericks
+    revision 1
+    sha256 "25913d267547ddeba97cdefb21634400c386950bcc7200fe8790a7f3592777f9" => :el_capitan
+    sha256 "0058567e40456aa00ca2a76d8be8c7f148b2fb1d26aca8f5a1918f36ba2c248f" => :yosemite
+    sha256 "9312a5453d9bdefcf632d0de45ac03c8e21433f0d146af5a8139fc2bb4018e09" => :mavericks
   end
 
   devel do
