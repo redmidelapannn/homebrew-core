@@ -8,10 +8,10 @@ class Cmake < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "addda85812b6af991011cb6c5e640a2fe25e6b60415931e1c5a76ce2675c2988" => :el_capitan
-    sha256 "4888f6163be1b5e4affaa5ebe4b118d64b1b81bbc92cea884803bf098d9e9cc0" => :yosemite
-    sha256 "b1f3d72e7ee352da96a577638b3abda8aa9f894b5ecf91350667f89821bf7304" => :mavericks
+    revision 2
+    sha256 "bfd00671f5da16d3e4dc10b2c0b9f684dd9fe1411be286e4841ccc410d70273f" => :el_capitan
+    sha256 "12e25b601e795804350a660543aa9bec0a73d8dcd7d990dd6f2d5e52f955e9e0" => :yosemite
+    sha256 "f1fca2180749d78b28327ef4ff3dd95a42e686f0026288e57341e87e978d1fa3" => :mavericks
   end
 
   devel do
