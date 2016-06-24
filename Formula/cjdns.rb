@@ -1,8 +1,8 @@
 class Cjdns < Formula
   desc "Advanced mesh routing system with cryptographic addressing"
   homepage "https://github.com/cjdelisle/cjdns/"
-  url "https://github.com/cjdelisle/cjdns/archive/cjdns-v17.3.tar.gz"
-  sha256 "3193df651ad9c00f31ab04feb33f801645996f6647c89b63bcc327b48e17e602"
+  url "https://github.com/cjdelisle/cjdns/archive/cjdns-v17.4.tar.gz"
+  sha256 "2f30aa4d2cc96a6c1f00e873df19b7b213cca1af716d74a091f59aa98b5758c4"
   head "https://github.com/cjdelisle/cjdns.git"
 
   bottle do
