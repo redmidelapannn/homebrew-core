@@ -4,6 +4,13 @@ class Protozero < Formula
   url "https://github.com/mapbox/protozero/archive/v1.3.0.tar.gz"
   sha256 "85f9238fa662ff06a1e364f1461846a9d377846274e7f98407307e31086cab2b"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5926744cd298a6b7f7a06b344394cce522610a827dec96caba0a9ab596abf15f" => :el_capitan
+    sha256 "38b48a348084fda188f88bff86057a603833164aad67356404bb3b094f5ce2f2" => :yosemite
+    sha256 "c0553c98b183f83b890d72f7f64876a558b13d390efa555ce6402093dde900db" => :mavericks
+  end
+
   def install
     (include/"protozero").install Dir["include/protozero/*"]
   end
