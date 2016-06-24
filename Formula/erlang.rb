@@ -40,7 +40,6 @@ class Erlang < Formula
   fails_with :llvm
 
   resource "man" do
-
     url "https://www.erlang.org/download/otp_doc_man_19.0.tar.gz"
     sha256 "c7a3d6d85a5a2b96d844297a3fa1bee448c3dd86237734688466249fd5a1401e"
   end
