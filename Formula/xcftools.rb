@@ -4,6 +4,13 @@ class Xcftools < Formula
   url "http://henning.makholm.net/xcftools/xcftools-1.0.7.tar.gz"
   sha256 "1ebf6d8405348600bc551712d9e4f7c33cc83e416804709f68d0700afde920a6"
 
+  bottle do
+    cellar :any
+    sha256 "6f5c4000928e231365fe4c2beb7911f133b11e02f86f6a3dab9bc8f0e8c017c7" => :el_capitan
+    sha256 "b0d3fac8ecf6bfeabf36d69d79e40a88fa6d38bd33b12bc63606d1103276987f" => :yosemite
+    sha256 "667362d3ac297b154659e7d5a5ade6a2136215dd852a65ab4d503c39645067f1" => :mavericks
+  end
+
   depends_on "libpng"
 
   def install
