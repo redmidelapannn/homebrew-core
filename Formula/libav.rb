@@ -6,10 +6,9 @@ class Libav < Formula
   head "https://github.com/libav/libav.git"
 
   bottle do
-    revision 1
-    sha256 "3223c7dd692ab5f842161c25bd000dc7e35e4dbd115075e689f24761917c3b28" => :el_capitan
-    sha256 "918a06af5462bb2854099ff9df522f03d86d2913961305a0ea250cae48058f95" => :yosemite
-    sha256 "4d67498870e513e072c2ccbbf43f23657bb90dc6c2871d52221902823bcfbf40" => :mavericks
+    sha256 "a6e1732ed61340bbf08fc1d968680c4f476b9a9f19f6b478b8319b18241a68e0" => :el_capitan
+    sha256 "ac978c3a07dda717e834a106b0fca3b1323fd1376b33b89ece10de1a04a013b1" => :yosemite
+    sha256 "72a790a8a1c206a9758ea92f98bb63f9b598788b30ecb10267d8deb68f5da21e" => :mavericks
   end
 
   keg_only "Conflicts with ffmpeg, which also installs libavcodec.dylib, etc."
