@@ -6,9 +6,8 @@ class Openlitespeed < Formula
   head "https://github.com/litespeedtech/openlitespeed.git"
 
   bottle do
-    sha256 "94e67dcd4a54a50c080630976731f6a52d84423dd2d8e0b3337d95d904d94170" => :el_capitan
-    sha256 "97dc0e8e814978e6d42997fd092b7ed26e63aca96b8c6f96583bb093d1e895f8" => :yosemite
-    sha256 "aacafddf229c07c76481f3fc86b3295ca06b41e14555b0e8a97050098701a1d2" => :mavericks
+    sha256 "6e64c9aa8b2102467290cbea23cf64bdeee311d1f639ce1d2b710bd404b6f77d" => :el_capitan
+    sha256 "c09a2fefd261d00335d852ae372441735bf3d0b05fb16f1c29f959949337b694" => :mavericks
   end
 
   option "with-debug", "Build with support for debug log"
