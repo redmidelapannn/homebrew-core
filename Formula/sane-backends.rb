@@ -6,12 +6,10 @@ class SaneBackends < Formula
     mirror "https://mirrors.kernel.org/debian/pool/main/s/sane-backends/sane-backends_1.0.25.orig.tar.gz"
     sha256 "a4d7ba8d62b2dea702ce76be85699940992daf3f44823ddc128812da33dc6e2c"
     bottle do
-      revision 1
-      sha256 "e8cd147368ca911b15da016a09cb3d0b58843b5169291a75fe2a42fed7c9c887" => :el_capitan
-      sha256 "006f73ab657625408f5d56ec1596498b911781164db60cc4518370b2a08686f3" => :yosemite
-      sha256 "168d5dc5f38b6e568f2d757de77dc86c7b3bab1a84a50f1b30103eb9ba9bf367" => :mavericks
-      sha256 "483533ac9a7d48d15350afaed266ac9472cd8c945fdd34d610253253e3c384e7" => :mountain_lion
-    end
+    sha256 "10d956df65877cb9fa07690edd7c17220010545abc1ed0ff9d460ba93e5194aa" => :el_capitan
+    sha256 "75f3c190d46305bc478311684b2a55b8b1a2f1de4d8179fa7e00731602491265" => :yosemite
+    sha256 "ba0d06134b376371ae338893689eb1aa3b7ba166a7ee3b5df8ee1011a3ebc10d" => :mavericks
+  end
     # Fixes some missing headers missing error. Reported upstream
     # https://lists.alioth.debian.org/pipermail/sane-devel/2015-October/033972.html
     patch :DATA
