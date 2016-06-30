@@ -6,9 +6,9 @@ class Vte < Formula
   revision 1
 
   bottle do
-    sha256 "2d4c27bd624e106946dc839ecab9eea7b0ffd51cf9df82b2bb50673e25f3cb35" => :el_capitan
-    sha256 "bcde7d6b80b907ab67d76429618c1402e194c45dd6082d45f20a12af5c13bb0f" => :yosemite
-    sha256 "773d6ee5399c52d6c2d69061ec2bd7dd74c0138e4eaa307ddae863810efa1640" => :mavericks
+    sha256 "9d477b873c68708c9f2b38c385f0714d843de99f04cb7b3bb8bcdcfd1c7796ac" => :el_capitan
+    sha256 "2b3559219cf3adf80ee0db1cd88000b5be8299344a7a17db02db9042e3420f2b" => :yosemite
+    sha256 "ab682d62021431457cb835dd87e8e3aea584d872f203731d7aad2a2f8ad310ed" => :mavericks
   end
 
   depends_on "pkg-config" => :build
