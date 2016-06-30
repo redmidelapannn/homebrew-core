@@ -7,10 +7,9 @@ class Pyqwt < Formula
 
   bottle do
     cellar :any
-    sha256 "997a67617681ac3b3cbc3510da12ecc44ed8d3a8fbff4b7d6d1ba05a16998553" => :el_capitan
-    sha256 "3ad94e2532ca76b2e88e1af10b08df8d6775bfd56d401be0590b1e6a39e3651b" => :yosemite
-    sha256 "774dcf04f86a8b64672a9d6ec9580956f951a35d29d6f05ec2f5e4a5ee584b44" => :mavericks
-    sha256 "736d1306c9929a54f7e4b9c27785bf0a8069bdb63e2fb03675cf00f4adb7475f" => :mountain_lion
+    sha256 "5f1fbb2512dc5e857d549665a7788a10bca8dc20349d68fb1992c0e69d302590" => :el_capitan
+    sha256 "a7d25b8535bdcfc357f83712b558cce19b82aae0e8bbe128050d59862821d190" => :yosemite
+    sha256 "fa23d2bfdaba897cdeeb23bf0ca6d3b665bb013b413b0d3a849785dd2903d7a9" => :mavericks
   end
 
   depends_on :python
