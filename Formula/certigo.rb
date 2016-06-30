@@ -6,6 +6,13 @@ class Certigo < Formula
   url "https://github.com/square/certigo/archive/v1.1.0.tar.gz"
   sha256 "1ca8ee1130d57fb70b1c21cc9311d8b036b86d456eb88888d603e88fbb1d056a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "05f9c294399052255e6c846b3ba3e06665968f4e321f66029180d31f0dcd2434" => :el_capitan
+    sha256 "8473157d26f768b5d9332a00782f45c786c3115c010275039466f96865dfce51" => :yosemite
+    sha256 "15fc97d5e4b3bb0c658f30a8a46bcf9da123787d66a37fd9872643efc5008c12" => :mavericks
+  end
+
   depends_on "go" => :build
 
   certigo_deps = %w[
