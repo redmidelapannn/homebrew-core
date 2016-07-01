@@ -8,6 +8,13 @@ class Httpie < Formula
 
   head "https://github.com/jkbrzt/httpie.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "662e9987043a318140ac5f0240c490289594e0ab0eab49f998bd03e432141b6a" => :el_capitan
+    sha256 "a6f6d82d541e0ecb5aedd5e47ae472c4fcdb833177476559d7156f01afba9709" => :yosemite
+    sha256 "c4feb48265cc28ffe98cf09508ca34b383d7708c183b0854470f4f690271c815" => :mavericks
+  end
+
   # The system OS X Python 2.7 is old and has poor SSL support.
   # HTTPie works best with the latest Python 3.
   depends_on :python3
