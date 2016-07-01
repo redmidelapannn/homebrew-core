@@ -8,10 +8,10 @@ class Httpie < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "da9d2546404582dbc63b2143f71945321f4c3aacca794991f04f6e19f97a8493" => :el_capitan
-    sha256 "6008745c55d89aaf134ab8bec17f2188746149e9904f5b25f6a96d3cb878f784" => :yosemite
-    sha256 "3c3722eea4f74303af705f3bfb85c5c259f557af8689f36e6579a951f716b686" => :mavericks
+    revision 2
+    sha256 "1a52d2ea20295d67bed03a0d934edc050e271380b0601e2979536582a6b01862" => :el_capitan
+    sha256 "6f5bdf815ddc0ec6b9259c771778c940d31df6fa7e25e35881e6c5a43ea99613" => :yosemite
+    sha256 "cfba8df6f859f8dc6975866bff5f5ffcbd54c0878786ca6693ebb7c2f6db5e96" => :mavericks
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
