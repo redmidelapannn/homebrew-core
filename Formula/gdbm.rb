@@ -7,9 +7,10 @@ class Gdbm < Formula
 
   bottle do
     cellar :any
-    sha256 "80ee188768a6029012a576c29be718149378d058e1803c6149ee8a36ce879f58" => :el_capitan
-    sha256 "fa512dd57e18dc3db293cfcf305356d137a3fad0f85240a9788dc4057290ce9c" => :yosemite
-    sha256 "87bfecf948e8b6182519f627f95c244531b2a48c1941352bee0980275b515f43" => :mavericks
+    revision 1
+    sha256 "39bbc0b80daab95153f92b3b38df4cc32bab59e5be6f1d2b5dda0fd124ee1268" => :el_capitan
+    sha256 "33923d17f25233e36389c8495c5fb7053ba88bef38f6a742cde7c0499f90f524" => :yosemite
+    sha256 "28ff06dcefa5e5ea0b66e8fbd1bd3b338c27bdd6bde184d0765f5be634d917b7" => :mavericks
   end
 
   option :universal
