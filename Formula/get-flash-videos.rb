@@ -1,8 +1,8 @@
 class GetFlashVideos < Formula
   desc "Download or play videos from various Flash-based websites"
   homepage "https://github.com/monsieurvideo/get-flash-videos"
-  url "https://github.com/monsieurvideo/get-flash-videos/archive/1.25.91.tar.gz"
-  sha256 "af673516741f08b61da4dfbb49343bb56c353f7c4bfbf209972e2223d987e8e9"
+  url "https://github.com/monsieurvideo/get-flash-videos/archive/1.25.92.tar.gz"
+  sha256 "e4b64eb51058e55f07cb66b7c50b11ea1ca0a57162946b7af96db748ed22cdcb"
 
   bottle do
     cellar :any_skip_relocation
