@@ -7,10 +7,10 @@ class Vcdimager < Formula
 
   bottle do
     cellar :any
-    sha256 "a02fd743a3a115ab1e4db3e7aae336be6cbb1ae270907fe2c997852d6c544625" => :el_capitan
-    sha256 "0c30fb683f0fba64520275fd8a4be12a80ebb210806954768245e3a1d77971cb" => :yosemite
-    sha256 "d2f4c9b849dd63c9ec44dcd32746ed9474e5807a53dbf8c1596b2ca722bed35b" => :mavericks
-    sha256 "baec582f1f6bb2c3e6fa761acd30f7e86f19c8ad7572917df418834fe1041b96" => :mountain_lion
+    revision 1
+    sha256 "e05b9f346a48ef75614a5bd3e118753dec4302b58f5963efab0f65a455c6ed7a" => :el_capitan
+    sha256 "64e1b3e6f10ebf96d64dc56bad12493a8b85131824ff304289fc1327fc720c3b" => :yosemite
+    sha256 "c90f773f1060af04e638cd3eafba16f6d8f55bba9b3c12bb09614f050b0cca37" => :mavericks
   end
 
   depends_on "pkg-config" => :build
