@@ -7,9 +7,10 @@ class Stow < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0bf0a55711d83b08953a2de183d20cec481029dc95e9ea2ebd5049bf13ea8e1b" => :el_capitan
-    sha256 "4062d438086c6f9e407db818d318ef9d857f7c909bd4730edfc174573f5958d4" => :yosemite
-    sha256 "1f8ca6143dacc3cebb3551606b51a982b287c3b2f371010c7b10ca82ce89a393" => :mavericks
+    revision 1
+    sha256 "facd50b63e7b0b21ea46cce490b2d72b281339e4cd725a2dd41136a9ccbb783b" => :el_capitan
+    sha256 "bdd46f8dbbc3fa50c0029b2e6925ced0cded08b56a329f142c65a8ccedceb649" => :yosemite
+    sha256 "7f654ad8edfdf5913bf7308ce14daeae8de5f1359c75b7789a8b4decaf76ee34" => :mavericks
   end
 
   def install
