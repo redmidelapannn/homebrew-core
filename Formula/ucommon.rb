@@ -6,9 +6,10 @@ class Ucommon < Formula
   revision 1
 
   bottle do
-    sha256 "eea46c279fd145ec3d8a7a3d9b751465341e8f69aa507bd6f7025d9437019b0c" => :el_capitan
-    sha256 "6237fa697417c4defdfc513c7b56e93ce7156b5b38a4164e7a27c9e285688c0a" => :yosemite
-    sha256 "6fe4b60fa239460cf900a9660ab08275865d167c0811e3f8069307c19b2b8060" => :mavericks
+    revision 1
+    sha256 "4270a1a0c2e2ac14bc97c49f5a3a8a1d8478e4555d105a34c0a21c00bc3cf534" => :el_capitan
+    sha256 "e0ed0421e858e792c5260e131e0db23cbd785107199ca36e1c8eb0a63ef51235" => :yosemite
+    sha256 "a6f568ca15e0901afc1a50909f2b428ebc2d88f349c3445eef6ac2b2e9628d93" => :mavericks
   end
 
   depends_on "pkg-config" => :build
