@@ -5,9 +5,10 @@ class Ppl < Formula
   sha256 "691f0d5a4fb0e206f4e132fc9132c71d6e33cdda168470d40ac3cf62340e9a60"
 
   bottle do
-    sha256 "34a1396fefc946754958e92d7ecffde0175b33f16f4545f46a00d4f63408cfd8" => :el_capitan
-    sha256 "83c3f03aa0766155e98e322409f6d4389bfee3ec510848c7eab1c91329d5fa82" => :yosemite
-    sha256 "d174ac172a3c986dfa92fe650354ce6b614d080f5ab497c90fc9b6395faf5caf" => :mavericks
+    revision 1
+    sha256 "3096e585831416f685d321fedba4b37642700363f05ac2a657082457b505c35f" => :el_capitan
+    sha256 "65312a5f23c65836dadf520ebfea5bb56832b16c641697c0c1a95abd43a6f861" => :yosemite
+    sha256 "7151a46bb78d6bb3c4eb06c467df6545ed8be5d7645e8da324178d73d6260f75" => :mavericks
   end
 
   depends_on "gmp"
