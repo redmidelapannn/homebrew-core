@@ -7,9 +7,10 @@ class Virtuoso < Formula
 
   bottle do
     cellar :any
-    sha256 "cf68911a2cf5d7a585cc62d00ffc5821cb53b527785c81fc949c92a1ceb91e1f" => :el_capitan
-    sha256 "f3e13eaf6ad4c143d49a14475d82884f24c3dcb5ddf93d5ffb7e6657d4db4917" => :yosemite
-    sha256 "c43ed7906276ca762e87b2dee10581db96d41317a6e8027db6987b905f3ca78c" => :mavericks
+    revision 1
+    sha256 "943549b89a08758fbd81082895cc45ef0badb2d48e143c389b288782f7be86a0" => :el_capitan
+    sha256 "398e110e7999fc20e83e9affaee24fe04c937131031e83205d1a6edf1f244013" => :yosemite
+    sha256 "ce3bb634afdad5219a44720c99a18502d1602a3a97b80c912d7db2a56821f851" => :mavericks
   end
 
   head do
