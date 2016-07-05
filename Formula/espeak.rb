@@ -4,6 +4,13 @@ class Espeak < Formula
   url "https://downloads.sourceforge.net/project/espeak/espeak/espeak-1.48/espeak-1.48.04-source.zip"
   sha256 "bf9a17673adffcc28ff7ea18764f06136547e97bbd9edf2ec612f09b207f0659"
 
+  bottle do
+    revision 1
+    sha256 "005a950ffc0a5cf7da0c6b52c9e5ef964947b2bbefdf7c06e682bb2ae68a66f9" => :el_capitan
+    sha256 "5c7291d1241ad763e53fb41a6cf261580d4e9c87afeb390cde992cc7c4a6a31b" => :yosemite
+    sha256 "fe40bd1a5622d30d30f091c435c8212783fdf4f7d6f41c96531e340fdf72dcfb" => :mavericks
+  end
+
   depends_on "portaudio"
 
   patch do
