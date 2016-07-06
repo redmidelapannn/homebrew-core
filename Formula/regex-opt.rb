@@ -6,9 +6,10 @@ class RegexOpt < Formula
 
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "3f9bdf79820441d3a0941a8cb17b9d2c4f512b9e0fbdc36560681c3534e3615a" => :el_capitan
     sha256 "01d8af104a70bc0bcf9c9fb1b93b0e4f3a7d08aaadd367e34ec223c38a00d58c" => :yosemite
-    sha256 "08ac62a2ea7522fb62f915bad274e2693b8e587e8266d705f2fa210c3405c19d" => :mavericks
+    sha256 "fb0f75d754391f93974846f756b205fbe0f5fdb381980946e080f3f60bd5072d" => :mavericks
   end
 
   def install
