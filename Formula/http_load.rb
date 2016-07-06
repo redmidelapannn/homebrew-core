@@ -7,9 +7,10 @@ class HttpLoad < Formula
 
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "b7afff0a015534e8db9ba4e957014225bbf446c97378769a193da2e3753b14bc" => :el_capitan
     sha256 "6a38746183341a185ac3f7da57afc365707c2647ebaa0dc1d836b670b9bae35e" => :yosemite
-    sha256 "0ba139d6c0adc4b5843bbbf3ce677ad58335029e7d4de0a18201bff0082e1e19" => :mavericks
+    sha256 "89a446636b88cf06ba9faf71d80b4c371a75c42d677b8f2adbbca65b3bd9c622" => :mavericks
   end
 
   option "with-openssl", "Build with OpenSSL for HTTPS support"
