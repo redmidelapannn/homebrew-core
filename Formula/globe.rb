@@ -7,10 +7,10 @@ class Globe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "11acded7be5d1ba22260d039e3daf4fdc4cac49ebcd234c879da655a1532c22f" => :el_capitan
-    sha256 "a3ccdf74813e704ab1c8d50bb32f3f9b3f62110c8a6a143e3df85eb6ab7ecd7d" => :yosemite
-    sha256 "8ff4dd96c5ab3c846ac61ff66c866e3d4969560611405db6e20436ff75494715" => :mavericks
-    sha256 "c37aa4067f2d9ce7b5fbed7246e67164d04e500bfbc193a4a1e19fdba741be85" => :mountain_lion
+    revision 1
+    sha256 "c6901f4f94ff02dbe62e71f89c2a20e930e1749e5a3292370ca28903d63bc400" => :el_capitan
+    sha256 "613e5139f070c83dd2e1efaf21112f9bf788fa0b35240478efb57e5f2d2a4950" => :yosemite
+    sha256 "15c0208b3f3421cdbdbd8609461f4d18ac00456d6880e1af53f0771b40c6e34e" => :mavericks
   end
 
   def install
