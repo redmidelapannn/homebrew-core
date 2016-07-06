@@ -7,9 +7,10 @@ class Mksh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e0535cfd7418370c6292a2dc0d26afce8008c6cd2c2915798d1bfd7e96df9087" => :el_capitan
-    sha256 "1ec672da1a859bdb7138b11e2cbf71a24272e2bc673f11d783401bbb35feea2e" => :yosemite
-    sha256 "5d0a11d6cefb9dc4c54a88adc7b5dd204449d8aadaa716c170a41cd4dc3dbbe9" => :mavericks
+    revision 1
+    sha256 "a9a91033514d5b476a1b827634fc794c8ea583c1dbb609189dfb68fddb332057" => :el_capitan
+    sha256 "e249eec962c21f01d0fbdd864eb486dd982708fc1559a725c2b3a9e60b89951b" => :yosemite
+    sha256 "c60a7568bcc9a66c4a263f0060261f98367cb109fde51c07c350ee19cb5ad6c5" => :mavericks
   end
 
   def install
