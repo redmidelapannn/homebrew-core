@@ -6,10 +6,10 @@ class Owamp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "6f86a33c176ba1394560b7707466c088930f13db102b7adc159e80e889fdc5cf" => :el_capitan
-    sha256 "fce4cc5bf0a9b5355779fb45637651f6a78bb8d3dd93bdc3ff2826b7866617fd" => :yosemite
-    sha256 "6c6b6f1f143b929b892c6556db3b06299835326a72c5180c482b2630e62dc543" => :mavericks
+    revision 2
+    sha256 "4093a615b91c9292349608aaa9357e5c184e8bef09ce334a9a9386884f78f571" => :el_capitan
+    sha256 "db562aad93f111dcbcff4a880231599911cce4127766b39887095b4e104c9d0f" => :yosemite
+    sha256 "4fed7413f464d4a24cb8e6b092e2ef1767b205b9b428b5809d906870a0b9baab" => :mavericks
   end
 
   depends_on "i2util"
