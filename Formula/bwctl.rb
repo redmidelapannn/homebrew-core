@@ -6,10 +6,10 @@ class Bwctl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ac9e615919ebd84515022f9650f42194d9ad4b1c1f5f97509e1293962a96e943" => :el_capitan
-    sha256 "c8890647536e60b3ed8599eb3239ee59fde0382e9df8b7585ee7eeb20275fc39" => :yosemite
-    sha256 "f10efbf8f41f526130340cc6087ce3dfad83b71b69d21e0b01c11b3169d88bdd" => :mavericks
-    sha256 "b60c679e8b498ffc23e697cb025dc6decc4f4d939e2b0874ff36291967eee18d" => :mountain_lion
+    revision 1
+    sha256 "4280bd3c7e2f27edba43995351a76f28a063b14d859c692d21edf30e2a49cd4c" => :el_capitan
+    sha256 "e755229d8b169e9b1c18a40c984d4e61bb3470f8fb7d2166ea29f787f3be1cb0" => :yosemite
+    sha256 "0b2447f14e87e75de150c5a925496eefc83a2e2408c54ae60f8f28e82b40b759" => :mavericks
   end
 
   depends_on "i2util" => :build
