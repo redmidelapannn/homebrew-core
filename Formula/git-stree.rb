@@ -7,10 +7,10 @@ class GitStree < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "534f4d90c47779faa6df5d3bfa1f072596d0b3e7367bd3035d3782a6461e6b0c" => :el_capitan
-    sha256 "dbd601412c4920f9a9767f38070df9cf184b0a08f4f1f1bc1e3bf3ec1fff6dd2" => :yosemite
-    sha256 "d87889c5632ff79899110cbf182723da6ee5e9165f0ce88cacdbc7ac92476548" => :mavericks
-    sha256 "7c4faa41a4c8b218ccb7ad0dd13e9312bead1f4ec518d3e9edf16e4897efb000" => :mountain_lion
+    revision 1
+    sha256 "fafd88740d3cd4ca7f14aed98b7cb94a99fd575f3f66d22f28267a7926db91d5" => :el_capitan
+    sha256 "1622cfc3ef8e6f97404d95f80bd5f2f98c58a36cdfd6fa49301e17d44a493319" => :yosemite
+    sha256 "88ca9dc7cb87521f073885a3c504c24a76435151c27ad865b47eca4ff97d27d0" => :mavericks
   end
 
   def install
