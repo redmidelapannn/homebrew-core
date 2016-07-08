@@ -22,10 +22,10 @@ class Tor < Formula
   end
 
   bottle do
-    revision 1
+    revision 2
     sha256 "6b8355ab0fc0768cc9ae1c17b043355850c83fb297425986e25774cec4d07bc7" => :el_capitan
     sha256 "b34b44ebbbc84d785cb9c9fab6a19006cb2b85160ab45b62ed8d7eef807ac409" => :yosemite
-    sha256 "64564813dde75909e57a7a3790694022168104a9c29423822f503c54347c1fa1" => :mavericks
+    sha256 "406697675b41b1e4583619ecfd0b41af38a06580cdabdaf7fe45d89ac0b7c2b4" => :mavericks
   end
 
   devel do
