@@ -16,9 +16,10 @@ class Quassel < Formula
 
   bottle do
     cellar :any
-    sha256 "f7774d699f282e21bbeb5173ac12882d27b987e91c2852ade0956863bc66bc57" => :el_capitan
-    sha256 "3363d8178acaab991193707112d25f6550b448d8035b46bb84c966be33a63ac2" => :yosemite
-    sha256 "9d62b09f40bd0e3ec28c1d473c35cc07fff37127f126105cfdebcdd5e4c7fca4" => :mavericks
+    revision 1
+    sha256 "6197868a65aaed01e5582383f29effe5fc47ce6c2a6cd1a0d94a6891a80ffda7" => :el_capitan
+    sha256 "db15e2d5dd02ddc0d3da9732abbf5c99a5790ebcc08e4e905d93c3b68a98a845" => :yosemite
+    sha256 "c111b5ae31b04d717991117ffbeaa37ba5cd42c7655c9ea6c27d8f9eb201f9aa" => :mavericks
   end
 
   depends_on "cmake" => :build
