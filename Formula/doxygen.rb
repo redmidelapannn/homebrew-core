@@ -8,9 +8,10 @@ class Doxygen < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "79122ca4ad9d8a4a02171fbe26ea2b8100a5efbd7e98ffb57a6c1110050f7f3a" => :el_capitan
-    sha256 "4136c8d0c7309b74d5e91e31a3c712bcaa3a1caacada0f768d3da73dc2a40485" => :yosemite
-    sha256 "73ac008f6b99545d800c0c9672f42de733c88e4dcdc4f15b554a6c0917af9743" => :mavericks
+    revision 1
+    sha256 "f0eee7d5030aa930440d7174c88e4f3e4714df271c4e6cf2169c4ec440cbbc7b" => :el_capitan
+    sha256 "429455ff00f8c6ff8b6c2a44cf7e259c6e7b410fdac16ef546c6e505994891fc" => :yosemite
+    sha256 "c6bcc27bb02315ca6e7ef0fba70bc1abf56b0c3fc65d7a2e0b305cb130006283" => :mavericks
   end
 
   option "with-graphviz", "Build with dot command support from Graphviz."
