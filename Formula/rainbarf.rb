@@ -6,9 +6,9 @@ class Rainbarf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "39b5a8eabc041a4b2123993451aa4ebe9693ab89849dd19c9fb7104a8db44aaa" => :el_capitan
-    sha256 "98b92bee77eca904745cbb5538a0a9515bc4d1d41aff8d4011d542a674bd69fe" => :yosemite
-    sha256 "98e96f814661e0bd2702eaeef51261ed9c6d1ad06a24f7123107ec22a6f2fc28" => :mavericks
+    sha256 "ae98068809035445da813c9c5c140dddec5a9a0f02fbb621d16ce89458f7850e" => :el_capitan
+    sha256 "72570a5c0fdcf9d3bfc509c0dcdadbb551f6b8ec8b786b7348114bce7544acfd" => :yosemite
+    sha256 "9b3129bca9808be78ae05ed963e92f43eeebaa24445addc27c7dfe048a3d19ee" => :mavericks
   end
 
   def install
