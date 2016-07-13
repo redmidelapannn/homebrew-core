@@ -3,6 +3,8 @@ class Steem < Formula
   homepage "https://steemit.com"
   url "https://github.com/steemit/steem", :using => :git, :tag => "v0.8.5b", :revision => "0ea6049e760e0452ecb22b98a2ad808493bd3760"
 
+  depends_on :macos => :el_capitan
+
   depends_on "cmake" => :build
   depends_on "autoconf" => :build
   depends_on "automake" => :build
