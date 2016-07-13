@@ -10,10 +10,10 @@ class ConsulTemplate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "49c894d63c468c091027e200746a4c5aef63303407b96a8e51d87240a2596103" => :el_capitan
-    sha256 "32ff7ce9b758e60b7194a3d403a57177737967046cbf88d461437eda4cf0c85a" => :yosemite
-    sha256 "e1567a7ebe4e7f7c0710f47138566044acca5f4694181566b662f8884025ddaf" => :mavericks
+    revision 2
+    sha256 "fb0e84700eb32655ce3ba61da858eb0171b241d6d0936ebe6f9dab7bb8aec64c" => :el_capitan
+    sha256 "686923e0f31c7ca902475e43d0bf5aab24f318697c5c5ddebc2c83ad569491cb" => :yosemite
+    sha256 "9c736586efab7ceaa7da5d4d8a78516a322919ec86309371ae7ea72568f95fe3" => :mavericks
   end
 
   devel do
