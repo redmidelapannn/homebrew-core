@@ -6,7 +6,7 @@ class MuslCross < Formula
   head "https://github.com/richfelker/musl-cross-make.git"
 
   bottle do
-    cellar :any_skip_relocation
+    sha256 "cb19b1033dacaa81e3c7b86621ff78a85a415b15f209eb8b9b4468dd1ba04e79" => :el_capitan
   end
 
   option "with-arm-hf", "Build cross-compilers targeting arm-linux-musleabihf"
