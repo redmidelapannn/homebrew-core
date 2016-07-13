@@ -7,9 +7,10 @@ class Autotrace < Formula
 
   bottle do
     cellar :any
-    sha256 "73ec2093a38b49bda566f1287b3608f8361789577ec73dc8199428335d30c23f" => :el_capitan
-    sha256 "e7127e4e07d276a681a49f33c3d856e1748c7bd31a520e2913b19ddafc916eaf" => :yosemite
-    sha256 "995bc9a9485d627a66a55b80c8572886642b7e96793b4278a5f1cd3434c92d36" => :mavericks
+    revision 1
+    sha256 "264a63425636171f731273aee138269684b8bc5c4b9dbec80e077ffce4ef93ef" => :el_capitan
+    sha256 "0231af2e11ae4f5b629b3b5d40ec22cfa3c2e0f52e1b81ef9a1321da664790f4" => :yosemite
+    sha256 "47accc06a0df0e43eda31a65800ff3f8cffdd924948705da9525fb479ffa2b44" => :mavericks
   end
 
   depends_on "pkg-config" => :build
