@@ -1,7 +1,9 @@
 class Steem < Formula
   desc "Proof of Work blockchain with an unproven consensus algorithm."
   homepage "https://steemit.com"
-  url "https://github.com/steemit/steem", :using => :git, :tag => "v0.8.5b", :revision => "0ea6049e760e0452ecb22b98a2ad808493bd3760"
+  url "https://github.com/steemit/steem.git",
+      :tag => "v0.8.5b",
+      :revision => "0ea6049e760e0452ecb22b98a2ad808493bd3760"
 
   depends_on :macos => :el_capitan
 
@@ -9,7 +11,7 @@ class Steem < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
-  depends_on "python3" => :build
+  depends_on :python => :build
   depends_on "doxygen" => :build
   depends_on "berkeley-db" => :optional
   depends_on "gperftools" => :optional
@@ -19,7 +21,7 @@ class Steem < Formula
   depends_on "readline"
 
   def install
-    system "cmake", "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt"
+    system "cmake", *std_cmake_args, "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt"
     system "make"
 
     bin.install "programs/steemd/steemd"
