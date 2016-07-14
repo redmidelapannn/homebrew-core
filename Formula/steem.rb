@@ -21,7 +21,7 @@ class Steem < Formula
   depends_on "readline"
 
   def install
-    system "cmake", *std_cmake_args, "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt"
+    system "cmake", "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt", *std_cmake_args
     system "make"
     bin.install "programs/steemd/steemd"
     bin.install "programs/cli_wallet/cli_wallet"
