@@ -5,7 +5,7 @@ class Steem < Formula
       :tag => "v0.8.5b",
       :revision => "0ea6049e760e0452ecb22b98a2ad808493bd3760"
 
-  depends_on :macos => :yosemite
+  depends_on :macos => :el_capitan
 
   depends_on "cmake" => :build
   depends_on "autoconf" => :build
