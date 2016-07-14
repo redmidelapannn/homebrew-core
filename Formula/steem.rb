@@ -11,7 +11,7 @@ class Steem < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
-  depends_on :python => :build
+  depends_on :python3 => :build
   depends_on "doxygen" => :build
   depends_on "berkeley-db" => :optional
   depends_on "gperftools" => :optional
