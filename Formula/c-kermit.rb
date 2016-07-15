@@ -7,10 +7,10 @@ class CKermit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "446776aff790c8f3b6f30be915dc18f4beffa973b92201384682beb7dc714562" => :el_capitan
-    sha256 "fe01b123ec7cddfbf46908bbf2071542a92f195d75733230896b5de78d92cdef" => :yosemite
-    sha256 "eebf4b834242dc754c00eb87ee5cee621d39f9369cfe67cdb620a1f81a197f20" => :mavericks
+    revision 2
+    sha256 "c2c97f91949551491a73baec7c8a21f39d0fbbdce95f2c81282744cc8a6dc04e" => :el_capitan
+    sha256 "f27a7c72741156d8b7fad0a15ad52c7743d521db2985c5ceb18943619ee5db77" => :yosemite
+    sha256 "f89c8f8979623bd6b219df0bcce39527fbb75261efe985f8c29503e26a150211" => :mavericks
   end
 
   def install
