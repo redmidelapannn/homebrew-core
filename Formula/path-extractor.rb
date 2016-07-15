@@ -8,9 +8,10 @@ class PathExtractor < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "90521da4fd1834db41fbf19b7b6ce9f82a943ab2412acd41b6c5d749146770e7" => :el_capitan
-    sha256 "718512fe3585d82dee8d655c2ab534dac70d0b24a8164bcc012f0f2a65a55e5b" => :yosemite
-    sha256 "f883b0656efe0d31b35b98ab0c82d82f1fa827b39d3712136c49bae2363f539d" => :mavericks
+    revision 1
+    sha256 "da9e7e2f5697d61bc3e324bc63b5e459787f7c421040c37ed238abcecd340933" => :el_capitan
+    sha256 "befd038e0485a54b736aef15bed5968b7185f4abfd88106ef44d9cdbaeaf11e4" => :yosemite
+    sha256 "841abe326d036100d1c930d523d0fcc495c3537e8cbc33979441a8ff3a5c740f" => :mavericks
   end
 
   depends_on "go" => :build
