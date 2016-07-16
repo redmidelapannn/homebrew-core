@@ -15,6 +15,9 @@ class Valabind < Formula
 
   bottle do
     cellar :any
+    sha256 "910f9c1b08dafba7b2ef26afd31425694162bc6e4b21c192237752f98e803034" => :el_capitan
+    sha256 "e109cb3ee53ee1a5328dd00928e2ee942887b8d975393099f1f0803f790d9843" => :yosemite
+    sha256 "88e2a91dda17c5a6a19ebcc1b879341eef99f3aaf41b8b0d1161795291625621" => :mavericks
   end
 
   depends_on "gettext" => :linked
