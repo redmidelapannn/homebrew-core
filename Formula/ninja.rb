@@ -7,9 +7,10 @@ class Ninja < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb3550493e570f24379007bfd6012eef1aaf82c739662f02aef0c907031326dc" => :el_capitan
-    sha256 "6beefb141b4e39c64a9a42c59acef74c4010b31f67f0696d2e62fa454a959ae9" => :yosemite
-    sha256 "3d9341568fbf3d01b5b851d9697623f818d86c425bdbfa7b69db1474fd611d5c" => :mavericks
+    revision 1
+    sha256 "af6376d20ba9ac0de1c2f190be7b27b5fdf097c57c9e438355a078314fb519e1" => :el_capitan
+    sha256 "167e1df37173c17958d7403d71e57258daffd9836b6420501b775a5e22c93b5c" => :yosemite
+    sha256 "9b11f41b29ff03d1f504c04e08833da307dfa082ceb136f55a5443016491110d" => :mavericks
   end
 
   option "without-test", "Don't run build-time tests"
