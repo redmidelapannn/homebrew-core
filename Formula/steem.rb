@@ -27,9 +27,9 @@ class Steem < Formula
       CMakeLists.txt
       -DLOW_MEMORY_NODE=ON
     ]
-    
+
     cmake_args << "-DENABLE_CONTENT_PATCHING=OFF" if build.without? "qt5"
-    
+
     system "cmake", *cmake_args, *std_cmake_args
     system "make", "install"
   end
