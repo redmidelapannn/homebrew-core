@@ -21,7 +21,6 @@ class Steem < Formula
   depends_on "openssl"
   depends_on "readline"
 
-
   def install
     cmake_args = %W[
       CMakeLists.txt
@@ -30,7 +29,7 @@ class Steem < Formula
 
     cmake_args << "-DENABLE_CONTENT_PATCHING=OFF" if build.without? "qt5"
 
-    system "cmake", *cmake_args, *std_cmake_args
+    system "cmake", *(cmake_args + std_cmake_args)
     system "make", "install"
   end
 
