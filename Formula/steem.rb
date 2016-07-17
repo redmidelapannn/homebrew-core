@@ -15,14 +15,23 @@ class Steem < Formula
   depends_on "doxygen" => :build
   depends_on "berkeley-db" => :optional
   depends_on "gperftools" => :optional
+  depends_on "qt5" => :optional
   depends_on "icu4c"
   depends_on "boost"
   depends_on "openssl"
   depends_on "readline"
 
+
   def install
-    system "cmake", "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt", *std_cmake_args
-    system "make install"
+    cmake_args = %W[
+      CMakeLists.txt
+      -DLOW_MEMORY_NODE=ON
+    ]
+    
+    cmake_args << "-DENABLE_CONTENT_PATCHING=OFF" if build.without? "qt5"
+    
+    system "cmake", *cmake_args, *std_cmake_args
+    system "make", "install"
   end
 
   test do
