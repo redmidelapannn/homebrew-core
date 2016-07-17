@@ -22,9 +22,7 @@ class Steem < Formula
 
   def install
     system "cmake", "-DENABLE_CONTENT_PATCHING=OFF", "-DLOW_MEMORY_NODE=ON", "CMakeLists.txt", *std_cmake_args
-    system "make"
-    bin.install "programs/steemd/steemd"
-    bin.install "programs/cli_wallet/cli_wallet"
+    system "make install"
   end
 
   test do
