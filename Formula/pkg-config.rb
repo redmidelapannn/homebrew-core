@@ -7,9 +7,9 @@ class PkgConfig < Formula
   revision 2
 
   bottle do
-    sha256 "7354d2e9f337af437a22433926dd38a68413a8d8bef3aac52f203ae581d7669d" => :el_capitan
-    sha256 "d84a72010d87c3f517a53b72a266bd5a4674efcf398eb94382621d2ee939a6b4" => :yosemite
-    sha256 "7fe94019f0b3d0417bc9fffdaed1b066290cb0c051282bf6799cc589b80bb9ec" => :mavericks
+    sha256 "215a572573b435e2c74120ff87beee10f1e4a09454a1cd67423fc6727b74029b" => :el_capitan
+    sha256 "8e2c73ba5aac54e61343633e961faf4c5e3e4b1c92306f1fcff737e7e581d3cc" => :yosemite
+    sha256 "a70f8c930dba36b6a858b3ee2c162b46c0907823b7e3ffb24a962a96122e9334" => :mavericks
   end
 
   def install
