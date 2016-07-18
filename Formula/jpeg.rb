@@ -6,12 +6,9 @@ class Jpeg < Formula
 
   bottle do
     cellar :any
-    revision 2
-    sha256 "bbc74f8b5980065d7bf95927150c2d56806d30abea459c2b1edcbdeed2d7c458" => :el_capitan
-    sha256 "75419be793eefb3decd69de8ee0444ef697aef3d0f942361437c5d967fd8ecec" => :yosemite
-    sha256 "c94f5859603b34d9b3c1b021ee21cf3a41a5d92b178a41ed5c05a1e5b7d19ff5" => :mavericks
-    sha256 "816f0f826e633cb70f8efc173b6fe745fb9b90334d6cb78813de25f48aec6191" => :mountain_lion
-    sha256 "f94b7976c0e867dfc36ff6cead1d88db8b1198a91a01589e008d2006fcf37c61" => :lion
+    sha256 "f9d8a885aa274b5747bc09e0a6ece065c653770440b007bc5b13fe759fc5f701" => :el_capitan
+    sha256 "2849dd70fc22f734f39c761220b91844e028184eae11316a220985d50e03098d" => :yosemite
+    sha256 "c220593a732a61be393992477edcbea1d38c4eb526c03614c1744f67a3355045" => :mavericks
   end
 
   option :universal
