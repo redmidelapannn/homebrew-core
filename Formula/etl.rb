@@ -6,9 +6,8 @@ class Etl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "10244415e0dbf71f94c7585595632a09773a49dbc5bf5ac8de7e062f29c7f2b4" => :el_capitan
-    sha256 "29198ad9d848f2ff79b224a5467da1fb22a474de5ffc3e287196fd3822a45178" => :yosemite
-    sha256 "024271929c1e3de9d4c4e256a932fa9525395f7421fc174e7010251ab9a4b37e" => :mavericks
+    revision 1
+    sha256 "7721915523125c90441a3106096219e296206969bb78335e7e71f3c49d0a7af1" => :mavericks
   end
 
   def install
