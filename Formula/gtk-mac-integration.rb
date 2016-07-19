@@ -5,10 +5,10 @@ class GtkMacIntegration < Formula
   sha256 "74fce9dbc5efe4e3d07a20b24796be1b1d6c3ac10a0ee6b1f1d685c809071b79"
 
   bottle do
-    sha256 "8f4ea7e3555ad822b049846440746ac785c94c97aea7bd36b12a51e22878644c" => :el_capitan
-    sha256 "d12a21fddf5ed6e18ea4025ebe480fd5b99929c234423cf29c634f4925d14156" => :yosemite
-    sha256 "40bdabc52178c159b9a0e2e35f74525cf36d20c7d59a28f71d8312a5518e97f8" => :mavericks
-    sha256 "8c8fb5c90fb42ee5ff1f646daacb0bc571d86f35b149df4da42d9e3e4ee74edd" => :mountain_lion
+    revision 1
+    sha256 "c97e80cf63a7321cf52f8d47100d4bf17f23ea82bbeacb3a186551f69565af44" => :el_capitan
+    sha256 "2f56f0c25ae2b19c8e0eb1ae202e6dea9621b2671d520072d7dd5bef5c802c73" => :yosemite
+    sha256 "7143da74904b3fc0a2becadcda93059f91d546e80e0211db0b2888fa38c68b9c" => :mavericks
   end
 
   depends_on "pkg-config" => :build
