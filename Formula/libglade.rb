@@ -6,11 +6,10 @@ class Libglade < Formula
   revision 1
 
   bottle do
-    revision 2
-    sha256 "85bbc32bc66b4efed22925bd76891f65d1b83455957ddf21bb0e0670da747a0f" => :el_capitan
-    sha256 "5c650d4a9eb7de60ce0b74a15825b0396a3811df14c51ea53b2d4477cf1835cc" => :yosemite
-    sha256 "a9fdc34b5efc22d5193598ca045f6fd05828428c4b691bba1a18082e989b54ed" => :mavericks
-    sha256 "256b81161ba3a638eb993d8309c8a1e7172fcb84fea247675597b4232c7db775" => :mountain_lion
+    revision 3
+    sha256 "81a48f9f5faa9a966643855c40b1b282d20f797785c1ab1dfec910bcd2b03b8f" => :el_capitan
+    sha256 "b25b5a6f98981e54ec6cd50e05c889bf21ad18b225ceefcbe0e4442403dd237d" => :yosemite
+    sha256 "daff9475c31c9a3f8c3296099065735691cb10b60d9e08b715f4d4893dc46129" => :mavericks
   end
 
   depends_on "pkg-config" => :build
