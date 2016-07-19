@@ -7,10 +7,8 @@ class Libgnomecanvas < Formula
 
   bottle do
     cellar :any
-    sha256 "f16e2324c0d9a2f75f4133833230b9e51d9d5ac09132de0565b9556f81c6e301" => :el_capitan
-    sha256 "d92afd4e619d083844ab2eb3f36e8775512fb896c5caa677456c5d527e9d81e6" => :yosemite
-    sha256 "3ba01178cdc04412a402b043cc89fc59269573347c704f9c37281a84bf111988" => :mavericks
-    sha256 "c3aac3d57c825f6634d07130fb868e5325fd405a0e7583ab28756fca4515508d" => :mountain_lion
+    revision 1
+    sha256 "150121327882e168415ee28d19075e2848d18b4d2b3718e26de7fb2d17b4e513" => :mavericks
   end
 
   depends_on "pkg-config" => :build
