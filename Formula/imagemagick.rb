@@ -30,6 +30,8 @@ class Imagemagick < Formula
   option "without-magick-plus-plus", "disable build/install of Magick++"
   option "without-modules", "Disable support for dynamically loadable modules"
   option "without-threads", "Disable threads support"
+  option "without-freetype", "Disable TrueType support"
+  option "without-fontconfig", "Disable fontconfig support"
 
   depends_on "xz"
   depends_on "libtool" => :run
@@ -39,9 +41,9 @@ class Imagemagick < Formula
   depends_on "libpng" => :recommended
   depends_on "libtiff" => :recommended
   depends_on "freetype" => :recommended
+  depends_on "fontconfig" => :recommended
 
   depends_on :x11 => :optional
-  depends_on "fontconfig" => :optional
   depends_on "little-cms" => :optional
   depends_on "little-cms2" => :optional
   depends_on "libwmf" => :optional
@@ -67,6 +69,8 @@ class Imagemagick < Formula
       --disable-silent-rules
       --enable-shared
       --enable-static
+      --with-fontconfig=yes
+      --with-freetype=yes
     ]
 
     if build.without? "modules"
@@ -107,8 +111,6 @@ class Imagemagick < Formula
     args << "--with-quantum-depth=#{quantum_depth}" if quantum_depth
     args << "--with-rsvg" if build.with? "librsvg"
     args << "--without-x" if build.without? "x11"
-    args << "--with-fontconfig=yes" if build.with? "fontconfig"
-    args << "--with-freetype=yes" if build.with? "freetype"
     args << "--with-webp=yes" if build.with? "webp"
 
     # versioned stuff in main tree is pointless for us
