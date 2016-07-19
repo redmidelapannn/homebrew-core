@@ -6,9 +6,10 @@ class Cairomm < Formula
 
   bottle do
     cellar :any
-    sha256 "b05ec638711634ad01ab1aec44eb9397e7a67278eaa5fefd16403b240a5261b0" => :el_capitan
-    sha256 "98648d8f66c07f55192908271f80233a78dfe65af96c6d8f06af209e30b3d980" => :yosemite
-    sha256 "960d0180b4e5137d56d8d2051e21fdcbcf23ebd18ff94fa03f0d39a20853b70d" => :mavericks
+    revision 1
+    sha256 "a6bc69a3a1f3f71b316c6f3ef649b3cb1163acfeb4970e8b01ded663f0d63971" => :el_capitan
+    sha256 "db56470ae1a379838efa566901d08693154d70a42d34db600b0130e84c8e7923" => :yosemite
+    sha256 "2a635bf987ed7bdb23321ae7e341b019b48628ec7f45c502da691bb95609a644" => :mavericks
   end
 
   needs :cxx11
