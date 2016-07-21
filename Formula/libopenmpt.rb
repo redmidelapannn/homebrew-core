@@ -4,6 +4,13 @@ class Libopenmpt < Formula
   url "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.2.6611-beta18-autotools.tar.gz"
   sha256 "cdb870512d887d01dfdeebb20433669d49d27aa719e1997c4490a624e65fd9ea"
 
+  bottle do
+    cellar :any
+    sha256 "340d0f827414d96c027c113a6931762e9bad6c122346f23c60b6b005fe923894" => :el_capitan
+    sha256 "171e04b5c57d651431209a0feb75f832c7636ab0b28dcf99d5cf6eee0f2302cb" => :yosemite
+    sha256 "c190a7ab6c73a32272f2a4fa957e7991ca6eecc4b5fa78fe32bda9b751429525" => :mavericks
+  end
+
   depends_on "lzlib"=> :build
   depends_on "pkg-config"=> :build
   depends_on "doxygen"=> :build
