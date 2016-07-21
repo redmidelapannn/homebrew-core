@@ -7,9 +7,10 @@ class Percol < Formula
 
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "e0acd43c0270f0277dc69492da9c31e0e819c2b4bd1ca8f23db012ba2e4e3aab" => :el_capitan
     sha256 "8a46e774ad1128721b2b425f11083d6494101834b887a575f9071c006abab887" => :yosemite
-    sha256 "a5c8be8d7e307651de4951384ac2603e7ca932bfffbf9434170a597f801b799e" => :mavericks
+    sha256 "fe9d1c8263f41e857adbd530eedf7a36cafe806efc3b3421aa40b0c04f03e688" => :mavericks
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
