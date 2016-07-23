@@ -7,9 +7,9 @@ class Uwsgi < Formula
   head "https://github.com/unbit/uwsgi.git"
 
   bottle do
-    sha256 "2258066dd56e9eeb60b020dc15e0a0c425a3e5878bfc38b68a0151d940d969cc" => :el_capitan
-    sha256 "44521fd50cb32d053d57657b6ae5a44462e63a6c142438de2204a0ca0b9bdc73" => :yosemite
-    sha256 "e30fad4f2f875219109c554bd203038b3fc4769ddad9dc6914414fd40fa8f321" => :mavericks
+    sha256 "d5a13f884b3c7eb95140df8685ab8375ce749a2822cfe47d6583c479c4b9a3eb" => :el_capitan
+    sha256 "b4af00a9347ddb25db351558bc22e32c43fc63d9c3b252612899cb842e914b3d" => :yosemite
+    sha256 "39671f8cd9fe4a1db4d519a9592af1d38d79628628ea472f64518eac8b6d1239" => :mavericks
   end
 
   option "with-coro", "Compile with Perl Coro support"
