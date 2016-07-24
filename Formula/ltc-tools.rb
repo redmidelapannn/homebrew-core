@@ -8,9 +8,9 @@ class LtcTools < Formula
 
   bottle do
     cellar :any
-    sha256 "b3b9a4d9f9969a81be3aa7a51b35a8c1f61a0c7b839fe3778a9665996faa4925" => :el_capitan
-    sha256 "e3bb3cca684ddf01e1d6e8f1830609a3de22a8cc654d29db959dccd211766489" => :yosemite
-    sha256 "12b8773c9045c5b3e8c5d57f085e02ee078f4807f8fc0b868c5d2eee99b5ea49" => :mavericks
+    sha256 "579fdb41fe1d02c3ce639664adaf675cce63e977de50c16ecd098a57ed5565c7" => :el_capitan
+    sha256 "96bc72ac23297de7c2b7f45dad729b610bd2b4fd719b6322c4445af950f3c05b" => :yosemite
+    sha256 "f6c2119f6363d69c8b8192d35570d8fba094f024ae04d9ae3560b311507c4794" => :mavericks
   end
 
   depends_on "pkg-config" => :build
