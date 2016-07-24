@@ -13,11 +13,9 @@ class Jack < Formula
   revision 1
 
   bottle do
-    revision 2
-    sha256 "b4c1720c1e79b3d9a71cc79906175b90f6e30a8c2704c94e3c941d288b5453cc" => :el_capitan
-    sha256 "9e793fc1460c67e5209365cdf524face6f66cb1da5ae706da36a6e6c616cfe16" => :yosemite
-    sha256 "bed1d9c87b983abeb5ae57de0402707c6426c2426efee7be3c63c08948a5c5ec" => :mavericks
-    sha256 "56f0c03a6293b616fbc5505d55b2a6ee20f8946f5789bdff005696892129017d" => :mountain_lion
+    sha256 "4523f5f5db3bdaa2be49ffd70d44589476823f6611cfbe37cc5d3685a8e99de0" => :el_capitan
+    sha256 "0de27c7cd4deb17cbad92ccb9570c59537dd5b5b100e025ba3ea26c67568233d" => :yosemite
+    sha256 "494545eb6332d1f6f8beba7d6f7ba7e2e6608f0b531e9d394f23507a7622160a" => :mavericks
   end
 
   depends_on "pkg-config" => :build
