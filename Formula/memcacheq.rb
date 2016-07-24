@@ -7,9 +7,9 @@ class Memcacheq < Formula
 
   bottle do
     cellar :any
-    sha256 "27b972d2f3c9d63ce7769dd964f575bfd0cb8f6136a666c713d5c66390f23ff3" => :el_capitan
-    sha256 "91d6ebd845b87bfe94cfa32f62220c8f4bd748c7c4daa61f318cc6835eb52973" => :yosemite
-    sha256 "73325fc64a4c34b0bbfacd59e30bd1f07e8052e851f9226e7a71d3c2061e173e" => :mavericks
+    sha256 "a4c2975ad4cd3e576e646ba3e3d3f4024054f2200070b183a35b586ab4b977c6" => :el_capitan
+    sha256 "c1ceab39b005738aa0b90276587c0e8fd049c804e56d1258c22b01e0597b8e3e" => :yosemite
+    sha256 "05c9ea2e3d4b61a7eea5796d382ed3f49412774c50d46afadacf6d714bfef282" => :mavericks
   end
 
   depends_on "berkeley-db"
