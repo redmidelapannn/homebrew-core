@@ -8,6 +8,12 @@ class Xcbuild < Formula
   head "https://github.com/facebook/xcbuild.git",
     :shallow => false
 
+  bottle do
+    cellar :any
+    sha256 "bffe27ffb4abe23bcee003dcc1bf7cf1a4fecac3a304ab88bbb34c454ef36944" => :el_capitan
+    sha256 "effa4ede437e6464d51a1f8ed12a1f708ea58d6582a72656a3faebfb157fee87" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "libpng"
