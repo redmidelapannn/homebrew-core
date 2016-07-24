@@ -9,9 +9,9 @@ class Darkice < Formula
 
   bottle do
     cellar :any
-    sha256 "611c7496a751c6f921f87bd3658001a200ae03b24020209a5442b6f59d61c6bc" => :el_capitan
-    sha256 "79b49d0c9d3401382008f1cb0db86493947ebee6045621df5f19e9adb848619f" => :yosemite
-    sha256 "fd5b2765d5d93b1c81e485a7ff6cc8176f9d77db4dcfa5e837ab5803f69162df" => :mavericks
+    sha256 "57bc113ad7c106a5dd7953c89d53248af3a18fd986881d2cc63a5adb1ac81514" => :el_capitan
+    sha256 "b7f5d8c6c99432293e7c60f3d1670e4067d1da4c929dd14df92922bbc791a857" => :yosemite
+    sha256 "04b673cefcbc6bb9e9f89414f824da774bf6b953c4227bc649cabb2f7d2de281" => :mavericks
   end
 
   depends_on "libvorbis"
