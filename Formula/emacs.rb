@@ -6,10 +6,10 @@ class Emacs < Formula
   sha256 "dd47d71dd2a526cf6b47cb49af793ec2e26af69a0951cc40e43ae290eacfc34e"
 
   bottle do
-    revision 2
-    sha256 "2442a949678d9b3cbe99e9b504917a641de57258d2a40dc85e8a70efae82bb38" => :el_capitan
-    sha256 "751b8b481b30870273243eae77ea08eb2b0b5a2fbcbc62453b7cf7632ac69445" => :yosemite
-    sha256 "3889a7cbda704f604b3a6187c8683ea1e6e4e600e1e7a0b8b59f33533e8f3023" => :mavericks
+    revision 3
+    sha256 "c0a77b70d54aa022b2cfd98b842f7afa1f0d6e4753ffefa097a5d0952818804a" => :el_capitan
+    sha256 "c195385907f1c3121aec1b42973fe52f93380013ef786d721853cefd96a5cd5d" => :yosemite
+    sha256 "cf9b06c04fd1461e6ee1b729463be664b23db98b8c5281e285ab8d8a910f004c" => :mavericks
   end
 
   devel do
