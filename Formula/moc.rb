@@ -7,9 +7,8 @@ class Moc < Formula
   head "svn://daper.net/moc/trunk"
 
   bottle do
-    sha256 "07858cac0bd2b7e6082ee7d3806f245f4278135cfb3f9af5513f5f20bc1f6a0e" => :el_capitan
-    sha256 "07cdc844dc3b059dd9c4e61718a6d3379ef081e1548c4dcd3f97e414bd0f277b" => :yosemite
-    sha256 "3aacade3cb44173bfa290ee9e58f591e0e29a89b77c0257cdf8e1643a424c51e" => :mavericks
+    sha256 "97cb97b919d482ce7315b7ac06e7b2aa1b9b94136306dadb154185017b3068ff" => :yosemite
+    sha256 "717adb2d71042088e4fb6594c541ce96cc63100e8012e06a2315c6ec8ea7094d" => :mavericks
   end
 
   devel do
