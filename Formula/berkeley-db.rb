@@ -6,10 +6,9 @@ class BerkeleyDb < Formula
 
   bottle do
     cellar :any
-    sha256 "70f4c1cea6a4c2f9454680988b73bb9fdc107307dafeec47e21a4539dce57b36" => :el_capitan
-    sha256 "3e4324500931e32e3a187f9790b4465efd4d249dc9ec03ff46b4209ed061e935" => :yosemite
-    sha256 "b2ba3aff83ee27a52115f47abc3c1767d124841ad342e63e433dfa36af064b36" => :mavericks
-    sha256 "8f5a87bc3336e01f8528ae8aaae24c83e8fa10e8f01ee65e8cac4af7d0786bf1" => :mountain_lion
+    sha256 "2b1bca79c7e35ec777180267387587517b4af653e95d49381852f666b5ba7afa" => :el_capitan
+    sha256 "e29b83184980c72e38489941d3b26095e02f3c7b96fdb8834795b38a8ef9653c" => :yosemite
+    sha256 "3ef10c97579eb7d24cde4a8591312cc6e4d0d75c848ae0bafc0480d59c08714a" => :mavericks
   end
 
   option "with-java", "Compile with Java support."
