@@ -12,9 +12,10 @@ class Cmigemo < Formula
   end
   bottle do
     cellar :any
-    sha256 "866dfa4f493c088c1b2eb3cff23ed04e33862f7bc5dcff0976ce5b7cb4835dd2" => :el_capitan
-    sha256 "4ab378bb5f5d2462a6043d9226aade8b87974b52a7fec8a24e3814f93ac936f6" => :yosemite
-    sha256 "f4b8738e34c2b8b7d8489c70a6e15e1634e9d2b0f20b2180be4dd6d43eca6c4a" => :mavericks
+    revision 1
+    sha256 "05aea655134cc11e585bc3fb049cdeb7d507c60b3f1dde74b5eeb93ab57af4a4" => :el_capitan
+    sha256 "bdf2d471476b0f7196628cb25bdd9fa15993c3520131481020e80a7f077c3aa2" => :yosemite
+    sha256 "6ec0e5d2d59590127d6ef57ada9c8689ac4544c22dd5bee42b1692482850c767" => :mavericks
   end
 
   depends_on "nkf" => :build
