@@ -5,10 +5,10 @@ class Lolcode < Formula
   head "https://github.com/justinmeza/lolcode.git"
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "74920cea828644c7ad0fe3b12ee5c9a4c06a46ec37c2826280327e37e30f5513" => :el_capitan
-    sha256 "571a57a0fa8b60aac62ce3a358c0b123efcd2af9ec4004c51194c549ad8dd3f1" => :yosemite
-    sha256 "9159a0b5f907f400f7e233c026579568dd2c6a98d952fde2759f84cb52101508" => :mavericks
-    sha256 "28fb518f1ae0311dcd2c77529a8bf8450b6e0947d95db6a243598f08a335a683" => :mountain_lion
+    sha256 "9040ac184ba8a632f73a4c9e2aac69a8cc639705217756333abaf76913e13110" => :yosemite
+    sha256 "12d9c24cb14c786df1c96d5741283f4e97d1ebfec13d38adb7707ffd1148f038" => :mavericks
   end
 
   # note: 0.10.* releases are stable versions, 0.11.* are dev ones
