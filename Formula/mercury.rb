@@ -7,9 +7,10 @@ class Mercury < Formula
 
   bottle do
     cellar :any
-    sha256 "daf916b14c3358f4d7ed6cdba153f96d6f4acec2d29b9fb43b027a6610bd783d" => :el_capitan
-    sha256 "afcff5ed87fdd477ce8037cca2f3fcab828b71cf78e1fbde951c4e17ae3e0b17" => :yosemite
-    sha256 "0e736ef6f5cc48bc9d6f7d50cb9df6fb52dba2b0b3bf2d83b378f83fcff4ecb9" => :mavericks
+    revision 1
+    sha256 "867a9256ad26b6a7b91ce6f3191fd3de16bc4b2d0fc7c5fadb062bb769005749" => :el_capitan
+    sha256 "84fa1f40789b24fdced82ad43f74a26a780375bdad21b3412c605785e8427649" => :yosemite
+    sha256 "0b2383b58c34b35fa719b25fe57ee8545661764c60a03885f9ba16194fd9b428" => :mavericks
   end
 
   depends_on "erlang" => :optional
