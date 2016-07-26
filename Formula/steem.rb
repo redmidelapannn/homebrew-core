@@ -5,6 +5,11 @@ class Steem < Formula
       :tag => "v0.12.2",
       :revision => "b551cc7934f39b9f92151c6e414a397cb40647fd"
 
+  bottle do
+    sha256 "acc03083feba9901a69c49e1f3df6b96494b3db7a307627ba26fe73bd7d3cc57" => :el_capitan
+    sha256 "20430c57b8c8cb4f4e5f02fb7f634f8cfe2848d802b1e42751912af6c550f9a8" => :yosemite
+  end
+
   depends_on :macos => [:yosemite, :el_capitan, :sierra]
 
   depends_on "cmake" => :build
