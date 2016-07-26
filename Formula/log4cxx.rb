@@ -6,10 +6,10 @@ class Log4cxx < Formula
 
   bottle do
     cellar :any
-    sha256 "e588ef7c319d3fca76aeb29684ed1ec66f648a04c06d2f4263889b81d3c24067" => :el_capitan
-    sha256 "803d857c115430068d91887a218159dd728b87c94c8a819807225817ff9f2ecb" => :yosemite
-    sha256 "93b74be0ecb9bdb32ab803fbae0836ad58387a9ff1ba9346334e734596da7b6d" => :mavericks
-    sha256 "6b07acbb1e77d8d7edc7e111f57250b9d05c9b9c8aa6f1363f919940695aa1f9" => :mountain_lion
+    revision 1
+    sha256 "f3d7154689e4ab0cef4f1fd3c2b467be93c2007903706606e0eaecb78871d12e" => :el_capitan
+    sha256 "6d06cbc784b5afc0a110bf7ee9f292c892c50ef06d8a6a248dedf20466ee1f0e" => :yosemite
+    sha256 "1ad647474d9f4c3a905cfaffb428ac779b12e8e6c6d201dd899e96bfea347c9d" => :mavericks
   end
 
   option :universal
