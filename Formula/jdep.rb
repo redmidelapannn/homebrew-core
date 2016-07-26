@@ -4,6 +4,13 @@ class Jdep < Formula
   url "http://www.fudco.com/software/jdep-1.3.tar.gz"
   sha256 "3dd925ae2523cca59e4aaa7cbb8daa28927b40520f0f8dccead91d9edea1dc65"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "627d3dc607ac30fb0a7add2dc12b4f5ab570f7301d6d45876fa3b7b1f862c3ec" => :el_capitan
+    sha256 "024f8732bad7773edeba4fb007395abbd4219d3be9bb19bf096e439cea4e8940" => :yosemite
+    sha256 "e428826cfdd16d21f170b12c03109a4b8a5c870ddac69dc4b1f6b375eaf25e27" => :mavericks
+  end
+
   patch :DATA
 
   def install
