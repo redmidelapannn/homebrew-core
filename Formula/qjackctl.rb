@@ -6,10 +6,10 @@ class Qjackctl < Formula
   head "http://git.code.sf.net/p/qjackctl/code", :using => :git
 
   bottle do
-    revision 1
-    sha256 "e27bb026a0a677ce7dbe4483fbf53a0bdad929da0007166790b6006cee0cf27a" => :el_capitan
-    sha256 "531fcdb68a7436858e2b891dd0edacceed7bf084b0aadba046879d44fbf03bcd" => :yosemite
-    sha256 "1b12ec7026cf50ed6b29726c60731f4bb1f22e39e62efe1569547dcb0f2b239a" => :mavericks
+    revision 2
+    sha256 "c7f00287fdfb0b8c94e5024df9dad781c0fc4a7e06eebdc00a112b527b887294" => :el_capitan
+    sha256 "247ef5b9174240609267ec15c58cfe65104e9b0147ea8f7bb0146fc6ad9e0d49" => :yosemite
+    sha256 "6fefc73f1d7ceb8af4c97a2be6e6094716ea366e0ff32ee4eaa07df080482e7b" => :mavericks
   end
 
   depends_on "autoconf" => :build
