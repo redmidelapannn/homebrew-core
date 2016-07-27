@@ -9,9 +9,10 @@ class GnupgPkcs11Scd < Formula
 
   bottle do
     cellar :any
+    revision 1
     sha256 "50f2025059f91cdf5c316d96b4e52d52414c56fe6d986f2a9cafb8fbb41ea306" => :el_capitan
     sha256 "cb40786fe9903329fc542a638f96bc7a7a40a5f7edae7b632bb667acb9cc6e89" => :yosemite
-    sha256 "534831eb894e729bf231892c974305d0e70763179a105ba5b9babb43756ee5ba" => :mavericks
+    sha256 "5f44eb7276a04d9fb4ead61e3f36b4e0336e77007844f9aeab9b13a6c3baefae" => :mavericks
   end
 
   depends_on "autoconf" => :build
