@@ -6,11 +6,9 @@ class Nfdump < Formula
     :revision => "68d660e984e8b6ce099fc7309f61f3bfa460598f"
 
   bottle do
-    cellar :any_skip_relocation
-    revision 1
-    sha256 "e6218ff15aa6e43f140d91a38f8162ba663a115fcdb843c3a22de5fcda30653e" => :el_capitan
-    sha256 "a56146c191cf705b83cdd0e0143ce9fc87f086386d9965ff54a259c085130697" => :yosemite
-    sha256 "09a51a71d30f8045075f11f8511a4ec0d6bfd6f9d3cbc3bbb2927c911fce1ce1" => :mavericks
+    cellar :any
+    sha256 "59bcdf45d888e49e3227f22f42198a9026ac5345bc4f447f99957cc799c597fc" => :el_capitan
+    sha256 "6a5cc18290f8187113c3a8591020a417dce345f7116feb4e78c03d5942359e81" => :mavericks
   end
 
   def install
