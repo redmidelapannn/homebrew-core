@@ -6,10 +6,10 @@ class Flac < Formula
 
   bottle do
     cellar :any
-    sha256 "ba87fb6e7919f334b04745d5c075f5ae12a5374b3b7edd0514cc62d9f8ad28c8" => :el_capitan
-    sha256 "b5c4e452287e0aaf9355fd8f13849450edceca1b63d2401a0aa42d9c3344c143" => :yosemite
-    sha256 "a9caf29aa44208d98d4f885ba78e6d6d3bf56725748007a1cb9e0339631e807e" => :mavericks
-    sha256 "738f8ba2670b9eff4c0ff794813a86841934f6791ce393d9833f1cef56cb8e25" => :mountain_lion
+    revision 6
+    sha256 "4f67258fce16d416d00e93ae9524b957e85d04e8e75f54262f980737298f8f13" => :el_capitan
+    sha256 "9614d3d96d63d31cc9ebf7f672fabb5e7b95e0a3981e351105ebb5a352dc2681" => :yosemite
+    sha256 "720080f90b4dae86bf3acaf507e0918b514a58ec661b052352ae10e0aba4ba77" => :mavericks
   end
 
   head do
