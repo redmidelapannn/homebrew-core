@@ -6,9 +6,10 @@ class Genstats < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "44502f7a2dfcb1355336db69267d6363d6e8b8767b47628b0d3099743513ed5f" => :el_capitan
-    sha256 "91737ec825ed346716fddcedc4e075b195f214dfb22586a33d46f7ec5ea3a17e" => :yosemite
-    sha256 "d46142a806e13029120bfb1a038805b07dc88b191aed1cd41340f5f868168f92" => :mavericks
+    revision 1
+    sha256 "4cfff2e0fba0e4a790dfcdb09e501c54776db3f0da22c8ee1a19a0daf9206170" => :el_capitan
+    sha256 "35ea044a32b2d44d12033d2c49bb3c9cd6954f0240d6e2a5e7c66607028fe38d" => :yosemite
+    sha256 "1171de1f9ff26945954bb4ee7238e04113dfd14334b895b0464789b0fc1af459" => :mavericks
   end
 
   depends_on :macos => :lion # uses strndup
