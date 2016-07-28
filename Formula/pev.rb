@@ -9,10 +9,10 @@ class Pev < Formula
 
   bottle do
     cellar :any
-    sha256 "81e831cd776a7ecea986012a4a8aae05c316b7c628314c679bbc89daf89190e8" => :el_capitan
-    sha256 "e01f09a92f3af2fb454e17529bac7900978960382bc52ae62aa4fa6b751f41c0" => :yosemite
-    sha256 "f2ffcbda87b08fdd2a4621468f711c7f5542b2413833f350f93105d0825a97d9" => :mavericks
-    sha256 "08ba1dbebcb68b2c6a67a2052840764803ad3efc975563e72960da0f8b6e463d" => :mountain_lion
+    revision 1
+    sha256 "768dc9179edc0ea786c417046198e0f610553e4644a8c3631bf10ed0d2f3a046" => :el_capitan
+    sha256 "1a390f6d630deac8e37ab3d833108bf542acb3535ed8eaaed0447c15d61eb602" => :yosemite
+    sha256 "50aa3b02360fb76456f18321aa615bb5830e482d9303766d65cb02c845cfff55" => :mavericks
   end
 
   depends_on "pcre"
