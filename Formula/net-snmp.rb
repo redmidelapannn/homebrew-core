@@ -5,11 +5,10 @@ class NetSnmp < Formula
   sha256 "12ef89613c7707dc96d13335f153c1921efc9d61d3708ef09f3fc4a7014fb4f0"
 
   bottle do
-    revision 2
-    sha256 "ba8f07af2296c2390fd6308eb3fd06850c1c70686bf1cb58738856bc3ed3c748" => :el_capitan
-    sha256 "92956eecd7dcaa9743527af24d68d52c772555c3f512f10d773aa6083a1e3290" => :yosemite
-    sha256 "3c045453d9c666ec873b90477b1efe10d5c8583994b65666e3d445eb2e5670c8" => :mavericks
-    sha256 "f2c4102f61ee8d6ad151bdbe6da97a5fc5127e84e7939f5e1672f81414a28873" => :mountain_lion
+    revision 3
+    sha256 "5529c44da0f73dcafb3c522c404917442f6ea227123267ebb5a176a269c0148a" => :el_capitan
+    sha256 "719def60ff0599c8a7338a95f1591a626be2bf0d4c2b0255bc4a24bf8eb92181" => :yosemite
+    sha256 "84522072bdc9581c8c1e822add3b35addcf0e842802d36f3a58edeee8d678f86" => :mavericks
   end
 
   keg_only :provided_by_osx
