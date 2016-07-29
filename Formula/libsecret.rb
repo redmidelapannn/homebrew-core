@@ -5,9 +5,10 @@ class Libsecret < Formula
   sha256 "9ce7bd8dd5831f2786c935d82638ac428fa085057cc6780aba0e39375887ccb3"
 
   bottle do
-    sha256 "07d7fd02e1c3857a2a27415575248ea89a19c7dd1a86efe53fcf1866dce1bf46" => :el_capitan
-    sha256 "090ea52539396135f710956cd051cbab59d6dd7fb94d8666dc4ed4e0312cddac" => :yosemite
-    sha256 "b7f878856f2f272de7d0456ad3c82a6e260a9a272a7c4eefc1504a668a430fb0" => :mavericks
+    revision 1
+    sha256 "c5fd8f630f0770e2b0bde5349322756cb3d2acaa96a3f605ab7a676f9ad4d124" => :el_capitan
+    sha256 "55662f9811e587746dd1c364683a4e4cedd5d0d6b6f0968a8490c7f33f0df4c3" => :yosemite
+    sha256 "6084bcd6d203033519a69d3a0bab099fab0f7b40db15d0548345c4e3b369dc87" => :mavericks
   end
 
   depends_on "pkg-config" => :build
