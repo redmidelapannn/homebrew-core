@@ -6,10 +6,10 @@ class Btparse < Formula
 
   bottle do
     cellar :any
-    sha256 "52b3216a39c5eab22adf83c51843c18789e680bf9bca531a29c2e76c01d00371" => :el_capitan
-    sha256 "a8488a0a2601b386d3f53d736d776d7a119d2910841959354cff91b9dec9d59f" => :yosemite
-    sha256 "987a65ea6cbd04b6cb70d3f9f64791a1a69d5c69d446c6c712f463957435d0fb" => :mavericks
-    sha256 "5ace9431c847dbe4a4d3f04045069eb51a036e9b5a2dce65ccdba7baf165540f" => :mountain_lion
+    revision 1
+    sha256 "3962cbc3b6ae6b64b7b50af29ac719ced66e3d8a75da848cc5175eba43e2882e" => :el_capitan
+    sha256 "8d8845ce7bb5eaf871a1c5c1e26268f332ca10c43375d9a4b80d3da80fc4eb34" => :yosemite
+    sha256 "29b174898550016953677b066d670caad1b690ab2257ad05e64741aa409830d3" => :mavericks
   end
 
   def install
