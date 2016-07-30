@@ -16,9 +16,10 @@ class Avidemux < Formula
   end
 
   bottle do
-    sha256 "acf533d565e1f21c4d4ec8eb703e7623b16b4cacf45fc456866dc4b6d7067012" => :el_capitan
-    sha256 "670620115efff933c531a11535ef2f81a3e0cbae9b903dc304b2ec13559a453f" => :yosemite
-    sha256 "05545f1bffbddd6cd92636f775f6710dfea9c3a35c00efbca0d6473daeabc852" => :mavericks
+    revision 1
+    sha256 "226ff87e8d787a2ae6c9c1a6b9225a97c2de784083131f4edebb0120e3594ba8" => :el_capitan
+    sha256 "f600ea555545228daefa2ea7dae74e2d3e2dd205db32a0b840924d0dd672e77d" => :yosemite
+    sha256 "5805f838b3755d6a0d67786121b346a99bbbc13b3676e3639ef34d4e2f013d0a" => :mavericks
   end
 
   head do
