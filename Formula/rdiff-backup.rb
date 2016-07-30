@@ -7,10 +7,10 @@ class RdiffBackup < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "f06f79bc1536dbaa990e6005565f18de05e9dc12deb09701a504ab6bfc8b8f11" => :el_capitan
-    sha256 "35f6a0f726a680d639f7a1c83af8e27d046d5a68a334bf19d47eaa363748767c" => :yosemite
-    sha256 "5b0eab2335afe2d298cd51737c744d052536cb0bdbee780819496e1000a3b179" => :mavericks
+    revision 2
+    sha256 "03e8e796b8f0a41e409e2803dad52e8d9fa2b39b17d0ce4bdb38151ba5240709" => :el_capitan
+    sha256 "c309d1805b9466bff3e5534399c0fbb2e2c05d9028e44baddb9f9e5994af58c7" => :yosemite
+    sha256 "ac5a1c93d5870d68ad8c908aca40f8103b71d7c37d4f2b1fb5aed6bd1a4c4665" => :mavericks
   end
 
   devel do
