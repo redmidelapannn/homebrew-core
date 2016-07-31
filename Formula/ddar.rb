@@ -7,6 +7,13 @@ class Ddar < Formula
 
   head "https://github.com/basak/ddar.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "526c9fba1718751af6fac6544195a5f16e9778a47d4457ed3a1980d2d018e57c" => :el_capitan
+    sha256 "cf5e95487a6e21222cc72f5dbf96d6068d84a648041bfb146a83602b2c0c6f20" => :yosemite
+    sha256 "6000efa67435efa76947cb425ec570723a57e1814826022fa86d4c72e2d379e6" => :mavericks
+  end
+
   depends_on "xmltoman" => :build
   depends_on :python if MacOS.version <= :snow_leopard
   depends_on "protobuf"
