@@ -5,6 +5,13 @@ class Szl < Formula
   sha256 "af5c647276fd0dea658eae6016957b7ad09ac68efe13ae2a3c867043b5889f87"
   revision 8
 
+  bottle do
+    cellar :any
+    sha256 "9b77f7f6319f41bf3d4d061acfdf5b8f46ec4a967fa3ea656913b06e61d2ef99" => :el_capitan
+    sha256 "a874a77b89056cd7112ddc220ba85487057f5d08fd1c31b8a2f86250910a6495" => :yosemite
+    sha256 "ce4e65af1b192cba3c9d9952936e4140b6feec5e2cbcf7af351253a92ea73ffd" => :mavericks
+  end
+
   depends_on :macos => :mavericks
 
   depends_on "binutils" # For objdump
