@@ -5,6 +5,13 @@ class Supersonic < Formula
   sha256 "1592dfd2dc73f0b97298e0d25e51528dc9a94e9e7f4ab525569f63db0442d769"
   revision 1
 
+  bottle do
+    cellar :any
+    sha256 "1f28455b3c4919a588c904c00f0a37165154c78246f01f4d914a8bf5c5ea5b0a" => :el_capitan
+    sha256 "4527af64b102f1b44edfdb7f941a28b6b1e7ce7ed5994931f7d10ef4ca71d744" => :yosemite
+    sha256 "c95de42a014ca726d1e952eaf1029b665a6504da02b80f2d0d839b10697c7544" => :mavericks
+  end
+
   depends_on "gflags" => :linked
 
   if MacOS.version < :mavericks
