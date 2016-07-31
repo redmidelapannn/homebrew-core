@@ -7,6 +7,12 @@ class Gjstest < Formula
 
   head "https://github.com/google/gjstest.git"
 
+  bottle do
+    sha256 "fbd395ad8fb64f5c7667b6964135c7b09880f3e7b81f7fb4e173858c2690dc8b" => :el_capitan
+    sha256 "4503c9aec27ddfda744a21aed11a13f146977c117f03161d2bc8791d6f47538a" => :yosemite
+    sha256 "9bcb96b7df2a2f79077769647625de6ee8639a497771c1e31b1260aef301ec4d" => :mavericks
+  end
+
   depends_on :macos => :mavericks
 
   depends_on "gflags"
