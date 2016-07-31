@@ -11,6 +11,12 @@ class MobileShell < Formula
     # https://github.com/mobile-shell/mosh/commit/0eb614809a7ea
     depends_on "openssl"
   end
+  bottle do
+    sha256 "cad89954fda67c6d8115c1fce8908e19d7242730058df0e012c886ac022148f6" => :el_capitan
+    sha256 "ca7b6bf86dbd0fb9a30c04a57c03129facb1ba77e162ab341d0bbe208ae0cc93" => :yosemite
+    sha256 "89f95d848ced31b21baed562e543569d27079cbd94a3bc956600eecccd195ea7" => :mavericks
+  end
+
 
   devel do
     url "https://github.com/mobile-shell/mosh/releases/download/mosh-1.2.5.95rc1/mosh-1.2.5.95rc1.tar.gz"
