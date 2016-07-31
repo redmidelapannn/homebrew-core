@@ -6,9 +6,10 @@ class Xdelta < Formula
 
   bottle do
     cellar :any
-    sha256 "e07f928aadf6a9d8beb8a19fb72cb673cf0ae13c339ccd75c5df134cb3bc5c09" => :el_capitan
-    sha256 "2581a9d0aabf6f6b34d35aae4d7ab07b6aaebdb70fd3b00ef14eff3bd96aa6c7" => :yosemite
-    sha256 "a0801a8bd9796d03d8c031905e28a6e5f50b155da3102337070ec787ccb5cee9" => :mavericks
+    revision 1
+    sha256 "b898e40a609fe093644cd91babc1bfb75e774fa9c2a258d9e51beb6b0900cc03" => :el_capitan
+    sha256 "2ebc2a63d2c2565c850fe79cc488306da0deedac8ff47bc979939102028c17fe" => :yosemite
+    sha256 "092e9dcfea1b8c831b0ff4f6bc088265968909dbb6229fc0c462657fe8b23165" => :mavericks
   end
 
   option "without-xz", "Disable LZMA secondary compression"
