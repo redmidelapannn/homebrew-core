@@ -5,6 +5,13 @@ class NanopbGenerator < Formula
   sha256 "3dd539671403d578425f15c6b4b6ba7390ee9a20369b969637ef1d18487e150e"
   revision 1
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "23ac4ba4b308e8cec5575c13272ece54744dfea0987b6ebf0c24983d3f453ff9" => :el_capitan
+    sha256 "de4e0fc7f723dc65cbb141630e9c5f97b3a52ff0be40171c868f05c40aeb9aa9" => :yosemite
+    sha256 "86e32245b3bc32aed6ef3c5d34a0fda93346e90816417597ff5c2054dac5a8ba" => :mavericks
+  end
+
   depends_on :python if MacOS.version <= :snow_leopard
   depends_on "protobuf"
 
