@@ -5,6 +5,13 @@ class Upscaledb < Formula
   sha256 "7d0d1ace47847a0f95a9138637fcaaf78b897ef682053e405e2c0865ecfd253e"
   revision 1
 
+  bottle do
+    cellar :any
+    sha256 "8f6f81a3c2da9f65a15ec9cd7c06db21f0efeb8535a82c2fef030e7e35aeea2e" => :el_capitan
+    sha256 "d2b5a232f433c28de4c704e458eebd6c3b6ab03f596210489132a275976bd277" => :yosemite
+    sha256 "1e2ebf5269b323fc49b71629ff994f84a01ba7e89adbea2fd2071073ad8f22c3" => :mavericks
+  end
+
   head do
     url "https://github.com/cruppstahl/upscaledb.git"
 
