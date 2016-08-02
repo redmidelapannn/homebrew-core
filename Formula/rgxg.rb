@@ -6,9 +6,10 @@ class Rgxg < Formula
 
   bottle do
     cellar :any
-    sha256 "7d04b00b4cc0b150d5e5ecb987eca5b97df0eefb8421dc9c43dbb4b6afe3f79f" => :el_capitan
-    sha256 "5a092ea507a438e7f28b213a5011bdb8621c3f52424be8bb0a98a6697d32cd68" => :yosemite
-    sha256 "7f1ad5b5b78eab2fc87474cbd7e3008a245579a58f0c526d488c4690a29154f7" => :mavericks
+    revision 1
+    sha256 "28ee5fe855f568709499296dfb523f81d661951c62a233f1441e3053e454114b" => :el_capitan
+    sha256 "c2c712f2b76b6b55231a2129eec6868133d161f2e0016042f03ac9cab18aa9b6" => :yosemite
+    sha256 "78fc1af38f50e838e8858185db4d2ea5182338a9c94cc3b377052514d3383d42" => :mavericks
   end
 
   def install
