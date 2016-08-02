@@ -7,9 +7,10 @@ class Itpp < Formula
 
   bottle do
     cellar :any
-    sha256 "c9f2f041dbdbea87029180a253fa0cd470aee6a2144a848b10f9fb5c40f01b8e" => :el_capitan
-    sha256 "6e772c61104760fcf2c9500fa06fb2d032d4db1f53ef44d090e18aca54ee75f0" => :yosemite
-    sha256 "c9e5ed1ab5febb67c61139b451ac70c501e6dd8fe656f7658d9e6aaa3f025e2a" => :mavericks
+    revision 1
+    sha256 "38bbd136f48002fb438ede09d102c49983951cda60dc0905a5cc49027a2a0250" => :el_capitan
+    sha256 "9dc10605cbf2d23a83fef93009d2a51b6a601fa99df480bd2fc54b79d106b872" => :yosemite
+    sha256 "bb83333649645f20740937a9e7b59e0cfe389b9d3a7313eba2a444ce13deb276" => :mavericks
   end
 
   depends_on "cmake" => :build
