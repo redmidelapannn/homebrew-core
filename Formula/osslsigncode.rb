@@ -6,10 +6,10 @@ class Osslsigncode < Formula
 
   bottle do
     cellar :any
+    revision 1
     sha256 "ed69f3ff0b8144a10a66cbe0a1986717a5564415768530110ae66749777f3490" => :el_capitan
-    sha256 "5f3799537630936f8d7954e9ec28f191fff6e1713f6b209aa94b2b665e5eaf88" => :yosemite
-    sha256 "59da5261972c8d26f0238c6ea42f5b247489d41e7ce6525c703675a22e260cfa" => :mavericks
-    sha256 "49a6dd76e78c82062041e5025ed1e7d71f1c53b51ef0e314a5e6938a07b6e49d" => :mountain_lion
+    sha256 "88c6d568585e98bba957a9637a6c2d4ca91c062e0de3c395e3956f71fd25099f" => :yosemite
+    sha256 "8a96b1d7359a8dfda0ce4d4ba3464b349cd06d8e74d660633a28b31a2430dcb6" => :mavericks
   end
 
   head do
