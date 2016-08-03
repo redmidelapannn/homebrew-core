@@ -8,10 +8,10 @@ class Zmap < Formula
 
   bottle do
     cellar :any
-    sha256 "1ca4f466dc62cdce9b88a0a6ac7beec710748ba3c22415424deb3c864237a3a5" => :el_capitan
-    sha256 "4bec1849985c6754abe0facfb20a0d847470bc6f66623e98104176b45932d42a" => :yosemite
-    sha256 "e543e77553615624b232d1feac4dbe20c3eb24d0403f6e679c9a704ce21da33b" => :mavericks
-    sha256 "85fff9d320b123e6637980f4777e89b5fb7957dd5c75154d2c8aa2f3505aa471" => :mountain_lion
+    revision 1
+    sha256 "a69fd5765d36f48aafb375612f02e355a8694c82aa362c77ec98919f0b9b9f24" => :el_capitan
+    sha256 "0bf41373f152df3976822da3196d3b00ef89697cb258887f3fb6d752f7175c71" => :yosemite
+    sha256 "1338be795ed8be3890543b2d34bb9c307e4fd039c9945e339c62555778f43b66" => :mavericks
   end
 
   depends_on "cmake" => :build
