@@ -7,9 +7,10 @@ class Bgrep < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "29f0b2d7ab307eae228a03d4f42f677d9ff0884edc5c96771da36182cb592cd2" => :el_capitan
-    sha256 "af4dab94130c48930d064074da8492c5531842a348747b0dd39420db738f6ae9" => :yosemite
-    sha256 "b166d637dda09833c3b2c3396670347b087fef6366576303f87fb704b1d3eede" => :mavericks
+    revision 1
+    sha256 "1e6cda53ac48a1248b8cdffcb8b25aeeab6b2b63a3fc252d3fe8b72651b85fce" => :el_capitan
+    sha256 "d6da967043fe5590cf17d02ca4552a318009dda4ab4447a8b5e13a826ff5f45d" => :yosemite
+    sha256 "e66cc0176b1f63998ee9b35dfc3f18a72e6ce4fc429db31cc7444b3eb60115db" => :mavericks
   end
 
   def install
