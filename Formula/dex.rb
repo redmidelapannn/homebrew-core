@@ -7,10 +7,10 @@ class Dex < Formula
   head "https://github.com/tihirvon/dex.git"
 
   bottle do
-    revision 1
-    sha256 "70c249809920acc2d10405c0487427d154ee55cf201507d910d8178693c7fd61" => :el_capitan
-    sha256 "a4cffc5c0b61be9452988d4435ccff1d1c72d2b9cdec595e55ea5f37ca2541a6" => :yosemite
-    sha256 "ce004b66bad4f8ad7d363f45a0b6af15fc96f719a591f3383cd2a84dc424d9e3" => :mavericks
+    revision 2
+    sha256 "3a0e7225456797a9307aa5f74bc169dd1c1faff0307233d086f83de8e28e7c9c" => :el_capitan
+    sha256 "7b6fbf8193bb6ed44233aa1f8b04e6029189baf804bc00103db4a66c246682c2" => :yosemite
+    sha256 "6a966d89c486fcb15d149e9a351de15cadeab57b279a16057096ea422a5c9e4d" => :mavericks
   end
 
   depends_on "homebrew/dupes/ncurses" => :optional
