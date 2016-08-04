@@ -6,9 +6,10 @@ class Efl < Formula
   revision 2
 
   bottle do
-    sha256 "a8e51818234a137bc021469bf37a52c84608d4e399420b71ff360682c8a7a8ae" => :el_capitan
-    sha256 "a8fe89f450fc0328f84a442b138a93ebbdd516d03ccfe333e3c21fa080befd7f" => :yosemite
-    sha256 "4d1e000d79e426ffaf82e1b4603239b2c629c8eab5549b29d403a2b88eca24f5" => :mavericks
+    revision 1
+    sha256 "7e4237fc13ba20e97bd3a53be369be7f39a637f05f77193a1038ab1c95c4ebfa" => :el_capitan
+    sha256 "4a1d486d967b1b2b875ddfc930cb2f08ea4935b18144ea44728cf034cd478837" => :yosemite
+    sha256 "7734823ad052ba86b1f5b576a8a33bd975fd83bbc205659e60b5d288052713c9" => :mavericks
   end
 
   option "with-docs", "Install development libraries/headers and HTML docs"
