@@ -36,9 +36,10 @@ class Zpython < Formula
   
   bottle do
     cellar :any_skip_relocation
+    revision 1
     sha256 "aa8efa349bbf477746aee3cb977d1b0c430ec05d1947f2bd33667f054d8692cc" => :el_capitan
     sha256 "3f469a0820ec250a6875c97fd50626462b94a6d81ea93888d32391ababcf25bf" => :yosemite
-    sha256 "9137eefb79a7a529b016e3c949e24a15d4747e4f35108f91db6ea58441f456a9" => :mavericks
+    sha256 "ca5ef7b573bd8d34aeb7923082efa43127cb374d7dc4a413722ef9d6c3f75e32" => :mavericks
   end
 
   # We prepend `00-` for the first version of the zpython module, which is
