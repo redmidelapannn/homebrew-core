@@ -6,10 +6,10 @@ class X11vnc < Formula
 
   bottle do
     cellar :any
-    sha256 "5b215e4baff20b8120706c2698766fc7a84033e0502949691ed66e12f984bdf0" => :el_capitan
-    sha256 "a32bb68e7b1ebb96de7acd8ce4d602038fed7ae0d7e6c6adca294fc688f2a8ad" => :yosemite
-    sha256 "6e92c88b0c90fbda1ffc73f62c7ef2482b42b544595232b02caa54a6ab7c7021" => :mavericks
-    sha256 "104e7c7dfd642f901e9f8be417b77540242c1ef2bf8e8aba6bee64e5d9f2a215" => :mountain_lion
+    revision 1
+    sha256 "53d6e8f03f6702932110778780e1a1323e0f1335abab5500460ccd31ec17575b" => :el_capitan
+    sha256 "dc294ec933c251be58f36c909e618d88aeb17890b48386819ab49fafbe155c0e" => :yosemite
+    sha256 "94e1154345bb04fae4dd41b0aac54d5bebc2dbbe5921660875307bfe054a9cb1" => :mavericks
   end
 
   depends_on :x11 => :optional
