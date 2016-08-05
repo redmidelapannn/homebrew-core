@@ -5,11 +5,10 @@ class Yacas < Formula
   sha256 "18482f22d6a8336e9ebfda3bec045da70db2da68ae02f32987928a3c67284233"
 
   bottle do
-    revision 1
-    sha256 "700fa65e0279625861a0f7166c3e213c807ed7ea46b5f10d5ba6be920aa76a64" => :el_capitan
-    sha256 "c143a1764ec3dd64563e78e75c09b11d519124a10c97614bd5c6fbc99bab058b" => :yosemite
-    sha256 "52c5071ec1f10c3181d11be1cd54d345fef5cdcbd4dcd6ef1d2cd71a8cff1d85" => :mavericks
-    sha256 "c3fb8303de3f7e455047994b26b0cb7edbdee3c466eb77e22a66c42746ea766e" => :mountain_lion
+    revision 2
+    sha256 "9a4b0d6646b0d0c75a88db1c6e531b178a570206eb264b32d12cd54092059111" => :el_capitan
+    sha256 "d98524a67a73624072aabad8e9b0edda608f5d40f6e99f1522e9ba36f3ec9188" => :yosemite
+    sha256 "0da1d2ceac1ddc2ad29dc3be3a1a746e950b59410c0475d61f74e756088dbdcf" => :mavericks
   end
 
   option "with-server", "Build the network server version"
