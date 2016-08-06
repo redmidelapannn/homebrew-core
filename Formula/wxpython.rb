@@ -19,10 +19,10 @@ class Wxpython < Formula
 
   bottle do
     cellar :any
-    revision 1
-    sha256 "9956afc649ebc394fbae40dd55d3ce367ab42abe6be43ef01c35c1c6d0a8e225" => :el_capitan
-    sha256 "04d8dfeab6dbb7a1c099c8e866f35e6d5d528ea69ef283d556c545347882abe2" => :yosemite
-    sha256 "41ec8003758d804b8c426ce654a87f2d9f4be3be40fcbcb3d5686e3ecabaddbc" => :mavericks
+    revision 2
+    sha256 "9e3db8fe9e1024dcc943ebc28867a5a6ded55a2fd822752088c140071ead3027" => :el_capitan
+    sha256 "e6703d1fb11d8ca5d71e3013c57a76d3dafb2bf42ed5ee58cb512b17f7892001" => :yosemite
+    sha256 "5783e475249e7b46534f0189c715fcbd7ef07108be4ea30fbd03ef7da68d8b43" => :mavericks
   end
 
   option :universal
