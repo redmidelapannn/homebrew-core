@@ -8,9 +8,10 @@ class Wiki < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "97f41b03a165bc89869253240e906e0075ec936069a08ecd483c516bb987e3ce" => :el_capitan
-    sha256 "36d2954d46a09d460740d16771792ed832b3b81770a5b28a86b28f3e2bd65a53" => :yosemite
-    sha256 "271812a50a0455e1947006624f0442f084c69ab387cc858d41be26a4cce195f0" => :mavericks
+    revision 1
+    sha256 "b3527f72459d30f111c25e6b6e07dc1d7a6df5ef724ecbd20d0fc0ce7bf6eac6" => :el_capitan
+    sha256 "64fcd8e7c1f337228b8c25bdcbcb069865ecd81bad4cbefc62f9e8d89bea57e8" => :yosemite
+    sha256 "3a0474ce658c11d2872df96f4259adc9489edb7da1a721fe3e47bee5e41bec1e" => :mavericks
   end
 
   depends_on "go" => :build
