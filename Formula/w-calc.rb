@@ -6,10 +6,10 @@ class WCalc < Formula
 
   bottle do
     cellar :any
-    sha256 "67160a91e50ae33f723ead45c4150750b62b3bd45ec009eb4b493e138d2a908d" => :el_capitan
-    sha256 "1737fad1cd9e5beac6f3a06057bd594b4de2c6b9f709544acd4825fae9160632" => :yosemite
-    sha256 "14bcdc8bb396d6c3890a7a7719d6619911ffe92e8949278865b256eb5f74682e" => :mavericks
-    sha256 "0eb8fb2e15ee8274ec673850eb5004654e3f7c3d3a835597b5809e87420db08f" => :mountain_lion
+    revision 1
+    sha256 "d5644c636625eb8878de503f2e8a1e6dddeb48566d92dc5f498bcbd42b943578" => :el_capitan
+    sha256 "9e113a75f26d54099322f78e26ab7afd033dcd1ddc61c4ad1e71218c4d5134fd" => :yosemite
+    sha256 "e1722d911d1e2af4a9963c938c60288cbb6b34168d7cb6e369f7b2b69dfa49dc" => :mavericks
   end
 
   depends_on "gmp"
