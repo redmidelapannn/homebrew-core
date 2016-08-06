@@ -6,10 +6,8 @@ class Guile < Formula
   sha256 "de8187736f9b260f2fa776ed39b52cb74dd389ccf7039c042f0606270196b7e9"
 
   bottle do
-    sha256 "d7e7ad8d491f84c1405b82ee8ef0da5b21f551b6a0f2795bae92e8bec2f19be2" => :el_capitan
-    sha256 "8e4d3e402e6eb6d95dcfc308b067beb3f7bed522e801c04f2291ffb29aab8908" => :yosemite
-    sha256 "c62b53570f7ac7061820c2c3009c649ff7fbf176bddd0acc36802303ede235e2" => :mavericks
-    sha256 "51f5f379e25fab5cf8fb7cede02841aa716c0e90356705be2abc6a18c6af5371" => :mountain_lion
+    sha256 "310c8470bd5624da5dafaa26a8dce7471069cfdc35f3f2fe7ab72a4ab88e23f9" => :el_capitan
+    sha256 "1ac58996b505f00082f9a02c1fb43742cc27bba1f1d51bea0afc4cdb4b1c11f6" => :yosemite
   end
 
   devel do
