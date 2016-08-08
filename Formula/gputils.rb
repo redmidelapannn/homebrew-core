@@ -5,9 +5,10 @@ class Gputils < Formula
   sha256 "e27b5c5ef3802a9c6c4a859d9ac2c380c31b3a2d6d6880718198bd1139b71271"
 
   bottle do
-    sha256 "32a73229f86fc8a3bfbbd4582f435c9c92f0b7335e523f3b377d2528631b42b8" => :el_capitan
-    sha256 "169a9bcc46bc5e57c7fe9c688ae7bd7f9afc157a222948179133a47d6d2038b4" => :yosemite
-    sha256 "6d085798dce7be27385f28b97893d4bb3f44b0d02983e75865c7c6a54b3e5f5b" => :mavericks
+    revision 1
+    sha256 "593b9557f9f55d051b0a8d74a49a8c79aad79a630dd0d0aacad07703c1340bdf" => :el_capitan
+    sha256 "4e1918ade8be479bd017643b48db8cb12dfff108c1331eed33f134557d3bfc43" => :yosemite
+    sha256 "4361ab40fd6816fe8f52aeec60492dd3f6e066391bb8fdf3dd6f9d70d0594dda" => :mavericks
   end
 
   devel do
