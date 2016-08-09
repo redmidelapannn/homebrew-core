@@ -42,10 +42,10 @@ class Go < Formula
   end
 
   bottle do
-    revision 1
-    sha256 "f06ee1c467cdaa7574ebfc52dad2941b65e349266e1e42ff788383c55b1db7d1" => :el_capitan
-    sha256 "1a849c88620cdaf0c8772ff1e57e3f22d2c9ca7dc2533de479334c492b7200e7" => :yosemite
-    sha256 "5f570b6c7aa2d7caa6c715af6dce6fa30d7fbd5acc46fac8fbc3232270956f9e" => :mavericks
+    revision 2
+    sha256 "3c7543dd4fc828a5bd467ee1c17921d88278077aa23dca7854febff77ec7fecd" => :el_capitan
+    sha256 "067965b2ac5593e1b2f76ca3f36e6cf7773ad1cf23b1cdd1a5a181872ba2cdd9" => :yosemite
+    sha256 "44bc48584615c7f779c0f751b0be3a2eb0aa593837e62c38f861e92ca4a5870d" => :mavericks
   end
 
   if MacOS.version < :sierra
