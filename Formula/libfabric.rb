@@ -5,9 +5,10 @@ class Libfabric < Formula
   sha256 "0a0d4f1a0d178d80ec336763a0fd371ade97199d6f1e884ef8f0e6bc99f258c9"
 
   bottle do
-    sha256 "53984f1dac904f22ac42ac6855a1ab61ff0433ac42b499048b47a2ddd66da9bc" => :el_capitan
-    sha256 "5828c0555c4d12ab148c26c91859bd389b9bba030114256fb9337118902283c9" => :yosemite
-    sha256 "2a3136934b1099fb3288e4283bab1ec2972eb002539e35620dc40d0a00c956bf" => :mavericks
+    revision 1
+    sha256 "ef7c7ba2a746c746f15c8f5ae12b23680ec2a500a0cda6c0d243171751f5ecf3" => :el_capitan
+    sha256 "de3f055db9b2f3791544f53e9de99cbe429d0dc3fbaf4f6047a0519c48fa178e" => :yosemite
+    sha256 "f2cc1bc59fbae7bbd846d6fc21aa8f3e6022289858317f9bdbbdaf52ba0cd982" => :mavericks
   end
 
   head do
