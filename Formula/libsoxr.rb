@@ -7,9 +7,10 @@ class Libsoxr < Formula
 
   bottle do
     cellar :any
-    sha256 "077ef8de96bc1d6e91c102a1ef37a8abdfc5a5c58e630ddf4c71d588f4928514" => :el_capitan
-    sha256 "b4a93f140c6811066af0a9c4ed5018426cacd57708aeed413b81ff887823926e" => :yosemite
-    sha256 "ab97e9c831858081a06933a5394623b8e4dbafd660e507cfbe851dee07c73c09" => :mavericks
+    revision 1
+    sha256 "a1a020e8e596fd933838b54a6f39631a9004b032f13cc1b3d92fa609185270c0" => :el_capitan
+    sha256 "469d567bf0dc4b142f3894a6d2f65d90a9ee9c2103b0f4a27e7cb9ee3a7661a0" => :yosemite
+    sha256 "1645d6f2d2ba2586d455b4e6377dfdbbd44ee567467564b096896fc04398dfc4" => :mavericks
   end
 
   depends_on "cmake" => :build
