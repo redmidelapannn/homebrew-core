@@ -19,9 +19,8 @@ class Protobuf < Formula
   end
 
   devel do
-    url "https://github.com/google/protobuf/archive/v3.0.0-beta-4.tar.gz"
-    sha256 "132ba7654ee45f5cbbd33fa8f2c9efa25f2193640e42098029bfa993a8360a9c"
-    version "3.0.0-beta-4"
+    url "https://github.com/google/protobuf/archive/v3.0.0.tar.gz"
+    sha256 "f5b3563f118f1d3d6e001705fa7082e8fc3bda50038ac3dff787650795734146"
 
     depends_on "autoconf" => :build
     depends_on "automake" => :build
