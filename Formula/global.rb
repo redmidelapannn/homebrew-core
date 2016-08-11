@@ -6,9 +6,10 @@ class Global < Formula
   sha256 "af16e0a686a46f759156cb685e25f345680703f43f93af1ce8d834caaf541da6"
 
   bottle do
-    sha256 "02cbcdec74c631e5c9136748570eaaa10d492c7bfe48a2a914c0245c91a84f33" => :el_capitan
-    sha256 "1228a3bb9625f8dbc7700b7846cc5f96e3bbe369ed6f0884840c4d8dacd05980" => :yosemite
-    sha256 "37948700d06490f5b8a8fce8ca4f869e98c5e6be4c2b14bf70a28b908f971c5a" => :mavericks
+    revision 1
+    sha256 "ab93a7611ba858bdbea191f9d92be77e31f50478cb3b4f616e6e643cb206975b" => :el_capitan
+    sha256 "7ca2d956b09107695b3429b9941ad8f565407d6684a01d3df21e2ffb5a67b99d" => :yosemite
+    sha256 "5be9c8a1d9f15ee18ff0b8afa8f5a686cbe33f8e28fe5c78697654164a1166a5" => :mavericks
   end
 
   head do
