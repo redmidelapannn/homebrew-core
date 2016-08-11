@@ -1,9 +1,8 @@
 class Cereal < Formula
   desc "C++11 library for serialization"
   homepage "https://uscilab.github.io/cereal/"
-  url "https://github.com/USCiLab/cereal/archive/v1.1.2.tar.gz"
-  sha256 "45607d0de1d29e84d03bf8eecf221eb2912005b63f02314fbade9fbabfd37b8d"
-
+  url "https://github.com/USCiLab/cereal/archive/v1.2.1.tar.gz"
+  sha256 "7d321c22ea1280b47ddb06f3e9702fcdbb2910ff2f3df0a2554804210714434e"
   head "https://github.com/USCiLab/cereal.git", :branch => "develop"
 
   bottle do
@@ -13,6 +12,9 @@ class Cereal < Formula
     sha256 "f0504c9cc90d6358fdc10d1f075463905d7e581d80e5a45e374976e7bc797b63" => :mavericks
     sha256 "00ef7732975fb675326d0dc1f1a8732b995626075cb5f0a3f2740f28c3fcdda6" => :mountain_lion
   end
+
+  # error: chosen constructor is explicit in copy-initialization
+  patch :DATA if MacOS.version <= :mavericks
 
   option "with-test", "Build and run the test suite"
 
@@ -86,3 +88,18 @@ class Cereal < Formula
     system "./test"
   end
 end
+
+__END__
+diff --git a/include/cereal/details/polymorphic_impl.hpp b/include/cereal/details/polymorphic_impl.hpp
+index d72cd05..fee659f 100644
+--- a/include/cereal/details/polymorphic_impl.hpp
++++ b/include/cereal/details/polymorphic_impl.hpp
+@@ -223,7 +223,7 @@ namespace cereal
+         auto lb = baseMap.lower_bound(baseKey);
+ 
+         {
+-          auto & derivedMap = baseMap.insert( lb, {baseKey, {}} )->second;
++          auto & derivedMap = baseMap.insert( lb, {baseKey, [](){}} )->second;
+           auto derivedKey = std::type_index(typeid(Derived));
+           auto lbd = derivedMap.lower_bound(derivedKey);
+           auto & derivedVec = derivedMap.insert( lbd, { std::move(derivedKey), {}} )->second;
