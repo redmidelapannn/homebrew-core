@@ -7,9 +7,10 @@ class Nomad < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ddf91dd519fcc203ef9282aa58e65c16efcc200229092cc958a8b0a7ca029a43" => :el_capitan
-    sha256 "042fa34aa9ff782bdabe574e5144ee31418741d2ccb0c02b63dcbd25dc76d1ec" => :yosemite
-    sha256 "00fbadc79e816afa0d237d36bd6542abb35b55586099e02e1df3f557b9544eb5" => :mavericks
+    revision 1
+    sha256 "b10ca1e1e43aee01dd7b2150a9b154805beb3097c2321a02105d735f6b601ffc" => :el_capitan
+    sha256 "6ee0dd92a8834b4b05a5ea256cb5f96f4f2da6485b9721b3de6a2ac496a9a339" => :yosemite
+    sha256 "8b9e87d4e04a348791aad13de19c1748d34750fb5a3ffeb748319f4e4c7b135d" => :mavericks
   end
 
   devel do
