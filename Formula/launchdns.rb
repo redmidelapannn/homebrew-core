@@ -9,9 +9,9 @@ class Launchdns < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "32e7c5fad3d98c50f6396328e669f880b6c5ac3f30c8d67735bcf42d4c65b015" => :el_capitan
-    sha256 "7df1ba7afd33fb76de28051fc835e4c8aed32dcd8c8530189d7db021be5b8600" => :yosemite
+    revision 2
+    sha256 "cd609daa3134150e19a480bb0274aa1a468e5f9c1cd6c1492b3728d1b6f3b2b4" => :el_capitan
+    sha256 "4663fbd3985cfa2884fe77ae0989d71d8f1a19296a9e7586e669d2967272ee52" => :yosemite
   end
 
   def install
