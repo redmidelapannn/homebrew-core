@@ -4,6 +4,13 @@ class Gptfdisk < Formula
   url "https://downloads.sourceforge.net/project/gptfdisk/gptfdisk/1.0.1/gptfdisk-1.0.1.tar.gz"
   sha256 "864c8aee2efdda50346804d7e6230407d5f42a8ae754df70404dd8b2fdfaeac7"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d6ffe675176707196449fb9388cffcee60612f8816e7d8d6ba9b8152622b8ff3" => :el_capitan
+    sha256 "a03a7b079cd33ab644b0141ed4c756b8ceb2206530594742b997b35ead3e25b1" => :yosemite
+    sha256 "b3e54a3696184a7b3d9ec2a0a0891eeb0950539280b10d32a82699bfe59e890d" => :mavericks
+  end
+
   option "with-icu4c", "Use icu4c instead of internal functions for UTF-16 support. Use this if you are having problems with the new UTF-16 support."
   option "with-sgdisk", "Compile sgdisk."
   option "without-cgdisk", "Do not compile cgdisk."
