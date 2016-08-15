@@ -7,9 +7,10 @@ class Gnupg < Formula
   revision 2
 
   bottle do
-    sha256 "9becdec079dcfbae99917b30cf676c772b28e91c1a3fe6ea129b4071b25a26d4" => :el_capitan
-    sha256 "a5a80017b1d7f37ee88cd2d16b7b004d286259b48336f2073330ea42f8d2cc61" => :yosemite
-    sha256 "6f5ed43c01c4dbbd3b8b5787da018d4b3f4a66e7d39cfb39719e124d228e5760" => :mavericks
+    revision 1
+    sha256 "abe17dcfc42834a653479ebc694bfd4c49ddcca117717cca0cd44516a310a3f7" => :el_capitan
+    sha256 "b71ede20a9d2269dd3447122bfe5acbe2c62757a7b82045d995685c295b7d1b4" => :yosemite
+    sha256 "2972023aded0cf1309e23dc0a9cd13197003c19a997d986fc14f5744955a4211" => :mavericks
   end
 
   depends_on "curl" if MacOS.version <= :mavericks
