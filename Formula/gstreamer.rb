@@ -5,9 +5,10 @@ class Gstreamer < Formula
   sha256 "9dbebe079c2ab2004ef7f2649fa317cabea1feb4fb5605c24d40744b90918341"
 
   bottle do
-    sha256 "c4ad88725ac277b47e62fdbf4ad4116344e3e05670729143a8f6f99f2cd4462e" => :el_capitan
-    sha256 "82a4d1d72d76c3480a6207fc899289717becd179e227a2b294984ca8e55f3147" => :yosemite
-    sha256 "8381431e671456f375bdc8421dbbcd5d6d1ae1ba1dd4730e35cebe2f1e3f462c" => :mavericks
+    revision 1
+    sha256 "20efacf5582d0abc0281b081c5bf41ac582e4aaaaf4e95e423283f0df8ac7d60" => :el_capitan
+    sha256 "9d20e5ef42f54023b4bae9935fbe1c853ac4a48f7285e2019a004511799c4b48" => :yosemite
+    sha256 "61f476c8e547786e804d131fcf5643b229bd5de55f6d6c369df561fb6946798b" => :mavericks
   end
 
   head do
