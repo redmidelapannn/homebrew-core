@@ -6,9 +6,10 @@ class Cvsync < Formula
 
   bottle do
     cellar :any
-    sha256 "065a2cac3278d73129fc7b27b7f35d873f5aa17fff52aa4fe70eb896c211b6a8" => :el_capitan
-    sha256 "778da584a283cdfd5b817b98b936ab3c6ba6609a0bad1caaf64a15f595994208" => :yosemite
-    sha256 "08048bcff7a8953bc5a49b1ffa72e18021b5196eb6443c2defc43e4a632ac882" => :mavericks
+    revision 1
+    sha256 "8b767b7124b2537aa88c17d5a1fc9918813e215e5ea032a120323b62badade16" => :el_capitan
+    sha256 "7ff293fab2ecb16bedfb210ec52f9bd36c6590ef64c24c0432dc988bda39a1e4" => :yosemite
+    sha256 "8fbe78ccfe812bee92b9fd73de5a53956323fdc7862e9d2c8250c90a950e5da4" => :mavericks
   end
 
   depends_on "openssl"
