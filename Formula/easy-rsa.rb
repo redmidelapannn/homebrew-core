@@ -4,6 +4,13 @@ class EasyRsa < Formula
   url "https://github.com/OpenVPN/easy-rsa/archive/3.0.1.tar.gz"
   sha256 "a1fff75a27ea7da3f37fbfed715633f55b9ca25f5b14cac38e525c5c995e68ae"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "32bc16aebf4e80ffa152d47727a4c23d8a07b76be1a127b7ed6aae0e6cf78c57" => :el_capitan
+    sha256 "18d586bdcd299bbe7fbd384af6cc0692fad64ce83f430e268af606ca391dcb60" => :yosemite
+    sha256 "48cf94a81d86fd68e35f7083165d78198651f4d99c20f8feb3a8724b586b34fe" => :mavericks
+  end
+
   depends_on "openssl"
 
   def install
