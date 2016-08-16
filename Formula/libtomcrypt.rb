@@ -6,6 +6,14 @@ class Libtomcrypt < Formula
   sha256 "e33b47d77a495091c8703175a25c8228aff043140b2554c08a3c3cd71f79d116"
   head "https://github.com/libtom/libtomcrypt.git", :branch => "develop"
 
+  bottle do
+    cellar :any_skip_relocation
+    revision 3
+    sha256 "17bde27156e50501e55f7e9c919fa8a9b091cf4d2a7f76d2914835eb8029497c" => :el_capitan
+    sha256 "006c9e40345fa3237ad24bd470d48e9af455c1a6b5287ea031f80199b00bb563" => :yosemite
+    sha256 "4fc03bddb6ba7f8989e9235c41a13007728608b7bf0a98bac58d09c83c9c21af" => :mavericks
+  end
+
   depends_on "libtommath"
 
   # Manual backport of upstream commit here, so it applies to 1.17
