@@ -6,9 +6,9 @@ class Libftdi < Formula
 
   bottle do
     cellar :any
-    sha256 "81690eae8fa778df6a48557d03b154fbb3fe726d27edf8c8cccfb0f440810c46" => :el_capitan
-    sha256 "fe679703a4c73cdae3d5c893c411ae4f080c113c9aef2e7c290c6c7386e2357d" => :yosemite
-    sha256 "4049462256cac963b49c6cb430be7458cfad761af6db42cfef19ac33c8a8eca6" => :mavericks
+    sha256 "e0d0b8364f93d9c65986e6c5d55e92eda187acf968f2a476a0502602146c8da2" => :el_capitan
+    sha256 "ceac4b4dc74e76e0c09ec057045696e326b60c5343342e42ff4f7c7445fc9820" => :yosemite
+    sha256 "e3079b71e451eef5277b31cacba7075f0579885f2c6ddd6ef8349d6eb20f1175" => :mavericks
   end
 
   depends_on "cmake" => :build
