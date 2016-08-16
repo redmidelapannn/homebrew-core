@@ -7,10 +7,10 @@ class Duti < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 2
-    sha256 "53748f3ad97a48b468326e66d869e20c05fc1f67219ac3ea8a147b558717ee45" => :el_capitan
-    sha256 "c2661fc4e59d5cc941a416bf7abad035af3d15f75e7bca73d2bc29706d89f560" => :yosemite
-    sha256 "e301c36a6809acc2a0dd62fba59eac4820b90cf2cf9df30f46480f7ce736dad3" => :mavericks
+    revision 3
+    sha256 "730b61c8ba8f778f9be7e6e836c711824ccd97bed322705a94f6283ee41f900f" => :el_capitan
+    sha256 "18a6af2c9b00be81b4441fbeb2be074f7a3165ec4809ea29b7353bc5d313691e" => :yosemite
+    sha256 "60f6fad4c106ee46657c947db03689973d6d1b1b48f34f11dcced6d0b540c6d1" => :mavericks
   end
 
   depends_on "autoconf" => :build
