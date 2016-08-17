@@ -9,9 +9,10 @@ class Libcanberra < Formula
     depends_on "gtk-doc" => :optional
   end
   bottle do
-    sha256 "dc9f8e76c81bb21afedd4deb9b9d9bbf3382f012192e5796658845e2083ca018" => :el_capitan
-    sha256 "3d820f8c9747e8658c226483267536c76b3dfdf44a9e14ea1327cb5cf0385ba8" => :yosemite
-    sha256 "10c6f3c931a349848b6436d10893e9b1bc5051658f125f6b67ddc1f9319396a0" => :mavericks
+    revision 1
+    sha256 "3a525f3e42b9c5f1e0413432fe33670ec3d1cd9e3ed17153668df1817a8e0951" => :el_capitan
+    sha256 "855af5ffd96a3600fde2797f85a1298766bd38c5a7faa5e2be927973ce14a595" => :yosemite
+    sha256 "b014b43fca010176ba36d20293a080c2854f574571d2ccf3f4d14e8a5a6574a7" => :mavericks
   end
 
   head do
