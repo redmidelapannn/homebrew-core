@@ -6,10 +6,10 @@ class Testdisk < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "979d1f6ba12aeee68300a657a78a234874707068232934d7f91597621a60253e" => :el_capitan
-    sha256 "13f6481decb5ad3f40f0617351dd9c78a02c3c0694a82cb048adde6ba897703f" => :yosemite
-    sha256 "d3e8a600a135807b630a4d649c052dc6065270910bd96f6b1f27265251787331" => :mavericks
+    revision 2
+    sha256 "3778b6ebff612b861edb50bf40f708553bdad03e3ed3f5e31d38295936239b3e" => :el_capitan
+    sha256 "dbbb8d33ab41d8d20bb35f96531dd2f2acaf01c4dff610df374f2ffd0a044a45" => :yosemite
+    sha256 "feda5e41b9c1f336217ac54d3296baff094d2194038031a907bb379045638eb3" => :mavericks
   end
 
   def install
