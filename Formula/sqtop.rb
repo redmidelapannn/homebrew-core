@@ -7,10 +7,10 @@ class Sqtop < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6d838378cae0971561da60dff1e887bf03b60d1a0ff198a5d468654ef790d9e9" => :el_capitan
-    sha256 "29291fedaa06b7b680e44e1b82f643f7ddffc67435312b7c2f3654df0728cb8b" => :yosemite
-    sha256 "f1ab5347b698d2e1221a5111fec52022159afc898e5ad7a5318becb23cd35543" => :mavericks
-    sha256 "39b62e9a679009e6dc0106a6e63d229b6c310d222966a0f69b90ec388926102e" => :mountain_lion
+    revision 1
+    sha256 "1359325c6865689527c76af8c69adf6893f4f74efa4f7a7b4712fce065a6e3a4" => :el_capitan
+    sha256 "c99808881a09481ec539bc5fb1b7579b2db08ec1db68c5d293192401a5affafe" => :yosemite
+    sha256 "709f8ef46fb4d2669501ce131b2d8b528216c002fb1d6a857ffa92a605fbf32b" => :mavericks
   end
 
   def install
