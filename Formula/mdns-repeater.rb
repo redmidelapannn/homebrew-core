@@ -5,6 +5,13 @@ class MdnsRepeater < Formula
   version "1.10"
   sha256 "978e021ecd4ba21c8258d457380d8fec09a221de51dfc42c9a0c5d472fefdc64"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "aa17922a1e8b713170c92f4b1dd3d3e1cca048b38b1ee1c2a22edbd9d2c4f362" => :el_capitan
+    sha256 "f1e36ea141262bc1c5eea1b8cbe3c1e382c621fb7cc891224a41a92f1c53d9b0" => :yosemite
+    sha256 "b7cf763ee47a5163b5ca462de089b3abdb4be6877de98d285612f4c54577aa5f" => :mavericks
+  end
+
   # Patches:
   # 1. Patch to the Makefile to remove dependency on mercurial for versioning
   # 2. Modifications to compile and function correctly under OS X
