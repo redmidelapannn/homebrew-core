@@ -6,9 +6,8 @@ class Zimg < Formula
 
   bottle do
     cellar :any
-    sha256 "1451133127fe278b699906c8e7e345a7d5717fc61fe95aceec7aab7c071ecdb8" => :el_capitan
-    sha256 "a863b2c60d05fa9238ba9a07e21aab2fe9c8daab0a80d1c1247991122e8210dc" => :yosemite
-    sha256 "8300801f5849075c3251b3a0dfc5cdfad7b886894eda23fbb89a9d0fa2269d69" => :mavericks
+    sha256 "b3b0f4d75bd9ae784a4a8d5a1a87d5777fadf617254a1f2df82d1a97d6dfd08d" => :el_capitan
+    sha256 "cbacd819e26db7209d92c45648c9a4679ab9d768ee1701be193caf9ba0810019" => :yosemite
   end
 
   depends_on :macos => :yosemite
