@@ -6,10 +6,10 @@ class SpeechTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f61c67afcd6c5f54b402183cb5148cf51cad67c95ce01bb3db0df57d384cc7e3" => :el_capitan
-    sha256 "48091e873f0d038ebc6e46ab3ca7c1e494d061afab3dae64e1dbd594e4afccbe" => :yosemite
-    sha256 "dca2c0deebfd3bd6aeba1cfaa4f72a3cc29b90e879fd51ed38c2524d1789eaad" => :mavericks
-    sha256 "16895a28e900f2b7d209d2c4dda0228024c6da9627189f356c631f1b8c990c27" => :mountain_lion
+    rebuild 1
+    sha256 "c9a2cac9741144904db9845ee5a856bb62fa144cf42d59c70088886f3a642ba0" => :el_capitan
+    sha256 "591032f6d60ff5c67e0f312f578319f517c5e59f4474fb5ee75daa8c1a73f7e8" => :yosemite
+    sha256 "fedf795dd6e725af46348f85d1a89f0479d769065491a15336ddcc7a80b26194" => :mavericks
   end
 
   conflicts_with "align", :because => "both install `align` binaries"
