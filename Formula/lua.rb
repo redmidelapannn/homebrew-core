@@ -6,9 +6,9 @@ class Lua < Formula
 
   bottle do
     cellar :any
-    sha256 "cfcc9d3f4326de0690e09f046329dc656922fd2201270393cb02b6fb1ffe1349" => :el_capitan
-    sha256 "809d4bcc9937b0d7d6483f1cdf211a5adb7d3adbf13663d1e3917211d0de6165" => :yosemite
-    sha256 "8acadcad5cc0e79193a9d88e11e391b366ed631d23279954bd4fed6807e14db4" => :mavericks
+    sha256 "9bce59b58a04431cd0dc8157d28a5347b2e87a284345170ac30eda72f90aa3e6" => :el_capitan
+    sha256 "ed46f089b167210e8c237f4696f56da800953e658c1f8a80b2d0365c8259326f" => :yosemite
+    sha256 "af7b02198fe402227038ef8b33b2720d8b0ef0cb569ee9c97d85408787451fe9" => :mavericks
   end
 
   pour_bottle? do
