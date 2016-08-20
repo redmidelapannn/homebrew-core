@@ -6,10 +6,10 @@ class Elinks < Formula
   revision 2
 
   bottle do
-    revision 2
-    sha256 "b59da2e745cd4882f3e4e848bb4473ec97f110eb06df9c9fe442a7c39cf6e141" => :el_capitan
-    sha256 "d6412d12d0adabd9da112e49baecf351b0a0307d138d22c605fa3826107107fe" => :yosemite
-    sha256 "3bb5385dd074a8963bb3fc9111ea6a318d2594380cc8eda4921cb4a910393578" => :mavericks
+    rebuild 3
+    sha256 "7c099838d11a7d665ad1c3ba3d42d32578f2ffb1d887b987de559fe6f2312501" => :el_capitan
+    sha256 "f79cf9f65d250c981a33853575b9ee882856d09060e64c328215ba61da20dc0e" => :yosemite
+    sha256 "fee696ef0ea70a68d8904c1738db28a624f8460a72d27503e297c70db4fbcb25" => :mavericks
   end
 
   devel do
