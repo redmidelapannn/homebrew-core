@@ -7,9 +7,9 @@ class Txt2man < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b21b275a37f0f8fd3623e3c5590326737f448f9cc2dd9f24556021d2326fef6c" => :el_capitan
-    sha256 "d3831605b2d3c5b40dcc9f9a24ab875015c399da283b09f4de61161752b7e590" => :yosemite
-    sha256 "b456aee5d116f56b8c0792f904f1c44b437d8ded3a3fa0409fa12ca897020233" => :mavericks
+    sha256 "68182189940521e349f90cbb4eff485c4927eec64575ed520f625b8029832d28" => :el_capitan
+    sha256 "6bfb01216278e2d28a605547fbb81997f732721e8a2b104c664cf08e69947d7c" => :yosemite
+    sha256 "6bfb01216278e2d28a605547fbb81997f732721e8a2b104c664cf08e69947d7c" => :mavericks
   end
 
   depends_on "gawk"
