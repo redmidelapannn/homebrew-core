@@ -6,6 +6,11 @@ class Shortcuts < Formula
 
   head "https://github.com/rodionovd/shortcuts.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8d91ad597442c20321b25b5deb880e53de52713452167edd83cfae25be24adff" => :el_capitan
+  end
+
   depends_on :xcode => :build
   depends_on :macos => :el_capitan
 
