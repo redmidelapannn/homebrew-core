@@ -8,10 +8,9 @@ class Kafka < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2874959d241121c73d914ea4d7b00055274d1bbeb4680d899e80243095c5d523" => :el_capitan
-    sha256 "16b2d2ad87154ee65f7b7e90bf2344aa495e518fc41a000642bfbb37e0bc329b" => :yosemite
-    sha256 "16b2d2ad87154ee65f7b7e90bf2344aa495e518fc41a000642bfbb37e0bc329b" => :mavericks
+    sha256 "3af0a16029d66a2ab966cc3c6fbec62409ce7ec9133247da634f513d1c00b702" => :el_capitan
+    sha256 "83ac7044db1211a22ec7dfde405fbe49ecc09b87721f94030f213c9af98c09ed" => :yosemite
+    sha256 "83ac7044db1211a22ec7dfde405fbe49ecc09b87721f94030f213c9af98c09ed" => :mavericks
   end
 
   depends_on "zookeeper"
