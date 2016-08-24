@@ -7,10 +7,10 @@ class Box2d < Formula
 
   bottle do
     cellar :any
-    sha256 "967e9f17c6133f253be1be4f845899160af7c8cc8d072e41b176d9c636911a19" => :el_capitan
-    sha256 "1559be0d79e66e8074a051f36db5bbf21a9d556013803cce7e04184bd28028a9" => :yosemite
-    sha256 "40effd7d4952d37d15e7b34da4b9c207956b1d79bdd856f9f03307ecf52a5b3f" => :mavericks
-    sha256 "143949e28a0b74432015b56f6372682ce69cfb451ccd82a3f4b1fb1c69e24310" => :mountain_lion
+    rebuild 1
+    sha256 "492e3bec02a001a4680847b118e1011b3555ce053b90df3bc1b5b920143b691a" => :el_capitan
+    sha256 "ccf95724cabcd92b522043c6ca2192fbe29f8ede5d8a4482a1466014d0695c2f" => :yosemite
+    sha256 "ab29f36782e6f28548a58b1a4cf168e0f834f82cd9a4f60b1e51f8c156197368" => :mavericks
   end
 
   depends_on "cmake" => :build
