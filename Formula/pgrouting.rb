@@ -7,9 +7,10 @@ class Pgrouting < Formula
 
   bottle do
     cellar :any
-    sha256 "a7e1ad7075c68bd8fb106c674d02e41c0f1355b1bb543a4d9866066010fe36ec" => :el_capitan
-    sha256 "7952d9fd3df110572c679b13779dc4071ec6fa3e3f6985c3ae836d50d7ed8be3" => :yosemite
-    sha256 "5590580dca418a3df909e11fd074dff56eb25b54dae81d28b348d58b0c5bf48e" => :mavericks
+    rebuild 1
+    sha256 "d4d07371b63faa6e93ee2074967ecb17a1e9f4dee90cc8cbb5ab0409b6197d2d" => :el_capitan
+    sha256 "3aea67d14245dd21310df42b77549aec1bce25cf3ab1180e7cad92d0d0eb3c20" => :yosemite
+    sha256 "3e36e9e8cb39644bffe37b44f21c545417d856e9c8083b63ffc7a499b8fb3f1c" => :mavericks
   end
 
   devel do
