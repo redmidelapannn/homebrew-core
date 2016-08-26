@@ -4,6 +4,13 @@ class MonoLibgdiplus < Formula
   url "https://github.com/mono/libgdiplus/archive/4.2.tar.gz"
   sha256 "98f8a8e58ed22e136c4ac6eaafbc860757f5a97901ecc0ea357e2b6e4cfa2be5"
 
+  bottle do
+    cellar :any
+    sha256 "a07236c976b5614e189a41a0b038dd7cc167ba661779fc11921826ba2019c531" => :el_capitan
+    sha256 "d326df641a31a2fc69f6a0918435823081174054344ad2912bc6a476694137d7" => :yosemite
+    sha256 "839b21dcc4a3b5c1dbee27c14a86c2a1b5f2966557bbd52a40664bc6d77c0461" => :mavericks
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
