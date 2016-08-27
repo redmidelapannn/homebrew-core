@@ -8,10 +8,10 @@ class Libuvc < Formula
 
   bottle do
     cellar :any
-    revision 2
-    sha256 "6893748683e4eef0e0bd595acc9d7dce1e70d06778e264514ffd0fd26f3cf22d" => :el_capitan
-    sha256 "5a20089a01f4c7f1d85bc91f6f2369ce5b1f1c4faf8c9beed2a764f80609ab41" => :yosemite
-    sha256 "c2b007f5dad961d8767cc129d69ba352e0c8d6dff9746ee45697ceff6208ed8a" => :mavericks
+    rebuild 3
+    sha256 "4f8fdc3bd23ecc4248eecbfce3e0ecb85508d8b80919a98d56f2cd6434603ea1" => :el_capitan
+    sha256 "5a75866c2bb0e67b7f52e7d0ba300921eefc8ad1ce8974b259ba3772124e5bf0" => :yosemite
+    sha256 "e13cc186a262156f56f03d7f0e683530278cf83d943dea883bd407e44f7e31e9" => :mavericks
   end
 
   depends_on "cmake" => :build
