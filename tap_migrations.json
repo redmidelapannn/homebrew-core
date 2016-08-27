@@ -173,6 +173,7 @@
   "miredo": "homebrew/boneyard",
   "morse": "homebrew/x11",
   "mp3fs": "homebrew/fuse",
+  "mpich": "homebrew/science",
   "mpio": "homebrew/boneyard",
   "mscgen": "homebrew/x11",
   "msgpack-rpc": "homebrew/boneyard",
