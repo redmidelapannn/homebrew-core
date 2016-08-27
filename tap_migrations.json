@@ -189,6 +189,7 @@
   "nlopt": "homebrew/science",
   "ntfs-3g": "homebrew/fuse",
   "octave": "homebrew/science",
+  "open-mpi": "homebrew/science",
   "opencv": "homebrew/science",
   "openfst": "homebrew/science",
   "opengrm-ngram": "homebrew/science",
