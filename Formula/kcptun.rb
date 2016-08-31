@@ -7,6 +7,13 @@ class Kcptun < Formula
   sha256 "921b888ce19a3229a2c6518aa21e762c74453f6648421daeb387b4aa2d6d5ecc"
   head "https://github.com/xtaci/kcptun.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2230de9f92bf6d6fc922bf332b68ecdaf7f605e980c27f046aa5e3df4449f731" => :el_capitan
+    sha256 "81b646ea4fac1d6d6f7cc6ac9627091eae7c83fe6764a630a3418f875e00193b" => :yosemite
+    sha256 "38720d70893dd9c5d3cdec6320b63747a0bac53496ec7d05f885e83dde4dac17" => :mavericks
+  end
+
   depends_on "go" => :build
 
   go_resource "golang.org/x/crypto" do
