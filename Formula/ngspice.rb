@@ -14,9 +14,10 @@ class Ngspice < Formula
   end
 
   bottle do
-    sha256 "b508b0ca4f88db18b48796715a9de16ee5e7c119b13809ce01a87685f3a9393e" => :el_capitan
-    sha256 "ea1f0b65fcb3bb926124694d210e14800be6e47e73dcbf47a8e2baaac5314f44" => :yosemite
-    sha256 "4bc737b0801c82999a290f602f416de0ed38777df599afc688d9695c1f16d704" => :mavericks
+    rebuild 1
+    sha256 "09203a7877d296eda56901f3e0a906869fe67c623c9bcdb1c5087849f3720f87" => :el_capitan
+    sha256 "fc0e78f95302debeae3e11de3d85cdb25008399e44a77518da9f26738a4071ce" => :yosemite
+    sha256 "44db2de16d266833283b3e501db4afbdc10f9a576fa845ff48ad21eb4a143a5e" => :mavericks
   end
 
   option "without-xspice", "Build without x-spice extensions"
