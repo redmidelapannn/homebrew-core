@@ -13,9 +13,10 @@ class GstPluginsBad < Formula
   end
 
   bottle do
-    sha256 "ac06d0d507132e957db67ab70e695ca217dadb58fae6eac7898b524f3274fa8f" => :el_capitan
-    sha256 "56ee0524b92692aa9f22f56942b9d29ce17e5ef472e41993d4cb21a370f47006" => :yosemite
-    sha256 "ea2b3e801bf9ab667af73c6cb2bd03c9f52bf95b8ff991335f6ecfb9baad3609" => :mavericks
+    rebuild 1
+    sha256 "2ebb371db8eb7e02b5b42b348958a31c2c0b880bc1d31b9bcfe3ce8bb714d12f" => :el_capitan
+    sha256 "356415ffd8db154538d2f6d19b496b33022c41ac5f5366cbf572a2fd9aa61295" => :yosemite
+    sha256 "6b6f5617321fa698e02ccdd79c83f35365c874c60b0958f123afc4f8b63c16b6" => :mavericks
   end
 
   head do
