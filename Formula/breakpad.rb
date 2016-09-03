@@ -6,6 +6,13 @@ class Breakpad < Formula
   version "1.0.0"
   head "https://chromium.googlesource.com/breakpad/breakpad.git"
 
+  bottle do
+    cellar :any
+    sha256 "6b245db8af6719b513e14dfc24f00df909c9733c132ac5fa1b6e3147dd807b65" => :el_capitan
+    sha256 "edf32650b2089226c00167c8f702c04287724c1c81fa27d16c3fe0301298c16e" => :yosemite
+    sha256 "b8acaccebc4f3cf4c483949566fba585a6820309cdad9dc825d4c78397f52873" => :mavericks
+  end
+
   depends_on :xcode => :build
 
   def install
