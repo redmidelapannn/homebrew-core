@@ -4,6 +4,12 @@ class CourierUnicode < Formula
   url "https://downloads.sourceforge.net/project/courier/courier-unicode/1.4/courier-unicode-1.4.tar.bz2"
   sha256 "2174f4cdd2cd3fe554d4cbbd9557abac0e54c0226084f368bcb2e66b0e78cf96"
 
+  bottle do
+    cellar :any
+    sha256 "d11336a8a0b24ac10522cffe8ac5abaa5796b975b52f0cf50deae9379687b2e4" => :el_capitan
+    sha256 "f31b8a9fadebebd8f0a019f04ad31e05c19605eb77271f6351365606c67e5d63" => :mavericks
+  end
+
   def install
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
