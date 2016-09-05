@@ -6,9 +6,10 @@ class OpensslAT11 < Formula
   sha256 "f5c69ff9ac1472c80b868efc1c1c0d8dcfc746d29ebe563de2365dd56dbd8c82"
 
   bottle do
-    sha256 "697e4bbcbe24a7fc4a66e36fb2ddc0f19a54e786f14e02d320fa4d9e3697d3fa" => :el_capitan
-    sha256 "e1b0864c68ac6779734566d0d82b3d95e1511788f8dda27d8854e66653eba481" => :yosemite
-    sha256 "99853edea67ec33f933cb2ba5eb255adfec637ff320af632d0e54e066786e1d3" => :mavericks
+    rebuild 1
+    sha256 "40068699af714e7438e40dbf70ed59d2beb95680f1669d98b172437cf6b30627" => :el_capitan
+    sha256 "bdb457facebfd35dd379612c72109a6be21a7eab6d609f69a893fe03c0eab81f" => :yosemite
+    sha256 "aaa94d6062aff89d8d6f1841bcd6f2746de57578a53747e1035a9549aa562d92" => :mavericks
   end
 
   keg_only :provided_by_osx,
