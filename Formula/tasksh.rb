@@ -7,10 +7,9 @@ class Tasksh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "74593fb90941d65acd8a4712218c2285819cbd61916b24be3ea792abbbe4dee5" => :el_capitan
-    sha256 "a618c8e5a8bf535aa116b60a68579f6f41904169641f43dde82693355785b38c" => :yosemite
-    sha256 "d3a214c7e1dd43755ad6a0e77bf9d1a455f88c67b60126f1a9f64b9bf426bfdc" => :mavericks
+    sha256 "a3432bdb927466c7bace4a0addc036487a17d6c61fc71cb329755a00eb625599" => :el_capitan
+    sha256 "b883b5423acf239c933d94684432890cdc9be29cc2848352f00405974bbfe6e7" => :yosemite
+    sha256 "db5d85e41c859639a2398e0403399d13da1f9823b681642dc75d1a171bc1ec89" => :mavericks
   end
 
   depends_on "cmake" => :build
