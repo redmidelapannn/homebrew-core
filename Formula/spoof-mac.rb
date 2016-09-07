@@ -7,9 +7,10 @@ class SpoofMac < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6c97eaa9a82f7eadb5c1127a0dcf9b0f9f1837e36d3e9978e989471322f42b4a" => :el_capitan
-    sha256 "927644491edf064dcc3145e05107737c3e571b55989ae8d539bf0b499da3685c" => :yosemite
-    sha256 "f7dc1529dd2c83d8bf8667d170299aa592910bb4918174b23f6a9b7d3555084e" => :mavericks
+    rebuild 1
+    sha256 "f3a9465720a89d8d5cd4eafa0d6e5d5e82cc9f8beaadfd0be18a115a474c9cd9" => :el_capitan
+    sha256 "0fed4a6ef99045ec9c14b9dfda2811ff185b44e65b85dd1bc5bf9028837131b0" => :yosemite
+    sha256 "0fed4a6ef99045ec9c14b9dfda2811ff185b44e65b85dd1bc5bf9028837131b0" => :mavericks
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
