@@ -6,10 +6,10 @@ class Tinyproxy < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 2
-    sha256 "004c6319701e7529b252e1860321cf14369a74029a6f05523662365ff1292f1b" => :el_capitan
-    sha256 "b68a1b323a20f689b96e7405f2c491c66849fa011beb450dcf417be491557da4" => :yosemite
-    sha256 "7bba647101259e9299a8a61177fcba2966b056091e9b1a28a43207e612a0bcfc" => :mavericks
+    rebuild 3
+    sha256 "a12edc521ad0540682bbaa0cb6591af2dfa9433a3f045139d81695af9fd529e9" => :el_capitan
+    sha256 "b562a20f8e1634a288d5651b77e9269c8c088654e16ad1379de2861632140136" => :yosemite
+    sha256 "347ff9d2c84aa5512ebf48b068e643513b35cd916467c7d366a861c77a298fbf" => :mavericks
   end
 
   depends_on "asciidoc" => :build
