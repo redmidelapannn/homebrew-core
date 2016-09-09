@@ -7,9 +7,9 @@ class Depqbf < Formula
 
   bottle do
     cellar :any
-    sha256 "7c0b8ef336f9d2bac14e11f0ca838620428376ba4b1f29b6ac3614d3a5f61774" => :el_capitan
-    sha256 "d10617714d882cce0a4a8754c03fe7f9df7adf01de8b0016cceafe092e98c163" => :yosemite
-    sha256 "92ef32e3fff775db370d3c83ee1b09c0d3c7debab448be37f30465094b17f028" => :mavericks
+    sha256 "e3426b6005c04dfe465718ea78d6bbd7222b016e93fb14bfd22bb4158e67b8e0" => :el_capitan
+    sha256 "03082a5625150ae8b6d90267b2287977511e4f01948ac2ab2d8095c7c30bb66e" => :yosemite
+    sha256 "d6411a0a44dd26416445dfe0fe769c89486af76c6b1db948341a0daa3d68c7c9" => :mavericks
   end
 
   def install
