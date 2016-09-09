@@ -6,10 +6,10 @@ class Tcping < Formula
 
   bottle do
     cellar :any_skip_relocation
-    revision 1
-    sha256 "2fb4f218abf6de64e4a8ee49447567aa0666f212dfb49f45a4f8d8f30ef40076" => :el_capitan
-    sha256 "a9e7c0063e20ea023d0b5ad29564e2f8744e5685f3f3b794f02d5ceb4c316421" => :yosemite
-    sha256 "92f3a1c1ed85cbfec37ed40f4f8234262b28758072d69765995839cbf290f393" => :mavericks
+    rebuild 2
+    sha256 "21bfa0835942463e1c5690d4df92298b47de9618d0bd2105ec15e1da59c8dd92" => :el_capitan
+    sha256 "e5f561e84fc5293545807246e6a96122e57b66f5fce98a854805c049cc47ba6e" => :yosemite
+    sha256 "047d2e177ce66651c2aaff4b3bb8a6c4fd6ac124d0199cb46f64cdf64d9674a6" => :mavericks
   end
 
   def install
