@@ -6,9 +6,10 @@ class Ftjam < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f94287203827dea6ac5031e695c217a48b1b69e939dcd68a489c8477b4100447" => :el_capitan
-    sha256 "95490ead99e537713d8c26d1c1bea72b31ea06153a405867ffe83c044593caa0" => :yosemite
-    sha256 "554e527a1e52be6ebd9f5f1fbae4e8f648f750a179936e329238dee32b32520a" => :mavericks
+    rebuild 1
+    sha256 "aacfdd6614f2ea187ea42af4b9c569e5047c4967f822f546f6b3e8dffb0e5429" => :el_capitan
+    sha256 "895aebb571b1cd7d52901f8f6b96ce28b1125dc28f07c6a4575c9624ae2e1523" => :yosemite
+    sha256 "55f0ea0ed0850d0804b9d32f9d759183329ed1b4763cd6b64e38ef3d870f280f" => :mavericks
   end
 
   conflicts_with "jam", :because => "both install a `jam` binary"
