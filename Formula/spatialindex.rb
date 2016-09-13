@@ -6,10 +6,10 @@ class Spatialindex < Formula
 
   bottle do
     cellar :any
-    sha256 "34d1e02dd4133ed67a8a4c299044e277e1e9cfc982962c50c44c751723eb85cb" => :el_capitan
-    sha256 "907f40e614218622fd9fecc0a542adcdf768446a198ef4cc972b30a7eb5e6cd3" => :yosemite
-    sha256 "33e053a03ea77bc87c3aab4f8319461baab56824e3c933cb09398e6df1b542ba" => :mavericks
-    sha256 "401c416f243996ac4f6bca61a871aec7fb8811f8aef6073dfc62c64dfe2650f7" => :mountain_lion
+    rebuild 1
+    sha256 "a7b3f769cb1f9db4294211f30e37719eca6344d6b047ceaf41c92f6c61fdcce9" => :el_capitan
+    sha256 "b34ce8d65f04297d144abb5db808983e2b5e97e56c9685171cafef1f3ec63d2b" => :yosemite
+    sha256 "9c9a538deba53ce97ed3f94f1fd4c85636ab706dd33a3bd694e246af0cdf866d" => :mavericks
   end
 
   def install
