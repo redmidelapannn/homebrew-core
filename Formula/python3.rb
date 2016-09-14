@@ -19,11 +19,10 @@ class Python3 < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "5ccad7ea17738f48a4e88a2b9372a8fed5db5f038a3828b3451f5a4109776d12" => :sierra
-    sha256 "e0e96cd514640e006a4c42689dc144972a3aeff55fb269b7e4e79e7df2ce9432" => :el_capitan
-    sha256 "5c1e133c5a731b4e1ef6c3d0b7fb3c5c120945549d5901e8e6e4fe81c1670333" => :yosemite
-    sha256 "a74bac7701fbabf89449607d01dff8c0f22b0008bb4d7571e7ee0ddc86f69923" => :mavericks
+    rebuild 2
+    sha256 "54d4bef780fdd10f311a465d80a7dc4aa9f88d9d91b0bafdfec3c1ac85efdb45" => :el_capitan
+    sha256 "bb25c3dae21702e3a90a8bc5be3881e7792e0934ef59221e4a92bf8ee98669c6" => :yosemite
+    sha256 "2d6c8413d4f1dd9b285e77185c95f8122ce61bd0f6b5d86d8bc5fc93a484bc87" => :mavericks
   end
 
   devel do
