@@ -79,7 +79,9 @@ class Libspatialite < Formula
     args << "--enable-geopackage=no" if build.without? "geopackage"
 
     system "./configure", *args
-    system "make", "check"
+    # Temporary workaround for Sierra bottling. Please remove for the next
+    # update.
+    system "make", "check" if MacOS.version < :sierra
     system "make", "install"
   end
 
