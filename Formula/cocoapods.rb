@@ -17,9 +17,10 @@ class Cocoapods < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "736b65d17ed27bac64e14c7e932c1b3959d57d652d5d72a335c17494b9c5e2ad" => :el_capitan
-    sha256 "df75ba653f028491ea817cc21d1993adfa39090d24575226404fe5220da90082" => :yosemite
-    sha256 "0e60242bb181b9a0b66bdbe3b105780330c737da4bb0dea9bd6408f2093aa96a" => :mavericks
+    rebuild 1
+    sha256 "58a95d26251b15929f66aade25cab68b006026cacc54126634d056d8c494f88e" => :el_capitan
+    sha256 "52af086ff84157810fff565c78bd527e5b278a2844dfd38e41f9ec6360065b6b" => :yosemite
+    sha256 "b0fb8dff0a99ce494d8482442649df7aa5eae22992007df245db98bc10b25320" => :mavericks
   end
 
   devel do
