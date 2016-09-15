@@ -4,6 +4,12 @@ class Linkerd < Formula
   url "https://github.com/BuoyantIO/linkerd/releases/download/0.7.5/linkerd-0.7.5.tgz"
   sha256 "6f18f77b6dac019e24ccfb6adec74d6b13430be79af05f504461b39db85ebdca"
 
+  bottle do
+    sha256 "1cc70463761714a0d6df3dfd67dc91583505dcda260d0d8acdfd46e899540127" => :el_capitan
+    sha256 "8ba519a3be709f99212d7535bf7651e19801cde4769e9c9af1fa18f041ae4bfe" => :yosemite
+    sha256 "8ba519a3be709f99212d7535bf7651e19801cde4769e9c9af1fa18f041ae4bfe" => :mavericks
+  end
+
   depends_on :java => "1.8+"
 
   def install
