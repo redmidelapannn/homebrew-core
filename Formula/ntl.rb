@@ -6,9 +6,10 @@ class Ntl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a5c752d7d68c7deb5579c65ab2c8e6d86cdd0f42a079b3b8dd18f543c2afe173" => :el_capitan
-    sha256 "7e18d270ed1cd7e82b41e8b15a38c32feed36cf29d890fc1e18c836905dbfbd3" => :yosemite
-    sha256 "e406e9a91f24abb86252fd652780c316f87e44fa13fb171e090a401a357b02a0" => :mavericks
+    rebuild 1
+    sha256 "d436c12dd63947346a7de3b2446516e499ef1cf429df640cbba263db36938ed1" => :el_capitan
+    sha256 "4239ea776501fb76c35b5fa76f1aac46cd285235dcf8c756b97d0b91cc9b18d1" => :yosemite
+    sha256 "7ae2b6cbf3af31a0a498c7955f640e155c6f7b52ac0d728a841de876d3d6f134" => :mavericks
   end
 
   depends_on "gmp"
