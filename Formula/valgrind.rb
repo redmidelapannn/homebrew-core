@@ -26,9 +26,10 @@ class Valgrind < Formula
   end
 
   bottle do
-    sha256 "135876549d56520b45c659ba10016da512ce2e64e133484e9d3f65d63af596a0" => :el_capitan
-    sha256 "59ed8706211ac8a82b4025e5ea489061822503e8cae3ec37390fc59fa8990e38" => :yosemite
-    sha256 "13b4586d3781bc50bcc2cd14ed05d19333ef85b91ef4b2b21b4c1438dba163b5" => :mavericks
+    rebuild 1
+    sha256 "d845242fc49eb572d00ba49435ab5db45043a03c40ca8c3c52981dbf4cdeff77" => :el_capitan
+    sha256 "e1153c0dabe6e45abe6903217ac6ae915546299f743f1fbcbd75179c09a5269a" => :yosemite
+    sha256 "4e2bd8d74fd14dec152c15d108f2bf94115b0ee320a168c15af13bc2ac608862" => :mavericks
   end
 
   # These should normally be head-only deps, but we're patching stable's
