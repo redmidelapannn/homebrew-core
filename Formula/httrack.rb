@@ -7,10 +7,10 @@ class Httrack < Formula
   sha256 "871b60a1e22d7ac217e4e14ad4d562fbad5df7c370e845f1ecf5c0e4917be482"
 
   bottle do
-    revision 1
-    sha256 "032f5fde39f04bdf772c223cdcd4974a7bb72bfcff0f71f34a8716870a80e37c" => :el_capitan
-    sha256 "5dafcc2d3cf49fcbf3b804aacd42955d32cfff7643fdbb157ffbecbdaddfae68" => :yosemite
-    sha256 "d6c9e71315a64a0fb1ac42e3515742f6d7b8dfac6ec1049a0f81e5aedd4f4364" => :mavericks
+    rebuild 2
+    sha256 "b292a98716b103d2a718fee4a6994980b361e863cbc40a0f49b41e91ffc79162" => :el_capitan
+    sha256 "0ae178de121c2678a2aa5f8d9e3244b8fc92d5b2829dcc255daa077d865bb9d1" => :yosemite
+    sha256 "ad4c21c0089ae407c3ee77852a30ac1ab467fcadcc8c10d96e95db2d3933b75b" => :mavericks
   end
 
   depends_on "openssl"
