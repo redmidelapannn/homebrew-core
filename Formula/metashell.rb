@@ -5,10 +5,9 @@ class Metashell < Formula
   sha256 "bf788174279a11abdb8a84482482496255c73feabf4ba5c2b090f6a38acdb1b8"
 
   bottle do
-    sha256 "fff1e495ddfda97b8826fa67333a1acf5847e6e6b0fcd4d8eb12332ea714e8f0" => :el_capitan
-    sha256 "889f85d4601b30dd3b2eed8c64a3dbb0554600c0f624e6b8fbfff533922a9e79" => :yosemite
-    sha256 "3f134dccf6bff48ab61cfdb312b03a3318591e6e41396f0b98795e9423f31421" => :mavericks
-    sha256 "1c772d98ec272ed38167fa7cec02f91c4666616fbe189af8c9377cb8f28f579b" => :mountain_lion
+    sha256 "4cc10f05904c9c5bac0d18889b52ad6be07591c7ad7785630b6cfd9b0e80a448" => :sierra
+    sha256 "1638ef10eef811a3c9b17d48b0357c4ce92dce8fdb67b1ed0f75d6707f9c6230" => :el_capitan
+    sha256 "3b3762fc6c7947684f89c18261b7dd93ab71d756a33d6edbfdb25a75d62a2e79" => :yosemite
   end
 
   depends_on "cmake" => :build
