@@ -6,9 +6,10 @@ class Sngrep < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "80bf467322a973a852b6b84fb6e32bb5d0387303bbd60aab93b3a5ae37ab91e7" => :el_capitan
+    rebuild 1
+    sha256 "baea5665e9cb4e775ccf615486be1c632b29a02653b1e52182ce8d798ee61552" => :sierra
+    sha256 "2d43fda58ecfae1dc3781331fea49842bd3a4448a3ba4e293c3c798dbc1dc480" => :el_capitan
     sha256 "74ba38790d5263e34c43f8f8c970e610d2a0d514cb3b9ac5a06072e18f00cfce" => :yosemite
-    sha256 "6007b4506629bfeb7759b4450d01ac1ff14a75d582c14f1c7568dd9cdf722f95" => :mavericks
   end
 
   depends_on "autoconf" => :build
