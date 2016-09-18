@@ -6,8 +6,8 @@ class Dshb < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "491d5a425463fb4f328503f91cfe6e28a0785fdbf8ec7a323a366bab54e4158c" => :el_capitan
-    sha256 "94085328f6ef593ca0d00923fabfe43586c1c4b51eaf555ce9c7db9d7db1f486" => :yosemite
+    rebuild 1
+    sha256 "c797b9bcf9e5a6d76a63a0399e431d74d839aeae6b958708eee26e1fe6f6ff7b" => :yosemite
   end
 
   depends_on :xcode => ["7.0", :build]
