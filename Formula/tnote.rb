@@ -6,9 +6,10 @@ class Tnote < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "63b2c1aea236fd24d2fa5c315bd0772b009d63018b9c18379a5e782f65debfea" => :el_capitan
-    sha256 "de7e2e72f85a8c42133329f77d242aa0b8a6c9cb2edbb305d843a6e7be1ea3b0" => :yosemite
-    sha256 "8e3a2baf4185b131e0223e6b0fe113890ace15b6a9c67b5f7a4068b3d767c4e6" => :mavericks
+    rebuild 1
+    sha256 "64bb90aabc813990f35a3c1b995827ef12eb7fcb8358b028bcbebfebceb42dec" => :sierra
+    sha256 "64bb90aabc813990f35a3c1b995827ef12eb7fcb8358b028bcbebfebceb42dec" => :el_capitan
+    sha256 "5ae64bdc99ff23b30361d41054a760608b236396c9890493cc2704bf6e3db812" => :yosemite
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
