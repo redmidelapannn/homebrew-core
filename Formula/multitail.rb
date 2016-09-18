@@ -6,9 +6,10 @@ class Multitail < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "01ac7f53386a8099b4dd9e80bcc14dcb8097676199819ed8e2dc2a0893aba930" => :el_capitan
-    sha256 "60c748bbcac5188c00b1f0033bb46491623061cf08dfc5e6f5514d9b6042b5f4" => :yosemite
-    sha256 "5d2219191236e2209bb4642ecb865716390e9984b27ce145f391fb2280e9f906" => :mavericks
+    rebuild 1
+    sha256 "ca668542d335838703a1f112af8ffaecdaf766e3fd8f7b6bdc5f772f45194529" => :sierra
+    sha256 "7ed8b9443e77afb594d7d9518aa7c54177c54d62ce638d579db7d7b803d1de45" => :el_capitan
+    sha256 "d724a13108880691b93026dd1efcb6d61d2cc2d8f216fbc9c7095fd9e603eb57" => :yosemite
   end
 
   def install
