@@ -5,10 +5,10 @@ class Bvi < Formula
   sha256 "015a3c2832c7c097d98a5527deef882119546287ba8f2a70c736227d764ef802"
 
   bottle do
-    sha256 "47c35b91db7052ee938daa6ddd95e96d49982e8767a48a0821f054b543fedb7f" => :el_capitan
-    sha256 "4b5a3bdfa1bf083bde13338fc8fc5a8027880b3e79611ad064e44fd2f4d7a4a0" => :yosemite
-    sha256 "7ec90f6665011faa3f1715cf6cc855270a536993633d8a4600cdb0492db16686" => :mavericks
-    sha256 "75d2461715e5afacd35efcb188d580191db6ebe02607bc66ea52a813be21e29c" => :mountain_lion
+    rebuild 1
+    sha256 "a86e9033ac2c1ac37ad4baa331b03c9177fd777ee686420e988029663660a934" => :sierra
+    sha256 "95a8269dbed8e02300a3f829cd706ec82c9b2b175b48ad11f02ee79b682766ca" => :el_capitan
+    sha256 "ac313516b98700ce8de6cc8ee34452779b6aec576b4a2af01100d0f0919e37be" => :yosemite
   end
 
   def install
