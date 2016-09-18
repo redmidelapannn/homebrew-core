@@ -6,9 +6,10 @@ class Ne < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "56d04a63498270ddfed02081ab5970bcc5751a45468ff08b205d639d2e8878ff" => :el_capitan
-    sha256 "78875d4f901208279d8d13da35d40d0fbe2278b549a0c33754280f77dcf864e1" => :yosemite
-    sha256 "8b7072ee6e35427d7343af22811fb9af854788a14725b4fc6516f6872b273157" => :mavericks
+    rebuild 1
+    sha256 "ff2c8069b2b4f5b37715bcc7743605a8e9ade38f230ebf27a98a46d3c1e2951e" => :sierra
+    sha256 "2ecafb130be611d2a4e7bb623e9fda493c0b29ea7ac1e9c4dce5023263c5f413" => :el_capitan
+    sha256 "9a5d6bc5a96ab3df88c10e355a53731dd63ea803dd73d9b046b821ac4aaf550b" => :yosemite
   end
 
   def install
