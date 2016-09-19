@@ -9,10 +9,9 @@ class YoutubeDl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "514d6981f9e290c3162751216ace9c3d8c2979802c5e0a9a4d9b6721e9bf998b" => :sierra
-    sha256 "bba846f7a0d8cd3e1a319a45e72bb60ed47d55b097a9069be2e0d6ebe4431fca" => :el_capitan
-    sha256 "514d6981f9e290c3162751216ace9c3d8c2979802c5e0a9a4d9b6721e9bf998b" => :yosemite
-    sha256 "514d6981f9e290c3162751216ace9c3d8c2979802c5e0a9a4d9b6721e9bf998b" => :mavericks
+    sha256 "dc7d7f0cafaff18a601733db12af16c262d198b821d7f18b253487c415c758ae" => :sierra
+    sha256 "dc7d7f0cafaff18a601733db12af16c262d198b821d7f18b253487c415c758ae" => :el_capitan
+    sha256 "dc7d7f0cafaff18a601733db12af16c262d198b821d7f18b253487c415c758ae" => :yosemite
   end
 
   head do
