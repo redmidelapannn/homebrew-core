@@ -6,9 +6,10 @@ class Asciiquarium < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8303a8c1a413ba08d67b7f326663b6c2294fb537bfa18aa6f97a92c050fe0068" => :el_capitan
-    sha256 "15b9d47615685f3c32f8336b1c75274b7cb2e176f71c9bf2957328c529b58f6d" => :yosemite
-    sha256 "93e208857b2497ab81ff252f2186e5e6552930b82045f3b80671cf82471dce6c" => :mavericks
+    rebuild 1
+    sha256 "e39647476f3629ceb5411c7c8a0172029c878208944fe4f1c36585381231793e" => :sierra
+    sha256 "57b502df2c9d3303679b80edd311e89f98fce4246bfcff1f726e5a86e8969ba4" => :el_capitan
+    sha256 "721e2dadd3d191a2d48212701ffb116e0640ee6e259d07db0ec1ae3f9e5385fe" => :yosemite
   end
 
   resource "Curses" do
