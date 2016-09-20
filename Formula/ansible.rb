@@ -9,11 +9,10 @@ class Ansible < Formula
   head "https://github.com/ansible/ansible.git", branch: "devel"
 
   bottle do
-    cellar :any
-    rebuild 2
-    sha256 "75c133889a494d2105929c66c37a37dd55a3ad245c8c16c83e7549ec3459354a" => :sierra
-    sha256 "aa15b8cc3be388f6c2712e51dd591f58ab19277b4382aee6bae00acae0d9f2dd" => :el_capitan
-    sha256 "c1f8d33f9b7fbe2d1022f048eca29f175b6d3fb676e32f146e310e786d6d64c9" => :yosemite
+    rebuild 3
+    sha256 "5eb0c71b96de13081719b6a4e824a1b2fca2843ec102e2800c14f4cca3d876b0" => :sierra
+    sha256 "c0660b5192ceed705773afbf38e6f139b050ea7cbc8dd6349147710475cd197e" => :el_capitan
+    sha256 "4ce52b987a7a111011c8558d5df49981b0ac39c5b3d2e886a5f86f3811499e86" => :yosemite
   end
 
   depends_on "pkg-config" => :build
