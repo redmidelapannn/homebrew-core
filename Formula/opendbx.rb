@@ -5,10 +5,10 @@ class Opendbx < Formula
   sha256 "2246a03812c7d90f10194ad01c2213a7646e383000a800277c6fb8d2bf81497c"
 
   bottle do
-    sha256 "dbc54ada8f2b9b7fed3ee18a4d6d1c7d88b2885a45ffbf06adf31f312d78bdad" => :el_capitan
-    sha256 "d107e7392614948e26b5720072bddb06b07c9f9e07a3804ccdd9c91beecfcc77" => :yosemite
-    sha256 "8d08b6f6a5164c357cfb61fe288f2d129e7452c1e7f58efb0ef228e6ba747887" => :mavericks
-    sha256 "2ea5595a73cc1317ab7d760e75cb428d3c5440c490a0ba4b001b8a6e84ce785c" => :mountain_lion
+    rebuild 1
+    sha256 "55a52a5de72a8fd66b7a2058b2b8c63b5716e23c8ffce17cb1e8ab49faa20b98" => :sierra
+    sha256 "f4c9fc48b8dd35f5e3f85c63e580dbd22701e22527db4ceacd294e1325369701" => :el_capitan
+    sha256 "1b0cd2a97137cfb90d0581cf3b9296c09633c4281c962f110f4f69ce437152bc" => :yosemite
   end
 
   depends_on "readline"
