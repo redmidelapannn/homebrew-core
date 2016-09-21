@@ -6,9 +6,9 @@ class Uberftp < Formula
 
   bottle do
     cellar :any
-    sha256 "e8dce3fad5462c096d9e1c4e605280679f9a79b6b9204401fb10d3449807d2d9" => :el_capitan
-    sha256 "84ab25a3cae1ac0d4aeb2b967b151b396301eb1f7877bb6225ed202847a35cff" => :yosemite
-    sha256 "9c7f1cbb83c268b00a137e608497bafe066ac41a034c256ca55075d1eeb72cfe" => :mavericks
+    rebuild 1
+    sha256 "fdba91dd70c6173acae5a639e5ae75d00364b5cfe20374afd3f3ff05c8c3ba12" => :el_capitan
+    sha256 "bb8e32f36156fd082e5f42db055ef6971696124a116c9b295ea9789266370c25" => :yosemite
   end
 
   depends_on "globus-toolkit"
