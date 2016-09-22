@@ -18,10 +18,10 @@ class Hidapi < Formula
 
   bottle do
     cellar :any
-    revision 2
-    sha256 "cea4750ae62177a9b399b43d463eec41852161f691a148b03d7b7f91789932fc" => :el_capitan
-    sha256 "06daf7b3080f0c87c46b3f69c869ce3b88de5ce1187db2435cd8e3a1db2e9871" => :yosemite
-    sha256 "6821097f8a0bb55df7697aa26fc7bea3e79914e76932eb69e03b4346a22309dc" => :mavericks
+    rebuild 3
+    sha256 "1ba1ff0cd27c9468646111bc6ebe03e8e1233ae27baa2c148412effd08d30ff8" => :sierra
+    sha256 "66e1ab2f45c8eefdbb663ce73f0cfe1d52f3c3a5680abf008c7ac6a08fc66266" => :el_capitan
+    sha256 "b137f39790d00d163dc3f24540cfa3f66da1bafafab218af1a812010a8060144" => :yosemite
   end
 
   depends_on "autoconf" => :build
