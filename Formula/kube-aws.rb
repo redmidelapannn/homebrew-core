@@ -7,6 +7,13 @@ class KubeAws < Formula
   sha256 "85125641fca7431d8844192a22fb981dbd3de9c568aff2a7638812bf30f26d22"
   head "https://github.com/coreos/coreos-kubernetes.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c32188663c230d4437fa3701d1555cb6f6d9b03e75aec1e3204412d0cc50a2b5" => :sierra
+    sha256 "8ef15cc7d4b987559b458403488230ef896410570679c08cc8d15ba2b1478b9d" => :el_capitan
+    sha256 "ef7fd84bd12f5b19e96a798caa8a8245f108c5832797932ac46d7a4f444f1174" => :yosemite
+  end
+
   depends_on "go" => :build
 
   def install
