@@ -13,9 +13,10 @@ class Bash < Formula
   head "http://git.savannah.gnu.org/r/bash.git"
 
   bottle do
-    sha256 "a2f73335f36d0a35970b1ee2b41e4a6b939ffd9df2a3ee9e9ebb942765d10002" => :sierra
-    sha256 "9f11130718619dd0523760d714c8ac349fd62cc0b11dc70671ff132e7fc94ef5" => :el_capitan
-    sha256 "af85e62012466dbb9ec9e08fe59acb03aff35f2d41844d2871c80bbd5a9e6ac3" => :yosemite
+    rebuild 1
+    sha256 "98c45980228a4e6e7bcf2db73668b1d7102b6b808a9de54f97b97a8e15325c48" => :sierra
+    sha256 "29ba502da695c6dbc777b0a4416d1b5a9c39e22bfe62471876725cde0d2ce9a4" => :el_capitan
+    sha256 "37161c6490625a80ef5b99710fece8fcb3bb29c5f0d30785fc30014e2a4cf69f" => :yosemite
   end
 
   depends_on "readline"
