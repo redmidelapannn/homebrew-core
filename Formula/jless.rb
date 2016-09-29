@@ -8,10 +8,9 @@ class Jless < Formula
   version_scheme 1
 
   bottle do
-    revision 1
-    sha256 "00d5e6a985a6692c51f9c3b81e9ab954a2a2e8adc75861423e7830c6d46575d8" => :el_capitan
-    sha256 "a7a470e7de19322dd2d4fb3e8b2be38cbc340936771aa00864a800f79e107b54" => :yosemite
-    sha256 "614093a58873090cc70f51e5e0ff0fb7b3ee76214c619879258679502c9ee750" => :mavericks
+    sha256 "42daba78c301791ff6498aac3caf7f712689cf17cf3ee18036bfe31b0f1a460d" => :sierra
+    sha256 "44f18c0fe6441700219442af8c69b06d2432bd37a8d60ebf846b9af0022bacc1" => :el_capitan
+    sha256 "97a7f15893b9cb611a4ee57bc62293c97863b1cc1650056cad8f4d99ece17538" => :yosemite
   end
 
   def install
