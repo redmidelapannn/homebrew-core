@@ -5,6 +5,13 @@ class Thrust < Formula
   sha256 "00925daee4d9505b7f33d0ed42ab0de0f9c68c4ffbe2a41e6d04452cdee77b2d"
   head "https://github.com/thrust/thrust.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "eb26d0fc6bf2cb5d091a4ebedbd2631ab491626114147b85a5f9be2d732fc023" => :sierra
+    sha256 "eb26d0fc6bf2cb5d091a4ebedbd2631ab491626114147b85a5f9be2d732fc023" => :el_capitan
+    sha256 "eb26d0fc6bf2cb5d091a4ebedbd2631ab491626114147b85a5f9be2d732fc023" => :yosemite
+  end
+
   def install
     (include/"thrust").install Dir["*"]
   end
