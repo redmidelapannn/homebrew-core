@@ -8,9 +8,10 @@ class Python < Formula
   head "https://hg.python.org/cpython", :using => :hg, :branch => "2.7"
 
   bottle do
-    sha256 "082e12c8a27f4d18d15340818f4b14052916880c93b0b668d23b7a87c5ffb124" => :sierra
-    sha256 "a521afdafd08a7f09b48b9f36a76786671dbec1a5b8b2ae3a02f31286effee73" => :el_capitan
-    sha256 "09630f52c4121f47fe3ae2bb7210a0f673c74c8d4474db5fd22be0e605fb1cab" => :yosemite
+    rebuild 1
+    sha256 "58fee687e264befb7493500d0ae79c719930935c893069c98c7ff74a179f7d9b" => :sierra
+    sha256 "821d9417fe618b6efd3bacb18521e4493ab07fd088a863ae237efaa752856a1b" => :el_capitan
+    sha256 "d92bc6b7068c75ce3aea3aad7f6325c7c3e251b3c3e56df42c6c92317b80d807" => :yosemite
   end
 
   # Please don't add a wide/ucs4 option as it won't be accepted.
