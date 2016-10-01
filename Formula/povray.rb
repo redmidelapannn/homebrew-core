@@ -6,10 +6,9 @@ class Povray < Formula
   revision 2
 
   bottle do
-    sha256 "76ae74882db19c67853e976d6944d458942a673cc2bde706921b134805859668" => :sierra
-    sha256 "17740eda794d7dc4e3badf1c9a0718549d2b8d763a636527c468261629c9b677" => :el_capitan
-    sha256 "056812e8c4bbe7d1045431439d0a50636366f06cd90fb076936a25cffe9ffdc4" => :yosemite
-    sha256 "52f022ad4eff0369a0fa189d7e821a6f208a096df83a845f05450db8569c4bc7" => :mavericks
+    sha256 "5f3072a35a41c64460d9e2fae0edb63e10b38b07aa3466428ae128f0e7387e2d" => :sierra
+    sha256 "7dea0a3ea7dc9348211db1c68b402ade03be88a6e4d2519bcb2010fc23aa23b0" => :el_capitan
+    sha256 "90fa860724af5e6f68e16aceab11b93d86ecb66a888cff9cb5890854046cec3b" => :yosemite
   end
 
   deprecated_option "use-openexr" => "with-openexr"
