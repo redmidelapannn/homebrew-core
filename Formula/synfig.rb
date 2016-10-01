@@ -8,9 +8,9 @@ class Synfig < Formula
   head "git://synfig.git.sourceforge.net/gitroot/synfig/synfig"
 
   bottle do
-    sha256 "d109db84521cd3d8d4092de86bdeda50e96f726616f3c1a50f0bf0912a3a91e3" => :el_capitan
-    sha256 "45df75ac729cc20877f89542d25f466d48c62d7aa51a17ca5535469c59973670" => :yosemite
-    sha256 "a30a492c69ef50aec2f1e22482d3c4eaef7c5899a43805afe72918c59cff994c" => :mavericks
+    sha256 "58e8e7224bb2de6a270798b95d99793dc8e28f872e85a98d943e675b42fdcc98" => :sierra
+    sha256 "2f5f95ab188f63fcad237c8c551eea08ce94584fa6ea19be1aeca2c5743e1ace" => :el_capitan
+    sha256 "72747c77d60b728e8c8b2dd8fb64a0e0892db91a99fc953a9a95a3c34ca316c6" => :yosemite
   end
 
   depends_on "pkg-config" => :build
