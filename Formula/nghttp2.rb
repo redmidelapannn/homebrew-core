@@ -6,9 +6,9 @@ class Nghttp2 < Formula
   revision 1
 
   bottle do
-    sha256 "a6e7ef94226b0f2a52657f1713b95df76979f3d72e569b23bb487a4919811776" => :sierra
-    sha256 "e9ff28814a9c850c3d0a7c58a5d1738eb82d57716230aacb0b3c455f84ea5b1e" => :el_capitan
-    sha256 "a734d9eb510f1c73fda1ec2396915a9e7c68ac5fde7a7e7753fe33364092d7a9" => :yosemite
+    sha256 "89294b7e2516fe4f869af4d03712e8f1e1bc6968ef6966880a6bdb6a3ad0a4dc" => :sierra
+    sha256 "d95a2db3327f4794dd5c9bc88f973be8f2dde7f9910b0c691f70ae19576de82e" => :el_capitan
+    sha256 "2a49758d94e5ff85011f5e663338f6a37441c8671a5636a9dd1be37b9f6206ad" => :yosemite
   end
 
   head do
