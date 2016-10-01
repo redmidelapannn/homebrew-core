@@ -19,10 +19,9 @@ class BoostAT161 < Formula
 
   bottle do
     cellar :any
-    sha256 "56c7f4f5902e5bb2c1512c69a87a609b50f305971c3c975726cf324cc40f536e" => :sierra
-    sha256 "0c06f4558c5f98e5615cb9a33b66ab912e702ad50a2e1051ae80171b0bda9aa3" => :el_capitan
-    sha256 "508bfe58b3ba391690be77da7a47a34f2cf0b489cc2590c69c746d7919fa12c1" => :yosemite
-    sha256 "92db134e4a77c4cc0566261b09b96886b30f6c1bf81d65b120dffd6937e99f58" => :mavericks
+    sha256 "9cbeb25f772f8baf7e3becb656c3f9ff593892dd2cb7a458a663505ee5aa4afe" => :sierra
+    sha256 "f1e7e00066955904368ce8854a978b9152d1fc3c02b06dd8d69f27b6bedd605c" => :el_capitan
+    sha256 "161e64c908c546c694141396359e83f03e5fcb33eb5c42a4ce0ada0f00b0ddef" => :yosemite
   end
 
   env :userpaths
