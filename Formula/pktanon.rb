@@ -7,10 +7,9 @@ class Pktanon < Formula
 
   bottle do
     cellar :any
-    sha256 "6416d7e4f41ef3099844f45c4f47b8728ea3a2d1ee5466eeffba77e99fe1f15d" => :sierra
-    sha256 "1ca8732fc3e2bce08bb98b04c08051bb697d475f9229207594b2312c65846682" => :el_capitan
-    sha256 "22b28b5c1ac0558f57bec4cbcdb774f2fdc4033c1f382c6fd747b8edd3f26fb6" => :yosemite
-    sha256 "571a0c0c5212bc3064a705c27d1a3f8626e98e2a7cdef3a8447ddd68eeaad607" => :mavericks
+    sha256 "60a42c05b6a1a6becd36589642819b06c0d757f14effb2490239dfcfe53ceb76" => :sierra
+    sha256 "fb031e4991656cd6d2df40df7f7a03a6a87c8c758df335120e65cbc225459079" => :el_capitan
+    sha256 "a47ed6e9914ebad74dcd549c24f11b8095466a33115ebd819c3ca4d7024f0347" => :yosemite
   end
 
   depends_on "xerces-c"
