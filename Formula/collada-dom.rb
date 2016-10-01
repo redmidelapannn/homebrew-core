@@ -16,10 +16,9 @@ class ColladaDom < Formula
   end
 
   bottle do
-    sha256 "100e69e1bc65b07f00dcb9d9baf290a727e39ecbf01d27b9a62d26ac14abb59b" => :sierra
-    sha256 "98e726f47020580acc1a10be5366394fb137fc4729e3446e5e0130a69b2d38da" => :el_capitan
-    sha256 "2be8761c8bd277b4cc720c900fff84cedbc2736a55329a9d107ded2712e97d75" => :yosemite
-    sha256 "5ddb31dec3a705e99ca17ec2c6ef1bafb101eac16167d451c3e6eda2dc9c0761" => :mavericks
+    sha256 "947b48def42029fdc34129d00e5e0d36baf5879a28fb7da5f76445bf485c7b42" => :sierra
+    sha256 "e6f18b49916d99f576273a8d4225a62b10286aaf2632b8eba5bb329ad3c6053e" => :el_capitan
+    sha256 "e4747c65505c56b129262d16f1df784095046e7d30b0156843c471828c2cc9c0" => :yosemite
   end
 
   devel do
