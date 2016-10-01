@@ -19,9 +19,8 @@ class Rcssserver < Formula
   end
 
   bottle do
-    sha256 "c38e5393d6d4c9074d2c70da05e0be9f61bc2f935848a3e2061a93f2b002e9af" => :el_capitan
-    sha256 "d7db1cd2a729f558cbb3569e1c858f9de8b6ced18b8eaf110b8db53881ad8c84" => :yosemite
-    sha256 "053199b5e554e73a385ffd7de6ef8bf9e04b1c3876e6fed0b9ca1c98066364a1" => :mavericks
+    sha256 "7f2781f098eba560b60dd73a7e82af23d239af2198ee9d55f53981d46ee021d5" => :el_capitan
+    sha256 "7800c7140126f9826ce6db54e1d559f4df7a2bd6e4362fe92df30e61901d42f6" => :yosemite
   end
 
   head do
