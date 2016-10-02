@@ -6,10 +6,10 @@ class Xtail < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d230b5111c213e9294f86f01c651501a87c42f60ed30929144e21ed4bbef4ecb" => :sierra
-    sha256 "a579041c4d693dd444464228dcd0175e79f31708b62ad3ccf55a8f545ce67ed7" => :el_capitan
-    sha256 "60a2bcabfb83e8ab4df95b2417ccf5c49c5ca242853ff16e2a106f3e37f6005e" => :yosemite
-    sha256 "939117402a33f5037aa7e49f5228e0d0b852e0e39e85d81357b8955864bd26eb" => :mavericks
+    rebuild 1
+    sha256 "7d3be5e52bdac7e233b0ae92658efb7ab624d47a4a69caedbcaae3d36acc9262" => :sierra
+    sha256 "1fdd8c0662b91d3152690dd1666ec35f801f152199efd03d3c3622bfda34d1d2" => :el_capitan
+    sha256 "63c21b0ee95d38591d98bf770bac3357930079acb0cc6d0b02002114e884f3bd" => :yosemite
   end
 
   def install
