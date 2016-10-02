@@ -20,6 +20,7 @@ class CrystalLang < Formula
   depends_on "llvm"
   depends_on "pcre"
   depends_on "gmp"
+  depends_on "libxml2"
   depends_on "libyaml" if build.with? "shards"
 
   resource "boot" do
