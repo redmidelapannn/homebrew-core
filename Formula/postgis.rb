@@ -6,9 +6,9 @@ class Postgis < Formula
 
   bottle do
     cellar :any
-    sha256 "9eb30b316b0cdc052238da3a7ce7a3a4dc0b90c3ff2c5a45b83c312047343e14" => :sierra
-    sha256 "d47407dcfa0c653783a5e4115b25b5d1da43950cad79b011f30654ad6c9fdd98" => :el_capitan
-    sha256 "cd71f9fb9684f5e45fabeed09fb82f46541233b8fdc07ee0305fd7b4e1fc20f5" => :yosemite
+    sha256 "a290e12b5689092c621f97a0ba203028c90e0bd38c5eaccbc7b31c9e4b975bfe" => :sierra
+    sha256 "53f0e3def717855ac7b1a71e388cb72223e7a281182b4f36896e5b18f522d16d" => :el_capitan
+    sha256 "d07b1c74481313768086f1f9e035c577339f3919909fef3962c9d1610a6b241c" => :yosemite
   end
 
   head do
