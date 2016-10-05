@@ -17,9 +17,10 @@ class Osm2pgsql < Formula
   end
 
   bottle do
-    sha256 "688902dca61326f203860831c3c36fa6b9b6e4acb2141a4fc4bedb7a7e660127" => :sierra
-    sha256 "1219f80127ffe660debc850f147532bd2c3ba4590dc6c11041c80ee21aedeaa7" => :el_capitan
-    sha256 "70e049aaaa347412004d7bcb4a06bde2406d7984de128fa9d6a85ffd916f3cdc" => :yosemite
+    rebuild 1
+    sha256 "fa2c6aaf74c1eafbd81d7c6b3d07db971b435030b22af220c8e95c461003f84a" => :sierra
+    sha256 "960b5ecec88a6d759f96217315ebee3e7c89360f771ad3ede94771fd9c46b0bc" => :el_capitan
+    sha256 "071b9f09eb1141aaa20614563e8920fa0921d4b47f3e92e2c88f03d746d77093" => :yosemite
   end
 
   depends_on "cmake" => :build
