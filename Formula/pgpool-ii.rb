@@ -7,10 +7,9 @@ class PgpoolIi < Formula
 
   bottle do
     cellar :any
-    sha256 "e0161db31e86d68c6c0f2805a7830787f6ffefd2b0f0150d1405837ef6703838" => :sierra
-    sha256 "272ee6246595eecdcb1b44febbe05422f9559aecce4078028448029753d091e2" => :el_capitan
-    sha256 "11233e63d5830295ff825d3181aa4240fd81c532b1c7f19889bb3c248f809813" => :yosemite
-    sha256 "93c1d153801b4338d2bd2a233787aa570480ba53589d9209cd5f55291b5296df" => :mavericks
+    sha256 "b51979b07b15d4f09b229ece073bf7b8545ad7c1c2cccafe03cb0d65a0ed367f" => :sierra
+    sha256 "04e66f144236b0cc58bbcf7aed3fa36b32d85233d052e5b5db6eeca2494ad831" => :el_capitan
+    sha256 "4c0ca311b950bdb0d55e6e01fb13c9108642b0499569225ecad808eceb2dcc8c" => :yosemite
   end
 
   depends_on :postgresql
