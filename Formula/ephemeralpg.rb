@@ -8,10 +8,9 @@ class Ephemeralpg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7bd731eddd027b39a7b1c737c6ba5d2b65fb294afe53bfc84807648fc631c028" => :sierra
-    sha256 "e50efa09e441390165ec35db5a42965c102e989435ad18bffcc231b12f58c0bc" => :el_capitan
-    sha256 "500fd314d36ec1ba114fddc4786835f7b511163b07824721524cadbb5e718b0b" => :yosemite
-    sha256 "9994e0a34d6a0071abef009a15d5dfcc513412633368fb0245fe40e664be52bd" => :mavericks
+    sha256 "d42fc1a38a5617fd146b3ce4f0b5fb61006e3ea1f862495448b026df1e0dd0c2" => :sierra
+    sha256 "d1ec411085ca95d221f6deb730ae9800bed84d5375d1f3529e5153ec5ddc3b4f" => :el_capitan
+    sha256 "d61ea6c2465cd12faad9aa7c3cdd22e16b51e1182dd554f294d17038ea23d349" => :yosemite
   end
 
   depends_on :postgresql
