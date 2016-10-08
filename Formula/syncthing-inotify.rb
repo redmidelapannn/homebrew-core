@@ -7,9 +7,8 @@ class SyncthingInotify < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1ac1dcf264f1969ca962acaf0e486b356f51a791845f56f07116cd6f880f88f0" => :el_capitan
-    sha256 "dd038217ba9dbda2d7e1626e63f144ca66a36b19b6b726bc33502286b33b9755" => :yosemite
-    sha256 "960a018f4daa6174e9f8205055bbe6a41addd172fb3e4e7675ad17b9eb6ea26d" => :mavericks
+    rebuild 1
+    sha256 "9b5ce93ecd76979dc77ea89b2a89d0d86bca9ae25ea04f78adee6ef393895726" => :sierra
   end
 
   depends_on "go" => :build
