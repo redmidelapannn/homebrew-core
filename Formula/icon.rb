@@ -7,10 +7,10 @@ class Icon < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "13d3963ef90d3f94f13a97e922185ea640233aee356e3bf8c2a0336de278482c" => :sierra
-    sha256 "5218afb915b7892d4c242c659218735293136c3b100f54aa7199bcc716915939" => :el_capitan
-    sha256 "44450b176b56db833a91ca6ae681e3876b2864a094b254340bcb5cd136957f17" => :yosemite
-    sha256 "ca5ba233b4713e54680525ffd3ee7554988aa48f6a959f78b53c24e58d8c1c59" => :mavericks
+    rebuild 1
+    sha256 "d559526647c1786f0289fd8048758fdd3e7998c894ced0b0203494ca2d268ae8" => :sierra
+    sha256 "2805d5740c99f561fbf101b77eedf79e7e16c9c860a2afaf95a5ac9034ff2d2f" => :el_capitan
+    sha256 "d380fd71e41bdbaa85f989f66833b0442502b85b2ead36b26f33a67d339f0b4f" => :yosemite
   end
 
   def install
