@@ -4,6 +4,13 @@ class SshAgentFilter < Formula
   url "https://github.com/tiwe-de/ssh-agent-filter/archive/0.4.2.tar.gz"
   sha256 "5586e40da34f4afd873d7ff30f115c4a1b9455c1b81f3c4679c995db7615b080"
 
+  bottle do
+    cellar :any
+    sha256 "60e50753c5e34d9fc5bca16c39ef8e256ef384fb5948831c96633e81a838f05b" => :sierra
+    sha256 "370c7d51697ee82ba15f2f3f00ecfa1739afabb5451024a2cfe566df80f78789" => :el_capitan
+    sha256 "7504f7cf75115cb3ba011ca020ac7759541b5c9b425bca34594387be82d70b53" => :yosemite
+  end
+
   depends_on "help2man" => :build
   depends_on "boost"
   depends_on "nettle"
