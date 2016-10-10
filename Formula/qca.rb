@@ -15,10 +15,9 @@ class Qca < Formula
   end
 
   bottle do
-    rebuild 3
-    sha256 "62846de848b7e7c4f0b3eb5a045940c8b80554ef388d9646dd7b02b195b1a5c8" => :el_capitan
-    sha256 "a2afc96b7058b81e6b640c480b621434c7b6ba5e82cc0af4e38766d7efe42251" => :yosemite
-    sha256 "c948a6d95b7ff4da029eedeaca69e5b51d9227e9a7cf369daa98cfda5cf73528" => :mavericks
+    rebuild 4
+    sha256 "e40bf42e7d4234522bc90c0a0bb00e3d2beb281c0749615cd06f2f4c18210b63" => :el_capitan
+    sha256 "11b30e38ef32ec35152fd7feecb7ead412dba0b4468bed5a272e69a695943ae5" => :yosemite
   end
 
   option "with-api-docs", "Build API documentation"
