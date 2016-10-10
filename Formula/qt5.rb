@@ -21,9 +21,9 @@ class Qt5 < Formula
   head "https://code.qt.io/qt/qt5.git", :branch => "5.6", :shallow => false
 
   bottle do
-    sha256 "2aaa410f2ab2fbbddbc8c3438e43bc9f4271774c794bcae8f935fb6b1b5a82ed" => :el_capitan
-    sha256 "eefa531c6ebc757982b31f17935fa2220aad52caf3112e389a878dce04f40490" => :yosemite
-    sha256 "73d33dd2563c39542844c276a7bd43463f2974fde141e7afeb3057168adbe606" => :mavericks
+    sha256 "1dd251a6119815786269573e8ad4a93f135a64ad4a92ff2e8f894ab63d9cd9c8" => :sierra
+    sha256 "e707e1b6d81d546c7912b110a0125b6b0f9c59dcfb6992f3c16c522b85cb8d8c" => :el_capitan
+    sha256 "25815593053127e0d150a79ac0d50be41f25daf8750fef6b4834d4df8d2033aa" => :yosemite
   end
 
   # Restore `.pc` files for framework-based build of Qt 5 on OS X. This
