@@ -5,6 +5,13 @@ class AdrTools < Formula
   sha256 "3f45646c099ae996b97c855a9a27ed540e076580eba59c2e8613453b7a67e412"
   head "https://github.com/npryce/adr-tools.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1edc8025bf379e90e1c3575f4f007b3394aa2376216e6bf63376e74a9a836316" => :sierra
+    sha256 "1edc8025bf379e90e1c3575f4f007b3394aa2376216e6bf63376e74a9a836316" => :el_capitan
+    sha256 "1edc8025bf379e90e1c3575f4f007b3394aa2376216e6bf63376e74a9a836316" => :yosemite
+  end
+
   def install
     inreplace "src/config.sh" do |s|
       s.gsub! 'adr_bin_dir="$(dirname $0)"', "adr_bin_dir=\"#{bin}\""
