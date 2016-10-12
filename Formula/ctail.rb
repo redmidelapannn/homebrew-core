@@ -5,11 +5,11 @@ class Ctail < Formula
   sha256 "864efb235a5d076167277c9f7812ad5678b477ff9a2e927549ffc19ed95fa911"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "e871b6482648744654b88cace6590eca1e6dd9e6a3d89a57904437f950d0b8e9" => :el_capitan
-    sha256 "c054af9816f833035b8922abf3e935bbe563cc841b098569239f7f9e7b5ff499" => :yosemite
-    sha256 "dd29c6d94e2ded11aef266f5d50bdb840e8b0b3b23841d41e68aad777754d23b" => :mavericks
-    sha256 "dfab40d65950327c679bde97a335779526c58e99f5679f32f95e517a7249e332" => :mountain_lion
+    cellar :any
+    rebuild 1
+    sha256 "420b0e125be3a0d0311439ef8712ee1dd7785ce85256ee7372f8a8b492ac4800" => :sierra
+    sha256 "ad50f71bf2eedf0a31c8069b5c837145174bd5ec0c8e16b89347edb74460a966" => :el_capitan
+    sha256 "dbdf554370ce2e6e049c042e6f5586c64222ac790d0c9b2074b9ca7db6f1707e" => :yosemite
   end
 
   depends_on "autoconf" => :build
