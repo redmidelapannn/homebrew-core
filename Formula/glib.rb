@@ -5,9 +5,10 @@ class Glib < Formula
   sha256 "2ef87a78f37c1eb5b95f4cc95efd5b66f69afad9c9c0899918d04659cf6df7dd"
 
   bottle do
-    sha256 "4892a83baa553ef938ec2a7cb4d6f72af9bbd45ddef730e42b9640c5c9883fe4" => :sierra
-    sha256 "818420b0efd28fc6ed8fce3be2291cb4761ba264a535b795bf42e251b432c7c2" => :el_capitan
-    sha256 "cfde246fc576b0cf6c4609045b5f1dc4c412133047036326176e350e425e8e4e" => :yosemite
+    rebuild 1
+    sha256 "68f56b827d6c551899cbfdee7ea89f4c9c6de4713bfffd83afa98ee52f0bd187" => :sierra
+    sha256 "9ca309d162c348b5a30beb9222b15423f547da4f0f98720e84c93f7ff0ba3238" => :el_capitan
+    sha256 "9bf4fa105481a9bd7d9404ce482e18b23911748575103bb49d7cb05b5159319f" => :yosemite
   end
 
   option :universal
