@@ -9,10 +9,10 @@ class Upx < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "be65bc79a7cb80800e933ac2a39d92fd60c26b8777fe7fe42c0aac0ca0a08d5b" => :el_capitan
-    sha256 "e994574f32103ab5ddf4206093ac9733c66e59bac5e2d3104e56e90dc668e0fa" => :yosemite
-    sha256 "88d59c54ca8f47a035e9a145a995b74589a9c4ed1524ff5ac91a7a7dbd34df11" => :mavericks
-    sha256 "6e715e575ec208612d046de57438fe1568d3b56dc536db7935b2d421d1b0041c" => :mountain_lion
+    rebuild 1
+    sha256 "568f27765bbb7ee835597051afd95f64dcd5c320b55463ef0394ea98068683e4" => :sierra
+    sha256 "6063dcac3a03bd5de76cac423266a232b0bf6c13255789e4790f79916930a828" => :el_capitan
+    sha256 "76919d7e3ea98f9eaf76ea8f07e5deafb894acf9af256872aaa2af9f73f201b9" => :yosemite
   end
 
   depends_on "ucl"
