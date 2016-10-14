@@ -14,9 +14,10 @@ class Yarn < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "04d5fe5e5667d77b40a882a1bdbe08625bd52e0d228af7aa925455760bafd58f" => :sierra
-    sha256 "291ad03475ea4770f357559dc9116309796bf1af83c13644cafcd00163283bce" => :el_capitan
-    sha256 "84a717ce964d4ec5cd69ae6336a79db27fa7580cee1c978e33e310e4eb8e36a3" => :yosemite
+    rebuild 1
+    sha256 "27e4314d45dd01eb93e70116d4f851d878a034d5f7d176aee137364bb7a023db" => :sierra
+    sha256 "1d8d81d6bf8600c41d391a816c73a7692c4904268b7e23ac8378ab48ee8a4122" => :el_capitan
+    sha256 "0f0863207fd5f477fd01d827ba33b20412f9e2fa602a12d70577f71f09451d84" => :yosemite
   end
 
   depends_on "node"
