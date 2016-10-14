@@ -6,6 +6,13 @@ class Stackedit < Formula
   url "https://github.com/benweet/stackedit/archive/v4.3.14.tar.gz"
   sha256 "00e70998d4f7c56d9f96935b1c373b9d85b26b4004cae60296548be4448fdce6"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c515c3d39fee3e6a40f2f6c37e15ce5df9c04ae3cd6f4ddb8ad6d0e17bb6f842" => :sierra
+    sha256 "72b2fdafed716eef3e209d20cba5df023f8c31f8d75b86baf7f52f6b488e9ebf" => :el_capitan
+    sha256 "dc53c756c3397790177ea692aab8871192ed9c67d2092a234044641393930287" => :yosemite
+  end
+
   depends_on "node"
 
   def install
