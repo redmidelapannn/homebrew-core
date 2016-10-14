@@ -6,9 +6,7 @@ class Fontforge < Formula
   head "https://github.com/fontforge/fontforge.git"
 
   bottle do
-    sha256 "aeeb0031067149f9795f9aac5bf3b623ab53557345509086de1124cd941b0ad8" => :sierra
-    sha256 "e25c8e3ca59b9cc7ee4ece35b46d2bc95757aab7d8d800b4af4afe2b7a6dd5ed" => :el_capitan
-    sha256 "e5e8e6a5522841bccf8dc4fbfd4953b35e5375320785474ddd0dc7aa066b1fcb" => :yosemite
+    sha256 "97957fa6ea6dd5db7bc35c35a638502682fde57ec5cd8cee211ec12f411090a5" => :sierra
   end
 
   option "with-giflib", "Build with GIF support"
