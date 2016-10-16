@@ -26,8 +26,6 @@ class Czmq < Formula
   depends_on "pkg-config" => :build
   depends_on "libsodium" => :recommended
 
-  conflicts_with "mono", :because => "both install `makecert` binaries"
-
   if build.without? "libsodium"
     depends_on "zeromq" => "without-libsodium"
   else
@@ -45,6 +43,7 @@ class Czmq < Formula
     system "make"
     system "(ZSYS_INTERFACE=lo0 && make check-verbose)"
     system "make", "install"
+    mv bin/"makecert", bin/"zmakecert"
     rm Dir["#{bin}/*.gsl"]
   end
 
@@ -76,5 +75,11 @@ class Czmq < Formula
     ]
     system ENV.cc, "-o", "test", "test.c", *flags
     assert_equal "Hello, World!\n", shell_output("./test")
+  end
+
+  def caveats; <<-EOS.undent
+      The 'makecert' binary has been installed as 'zmakecert' to avoid a conflict with the 'mono' formula.
+      This change will eventually be incorporated into a future CZMQ release. See https://github.com/zeromq/czmq/issues/1038 for more details.
+    EOS
   end
 end
