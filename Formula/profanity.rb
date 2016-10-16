@@ -5,9 +5,9 @@ class Profanity < Formula
   sha256 "783be8aa6eab7192fc211f00adac136b21e580ea52d9c07128312a9609939668"
 
   bottle do
-    sha256 "16c6bad33b79547d3704eac09cc47cd419108ee229f45b05b485a1cc7013d768" => :sierra
-    sha256 "d2bd1f9941cb5ae5227b9c4bb253fa647788c5e3f46c90f384173ff5b4f43d96" => :el_capitan
-    sha256 "0766255c85298c03ceffb45192fb0945240e1ba186aea4b8b014208e8611f1c2" => :yosemite
+    rebuild 1
+    sha256 "0e06bdde77ffb5dc2cfc01bf725f93fb3f1ae460269b8af2d7c84fba73df01bc" => :el_capitan
+    sha256 "bfb4a55500143ed973df8da9e7b24148a912e7e2479be5558374b430c33d9957" => :yosemite
   end
 
   head do
