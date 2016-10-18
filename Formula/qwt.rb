@@ -1,8 +1,9 @@
 class Qwt < Formula
-  desc "Qt Widgets for Technical Applications (v5.1)"
+  desc "Qt Widgets for Technical Applications"
   homepage "http://qwt.sourceforge.net/"
   url "https://downloads.sourceforge.net/project/qwt/qwt/6.1.3/qwt-6.1.3.tar.bz2"
   sha256 "f3ecd34e72a9a2b08422fb6c8e909ca76f4ce5fa77acad7a2883b701f4309733"
+  revision 1
 
   bottle do
     cellar :any
@@ -44,7 +45,7 @@ class Qwt < Formula
       prefix.install "textengines/mathml/qtmmlwidget-license"
     end
 
-    system "qmake", *args
+    system Formula["qt5"].bin/"qmake", *args
     system "make"
     system "make", "install"
   end
