@@ -6,11 +6,10 @@ class Jhead < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ae19be761934828ce16b7e54e14f77dc0651a7b05787e08e66cc4f872f701402" => :sierra
-    sha256 "2df303bdee1a1ee76b6f8a450d762ee2e3ea5868198c2ed9991f5407c6a1267a" => :el_capitan
-    sha256 "94515e8c91489d9de1ac3fb5176e4b40d7010ec239407c996589d6c8d841d658" => :yosemite
-    sha256 "277c20e19ebc174dc46e65509de3bcecb4af986b217cf7fd27ac2b6fb909476e" => :mavericks
-    sha256 "cc28907085b95ff54384eefb5650e1a363128b74da950a3a30f3d10c7c093f66" => :mountain_lion
+    rebuild 1
+    sha256 "6f8d660e20ab7647ffb6e7fa9f7ed54002708c0758d3ad7ea0e83b885f83a8e4" => :sierra
+    sha256 "26ee78cb356f53660f3904303cebf38b4a4514b3e4b96dcbb616ab2181e22ea8" => :el_capitan
+    sha256 "a3b73e9e8e68d3d2c15b00a6b425a9974ca4dc0c61b7fefb342152d947f43bb5" => :yosemite
   end
 
   depends_on "jpeg"
