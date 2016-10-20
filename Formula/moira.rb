@@ -4,6 +4,12 @@ class Moira < Formula
   url "https://github.com/mit-athena/moira/archive/4.0.0.3+51+g65d55c5.tar.gz"
   sha256 "d418681ae4ec61a124c55fb67a6bba0d89b59dc760c4d1c9a1e8e1c9c7b69b19"
 
+  bottle do
+    sha256 "c33dc5750abf75711746d1a8a72230dc6f9635fc36f94ef38da20c0422bd8bb6" => :sierra
+    sha256 "59e76667bdb5e587c52ceacddf4e051c5bd0f2476161b722ca5e33fbcf48c6e2" => :el_capitan
+    sha256 "141645f6dc1f23c374e815bd0a62189d0e8bd3643d01ff242f62081aa06a60cd" => :yosemite
+  end
+
   option "with-krb5", "Build with homebrew/dupes/krb5"
 
   depends_on "e2fsprogs" # for com_err, as recommended by Debian packaging
