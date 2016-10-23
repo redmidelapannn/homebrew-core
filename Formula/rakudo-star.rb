@@ -5,10 +5,8 @@ class RakudoStar < Formula
   sha256 "00fb63c1e0475213960298fac82a53906f1bfa8d431ca8c00ef278f58bf1d14b"
 
   bottle do
-    sha256 "04721ad21f249bc0627b3cf6c3d99315a12abbfb7e36eb4ac9e36513d43b465c" => :sierra
-    sha256 "c740b4227959695513023785d528290e6dbb3f88767f41855bccbb4987285b05" => :el_capitan
-    sha256 "6c4b31f795b03ff581ccad8aff5da60ec108474b8d88db40560384c6a63f5afc" => :yosemite
-    sha256 "83bb7e869fa7b2dc2a6677523c351fffb14f7900167091c8fa32baaa349d542d" => :mavericks
+    sha256 "7c89630d3ce3d1bcbe943fa2e2d8a5f5d7a001d16eecf133c8d50319ba3a56e1" => :sierra
+    sha256 "ea7deb15f79527498412a6065249fb03f4ca77f3723fdf2f55990375b77bd587" => :yosemite
   end
 
   option "with-jvm", "Build also for jvm as an alternate backend."
