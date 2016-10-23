@@ -5,6 +5,13 @@ class CmusControl < Formula
   url "https://dev.fox21.at/cmus-control/releases/cmus-control-v1.0.2.tar.gz"
   sha256 "b03346eac7d4d09d824641ec70a7afc057b440564225f013dc909b32dc6899d5"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0febd5ac0a0356d60438fa745e215575e8382427430ddc917f138268d0042837" => :sierra
+    sha256 "0febd5ac0a0356d60438fa745e215575e8382427430ddc917f138268d0042837" => :el_capitan
+    sha256 "363582f4dbd5cc4c6fdf7a49f1ee2d5757d5a17c5d12978d25b65ce0beabed8c" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "cmus" => :run
 
