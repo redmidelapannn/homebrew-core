@@ -72,6 +72,7 @@ class Qwt < Formula
         return (curve1 == NULL);
       }
     EOS
+    ENV.cxx11
     system ENV.cxx, "test.cpp", "-o", "out",
       "-framework", "qwt", "-framework", "QtCore",
       "-F#{lib}", "-F#{Formula["qt5"].opt_lib}",
