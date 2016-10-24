@@ -14,11 +14,10 @@ class Fish < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "8d48b1a7abaaab4fef4421d5bb1085711f1ca6b7b2b022c7e985cf422316824a" => :sierra
-    sha256 "9b14c4a2cc0ff774d4b7d1dfbec92ff96c3e4655e7b6b3f06122c7fea1c46a8e" => :el_capitan
-    sha256 "82262790b325b614b6c550a1e07b7c0f5da3ac21aba78d28dfb0e61f6812ecc5" => :yosemite
-    sha256 "19fe34be078746b38b4b8bcf0f384c80963a6437587844116645ee1679e444bd" => :mavericks
+    rebuild 2
+    sha256 "8bbc2fc7df486bbaa35eacf735de14e7f50fb6c5d4d7f450fc7e0e13d0c9267c" => :sierra
+    sha256 "a32bd6f7a95a7ef759ef9d10a9e516698dee109a2fda58881fe4f2024fd1fc07" => :el_capitan
+    sha256 "768f070218901808339e3ccc0cf78cc86e27257e2d2bdb1b542f59b178d0d1dd" => :yosemite
   end
 
   devel do
