@@ -4,6 +4,13 @@ class Wdc < Formula
   url "https://github.com/designerror/webdav-client-cpp/archive/v1.0.0.tar.gz"
   sha256 "649a75a7fe3219dff014bf8d98f593f18d3c17b638753aa78741ee493519413d"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "416ca2d7be784b8d6eff2e3f0b06183b85d4fa5db248bd808704710e74feb061" => :sierra
+    sha256 "8042c402b02bf8d26d088479859e9099d846a6747f07897ded12d8896a30f7c9" => :el_capitan
+    sha256 "c1d2d73054abae0f6829e84df3c2e253dfecfa751a9c5a91aecd6b04bf3d9607" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "openssl"
   depends_on "pugixml"
