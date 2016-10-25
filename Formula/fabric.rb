@@ -7,9 +7,10 @@ class Fabric < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e8d5a5ab06d133c2fc5617b276b119a5a4b1ca8567bc1697d622e27b1a612edf" => :sierra
-    sha256 "8cbff630aac360476908923a566c858b1fb6748742ca3cb5b09b9fe8ee341e03" => :el_capitan
-    sha256 "bb39fa519461b1eb648b071a8cd06e13f4c10cda1fcd01b02a44be422019c37a" => :yosemite
+    rebuild 1
+    sha256 "53ad4dd2d590dfd27100652955eb1504f6eac97024d3736c354364bef1586a34" => :sierra
+    sha256 "1c6f8669de9b7eab442f0e08bb577eca7dbeefa99ef59d24afbf1f28f832786e" => :el_capitan
+    sha256 "c3a8155c365566ea3e56c77a5f9118fd4cae5daea7fc2c88e692aa2c69b693b8" => :yosemite
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
