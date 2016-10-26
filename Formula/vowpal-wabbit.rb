@@ -7,10 +7,10 @@ class VowpalWabbit < Formula
 
   bottle do
     cellar :any
-    sha256 "b4b2e46f945a6886ce72d1cccabd8ea7639fb4057385de09b6faf34fbd35a363" => :sierra
-    sha256 "369dbd0266e777f4fa9ab2d31b216974cef013f3ad79307dcd93eea7584dffe6" => :el_capitan
-    sha256 "9180ead040a4daf5727d18328f39e82aa33fe6b684d4366502462449999f70fd" => :yosemite
-    sha256 "3ba964d1da671f6f88e1f2a2d8509ed190f5b02ce1c19f5bbbccac24a1f709d6" => :mavericks
+    rebuild 1
+    sha256 "a329d491db5a158c836d1ee11616d909e50c8abe4be8dd0307d5b72002635f56" => :sierra
+    sha256 "fd82b6857a788f356ffd413d59d18fde4e8338934fcc19171e08f94d0d41d274" => :el_capitan
+    sha256 "806c0eb414930dfb6010451bc6230f302d57670b2e1473816021f670290ed604" => :yosemite
   end
 
   if MacOS.version < :mavericks
