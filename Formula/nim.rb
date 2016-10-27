@@ -7,10 +7,10 @@ class Nim < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "ee9b3cfbdde386c061e22ad3b2902b3284ab483161204c54dfafaa295126e3ba" => :sierra
-    sha256 "6d3062ded42a86b5dcea0f2c0d08aca890efe977b11d207a3056f6b3c5c04dc2" => :el_capitan
-    sha256 "54a36dc85df0aa86b8bf6295220007441332691d3a99a01977374adb0e0b8327" => :yosemite
+    rebuild 2
+    sha256 "fb64091411aee902cf64bea0f2fa6f15d12610c43748792a3e9fd93e8427b552" => :sierra
+    sha256 "8306156f5e55a10f633c10dd8650161c3af2ef060825bbe93318b2e6058a83ee" => :el_capitan
+    sha256 "256e6092374aa87c1c9c09e4c6991f4facd125957931661fd17becb3d40e3887" => :yosemite
   end
 
   resource "nimble" do
