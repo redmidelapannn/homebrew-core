@@ -4,6 +4,13 @@ class Noclamshell < Formula
   url "https://github.com/pirj/noclamshell/archive/1.0.tar.gz"
   sha256 "eb74ebcb7ff6019fef32ecd53d07f570a77f3084a83c0f2942359e9da92e9398"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "170293ec3c1e06f215085a59549fe4afa86bffb1189e9e04d3e347d8c86ed015" => :sierra
+    sha256 "170293ec3c1e06f215085a59549fe4afa86bffb1189e9e04d3e347d8c86ed015" => :el_capitan
+    sha256 "170293ec3c1e06f215085a59549fe4afa86bffb1189e9e04d3e347d8c86ed015" => :yosemite
+  end
+
   def install
     sbin.install "noclamshell"
   end
