@@ -31,8 +31,7 @@ class Swift < Formula
   end
 
   bottle do
-    sha256 "f63f2c86b7d5aaed1c922d50e98b146d0cdc0a6437977fef519ee616ec39ac73" => :el_capitan
-    sha256 "573b2120ea67319f8c398c2fa604479281b922deaa884c59b53ee0bc575765c6" => :yosemite
+    sha256 "5617aba275349c955caff3304c056739e32e58b5ef1943470901241921ae284c" => :yosemite
   end
 
   head do
