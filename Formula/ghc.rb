@@ -55,9 +55,9 @@ class Ghc < Formula
 
   bottle do
     cellar :any
-    sha256 "117f42decee119a7cf0e820a85c08ad7c2036baa3b8e313c52b16b177f93a54b" => :sierra
-    sha256 "6aa8aa15b55b047f3e71b68ae586db1030026f9630bc55602765d400f38dc19e" => :el_capitan
-    sha256 "1388a28006fe189d1d00b94b81b5539ad670ebb906c509feb091d76e8a5dcebf" => :yosemite
+    sha256 "27c0f2607a18465413414b1c63729d8f47e7af4cf6b8be428afd4124bcad734f" => :sierra
+    sha256 "6547871743409c461ce76bcf59364cd8786ba5b1647c4b173eccf1c640b8be50" => :el_capitan
+    sha256 "326b372c2bfa18b6866c7e47a3d753bc199d409ac6841e43ab9f2ed7419f3703" => :yosemite
   end
 
   head do
