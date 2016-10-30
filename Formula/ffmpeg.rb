@@ -6,9 +6,10 @@ class Ffmpeg < Formula
   head "https://github.com/FFmpeg/FFmpeg.git"
 
   bottle do
-    sha256 "84fba610ee0802576eef1a25020ff7dcd1d4f080c2a667444e47394a36980df7" => :sierra
-    sha256 "19c5859847ae7c99c51da1c4e1ee3ed3600f86643b0a6d95d7a8f522a10dff1a" => :el_capitan
-    sha256 "d5a26d633ef56f2aa37b72229629db3197d779a16c82edaa0c11509e7d6669d1" => :yosemite
+    rebuild 1
+    sha256 "e2f127846f26978e67f531282019c105a9550d4e1d504b0ca3cf686326a113f4" => :sierra
+    sha256 "f311162c402c42970d6176c5153cd95fe1c953a800537c6650a8ed82f170eb38" => :el_capitan
+    sha256 "48bc41248ab1760f13c614de8ddacb6102f0c0d52ef2eb648681bb03e46663db" => :yosemite
   end
 
   option "with-fdk-aac", "Enable the Fraunhofer FDK AAC library"
