@@ -7,8 +7,8 @@ class Dvtm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3707849011fc54151fa110c66578ea3ad33d9cb6047d59ee10dc0e3a217ee0b4" => :yosemite
-    sha256 "88bffcbc907f9ffa900331acf5f994af07f5c1787c328ac56c72935813f57b92" => :mavericks
+    rebuild 1
+    sha256 "325ffb7e7b72bb81287931e0b1d704f46480c498faf619f07b86183521ac4468" => :sierra
   end
 
   def install
