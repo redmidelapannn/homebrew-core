@@ -6,11 +6,10 @@ class Admesh < Formula
 
   bottle do
     cellar :any
-    sha256 "1666781d8c745fc2754a0228ba5c5c740642afdf9fc7c9e9ac37bf641897caba" => :sierra
-    sha256 "90592b8b41e8d58daccb90426a3f1fa1a946367c9430be65892eb1ec0a912a4f" => :el_capitan
-    sha256 "f081b675e54064716a089b2af95d7b4a6ecc7c38d2e5c3f064027dc247faa758" => :yosemite
-    sha256 "3c073a473a28305ef75d0a8f32dfb0c79845f3d4ae5d277299e5ee309da62ace" => :mavericks
-    sha256 "411599b23cc2285c382de174dbddfbb6f48b687ee9364de8d4a6af1596600cd6" => :mountain_lion
+    rebuild 1
+    sha256 "851a7f09b16e05d1033aeea008c62bd949563183c9d521e53ea20ab3bcc7ec59" => :sierra
+    sha256 "fa703e7bcfcf38577afe2904e1a8c242728c0bd991b8188dd9be2a28f411057f" => :el_capitan
+    sha256 "427f6068e655ae9114d41af5309dee891e4c3b4aea21ded89a19b1f77c7a9048" => :yosemite
   end
 
   head do
