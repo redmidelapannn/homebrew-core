@@ -14,9 +14,9 @@ class Joshua < Formula
     sha256 "176fa47a6a2722fb5b6bf1e2efba8da32bab6355f3d844424a817882ed7b3a8e" => :mavericks
   end
 
-  option "with-es-en-phrase-pack", "Build with Spanish–English phrase-based model [1.9 GB]."
-  option "with-ar-en-phrase-pack", "Build with Arabic–English phrase-based model [2.1 GB]."
-  option "with-zh-en-hiero-pack", "Build with Chinese->English hiero-based model [2.4 GB]."
+  option "with-en-ru-phrase-pack", "Build with English --> Russian hiero-based model [4.6G]."
+  option "with-ru-en-phrase-pack", "Build with Russian –-> English heiro-based model [4.4G]."
+  option "with-zh-en-hiero-pack", "Build with Chinese --> English hiero-based model [2.4G]."
 
   depends_on :java
   depends_on "ant" => :build
@@ -24,14 +24,14 @@ class Joshua < Formula
   depends_on "md5sha1sum" => :build
   depends_on :python => :build if MacOS.version <= :snow_leopard
 
-  resource "es-en-phrase-pack" do
-    url "https://cs.jhu.edu/~post/language-packs/language-pack-es-en-phrase-2015-03-06.tgz"
-    sha256 "213e05bbdcfbfa05b31e263c31f10a0315695fee26c2f37b0a78fb918bad9b5d"
+  resource "en-ru-hiero-pack" do
+    url "https://home.apache.org/~lewismc/language-pack-en-ru-2016-10-28.tar.gz"
+    sha256 "ef41c9a258f7dc61190af809491e24ea3a7de199b59ebcbbc2b7eed158b5d9f3"
   end
 
-  resource "ar-en-phrase-pack" do
-    url "https://cs.jhu.edu/~post/language-packs/language-pack-ar-en-phrase-2015-03-18.tgz"
-    sha256 "2b6665b58b11e4c25d48191d3d5b62b7c591851a9767b14f9ccebf1951fddf90"
+  resource "ru-en-hiero-pack" do
+    url "https://home.apache.org/~lewismc/language-pack-ru-en-2016-11-04.tar.gz"
+    sha256 "bf42ea5ecedb7cd992a44f95f73f1c26e73c91b8756edf4f8d50d1bbaaf9a351"
   end
 
   resource "zh-en-hiero-pack" do
@@ -46,14 +46,14 @@ class Joshua < Formula
     head do
       system "ant"
     end
-    if build.with? "es-en-phrase-pack"
-      resource("es-en-phrase-pack").stage do
-        (libexec/"language-pack-es-en-phrase-2015-03-06").install Dir["*"]
+    if build.with? "en-ru-hiero-pack"
+      resource("en-ru-hiero-pack").stage do
+        (libexec/"language-pack-en-ru-2016-10-28").install Dir["*"]
       end
     end
-    if build.with? "ar-en-phrase-pack"
-      resource("ar-en-phrase-pack").stage do
-        (libexec/"language-pack-ar-en-phrase-2015-03-18").install Dir["*"]
+    if build.with? "ru-en-hiero-pack"
+      resource("ru-en-hiero-pack").stage do
+        (libexec/"language-pack-ru-en-2016-11-04").install Dir["*"]
       end
     end
     if build.with? "zh-en-hiero-pack"
