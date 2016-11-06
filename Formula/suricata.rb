@@ -5,12 +5,9 @@ class Suricata < Formula
   sha256 "f9e7742580849f202254e75d9fc245ba53f4d7490f47a6d30f02a7b10aacc512"
 
   bottle do
-    rebuild 1
-    sha256 "52d19b04bc316bbd9795df2c3935dfda0f15c0cd4fd9a4d5ee228526cc741a71" => :sierra
-    sha256 "a29d38cdddea84cbb828bfed9820501d87ec341bb5895113674d713ae306b76f" => :el_capitan
-    sha256 "c60577cacc930289e30fc51adf5bc3a9f2e2a96dc405221e8e7dd9a3792244f0" => :yosemite
-    sha256 "525504681cc58b1c0efa3ab6d77c36f18aff3d11ade6632a59e5a586beed620c" => :mavericks
-    sha256 "6c166db0c146fbe09ee5783cf37d6b261b7c214af8b7877e5c34d7616a32547e" => :mountain_lion
+    sha256 "42ae1a9d41183fbcfda434badc041b8bc4668c0159adb2ab5abec99e414850e9" => :sierra
+    sha256 "cb50ab6847bce4c47a72375f64e7c9f230f931e32fabb6377b34736bfab0dbe6" => :el_capitan
+    sha256 "afb8d62ffa7a186837f8dbda0e4eade7f6b40906ab2cf420cd2598aaceee7492" => :yosemite
   end
 
   devel do
