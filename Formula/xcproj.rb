@@ -8,10 +8,10 @@ class Xcproj < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0cec2f112fb12dde22497fec74391856ee22444a5d7b9ea8bde704c35c3b837d" => :sierra
-    sha256 "238eb433842ac6622685054b051e93ba1fef14a587a88b134e4257134931e4af" => :el_capitan
-    sha256 "2aa9ad13307fcaa90ea2c98789764f2441c8610cfdba3266a2e305bb0e00f77d" => :yosemite
-    sha256 "64c9bef0c410c6494f0677e34023b75657be4b35e85e13468e9c0cb20c377c09" => :mavericks
+    rebuild 1
+    sha256 "2f029178c4b669bca25219e53bcbb1f11b8693aba96eed473c31d769bb3cc9b3" => :sierra
+    sha256 "ce7d7a68df0f235f168b86190dc12942481bd8602e02ea96c4bc9f26599f7e46" => :el_capitan
+    sha256 "bc3cd49d72bbd9ab9f9b6661614bfab675aab9b1e48d19ff091160202b585262" => :yosemite
   end
 
   depends_on :macos => :mountain_lion
