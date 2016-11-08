@@ -6,10 +6,10 @@ class Deis < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "18e0780dabcd28d1f579574f8bb9aa09bddc53bdf1f6c3804b9d9a37463fa121" => :sierra
-    sha256 "310cfc77e1edddab84270547c87c567958cb44d25437dfd4793f0a461b5b7de5" => :el_capitan
-    sha256 "be5c1307443b5fbf5a9cbeb027af3c1960f09b0318bc589850299afd5694b52e" => :yosemite
-    sha256 "e7550c86cdbf3618cb89445067aff24733c0786817760ed87b1c38268fc1b808" => :mavericks
+    rebuild 1
+    sha256 "559196e6b6e105d0c89de5e96052fd90dced27072a7c16303b3b5eda5fc0bfc9" => :sierra
+    sha256 "13c8e637f0b83f5374adac21c252432f91e95b3840c98b7c766c9c0f59fb280c" => :el_capitan
+    sha256 "94247d80445171507e53d800929aacfeebab3956d493275adc6963dc688d5894" => :yosemite
   end
 
   depends_on "go" => :build
