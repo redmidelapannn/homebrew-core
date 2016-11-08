@@ -6,11 +6,10 @@ class Ispell < Formula
   sha256 "5dc42e458635f218032d3ae929528e5587b1e7247564f0e9f9d77d5ccab7aec2"
 
   bottle do
-    sha256 "697a51b2d4e5d568ef18fdfe5943691a534145829522e3d4bb7d25f2f7978c9f" => :sierra
-    sha256 "81d9f6f9aca0f92ba3bece2ad22d0b0bca29c719304c6c5e8e59b02a3c8763da" => :el_capitan
-    sha256 "ff46baf7aa6daf42fddde68897bd80dbb073922b4556c502e7b0072656b48498" => :yosemite
-    sha256 "f1ee90dcc76682d17c2b758d2a896493448753acc0e556e9b0c8bf7ec0f552df" => :mavericks
-    sha256 "dbbaabbc715f6f16dfb9f2cd05755a88e471b92c63d7f87f79a940a5df8dadfb" => :mountain_lion
+    rebuild 1
+    sha256 "a608a6732e8730d8e9feedc6be86d581a8cc7205d75e3a99eb9802a7e5997667" => :sierra
+    sha256 "d43c4069584baf884cb24efd1a814ae02bec74bdb03abd0cd0ffea9c02ab13f6" => :el_capitan
+    sha256 "631f297cde330714aa416bd8057c98a81f127399671c3abfcc7d367d133d964d" => :yosemite
   end
 
   def install
