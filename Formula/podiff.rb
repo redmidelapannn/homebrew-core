@@ -6,10 +6,10 @@ class Podiff < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "be964cc5259d37f0f4676d5e3a0fac77b42e4f3e7641c7579d47182e4f036e83" => :sierra
-    sha256 "24f385afff1c9074d995cd1374c005e8770a80ef11b06058f6024eee67a9de69" => :el_capitan
-    sha256 "21cc248bf36ce685061e234f57c6fc5cbe0d207b201e7a8e485ee7b71d3d21c6" => :yosemite
-    sha256 "c3a3b66344303ad473d8c6808eb9e2a2124bb0a801536870b739beba4de3d5ae" => :mavericks
+    rebuild 1
+    sha256 "ee310c3e274f31a852b8cc2d366481baf20eccb4307178d36b9beeefff6c3851" => :sierra
+    sha256 "4b6639e2b49884c019923798c2cc26dca6941e631044dc78f989af01874366ba" => :el_capitan
+    sha256 "6b74613ed7e39da5501057a0968459e4d7398243107517e636c781b69c1e8fc6" => :yosemite
   end
 
   def install
