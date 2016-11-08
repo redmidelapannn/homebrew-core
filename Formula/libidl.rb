@@ -6,12 +6,10 @@ class Libidl < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "d8c0e559183f9cfb1ac579acb95db74c73c4f276ac791eb4ffcb65db8e47c0ca" => :sierra
-    sha256 "0c81487e7c93733097a62e6c693943fda8b13ce03ff6a6972a320c711d561e39" => :el_capitan
-    sha256 "356ad466ab477116e8f030ef75b70bc46321f68ec1f077f9b06dca3bb076e499" => :yosemite
-    sha256 "dffe56b6e1076ac49a43ff662517b974f97e47707906362629176cfdc09b6f91" => :mavericks
-    sha256 "7aee2ea7f3760687e9acd4a35c393e240f8f59e94a36c2a31812d15a41cfcac8" => :mountain_lion
+    rebuild 2
+    sha256 "289d969e9eebad29fd7ce8b41847daec33b1fd1193f0ffeab7c620fda1e5e213" => :sierra
+    sha256 "e78db08d2a4a9bd9e1309eff88a60e212056a52f089425d9b816019a4aafbc19" => :el_capitan
+    sha256 "7fb174ddd609721ab817d9fe11987d70d40451654aa001954c8be7ff6ad9895d" => :yosemite
   end
 
   option :universal
