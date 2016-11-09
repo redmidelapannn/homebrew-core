@@ -6,6 +6,13 @@ class Aurora < Formula
   url "https://github.com/Luxurioust/aurora/archive/1.4.tar.gz"
   sha256 "9d605779d3a2f5d596b57a4aaf5feb41ec392c7e0bdec0ae9b1691c6e48bbbf0"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a0e6c813505aa56542bf916004431573d556ea93ab8ea517f39437e4e9bd6fac" => :sierra
+    sha256 "d4cf1050eb6715fe841948bdf316a14cff40daa5f5888758417824aca4c2e0df" => :el_capitan
+    sha256 "ae9ece3fdff8dc91ce2892ce2ac122d27e49b80a15b07d9200d850c2f4494fac" => :yosemite
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/BurntSushi/toml" do
