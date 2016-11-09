@@ -11,9 +11,9 @@ class RecimeCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "eb3d2874718ddb753cd89b0307df55e7fa3176f9f6535470dd9011aaf47a64d8" => :sierra
-    sha256 "45d5547354b693df9da372e53c32bea68af4a4a0f699fee3c015dcd6b1b92853" => :el_capitan
-    sha256 "884a3252c287e2db1090389a3d2244abfffef930012f5c194db2614950b7d233" => :yosemite
+    sha256 "b78f0a0e2fdd87d9f4c7027638d4900e1954d266ff6993d5b2f20e4c0919594d" => :sierra
+    sha256 "2a0e3534e5802e0a2b6b0843448d3d45f61dc2cea25c937654e6ebca0fae4d67" => :el_capitan
+    sha256 "8f5788417be03e39ae33ae432a8896dc9a4d962c1e4d5367c0c9025e6635a4ec" => :yosemite
   end
 
   depends_on "go" => :build
