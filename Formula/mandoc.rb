@@ -7,11 +7,10 @@ class Mandoc < Formula
   head "anoncvs@mdocml.bsd.lv:/cvs", :module => "mdocml", :using => :cvs
 
   bottle do
-    sha256 "bb3993deb7c2eefba8ba128d84b9975b0e647f5adce79b4348680661f7f339ec" => :sierra
-    sha256 "86aeb9459638f425f5e40c33732b641f90942cd0ff66f37c81ea611b25eb0a10" => :el_capitan
-    sha256 "15a8ba3a50c95ba6c5b02fd77991fd0f5e9cd8fccfed9c96b9f6afb171cbffba" => :yosemite
-    sha256 "66bf930eb1fbbe1be9cfab3f5a4d2582de2f9cd550d5e98894513d75f62e4ef2" => :mavericks
-    sha256 "79987dc1387313f384f8943306a41b37ee2b35ca90d06456a956b79fbaf61673" => :mountain_lion
+    rebuild 1
+    sha256 "a73b9ce04e2aa4a89e004fd16c8321cf0e88186d87c45489fea51cead1b325f8" => :sierra
+    sha256 "1d0c4b675d172e2b80558a89ffcca966c807d97a73a77d1b4fbd5f5f9f7226ae" => :el_capitan
+    sha256 "80e3f89a661d915f3ab1dec6b1bf047e76afb3574b3e8000e24dac3bf94d4218" => :yosemite
   end
 
   option "without-sqlite", "Only install the mandoc/demandoc utilities."
