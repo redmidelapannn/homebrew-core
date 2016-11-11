@@ -3,21 +3,19 @@ class Emscripten < Formula
   homepage "https://kripken.github.io/emscripten-site/"
 
   stable do
-    version "1.36.14"
-    url "https://github.com/kripken/emscripten/archive/#{version}.tar.gz"
+    url "https://github.com/kripken/emscripten/archive/1.36.14.tar.gz"
     sha256 "89febe6c56c36ded3a6323d40342196d961eb1a7878b32912a649734962cb5ee"
 
+    emscripten_tag = "#{version}.tar.gz"
     resource "fastcomp" do
-      url "https://github.com/kripken/emscripten-fastcomp/archive/#{version}.tar.gz"
+      url "https://github.com/kripken/emscripten-fastcomp/archive/#{emscripten_tag}.tar.gz"
       sha256 "3fc361151790574c7dfe4466a32dcb505abc930cf48dd941463880924228a3d5"
     end
 
     resource "fastcomp-clang" do
-      url "https://github.com/kripken/emscripten-fastcomp-clang/archive/#{version}.tar.gz"
+      url "https://github.com/kripken/emscripten-fastcomp-clang/archive/#{emscripten_tag}.tar.gz"
       sha256 "d33574f378acde198a2407a88cfa2725d8853dee535f982ec5fac92b4180f3aa"
     end
-
-    depends_on "cmake" => :build
   end
 
   bottle do
@@ -36,13 +34,12 @@ class Emscripten < Formula
     resource "fastcomp-clang" do
       url "https://github.com/kripken/emscripten-fastcomp-clang.git", :branch => "master"
     end
-
-    depends_on "cmake" => :build
   end
 
   needs :cxx11
 
   depends_on :python if MacOS.version <= :snow_leopard
+  depends_on "cmake" => :build
   depends_on "node"
   depends_on "closure-compiler" => :optional
   depends_on "yuicompressor"
@@ -91,6 +88,7 @@ class Emscripten < Formula
   def caveats; <<-EOS.undent
     Manually set LLVM_ROOT to
       #{opt_libexec}/llvm/bin
+    and uncomment BINARYEN_ROOT
     in ~/.emscripten after running `emcc` for the first time.
     EOS
   end
