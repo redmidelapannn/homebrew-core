@@ -5,9 +5,9 @@ class Fontforge < Formula
   sha256 "ccba2d84cf009e2a51656af4e0191c6a95aa1a63e5dfdeb7423969c889a24a64"
 
   bottle do
-    sha256 "aeeb0031067149f9795f9aac5bf3b623ab53557345509086de1124cd941b0ad8" => :sierra
-    sha256 "e25c8e3ca59b9cc7ee4ece35b46d2bc95757aab7d8d800b4af4afe2b7a6dd5ed" => :el_capitan
-    sha256 "e5e8e6a5522841bccf8dc4fbfd4953b35e5375320785474ddd0dc7aa066b1fcb" => :yosemite
+    sha256 "b8e123ea24397f63e1eae7e6b8724f185016bbad6a3d346a30c89eb75a9bc913" => :sierra
+    sha256 "6acdc5eb814a4137a004525de864f781412b3bb44e3e86a480cfe001fa0ed0d7" => :el_capitan
+    sha256 "e17373c86fcf9ef7d36daf099ae3fd4ae83c86bd3feb8854b459799bdec6c76c" => :yosemite
   end
 
   head do
