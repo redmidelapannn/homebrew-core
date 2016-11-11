@@ -6,10 +6,10 @@ class Gnuradio < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "2cbc22df1411ef7090bd43cbec10dbb23ee16439ed8bb0e10a2b144455237e51" => :sierra
-    sha256 "187f22d812f4ba86af2d2f64e9473647b49aa2373d6688d7ecfb840374285749" => :el_capitan
-    sha256 "41eb9fdae72761b7a83f284f1e7613da9e3ce916e0f98f20ad3aafe417be5a4e" => :yosemite
+    rebuild 2
+    sha256 "9f48e24da850f8bdd29d99ed6b7dd62077f915bb8c23bc90fd9c30a0680d05d4" => :sierra
+    sha256 "3c33d7ce38a30baa6479a7f59a80ee3dfca29788750a4bc406b07d54e329e6ca" => :el_capitan
+    sha256 "8c8ee04b0d75b93d0a10232f6cd57caf4d44178c8190eaa1949b1a59ac35f6ad" => :yosemite
   end
 
   option :universal
