@@ -6,7 +6,7 @@ class Emscripten < Formula
     url "https://github.com/kripken/emscripten/archive/1.36.14.tar.gz"
     sha256 "89febe6c56c36ded3a6323d40342196d961eb1a7878b32912a649734962cb5ee"
 
-    emscripten_tag = "#{version}.tar.gz"
+    emscripten_tag = "#{version}"
     resource "fastcomp" do
       url "https://github.com/kripken/emscripten-fastcomp/archive/#{emscripten_tag}.tar.gz"
       sha256 "3fc361151790574c7dfe4466a32dcb505abc930cf48dd941463880924228a3d5"
