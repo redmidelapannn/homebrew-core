@@ -43,13 +43,18 @@ class Czmq < Formula
     system "make"
     system "(ZSYS_INTERFACE=lo0 && make check-verbose)"
     system "make", "install"
+
+    # Rename to avoid formula conflict.
+    # This change will eventually be incorporated into a future CZMQ release.
+    # See https://github.com/zeromq/czmq/issues/1038 for more details.
     mv bin/"makecert", bin/"zmakecert"
+
     rm Dir["#{bin}/*.gsl"]
   end
 
   def caveats; <<-EOS.undent
-      The 'makecert' binary has been installed as 'zmakecert' to avoid a conflict with the 'mono' formula.
-      This change will eventually be incorporated into a future CZMQ release. See https://github.com/zeromq/czmq/issues/1038 for more details.
+      The 'makecert' binary has been installed as 'zmakecert' to avoid a 
+      conflict with the 'mono' formula.
     EOS
   end
 
