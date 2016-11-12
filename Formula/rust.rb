@@ -11,6 +11,11 @@ class Rust < Formula
       url "https://github.com/rust-lang/cargo.git", :tag => "0.14.0", :revision => "eca9e159b6b0d484788ac757cf23052eba75af55"
     end
 
+    resource "racer" do
+      url "https://github.com/phildawes/racer/archive/1.2.5.tar.gz"
+      sha256 "3b932331f4778b6c0bb092f92783ec616e939b15f85f58d069f65a85c921db66"
+    end
+
     # name includes date to satisfy cache
     resource "cargo-nightly-2015-09-17" do
       url "https://static-rust-lang-org.s3.amazonaws.com/cargo-dist/2015-09-17/cargo-nightly-x86_64-apple-darwin.tar.gz"
@@ -33,6 +38,7 @@ class Rust < Formula
   end
 
   option "with-llvm", "Build with brewed LLVM. By default, Rust's LLVM will be used."
+  option "with-racer", "Build Racer code completion tool, and retains Rust sources."
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :run
@@ -79,6 +85,21 @@ class Rust < Formula
       system "make", "install"
     end
 
+    if build.with? "racer"
+      resource("racer").stage do
+        ENV.append_path "PATH", bin
+        cargo_home = buildpath/"cargo_home"
+        cargo_home.mkpath
+        ENV["CARGO_HOME"] = cargo_home
+        system bin/"cargo", "build", "--release", "--verbose"
+        (libexec/"bin").install "target/release/racer"
+        (bin/"racer").write_env_script(libexec/"bin/racer", :RUST_SRC_PATH => pkgshare/"rust_src")
+      end
+      # remove any binary files as homebrew will run ranlib on them and barf, keep everything else
+      rm_rf Dir["src/{llvm,test,librustdoc,etc/snapshot.pyc}"]
+      (pkgshare/"rust_src").install Dir["src/*"]
+    end
+
     rm_rf prefix/"lib/rustlib/uninstall.sh"
     rm_rf prefix/"lib/rustlib/install.log"
   end
@@ -95,5 +116,8 @@ class Rust < Formula
     system "#{bin}/cargo", "new", "hello_world", "--bin"
     assert_equal "Hello, world!",
                  (testpath/"hello_world").cd { `#{bin}/cargo run`.split("\n").last }
+    if build.with? "racer"
+      system bin/"racer", "complete", "std::io::B"
+    end
   end
 end
