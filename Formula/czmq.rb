@@ -52,12 +52,6 @@ class Czmq < Formula
     rm Dir["#{bin}/*.gsl"]
   end
 
-  def caveats; <<-EOS.undent
-      The 'makecert' binary has been installed as 'zmakecert' to avoid a 
-      conflict with the 'mono' formula.
-    EOS
-  end
-
   test do
     (testpath/"test.c").write <<-EOS.undent
       #include <czmq.h>
