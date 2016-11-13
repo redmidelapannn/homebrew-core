@@ -8,11 +8,10 @@ class Libav < Formula
   head "https://git.libav.org/libav.git"
 
   bottle do
-    rebuild 2
-    sha256 "b3b916804a42c996598c33627ab166a681c92af4ba677fd86687396acc558d7d" => :sierra
-    sha256 "f41e5ed8a78b009840ec98856232e96e00678ca6fde3574fe1a719a1404b2476" => :el_capitan
-    sha256 "00b6a0a42c76720a045c0f3b54da9174c5883fb661450dd0db1af43ce85cdaca" => :yosemite
-    sha256 "d56f9c532f3debf0ade3e58a676c330c3041643b9a8871ca6ef8e6c517e95a18" => :mavericks
+    rebuild 3
+    sha256 "440e1e0b0e7f31c882164022b3d12273a0c100865577477e115f93cf574c5aa1" => :sierra
+    sha256 "32a865dc0c1349ef0761fd1ecc10ef0336ed4cb74be649eaab31b3058938e92d" => :el_capitan
+    sha256 "4e6f1e04de4befaf5916025727d603d4803c03a3ab4f520efee74a3922b3e675" => :yosemite
   end
 
   option "without-faac", "Disable AAC encoder via faac"
