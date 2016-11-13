@@ -7,6 +7,12 @@ class Coala < Formula
   sha256 "23ece17d2ba0adc147f60b570960a06fe70eef465dead4e1fc95e81e3a8071c1"
   head "https://github.com/coala/coala.git"
 
+  bottle do
+    sha256 "08cd7033f481c6d7e9d2c063a1b1b6a51cb71e9714f042b50c2dcec8ab1c4a1b" => :sierra
+    sha256 "15488d6baf1006e8cd9b0c3c63eb75c0f75da9c84827a020468205780224b41d" => :el_capitan
+    sha256 "99b1b3a4cbccb0c8835a604d05b29f56a858a5897f6c39089b0b84461d5b6c0b" => :yosemite
+  end
+
   depends_on :python3
 
   resource "appdirs" do
