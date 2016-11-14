@@ -5,10 +5,10 @@ class Xstow < Formula
   sha256 "6f041f19a5d71667f6a9436d56f5a50646b6b8c055ef5ae0813dcecb35a3c6ef"
 
   bottle do
-    sha256 "cbc066f33e9634a4a41e4288e8da74bafd2f7ea81952a72ebdf1227e9c1e3f8d" => :sierra
-    sha256 "831ebc6209e25a8c85de9049ac3c7ff9c92155b3d23f792f9c768b963085cbb5" => :el_capitan
-    sha256 "5584a4365068160f539ce883bb261b8a82f6be56331ea8abf55bc611126ea71b" => :yosemite
-    sha256 "f8b4bd43dce5410280683721e4bbff8419a671f6764215d20bc4d17eddc00863" => :mavericks
+    rebuild 1
+    sha256 "65769dbfbfe59f4ea182631cad649cb720e56ca6d2d0ee662d077e08b4e7c1b8" => :sierra
+    sha256 "1c5094391ff4f588bf281bccf00057a67ceee3db49fceba417621c90bc5d9384" => :el_capitan
+    sha256 "2f8d03d0853404c2b8fd7315ead45ad27780aefca1829220c74d379daa959890" => :yosemite
   end
 
   # Patches to allow clang to compile
