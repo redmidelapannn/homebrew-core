@@ -6,12 +6,10 @@ class FluidSynth < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ee86f0e263db0610a340592d725bd2c05bc5ed1bfa6eb496ae304297de261ae0" => :sierra
-    sha256 "dfe31491d27c3c29ff4686900984e5884f89cd249d82b3dba4ad077f7bbe9057" => :el_capitan
-    sha256 "6938c03a61b696870de92435dc0a6e6118fbb0d68adcd0d17ec8d30c2f7eee20" => :yosemite
-    sha256 "5c5e00f88e45dd661c15f0e13793f9cc96f285b08200145ce8b77982350a5625" => :mavericks
-    sha256 "83b972cf7aec57e78dc1c1a6b3e286d8b9bf2a2622e174bca42efa8576e36e5f" => :mountain_lion
+    rebuild 2
+    sha256 "31db20e9f0c19ce095a0dd1a6c40184e18436c4650039bc11a09cc2c6f29d9db" => :sierra
+    sha256 "ce500fb4188e81304ed3a5e5772b1b8eca1a6cddde176c5329baa6486d210ec9" => :el_capitan
+    sha256 "977c64a8ad50b24c1a007c933ea055bcaaf395136d30bf03b4e9047cc1602b6a" => :yosemite
   end
 
   option :universal
