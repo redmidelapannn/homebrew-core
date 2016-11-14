@@ -43,7 +43,6 @@ view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
 view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     SWIFT
 
-    system "eject --file view.xib > view.swift"
-    File.read("view.swift") == swift
+    assert_equal swift, shell_output("#{bin}/eject --file view.xib")
   end
 end
