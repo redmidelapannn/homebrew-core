@@ -10,7 +10,7 @@ class Eject < Formula
     xcodebuild
     bin.install "build/Release/eject.app/Contents/MacOS/eject"
     frameworks_path = "build/Release/eject.app/Contents/Frameworks"
-    mv(frameworks_path, frameworks)
+    mv frameworks_path, frameworks
   end
 
   test do
