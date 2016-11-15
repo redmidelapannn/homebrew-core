@@ -13,6 +13,12 @@ class Theora < Formula
     sha256 "58be26743e23be63aee48186bfa9cd8a982de957efb040a6ab3030aa62753977" => :mavericks
   end
 
+  devel do
+    url "http://downloads.xiph.org/releases/theora/libtheora-1.2.0alpha1.tar.xz"
+    sha256 "5be692c6be66c8ec06214c28628d7b6c9997464ae95c4937805e8057808d88f7"
+    version "1.2.0alpha1"
+  end
+
   head do
     url "https://git.xiph.org/theora.git"
 
@@ -28,11 +34,32 @@ class Theora < Formula
   def install
     cp Dir["#{Formula["libtool"].opt_share}/libtool/*/config.{guess,sub}"], buildpath
     system "./autogen.sh" if build.head?
-    system "./configure", "--disable-dependency-tracking",
-                          "--prefix=#{prefix}",
-                          "--disable-oggtest",
-                          "--disable-vorbistest",
-                          "--disable-examples"
+
+    args = %W[
+      --disable-dependency-tracking
+      --prefix=#{prefix}
+      --disable-oggtest
+      --disable-vorbistest
+      --disable-examples
+    ]
+
+    if build.devel?
+      # Clang's integrated assembler can't handle integer constant
+      # expressions that are used in some of the inline assembler code
+      if clang_assembler?
+        args << "--disable-asm"
+      else
+        ENV["AS_INTEGRATED_ASSEMBLER"] = nil
+      end
+    end
+
+    system "./configure", *args
     system "make", "install"
+  end
+
+  def clang_assembler?
+    return true if MacOS::Xcode.installed? && MacOS::Xcode.version >= "7.0"
+    return true if ENV.compiler == :clang && DevelopmentTools.clang_build_version >= 100
+    false
   end
 end
