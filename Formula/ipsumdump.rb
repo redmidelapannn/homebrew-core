@@ -6,11 +6,10 @@ class Ipsumdump < Formula
   head "https://github.com/kohler/ipsumdump.git"
 
   bottle do
-    sha256 "4d8e9c2df9d9a7c1858f1a4152b68a8069c10e420af72758d7912b409680423a" => :sierra
-    sha256 "62031b89c4e974ff3f921fe0537f4d1bba6e492701488c84ba21c90fbfdb5139" => :el_capitan
-    sha256 "dd85d17c5ad0c0c54faee81f640f5089756b17f4ee94d257cb6990159eaa0489" => :yosemite
-    sha256 "470b7134576942b195a5643d5d59f7f6aba90ac0e61be7bbff57b2f47b6bf87c" => :mavericks
-    sha256 "b6fcabd37713036c619cdb7c0d12a2821c511ec640dac3e97f4d2806b1386e45" => :mountain_lion
+    rebuild 1
+    sha256 "b482bed5013b37f43eeb77ec948b9b39c464eb0766f063f2c393017b8940900b" => :sierra
+    sha256 "b211adefa5ee458e7cc6cbca98dd0684d990fab9cae150e1871edb6a9c9a576c" => :el_capitan
+    sha256 "bdc43de06b51e61a7181a83eb733c7e2f5d2f3bc0fb93512938eef427472d591" => :yosemite
   end
 
   def install
