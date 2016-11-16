@@ -4,7 +4,7 @@ class Eject < Formula
   url "https://github.com/Raizlabs/Eject/archive/0.1.12.tar.gz"
   sha256 "a4dae3d37f780d274f53ed25d9dc1a27d5245289f9b8cbaaf8be71bc9334de18"
 
-  depends_on :xcode => :build
+  depends_on :xcode => ["8.0", :build]
 
   def install
     xcodebuild
