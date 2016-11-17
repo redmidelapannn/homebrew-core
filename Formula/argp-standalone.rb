@@ -6,12 +6,10 @@ class ArgpStandalone < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "10627e72c0e0eb66cbd03a2beb767c06b8edad4bef01914de7f7c6c1be33a356" => :sierra
-    sha256 "798e6ddb78957f9ad33662287b5971aaf3a43f3646e84691d56b3b85ca06d47f" => :el_capitan
-    sha256 "c926ac0ad3b8dbb8c3e08299ade556470f81d3a88eb51dc60e7cfe107da533e8" => :yosemite
-    sha256 "789a73a54793c058ee419824d76d603562d56fe6c2bce37c6b5b47f8f0ddce2a" => :mavericks
-    sha256 "c1d91ec4ec7f0abee15fa5f58860057d8e8c58e25fd9231107f716bcd5e2a607" => :mountain_lion
+    rebuild 2
+    sha256 "bb6ea50086f1c045aba783d17bc0e6676e68aa2197f5f6d3cf94d4167f86c0e8" => :sierra
+    sha256 "dd211e28b1961d12fab02da41c3966d6a2ce0da910b55ced89fdf446ce44d085" => :el_capitan
+    sha256 "1d1c340d070648e5bbd2faeef20ef03e03907758b141d97082ff5f4d57f75867" => :yosemite
   end
 
   # This patch fixes compilation with Clang.
