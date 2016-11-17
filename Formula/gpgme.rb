@@ -7,9 +7,10 @@ class Gpgme < Formula
 
   bottle do
     cellar :any
-    sha256 "0b4a59398bd222620a4d837d7e33ca3141dddd14886c68bccca15a177bda93c7" => :sierra
-    sha256 "9764f539b4b51161127d95687c5611f9571ae2abde1dce66ba014a0f33d2bcc1" => :el_capitan
-    sha256 "4a4c3e90175b02ded974a8a385b6d9799bcc2873c5a1087c558f350eb103934d" => :yosemite
+    rebuild 1
+    sha256 "ded42844dc8bc014ec3349346a08eb29e35c9aa26b66b37d4702f5c8dddbe54b" => :sierra
+    sha256 "2b6ac0a4f3d698aa26deaa46f61244aafc6c54b4defc2a45baf1570b525e1922" => :el_capitan
+    sha256 "67e164724c79f3b12dfc75c54b6b54e7e1197f2a92729322093c6764708baad8" => :yosemite
   end
 
   depends_on "gnupg2"
