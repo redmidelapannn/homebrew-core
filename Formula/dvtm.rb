@@ -6,9 +6,11 @@ class Dvtm < Formula
   head "https://github.com/martanne/dvtm.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "3707849011fc54151fa110c66578ea3ad33d9cb6047d59ee10dc0e3a217ee0b4" => :yosemite
-    sha256 "88bffcbc907f9ffa900331acf5f994af07f5c1787c328ac56c72935813f57b92" => :mavericks
+    cellar :any
+    rebuild 1
+    sha256 "e5c4a5dc06fb1064e0dda833c821a6b36057fea074c52f74dd510ab3cd56579a" => :sierra
+    sha256 "109f9c4db0626fe37dd155517545e329f8933b9a604bd657957d15bcd30c5fc0" => :el_capitan
+    sha256 "0e4b7b99536a70c847e6998b93b761c122b2ff7001e1151d0cb7b614ddecfb5a" => :yosemite
   end
 
   depends_on "homebrew/dupes/ncurses"
