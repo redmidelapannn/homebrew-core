@@ -5,10 +5,10 @@ class Plplot < Formula
   sha256 "289dff828c440121e57b70538b3f0fb4056dc47159bc1819ea444321f2ff1c4c"
 
   bottle do
-    rebuild 1
-    sha256 "6681381c4376d45cf370df8a05936a045ccdcd15d8e44ad9a17d4ebafb3be442" => :sierra
-    sha256 "bb79dcbf4b5bb7fdd82037f690ddf712673001ef8e6bd8d219b9bbacd93c216a" => :el_capitan
-    sha256 "f0e0d7db60bb29f5f391cd93355b2cb987bc3582084fe384371b0e1bd8cc005c" => :yosemite
+    rebuild 2
+    sha256 "fc624d1e19a1e3c368c96512511df723ec6641f2336eeb223680f813ec4431e1" => :sierra
+    sha256 "12a18c1c65c2c2e8760527e0e045689ca156e6eae0a89ee8dd06b71faf2bb135" => :el_capitan
+    sha256 "ae41a378776a1cc9c8e09c607ee85bd5688c19a211330ed40fc5c15ca2dc951f" => :yosemite
   end
 
   depends_on "cmake" => :build
