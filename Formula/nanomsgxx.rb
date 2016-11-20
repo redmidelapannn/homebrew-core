@@ -4,6 +4,13 @@ class Nanomsgxx < Formula
   url "https://github.com/achille-roussel/nanomsgxx/archive/0.2.tar.gz"
   sha256 "116ad531b512d60ea75ef21f55fd9d31c00b172775548958e5e7d4edaeeedbaa"
 
+  bottle do
+    cellar :any
+    sha256 "3b2fbdcef36e70978e0f36ee9dc17e9ea1fa00ec22f6816826e56d9774233fd5" => :sierra
+    sha256 "c9d34cc7c7778a37ae44131402ddcf254cce8ab90833f9e8c142a1cf6d0ef399" => :el_capitan
+    sha256 "e292690ef06a13951596aa574b2690269d8dac6d77f795390b29f4be7ccde972" => :yosemite
+  end
+
   option "with-debug", "Compile with debug symbols"
 
   depends_on "pkg-config" => :build
