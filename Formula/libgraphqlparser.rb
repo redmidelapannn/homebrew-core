@@ -6,10 +6,10 @@ class Libgraphqlparser < Formula
 
   bottle do
     cellar :any
-    sha256 "581deac0a13d95748ea4255e4636ad829c8317e4937e43adacaecb8e72d4fc4e" => :sierra
-    sha256 "25d0db7a8e1555c826fc3ea929f9bf1cb1cddff695c0d1987bca27bad22fd8c0" => :el_capitan
-    sha256 "876804db01aa0c42dd9c8f3d1a6fd272a02bf5d5f3468ab9485ae0f5dade9918" => :yosemite
-    sha256 "21a99540dfcfe737bd59e12e34bf8f60ca7d08c535764f272750959df1d569d9" => :mavericks
+    rebuild 1
+    sha256 "a45c720878941ef7a119b217ee716d875c886ef8f2db43a58ce670a1c33bb93d" => :sierra
+    sha256 "82591e8a056f6eb227e791c79ca597a1f787e6a1ee3b6718117614643e7b5d5d" => :el_capitan
+    sha256 "68fb8fa59e2c4aab383cdfcbceb1ce2a937fe673a681deb98bf96937d0950799" => :yosemite
   end
 
   depends_on "cmake" => :build
