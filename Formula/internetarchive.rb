@@ -8,9 +8,10 @@ class Internetarchive < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1c4e832ace5b621f51c63e5a0fe430206ce8e020888b06f25a43fcc4c3ce15df" => :sierra
-    sha256 "8ce2a4a316f80a828d5b4ba9bcb4155de4143d8ac4add7b5ff2d3f7c8e288879" => :el_capitan
-    sha256 "77ff6084b75f58e4ad30ef081bab59d4418ca8d9133e18bdc2d868c6fa1557e2" => :yosemite
+    rebuild 1
+    sha256 "10bc656aa193511c682d392b314bc40fc269a20807656b5d43e36517eeda37db" => :sierra
+    sha256 "0a23e435fd82996446e6e9a11134e8e2618d4e462d1b07843fa9644273a2a202" => :el_capitan
+    sha256 "f1f3213c22b5d6e965dd06cf0f67477d64e40d0e090a2eaafb12573c25713fe9" => :yosemite
   end
 
   resource "args" do
