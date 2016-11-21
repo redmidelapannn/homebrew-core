@@ -8,10 +8,10 @@ class Fossil < Formula
 
   bottle do
     cellar :any
-    sha256 "2040cf4c0d0fe1f671ce869c08597f856e475701111524e131c876d4f6f09a3d" => :sierra
-    sha256 "4ff3c58d50dea6f0324d48f821f1e3371f94e14cb8d0d6e4b0dfbaab0f07db69" => :el_capitan
-    sha256 "42495830280a61b3122388aefb108a9c20547c5cd0745f47020999d73bcc03aa" => :yosemite
-    sha256 "f0967b37baa7fc8ad43f20a12c61dbbbaf78b2f711acd004180e5d0374617b5d" => :mavericks
+    rebuild 1
+    sha256 "638f68e072947b7571a96e320ef8090f0e690776795ab74ece80d7e4d88e7083" => :sierra
+    sha256 "181b4aa8ea29e61a152bb8b12b258442ccd2124b0343c86a24e1a762294f8fb8" => :el_capitan
+    sha256 "84b468ffb0ea446478dcdbb4e0befb7cde78ff7b133c93e9cdda5e9ac1f0e9a1" => :yosemite
   end
 
   option "without-json", "Build without 'json' command support"
