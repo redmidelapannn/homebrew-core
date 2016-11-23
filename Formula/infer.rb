@@ -6,9 +6,10 @@ class Infer < Formula
 
   bottle do
     cellar :any
-    sha256 "eb729a19ba746d0f17535aded0a3c3fe74d0abcf0a0f2ae767c3b0ab3a58bf46" => :sierra
-    sha256 "023b642c0b4959611f39f3029e36fbd301eca4bc87e1622778cdb6e2c5549fe2" => :el_capitan
-    sha256 "a0dc0b8308aeda1540991393fef1568e074931070786414b07791176e741c922" => :yosemite
+    rebuild 1
+    sha256 "a20ad18016e87557e53e3ec872d8bbcc8fb673812889f6d2baab44c197e217e1" => :sierra
+    sha256 "7eaa85cdc42ffb9bdaf5a47848b4bff444535fa130e923b653f0423850e517e8" => :el_capitan
+    sha256 "30f7332b9dfa4750831d58390ab243906683abfd857d3777fdef12d529f61cce" => :yosemite
   end
 
   option "without-clang", "Build without C/Objective-C analyzer"
