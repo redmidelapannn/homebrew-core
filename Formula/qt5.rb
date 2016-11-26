@@ -75,10 +75,10 @@ class Qt5 < Formula
   end
 
   bottle do
-    rebuild 3
-    sha256 "242197dfab9e62df340ef9f82d061005ec9c73ccf08f8d54345eea0dda8a4af0" => :sierra
-    sha256 "14b78a048c833306509457401bb186679b88e5311c4fe33deb3417222064c64d" => :el_capitan
-    sha256 "1bbdf366e87a2fb8adb4f657a384b9dd8851149c06c23be870838abd24433991" => :yosemite
+    rebuild 4
+    sha256 "8e59398924c076ed9b623528922b1f98c8e058dce3b8431a65c6d8b7b89aea44" => :sierra
+    sha256 "45e2ea6b049c01820454166167dbb45490afee1a501d9ecf3e4abffb60999faa" => :el_capitan
+    sha256 "b412eb01eb4ebd5b3ec71557c8030db6b2dd94acebcdf90d3d9df50f0fbc63c7" => :yosemite
   end
 
   keg_only "Qt 5 conflicts Qt 4"
