@@ -8,11 +8,9 @@ class V8 < Formula
   version "5.4.500.41"
 
   bottle do
-    cellar :any
-    sha256 "8106efc14371982af11a66d8db533dc0589bc240950e0e445467cf6ce8871393" => :sierra
-    sha256 "487f2ca72096ee27d13533a6dad2d472a92ba40ef518a45226f19e94d4a79242" => :el_capitan
-    sha256 "dc9af3e08eda8a4acd1ff3c6b47a4c5170a92dbab7d2d79958a14d8aa42eefac" => :yosemite
-    sha256 "7bcd1bbd66c11305eeea0c36ca472de8a639f511abe0909c8815b1208dbce7b6" => :mavericks
+    cellar :any_skip_relocation
+    sha256 "68deace8bac9d302a1b308b09eb4a4513e7fc2fe156256110acdeaefa176f2b2" => :sierra
+    sha256 "daaf772983b9ec27e1c6ef8419285c26b95906aa69ae9b64fdcbacf9f8975b25" => :el_capitan
   end
 
   option "with-test", "Verify each build step using the test-suite"
