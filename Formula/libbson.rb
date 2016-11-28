@@ -6,10 +6,10 @@ class Libbson < Formula
 
   bottle do
     cellar :any
-    sha256 "d33a7ef7a307313fd6c34b9e37a55a7e4759b033c65509cf5a90c235cbf4c8ec" => :sierra
-    sha256 "f2f191e2a8d245642caa0512ef6a0ee2e2ba025ce1523085025c00564201dc5c" => :el_capitan
-    sha256 "6ef1e3cd387335d0465f103925d2ae0de561ea3082fc9d29996816c5fc0e55c6" => :yosemite
-    sha256 "4a10d2bb952da3287c4492feca37eaf481234bb904656a1fb166754f2a2c5f9f" => :mavericks
+    rebuild 1
+    sha256 "4d7c730f85d4c10bec1f992f194fae195a75be752a122ba59e9b787c878b689e" => :sierra
+    sha256 "9816ae2a6959a76c765101f15a19d9df53e4c58599457c9313cf8f6207454590" => :el_capitan
+    sha256 "da1d1f109628ee208788c8ae2d546a1d2f17fca4018e536d4cc206e303bb4497" => :yosemite
   end
 
   conflicts_with "libmongoc",
