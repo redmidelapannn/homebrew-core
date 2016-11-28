@@ -7,9 +7,10 @@ class Libbson < Formula
 
   bottle do
     cellar :any
-    sha256 "1163f5b71bd4c0131fc5bde5cbe6bc43265822b0d6dc9cc39b0a71b1bf758a73" => :sierra
-    sha256 "de0b934fbd4a6e92aa270d99a51263926164493450771a7f4997f4f46bd8b785" => :el_capitan
-    sha256 "29cbab0c40ba25666c757b9e920fd1bbbfbae1867468d37bf33119a512ae3764" => :yosemite
+    rebuild 1
+    sha256 "dc8134c7c6d03e0f1a88b20d0421f33f04cfd92176e9e1b62ef88485a5b647a6" => :sierra
+    sha256 "3a1bc34baf4ba94e0d90a67fbb487a396a09e72239efed24e85efa2213c49d2f" => :el_capitan
+    sha256 "e0718e280291bd5ec3ea85ac2d61287f5367fff13502659cfb3fcf61182046e9" => :yosemite
   end
 
   def install
