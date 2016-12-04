@@ -8,11 +8,10 @@ class Pdksh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ec63445bd17d5b7fc1a5ab06621b0ab1793345e068bc0b27b3e3640f01405517" => :sierra
-    sha256 "771aeac10fe7c544b54a38b39cdbf9c082645e1992b8ace7ff1d6112a2ed1542" => :el_capitan
-    sha256 "f1f4aab0c6110d5b30050fc0ed5e4660a4adf5e2364d0622b1872795b39b1417" => :yosemite
-    sha256 "fa0b42b6f6aea018b537301b38151d6a3e20f8b8d694c5f768bab1d0d64a5b35" => :mavericks
-    sha256 "29bcb04237c4a30870c028220d6284303d85e55eaab91fd5a5b3ea47915e9785" => :mountain_lion
+    rebuild 1
+    sha256 "01ecff9368928a8464647269e402be2011f182e5401a1f4e37cc912b52bbd7aa" => :sierra
+    sha256 "01d89b725e477f6ec77ccaa668ecec13de6e6336712b0a269743d2b6f2c83da7" => :el_capitan
+    sha256 "851aff9c49d3aa6fb2052a2fff35ed8c38bcc7917786996ebad579f742bfc4de" => :yosemite
   end
 
   # Upstream patch
