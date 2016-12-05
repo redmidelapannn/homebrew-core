@@ -7,10 +7,9 @@ class UcspiTcp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "46d324e867e5a35cbb17e8a215ff33f693651d11645eed116e4e4a6c02085b34" => :sierra
-    sha256 "a57368e57812063bc4e1450c0bef5cad8392c44e54abf3c8ca950ea51abe7ae9" => :el_capitan
-    sha256 "727e93394b415da772b43ce5028ad54dcb569f695e6c8c4cdf05dc462b2febbe" => :yosemite
-    sha256 "67eb31db588a2299c5e69a4a60f3c56d07624a58e52e77cff2e58be554085d9f" => :mavericks
+    sha256 "904dcc0dc695b9ca429af489a1439df820f601afb5e3ff58b2db137a4f23d7b1" => :sierra
+    sha256 "658f22ff26dcf4a7008beb54b354eb3ca707542e2da3d9d03916d6e67e8dd6ad" => :el_capitan
+    sha256 "bad16825f3996c94e33ac914635e23f765160c79c24025a43e009a53b349ddb6" => :yosemite
   end
 
   # IPv6 patch
