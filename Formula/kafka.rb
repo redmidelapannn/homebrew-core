@@ -6,10 +6,10 @@ class Kafka < Formula
   sha256 "6d9532ae65c9c8126241e7b928b118aaa3a694dab08069471f0e61f4f0329390"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "4fcea199b4a3a9e4eb3aecd280cb82adee79bf222964e615c64c9b2d02e1fdb3" => :sierra
-    sha256 "4fcea199b4a3a9e4eb3aecd280cb82adee79bf222964e615c64c9b2d02e1fdb3" => :el_capitan
-    sha256 "4fcea199b4a3a9e4eb3aecd280cb82adee79bf222964e615c64c9b2d02e1fdb3" => :yosemite
+    rebuild 1
+    sha256 "ad66e93f47de4ab41ba6f88c4d4e8e2188ebc39cc4cd998d0a4ba1f39faef0e9" => :sierra
+    sha256 "ad66e93f47de4ab41ba6f88c4d4e8e2188ebc39cc4cd998d0a4ba1f39faef0e9" => :el_capitan
+    sha256 "ad66e93f47de4ab41ba6f88c4d4e8e2188ebc39cc4cd998d0a4ba1f39faef0e9" => :yosemite
   end
 
   depends_on "zookeeper"
