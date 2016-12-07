@@ -7,9 +7,9 @@ class Ooniprobe < Formula
   sha256 "867f51fcee8d84f68c42dea24c3384736a1e0cf153e1f18254e91682ca6e927a"
 
   bottle do
-    sha256 "ab5aa52408ae04f8b8e546efe1cc0516c75ec1ca78a5199f996fe3822fe4acdb" => :sierra
-    sha256 "04c6c488811904d5f627f3bd0a4dd9879c863d3f167ab0c412a52f9c428c15b1" => :el_capitan
-    sha256 "16b41cc859c7107c25f0976a13156eb59acf89cfe4642ad8c016a7a8364d8bcf" => :yosemite
+    sha256 "d9bcce91a157755617d5500004480bd9b503989414abda279747fb113ea53d7d" => :sierra
+    sha256 "32e6889193fba56794b95217e15a4346c66a161eb25ff0b5656bc8ec19db4572" => :el_capitan
+    sha256 "39f175e2209765ec6bc95be6552e5f237dc90f1614b1e9a93714a46a9cc12289" => :yosemite
   end
 
   depends_on "geoip"
