@@ -7,6 +7,13 @@ class Httpie < Formula
 
   head "https://github.com/jkbrzt/httpie.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a7adebb24a9b6b4749ffd440933d7d7471b67cb5958d8d544627a522bc0e9218" => :sierra
+    sha256 "c33b16d57a4b9ab6eed1be10757e4937698f7d2177159591905b1afd091c4a90" => :el_capitan
+    sha256 "c33b16d57a4b9ab6eed1be10757e4937698f7d2177159591905b1afd091c4a90" => :yosemite
+  end
+
   depends_on :python3
 
   resource "requests" do
