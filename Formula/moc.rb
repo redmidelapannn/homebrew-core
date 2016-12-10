@@ -5,9 +5,10 @@ class Moc < Formula
   sha256 "f3a68115602a4788b7cfa9bbe9397a9d5e24c68cb61a57695d1c2c3ecf49db08"
 
   bottle do
-    sha256 "c6441a6396a213644e39dae1bf920a7b773bb7c4730bfd1e751dd480d0bb80a0" => :sierra
-    sha256 "db6e67d930ebfb2c414c834f67a8a228bf0300d8025df34fd57dccc5ffd84bd3" => :el_capitan
-    sha256 "2ad36030c2731d46aa672e927a957843cbbbefcb1bc51fdb91c973e1e3a18a66" => :yosemite
+    rebuild 1
+    sha256 "0c04956a271a5fcaef1b5292b07785ab8ea2e33d490d3d9be5b4ad3c13d2bac8" => :sierra
+    sha256 "86e8d0758bd8b271bcaeac3a4c40c81884690d33774973dd0d6cb44a542f51a1" => :el_capitan
+    sha256 "ca369fc984aa9bf41ff00466482a1faaa5fdf229f69a4dbbbe90949ccc30771f" => :yosemite
   end
 
   devel do
