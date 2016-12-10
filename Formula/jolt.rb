@@ -4,6 +4,13 @@ class Jolt < Formula
   url "http://search.maven.org/remotecontent?filepath=com/bazaarvoice/jolt/jolt-cli/0.0.24/jolt-cli-0.0.24.jar"
   sha256 "5a4bf4afb8bd01154aa2bcf89bde87a1b2623ae8b6901893a4d9f1a291689bbf"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2a50d566bed3bbee9f346ee884141cc70ff337f2919692ee59828a67e051f6b4" => :sierra
+    sha256 "54fc3af7359b6fd9351fff0190184e5f96e03bbbf04e4252e376e3bf14f6ee19" => :el_capitan
+    sha256 "54fc3af7359b6fd9351fff0190184e5f96e03bbbf04e4252e376e3bf14f6ee19" => :yosemite
+  end
+
   depends_on :java => "1.7+"
 
   def install
