@@ -4,6 +4,13 @@ class ExcelCompare < Formula
   url "https://github.com/na-ka-na/ExcelCompare/releases/download/0.6.0/ExcelCompare-0.6.0.zip"
   sha256 "63bda982644ec8633b60eed5bc199892c428b54addb2eb63dda0b894d98a56c4"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5c5430ce6b6af46baec93cea9535594274c8f59e984e7fb40877a74857f7471d" => :sierra
+    sha256 "fc8d6e9363a0d436e4a4c7ea3618d5d6f7a85e3da9d562125d3ac94cb06dbfe0" => :el_capitan
+    sha256 "fc8d6e9363a0d436e4a4c7ea3618d5d6f7a85e3da9d562125d3ac94cb06dbfe0" => :yosemite
+  end
+
   resource "sample_workbook" do
     url "https://github.com/na-ka-na/ExcelCompare/raw/0.6.0/test/resources/ss1.xlsx", :using => :nounzip
     sha256 "f362153aea24092e45a3d306a16a49e4faa19939f83cdcb703a215fe48cc196a"
