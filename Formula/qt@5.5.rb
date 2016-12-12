@@ -63,6 +63,12 @@ class QtAT55 < Formula
       sha256 "d6d6b41aab16d8fbb1bdd1a9c05c519064258c4d5612d281e7f8661ec8990eaf"
     end
   end
+  bottle do
+    sha256 "527c9dbc9f71b6cb2bf6134b5f92730e5f1b639ae700f914126ae4d7aee0b7fb" => :sierra
+    sha256 "41811d73ca7dc49280e48802c3420bb210f7272464cc2f59d40f03c79b323df0" => :el_capitan
+    sha256 "642e52296c4b27b8ecfc3ad2646f4459582365b08c65cf94eb3f9f70c9513230" => :yosemite
+  end
+
 
   keg_only "Qt 5 conflicts Qt 4 (which is currently much more widely used)."
 
