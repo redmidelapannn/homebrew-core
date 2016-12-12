@@ -1,7 +1,7 @@
 class Lbdb < Formula
   desc "Little brother's database for the mutt mail reader"
   homepage "https://www.spinnaker.de/lbdb/"
-  url "http://www.spinnaker.de/debian/lbdb_0.42.1.tar.xz"
+  url "https://www.spinnaker.de/debian/lbdb_0.42.1.tar.xz"
   mirror "https://mirrors.kernel.org/debian/pool/main/l/lbdb/lbdb_0.42.1.tar.xz"
   sha256 "fe03bfc922b06febd8da261003070e335680d7fdf9ebd513c04a92a37731df2d"
 
