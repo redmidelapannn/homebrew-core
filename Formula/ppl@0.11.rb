@@ -1,6 +1,12 @@
 class PplAT011 < Formula
   desc "Numerical abstractions for analysis, verification"
   homepage "http://bugseng.com/products/ppl/"
+  bottle do
+    sha256 "a2f72ba2ed7bc2f4fb6c0f48798e3a74520f7ed899809bc8d7c30b4f91725790" => :sierra
+    sha256 "c21185bed924fe4ea2898e340a39cf461bf4a5f4548a41568dd3980b0c4b4422" => :el_capitan
+    sha256 "3e1af8f6e19816c8bb6ba143d0d6a7ca42398d0c81098da50bb6202a2b251051" => :yosemite
+  end
+
   # Track gcc infrastructure releases.
   url "http://bugseng.com/products/ppl/download/ftp/releases/0.11/ppl-0.11.tar.gz"
   mirror "ftp://gcc.gnu.org/pub/gcc/infrastructure/ppl-0.11.tar.gz"
