@@ -1,6 +1,13 @@
 class CloogAT018 < Formula
   desc "Generate code for scanning Z-polyhedra"
   homepage "http://www.cloog.org/"
+  bottle do
+    cellar :any
+    sha256 "ce68d6fe432603b7c52cb6502eb1cac6fe89cb3fd5d39d28a9f28a8d422b78d9" => :sierra
+    sha256 "41d9d79f23da5752a2c3c9ca2b3489de8dd1eedf55e6d7b5226fc38e9d19037f" => :el_capitan
+    sha256 "875b986395c3e98d5bf5cbeab803c47cbb7668ccebb57f8550c56019ef922a18" => :yosemite
+  end
+
   # Track gcc infrastructure releases.
   url "http://www.bastoul.net/cloog/pages/download/count.php3?url=./cloog-0.18.0.tar.gz"
   mirror "ftp://gcc.gnu.org/pub/gcc/infrastructure/cloog-0.18.0.tar.gz"
