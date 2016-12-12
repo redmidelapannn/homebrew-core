@@ -1,6 +1,13 @@
 class MpfrAT2 < Formula
   desc "Multiple-precision floating-point computations C lib"
   homepage "http://www.mpfr.org/"
+  bottle do
+    cellar :any
+    sha256 "40b794dc63736c1d99d12488acce77e88ec699880d6c43e8fa12d67eda450a21" => :sierra
+    sha256 "d555463688c8a8728989a9ef5f90693962cf6cf5297952e04e9ac25276e94edb" => :el_capitan
+    sha256 "fad9992e12b9dab83c8630330e1e5b4a612380b6f0258ac77b1ac512b6286e1e" => :yosemite
+  end
+
   # Track gcc infrastructure releases.
   url "http://www.mpfr.org/mpfr-2.4.2/mpfr-2.4.2.tar.bz2"
   mirror "ftp://gcc.gnu.org/pub/gcc/infrastructure/mpfr-2.4.2.tar.bz2"
