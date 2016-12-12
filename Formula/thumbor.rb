@@ -6,6 +6,12 @@ class Thumbor < Formula
   url "https://files.pythonhosted.org/packages/44/1f/5b0c3bcc760b01653e442ce3f1706652ecdf7e644f7979779fd33d450184/thumbor-6.2.0.tar.gz"
   sha256 "3c569dccd663f6adb6eaee01f8bc8158dd8e64714c40a64679a9ec2700aab923"
 
+  bottle do
+    sha256 "66d8345b61e578e2c72b9a0b1436e449caf61dac0d836a86567eea1ca1ffa33c" => :sierra
+    sha256 "ede199816c506e3aa42f32178271e6228c57d3fbfdcadb3b4a6e07764763b736" => :el_capitan
+    sha256 "65f7859ae1a02c0ad31f7be34a9b76cf7f48631bb33e6f9fedfc343a254704da" => :yosemite
+  end
+
   depends_on :python
   depends_on "homebrew/dupes/zlib"
   depends_on "homebrew/science/opencv"
