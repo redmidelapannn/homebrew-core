@@ -3,10 +3,9 @@ require "base64"
 class AndroidSdk < Formula
   desc "Android API libraries and developer tools"
   homepage "https://developer.android.com/index.html"
-  url "https://dl.google.com/android/android-sdk_r24.4.1-macosx.zip"
-  version "24.4.1"
-  sha256 "ce1638cb48526a0e55857fc46b57eda4349e6512006244ad13dd6c1361c74104"
-  revision 1
+  url "https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip"
+  version "25.2.3"
+  sha256 "593544d4ca7ab162705d0032fb0c0c88e75bd0f42412d09a1e8daa3394681dc6"
 
   bottle do
     cellar :any
@@ -31,11 +30,12 @@ class AndroidSdk < Formula
 
   # Version of the android-build-tools the wrapper scripts reference.
   def build_tools_version
-    "23.0.1"
+    "25.0.1"
   end
 
   def install
-    prefix.install "tools", "SDK Readme.txt" => "README"
+    Dir.chdir "../"
+    prefix.install "tools"
 
     %w[android ddms draw9patch emulator
        emulator-arm emulator-x86 hierarchyviewer lint mksdcard
@@ -51,6 +51,14 @@ class AndroidSdk < Formula
       (bin/tool).write <<-EOS.undent
         #!/bin/bash
         TOOL="#{prefix}/build-tools/#{build_tools_version}/#{tool}"
+        exec "$TOOL" "$@"
+      EOS
+    end
+
+    %w[sdkmanager].each do |tool|
+      (bin/tool).write <<-EOS.undent
+        #!/bin/bash
+        TOOL="#{prefix}/tools/bin/#{tool}"
         exec "$TOOL" "$@"
       EOS
     end
