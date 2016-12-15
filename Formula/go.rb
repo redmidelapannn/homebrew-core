@@ -17,9 +17,10 @@ class Go < Formula
   end
 
   bottle do
-    sha256 "bde94987de94c3b872760961782ff44e7cfa904b1df84507e90ed39d5cb63b05" => :sierra
-    sha256 "c684fbf681412a1aa06c0e64159d2dede4fd49dd3987e2c9679794c203e307a7" => :el_capitan
-    sha256 "5d7d8e26f7c96470be2cdf23fd10d83bd97a2ae3c4095aff0c6c253cbee84e68" => :yosemite
+    rebuild 1
+    sha256 "07114ff7f0d486f3f2d155460dca3f77204e1bf8575754ec5fa8fa1fcc8c28cc" => :sierra
+    sha256 "0b87b88b04fe810ec5b80ecb5dab78997d1b2e8f68765c57e652553e1dd8be85" => :el_capitan
+    sha256 "fccfd4a7e6f3e9821243e99dedb1c74ac297d9b0c7a2968afb7524b76be759c2" => :yosemite
   end
 
   devel do
