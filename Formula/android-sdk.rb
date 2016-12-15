@@ -125,6 +125,7 @@ class AndroidSdk < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{prefix}/tools/emulator -version")
+    system bin/"adb version"
+    system bin/"emulator -list-avds"
   end
 end
