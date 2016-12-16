@@ -34,6 +34,7 @@ class AndroidSdk < Formula
   end
 
   def install
+    prefix.install_metafiles
     (prefix/"tools").install buildpath.children - [buildpath/".brew_home"]
 
     %w[android ddms draw9patch emulator
