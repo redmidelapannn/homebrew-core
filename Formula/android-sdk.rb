@@ -34,8 +34,7 @@ class AndroidSdk < Formula
   end
 
   def install
-    Dir.chdir "../"
-    prefix.install "tools"
+    (prefix/"tools").install buildpath.children - [buildpath/".brew_home"]
 
     %w[android ddms draw9patch emulator
        emulator-arm emulator-x86 hierarchyviewer lint mksdcard
@@ -47,21 +46,17 @@ class AndroidSdk < Formula
       EOS
     end
 
-    %w[zipalign].each do |tool|
-      (bin/tool).write <<-EOS.undent
+    (bin/"zipalign").write <<-EOS.undent
         #!/bin/bash
-        TOOL="#{prefix}/build-tools/#{build_tools_version}/#{tool}"
+        TOOL="#{prefix}/build-tools/#{build_tools_version}/zipalign"
         exec "$TOOL" "$@"
-      EOS
-    end
+    EOS
 
-    %w[sdkmanager].each do |tool|
-      (bin/tool).write <<-EOS.undent
+    (bin/"sdkmanager").write <<-EOS.undent
         #!/bin/bash
-        TOOL="#{prefix}/tools/bin/#{tool}"
+        TOOL="#{prefix}/tools/bin/sdkmanager"
         exec "$TOOL" "$@"
-      EOS
-    end
+    EOS
 
     %w[dmtracedump etc1tool hprof-conv].each do |tool|
       (bin/tool).write <<-EOS.undent
@@ -125,7 +120,7 @@ class AndroidSdk < Formula
   end
 
   test do
-    system bin/"adb version"
-    system bin/"emulator -list-avds"
+    assert_match "Android Debug Bridge", shell_output("#{bin}/adb version")
+    system "#{bin}/emulator", "-list-avds"
   end
 end
