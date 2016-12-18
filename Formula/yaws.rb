@@ -5,11 +5,10 @@ class Yaws < Formula
   sha256 "450a4b2b2750a6feb34238c0b38bc9801de80b228188a22d85dccbb4b4e049f6"
 
   bottle do
-    rebuild 1
-    sha256 "4726b73647fd72506616403e164851ea3713df88db93868f308fb20ea52cf3e6" => :sierra
-    sha256 "81def8e721a0002e565065f69b2ae46ad4a7b2c52d644d95cff6c7c55237808d" => :el_capitan
-    sha256 "009bcd0dc46019343ab543607e427d899fc814129ee8428735cae958a88778c1" => :yosemite
-    sha256 "b49589e1fe5bd673e3ca035ff2626fe7055d4326d7cf61911a314aaa9cdc8074" => :mavericks
+    rebuild 2
+    sha256 "632239b94a9ccafee2b3e2bcc040e1d5bce2748d53fcd0b6ed4eabf264862c2e" => :sierra
+    sha256 "a3d236350de61ceeabeeb4a7bb350be8aebd5cd8f175eed5d615923aaf16c81d" => :el_capitan
+    sha256 "4cdbbdd3dbdf4812338da6c6129784f45a05dfddba5a5b4e99d3099c541310c2" => :yosemite
   end
 
   head do
