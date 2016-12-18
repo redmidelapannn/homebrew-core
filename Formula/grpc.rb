@@ -10,6 +10,12 @@ class Grpc < Formula
     sha256 "efad782944da13d362aab9b81f001b7b8b1458794751de818e9848c47acd4b32"
     depends_on "gnu-sed" => :build
   end
+  bottle do
+    sha256 "4b9d24dc0a54834a60f56a882c5f79715d119cf7f956114417f51ebb5a09343b" => :sierra
+    sha256 "bcb72fc4d6b8e0a9b73b00bee6865a6c934b0d115b6c9dbe1a8f8ff27a79fef3" => :el_capitan
+    sha256 "d1f3287539b362e71e2451a9e7063e54a91dead728a03381a0ba5a4f7fc1149f" => :yosemite
+  end
+
 
   depends_on "pkg-config" => :build
   depends_on "protobuf"
