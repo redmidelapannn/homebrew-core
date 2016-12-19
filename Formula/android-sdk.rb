@@ -35,7 +35,38 @@ class AndroidSdk < Formula
 
   def install
     prefix.install_metafiles
-    (prefix/"tools").install buildpath.children - [buildpath/".brew_home"]
+
+    (prefix/"tools").install [
+      buildpath/"android",
+      buildpath/"ant",
+      buildpath/"apps",
+      buildpath/"bin",
+      buildpath/"bin64",
+      buildpath/"ddms",
+      buildpath/"draw9patch",
+      buildpath/"emulator",
+      buildpath/"emulator-check",
+      buildpath/"emulator64-arm",
+      buildpath/"emulator64-crash-service",
+      buildpath/"emulator64-mips",
+      buildpath/"emulator64-x86",
+      buildpath/"hierarchyviewer",
+      buildpath/"jobb",
+      buildpath/"lib",
+      buildpath/"lib64",
+      buildpath/"lint",
+      buildpath/"mksdcard",
+      buildpath/"monitor",
+      buildpath/"monkeyrunner",
+      buildpath/"proguard",
+      buildpath/"qemu",
+      buildpath/"screenshot2",
+      buildpath/"source.properties",
+      buildpath/"support",
+      buildpath/"templates",
+      buildpath/"traceview",
+      buildpath/"uiautomatorviewer",
+    ]
 
     %w[android ddms draw9patch emulator
        emulator-arm emulator-x86 hierarchyviewer lint mksdcard
