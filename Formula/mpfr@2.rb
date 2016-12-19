@@ -8,9 +8,10 @@ class MpfrAT2 < Formula
 
   bottle do
     cellar :any
-    sha256 "40b794dc63736c1d99d12488acce77e88ec699880d6c43e8fa12d67eda450a21" => :sierra
-    sha256 "d555463688c8a8728989a9ef5f90693962cf6cf5297952e04e9ac25276e94edb" => :el_capitan
-    sha256 "fad9992e12b9dab83c8630330e1e5b4a612380b6f0258ac77b1ac512b6286e1e" => :yosemite
+    rebuild 1
+    sha256 "65b58edc255ca86043d3836919f0ce53ccd7244f89bcb7b0d11df15ca83f280c" => :sierra
+    sha256 "cb73259378eef08246ded9882514db8089f49637937c70de125d239a00d81b19" => :el_capitan
+    sha256 "f71fed928714fc339986d9b943e4d4a6656696c61d9fd1ff76a4cca6e43afbbe" => :yosemite
   end
 
   keg_only "Older version of mpfr"
