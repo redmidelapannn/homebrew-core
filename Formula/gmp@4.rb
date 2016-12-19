@@ -3,9 +3,10 @@ class GmpAT4 < Formula
   homepage "http://gmplib.org/"
   bottle do
     cellar :any
-    sha256 "ac2e99801fe553b8501baa3c90c4644cef9ec63e9ba444ff269edf202d62bed0" => :sierra
-    sha256 "cf2f856bb513adb136f8a81ec9fd6fc46a0b52f08495226f21ec1bc4d81c18e0" => :el_capitan
-    sha256 "c259062b2b338e24503e0c0abd2d3467afd8b3ed48210aca7dc1206ea9ab4cc0" => :yosemite
+    rebuild 1
+    sha256 "f2804a9933ab63b75e1efcab5e4db1839f39135043f12a98f99d64602b3326f8" => :sierra
+    sha256 "03b691836a3b85f47727f37e03bf67a47360d4d131d95fbb709dd9246a44e6b4" => :el_capitan
+    sha256 "fd6210991bb803f4915f3624bfeda845fbc2ae2ae49543be2e3067de79b2715f" => :yosemite
   end
 
   # Track gcc infrastructure releases.
