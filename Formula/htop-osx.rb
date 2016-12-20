@@ -5,11 +5,10 @@ class HtopOsx < Formula
   sha256 "3d8614a3be5f5ba76a96b22c14a456dc66242c5ef1ef8660a60bb6b766543458"
 
   bottle do
-    rebuild 1
-    sha256 "53811a029ba083125086a88e75e1b50d1df13fccd7f96a53b639b7eed826c229" => :sierra
-    sha256 "9eea952eb4849a3c7e60772df5701b826e9b7cb2751dfe5d434baf83bad56b0d" => :el_capitan
-    sha256 "d0e2cc8d452bde53d949a6d498346678b7b00c6d9c61471cd0a33e6dcbbe5399" => :yosemite
-    sha256 "355a26860f7eb39a10915a15ccc9e84593d29f63137562910302c497df447963" => :mavericks
+    rebuild 2
+    sha256 "612b4094880b4420cf24919a051ee65dbae5df8faa9ad0b25cefcdc91adec0fb" => :sierra
+    sha256 "98c10215e0cb7fe7f022f20904a2e5d3fa86985f7426d3c41e68aaa15311f60f" => :el_capitan
+    sha256 "bcc351fb8190489073d1fb57666c09c38e77598f33adf0be7c4abf3fc6d06df7" => :yosemite
   end
 
   depends_on "autoconf" => :build
