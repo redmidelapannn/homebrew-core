@@ -6,10 +6,10 @@ class Libcroco < Formula
 
   bottle do
     cellar :any
-    sha256 "6f2d7e943bf90574d0b6e11eb1d3919b06718bfd302d2a53366cf16b6abe8fe7" => :sierra
-    sha256 "63df1fc35be64690e7a9e8557e6049c0086a9f284f3ae4964e016ff99ebbdf38" => :el_capitan
-    sha256 "1e620e3c0b584702c9d4dde4cfeec359c8874f364d342d2e1ead68adb520ceed" => :yosemite
-    sha256 "341aada2eec7e3b3db71a9eca1da5b8df6127e2d4cec90cdbb1d2ec24de27eed" => :mavericks
+    rebuild 1
+    sha256 "a03f08851e59a2537f05e65896c375357888bfa1a8a4e3d303a048454125722f" => :sierra
+    sha256 "b9ac6e78474eec555226c51c90ca7fc8430091b0476e0996c29bb9f0e3e54faf" => :el_capitan
+    sha256 "c2bf4937bc6f29ade590a609b92750c80a5e5f16311873ddf56d8ffd9b27e55b" => :yosemite
   end
 
   depends_on "pkg-config" => :build
