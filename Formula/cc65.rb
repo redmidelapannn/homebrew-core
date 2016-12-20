@@ -9,10 +9,10 @@ class Cc65 < Formula
   head "https://github.com/cc65/cc65.git"
 
   bottle do
-    sha256 "991ea27c27b192abe257e46ac503583254539a6bb71e1394c069acb42cff0807" => :sierra
-    sha256 "a8d0601368f3f6c4048c63e4f785d5159c0aab3f4e3a86c49a65cd3cdf69ae53" => :el_capitan
-    sha256 "0320f31da62970bce189a3d6b8bdae5e595fa113eba7a37b5812e75dc6f89d72" => :yosemite
-    sha256 "8f56a19db5bfa9d606e7f636c3780a7e29206e0f9b845365f91550f58e46d2b4" => :mavericks
+    rebuild 1
+    sha256 "fa853104643136711d25c8e09177d25f48fa28f3d4050c5c30eb6f686dcfea7d" => :sierra
+    sha256 "ff4d5d9fdee5a24bfe22b58788c9085d7d5b5c6e643e04f79202cfc4c0f9eda0" => :el_capitan
+    sha256 "c7707c75e2cd14c8b8303f306b85a29d43d5c777c66f64f13f2cebf50828d7b7" => :yosemite
   end
 
   conflicts_with "grc", :because => "both install `grc` binaries"
