@@ -6,9 +6,10 @@ class Links < Formula
 
   bottle do
     cellar :any
-    sha256 "dce0530efd47157b5ab5e96ffe91324134fa5dc957ed1343e38dd04de209a5d9" => :sierra
-    sha256 "334ae37d4e41f8bfcf86e8a4ec543db97a357f315cf4778b41c8039e2ce78a3c" => :el_capitan
-    sha256 "61690764c8f0b3f4246b8099e0b1216a2585f70c97c53d5dbd8d2fd04efb19c9" => :yosemite
+    rebuild 1
+    sha256 "2bb9719a57679f475d1092a4627f94cf3193e9f6fa08f455eea32eb685a76967" => :sierra
+    sha256 "73ea52eebab66a7bdc7b02d16b3355a896e204caccdac4b2693fec152b354b3b" => :el_capitan
+    sha256 "d24b5f8b2bad0ae583b01b0705e61595b2869de25bea49a1ba4a340d6ee38342" => :yosemite
   end
 
   depends_on "pkg-config" => :build
