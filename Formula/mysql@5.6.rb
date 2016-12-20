@@ -5,9 +5,10 @@ class MysqlAT56 < Formula
   sha256 "ee90bafec6af3abe2715ccb0b3cc9345ed8d1cce025d41e6ec2b2b7a7d820823"
 
   bottle do
-    sha256 "e977aa8e72d36d4d3299e6185c98450b43501e6dcee541070e63700eac42e682" => :sierra
-    sha256 "d9ad86732265179cd7be92b2ec7b97fdd8977476ffc80477fed0143051c5963a" => :el_capitan
-    sha256 "7b45bbe87f2add631829d8c576e293870e52997847d0023787132a121b81bfe3" => :yosemite
+    rebuild 1
+    sha256 "26bffe46f295205f4680461f8d02362244d60e0bf1840e319b224c119c7f5ab8" => :sierra
+    sha256 "ef5a0e8610997e1ef9f445e38b02682be5ec9a160263cf8cd7a4f6ebaae9b06f" => :el_capitan
+    sha256 "379a743756116f2e23bacf6cd009e68a39a7499bfd96dd0beb28e2198a71195f" => :yosemite
   end
 
   option :universal
