@@ -10,10 +10,10 @@ class H2o < Formula
   end
 
   bottle do
-    sha256 "e9029c054ed3a8672e38a8114ced58c9d3e21e70fb73a61d452746678446f4cf" => :sierra
-    sha256 "b2f4bf96916db1a713ce4acb2c2e4c94aaa085d3c7572004ee55d91fd7bdd39d" => :el_capitan
-    sha256 "220ada282b02f463212dee500e0fbb7bc2e70dcb0bf2c5c88ecc43f34583d563" => :yosemite
-    sha256 "7471f50113eb406db5c101860630829e3d4439001ad85de88a5c8db062b112b1" => :mavericks
+    rebuild 1
+    sha256 "c1d97415a7ff81f9bd581f397724decb2dcec4294e9611bcf7a470849ce2e328" => :sierra
+    sha256 "f28f559a35b86895d207a4dbf9ed9c1ece14c29cda2c2f26bb856cbb82009b58" => :el_capitan
+    sha256 "8170b91cd8e91cb4544f0900a0e023ee1e1a52703c258a0bb3411345a5c5a508" => :yosemite
   end
 
   devel do
