@@ -8,10 +8,9 @@ class KubernetesCli < Formula
   head "https://github.com/kubernetes/kubernetes.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "265f53a092c76c7c152cf342717acd321edec025671d42a4e6b7b5cae041d945" => :sierra
-    sha256 "e713c07505de79e99442aa04a4e840a43f10917c995ad07d5c94e57d87ddd4f9" => :el_capitan
-    sha256 "8e68994feec5640725662f217f8dce38bbaa5f7461c3ce923d9a8eaca4c4c216" => :yosemite
+    sha256 "69ec4b4aa3f207591a7d149cb271ffdc318009e9d4eb1d139dfdc7261ba69cad" => :sierra
+    sha256 "60274fe99891eba36df44ffe6078dd62195594316ce4cb44f67bf442e5422efb" => :el_capitan
+    sha256 "20e8a39287142bc8e42f51962579e56a3ccad90449b2d1348e3b9d8138a4bb0a" => :yosemite
   end
 
   devel do
