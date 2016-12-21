@@ -8,10 +8,9 @@ class Hugo < Formula
   head "https://github.com/spf13/hugo.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "eb3d2874718ddb753cd89b0307df55e7fa3176f9f6535470dd9011aaf47a64d8" => :sierra
-    sha256 "45d5547354b693df9da372e53c32bea68af4a4a0f699fee3c015dcd6b1b92853" => :el_capitan
-    sha256 "884a3252c287e2db1090389a3d2244abfffef930012f5c194db2614950b7d233" => :yosemite
+    sha256 "d7314daf61a899a15d8f979038f2756675eef362b1b3b3b390e2821f164a0994" => :sierra
+    sha256 "5dd96d3e6b21fe39aa57fc44f83ad073ddf3e475a5f7b9d5b3d48b955a8a5a06" => :el_capitan
+    sha256 "25ff57660c22a095f3a8c90adf08e8934afb8a2c062905eeadf23495a8a808c1" => :yosemite
   end
 
   depends_on "go" => :build
