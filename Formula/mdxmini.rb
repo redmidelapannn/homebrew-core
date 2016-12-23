@@ -6,11 +6,10 @@ class Mdxmini < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "8e0daf3d508dad59074c567b8c8e60bd88c8026b7dfe1305e4e9c50ec5d8fbbd" => :sierra
-    sha256 "d20b94107c25833096401be6336544f283e6956758d4238e207e6a4e34fa5fdf" => :el_capitan
-    sha256 "55cf6b84d9a0e649e25db7626db954a47bf1061afd20a959972470b6e5cc9fa2" => :yosemite
-    sha256 "d08a617e3a8791b9e5dc93426f3d471408550a4a0bab85e33a726ccdcdcb683c" => :mavericks
+    rebuild 2
+    sha256 "a37921218b21ae380b836aa4ca09c19ff14537c29c917efda5c7973486c9c05c" => :sierra
+    sha256 "95eee607481af3759f01b6c0c2c26de4a5e1f7dc610af0fdca2625c7fca6cd4d" => :el_capitan
+    sha256 "a82d1bfeb536fbc43e8d2b929104571e77e5dc09b45df96923b09114a650a717" => :yosemite
   end
 
   option "with-lib-only", "Do not build commandline player"
