@@ -5,6 +5,13 @@ class AmrClient < Formula
   version "159"
   sha256 "53346959796c7f25038d17eccd5f21a56bbadd9d80f0c90387bcce01db8addd5"
 
+  bottle do
+    cellar :any
+    sha256 "e498b534e5dc50b2987b31bb45b6ec1d59f7625c3d6b360a3080806dd6693cb1" => :sierra
+    sha256 "8e260f68befb1830354404ea000dd4c48622d366f682dd1985cc88c048a7cd47" => :el_capitan
+    sha256 "1a3cba711bec95f9a3b53180132449315f08e12095931614cd11a45ef26248cc" => :yosemite
+  end
+
   def install
     chmod 0755, "updater/amrupdate"
     chmod 0755, "client/amr"
