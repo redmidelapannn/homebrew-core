@@ -7,10 +7,9 @@ class Aiccu < Formula
   sha256 "d23cf50a16fa842242c97683c3c1c1089a7a4964e3eaba97ad1f17110fdfe3cc"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "c49bc224f4ab5bc469a55c9236a74efb585b176f5addff1853d17d753cb3551c" => :el_capitan
-    sha256 "00d05929df3a1951fa3c28108071e0dcc88236a37dfb89af37af66142b1746bf" => :yosemite
-    sha256 "31117537770464542e1186d32032aba90507a11bd4e41c9f46aa717515e8e3cf" => :mavericks
+    sha256 "1cb6a7ba5fcc97c2f9062e8d2d48a5c0a0a51a48a4fd74b378b711d6d661b23b" => :sierra
+    sha256 "8118db7522478ced2412aa5b01e20a4f16f5a9f165acad5fe5d60432c988c8b9" => :el_capitan
+    sha256 "0a6839b5795e91d4eb6e50e4db901970350ab461734cae9c839162224eeb196b" => :yosemite
   end
 
   # Patches per MacPorts
