@@ -4,9 +4,9 @@ class Mono < Formula
   url "https://github.com/mono/mono.git", :tag => "mono-4.6.2.16", :revision => "ac9e222cd99a3ba55a3232598bd53bd3c397f03f"
 
   bottle do
-    sha256 "dd214b33b7b66785327aecaac80d2260cca4e5e97dbd0efcb0d2c04d9eba18a9" => :sierra
-    sha256 "c57fa4bae502fadb7022f7f00517e5519d0fc940a6ae27ab576651d29cf201dd" => :el_capitan
-    sha256 "06bddaf75d257fcc6c2faa05b161790cabd79ef0e7e55651632a87c64e050ec9" => :yosemite
+    sha256 "1ea1166d6141a022bb3c18744a188dcc5f136f8b819f2ad250cf1413858bcee8" => :sierra
+    sha256 "a8c95c2847161f7765ec037e63f0820820c40c3f98f6690591ccf1d5b1937d70" => :el_capitan
+    sha256 "4273bd2c19cf5383eebdff448ed0259c98abb783704cb8a41393eb2f80ead1ec" => :yosemite
   end
 
   # xbuild requires the .exe files inside the runtime directories to
