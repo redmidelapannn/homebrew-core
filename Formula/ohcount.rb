@@ -8,10 +8,9 @@ class Ohcount < Formula
 
   bottle do
     cellar :any
-    sha256 "b3d4be11858ec755a35d97259c145a76d64ee2e3c0e776cc81578a323b549399" => :sierra
-    sha256 "4c6ca73681e204052237392b9c931e46fcdd599c6605bfc7861e3e91dce9ceac" => :el_capitan
-    sha256 "08d9df78da1afb3654e96fa142db9eb1981dbbc14861db522dae6e8cc08791e4" => :yosemite
-    sha256 "055b2eb9460b1723bcb8a0f215ddda35750ce6d9b9c3cd0bce75d4e9584f0b62" => :mavericks
+    sha256 "215c96631c2875114be6a6a78d65d8f13c1454e75fc20c8dd5666bbb61a208f9" => :sierra
+    sha256 "0aab85371f7a08d8022ca9f609c912f275fe4d876e12c377d4eb0cc7a16aeb6f" => :el_capitan
+    sha256 "759b20bf0138d204a3cdf33f791850d0271945b209294f8dbd7f0a301b9894a0" => :yosemite
   end
 
   depends_on "libmagic"
