@@ -5,9 +5,10 @@ class P11Kit < Formula
   sha256 "d487f04dba3f9e8256f53034c59c944ca45fd7b8434c095da6a74079644dcd82"
 
   bottle do
-    sha256 "5aa16ddaa7bb0c6fcf66122685337e9d98e421c9389fdff2250e6fd7cf4ef352" => :sierra
-    sha256 "ea3948d2d030a226143afb6f0cf63ea7c7ed936078b7984c492e53e4dc05c8ff" => :el_capitan
-    sha256 "122fa200388458776d870d483680f21d8bc755f62db1a87cab30338ab0ab445d" => :yosemite
+    rebuild 1
+    sha256 "6d461fc8be88248c577cf85695b82d4a08a8c8c7fdd4e93cd8a2e36b724e730f" => :sierra
+    sha256 "3356b8f02cdd976be79c5ec462c3163cf01b7e71bd3227a7a5cde35018577b1f" => :el_capitan
+    sha256 "44cc6db223ac8494bfccab2c340e069a3e41cbfdc66391a046eacab92b05edd7" => :yosemite
   end
 
   head do
