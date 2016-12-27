@@ -5,6 +5,13 @@ class Ndenv < Formula
   sha256 "1a85e4c0c0eee24d709cbc7b5c9d50709bf51cf7fe996a1548797a4079e0b6e4"
   head "https://github.com/riywo/ndenv.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a10d801a117eefcce41fbd9759b0b23b30780b0864ddb2bed5ecb2cdf5aaade2" => :sierra
+    sha256 "ec6d4cf8111d5cbebbb177884938ef09732b69f34f418a93258dd7d03eed17eb" => :el_capitan
+    sha256 "ec6d4cf8111d5cbebbb177884938ef09732b69f34f418a93258dd7d03eed17eb" => :yosemite
+  end
+
   depends_on "node-build" => :recommended
 
   def install
