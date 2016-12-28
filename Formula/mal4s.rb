@@ -8,10 +8,10 @@ class Mal4s < Formula
   head "https://github.com/secure411dotorg/mal4s.git"
 
   bottle do
-    rebuild 1
-    sha256 "5c426bbeed255731e25f1b1537adfc2b85f5cb7e3ff0a7be9571e48441f64c42" => :sierra
-    sha256 "5560115b97b1534f64bd3a91ff5b5306eafe1f2082f16ed8a68af98fc150416f" => :el_capitan
-    sha256 "4a52fb4aa8e7ceaae4e6235c528f0f1b28b80b438b4543745ec9e48f0009dc88" => :yosemite
+    rebuild 2
+    sha256 "2d02013c45d3e4f2cae69d6ba9c2bec75f0c0438c44113ab87ae74fbec026d02" => :sierra
+    sha256 "1d4959ac7f8dd4bcf8b088b9f6ef91aeb67928663755db910ed84b828802377e" => :el_capitan
+    sha256 "254ea2f7971ba3d0e3f68a9e0aab08aeae70a63fe520147c6d15dd35f963d26b" => :yosemite
   end
 
   depends_on "pkg-config" => :build
