@@ -7,10 +7,10 @@ class Mjpegtools < Formula
 
   bottle do
     cellar :any
-    sha256 "e0b590dcf62e4f8be02ca5a26ca69c2cca20f2c456b1829936c26845143d1e72" => :sierra
-    sha256 "58c10848fd5d1f9bd95c5ca5e046a1e68e1162ebe382b79b5f93e625c4c2855e" => :el_capitan
-    sha256 "f96946c117b2d08b387b57e58c9642968c74a1c061ceb651fa92de6e63f8cb46" => :yosemite
-    sha256 "3477b7df54eaef29d1502fb505eb5f55b2da05ab40cb529460d10523a1b5ab93" => :mavericks
+    rebuild 1
+    sha256 "054efe127c8c3b1b14228e4fd59dbfce204c57c9ba02198738e78da60d921256" => :sierra
+    sha256 "6cfc1bee0d34e91cb2a8f99f5b5ee2554dc6b3d9a176b39b76873df58b9f4767" => :el_capitan
+    sha256 "b8cc49316ea846b1b450bf3a6e9370e77604afdee9175f9d2d180b86b7274c8f" => :yosemite
   end
 
   depends_on :x11 => :optional
