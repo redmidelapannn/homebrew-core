@@ -5,11 +5,10 @@ class Uptimed < Formula
   sha256 "26891965bb499065e34072cecd3eb8087102b1c05f530c8fe8504a07c722f9bf"
 
   bottle do
-    sha256 "35abda91e2e732e28a6e967e421d9e571678c17725149098dd8543c632f8ca0d" => :sierra
-    sha256 "1aa7991db96ff3cb2a2d2e9a62177a724380068ddd5f37501fc0cfa9e87bb0d2" => :el_capitan
-    sha256 "cd0bd1b637357439872b01eeb3b32e10c111dd630b711bbd0ea7488f66c68a64" => :yosemite
-    sha256 "3ce223958f06002df59fc9738b539832a9198a9f574b86f8ceab3c4f38936d6c" => :mavericks
-    sha256 "ad260249020068e03bf37c944db598799ed08d57f485ae78d7831c3f9f027cf2" => :mountain_lion
+    rebuild 1
+    sha256 "34079362ef343cc3c49f0a67a19ae1ef8ee0fbe8b169b1a2f7f87dc4063b4762" => :sierra
+    sha256 "f28f35a3c2b2b5d5146d28bdc697ccccdbb2be4bf17ae4e7b35e824ddfec78c8" => :el_capitan
+    sha256 "1d84623d8cf1d9edc7abdf4d3cb400227561793e6930085a928fd6e99cd428df" => :yosemite
   end
 
   depends_on "autoconf" => :build
