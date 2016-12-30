@@ -8,9 +8,10 @@ class Mu < Formula
   sha256 "6559ec888d53f8e03b87b67148a73f52fe086477cb10e43f3fc13ed7f717e809"
 
   bottle do
-    sha256 "7a22948357dea29fea7aad7fb40a1d40c91587a9ae6d5584fdc926c051558394" => :sierra
-    sha256 "2668d780329437c1a9aa3a59a545f227adb2effcd162c61a57d162c0dea27596" => :el_capitan
-    sha256 "5021092fa9584e6ed4755a61d675dbd89108706de2b4f4e35fe0597a5a79fcb1" => :yosemite
+    rebuild 1
+    sha256 "957af83dec4a75a6e90dd7efa4765646a2886eee361055ee75cf1957ee9746be" => :sierra
+    sha256 "6858d4824135eaea5d2a47b49a5cf3a7fb99e1c2375458ade6f0f154c1fef2f1" => :el_capitan
+    sha256 "1ad49b909aedb6884ad7b762cb3096d2463c4eccfaade0a41ced57271ca881c3" => :yosemite
   end
 
   head do
