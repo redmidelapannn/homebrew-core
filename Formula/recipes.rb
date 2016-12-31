@@ -1,7 +1,7 @@
 class Recipes < Formula
   desc "Formula for GNOME recipes"
   homepage "https://wiki.gnome.org/Apps/Recipes"
-  url "https://mclasen.fedorapeople.org/recipes-0.4.2.tar.xz"
+  url "https://download.gnome.org/sources/recipes/0.4/recipes-0.4.2.tar.xz"
   sha256 "9554d4f5d97eb9cd4032de0e4f9cc27a218c32d022dd1917a7e9efbd379c5bc1"
 
   depends_on "gtk+3"
