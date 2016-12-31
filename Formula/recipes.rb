@@ -8,6 +8,9 @@ class Recipes < Formula
   depends_on "gnome-icon-theme"
 
   def install
+    # orces use of gtk3-update-icon-cache instead of gtk-update-icon-cache. No bugreport should
+    # be filed for this since it only occurs because Homebrew renames gtk+3's gtk-update-icon-cache
+    # to gtk3-update-icon-cache in order to avoid a collision between gtk+ and gtk+3.
     inreplace "data/Makefile.in", "gtk-update-icon-cache", "gtk3-update-icon-cache"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
