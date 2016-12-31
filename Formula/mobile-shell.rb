@@ -6,9 +6,10 @@ class MobileShell < Formula
   revision 3
 
   bottle do
-    sha256 "bc1a1ce96af199e577ee7eecd75688f43aaa6bddec09a7973c487f8d4233e60f" => :sierra
-    sha256 "73f0c2c60aae22d886f44421034fe1e43e2c643dba10913026d9f2935b3c0ddc" => :el_capitan
-    sha256 "0d4e77bc71d3413788995fc3029ae29df2789ef6eed7871862a823ffeee7f12d" => :yosemite
+    rebuild 1
+    sha256 "db6c9b9be132adbaa721071ad2ce0c06e788492b5a658199456ac64cae3b899f" => :sierra
+    sha256 "f8087b929be4145de9ad2cf97ab5fb43de90300f51646a7e0aa45595a53dfb2c" => :el_capitan
+    sha256 "68a2162126c625f7cdadf1b7a4b79e4b667a664d4b8c80beea59106110cd8038" => :yosemite
   end
 
   head do
