@@ -33,6 +33,11 @@ class LlvmAT36 < Formula
       end
     end
   end
+  bottle do
+    sha256 "445acc6b0089fb965ed96fdb7d7ac273180d7713bc0c28dfa4ffc02d192dc25f" => :sierra
+    sha256 "11170e44fab810c5f3e273a9ae3d0052ab8fb6196bbf166263513dfeff736f6f" => :yosemite
+  end
+
 
   head do
     url "http://llvm.org/git/llvm.git", :branch => "release_36"
