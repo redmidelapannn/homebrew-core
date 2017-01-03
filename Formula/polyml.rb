@@ -6,10 +6,10 @@ class Polyml < Formula
   head "https://github.com/polyml/polyml.git"
 
   bottle do
-    sha256 "7eea9f9f85b3440aa94d5e77a6c8590188ec7ab9cb77542503beec335fcc8e1f" => :sierra
-    sha256 "27ef28e7daab282bd024a940b24288f46cdd5113cffc090c1ea4df56c3b39593" => :el_capitan
-    sha256 "8f54bb02f692bf1e64de70b9370210e397f1cb42747fd375eb57f28c3e0014f9" => :yosemite
-    sha256 "1b6f485f1840b4f8d28978b82902a978030fde47f35fbc81cd6c83d61cf4d5ff" => :mavericks
+    rebuild 1
+    sha256 "80188de8b446f3d8913c140a5d863ff3a14f3e573e270fe7543678f1321d9132" => :sierra
+    sha256 "5eef9b53ce0f2663f883c77c47291ca332699efd85770bcfdb25d79b240c49cc" => :el_capitan
+    sha256 "921ce780e65a9a7f1971c532c1fc3e6e53914431ff6d9a1833f6697fbb7f6d27" => :yosemite
   end
 
   option "with-x", "With X11/Motif support"
