@@ -138,7 +138,7 @@ class AndroidSdk < Formula
     end
 
     # automatically install platform and build tools
-    system "echo y | bash #{bin}/android --verbose update sdk --no-ui --all --filter platform-tools,build-tools-#{build_tools_version}"
+    system "echo y | bash #{bin}/android --verbose update sdk --no-https --no-ui --no-https --all --filter platform-tools,build-tools-#{build_tools_version}"
   end
 
   def caveats; <<-EOS.undent
