@@ -21,9 +21,10 @@ class Wine < Formula
   end
 
   bottle do
-    sha256 "7f174f418fdb5c8ff34dd07b208cc9d21d7e8253bd84946134d2796009f93ba2" => :sierra
-    sha256 "8f09f89e88059f6e03836a3b1a43f792f1c30330ddc4df2d19c2b4f82f4e6351" => :el_capitan
-    sha256 "ce59d721723b0b0c64b65aeb8d9a1811985b40ec6aed861e66263b8f4815c177" => :yosemite
+    rebuild 1
+    sha256 "1eb15f3d89341725899c8547062fcedb5880cf11231034b9e286d9ab395f899e" => :sierra
+    sha256 "14bcd02e873a3b6bbc5aa2118743f45db0be0f44e6cf625ce0bf92bf42a3138b" => :el_capitan
+    sha256 "fdd4890bcb87567d131fba676a2f62602b57182b1a60129db747f2acbad93afe" => :yosemite
   end
 
   devel do
