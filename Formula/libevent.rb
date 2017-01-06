@@ -16,11 +16,10 @@ class Libevent < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "de2aeabfb41fb7e601fb33948b81da4cd56b88bd5d1bfe325370924e75a81fae" => :sierra
-    sha256 "1f18bad6b4b19c55ed11b63256241558923eea26814a7d551cf7384ffe0dd098" => :el_capitan
-    sha256 "8f02227ee85ed96fd3499befc12cf00aad34dcdf436f0b58f29945432a69d4b4" => :yosemite
-    sha256 "e32a8b4b74b3a41fb7ccf7933f0cc883c16d9fbd8ed55ff3d204556afa9d1a41" => :mavericks
+    rebuild 2
+    sha256 "606789b6b1457db65b9fdf47ecd26181ecad771fff5b598fd163cc9a0ac1466a" => :sierra
+    sha256 "f4f68794b016422b097b9d2996f4a79f11a773ffb243badc94df51d747cc626c" => :el_capitan
+    sha256 "d6415b9c8df0a5d0827650c2b4a89d6e07782a9afbb2480e9d9277f85cbaae58" => :yosemite
   end
 
   devel do
