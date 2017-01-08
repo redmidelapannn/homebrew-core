@@ -6,10 +6,10 @@ class Sphinx < Formula
   head "https://github.com/sphinxsearch/sphinx.git"
 
   bottle do
-    sha256 "55ce34bdedf13946fa614bde50839d93135eae720f1021e2c87807d04515ab18" => :sierra
-    sha256 "c75e018d69afb7d3cb662ebd129af67607d47f7b7f71ce8ea95be75d66dc502d" => :el_capitan
-    sha256 "f89b43df8735d295a55c74f18d6af4a1a10b9f3ae81df69713c27f9240f78d14" => :yosemite
-    sha256 "4ec1f1ea71e17b9e924e9f36747d7184114463640f100022cdbb46202e46261f" => :mavericks
+    rebuild 1
+    sha256 "42ace4bf14ac891306c2c68eff8e412cd63769098eff60d729ca6ec366c387c3" => :sierra
+    sha256 "2328f674d4cc298c940eda6833b6dfa8d21f943bfa267fc583b05e4c4c44f720" => :el_capitan
+    sha256 "a4bc182e52072a86b458c1fc30c5552085e44e4900f8573c99de649d92d8a997" => :yosemite
   end
 
   option "with-mysql", "Force compiling against MySQL"
