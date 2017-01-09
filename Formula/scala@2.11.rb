@@ -6,6 +6,13 @@ class ScalaAT211 < Formula
   mirror "http://www.scala-lang.org/files/archive/scala-2.11.8.tgz"
   sha256 "87fc86a19d9725edb5fd9866c5ee9424cdb2cd86b767f1bb7d47313e8e391ace"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0d440eb54340a61014f5261ba83ffd05dcb3526424430a0bd4d45e6d706e3420" => :sierra
+    sha256 "2dab9d0cc4e8b22d147772052b9e9d5dc3a8e8aca4dc7f697c8ecfeacbfdcef5" => :el_capitan
+    sha256 "2dab9d0cc4e8b22d147772052b9e9d5dc3a8e8aca4dc7f697c8ecfeacbfdcef5" => :yosemite
+  end
+
   option "with-docs", "Also install library documentation"
   option "with-src", "Also install sources for IDE support"
 
