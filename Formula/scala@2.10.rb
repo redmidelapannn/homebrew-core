@@ -6,6 +6,13 @@ class ScalaAT210 < Formula
   mirror "http://www.scala-lang.org/files/archive/scala-2.10.6.tgz"
   sha256 "54adf583dae6734d66328cafa26d9fa03b8c4cf607e27b9f3915f96e9bcd2d67"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e106729cc1bbb211cfe6312d29ad14b419c144d1053c5a387fcf6ed51af45e49" => :sierra
+    sha256 "6a2ec0681f608ed4bc2283a7e120c1bc6097cdd40b0c2ddf24e773e3e8c144d0" => :el_capitan
+    sha256 "6a2ec0681f608ed4bc2283a7e120c1bc6097cdd40b0c2ddf24e773e3e8c144d0" => :yosemite
+  end
+
   option "with-docs", "Also install library documentation"
   option "with-src", "Also install sources for IDE support"
 
