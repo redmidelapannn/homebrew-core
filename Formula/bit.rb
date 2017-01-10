@@ -13,6 +13,7 @@ class Bit < Formula
   end
 
   test do
-    system bin/"bit", "--version"
+    assert_equal "successfully initialized an empty bit scope.\n",
+      shell_output("#{bin}/bit init")
   end
 end
