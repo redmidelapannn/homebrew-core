@@ -6,10 +6,8 @@ class MinimalRacket < Formula
   sha256 "4203d9b51a0de7ea549db966cfa49a736f8605ab51e2f198cbdb9cfaf428b0f3"
 
   bottle do
-    sha256 "b90d78d65e3fb07b115a38b5d00706915863123c827601a3d58c973cb5c05f9f" => :sierra
-    sha256 "939710efd3662a6dacecec89d3097eeb38b5d880abc6100e542ea804057e0de4" => :el_capitan
-    sha256 "75813d0858f9d7a6f71a31e7e73e8ee0df6a0d5e794f288a948377fd44d20a14" => :yosemite
-    sha256 "cc3c79837045ed6bc4a7991e5e5a8a024ea0c449a4b841f71394f3c4347cdcc0" => :mavericks
+    sha256 "0b440f6cde0a474436e21dd229146870a939fe79dc6e711049cb981a0a5a4a19" => :el_capitan
+    sha256 "2c45b8cfd2b4348dd1632b5f8d9884e6d21c186ed98b7b36b276ae5e13f0d456" => :yosemite
   end
 
   # these two files are amended when (un)installing packages
