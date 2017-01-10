@@ -1,23 +1,16 @@
-class Ant < Formula
+class AntAT19 < Formula
   desc "Java build tool"
   homepage "https://ant.apache.org/"
-  url "https://www.apache.org/dyn/closer.cgi?path=ant/binaries/apache-ant-1.10.1-bin.tar.xz"
-  sha256 "51dd6b4ec740013dc5ad71812ce5d727a9956aa3a56de7164c76cbd70d015d79"
-  head "https://git-wip-us.apache.org/repos/asf/ant.git"
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "50070b39168c9da1a5375a19fb1073f2a15b3a640e5433d10625eb9e170b4178" => :sierra
-    sha256 "50070b39168c9da1a5375a19fb1073f2a15b3a640e5433d10625eb9e170b4178" => :el_capitan
-    sha256 "50070b39168c9da1a5375a19fb1073f2a15b3a640e5433d10625eb9e170b4178" => :yosemite
-  end
+  url "https://www.apache.org/dyn/closer.cgi?path=ant/binaries/apache-ant-1.9.8-bin.tar.bz2"
+  version "1.9"
+  sha256 "6edeaab09fc0bb1eeeb6b6be9c0e463813b073c40189f760e70c85fa288d5125"
 
   keg_only :provided_by_osx if MacOS.version < :mavericks
 
   option "with-ivy", "Install ivy dependency manager"
   option "with-bcel", "Install Byte Code Engineering Library"
 
-  conflicts_with "ant@1.9", :because => "Different versions of same formula"
+  conflicts_with "ant", :because => "Different versions of same formula"
 
   resource "ivy" do
     url "https://www.apache.org/dyn/closer.cgi?path=ant/ivy/2.4.0/apache-ivy-2.4.0-bin.tar.gz"
