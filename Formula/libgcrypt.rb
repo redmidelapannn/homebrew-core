@@ -7,9 +7,10 @@ class Libgcrypt < Formula
 
   bottle do
     cellar :any
-    sha256 "7fd2065fca349fd01415149d0770de66f750a9ed33fd80cc83bbfbf2a08cf349" => :sierra
-    sha256 "1b8169618ad2c94cbda19f6b9cdfcc536e480e2013cccc82058142f90dd7e086" => :el_capitan
-    sha256 "16edd40459fb68fd0db4e802ce5ec78a17ffc16b6285f13a5236cdf7920ba4f3" => :yosemite
+    rebuild 1
+    sha256 "2e4c6c9756ba81c7a13d6da90ceed63a2617da5a7f48255e17da0260c44481c7" => :sierra
+    sha256 "a1653fc5a29bca9222d1d66aa2e13cb92d93f4331f6e092ea062ff0a9ff2f2df" => :el_capitan
+    sha256 "5a47395f680e8c2031b1f78058784ba9702af39bb3b73bfc7063e5e0a2dc288c" => :yosemite
   end
 
   option :universal
