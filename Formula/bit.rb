@@ -3,7 +3,7 @@ class Bit < Formula
   desc "Distributed Code Component Manager"
   homepage "https://www.bitsrc.io"
   url "http://assets.bitsrc.io/release/0.1.0/bit_0.1.0_brew.tar.gz"
-  sha256 "1a90905120b0a54178c6be154fcc9210e23df5a3b0e1fe68c99771c2cf7bdad6"
+  sha256 "c33c00a8334da4659b263472d013eaafbc5f0c16249e755f7624ac396d673270"
 
   depends_on "node"
 
