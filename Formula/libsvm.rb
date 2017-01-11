@@ -7,9 +7,10 @@ class Libsvm < Formula
 
   bottle do
     cellar :any
-    sha256 "39f3552e425be4bcb6e42d917b508bf94904520526c49ec52712c017680583fd" => :sierra
-    sha256 "67867d2ddde33efd85da4c1a03757af0e3dcf591186552140876ddd11916d5df" => :el_capitan
-    sha256 "3ee2001f87f2a58e698aeb0bfc413baa820184dba1caa2b3ec0a5a593a80d651" => :yosemite
+    rebuild 1
+    sha256 "38d94b9a4bdd2b3686ac9b3ae5e5967c0a29dc4d0f561795a7d9c5bc83229dfe" => :sierra
+    sha256 "1859e1a79fe238d6204ca243dcc1a739021463c23835938bcb01510e68331052" => :el_capitan
+    sha256 "491a11f37fb1bdd7ae58bc119d33ab97b956e00526c0005f3d1ca38995d12cf0" => :yosemite
   end
 
   def install
