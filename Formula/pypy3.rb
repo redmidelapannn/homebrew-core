@@ -6,9 +6,10 @@ class Pypy3 < Formula
 
   bottle do
     cellar :any
-    sha256 "b83b687be3ff98a42634a8960c43d2a9a11b43748be10e9f0d95a352e3110684" => :sierra
-    sha256 "71b2cdcbcbb3a111a47b9f16ff8c7fd26dc0a423f940082cd655d22b5a031fdb" => :el_capitan
-    sha256 "8cd625bbcae6a60606352d60dc1a2663571c69d55ffefde8817726fa2f182e20" => :yosemite
+    rebuild 1
+    sha256 "c30c95c10e56222c1b62a8efecbe4f6c200ee3bbfea26e2a75f5a733344b631b" => :sierra
+    sha256 "b09f24f5462ff3b9982e4a4d4c0a566e04a5fa52dd421793329e6b8de0bbe486" => :el_capitan
+    sha256 "b5fed1c9558fd1f0f5031d5f29da44d4046f8b7e16f34d7f3951505b414fe508" => :yosemite
   end
 
   option "without-bootstrap", "Translate Pypy with system Python instead of " \
