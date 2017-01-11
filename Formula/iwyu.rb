@@ -7,6 +7,13 @@ class Iwyu < Formula
   version "0.7"
   sha256 "ba343d452b5d7b999c85387dff1750ca2d01af0c4e5a88a2144b395fa22d1575"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7c3b0314b7967924117917796823ae6dcd4e7b4c9d7fcbba715b705c2750c11c" => :sierra
+    sha256 "13ac1c50d614041f87363e669548d902c135dbc17eaeb115c62fdb559100b076" => :el_capitan
+    sha256 "13ac1c50d614041f87363e669548d902c135dbc17eaeb115c62fdb559100b076" => :yosemite
+  end
+
   def install
     # include-what-you-use looks for a lib directory one level up from its bin-
     # dir, but putting it directly in prefix results in it getting linked in
