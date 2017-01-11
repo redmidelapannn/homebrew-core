@@ -6,11 +6,10 @@ class Espeak < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "ad40b912f2b0cf1b72ab89d53729cd61717a9d9b5bc588950cd6318b63c9e133" => :sierra
-    sha256 "5e2829905c793de0ccf38ccca04e03bc504f7f70137952d44177461c16cbf174" => :el_capitan
-    sha256 "7fed44fd08e3fbbc193e679d97141cf43facbd9a0661fb6a2991bebb5272864a" => :yosemite
-    sha256 "4da1cfc5fe126fa8b0fd6b5909a10c9d6dee3536d772fa0d090f399134a5cd5b" => :mavericks
+    rebuild 2
+    sha256 "9af8f9ab67c106d0c612e9de5def0bbe12921663cd5e703f854c35da3b587719" => :sierra
+    sha256 "82af5047ff9c3193c7467ee2e637d95dde4c9a9d7d903cc758a137a88eb84569" => :el_capitan
+    sha256 "578c8c30f1f0f583aaf5f1ea7382642b98b856f4613354581461a7d1c1a03d2b" => :yosemite
   end
 
   depends_on "portaudio"
