@@ -6,10 +6,10 @@ class G3log < Formula
 
   bottle do
     cellar :any
-    sha256 "1f0e767cd049f5e6ce968e56162314bb5facb5190918cecbe6317aeccf76bd8f" => :sierra
-    sha256 "6b805ad262286f904a399909d9bcd679a3f7ffb149ce3e54b3ff58569f874236" => :el_capitan
-    sha256 "e10a687eeae95b3c6b9ad2d0b1bfbfc7f9c25432e09be7cca2440a31deef34e5" => :yosemite
-    sha256 "d23c1c572f56876de3d2b3fa1af8db3820c3eb958b3f9cf5f7386e530af91fe7" => :mavericks
+    rebuild 1
+    sha256 "e18686e083f5ae0ee1e6eb955bc5592f6e7457e50dc10a98b1cbbc8c351c4bcb" => :sierra
+    sha256 "e69784dc0ad90f3febbaf7959b53b6cfc6c7c52adf64b501275f4b88843605c9" => :el_capitan
+    sha256 "07e68f4e7de7822d25879902da9a09833326ba346e13c5cec0e6740aed2deb63" => :yosemite
   end
 
   depends_on "cmake" => :build
