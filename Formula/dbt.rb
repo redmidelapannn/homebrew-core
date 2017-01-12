@@ -8,9 +8,10 @@ class Dbt < Formula
   head "https://github.com/analyst-collective/dbt.git", :branch => "development"
 
   bottle do
-    sha256 "bec0024cc753e6d711bf216a1dc73e4abe7c595aeaae7c929a6d3c7111207f17" => :sierra
-    sha256 "2703213a6bc34e6f9eda11ff38ab73c7afa5bdf66a734aeb81c2af86ac048d96" => :el_capitan
-    sha256 "85911b5abab482b537be1a78331fff3d37451cd69a381a0e2e3b82e465887a8a" => :yosemite
+    rebuild 1
+    sha256 "15404424500bf0faddc92a7181d76755d9163c877e30649ff098ed0b6abdf747" => :sierra
+    sha256 "2feba4985bea020dd6360624aa58def032c92711f1a5a20878269cb2bf9d4307" => :el_capitan
+    sha256 "47634d466c01888c3d7e2ac149aea9a4132cb5eb823e7fb8b12a5c97bc037bca" => :yosemite
   end
 
   depends_on "python3"
