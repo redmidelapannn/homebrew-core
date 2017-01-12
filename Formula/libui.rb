@@ -6,6 +6,13 @@ class Libui < Formula
 
   head "https://github.com/andlabs/libui/libui.git"
 
+  bottle do
+    cellar :any
+    sha256 "73196681bdcbad3d03acef4a182d3c314abb991800c6eb533f3f529d1fa13bb1" => :sierra
+    sha256 "c054c0cca53183cb1cc8f165082213b9d497fdeee15a5168d3c13f87abc6b124" => :el_capitan
+    sha256 "0ae44db65da0d3880a70851a7d1c7bb301d812409a4e2397b47b3f6d0f855042" => :yosemite
+  end
+
   option "without-shared-library", "Build static library only (defaults to building dylib only)"
   option "with-examples", "Build examples"
   option "with-tester", "Build tester program"
