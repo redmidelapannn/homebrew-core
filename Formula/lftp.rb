@@ -5,6 +5,11 @@ class Lftp < Formula
   mirror "ftp://ftp.st.ryukoku.ac.jp/pub/network/ftp/lftp/lftp-4.7.5.tar.bz2"
   sha256 "90f3cbc827534c3b3a391a2dd8b39cc981ac4991fa24b6f90e2008ccc0a5207d"
 
+  bottle do
+    sha256 "3e410a2717cb4e7768d32d5815c62bfe023ad9694fc478a385f6bce532621a18" => :sierra
+    sha256 "9a8fb4472978ae8b35d3e9069ac0ac0faf30f9ef1488c0e2616ede4b96c8e6a9" => :el_capitan
+  end
+
   depends_on "readline"
   depends_on "openssl"
   depends_on "libidn"
