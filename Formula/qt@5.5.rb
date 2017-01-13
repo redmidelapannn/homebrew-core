@@ -55,9 +55,10 @@ class QtAT55 < Formula
   end
 
   bottle do
-    sha256 "527c9dbc9f71b6cb2bf6134b5f92730e5f1b639ae700f914126ae4d7aee0b7fb" => :sierra
-    sha256 "41811d73ca7dc49280e48802c3420bb210f7272464cc2f59d40f03c79b323df0" => :el_capitan
-    sha256 "642e52296c4b27b8ecfc3ad2646f4459582365b08c65cf94eb3f9f70c9513230" => :yosemite
+    rebuild 1
+    sha256 "77be2f4e32cc2e7b3791890fbb10e47843b9cfe470848b3c2d555abd13d9727b" => :sierra
+    sha256 "0d93bc09237d33d6d60cdfa4320f7a3f48cb6ceca9a9de1253f9d7ab25946446" => :el_capitan
+    sha256 "57385810d47d127894d650b2f4af905beb6e0dd150c3b000e449853db131af9b" => :yosemite
   end
 
   # Additional MaxOSX10.12 SDK bluetooth fixes
