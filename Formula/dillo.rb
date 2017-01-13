@@ -4,6 +4,12 @@ class Dillo < Formula
   url "http://www.dillo.org/download/dillo-3.0.5.tar.bz2"
   sha256 "db1be16c1c5842ebe07b419aa7c6ef11a45603a75df2877f99635f4f8345148b"
 
+  bottle do
+    sha256 "56b6bcda21a8b841bc00116f03201580f164a555802e62560235234b332c95d7" => :sierra
+    sha256 "be8889e4e9cf11ba62b0617ec7a43b127b057734be81eee07f5e396c1822906a" => :el_capitan
+    sha256 "8a3161fc0ba590cf1b60aad9c1aec27e1d987a26e07dc7f8e0ed75d2f1423248" => :yosemite
+  end
+
   depends_on "openssl"
   depends_on "fltk"
 
