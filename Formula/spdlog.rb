@@ -3,7 +3,7 @@ class Spdlog < Formula
   homepage "https://github.com/gabime/spdlog"
   url "https://github.com/gabime/spdlog/archive/v0.11.0.tar.gz"
   sha256 "8c0f1810fb6b7d23fef70c2ea8b6fa6768ac8d18d6e0de39be1f48865e22916e"
-  head "https://github.com/gabime/spdlog.git", :branch => "master"
+  head "https://github.com/gabime/spdlog.git"
 
   depends_on "cmake" => :build
 
