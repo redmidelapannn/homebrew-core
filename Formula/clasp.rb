@@ -6,9 +6,10 @@ class Clasp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "fd9ad8525cfbb0692dd94cedbd76849edbc222fae644b27fe1e106679e39c64d" => :sierra
-    sha256 "66882d87c5b4aead5af374d54438cbac8877c493e0aaf56798e8c629581d7186" => :el_capitan
-    sha256 "a7770d88cfb59b6678f297ceaa8a38e305eb11a28df6a887205a36c90728c973" => :yosemite
+    rebuild 1
+    sha256 "f9bbe59c3ca94fdefdee2dda558c04bdb65ced21c696b02093f5b45fe5b4c215" => :sierra
+    sha256 "de2ea966c773ee0446ce91435edf813aff70f84486fe6c88fc64ad0591780aac" => :el_capitan
+    sha256 "7d56860973b34f5b3a9fb210792af5aa122af777362df8397e476a00116bdaca" => :yosemite
   end
 
   option "with-tbb", "Enable multi-thread support"
