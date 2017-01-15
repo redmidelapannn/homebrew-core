@@ -7,9 +7,10 @@ class Libiscsi < Formula
 
   bottle do
     cellar :any
-    sha256 "5ca0c39a5aba32abddd1fdd4ffad754baa0d61380579fa1cd03c511e331a24a9" => :sierra
-    sha256 "fb4e0bf29a4500377478c42476b9cf1c20f96fd1891397ed0fad499fe5555117" => :el_capitan
-    sha256 "c89e40197b9aebd712c67d43fbe7a4e085ddb7a1b58861c6e98444271fd9e383" => :yosemite
+    rebuild 1
+    sha256 "13100e29ea9221f833aef4fc84136eba9a3e7b6391b253004f76a10fd51d688f" => :sierra
+    sha256 "fa3a6c28902ccfea3ac8e09bff6f8f50f8d4a1539dd69af6e9d8211170489b21" => :el_capitan
+    sha256 "dfba363533b4f6fadace06e967013471b07110e86b7a98a0e3cd1bebe7e3df04" => :yosemite
   end
 
   option "with-noinst", "Install the noinst binaries (examples, tests)"
