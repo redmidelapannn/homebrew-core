@@ -4,6 +4,13 @@ class Sqsh < Formula
   url "https://downloads.sourceforge.net/project/sqsh/sqsh/sqsh-2.5/sqsh-2.5.16.1.tgz"
   sha256 "d6641f365ace60225fc0fa48f82b9dbed77a4e506a0e497eb6889e096b8320f2"
 
+  bottle do
+    rebuild 1
+    sha256 "c00d7b74aa745e0ea2ea76baf27abdaf43ac7221d0037a82e73f9bd857a0644c" => :sierra
+    sha256 "04107cfb0bc1d6007c321a53900960d381736d4d4de8190fb438d4bb14bad44a" => :el_capitan
+    sha256 "7003fc2a0c2c280a826e053dbc8f041b70adb7bed0c36c057889f111352332f6" => :yosemite
+  end
+
   deprecated_option "enable-x" => "with-x11"
 
   depends_on :x11 => :optional
