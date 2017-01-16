@@ -6,10 +6,10 @@ class Htpdate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c5490cb23845604c332f2e5536639d7cb87ecc75fc3b6f8e0f8e799fc959a320" => :sierra
-    sha256 "fbdf082a4cbde49e5a9e5ea28f8f9c76e634d1f4fc79397e70e55306947c37b8" => :el_capitan
-    sha256 "56073fc56009dac7f807d436f09732bf4e659d2374bb6a61646dc7f94740daa0" => :yosemite
-    sha256 "973fb72128a9fe5e0c4c1aaaf9671b4ea706bc98ba5f96ecd10a2dae46049e57" => :mavericks
+    rebuild 1
+    sha256 "c33bb0dc7b5639f4e9d1d66cdd430b2e65ca5e16c1d91dc43cfc6d4fb6da0365" => :sierra
+    sha256 "1692d10dba9b5349b2788d18b1979751abc96fd1e1a5cee253cc3c40084b1ec1" => :el_capitan
+    sha256 "b564b4962c7393b93fece4d574dd3752f86b91c8f514f55f22ac667b118078c0" => :yosemite
   end
 
   def install
