@@ -8,11 +8,10 @@ class Dirac < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "09b846fe4069e971ec6d10668d97ac599cb555e5799f3ba3076d0d088e1f78cf" => :sierra
-    sha256 "8f4414614755f863d3ba0f43d6415684fbc00976ae24c7e45c88fe736be918d2" => :el_capitan
-    sha256 "1d3049d9dcdbd0116c65c54582601b20cdd17c8b89cf80e74efc79f71b641ca4" => :yosemite
-    sha256 "e7c407545085631c27c77f2d15abe84b3cc0a3645cf5e538aa15f0aacfe6de50" => :mavericks
+    rebuild 2
+    sha256 "a2d350ee6a6915492f18748f1edd4760f14799b3e04df2b51191e5e751bce9f9" => :sierra
+    sha256 "7e08b5f2be5a6c3f8defe2e6d87b7c4cb7ad4ef438b8a7a3c73dbad565382cc4" => :el_capitan
+    sha256 "2dd8cae8e35b3e87fc69933975fa56b8e7fa8e7ae43dc763054f6d12c427fb18" => :yosemite
   end
 
   # First two patches: the only two commits in the upstream repo not in 1.0.2
