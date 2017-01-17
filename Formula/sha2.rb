@@ -6,11 +6,10 @@ class Sha2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 3
-    sha256 "133588f831b1848abef49c88fd7587052990ad4b7133dc300a5c6aed806b1801" => :sierra
-    sha256 "84ce281185ba415257d8507e9b16ba8dc3189ec8b8414d21a6421d5979a025d2" => :el_capitan
-    sha256 "da63b7e9be95c91bcdc3290e3c6caee12016c5d59960144ea26f8c6438dfe680" => :yosemite
-    sha256 "34650fbb427aa57f452acc23a338696756792907bd7e127d7b495a7fd7e4573a" => :mavericks
+    rebuild 4
+    sha256 "e78daffc1c83690b4d174afd8fe2bde510c0487a0bd06abe289a4a008fb2cee0" => :sierra
+    sha256 "917aee6d90ef8afa60b2bb2596bd0143625e17f89fdbe1256f5cc4910ddb701a" => :el_capitan
+    sha256 "241967be4c87fc7b28ed2a137afd4f690fff6c0658b6fc4aef4cd736a5b38648" => :yosemite
   end
 
   option "without-test", "Skip compile-time tests"
