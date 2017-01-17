@@ -6,10 +6,10 @@ class Tesseract < Formula
   revision 2
 
   bottle do
-    sha256 "cf3f65725fee58769174390c9679fb50d91c31f050f78c168562e8201a9d4947" => :sierra
-    sha256 "61fe45974f9c0d9ea56d7c0c8adff0f62bef5892623403fb6a7c9bc85bbe7040" => :el_capitan
-    sha256 "f8e99bc1013c533d78cfce0a049840e693a75a83ac465f3f4bce9a2ec6049809" => :yosemite
-    sha256 "7f18bf4f30a861e949f453aea13debe638c052b8e6b4dda56f5329357ed23709" => :mavericks
+    rebuild 1
+    sha256 "6212f3d47b670abb5485424e59aad75b7ca8dcad9806716854c64eecc187f1cd" => :sierra
+    sha256 "cb2a1be3016f32431515a6ce5895f013d44ffb8d33a7892a0c7716fc10dc8d6c" => :el_capitan
+    sha256 "cc199980af9759cac616bb2e9b9e6e82ab9248e344a1bd11bade4d38d59b5eb1" => :yosemite
   end
 
   head do
