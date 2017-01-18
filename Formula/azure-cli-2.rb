@@ -7,6 +7,12 @@ class AzureCli2 < Formula
   homepage "https://github.com/Azure/azure-cli"
   url "https://azurecliprod.blob.core.windows.net/releases/azure-cli_packaged_0.1.6.tar.gz"
   sha256 "bb4bd4694e044bf416941e3afdc505bde7d049bac2e66c8b3fe44c9cb3b57ff8"
+  bottle do
+    sha256 "46b6f55f526f2d2a8f0eb63be4878443d3e6a75d1b2efa6d98b2058da748ab06" => :sierra
+    sha256 "b2c92e38f4e07df81c11251e4749d848579ab8a57adfb3a73439dd8e7dcd5bd0" => :el_capitan
+    sha256 "1dfb247f150fd49a9f0e653e381ccb4d08f1e4257dcc1417a942ac6d0b351caa" => :yosemite
+  end
+
   depends_on "python"
 
   # Apply the 'az component' patch
