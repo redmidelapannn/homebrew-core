@@ -3,6 +3,7 @@ class AptDater < Formula
   homepage "https://github.com/DE-IBH/apt-dater"
   url "https://github.com/DE-IBH/apt-dater/archive/v0.9.0.tar.gz"
   sha256 "1c361dd686d66473b27db4af8d241d520535c5d5a33f42a35943bf4e16c13f47"
+  version_scheme 1
 
   bottle do
     rebuild 1
