@@ -6,9 +6,10 @@ class MingwW64Binutils < Formula
   sha256 "26253bf0f360ceeba1d9ab6965c57c6a48a01a8343382130d1ed47c468a3094f"
 
   bottle do
-    sha256 "6bc55401f311a9f5df14cf01c2e87e414952f60eb4de91f1a04ebf6f7ef1668a" => :sierra
-    sha256 "328d6d452200f6c4babd2607bf0b7ed622f6ff3198eb172ad6ad5a769a69c70b" => :el_capitan
-    sha256 "39e04cd72f16ce87abac183cfa9d1bfe3b979378a938f4a8b987b79ea696261d" => :yosemite
+    rebuild 1
+    sha256 "12b1c6b8c70b7fcbf9deedf2e583d89bb02a7edeafccb8f0db7d1c4cbe329585" => :sierra
+    sha256 "6c8fb24ad092ede6adb1dd8323670dc3f29ab88f4a1e9087dc0a690cae9ebe22" => :el_capitan
+    sha256 "60156ea03315abbf5e8ba7773cf604bd428be33740f13355cb182a79a16a79f7" => :yosemite
   end
 
   option "with-multilib", "Compile x86_64 mingw target with multilib support"
