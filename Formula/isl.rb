@@ -13,9 +13,10 @@ class Isl < Formula
 
   bottle do
     cellar :any
-    sha256 "1c2765a5766f8bc022dc49d77d7d32a9c3e92e82452bc63ab534f3c1f18a913c" => :sierra
-    sha256 "00c61068ede0e555b9d41126cfe773f93a1b5f3b4843bc34f001987f940d7796" => :el_capitan
-    sha256 "3f5c77443c140d387297d23056e86e07a9bb3a34328d42edcff7aef47410c1f0" => :yosemite
+    rebuild 1
+    sha256 "199e0c665d196e6aea68d93c25ca8e658c01eaad6d3a914c1946e4fddd17a4d0" => :sierra
+    sha256 "d6ed8c3f1ae7d2fce7719b15b336993a1c485cd478e7fe532a1c745b8e240225" => :el_capitan
+    sha256 "c02039244934b160c24d73195daff749cb0e3e4ab0493184b1e00ab8b5f7c4f4" => :yosemite
   end
 
   head do
