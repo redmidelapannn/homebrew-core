@@ -5,13 +5,10 @@ class Maclaunch < Formula
   sha256 "f265e819751ed242abaa2d0ef8b1ed3ffed6df043992151e5f905cc19555a079"
 
   def install
-    # for clarity, remove .sh
-    mv "maclaunch.sh", "maclaunch"
-    bin.install "maclaunch"
+    bin.install "maclaunch.sh" => "maclaunch"
   end
 
   test do
-    # just run the command to test the install
     system "#{bin}/maclaunch"
   end
 end
