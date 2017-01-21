@@ -23,7 +23,6 @@ class Gtkx < Formula
     depends_on "gtk-doc" => :build
   end
 
-  option :universal
   option "with-quartz-relocation", "Build with quartz relocation support"
 
   depends_on "pkg-config" => :build
@@ -37,7 +36,7 @@ class Gtkx < Formula
   # Patch to allow Eiffel Studio to run in Cocoa / non-X11 mode, as well as Freeciv's freeciv-gtk2 client
   # See:
   # - https://bugzilla.gnome.org/show_bug.cgi?id=757187
-  # referenced from 
+  # referenced from
   # - https://bugzilla.gnome.org/show_bug.cgi?id=557780
   # - Homebrew/homebrew-games#278
   patch do
@@ -46,8 +45,6 @@ class Gtkx < Formula
   end
 
   def install
-    ENV.universal_binary if build.universal?
-
     args = ["--disable-dependency-tracking",
             "--disable-silent-rules",
             "--prefix=#{prefix}",
