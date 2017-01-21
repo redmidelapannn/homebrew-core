@@ -34,13 +34,15 @@ class Gtkx < Formula
   depends_on "gobject-introspection"
   depends_on "hicolor-icon-theme"
 
-  # Patch to allow Freeciv's gtk2 client to run.
+  # Patch to allow Eiffel Studio to run in Cocoa / non-X11 mode, as well as Freeciv's freeciv-gtk2 client
   # See:
+  # - https://bugzilla.gnome.org/show_bug.cgi?id=757187
+  # referenced from 
   # - https://bugzilla.gnome.org/show_bug.cgi?id=557780
   # - Homebrew/homebrew-games#278
   patch do
-    url "https://bug557780.bugzilla-attachments.gnome.org/attachment.cgi?id=306776"
-    sha256 "4d7a1fe8d55174dc7f0be0016814668098d38bbec233b05a6c46180e96a159fc"
+    url "https://bug757187.bugzilla-attachments.gnome.org/attachment.cgi?id=331173"
+    sha256 "ce5adf1a019ac7ed2a999efb65cfadeae50f5de8663638c7f765f8764aa7d931"
   end
 
   def install
