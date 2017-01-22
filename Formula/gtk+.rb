@@ -5,6 +5,7 @@ class Gtkx < Formula
   stable do
     url "https://download.gnome.org/sources/gtk+/2.24/gtk+-2.24.31.tar.xz"
     sha256 "68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658"
+    revision 1
   end
 
   bottle do
