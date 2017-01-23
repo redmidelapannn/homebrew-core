@@ -7,11 +7,10 @@ class Nrpe < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "7f1020ec90004decbe2f902bbf3aa31cc994ee073da054c5aa3713f61b785a4d" => :sierra
-    sha256 "a2af86f9a4eae43266f84f9cf62544657a2508272249a9f39a3dd62b06642b0c" => :el_capitan
-    sha256 "7e5975244c0a97fc01bbd5aaabd73f768f7cc831bed026394b59e0d7ebf32cdf" => :yosemite
-    sha256 "59df072ab20b615e4c26198be439796f4415816af5be7cd661a3d115d7f73705" => :mavericks
+    rebuild 3
+    sha256 "f55e32800777bdeb0ba7e000140885d81f5e89231a707d335b1b87f78115490b" => :sierra
+    sha256 "e8fd0f4fe9c05531f8a8a21d9171108979a80cb5b005d877eafb76998dee769f" => :el_capitan
+    sha256 "5b38f3c5aa5b3690c3701a51b96ce37b2835ba63b1f885b972cc9de810cf6eb8" => :yosemite
   end
 
   depends_on "nagios-plugins"
