@@ -11,7 +11,6 @@ class Spdlog < Formula
 
   def install
     ENV.cxx11
-    ENV.universal_binary if build.universal?
 
     mkdir "spdlog-build" do
       args = std_cmake_args
