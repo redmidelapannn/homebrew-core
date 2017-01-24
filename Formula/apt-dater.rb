@@ -7,9 +7,9 @@ class AptDater < Formula
 
   bottle do
     rebuild 2
-    sha256 "026b29a9428c2c1d77e70001c8651f8e8ac20b20dee1ba62a89e0d69e2da570e" => :sierra
-    sha256 "a2f37094132e6f5cd8ad9b287bf299eea8acbc99b1d468002dfe875a8a14985d" => :el_capitan
-    sha256 "2ac3ba56f32d018a9af477484d8ad561871f855aca78726dbe8f43f5552f6acc" => :yosemite
+    sha256 "039df1ebe2f08d24ea3fa26c91644e084c36b9ad9803b5590667eeeec00780f0" => :sierra
+    sha256 "8f78046980e0ee6f824337539df87000710e2301ca54ba0ad51b091d4097c407" => :el_capitan
+    sha256 "74f9703885181718069109713f9e11fc214b4ae1b3c99c7cd34d41c18cccf968" => :yosemite
   end
 
   depends_on "pkg-config" => :build
