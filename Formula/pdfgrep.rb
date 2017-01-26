@@ -21,6 +21,7 @@ class Pdfgrep < Formula
   end
 
   depends_on "pkg-config" => :build
+  depends_on "libgcrypt"
   depends_on "poppler"
   depends_on "pcre" => :optional
 
