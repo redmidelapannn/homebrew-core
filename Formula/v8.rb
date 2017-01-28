@@ -7,6 +7,11 @@ class V8 < Formula
   version "5.8.48"
   head "https://chromium.googlesource.com/chromium/tools/depot_tools.git"
 
+  bottle do
+    cellar :any
+    sha256 "8a9ab5d7d0250dfae8083436c6db658fc0d69382aa8655708946588784c7b207" => :el_capitan
+  end
+
   # not building on Snow Leopard:
   # https://github.com/Homebrew/homebrew/issues/21426
   depends_on :macos => :lion
