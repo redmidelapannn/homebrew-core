@@ -68,12 +68,12 @@ class V8 < Formula
 
       cd output_path do
         lib.install Dir["lib*"]
-        bin.install "d8"
+        bin.install "d8" => "v8"
       end
     end
   end
 
   test do
-    assert_equal "Hello World!", pipe_output("#{bin}/d8 -e 'print(\"Hello World!\")'").chomp
+    assert_equal "Hello World!", pipe_output("#{bin}/v8 -e 'print(\"Hello World!\")'").chomp
   end
 end
