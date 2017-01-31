@@ -6,6 +6,12 @@ class V8AT58 < Formula
   url "https://github.com/v8/v8/archive/5.8.69.tar.gz"
   sha256 "15271aa814a8e00f8a1b493084513eb5e0b88d6a4ca662f26f0a446bfe568d99"
 
+  bottle do
+    cellar :any
+    sha256 "738136c5424d1b85a428df73ee1a832d003d236a2180c10ad060dc11ac05dcbe" => :sierra
+    sha256 "fb094a300c38db8f87ef3b7a0b75b275346fd1199ce6c74be37b53353461e88a" => :el_capitan
+  end
+
   keg_only "Provided V8 formula is co-installable and it is not installed in the library path."
 
   # not building on Yosemite
