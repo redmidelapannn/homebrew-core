@@ -6,8 +6,8 @@ class Modulo < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b885b0927389818fc6cf186217eec981b8f2d18ae682333b7d708f6a0356b84f" => :sierra
-    sha256 "c2049122beebd7eadaa49dbd7e14612d1e6b2a07919a2f82cde1021028cb0c61" => :el_capitan
+    sha256 "8d9b4c368b1998a36f17e0a24cdf03fcc237c16f95d174bbb0a2a07a3220831a" => :sierra
+    sha256 "f686f1d6791d7481af0b18ca0f0c18ac57f51b6b31a36d2423f6bf282da0b77a" => :el_capitan
   end
 
   depends_on :xcode => "8.0"
