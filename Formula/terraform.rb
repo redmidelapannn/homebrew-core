@@ -8,9 +8,11 @@ class Terraform < Formula
   head "https://github.com/hashicorp/terraform.git"
 
   bottle do
-    sha256 "20473c90a2443202ae8cb86d079c2e925956ba47798503cc47051dc8e56d4702" => :sierra
-    sha256 "12876bccd13ac5688eb3377109a2b395cbfef03c1c831b5878ad1c6990903e75" => :el_capitan
-    sha256 "3875b723b1329df679627f84dca2f9365715a0625b99c34a02e313a9c6ee16be" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "02e95b988c08b2151bd92405c5664f16d5016c62ec1f42c78dbdeb34181a66e5" => :sierra
+    sha256 "b73e670f59d1878342b0d686d259166d72008b6eac750f825f6c24a92b7848a6" => :el_capitan
+    sha256 "cdbee4c3597536cdd5fafcdb103ac8e8054bffefb2915de00fccc18c167b8f9a" => :yosemite
   end
 
   depends_on "go" => :build
