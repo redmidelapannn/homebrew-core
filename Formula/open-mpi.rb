@@ -1,9 +1,8 @@
 class OpenMpi < Formula
   desc "High performance message passing library"
   homepage "https://www.open-mpi.org/"
-  url "https://www.open-mpi.org/software/ompi/v2.0/downloads/openmpi-2.0.1.tar.bz2"
-  sha256 "fed74f4ae619b7ebcc18150bb5bdb65e273e14a8c094e78a3fea0df59b9ff8ff"
-  revision 1
+  url "https://www.open-mpi.org/software/ompi/v2.0/downloads/openmpi-2.0.2.tar.bz2"
+  sha256 "cae396e643f9f91f0a795f8d8694adf7bacfb16f967c22fb39e9e28d477730d3"
 
   # Patch Open MPI in order to fallback to oob/tcp when a Unix socket path
   # is too long, and instead of silently truncating the path.
