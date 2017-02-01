@@ -6,11 +6,10 @@ class Lua < Formula
   revision 5
 
   bottle do
-    cellar :any
-    rebuild 1
-    sha256 "cc0e904400207422498efe4b352bfa185927ba75115920275cfe1f051ecbe768" => :sierra
-    sha256 "71e15d3f9db85ec870950d9d7d4aa2b0295914a60d5062c4b5db3bda50972a79" => :el_capitan
-    sha256 "fbef1569ff95f0a63ca17208891b4ce6f9d4e1e484bf3a9a6052271e00e35637" => :yosemite
+    cellar :any_skip_relocation
+    sha256 "2037b3ecd8dc21372e96d8471abba506f1774dee92173ff0922b013dfb97a994" => :sierra
+    sha256 "6245ae607241d501eab8f3915ff4f5264178d0c383ae3ef1e0dbc24f7b699c2d" => :el_capitan
+    sha256 "a19d993f5f46b47dc00b9f852c87bbc020090a1451693f7abb43d125a5645cbb" => :yosemite
   end
 
   pour_bottle? do
