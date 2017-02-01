@@ -6,10 +6,10 @@ class LuaAT53 < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "19376afd63de40260f34006b8212432f2003fcbc2e7a1de28238e9bc67b89af0" => :sierra
-    sha256 "970494abb3a2ce2f97710be65a76affdf7001c25ea00432514ae96523d6700b8" => :el_capitan
-    sha256 "d0e79e1f4097bf550a488ec987e5e7316d3c4b95d4e5e588e348debcd0df7320" => :yosemite
+    cellar :any_skip_relocation
+    sha256 "8b0d43267e9171edfeb98345565c71e36fd33ddc17c729f6bce22d3396e2659a" => :sierra
+    sha256 "e2ea3d8e3f28201127a8e8acc11b723a816219092787da12279f9aa0a38305a5" => :el_capitan
+    sha256 "df4e2026369155eb944e94aac86d8f9631081042d4eef9a95980c425d193965a" => :yosemite
   end
 
   keg_only :versioned_formula
