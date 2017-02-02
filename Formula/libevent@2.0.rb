@@ -13,6 +13,13 @@ class LibeventAT20 < Formula
       sha256 "26e831f7b000c7a0d79fed68ddc1d9bd1f1c3fab8a3c150fcec04a3e282b1acb"
     end
   end
+  bottle do
+    cellar :any
+    sha256 "a6e45a2c20e9917899a51d6ad63a1d1138d045a61a76daedaa4c78896a649662" => :sierra
+    sha256 "6579307efe37a2c66f80a51c4c94d8c6df76dbd16c029b8f969a94afe7536a1f" => :el_capitan
+    sha256 "83aca48a9203138d95b0fa9895ff7e3db8d527a9416c2b845c6a6569c1f75dea" => :yosemite
+  end
+
 
   keg_only :versioned_formula
 
