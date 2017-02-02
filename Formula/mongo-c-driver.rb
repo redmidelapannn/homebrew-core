@@ -19,6 +19,7 @@ class MongoCDriver < Formula
   end
 
   depends_on "pkg-config" => :build
+  depends_on "sphinx-doc" => :build
 
   def install
     system "./autogen.sh" if build.head?
