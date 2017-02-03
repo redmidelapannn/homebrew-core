@@ -9,6 +9,13 @@ class Rustup < Formula
   version "1.0.0"
   sha256 "2da68a13feb9a691ef3b59d0d6d53af617962ab5ba4673eaf3818778ccd00bec"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "05cd2ebabacb777233eccc150d766b8d202e3e5dfb4afc09d7d9ae89c01c31cc" => :sierra
+    sha256 "05cd2ebabacb777233eccc150d766b8d202e3e5dfb4afc09d7d9ae89c01c31cc" => :el_capitan
+    sha256 "05cd2ebabacb777233eccc150d766b8d202e3e5dfb4afc09d7d9ae89c01c31cc" => :yosemite
+  end
+
   conflicts_with "multirust", :because => "both install rustc, rustdoc, cargo, rust-lldb, rust-gdb"
   conflicts_with "rust", :because => "both install rustc, rustdoc, cargo, rust-lldb, rust-gdb"
 
