@@ -5,6 +5,12 @@ class MingwW64 < Formula
   url "https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v5.0.1.tar.bz2"
   sha256 "9bb5cd7df78817377841a63555e73596dc0af4acbb71b09bd48de7cf24aeadd2"
 
+  bottle do
+    sha256 "274ec9602961b6aa4790d9c2b6be3fa6fb02f841960c6f33658cbb414b33712b" => :sierra
+    sha256 "bdbabef231d7f6314ee4d8373fb3f517dbbe92810d72f4ec7bb814877f03877c" => :el_capitan
+    sha256 "7811cbd859d1b5d34be9ed7414e3887a038ae985295bea291fee92fc28864fdc" => :yosemite
+  end
+
   # option "without-multilib", "Compile x86_64 compiler with multilib support"
 
   depends_on "texinfo" => :build
