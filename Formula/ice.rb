@@ -13,10 +13,12 @@ class Ice < Formula
 
   option "with-java", "Build Ice for Java and the IceGrid Admin app"
   option "without-php", "Build without Ice for PHP"
+  option "without-python", "Build without Ice for Python"
 
   depends_on "mcpp"
   depends_on :java => ["1.7+", :optional]
   depends_on :macos => :mavericks
+  depends_on :python => :recommended if MacOS.version <= :snow_leopard
 
   resource "berkeley-db" do
     url "https://zeroc.com/download/homebrew/db-5.3.28.NC.brew.tar.gz"
@@ -96,6 +98,17 @@ class Ice < Formula
         system "make", "install", *phpargs
       end
     end
+
+    if build.with? "python"
+      pyargs = args.dup
+      pyargs << "PYTHON_LIB_NAME=-Wl,-undefined,dynamic_lookup"
+      cd "python" do
+        inreplace "config/install_dir", "print(e.install_dir)", "print('#{lib}/python2.7/site-packages')"
+        inreplace "config/Make.rules", /^PYTHON_LIBS\s*\?=\s*-L\$\(PYTHON_LIB_DIR\) -l\$\(PYTHON_LIB_NAME\)$/, "PYTHON_LIBS := -Wl,-undefined,dynamic_lookup"
+
+        system "make", "install", *pyargs
+      end
+    end
   end
 
   test do
@@ -135,6 +148,9 @@ class Ice < Formula
       system "/usr/bin/php", "-d", "extension_dir=#{lib}/php/extensions",
                              "-d", "extension=IcePHP.dy",
                              "-r", "extension_loaded('ice') ? exit(0) : exit(1);"
+    end
+    if build.with? "python"
+      system "python", "-c", "import Ice; Ice.initialize().destroy()"
     end
   end
 end
