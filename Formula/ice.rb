@@ -12,6 +12,7 @@ class Ice < Formula
   end
 
   option "with-java", "Build Ice for Java and the IceGrid Admin app"
+  option "without-php", "Build without Ice for PHP"
 
   depends_on "mcpp"
   depends_on :java => ["1.7+", :optional]
@@ -87,10 +88,13 @@ class Ice < Formula
       end
     end
 
-    cd "php" do
-      args << "install_phpdir=#{share}/php"
-      args << "install_libdir=#{lib}/php/extensions"
-      system "make", "install", *args
+    if build.with? "php"
+      cd "php" do
+        phpargs = args.dup
+        phpargs << "install_phpdir=#{share}/php"
+        phpargs << "install_libdir=#{lib}/php/extensions"
+        system "make", "install", *phpargs
+      end
     end
   end
 
@@ -127,8 +131,10 @@ class Ice < Formula
     system "xcrun", "clang++", "-c", "-I#{include}", "-I.", "Test.cpp"
     system "xcrun", "clang++", "-L#{lib}", "-o", "test", "Test.o", "Hello.o", "-lIce", "-lIceUtil"
     system "./test", "--Ice.InitPlugins=0"
-    system "/usr/bin/php", "-d", "extension_dir=#{lib}/php/extensions",
-                           "-d", "extension=IcePHP.dy",
-                           "-r", "extension_loaded('ice') ? exit(0) : exit(1);"
+    if build.with? "php"
+      system "/usr/bin/php", "-d", "extension_dir=#{lib}/php/extensions",
+                             "-d", "extension=IcePHP.dy",
+                             "-r", "extension_loaded('ice') ? exit(0) : exit(1);"
+    end
   end
 end
