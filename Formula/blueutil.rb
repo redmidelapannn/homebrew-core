@@ -8,9 +8,10 @@ class Blueutil < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5b56d25e1844ad13f35464cacc27db4a885e3df4dddefe5ca20d579bd14fb91f" => :sierra
-    sha256 "b6899315d289420c94305bbc60bf236d5b8a877e147645d51c1aebde3f9dec98" => :el_capitan
-    sha256 "ad5d8d0d865f9d369090698432c822c7842a4b59d8c5bc1627cd54959cb3329c" => :yosemite
+    rebuild 1
+    sha256 "47f0d22c617abf6d8061c47a46ea734baafbc3721b4197fae96a11a0f7837d1a" => :sierra
+    sha256 "07d03171b4ef9456cb65671714cd1700a1a42bfbf88bb48843a80e0796bab6eb" => :el_capitan
+    sha256 "d605b50a9c84e8501e4f59b0dc5156a3ab39217541696e48d8b809ced0ed8ee7" => :yosemite
   end
 
   def install
