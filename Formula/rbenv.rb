@@ -7,9 +7,10 @@ class Rbenv < Formula
 
   bottle do
     cellar :any
-    sha256 "c9d34dee07b2a04d24aa1a8da30b0b5663529d69d7a46b29d979ceba79c81e67" => :sierra
-    sha256 "2bdafe7927a69de0aedad237694431fddaa7cd2167855094a3c7caeeccc0a347" => :el_capitan
-    sha256 "f829928b4796a022a60f10ab89c48f050ad8c69e40a74aa5fd3ba9b1b721769c" => :yosemite
+    rebuild 1
+    sha256 "dccb454b32505c3b6cd14a58845975c180943221c3aaf057487f4728ce3563fa" => :sierra
+    sha256 "30855fdbd4f24eb5bda631f57b7ead2770f2a10870b5aba5dc7473b4e406d585" => :el_capitan
+    sha256 "82927fb04be18fffbe11120a15dfebab0e1467bbf71ec92d420955e354e66f38" => :yosemite
   end
 
   depends_on "ruby-build" => :recommended
