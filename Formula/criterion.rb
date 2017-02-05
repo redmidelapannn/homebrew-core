@@ -5,6 +5,13 @@ class Criterion < Formula
   version "2.3.0-1"
   sha256 "46a9473b7b35c5ffbb55927f1d9ad0d204dda3a6f0b8fea4003e2490e55619d5"
 
+  bottle do
+    cellar :any
+    sha256 "ff7c58b76e6f47893bf429344d3f86ebe6008b8e8f82c4387bbe040be5cc583f" => :sierra
+    sha256 "a03ed612415c38c40f09a11e205a00bd7300280c598357f018af58e93aae6db4" => :el_capitan
+    sha256 "e7e588b23b63162d5c94ac5618bf8d1d4f67e2cefe31c2f60bc662601688ffe1" => :yosemite
+  end
+
   depends_on "cmake" => :build
 
   def install
