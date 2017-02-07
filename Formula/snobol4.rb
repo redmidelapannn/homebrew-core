@@ -5,10 +5,10 @@ class Snobol4 < Formula
   sha256 "9f7ec649f2d700a30091af3bbd68db90b916d728200f915b1ba522bcfd0d7abd"
 
   bottle do
-    sha256 "2c8d1b2a54a3a3f0d810c88bc0a2545dbea08f73b57dda6052c4de27bdde62ee" => :sierra
-    sha256 "f4ee5ba3a933998e7ea1493bab469f00f4ddd13a3e8458002ee43ba6f0cd0e74" => :el_capitan
-    sha256 "6903e1b05a795eae13f2f97fd2f1f4b883b03e1c94ba28e3747b3df98c6a955d" => :yosemite
-    sha256 "b76b9e5bbeccd4b879b2b3c450f3388b82f4641d4d414e0f2d83768eeb0c058b" => :mavericks
+    rebuild 1
+    sha256 "99d33f8d3f9ac6c0a42cddb1ee64b2a4455f22fab150bb8c1a904e083ff655b9" => :sierra
+    sha256 "2ccb96db8804369871ac6f81fd625ebb127923196b89e23456d620e043cdff27" => :el_capitan
+    sha256 "6f8dc40b759b1c6c15b85794430b747c380fa636752965807b091f862f9d618d" => :yosemite
   end
 
   def install
