@@ -23,7 +23,7 @@ class AbiComplianceChecker < Formula
     (testpath/"test.xml").write <<-EOS.undent
       <version>1.0</version>
       <headers>#{Formula["ctags"].include}</headers>
-      <libs>#{Formula["ctags"].lib}</libs>
+      <libs>/usr/lib/system</libs>
     EOS
     gcc_suffix = Formula["gcc"].version.to_s.slice(/\d/)
     system bin/"abi-compliance-checker", "-cross-gcc", "gcc-" + gcc_suffix,
