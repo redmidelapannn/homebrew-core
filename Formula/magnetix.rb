@@ -7,9 +7,7 @@ class Magnetix < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ee4c817c04ed86ac02db49790b3c04614e8e0910b3ca8e2919cd109cfc0af859" => :yosemite
-    sha256 "77c8740e09b3653bceb2a346c7c6856ac0bd692c66c7499e2037e991376e536a" => :mavericks
-    sha256 "06f295ba2960f8f374030cc0d75753ac8ff90c1497e86dc68f11d06646cdad74" => :mountain_lion
+    sha256 "5347d78303968e47265e506bd52b7e9a8bf29bd4e9a55c486a4cdd6edb64e387" => :yosemite
   end
 
   depends_on :xcode => :build
