@@ -8,10 +8,7 @@ class Nethack4 < Formula
   head "http://nethack4.org/media/nethack4.git"
 
   bottle do
-    rebuild 1
-    sha256 "ac7e833109caa3a6c4a365170440945aafcbfc35dec2be0bfa62ced758c9c17c" => :el_capitan
-    sha256 "6a1214f77c7906081e7ce8c32faca47054fd980f5d342aa5e872cc6599ecf682" => :yosemite
-    sha256 "0f07bbc26d41390eb75ff3fe03969d0de5cc41fb07aa16435ecc515882d77444" => :mavericks
+    sha256 "cc3da1681df077a82a9250772fd8dd119cbde8aaf439cecc6b46866128e2c638" => :yosemite
   end
 
   # Assumes C11 _Noreturn is available for clang:
