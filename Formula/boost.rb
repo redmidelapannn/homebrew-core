@@ -7,9 +7,10 @@ class Boost < Formula
 
   bottle do
     cellar :any
-    sha256 "e51c6ca6eb46b548a2e1fdd11f7379a864f4f92d1c42920ab6df8d81bcfe57ca" => :sierra
-    sha256 "ea3c556f85bac86b86be9af3828982cbc7a8896bbb0b4f845167b02d10f821ca" => :el_capitan
-    sha256 "027cbc505f530e00ddc835e87b3bad1a7a723dae199fca4d3416b20701ac83b1" => :yosemite
+    rebuild 1
+    sha256 "3e693e95b297c8174f1f793aa22dd3b7db77739450313f91ab11653b2a884cc5" => :sierra
+    sha256 "e212b7d29b7de315c9f62f06bc0d6fd42f1a0e057dcf8247f13101412f05b9d8" => :el_capitan
+    sha256 "5c37a5c8b74187d1f78931dc7b93210fd8929fd189bc7d74ad629ec7cab6ae5c" => :yosemite
   end
 
   env :userpaths
