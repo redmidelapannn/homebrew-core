@@ -16,12 +16,10 @@ class Freeimage < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "6eb482ca66b05f05b48bbb2fa5aad2cb971f3c767145b0a88baed5eff36e355c" => :sierra
-    sha256 "ab4f64a25cf6ec07019ae8a1dac9d6f5f10462962992cc3b822145506b8ac513" => :el_capitan
-    sha256 "3b9bf4ed62d4d0d88daa301cf5c183d16474d1a0957a14fffc2ead3d0d88ecb8" => :yosemite
-    sha256 "d7d197266815f5f3d732c9afd66055e7abf49362d7449bfea21e3aa358e5a4a1" => :mavericks
-    sha256 "9d1e914ae20deb7066caf5f1cf52c3d48c0c04ccd36b791170c7e1fcb3528a36" => :mountain_lion
+    cellar :any_skip_relocation
+    sha256 "c13c78ab2b5c1424bb2e06409529732f4a2f439520c5a6d52eef78efb6e37a5c" => :sierra
+    sha256 "e29bcc7a26733cd762368f9dda83ed47f472b272fcbe96e189df47fc102a109b" => :el_capitan
+    sha256 "59a45839a4d6e0c86f859fc6f1d13b78fe3c724a91959dc2908e1b6765bf91da" => :yosemite
   end
 
   depends_on "homebrew/dupes/unzip" => :build
