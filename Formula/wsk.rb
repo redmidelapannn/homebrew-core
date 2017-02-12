@@ -4,6 +4,13 @@ class Wsk < Formula
   url "https://openwhisk.ng.bluemix.net/cli/go/download/mac/amd64/OpenWhisk_CLI-mac.zip"
   version "0.1.0"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e1cccd72a82d1956ee36731aaa99ed132f2e1643bbeb19eb9dd7504154b17c6e" => :sierra
+    sha256 "e1cccd72a82d1956ee36731aaa99ed132f2e1643bbeb19eb9dd7504154b17c6e" => :el_capitan
+    sha256 "e1cccd72a82d1956ee36731aaa99ed132f2e1643bbeb19eb9dd7504154b17c6e" => :yosemite
+  end
+
   def install
     bin.install "wsk"
   end
