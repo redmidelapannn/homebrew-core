@@ -4,6 +4,13 @@ class BerkeleyDbAT5 < Formula
   url "http://download.oracle.com/berkeley-db/db-5.1.19.tar.gz"
   sha256 "0194d4ca9266ba1a1c0bfbc233b18bfd05f63163453c81ebcdfdc7112d5ac850"
 
+  bottle do
+    cellar :any
+    sha256 "0ea7e243d9a1cc97c15644c2cf2926c2d314dc825d63da1b4fb417dbb1bd829c" => :sierra
+    sha256 "b5035c08c0657f8a3908b94065f382a6941d1d1a2dbd42ec670e416cff4f90a7" => :el_capitan
+    sha256 "be0619274b88c5827bab1f41e0924788747c54fcf996b115c104aeec2e9e96ef" => :yosemite
+  end
+
   keg_only :versioned_formula
 
   # Fix build under Xcode 4.6
