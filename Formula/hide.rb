@@ -5,6 +5,13 @@ class Hide < Formula
   version "1.0"
   sha256 "59a7861f9aa0dfce447186d8a03d4068fa544cf0031e87471a4b578862b04495"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "9265dc50d0657a3099e9619a27a055ec877552e0adea503436e9542e324cf29c" => :sierra
+    sha256 "9265dc50d0657a3099e9619a27a055ec877552e0adea503436e9542e324cf29c" => :el_capitan
+    sha256 "9265dc50d0657a3099e9619a27a055ec877552e0adea503436e9542e324cf29c" => :yosemite
+  end
+
   def install
     bin.install "hide"
     prefix.install "configure"
