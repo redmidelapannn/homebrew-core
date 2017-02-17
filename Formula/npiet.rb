@@ -4,6 +4,13 @@ class Npiet < Formula
   url "https://www.bertnase.de/npiet/npiet-1.3e.tar.gz"
   sha256 "e819c766d12e1dfaf71561429486ed85b6ae4438da6e7ee06871ab5ce58231c5"
 
+  bottle do
+    cellar :any
+    sha256 "b330773e8dece88cc56721a80fc13f476dc07859838195d064929bcc64a45d0a" => :sierra
+    sha256 "02e4f867bcc13b455c0d1d3a12aba83633f64e25ab47eb6ec25ca3412ad5946e" => :el_capitan
+    sha256 "cce0c1f0f91c97841816c387e85c832c2b253e47461591aead72da9113365201" => :yosemite
+  end
+
   depends_on "gd"
   depends_on "libpng"
   depends_on "homebrew/versions/giflib5"
