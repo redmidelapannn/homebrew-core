@@ -14,9 +14,10 @@ class Ffmpeg < Formula
   end
 
   bottle do
-    sha256 "c4d1d895fca521400a0f6d27d7dfa3553ebda8c0f6c90fcd44a5b55aefe27aa4" => :sierra
-    sha256 "c0ca7c202d7051596be029aeaec362b7faa8dae900eb1c4f5a4d00c86d2000f7" => :el_capitan
-    sha256 "b07df0bf4f6c7402730d710b92758054941c8b437fa742c09a706115c8fc39e5" => :yosemite
+    rebuild 1
+    sha256 "87520331ff2d02a44b5814b92726410a75033f7b6a9c19c6e1df8fc9d977c361" => :sierra
+    sha256 "3f839d0a35dc80f2e88c141d7fbf43b7e68a3d5231e3c24bdb2db82597af20c0" => :el_capitan
+    sha256 "7a5587693bfb0dda1eabfeb0726a20dac9a103ad35af7e87a29d059b2a9238b7" => :yosemite
   end
 
   option "with-chromaprint", "Enable the Chromaprint audio fingerprinting library"
