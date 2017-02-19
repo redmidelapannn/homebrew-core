@@ -5,10 +5,10 @@ class OpenSp < Formula
   sha256 "57f4898498a368918b0d49c826aa434bb5b703d2c3b169beb348016ab25617ce"
 
   bottle do
-    rebuild 3
-    sha256 "23c898d85a23d71ef72ed2964ee981b213ee2165488b330c8191990a2320cbb7" => :sierra
-    sha256 "aad5609f7adaf04240855c76cc509e0f4d02ed4b2a2dfe4f10634bc6347da115" => :el_capitan
-    sha256 "d7b79be390f3c2b2a823e1156d896200db397dffb6cb6e6712d27539e05ca18b" => :yosemite
+    rebuild 4
+    sha256 "43914797b8259c09ef6ad058830fbda2a134d900036faeb18894f0669cef7318" => :sierra
+    sha256 "f71eadaaabdb264e26872151b0128a223ff3e7bdec27b4d27856d0a912790a47" => :el_capitan
+    sha256 "8541d5a9e39d94b05432d562813d741f66ac75fc16dfaa187444e33f3bbd9793" => :yosemite
   end
 
   def install
