@@ -6,12 +6,10 @@ class Aalib < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "c3bb440617a66459f7baf954342801c575488e9312fde720b6b7bd5476ed9abe" => :sierra
-    sha256 "06bd52bb36bc45e839cc6581baa11580d8ab786f83fd878e725d1b0923497c7b" => :el_capitan
-    sha256 "f018850bc3f7cb622b5fd19a1b9910f5be3218b70cbf36e158f0f241ddff05ec" => :yosemite
-    sha256 "45922d8c9e423b8249bfee4263d9b7c848eec19e72f553ce9271eb60795ae6ff" => :mavericks
-    sha256 "b2fd6584ff2ad3afc0050e0663ad680f84c79d59958afb043681bac77e9fd2fc" => :mountain_lion
+    rebuild 2
+    sha256 "026297adc1fc94bef775ca2f001caf11e98ba142a65882c85c63abca6f861db0" => :sierra
+    sha256 "23bd27c4446752325bec0e89093914826233037048a548b46bd969248d4ae942" => :el_capitan
+    sha256 "de822451ad899622b95c88f293ad7fca1c6d592242a505a986722420c40e98cc" => :yosemite
   end
 
   # Fix malloc/stdlib issue on macOS
