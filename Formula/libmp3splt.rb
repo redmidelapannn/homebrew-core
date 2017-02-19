@@ -5,11 +5,10 @@ class Libmp3splt < Formula
   sha256 "30eed64fce58cb379b7cc6a0d8e545579cb99d0f0f31eb00b9acc8aaa1b035dc"
 
   bottle do
-    sha256 "e513672ee4682c1f722e710d4446fc2721325875acb65ccaaee0e5de113cb82b" => :sierra
-    sha256 "587226a840b162aeef70cc8022bdbcd61218e1be6dd1b98418774f3f48405072" => :el_capitan
-    sha256 "47d3aaeee6d237273e8457666cd2717e1264742ae776d541c40a203e1b82003f" => :yosemite
-    sha256 "0bac13f95cb16925fe28cd1d662bec10a66c93bf9b27c2c9533ab38b7a1f38a2" => :mavericks
-    sha256 "a6100bee5fe14afed4702b474360078b75bddaa0328290b2fcf902c3f808c78c" => :mountain_lion
+    rebuild 1
+    sha256 "6927fd1e6b2d19fa045777fb075852abab3bd0b949151e1e3c2ca04613528fa2" => :sierra
+    sha256 "3913155c833bc74caf732de538ed2a8c0994fb1de38ef73eb92d8f3e65beda7e" => :el_capitan
+    sha256 "8f9bcc3b9ab043f43b9d5f6fa03f993211cc88174b862236e61f4041ed2adca1" => :yosemite
   end
 
   depends_on "libtool" => :run
