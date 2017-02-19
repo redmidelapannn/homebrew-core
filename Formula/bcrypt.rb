@@ -6,11 +6,10 @@ class Bcrypt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "913cfce96b6de1fce20ee1ff771ef22e3663f3da6c7529d7efc3a43b0e1d92b8" => :sierra
-    sha256 "d674203ce681f17519eee1ce7a3258615b2de5a8a12460d7de284af09028d7da" => :el_capitan
-    sha256 "dbd530bd84a1e92120aacf07f60e3b6131c92421702ab8b9f9e02d3b72a00ad6" => :yosemite
-    sha256 "2a0a662d778677d75222745b30e6c5e825078855d303cf853609f50b1ceca4a6" => :mavericks
-    sha256 "7f9c94e9c1527e596b316746d9705f524afb70c661abeb1279bf2c88ad061ddf" => :mountain_lion
+    rebuild 1
+    sha256 "12dd24a66e50aad60394625d7e3416e9a5b3a0824be141cb46c2f537b918ebf8" => :sierra
+    sha256 "171d7805727991734074f7e1a84b3a9d23dbe42551c6b8bfbd6a89f37602c1f7" => :el_capitan
+    sha256 "18cf9e56a78ade3452f17a36d837400f94acc3e86343e42b41725bc1b14a0b62" => :yosemite
   end
 
   def install
