@@ -6,9 +6,10 @@ class Nmap < Formula
   head "https://svn.nmap.org/nmap/"
 
   bottle do
-    sha256 "a8a43b57a4ed84ba718e7ab64015d118d8a9f4b99309ab114edcb8587c2f1693" => :sierra
-    sha256 "bf50768abbdcab2554e06925be69321cc6f8d36ed6125bacb6cd25b1af78356f" => :el_capitan
-    sha256 "713767f307d9cc28e40cacfe1663c175ec96fa5db483121df996aad1490773a6" => :yosemite
+    rebuild 1
+    sha256 "af84368be02f61678e15c4fb28dd99f8d91b16dc13154ed2b5f7081d92f3fea6" => :sierra
+    sha256 "78e7d5b212a72fc5070192ee5327f9d70523ad27937af856cc90730d055ee495" => :el_capitan
+    sha256 "23c98385d613a5fa0c485c6d98b021c722d6fe571a3c61bef084097f69c527c3" => :yosemite
   end
 
   option "with-pygtk", "Build Zenmap GUI"
