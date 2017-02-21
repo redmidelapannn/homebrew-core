@@ -8,10 +8,10 @@ class Chruby < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "17dc507695fed71749b5a58152d652bb7b92a4574f200b631a39f5f004e86cca" => :sierra
-    sha256 "ff70dff83817f093d39384a40d3dfb2aaccc1cbe475d58383d4ef157085f2c64" => :el_capitan
-    sha256 "eb14810c552b693c5ae82a577be81398e7dfeadc5489666bb0ff89581f09bfe4" => :yosemite
-    sha256 "c7ede5a22e512d3c22406f222b539fe05b78dfb9721cfff8ce94ed0357883ba5" => :mavericks
+    rebuild 1
+    sha256 "bd5e1cccf1837a9c7e30f7289efbb8ee848cbfb2904648ad20ea591ed5c8d20e" => :sierra
+    sha256 "bd5e1cccf1837a9c7e30f7289efbb8ee848cbfb2904648ad20ea591ed5c8d20e" => :el_capitan
+    sha256 "bd5e1cccf1837a9c7e30f7289efbb8ee848cbfb2904648ad20ea591ed5c8d20e" => :yosemite
   end
 
   def install
