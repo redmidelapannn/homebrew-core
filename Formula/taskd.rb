@@ -8,10 +8,10 @@ class Taskd < Formula
   head "https://git.tasktools.org/scm/tm/taskd.git"
 
   bottle do
-    sha256 "93b3a449cc983885491a01511275b3b4b8ff6cc624aa4326a9e268d4a28ff4af" => :sierra
-    sha256 "d7806f456a540d6052928f6e1c9fcd5e89f0d1b3c5496d552e187b117fc94b24" => :el_capitan
-    sha256 "2c1a95a98ea309c776ab0f210fd8a9297bc866e25b2ee7ba0301d6f8df531a2a" => :yosemite
-    sha256 "a83899074cf81fcf6737546f9f572db6ce1a8762af943e7663fe14760fd5ef77" => :mavericks
+    rebuild 1
+    sha256 "79e87a9ab67cd58e741483088724ba5a4ca94442f7a1194bd0af86abe7554de3" => :sierra
+    sha256 "f0a78b3480897b575c1d78e3616f6ec6222891560f6405f584bfc9750ffee1c5" => :el_capitan
+    sha256 "6876dc85ffa6d3d3d9e5c9d5074599284824e4f274e1767da6c3665413ca223b" => :yosemite
   end
 
   depends_on "cmake" => :build
