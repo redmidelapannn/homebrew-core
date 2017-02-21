@@ -7,10 +7,10 @@ class Libmonome < Formula
   head "https://github.com/monome/libmonome.git"
 
   bottle do
-    sha256 "6473c190c553546e9f648b7dbcc5c43b1b4cfeff54898d7f373c309092c5ad86" => :sierra
-    sha256 "b6553b4ce4d56cca44493acd9615cc399d5e20b6acb403a36914a0df5151926e" => :el_capitan
-    sha256 "0c730849c05d8899a6e4bd0f1c3bfdeb791de8fd5d8b10d5c29800b68a2a0906" => :yosemite
-    sha256 "b79cc0774b4c270336b57092741d4387feea8d60484be10c0fef7c2af61c65f1" => :mavericks
+    rebuild 1
+    sha256 "801869b7a0318b6305516eb9abf4f34db838295a5520ace0a14422638050b7e3" => :sierra
+    sha256 "801869b7a0318b6305516eb9abf4f34db838295a5520ace0a14422638050b7e3" => :el_capitan
+    sha256 "000531253f6743a8ea1b214dd958fa8e440bc8f1fbf4f9657706ef67519392ef" => :yosemite
   end
 
   depends_on "liblo"
