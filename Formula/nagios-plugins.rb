@@ -5,9 +5,10 @@ class NagiosPlugins < Formula
   sha256 "4355b5daede0fa72bbb55d805d724dfa3d05e7f66592ad71b4e047c6d9cdd090"
 
   bottle do
-    sha256 "33f3ad7bc229a5c98a91f1dc60fc5e113afdccb63e3e0c824c631062403c91ac" => :sierra
-    sha256 "8a45819e58f06a9cea8f34d2f13d79c22a73ea6fa77eef231681127b6227185a" => :el_capitan
-    sha256 "1cf4050b3043c6f74ccadb02ccdfe7b438994bfafad3758eafe625a7539c19db" => :yosemite
+    rebuild 1
+    sha256 "9e10cb7170b2a7c1676f0c02789768e54cdbdcb75326a93e3e14228737a024fe" => :sierra
+    sha256 "cab1ccf32b8b0e36d60ac0994d84ab735c2232549fdb2478be952cd445c5ae68" => :el_capitan
+    sha256 "b4e1e14b3aefe8e03ec80c45a0155f579da3ed1d0d9d63a075bcaf4692ad7037" => :yosemite
   end
 
   depends_on "openssl"
