@@ -11,11 +11,10 @@ class Termshare < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "5d883c6747f478ab161ca648923a7397a782f437bb59d660df6a252b21f62e99" => :sierra
-    sha256 "c540732aab70ec29b60459c19bb4ee55c0584b3a63476473219a115d2ec380af" => :el_capitan
-    sha256 "c3b9c2784b02536ce97a2a3b3a205314e7ada8e727ac60b54577d933a04aa808" => :yosemite
-    sha256 "aa9131a7eae6efe7e7d3bac1e73711f7bfe52f1dd246389bdbb137c70c815310" => :mavericks
+    rebuild 2
+    sha256 "b40aba9cfe005958ff110ff7f49da7e5c9b18a2fb38457899cb72b5db4e770d3" => :sierra
+    sha256 "bdc7636c527951f2118c95bf2b40c4404e12a632911750e1394323898afc8781" => :el_capitan
+    sha256 "3aaf247809734af9aa1d86831bba1d0bca72ea9996b8f9d0ae5fef419f19eed5" => :yosemite
   end
 
   depends_on "go" => :build
