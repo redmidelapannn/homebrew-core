@@ -5,9 +5,10 @@ class Hashcat < Formula
   sha256 "3b555e5f7b35ab6a4558bc460f28d80b32f5a211bf9e08d6a1ba1bad5203e3e9"
 
   bottle do
-    sha256 "7b3326c6130d3a9efece4fea418653e3a1519ace066fe808a4ee172036cb9b92" => :sierra
-    sha256 "8b949ce43ea720d7556ab6bea03193c9b7d680e5139fe813192330d2b9b6138a" => :el_capitan
-    sha256 "779e7022d29291278cff532258596b74586a134d64819869854d3f5cb333ee50" => :yosemite
+    rebuild 1
+    sha256 "1be4b64c899ff6a1244509b284d8abc573b5e43ee22020454985defac7a704fc" => :sierra
+    sha256 "dc076220361a5b5aa7f2b5d7344876f5c4967444dc9b8974eabd14a06588817c" => :el_capitan
+    sha256 "d240413993c1ff3d79e12b2f64571a989df537450444a5ece0d04b7b4daaa33a" => :yosemite
   end
 
   depends_on "gnu-sed" => :build
