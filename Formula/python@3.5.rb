@@ -16,9 +16,9 @@ class PythonAT35 < Formula
   end
 
   bottle do
-    sha256 "4a43600ceb2875c13200ace82fea1a9a119973b831f5503fa57cf8db44fbb155" => :sierra
-    sha256 "301854e1a52fd577f84015eb5ef07e0e369c794b8894fb6850ae84d9391f740e" => :el_capitan
-    sha256 "075f5e63188dfcd5a13ef1f9658b26aa2d8d943fbc5c5c50e05fc973bc38f7c1" => :yosemite
+    sha256 "72a0f13893743fc92da6c1412b6d503f46094357963130a94669b62ca8190c15" => :sierra
+    sha256 "3832d01ab7e3fa38c98152e4e45e1839dd60e9f84e7297655372aa55c9756bdd" => :el_capitan
+    sha256 "c12eac6c68fee0b86e135cbf01f58a68a354cdbd2addf4a46bf6a7993a03ce21" => :yosemite
   end
 
   option "with-tcl-tk", "Use Homebrew's Tk instead of macOS Tk (has optional Cocoa and threads support)"
