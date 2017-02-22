@@ -5,9 +5,9 @@ class ProtobufAT26 < Formula
   sha256 "0a2f8533b2e0587a2b4efce0c4c8aea21bbfae1c41c466634d958dedf580f6aa"
 
   bottle do
-    sha256 "53b6c7640cf6cf19afef8710f26fe4a101340a89f09b2d05336dfc6b049141fa" => :yosemite
-    sha256 "90e7758986b353281bce35836c358035c520e8ace182d72a1751a61a8607fa7d" => :mavericks
-    sha256 "3da3651216bd105e9611fa14ecffb591eebb20c79b261f5038d11f812f851137" => :mountain_lion
+    sha256 "86267a38f98ad22da8d222ff0cbaff8ffb65e8b7f56c7bad788f1a2c451ff668" => :sierra
+    sha256 "10be7a7a45c9ea4ec06f70f62522f3296f3d3b49ec6fb9e3fe071268f262ef88" => :el_capitan
+    sha256 "6337d6ac951577be7ec1bac4587b6c91325bacb53f6e3523ced7bd4b78fd6f7d" => :yosemite
   end
 
   keg_only :versioned_formula
