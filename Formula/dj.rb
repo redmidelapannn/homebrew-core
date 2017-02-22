@@ -4,6 +4,12 @@ class Dj < Formula
   url "https://github.com/aleontiev/dj/releases/download/v0.0.3/dj-0.0.3.tar.gz"
   sha256 "bc8849498c5abf9cad9b47c31af445da64f6a618b8888f04c1f13314d674aa26"
 
+  bottle do
+    sha256 "3fcf66664bd635b0bccf7018dd027460684f27a57ea70adfb8fa5f45b28271a3" => :sierra
+    sha256 "3fcf66664bd635b0bccf7018dd027460684f27a57ea70adfb8fa5f45b28271a3" => :el_capitan
+    sha256 "3fcf66664bd635b0bccf7018dd027460684f27a57ea70adfb8fa5f45b28271a3" => :yosemite
+  end
+
   def install
     libexec.install Dir["dj.exe/{.[^\.]*,*}"]
     bin.install_symlink libexec/"dj.exe"
