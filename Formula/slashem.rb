@@ -9,9 +9,10 @@ class Slashem < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "80a4df38057ec2bef889b92b4edfc80158add542a1bd9f1ca50ed8d39eb21e2c" => :sierra
-    sha256 "3b0ec09db5b1e2abccc22d2cc9282de211d9a15e4d2d66c404f898af2768d1b3" => :el_capitan
-    sha256 "9220e4e678c8302cd7c1ae15b4af08a733899c38717021c867e35decf79f00a7" => :yosemite
+    rebuild 1
+    sha256 "30e0e2d8fe730840a1dd4ba47de2ed5fbde1382dac14cefc5c53217c9821e7ea" => :sierra
+    sha256 "cab51fd281c05ded8dd7ba473a754601a59a4e7f1d2ecbe8c6811e045d4c2a7a" => :el_capitan
+    sha256 "436c0e1dbabf4c5699ab5c8d6b86340e1c092f7e4a19b70d6de01f5d6bffb48a" => :yosemite
   end
 
   skip_clean "slashemdir/save"
