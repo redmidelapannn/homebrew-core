@@ -19,12 +19,12 @@ class Charm < Formula
 
   go_resource "github.com/kisielk/gotool" do
     url "https://github.com/kisielk/gotool.git",
-        :revision => "94d5dba705240ba73ce5d65d83ce44adc749b440"
+        :revision => "0de1eaf82fa3f583ce21fde859f1e7e0c5e9b220"
   end
 
   go_resource "github.com/rogpeppe/godeps" do
     url "https://github.com/rogpeppe/godeps.git",
-        :revision => "c00f01a737f4f06e397ca86f67341cc345507221"
+        :revision => "e0581207fc59197e6caa4dc03f425fdca872c4a7"
   end
 
   def install
