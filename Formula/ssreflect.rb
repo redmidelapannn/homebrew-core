@@ -18,9 +18,10 @@ class Ssreflect < Formula
   revision 2
 
   bottle do
-    sha256 "654fb1c617736a464bf6590ec9d178dd253f69f0866c703bfa50818bac43cd5b" => :sierra
-    sha256 "93e5f52b8f1579728037b2cf69f553e8b271401778623df5aaf43170730f7b0c" => :el_capitan
-    sha256 "d94eae64893a5977d15aef7cbf80e548a6001aebd8b144306a965c85c46327c3" => :yosemite
+    rebuild 1
+    sha256 "2b3b9c67ae282b9ac60249261250623b22b5d16a3f03c6a2688af9f463b07810" => :sierra
+    sha256 "ba2aef79dc06ae1ce35524f823514bade24cd72f03df6d6900ff378613ace7c4" => :el_capitan
+    sha256 "4a04e942ccd904524ad6ca2abc2f4b9eb1cd2ea0af92506b664953126f192c86" => :yosemite
   end
 
   option "with-doc", "Install HTML documents"
