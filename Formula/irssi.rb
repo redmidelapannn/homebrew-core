@@ -6,9 +6,10 @@ class Irssi < Formula
   sha256 "9428c51a3f3598ffaef438c351a8d609cf10db34f2435bdcb84456226c383ccf"
 
   bottle do
-    sha256 "584a3fce1c417ce190b0d7bc956a73244b7becd64da91b367e81ca3f3e387887" => :sierra
-    sha256 "2a3ea4ea9cf1ae9340634138834eed249d0a960a81f7a2d3a07cf5febdc6e91b" => :el_capitan
-    sha256 "ba8ce35490ca58ffdc001dc352a04d23b2e849bbd3229f073e3224d8bbd258c4" => :yosemite
+    rebuild 1
+    sha256 "4c4a9d4d1e7d3960f878f9f05af2a0265076ae977cf99bc9c425e7190790ef1a" => :sierra
+    sha256 "67d789fce5a6116863afce6e7c980c44e8e00da1d3a29837784bf0f2536df9bc" => :el_capitan
+    sha256 "6fdea1272a21bccf5e61b3f21ea2689539253cd021388a3fcc9b72b284f89bc6" => :yosemite
   end
 
   head do
