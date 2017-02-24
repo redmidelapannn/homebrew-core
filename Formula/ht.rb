@@ -6,11 +6,10 @@ class Ht < Formula
 
   bottle do
     cellar :any
-    sha256 "122be4ebf9cc683744d3523fb87b4938de3a61ec4151005118c014b1f279939b" => :sierra
-    sha256 "5ec664d44de232a82b94ba1a2285f4c4a3b935b60f96ec83b75150e583323331" => :el_capitan
-    sha256 "7705bf13e35efb021252aaf509e82a88f8996ad65199440eb46f2271bf77a570" => :yosemite
-    sha256 "f41ba188255f61cd07be25969bce0a9667e81dfde9079ba17e7e329898cafed5" => :mavericks
-    sha256 "dac5a797ccbeb46b89c7677997a3640b5ba5ce274c5f928bde9be91dbcbdd88a" => :mountain_lion
+    rebuild 1
+    sha256 "e2d9e5271ba7562a0fce9c5bf01eb7b8c59f963fc00ddfcdd8432c611b672a52" => :sierra
+    sha256 "12e0754aba66413a48a279b94b964788dfb019f9fdb98c83638b79144f4c2312" => :el_capitan
+    sha256 "6fe31fbd356fd32b8144358db692d0e678b63635fd4497ec177f29f96f41f693" => :yosemite
   end
 
   depends_on "lzo"
