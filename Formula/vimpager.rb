@@ -7,10 +7,10 @@ class Vimpager < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "308c68e761983beb317bbefcba285022dbc74a66486a3da7e2ac8bc929649a3a" => :sierra
-    sha256 "eccfe695299ff91b489e0385b2024e6f383426f696dc4a5462fe2e0bc6f875b1" => :el_capitan
-    sha256 "be8ae8e77106e1fa95821b59171b982af74365693be0b416e41bb807a07c6c60" => :yosemite
-    sha256 "4e751d2207b8925e1c229edb88a7f635d41aa611a576a1b7a9bf0b9b701df341" => :mavericks
+    rebuild 1
+    sha256 "ba13b5fa559ca441045c2b9e2f24831528e4b87998651cb05b8f1fa27aad5954" => :sierra
+    sha256 "ba13b5fa559ca441045c2b9e2f24831528e4b87998651cb05b8f1fa27aad5954" => :el_capitan
+    sha256 "ba13b5fa559ca441045c2b9e2f24831528e4b87998651cb05b8f1fa27aad5954" => :yosemite
   end
 
   option "with-pandoc", "Use pandoc to build and install man pages"
