@@ -19,11 +19,10 @@ class Wxpython < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "0e095b7b61f71c23d36bcd795b9d0ce605adb073db1dc60978dfb0481306b345" => :sierra
-    sha256 "9956afc649ebc394fbae40dd55d3ce367ab42abe6be43ef01c35c1c6d0a8e225" => :el_capitan
-    sha256 "04d8dfeab6dbb7a1c099c8e866f35e6d5d528ea69ef283d556c545347882abe2" => :yosemite
-    sha256 "41ec8003758d804b8c426ce654a87f2d9f4be3be40fcbcb3d5686e3ecabaddbc" => :mavericks
+    rebuild 2
+    sha256 "7acce3d6100e2bddaae754da330cc660f211931f615bfd37ac5215e32f6e2237" => :sierra
+    sha256 "fdeaff1a16c32efa9300a00cc8e2d23b08d2223ae247f54b93ba10470db8c787" => :el_capitan
+    sha256 "6b0e7331efb291158b5f59a39f39b398ea3925e88c98d0fb5a8906046efa44dd" => :yosemite
   end
 
   if MacOS.version <= :snow_leopard
