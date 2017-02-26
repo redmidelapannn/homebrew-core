@@ -5,9 +5,10 @@ class Swig < Formula
   sha256 "7cf9f447ae7ed1c51722efc45e7f14418d15d7a1e143ac9f09a668999f4fc94d"
 
   bottle do
-    sha256 "68cb1b6bc898f2a1bd39ae24dd0235f68ffa56d04ba8cd4424835335202977d1" => :sierra
-    sha256 "37bf242aad0c18317cdaef66218483c04fa57e091b7c7f9d72089f5002881338" => :el_capitan
-    sha256 "3443dbf17f78be0cecb5419772c71bb418caa91763590072224c196a57317717" => :yosemite
+    rebuild 1
+    sha256 "3458c76c1812bd1e8061e63f25452cfe317874b471018f973782666a6bc02271" => :sierra
+    sha256 "32baf666d50acb7361e089be19008f7fcad893b6b01d493c1fd090313ee22dc4" => :el_capitan
+    sha256 "818e6e56b9cd8dae3dfbe3fe2b3cf83e22654eba078bd8f1f21862164b75bb54" => :yosemite
   end
 
   depends_on "pcre"
