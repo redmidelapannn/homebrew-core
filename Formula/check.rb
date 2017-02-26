@@ -6,11 +6,10 @@ class Check < Formula
 
   bottle do
     cellar :any
-    sha256 "ab001aa687f2a1f18df5c8765086a3300d989d600a7895c8a2c8efd2242f62a1" => :sierra
-    sha256 "2e37bca055ae0bf490b713d90c95a9d81518cae9b884a7e495f521c80b4f062f" => :el_capitan
-    sha256 "bb824d8cb8a74ebbc1eb9d22b8ea15327dfe3ce91151b37c7f41c80939609f52" => :yosemite
-    sha256 "022667ec28a8af0bf6e19f3afbaa144542f1754ebaff5710229484fa8071084e" => :mavericks
-    sha256 "b223c76b5519c5aa3300488b230c5b5b2cbd32d896f2fab0f1a0700a24e1f975" => :mountain_lion
+    rebuild 1
+    sha256 "3f9409ccb0a99fc4678c55c16f02aed91e7e977a0629f9bb267dfac2d513a8f6" => :sierra
+    sha256 "824d01636208ff6e7c86a21e4a1fb1d6546dd38e2fd4e1a48e05775958005e9d" => :el_capitan
+    sha256 "9c3cd61c8ef36f03ff44b5fd39259b5748d5ece91e1cefbffc1a456a508f8943" => :yosemite
   end
 
   def install
