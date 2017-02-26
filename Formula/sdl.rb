@@ -6,10 +6,10 @@ class Sdl < Formula
 
   bottle do
     cellar :any
-    rebuild 3
-    sha256 "ae6f7a419e0277feccf2e26bc0f711c6f63737578590599202edc85090b9c934" => :sierra
-    sha256 "cabb4d2ed0c7910cbf4a47fe27d36c5e61c09ea6c5d47963ba9cb56f379ba1e1" => :el_capitan
-    sha256 "d583cfc1e6029298076b6d49b974606ad92e90a700ace2d811b42091abe8a327" => :yosemite
+    rebuild 4
+    sha256 "35782bd290166745e3f806b920ec73f0551e5d0ac3339096a09431e56917a199" => :sierra
+    sha256 "ed92bfd83d8ebe4a9dadcead895dba0e18721c2f93b6a0b8450716f71668aefe" => :el_capitan
+    sha256 "7ec529e089eda8b4b7eba73d69d448da51c0736db534f8c19a1c2db1b8463fed" => :yosemite
   end
 
   head do
