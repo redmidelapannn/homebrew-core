@@ -6,9 +6,10 @@ class Neon < Formula
 
   bottle do
     cellar :any
-    sha256 "6f44e5c1db3418612bf871f9551acef119162eac40585f045f02d2612ade356e" => :sierra
-    sha256 "2aafd9bf8e7fb42d8cce9b6a7467e8beccc11931b824766e341a8d72331e0c48" => :el_capitan
-    sha256 "7348fcda6d13a8cba37a98b7ac6c9876a2ffa037714954872832d390c5a475d7" => :yosemite
+    rebuild 1
+    sha256 "e194355c01663c06cce7ffc602e1bf609c2da088f8a337828327407b6c2f926a" => :sierra
+    sha256 "f8410e19ddd14b0c09a038166d9422283c383b2d1908544e2beef9844606aeb4" => :el_capitan
+    sha256 "8271707a69c66599b1e926be1fd9e5656e83102e4386cc37ef98e46017596e6d" => :yosemite
   end
 
   keg_only :provided_pre_mountain_lion
