@@ -6,12 +6,10 @@ class Libmpd < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "e5affb45da15f4b7df327b993216d44f76f88da1e8c2f1051a8045c63a5a9d04" => :sierra
-    sha256 "d4b932dc975f7fe87d8e26ebe9080d3633c33a66438c29d0403160adb6c7ada5" => :el_capitan
-    sha256 "36471b19608eea97bc9916fdb65937fbb385ade1bf43aac4c01031d3c3c1192f" => :yosemite
-    sha256 "8e79457e677bf003a8e5374f1f7ccffba5ef237e577a0e0831ccb2036101b357" => :mavericks
-    sha256 "85c97dbfb2a3a419495e702df451b00bf84e355d69c2e8512a54014ff702f45c" => :mountain_lion
+    rebuild 2
+    sha256 "8e6b683abdf02e0e2456c96ccb5771b9a1cfc8855b4fc7e225798ae457fe29ff" => :sierra
+    sha256 "4910b124a99146239f6effee7065ba7badcde4a3fb20e24bdb9d8a55fd7149fa" => :el_capitan
+    sha256 "fcce5398a4785f4149cb274d14c958ffee1eac25b1efceb610f52d18450e45fc" => :yosemite
   end
 
   depends_on "pkg-config" => :build
