@@ -6,12 +6,10 @@ class LittleCms < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "9d7cd298c7d0b89d2cc33ac73c87104bda7ed42ebf7ef55ec26079eda5c29db5" => :sierra
-    sha256 "c1dd6107f2d5e565f35e8358bd968ba7161ad3809d1b5bab4a412d3f01ec874f" => :el_capitan
-    sha256 "48da368fcf57745e933d4022dbd1d64b79a66eeaa76064ceb6f6c4e792fde776" => :yosemite
-    sha256 "175c804307189d9d0d700a423d6daa9d839ec5d3038145f311f436bd1aa71392" => :mavericks
-    sha256 "0d2af3b585f79b60e617301d5251a19114e14f82b5b75f3feda5be11c09404da" => :mountain_lion
+    rebuild 2
+    sha256 "3adee1525631365a166152aa760c8944e239439fc4d5ba47f66e61f55d5a8ce7" => :sierra
+    sha256 "79725cf92ab951f41b1b76a1394e4814d04c96ed64079c70277e4e1e4c546430" => :el_capitan
+    sha256 "fae6cc12c20e5dc3f9461d7dbfe6d87078a8929e72c6f47f49c9360f06fb3b84" => :yosemite
   end
 
   depends_on :python => :optional
