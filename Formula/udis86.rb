@@ -6,10 +6,10 @@ class Udis86 < Formula
 
   bottle do
     cellar :any
-    sha256 "e3774a825eda78db57585c75b739dc60d0c069e35c8666575f5889908b0735d5" => :sierra
-    sha256 "e763db7beca50f11ab341f13f5fd571513f4847772bb70ef83d94bb576427673" => :el_capitan
-    sha256 "bcd6eb347f55bc856ceb64604d3bace30219e346de34caa8be7de2b52a1cb35d" => :yosemite
-    sha256 "84b56e3d62695b2c39c2c450d94fcd258439baedbcd68980a19b685f2e2b95c9" => :mavericks
+    rebuild 1
+    sha256 "6a9b43e99925de9943e95d1df2a48969838e712730736269e6596161a7a1db8a" => :sierra
+    sha256 "29f9f275f30163f8dc612a5fd3a4d8a819711323845bd60220a71c44dca5aaee" => :el_capitan
+    sha256 "972419c5e589417fce3d236a1c3f72eb61d8536464a4435f6a1e455855f1b321" => :yosemite
   end
 
   def install
