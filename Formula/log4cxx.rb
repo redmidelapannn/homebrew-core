@@ -7,9 +7,10 @@ class Log4cxx < Formula
 
   bottle do
     cellar :any
-    sha256 "0e1c8e304f87bdb864f14e7b158e2f9e82ab4300a0ea144a8abaf9c8d5bc2976" => :sierra
-    sha256 "16eb54dca4f5d772a23d55d9599947f93a8c6003df5d6a4ad468b99daeda9153" => :el_capitan
-    sha256 "b96afe3f4e4b63017d2061028ed8792c4190996b1e008d8c87c3f52dba660ec5" => :yosemite
+    rebuild 1
+    sha256 "a0718f84fd3606dedd428667812df6b89ab3dafdbce8ad272f790399ede54da5" => :sierra
+    sha256 "cafbc10e123659b583170718729cbce69dadb8db438b9d3397b1507893cb4c88" => :el_capitan
+    sha256 "f8d071bb518d1e9bddb4039c7a14d608d2f6295f925bc1996c0f066fa6c34050" => :yosemite
   end
 
   option :cxx11
