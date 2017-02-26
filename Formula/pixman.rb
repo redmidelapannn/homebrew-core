@@ -6,10 +6,10 @@ class Pixman < Formula
 
   bottle do
     cellar :any
-    sha256 "345c55cb038be8ad3cea956647fcbe8f06db0df61b7dda1a8d7da2f40efc0c3b" => :sierra
-    sha256 "ce36799e5a38be394c20f7196f93c2bcfbf9a0a49c7964e59ab8980fb81cda26" => :el_capitan
-    sha256 "d9db47ff106386a945bc74d1717a9215a6de5bdcc848aea99ef10d31ae480ef4" => :yosemite
-    sha256 "810b4e5d428e6be2987e96767adf8bca06dd026fbcc5246f96d8d5ec4f64962c" => :mavericks
+    rebuild 1
+    sha256 "2d060c364f764181fb22f1c1c2de06f0c30723e5ab225ea8d8446eefe5ded371" => :sierra
+    sha256 "d6f743326c540f06826ee6035f33ac7fa09e4e41a15bc05d61bb070532145e42" => :el_capitan
+    sha256 "72e2a02a1a6da823bfee8579c134ce639894bd85457f16885692fd3dc65b858b" => :yosemite
   end
 
   keg_only :provided_pre_mountain_lion
