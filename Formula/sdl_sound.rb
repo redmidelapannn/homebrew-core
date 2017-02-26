@@ -7,11 +7,10 @@ class SdlSound < Formula
 
   bottle do
     cellar :any
-    sha256 "28aed65a75d7b76f72b5e18db7fb77e0fd1662b8c9db2ad5d7089aabf9cc3176" => :sierra
-    sha256 "a0cf4506b9faf4729f74bf5fa0035a47d5fe68bec2d1fd8b52841d9f3f06c73c" => :el_capitan
-    sha256 "9b44c60636c37d24d3344283b79f8ce292efedb035d00269f8afc0b1ba65f7c3" => :yosemite
-    sha256 "e05e8e051e8dd043001714a4c95d2ef5ebbe1f0abe9d7a4e89ab9eb95ec475a9" => :mavericks
-    sha256 "ab8a1acb87b1b626ef287684b8e2a32d265ca9e70abb9443d3163cf865cdde0f" => :mountain_lion
+    rebuild 1
+    sha256 "9527976a6b5312e634108fb9c98b9c5679fc65b4365c8f8fec3af2e1c559a46b" => :sierra
+    sha256 "1aa398bbe2baa89442a6efd85b9d190737f9249332f6a0e12ff102daf2d0931a" => :el_capitan
+    sha256 "d58f5cbe6d1e5657739f3776269bacf022ec4f8db9687e7951e9c15b67bd5ccb" => :yosemite
   end
 
   head do
