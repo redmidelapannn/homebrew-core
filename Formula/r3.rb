@@ -7,10 +7,10 @@ class R3 < Formula
 
   bottle do
     cellar :any
-    sha256 "d39c22ae9e69454cc7c205ff0cecc3dd6084a38a1e1742091f55df389e5a8f4a" => :sierra
-    sha256 "6122bbc3566581f130e54cd563ed69f169598f5ce62d6319e7b5a95b10b802ef" => :el_capitan
-    sha256 "56a37f8cab8af3833eb52c6fc739027ffd755fb0e60530bd96dc643bdb8e18ed" => :yosemite
-    sha256 "26bd4bc4114b54d57d9f39bd00f15914f03eea7407fbcc50df4c1925b412a879" => :mavericks
+    rebuild 1
+    sha256 "88ad7fb21d6fd1c87747c20f6a226a7b754c08bfa2408bcb5fbdaa7ebd97229b" => :sierra
+    sha256 "f16f8fe7074e5cc3813e33a5157fdf1033bf85be20c240f4144c60383be41a58" => :el_capitan
+    sha256 "5c6ea67bb89f8fa9b51cbaa92f6fdcb3d0d9a4ffff3a06fd156a97455d282062" => :yosemite
   end
 
   option "with-graphviz", "Enable Graphviz functions"
