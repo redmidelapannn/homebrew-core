@@ -7,11 +7,10 @@ class Physfs < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "c06c09374e9691665cd54947ba44b4d1f69be852c03f55148310db882912a3ff" => :sierra
-    sha256 "d501cbfdfea7df8ae807f158ad428c02354366a546925a4d042ccb2f9eb30267" => :el_capitan
-    sha256 "c53001feb6316238029050dd5f07cdb6a1f17a3c96df9a09b43f709a99b7504e" => :yosemite
-    sha256 "c4d372b4db8a7b0ed8019562cebce7ac59b1778c8a88d27a0d6cd508607826b9" => :mavericks
+    rebuild 2
+    sha256 "ec873625d289530b26c8bf18d5284a8e3c04cf4f364acd80ced4b898275851ca" => :sierra
+    sha256 "3c625c074a2c0b691e567c1953bd513ab085a4b2d4eded7d8ddaba23299464de" => :el_capitan
+    sha256 "e73fe57dfc5a8513aa7e11eee07b8a47bab5216afe5ec81d58579f88dbec8a6b" => :yosemite
   end
 
   depends_on "cmake" => :build
