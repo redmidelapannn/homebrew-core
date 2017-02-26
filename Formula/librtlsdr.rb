@@ -7,12 +7,10 @@ class Librtlsdr < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "bfeabfcc68c270b5dc4ef8829e466cf406c87e9068cc4a1985eebdc849e2c79c" => :sierra
-    sha256 "63a2184d097f6da5f72eec471ed24f498efe3699834e45a25ba6b55c47b57df5" => :el_capitan
-    sha256 "d9e6bf3b47b6600d9fb3251cdcb0c7d89dcb9d292609453808303944df2f8981" => :yosemite
-    sha256 "3c7027468e4ae312373a62d166a2860be9e27711663fb5f0e52b6e3a3ddc5c6d" => :mavericks
-    sha256 "1d6986e78140d3135492e087356435b19647f090d902b334b400315bc8baebd5" => :mountain_lion
+    rebuild 2
+    sha256 "cb5d3ca762d9b50d294415da04414301716ee8bc8c6a119981acea9885c505cc" => :sierra
+    sha256 "3fda36e6c69cf2557c0f0f395fe6e360a7144dd7c98ad7769afd21bfb3521af5" => :el_capitan
+    sha256 "68f7a617da24bf54f0bfef91c09c7d7d44a8449d35a80d69fc0e6a23ef74030f" => :yosemite
   end
 
   depends_on "pkg-config" => :build
