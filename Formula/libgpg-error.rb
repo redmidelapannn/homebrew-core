@@ -6,9 +6,10 @@ class LibgpgError < Formula
   sha256 "4c4bcbc90116932e3acd37b37812d8653b1b189c1904985898e860af818aee69"
 
   bottle do
-    sha256 "84ecae359a015fefe16831ddfe5d3dfc99772c8903ce711badd0376dfc9a3a0f" => :sierra
-    sha256 "12ae29c509eb5ed2cd0c81ce0a5ac6378fb969703f62c195a059929df22105a9" => :el_capitan
-    sha256 "c7ca03639e52db681ed04b799343e63c61996e5781286ef00c6cb5f6b7a18731" => :yosemite
+    rebuild 1
+    sha256 "1bf505a8697d0f313ce3dca1bd65d71c6044c049270e50b54c3232501eabd7d1" => :sierra
+    sha256 "7b47398fa79fbf99ec79deb0fa713727c04ce9e4f94c189c1bcb900ff52cc55e" => :el_capitan
+    sha256 "4e2bcb8618342864efe0b54481573048c031be70980300edee4a2698e82b6478" => :yosemite
   end
 
   def install
