@@ -7,12 +7,10 @@ class Libpgm < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "e84427aa937687e77701f8b0834866c86e6d4916685c769c4900403307b624c5" => :sierra
-    sha256 "24765bd6efa0aa65a333e3d5bb5a48159875b81cae8ca99c479fbda4133f49b9" => :el_capitan
-    sha256 "ae0d1d980f84677fcaa08b1d9f35f1c9d4858e4239598530b7485e9f248def73" => :yosemite
-    sha256 "87ac77e422ffd9b72d1070c991064d0a8a9b5eb2d124f5cdd9911590b48bd291" => :mavericks
-    sha256 "682fb0731817ab2f01c9247b1579dcd4a5ff8e28a938ddcd7045ee30acc81499" => :mountain_lion
+    rebuild 2
+    sha256 "51943c233d2e210757eda708740108cb406e3f707376f445cc0c99d777c325da" => :sierra
+    sha256 "a500ec1b01b4a467bf572829e2c7f69f3b1a76a856bf5109d9c6702c87f63ed6" => :el_capitan
+    sha256 "abbdbc77153106d07026ccc26f9858d27e0d55ae7e947b2ce05b7c18ba3863f4" => :yosemite
   end
 
   def install
