@@ -6,11 +6,10 @@ class Szip < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "872e29d58d95de3c92024cfa9f3ffc968a88a58a18308caac65b5ac994b73595" => :sierra
-    sha256 "c2264ab5d3e0070040c9eb82ed44ff384d79d3e1c279266a1621172c44de1c0a" => :el_capitan
-    sha256 "b8ad0f2ea77da1bc013fd3ea10104f3958389c76aa11fe33d4c79111a3605918" => :yosemite
-    sha256 "df5cfb198d5fbdc45bf9e386ffcf25535b995ca32477afe03ca2d277443ef022" => :mavericks
+    rebuild 2
+    sha256 "51098905986c71b66c325b11dccf69bec60003517e396eab68f0ed7889e51e58" => :sierra
+    sha256 "dc6fab7ce806b36619546452bae14b490c2c088a2347e9acf8716d60396df448" => :el_capitan
+    sha256 "e245344f02f3667c04a2522de472cb07f9c18c8e58e728ef7e63d46f34a1040e" => :yosemite
   end
 
   def install
