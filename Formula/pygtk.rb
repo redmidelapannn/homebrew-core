@@ -7,11 +7,10 @@ class Pygtk < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "89f5d6762155b369dae255ba2b3952cc09f43f899585ff8694370b6b151ca97e" => :sierra
-    sha256 "bfea679c1a46b35c7788a692869ddb576c2869900d25b72f6cf91e25edc409a9" => :el_capitan
-    sha256 "7b008b213a675e96a83edb7b1be8401bbc9bbeb5db9a926104897f99a8d7d61e" => :yosemite
-    sha256 "603694d87d2c6193caa164029bc441d93d45cdcd75419c8f8ed11b0902577457" => :mavericks
+    rebuild 3
+    sha256 "48cbe54578044c8b1d8f43f1a2cd8f30fad061831162c84b833c85466d17ddbf" => :sierra
+    sha256 "3dc7df0a936d62300e676ba83d38749764c70f57ae7327684f22231c9f6608fd" => :el_capitan
+    sha256 "565addea0e0b5b20db3f7b8dd5b1123f6104e4f8be8e3a7cbd88d4b4b5aa6302" => :yosemite
   end
 
   depends_on "pkg-config" => :build
