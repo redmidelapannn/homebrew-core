@@ -6,9 +6,10 @@ class Python3 < Formula
   head "https://github.com/python/cpython", :using => :git
 
   bottle do
-    sha256 "b9b1de457689c84376fb8c35c67b0de4745ccb573ddc5f8ce0257b3b73358917" => :sierra
-    sha256 "8588e0f338a9c2187569cfd63180a7f6e4124929f0402f2e2a9e3337d23f9d94" => :el_capitan
-    sha256 "6db855fa31e33ceed7703f249f6c0e098e74db05294d7191cf175f0a4bffb1e2" => :yosemite
+    rebuild 1
+    sha256 "8bcea0bd8be83fd825b208a0a9f518e73b9ba44d650c9982bf858751af41bcbc" => :sierra
+    sha256 "40f962676ddd7462e082ee96d8b648f66df3683887561dba29a845fd21df3fb1" => :el_capitan
+    sha256 "e28c43c4e37062b8f402505a1fe2bb5de4a16bb53e38526d2b2355f98cf1d1d3" => :yosemite
   end
 
   option "with-tcl-tk", "Use Homebrew's Tk instead of macOS Tk (has optional Cocoa and threads support)"
