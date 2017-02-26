@@ -6,9 +6,10 @@ class Libsndfile < Formula
 
   bottle do
     cellar :any
-    sha256 "d62e838578eef2bd9ec76a8cc2ee48016c20b83bd4edce89b61892a640d666fa" => :sierra
-    sha256 "31bdf218e00a1df4e659e098b4abb73a75f69e3a3372a9116f57a2714d27fe35" => :el_capitan
-    sha256 "4b6e891dc0dde551f1ee73ea508553ebb1c84c08fbdc5ae0e874e30ab0367ffb" => :yosemite
+    rebuild 1
+    sha256 "4fc32330b92b3f5852b386bdbf97991033f774f83a56a34c88f78444be48dfdb" => :sierra
+    sha256 "ddbe8b4f1addcadc53f5a8b635422daaadf6abedee5cea96662517bed3d51c60" => :el_capitan
+    sha256 "5d6b7cabd6ce3b45eaa8ca304dc170c139c4984871744c71f596fad51288b983" => :yosemite
   end
 
   depends_on "pkg-config" => :build
