@@ -6,11 +6,10 @@ class Libyubikey < Formula
 
   bottle do
     cellar :any
-    sha256 "23f550d2f6e2cd6310756e3625c17868e206c90029e241fbc915a408f4761263" => :sierra
-    sha256 "2b1fbc1860932dd4a4c2b09928d838bc3646ff0b2a97bc5c538981befdc21760" => :el_capitan
-    sha256 "7f5c7a55b9e5bf373f01f8f02a983d45ae11d801acc8110cd8f5e13edf0e2973" => :yosemite
-    sha256 "efaf65ea86cb01821d8c3145ab0f0528f6bb9e8afa0090ffbf2c0818e093c357" => :mavericks
-    sha256 "53122ea8a869ed5c811273df1c2767e46138797f1af122db93beda2b7254b407" => :mountain_lion
+    rebuild 1
+    sha256 "024d5469f761e4a4ff0e628ab586795e98b467eba09b3fe9170d67ddbcffff1b" => :sierra
+    sha256 "d38b512a6d27983e5c0e66a5ba96fb064ef0de4f4fca102471cc3bedec9e0779" => :el_capitan
+    sha256 "eaee70867cbca844a4a81b324a63034700da84e330ba833ab90c4f950d1ada13" => :yosemite
   end
 
   def install
