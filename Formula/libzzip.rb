@@ -6,11 +6,10 @@ class Libzzip < Formula
 
   bottle do
     cellar :any
-    rebuild 3
-    sha256 "301d6dd1b0d24f8aaccfbd3737bbf51d6c477af59c2d06838acfe6faa1921189" => :sierra
-    sha256 "661b7f130316bfd82f6781652820198afecc0b92b5f9d92d6028ea866252e761" => :el_capitan
-    sha256 "648e60acdbbe15d1abfccbdb8e34656cea044036eddbcc61e081eee9ccac245b" => :yosemite
-    sha256 "6356e30f6be759bdb0234b811ef83069d36fdef29f5f3cf618a9547773672918" => :mavericks
+    rebuild 4
+    sha256 "473e761067011d8aa0f6a33a7258373a0c1eda12f7d5cfe844cdfbd211a4bf09" => :sierra
+    sha256 "c4edb839c4f7b1dccd86e1d2191dab56bae2024270e6532150780aadc1936fc9" => :el_capitan
+    sha256 "2410d034bc66e3046a30215309d5ada05eb26cdc9f3abface250ecc9e8b334b2" => :yosemite
   end
 
   option "with-sdl", "Enable SDL usage and create SDL_rwops_zzip.pc"
