@@ -7,9 +7,10 @@ class Sdl2Image < Formula
 
   bottle do
     cellar :any
-    sha256 "947ed2dbcc3bd8c6b4188dbc2874d8b06e95aee64d58eb530b6f5215f4574cf6" => :sierra
-    sha256 "da313993c1cc825c342ef0d8e1a7fefaeec399654eb56b0b07f33b767555c4ba" => :el_capitan
-    sha256 "f5aaf7b8c035d662c696fa818ac4d82f33108ae1874f88e471368b29938ae20f" => :yosemite
+    rebuild 1
+    sha256 "98260149f939bfe1aa4afd8ae7b57e9c97127e78ca8d90e2f4af01940a804624" => :sierra
+    sha256 "df70bdfee57cece2ffe109f1078eb2d3972098cbf3d4119bdf14ffd7a5c44e47" => :el_capitan
+    sha256 "5e2dc44d74d8060b34ab4d2661f0b4b054dfa125ccdd326cf4f184825a085a5f" => :yosemite
   end
 
   depends_on "pkg-config" => :build
