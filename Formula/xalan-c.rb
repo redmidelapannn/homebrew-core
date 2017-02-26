@@ -6,10 +6,10 @@ class XalanC < Formula
 
   bottle do
     cellar :any
-    sha256 "a10b85fce805d2c002e4df59889759ded2d38f6978f46250f365db91f0ae8397" => :sierra
-    sha256 "8de91a28a9e22941818185380825eacd950d1420b850e82879204c4a3a1d3152" => :el_capitan
-    sha256 "9af9e5d0c49ca9307ec41f229cb3fb2b53e7f13cc10b0c033750e7512f3dcf1a" => :yosemite
-    sha256 "fcfe6027b7d366f6a2bff783e0ab1e9abfc7c38c1a6fd31fa4a2fb9d325a2819" => :mavericks
+    rebuild 1
+    sha256 "026336af01d0b45c0022782a9c7b6d4d2caa3ae511fff89df44a31dcb272819a" => :sierra
+    sha256 "f36d3985c62f7b55944facec8860f42656ee5d7bb517283a015f25ed742d21c6" => :el_capitan
+    sha256 "d3db2db9b42748519c3ddb1b5c7fb714d3bfdf8513a4f1acb92b39625589adab" => :yosemite
   end
 
   option "with-docs", "Install HTML docs"
