@@ -5,12 +5,10 @@ class Mcrypt < Formula
   sha256 "5145aa844e54cca89ddab6fb7dd9e5952811d8d787c4f4bf27eb261e6c182098"
 
   bottle do
-    rebuild 1
-    sha256 "c2d358a3e8b7c547c2b136bcd8c7e53c095ca9902ccc81c7af56cc007bfd1202" => :sierra
-    sha256 "3cac7c430b1673877ba52bada82c3f710024dbd9f8dd0ff230c17c4623987beb" => :el_capitan
-    sha256 "d7b36cbc7affc0e1851861381e92677abce2b011f184ab39234ff6cfbf021413" => :yosemite
-    sha256 "6c060224061c43733929524f3e45010192d5fc4ece1972fbce7259f96f514fa2" => :mavericks
-    sha256 "b6dd5f1210d4b0fffa7b14e4fce445c11d6245840fd38f08255149b6e27832c2" => :mountain_lion
+    rebuild 2
+    sha256 "135e7541234d4264aa8bd5f50ef22bf9c51eb1250beedf12bbcfd29dc483f26e" => :sierra
+    sha256 "3893772ff9545c172b8a4ef1b2946ef704a6d4bdbd069f6026072b39d60bab41" => :el_capitan
+    sha256 "45a99115d4f9956e8e1d886e911e0399436d09543e6508b7b3f5c32f21786890" => :yosemite
   end
 
   depends_on "mhash"
