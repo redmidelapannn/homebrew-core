@@ -8,10 +8,10 @@ class Muparser < Formula
 
   bottle do
     cellar :any
-    sha256 "0e0432cc0a03c7657cae3873ac44a61583cc171218e78691c0b4d89105be4524" => :sierra
-    sha256 "126f7a337787b326f4727d12bbd4e9758609a41127e4145fecc69db131be4e80" => :el_capitan
-    sha256 "43a9e242f7abf60709e4b8fe8d629ddeb88d693af400d0e1aa894267b9d5b646" => :yosemite
-    sha256 "e6945023b6e8e758c0fd3ec69d66119a60b3179881b4dedd18bdfbddeb75eb53" => :mavericks
+    rebuild 1
+    sha256 "f66bedff2bc6708a7080c2e377ed1f890047d3d6945e64652b488273d4ddc70a" => :sierra
+    sha256 "345edaf9dc509d650f19cb19a904434a62fa38c32c838e5ff2494e1395f86d18" => :el_capitan
+    sha256 "f0c1e279183af1296de59404408cd1339df7038bd7889a0f47c09a919460525e" => :yosemite
   end
 
   def install
