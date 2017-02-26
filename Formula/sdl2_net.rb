@@ -6,10 +6,10 @@ class Sdl2Net < Formula
 
   bottle do
     cellar :any
-    sha256 "dc2b96762f77dd4d42fea1da4d4c2373692dd0a531f686f00de0dd4a6eed8df9" => :sierra
-    sha256 "46d189ebe1f240381a9e8d99a2cb249e577cec98e6399e741e47275735a3471c" => :el_capitan
-    sha256 "2e2bcc1e1aac84b37ebb44398e463d9004764aa369489926cd07bb97cb9f60c4" => :yosemite
-    sha256 "ebabcb8f4df6fdee7855a6e19080aea42d9909205b287312015179bb9b3f472a" => :mavericks
+    rebuild 1
+    sha256 "4e3403f9bb2632d513ed9c898e307d5bd44c34fafe950da0a6f3d8a0a2499212" => :sierra
+    sha256 "9d4850c5d2af4240b271df5f9288ac6345b6c7deca3560bbff0e7a2b806e3e20" => :el_capitan
+    sha256 "320e7cd3d07ee7b76e5af33468ee951e220d922eaf603413156b64c2a9454f32" => :yosemite
   end
 
   depends_on "pkg-config" => :build
