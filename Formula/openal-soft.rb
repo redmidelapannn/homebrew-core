@@ -7,10 +7,10 @@ class OpenalSoft < Formula
 
   bottle do
     cellar :any
-    sha256 "7c0761d8e3bf7dab54956908b2d08a2781ef418e77db499f6b57f8193530734b" => :sierra
-    sha256 "915bd92597553f3f005071fa85e08e2947fd545a4af4b5dcf514ea79320d7a99" => :el_capitan
-    sha256 "643cd46bc9aa8fdf9c85aaa374d71d2dd6d18abeb674445f49d829f61dc82c4e" => :yosemite
-    sha256 "819886eab2909ebcff2edb16c39ede1800ec987e193b0fdfce8d4047636fff17" => :mavericks
+    rebuild 1
+    sha256 "dc5f8ccdee9d3015dea3787b28637545362d0e499bf3839dd317f16aa88031b7" => :sierra
+    sha256 "65918752aa5fcbfa4f11b0c1101f1adf40d96602b178518557375eaebaffc868" => :el_capitan
+    sha256 "053f414ac76d7cb520af9b8710a80844f290e4de789c72a4ec6fc9900422c68d" => :yosemite
   end
 
   keg_only :provided_by_osx, "macOS provides OpenAL.framework."
