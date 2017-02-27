@@ -7,9 +7,10 @@ class Libmicrohttpd < Formula
 
   bottle do
     cellar :any
-    sha256 "44580fceb6477e2f4fb6a4d4659a48b41c5b5b8bf6477a1679467830dfa0324b" => :sierra
-    sha256 "ed10cf7c59d160631d12c558e6debaa0c31a4cef7946a479af95d6be076f8a6c" => :el_capitan
-    sha256 "0cbd499c1d9e7126dddfcad9817ac442904c3fdde416c3c3b9f545566d6be58c" => :yosemite
+    rebuild 1
+    sha256 "c43dfffbe57f1cb38c813584294063e2f46c090ac448523ad6e664d84a991797" => :sierra
+    sha256 "1c790a2f42c34ac19d4a5aff84101c85e314e56624b181458326966804436c02" => :el_capitan
+    sha256 "28470e359503ac2dd50e6a73026e3c1ab0590d742107450325f58a727b4b4076" => :yosemite
   end
 
   option "with-ssl", "Enable SSL support"
