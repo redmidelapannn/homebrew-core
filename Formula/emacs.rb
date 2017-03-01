@@ -71,11 +71,15 @@ class Emacs < Formula
       args << "--without-gnutls"
     end
 
+    # Note that if ./configure is passed --with-imagemagick but can't find the
+    # library it does not fail but imagemagick support will not be available.
+    # See: https://debbugs.gnu.org/cgi/bugreport.cgi?bug=24455
     if build.with? "imagemagick@6"
       args << "--with-imagemagick"
     else
       args << "--without-imagemagick"
     end
+
     args << "--with-modules" if build.with? "modules"
     args << "--with-rsvg" if build.with? "librsvg"
     args << "--without-pop" if build.with? "mailutils"
