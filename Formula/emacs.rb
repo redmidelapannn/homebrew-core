@@ -34,6 +34,7 @@ class Emacs < Formula
   deprecated_option "cocoa" => "with-cocoa"
   deprecated_option "keep-ctags" => "with-ctags"
   deprecated_option "with-d-bus" => "with-dbus"
+  deprecated_option "imagemagick" => "imagemagick@6"
 
   depends_on "pkg-config" => :build
   depends_on "dbus" => :optional
