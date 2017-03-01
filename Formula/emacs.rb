@@ -39,7 +39,7 @@ class Emacs < Formula
   depends_on "dbus" => :optional
   depends_on "gnutls" => :optional
   depends_on "librsvg" => :optional
-  depends_on "imagemagick" => :optional
+  depends_on "imagemagick@6" => :optional
   depends_on "mailutils" => :optional
 
   def install
