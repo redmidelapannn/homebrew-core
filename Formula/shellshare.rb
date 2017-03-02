@@ -1,10 +1,10 @@
 class Shellshare < Formula
   desc "LIVE TERMINAL BROADCAST"
   homepage "http://shellshare.net"
-  url "https://github.com/arthar360/shellshare/archive/1.0.0.tar.gz"
-  sha256 "e14080e5f58f513975f893dce07412097155c38f1798a96e65b78bcf9992d34c"
+  url "https://github.com/vitorbaptista/shellshare/archive/v1.0.0.tar.gz"
+  sha256 "72bd49928982611ae44aac4a308dc6054d9c8ebad87644bd5eb68ff0bb704ce3"
   def install
-    bin.install "shellshare"
+    bin.install "public/bin/shellshare"
   end
   test do
   end
