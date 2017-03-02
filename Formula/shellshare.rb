@@ -9,7 +9,7 @@ class Shellshare < Formula
   def install
     bin.install "public/bin/shellshare"
   end
-  
+
   test do
     system "#{bin}/shellshare", "-v"
   end
