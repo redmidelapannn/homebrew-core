@@ -8,5 +8,6 @@ class Shellshare < Formula
     bin.install "public/bin/shellshare"
   end
   test do
+    system "#{bin}/shellshare", "-v"
   end
 end
