@@ -8,10 +8,10 @@ class Befunge93 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0b2b344570f71b3fa702675b2305b96632fde0a8da44085a15b15fe72863f66a" => :sierra
-    sha256 "fcebeb62391bd6e3eef571123af573766666ce9c40f139c889cc350bf6410d8b" => :el_capitan
-    sha256 "825c5d86e93d7cf0ecc2f3f16f626c27e658f1d4792bd6e74092b11f815097d7" => :yosemite
-    sha256 "a4f6102ac80c19ef969e7b2bbe70bdfd4f192df08d455b2b6162ce16e3616564" => :mavericks
+    rebuild 1
+    sha256 "d4065ac2ca8d3c21ee94406912a5ab59ad375f199b7338c641e435281968aa68" => :sierra
+    sha256 "deae1407d43ed46cfa4c7c2c12870f9c211a9d1c8cb9e67d66d8d99aab22429a" => :el_capitan
+    sha256 "dd346f6a6b5f1375dbd4b03b93e986faaa297db355105d6cb4a0180972ab256d" => :yosemite
   end
 
   def install
