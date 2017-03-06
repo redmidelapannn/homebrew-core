@@ -6,9 +6,10 @@ class Picocom < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "04be4265f5b4d5364d5b3dc9c312a8426fec03155f5eb3279e0546ce06013d0a" => :sierra
-    sha256 "0f7f8d35db1ac8c7e96f7d985a06a05eb4930dab539ca278a2544ca3f0cb329c" => :el_capitan
-    sha256 "57b523048108fb223498ad33e9d0f7ed0ca31038e5f4c64f341360b5ee24b5c2" => :yosemite
+    rebuild 1
+    sha256 "538aefd7f5b885d8544c1d85a20e88207feabb5d9a7666795d8948e89a766125" => :sierra
+    sha256 "faa4cc1321e160e65d483892f22661c0caefee8e82bf53252ba9f3318f978592" => :el_capitan
+    sha256 "b995bd0f9b30368b95c8b3bd293ad9b00fed119223c967f0531724858412e0c7" => :yosemite
   end
 
   def install
