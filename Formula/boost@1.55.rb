@@ -32,9 +32,8 @@ class BoostAT155 < Formula
 
   bottle do
     cellar :any
-    sha256 "bf89ab11c1ceab224a5ece4629987b4d8d137c5c3506a4577301f70b05d0ea97" => :sierra
-    sha256 "30bb554952cdbcc445b247f570243c31ab4cafebf55bcfe96b9cabcb5ca2f716" => :el_capitan
-    sha256 "f861f79bde1988282064245c5b1080f66f6a4e034162656b627c2bb8de42ebb2" => :yosemite
+    rebuild 1
+    sha256 "9ccfbf9df10d8beb87fac0dd24b4261516befd71517bc13321913a58defd4ac2" => :yosemite
   end
 
   keg_only :versioned_formula
