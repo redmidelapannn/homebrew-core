@@ -8,10 +8,10 @@ class ReattachToUserNamespace < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "be926162104571fa1eb1c1dda7a4f35f56c24cbdaceb037be4387ae86e7a7169" => :sierra
-    sha256 "901c639c93b3f51d67891e748eed78604aceb6fec62812418e40fec009a731ab" => :el_capitan
-    sha256 "1b7853288694d4ea8bff21141de050b1fa5be5920583ce4a472ac02653e6490a" => :yosemite
-    sha256 "992f682ed9778b151164ade1a0fc67b85ce1368094c962857e0acbd408f6ace6" => :mavericks
+    rebuild 1
+    sha256 "f139d31960835121e84a8d4b62bf232b133a1a5bf3a2408316fc5db3f06d225f" => :sierra
+    sha256 "28bcb892f329ade7efcd7842cfee84f20f80181f86132a722f071f4d40fd4852" => :el_capitan
+    sha256 "f3e6ea3c164d6789dbb4ac652395b2d80df28956e170f289df02b317ef55a9cf" => :yosemite
   end
 
   def install
