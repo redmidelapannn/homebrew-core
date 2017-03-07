@@ -8,10 +8,10 @@ class Dcadec < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7a51fb1bfa07f08c45176df419087429e9ffce945cbcd28d71e403c456762c74" => :sierra
-    sha256 "89ddc5e9a5cfd72e604bdff54ee1f09f9ad4ec281fc79c93201971bbd380ccdd" => :el_capitan
-    sha256 "640914a5ce466bbb91b551bdb35a385e4a8b08c25f78509a16c016c654963805" => :yosemite
-    sha256 "6d373b4fe5dbb76648183d83cd3161970e8f3674ea29a3133fa4d3c0a9f82ca1" => :mavericks
+    rebuild 1
+    sha256 "631841efffb0a471ec1c1c2cfa918c8e2de970ae9c255276f7cfda273967fb86" => :sierra
+    sha256 "a8183a6430d9b37279752c3f24216ae9e97e58fb42290d04ce96477e643fd1d2" => :el_capitan
+    sha256 "3175f8b2f12bd9e7acc39535b9bb819719fbbd9ca94ceec227e88442f2afb2d0" => :yosemite
   end
 
   resource "sample" do
