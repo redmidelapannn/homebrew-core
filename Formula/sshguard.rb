@@ -1,6 +1,6 @@
 class Sshguard < Formula
   desc "Protect from brute force attacks against SSH"
-  homepage "http://www.sshguard.net/"
+  homepage "https://www.sshguard.net/"
   url "https://downloads.sourceforge.net/project/sshguard/sshguard/2.0.0/sshguard-2.0.0.tar.gz"
   sha256 "e87c6c4a6dddf06f440ea76464eb6197869c0293f0a60ffa51f8a6a0d7b0cb06"
   version_scheme 1
@@ -70,6 +70,6 @@ class Sshguard < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{sbin}/sshguard -v 2>&1", 64)
+    assert_match version.to_s, shell_output("#{sbin}/sshguard -v 2>&1", 78)
   end
 end
