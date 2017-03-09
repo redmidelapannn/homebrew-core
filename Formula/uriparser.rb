@@ -7,10 +7,10 @@ class Uriparser < Formula
 
   bottle do
     cellar :any
-    sha256 "d1bea100c4dfd9c34ed7c39b7e5c27f2a24453da48fc6b45f37a2e23e7c13eb5" => :sierra
-    sha256 "9e4e1ad413aa5ffb4f0e52666df1c6f60551f085969a4e48583d4745d8a85fe6" => :el_capitan
-    sha256 "22c5ea8ff69d218577f29684e1b73d81c6d37850639e14e2da497f40ceb29cee" => :yosemite
-    sha256 "a09c4d7a93bf0e6f7e67b9c0a30d881f4eda1471acaf1e80c74e4b8f145332bc" => :mavericks
+    rebuild 1
+    sha256 "e9192c610adf4ae1a109818222adec211369a235b2750a2a13db18ccb7c457d3" => :sierra
+    sha256 "21bf0b78675cd55a05c997d141ea940a1304ff0093bb7b4f212b3756b7a708d2" => :el_capitan
+    sha256 "9a6b24e4825ac31f1d05d44aff2a60e84947a7e4c5265bf444cd1fd5e04e2c3f" => :yosemite
   end
 
   head do
