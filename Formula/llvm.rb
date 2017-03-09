@@ -76,9 +76,10 @@ class Llvm < Formula
 
   bottle do
     cellar :any
-    sha256 "9c9546ef53205305e2d22dcf7b67622ad1ce2d79ea6ebf0cd436010a77208df8" => :sierra
-    sha256 "e1d9ce5fa89d9014dae323146d62d9d1fb41921770525004c83cff89722087cb" => :el_capitan
-    sha256 "0898264d0917252e8b93fd7bc638195fba3f64c8c20a9c61bdfdff907c7662be" => :yosemite
+    rebuild 1
+    sha256 "c68728515e7b5b32725a362d608b7b7b2f9285f9f12a718eb7f5a43233748e90" => :sierra
+    sha256 "494dfe3e3f28797e9d7b1487e4633f22fc97b85b53473a44ba3f978acadd0c34" => :el_capitan
+    sha256 "9e2ff813d144094b56385a849e0cbc032e5c05e1da9f70d947569a35b42a1b64" => :yosemite
   end
 
   head do
