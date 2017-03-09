@@ -7,9 +7,10 @@ class Lensfun < Formula
   head "https://git.code.sf.net/p/lensfun/code.git"
 
   bottle do
-    sha256 "3dcab083540a31a7aa28f78dfe1bcd18b29a03510b56ca4a9ffeae0963e2169b" => :sierra
-    sha256 "2a6a0361c020ad9be4a827b5529d43bd80a814552f6d5943a54525e41f46c7c2" => :el_capitan
-    sha256 "d61e3c9409a3145b5a0ea98af8453462c2f69d24b4753f429d1dcdff719e9e92" => :yosemite
+    rebuild 1
+    sha256 "c0333e95256a0c60b97be277a65b53bc801c65b1944351a339e00f5c3f4c63e6" => :sierra
+    sha256 "3b57fe0cbb9174e98f040a3a48076671fc5205f7bddc1282385d02cdb656e9e3" => :el_capitan
+    sha256 "98390b9da7c3ece91262759aef5c3bdf585ce7649a7c9470c84dca691adf7930" => :yosemite
   end
 
   depends_on :python3
