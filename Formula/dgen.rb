@@ -5,9 +5,10 @@ class Dgen < Formula
   sha256 "99e2c06017c22873c77f88186ebcc09867244eb6e042c763bb094b02b8def61e"
   bottle do
     cellar :any
-    sha256 "50383807ec76387aa156cf6157ea537465bf20ad35e4e9eddda7d34685ded635" => :sierra
-    sha256 "ebcab68ba8d0aa9c6aacae94d43a67ce016dcdd219c5770c3b7d6d9c3590ef9f" => :el_capitan
-    sha256 "53f1fc72dbaab000eae45e143ca46a054a6ff655f91190d6aa30e71e8e505494" => :yosemite
+    rebuild 1
+    sha256 "3eaba37e2c5f36f841301b51fb5860040c0e2107d5d332ebcf0d0475c4521120" => :sierra
+    sha256 "2efd14a3df40906425614131b3e6e0301be02bd3ec45a60123677e43227070cb" => :el_capitan
+    sha256 "4ba0c0a55568e86d6fae9f9a21b8fa4205029a3f512383a1018df72a4d07908a" => :yosemite
   end
 
   head do
