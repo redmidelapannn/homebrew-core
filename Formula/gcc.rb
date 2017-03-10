@@ -24,9 +24,10 @@ class Gcc < Formula
   end
 
   bottle do
-    sha256 "9a05a75102206bfb3e37ff60b822421dd73c4a14b67f7acb258054317fd0f5ca" => :sierra
-    sha256 "c76a4b7294e41e410d37cd45d9c2f820c55001a7cfa82b71ac81d6a0051de5f4" => :el_capitan
-    sha256 "807d107ada2e8774a5bf1461d3f8dc636d1135bdfde5a64f03ccabc063a11328" => :yosemite
+    rebuild 1
+    sha256 "87df077fc2d997d91c29e81cd1b108e87a84f792865d3b1629aa5e8ea156ebe8" => :sierra
+    sha256 "26961715c697c71b1416fe05ffd7eec4b56ebd50456440424a780875e262f859" => :el_capitan
+    sha256 "f30b765f8bab63df9373e42c78c73182eeb72c7bd7d46b11fd846bcb4722c113" => :yosemite
   end
 
   devel do
