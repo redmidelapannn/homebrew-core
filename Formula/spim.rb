@@ -2,7 +2,7 @@ class Spim < Formula
   desc "MIPS32 simulator"
   homepage "https://spimsimulator.sourceforge.io/"
   # No source code tarball exists
-  url "http://svn.code.sf.net/p/spimsimulator/code", :revision => 681
+  url "https://svn.code.sf.net/p/spimsimulator/code", :revision => 681
   version "9.1.17"
 
   bottle do
