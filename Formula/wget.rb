@@ -8,9 +8,10 @@ class Wget < Formula
   sha256 "9e4f12da38cc6167d0752d934abe27c7b1599a9af294e73829be7ac7b5b4da40"
 
   bottle do
-    sha256 "7015cd6c9406ae5ca4cd74d54bcd706716a875f58620820789f0679213e3f3f8" => :sierra
-    sha256 "543f4592707e20753528da6850a47f01150d277f1e8b508cc45bf339dbc5c242" => :el_capitan
-    sha256 "3f69c50c8bb6baec19fe880881e99dcc134ead22ed47180302d1657b46f31b42" => :yosemite
+    rebuild 1
+    sha256 "1ee45a53ab17f3bb24bd739bdfa85207356119944da38bf17765507cde9d0fe9" => :sierra
+    sha256 "2b2406d59219c0a67b297b2ee073568e0a5c8a13edf39799d5cbbeb5d24bd294" => :el_capitan
+    sha256 "0af51a875968004ec8402dba6e5eedccbd5d7ea9db2ba2ce47f82aab2ccc89d3" => :yosemite
   end
 
   head do
