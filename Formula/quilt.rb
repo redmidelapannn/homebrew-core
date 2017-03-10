@@ -8,9 +8,10 @@ class Quilt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8ea83c73d0043e442c32351e84c591a39305abd13745a5968993c43f750c046a" => :sierra
-    sha256 "8ea83c73d0043e442c32351e84c591a39305abd13745a5968993c43f750c046a" => :el_capitan
-    sha256 "8ea83c73d0043e442c32351e84c591a39305abd13745a5968993c43f750c046a" => :yosemite
+    rebuild 1
+    sha256 "b59b21d68982c1e5b6f18ad6fd96e2ed10244d8197579b16fa87548e32f432c2" => :sierra
+    sha256 "b59b21d68982c1e5b6f18ad6fd96e2ed10244d8197579b16fa87548e32f432c2" => :el_capitan
+    sha256 "b59b21d68982c1e5b6f18ad6fd96e2ed10244d8197579b16fa87548e32f432c2" => :yosemite
   end
 
   depends_on "gnu-sed"
