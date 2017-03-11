@@ -7,12 +7,10 @@ class Clucene < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "5d25768dc355533553e6c1605a1dc89985ddd26b4d17d10078c39d6b085c03fb" => :sierra
-    sha256 "5ee0c98072c18c75dd8c25fd309ccb49f033300d474367a8e325ec601c427f66" => :el_capitan
-    sha256 "182db4f73e058e9d28b77cbbd642c40ecc403fbf1d9dc8357387b2c54dba8d1e" => :yosemite
-    sha256 "f85cdb67e53bc6eb380ae1bd8e087b42faca7c65f665f9719209adfa8aaa7b31" => :mavericks
-    sha256 "97f955d2b9fa3ab41f65d9871f82a357cad400237cbaf553d585bae62207d51f" => :mountain_lion
+    rebuild 2
+    sha256 "90557984c25def9e4d4e612f88bc1743663a2648b6e496db896da36c4b79e87e" => :sierra
+    sha256 "e14cf77295195e77dd40a7f0d7542989c46a3ee64a71cd0ca02350b49f1124f1" => :el_capitan
+    sha256 "324e7a72753266f4aeb313fe7197e7e82035ea2d423abb657923d5284b34cab0" => :yosemite
   end
 
   depends_on "cmake" => :build
