@@ -7,9 +7,10 @@ class Zboy < Formula
 
   bottle do
     cellar :any
-    sha256 "85d55fa04126008eb3a72d8cba9afa52b64231807306340c70414649ec56aca1" => :sierra
-    sha256 "3eada5e4cb665257ea7f4dc244e8fe4dac54f279cc9ab2bd4ccfce486b010356" => :el_capitan
-    sha256 "ea5ce73b9e6dccb7e96e7a9eb8e7f7c75c54b89d00bded0a0f13bccbc22a7808" => :yosemite
+    rebuild 1
+    sha256 "84ba5ded5ec100db3014e604349839588cbfd7e3403a237b8e0e6d9fca1c56ff" => :sierra
+    sha256 "fd06f24fd2923f3c7514b235916d65c40d9fdd0833fc73b3ed4fce9dd68fa4eb" => :el_capitan
+    sha256 "e2a75d33ceb3e11b7fcf1a662442d436d23c3b4ca11487f2f4948e0c82b76e81" => :yosemite
   end
 
   depends_on "sdl2"
