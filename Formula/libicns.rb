@@ -8,9 +8,10 @@ class Libicns < Formula
 
   bottle do
     cellar :any
-    sha256 "8fb5848fa2a111b3fc66aaea73c60a0795da6468e2ace92d2de57c9c8a5a3cde" => :sierra
-    sha256 "12579e9f34ef57d3979b5a01206b543a67bf313cdb056d6c3e20e0b8cf0842b6" => :el_capitan
-    sha256 "aed1a7df05a8f98ea64dcdd8c4a406207239b7b187629fc03ae799308a142a4d" => :yosemite
+    rebuild 1
+    sha256 "0c6f9fe5c62cd429263079c25ddcb7bfe256c0bb94d86434ba055a930b0fe41b" => :sierra
+    sha256 "f9b7096a33a65ba0295c9fb6d78d8d7c85de18145b4fbb60f3b8edd58efdc160" => :el_capitan
+    sha256 "8f799a256259b986b43c863f6b9c06c087d7a1e2f6023520516eaa92f619c7e6" => :yosemite
   end
 
   depends_on "jasper"
