@@ -8,9 +8,10 @@ class Agedu < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4ff7572c00d31b611a8fdadc1585a61f025bb4e771ffc339ef44ea6dc08e9c45" => :sierra
-    sha256 "b5c035b2b8f931e7bb397851638809d4158d3c7a0f300decf4d8ded9ab10f7da" => :el_capitan
-    sha256 "217536cf847038431c8469669c66ed63716aacb22cf4af29c93f88f2ebd2d39d" => :yosemite
+    rebuild 1
+    sha256 "a7389f328c5d133d98a8e19e45fe4e123f8693ba44fabf60bd9935d11996265c" => :sierra
+    sha256 "098319c1a789ccd6fc54fdedea5a34a876d63585ce81dccccba9286cc27a327b" => :el_capitan
+    sha256 "0a06feca4ed1585395c3a6209369e1562e8d28daacd5d5e669d7832679101f20" => :yosemite
   end
 
   depends_on "autoconf" => :build
