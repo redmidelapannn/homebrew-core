@@ -6,9 +6,10 @@ class Atari800 < Formula
 
   bottle do
     cellar :any
-    sha256 "79ea3412dc5437df7b24db916be00ee402c2028620d128d8247f6be2a275c08d" => :sierra
-    sha256 "c1b4b17e03ee1685d8b7562f410f75a7c0fa679b00e0505b251741de59eaecb7" => :el_capitan
-    sha256 "5474b61b32e2ac3aa5e594c5e617e326aeedc62f8e740b2888ba654db273296a" => :yosemite
+    rebuild 1
+    sha256 "d5120925eb73c0bc972d4aeb8400fc2b05727219a60edc5f29f6cb3265622ca4" => :sierra
+    sha256 "c7f31ff5d7cabc7a16771a5a77f8db8b07300a48608793dff3c5c0bf8978e2a8" => :el_capitan
+    sha256 "889d502fa1d23a98037dc54607d7fa4a8d0527b72dd33b775470530e1daf28bc" => :yosemite
   end
 
   head do
