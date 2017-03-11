@@ -5,11 +5,10 @@ class Aide < Formula
   sha256 "a81c53a131c4fd130b169b3a26ac35386a2f6e1e014f12807524cc273ed97345"
 
   bottle do
-    cellar :any
-    sha256 "0d1525d760a47f0d9f331365724748f49b648a791d13354a1f54b3977e0eabbf" => :sierra
-    sha256 "ac9b57a6912ac73ccd6bdb013842168f0d77a597ead54bff0640db6e2d0e49d8" => :el_capitan
-    sha256 "0def5269c4525296c167ceb591be1f69f4d65151da7bd9ef9a25160e5ca6e0a6" => :yosemite
-    sha256 "96addc96a4768e2343e2760022e115404c80b54b64f160925d24447bb393f39d" => :mavericks
+    rebuild 1
+    sha256 "27de0687fcd730ca0b3a656577f6d2ccd27aa9178d85fb36cd934d2845f2e3ba" => :sierra
+    sha256 "86a1ade208f32231f8588ff8780392bfadf8f3f6ead26a8d4472f3d39fe632f7" => :el_capitan
+    sha256 "ffd99d6f428b0786b15efe4a618fcaad25187144511852ec3f2c9f4370249a1e" => :yosemite
   end
 
   head do
