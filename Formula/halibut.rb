@@ -8,11 +8,10 @@ class Halibut < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "52d1b558f693989ad6a5a0f78edb984a4d4a67a559a6013b29c3a6aee31a4937" => :sierra
-    sha256 "3499646cc8fb4fc71c87743b0e27ab5fc37b7b72e03b2ff3cdf86b3809ebda7e" => :el_capitan
-    sha256 "db13c78d65619b0b602a83d9641afdbe4d603492bc33bab263ae2530630578f4" => :yosemite
-    sha256 "eedcff72763e75094aadb2a05115614484a2e46561bb11a0466a98153d5dbcab" => :mavericks
-    sha256 "acf6e1989f0f9f895f36b4076179bc8f30fb37be5537f02a1c2f5b0733b8e7a9" => :mountain_lion
+    rebuild 1
+    sha256 "e38224e488d56fa0bd25fea083d81caba341c932035489cd6b2f396d7adf42a3" => :sierra
+    sha256 "daec72e39d6c4d505b65b514d1abaeaece8d9f526696f3040cb7b3db82c85cfa" => :el_capitan
+    sha256 "aa6d9c0e32142993e9395155f181236ac306bab2ccf5cbf56533659fa9341757" => :yosemite
   end
 
   def install
