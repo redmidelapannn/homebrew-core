@@ -5,11 +5,10 @@ class Djvulibre < Formula
   sha256 "e69668252565603875fb88500cde02bf93d12d48a3884e472696c896e81f505f"
 
   bottle do
-    rebuild 1
-    sha256 "341f90c12908ef1da833403ec44518c37d0eecf59c809a36600dc44906fd8092" => :sierra
-    sha256 "eac32524be9ba27942b248fb6b330dcbb1e905b5e50a3957b9b0ed389e10f797" => :el_capitan
-    sha256 "8b23e45b77fd05646e3b81012eccdae2ecc67fe668b6974acf2ff744b1585402" => :yosemite
-    sha256 "b62d17ef5e5adf9da600eff7aa68b60f9eb7e7c067c6143749e0f74664c2618a" => :mavericks
+    rebuild 2
+    sha256 "c3f0d9ea238bc008a621917b7239b1bd58c0be5e254271295e85f6186b87bc30" => :sierra
+    sha256 "343940fdca6c4efc8b40f5afcc34edf0897c4e3e4ee11a09311eb786474e4e13" => :el_capitan
+    sha256 "c16189afb5c0ca8ecae714bf1fdd1911d763bc9871a82407a328a906d4100788" => :yosemite
   end
 
   head do
