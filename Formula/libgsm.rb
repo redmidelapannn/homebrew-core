@@ -6,12 +6,10 @@ class Libgsm < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "379e5da09c1733b6eb0cca6c33fa3332a26bb53ae09bab7739f398e644a9e7e4" => :sierra
-    sha256 "d1a329a6594db0bf0d4d743bd38bda1e07e566292a32a700df6fc73f6a9739d3" => :el_capitan
-    sha256 "c67758c5298dc6d36a5bb201eb42821862647aa79df0ee2824df708ac388db48" => :yosemite
-    sha256 "c25d6ffc2bf063c8c824093ca83b6de17ebbca52c062c4344cddbb8b8286169c" => :mavericks
-    sha256 "8b9054832ecbd7a4e41b1b3e7f8ef7a4aa4e0006a5332a19d176119c6b4121f3" => :mountain_lion
+    rebuild 2
+    sha256 "fb0833c58622d3ddddbc8873bfbba461d6641db35e2a5a739fd0d88bce1583b0" => :sierra
+    sha256 "b37d64b0f3a9700d3c8c93c4badd89e0d1f898c258a506912744e4cb35ebe397" => :el_capitan
+    sha256 "f80c3525a42229c6e573e12d6d011e5429dc4bafdedcfa5386cd71c978c3acb7" => :yosemite
   end
 
   # Builds a dynamic library for gsm, this package is no longer developed
