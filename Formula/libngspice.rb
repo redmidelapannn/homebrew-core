@@ -5,10 +5,10 @@ class Libngspice < Formula
   sha256 "51e230c8b720802d93747bc580c0a29d1fb530f3dd06f213b6a700ca9a4d0108"
 
   bottle do
-    sha256 "08f1356662aa3107b7deb6022242988f20ea14c6784523e2121c799586da6f25" => :sierra
-    sha256 "bd587b5908accbd8ba59c679ddcc16486d26ffa93370ce8b4864ef8a695b9cf7" => :el_capitan
-    sha256 "5a8245fec0555efb0c569e4072faa5cbd77d138644f293090ecad8a2dd64ac7c" => :yosemite
-    sha256 "95eea6b09659ea2098c05ad12dbce4df3bc7cabde606cafbc893758f1ff13b8b" => :mavericks
+    rebuild 1
+    sha256 "87f392e32639aa8187826890e44ab2aa605bccf403c24a7d0a2fa4a1d1742219" => :sierra
+    sha256 "d6a0046aca026e8e97438442bab659456ed9a95f6e9c26e36fdf5a0dc14e340d" => :el_capitan
+    sha256 "73b8dd85b9fb30fdd98461b822904a92306d8560ca7be6b581dc03fc89e54d80" => :yosemite
   end
 
   head do
