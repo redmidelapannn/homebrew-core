@@ -7,11 +7,10 @@ class Cabocha < Formula
   sha256 "9db896d7f9d83fc3ae34908b788ae514ae19531eb89052e25f061232f6165992"
 
   bottle do
-    sha256 "27bd41bab80ab64fb32e5bc8b568864b874f0dec16817d38c37abd3c7582c694" => :sierra
-    sha256 "bf3ed6bc9333b43919264913c40a86997a7601a83abf6dcfa1dfe14745b3fc7c" => :el_capitan
-    sha256 "fe97decdca655899faffd6356bb8ddbb52d4949222690835374c3aeb9a65cdb2" => :yosemite
-    sha256 "794df46e362f3146b2bab17ba132978609954b0ba0a51ffa4d6d4e8845548764" => :mavericks
-    sha256 "b1aaf6623ac7332459c795ebd992ed92224b0d0b9e20fb57dd0313fbeea7647c" => :mountain_lion
+    rebuild 1
+    sha256 "eb67dc968048136aacf697fe24bc8c80a818a711ee41aa5d7088c12432a8327c" => :sierra
+    sha256 "d027bd2d54a391ea99625d4ba4c5f4c6db26303ab8231267b9381f7a44892464" => :el_capitan
+    sha256 "578c61fe0ab60e086209118289a9c94cd71efae910fc177a4dfe65f5987eb829" => :yosemite
   end
 
   option "with-charset=", "choose default charset: EUC-JP, CP932, UTF8"
