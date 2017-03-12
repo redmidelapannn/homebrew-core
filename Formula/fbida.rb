@@ -6,11 +6,10 @@ class Fbida < Formula
 
   bottle do
     cellar :any
-    sha256 "f507c343f4e168984d3e67a9e1afaf41ef54c19a632c351e4782181886a1680d" => :sierra
-    sha256 "80b7410d476eb78c600e0371affe1e358048735ca46e31f135819ceca9c066d7" => :el_capitan
-    sha256 "9d5593851f4e1a378e96219288893de00fb3aaf3b8e454362d8d4c3568bcb694" => :yosemite
-    sha256 "f0c80275d3c79df13d562c200fe2cc53474c9893ceff33686196efd0cc5dd286" => :mavericks
-    sha256 "7f99cfe93aa20461e91af71cba12f362ecedf72410605775914d3a9173a7b7d2" => :mountain_lion
+    rebuild 1
+    sha256 "2cddc03d4f1dbcaabe0f681d1385e9309259b89088f7e7c82c4a56be63b82e4b" => :sierra
+    sha256 "03f5660103d2ab61ad621526a75dbb5b60c987937db0f81019dbab85fa7d8c72" => :el_capitan
+    sha256 "73051a78942a31dd33073ede94a34278dd72b66be9c73931c901ee6455f4d36f" => :yosemite
   end
 
   depends_on "libexif"
