@@ -6,10 +6,10 @@ class Clockywock < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d25af48f1f063a64f514a632ffd1c017ba4dd2c0abc2b428489147247eb8cfaf" => :sierra
-    sha256 "12ce1b232f8dfa658e774f8ae08b99f40ca6ae12ee2d5df41af67412412c2b43" => :el_capitan
-    sha256 "fccbf3e83841993156fa544c0b0f30a92058facf07ce5b1e622aec78e2573aff" => :yosemite
-    sha256 "c4919f759cc8446bc8d83ff71a52de61bd8ba8db11eccfb43270e54c1949227f" => :mavericks
+    rebuild 1
+    sha256 "0b190fc5f68ab633f6e731836df8a05ce3b41ef4a0924355d6ef9f29bc4b5b21" => :sierra
+    sha256 "3fe9dc2248698771b4472dd0ca4c172d75cad5fb7fd7e85dc777753392b0085c" => :el_capitan
+    sha256 "c081b6554469f94c037cf5e044a8ee2e93d8fac1494d4dbe9a8eebf92c461338" => :yosemite
   end
 
   def install
