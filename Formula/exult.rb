@@ -6,9 +6,10 @@ class Exult < Formula
   head "https://github.com/exult/exult.git"
 
   bottle do
-    sha256 "903c0ab936349d37871b211146ffee34e7471ba8c0230cc81b583f67003bf7d0" => :sierra
-    sha256 "e7359d920d31832d74a01e3fa367d65065fa0c9c921534732d947eb968173d3a" => :el_capitan
-    sha256 "5fdcf6dd02cd1fef6863e30ed382b23391ebba2ebd06a34b991c88f4238a559e" => :yosemite
+    rebuild 1
+    sha256 "21fb7e19e74f62bc16cbca8b8e52f37c382e0989d013ddd7d76699008d56774b" => :sierra
+    sha256 "0440177bdc2d6e10f155f49e6136eadaa0aa522889306fec128de0683e691734" => :el_capitan
+    sha256 "34401c1ab3a280c102b82e5a3b0575de6508bab13fc18969a768c0377b408dcc" => :yosemite
   end
 
   option "with-audio-pack", "Install audio pack"
