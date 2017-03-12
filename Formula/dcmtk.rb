@@ -10,9 +10,10 @@ class Dcmtk < Formula
   head "git://git.dcmtk.org/dcmtk.git"
 
   bottle do
-    sha256 "2ef19b5af334814ba4aa550afa442c52027a848c57fd4d4df351d0112c52877c" => :sierra
-    sha256 "0bc092b689f1c076b06ad25bcc3c444942c3b934817f031ab12356ee47a02b23" => :el_capitan
-    sha256 "2e74bb1769b03d1b377a5ca5a73154b42a55665a45d98255f298af95b9939bee" => :yosemite
+    rebuild 1
+    sha256 "0152a8b18af432488288efd1f10db8ff0332e748b2bb93cdd2b388ef71b8afad" => :sierra
+    sha256 "e4696c4b47faf17e048ebd909c1eda913a04c37cc55a761bea260f8e4dff7d35" => :el_capitan
+    sha256 "c0e8759fc0a9684600800436b2060022cf5affc3ab7a3003056627fa9e9a63cc" => :yosemite
   end
 
   option "with-docs", "Install development libraries/headers and HTML docs"
