@@ -6,12 +6,10 @@ class LibusbCompat < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "fc626b53c9f667785f87536a62199cf59f8c59aa67a565ad99ab23805a85bd9a" => :sierra
-    sha256 "df7e556f8af9bccb149bb26becc8a2e6cd9a3d22fc04b2ebf81e981abc892fef" => :el_capitan
-    sha256 "564b4c326a98e27c164544531535be57668ce242ca536a7b34e3716b20f8cd00" => :yosemite
-    sha256 "264bc9dacd754bae665907cd087e06e7063d15fbad38b336c567f76e7f886193" => :mavericks
-    sha256 "239e6f2a527713c38b4e802cd25b80fbb01af30a88a36b77b591f5e95890511f" => :mountain_lion
+    rebuild 2
+    sha256 "62d5e320f8d24dd262f1dcade533f173d803ac25ec0633263ef429ee345796c7" => :sierra
+    sha256 "a1323bda0caaf4f699b317a84d249a1c83b6122ebe43c017216ed8ac64e6ab6a" => :el_capitan
+    sha256 "059ea9c26d0ef29ec87f4e5117892ea541a2e32733dc951b8b2a31144372c39f" => :yosemite
   end
 
   depends_on "pkg-config" => :build
