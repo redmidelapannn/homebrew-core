@@ -6,13 +6,10 @@ class Jpeg < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "85d1f6055de99c1b764c697498bb86d003f5d24b324133f036f0393b97b3e869" => :sierra
-    sha256 "bbc74f8b5980065d7bf95927150c2d56806d30abea459c2b1edcbdeed2d7c458" => :el_capitan
-    sha256 "75419be793eefb3decd69de8ee0444ef697aef3d0f942361437c5d967fd8ecec" => :yosemite
-    sha256 "c94f5859603b34d9b3c1b021ee21cf3a41a5d92b178a41ed5c05a1e5b7d19ff5" => :mavericks
-    sha256 "816f0f826e633cb70f8efc173b6fe745fb9b90334d6cb78813de25f48aec6191" => :mountain_lion
-    sha256 "f94b7976c0e867dfc36ff6cead1d88db8b1198a91a01589e008d2006fcf37c61" => :lion
+    rebuild 3
+    sha256 "8aa4210082bb6e80fd8fd53259ab112a34bd874e762ba2bd280a323c25f869c9" => :sierra
+    sha256 "37dfdd273acd379c0c7692c99be3f8b25f9ee84684c8d2bfe32a724a5d3fada9" => :el_capitan
+    sha256 "aefaf45e20696d8f719409622d15ea2104438aa5dcc64f9ba7fff363a0bfdfca" => :yosemite
   end
 
   def install
