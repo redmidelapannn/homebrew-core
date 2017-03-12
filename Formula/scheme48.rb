@@ -5,11 +5,10 @@ class Scheme48 < Formula
   sha256 "9c4921a90e95daee067cd2e9cc0ffe09e118f4da01c0c0198e577c4f47759df4"
 
   bottle do
-    rebuild 1
-    sha256 "e9751df2e3cfd1a007d74d541ca494a439645e3006ad354ddf65b0abfb370864" => :sierra
-    sha256 "af2ced8a13fdad5478f745c698b09071e71d84daca01c6e3e3c35961b06cbea4" => :el_capitan
-    sha256 "475d12c64562fc2498fcd8d9a8bab76d4f290444e43fcf04c40c745a7f6c6923" => :yosemite
-    sha256 "6ae24159bb6e2485465135ba60d60291be7681dfc9662e42f176bb9f9d4a6f00" => :mavericks
+    rebuild 2
+    sha256 "0b2edece2802af6e04f2d284f25de9d0708c9e720bec1b021e98971082e16d2c" => :sierra
+    sha256 "bf67dde1f3deb28b906c19cc313919fe31a18b086794996e57bfe8e049791738" => :el_capitan
+    sha256 "2571724be48c2e2e469cac952161fcfb006826fc14df463cd582daf3326896fc" => :yosemite
   end
 
   def install
