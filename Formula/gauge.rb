@@ -8,9 +8,10 @@ class Gauge < Formula
   head "https://github.com/getgauge/gauge.git"
 
   bottle do
-    sha256 "899ed7d2759fcdbaa722f4382deeb1430c0ee027f518102813f3d751c56edd76" => :sierra
-    sha256 "28887ce68ad1a7034e1363923763f8f5b637eaa18eaea564a6dc5130dfb2790c" => :el_capitan
-    sha256 "7a02824e76810210323011dec229fdf666714446eff1f28e886bc05be59583ff" => :yosemite
+    rebuild 1
+    sha256 "b2d34c77893a668aa02af4b525726fe4fec09669849df0043858e6def5fb6349" => :sierra
+    sha256 "db002dafe9bab0df855fd3d6528fa62006cd73d4171c777228136c07021af061" => :el_capitan
+    sha256 "88459ab8bbb44fcb57123e5ce9d0c4abc2238f6569c8ddccce5dfdec41a36257" => :yosemite
   end
 
   depends_on "go" => :build
