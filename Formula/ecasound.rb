@@ -5,10 +5,10 @@ class Ecasound < Formula
   sha256 "39fce8becd84d80620fa3de31fb5223b2b7d4648d36c9c337d3739c2fad0dcf3"
 
   bottle do
-    sha256 "789fd275a49c7017ee25d1f5e00a802b3c5f2baa5d54db3753c566e04cd335c2" => :sierra
-    sha256 "a0bfadb79c1b81c2764290a4cc6e2eae09bae34e4ec54f06e6d4d669bceed331" => :el_capitan
-    sha256 "087b99f6242cfb60eaf73b8f79643d3a78ea53dffccddeb2f89757c3835380bd" => :yosemite
-    sha256 "e1230a9513d1011c60a51569fa8cee5671dc79867c75c8b548005b5949984a7f" => :mavericks
+    rebuild 1
+    sha256 "079f4a5db103cb5163b281363b7e98dd0eff6ed91f8f7e6054cc0fcce0a83478" => :sierra
+    sha256 "42ca9570a2865024f1983b20dddf1674fb4cfe3bd421f0b142618a6467711be6" => :el_capitan
+    sha256 "e79f07e5a679f53e62b118a6f06ac29edd775f179bb2468543a70307b8cc532e" => :yosemite
   end
 
   option "with-ruby", "Compile with ruby support"
