@@ -7,9 +7,10 @@ class Irrlicht < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bf23da843d21ab650999c6766b20c4940d589caaaaf2b651726a2c09acb472e0" => :sierra
-    sha256 "4f75c007fac42d0c5970afcbac919ccf32a2f827ea1d153461a2f6bffb638be8" => :el_capitan
-    sha256 "4eaaf9df3b87d34a4ed562d3bedb4a07bbfe8ff069025f3d28000755c09a4d88" => :yosemite
+    rebuild 1
+    sha256 "1298ea154514a591dbf1915a7b47973af893e2b14fe3c05cde6e0bbd36db9bf2" => :sierra
+    sha256 "bff0800a22f0052282a2f48c9220318b1d4c5d5a52c8dcc9aa090006e3b204ad" => :el_capitan
+    sha256 "c0970ac2498bd177d7ddaeca6c42b951a62ab85c4919654f0091fae12babbba6" => :yosemite
   end
 
   depends_on :xcode => :build
