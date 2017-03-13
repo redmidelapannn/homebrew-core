@@ -6,9 +6,10 @@ class Taisei < Formula
   sha256 "1561c84c9fd8b9c7a91b864bdfc07fb811bb6da5c54cf32a2b6bd63de5f8f3ff"
 
   bottle do
-    sha256 "e41fc7a5c28ca97217135e413af393e05d09b7a4a2131a0fb292f9873f6bb326" => :sierra
-    sha256 "4382fbd49e142c1fd318169ee8c91f1fff390c516b2f5fc5c6d975b330f8f472" => :el_capitan
-    sha256 "3d5fa72700737fa76e87e21e6176b32f88ef4f5d464a2a0b4fa4b98b8509251b" => :yosemite
+    rebuild 1
+    sha256 "b9e55e971cf6ba19153365e2530fe883149e7c126eb2ce0c1a6ba66d6c835c7a" => :sierra
+    sha256 "b09715c96a10ca4a7ac4fe7ade953979f08795a8a223e879bc1f7f0ba3d31293" => :el_capitan
+    sha256 "88b741f57534fb39179be59887010e3206ea4acde37c479cd7a7d03f70ca124c" => :yosemite
   end
 
   depends_on "cmake" => :build
