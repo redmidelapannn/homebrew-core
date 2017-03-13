@@ -5,10 +5,10 @@ class Gwenhywfar < Formula
   sha256 "6a0e8787c99620414da6140e567c616b55856c5edf8825a9ebc67431923ee63a"
 
   bottle do
-    sha256 "4134a1899f551ec91f6495d69a3939c9aa30d38f292291f00869709d0f299020" => :sierra
-    sha256 "9b78e775989003bfe9e79bc745ef477b2c485c58d4aaff947cf4a44e86f1fc9b" => :el_capitan
-    sha256 "f0beb1b72cafab6696ab63c5a0ae5aa22040095bd6ae8997121f1725e7a11d5f" => :yosemite
-    sha256 "ef8ea6c7fa80e6e89faf9dbbc3f2aa7ef89fd31e16b940abd64ed036a7b1069a" => :mavericks
+    rebuild 1
+    sha256 "ef9b52aaef94054fdda3c1ebbc1ca888aa83f2bc0225c6912802b72afa186f2a" => :sierra
+    sha256 "dac0b2c48a6035f1395b2cdd5e12c572a7ed508b76aa43ea01fbe2732a9c3a6f" => :el_capitan
+    sha256 "b1c16936cb8ec33413fbc522c88f20646970feb30d4cc0d7733ce97810ccacb2" => :yosemite
   end
 
   head do
