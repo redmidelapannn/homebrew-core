@@ -6,11 +6,10 @@ class Libvorbis < Formula
 
   bottle do
     cellar :any
-    sha256 "db1a358423016b9c2f64fac76e7e3f881ba2e33fe1d802f14a99fae781a0d825" => :sierra
-    sha256 "e0bf33971c2a59b9503b8f39f68a1aa44e25dd292d610d77508015638170e274" => :el_capitan
-    sha256 "cf396496dc6daea304bb81e9e099831c97bf6756ac91954c26993cbb39bc97c2" => :yosemite
-    sha256 "9e042bea299b9fb2dcc7bac8140ae3544d1bbe74a8ce3b6204836d2704f641bf" => :mavericks
-    sha256 "0f9ad569a98c521e28447cd85ecc18e7a4a61585564d86251d3225b0099f84aa" => :mountain_lion
+    rebuild 1
+    sha256 "ade609a31b5c8d345d43ac7f2ad78d8c143783fa53a86d3f4e18a2a12e111a3e" => :sierra
+    sha256 "75da296e59f47e5f88b4f145b34fcfdfae240523f5c7f9a7a165608d33118848" => :el_capitan
+    sha256 "9b46154e2ddd01709d3f8529d2de6a3e88770451b6fab8ae88b96d2a122801cf" => :yosemite
   end
 
   head do
