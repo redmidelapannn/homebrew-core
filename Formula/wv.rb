@@ -5,10 +5,10 @@ class Wv < Formula
   sha256 "4c730d3b325c0785450dd3a043eeb53e1518598c4f41f155558385dd2635c19d"
 
   bottle do
-    sha256 "b9ae25d64690436f441057dfa9aa3789deed460c743b3444642eefff761c76f5" => :sierra
-    sha256 "9b9e70a5e3bb7e6d29c5af4eed803a7fcbe31df03deafaf35cba1cfc949f35fa" => :el_capitan
-    sha256 "9924b96a1c67c774976b40de2083717a833d4dcaf801fba100f98677af01051c" => :yosemite
-    sha256 "5076c41e62ea86c638b482904ca0e30cffb2cbd3eb3acfe7b105cb4b28766838" => :mavericks
+    rebuild 1
+    sha256 "29b22b88d6e8ec81d7d56d6c1d25358635de182d39a41d1175c7b0e76ea32082" => :sierra
+    sha256 "0595f0163eb202ddc4c808ba930aa5945d26cf0267e6f70e5d95f833857ec551" => :el_capitan
+    sha256 "c0fa62a7edcb70edadef15c8aedebf0aed4e679bea8ad4f13133da7e95df873a" => :yosemite
   end
 
   depends_on "pkg-config" => :build
