@@ -8,10 +8,10 @@ class Lasi < Formula
 
   bottle do
     cellar :any
-    sha256 "777226a80b3fad497241ea6810d16d39846a4ff2d51acea4d4924cb44751419b" => :sierra
-    sha256 "35a95d3bf2ad71999df616c06417883d25d22f343a40ce3a27b6a3fb11c1e689" => :el_capitan
-    sha256 "4e1c3dc744e265709bc196acc936d8bf4307196972a772130a812c8c7bb1a80b" => :yosemite
-    sha256 "31c9f3a86877476a4c1c6fbdd8c6064512cf3aebc50b25bf0be53a1b5ed2ba1e" => :mavericks
+    rebuild 1
+    sha256 "2f0f8c10d302fd58722bde01feee7d93c7d9ae42a7401b955d081484e7b315c9" => :sierra
+    sha256 "85504ce4a4543c3b2c42dc50db499bec3b4562e4b24b252db72caad7a0b73e3f" => :el_capitan
+    sha256 "1bb6305b1a307665de30924308406c3c1f11e95c84135d28625c6a477b370deb" => :yosemite
   end
 
   depends_on "cmake" => :build
