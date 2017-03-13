@@ -6,11 +6,10 @@ class Teem < Formula
   head "https://svn.code.sf.net/p/teem/code/teem/trunk"
 
   bottle do
-    sha256 "31d19cd9e0e4c064fb743c41a286736503e61b1d5e4b81f29140fcebf2cde2c8" => :sierra
-    sha256 "5ade8dc18d0c66ac154d802df6c64e88222781b6fc427a841fb1f4047f8c4e49" => :el_capitan
-    sha256 "3974a9a565044cb4de798eb1bec2b8980eef03eb6bd7ec6c98cddd606f7c8a29" => :yosemite
-    sha256 "c340d18c157b81be663636ff72326ecb946313ea1dfc533a6ba95b9efdb6bf44" => :mavericks
-    sha256 "96733ab04a4a3a7feb5db5c95f58b0a0c1ef418b91988d1000898a46c142a3ec" => :mountain_lion
+    rebuild 1
+    sha256 "a3f695b53c7386fc72cab446d99d3e059838192ab9671e9a4f1318a5bcf46a36" => :sierra
+    sha256 "f748637b97d2941f8913bc266f5dd3e6dff233b706f4c94a3f0e0aaaa7865cd4" => :el_capitan
+    sha256 "08d4d0ec35dbe8b4eb02301e43700d4aa8739dff5a0070586c832320ef6528c1" => :yosemite
   end
 
   option "with-experimental-apps", "Build experimental apps"
