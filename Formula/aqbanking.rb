@@ -5,9 +5,10 @@ class Aqbanking < Formula
   sha256 "0652706a487d594640a7d544271976261165bf269d90dc70447b38b363e54b22"
 
   bottle do
-    sha256 "55d0359a888464040bedd5a893d2894435ad388d5374bab9728abe49a4dc00e1" => :sierra
-    sha256 "ff953f175c8f6ddf772da822e133201c48085c2e7ccc08b7c53135daeafa5200" => :el_capitan
-    sha256 "3cdbfa38e1459b83e70dae91fd68640207ca838098e1de21966583dea8122a63" => :yosemite
+    rebuild 1
+    sha256 "78c7a6e254365f6e6a4bcab3d2d9f122ec535407945d3c4aa0ab78befe8e8371" => :sierra
+    sha256 "6cdc4c3a5ee27d23ee4c093b2fabc82a316640dfd46d250948dda5a74798cb3c" => :el_capitan
+    sha256 "f54188f0b0b020dad20ffb03c995fe81ca002063d80a56ec538d3e2a8794ff95" => :yosemite
   end
 
   head do
