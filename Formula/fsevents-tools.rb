@@ -6,10 +6,10 @@ class FseventsTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8190bdd8d9d88f9ee6ebdc56434551a44a39502225160ad2604562d9c7ed0822" => :sierra
-    sha256 "a15d1b927a74d8b76b553d696343ac5fe82396f8b5b052e15adc6c3270f2ccd6" => :el_capitan
-    sha256 "9d4bda3175c503f8ff65f134495de43471854eacc3396a9cf1895d5c2b91cb63" => :yosemite
-    sha256 "045442f0279c20196e0941fbf160557ebdea04169267ba8105717d7d207cc346" => :mavericks
+    rebuild 1
+    sha256 "e37f936608b8a9f36c4002144157999e4be7894c393de8bcaaab0030baa2e268" => :sierra
+    sha256 "dbec9a1a0a249ce2646910d955af9d2c49a3fd57392ffc23df1bde17a55e0033" => :el_capitan
+    sha256 "027f4fdf6175209725b2b80f981acb161d7f5c27add219e8a57ef392d4681d62" => :yosemite
   end
 
   head do
