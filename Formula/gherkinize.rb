@@ -8,10 +8,10 @@ class Gherkinize < Formula
   head "https://github.com/wesovilabs/gherkinize"
 
   bottle do
-   cellar :any_skip_relocation
-   sha256 "7da053cb4f0a73f55dc0cfaeea6628422e214e29c76a3f82c6ebe58faa2fe659" => :sierra
-   sha256 "2499eb9e86e59b87640cc93fe8270be64cb1b5ce2a7e5a8d5a0bdcf69e68f054" => :el_capitan
-   sha256 "4d781dd4d6bf9b3217d5d197b987583392ba8b6a4abc539720360041779889aa" => :yosemite
+    cellar :any_skip_relocation
+    sha256 "d06dbe7a0e2bcc68bddc7a187ab99dd130bec24876faddc331390e1f55e0de5b" => :sierra
+    sha256 "a6b65679c90a571324c95bcd6f616f7025ccc134b02ab7394b513d299bb45727" => :el_capitan
+    sha256 "9d3c0474bddff937fafd356375e8280e58fdd37bfc136ec2e0be5d24eba04ce1" => :yosemite
   end
 
   depends_on "go" => :build
