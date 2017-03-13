@@ -6,12 +6,10 @@ class Libvbucket < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "69c96d5758926202939b79930d82da27bd65d50e0ef19d844ac705cacd99ba58" => :sierra
-    sha256 "cc3333f73161a96deb410ae0b8185a74e0c2a5bc8e62018929b17efe6ef732b8" => :el_capitan
-    sha256 "dd69ae3261c461b15bd29e435ab95496441dfde4535cb7d6925527cdfa8c64dd" => :yosemite
-    sha256 "920f0656e62f10e6fc6649b0edc4a6f46dc196f931b7c14833608d9e926a4d09" => :mavericks
-    sha256 "e0cd80d589c2375f3b2f4d0f1f7f19b94264f93d603d9539c0da637eb473ce72" => :mountain_lion
+    rebuild 2
+    sha256 "80e63bb8de1486826a65895fd3a9b64daa56a80f3635047d5cb9f0bb09963aee" => :sierra
+    sha256 "af03ba478676d238085f4bd8fd93f70e80b02bc57d9831816510b68eecff779e" => :el_capitan
+    sha256 "917658bff797a99170d2545ca984ba58063b0582bd317aeccd3e19601ad1b3b0" => :yosemite
   end
 
   def install
