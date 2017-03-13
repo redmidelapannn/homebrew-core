@@ -10,10 +10,10 @@ class GmpAT4 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ffe0f83f33aa04955e44436faa88c7a0779469dd08017e4e29359992f0d38639" => :sierra
-    sha256 "dd54633274e190e6c9ab087a0288496ba004c567b4e9042460e22cf89f9da47a" => :el_capitan
-    sha256 "43cfbad47c614698d833e285546e18d05ebd71ebc8ce1227f580b189be2ed05b" => :yosemite
+    rebuild 2
+    sha256 "825de5e5e663f2c703b4e86b1433156bed9b75d9a0d0d91992424197e3f256b6" => :sierra
+    sha256 "ff3e7a98d75e61f5d5a56a998b607721e1567d79098e838bc36e53286fb00146" => :el_capitan
+    sha256 "d8375f1b9c4e20bc106704edc8181e0cdb5b6ebd1b6c4985d76b64170ed0dafb" => :yosemite
   end
 
   keg_only :versioned_formula
