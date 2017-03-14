@@ -35,16 +35,12 @@ class Guile < Formula
 
   devel do
     url "https://git.savannah.gnu.org/git/guile.git",
-        :tag => "v2.1.7",
-        :revision => "c58c143f31fe4c1717fc8846a8681de2bb4b3869"
+        :tag => "v2.1.8",
+        :revision => "e3374320415df973a6d8b0e1065b5b74e9e3e5e0"
 
     depends_on "autoconf" => :build
     depends_on "automake" => :build
     depends_on "gettext" => :build
-
-    # Avoid undeclared identifier errors for SOCK_CLOEXEC and SOCK_NONBLOCK
-    # Reported 19 Feb 2017 https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25790
-    patch :DATA
   end
 
   head do
@@ -69,14 +65,7 @@ class Guile < Formula
   end
 
   def install
-    unless build.stable?
-      # Avoid "address argument to atomic operation must be a pointer to _Atomic type"
-      # Reported 19 Feb 2017 https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25791
-      ENV["ac_cv_header_stdatomic_h"] = "no"
-
-      system "./autogen.sh"
-    end
-
+    system "./autogen.sh" unless build.stable?
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--with-libreadline-prefix=#{Formula["readline"].opt_prefix}",
