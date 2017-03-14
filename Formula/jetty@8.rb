@@ -5,6 +5,13 @@ class JettyAT8 < Formula
   version "8.1.15"
   sha256 "2015725c8d1525f6d57b24ab5b16c745945a7a278dbedd1fba62016be125fb84"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "91af4e93499870c1e39d416d913c8137732e20dfe604d5d76ec76c9551567183" => :sierra
+    sha256 "91af4e93499870c1e39d416d913c8137732e20dfe604d5d76ec76c9551567183" => :el_capitan
+    sha256 "91af4e93499870c1e39d416d913c8137732e20dfe604d5d76ec76c9551567183" => :yosemite
+  end
+
   def install
     rm_rf Dir["bin/*.{cmd,bat]}"]
 
