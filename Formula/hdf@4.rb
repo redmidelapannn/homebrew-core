@@ -5,6 +5,13 @@ class HdfAT4 < Formula
   sha256 "bb0e900b8cc6bc89a5730abc97e654e7705e8e1fbc4e0d4477f417822428d99b"
   revision 1
 
+  bottle do
+    cellar :any
+    sha256 "dd89cd3094ed6bac1426dc8d2c9db6ed8e2eaebeceb94cb346b90a6c9d8d8124" => :sierra
+    sha256 "e5cd4655bcc1901479ce0f036becadf46237b9230db7cc7fbe715d927fe43202" => :el_capitan
+    sha256 "5ea045049c1b9bfcedd1a3dbb864d12d9ffb6f17a14bed66ca449a0b001e653e" => :yosemite
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
