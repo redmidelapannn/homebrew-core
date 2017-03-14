@@ -6,9 +6,10 @@ class Spigot < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1d2b314268104da5860c5a9bee9bdc432a1b51a0ca65054d6db245d2b631ddb0" => :sierra
-    sha256 "36174128a0c9666b2401bc8818bb662a1a91914ff8bee9c0f3e017cf5287aec9" => :el_capitan
-    sha256 "85ded0973a21995681f45284887d5146ae7982e955c2353d0e8d2297751b38c0" => :yosemite
+    rebuild 1
+    sha256 "10623fa4386e7d73dbd958d00f077f28a328eb2291fea5895de51129c4ee524b" => :sierra
+    sha256 "770e89836d3882eeb267c75495293ae5c72d19e184423797df150ef2c3091922" => :el_capitan
+    sha256 "c22fc602b00ab040a10b48b0aadc4db615b255fd15e490023c125a5e1e03f392" => :yosemite
   end
 
   def install
