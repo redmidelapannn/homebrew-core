@@ -4,6 +4,13 @@ class InfluxdbAT08 < Formula
   url "https://s3.amazonaws.com/get.influxdb.org/influxdb-0.8.8.src.tar.gz"
   sha256 "97fb5a4ffda1b333187ebd6449466d38d864686a3bd50a6c7bfb3deeae06cfae"
 
+  bottle do
+    cellar :any
+    sha256 "c424cfbd45afe6ffde0e3c923ab593576b6498b85aad3e8871c89536b0b8cc68" => :sierra
+    sha256 "8620d3a1f83056b4e7b687a6ead4a5947101f2e65d82ddb70fcc71556dfe92f5" => :el_capitan
+    sha256 "0ceca6dfe54a16319487623e9d22a89ace3b078e1ca27543870389b5c040a29a" => :yosemite
+  end
+
   keg_only :versioned_formula
 
   depends_on "leveldb"
