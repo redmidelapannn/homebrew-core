@@ -1,12 +1,9 @@
-# Major releases of erlang should typically start out as separate formula in
-# Homebrew-versions, and only be merged to master when things like couchdb and
-# elixir are compatible.
 class Erlang < Formula
   desc "Programming language for highly scalable real-time systems"
   homepage "https://www.erlang.org/"
   # Download tarball from GitHub; it is served faster than the official tarball.
-  url "https://github.com/erlang/otp/archive/OTP-19.2.3.tar.gz"
-  sha256 "51dd3eda2b5e835588ed215328c3943b69bc353d892577411570641f37c51ad8"
+  url "https://github.com/erlang/otp/archive/OTP-19.3.tar.gz"
+  sha256 "fc82c5377ad9e84a37f67f2b2b50b27fe4e689440ae9e5d0f5dcfb440a9487ac"
   head "https://github.com/erlang/otp.git"
 
   bottle do
@@ -34,13 +31,15 @@ class Erlang < Formula
   depends_on "wxmac" => :recommended # for GUI apps like observer
 
   resource "man" do
-    url "https://www.erlang.org/download/otp_doc_man_19.2.tar.gz"
-    sha256 "8a76ff3bb40a6d6a1552fa5a4204c8a3c7d99d2ea6f12684f02d038b23ad25cb"
+    url "https://www.erlang.org/download/otp_doc_man_19.3.tar.gz"
+    mirror "https://fossies.org/linux/misc/otp_doc_man_19.3.tar.gz"
+    sha256 "f8192ffdd7367083c055695eeddf198155da43dcc221aed1d870d1e3871dd95c"
   end
 
   resource "html" do
-    url "https://www.erlang.org/download/otp_doc_html_19.2.tar.gz"
-    sha256 "c373c8c1a9fe7433825088684932f3ded76f53d5b8a4d3d2a364263f1f783043"
+    url "https://www.erlang.org/download/otp_doc_html_19.3.tar.gz"
+    mirror "https://fossies.org/linux/misc/otp_doc_html_19.3.tar.gz"
+    sha256 "dc3e3a82d1aba7f0deac1ddb81b7d6f8dee9a75e1d42b90c677a2b645f19a00c"
   end
 
   def install
