@@ -7,9 +7,10 @@ class Stockfish < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5db21467b27838a4ed54910d457690a34c011b9a0e51208aace1064f8bb33dba" => :sierra
-    sha256 "5db21467b27838a4ed54910d457690a34c011b9a0e51208aace1064f8bb33dba" => :el_capitan
-    sha256 "eabc1553a23ca9305ffc523afa9432772f144b48dcd6315a2f196ae512825279" => :yosemite
+    rebuild 1
+    sha256 "362486cf7abffe823659bbfc2d898f182643ddcdca51bf8c31afe05141df8f68" => :sierra
+    sha256 "362486cf7abffe823659bbfc2d898f182643ddcdca51bf8c31afe05141df8f68" => :el_capitan
+    sha256 "20a4a619802b8b464abb16b8dd8be08e587600681fe1c1ab6c9610ee4cf01d7d" => :yosemite
   end
 
   def install
