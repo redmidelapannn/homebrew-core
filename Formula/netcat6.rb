@@ -6,11 +6,10 @@ class Netcat6 < Formula
   sha256 "db7462839dd135ff1215911157b666df8512df6f7343a075b2f9a2ef46fe5412"
 
   bottle do
-    sha256 "134b64d2bca03d774a1375c9898504b5aba30de50dff543ca37033b7334fcaa5" => :sierra
-    sha256 "75fd93f36d745618b9c87a1f635a100db7fc2c3d659ecf39e77a282bf0efdb1b" => :el_capitan
-    sha256 "7020abcd43b4b1714a43e42f468895c6c02ad2a8a214bc36761b6b5f615cd127" => :yosemite
-    sha256 "7b1d4a701e8fadedea4e5cc89d7cbcb5bf476476557975a71a681850c50bf872" => :mavericks
-    sha256 "361c72d301addec6d417b52535da84dd924fdcdf9794889dc5ac0f240bb31b02" => :mountain_lion
+    rebuild 1
+    sha256 "cfc219728c492496188f6d61f285c39ff276b9d546283b06ee0425564faf6f2d" => :sierra
+    sha256 "0ee4ca385fa2d165fccb148a9b5d1358fe414744bc1ad029b892cd8541eed3ed" => :el_capitan
+    sha256 "b18ce8178009e595ebf8ac34579de3ff82d7990b6dfa116e95b5305ad00637c4" => :yosemite
   end
 
   option "with-silence-patch", "Use silence patch from Debian"
