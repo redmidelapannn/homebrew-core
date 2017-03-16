@@ -6,9 +6,10 @@ class Lasso < Formula
 
   bottle do
     cellar :any
-    sha256 "f2e0bc889badb79e430b35c19e8aaf26d23370fb4113c1c1a96d81d0d6296480" => :sierra
-    sha256 "b36834a1ad4134e0ea4c20f93ea48eba5cbe27daa8f4f74df10bf279c34e41f5" => :el_capitan
-    sha256 "5d088dabb95573f5b018ef9338ac1cdf0263e8a6178bda2f519b2c684df6d1c1" => :yosemite
+    rebuild 1
+    sha256 "d61d48ecba8656d06705984bd95c4cc79d595233ae83680684f7554bde957806" => :sierra
+    sha256 "a840503b37869ee6a6a43841eed7b2932ad75e5becd7d54359b062336a8bc859" => :el_capitan
+    sha256 "01015e9df323f337279f178228f3abb8aefccdb14a97217c3b4f3eba69d2583f" => :yosemite
   end
 
   depends_on "pkg-config" => :build
