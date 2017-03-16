@@ -6,9 +6,10 @@ class Fairymax < Formula
   head "http://hgm.nubati.net/git/fairymax.git"
 
   bottle do
-    sha256 "95706f3f4968922cffae144d91e64d26a4c88026f228d555f144a4ad27c37007" => :sierra
-    sha256 "9a829afcded25d1e895e09e91e39ca44b4aa9a6fa97f5315e348228224765d7d" => :el_capitan
-    sha256 "b236b3da5f94128741b7ef25407f5a8a30158e108e9010736fee51df3f557195" => :yosemite
+    rebuild 1
+    sha256 "52493593fa07c1603cacfc8742b9684996c37dffbcbdf987fbe164b092ced623" => :sierra
+    sha256 "e5db7efabe3ca24d27ccec1cd033380dcea7ad363d6bdd80f96b0cb42fe450d8" => :el_capitan
+    sha256 "4cda5caafbafea08cb92f01923482570ab083c6499f8585e7befc601f7e27127" => :yosemite
   end
 
   def install
