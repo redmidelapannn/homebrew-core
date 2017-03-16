@@ -6,10 +6,10 @@ class PostgresXc < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "9219ea92a221cae45f87c8119afbae22a190c396f41972ab2f8019ede381207d" => :sierra
-    sha256 "8c17e52f8c1171e0a4e36d77180ee5113aa61d35acbe0d11741372d3fe93e9f5" => :el_capitan
-    sha256 "3dc1e2e4d10cc1cf2604b5bc91c4167257bd84b27a167580d2342e7ab7539428" => :yosemite
+    rebuild 2
+    sha256 "539baa8de28ec31ce4829b138b94f722c0049a1071a6cabb237f8fdf0466e9ea" => :sierra
+    sha256 "f42ac777308b3fc2bc320d7c226967490e13886b5ed2ecfc7a403f285770f47c" => :el_capitan
+    sha256 "19e45945d4b1c8918e444595c13dce49f8c78c842dedb6daad8cb3e3e6be3fd6" => :yosemite
   end
 
   option "with-dtrace", "Build with DTrace support"
