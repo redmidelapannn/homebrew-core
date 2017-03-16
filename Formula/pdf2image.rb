@@ -5,9 +5,10 @@ class Pdf2image < Formula
   sha256 "e8672c3bdba118c83033c655d90311db003557869c92903e5012cdb368a68982"
 
   bottle do
-    sha256 "46df7ae58a1bfc73cd1a1c1075de032724514d29995e965169d69f51409cad7e" => :sierra
-    sha256 "c12d781ab5136a717cb88cadb50b2dfcd1f67cf263b5b668b1e171f562bcb072" => :el_capitan
-    sha256 "a0bb792123e4754d5cf80cf248e8932dd1885616af2c4c9c7f00e35cda962725" => :yosemite
+    rebuild 1
+    sha256 "601534f37e2919e041b9a1a11fc3600c5cafe179a1061485f4831dccc33d9aaf" => :sierra
+    sha256 "835eeece3ad180ac45bc8cae216c2d5c913774b81ab3622796beb939d4139e2c" => :el_capitan
+    sha256 "c2e272f0bef8ee7f6d2a612f1471931a5ccc47402cb09879356aab50ed48cb5f" => :yosemite
   end
 
   depends_on :x11
