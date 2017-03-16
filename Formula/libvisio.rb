@@ -7,9 +7,10 @@ class Libvisio < Formula
 
   bottle do
     cellar :any
-    sha256 "ae278d471d1d7186905d705c4250bf3fe93e7fffc8819e33b357e52de3b9fe13" => :sierra
-    sha256 "265e259be67cd149b2b9a6b56b15e51f0e7f4b401e2c0671c2cdf7dca72a192b" => :el_capitan
-    sha256 "d71a0ec9ad1fa8ea8775332c809ee202d9b7049f546da2a89021055ad8a3c696" => :yosemite
+    rebuild 1
+    sha256 "ffab6266548ee41c204134076c0b0eb18fc2bde3db8b1206752054261ff06e0d" => :sierra
+    sha256 "3e78f3d6eef0ba75998e91b7bc207a7cb9f72b87aa1041269aa7fd7028aba46f" => :el_capitan
+    sha256 "96ae4ad25b5ddad10b8df1bc794f7d5b6c28019fbd174400b9dc2880cce312ad" => :yosemite
   end
 
   depends_on "pkg-config" => :build
