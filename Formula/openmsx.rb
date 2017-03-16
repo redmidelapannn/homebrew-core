@@ -7,9 +7,10 @@ class Openmsx < Formula
 
   bottle do
     cellar :any
-    sha256 "587193c0792a28ff7d94f0fe2cdc3e724991bb07f871a3337c268efc0482cae0" => :sierra
-    sha256 "d72bf6eb5aa50f118374e27a698a7481437e2ac8df368844976c7317214aba66" => :el_capitan
-    sha256 "340fe139996bbd87274788932db4d3e64dcdc4f2f969fc405b58c6e16f7fe120" => :yosemite
+    rebuild 1
+    sha256 "1e2d74abe57588cd739dc7313af84f4214fcc9368300ab649d5ab582b79954ec" => :sierra
+    sha256 "1e2d74abe57588cd739dc7313af84f4214fcc9368300ab649d5ab582b79954ec" => :el_capitan
+    sha256 "9dbbe6efea3623c28351192d5c2e6bd827df033e666def08cdb85edac8f4c313" => :yosemite
   end
 
   deprecated_option "without-opengl" => "without-glew"
