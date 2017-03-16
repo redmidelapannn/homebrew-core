@@ -6,10 +6,10 @@ class MacRobber < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "160983c4988cb22bd68a0beeb48de91a8af3461722a42e65e523c4a6af08f444" => :sierra
-    sha256 "0647670a38eb3ae5d8085ad1126f8d70b6e9ac99b086c0ec2f3301ac51ecdb3f" => :el_capitan
-    sha256 "5e8b7656cafbab151ed82702cbd7e712ee30af62b6a6c031f9f440e95c174ed0" => :yosemite
-    sha256 "87b8de3e43626713461398aac48d12a4b494c36b8da6cd4e6587d352fcb251fe" => :mavericks
+    rebuild 1
+    sha256 "a5394f80be051229a6a676687f7aa49442f4d264806c1fcac69df78c277c8267" => :sierra
+    sha256 "764a12db87db453f9c13cdfb9ce456c8d032c84d373444b0463dd475d8a03cc4" => :el_capitan
+    sha256 "dddfc1f0544f18a01602baf398fb269e0f9185b1b71f66b3e7e8b15aab0461cb" => :yosemite
   end
 
   def install
