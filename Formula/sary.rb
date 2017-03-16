@@ -6,11 +6,10 @@ class Sary < Formula
 
   bottle do
     cellar :any
-    sha256 "35da6b40c316be03a8375beb5001ddff5827d8728bea5d5ee5fa86e2ab885089" => :sierra
-    sha256 "aedca3dec29eb2b2aea582002e23cd1b92a92bf30e6b46f8241f3c48ac312f00" => :el_capitan
-    sha256 "1ef3eadf64fd9bcaeed1f01e7b03504fdcfbbe5bb65fe7e5da5aece9b73055a3" => :yosemite
-    sha256 "b41f84ca9dc8bb27eeba82e1d13008f8b56a357ede1ab1987337561347cd6d94" => :mavericks
-    sha256 "a1f528db66834372eac1e85513cbbfa8bc1242988bd31a986a9ea0fcec768b37" => :mountain_lion
+    rebuild 1
+    sha256 "f295899c6c862d9f3f8fe592f4fdbbbc5985ec44d3c769304d168d740002eabb" => :sierra
+    sha256 "2279aecb95732c4bf1f4c2f925050450a64ecb9634f000b5b2c90e73437d13f0" => :el_capitan
+    sha256 "91fee767f543965f96b9289ff4768e42c43bc123f5186b503627f9423e4988b8" => :yosemite
   end
 
   depends_on "pkg-config" => :build
