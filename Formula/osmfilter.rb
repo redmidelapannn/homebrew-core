@@ -8,9 +8,10 @@ class Osmfilter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f9d4bb82465736f6a7be7fb75dddc089474ceca9e468a813067a93fa851a35c4" => :sierra
-    sha256 "bfcf14daf9df379499b9c53abf604017b746d7d828d5f235ca9a771191a9d934" => :el_capitan
-    sha256 "db7d1ae3b020f0edb9b577701be214abdd347fca463ef6d69dce90913e687691" => :yosemite
+    rebuild 1
+    sha256 "f69f72231d8403d5f388db775c0a1a291a53d9ab78af438e7a4e380f34e6c1a4" => :sierra
+    sha256 "ad815a2fe50b7b5051fdd892fab741684afc4a16d0c132d4599e665c2fddd85a" => :el_capitan
+    sha256 "ead2e0ca426b3732eb24965b44c1653294cc663cdb7c1a2f97711fd32360bb9a" => :yosemite
   end
 
   depends_on "automake" => :build
