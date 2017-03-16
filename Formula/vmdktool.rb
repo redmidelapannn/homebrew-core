@@ -6,9 +6,10 @@ class Vmdktool < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3fa294be9d6e9e6b56435526520262aaa86f5909cc10b9ccf9d9670ae3ac0e3c" => :sierra
-    sha256 "8604a90f9ad0f3b04767c021a4d24dacdcabd788767df56a45e3913231d4336e" => :el_capitan
-    sha256 "f19ae3ac92ae4400c7139771f3a5ec07d32bf2e3ed49bfa7add445f8a680ef0c" => :yosemite
+    rebuild 1
+    sha256 "12bc9991a6d7c9ca49e9661f7c06f9dec5940039744006244d6cbeb2ca79d54a" => :sierra
+    sha256 "97f5813508a3e2f6f491c4900d66c7a9f27bd6b7ab1cae4984fa6f80b21a6dbc" => :el_capitan
+    sha256 "9c98d0d7ea634c009e63cca0237ffbfe5875bea1280013e9f6846d47ac5b3e06" => :yosemite
   end
 
   def install
