@@ -6,10 +6,10 @@ class Wput < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0a8c4296a3e14d8b420f65464293b000dd1bd2e33a802c92e1812f0c267d3f0f" => :sierra
-    sha256 "8e4eeb941d98dc0313b87682b7ae659bbceac59426cf0483c2ae2676cf5b924b" => :el_capitan
-    sha256 "97bc045a03ddd01106304530a453a47693fbd5f3419090310c91a187e1d23931" => :yosemite
-    sha256 "3e9c649d134fff0d79d23a2eb575e440354e938b0f261c5fed53efe9d6f3f8c9" => :mavericks
+    rebuild 1
+    sha256 "316b31bd737973f10e6d041e8aaa350c9831e1b63f7e9259610104bb049467d5" => :sierra
+    sha256 "ef33af88fdbbab879c2c764de24e8205cf7a5ef7324713da29dd7a48308ae311" => :el_capitan
+    sha256 "8145d6c51446989357cb27e313c4696a6085b0f56c6b0dc8a2ccde65479409fa" => :yosemite
   end
 
   # The patch is to skip inclusion of malloc.h only on OSX. Upstream:
