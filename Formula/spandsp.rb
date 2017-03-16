@@ -6,11 +6,10 @@ class Spandsp < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "96ba78f9aa0de0ae39edeab9158b8b221e138f814e718c732244611e598d2e9c" => :sierra
-    sha256 "5e8122369eb0639aea23506d55abc5cb3617a0ce3478e8432965edcda07ba56d" => :el_capitan
-    sha256 "d5d2d03d916afba36ac2ab5699991ada42b7640b8c9c324eaf39d17fd582e97b" => :yosemite
-    sha256 "a565b781cab589128aa3667d1de567443bf858c7f06416e7e9a66cfd45302b3d" => :mavericks
+    rebuild 2
+    sha256 "c79717d764e7e6b7aa76eb0c9b2c38190ac8660a26550a11ad589c68b60ddafc" => :sierra
+    sha256 "9a489a41f1d2f25cbbcfd98ec71026ecc4b81938a9e4555ded450870691ff0c4" => :el_capitan
+    sha256 "9226f8a09bd9dba31822101e1dc60c668b9e096daf1ba1e3bfb519b0c8e5e10a" => :yosemite
   end
 
   depends_on "libtiff"
