@@ -6,10 +6,10 @@ class Potrace < Formula
 
   bottle do
     cellar :any
-    sha256 "92bd882f0e2677dea634b63120e863b13d7681b9a2c184a8c978dd0a2e5b7e20" => :sierra
-    sha256 "f6f72b759dfb5ee3b82aa5a7e384dff6878be5149bb29947b5795c7e3ab24323" => :el_capitan
-    sha256 "3df21502abc9a5b5f77252c5db4b9aa3cd437bd9643a7674c3373794de723dfb" => :yosemite
-    sha256 "52944612cbb69793f5e17bc4e6608b37206e7dcb8e671c4970f2146fd1db26fe" => :mavericks
+    rebuild 1
+    sha256 "a5a2df2e4dca747da1de31c1694bd0cf572e88908cd57b1e8e9dc1071ad74e5c" => :sierra
+    sha256 "71919e74ceb26409369f6b5c5d3d55343b86461cad750221a79edc922d2f4d21" => :el_capitan
+    sha256 "85d6b47d36ac0df07ca8a986d520382cda3177e31413cce30fce66049f3d85bf" => :yosemite
   end
 
   resource "head.pbm" do
