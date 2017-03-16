@@ -6,9 +6,10 @@ class Nxengine < Formula
   sha256 "cf9cbf15dfdfdc9936720a714876bb1524afbd2931e3eaa4c89984a40b21ad68"
 
   bottle do
-    sha256 "6f24e86f6bf1b4a41b9938a99feafffc83469561031d16d5160543e0bf24e251" => :sierra
-    sha256 "2002c715a6f1d169ac67eedef28c924392abc9f3a4620913d96992b6a0ae6e85" => :el_capitan
-    sha256 "c7990df854be6f704eee378d7f149a87fdb8519ff6272711fe875be3b74e6c9c" => :yosemite
+    rebuild 1
+    sha256 "4549b95b35a0f9cbce6623be9c3d80db5e0199647f9572bd0b206a1aa8abd17b" => :sierra
+    sha256 "7e2be311b09eb50ee7364b382712d3652d70b6ea8efc3b266e5af820a974aabb" => :el_capitan
+    sha256 "ff87ab4633a87de96c28ffec910b5ad49795e021188842c566b62c10ac165647" => :yosemite
   end
 
   depends_on "sdl"
