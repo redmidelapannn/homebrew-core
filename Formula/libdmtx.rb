@@ -6,12 +6,10 @@ class Libdmtx < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ff67a8026fd8853489878fd980ec7d01a60b5b1bfa74ac45408fcf2ef8580bd8" => :sierra
-    sha256 "5517994e8a97229ac3ba665b5a13cb622f6bf09097c84d86cf85c72b1e1f4a37" => :el_capitan
-    sha256 "ecb61e93fa9c7698011856693ac7b5335008cbda9807cc5852f0b47dcf1188d8" => :yosemite
-    sha256 "c6c2c336211aca2d6fc9c1a71ed4028d99ce2e0f3f50b34e6b916068557c7c18" => :mavericks
-    sha256 "86300de879b8d17dbf3f075a5fa1f1d3762c1eebb77e0fdd05ed38f76b75769e" => :mountain_lion
+    rebuild 2
+    sha256 "9206b6837d12b8a89ba7a7752989e21ccb506b9265f51c435c71d24ed3873883" => :sierra
+    sha256 "cbc966304cd966f84d78905000f480712d87bd360637f0ed87334f3c41c2b37a" => :el_capitan
+    sha256 "c7d88379a32c611ba81b92ec6739a46bef10a19cbd286d233d28f6bcce435f45" => :yosemite
   end
 
   depends_on "pkg-config" => :build
