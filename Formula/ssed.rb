@@ -5,11 +5,10 @@ class Ssed < Formula
   sha256 "af7ff67e052efabf3fd07d967161c39db0480adc7c01f5100a1996fec60b8ec4"
 
   bottle do
-    sha256 "0834fb44e8acc946a9a7030b4313295777c3c9d8808f67c24daaaa2ce6c6a2ed" => :sierra
-    sha256 "6c8c5a5547c7c97e59f1f7284083f46d5e61e7ab80ac08ebdfeec4a4b4e95fbb" => :el_capitan
-    sha256 "7e313ca41f3a8e37bc91ab4a9d8c7acbf508cd7a89ac605df7cee3adcf108510" => :yosemite
-    sha256 "448b2fdfee6f84c3d72fdf29d5ccd042027a9850ea16d75b5f4ee576d8cbadcc" => :mavericks
-    sha256 "793435451341ea1e475bde0d46745ba233df28c5ed4bd86f7761a2fad3568fba" => :mountain_lion
+    rebuild 1
+    sha256 "33cb8a7c9a032b0e5a4e299ed8b1a3809c9eb94e72aff56e11f277b671767f42" => :sierra
+    sha256 "41673a5b5c17ce9121208377fadf0051ca40487bbaec4eae5f0dc0cb21d60b59" => :el_capitan
+    sha256 "e7564f6562505fc0412e3e6ca238321b812e4d32165a594666dbc1d0d8fee8e7" => :yosemite
   end
 
   conflicts_with "gnu-sed", :because => "both install share/info/sed.info"
