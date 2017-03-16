@@ -6,9 +6,10 @@ class ChocolateDoom < Formula
 
   bottle do
     cellar :any
-    sha256 "b0573351b617c4947aa6865119add2521c779adf1afbc7f9e3af476f46f25315" => :sierra
-    sha256 "c9cb2efe87e1f7ab038198506d07eb306059cef3b13e8022c7442901a6516a34" => :el_capitan
-    sha256 "eec9121c06d749dfa8a7b53784e9570d1ff3c0c1f0e69a47b30de2290fc777dc" => :yosemite
+    rebuild 1
+    sha256 "8930c8f08d631b7f1c0599de74767ab855c52f23bbb57e4a4d0e2e3447a58f4b" => :sierra
+    sha256 "6ba290a7bfdb34d4234871f0a18fc840c895b9e16e1d6db9bbca973c19ad0802" => :el_capitan
+    sha256 "845559f240825f398b43ab812e6b16fb0222bad32f9740a4b1505691c5a678f2" => :yosemite
   end
 
   head do
