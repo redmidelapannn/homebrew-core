@@ -7,9 +7,10 @@ class Sleuthkit < Formula
 
   bottle do
     cellar :any
-    sha256 "a95620c4212372ae76222790745d772798729287f3af14ec84e419ec411b188e" => :sierra
-    sha256 "c7f769eb76c40b27e501b96e41a95e8dc37dcaaca6464dbe60a1897a0e9d08fe" => :el_capitan
-    sha256 "f8f5348d846630cfbe5041da4b225829c2cf9931677f0f4465dd9539326f4cef" => :yosemite
+    rebuild 1
+    sha256 "86e582ac6f80a66513c87d4882d5fb24fec6f38cb990039429da315f28703742" => :sierra
+    sha256 "16e37d6e2036ddfcaed09ba9ec6bb406bbe600ffdca133969c6068d1716219aa" => :el_capitan
+    sha256 "00942016f9579af6f879f87d9e5df8ea9cf5402615a6ce37d7eae0f9108739bb" => :yosemite
   end
 
   conflicts_with "irods", :because => "both install `ils`"
