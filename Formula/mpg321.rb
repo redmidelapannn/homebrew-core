@@ -5,10 +5,10 @@ class Mpg321 < Formula
   sha256 "056fcc03e3f5c5021ec74bb5053d32c4a3b89b4086478dcf81adae650eac284e"
 
   bottle do
-    sha256 "a69f242f57e4211f96fa56f10573777204d5ed7d61cd7b35a04e0bbd33b9064e" => :sierra
-    sha256 "6c8921b0703d2952b6038ce7097957c3c2bfe9b59c2d41b5caddc268e96b245d" => :el_capitan
-    sha256 "48b9ac480d966fc344c4867f3dcef7cd59be1440b11fe7d8280d51134a881f78" => :yosemite
-    sha256 "bf86f590672fdb27f6fc92c706db1bfcb2ca0a1e35129c5435821640a11a422f" => :mavericks
+    rebuild 1
+    sha256 "fcb27da51b14ac7784e4090a8745a2f2b32db88e62cce83a56200c386778f267" => :sierra
+    sha256 "a429f21ded72a109dcf001094fa88f09c200884fb5f6d59c8dd9c28e662e5167" => :el_capitan
+    sha256 "dece54feddbe455b54e1daf3e6d602bae95d50c748176bf38fc8529e6f2a3b34" => :yosemite
   end
 
   depends_on "mad"
