@@ -6,10 +6,10 @@ class Paps < Formula
 
   bottle do
     cellar :any
-    sha256 "9b8374465264e2d04873a198109bb802c76e2d5ddc9a21ae54c87c326977c9aa" => :sierra
-    sha256 "eed9fb9ffec9f551d0d7fcb7692c2de9192d9eb0a34908559cae41d73fa30c25" => :el_capitan
-    sha256 "c173071e5f66f0d911b8e8900ce9d6941cb0cbfed7fe5e1ffe623ec7c8c64e0c" => :yosemite
-    sha256 "3e0b3b9b5591c1ee670dde1560d7339fbd1c05a47d51362aa78be0de1d671f08" => :mavericks
+    rebuild 1
+    sha256 "cfe5ee0ea19dc6f474c4c417a1a2172131514375be05e18a149363e517cf1f67" => :sierra
+    sha256 "aa3af23f5794ab8cef1b58c63940723374a1f70421e7986260faa0022eb3a998" => :el_capitan
+    sha256 "e14bfb65f99e9e5260b20b10edee2d3e0f7de878ffec323df3ad3b3e451863e4" => :yosemite
   end
 
   depends_on "pkg-config" => :build
