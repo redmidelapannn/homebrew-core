@@ -24,9 +24,6 @@ class GnuApl < Formula
   depends_on :macos => :mavericks
 
   def install
-    # Fix "LApack.cc:21:10: fatal error: 'malloc.h' file not found"
-    inreplace "src/LApack.cc", "malloc.h", "malloc/malloc.h"
-
     system "autoreconf", "-fiv" if build.head?
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
