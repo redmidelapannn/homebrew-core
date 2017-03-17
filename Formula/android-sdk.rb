@@ -3,9 +3,9 @@ require "base64"
 class AndroidSdk < Formula
   desc "Android API libraries and developer tools"
   homepage "https://developer.android.com/index.html"
-  url "https://dl.google.com/android/android-sdk_r24.4.1-macosx.zip"
-  version "24.4.1"
-  sha256 "ce1638cb48526a0e55857fc46b57eda4349e6512006244ad13dd6c1361c74104"
+  url "https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip"
+  version "25.2.3"
+  sha256 "593544d4ca7ab162705d0032fb0c0c88e75bd0f42412d09a1e8daa3394681dc6"
   revision 1
 
   bottle do
@@ -30,12 +30,12 @@ class AndroidSdk < Formula
 
   # Version of the android-build-tools the wrapper scripts reference.
   def build_tools_version
-    "23.0.1"
+    "25.0.2"
   end
 
   def install
-    prefix.install "tools", "SDK Readme.txt" => "README"
-
+    FileUtils.mkdir "#{prefix}/tools"
+    system "mv * #{prefix}/tools"
     %w[android ddms draw9patch emulator
        emulator-arm emulator-x86 hierarchyviewer lint mksdcard
        monitor monkeyrunner traceview].each do |tool|
@@ -102,15 +102,15 @@ class AndroidSdk < Formula
     end
 
     # automatically install platform and build tools
-    system "echo y | bash #{bin}/android --verbose update sdk --no-ui --all --filter platform-tools,build-tools-#{build_tools_version}"
+    system "echo y | bash #{bin}/android --verbose update sdk --no-ui --all --filter tools,platform-tools,build-tools-#{build_tools_version}"
 
-    %w[qemu-system-aarch64 qemu-system-mips64el qemu-system-x86_64].each do |f|
-      macho = MachO.open("#{prefix}/tools/qemu/darwin-x86_64/#{f}")
-      macho.dylib_load_commands.each do |c|
-        macho.delete_command(c) if c.name.to_s == "/tmp/android-build-build-temp-74102/install-darwin-x86_64/lib/libz.1.dylib"
-      end
-      macho.write!
-    end
+    # %w[qemu-system-aarch64 qemu-system-mips64el qemu-system-x86_64].each do |f|
+    #   macho = MachO.open("#{prefix}/tools/qemu/darwin-x86_64/#{f}")
+    #   macho.dylib_load_commands.each do |c|
+    #     macho.delete_command(c) if c.name.to_s == "/tmp/android-build-build-temp-74102/install-darwin-x86_64/lib/libz.1.dylib"
+    #   end
+    #   macho.write!
+    # end
   end
 
   def caveats; <<-EOS.undent
