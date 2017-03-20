@@ -6,11 +6,10 @@ class Quotatool < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4d04c382c8cf8b0376b34ce12813be06e879fdf6b60711cf90643d08887304fb" => :sierra
-    sha256 "da5c90f85204fa90a38da073765ec5c0f0a20333bcdcd131d79b682afa74233f" => :el_capitan
-    sha256 "8af3549d42247f0b79458c96978f8f5e5fbe04cc1c0dd86f84accdf03e8e510f" => :yosemite
-    sha256 "724a3fc561188de5e0e050f7459480cc8c613d399faee5290ec7a68b9715960d" => :mavericks
-    sha256 "29271c3bc97b9623264fe2f67e821f1810442f11b15ad1b7f231472905d078e4" => :mountain_lion
+    rebuild 1
+    sha256 "c525261cc54620818d861842eda0c51c0e0ca7706ce936cf68a05ab98081e489" => :sierra
+    sha256 "bdd0fe97c58ab2872644fc897de358215950f6dad2924524d5d8238434fc1d65" => :el_capitan
+    sha256 "9a7d4e268db9457037059d068a6c5a4ac02cdf6db2a1a29809073d57bcc2116f" => :yosemite
   end
 
   def install
