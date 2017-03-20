@@ -6,8 +6,10 @@ class Wandio < Formula
 
   bottle do
     cellar :any
-    sha256 "18377dd9738246878e3357ea95e0164e7ec2f66eab9708b662a5961678355873" => :sierra
-    sha256 "a05a9f0b56ccb80fd8de1cd2d3921a08599b88bcd9e9770df81a5fddf2163d24" => :el_capitan
+    rebuild 1
+    sha256 "cd763d9f848b3f7e606bad81cc6be055443536b6c8bb4ee7de26a04eacc48345" => :sierra
+    sha256 "d4376ac6a25ad3e222b2bcf6cf0680566759415dbf0448f5ea2db0b23535c02e" => :el_capitan
+    sha256 "3f33970e47c8c2e0cdf954aa04c025892faf1fd174a8e496841f45e1a2e8a9f3" => :yosemite
   end
 
   def install
