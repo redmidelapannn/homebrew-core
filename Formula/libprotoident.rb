@@ -7,9 +7,10 @@ class Libprotoident < Formula
 
   bottle do
     cellar :any
-    sha256 "a3f30f045066ca4b054a23a696be4b7ff083fc9895cc1e13b220d522351a6864" => :sierra
-    sha256 "3f81b44c4ed331a9d3e1bda531bf4d3a38f3bbe29d266a7d6a49608b80b52a5b" => :el_capitan
-    sha256 "efbc7daba7362f5339c477a314d428189b4b7db05352086b9fd3737134e96b8a" => :yosemite
+    rebuild 1
+    sha256 "84d665fb383d9463bba10cd31721cf24cde1af4fbbe39e2411f89004743bd103" => :sierra
+    sha256 "0cf3e98ab3a22f3f44e5dc5c8bdf36cec6084533c54023a777afd12ac491b9f7" => :el_capitan
+    sha256 "51bee673d1b4019b970ed2332bf68d6021c8dcd6b8bf187bca9e226cea356871" => :yosemite
   end
 
   depends_on "libtrace"
