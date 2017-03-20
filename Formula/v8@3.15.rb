@@ -6,10 +6,9 @@ class V8AT315 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "e3fbc94e5599418c351359a77c335beab824e99ebe8006379e97097694a18607" => :el_capitan
-    sha256 "a540a1bb558076d45666623814645c5b1f03c96dee0b0a21d02c63f68fdee8a1" => :yosemite
-    sha256 "33b48defef5c8e5f39c6bf20b0f85f6488c4e8282a9d5be38746907f035c4723" => :mavericks
+    sha256 "39a784fe4a06f2b9dc50f98562b88ed1d258b40c4e3f59a5988be2655b4a9295" => :sierra
+    sha256 "1b9d47411c74f8eb473760f09da571794621ca23f6f3a35d4328ff6fba587a03" => :el_capitan
+    sha256 "87038130f14b74d791fe72ed17f0b05b54a3dbd598bcc4b3d598ee1f0cea362f" => :yosemite
   end
 
   keg_only :versioned_formula
