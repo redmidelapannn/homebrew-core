@@ -7,9 +7,10 @@ class Libflowmanager < Formula
 
   bottle do
     cellar :any
-    sha256 "456098a2fa42176dd28c40be96b857569ed0b674e2b789f3f532f5c446e1494b" => :sierra
-    sha256 "21d694144204f4067bea98e9d9c9f6919febe32c162dd6c309bf3efb7323ce24" => :el_capitan
-    sha256 "8bd1c6137570f83f81bde7a0efc28d7521c4102086c8c721cd9ad7ff5f8c8ab8" => :yosemite
+    rebuild 1
+    sha256 "6dc74e2a1b0c9711ff5f3b58b0901d8f544e903079bf8262b01a77f59753932c" => :sierra
+    sha256 "9b633342771f4fd1ebe379876781c7ee9b5b293d95622b295cf11b9a2390ce1e" => :el_capitan
+    sha256 "179e109f434a0e81b2ab74ce2ff759d2a986626406361e2805233bb354515653" => :yosemite
   end
 
   depends_on "libtrace"
