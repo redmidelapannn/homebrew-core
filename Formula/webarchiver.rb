@@ -7,11 +7,10 @@ class Webarchiver < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "d62bc4e985e7fe36519af669c626f5fdd3ef56b17ddaaba5d5fdad2505c8277d" => :sierra
-    sha256 "63b8f54ff998596d2fab065f616f38d0c72dee9a48ae80a06c433a78813b4b11" => :el_capitan
-    sha256 "0c86758734efe96b1f6d0fc8294691ff62e4d191d97312b614511d20b0f989f3" => :yosemite
-    sha256 "404f9ffdf69b13cd1e89a51c331b4f8478400944eaf109a5d6f380dcf97bbddb" => :mavericks
+    rebuild 2
+    sha256 "3693d59e91bb7c20909f7e0be6c0a15191a208c671db922f766021bb9962ae39" => :sierra
+    sha256 "3693d59e91bb7c20909f7e0be6c0a15191a208c671db922f766021bb9962ae39" => :el_capitan
+    sha256 "c1ed451c56dff138d0d605a8abbb16dff06c31402485832cdd162b0b7ef98443" => :yosemite
   end
 
   depends_on :xcode => ["6.0.1", :build]
