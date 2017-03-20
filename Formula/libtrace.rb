@@ -5,9 +5,10 @@ class Libtrace < Formula
   sha256 "e89ac39808e2bb1e17e031191af8ab7bdbe3d2b0aeca4c6040e6fc8761ec0240"
 
   bottle do
-    sha256 "19f87788d761a5bc9a8ebd8c5efbd043dbb21f7c3eaaaf38b0bc015b51b5c284" => :sierra
-    sha256 "a83f537c9410ff1253b770e75bd3ffef3131238d3d4c541dbdc77092726ceee4" => :el_capitan
-    sha256 "96ff4f275637ccee0fb9949d0d1e29345b2105c5e26e12a5ae85d31c13051241" => :yosemite
+    rebuild 1
+    sha256 "eb7d33b598efca1525aeb38eb678246cddb095359418d7074b230c0a6463802a" => :sierra
+    sha256 "285ae896235495733e47ab88d96cbd732122232eea305027ebbcdedb4629d760" => :el_capitan
+    sha256 "6a7a7b4832d83cfe9f6eeafaa96eb3cf9d9e83f66ca9eb3022b55100cab2c1bd" => :yosemite
   end
 
   depends_on "openssl"
