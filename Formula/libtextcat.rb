@@ -6,12 +6,10 @@ class Libtextcat < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "24fe8791549204d8ef6e596fc327fbd3a645c729b440ba31ef47cf545f6f5b30" => :sierra
-    sha256 "afa51f83d0a3c96ffc6f6c35011c864347f31d2c3aea987102c59f0257177072" => :el_capitan
-    sha256 "1a63f24b16949843f6a3f6c17d9467208a471cfa6bf1b193738fa94c2d320f02" => :yosemite
-    sha256 "e7880fa731747f117a943fd99bd41da25bae3e6440316d782c4798cf3f55e0b7" => :mavericks
-    sha256 "645dab2e1766e0ea0fc3f6bc897e372ca26826a8ca136463ac864da1ddf74202" => :mountain_lion
+    rebuild 2
+    sha256 "9c37ff4533784a7d15329f060f81f77c09f51f14555ea60ba46af6aa20260ba6" => :sierra
+    sha256 "6eec0da7467132d189faa70578e340c187adfaa5847ec61c319be351b6a19d04" => :el_capitan
+    sha256 "1efb5e055e8a602b456afa5d9d431614a555415ee2d53d28b94e00634d792664" => :yosemite
   end
 
   def install
