@@ -7,11 +7,10 @@ class Polipo < Formula
   head "https://github.com/jech/polipo.git"
 
   bottle do
-    rebuild 1
-    sha256 "d30101dd7753f59f84a8962f07772a1e18ec8007096b815c3cae117a59fbb2e0" => :sierra
-    sha256 "54142753c1ad2f0bbb0b7d3acd62c12dd6f5e33f059f27432a739e01a351f1a7" => :el_capitan
-    sha256 "ce6453203feafa737212242a0ea9d2faa118e5880775e115682901e59fad5891" => :yosemite
-    sha256 "74930c6406c860315088f3bde52332fb3708a60f5aabeeff1497a3cbbdf10a73" => :mavericks
+    rebuild 2
+    sha256 "3a5deb24b87fa8835071441015315746f71f85b0fa60fffbbd481286a4bf06c8" => :sierra
+    sha256 "a27ee960af5cbff0d9aeac5116fc870dcda10039c1ec5b5e21bc081b5053449a" => :el_capitan
+    sha256 "6eea42a55dbc2e85e88ff8c4cedbb9fa7a255e44b404577a25948713cb7e8173" => :yosemite
   end
 
   option "with-large-chunks", "Set chunk size to 16k (more RAM, but more performance)"
