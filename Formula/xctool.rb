@@ -7,9 +7,10 @@ class Xctool < Formula
 
   bottle do
     cellar :any
-    sha256 "7df0210ebb932eba903a68aa3b7618d15e0152c554b1730186323d70f077c6b0" => :sierra
-    sha256 "7e773b2754bb89dc576dd292e9c478777bd97771f8d2d1827686b6674d5dc155" => :el_capitan
-    sha256 "7704c484b555e0f5143fc61b69cc2b03ff96942e7d0e4e374ac78065eca8f544" => :yosemite
+    rebuild 1
+    sha256 "875b97b42b9f336ea196ac21310686e84ae2e68036e718b683c7fb12011a3ab0" => :sierra
+    sha256 "2768bc186df02461ff17be22d00c8e76bbebf2d46c3e32e4efc957a9325022f6" => :el_capitan
+    sha256 "658a3930bec947f0ad3acfd232e908fd997f7cb6f728d84aea7292dede3ad09d" => :yosemite
   end
 
   depends_on :xcode => "7.0"
