@@ -7,10 +7,10 @@ class Sslh < Formula
 
   bottle do
     cellar :any
-    sha256 "e359c254424ce33e3fce90e4de2ba642c551ba7c64997098b2aebda349574884" => :sierra
-    sha256 "5752d320b559239122b712dc145d3fabe760c4f32e6644062bcd542d1cf4a89c" => :el_capitan
-    sha256 "18a2489ddb8a4049a2885b947afa7baee2b2b9dca43c8e6639dba08059a4f810" => :yosemite
-    sha256 "b60865fd9ba00bd093e678c5d90b57aa85926444e847058e5a0389512b60abde" => :mavericks
+    rebuild 1
+    sha256 "29d8ee8dc0bdcc7163409ed319d60092b31b728af61a3030f15c62dbd5cc3b2a" => :sierra
+    sha256 "84d8d83abeba3ebd3b4da747f1fc5a8473cf9ec6c34fd1849af41b598473cf9d" => :el_capitan
+    sha256 "04cb14a67b34570d07c2cb14144bcb6b766c6fc885f0b369971361f3c8bb882c" => :yosemite
   end
 
   depends_on "libconfig"
