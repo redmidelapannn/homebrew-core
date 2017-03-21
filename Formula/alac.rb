@@ -6,10 +6,10 @@ class Alac < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3c833c71834ea65498c761d4fe444a26e97e107433de526ab55ad1fb0d36a2ba" => :sierra
-    sha256 "4cb85c125553c6c2a49576790c5be5e0b89096569131df3b8576f3499e65ef5a" => :el_capitan
-    sha256 "a3a54a254a147f3a1173870bdd2e9399043b3e506d8c04383f99cf3ce67a4fca" => :yosemite
-    sha256 "20cca431ce69d7eb2e5d894ebbfffdbc633eef2b3447be6d0afdb7c25cac8c0e" => :mavericks
+    rebuild 1
+    sha256 "125f2bac5614b844a4f743463e276cf4f9df6f7c4045f518a6dd0eeaae79231a" => :sierra
+    sha256 "150e2833f2aca78bce651666aa766a5f62f62cb0680090c3359a445c5a204afb" => :el_capitan
+    sha256 "45a9103d9115383bd044806beb41c5cfad1697fb64c554fabb52c95fa6b44d2a" => :yosemite
   end
 
   def install
