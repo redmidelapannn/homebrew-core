@@ -7,12 +7,10 @@ class Lynx < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "bea7cf10aa6df403d9c421ef1e91d7af9b07bb2c2c41b71a36e975ca6d4b9bc2" => :sierra
-    sha256 "1b0f14f892c930a2140a853edd308edc7545b0e2baa1637e77b925209476fe96" => :el_capitan
-    sha256 "41ddd45e917af411f20cebf679459490cb412a1f94b662a7f1e9f8cc9f9f394f" => :mavericks
-    sha256 "a12c691f38002046a7a71c84df76f0f70e95c92a879663e50793dde1611c4834" => :mountain_lion
-    sha256 "8ae76d02829b7d9d0daf1a43d57ef765e9bbc0002511ae71fc977262df3f652d" => :lion
+    rebuild 2
+    sha256 "cde9272d8c95201aec06d9427f821318ea148375d2e89e817c071362aa442fae" => :sierra
+    sha256 "18abc8995b6cc3d1a6b5120ec1b001c2d3a3379292376c93a83d7da3c6e72d2a" => :el_capitan
+    sha256 "16dfd34d20e71dff99f361cc24adfd9f13c33bd50e025ac2da2f6ca4e326528a" => :yosemite
   end
 
   depends_on "openssl"
