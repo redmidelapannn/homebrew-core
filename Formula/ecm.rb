@@ -7,10 +7,10 @@ class Ecm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "888612dee7486ca5413e2b1e0090a4e1bd5ea7f2fe5cc53fe02bb326ed4f3d4c" => :sierra
-    sha256 "3ecb325a368ef42737e77003e9ecc13a8d402a34da3a25c039b36565fef0b55d" => :el_capitan
-    sha256 "9eef5eb54af2ad50ab05ee9382efe8d0ca831a6d058fe1fa2679cff87aa0a064" => :yosemite
-    sha256 "c80a78299a5042d8588806066af2b03e9a3a679e8284fb863d9ee15edc690933" => :mavericks
+    rebuild 1
+    sha256 "1bcca7f66137a1e90005ad3cb515fe7762e2eca1f1f661a54a98f5188f6410fc" => :sierra
+    sha256 "58586268193e790a0b8dd577cb24c5bf93a5e89010ec2fec17e96f3217cb64bb" => :el_capitan
+    sha256 "43f5d914543fe0e95717a0427d0411d5c9c920654c9e471cb107aec15bf51c67" => :yosemite
   end
 
   def install
