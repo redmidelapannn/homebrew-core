@@ -6,10 +6,10 @@ class Tcpurify < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "84aa38e09d2fa55470ab3e1b7c1415f1c8999ce8b879774dbeb96d2e6b7ce450" => :sierra
-    sha256 "175a4e03bb937459b72331165f08b2b144550d5c11fb7a8cb64df59685edb228" => :el_capitan
-    sha256 "ed4bf4f1b14c45a444ef388ec522150956e9163980d276b6f413637a03295c49" => :yosemite
-    sha256 "77e9351ead0693badafecbbe91f05f197dd0c6f5419c33d2a91f8ffdc32fa498" => :mavericks
+    rebuild 1
+    sha256 "a7f81e418ba162f953b6e31238751f78377e77d5460eb5a6bba4b2bcaf48da3b" => :sierra
+    sha256 "67494ea742f1bb5f6834299d0f7d092bf6802647e0c43dcba1479d7d8477d426" => :el_capitan
+    sha256 "d7dc47275fff143443a1b096b953f383b66115183d33953a310364b1bfdb04db" => :yosemite
   end
 
   def install
