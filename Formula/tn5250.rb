@@ -6,10 +6,10 @@ class Tn5250 < Formula
   revision 1
 
   bottle do
-    sha256 "677c563daec583859a4ad6ffd0c57d2a2b74e1cc42d6b380fc2f8ac18a3abcec" => :sierra
-    sha256 "3d799f665866c2fa21ca2712682178ba64cdb2b5bf0ad77705de6ec869c529c7" => :el_capitan
-    sha256 "e7c01e8c5c3e732c9f36e7480f788a2ca7387ada7d74daaccb06d48b7fafdac4" => :yosemite
-    sha256 "992b0e0f6fdedf1030a0326936fc7533a013639385d39a590d6b68a8728844dd" => :mavericks
+    rebuild 1
+    sha256 "97de1fc237d14c6266972715a1cdf714ae3c43dfeb7ccaa0cdf42d87cc00218d" => :sierra
+    sha256 "34286749e8b4f069dac5ef3c7a7b97c501943f8c303bcc8193b2c24f7baa9282" => :el_capitan
+    sha256 "6dac7d29216f78a5b8338026893df8bf72484122d133e629263d10430421874f" => :yosemite
   end
 
   depends_on "openssl"
