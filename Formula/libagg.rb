@@ -6,12 +6,10 @@ class Libagg < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "872f49f0fd96ee65dca4bedba3e82c4fcf0e0b0c45de15afc82a9e70e0f0623c" => :sierra
-    sha256 "5b9ab7a9ef2f4075bd55561f0fda99c7203a70020288747ebf90cfc1b2ee626b" => :el_capitan
-    sha256 "9d3da78ab9824db755cbfeb9e6596527db1ace71525cb079465b1a9fb1c00417" => :yosemite
-    sha256 "9704ec5652775cbab7af51e48eb42b19cb55f7cdb5894e6e1abac3e478581e2a" => :mavericks
-    sha256 "a8519e34820cb112ca057020eda27574bec5fff386fc738d7d867a4296e8b117" => :mountain_lion
+    rebuild 2
+    sha256 "e169ec123044f243ecebd066b3d969f6435b7055c2e32ee35e1740e3351ee1c8" => :sierra
+    sha256 "921af57f6db258f5f236d52884c1902f717d2f84cb3b3d141c444262714df42b" => :el_capitan
+    sha256 "95548b4dec4381f6b9c6f29a06cdf00ecd5532a4a531cec540fcfa1ad760ac98" => :yosemite
   end
 
   depends_on "autoconf" => :build
