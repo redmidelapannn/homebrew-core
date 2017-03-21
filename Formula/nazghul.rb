@@ -6,9 +6,10 @@ class Nazghul < Formula
 
   bottle do
     cellar :any
-    sha256 "7756c6eb0de2459aeb77a71641db006e87dd53d101e7d763e7d1b9f5d8789675" => :sierra
-    sha256 "3b6326f1007694c4d557f9e7dd3ea5d46ce3dc3133eb9deb46bb183938a40cbe" => :el_capitan
-    sha256 "a76cc9e7389be6b0438ab9d5f2cf4ae9035989653785eace7617caac66b5b34e" => :yosemite
+    rebuild 1
+    sha256 "840a5e59bdb2229c54fcbaef2772ae73dc629700a48757c671f898098534008e" => :sierra
+    sha256 "537c44259317532d4955e00c9e1331731bfbf134b69e2cf909dfde333dfb1bc6" => :el_capitan
+    sha256 "efa833a626ed0715261399a4559b97f97fa9b5460b2151a5c465e411aa23ae2a" => :yosemite
   end
 
   depends_on "sdl"
