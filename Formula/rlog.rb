@@ -6,10 +6,10 @@ class Rlog < Formula
 
   bottle do
     cellar :any
-    sha256 "51f6586bcfa2235a19b311189ca63431c596c689c7b014850e4a0cef2275074e" => :sierra
-    sha256 "c95d8998639fd75131f923191eaa857bc3ff8f33ee64ca3b5d459ac1979e6fa2" => :el_capitan
-    sha256 "44f3b8ee89802fb13674e3b60e873045a459bf13513b84f3f7b94c8a4444b2eb" => :yosemite
-    sha256 "70c1faaac613087604231c7e30ba5dd458183c1dec4cfccb73b25a32fee6c603" => :mavericks
+    rebuild 1
+    sha256 "5d38fbbaf616b188aabe20ced6f6922542b3018373181503aae0f91c11df3f6a" => :sierra
+    sha256 "037678c083b7c2509f779f4ab1592f70249c21d1f059934946c44e50c00b8a4a" => :el_capitan
+    sha256 "88f65ee687570fa010398fddfdadafade8076c297d54d53d4c1b2a15f08b9352" => :yosemite
   end
 
   patch :DATA
