@@ -15,8 +15,8 @@ class Theora < Formula
 
   devel do
     url "http://downloads.xiph.org/releases/theora/libtheora-1.2.0alpha1.tar.xz"
-    sha256 "5be692c6be66c8ec06214c28628d7b6c9997464ae95c4937805e8057808d88f7"
     version "1.2.0alpha1"
+    sha256 "5be692c6be66c8ec06214c28628d7b6c9997464ae95c4937805e8057808d88f7"
   end
 
   head do
