@@ -27,9 +27,10 @@ class GccAT46 < Formula
   revision 1
 
   bottle do
-    sha256 "61d78914d2f4bb499b075b5cbf70dd8a333ab5f29d4274c35054f4e9aa2a4260" => :sierra
-    sha256 "4db90407af9ee48b59295ac5f67d821b706e50414ab33ecb5cb974ab21b2855f" => :el_capitan
-    sha256 "376688c133561cae1ac5ddca171b4ba1df1dc68c5045b377d8cd926b15d6f7af" => :yosemite
+    rebuild 1
+    sha256 "196ea7b28648e22f8327ad05277db9848a0b1cab1e0ef08ae555975991f75c5a" => :sierra
+    sha256 "77b846f0681fed1681999b4bae847058dfd09a7431c14e1cd93e3daa7276ecb1" => :el_capitan
+    sha256 "96bc2e7e2fcf7ef034280a94b060c21d6fd9c406cbdd7336ddc288a0040fcb14" => :yosemite
   end
 
   # Fixes build with Xcode 7.
