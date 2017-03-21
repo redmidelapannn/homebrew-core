@@ -43,23 +43,9 @@ class Theora < Formula
       --disable-examples
     ]
 
-    if build.devel?
-      # Clang's integrated assembler can't handle integer constant
-      # expressions that are used in some of the inline assembler code
-      if clang_assembler?
-        args << "--disable-asm"
-      else
-        ENV["AS_INTEGRATED_ASSEMBLER"] = nil
-      end
-    end
+    args << "--disable-asm" unless build.stable?
 
     system "./configure", *args
     system "make", "install"
-  end
-
-  def clang_assembler?
-    return true if MacOS::Xcode.installed? && MacOS::Xcode.version >= "7.0"
-    return true if ENV.compiler == :clang && DevelopmentTools.clang_build_version >= 100
-    false
   end
 end
