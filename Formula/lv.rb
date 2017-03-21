@@ -6,11 +6,10 @@ class Lv < Formula
   sha256 "e1cd2e27109fbdbc6d435f2c3a99c8a6ef2898941f5d2f7bacf0c1ad70158bcf"
 
   bottle do
-    rebuild 1
-    sha256 "01c44c5b3d18aa1602c00bc3ce8d0b71ae02cee6dfcff66d7e8df74b424b8de8" => :sierra
-    sha256 "49ad4ebf6830c1ef3f6899486e711f99bc293d422317f8851f174cf18de2a98f" => :el_capitan
-    sha256 "f31281558dc9da38402a86b2b3c03efb10ab471561bf72dd556c3cd8df23ba14" => :yosemite
-    sha256 "6e1894088a741aba921e77a4935d6ad2d11f06f03a4ff775c45e4256728511a4" => :mavericks
+    rebuild 2
+    sha256 "8fac24c53fa61f1c1f1c717a9b3ce6efa7c3ced459fdbe7796a07a13a62dc570" => :sierra
+    sha256 "aa6fe73c876dd8a42cc9faf009a3769e223a870d55c63eb28e169b99eac62ef0" => :el_capitan
+    sha256 "cb0d12fcf6f4d4f0da5fe5fa8ee5f9ef5afd5d67c6adfe473aa3aa4bdb8eb368" => :yosemite
   end
 
   def install
