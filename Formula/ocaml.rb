@@ -27,9 +27,9 @@ class Ocaml < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b7448dcd0685f7e129ace58707f821f53a89fb436edba86d20e86a203c2deb5e" => :sierra
-    sha256 "cba95bfb38d7f4466830906b67e69f63463ae90fdf28ef05abbf6234760c8d9a" => :el_capitan
-    sha256 "fe05592478358e1ffab4f83c03ad6567865978e52341544131c66da1e9917a02" => :yosemite
+    rebuild 1
+    sha256 "77d04be20a1ac8b5007518de219c9ef589e6c51dbc03dffc7920ceb9674c26b0" => :sierra
+    sha256 "69fa9a86b39274ed93be2a24af29d8e29204b78b6b131c83ee16908bab9b8a71" => :el_capitan
   end
 
   devel do
