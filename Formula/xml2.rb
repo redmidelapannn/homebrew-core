@@ -6,10 +6,10 @@ class Xml2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "d8d4bb9ceb9d97b648d3fd3cffb1e2fad2e4d82aa6aa3397c22f53fe5468ac56" => :sierra
-    sha256 "85e939873edbb3dd1b072437992a0c404534a5084cccd6f9f76d99b09ddda695" => :el_capitan
-    sha256 "3883d5997021b3a5bd57d8830906cb9b370da0f6e1927b6c7e9dcd6740e05c5c" => :yosemite
+    rebuild 2
+    sha256 "e49f2ebd8eac30049a0a9ac1e2b1da6a29120a4ed0c8aa25817594d2852b9ca5" => :sierra
+    sha256 "bb88fda3d48d0895cb4f844a6088ac47650b4e19045b519d94bc427a279255f4" => :el_capitan
+    sha256 "c26879b3311d6d7cee5a2dd639688e8d4e6d29c543e9292fc5e0ce81664f36b5" => :yosemite
   end
 
   depends_on "pkg-config" => :build
