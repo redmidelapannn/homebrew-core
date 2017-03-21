@@ -5,9 +5,10 @@ class Xmoto < Formula
   sha256 "a584a6f9292b184686b72c78f16de4b82d5c5b72ad89e41912ff50d03eca26b2"
 
   bottle do
-    sha256 "d0beb0f81e97e0495fd012a01865a3a14fe9649077dbea2b91a660e90dd77248" => :sierra
-    sha256 "350e2da36abf8fff00315730804f996f19693e35abaf9575fe0695db2266a60c" => :el_capitan
-    sha256 "6f75a5d9669357094f10beaefedf52819c9a8a525a876ddb51d27f5f77e2fe07" => :yosemite
+    rebuild 1
+    sha256 "f81e3818502c38ad25fd79fe198ac521d361fe06103aca0b6088901585145200" => :sierra
+    sha256 "e63d150dd65ac1aa7850b248975fd22aba8d5c399655608ffadde0144b348f37" => :el_capitan
+    sha256 "e9a2896c36645e6f312b9854818980cb3135948953a086fe2fb67760b2c0a8f6" => :yosemite
   end
 
   head do
