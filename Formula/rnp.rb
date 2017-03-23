@@ -5,6 +5,13 @@ class Rnp < Formula
   sha256 "b61ae76934d4d125660530bf700478b8e4b1bb40e75a4d60efdb549ec864c506"
   head "https://github.com/riboseinc/rnp.git", :using => :git
 
+  bottle do
+    cellar :any
+    sha256 "1406ba606ad42984f9b8e6dea2914b7c0ef6f3c2e9d308b788f6a15766b9f30f" => :sierra
+    sha256 "839b8d54023ca7111bee0c57dc5eb51743adaf63b681e5245fd0693530a41f5f" => :el_capitan
+    sha256 "09072b849fdde7d5fefe6d4aacfb0526ccb7043a92f2dd02feeaa217b55f8787" => :yosemite
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
