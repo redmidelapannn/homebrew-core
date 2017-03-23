@@ -21,8 +21,8 @@ class Rnp < Formula
 
     openssl = Formula["openssl"]
 
-    ENV["CFLAGS"]  = "-I#{openssl.opt_include}"
-    ENV["LDFLAGS"] = "-L#{openssl.opt_lib}"
+    ENV.append "CFLAGS", "-I#{openssl.opt_include}"
+    ENV.append "LDFLAGS", "-L#{openssl.opt_lib}"
 
     args = %W[
       --prefix=#{prefix}
@@ -35,6 +35,6 @@ class Rnp < Formula
   end
 
   test do
-    system "#{bin}/netpgp", "--version"
+    system bin/"netpgp", "--version"
   end
 end
