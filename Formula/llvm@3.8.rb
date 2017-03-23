@@ -45,10 +45,10 @@ class LlvmAT38 < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "f84012d316cc335ebd93e4ac6fad1548eef54da23a8c690da5d517f1c78d72fb" => :sierra
-    sha256 "889759dd33dcfccb62c9ddc89541e201afbd88572d165dc0bdf5d945e681d670" => :el_capitan
-    sha256 "e49da061ea21b5490c916a224f4d7c5ec85e9e982bc0e377817cad3296b4e27e" => :yosemite
+    rebuild 2
+    sha256 "9f1a613f4820bd8e8a7fa9ef8af28196e8016000befef36f30d152486d385b11" => :sierra
+    sha256 "03a1005e0424b2d356791fe2cdb05088c4743d0e484d2447fa9b38fc50267764" => :el_capitan
+    sha256 "ae099141cab1e35d8fdca3279077effd761c8421965dc581b8044f8a9d1f2a07" => :yosemite
   end
 
   head do
