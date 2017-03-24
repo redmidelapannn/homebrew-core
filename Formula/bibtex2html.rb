@@ -6,11 +6,10 @@ class Bibtex2html < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2b4fbcfb6e1c49eeb97bc6edca5e9b37d1817f1ee44ebb88bdd1114277ffdcf0" => :sierra
-    sha256 "47096fa76ad63ac58cd9afd80d2a5589b70d178080dd48ed9c51639f4ff19e52" => :el_capitan
-    sha256 "e3caa99e7bd5a6c00163642869e684680ee6e696b1ac3dc65425204c4b7be6b2" => :yosemite
-    sha256 "77ece7804ba79ff217244fc52bf5a91fe3fbb65972da4edbcb8a5c5ce2d13e0b" => :mavericks
+    rebuild 2
+    sha256 "bf033928511d5e29d135da1362f1e1ac36cfedcc34057bcec705c0f8e982c705" => :sierra
+    sha256 "0ef4337121272bc1152841a4d70085ce466b7f39eaadb968c6ff6fad28783a0b" => :el_capitan
+    sha256 "0cbc75233c8a150235ee197250b94a07c50b0196b6f93d2909a1d6057009deba" => :yosemite
   end
 
   depends_on "ocaml"
