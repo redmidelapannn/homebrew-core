@@ -40,9 +40,9 @@ class Ejabberd < Formula
     system "./configure", *args
     system "make"
 
-    ENV.deparallelize
-    system "make", "install"
-
+    ENV.deparallelize do
+      system "make", "install"
+    end
     (etc/"ejabberd").mkpath
   end
 
