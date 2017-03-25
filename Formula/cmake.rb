@@ -7,9 +7,10 @@ class Cmake < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ebc6de5933ad96a3ccc3764559dd489a7c02588c1485849c540893f28c9a4ae5" => :sierra
-    sha256 "d5ba6ead168e5524c10e8409a22d69ed5983b1799e916332b6f27827bf58118b" => :el_capitan
-    sha256 "1881ea166e4c7182d357f25c640d564f1e8d342ed658e6c43d95639bb2d60a07" => :yosemite
+    rebuild 1
+    sha256 "4291d96b1bbfb81f7236efe5bc00bbf4f51b2ba814842705df9295da636ae708" => :sierra
+    sha256 "62053341bee5147aa81fed27b3e1c56d51a8b3439799369248ca23c0c677fbb1" => :el_capitan
+    sha256 "62ff1ecb12336fabadaf73458b8466e66dacf3888656cc074c0ac08f9af03b1e" => :yosemite
   end
 
   devel do
