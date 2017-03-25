@@ -39,7 +39,7 @@ class Ejabberd < Formula
     system "./autogen.sh" if build.head?
     system "./configure", *args
     system "make"
-    
+
     ENV.deparallelize
     system "make", "install"
 
