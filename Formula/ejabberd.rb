@@ -24,6 +24,7 @@ class Ejabberd < Formula
   depends_on "imagemagick" => :optional
 
   def install
+    ENV.deparallelize
     ENV["TARGET_DIR"] = ENV["DESTDIR"] = "#{lib}/ejabberd/erlang/lib/ejabberd-#{version}"
     ENV["MAN_DIR"] = man
     ENV["SBIN_DIR"] = sbin
