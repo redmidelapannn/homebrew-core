@@ -7,12 +7,10 @@ class Chmlib < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "9781c76f933beca002df542d2db0644e51766568d9399f9e73dc39b9e896f539" => :sierra
-    sha256 "6b834a6ae6e95f8daaa726fd6ae1a2d3e60335f98862fea9e790c24e5a6411d1" => :el_capitan
-    sha256 "bdc19058cbf1690e960bd88d06f6c8b2ff47f8b743947eb82c259ba394881a65" => :yosemite
-    sha256 "366c564a2cd0185d84ff6892f5d773f80ddee50f6db39e763060b3ebb31413b3" => :mavericks
-    sha256 "a62f8bdc1ffa2dc6084a61c78a1027c2215e0a2986ffeae755701769c667b3a8" => :mountain_lion
+    rebuild 3
+    sha256 "bd3ef49ccaf58c4b16e5160183d47c6a22755d0a58dfda751a8f94d342c976d1" => :sierra
+    sha256 "e84c3165a5cd4b0d30cf8ad0981be1ad8afe7b76201260039c37e81b8a839408" => :el_capitan
+    sha256 "e9bc007b6f6b2e1d720109341a8b8b0fe584dd9916f3487219870135376d10ea" => :yosemite
   end
 
   def install
