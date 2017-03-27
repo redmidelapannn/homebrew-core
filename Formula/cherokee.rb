@@ -13,10 +13,10 @@ class Cherokee < Formula
     end
   end
   bottle do
-    sha256 "db0adb2f4e099777e5309d1b2ca2102c8ae576eb45a51c827f0e2fb7866b66ed" => :sierra
-    sha256 "f6944776619d9338169b1676cc10d9960c27cb7a88b1189a4e02e1f577d4e2d6" => :el_capitan
-    sha256 "af00f0cc177c2c16063aa3abe8dfe025568874db126edfacce4a33c8a3fbd5cb" => :yosemite
-    sha256 "ef4d94b51cc425dd704d0007cf9980024035406cb00345158fd84b1901c04437" => :mavericks
+    rebuild 1
+    sha256 "6f0efaf196c029851d1b00a03ad23c418152ffb0116810b80768bdf527bc0c4b" => :sierra
+    sha256 "9dca9a05586624b1c3cd4a9f02179677aba3d3cfc68cc8b5f951571a34a18b1c" => :el_capitan
+    sha256 "bba76ba20a268c4e434e9e41bbf165a489bffa5b3e0022ffb8bcaa1ce4a0a63f" => :yosemite
   end
 
   head do
