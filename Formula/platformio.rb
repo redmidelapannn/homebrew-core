@@ -14,11 +14,11 @@ class Platformio < Formula
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
-  
+
   resource "arrow" do
     url "https://pypi.python.org/packages/54/db/76459c4dd3561bbe682619a5c576ff30c42e37c2e01900ed30a501957150/arrow-0.10.0.tar.gz"
     sha256 "805906f09445afc1f0fc80187db8fe07670e3b25cdafa09b8d8ac264a8c0c722"
-  end  
+  end
 
   resource "bottle" do
     url "https://pypi.python.org/packages/bd/99/04dc59ced52a8261ee0f965a8968717a255ea84a36013e527944dbf3468c/bottle-0.12.13.tar.gz"
