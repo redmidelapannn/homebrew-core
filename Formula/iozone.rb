@@ -6,11 +6,10 @@ class Iozone < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2eb026a8aad1ed7efacd54ee470dcc59415ec3bc590dacbabeb1c5415bb015f2" => :sierra
-    sha256 "7482c9c9e45156126c677459b8201a0734fc3d4443c75a0903d52db79f419204" => :el_capitan
-    sha256 "6a011fd309a2eed8f726202339b1f8671eaccfc080f41f38aee9a9f76b9e4d86" => :yosemite
-    sha256 "05781c01a4a0cc49dba04466d94af788b0c783e68876f9bde302b30880407738" => :mavericks
-    sha256 "b31412026e024bf635eec5a3ad750657ef3dfca590388ef8f56429039ea708ad" => :mountain_lion
+    rebuild 1
+    sha256 "2a67aee722f8b1b4560efe0781262e67a9b10c2c65b6294513870ae7a9af261f" => :sierra
+    sha256 "708b8860615b595dbc3e3ab3260a2d85634d023e090f8a5bc364edd0536aa748" => :el_capitan
+    sha256 "0aeb8633601fce51f85920d7c927273e701bccaa9ec95e88b8e7305f5d72e853" => :yosemite
   end
 
   # Patch by @nijotz, adds O_DIRECT support when using -I flag.
