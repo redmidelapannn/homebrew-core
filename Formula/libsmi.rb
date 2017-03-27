@@ -6,12 +6,10 @@ class Libsmi < Formula
   sha256 "f048a5270f41bc88b0c3b0a8fe70ca4d716a46b531a0ecaaa87c462f49d74849"
 
   bottle do
-    rebuild 1
-    sha256 "8a77bfffacfce5c323970f1ae870e62ba577964f743721e62583b4713001bc20" => :sierra
-    sha256 "27cffaf7b38a36a1da50661a3a7a243fd9aaecaa73e4a91a462155a553a17f52" => :el_capitan
-    sha256 "6d30614b5a664f046bb3777b0bf0c04fbadb2203edffc9275d34ab3d50e3dc6d" => :yosemite
-    sha256 "468714d42c8aa845d2c53de783b43753d99fcca7ee5f0b8fd4726fbdb1a0299c" => :mavericks
-    sha256 "29c960c1a37c4dbe51fe87634db55b888211d22061db9a668e4c116887e04ca9" => :mountain_lion
+    rebuild 2
+    sha256 "eedd90ccd998ab16b6e21cb573797a51d4b614e1128d4e18c46249b17b610615" => :sierra
+    sha256 "23e05d189930f4fe4de6303a961010e743d5e720a9ab1b0b8f0f80a98f7fe1c4" => :el_capitan
+    sha256 "93e65cacdffae4f55364ef0f28740ff3ebb0dd26fb56731986a9ad8219a723ea" => :yosemite
   end
 
   def install
