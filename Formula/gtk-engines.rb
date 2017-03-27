@@ -7,10 +7,10 @@ class GtkEngines < Formula
 
   bottle do
     cellar :any
-    sha256 "1518ae315fe5a20a141428080824583f18ae8dd9736d3f7b6e93937f3d3bd639" => :sierra
-    sha256 "e6675468c5c8e18405ad1d6a7b8dec13da67048425f335ca92c7b26897a8fc97" => :el_capitan
-    sha256 "8beee72b3290b89cc96a3a6889581eb87919309f5c75c9bc1447beeff1557791" => :yosemite
-    sha256 "3519e1bec0070f54f5def933917e8f6dff085017c7ef4ebf3a8352c6454e919c" => :mavericks
+    rebuild 1
+    sha256 "ed1ee68a97bd5075e7ea4dac347cca43c2da072a62f6abcfa967510ec3177493" => :sierra
+    sha256 "b49dcb3e73caec0541dc8c6e5cb227c96e91266c6c65a5987ecfc87295c6e6a2" => :el_capitan
+    sha256 "4dcf28a7ec6ab39fedab2f8bf1945f73f39059a4fed254ee04ac66f6de4826cd" => :yosemite
   end
 
   depends_on "pkg-config" => :build
