@@ -5,9 +5,10 @@ class Mr < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4ef14ce20e60b88a882e156aad6fbede00d0ae852355950bbb014391993edbe2" => :sierra
-    sha256 "7c84fb8bb3d5ec8dd1b175a9805c9ee92be1cc0c1f0fca81f2557c0483301661" => :el_capitan
-    sha256 "c7b3005af6e349badfa7f8f99911217ec0138b3236143189fdb715f61cb2ffe1" => :yosemite
+    rebuild 1
+    sha256 "9e8ee6fc7e25a9e914c9e35ac7dc7cfda50ef5bd251aedda89e49164675ba852" => :sierra
+    sha256 "34574262d16d05364ae0973ac13530d6f064578422667a2bd2617529a08c30bd" => :el_capitan
+    sha256 "717d04b8d6782299ce288ee1e939b4403dd764fb95471172d05bb8a271ba8580" => :yosemite
   end
 
   resource("test-repo") do
