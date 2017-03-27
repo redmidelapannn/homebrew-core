@@ -7,12 +7,10 @@ class Gsasl < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "f37b1e2171acd1ed587c75827854750f2be04302147fb3fc05672c3e3cfe42f0" => :sierra
-    sha256 "8dbca0c2938ab3b5077fe7ed572437a0f724e479a7f102d9c40f959b1483f09d" => :el_capitan
-    sha256 "afc44c1161ffa2ae09bee4a82c25e626562d950ae092356fba204789e4b4752e" => :yosemite
-    sha256 "df498ac7247b3f54bdc9720249fa4a1cee72bf8c5011d06889d8ecdebaff1aaa" => :mavericks
-    sha256 "5585b8bddf849b2b4b3f67da253c97556bfa526b8345006595cdefddf3385dd5" => :mountain_lion
+    rebuild 3
+    sha256 "9f58d619a575245715284da05873bde67c3accb514aec4b531362da723efddf1" => :sierra
+    sha256 "a866f7c78e97feee6a91c9b48b2b1322cbd6f5a992bd1275119e3b28f3adc46e" => :el_capitan
+    sha256 "b6358f2d1d834785141566d3a8c9e1a387148d3b5542f655e07419b5ec21ee75" => :yosemite
   end
 
   depends_on "libntlm" => :optional
