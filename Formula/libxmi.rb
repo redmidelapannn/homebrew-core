@@ -7,12 +7,10 @@ class Libxmi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "d14120dd7ec249b6375da84c5dbf49631d8e8aaf7c0ee9e6c8e9c42f341cc91f" => :sierra
-    sha256 "d7be88ce4d945b11adc82fe6bac6aca8a837e0206cd781e4cab82c8c1b684e20" => :el_capitan
-    sha256 "b8a406a6559eb59890d519e41c824f75f1b37027e6dda108f3648d85480ba5f8" => :yosemite
-    sha256 "fe1bd51baf04d248d233d92ed8c2343d49b03e09427dd6774a86cabfc21372e9" => :mavericks
-    sha256 "1bfaff32eb89a52d7a3b3ef98e2e7070df837d904590c0c54e31df3e61e01172" => :mountain_lion
+    rebuild 3
+    sha256 "16fbae05d6de797366b6ad0ead305aab0dc9444ce388862507cbfeb10b80fb5b" => :sierra
+    sha256 "85dbae0fdd29b14acb77e71e00b2246eaab3053fdef21fa186bcf51705114feb" => :el_capitan
+    sha256 "0eff8bf6e17483d568fd98d08a8249f24477dda8ffc2bf8e5126ea2fd85f1054" => :yosemite
   end
 
   def install
