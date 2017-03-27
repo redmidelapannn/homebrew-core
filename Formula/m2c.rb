@@ -6,11 +6,10 @@ class M2c < Formula
   head "https://git.savannah.nongnu.org/git/m2c.git"
 
   bottle do
-    sha256 "e98a99fb06c6b72bd0cf11d8369df21e1e9e57253e0a9d63ae8641444079df93" => :sierra
-    sha256 "4aa6ac4f5fd855f4f84d5577ff6f79495fda9edc2ce5335c64bd96a881975eb0" => :el_capitan
-    sha256 "67659bd6a5fe922c1b34d5068a5cecbfee1f804e5ff432e32c8682a04029ccac" => :yosemite
-    sha256 "7bf62153eeb0976851785db04e1319f745709294aa9d0bc99e47ffee3eba1315" => :mavericks
-    sha256 "6db02ad1e1a355edfd1770d29952812baac666d6d2a7d3a599357f796eb7d891" => :mountain_lion
+    rebuild 1
+    sha256 "2c8591dfa00476fd82686ad9e85d694131b37786735d7204cec675a7591d9be8" => :sierra
+    sha256 "e4f90c621553ad96928d56f84aa782fe198631b2ce1830ecffc0d1acc02f4bfd" => :el_capitan
+    sha256 "c23652d5775140585c8d194d082cc9c7af5e4163eeb8c87931913c13836a5664" => :yosemite
   end
 
   # Hacks purely for this 0.7 release. Git head already fixes installation glitches.
