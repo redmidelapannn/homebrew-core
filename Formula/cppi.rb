@@ -7,11 +7,10 @@ class Cppi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d4c044247ba8a12f1462089bfa22602547894f0a9081fce21c4800e192a526ae" => :sierra
-    sha256 "970e44d2a7a340fe29577f92c4b6dfcbac17f3aef35e6085197b668c4cd9013f" => :el_capitan
-    sha256 "f8198f4b6e76d9310d66d20cb0a5b2b6adc70bee83f0bbeaca8b45b6529ccc60" => :yosemite
-    sha256 "a37872a422b21892119583f4fe9670ff403d2e40ceb14f50166e2b501938c544" => :mavericks
-    sha256 "9924d9e02cf7b197d666ffc8e9a56a5d4e442a5fa8c598872c714c7a2dfb37f3" => :mountain_lion
+    rebuild 1
+    sha256 "03e5410e04deb980e26c8c0b2de88b482d3af0234fbd39a86ffb35a47d7a1e15" => :sierra
+    sha256 "a2f8d56b5bd48e2fcc9369d66e95ad7a4aaf25038144e379d778f93efb036215" => :el_capitan
+    sha256 "a3a18ddccd7feb6e10bc3cce9609f9095a475a64b3f662f532b4742b57121e49" => :yosemite
   end
 
   def install
