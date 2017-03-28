@@ -1,3 +1,5 @@
+require "nokogiri"
+
 class Latex2html < Formula
   desc "LaTeX-to-HTML translator"
   homepage "https://www.ctan.org/pkg/latex2html"
@@ -19,5 +21,44 @@ class Latex2html < Formula
                           "--without-mktexlsr",
                           "--with-texpath=#{share}/texmf/tex/latex/html"
     system "make", "install"
+  end
+
+  test do
+    # Trivial Tests
+    assert_match version.to_s, shell_output("#{bin}/latex2html --version")
+    system "#{bin}/latex2html", "--help"
+
+    # Non-Trivial Test
+    test_file = File.new(testpath/"test.tex", "w")
+    contents_of_file = '
+      \documentclass{article}
+      \usepackage[utf8]{inputenc}
+
+      \title{Experimental Setup}
+      \date{November 2016}
+
+      \usepackage{natbib}
+      \usepackage{graphicx}
+
+      \begin{document}
+
+      \maketitle
+
+      \section{Experimental Setup}
+        \textbf{it works!}
+      \end{document}
+    '
+    test_file.puts(contents_of_file)
+    test_file.close
+
+    system "#{bin}/latex2html", "test.tex"
+
+    # Check if the 'section' links exist in the main html file
+    main_html_file = File.read("test/test.html")
+    assert_match /Experimental Setup/, main_html_file
+    # Now, goes to that html file and checks the content
+    document = Nokogiri::HTML(main_html_file)
+    next_file_link = document.at('a:contains("Experimental Setup")')["href"]
+    assert_match /it works!/, File.read("test/#{next_file_link}")
   end
 end
