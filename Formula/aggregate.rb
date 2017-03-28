@@ -35,24 +35,25 @@ class Aggregate < Formula
 
   test do
     # Test case taken from here: http://horms.net/projects/aggregate/examples.shtml
-    Open3.popen3("aggregate") do |stdin, stdout, _stderr|
-      stdin.puts "10.0.0.0/19"
-      stdin.puts "10.0.255.0/24"
-      stdin.puts "10.1.0.0/24"
-      stdin.puts "10.1.1.0/24"
-      stdin.puts "10.1.2.0/24"
-      stdin.puts "10.1.2.0/25"
-      stdin.puts "10.1.2.128/25"
-      stdin.puts "10.1.3.0/25"
-      stdin.close
-      output = ""
-      stdout.each_line { |line| output += line }
-      expected_output = "10.0.0.0/19\n"\
-                        "10.0.255.0/24\n"\
-                        "10.1.0.0/23\n"\
-                        "10.1.2.0/24\n"\
-                        "10.1.3.0/25\n"
-      assert_equal expected_output, output, "Test Failed"
-    end
+    test_input = <<-EOS.undent
+      10.0.0.0/19
+      10.0.255.0/24
+      10.1.0.0/24
+      10.1.1.0/24
+      10.1.2.0/24
+      10.1.2.0/25
+      10.1.2.128/25
+      10.1.3.0/25
+    EOS
+
+    expected_output = <<-EOS.undent
+      10.0.0.0/19
+      10.0.255.0/24
+      10.1.0.0/23
+      10.1.2.0/24
+      10.1.3.0/25
+    EOS
+
+    assert_equal expected_output, pipe_output("#{bin}/aggregate", test_input), "Test Failed"
   end
 end
