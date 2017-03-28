@@ -34,28 +34,6 @@ class Aggregate < Formula
   end
 
   test do
-    # Test case taken from project homepage: http://freecode.com/projects/aggregate
-    Open3.popen3("aggregate") do |stdin, stdout, _stderr|
-      stdin.puts "203.97.2.0/24"
-      stdin.puts "203.97.0.0/17"
-      stdin.close
-      output = ""
-      stdout.each_line { |line| output += line }
-      expected_output = "203.97.0.0/17\n"
-      assert_equal expected_output, output, "Test 1 Failed"
-    end
-
-    # Test case taken from project homepage: http://freecode.com/projects/aggregate
-    Open3.popen3("aggregate") do |stdin, stdout, _stderr|
-      stdin.puts "203.97.2.0/24"
-      stdin.puts "203.97.3.0/24"
-      stdin.close
-      output = ""
-      stdout.each_line { |line| output += line }
-      expected_output = "203.97.2.0/23\n"
-      assert_equal expected_output, output, "Test 2 Failed"
-    end
-
     # Test case taken from here: http://horms.net/projects/aggregate/examples.shtml
     Open3.popen3("aggregate") do |stdin, stdout, _stderr|
       stdin.puts "10.0.0.0/19"
@@ -74,8 +52,7 @@ class Aggregate < Formula
                         "10.1.0.0/23\n"\
                         "10.1.2.0/24\n"\
                         "10.1.3.0/25\n"
-      assert_equal expected_output, output, "Test 3 Failed"
+      assert_equal expected_output, output, "Test Failed"
     end
-    puts "All Tests Pass!"
   end
 end
