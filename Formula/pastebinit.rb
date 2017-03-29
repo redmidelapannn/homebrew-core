@@ -6,10 +6,10 @@ class Pastebinit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "71974010132dbde6fe65cd12ef87e6f3374b66f4710cbea49eda848847bf150c" => :sierra
-    sha256 "c4ba9f88e6fad1b21fb2b433adf16855086063c143df0b10aea669dce3df189a" => :el_capitan
-    sha256 "42f4b20a8f4361de3f03077bda5c2ecdac87759723ac383b562f0c21b8791d93" => :yosemite
-    sha256 "628ce64e3127dff93a92aa08019ad7c191f0b285dc8ed8cc2248c09d72abc5f5" => :mavericks
+    rebuild 1
+    sha256 "808099e1492f7116eb6851e72bb57e4a6b8790ec68ffbf48006b34d0e95952d1" => :sierra
+    sha256 "808099e1492f7116eb6851e72bb57e4a6b8790ec68ffbf48006b34d0e95952d1" => :el_capitan
+    sha256 "808099e1492f7116eb6851e72bb57e4a6b8790ec68ffbf48006b34d0e95952d1" => :yosemite
   end
 
   depends_on "docbook2x" => :build
