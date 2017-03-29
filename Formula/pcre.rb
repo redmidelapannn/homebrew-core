@@ -7,9 +7,10 @@ class Pcre < Formula
 
   bottle do
     cellar :any
-    sha256 "0c6b0b755f8bb88f277ffca1bad6554c995936e42d32453addde97da58b72b31" => :sierra
-    sha256 "f4851122510374c12e411ac2fad63ce8bd3c1590b6e152df64ad5b37b20cf200" => :el_capitan
-    sha256 "6c69cca320bc1db83345100f0f8ff181cf16024d5842ac970f8d1f1cdc24e05d" => :yosemite
+    rebuild 1
+    sha256 "a668c2195750a0760a268feadbcf352a2430ccc8d7c2a31b8a74ad18d4a6e8d8" => :sierra
+    sha256 "c8ea412182cd72cdf44cb90da802252c6c4f9b4938293eb6d021d679b6c68e27" => :el_capitan
+    sha256 "8e3851bd39d9d440eeac25abad7d138b36c5b5876848588d3d96a7c3a627b5bd" => :yosemite
   end
 
   head do
