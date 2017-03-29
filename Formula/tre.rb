@@ -6,11 +6,10 @@ class Tre < Formula
 
   bottle do
     cellar :any
-    sha256 "e28b7ac6153b06c067538f555f9ac5973df49c14ac2693aa4239ae407982e2c9" => :sierra
-    sha256 "8a1762dbd40b98869e01a19c29cdb1cfa5a127543b3e132fb0fdff996e46f566" => :el_capitan
-    sha256 "6fada15a2fd1c5905f8ed45d3c966da5e14efeb10522f82c26d2a23a918abaad" => :yosemite
-    sha256 "c57f9bfa724cd20843a672f5e8bd384e05e65bac062dd7d7b676db9b1c11f998" => :mavericks
-    sha256 "1159edaece87806b8141cb351d896641b6de1667b0f62d6214ff0412ffae7fc4" => :mountain_lion
+    rebuild 1
+    sha256 "8d7e9dcdd6d54b9df313a5548c677644843ab5b704d55e8ba281fecbf3a832bc" => :sierra
+    sha256 "6c7cd8f6bb5eca63c71475db5415ae6b854ee4047dd9cf05be965cb785e528c9" => :el_capitan
+    sha256 "c966aec1f2fa1f019c69d673c1d6226b0a0d78ef9e58056d83d45b6d50e667e0" => :yosemite
   end
 
   def install
