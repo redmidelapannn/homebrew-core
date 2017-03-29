@@ -8,10 +8,10 @@ class Sgrep < Formula
   sha256 "d5b16478e3ab44735e24283d2d895d2c9c80139c95228df3bdb2ac446395faf9"
 
   bottle do
-    sha256 "c698f6a657fd7edd7bb8e7d717dc09ac73b1042e93b79555152626f71388b275" => :sierra
-    sha256 "089890a739b047b429b88a583f71832fbfbd3c8f7abc067531424c14e8463df4" => :el_capitan
-    sha256 "a4228a3f40db355cbd6b3feedd4cbdaf8c9b582b24f188982f296b17ac14590f" => :yosemite
-    sha256 "f582b8ae918c1f279e1e3c362d016ad91aeb4accc229cfe9f6ccac8c991ce4a6" => :mavericks
+    rebuild 1
+    sha256 "4ef4b95e85bd237753084e3621e57e1e036ffbe561e4d7c9ee06078f4d8b7ae9" => :sierra
+    sha256 "72c8e0f4c5b849e4c4a1e8e6644af9c4f3e13f462f7017a1d9e7e7503f9951eb" => :el_capitan
+    sha256 "313d6f4f3f8582c244a866cccdcbf437798e6c4a92b23a6aaae5bd8d53c18724" => :yosemite
   end
 
   def install
