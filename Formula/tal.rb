@@ -8,10 +8,10 @@ class Tal < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9c2c4e5f9d6922f9a9d434485dea4ddf321744728c83adcda822c3c314f6a86e" => :sierra
-    sha256 "bbdef6b2c92650352b7199cc2a9e3bc4698bf2a14fce46397eebcee72c1de419" => :el_capitan
-    sha256 "e6b6f315bc14f5e001893371d18fb0ba88bea4c4d76dd657820eecf509103f9e" => :yosemite
-    sha256 "26945b8471e2731ce34604a19f8bdb046770d961422969999a789168aa7ee25b" => :mavericks
+    rebuild 1
+    sha256 "aef7d5bd5de1e91f309dd210574e4fa9d81a4bd2e2e641f18f54e347ffadd01e" => :sierra
+    sha256 "06746d089ea11f615c3c172ac6131cb8eb28ae6fb1a03a139c7c116b3cf41d2c" => :el_capitan
+    sha256 "c0b587296d743d09db1934e488c31c08c037dab2f18d244e90ae7ab9c7821e1d" => :yosemite
   end
 
   def install
