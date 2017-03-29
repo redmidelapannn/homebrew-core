@@ -5,11 +5,10 @@ class Timidity < Formula
   sha256 "f97fb643f049e9c2e5ef5b034ea9eeb582f0175dce37bc5df843cc85090f6476"
 
   bottle do
-    sha256 "b45b1df69ab87563a77e1163114160f66679fde5548bac0ae81acb7fae86ab80" => :sierra
-    sha256 "0b26a98c3e8e3706f8ff1fb2e21c014ac7245c01510799172e7f3ebdc71602ac" => :el_capitan
-    sha256 "2bfaec5aaaacf7ed13148f437cbeba6bb793f9eacdab739b7202d151031253b4" => :yosemite
-    sha256 "9e56e31b91c1cab53ebd7830114520233b02f7766f69f2e761d005b8bcd2fb58" => :mavericks
-    sha256 "a6c27dd89a2a68505faa01a3be6b770d5c89ae79a9b4739a5f7f1d226bfedb2d" => :mountain_lion
+    rebuild 1
+    sha256 "e697f69aac8431da49068dd6fc150b4185c168aa765f41b37726f6f212b21b8b" => :sierra
+    sha256 "a30070bf39821bdd574ae79f9c1c21762f591a42c79e9fc151725fda78a95281" => :el_capitan
+    sha256 "3c719d12018ab0ebefc1850583b9f0ee4364a33b626f649063bad3e4843b7f7f" => :yosemite
   end
 
   option "without-darwin", "Build without Darwin CoreAudio support"
