@@ -5,10 +5,10 @@ class Sc68 < Formula
   sha256 "d7371f0f406dc925debf50f64df1f0700e1d29a8502bb170883fc41cc733265f"
 
   bottle do
-    sha256 "0b5a0931d6f72700ca691436ed69d467cc043aea9b3454d628050886ccd12141" => :sierra
-    sha256 "d5ac5c810d4f3505230f2cdb9bc3f9f8c14394e1663f30f8d601fe4a559f99c8" => :el_capitan
-    sha256 "b6b3fb845e14cd2c35212911b261bb4a15f38c528522789fd5905e762b7d0bfc" => :yosemite
-    sha256 "8834ebed226bb20898b91be054fbd54491f524ea780c6559eba1c97166bf7e7d" => :mavericks
+    rebuild 1
+    sha256 "3663155d233591fe01414b3e8c19b7bed8065bded4fa9f7f601b15d714be2150" => :sierra
+    sha256 "d68152fca5767f9e7fb4a689d36d6c73786cbfae301cc6ed926cb6022ccfdb92" => :el_capitan
+    sha256 "4b8aa08c152ee5aef8345c7e9ba707bafbb0758fda07b8efbf9dfec88a9f703b" => :yosemite
   end
 
   def install
