@@ -9,10 +9,10 @@ class Simh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5b766137d34b8728a8a2ae3357c6c14063e2aabf3fa4e1107118764f05bc7cb0" => :sierra
-    sha256 "38663141007d531b100b6408f27e1f8c3a43d3ec3cb5dc3b0086ac257077ea3f" => :el_capitan
-    sha256 "0aa3e73267250ed3e466465f78d8bc4f286a7bb825c454dae5587af2023a313b" => :yosemite
-    sha256 "e9043ec0dc68a5660a20fe270488dbfbf8741a77aae8dace61441fc348e74234" => :mavericks
+    rebuild 1
+    sha256 "de55ea3f3bd40f747215d553dde546ae1751447d580c7f9b9779d8a02cced09c" => :sierra
+    sha256 "aa6a243c34ee928a7dfd744ee79ea27349230c49c7b83173a3b18dce82edb3ef" => :el_capitan
+    sha256 "0b40e991ccab1096d84dbde06ec5acecc2dd02ac01ee749d3560d53046bfa639" => :yosemite
   end
 
   # After 3.9-0 the project moves to https://github.com/simh/simh
