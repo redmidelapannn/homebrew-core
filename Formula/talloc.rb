@@ -7,9 +7,10 @@ class Talloc < Formula
 
   bottle do
     cellar :any
-    sha256 "38c0f818816316884d35564a7230d5aaa2baaeedba74885ce8a4d2f599463228" => :sierra
-    sha256 "31766b11cd3bcdcff83e0434ca89d3f4b80a0ab4797d29dd7f25050a63ef2506" => :el_capitan
-    sha256 "1ee8d227d6d749743656665ddcfc8538ca9ab2d1b9ff7b46245cd82d622ae94c" => :yosemite
+    rebuild 1
+    sha256 "9be9af8308c3db57c1c1f17d57c1dfa94d3214f555edfdf651eb5adf7f13feac" => :sierra
+    sha256 "d05488468f3ad04aa7a7cab78d53c1cc0cd011fef0325371d570d6802407d110" => :el_capitan
+    sha256 "bba100de47750612085cc577d0fce250d9fef306b64c72a2408f89d13a73ee68" => :yosemite
   end
 
   def install
