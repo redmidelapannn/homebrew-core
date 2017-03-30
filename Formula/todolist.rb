@@ -25,6 +25,6 @@ class Todolist < Formula
     system bin/"todolist", "init"
     assert File.exist?(".todos.json")
     add_task = shell_output("#{bin}/todolist add learn the Tango")
-    assert_match "Todo added", add_task
+    assert_match /Todo.* added/, add_task
   end
 end
