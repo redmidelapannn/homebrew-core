@@ -6,11 +6,10 @@ class Libtecla < Formula
 
   bottle do
     cellar :any
-    sha256 "21cd696f6e79ae6401dd19f832ac24263f016a62c2d15ec31e25d515bbea5983" => :sierra
-    sha256 "3ceb3942ea4ae1434dcc0aea00fa58b6f16787bc1a0067e9497ad4cb050f771a" => :el_capitan
-    sha256 "836d6100343197540f079ea7f6b9e5641fd8efc4e331d3492f8be4cd41ced6e9" => :yosemite
-    sha256 "d7f9b95bbe7540504751d42589e8500a77d15dc3e6b2f7fe501ed872172f1129" => :mavericks
-    sha256 "a7caf2863506fcb0c8ded748375116957c0a12e45212dea9cce16b47adf00883" => :mountain_lion
+    rebuild 1
+    sha256 "8b246fb87cff63a5fa904e51dacfc8d572591572831891518928227aad1e7833" => :sierra
+    sha256 "1cb2953560bd80c0eb88e258dac06297ce24c86dfffe80e5c9b17f10022d5e00" => :el_capitan
+    sha256 "dc983c2d3f482f04bbb9ac688682a88f74b3026b07d928e81d3f7bdc3e20725c" => :yosemite
   end
 
   def install
