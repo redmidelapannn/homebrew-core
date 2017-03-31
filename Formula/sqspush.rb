@@ -6,6 +6,12 @@ class Sqspush < Formula
 
   head "https://github.com/MathieuDoyon/sqspush.git"
 
+  bottle do
+    sha256 "5f0e9971862c6eb0395f9cd6af9b6ab193428eb6d1c50205be204e41245644a6" => :sierra
+    sha256 "5f0e9971862c6eb0395f9cd6af9b6ab193428eb6d1c50205be204e41245644a6" => :el_capitan
+    sha256 "5f0e9971862c6eb0395f9cd6af9b6ab193428eb6d1c50205be204e41245644a6" => :yosemite
+  end
+
   def install
     bin.install "sqspush"
   end
