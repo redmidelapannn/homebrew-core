@@ -9,10 +9,10 @@ class Dxpy < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "526ed51259393fb569a912b8865e1627af6ebae9bccd460d33cb403027c66e52" => :sierra
-    sha256 "08e04fb3cdca5a1d50229e76713fd6a7f384996ed1e30c97a5260118dbf75a91" => :el_capitan
-    sha256 "b5a5feb625e40d2bffca2a5be08bd4977a55129d7c9925129b50c51b782f5399" => :yosemite
-    sha256 "91a3634cb4366db887baf1e250bce3c978f9283a2a37593e676440a3a4791adf" => :mavericks
+    rebuild 1
+    sha256 "93c411bac34c1089d4b2e4207e09638eed511b2d614e023dc9a1af0437aac058" => :sierra
+    sha256 "ee499cf4e810a64f77367902acad75a7d57e036f21ce8425c719758f279c1866" => :el_capitan
+    sha256 "93e2324e49dbc62db9d51978eeb7b544bb4959f8dd330cb8a20f1dca513c2fec" => :yosemite
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
