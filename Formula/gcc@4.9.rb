@@ -27,9 +27,10 @@ class GccAT49 < Formula
   head "svn://gcc.gnu.org/svn/gcc/branches/gcc-4_9-branch"
 
   bottle do
-    sha256 "ad74e12473b9d5e20275a47028b63f94aedde641d035b8d101a1860e2bf19b76" => :sierra
-    sha256 "3283035aaaf32998cccdec8ada8ae5d32ef49fdab14461d0473d6862800ae16e" => :el_capitan
-    sha256 "dfd72720aef0ef7a2f924b9aa79a0ab5f6b1cd55e81ff592a79b52a59282c8eb" => :yosemite
+    rebuild 1
+    sha256 "d3909b8f3e3e7cb08e2efd119227bdbb6efe15427f0dc23d51510f5561812a1a" => :sierra
+    sha256 "4d41af2cf46ac4fe3b07893d09f3fc94345dfb33b3389f2b44ab4118df85fa24" => :el_capitan
+    sha256 "394e94a66ccd703348dc4444ef48dcd909777b166716e1e7e4f0539ca44e7e97" => :yosemite
   end
 
   option "without-fortran", "Build without the gfortran compiler"
