@@ -8,9 +8,10 @@ class Ejdb < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d48da7bc7966e2be2c5c460f99d0e724794af118d66113276324047f92373478" => :sierra
-    sha256 "1c641947e4fc5f639050f49421ad28701fb91a3f91884e46af81030ec4fff607" => :el_capitan
-    sha256 "c349070a47065657f970481d75e39045ede6762f97059c25cdd2f90a764d75f4" => :yosemite
+    rebuild 1
+    sha256 "3aa6efe9e17eddaa70d8b2113c2c73421113b10047af99abb3e788e3c11ca257" => :sierra
+    sha256 "ad0eeac37664f1358efe863b25da5b93d8c9e7b4bbf098efd9f38d9f81691b26" => :el_capitan
+    sha256 "2696a7be76c626d416d07509c4f6590880f8bfeea1a8ece939a8d5b74cf15a39" => :yosemite
   end
 
   depends_on "cmake" => :build
