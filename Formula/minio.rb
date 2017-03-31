@@ -8,10 +8,9 @@ class Minio < Formula
   revision 1
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "9f530ee8a2a6cad5655dfc6032f390c9349399bbf72939d520c45b9d4887fb55" => :sierra
-    sha256 "f90a700e0b22c469ac2f9462c6739e2107d0c3c52bc52eb467c45e77168e53e2" => :el_capitan
-    sha256 "157af8ad8cde930743a2033c723ba1ecf05079d9eca39bddafdf735321aee6e5" => :yosemite
+    sha256 "05b16370172b79ad750551fe15cc69466e795530d57859e8c76678961dd2465c" => :sierra
+    sha256 "0cde4a805b55f9807f889ff940c342887c5cc3812924e59436f4cf644b4ce066" => :el_capitan
+    sha256 "d98d2d8413ee5182822a3c3d07040ce2522f087a4917398c314d19cad39bef12" => :yosemite
   end
 
   ## Minio depends on go1.7.x only because of the apparent incompatibilities with go1.8
