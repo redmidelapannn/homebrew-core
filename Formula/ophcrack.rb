@@ -19,9 +19,7 @@ class Ophcrack < Formula
                           "--disable-gui",
                           "--with-libssl=#{Formula["openssl"].opt_prefix}",
                           "--prefix=#{prefix}"
-
-    system "make"
-    system "make", "-C", "src", "install"
+    system "make", "install
   end
 
   test do
