@@ -7,9 +7,10 @@ class MecabJumandic < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4b821839b99982c506a1e262c9fa8b650620bc546a8725a5eaa1dc54b45e4822" => :sierra
-    sha256 "4b821839b99982c506a1e262c9fa8b650620bc546a8725a5eaa1dc54b45e4822" => :el_capitan
-    sha256 "4b821839b99982c506a1e262c9fa8b650620bc546a8725a5eaa1dc54b45e4822" => :yosemite
+    rebuild 1
+    sha256 "0bf264927b2c60b37f231d4d84e5c2686935bdf865720f31cb27b527c9c69f32" => :sierra
+    sha256 "0bf264927b2c60b37f231d4d84e5c2686935bdf865720f31cb27b527c9c69f32" => :el_capitan
+    sha256 "0bf264927b2c60b37f231d4d84e5c2686935bdf865720f31cb27b527c9c69f32" => :yosemite
   end
 
   # Via ./configure --help, valid choices are utf8 (default), euc-jp, sjis
