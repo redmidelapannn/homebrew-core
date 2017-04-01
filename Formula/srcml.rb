@@ -4,6 +4,13 @@ class Srcml < Formula
   url "https://github.com/yijunyu/homebrew-fast/raw/master/src/srcml-0.9.5.tar.gz"
   sha256 "55dd2115548e270724af4251187343656d2dfda0e7d372fee15ae27262e3fa8e"
 
+  bottle do
+    cellar :any
+    sha256 "63c8f8a236204cef1f721b346fb5d89e48228acef167df8adf7673f3e79e0e9d" => :sierra
+    sha256 "8353c8483597d2efccb786b1776f63f4a776f79aafc27226b65bf948e6985a96" => :el_capitan
+    sha256 "6a8764869a51b148cdbe6d8d2008f55a0bdb69f00d5539c6489f398855c45de4" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "LibArchive" => :build
   depends_on "antlr@2" => :build
