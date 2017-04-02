@@ -5,6 +5,13 @@ class Srcml < Formula
   version "0.9.5"
   sha256 "55dd2115548e270724af4251187343656d2dfda0e7d372fee15ae27262e3fa8e"
 
+  bottle do
+    cellar :any
+    sha256 "1d8f21c50779822ba93d6a80248a708a248a6fe8b75780abd1f85fece1b40ad9" => :sierra
+    sha256 "4bea16dd55ea2e888cb9aaeef6c51209bf54addc79b8f2ac03748077093279a7" => :el_capitan
+    sha256 "66019d4fb44ceefb9222b0d0274085211f9aa6f5806e87b4da346cda81077f62" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "LibArchive" => :build
   depends_on "antlr@2" => :build
