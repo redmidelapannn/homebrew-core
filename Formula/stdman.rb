@@ -9,11 +9,9 @@ class Stdman < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b275709fe59e30b9c7c0cbdbc536ab8f792da4bf247dc12a2a30bcba3431d841" => :sierra
-    sha256 "c68756d067719ed712b672ade33586d24588e6806ce2aeaaafa4e6e7697b3032" => :el_capitan
-    sha256 "bdafb5c1461c5166c682fa59617bc7d29c8c37eda3da862e5ce213a85fb08813" => :yosemite
-    sha256 "a43224e47bc29cd6ddd3f18d53793bec65a44ac8107082bb492cfc49103ff22c" => :mavericks
-    sha256 "b00742508c8b2dffe738114e606a887d189a8ed79653531b9f969e2e90a6d3d4" => :mountain_lion
+    sha256 "46a632dcc841afbc603ed0397a4cc80da5f132f98b46c720f7d4ec78f494202a" => :sierra
+    sha256 "52192480be1256fb1abea025459b8037fe3c55e06decc898c0fcd0a811914ee2" => :el_capitan
+    sha256 "f0813f8f592866ddad06cea39563a9da8c0a1769403a8dec1da5f7e1e524f3d4" => :yosemite
   end
 
   def install
