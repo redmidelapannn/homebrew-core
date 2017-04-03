@@ -4,6 +4,13 @@ class Xmlsectool < Formula
   url "https://shibboleth.net/downloads/tools/xmlsectool/latest/xmlsectool-2.0.0-bin.zip"
   sha256 "83ea1e977d947dd5f2f5600a3280bc5d372a4913f0dbce1ddf2c0ca1c869ca57"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "806f29519002d47a836dbdd73909659d4c0b17432dcc718caa37623cea43ccee" => :sierra
+    sha256 "806f29519002d47a836dbdd73909659d4c0b17432dcc718caa37623cea43ccee" => :el_capitan
+    sha256 "806f29519002d47a836dbdd73909659d4c0b17432dcc718caa37623cea43ccee" => :yosemite
+  end
+
   depends_on :java => "1.7+"
 
   def install
