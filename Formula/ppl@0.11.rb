@@ -8,10 +8,10 @@ class PplAT011 < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "28b29ead285c5cab1a31957c685f81fd5d429fdd2d9f1c4209404f5c3dd34ce0" => :sierra
-    sha256 "bd04cf76f1bf509a58ecc7f23032e75a943047889094363dab4a957dd8314281" => :el_capitan
-    sha256 "1ce289ae5568772a3f3153e2bc74dc29ab2e8f810ecca5c60813df45c66ed81e" => :yosemite
+    rebuild 2
+    sha256 "9bd52900794a34b1f114ccba20b0c56c169a1d3725180306534e9c05f3819d58" => :sierra
+    sha256 "5d6a7099c0d46bc02e284cef512f6c83b13b978c887424650c3b9babc6e02500" => :el_capitan
+    sha256 "fe3d666634f7cee053a6fdbf69174f227d20ec3395ea944f6d71b5c99ffea921" => :yosemite
   end
 
   keg_only :versioned_formula
