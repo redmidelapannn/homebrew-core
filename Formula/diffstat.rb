@@ -7,9 +7,10 @@ class Diffstat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "30255ba9338a70f51fb80f44cc3993b98e44bd7946f5b598252f9a7d1c6800e9" => :sierra
-    sha256 "4b383a964ff74029f6555162d7548e11c1fe8a9f2295671484419c8e32016ede" => :el_capitan
-    sha256 "fb1b7c5b2802e7f13afcf58bd694eec31577c76ec9e32bbdef8254d08ca9866f" => :yosemite
+    rebuild 1
+    sha256 "94b41717aa8766a64988d6a6c9273eb444d0d02478d82ecf396de3f979b708fc" => :sierra
+    sha256 "b042eb0869120d4fda1a924d36741de6404a2a02a73a4780b9d95256d0f7e54e" => :el_capitan
+    sha256 "b2db4cc70df3b4701f36bd9f8d2e946bf5caff84f64c78e278d59527d6e72b67" => :yosemite
   end
 
   def install
