@@ -8,9 +8,9 @@ class Pdf2htmlex < Formula
   head "https://github.com/coolwanglu/pdf2htmlEX.git"
 
   bottle do
-    sha256 "057e346c91fad86f62d7116d08c30b435b9ed31bdd1144f95d13bc4ecb05ff9b" => :sierra
-    sha256 "5d4bd7026892fc98bc79771d40e4ced2f5b1c679d2d892b4b2d622a56aeaee7f" => :el_capitan
-    sha256 "5c8ac2aac6b46ed3c498206c4c3e961d6a60aceb57a2f435ce17161f5235a79a" => :yosemite
+    sha256 "fc670e907277b7029a3363168155be1d0f2213f92d552f64d56ddab8eb4af3f8" => :sierra
+    sha256 "bd615288d73adb2517103e9ce606900805d1ab1228f65637ae7a08ed5a678db8" => :el_capitan
+    sha256 "50341ef322a114e08b119fb997ddf9757b6f728245a9a066f871b25372403816" => :yosemite
   end
 
   depends_on :macos => :lion
