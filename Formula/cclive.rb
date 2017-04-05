@@ -6,10 +6,10 @@ class Cclive < Formula
 
   bottle do
     cellar :any
-    sha256 "86960a17d3c2ccb689895407af5801d814fcf7ab7eef71139e28d06ac240a12e" => :sierra
-    sha256 "ee97b1e9aed8607c31dc6e9689bb5230e0d114d993ff06cbfca55b3c5c3ea448" => :el_capitan
-    sha256 "118ddf82fb54c2dc14e664328499faea71d5b516166244a6a179037cce16b8bc" => :yosemite
-    sha256 "74168fac20d931d1b6e2c702ac5818188288271100c9e3f15245b63a1e27d9bc" => :mavericks
+    rebuild 1
+    sha256 "0be9b0a6193831daabb000af5a93e95609ca95ff63bfe623da85ea8df0cd47f2" => :sierra
+    sha256 "e95b6a98cbef156e57ca141388b3bf69d89e1bdc8457a304d4b0c3a5cb266bff" => :el_capitan
+    sha256 "b39563ec298159f5b9fe79fffa72390441c0ae49c552f285d24562787bfc2e1d" => :yosemite
   end
 
   depends_on "pkg-config" => :build
