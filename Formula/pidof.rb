@@ -7,12 +7,10 @@ class Pidof < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "6991d110a73724959f84edc398647e3cac5a029645daedef5f263ae51218130d" => :sierra
-    sha256 "d02c826db5564d7750c0e309a771b164f7764250507955d0b87d09837c3c2ba6" => :el_capitan
-    sha256 "54ffe0be6ef278aa45cacb856687df925bab1c117d1ab4c1a8f81ae835fb293e" => :mavericks
-    sha256 "d79dbbb55e7103639a1bb01413115b2526940cd9a198e59da05fec304369f443" => :mountain_lion
-    sha256 "ce5f3ea346e86cd98880ece0e457a5febfd48165ba947152bea9a3c459f41b3f" => :lion
+    rebuild 3
+    sha256 "e85efdff278cb799ebb91fc446f47579433698e6958d874f5b1cd9a8eb5db542" => :sierra
+    sha256 "410cde2d9613b24b0910ddb6e7a761af56ffa7fcb983047780f83bdd9452c6f6" => :el_capitan
+    sha256 "8281b30a611a465e510ccd6d8e08ff0635719dee34a5521a3bb8ef53d3b64021" => :yosemite
   end
 
   def install
