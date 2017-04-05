@@ -7,11 +7,10 @@ class Colortail < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "44e09610d285f503fbae67f930ae7bea894c737d1e2c9c634332188340a70e3e" => :sierra
-    sha256 "e0c8c9af739ce911c0d09eaee26b615444c17f48de27c680cbaf27739e45d8f5" => :el_capitan
-    sha256 "1be1c0067a5621f5edcabf64ec06a775d334924e4ea01bccd1c42830f6c9d0c6" => :yosemite
-    sha256 "8570fbda1625d70eac83d0e53a1d32d0cd7b32f9fb0b8dea38d32a3228dc6688" => :mavericks
-    sha256 "cba08e3d00b530eca42cd2d95dc0c3ed9419f199e7f26edc068b5b1074c3fe51" => :mountain_lion
+    rebuild 1
+    sha256 "7e8bbc0a2eab36ea27f4f9e4cc16483a497c4578256dddab92e79af926bcf571" => :sierra
+    sha256 "245af2902ebd7d436891b94e497f62a39c80c7bd42923a1fcd36407251c8874d" => :el_capitan
+    sha256 "2673172313b8aec58809c180ab9b349bb1c1f6b05ec9dce5fb35db5c59552eb3" => :yosemite
   end
 
   depends_on "automake" => :build
