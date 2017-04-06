@@ -6,10 +6,10 @@ class CsvFix < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b52224f7cd1dd228ffe751c67993f854a8a59f17d6099d40fca02374f1949d02" => :sierra
-    sha256 "ba19053a978b57b6b962f8fa24d099d964ceb90cd28304e3a6c2a7fe0d3abc32" => :el_capitan
-    sha256 "b8dbaf2e14e35cc4c1d7b5d04a5615377f7eeb4d9b1f25fe554b8711511c28f6" => :yosemite
-    sha256 "0b86933c8e32830d5abd0f26ef83b1a60e0254da67542b695fd50ab1e3ba2e68" => :mavericks
+    rebuild 1
+    sha256 "84cc64453a80a8d9a4ae7b8d080354ea0be5f0a409faf5fa669dd7cb4f8c2fa2" => :sierra
+    sha256 "207d7f04523eda689d89e9ecb8c7d334e33a5a03f21bdaff7273701863892af7" => :el_capitan
+    sha256 "6006be0ef31450b729aef11a86685081ea37016c8a3414fdca2b955ab8978b20" => :yosemite
   end
 
   needs :cxx11
