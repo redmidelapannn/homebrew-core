@@ -6,9 +6,10 @@ class Lzo < Formula
 
   bottle do
     cellar :any
-    sha256 "26969f416ec79374e074f8434d6b7eece891fcbc8bee386e9bbd6d418149bc52" => :sierra
-    sha256 "77abd933fd899707c99b88731a743d5289cc6826bd4ff854a30e088fbbc61222" => :el_capitan
-    sha256 "0c3824de467014932ebdb3a2915a114de95036d7661c4d09df0c0191c9149e22" => :yosemite
+    rebuild 1
+    sha256 "9f7030a51201e6d36b48238c5d50f6cdc089af10e2aef10de35d27abcb9a3a46" => :sierra
+    sha256 "7dac8b6a48c41899fc442d972503062c999ceba3920ddec4d04e51bba32afddd" => :el_capitan
+    sha256 "8eb92ab49cdcc32f76197d80e404a6b4aa7b06bd8714519b2568d93a5e84d2f5" => :yosemite
   end
 
   def install
