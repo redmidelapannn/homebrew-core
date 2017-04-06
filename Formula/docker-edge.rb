@@ -6,6 +6,13 @@ class DockerEdge < Formula
       :revision => "4845c567eb35d68f35b0b1713a09b0c8d47fe67e"
   head "https://github.com/docker/docker.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d59d2685257d9447ca0227e1b84bbf6e360b0612225971e0d0bb08c474987d17" => :sierra
+    sha256 "7cd16210d366f2bf027cf145aa30bdd1114c2feb13425ff62651af82af4c51c8" => :el_capitan
+    sha256 "a8d4b0c125f0f30b03b1c9eb4eabaa56c63cbc5d55d7ce26804a43429686e916" => :yosemite
+  end
+
   option "without-experimental", "Disable experimental features"
   option "without-completions", "Disable bash/zsh completions"
 
