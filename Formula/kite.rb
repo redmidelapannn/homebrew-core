@@ -5,10 +5,10 @@ class Kite < Formula
   sha256 "8f97e777c3ea8cb22fa1236758df3c479bba98be3deb4483ae9aff4cd39c01d5"
 
   bottle do
-    sha256 "b431d9a70177ca5f5b14cadf9d91efe73cf448583f5326767fd6c492cd032f5e" => :sierra
-    sha256 "9e2e8d816c2ad95f0b1cb25a457f12e47ec5e1d73ea5bbb65d9655aec9ecbe6b" => :el_capitan
-    sha256 "2833a3382b4fde542e4e5277e4f4dec6e0d9f1beb74c905db525b37e226a638f" => :yosemite
-    sha256 "55688f9323627d1ef884615c6de641885b1fc60031522ae584ce5ee54941fa87" => :mavericks
+    rebuild 1
+    sha256 "256735ee408c98fe6bd6a9f9f351047f9f60a514cba1b871b39b5696f291d338" => :sierra
+    sha256 "9127297a0c289c0fed8c6c8735f5a1b3291707a4cd8ba003d07acbdf000f4e4a" => :el_capitan
+    sha256 "943ae3e223080a4f64c3e1c2b0278fb0ca70100337f1e5db54b772aa45b50962" => :yosemite
   end
 
   depends_on "bdw-gc"
