@@ -6,6 +6,13 @@ class Pipenv < Formula
   url "https://github.com/kennethreitz/pipenv/archive/v3.2.11.tar.gz"
   sha256 "4dc7dcea983f0ecd8f3ca16e9249280271558bdffd0cc1bdca3bdf322f365d4e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c03d99871d77c0b834a80ab30b2881669a173e2fa6f67e35464a2ec4d5c4df84" => :sierra
+    sha256 "019602da64bf47b334f5794f642b36abd0e9b41170c293a6c73e6b95461bad06" => :el_capitan
+    sha256 "bc7c8cddd48c578f78ec7a622b7027dec2b72e4478cb367ff62c9255a8489e88" => :yosemite
+  end
+
   option "without-completions", "Disable bash/fish/zsh completions"
 
   depends_on :python
