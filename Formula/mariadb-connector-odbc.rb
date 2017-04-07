@@ -4,6 +4,12 @@ class MariadbConnectorOdbc < Formula
   url "https://github.com/MariaDB/mariadb-connector-odbc/archive/2.0.13.tar.gz"
   sha256 "6b77e879335ea32dad40d42de95930df8ad557faa887b414a09ab7ead3ce963c"
 
+  bottle do
+    sha256 "ca036e9d240fe5ec3f91f757e3cf7f8ae28b03141ae8a5a345e02e255ac48575" => :sierra
+    sha256 "c6b4a1c1dc6007ed197d4904917d367d521a5dd9d001c6912965f03f9b1215c2" => :el_capitan
+    sha256 "1df46572d3b6957ae1c667f31d1ccf8ed539f029b465d7674e15549dda4798c6" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "mariadb-connector-c"
   depends_on "unixodbc"
