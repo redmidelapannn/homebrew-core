@@ -7,10 +7,11 @@ class Sslscan < Formula
   head "https://github.com/rbsec/sslscan.git"
 
   bottle do
-    cellar :any
-    sha256 "04e602109f1066a74f01bb71ba9fcfd354b3508a0dafbc1c4951f30d276aade1" => :sierra
-    sha256 "30a096d3b1458298d1015a61baac9ddc7aab548a0855b47becbf3add224b256a" => :el_capitan
-    sha256 "b69483d7db7813ad144004b0f8c4f6848e6f8f59d305c2d8fd4499ec355247de" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "4faefdb3b38de7cdc9c701bdbbe4c21aadd188cf40821daaa7c322c705103cdc" => :sierra
+    sha256 "528f23a9dc7040530dfb66e88cc9749ff671b96d37e928f5a30ec05bf0eec074" => :el_capitan
+    sha256 "640d9aba9a90a6db5581b78b6197e87d2ed7b425899f2a6cea7705fbf45bf6cc" => :yosemite
   end
 
   option "with-openssl", "Don't statically link OpenSSL"
