@@ -4,6 +4,13 @@ class QpidProton < Formula
   url "https://www-eu.apache.org/dist/qpid/proton/0.17.0/qpid-proton-0.17.0.tar.gz"
   sha256 "6ffd26d3d0e495bfdb5d9fefc5349954e6105ea18cc4bb191161d27742c5a01a"
 
+  bottle do
+    cellar :any
+    sha256 "dbfb80c31011036b2877e3f31d6aa23a7a43c93ed565a9e46171643018c4ff95" => :sierra
+    sha256 "08525aa5dbfc5dabd6bda6e9f71261e3c2939eca7a52ecc3e9f0e0e5cfbbf3bc" => :el_capitan
+    sha256 "863ea0144ad6d33c7ba56ded4cfbbc59d54f428dcafcd09cb5dd3b9c706cfe2c" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "libuv"
   depends_on "openssl"
