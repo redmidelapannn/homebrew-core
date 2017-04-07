@@ -5,6 +5,12 @@ class Cling < Formula
   version "0.3"
   sha256 "9776ad00bf1ecd7510ff06960de62a61cbafec1bde1a61177cb40d24110ed02d"
 
+  bottle do
+    sha256 "6defeb3eadddf8e9c6c91096c7e66247d40fce321c942d009e400a70c104ade5" => :sierra
+    sha256 "4b06ac0e54b72f345ba41f83324bf898f0468af5c6214a817901957d8a6c8ed7" => :el_capitan
+    sha256 "d20cfbcf94964c09701f097e1c4839096ff593fc3ad360e5c8932fb644f03ed1" => :yosemite
+  end
+
   depends_on "cmake" => :build
 
   resource "cling" do
