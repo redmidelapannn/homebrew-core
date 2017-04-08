@@ -9,10 +9,10 @@ class Micro < Formula
   head "https://github.com/zyedidia/micro.git", :shallow => false
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "c5bd0f727bfe078b1f315e9c4f9610c38cb02db1c57138dc78d9c0518cfa41e8" => :sierra
-    sha256 "cdfd6c9521de4a47df9cf48c58736e6584892a45729adaf7357f80efe1a78144" => :el_capitan
-    sha256 "db62612120d75b76719592cdb8d7cb961541db1c6d35051a1adfa36f9faeda7a" => :yosemite
+    rebuild 1
+    sha256 "5505b22c48f31774810fa4d012ad54e67f133b66dce05ec9e93e0457bb04af4a" => :sierra
+    sha256 "e4fe2880ed2e3b9c9fe220bd4a954e1801cd7cdfbc7142ca786486125c2293c4" => :el_capitan
+    sha256 "ddfce1f54bf55fe36721d568916d50890fa909e2a55a229e72cb1a39373a7b1b" => :yosemite
   end
 
   depends_on "go" => :build
