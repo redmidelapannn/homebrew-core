@@ -7,10 +7,10 @@ class Launchdns < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "a2fa1c72d6a55a6ef16944dfa4cd67d7316cc6937ca6a1effa760e8d3dbaae90" => :sierra
-    sha256 "32e7c5fad3d98c50f6396328e669f880b6c5ac3f30c8d67735bcf42d4c65b015" => :el_capitan
-    sha256 "7df1ba7afd33fb76de28051fc835e4c8aed32dcd8c8530189d7db021be5b8600" => :yosemite
+    rebuild 2
+    sha256 "ed880e50a48f87dfd11b7e55ae3e181b9bdf39ced7c761ae22b490f916791b15" => :yosemite
+    sha256 "c2b42411d33437ee2cac305e924a86d467592e662aea63f5eb24a5c03f7bb3cc" => :sierra
+    sha256 "939ae9c9ff911547238007c770f6b90d9830f05d3d045cd9a0326c51f67de4c3" => :el_capitan
   end
 
   depends_on :macos => :yosemite
