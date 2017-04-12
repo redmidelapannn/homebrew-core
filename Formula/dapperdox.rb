@@ -6,7 +6,9 @@ class Dapperdox < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ba8175c292653a7ecdb1f4d1c9d30c8c585fa3558ed31613c50c16e37207f65f" => :sierra
+    sha256 "25d3f456923a6fec61f1754dce03b0ddac170507a277527a47a6ca9d29e701d9" => :sierra
+    sha256 "11cada42eb5d075d3af6703eb10b6c4f3f9cd09b16bcb20b4648e41139932969" => :el_capitan
+    sha256 "51dec35c6092cca33e69a03966dc2aebd65f2c3913a7fa45848adb3d01dfdfba" => :yosemite
   end
 
   depends_on "go" => :build
