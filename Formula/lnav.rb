@@ -21,6 +21,7 @@ class Lnav < Formula
 
   depends_on "readline"
   depends_on "pcre"
+  depends_on "sqlite" if MacOS.version < :sierra
   depends_on "curl" => ["with-libssh2", :optional]
 
   def install
