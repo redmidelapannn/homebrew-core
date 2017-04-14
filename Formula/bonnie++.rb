@@ -1,8 +1,8 @@
 class Bonniexx < Formula
   desc "Benchmark suite for file systems and hard drives"
   homepage "https://www.coker.com.au/bonnie++/"
-  url "https://www.coker.com.au/bonnie++/experimental/bonnie++-1.97.tgz"
-  sha256 "44f5a05937648a6526ba99354555d7d15f2dd392e55d3436f6746da6f6c35982"
+  url "https://www.coker.com.au/bonnie++/experimental/bonnie++-1.97.3.tgz"
+  sha256 "e27b386ae0dc054fa7b530aab6bdead7aea6337a864d1f982bc9ebacb320746e"
 
   bottle do
     cellar :any_skip_relocation
