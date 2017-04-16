@@ -6,10 +6,10 @@ class Cdecl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1d424613881cf9109d824664fc77fc947f2968b9850d448db4b02c6f0a562b5c" => :sierra
-    sha256 "4f0e990d88823aa9f3d1dcea71ffa442c13640ce82cc9da41f90a1be5ef457dc" => :el_capitan
-    sha256 "e8f53a0e5b3649f0c691c60380b9c77af573387240f3479a41550583fcc4e22c" => :yosemite
-    sha256 "b1e1618d0f1bcbb801c669c314c36c72e47e8829950a8bf0899d0517f3036ccc" => :mavericks
+    rebuild 1
+    sha256 "49ba6e45dc18459f9df55b236df5b0da4ce4429476fa9b10e7a42c0871f7e77f" => :sierra
+    sha256 "793dedd8ac069707174cc76b3ae975bacc569950db03907959dec735ff14e8ee" => :el_capitan
+    sha256 "2717faef123635e8ea4e80d538c0c035073630d730699c96ad935b7a166fca80" => :yosemite
   end
 
   def install
