@@ -8,9 +8,10 @@ class Httpdiff < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "39a0d685904aba4c3e55ff22b4d231b8890c022a1eb0366dc264bbabc410a117" => :sierra
-    sha256 "59b46605118f8789c10facd53e9d4ce4c9f54c8de85611d423984c4316a169eb" => :el_capitan
-    sha256 "d5919069e31192cfd6f7d33dd4ff80d2142a8c36d23b50291e914c158d91ffac" => :yosemite
+    rebuild 1
+    sha256 "8d2713a38534d1d175e9d622839afb9ddc839c3d27131b779582f8c5fea3a26e" => :sierra
+    sha256 "8e9755e94ddd87107367b5d0dcc823399f14f4c9c31de6fb448b29935af900af" => :el_capitan
+    sha256 "588245f4f6222ab440ff7242bbfdd9ab32d876560b48b8e5389fdb72f6736a8c" => :yosemite
   end
 
   depends_on "go" => :build
