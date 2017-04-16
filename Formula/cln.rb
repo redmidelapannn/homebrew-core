@@ -6,11 +6,10 @@ class Cln < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "da1f2677ac3df8180bfebd9fa59804610d4b3e0020adcc47ffe839ad831006e4" => :sierra
-    sha256 "b816f165673f58fb952669c7fa542b2fe52257e6572853785efee0048ea35d6a" => :el_capitan
-    sha256 "95e74408a4b9dca4e7a939d2ff79e9ab16f3193622027d3d741eb6fc9cc7695d" => :yosemite
-    sha256 "048947d9343c8848897be272cae74d98cd869fa3d64fa6f2bfe82cb68ca100b9" => :mavericks
+    rebuild 2
+    sha256 "3fa6ff1c212900216f8b57948ed708955f3e780b3ccc0520ae3a6addf6853bab" => :sierra
+    sha256 "4e17f828147724d85d73937ff56f8c644e6c6f110adcd68f8e3a32b28352029f" => :el_capitan
+    sha256 "64e2eb2dc8efd2f99a064b7cfedfec76cad2f41097b044361101926218c2adad" => :yosemite
   end
 
   option "without-test", "Skip compile-time checks (Not recommended)"
