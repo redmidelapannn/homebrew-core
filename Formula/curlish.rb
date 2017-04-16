@@ -8,11 +8,10 @@ class Curlish < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ce2ef65c8c9f59f11b4edf7906af5504df8573e01ee7d6f6f996fc0647285433" => :sierra
-    sha256 "5d97c4e9f5c4cd9246bc3be9e785fed094cb522c3110f1ca41408415875b08cc" => :el_capitan
-    sha256 "6cd32ca680c05b00761eb422a067316d4bb172c171f3e4015da66ed319cec3d2" => :yosemite
-    sha256 "f5a8b12596157c853a1f9179e4e47e9bc1259ab75e84efe61343e99bec6f62ab" => :mavericks
-    sha256 "b01c4e78526de36f3b4e0fcac7ec049e2a4dd9366c8d32eae5692a3e626f99a4" => :mountain_lion
+    rebuild 1
+    sha256 "460acba545f2f4147a0c88d958c33d1c8f5aca49f443e725bd57b887d19b3aa6" => :sierra
+    sha256 "cd43589cae3414f31513cd0b6dc09e88aecce705afd866ca6649ca714613babd" => :el_capitan
+    sha256 "cd43589cae3414f31513cd0b6dc09e88aecce705afd866ca6649ca714613babd" => :yosemite
   end
 
   # curlish needs argparse (2.7+)
