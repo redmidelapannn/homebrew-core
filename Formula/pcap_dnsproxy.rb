@@ -6,9 +6,8 @@ class PcapDnsproxy < Formula
   head "https://github.com/chengr28/Pcap_DNSProxy.git"
 
   bottle do
-    sha256 "addff90b1ba84293b545778b055448e4ab6fa45f753b79c3e392d9e9d30fa1b0" => :sierra
-    sha256 "1c462cda06356957500baf934c508d263114575fe5368061d204b1c7b1e50b3f" => :el_capitan
-    sha256 "5ad62a89c78c853de0181efaf10af9f3e25a18130dfa467a848fbc19c18c8c9b" => :yosemite
+    sha256 "27d1cc79a396b3bf45bb2bf334a5a3e7678d114c1e431726c3a011a65f39e00c" => :sierra
+    sha256 "54ca0a91de02c571c1c06fdae5586978c784709757ffecb4218db7923390189a" => :el_capitan
   end
 
   depends_on :macos => :yosemite
