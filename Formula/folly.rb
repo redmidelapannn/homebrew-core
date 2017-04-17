@@ -24,7 +24,7 @@ class Folly < Formula
   depends_on "snappy"
   depends_on "lz4"
   depends_on "openssl"
-  
+ 
   # https://github.com/facebook/folly/issues/451
   depends_on :macos => :el_capitan
 
