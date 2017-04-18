@@ -22,8 +22,8 @@ class Par2 < Formula
 
   test do
     # Protect a file with par2.
-    test_file = (testpath/"some-file")
-    File.write(test_file, "file contents")
+    test_file = "some-file"
+    (testpath/test_file).write "file contents"
     system "#{bin}/par2", "create", test_file
 
     # "Corrupt" the file by overwriting, then ask par2 to repair it.
