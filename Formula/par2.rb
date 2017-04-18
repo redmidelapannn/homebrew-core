@@ -15,12 +15,8 @@ class Par2 < Formula
   depends_on "autoconf" => :build
 
   def install
-    system "aclocal"
-    system "automake", "--add-missing"
-    system "autoconf"
+    system "autoreconf", "-fiv"
     system "./configure", "--prefix=#{prefix}"
-    system "make"
-    system "make", "check"
     system "make", "install"
   end
 
