@@ -14,9 +14,9 @@ class Couchdb < Formula
   end
 
   bottle do
-    sha256 "2a3dd04b37456370b311c30bfeb18bc233e9741fd7d87ae6ba356d2b650e9bfa" => :sierra
-    sha256 "4a5565cf75f12fea70823b9ec2bd6e8dccdfc7b0f96c31331380d6910abcd0d4" => :el_capitan
-    sha256 "06e0a67d125f908efa45426cd903ae2192f0742879a91390659254f2f1a27988" => :yosemite
+    sha256 "0fecc900dd197b6f71a494954e0f6b8475ea02904a5cada0c2225e03209fdf29" => :sierra
+    sha256 "1f9ba72ea6088cdc4eb1e63af537bb7b9cc4641d496034e2bbb4c2eb6344499f" => :el_capitan
+    sha256 "66e63b1498f31633bdc58800d348cadff23405392b621e5df403b73ae99db290" => :yosemite
   end
 
   head do
