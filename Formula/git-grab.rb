@@ -7,6 +7,13 @@ class GitGrab < Formula
 
   head "https://github.com/jmcgarr/git-grab.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "819357b2da9ff5706beaa95f307c3eea5cdb5850d455fa053ecd2a39ac5215d1" => :sierra
+    sha256 "88198c8a5fc3a50a32a9a29b051d56d26b786e9947130bc913ca60b61dc3d7a6" => :el_capitan
+    sha256 "cd5fdba6296696e024014a39ad6e95be4b9bd1b7e60d29f5b192e8181e1ba3d0" => :yosemite
+  end
+
   depends_on "go" => :build
 
   def install
