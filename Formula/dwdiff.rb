@@ -6,9 +6,9 @@ class Dwdiff < Formula
   revision 5
 
   bottle do
-    sha256 "1e89cad649d9fface636f7d810d728c1a7777f02ca2706dcdf1e176e1b1af9e6" => :sierra
-    sha256 "62f0c751c4eaad4f4983bdbf216f361365b632817c25e22717fdde311da98c6e" => :el_capitan
-    sha256 "a61909de2542b39ccb1072286887d3de6da4fac9310cfd062dbbf964184f6cd2" => :yosemite
+    sha256 "b898275fd68d40dbbee4e58cb689aca51df6d7d973d5938522f10f1163b22310" => :sierra
+    sha256 "95d1e79aeaafa63b35029f88c2ee1be904344a09286301e4055113e35fd4999e" => :el_capitan
+    sha256 "b58d2741b5970e51d01a5847dcff3ba744860786e987813459b26a07cff4e812" => :yosemite
   end
 
   depends_on "gettext"
