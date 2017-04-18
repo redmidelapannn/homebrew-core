@@ -6,10 +6,10 @@ class Blitz < Formula
 
   bottle do
     cellar :any
-    sha256 "93ec8092122febb4110ce1da374ee5272c6270b7e83fe5da29da4e7f1f1fea6f" => :sierra
-    sha256 "dda71ed3f79b926b50f988a931794674908884a411c19b2899ab2a0996a8b71a" => :el_capitan
-    sha256 "eabd24b7c07c2f99b181770faacd72bab5c55149fb3d9fb846b2baaaa4faede5" => :yosemite
-    sha256 "4baf2939ff5cbe7e0e83944ed8984da49573eafedf826761b4c4fecd954e2592" => :mavericks
+    rebuild 1
+    sha256 "3e32aafcc6e704e7097dfae4d69e07ad884306dae64b6f1ec2a42c3c97ee65a8" => :sierra
+    sha256 "ee303e0dc0c4bd1046b27d328b0162bc417fac5f8611ae6fb8ec0ad169f6c297" => :el_capitan
+    sha256 "f5ebd5655cf643165ff12ecf1990d7245263192885e8cf17cd6993fa1540d804" => :yosemite
   end
 
   head do
