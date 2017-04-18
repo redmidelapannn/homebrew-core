@@ -14,12 +14,6 @@ class Par2 < Formula
   depends_on "automake" => :build
   depends_on "autoconf" => :build
 
-  # The tests for this version of par2cmdline use the `iflag` option to dd,
-  # which doesn't exist in OS X. `iflag` has been removed as of commit
-  # 855f3096c9f52cd0fbdb9e237c6c9624f7b90ea6, but no release has been cut since
-  # then.
-  patch :p1, :DATA
-
   def install
     system "aclocal"
     system "automake", "--add-missing"
@@ -48,18 +42,3 @@ class Par2 < Formula
     assert File.read(test_file) == "file contents"
   end
 end
-
-__END__
-diff --git a/tests/test20 b/tests/test20
-index cbedaf3..0a5bf50 100755
---- a/tests/test20
-+++ b/tests/test20
-@@ -16,7 +16,7 @@ echo $dashes
- echo $banner
- echo $dashes
-
--dd bs=1000 count=2 iflag=fullblock if=/dev/random of=myfile.dat
-+dd bs=1000 count=2 if=/dev/random of=myfile.dat
-
- banner="Creating PAR 2.0 recovery data"
- dashes=`echo "$banner" | sed s/./-/g`
