@@ -7,9 +7,10 @@ class Ifuse < Formula
 
   bottle do
     cellar :any
-    sha256 "424c1d3dcc232ca0afa729bc27abcc4d5519e879ea61badfd3fb4e9d1ff3af1b" => :sierra
-    sha256 "2225777c6c9afaa0218f0fa8ca6b8eb0bc0a34ab7004e48613ff51af63f64d02" => :el_capitan
-    sha256 "9ea6fd7a09dbfba5bb1f1a7335330977440c1e3d73dac29b8a6433a6a35d1bff" => :yosemite
+    rebuild 1
+    sha256 "b687d4247d6b6c53c7e8ec3bfc1c8dd1e9326b0d09a516c4898c8088d6350058" => :sierra
+    sha256 "bc7e3515cecd1a3a403fa585be888b99de441c30caf12e39c5bce5cc0b07a22d" => :el_capitan
+    sha256 "38d6e53e489f560b81cb13f6d7093d4f640fbb4f783362ce0f838c5b798312b6" => :yosemite
   end
 
   depends_on "pkg-config" => :build
