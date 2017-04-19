@@ -20,12 +20,6 @@ class Sshfs < Formula
   depends_on :osxfuse
   depends_on "glib"
 
-  # Fixes issue https://github.com/libfuse/sshfs/issues/27
-  patch do
-    url "https://github.com/libfuse/sshfs/commit/e5acfce8eda218d.patch"
-    sha256 "53b165353c944303d0839bbe1bf16c04eaaee2deca89ccff729b1974d14aa8cb"
-  end
-
   def install
     args = %W[
       --disable-dependency-tracking
