@@ -1,8 +1,8 @@
 class Menhir < Formula
   desc "LR(1) parser generator for the OCaml programming language"
   homepage "http://cristal.inria.fr/~fpottier/menhir"
-  url "http://cristal.inria.fr/~fpottier/menhir/menhir-20170101.tar.gz"
-  sha256 "99696f365511e0440c18d295b7073a13886c5b594e1875f5967ad897a2216a46"
+  url "http://cristal.inria.fr/~fpottier/menhir/menhir-20170418.tar.gz"
+  sha256 "31deadeef2129ffcbdd78717007e13f87031432e6c3601f7e829bb0e5f9c7d2b"
 
   bottle do
     sha256 "f8211e8e59700a24c4e77d3c5c6cf4fb7dffdd259667d567383823629e75293d" => :sierra
@@ -10,12 +10,8 @@ class Menhir < Formula
     sha256 "e710431bf1a15351736dcee361b5d7d7694456c5e2fc262b5e395ef48c16f5ef" => :yosemite
   end
 
+  depends_on "ocamlbuild" => :build
   depends_on "ocaml"
-  depends_on "ocamlbuild"
-
-  # Workaround parallelized build failure by separating all steps
-  # Submitted to menhir-list@yquem.inria.fr on 24th Feb 2016.
-  patch :DATA
 
   def install
     system "make", "PREFIX=#{prefix}", "all"
