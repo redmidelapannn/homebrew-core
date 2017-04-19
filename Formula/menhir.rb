@@ -41,22 +41,3 @@ class Menhir < Formula
     assert File.exist? "test.mli"
   end
 end
-
-__END__
-diff --git a/Makefile b/Makefile
-index f426f5d..54f397e 100644
---- a/Makefile
-+++ b/Makefile
-@@ -116,7 +116,11 @@ all:
-	  echo "let ocamlfind = false" >> src/installation.ml ; \
-	fi
- # Compile the library modules and the Menhir executable.
--	@ $(MAKE) -C src library bootstrap
-+	@ $(MAKE) -C src library
-+	@ $(MAKE) -C src .versioncheck
-+	@ $(MAKE) -C src stage1
-+	@ $(MAKE) -C src stage2
-+	@ $(MAKE) -C src stage3
- # The source file menhirLib.ml is created by concatenating all of the source
- # files that make up MenhirLib. This file is not needed to compile Menhir or
- # MenhirLib. It is installed at the same time as MenhirLib and is copied by
