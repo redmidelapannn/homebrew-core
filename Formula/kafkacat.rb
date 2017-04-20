@@ -8,9 +8,9 @@ class Kafkacat < Formula
 
   bottle do
     cellar :any
-    sha256 "d6d0216bf1ea263494f9286e90bc965e9009fd05227d201d0bee0afb0ccebaac" => :sierra
-    sha256 "f3e04c8005e9bd353717c04be4191bd1404385fb6e502ae6f52402e95b73189f" => :el_capitan
-    sha256 "19bc3da24e213841b428fa755a9b259c6132eba3181b03c4ac5eff116ba8702b" => :yosemite
+    sha256 "86716faa5ae931724f47f7dad0f0181c84631b110620a545ccd992f1d8e288e4" => :sierra
+    sha256 "25dd21084613d822df35b3559c5e31a8d769f50903afd5df8e9b99771c7c9825" => :el_capitan
+    sha256 "35d7c09f50cbb4c0fd22db76e2a3339fa41d6e5b2502dfa35fc0a9918498823d" => :yosemite
   end
 
   depends_on "librdkafka"
