@@ -5,6 +5,7 @@ class Osquery < Formula
   url "https://github.com/facebook/osquery.git",
       :tag => "2.4.0",
       :revision => "76fe5d748cbcf41a4c3f40193bde05739cf7d83f"
+  revision 1
 
   bottle do
     cellar :any
@@ -130,7 +131,7 @@ class Osquery < Formula
 
       # Apply same patch as osquery upstream for setuid syscalls.
       Pathname.pwd.install resource("thrift-0.10-patch")
-      system "patch", "-p1", "-i", "gistfile1.txt"
+      system "patch", "-p1", "-i", "patch-thrift-0.10.diff"
 
       exclusions = %W[
         --without-ruby
