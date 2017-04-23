@@ -8,7 +8,7 @@ class Sdcv < Formula
 
   bottle do
     sha256 "09a194ebd5c0b549df0e5b23d42e39ecf9e4103acc94940a00cc5ca9a3e75cc7" => :sierra
-    sha256 "d0c64429547adb127d5ff9f0f0db8c4bc663bc413dfb5b5d32c924a67171c247" => :el_capitan
+    sha256 "4e8d8fe4b13b92c82dc0047dcf8b0f1aaee482d355ec1a19ad49623675d4e371" => :el_capitan
     sha256 "481df7fdcbacc61fdde3706b750c6e7e2c873f2134bbbac8044262a192af2e2f" => :yosemite
   end
 
