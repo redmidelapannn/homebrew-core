@@ -19,10 +19,10 @@ class Gdb < Formula
   sha256 "4607680b973d3ec92c30ad029f1b7dbde3876869e6b3a117d8a7e90081113186"
 
   bottle do
-    rebuild 1
-    sha256 "810225f267677d661ded76c3f8548ed9f24a03feaaa3597d229694eab654b3fd" => :sierra
-    sha256 "2032ce5c512f0885171e4826d0a8a9f1a2fae2f24cec4c851a284c26eceaa221" => :el_capitan
-    sha256 "eaad3b6eb64408088da0760cf0ca92c39a121a5f58d1835bd74f4b745fb2697c" => :yosemite
+    rebuild 2
+    sha256 "a926af46643be93f0b8cfe6b289beeddce8b1915fd2eeb5f7da1fa0d2469b60f" => :sierra
+    sha256 "065a14b77b6c70a5c3f2d37b00da7128e99f0ef4504caf835ca1712a30e6d622" => :el_capitan
+    sha256 "be27a5f188d5c185ca8e047ed29d45a32a9b386dc005852c2d9f82c6d55055f8" => :yosemite
   end
 
   deprecated_option "with-brewed-python" => "with-python"
