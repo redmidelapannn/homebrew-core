@@ -6,9 +6,9 @@ class PkgConfig < Formula
   sha256 "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591"
 
   bottle do
-    sha256 "8eb723bfc03cd468d779d54d015d47d2e8ab1dd4d35e595ab4abaca8833b3277" => :sierra
-    sha256 "93f044f166bcbd84db14133ee4f56104031c65409cfd2801c7ac0d182936dc78" => :el_capitan
-    sha256 "d9ccc19f1a55919408a1b27260b0404aa36dc6782a4a5964e6fd8409abf3b830" => :yosemite
+    rebuild 1
+    sha256 "e1dc1c379f20018f36bceec97214a97133fd8333cf440a0fa6968c1c34708a1a" => :el_capitan
+    sha256 "ef96ef79396c27e6ff7f5e6cb41859b9e1644b815da9fa8e02d11a01bc41e0b3" => :yosemite
   end
 
   def install
