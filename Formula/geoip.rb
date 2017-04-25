@@ -7,9 +7,10 @@ class Geoip < Formula
   head "https://github.com/maxmind/geoip-api-c.git"
 
   bottle do
-    sha256 "3ec062926f17a28236d503ba62115a2c6abdd9cfb8d4c42581a24a5849c98f56" => :sierra
-    sha256 "d60281103536558032346574dbf2b9f37f4230ac2331e19b78f2bcf4b2fa6b83" => :el_capitan
-    sha256 "50c7c2efc87e07d8001312a970494900679e87ca84c53ca070c0e734506313e4" => :yosemite
+    rebuild 1
+    sha256 "087365349c8cfbae8186c773bc08a32c1b1367cbbcd388a1bf21b44427ff6b93" => :sierra
+    sha256 "b4d7ddb292a48857d00d593af3cdba83ef5be52799ba50ba9b8796068b0b707d" => :el_capitan
+    sha256 "199e7ffb1286ff94e796ffd2c5d325963c88bd0a8f2a33fdb93a372fa856220a" => :yosemite
   end
 
   depends_on "geoipupdate" => :optional
