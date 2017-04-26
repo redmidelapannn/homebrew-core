@@ -4,6 +4,13 @@ class ThriftAT09 < Formula
   url "https://www.apache.org/dyn/closer.cgi?path=/thrift/0.9.3/thrift-0.9.3.tar.gz"
   sha256 "b0740a070ac09adde04d43e852ce4c320564a292f26521c46b78e0641564969e"
 
+  bottle do
+    cellar :any
+    sha256 "5a1ebc57408ba896ccb867d13f357ed4df6c04ef36656ea7d30cdf133637464e" => :sierra
+    sha256 "41dc74f549d54af1aafe78a6af6f2a97fcdcbe83133f5a92d7ca703968a1052f" => :el_capitan
+    sha256 "7f13c2f5599ee3c02d2608b92904b2439e1cb849cbb7c8b5ac2d0308226b035e" => :yosemite
+  end
+
   keg_only :versioned_formula
 
   option "with-haskell", "Install Haskell binding"
