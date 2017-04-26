@@ -5,6 +5,13 @@ class ApacheFlexSdk < Formula
   version "3.2.1"
   sha256 "f8fb00d300c74609771b23e2bc5d9a97e22f793518245be5596d9a4177236f9e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "af5772da5c7a270bea4716d9abdd33c4b9dc54c4b6a771bebe55190b97aaaefd" => :sierra
+    sha256 "e146d85e57f4e3c4d6046de6d3b0eca4be34e3f12688e9c7f8ba1f575fb06664" => :el_capitan
+    sha256 "e146d85e57f4e3c4d6046de6d3b0eca4be34e3f12688e9c7f8ba1f575fb06664" => :yosemite
+  end
+
   option "with-playerglobal", "Installs PlayerGlobal.swc"
 
   resource "flash-playerglobal" do
