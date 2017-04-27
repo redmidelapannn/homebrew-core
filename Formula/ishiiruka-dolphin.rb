@@ -6,6 +6,13 @@ class IshiirukaDolphin < Formula
   sha256 "8a7b46ff645cd0303a5c7aaaf60bf2f8d39ac1c7a0df161d0385d064812f8e02"
   head "https://github.com/Tinob/Ishiiruka.git"
 
+  bottle do
+    cellar :any
+    sha256 "7b4feb872cbb20e3440e1765b1b034ba905b1f61f2095b5ba0376b4939d1c6a3" => :sierra
+    sha256 "23779c5583d6302dc8aa66e548de079e66654e69e60b42cc028e3552c0077bc5" => :el_capitan
+    sha256 "3a39761caba6570bc2938321cae21bed3eff92f78a04e909ad6badcee7d2823f" => :yosemite
+  end
+
   option "with-avi-frame-dumps", "AVI Frame dumping support"
 
   depends_on "cmake" => :build
