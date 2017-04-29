@@ -7,9 +7,9 @@ class Tvnamer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c1a03bc94b59d7e044445daa9c0037b46230271d457d658aba3e7e55e9291dd0" => :sierra
-    sha256 "546b13ef89b777d7076948d993adc9a57c664b2bbc9cb2f429cf042f3d61d165" => :el_capitan
-    sha256 "546b13ef89b777d7076948d993adc9a57c664b2bbc9cb2f429cf042f3d61d165" => :yosemite
+    sha256 "1dab778870b757fc4b44520ccc055de44d0e316bff091d17b981676be515dd95" => :sierra
+    sha256 "0763795cc9fbfd0a96087b40a7105c645d601c3e173c75b2acca63ac60d5c018" => :el_capitan
+    sha256 "0763795cc9fbfd0a96087b40a7105c645d601c3e173c75b2acca63ac60d5c018" => :yosemite
   end
 
   depends_on :python if MacOS.version <= :snow_leopard
