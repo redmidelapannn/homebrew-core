@@ -6,11 +6,9 @@ class Fail2ban < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "bbb4f2f3f6b8990a9630d82630174cd62808850f9783bf15ad556759b0b02592" => :sierra
-    sha256 "1c546abfdb096457c188bd32f97f95368c9e11e0d9eb0b44172e130083b26205" => :el_capitan
-    sha256 "024aff8d53788e55039de105bef04036b97cdde3b62a67a750a5b748f2b5389a" => :yosemite
-    sha256 "f39d0f4aa122b1e40ce05ad9010901beefacd560c5d84960eed4448daa3915f2" => :mavericks
+    sha256 "13261586fa003d3b6517b12a8eb65f78742f23688671a7ce995ba5b6eef990f2" => :sierra
+    sha256 "212776feaf0b0a11e310f9f84970071d5455247a3a66a9b4641b24adfa2211d2" => :el_capitan
+    sha256 "212776feaf0b0a11e310f9f84970071d5455247a3a66a9b4641b24adfa2211d2" => :yosemite
   end
 
   depends_on :python
