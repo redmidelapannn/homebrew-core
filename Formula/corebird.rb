@@ -4,6 +4,12 @@ class Corebird < Formula
   url "https://github.com/baedert/corebird/releases/download/1.4.2/corebird-1.4.2.tar.xz"
   sha256 "1c07a65382e78308f7de406be8464789c1ec42d531c519b69510a685234b4074"
 
+  bottle do
+    sha256 "b22e1b856d4a0b644206b49abf2ab291f8af0a59ed6d47d05f86ea4506e5e835" => :sierra
+    sha256 "5ed4d39fc095b6d05c087438c12271ffff29c91f959d05f7cf95cca39fe3ead8" => :el_capitan
+    sha256 "9eb4cfb6a14d04a81422b849167e49eb68aeb1bb8d6ec19472e6ae70ee9aaefe" => :yosemite
+  end
+
   depends_on "pkg-config" => :build
   depends_on "vala" => :build
   depends_on "gtk+3"
