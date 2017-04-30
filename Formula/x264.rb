@@ -7,6 +7,13 @@ class X264 < Formula
   revision 1
   head "https://git.videolan.org/git/x264.git"
 
+  bottle do
+    cellar :any
+    sha256 "72a08f6b734fab1856f59d50ee604d5907ee5beaea0bd749fe76631fc34fbf05" => :sierra
+    sha256 "6ae5bdff1268afc219ef20ff4ca464daf055529e8f1cb001f1a8a2abcff6c923" => :el_capitan
+    sha256 "43ea4158ca9fa94c930f920cca6cfae0a0030a3171136353f3294da92e003ad4" => :yosemite
+  end
+
   option "with-10-bit", "Build a 10-bit x264 (default: 8-bit)"
   option "with-l-smash", "Build CLI with l-smash mp4 output"
 
