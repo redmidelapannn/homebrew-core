@@ -7,9 +7,10 @@ class Ncompress < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "631c12b675f730ea3a7a170b214f63b1749fabb2d632ce76d76de4c8706cdf79" => :sierra
-    sha256 "a046e625feb4e7dbf26136b6ba949f9883de14674571f2291794daf98106558f" => :el_capitan
-    sha256 "613392aa88dbf86d8de3d6355dfeb72753a4040fd8c805907f434a7d1e5e78c4" => :yosemite
+    rebuild 1
+    sha256 "a680afdda38993d23f754c655264dfc99fa9a71c3490f4f505a32a4d685282ce" => :sierra
+    sha256 "6cba9f49e71e71505dcfb9d2b2925ecb2f38b6092fd318cdcc1028683fb002cc" => :el_capitan
+    sha256 "a3199a233a210544251731f3ec60ea5be88238a971ab249f1fce00d9e4eb831e" => :yosemite
   end
 
   keg_only :provided_by_osx
