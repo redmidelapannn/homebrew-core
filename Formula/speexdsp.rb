@@ -7,9 +7,9 @@ class Speexdsp < Formula
 
   bottle do
     cellar :any
-    sha256 "367e34d4ba6e7087762193a18910da38905496ec41c0f329604d310a09e4f5ed" => :sierra
-    sha256 "4891bd2a89fc9369d9c573afd80a1e7593e9414a0d6a956921af1b65f61ab264" => :el_capitan
-    sha256 "34a342effdc414829a7063d4b8dc7f2bbfa2d37231904f4fa6784c38d90bdb3d" => :yosemite
+    sha256 "6cdc11943286b9f8b6da9af093e35f1a74a3670778467df101dc3b3e9d7c7d5e" => :sierra
+    sha256 "7d4a39f9ae4b962cc53b337c7a2e17e405626e4bf4b865f05b5f13aba3f30b76" => :el_capitan
+    sha256 "9ffcbe2836040eb8d96779cb10b2a047e13ef6e92367000128ae71397e277789" => :yosemite
   end
 
   depends_on "autoconf" => :build
