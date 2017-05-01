@@ -13,9 +13,10 @@ class Burp < Formula
   end
 
   bottle do
-    sha256 "c67d91fb1c454af07cf7097484f673e91125aa89ff7e6de6eca8cde508cbe00b" => :sierra
-    sha256 "effe7e754cefe38fa11a50409c7c3fc0ce9c84551de03dfd64302a382622378a" => :el_capitan
-    sha256 "bada46216bdbb6e1e3f6c6506a1e9c8578a077ef8e1fdbcef40c4ef513c84d38" => :yosemite
+    rebuild 1
+    sha256 "ac5d334830de724b5f87861168b29713a3abaea34798220b8b2c56646f14b6c8" => :sierra
+    sha256 "eccebbc5f7a15da84fe62ee32979efa90132dbbed72af921ca7c6ee73f777ee8" => :el_capitan
+    sha256 "4b518b1ca572b089af3c6587d157f95f2af41706c3ba68e264b9a6a02e0e8411" => :yosemite
   end
 
   devel do
