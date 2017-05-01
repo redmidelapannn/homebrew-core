@@ -5,6 +5,13 @@ class Libconfini < Formula
   version "1.3-4"
   sha256 "db2ee05b5974b3df22e1afc37da65b78506b8216c85594232ee7dec56d8a20f8"
 
+  bottle do
+    cellar :any
+    sha256 "c2872fca006f0e9f9e8d3a05ea8b292edc2e2a6f7c6136c4db3f9da451ba0c26" => :sierra
+    sha256 "b4323c8c38e0e8cb83c298df89ce443821d675550cb7c022f18ef29b2d757a03" => :el_capitan
+    sha256 "8eee334f914037aa73e071ad7fd27b992f59513df2eb6c7a70896848791deb7a" => :yosemite
+  end
+
   patch :DATA
 
   depends_on "gettext" => :build
