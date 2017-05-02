@@ -16,5 +16,5 @@ class Duti < Formula
   test do
     system "#{bin}/duti", "-x", "txt"
   end
-  
+
 end
