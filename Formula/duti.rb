@@ -3,7 +3,7 @@ class Duti < Formula
   homepage "https://github.com/russellhancox/duti"
   url "https://github.com/russellhancox/duti/archive/master.tar.gz"
   version "1.7"
-  sha256 "fbfaf180b3f24690e60a406d2dbca90b86e907f719a8ef4e9d38965fc0a44cea"
+  sha256 "5d604eaf9d5c1e6931d26e934c1bac6972bb6ccebc1e34a14f4d68c5b8a8c2c"
   head "https://github.com/russellhancox/duti.git"
 
   def install
