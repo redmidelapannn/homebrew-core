@@ -9,9 +9,9 @@ class Opencoarrays < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "785a3cd9a8ae0b40e2da3b37074deb76d304bebdd06bdba18bc483133f49832a" => :sierra
-    sha256 "786f7245a64dcb2a11aa62b33f4cd4249ece3414421ad2f4a3c164a44508989f" => :el_capitan
-    sha256 "fa3e7e32db42b67198043aa0c22dcd6f814b234897d2cfd8c9195fe4fd1e017b" => :yosemite
+    sha256 "4e16e4a21db1628f9760d8781ebcc6c77212daa2e1041728cc9926121483eb35" => :sierra
+    sha256 "ae55d96c3eb5e79b324c55065c60ff33f7aa79e2981125d38e5b1138f090ee3c" => :el_capitan
+    sha256 "a75da672780e9c4eed3768c3cd37da3edbbf2f1540dc8acceebf25b4f425b0f5" => :yosemite
   end
 
   # As long as there are known failures with Homebrew's default compiler,
