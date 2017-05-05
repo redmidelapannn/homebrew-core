@@ -91,8 +91,6 @@ class Macvim < Formula
     system "make"
 
     prefix.install "src/MacVim/build/Release/MacVim.app"
-    inreplace "src/MacVim/mvim", %r{^# VIM_APP_DIR=\/Applications$},
-                                 "VIM_APP_DIR=#{prefix}"
     bin.install "src/MacVim/mvim"
 
     # Create MacVim vimdiff, view, ex equivalents
