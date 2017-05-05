@@ -40,8 +40,6 @@ class Ibex < Formula
     args << "--with-param-estim" if build.with? "param-estim"
 
     system "./waf", "configure", *args
-    system "make", "-C", "3rd/filibsrc"
-    system "./waf", "build"
     system "./waf", "install"
 
     pkgshare.install %w[examples benchs]
