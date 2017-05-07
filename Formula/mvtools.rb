@@ -7,8 +7,9 @@ class Mvtools < Formula
 
   bottle do
     cellar :any
-    sha256 "1d2d644ffc126d9ee1d8d61c23de36e623cfb37c4419202f72e84bbd08a4d20b" => :sierra
-    sha256 "bae3ee68c55a7f4fe2ba81017e49e3da772c88b157e7f8505f59b95acf1e5660" => :el_capitan
+    rebuild 1
+    sha256 "2be870405583712f6640b75adfa046a1ccb221bd8eea6cc3d0629cab33b27dcf" => :sierra
+    sha256 "c1d75cb7f1a3a3151ae683fc3752ebf572e2e8b88e54556238ad8ca5dd58e87b" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
