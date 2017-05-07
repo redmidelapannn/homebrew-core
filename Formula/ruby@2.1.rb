@@ -5,9 +5,10 @@ class RubyAT21 < Formula
   sha256 "a74675578a9a801ac25eb7152bef3023432d6267f875b198eb9cd6944a5bf4f1"
 
   bottle do
-    sha256 "29f650621310044c8cab15c73aeae5ca610d7cc27fa84354b7c656f2235adb11" => :sierra
-    sha256 "8cb6299101776e4f5848020e0e7e527ca2b050d8efd4d9e5bd293387da1c0269" => :el_capitan
-    sha256 "55021b56b07e2df5968a2a026fe1602df1143d5bc5dcd7d51f2d0040743dc352" => :yosemite
+    rebuild 1
+    sha256 "1dc81b04763851eef0fac23e0380275fdd2fa9f6c58f8935425634bf9e74809e" => :sierra
+    sha256 "aab6666589d5fa8351dcf9d71b76bf1e4e4a53948d84c73d539fa2238bbb4563" => :el_capitan
+    sha256 "87736d49fef6aad6168368491f24569695457bb3e2eb2e86947a34cf526bff81" => :yosemite
   end
 
   keg_only :versioned_formula
