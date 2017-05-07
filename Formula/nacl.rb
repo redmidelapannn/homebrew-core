@@ -7,11 +7,10 @@ class Nacl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "86e5ef1c0a14b029d1ed3f63df48fde9c302adbbc3e1dcacd1bb7617bf547615" => :sierra
-    sha256 "e08c93b814989405fa3b7db9e3a9c4f149e36aaab32aba44e9a2f1659d2d3efd" => :el_capitan
-    sha256 "1a1a7fffc6d41f2f7bcc393375f2907f63b5a13f9414fe0827daef96246301e7" => :yosemite
-    sha256 "44bbb2d7cb0daa6eb06c79e5881ae827786a04dece9b4a34cb0a6ea06cddb1e1" => :mavericks
+    rebuild 3
+    sha256 "d9fc2991ce9284921a7ecadbf9b500b21178ca7a55609c0f177dee0042a22410" => :sierra
+    sha256 "eed0295c8a035c0166c09a327adacef9c72c0dbc21d2a8e95952eed2d77037ff" => :el_capitan
+    sha256 "7ac08385b8478962dc90c9ab6f5f1b4e16493fe7c652e14df2d11b7f4fd7668d" => :yosemite
   end
 
   def install
