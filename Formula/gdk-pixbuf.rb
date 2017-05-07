@@ -5,9 +5,10 @@ class GdkPixbuf < Formula
   sha256 "455eb90c09ed1b71f95f3ebfe1c904c206727e0eeb34fc94e5aaf944663a820c"
 
   bottle do
-    sha256 "6026f7a751626fe99d5b6e7a061b617869478e728cb3391f01605ebfa97767da" => :sierra
-    sha256 "4c6dea60fdfc92710e4c20e2ce1ba8cc2a9c7e50e9e67af176a24a820eeb965e" => :el_capitan
-    sha256 "99127ea6b17e595d145ad2fa4bbdd41aaed46982c2302a18adaf3479a4df6b8d" => :yosemite
+    rebuild 1
+    sha256 "e2d6b996e761fa16407fca9090d82dc917b94a2a696079ef60216e82b61f8c48" => :sierra
+    sha256 "e352f22143507654d7614a2b213d5a4e8dba3b3566100da1e43b30b27947bc63" => :el_capitan
+    sha256 "f281ed9543f89059db0911e4603418afa11af4c6cc97d3c254b9fabbe50d0623" => :yosemite
   end
 
   option "with-relocations", "Build with relocation support for bundles"
