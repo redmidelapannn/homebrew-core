@@ -1,5 +1,5 @@
 class Pilosa < Formula
-  desc "Distributed bitmap index that queries across data sets."
+  desc "Distributed bitmap index that queries across data sets"
   homepage "https://www.pilosa.com"
   url "https://github.com/pilosa/pilosa/archive/v0.3.1.tar.gz"
   sha256 "5ff34f07a503a8d1b22911409dfd426d16a451b76a3deff503363db17204b9cb"
@@ -54,7 +54,6 @@ class Pilosa < Formula
         exec "#{bin}/pilosa", "server", "--bind", "10101"
       end
       sleep 0.5
-      # Test that the response is from webdis
       assert_match(/^Welcome. Pilosa is running.*/, shell_output("curl localhost:10101"))
     ensure
       Process.kill "TERM", server
