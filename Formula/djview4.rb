@@ -6,9 +6,10 @@ class Djview4 < Formula
   revision 1
 
   bottle do
-    sha256 "8cc214252ddf146d8e4b65210436036197b556ff40b136e2784a1d95c9a4f43e" => :sierra
-    sha256 "82c4310f2e0af35fb98fce109660ec79bdc4075205b8f5c053d58b4b87b37099" => :el_capitan
-    sha256 "92dec68ad76d1e5a1e158b6b1a700d119f4a651cafd45c8cd4a787ecf31ff402" => :yosemite
+    rebuild 1
+    sha256 "8f3077a5842a7ff2323f4da3edb7cc8cdaf1db5afe2c7c40038783fad77bd526" => :sierra
+    sha256 "11c155e2de048162c326270687a0f770fbd6fd2a1cb35cc0041bdcc84fde9864" => :el_capitan
+    sha256 "1f89cc55d3324ec1ff0e9ceaa7c9d3db5438c37e882b4e86646c449519539fcf" => :yosemite
   end
 
   depends_on "autoconf" => :build
