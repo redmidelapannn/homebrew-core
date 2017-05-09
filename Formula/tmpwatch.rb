@@ -6,11 +6,10 @@ class Tmpwatch < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "945dbe942b232586517a2fcd81faab1fc20d3936e53ddf9154158dd0b7d3d55c" => :sierra
-    sha256 "d19ca779df5c019f840d0c186822fbab4758bf3635101aa975b4bad35bb2f184" => :el_capitan
-    sha256 "6b7935b74c118e797b2cba298e0f546d4231ac2c5eb165f4a63bc6c2d0a372dc" => :yosemite
-    sha256 "0083a3dd898627e47dabc967328de86df6bf60c2c62210fd9dd4846795de0a8f" => :mavericks
-    sha256 "c0416097ea10d23751b2db15f21d437d863e5de3ed44fe50e0f8ebc34f487f2f" => :mountain_lion
+    rebuild 1
+    sha256 "611a4b897c21eba33ef3d9bb0fdc2efbc0acc467239bd3cfe7880a56c388ba76" => :sierra
+    sha256 "0d8b0435b8f13b7ae951f74e215431caed05d5fd4b999e472bd59ea0d43f67a4" => :el_capitan
+    sha256 "01f30b4a30326dc7eae7b949ecbc45d506f7d854dac6cfcf4cdb465c24dac235" => :yosemite
   end
 
   def install
