@@ -30,9 +30,8 @@ class GccAT47 < Formula
   head "https://gcc.gnu.org/git/gcc.git", :branch => "gcc-4_7-branch"
 
   bottle do
-    sha256 "126b6a0f98a16e0f8a18f27959c5f71c81bfce1a6a3b48d66a1832bff6d70be5" => :sierra
-    sha256 "573c838469a18befb8ed090109cc493a1466bc5131bd4af52e9f611c34ef3664" => :el_capitan
-    sha256 "6809b42a3eaa097a903b7ad58f0d1169c1c35b8b683b0aab16cbaa3daafb3059" => :yosemite
+    rebuild 1
+    sha256 "62b8e6c856aa85fc7c75870ca2d6e76f27dc7567b70b4c2a5eaded8475eac99c" => :el_capitan
   end
 
   # Fixes build with Xcode 7.
