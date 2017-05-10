@@ -7,9 +7,10 @@ class Adns < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3bbd0cc0bc05c228746629760bcd027bbe90aa54e3b79fc2d4553e7fd5900d44" => :sierra
-    sha256 "90fd1e0e102f446de1e647f2c3ec9f0dd6c5df190dcbdd9f1136bb90e344d730" => :el_capitan
-    sha256 "9c5974b93f921e8d6c735ca6722d83d94d5a501d301d337177741f4a2a8f9128" => :yosemite
+    rebuild 1
+    sha256 "7508a9e43b80f7550411219f4780be1a3860c0c0fda1b901174e42c374dc7940" => :sierra
+    sha256 "41f77f9125b1e03725635c3672b8456c675f5bf531e1bdab8e8e877f350d3299" => :el_capitan
+    sha256 "53fb50727754b517e2feb9e4c21534b7aa82066cba0c71138145da55b8e9dcc7" => :yosemite
   end
 
   def install
