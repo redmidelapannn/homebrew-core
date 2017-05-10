@@ -6,9 +6,10 @@ class Fpc < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "79462df36eb732e04c7d5c1d1782ff24dc6ac533b6ec5629965b47fe603c8616" => :sierra
-    sha256 "20886e1135ad520727087fb8ab9d3b2bf49b7ea275f8af725b9d3bf17bab4aba" => :el_capitan
-    sha256 "946ccb4fb90ef1809111003f1b2da68dddd599f8c73c450e95aa3cd948e86c8e" => :yosemite
+    rebuild 1
+    sha256 "82f9dec6fe3ac415f6b46f8ff10b65e1ee0e7d9d39d1a37ab2e02a298f9e0d0f" => :sierra
+    sha256 "4328665556fc7fa443cd1a4eef1cdb38fe740edfc174497b3ae39ca9b3686bd3" => :el_capitan
+    sha256 "9e49405c0876b943cf931361519d7ad818d270e96be64e77405fd7ac0b885c73" => :yosemite
   end
 
   resource "bootstrap" do
