@@ -11,9 +11,9 @@ class Gcc < Formula
   end
 
   bottle do
-    sha256 "a9e9e939786a0f13c75dfbfe47c12b1e0b0c577f2aae942dfc16d2f8d0fd487c" => :sierra
-    sha256 "e237e79704d0738745ecff5286d9466624ecf942761c2735467b04f1de6fbd68" => :el_capitan
-    sha256 "551031101225e76d9268f2ac5bdddc48a24c8dd7810aeccca8e95f481ae5b1e0" => :yosemite
+    rebuild 1
+    sha256 "db51c2854f16494b4c09d79389e5178d0aa25c484738a91ff54445ca68128743" => :el_capitan
+    sha256 "baba78ed83e988257dbf990825bbf94359eb44fd6e53ac7d5a320bf3c4d1fa11" => :yosemite
   end
 
   option "with-jit", "Build just-in-time compiler"
