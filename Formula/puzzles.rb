@@ -10,9 +10,10 @@ class Puzzles < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "57b04776dc4696ac93b9230c4df569f3aecd36b238a05e73dcde3493659dc847" => :sierra
-    sha256 "57b04776dc4696ac93b9230c4df569f3aecd36b238a05e73dcde3493659dc847" => :el_capitan
-    sha256 "e01a6fc502cf54a2fc1d1c05a8d1e04b3762defb50aadd9d67e4049435649676" => :yosemite
+    rebuild 1
+    sha256 "8e864c3b90545efda1ef9fad2f960e44e1585afff1d5f7aa0b3c5f5a481e2046" => :sierra
+    sha256 "09a2f6bb7b9f8d224d6a1b5a5987ebed07292c58c01d0a237eab61133b649cf9" => :el_capitan
+    sha256 "015f15ded9c88e632c35f65437ce188aa301c1c9cdbdd0760227eba3a1fa040b" => :yosemite
   end
 
   depends_on "halibut"
