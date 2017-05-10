@@ -6,12 +6,10 @@ class BulkExtractor < Formula
   revision 1
 
   bottle do
-    cellar :any
-    rebuild 1
-    sha256 "4bb9e136e301737efc4796114da3cab19d84a5671840eaaf59c0e9dee5e2f92a" => :sierra
-    sha256 "42eaa763988659fbb7e52a16fb700439a16a229be1d828d425717b3aabf121c5" => :el_capitan
-    sha256 "9fca86e7c8248902b09f05b5ed046c3a0347afcabe2afc5a72de1619d211cc41" => :yosemite
-    sha256 "b4928062ab8c39d082a9dbba713f4e0e3e460d2c111af0c39981eeba3d1d7638" => :mavericks
+    rebuild 2
+    sha256 "2b25fbad73a6f56def47dcd125d3592f8f90c1561575fda67cd7044be7b11320" => :sierra
+    sha256 "0f9fee56b8aa8190ec887c3c77acc5ddc32bff1add9a9c8638590ae6e66b21a2" => :el_capitan
+    sha256 "61f18f64cb63f3997b40c5616963e7ba11680e678d889842c3c17a261d97a3c9" => :yosemite
   end
 
   depends_on "afflib" => :optional
