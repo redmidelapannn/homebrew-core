@@ -7,9 +7,9 @@ class Pacparser < Formula
 
   bottle do
     cellar :any
-    sha256 "38db6b19b4cec0c237b6c9e11b67db9514b58e12e5dad0edc97e9919e57f71b3" => :sierra
-    sha256 "7cd235305c7701181eb78c7b35683e88bb9fb14172f4c1ff7028b3fd5b480cf9" => :el_capitan
-    sha256 "3d2092ad71629a2c71d5b88138d0ea7443247d7cd89414ef46a9cab7898b250c" => :yosemite
+    rebuild 1
+    sha256 "d31e16930539ed7621182ce9b304dcf7106084b7fc4cf610505eb0c370e2eac2" => :el_capitan
+    sha256 "3e0f541ea521c96f204d3cd6b16f56dc9329e67bac204b127de5af4bc17b3362" => :yosemite
   end
 
   depends_on "python" => :optional
