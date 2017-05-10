@@ -14,9 +14,10 @@ class Angolmois < Formula
 
   bottle do
     cellar :any
-    sha256 "da65bae7959ac500d64aa1945419beff9a77693bf3772768b518229c6f874192" => :sierra
-    sha256 "6d9087464b1337d8c08223b71fe08ff7aee1f1ce3a394e1bb91ade6417ece9b4" => :el_capitan
-    sha256 "003f6de7f268fe9e07379a6ad0b2166e7dcd521c8141a2062060d84d20dbf6d5" => :yosemite
+    rebuild 1
+    sha256 "4e50635e1ec8480b7b228c93c6c184f2c61379e3c5a6745655e116fdf995f8c4" => :sierra
+    sha256 "d4a94b795443d5b3d898fc76e41266da0c77caee265b3032410c58c792e8ad55" => :el_capitan
+    sha256 "968539f2aac22d6ac2e3d7980cd3010efdca9cf36fa984dccb2773e056a290c7" => :yosemite
   end
 
   head do
