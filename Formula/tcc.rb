@@ -6,11 +6,10 @@ class Tcc < Formula
   sha256 "521e701ae436c302545c3f973a9c9b7e2694769c71d9be10f70a2460705b6d71"
 
   bottle do
-    sha256 "a4e987aa8ee2608b822e494d33ac049f3108a82160aaea8cb17ec0f139d12d5b" => :sierra
-    sha256 "8187fcc40ec8350469ec8a759344d2abe110ad8b3acc09deb93e1dfe3295300c" => :el_capitan
-    sha256 "6361d686961e63328e2e084e346df9a0f3bea8f4c1aa7a48b627b528b76b5622" => :yosemite
-    sha256 "d933047b24c74dc83fad767b8838ded95c1b512846960144c6442480410038eb" => :mavericks
-    sha256 "a08aa7da0eccb7c93414fd4944ce5676248869da5f62810bbe687704ba37807d" => :mountain_lion
+    rebuild 1
+    sha256 "b0db8138c9b776af33d962a84d6655de787dbd8ba1214a15aaf528e432f7556c" => :sierra
+    sha256 "88fa5a0c11ec2c1c1450c16d42d9a641d25b8796c8dd4bbdb35455d41a375e12" => :el_capitan
+    sha256 "fe0baf5fe054745102bc2d13176a4bb8000d3f9e246ae34ad4a2b42df0bb0a54" => :yosemite
   end
 
   option "with-cross", "Build all cross compilers"
