@@ -7,9 +7,10 @@ class Ipbt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a9de6013e11b074ac7ecb8036e75b6954690add7213245bf3eaffd16182f9669" => :sierra
-    sha256 "5d0a67f1c51c0e4f15b498f0877b491240b36207099a98d19ca7b0acf8313722" => :el_capitan
-    sha256 "6b60f3a8177c298cec4bce8a53361fbea60e8f71be24b35504b2a699c2bd3f26" => :yosemite
+    rebuild 1
+    sha256 "08a7c7c29f15eacaf226d2009dbec8e669e8c0d8eef69685d1373b02e611c301" => :sierra
+    sha256 "eb351a5f05f1699c353cc304e8f59f30ef1e9b1eecc5a0a330a9b4c631e2ef5e" => :el_capitan
+    sha256 "88c2de68183c4e575d667d4983bd0f0a1c3ac00756a6bbf12c2b4e14f7fb5591" => :yosemite
   end
 
   def install
