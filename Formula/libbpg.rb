@@ -6,9 +6,10 @@ class Libbpg < Formula
 
   bottle do
     cellar :any
-    sha256 "0f8a8ca6afd5f64ac673b76ae2e6e22ab423db72bf57c3f169c03b18f56f455d" => :sierra
-    sha256 "1b8c8dbbcbf6e63efaf2c46eb9a3d8b7c443e41fddcbeaed7e42fa61f77dedcd" => :el_capitan
-    sha256 "7409ef3a42d911b3422bb18f98390064c5902452e9d31cce163915a7018dfd03" => :yosemite
+    rebuild 1
+    sha256 "b49567aafe26bd122da71385849f35d0de22989cb2f07d3b1a7734a9e1310bea" => :sierra
+    sha256 "8ba1cc66ffe6049d5b132d7efd6d7e4b8e56bef31e26aaf5fcd9ff98188a18e1" => :el_capitan
+    sha256 "8ce91888c4f953cf3e2e1beb65c6a5f183380e88bc6cdc8947e3ac77a2c458bf" => :yosemite
   end
 
   option "with-jctvc", "Enable built-in JCTVC encoder - Mono threaded, slower but produce smaller file"
