@@ -14,7 +14,6 @@ class Pilosa < Formula
     mkdir_p buildpath/"src/github.com/pilosa/"
     ln_s buildpath, buildpath/"src/github.com/pilosa/pilosa"
     system "glide", "install"
-    ts = Time.now.utc.strftime("%FT%T%z")
     system "go", "build", "-o", bin/"pilosa", "-ldflags",
            "-X github.com/pilosa/pilosa/cmd.Version=#{version}",
            "github.com/pilosa/pilosa/cmd/pilosa"
