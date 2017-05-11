@@ -16,7 +16,7 @@ class Pilosa < Formula
     system "glide", "install"
     ts = Time.now.utc.strftime("%FT%T%z")
     system "go", "build", "-o", bin/"pilosa", "-ldflags",
-           "-X github.com/pilosa/pilosa/cmd.Version=#{version} -X github.com/pilosa/pilosa/cmd.BuildTime=#{ts}",
+           "-X github.com/pilosa/pilosa/cmd.Version=#{version}",
            "github.com/pilosa/pilosa/cmd/pilosa"
   end
 
