@@ -31,7 +31,7 @@ class Pilosa < Formula
         <string>#{plist_name}</string>
         <key>ProgramArguments</key>
         <array>
-            <string>#{bin}/pilosa</string>
+            <string>#{opt_bin}/pilosa</string>
             <string>server</string>
         </array>
         <key>RunAtLoad</key>
@@ -54,7 +54,7 @@ class Pilosa < Formula
         exec "#{bin}/pilosa", "server", "--bind", "10101"
       end
       sleep 0.5
-      assert_match(/^Welcome. Pilosa is running.*/, shell_output("curl localhost:10101"))
+      assert_match("Welcome. Pilosa is running.", shell_output("curl localhost:10101"))
     ensure
       Process.kill "TERM", server
       Process.wait server
