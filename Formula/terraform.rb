@@ -6,8 +6,8 @@ class Terraform < Formula
   head "https://github.com/hashicorp/terraform.git"
 
   stable do
-    url "https://github.com/hashicorp/terraform/archive/v0.9.4.tar.gz"
-    sha256 "aeb7ae29a8da6035d995ffb00f767911746165f4cb7432657d361f399370f377"
+    url "https://github.com/hashicorp/terraform/archive/v0.9.5.tar.gz"
+    sha256 "93baf92902ae7bb4575344e389f522a593b7cdcc5896f9b1590cd33c5fb6a74b"
 
     # fix vet errors (please remove after next version release)
     # upstream issue: https://github.com/hashicorp/terraform/pull/14001
