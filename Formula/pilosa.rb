@@ -1,8 +1,8 @@
 class Pilosa < Formula
   desc "Distributed bitmap index that queries across data sets"
   homepage "https://www.pilosa.com"
-  url "https://github.com/pilosa/pilosa/archive/v0.3.1.tar.gz"
-  sha256 "5ff34f07a503a8d1b22911409dfd426d16a451b76a3deff503363db17204b9cb"
+  url "https://github.com/pilosa/pilosa/archive/v0.3.2.tar.gz"
+  sha256 "12c5c5c2d511c655f02836e09d09cfafcb9eaa656a43850ddc6f6f9a2151b896"
 
   depends_on "go" => :build
   depends_on "glide" => :build
