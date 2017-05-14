@@ -6,10 +6,10 @@ class Mcpp < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "cdd368c63dc6403832c938967f8f099ec3d02acfcc5c75ab0426ad1cd213b045" => :sierra
-    sha256 "0be73930b3dbc8bc247c9a26acbc6115d3f5f665daaabc9ab64606ac6793ace9" => :el_capitan
-    sha256 "612e3efb23a8165af204338a20bbc27ae8fa2ad345964c24d2d7a206dee0317a" => :yosemite
+    rebuild 2
+    sha256 "67d3ca3414bf7e28d1434427a95e77c4bd8bcc6db944e99cc33627872613c2ab" => :sierra
+    sha256 "35628f8e85ab5efb7519ed851e0dd3b68cca09741c874f1affcb1a236a5e2550" => :el_capitan
+    sha256 "f3f1fc97f808eb9f9ac3760d680dd2b8675f6a75e468ba0418b80de86c26e824" => :yosemite
   end
 
   # stpcpy is a macro on macOS; trying to define it as an extern is invalid.
