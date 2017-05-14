@@ -6,9 +6,10 @@ class Pstoedit < Formula
   revision 2
 
   bottle do
-    sha256 "085860d9480d7d9558697d403f6628466a8fdfe52f568f21793568d1c71747f2" => :sierra
-    sha256 "ee6634e964c7687c5614c9e4358737154ab6f29d53a104416bdc1509b33e6930" => :el_capitan
-    sha256 "6330be58259fcfa74062eb1ebfa5eced31aea86ae5f1ce6b2bf49e2f544b3d73" => :yosemite
+    rebuild 1
+    sha256 "197957ed5680c78abd30540bcad6fc980c7baa6f17ba91e168b324ccca5898d5" => :sierra
+    sha256 "84519d9fd8c395fbcc337245f66149cc5a98ffc66873384bb3d75dd221a50654" => :el_capitan
+    sha256 "eaa0f094299333270141c637d648a0450d13224e7be748e6e5d1d5ac93b2b811" => :yosemite
   end
 
   depends_on "pkg-config" => :build
