@@ -5,7 +5,6 @@ class Allure < Formula
   sha256 "315f2a9e963ce6293075149b15ed11423ac3709adb03658d1b16ed59bafcaa6e"
 
   depends_on :java => "1.8"
-  conflicts_with "allure-commandline", :because => "also installs a 'allure' executable"
 
   def install
     # Remove all windows files
