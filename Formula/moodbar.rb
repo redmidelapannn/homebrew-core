@@ -9,10 +9,10 @@ class Moodbar < Formula
   depends_on "pkg-config" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
-  depends_on "gst-plugins-base@0.10" => [:recommended, "with-libogg", "with-libvorbis", "with-theora"]
-  depends_on "gst-plugins-good@0.10" => [:recommended, "with-flac"]
+  depends_on "gst-plugins-base@0.10" => :recommended
+  depends_on "gst-plugins-good@0.10" => :recommended
   depends_on "gst-plugins-bad@0.10" => :recommended
-  depends_on "gst-plugins-ugly@0.10" => [:recommended, "with-mad"]
+  depends_on "gst-plugins-ugly@0.10" => :recommended
 
   def install
     system "./configure", "--disable-debug",
