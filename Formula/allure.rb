@@ -16,6 +16,6 @@ class Allure < Formula
   end
 
   test do
-    system "#{bin}/allure", "help"
+    system "#{bin}/allure", "--help"
   end
 end
