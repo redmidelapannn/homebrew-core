@@ -16,9 +16,6 @@ class Halibut < Formula
   end
 
   def install
-    bin.mkpath
-    man1.mkpath
-
     system "make", "prefix=#{prefix}", "mandir=#{man}", "all"
     system "make", "-C", "doc", "prefix=#{prefix}", "mandir=#{man}"
     system "make", "prefix=#{prefix}", "mandir=#{man}", "install"
