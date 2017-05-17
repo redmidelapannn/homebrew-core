@@ -5,9 +5,9 @@ class GstPython < Formula
   sha256 "be33de6b9f21e95f677ef91b142e5249e71c8d7e894a5a4a53e19cf18d5d9c07"
 
   bottle do
-    sha256 "1f32f0c7c8b79eef4ef3ccf8af96ea209119e35b8d27ea16bb041745bf18da50" => :sierra
-    sha256 "4d7327f786c6a9ecca1f78b7cc6de348a311bff7014fd4d779ba6c67d21baf5a" => :el_capitan
-    sha256 "87d31387a79693e4dcc91bf2f50aa5fbf89bad53710b0c1a12418b6b145e3aa3" => :yosemite
+    sha256 "e09409dd03eb48ea4d964527cdf2cbf1458dda8b78a5caff7f393485269dda32" => :sierra
+    sha256 "23e20889d98a84a69cf773adaf762f6b46032c47cb27f5219f2b03f16a324b2e" => :el_capitan
+    sha256 "27b39ddf2cee22ae573884119088ae9dc2ffa63a28f40335a08d59772fff0161" => :yosemite
   end
 
   option "without-python", "Build without python 2 support"
