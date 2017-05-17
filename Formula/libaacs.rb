@@ -6,11 +6,9 @@ class Libaacs < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "02b04ab4f2f48ab65fec5a79756df19ed7dccc9b58006fb861d2ff66c266aff1" => :sierra
-    sha256 "9c7aed37c3991fd326c976c498423a1df4801f3ef65c8bc7a8b68a8a87f1bc31" => :el_capitan
-    sha256 "5b7526780e9ad562555a03d2d3d66c6aabdc9b0502aad0537b5588ab568fca6f" => :yosemite
-    sha256 "d440c657e0cfd21cc6e8b86bed857a731f8cd80fa574a5366a5c70fb6192bbd7" => :mavericks
+    sha256 "0831d6848be292e3913b54ee4feac02d66c6f31a85b5c48bfe168a56d697052e" => :sierra
+    sha256 "897aedb3cff662e4cff1f44a230283dcdd613cc337621fb5c6ebab53b43a06df" => :el_capitan
+    sha256 "765f820e5d6cfef43f704fd1f5a1b159b5e364ed12738f4282a6fdc78ed9e71d" => :yosemite
   end
 
   head do
