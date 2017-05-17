@@ -10,9 +10,9 @@ class Leaps < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "916c0f83535614d47c9e5cae89104395155494057403c3fee38898c56c6becbb" => :sierra
-    sha256 "c5ab4128388ecc8f28cd181191dbf40a2510fc771185ae7d4cc80a724edd83ea" => :el_capitan
-    sha256 "7fd9a75a9e4c8e45639aba92b03a3394f65e41d4806689ca192591e37585e5f8" => :yosemite
+    sha256 "bdd3fb69d493431583aca6a32a1a3b79854ed5dc4a0b034293d9c0485010648f" => :sierra
+    sha256 "94e61476c92d1e60ae14b4315262938d378e8f33a1f70b518b70f01ba4fc0590" => :el_capitan
+    sha256 "753c51963ccc06e59e730892e6a756ab9d3e8999e3e9993faad3a62e5efaa10c" => :yosemite
   end
 
   depends_on "go" => :build
