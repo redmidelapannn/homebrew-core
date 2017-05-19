@@ -6,9 +6,10 @@ class Autorest < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "da1dc0e3a25b005db13ffbb95b145c060162648ad700998e4814a7969e17cbb1" => :sierra
-    sha256 "da1dc0e3a25b005db13ffbb95b145c060162648ad700998e4814a7969e17cbb1" => :el_capitan
-    sha256 "da1dc0e3a25b005db13ffbb95b145c060162648ad700998e4814a7969e17cbb1" => :yosemite
+    rebuild 1
+    sha256 "e3ad8ac2dff970f0f17ea5c5afdaf024d56cdda5528b35e9a0e5f61224f6eef4" => :sierra
+    sha256 "35e43e377dea0624c28583986c85cf5fd30c1fe6131edce4c1b9bd0b88f52f0c" => :el_capitan
+    sha256 "35e43e377dea0624c28583986c85cf5fd30c1fe6131edce4c1b9bd0b88f52f0c" => :yosemite
   end
 
   depends_on "mono" => :recommended
