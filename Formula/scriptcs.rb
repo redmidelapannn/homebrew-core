@@ -6,9 +6,10 @@ class Scriptcs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9ccece2f779060ab23e699b07d6cc6ce0b2c2e0058cc995b1541e1170f69a6eb" => :sierra
-    sha256 "e3b6cb117d23ccf9a745e0ac5e61fcb531d7e8a08476699d2ece6c31e564450e" => :el_capitan
-    sha256 "21891cea519df48979320ba74660002d270fb414181e3f7087505169af15a471" => :yosemite
+    rebuild 1
+    sha256 "eac95fa3b638238edb008ebb4c5b1547cf773bd848c86ec1160897b8e1969e2c" => :sierra
+    sha256 "1daccb98d578ccdafb2f02592c3c034b0fc78f4e8eed762873bd7eb31daeee6e" => :el_capitan
+    sha256 "9791d45e72c1e832da7bb87ea783e920b94363a5e58bc2529ccf44039e7bf8b9" => :yosemite
   end
 
   # Checks for mozroots during build, can't be only :recommended.
