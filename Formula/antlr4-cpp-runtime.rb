@@ -5,7 +5,6 @@ class Antlr4CppRuntime < Formula
   sha256 "3aa4bac23c60df14a687839b5e6aa7e94054112d3d3c5c8b1cffe270a4aeeaf7"
 
   depends_on "cmake" => :build
-  depends_on "antlr" => :recommended
 
   def install
     system "cmake", ".", *std_cmake_args
