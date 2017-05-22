@@ -4,6 +4,13 @@ class ClangTidy < Formula
   url "http://releases.llvm.org/4.0.0/llvm-4.0.0.src.tar.xz"
   sha256 "8d10511df96e73b8ff9e7abbfb4d4d432edbdbe965f1f4f07afaf370b8a533be"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "92db127d717d60cb2b1c6a520e94500e0f595723442de0dc26f6ea8fe8f75853" => :sierra
+    sha256 "6c9071a03b1002602df55958dea427adb1c8a66048834c758d8bf5a00c9436aa" => :el_capitan
+    sha256 "2c45abaf0ad949a2fcdc956cad61c51eea61f77a88405f9df3689903454c864a" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
 
