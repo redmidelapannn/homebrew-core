@@ -5,7 +5,7 @@ class Dfmt < Formula
       :tag => "v0.5.0",
       :revision => "fef85e388a41add75020675ab33ed7e55c3efe85"
 
-  head "https://github.com/Hackerpilot/dfmt.git", :shallow => false
+  head "https://github.com/dlang-community/dfmt.git", :shallow => false
 
   bottle do
     sha256 "94174f2b10198e8a58f548d0f55d67bf9660c07eee15ef7c89a5a874ad107649" => :sierra
