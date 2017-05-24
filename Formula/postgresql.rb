@@ -7,9 +7,10 @@ class Postgresql < Formula
   head "https://github.com/postgres/postgres.git"
 
   bottle do
-    sha256 "9114cef478fd44f8ff0e1ecef5d3ac59aaefdc6907d984d721be1d418a91d932" => :sierra
-    sha256 "6fff45123e78105945a03b5c159f68d638d41a88421c25c28ecfb30def846dda" => :el_capitan
-    sha256 "a3070af563a1328ec92946b502e827c3f0a6d5c98d45abb414b3acbed7829bd1" => :yosemite
+    rebuild 1
+    sha256 "53daaef61fd05a3066c25ffc5f32e60fe792ff517051474a1abc25d399e78563" => :sierra
+    sha256 "6add8a8bddd221e0c5fa9f9fed49502a859b0f5b8fc44182b80f4af975467d2c" => :el_capitan
+    sha256 "2f34d822c6f7a1bd75383cce24ecefcca451076930a5a66c56cb1ef17d22f88b" => :yosemite
   end
 
   option "without-perl", "Build without Perl support"
