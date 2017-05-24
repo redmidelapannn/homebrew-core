@@ -7,11 +7,10 @@ class Irods < Formula
 
   bottle do
     cellar :any
-    sha256 "22a5e9bf24a034976491b65af9b36c4311afa16612f072655c556fba7285112b" => :sierra
-    sha256 "510a0c5691702971c670c57c9ed11c5ca9371139b50c623cc950c0f8391a9737" => :el_capitan
-    sha256 "490adc71118dc93c087aa685ddb873c3670575c679c834adc0a95c0b013772bc" => :yosemite
-    sha256 "5d77816c581d12c4c30eb247e9b4a05f096347aa42ff4c069fa9aeff94678f87" => :mavericks
-    sha256 "6b0aa76607c2fec9b0007a6ad4fdca8ab53e7615edc01e3dccd35facbea9bb39" => :mountain_lion
+    rebuild 1
+    sha256 "4fd3ac799aac34f2d022f10ba23f1498133a9a7d9f4158dee959cb00eda46cfe" => :sierra
+    sha256 "c826d085c7480b528e952258e2319141ecc5052ee55d833df39a6f50bccbfa93" => :el_capitan
+    sha256 "a9a2f57a29c4bb6cf11a0e597c25b6ee9869c9e4a5f98a972d67f0ce36ab0244" => :yosemite
   end
 
   option "with-osxfuse", "Install iRODS FUSE client"
