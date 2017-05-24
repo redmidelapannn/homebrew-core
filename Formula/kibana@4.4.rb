@@ -7,9 +7,10 @@ class KibanaAT44 < Formula
   head "https://github.com/elastic/kibana.git"
 
   bottle do
-    sha256 "f60d7c5fffba7332cd873572e2545e831b882be3c3a67614a1d668e47aed2b33" => :sierra
-    sha256 "3b03418f6c7294e688e326d79dee99a74324a93696379fd5907481151c859fb3" => :el_capitan
-    sha256 "a6142cf1f25064be67a8fd8fd1ef056f95716e3000a74512a2f4887e0d083485" => :yosemite
+    rebuild 1
+    sha256 "e51db5467e685c537d0c9aed51592f648dc53abaa67497697275f5b9829ca96e" => :sierra
+    sha256 "843c06a6ebfed4f46043be6a89791306dcdc8b3db9b279d75bfe270ba5cb15d8" => :el_capitan
+    sha256 "da60ef3517e924433b4c34ee65b7328cf4a8fc490279dbf07d1ff7bad16718c9" => :yosemite
   end
 
   keg_only :versioned_formula
