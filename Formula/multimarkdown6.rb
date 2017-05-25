@@ -10,10 +10,9 @@ class Multimarkdown6 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cc9f163eaa9eb53def1e66cd2e3871ea9f8274028a3d399d01e2944d8cf2ac6f" => :sierra
-    sha256 "72571c5521bda002ce2b140bc7e8fd224c0545e9f21b6268ad5a2ecedfe4e025" => :el_capitan
-    sha256 "7c5370be42b0e15b19da90d8ead5aec745e24c842aea2cf2c210f399d84b67d8" => :yosemite
-    sha256 "475aed59ab53d010d8238fb8d0646c43de994c46893baecabcbcfc33c99b15fc" => :mavericks
+    sha256 "852e3db1db3a16c684837d0e6a6ebc185a5a6ac9eeacc745f9322a5fa707a691" => :sierra
+    sha256 "60ab42029b7e6c800a1a964037e7b5c43bb527bccc418e57d7124cec2612cd38" => :el_capitan
+    sha256 "2340ca5c7b39a5d191c67ae456692b86a4f643830d6199f73f723ae75b5b92ce" => :yosemite
   end
 
   depends_on "cmake" => :build
