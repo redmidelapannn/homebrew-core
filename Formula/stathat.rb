@@ -6,6 +6,13 @@ class Stathat < Formula
 
   head "https://github.com/stathat/cmd.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2c77163df225ff28bf3903def94d11875d1e3589af1982e961e4211baf304679" => :sierra
+    sha256 "c39bce44d27c49f1b4d3c4fbf8e36dbb92ada13767dba8b79466bb99fd1b2425" => :el_capitan
+    sha256 "17b16ecc57102b6cbfc8c4f97622370398a0a8768d44422369b51aaa781f950a" => :yosemite
+  end
+
   depends_on "go" => :build
 
   def install
