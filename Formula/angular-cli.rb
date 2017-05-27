@@ -8,9 +8,10 @@ class AngularCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "127e5ef5620a2dcee789700c2ab776b7bd4cf97b2627eee685e24ef8aa02cf8b" => :sierra
-    sha256 "915d1a739c3e7bc3cfc1bd22e11c32798bb94126cee3d483a8fd9055a102118b" => :el_capitan
-    sha256 "9faa57bc40d1d3b82003d2754541ca8dcc3c3fd10437f5d98c3dc80007692413" => :yosemite
+    rebuild 1
+    sha256 "79f5c55d0aa17c3a92d5c65d1ba2ec8095b503555b82a5dddfe4f5f3bf02a201" => :sierra
+    sha256 "cd5153ae458867affdc9b18282a7c7c75cec6b40525893068b7b228082359020" => :el_capitan
+    sha256 "355a25426145233bc5a8eef54a53113894c7f0d1587fdacd977c29470d2dba74" => :yosemite
   end
 
   devel do
