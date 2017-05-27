@@ -6,9 +6,10 @@ class Osm2pgsql < Formula
   head "https://github.com/openstreetmap/osm2pgsql.git"
 
   bottle do
-    sha256 "83079b4af4dc2b2e37b9b42ae39d7d29a272e2571c5e9afdbcaf94c6f7fa9c0f" => :sierra
-    sha256 "a52cb4295d28d3ecfa71a7dfc23593588611c11fbb94035d791207da09da787d" => :el_capitan
-    sha256 "cb4248c8b8ce11c4bd836387a3d48f0e8bd297d609b5f70a8c4581a82d13aba1" => :yosemite
+    rebuild 1
+    sha256 "2ba64a99a420d6516f453c1750df9196a59afd73bf419120c98556eddc4914dd" => :sierra
+    sha256 "6020556b4e4bfaa002c8f46c8d2b43d978125a2c6e8974d7be0e79c2a0370bb1" => :el_capitan
+    sha256 "1fbfe43541190a959342de18df5250eef18cb8fad74979e51a9f9a0afed31042" => :yosemite
   end
 
   depends_on "cmake" => :build
