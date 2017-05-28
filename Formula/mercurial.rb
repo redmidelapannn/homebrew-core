@@ -9,9 +9,10 @@ class Mercurial < Formula
   head "https://www.mercurial-scm.org/repo/hg/archive/tip.tar.gz"
 
   bottle do
-    sha256 "4d7acb8d2c9c1c291dd18b1241df9b6388932e22b9a969b4dde6e349c80fae70" => :sierra
-    sha256 "137cdc81122d4288aaab7a372663cdf6d5829b488f394ee3f72591851d98b512" => :el_capitan
-    sha256 "c131d38c0534b6553f52317023786fbb4a9a2e08266e8233ffdb5180dee129c5" => :yosemite
+    rebuild 1
+    sha256 "43819eacb6604a82ebd2bbc0378092c3285e9eea7eb45cebecf545580ccf2448" => :sierra
+    sha256 "08da4621106f757643434f9a23a97b8b6585ec7c3da595681b36cb337cb730e0" => :el_capitan
+    sha256 "ca4e23992aae4334083a58becb9a926fa459ce021b201ddb20f3c9b33dc80cac" => :yosemite
   end
 
   option "with-custom-python", "Install against the python in PATH instead of Homebrew's python"
