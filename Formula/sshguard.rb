@@ -8,9 +8,10 @@ class Sshguard < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8a0e7842c9f1fc96dd135086b653b1fefe45353cbf630fb560f8852ea6aa91a0" => :sierra
-    sha256 "00091e528d72236eaa0f71a384f6ddd006349e36f9e3ac46b3bd2cf57941faeb" => :el_capitan
-    sha256 "280351ac89ad14d0b1aa589779d60c024bb1821d08571044a689c6aae39193d4" => :yosemite
+    rebuild 1
+    sha256 "a4c59e74ec2cb5fc17da7463fb5dd777b185f2315a04ff1aa278aabeee469e43" => :sierra
+    sha256 "e0f82845e9b660861d66a7125332ac361817eaaa70c2922d45b81551822303be" => :el_capitan
+    sha256 "6938fb0308dd9860cb0b2d6014a35aef69b457969e0530515d19737722c7c9e5" => :yosemite
   end
 
   def install
