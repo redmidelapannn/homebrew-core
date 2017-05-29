@@ -6,9 +6,9 @@ class Cimg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0a682bf144d609aeb8c185839226ded8fccc08e7f13fe63ec6399928105f8fb6" => :sierra
-    sha256 "99a4424e348cc18c366a58137ad22e1d9fbe5de88afce72e32dea13fe64aa7ac" => :el_capitan
-    sha256 "99a4424e348cc18c366a58137ad22e1d9fbe5de88afce72e32dea13fe64aa7ac" => :yosemite
+    sha256 "9b49f27614223ffaeeeab299ea368c6c9f4a19c9c04ac8b1d7d379e8ebe4f76f" => :sierra
+    sha256 "dbad13ab3934309880d681cafe7f1eed602678bb08fc4bd02b97351752bc1335" => :el_capitan
+    sha256 "dbad13ab3934309880d681cafe7f1eed602678bb08fc4bd02b97351752bc1335" => :yosemite
   end
 
   def install
