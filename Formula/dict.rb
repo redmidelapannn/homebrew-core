@@ -5,10 +5,10 @@ class Dict < Formula
   sha256 "a237f6ecdc854ab10de5145ed42eaa2d9b6d51ffdc495f7daee59b05cc363656"
 
   bottle do
-    sha256 "741517b409486d621c4a99d397c786c2969c9c65f321b002dc7cf07890a624e8" => :sierra
-    sha256 "1179c34c302af33595d7f6890b081496591437ea5f9497c048779fdc03058942" => :el_capitan
-    sha256 "e54952913d23f81def2cec2b65ac94c5385180fa8970f613843546740435adfd" => :yosemite
-    sha256 "b41fe59b8db4eb263ca23398ca8a52f6a23893ddfeb1b26f2e7ce9fdd8b08bf5" => :mavericks
+    rebuild 1
+    sha256 "a605b74e8e123bd6f799d7b2d534d030371610ae627a7a5699a87df0dd9b7bc3" => :sierra
+    sha256 "8e96e6137e2a3a53633c0d2d3cffba38275d8d1a2a688891d36e74129d1e2b61" => :el_capitan
+    sha256 "1b13f78af04b265b8d9ad54347d536ec924ba02d4c6d8750d7e9d02953842ed7" => :yosemite
   end
 
   depends_on "libtool" => :build
