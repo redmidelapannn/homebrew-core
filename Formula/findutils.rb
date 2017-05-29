@@ -6,12 +6,10 @@ class Findutils < Formula
   sha256 "ded4c9f73731cd48fec3b6bdaccce896473b6d8e337e9612e16cf1431bb1169d"
 
   bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "b3e8fda4333347c6e246909358e9982170820547efd6c9e0dff93ea1b477429b" => :sierra
-    sha256 "fc0efb414966dda5544279320c8b7505a7a292bcf38164b7afcc5fdfcf666aa5" => :el_capitan
-    sha256 "e7fb30feeb8f5adb37e29c298d24da06a172d778a0d1373ed47c02bb3735419d" => :yosemite
-    sha256 "4dffec36d2f9b22e67c75aecba9391af95408426bcae16e270ae42e53305909a" => :mavericks
+    rebuild 2
+    sha256 "a55107bd5354901a70e9cab1655996da6dba0ad3e919dce8eb683626bc5a7a60" => :sierra
+    sha256 "25abca086530a781420753aab84f317780cc34a7c7d408ab6d78c754cb1bb30b" => :el_capitan
+    sha256 "b4d73bdf2df4059edc32071c43bb58c2b0598d621e78ddedb1a968a97b55521d" => :yosemite
   end
 
   deprecated_option "default-names" => "with-default-names"
