@@ -6,9 +6,10 @@ class Clipper < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "44d377b4219cc3d1077ae3d1b78c3fd161242f3aff440adcde904610c5ff89f2" => :sierra
-    sha256 "2bc9dc475bb45718699290b6359424e68e316cb8ec40fb38fd2f68b5c8872f0b" => :el_capitan
-    sha256 "314db80566c87edfead4c85aa203ff17ab427cc7aa1f45766fb0def3588a5c74" => :yosemite
+    rebuild 1
+    sha256 "0d5fc4a5d801f091912f2c2422f8271716f09aec74341a9946b2a9d3e9245357" => :sierra
+    sha256 "8d53dbe15968d21223cf64f37d5f333609c2d27d29266db2802e5bdbac49717d" => :el_capitan
+    sha256 "2de410ce9983ca5be1044055fcecbb6a9517dd2578c2bc5a0ddb2904f464736d" => :yosemite
   end
 
   depends_on "go" => :build
