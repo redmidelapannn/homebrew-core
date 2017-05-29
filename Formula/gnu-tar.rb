@@ -7,9 +7,9 @@ class GnuTar < Formula
   revision 1
 
   bottle do
-    sha256 "d87139778146e9fe39f5db5dcf020c51a5a8ed7528987e31ecd2a2a36ab239e2" => :sierra
-    sha256 "ba2d4a54ae4abf2520b816d19373ed0a8bd0bb0e894b271d98ee1c7eba51af16" => :el_capitan
-    sha256 "cb0a9258bfeb0530540af1748b37a4fe79cf07ec5848e7bce48c47d51289bdb7" => :yosemite
+    rebuild 1
+    sha256 "04005aaa3467eaad80d5c29f5a8d26f15846b329848152a5d330d6d906994d1f" => :el_capitan
+    sha256 "7a0fe35063888f4f675e504949a3b631cf16e916ea98c1f638695c2ceb7c8dd0" => :yosemite
   end
 
   option "with-default-names", "Do not prepend 'g' to the binary"
