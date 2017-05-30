@@ -32,6 +32,6 @@ class Mpg123 < Formula
   end
 
   test do
-    system bin/"mpg123", "--no-control", test_fixtures("test.mp3")
+    system bin/"mpg123", "--test", test_fixtures("test.mp3")
   end
 end
