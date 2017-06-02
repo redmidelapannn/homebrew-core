@@ -8,6 +8,13 @@ class AzureCliAT10 < Formula
   sha256 "60194e770b8dca0485db9d4c99f9cd432f7b43096cc5ad0353f52fd5b1b29181"
   head "https://github.com/azure/azure-xplat-cli.git", :branch => "dev"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8e1487caefa750c72b07ab03c5fc6cfb3b431c538bc14e4b6ae792028a28b33d" => :sierra
+    sha256 "8ae184b6a9e6f43eeba1c5f55fb3d2b5b13416f8507b944e33705b48681ab443" => :el_capitan
+    sha256 "8a66c55952d8228f7b432cfb54f36b24d1f7046726dabb03e3d95e8852604834" => :yosemite
+  end
+
   depends_on "node"
   depends_on :python => :build
 
