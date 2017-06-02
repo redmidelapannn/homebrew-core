@@ -8,6 +8,12 @@ class AzureCli < Formula
   sha256 "be72ddb0983b3466e868602e68e4d3bf67379fbe080bdaa6aa321c03f9bcce48"
   head "https://github.com/Azure/azure-cli.git"
 
+  bottle do
+    sha256 "a3114837f47c367efc74052c75504b847cadfd0db4631725af1679f375458a6d" => :sierra
+    sha256 "8b800f0204b102ecbacd46a93b4d3d4e44acdf606febeeb81e8431b62d081442" => :el_capitan
+    sha256 "c1acdc10be4081f95ba7130bbc23fa90306f732d3f06e54a3f8b83ddf6502c51" => :yosemite
+  end
+
   depends_on :python if MacOS.version <= :snow_leopard
 
   def install
