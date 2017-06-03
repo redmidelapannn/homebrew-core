@@ -4,6 +4,12 @@ class HeirloomDoctools < Formula
   url "https://github.com/n-t-roff/heirloom-doctools/releases/download/160308/heirloom-doctools-160308.tar.bz2"
   sha256 "e4aeae0e5303537755c04226c06d98a46aa35913d1a179708fbc368f93731a26"
 
+  bottle do
+    sha256 "9e6c72d8617ed129c989db3aec4fe69488d6505e8f93b87a4514681932c00d2f" => :sierra
+    sha256 "08febd7aabf902c2ccd3f4fdd24a76b8dc663783534774519eab74f800d80aea" => :el_capitan
+    sha256 "02e804c795c523d60f5d9cbfb59a053d379563b82540a1c882664ed094c09a04" => :yosemite
+  end
+
   conflicts_with "groff"
 
   patch :DATA
