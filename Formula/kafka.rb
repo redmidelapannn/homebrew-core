@@ -87,16 +87,15 @@ class Kafka < Formula
     inreplace "#{testpath}/kafka/zookeeper.properties", "#{var}/lib", testpath
     inreplace "#{testpath}/kafka/server.properties", "#{var}/lib", testpath
 
-    puts "hello logs: #{logs}"
     begin
       fork do
-        exec "#{bin}/zookeeper-server-start #{testpath}/kafka/zookeeper.properties > #{logs}/test.zookeeper-server-start.log 2>&1"
+        exec "#{bin}/zookeeper-server-start #{testpath}/kafka/zookeeper.properties > #{testpath}/test.zookeeper-server-start.log 2>&1"
       end
 
       sleep 15
 
       fork do
-        exec "#{bin}/kafka-server-start #{testpath}/kafka/server.properties > #{logs}/test.kafka-server-start.log 2>&1"
+        exec "#{bin}/kafka-server-start #{testpath}/kafka/server.properties > #{testpath}/test.kafka-server-start.log 2>&1"
       end
 
       sleep 30
