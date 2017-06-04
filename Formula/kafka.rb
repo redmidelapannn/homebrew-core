@@ -79,10 +79,11 @@ class Kafka < Formula
   end
 
   test do
-    ENV["PWD"] = Dir.pwd
-    ENV["CURL_HOME"] = Dir.pwd
-    puts ENV.inspect
+    ENV["PWD"] = testpath
+    ENV["CURL_HOME"] = testpath
+    ENV["WORKSPACE"] =  testpath
     ENV["LOG_DIR"] = "#{testpath}/kafkalog"
+    puts ENV.inspect
 
     (testpath/"kafka").mkpath
     cp "#{etc}/kafka/zookeeper.properties", testpath/"kafka"
