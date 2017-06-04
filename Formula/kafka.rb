@@ -79,11 +79,7 @@ class Kafka < Formula
   end
 
   test do
-    ENV["PWD"] = testpath
-    ENV["CURL_HOME"] = testpath
-    ENV["WORKSPACE"] =  testpath
     ENV["LOG_DIR"] = "#{testpath}/kafkalog"
-    puts ENV.inspect
 
     (testpath/"kafka").mkpath
     cp "#{etc}/kafka/zookeeper.properties", testpath/"kafka"
@@ -91,6 +87,7 @@ class Kafka < Formula
     inreplace "#{testpath}/kafka/zookeeper.properties", "#{var}/lib", testpath
     inreplace "#{testpath}/kafka/server.properties", "#{var}/lib", testpath
 
+    puts "hello logs: #{logs}"
     begin
       fork do
         exec "#{bin}/zookeeper-server-start #{testpath}/kafka/zookeeper.properties > #{logs}/test.zookeeper-server-start.log 2>&1"
