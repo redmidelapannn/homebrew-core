@@ -81,6 +81,7 @@ class Kafka < Formula
   test do
     ENV["PWD"] = Dir.pwd
     ENV["CURL_HOME"] = Dir.pwd
+    puts ENV.inspect
     ENV["LOG_DIR"] = "#{testpath}/kafkalog"
 
     (testpath/"kafka").mkpath
