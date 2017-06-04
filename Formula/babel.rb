@@ -7,10 +7,10 @@ class Babel < Formula
   sha256 "d69a00bdb4f35184cda1f5bfe8075cd4d569600b8e61d864d1f08e360367933b"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "7b4b364e14e7e046d1e3732261e23c1e91a5b9f0063e6dcc341b0cdae086ff9e" => :sierra
-    sha256 "426c9de5a3dd170c9264478900f45a292590f48a2c8b51aa0d3ee6650381ec85" => :el_capitan
-    sha256 "f7ad8b1845bbecef506586b434e0249859e2bc48be3a165cc94dd5f981c7f800" => :yosemite
+    rebuild 1
+    sha256 "95ebe21e8db79e0f79ecfb58772aa91ffa17817bd88934cc758dee3cb63d0686" => :sierra
+    sha256 "bbea9524647b9f39f188beb82558539b7c65474f32d9f4c2a38ff4f75bef6611" => :el_capitan
+    sha256 "ee256f3eccf6527370fa568cb5b42ae609d29ce80847c622ec0d1a7f386f2a9c" => :yosemite
   end
 
   devel do
