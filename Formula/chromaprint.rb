@@ -7,10 +7,10 @@ class Chromaprint < Formula
   head "https://github.com/acoustid/chromaprint.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "d3a2316c7cedb13dac47582732166a1be94895398741d45190daaf64a740c307" => :sierra
-    sha256 "b6d54f06b28a2d2d9868ee5977ff4f8fb65a7356e0aa9d76b299850642f8e72d" => :el_capitan
-    sha256 "e93bfcd661dc4b27765ea083585776e53a440343268d1a4a0c1cbdfb60698126" => :yosemite
+    cellar :any
+    sha256 "890628e5055a7e5c651fa07c58a229fb25ff5f36ed639d0bae9502094daafa8e" => :sierra
+    sha256 "939aca1d699b942c2fbd65eeb1b4a2dfd4cc2a4830a379413234a540209b7b19" => :el_capitan
+    sha256 "0e695ee7bcb2f12718c9f2148c7c491752ae5533490313775cffe4306a56f160" => :yosemite
   end
 
   depends_on "cmake" => :build
