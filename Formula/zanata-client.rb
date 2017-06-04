@@ -6,9 +6,9 @@ class ZanataClient < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "028df1b1361d2b0f7296047ac0723bdce1a916dd10e1e98f33329ca5b8ff0466" => :sierra
-    sha256 "028df1b1361d2b0f7296047ac0723bdce1a916dd10e1e98f33329ca5b8ff0466" => :el_capitan
-    sha256 "028df1b1361d2b0f7296047ac0723bdce1a916dd10e1e98f33329ca5b8ff0466" => :yosemite
+    sha256 "8b766810e38f3f13a7bc6e6b81ec52eb6c98d257e8df5197187cfbc7d809070a" => :sierra
+    sha256 "b96fa679ee8303faf387cd14666a4647956efbd06963ace7dfddfa9f04604e8b" => :el_capitan
+    sha256 "b96fa679ee8303faf387cd14666a4647956efbd06963ace7dfddfa9f04604e8b" => :yosemite
   end
 
   depends_on :java => "1.8+"
