@@ -7,9 +7,9 @@ class Lzip < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0a6d59b6f75c039ad566dbda99ab47f929f5087f0b551c2930dab208b67ec9d0" => :sierra
-    sha256 "46fe2fe457326ea5f5bff7252b1e73642e3a516ee3f97e343cd03a253372047c" => :el_capitan
-    sha256 "9daceb61b21e2e493683348ebd0f3770a4085c8d75c2d2f7b6bb8ae455087383" => :yosemite
+    sha256 "b9396eb6d6157f85f8feb07c8953a5055b7605bdc9a0bc83b10b723a061928a2" => :sierra
+    sha256 "b97d90de3cb3bc0ddeb29de1f0d41dff49f7297f2193fab2760f359c1acc027c" => :el_capitan
+    sha256 "e87c8c67cf8088336db5bb9176b3b0d7176040a2b322c9253d43bdd020a5a700" => :yosemite
   end
 
   def install
