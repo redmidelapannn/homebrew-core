@@ -20,6 +20,7 @@ class Makepkg < Formula
   depends_on "automake" => :build
   depends_on "autoconf" => :build
   depends_on "asciidoc" => :build
+  depends_on "docbook-xsl" => :build
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "libarchive"
