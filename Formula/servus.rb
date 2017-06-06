@@ -1,9 +1,8 @@
 class Servus < Formula
   desc "Library and Utilities for zeroconf networking"
   homepage "https://github.com/HBPVIS/Servus"
-  url "https://github.com/HBPVIS/Servus/archive/1.5.0.tar.gz"
-  sha256 "42fb9c060f17f040ad3c7563f5e87c89f5a221a5aa7da21384fc26b9c725ecc8"
-  revision 1
+  url "https://github.com/HBPVIS/Servus/archive/1.5.1.tar.gz"
+  sha256 "6ce0b757654c44b47f4c3739a86ad63ba78fb56d01a2a2021305753c22cc0bef"
 
   bottle do
     cellar :any
