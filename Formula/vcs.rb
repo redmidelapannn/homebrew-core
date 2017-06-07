@@ -6,10 +6,10 @@ class Vcs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "d9b65057f5f6746e32f075af250611956e3fecf6aae5300ce517fe0edfb155cc" => :sierra
-    sha256 "93bf052fe5378df11b4dfa929d6c2aea6a5a623a198a8a765374332ca662dfaf" => :el_capitan
-    sha256 "93bf052fe5378df11b4dfa929d6c2aea6a5a623a198a8a765374332ca662dfaf" => :yosemite
+    rebuild 2
+    sha256 "ab0e1f035d4320831a5baf1b84cd2d90f6f173a1988d727fcd367bb04dbae76f" => :sierra
+    sha256 "3238fa96e8f16fd7d5328ae2799de3843f519405298d6693684954564d6459c4" => :el_capitan
+    sha256 "3238fa96e8f16fd7d5328ae2799de3843f519405298d6693684954564d6459c4" => :yosemite
   end
 
   depends_on "ffmpeg"
