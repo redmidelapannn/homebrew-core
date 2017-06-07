@@ -6,9 +6,9 @@ class Perl < Formula
   head "https://perl5.git.perl.org/perl.git", :branch => "blead"
 
   bottle do
-    sha256 "af578c645e5ff6162b29c693c6145345fef4dfc848f9d999a6e1f36330318c63" => :sierra
-    sha256 "c66b2d1daf5e4d77b8f4943b9718610c6d24d20537e6a1b6a87ccf74fd54ec02" => :el_capitan
-    sha256 "3474d4c2ddf177e331d70af4dbe1f51199139e525add8424b43b6339358950ab" => :yosemite
+    sha256 "8408b1ca27f618158e8599a16137942beb97632331681c2ba053a5fbefd5f39d" => :sierra
+    sha256 "55b92e7eb6737408a9ed677c2501de7c5947b8991f6c6d3d6830b689988a354a" => :el_capitan
+    sha256 "65fdb342b03b59c46441057dc497a9b8e4fdd3234301997cc6b3c7c59b311315" => :yosemite
   end
 
   option "with-dtrace", "Build with DTrace probes"
