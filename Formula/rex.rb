@@ -7,9 +7,9 @@ class Rex < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "39840d711c9bdac2700d09527b30172b45b208e94f4ff655ac093866f8a6f66b" => :sierra
-    sha256 "dac55c6a5871f9111c40060b7faecf9d21a3234e0936b449f862c4ec9706a70b" => :el_capitan
-    sha256 "d02002fba499b2a3ed5271ccf1c3ddbaf75629d747aed289a4f53de7aad9d081" => :yosemite
+    sha256 "809ec52b6dfed94b474e0e009157e974f47f653d8c88089b8be0da521529fa79" => :sierra
+    sha256 "70d721f7b39c99b257e0a9d56fa663fd4c43600f2bcafb9fe5d89687f88d23e9" => :el_capitan
+    sha256 "bbbd875b6a06fdb04f2b34932f77c09989f4a211194b53adea4dc0098e693a0a" => :yosemite
   end
 
   # This is the easiest way to go for now, until there's a new upstream
