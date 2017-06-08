@@ -9,9 +9,10 @@ class Bullet < Formula
 
   bottle do
     cellar :any
-    sha256 "c43758c24e12037cca10a25731ee97321718fd4f4c31e9787afb0ea43f62d4b1" => :sierra
-    sha256 "7a3a5d87feea5382f69ede42ec7b7a0fedf5ffee89096c1c79ee1fb5e4096b51" => :el_capitan
-    sha256 "838c1417f24d5e565493f4517054cd68f02e2e8a8749c6f5fd73cd4862c06560" => :yosemite
+    rebuild 1
+    sha256 "b7f40d409763c32904254ee2d6f5178d8bd47793e3f2fbe2f1c760a9ceb62f65" => :sierra
+    sha256 "8627b53da6c0bdc74e0ebde07c475262f5707b7fb02675f4669aca61c3eab852" => :el_capitan
+    sha256 "b513f97f3d7344c047806e6316739f987c63c947a949914ddbd9e3a07674f43b" => :yosemite
   end
 
   option "with-framework", "Build frameworks"
