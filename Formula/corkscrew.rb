@@ -7,11 +7,10 @@ class Corkscrew < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "85d9050689df4cf0ec3275957fad60609ea1a9511079f20f05470e1b767c94f2" => :sierra
-    sha256 "f7e4e63df01aa33a6518f4f6c2c0ccbb0c7b8aaca95052d4aa827b5e56ed8e5c" => :el_capitan
-    sha256 "5a0916aa242a22808bbbb652664f1e44620c1c78b896982f67c9a5a1b85a5efc" => :yosemite
-    sha256 "79ca3f19c2a8df1cd7b43410ab600d32c4fc7038f99998acb656e5cc61807f25" => :mavericks
-    sha256 "8844bb407417189b8ded9d8843017a86306f7832b776906d18db5817503faa84" => :mountain_lion
+    rebuild 1
+    sha256 "826f7ce7a958fc413e0c0313e6447d602a30111f6a1962abfdef130e16bf8662" => :sierra
+    sha256 "68b7f2de12242cbc777b6d9c98e2630631a793d5d3fe18aa0af64f2f08dbdc8a" => :el_capitan
+    sha256 "0f0c6c2f7466c0bdeaf277e801bc045f4ea41af3c3c21fa72f43fa23bcbcc9c7" => :yosemite
   end
 
   depends_on "libtool" => :build
