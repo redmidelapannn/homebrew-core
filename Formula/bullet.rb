@@ -28,7 +28,6 @@ class Bullet < Formula
   depends_on "numpy" => :recommended
 
   def install
-    dylib = OS.mac? ? "dylib" : "so"
     args = std_cmake_args + %w[
       -DINSTALL_EXTRA_LIBS=ON -DBUILD_UNIT_TESTS=OFF
     ]
@@ -37,19 +36,11 @@ class Bullet < Formula
     args << "-DBUILD_BULLET2_DEMOS=OFF" if build.without? "demo"
 
     if build.with? "python"
-      py_prefix = `python-config --prefix`.chomp
-      py_lib = "#{py_prefix}/lib"
-      numpy_include=`python -c "from numpy.distutils.misc_util import get_numpy_include_dirs; print(get_numpy_include_dirs()[0])"`.chomp
-      args << "-DBUILD_PYBULLET_MAC_USE_PYTHON_FRAMEWORK=ON" if OS.mac?
       args += %W[
         -DBUILD_PYBULLET=ON
         -DBUILD_PYBULLET_NUMPY=ON
         -DBUILD_PYBULLET_CLSOCKET=ON
         -DBUILD_PYBULLET_ENET=ON
-        -DPYTHON_EXECUTABLE=#{which "python"}
-        -DPYTHON_LIBRARIES=#{py_lib}/libpython2.7.#{dylib}
-        -DPYTHON_INCLUDE_DIRS=#{py_prefix}/include/python2.7
-        -DPYTHON_NUMPY_INCLUDE_DIR=#{numpy_include}
       ]
     end
 
