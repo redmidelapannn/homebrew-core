@@ -5,9 +5,10 @@ class Gucharmap < Formula
   sha256 "1588b2b183b843b24eb074fd0661bddb54f18876870ba475d65f35b7a9c677a0"
 
   bottle do
-    sha256 "e480d0b42e959069a5c6ac5e0971832025432a7af8366782b79cf207dac6b6da" => :sierra
-    sha256 "bc417d1c6ad0caf34495a1be3cfae59f070adb529af9a637a1806910e109177c" => :el_capitan
-    sha256 "564bfe6886ff9f646bbdd3406ace12181f01fb1f0290f8778adbf082a1fd7791" => :yosemite
+    rebuild 1
+    sha256 "000fa2a63c360abd9375bd84cdd2087394579f060d53f928d5cd675f741f1590" => :sierra
+    sha256 "506def308fb9f98ac96d86ae61cce8c3202b7bcee139f8763d20b5fe75d60c26" => :el_capitan
+    sha256 "3ca74e34793292f67de3487c2d1472e35e409253313cf4167fb3efd74cd275d6" => :yosemite
   end
 
   depends_on "pkg-config" => :build
