@@ -9,9 +9,10 @@ class Xz < Formula
 
   bottle do
     cellar :any
-    sha256 "2518e5105c2b290755cda0fd5cd7f71eea4cd4741b70c48250eed1750c3a6814" => :sierra
-    sha256 "faa0f79c1776a8b5d8093f84fca4c92e1ada51957a1381d120f690be36b42819" => :el_capitan
-    sha256 "82eef73a78db1c46ed8482c357f6ad1797a62f4c9124410b362efe885082892c" => :yosemite
+    rebuild 1
+    sha256 "0e76551952645a856edcb3a39bd011ee33e7a0683932300def66da815bca1e10" => :sierra
+    sha256 "5e1527ae61e72c51aeadf833df6786351ccfabb5b3b50bdc72c388cb3576a43c" => :el_capitan
+    sha256 "d8bee16b574fcc361869c9a7bab28e36feb423cbe4e273b35843848c8d140c32" => :yosemite
   end
 
   def install
