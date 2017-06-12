@@ -7,9 +7,10 @@ class Libusb < Formula
 
   bottle do
     cellar :any
-    sha256 "e42e21cc9b7cd4223eb8050680ada895bdfcaf9c7e33534002cd21af2f84baf8" => :sierra
-    sha256 "e4902b528d0ea0df0d433e349709d3708a9e08191fd2f3c6d5f5ab2989766b9f" => :el_capitan
-    sha256 "8831059f7585ed973d983dd82995e1732c240a78f4f7a82e5d5c7dfe27d49941" => :yosemite
+    rebuild 1
+    sha256 "5e9dfb54cd2b4a04d2079ad6e193484f61dc4e1e85e8c470116690443b50ff6a" => :sierra
+    sha256 "a0cc0933454e7347698cfe30f12b36ce417b4e311efa4059e063364069dab1eb" => :el_capitan
+    sha256 "9a12ec6763a77eecb995ba076ac50ed85e16869c80b70e52464f44c64cb6cdc5" => :yosemite
   end
 
   head do
