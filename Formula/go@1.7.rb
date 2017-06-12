@@ -8,9 +8,10 @@ class GoAT17 < Formula
   sha256 "1a67a4e688673fdff7ba41e73482b0e59ac5bd0f7acf703bc6d50cc775c5baba"
 
   bottle do
-    sha256 "907b586c4abb3ae35648a9300713ffd06c9406cceb3b5fb825921e8184823707" => :sierra
-    sha256 "f0700dfe7eabeffd954d60e0dad26ec2cbf5f731ea780a8aab42469eb788a832" => :el_capitan
-    sha256 "1bd52cf8a045676460eac32e4adb7040d62af3f2926ae34a262916efbdc4f207" => :yosemite
+    rebuild 1
+    sha256 "0e250d861c6bd7256874b3d2a293cd1b5969f746376dadadd2106f8c4b883ec1" => :sierra
+    sha256 "4fad62dd005353cb4cb7975bd0d172228cb859141bdd336521dff37f1d1da823" => :el_capitan
+    sha256 "211a585f4f732acf52b0c48340969328533e0cc74869e949e8e7f7295f303162" => :yosemite
   end
 
   keg_only :versioned_formula
