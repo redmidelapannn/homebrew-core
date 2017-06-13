@@ -6,11 +6,10 @@ class T1lib < Formula
   sha256 "821328b5054f7890a0d0cd2f52825270705df3641dbd476d58d17e56ed957b59"
 
   bottle do
-    rebuild 2
-    sha256 "94789287c849a04f05a40c79940aee6efe3e03318c95db9c2be69ee4e6806d82" => :sierra
-    sha256 "fa356a5405f5b0cf57c15ebd5b680c215e1e498189914e9b9663eb132655a8c1" => :el_capitan
-    sha256 "6d1bf242eb7a5201180b9d4b505a7f83663802383d358180cea696714ae57fc8" => :yosemite
-    sha256 "ec107b30d4b9a95bbc094a7a944cab862ed78a875c5ed0002aa7232ec514e9d7" => :mavericks
+    rebuild 3
+    sha256 "83154fafbc8cf0d0ad5a72163d5b5549b86c62bf44d86ff90eca3f438d9248dc" => :sierra
+    sha256 "0083b71bc5105bc1ec76a852461c407bbdff3489e4934574876ff22c6983b3ba" => :el_capitan
+    sha256 "aaa7e40719ba1f9f27c56f49daf5b3c6776d33afc88fd58f782c6dcf289acf52" => :yosemite
   end
 
   def install
