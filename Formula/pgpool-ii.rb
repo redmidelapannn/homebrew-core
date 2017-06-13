@@ -5,9 +5,10 @@ class PgpoolIi < Formula
   sha256 "f90de6dbe3b2fd7adac7521fc285a1addf1585102c7f7eddb48147a0801d1158"
 
   bottle do
-    sha256 "87b327d37b58c8ac1c65351ee16b8a541525481d3d02701c2cc12eb6caeb100b" => :sierra
-    sha256 "24fddb94c6b055d242039bdeb9c3b36f8d3afd602fb2f7b41f0654d72edb7a39" => :el_capitan
-    sha256 "b4ef5cc69fdca07dd243a5654a2192a26039591bcb3a11a87bac559aa23dedfb" => :yosemite
+    rebuild 1
+    sha256 "2bd0e2ef41528af0a2ae4436b497e3d4f7efb013e27e6a31826c611ea96b3cbc" => :sierra
+    sha256 "e6871cbd9a5098a4ccc0b2c6722ef91e45834253327fec853d93b361cb304cf9" => :el_capitan
+    sha256 "9481f958681655adab0c10654d5cd9cb16aa24284510006cee637fad26ee2b58" => :yosemite
   end
 
   depends_on :postgresql
