@@ -7,9 +7,10 @@ class SignifyOsx < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "523e702b06aca5635673ab05bbd65ac65533112a9395d5c33079ec53aeb8dda4" => :sierra
-    sha256 "afb0b2d64d3cf49d5e39a56f1d35245dd9f059845bab6c4872b6119985d6f801" => :el_capitan
-    sha256 "026e3a3c729fcaf41bd70041edec504c59981abb9b1b9018025ecd3467d12639" => :yosemite
+    rebuild 1
+    sha256 "17e62ca5739b844ee9bbb16eb9127b2e24ac6ef66e25278a7c3715ba26d8f3ae" => :sierra
+    sha256 "3ac3eee8b1e013bb882cf8e4fcad3bf9c7d39921e84fb8dbf6588dc6d519d3d5" => :el_capitan
+    sha256 "f5b8de027ff999afeac5250219b058a667ed7260479321a80d8849666d02e78b" => :yosemite
   end
 
   def install
