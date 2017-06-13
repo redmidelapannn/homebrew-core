@@ -5,9 +5,10 @@ class Znc < Formula
   sha256 "2f0225d49c53a01f8d94feea4619a6fe92857792bb3401a4eb1edd65f0342aca"
 
   bottle do
-    sha256 "c1d6ddcd9078631bcd94484f3796e95f32bf9e7b8d0886d9e2802b955b624cbf" => :sierra
-    sha256 "fe47b2288ee78acd11b5d4dc5a4a43a255153a211775875975f458cfc370c7a9" => :el_capitan
-    sha256 "61a0afcfcb021a7005d59f6d0a352fe27f05a6b2617eadb4482172d673666a67" => :yosemite
+    rebuild 1
+    sha256 "696b495473aecce85165027fc01ddf41afa664b4c7b49987c3b442eb470f216f" => :sierra
+    sha256 "40211f9052b1aa3ffedc812dcf70c4e24b41f40384d3e66596046fe4d3add717" => :el_capitan
+    sha256 "65592883adbb119c6f0856a5e5d8d0cc3b45365d3fc75de8244cdd51bc91e5d8" => :yosemite
   end
 
   head do
