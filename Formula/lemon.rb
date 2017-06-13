@@ -5,11 +5,10 @@ class Lemon < Formula
   sha256 "bc7c1cae233b6af48f4b436ee900843106a15bdb1dc810bc463d8c6aad0dd916"
 
   bottle do
-    sha256 "54fc18e48b3e9bfa4e14317158e3aef097d075bc3819d6424cb5b48a5845a7d8" => :sierra
-    sha256 "9016fa354fa9f34abf2db3cdca2e13a6dd6223534ff9ea08001ddaff053fe446" => :el_capitan
-    sha256 "e9b8328c8d905424be43404911bff1296c16fbdd83ecfeab7b51917f31c81ab7" => :yosemite
-    sha256 "a8120db2de1708f3ecd4bddc5775f90cf5c39a55010a90d01b8cd5f58325560e" => :mavericks
-    sha256 "dd245cd856b28f4d14a3f34e243b29b032becf0809208db66bb4c550e4789a83" => :mountain_lion
+    rebuild 1
+    sha256 "4ebdbf3bf75a8ca3891ea0632f0d8b47a6f48aba0030400db1f95f66023ba25a" => :sierra
+    sha256 "561d644be998b0498097422f4da6600b922dc92d807252c4de9fdacf6981b3dd" => :el_capitan
+    sha256 "fa13f842ab1b5a8a7442f865497de6c73cd341bd1d1786042f1f943777d162fb" => :yosemite
   end
 
   def install
