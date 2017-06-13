@@ -6,10 +6,10 @@ class AutopanoSiftC < Formula
 
   bottle do
     cellar :any
-    sha256 "252749876209b696ff1dfecc2d6eddef263ea06491c3cb640f26cd0a63a4abab" => :sierra
-    sha256 "325d74775797dfe0cdc0c6b6e0255166fe7573b4648c20758adf1386c2c85991" => :el_capitan
-    sha256 "929174dc5dd8b519136154249df83e026ac9c234988a979a592d03c47477988b" => :yosemite
-    sha256 "5a777245c630a0d91178d347f3e452b7d9784c7d7ff15f9fa4ed12d9bdc2830c" => :mavericks
+    rebuild 1
+    sha256 "47bc2bd5137cf9ea5ae65a790038d69254dd770fdd93a86f2f72f05db85fe962" => :sierra
+    sha256 "7e552447ba49b1eb27fc2af20bcd96f612b85754f5540bbb8930c7d9b4462ffc" => :el_capitan
+    sha256 "432f3d1b107c832b8c7e228e69a222a9da82703b79cf59953dbac641f3686bc6" => :yosemite
   end
 
   depends_on "cmake" => :build
