@@ -17,9 +17,10 @@ class Mongodb < Formula
   end
 
   bottle do
-    sha256 "6bce1a94cb3cda934bc9c12bd8ca1da3411fa6959f7e71fa6ba822a399fd5a82" => :sierra
-    sha256 "23169e737a9c73dde8aa497ea754d370a102c634a2d12fb96224556e4b8063c6" => :el_capitan
-    sha256 "5124e03c37ef9d6dd673ddebeb9bd403456170c2168c6f558b9b4c1379df8459" => :yosemite
+    rebuild 1
+    sha256 "765754197b8de9147159587c91888f23f1abe6be7fc8daff535a9fcb9a6c6f47" => :sierra
+    sha256 "13713b007af3d95eb3bd5b51e21f07baa4bbbaf77e1649f755494dbc0bbec88a" => :el_capitan
+    sha256 "ebd666e6df88a3fc14e586ecf430a2f7944de209dc7d47ac9daa582954253ff3" => :yosemite
   end
 
   devel do
