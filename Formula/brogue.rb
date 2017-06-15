@@ -8,9 +8,11 @@ class Brogue < Formula
   sha256 "eba5f35fe317efad9c97876f117eaf7a26956c435fdd2bc1a5989f0a4f70cfd3"
 
   bottle do
-    sha256 "cf93101e6920d496966fb6ecc9e2bdfbb48e4de57259a64e31c2e82f732d2ca4" => :sierra
-    sha256 "7470afc3d1235a9c1dd6ef89ba6a7e72d5e3e0e3e18b19ffe62064813834ae90" => :el_capitan
-    sha256 "b860adf0b0d376f61c478d7c936e4f3078dc5203054093fe129555aa5e2fc431" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "eca6856c55384185e92b2bbff0b2282de9e42a59ca59fcc2e0914e1bc2d755f0" => :sierra
+    sha256 "3f8f709a34266f220bc7ea819c2a1faa54a1af744a9e42358df990edeaf294fd" => :el_capitan
+    sha256 "a2e77f312195d83efc737e9a7c9c6ef66ef0ed7065b206a408ddb07c83c4feaa" => :yosemite
   end
 
   # put the highscores file in HOMEBREW_PREFIX/var/brogue/ instead of a
