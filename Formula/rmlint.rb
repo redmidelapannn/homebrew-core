@@ -22,14 +22,6 @@ class Rmlint < Formula
   depends_on "json-glib" => :optional
   depends_on "libelf" => :optional
 
-  # Remove for > 2.6.0
-  # Fix "fatal error: 'sys/sysmacros.h' file not found"
-  # Upstream commit from 4 Jun 2017 "Use #if not #ifdef with HAVE_SYSMACROS_H"
-  patch do
-    url "https://github.com/sahib/rmlint/commit/cf7d50d6.patch"
-    sha256 "b85b042c4b7e51869fb8695fd1ceb4363434a19598249084b393e87b269ee19e"
-  end
-
   def install
     scons "config"
     scons
