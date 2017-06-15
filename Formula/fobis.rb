@@ -25,8 +25,8 @@ class Fobis < Formula
   end
 
   resource "graphviz" do
-    url "https://files.pythonhosted.org/packages/01/98/8dec899491e4ac01a6fc8269e3b6dffd35421321b6858e21672489678fa8/graphviz-0.5.2.zip"
-    sha256 "60ea67b383e3feb71fd0cb3137c02f8c4a76935996cf06a9e77d6150a90d034a"
+    url "https://files.pythonhosted.org/packages/7d/2d/f5cfa56467ca5a65eb44e1103d89d2f65dbc4f04cf7a1f3d38e973c3d1a8/graphviz-0.7.1.zip"
+    sha256 "c7744df945fa90791ad9b4183a6a7dc8220d63a7b8a5f8f93ba62086f1e69e83"
   end
 
   def install
