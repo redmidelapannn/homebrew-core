@@ -6,6 +6,13 @@ class NvidiaDocker < Formula
   url "https://github.com/NVIDIA/nvidia-docker/archive/v1.0.1.tar.gz"
   sha256 "bb7cf057fadc5935c3ea2f7320516cae8feb8fc2421af9772e3127b258e38acd"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "cb76d7ddbed037bdf2fa560d4b7e2b1106336d368df08826dea6426a3ec812f1" => :sierra
+    sha256 "0a8f1b16adeaa6d5b64fce4d8f6fe7fa2f4188dcc3b6d5ede19c623aa959290e" => :el_capitan
+    sha256 "af6f3a3727f485d5f8af5e1759a16074a3de1556ad6736ef302d434c92e12681" => :yosemite
+  end
+
   depends_on "go" => :build
 
   patch :p1, :DATA
