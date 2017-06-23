@@ -4,6 +4,13 @@ class GtkSharp < Formula
   url "https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-2.12.45.tar.gz"
   sha256 "02680578e4535441064aac21d33315daa009d742cab8098ac8b2749d86fffb6a"
 
+  bottle do
+    cellar :any
+    sha256 "13f7cd3a38453be7192b85a29823c20cdc9c1d12f5500884568aca2a002517d2" => :sierra
+    sha256 "c3fb7a5f2d2e483b04a6181485a5aa3fe2e17be2df4c4994bbd65c8781bbd7d2" => :el_capitan
+    sha256 "15cba0ffbafb68b33eb8df2b1de3cf2dfcd79bfa625e24a74a4de6451bb5a3df" => :yosemite
+  end
+
   depends_on "pango"
   depends_on "atk"
   depends_on "gtk+"
