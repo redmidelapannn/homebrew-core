@@ -39,9 +39,10 @@ class Coreutils < Formula
   end
 
   bottle do
-    sha256 "a951d21ffbf3407ca84356d369ed6009d248b263587b79f644d9a95300465fa6" => :sierra
-    sha256 "dafd72ff298ed109503928a3d7cf1623327b4bc65318e99b48f3415b7c469ac8" => :el_capitan
-    sha256 "5d636c1ad28b1ef25c140b1486fdb368486bcca563901ad543d62ce1bd5f8b70" => :yosemite
+    rebuild 1
+    sha256 "af2c391e64844adb4f31148e914784c5811b4f681584bd42914be17c68c6b50a" => :sierra
+    sha256 "792d42c7a79d1734cd86800a0572d2d38c5626b24049be647876e0175c75e806" => :el_capitan
+    sha256 "f887896e5fce2ed9b31eb64ba6d7bcafd3e4bbe0d8704345b2d8adfe32ce27df" => :yosemite
   end
 
   head do
