@@ -8,6 +8,13 @@ class Bach < Formula
 
   head "https://github.com/compose/bach.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0d1e9c3969da5ef3d951ccd6fee8a4c091fb9ff68fa6a883b768956023225599" => :sierra
+    sha256 "897db0e4697018e04f0a3fe6a388526f6536d1a7f9a2dff7b6a4f76c92bb7e11" => :el_capitan
+    sha256 "ab761955bdfdecdab07d87ffdf9794df6441eddfb5ab8df34fc209318706fa53" => :yosemite
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/compose/gocomposeapi" do
