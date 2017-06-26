@@ -11,6 +11,13 @@ class Tmsu < Formula
 
   head "https://github.com/oniony/TMSU.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1e3b853a06647953d78544b7a71c45cd2e0f7616f22b271801c4a0cef5ce7c89" => :sierra
+    sha256 "f8e375ea7a102eaf6658eb3ecce955819507dc7ff384360b155147f09d7c8c9c" => :el_capitan
+    sha256 "c7eed06467a8bf587f7eb503eb7bf8f46b95f69e845bd66954ee08eb56d4fd20" => :yosemite
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/mattn/go-sqlite3" do
