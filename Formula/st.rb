@@ -18,7 +18,6 @@ class St < Formula
 
     system "perl", "Makefile.PL", "PREFIX=#{libexec}"
     system "make", "install"
-    inreplace libexec/"bin/st", "perl -T", "perl"
 
     bin.install Dir[libexec/"bin/*"]
     bin.env_script_all_files libexec/"bin", :PERL5LIB => ENV["PERL5LIB"]
