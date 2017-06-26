@@ -11,11 +11,6 @@ class Ipv6calc < Formula
     sha256 "ad4d9073a25962b4321648ee79658e04517d340025cc6ae346342d301cab3a40" => :yosemite
   end
 
-  patch do
-    url "https://github.com/pbiering/ipv6calc/commit/128cb3b178dde1b9bcadc1b7a334c5eebcc529be.patch"
-    sha256 "3148380d4aba3b50150597ec209a1cf7aca7091d3be5f57a2e517445cb55430c"
-  end
-
   def install
     # This needs --mandir, otherwise it tries to install to /share/man/man8.
     system "./configure", "--prefix=#{prefix}", "--mandir=#{man}"
