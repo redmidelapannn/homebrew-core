@@ -18,11 +18,10 @@ class Phantomjs < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "7833bb1de72bd88057d2260a9021ce4ec0d5f2925273d537c69549d8e30ebc6d" => :sierra
-    sha256 "370e6f729ac20091c408dc5a1be14361b861bef78f1a52efb201e27e7440cfa4" => :el_capitan
-    sha256 "ec65660b5c4097886d52fe0b4928aaefd6d09fb0e6ab707b1fa4d762acf873e1" => :yosemite
-    sha256 "d837e04d137ae8ddc8eb807b7ca5a08a0fccdfd513f4fdd4f1d610ce8abc0874" => :mavericks
+    rebuild 2
+    sha256 "d7cbcd50e6b5951e4bf999d67f88b50d62a1e5f4377810910a45318e75dc9619" => :sierra
+    sha256 "afbe172bc9777294caf5efc0b0fcc69fbee42bf2da69c20504a2911e7b1be68a" => :el_capitan
+    sha256 "0c69e2ae587aa9e44cbfdfcc72f72df2845906ec2938dae1ef67d536cd9ce980" => :yosemite
   end
 
   depends_on MinimumMacOSRequirement => :lion
