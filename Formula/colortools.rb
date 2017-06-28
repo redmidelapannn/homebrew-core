@@ -4,6 +4,13 @@ class Colortools < Formula
   url "https://github.com/ramonpoca/ColorTools/archive/0.2.tar.gz"
   sha256 "87fe9a8ba6edd1bebf697f9f821f15f2073b29825fa18ea68e77f5ccb2a7f3e0"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4ac47c77e690641a9904979938e3ad5e7a51c6f4e48d8b1588f60fd73edd2657" => :sierra
+    sha256 "f38cf066fef3ceae13735296aed0592959c3e900318e16d79978c7350a5f4836" => :el_capitan
+    sha256 "bee62a27d6375f337992b533f41d4818364171ff594f6e07972e4111945ada8a" => :yosemite
+  end
+
   def install
     xcodebuild "SYMROOT=build"
     bin.install "build/Release/Ase2Clr" => "ase2clr"
