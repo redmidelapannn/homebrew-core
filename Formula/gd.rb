@@ -15,9 +15,10 @@ class Gd < Formula
 
   bottle do
     cellar :any
-    sha256 "23a18720365fd4c7aaa4d8097f339ef4177a5d708990db6711f72661d04035c9" => :sierra
-    sha256 "f466f3c052633de8e1a649345890e3da2579791a8876e8ddc81e582654319e92" => :el_capitan
-    sha256 "b1db65caa81c5bfdcf16b63b44dcbccbad82a7007111479a5a94a2bbc497a2d1" => :yosemite
+    rebuild 1
+    sha256 "98a3f1f4299e88d57074defb950a38ba47707447b1cfaed734970b040681b55e" => :sierra
+    sha256 "e24d229a58b30412e11135159400b323f5cb61925cff514289668f56c7eb58d8" => :el_capitan
+    sha256 "4719e124751a324191b40d3d3c2e672bcf51bb4931a117815e0a6e6865f9718a" => :yosemite
   end
 
   head do
