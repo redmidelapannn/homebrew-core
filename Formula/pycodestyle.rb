@@ -7,9 +7,9 @@ class Pycodestyle < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "633de9fb071d5de9c2a80b4a5bb412d38f3e3641a18cdcd0538af0054bd062f7" => :sierra
-    sha256 "5954ba6c8de63ba0cfde28f59a74cfaaf06b650f26b030ae189a75f7616bea79" => :el_capitan
-    sha256 "5954ba6c8de63ba0cfde28f59a74cfaaf06b650f26b030ae189a75f7616bea79" => :yosemite
+    sha256 "7d7e6706544562cd6c7a138664d84ae42e3c189124d11e94698c205081fe125a" => :sierra
+    sha256 "644c976ca8ac2bdcfab5d0c5c94ac649f1274cf3222b380ef3cffe859af91f43" => :el_capitan
+    sha256 "644c976ca8ac2bdcfab5d0c5c94ac649f1274cf3222b380ef3cffe859af91f43" => :yosemite
   end
 
   def install
