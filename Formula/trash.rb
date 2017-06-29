@@ -7,10 +7,10 @@ class Trash < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a00374dc159ab870e2c1267280d63e3ac5f7e7256e300fcb282ad6638abd02f0" => :sierra
-    sha256 "4a890c2c7e5fe136eff1df5552fc94e1f56c46f41ccfa43bc5892de08329a3f4" => :el_capitan
-    sha256 "05ae485401cd5becced038755656b120b74e9cffd15358724ea5f7eea2411972" => :yosemite
-    sha256 "f74b3d47c9208cb0ccee9d017b146052df8748f3bc4a2bb4525a1d6c5e55909a" => :mavericks
+    rebuild 1
+    sha256 "1eab1cc79f33ce1ee94c6b36413dc5b697d4d8ceb486d718aa753316cc93619e" => :sierra
+    sha256 "79e7d3445d173b57fcb1b0df0b824e1c1de09732e5fbecbd4f9d2b3a1b4546bc" => :el_capitan
+    sha256 "248aaa608d10cc46e34c4c4f5995878763112c8aed97b8c56303fccf3e047f59" => :yosemite
   end
 
   conflicts_with "osxutils", :because => "both install a trash binary"
