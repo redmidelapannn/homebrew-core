@@ -6,6 +6,13 @@ class Minishift < Formula
   url "https://github.com/minishift/minishift/archive/v1.2.0.tar.gz"
   sha256 "93f172811b6d0af8987c4dcc72f091032a65d882bf1e1d9094f76595cd3e138f"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2b5155110343d931497759e0fa7ac4bf6ec4f4cd5cb275243a7b769834f1ccde" => :sierra
+    sha256 "f70767b9b049c8ab291276e9844acfca4a3bc5c2f73bab307bfeb773415f483b" => :el_capitan
+    sha256 "c7ead35403dedbb5705a09f32b5bbd2c4633028710889711099d52ed9d9a1f13" => :yosemite
+  end
+
   depends_on "go" => :build
   depends_on "glide" => :build
 
