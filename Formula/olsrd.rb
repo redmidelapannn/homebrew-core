@@ -6,10 +6,7 @@ class Olsrd < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1131b24ca42d043af8eb8a338337150c8ad9f10d9d71968e119779c3eae1bc93" => :sierra
-    sha256 "88c836acf65237195c3b0d74a7fde0813c2008ab79c216ba8b36e789e58192ab" => :el_capitan
-    sha256 "c6c165c6ae75a58c33995a7820f83604758ed37c9fb1c4d1557cad4c68b7f752" => :yosemite
-    sha256 "842c328edcde3ccbffcc8dfddae63f802c716fb18aa63aea4fe620bbed5d8562" => :mavericks
+    sha256 "fdf5166d0c508a1ad2e98e1fb6106aac7c5daaa7aca9756cc0baaf3f2236cc55" => :yosemite
   end
 
   def install
