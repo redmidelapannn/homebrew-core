@@ -6,9 +6,10 @@ class Uggconv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a22594f94bf7baa1908bd1225f52f1db3dd01daa17f99038ecfbd60e22d12b5d" => :sierra
-    sha256 "5ab8b271f2ccc17e5229921f01b92ff7b0c297908902c83d24612bb47592af3c" => :el_capitan
-    sha256 "a40a8a1adee9286acedba6e8eedf20bc53e4bf291fc73478bd3ba0314792c6ce" => :yosemite
+    rebuild 1
+    sha256 "70f36f2256107f0883246e753bea5510f2706328c35b422ee40c0ce34d9182f3" => :sierra
+    sha256 "3c4eea54feb49634ce804be276b33d469a2906b077e0afba19a7846eb7d317bd" => :el_capitan
+    sha256 "e86179b6a2c4b22d55f3c6d79bfc7b97a47cf32daea6c49fcef37e26cc768d43" => :yosemite
   end
 
   def install
