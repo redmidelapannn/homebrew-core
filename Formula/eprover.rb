@@ -6,10 +6,10 @@ class Eprover < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "28c7ee291eeb3860eb5dd1ec6cad9a33317b94588d4a90add58df12ea5f00dae" => :sierra
-    sha256 "396ff4a7c412a5aa773f4df990611e27bd7d7ad5e4b297f9da3afa29cc2271ba" => :el_capitan
-    sha256 "f698ea516f874623f22a6a87335b0881b0014e8bd1811f213b81a2bdd32f6f14" => :yosemite
-    sha256 "0a5a1d15a59ec5921c3416de25df8e9fd518604e761396df3612bd587cdc00cf" => :mavericks
+    rebuild 1
+    sha256 "ff27bc6b0512e8f1a7d414a7f036a78615655ad8f8fd55daf4f154fb3b35ca66" => :sierra
+    sha256 "6c43e488e3358099798b93061d26e1c4bf9e4656ce5ddcd36710b0f1c19da752" => :el_capitan
+    sha256 "f5cb05d543907d70d1181fd8d2a876f998963075b3439fd2d2f956743cadf7c7" => :yosemite
   end
 
   def install
