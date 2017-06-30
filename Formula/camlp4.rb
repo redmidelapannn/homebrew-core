@@ -9,9 +9,10 @@ class Camlp4 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a26669d58078acd85fadd6314bfdddde22f2b34875cbc889ebf88a0413d7e727" => :sierra
-    sha256 "e45aaad4dfc13a2b90282de5d57c218586f226e3d7d72d2f250279791580c70b" => :el_capitan
-    sha256 "9029a3f7dcc18d08097427e9e320613a583f60f9e3f1ccbd4f09328b7dddd434" => :yosemite
+    rebuild 1
+    sha256 "794fd3de608c9699fc58c686a693c8ecf83a91524fc5bd94c1bd3379a12d4b8b" => :sierra
+    sha256 "acb15512cde45b4d50b4328f587c33c3c781f536121168e6a43c4fbcf6fc2354" => :el_capitan
+    sha256 "afec5fca91ca68da33489159aebbbd1b846806d79a2e0e4e78c5f455beeb7dda" => :yosemite
   end
 
   depends_on "ocaml"
