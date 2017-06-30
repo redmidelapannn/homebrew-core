@@ -8,10 +8,10 @@ class Dcd < Formula
   head "https://github.com/Hackerpilot/dcd.git", :shallow => false
 
   bottle do
-    sha256 "44421b44452c5d407a1d0a9b0811eced187a0a580d159cbb1a27348f97d72517" => :sierra
-    sha256 "aa5bf3b36f947743dcdf6d3cad4e2973ad2d08746a9eb668a5477b8458090110" => :el_capitan
-    sha256 "fe742c126f957f99b1691b2044352f0b134bf0af8a1812c46b256a370f3396e7" => :yosemite
-    sha256 "03cd0ece3ba032610457891fb74d1be87417a87e960377e38fc580df7ae8f2c1" => :mavericks
+    rebuild 1
+    sha256 "2d10a942307454485cc104ad555a2c26fce8d3d930e1714b2ce39c506e11f4bd" => :sierra
+    sha256 "01276268f983f0440a9aded085079dc50d853e883d0ef2049a0079e4e23e5729" => :el_capitan
+    sha256 "85fb5c541f3f63a1fc062bfedb64cb4976d9c4b1dbeb02a54857bc25bd200ea3" => :yosemite
   end
 
   devel do
