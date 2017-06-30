@@ -6,10 +6,10 @@ class Vtclock < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "766e69763326b8a8c5cfdc636cbba9f6fcffde0739be56612c54a2904d95d456" => :sierra
-    sha256 "f87c685e59533a0085b439c4153c2734d4091447f5a81c627ccc0d2e589ac65d" => :el_capitan
-    sha256 "a72a8c176276c40a3e9b0c6083a61013efb55b5ea43cd786000dad3c4243dd96" => :yosemite
-    sha256 "9811bd8bb3e5cd2f94dc37346e09588bbab5cb1f0cb1ef5f094adf20046440da" => :mavericks
+    rebuild 1
+    sha256 "b806c6c8ba01bed279519515f2af7cf26bcfb1651d6677c4a06c8c7154872876" => :sierra
+    sha256 "42716a33383a6a19ce7a668c4b5dc32e502c0d10c0ab127544b9274b360dc501" => :el_capitan
+    sha256 "8dd90a58fb9675a81f34a3b9f1779ac781ee254771ee1349fde1e5167ca930c4" => :yosemite
   end
 
   def install
