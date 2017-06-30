@@ -7,9 +7,10 @@ class Z3 < Formula
 
   bottle do
     cellar :any
-    sha256 "0f1f3d3de36a046161950aa09e2dc42e1d49deccdd12acaf1ebbb472b2250ad1" => :sierra
-    sha256 "4646641c96b2369b11cd87d6cc81debf675f078fee3e0a296c8d0a0b4ce738f5" => :el_capitan
-    sha256 "72feb2352c0f9d5fbbf22ae83443520bff85acd6448898a5d89ba3fe42c61566" => :yosemite
+    rebuild 1
+    sha256 "4b612382cbd2a60a014bfb055f3521a429ffd5d4effbdcfb0c04085b49624759" => :sierra
+    sha256 "87ffd0bfb5225dd1e0ad190d7dddd2a2d39eb01cd7bf00615c894851956412b0" => :el_capitan
+    sha256 "0870c374f92f6fea516229187e8e9bc5ba6c3af15e120c8bfdbb2cbb3166e64f" => :yosemite
   end
 
   option "without-python", "Build without python 2 support"
