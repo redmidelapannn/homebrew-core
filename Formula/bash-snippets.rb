@@ -4,6 +4,13 @@ class BashSnippets < Formula
   url "https://github.com/alexanderepstein/Bash-Snippets/archive/v1.5.0.tar.gz"
   sha256 "4b96af15bdb34e6b48ec38f95bd0a68b0315776bf7e14c56011d5f27876ec520"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0a79be27a1362f921ca3d4d8390870c59da0b2810763efba79d3a869a643318f" => :sierra
+    sha256 "9e8fbf01bb29d362e4920300d0eef02488635287f986401eab8a241900ff15e8" => :el_capitan
+    sha256 "9e8fbf01bb29d362e4920300d0eef02488635287f986401eab8a241900ff15e8" => :yosemite
+  end
+
   option "without-crypt", "Don't install crypt"
   option "without-currency", "Don't install currency"
   option "without-movies", "Don't install movies"
