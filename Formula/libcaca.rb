@@ -9,11 +9,10 @@ class Libcaca < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "728b8bb277ef92bdf90f91ce445c7b8f1259db898a33ae36b4de9988b786de47" => :sierra
-    sha256 "ba475a145203197f637059f20dfcb5d8cfb34615ce30bfe342fbe7887ebcad41" => :el_capitan
-    sha256 "1d02b3264c1665a8f6af5d88ba944bc1009ee7e553ae8decfff89615b7dc79d9" => :yosemite
-    sha256 "511f48aa84b45eb509de89296102517bd77c25347999cf1d733bc8593c95a00b" => :mavericks
+    rebuild 2
+    sha256 "ac58e51cb8f19d0da7299dd915c2aaeecab28b3bd09bae9863e005d4c5cd693a" => :sierra
+    sha256 "d77c1e3897fad13cd236c6d8e35f1f51d120dc82e785ae84ed0afea3538c1f27" => :el_capitan
+    sha256 "6f8a1f5fa528e4939d3b02b6acd6adb7b7410c25b3bd3d331b78dc90adb99b66" => :yosemite
   end
 
   head do
