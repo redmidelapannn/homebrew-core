@@ -7,11 +7,10 @@ class Cronolog < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "66ad5bfa0080775875d2b72cc2bbd66bc8ee8de7ca1d482217414ba5b805f977" => :sierra
-    sha256 "964df15660a5c0ec25bedec56aeb128ae93794a8ad721c1c600e377df9be1c2d" => :el_capitan
-    sha256 "f3f485105f7466422a507bafef3acfd741f18b8ab26438c267d10dbf4701282e" => :yosemite
-    sha256 "288bcd1671de08659b7d2f67141aa5178d797870597837c569dccfaae460afd8" => :mavericks
+    rebuild 2
+    sha256 "026970dc99d2cd46b5e94f9f2b7ea98a204b6f96509c87ac22f676d0f2c5456c" => :sierra
+    sha256 "2bf1eb723a30c2f9b6ebe86d0f34e7beb0048d46fcbf430b5ff60a4825f0fd16" => :el_capitan
+    sha256 "f2069cff4e5196041d7fb0f26b9dbb267afbe6ea3b4701e73888b1d63624859f" => :yosemite
   end
 
   def install
