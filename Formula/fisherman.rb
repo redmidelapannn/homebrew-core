@@ -7,6 +7,13 @@ class Fisherman < Formula
 
   head "https://github.com/fisherman/fisherman.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "128ab97f550b58d4cab8cf71ab452b2e2872c6d8dfae7593dcc5e64fabfe1bd9" => :sierra
+    sha256 "1a0a54420714dace803cc673217693874b27f53ca7cd251b45bd07361e64ddf5" => :el_capitan
+    sha256 "d3101f67656eda2d1f4c7abfadf96549287bae0229ac5f80f6ac6cb023fb06e8" => :yosemite
+  end
+
   depends_on "fish"
 
   def install
