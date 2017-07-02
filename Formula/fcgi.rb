@@ -9,10 +9,10 @@ class Fcgi < Formula
 
   bottle do
     cellar :any
-    sha256 "a8062d977c2e8b1d63557b703eac13ce75ce8331f16dc68de153309cfd7b2166" => :sierra
-    sha256 "27b723d2451b163cf1c5b8c461b6b550b9c4fcdd8dfd9e9f9c20477cb50d3da7" => :el_capitan
-    sha256 "ad01d3980edafd7330a41b008e95e4af24708ac0a6b8bb625160635d6f36c4a3" => :yosemite
-    sha256 "58b93f834db071aac4831e73d7f34f59a73759a453676ca66b187135e8da7f36" => :mavericks
+    rebuild 1
+    sha256 "0046701d868c60d426de04b7c00367d4d485e3c01ec7701def2060c4de7babe5" => :sierra
+    sha256 "0bb71aac5dac99e20b83fa6f4b42e60c29f396e182990bb64e331b455bee109a" => :el_capitan
+    sha256 "02b4e2634ed82df12ff02010f6dff716a2f2dcd477543b37544e0c0353bb981e" => :yosemite
   end
 
   # Fixes "dyld: Symbol not found: _environ"
