@@ -6,9 +6,10 @@ class MingwW64 < Formula
   revision 1
 
   bottle do
-    sha256 "cfb4d2192a11632bcc524442fef27736457d6b297119b438b2e279b86dfa58be" => :sierra
-    sha256 "3955319b438d08eff5a0f3ba4829bb3c3138950edb851c07d273f9cb3eef0a99" => :el_capitan
-    sha256 "f26c3db40dc96f34fd68107ce589a0288a9b00ba8768267f413ac62961f963ed" => :yosemite
+    rebuild 1
+    sha256 "2875e7dfcce3625d78470cf9e75beeb1b10616dee8d49610fe4856c849a61084" => :sierra
+    sha256 "354e506a49786189f9feb41d7c86469831ec4bb98f14b3d0b78434832cc5e4c1" => :el_capitan
+    sha256 "3b5248e6f5020b2c2e129c4a05e7d34d47332787588c532ef2d801cb6d4b446f" => :yosemite
   end
 
   depends_on "gmp"
