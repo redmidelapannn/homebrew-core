@@ -16,6 +16,7 @@ class Dfix < Formula
   depends_on "dmd" => :build
 
   def install
+    rm_rf "libdparse/experimental_allocator" if build.stable?
     system "make"
     system "make", "test"
     bin.install "bin/dfix"
