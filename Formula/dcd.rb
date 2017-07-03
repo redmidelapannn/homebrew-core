@@ -14,20 +14,9 @@ class Dcd < Formula
     sha256 "03cd0ece3ba032610457891fb74d1be87417a87e960377e38fc580df7ae8f2c1" => :mavericks
   end
 
-  devel do
-    url "https://github.com/Hackerpilot/DCD.git",
-      :tag => "v0.9.0-beta.1",
-      :revision => "9162b042b187f86c19b2387cfd9419db1b2806c3"
-    version "0.9.0-beta.1"
-  end
-
   depends_on "dmd" => :build
 
   def install
-    if build.stable?
-      rmtree "libdparse/experimental_allocator"
-      rmtree "containers/experimental_allocator"
-    end
     system "make"
     bin.install "bin/dcd-client", "bin/dcd-server"
   end
