@@ -5,6 +5,13 @@ class OpamAT2 < Formula
   sha256 "83d61052b29e7c08674852f4d607e5403720c5fd85664c3b340acf9a938fd9e6"
   head "https://github.com/ocaml/opam.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2b38ba1dc0ab2a5d9323cb37c7fe1760c0d142888a1f669a4c58298f43dafd80" => :sierra
+    sha256 "c7c2354c24026b4fda10aa1276b5c619d5d48b5df744290e0edaa6ee6469d1ce" => :el_capitan
+    sha256 "e77d99fc9892d47f58736e0ae78c05fc49c4ab8225804c727f931be12b1ef72f" => :yosemite
+  end
+
   depends_on "ocaml" => :recommended
 
   # aspcud has a fairly large buildtime dep tree, and uses gringo,
