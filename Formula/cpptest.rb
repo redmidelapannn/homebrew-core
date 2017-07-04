@@ -6,12 +6,10 @@ class Cpptest < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "f243764e911fe4c056f782ebee8cd84316214d961b14322b4cedc92f60478d49" => :sierra
-    sha256 "216442c844ddb2886e6877cd129fda3c589dadf8ac07572e6aa05c1c3cff4669" => :el_capitan
-    sha256 "e6b364e203c882063362e4a0ef6e6482420ab57b1ec24699b6da31b50f792f14" => :yosemite
-    sha256 "c1f68d40bd58366d28846395169868d86a012b8d65473aa8845401619052d568" => :mavericks
-    sha256 "a3f5cf0532bf9b72b73bf2fa52862b88fbc318ebd0ee9712a09771a071371fbc" => :mountain_lion
+    rebuild 2
+    sha256 "10800c4a4b963dddfa07bc0a95b79a9d4775d6f83165faa506f154ea92c83892" => :sierra
+    sha256 "bb84b8d2d15e4c77cda3bffb3c2802e2ce402d6c44d1740d7e56d31b40206df0" => :el_capitan
+    sha256 "04cd2927f02b11aef2b659d169b6c30f6580a0d3ec320b179a78896fc5b08092" => :yosemite
   end
 
   def install
