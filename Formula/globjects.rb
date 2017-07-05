@@ -8,9 +8,10 @@ class Globjects < Formula
 
   bottle do
     cellar :any
-    sha256 "120730ab24fd8acf2caa89eb48564e1cdee2c5773cacca04fa633b9cfa4a46a1" => :sierra
-    sha256 "5896b4d2ea3dea176c8291a39db31762b89256478f9bf14374d55e20b017c4fc" => :el_capitan
-    sha256 "813da817fbf45546bbe0cfe9d3beb2e0d4138bf9e5d09a7114e3a825db916d40" => :yosemite
+    rebuild 1
+    sha256 "f2c4644faf85ae3846a3b2bd5b863b867185936361e3f5cbb5a078ac83b0d8e8" => :sierra
+    sha256 "aba7be6f086055a04edfc35c574fa257f79304de0f78789092520204a1f9a621" => :el_capitan
+    sha256 "7419fe050998a808bf4814b526fed8e5020a9186a6cfa3423b17b37a21622218" => :yosemite
   end
 
   depends_on "cmake" => :build
