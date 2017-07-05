@@ -6,9 +6,10 @@ class Pugixml < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4424c7e5154752886226e91bc8bd7a404079062d0705816533b1a86181fa95d6" => :sierra
-    sha256 "13495a332f3e2ba56148b936d42034d55373ade74af0c41f0c77feb52038ea43" => :el_capitan
-    sha256 "b2b7594b9fb20bda5ed45324ef815af60617673d6f86e066fbd988a8f82a0c16" => :yosemite
+    rebuild 1
+    sha256 "d65134410e2d6938d9b90d06f5edd0215713be4fd11abfc83c11260ba4a9e289" => :sierra
+    sha256 "9912602e93da4689423e5b6cc70b56a2dcf34cca165062aed8f7bf5d871e94ee" => :el_capitan
+    sha256 "25fdb90eba35caac0ea2d37b4c19e8c717ddf8b23c3cf66e13ba1116010d9c6e" => :yosemite
   end
 
   option "with-shared", "Build shared instead of static library"
