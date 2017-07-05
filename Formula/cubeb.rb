@@ -8,10 +8,10 @@ class Cubeb < Formula
 
   bottle do
     cellar :any
-    sha256 "f89e89027370ea9da99f72f0af0529f9b63fbe31c434d3ccafdc7230664a41c2" => :sierra
-    sha256 "f7e738b374bb07e1c420e56dfeb72caa814495b446c71d8158ef98c9b33d3a60" => :el_capitan
-    sha256 "b3cff6ba7008cc764f94281f7759f5d6d2a09a3bdb92f5f6e93be7d6f3ec2405" => :yosemite
-    sha256 "f239e3b4cc459b4e0e3f4630229242a351dc833dcb385e7badb16208a53f3265" => :mavericks
+    rebuild 1
+    sha256 "858540fbe98a45e468537d36517e96b01f327c396253bd956a97f170e6f99029" => :sierra
+    sha256 "0073eb0f13d14dc3fa5a6ff9b935b5448e432c7eb108a6fd33120b8a3474c0ae" => :el_capitan
+    sha256 "dc4c18b53d81ad727b9c7e4d11dfc360bc668fef4646d36fe0976d06915c4647" => :yosemite
   end
 
   depends_on "autoconf" => :build
