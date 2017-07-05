@@ -6,9 +6,10 @@ class Jansson < Formula
 
   bottle do
     cellar :any
-    sha256 "701c9253fb60487c94b4840a57621d5faf6ad1a8d0659ae6a419e57b5bd94ced" => :sierra
-    sha256 "a51789b3b30f9e70232f9e872b08b5367caa5d027f7a8a72ed92c2ef68c432b7" => :el_capitan
-    sha256 "4fabfb2143c27b4460560af12a459180221f097ad69ed95e86cf082b436d4950" => :yosemite
+    rebuild 1
+    sha256 "4e543dde9d3eb73987d6fc1cecf490b083937ac61b035d0cb3c2c57fb5b61667" => :sierra
+    sha256 "44df442b0316ec6fed8d83903a209fcf8d826fb6152384cf6b579bf0b0383d64" => :el_capitan
+    sha256 "1fd067f24a9f4cf1952faa6f9b995c2b54f530a6294c782e8452889bfee3d608" => :yosemite
   end
 
   def install
