@@ -7,9 +7,10 @@ class Fftw < Formula
 
   bottle do
     cellar :any
-    sha256 "293e6d290a437b18e0a1563622ca1e6bb3efc0574de8db461dc7066281fcf8e4" => :sierra
-    sha256 "3b0c6440faf90169571c67ef1f6532db743adfb64ccb41e5786eaffc2a2d925f" => :el_capitan
-    sha256 "c650cf7a95ab5d2935b726a692e6f08f7f93281e24d1e44536bac0d34b440ff3" => :yosemite
+    rebuild 1
+    sha256 "abffd78dc15e2d2b79fb9b0a176f13cf8abd215a617dbdfed57ddebd43f07f54" => :sierra
+    sha256 "b4f1e89b6e26b26d0874088f0571baa73ef0413390d8827e2f8c5451f4688e6b" => :el_capitan
+    sha256 "1c9df0aee8543c29d7b873d9721cd0d56cb947ace00a121b89d1a1bb6d2b7c7b" => :yosemite
   end
 
   option "with-fortran", "Enable Fortran bindings"
