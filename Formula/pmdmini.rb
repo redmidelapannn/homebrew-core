@@ -6,11 +6,10 @@ class Pmdmini < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "b5f11fd04a2747d1c27e84003f9ee42aaf6a2f1dce34faf146a8531fa1d7831c" => :sierra
-    sha256 "0d0d98c981cc98801314be58685ef4019b2a0a73a2ff98e7353e4f1a311bd354" => :el_capitan
-    sha256 "f7faea3656b8ee02a2a51d8698f9906f9092ba9af2a884e8125de1840c9a00c0" => :yosemite
-    sha256 "0c59e61c2789433240c34f51e7e643559c3af24b9e588fe89140bbc5cdbe9d5e" => :mavericks
+    rebuild 2
+    sha256 "64cb146753c99395a447ec84d7ce6be769af6f508dfabfedc5b2cbcc6660bbec" => :sierra
+    sha256 "deba5d3abb1cbb1dac84af8ea7d3f5176680df3fc0a53befec6fba38d171e650" => :el_capitan
+    sha256 "3cc26a46054ac0a9afb5b22d3ad3e976601258604d9f578211f62c3ab1d2109f" => :yosemite
   end
 
   option "with-lib-only", "Do not build commandline player"
