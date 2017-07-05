@@ -6,9 +6,10 @@ class Glbinding < Formula
 
   bottle do
     cellar :any
-    sha256 "792fd850648cdeea9e5e8a699ba1554e3936b62419c3a0912c81ce22b58d096e" => :sierra
-    sha256 "c26c8b3e87d1721dc224a5b8c3438c451fc2661fb184f3d450cff051f61a64cd" => :el_capitan
-    sha256 "f8143d1a2fcf8a3d08d85b964d6325068c19c19565c463559dc9f264b65766ed" => :yosemite
+    rebuild 1
+    sha256 "293d4f4f8b0ee5accb5b5ded2c6bc35a63b2e47b81b51899fddfed8e6e119f8f" => :sierra
+    sha256 "62761f499e580baa0adc170cf92e256ea66ceb4b4725150c9fe4d89b8a847e66" => :el_capitan
+    sha256 "47adffc63067bfc4260b2b13893db069f6456f2a7c54a41f55dd066bcc655b4d" => :yosemite
   end
 
   option "with-glfw", "Enable tools that display OpenGL information for your system"
