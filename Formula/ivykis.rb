@@ -6,9 +6,10 @@ class Ivykis < Formula
 
   bottle do
     cellar :any
-    sha256 "8aa737754faeda65a8f369f85d89822d78f5285e131eaba4d3fe57c578f57051" => :sierra
-    sha256 "1914551ff67e301b8700e51a6e93096de43c793c19603b09302fff5d4e74ef0b" => :el_capitan
-    sha256 "b5b60d80ac9f9c1891d3f965b4d963b427497e0127cb6ca7892bb71943f0709e" => :yosemite
+    rebuild 1
+    sha256 "be42db7e65ea4574c3c13f451b69ba98ff6a7778557be3d4d880bdcffcf7f2e3" => :sierra
+    sha256 "bb8da8a94b2cff0b1f08d03d2fbd0ef4233973a7adb3cb78adc336e0c39f007f" => :el_capitan
+    sha256 "1e95f033046cc2f6deb36d8cc62e545a6b4276e0c9042508a8d0ed09cec07976" => :yosemite
   end
 
   depends_on "automake" => :build
