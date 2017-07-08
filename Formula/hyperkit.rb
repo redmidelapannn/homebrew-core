@@ -7,6 +7,13 @@ class Hyperkit < Formula
 
   head "https://github.com/moby/hyperkit.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2d01192d99c5687db7b3d2068ac977cf2e0168f744f0c30fd3c0a3f5c372fdf8" => :sierra
+    sha256 "c706b7d292bbb6c676b07369ee0b60c6b4fa3ef46e4afe152e64ddd865b71385" => :el_capitan
+    sha256 "1471f9d3922b0489aafa2084d5025bb26b1ac642cdc84fb4c3b4f13e02901cb7" => :yosemite
+  end
+
   depends_on "ocaml" => :build
   depends_on "opam" => :build
   depends_on "aspcud" => :build
