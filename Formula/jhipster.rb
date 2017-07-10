@@ -8,9 +8,9 @@ class Jhipster < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e4bb2db8d2c29bb825930acc909e6580fc7ebd95dc05d46f0bdd4294b04287ac" => :sierra
-    sha256 "c7c2784442837c30d904a6cbb0733603b86945656a101055ccdd956f7f584261" => :el_capitan
-    sha256 "fd72fb560a5a4ceaca708ae1cc33654c7c7fa1218a6b5f753f61f089db7bd037" => :yosemite
+    sha256 "d55d939e9061ad7be7dd8e42a24dee6baf85e8ecb4dd07e3bf1271350527d2b9" => :sierra
+    sha256 "a57b6837dbfa7b7131ae24da8bb09719a4caca2569f677b880d01a893ba52b33" => :el_capitan
+    sha256 "41b78f2852a093ce08ae36e270abf4be5003392ed237af6b87492912c2d0acf8" => :yosemite
   end
 
   depends_on "node"
