@@ -42,7 +42,7 @@ class Dmd < Formula
     resource "phobos" do
       url "https://github.com/dlang/phobos/archive/v2.075.0-b4.tar.gz"
       version "2.075.0-b4"
-      sha256 "fe0b8b7c3f99133fa8448e55e9ad0a28fee5e9cbce01ae5094541b7d4a52698e<Paste>"
+      sha256 "fe0b8b7c3f99133fa8448e55e9ad0a28fee5e9cbce01ae5094541b7d4a52698e"
     end
 
     resource "tools" do
