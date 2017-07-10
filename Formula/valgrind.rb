@@ -6,9 +6,10 @@ class Valgrind < Formula
   sha256 "d76680ef03f00cd5e970bbdcd4e57fb1f6df7d2e2c071635ef2be74790190c3b"
 
   bottle do
-    sha256 "1ae24d4988d010b407bb344c953dd8a7696876a3c2793f2548648be4cfc61db2" => :sierra
-    sha256 "8dcc652676c3ec2f1fd3dfc710298b4da0985b1a056f86c429e68b5b8bcf74a6" => :el_capitan
-    sha256 "02f118896232618cb6319e22f21cea21d29f8985be4807547bb49bc397307730" => :yosemite
+    rebuild 1
+    sha256 "4817a9bb05e378b321e2d7f9d5824daee1ce4f3a128b0cc8ba6e97af46d817d5" => :sierra
+    sha256 "c1c663cdabf0e0027324ce9fee3b726f4a71688e46dd88b2977410e9ef88ca3e" => :el_capitan
+    sha256 "1faaa155b6ed03aa7ac535fe0b30420a06333e9cb968c3be02783fe2b6275e79" => :yosemite
   end
 
   head do
