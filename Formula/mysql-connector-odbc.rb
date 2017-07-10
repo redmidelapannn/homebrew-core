@@ -4,6 +4,13 @@ class MysqlConnectorOdbc < Formula
   url "https://dev.mysql.com/get/Downloads/Connector-ODBC/5.3/mysql-connector-odbc-5.3.8-src.tar.gz"
   sha256 "eca40e1ad359cd1d7e23b6692e60179c8e3daa66337e7a0232de4162664d9885"
 
+  bottle do
+    cellar :any
+    sha256 "3f9ac396e784b46aebad81c6d792af1fb62536b0c0739fb4063ce1327677c6e8" => :sierra
+    sha256 "4b4bc3eb7ea09acb95ba35d7a0ec0bdd42fc8bf5ab2cfc156f1edd137aadcff8" => :el_capitan
+    sha256 "e39e2d78448bfbd90cac62b61cf669ac4d5440e6bf61638ff05a0804a5225ea9" => :yosemite
+  end
+
   depends_on "cmake" => :build
   depends_on "openssl"
   depends_on "mysql"
