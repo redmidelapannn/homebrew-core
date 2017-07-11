@@ -7,9 +7,9 @@ class CmarkGfm < Formula
 
   bottle do
     cellar :any
-    sha256 "61cb87933dfb822df9757d1c6ac371ef35d76ab137a1e61c4f56f0fe6eb07017" => :sierra
-    sha256 "203c0c7782c3255997ad9e7cafc197aee51037d0d91066c76d34f3471afa2ed2" => :el_capitan
-    sha256 "bd491385abaabc348cb20de6b805240224dfacf4af621d7c4d99937029219bc6" => :yosemite
+    sha256 "6acb4ae06e9733fb40767eff82812d2a86925effeedbd8cc9b472bc75f539d0c" => :sierra
+    sha256 "7c1050d73d6ec38890bb1c7d35f098082d6259ae5cbf8614e2f12b3fa5c10559" => :el_capitan
+    sha256 "a299298d8b1c84011303c42d0793d8cf3846359a2e297da086197e1623097339" => :yosemite
   end
 
   depends_on "cmake" => :build
