@@ -6,9 +6,9 @@ class Libcouchbase < Formula
   head "https://github.com/couchbase/libcouchbase.git"
 
   bottle do
-    sha256 "afe9e241e7c3019f764534a55c7abdeee9a9f164b7bec6764ef1b35d8c9ddf72" => :sierra
-    sha256 "fbd85333510678e1eef359562efb4ed043ca98167c91f06eea8dadf9f74fd92b" => :el_capitan
-    sha256 "2143d92fa60ac873525b448f31d5feb39f6ebc2dc9c967e60bef8abc9ebe73e9" => :yosemite
+    sha256 "e71720a31ca6708bda7eaf1ef39c3190772f7f3ecaf174b9c00e31e9dfdcae87" => :sierra
+    sha256 "8626bd6cc5e75760367f79bdbfae1376f744659b448864cd7b67629609b6a74e" => :el_capitan
+    sha256 "aed5e47398fedc7cc714c97cc6cabccea81bab3abd9d1c1c6dd6043994009999" => :yosemite
   end
 
   option "with-libev", "Build libev plugin"
