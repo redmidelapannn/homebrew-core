@@ -6,9 +6,10 @@ class ClangFormatAT38 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5608a169a7b3ceb15253c693e29108acf744a4ab39b5daa51e99fd95f9a8d444" => :sierra
-    sha256 "28a37510286ddc1e67251c6be80b2e21a7f9216c3707facc0584dba7ba6eb56d" => :el_capitan
-    sha256 "1efd59ed98ad16d3f881e6e753146dd5695e1b7b16b4640b200e639f87a646e8" => :yosemite
+    rebuild 1
+    sha256 "505abba81c60d2ed51e1e70892357892b0e4ea459ec131971c2b13c7f6091fc3" => :sierra
+    sha256 "1f90904dc2042ee78c76e83b1ea92971d4438b31a8b2d3e2ab5bf33e0d079189" => :el_capitan
+    sha256 "2aff56ca0c4d9a31f167bee62f527dbe1da9f0fab1912b06a8155ed13a4b1896" => :yosemite
   end
 
   keg_only :versioned_formula
