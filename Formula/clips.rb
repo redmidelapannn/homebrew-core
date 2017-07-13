@@ -5,6 +5,13 @@ class Clips < Formula
   version "6.30"
   sha256 "01555b257efae281199b82621ad5cc1106a395acc095b9ba66f40fe50fe3ef1c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2720448100c0f75baaef9b5a18fdaa27bd5c85981e034b2d5cd84303dadd2801" => :sierra
+    sha256 "8c55565855e1f831029f66f5435934b72119b78b96dc2510c97bac995e794270" => :el_capitan
+    sha256 "60050839ba172b0ff4c2f8144d52d8037509a9625c8e51df20deb9e9df36b85e" => :yosemite
+  end
+
   def install
     inreplace "makefiles/makefile.gcc", "gcc", "clang"
 
