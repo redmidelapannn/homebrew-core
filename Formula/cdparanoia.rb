@@ -6,10 +6,10 @@ class Cdparanoia < Formula
 
   bottle do
     cellar :any
-    sha256 "709190d769f7b8c61d19867ae2faf902a2f84dec6f0d5506bd71c56a99e4a67a" => :sierra
-    sha256 "135250473fe692dc976ecbf7324676fa8cef3cdb48a091287bb183c31548fed9" => :el_capitan
-    sha256 "3cd7bbd1a4a0a7992287b255cf0d6409bdb5f4a3fed245b0fd2296e535e9f2de" => :yosemite
-    sha256 "14ec797a041edffe73fef897853a833e5588278c03511f27499e55efb68c848d" => :mavericks
+    rebuild 1
+    sha256 "d2e949ebb9d96a273cb666cc0badc76028d288c653ab4567c160961754e2e8ed" => :sierra
+    sha256 "f3adbca1721d1e0aac96a656390af6a10d9ef85aa65e4657f0cd43b21dd48062" => :el_capitan
+    sha256 "60e39e4a6d080f867db42331584d861accada527540c51d9ee970fcf59fd9a4e" => :yosemite
   end
 
   depends_on "autoconf" => :build
