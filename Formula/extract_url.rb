@@ -6,9 +6,10 @@ class ExtractUrl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "57b556a225f6ec03cee7166c1b4cbd2eb1c0eb2bd7819865bd9ed39620b81b68" => :sierra
-    sha256 "96d599a0f724f6f09e261c8b0a1c8bbf69ce1b199d311527636f8a5d42f197c6" => :el_capitan
-    sha256 "d16fcc4c81a2ffb7f384f104396aae674bb8f6f08d336056ab858924d545f205" => :yosemite
+    rebuild 1
+    sha256 "a1609b936cec817f2cc47ac18b526522852165bb4bedcd682de2960cf2516164" => :sierra
+    sha256 "51ead720912583798389e4444a796dc30d42ca3a80bf254b7f8454658f97c925" => :el_capitan
+    sha256 "fc34bc24fff6255aeb23490d0b067571a896752f6304116bf0db49ebdfc62deb" => :yosemite
   end
 
   resource "MIME::Parser" do
