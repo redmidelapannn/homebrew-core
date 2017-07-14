@@ -5,6 +5,12 @@ class Afsctool < Formula
   version "1.6.4"
   sha256 "bb6a84370526af6ec1cee2c1a7199134806e691d1093f4aef060df080cd3866d"
 
+  patch do
+    # fixes Sierra "Unable to compress" issue
+    url "https://github.com/vfx01j/afsctool/commit/26293a3809c9ad1db5f9bff9dffaefb8e201a089.diff?full_index=1"
+    sha256 "a541526679eb5d2471b3f257dab6103300d950f7b2f9d49bbfeb9f27dfc48542"
+  end
+  
   bottle do
     cellar :any_skip_relocation
     sha256 "9b956b7c54385c3001e49f03672054b660e03f06b7831d0825f2bd613daa7cf8" => :sierra
