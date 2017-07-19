@@ -6,9 +6,10 @@ class GnomeIconTheme < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8c0129752f29ddbdaf32f5517fbeb9fd76b8bc0a82ddb5f2b270544c3ed33ea9" => :sierra
-    sha256 "8c0129752f29ddbdaf32f5517fbeb9fd76b8bc0a82ddb5f2b270544c3ed33ea9" => :el_capitan
-    sha256 "8c0129752f29ddbdaf32f5517fbeb9fd76b8bc0a82ddb5f2b270544c3ed33ea9" => :yosemite
+    rebuild 1
+    sha256 "80c8466cae3c18ac1c1e920cf86de228eb8b15f9b8b8b1a1c406029686570f7c" => :sierra
+    sha256 "80c8466cae3c18ac1c1e920cf86de228eb8b15f9b8b8b1a1c406029686570f7c" => :el_capitan
+    sha256 "80c8466cae3c18ac1c1e920cf86de228eb8b15f9b8b8b1a1c406029686570f7c" => :yosemite
   end
 
   depends_on "pkg-config" => :build
