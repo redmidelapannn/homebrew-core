@@ -17,8 +17,8 @@ class Recoverjpeg < Formula
                           "--prefix=#{prefix}"
     system "make", "install"
   end
-  
+
   test do
-      assert_match version.to_s, shell_output("#{bin}/recoverjpeg -V")
+    assert_match version.to_s, shell_output("#{bin}/recoverjpeg -V")
   end
 end
