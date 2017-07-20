@@ -1,7 +1,7 @@
 class Kompose < Formula
   desc "Tool to move from `docker-compose` to Kubernetes"
   homepage "http://kompose.io"
-  url "https://github.com/kubernetes-incubator/kompose/archive/v1.0.0.tar.gz"
+  url "https://github.com/kubernetes/kompose/archive/v1.0.0.tar.gz"
   sha256 "b9c9bfc9f25c67cf7d8d8b76467487255f9882fca563f8e9ef990f647cd2406e"
 
   bottle do
@@ -15,8 +15,8 @@ class Kompose < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    mkdir_p buildpath/"src/github.com/kubernetes-incubator"
-    ln_s buildpath, buildpath/"src/github.com/kubernetes-incubator/kompose"
+    mkdir_p buildpath/"src/github.com/kubernetes"
+    ln_s buildpath, buildpath/"src/github.com/kubernetes/kompose"
     system "make", "bin"
     bin.install "kompose"
   end
