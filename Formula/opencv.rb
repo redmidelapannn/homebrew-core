@@ -5,6 +5,12 @@ class Opencv < Formula
   sha256 "4b00c110e6c54943cbbb7cf0d35c5bc148133ab2095ee4aaa0ac0a4f67c58080"
   head "https://github.com/opencv/opencv.git", :branch => "2.4"
 
+  bottle do
+    sha256 "49f0a439261413d53226e576b190af7d5792278fd34104982b817c73267493c6" => :sierra
+    sha256 "1bf75410e7234e69bf61bb0f98e13e390a2277deb8741c782e4e9415c43bcc6d" => :el_capitan
+    sha256 "1c4bd25517eaaade307cc457c777b502c96bb871fabfa3aba8840375d28ccbbe" => :yosemite
+  end
+
   option "with-java", "Build with Java support"
   option "with-tbb", "Enable parallel code in OpenCV using Intel TBB"
   option "without-numpy", "Use your own numpy instead of Homebrew's numpy"
