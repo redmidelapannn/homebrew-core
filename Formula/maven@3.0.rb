@@ -10,14 +10,14 @@ class MavenAT30 < Formula
   depends_on :java => "1.7+"
 
   def install
-    # Remove windows files
-    rm_f Dir["bin/*.bat"]
-
     # Fix the permissions on the global settings file.
     chmod 0644, "conf/settings.xml"
 
     prefix.install_metafiles
     libexec.install Dir["*"]
+
+    # Remove windows files
+    rm_f Dir[libexec/"bin/*.bat"]
 
     # Leave conf file in libexec. The mvn symlink will be resolved and the conf
     # file will be found relative to it
