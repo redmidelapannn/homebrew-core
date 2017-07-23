@@ -6,6 +6,13 @@ class Anyenv < Formula
   sha256 "93ba15828fdb2fc88371eb4afa5bbe953e0a172dd8ef280f8c4e7d74e497cfcf"
   head "https://github.com/riywo/anyenv.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1ca297d528c90fb33bb3f70167a6e1148427aeb8beb03a83ad262daff726573d" => :sierra
+    sha256 "c6a9347f3c587a6ab36206dd1c689661a4931789f145b060d5c527973c72f940" => :el_capitan
+    sha256 "c6a9347f3c587a6ab36206dd1c689661a4931789f145b060d5c527973c72f940" => :yosemite
+  end
+
   option "without-completions", "Disable bash/fish/zsh completions"
 
   def install
