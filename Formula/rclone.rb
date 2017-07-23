@@ -3,6 +3,7 @@ class Rclone < Formula
   homepage "https://rclone.org/"
   url "https://github.com/ncw/rclone/archive/v1.37.tar.gz"
   sha256 "a74e284d2368f6fb8e4ac654a31b9b1328ac6078acd3446c9a892cd4bcbe8660"
+  head "https://github.com/ncw/rclone.git"
 
   bottle do
     cellar :any_skip_relocation
@@ -18,7 +19,7 @@ class Rclone < Formula
     mkdir_p buildpath/"src/github.com/ncw/"
     ln_s buildpath, buildpath/"src/github.com/ncw/rclone"
     system "go", "build", "-o", bin/"rclone"
-
+    man1.install "rclone.1"
     system bin/"rclone", "genautocomplete", "bash_completion"
     bash_completion.install "bash_completion" => "rclone"
   end
