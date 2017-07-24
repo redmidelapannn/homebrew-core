@@ -48,7 +48,7 @@ index 515e581..8886bf6 100644
  	opam init --no-setup && \
 -	opam pin add flowtype . && \
 -	opam install flowtype --deps-only && \
-+	opam config exec -- opam pin add flowtype . && \
++	opam pin add -n flowtype . && \
 +	opam config exec -- opam install flowtype --deps-only && \
  	opam config exec -- make
  
