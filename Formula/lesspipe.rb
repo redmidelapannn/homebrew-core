@@ -6,9 +6,10 @@ class Lesspipe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f22864d81a8eb648fc4501665af743d285fcf0fa7c81edb21fd71f2593addedd" => :sierra
-    sha256 "f22864d81a8eb648fc4501665af743d285fcf0fa7c81edb21fd71f2593addedd" => :el_capitan
-    sha256 "f22864d81a8eb648fc4501665af743d285fcf0fa7c81edb21fd71f2593addedd" => :yosemite
+    rebuild 1
+    sha256 "42ef747ea2ba1299a5d1ebbd656403a0c5f34f83011b6297a7d8c4ff58ca95df" => :sierra
+    sha256 "42ef747ea2ba1299a5d1ebbd656403a0c5f34f83011b6297a7d8c4ff58ca95df" => :el_capitan
+    sha256 "42ef747ea2ba1299a5d1ebbd656403a0c5f34f83011b6297a7d8c4ff58ca95df" => :yosemite
   end
 
   option "with-syntax-highlighting", "Build with syntax highlighting"
