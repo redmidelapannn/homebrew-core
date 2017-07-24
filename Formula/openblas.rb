@@ -4,8 +4,8 @@ class Openblas < Formula
   head "https://github.com/xianyi/OpenBLAS.git", :branch => "develop"
 
   stable do
-    url "https://github.com/xianyi/OpenBLAS/archive/v0.2.19.tar.gz"
-    sha256 "9c40b5e4970f27c5f6911cb0a28aa26b6c83f17418b69f8e5a116bb983ca8557"
+    url "https://github.com/xianyi/OpenBLAS/archive/v0.2.20.tar.gz"
+    sha256 "5ef38b15d9c652985774869efd548b8e3e972e1e99475c673b25537ed7bcf394"
 
     # Change file comments to work around clang 3.9 assembler bug
     # https://github.com/xianyi/OpenBLAS/pull/982
