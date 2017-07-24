@@ -5,9 +5,9 @@ class Hbase < Formula
   sha256 "926ef3c576c44e3a37295d286aa9acabea4eb6f77c420a4d9034b6aac86902e0"
 
   bottle do
-    sha256 "bb48048be73c3782d7d56725228998a0ee62673ba9d628ae9869e7e855109f5b" => :sierra
-    sha256 "546eba2acf3f87d88dc9208d687dfa02c88fcada2f3ede27d732b9415187b0f8" => :el_capitan
-    sha256 "49ca44b35f6d9239eb6f02ea504e2a83f78552faa85e30dd1b8f6b4664875494" => :yosemite
+    sha256 "b6ab3b98f22a24eca543edd68c7fb109814c75881f2c4109f32abcf3814377cd" => :sierra
+    sha256 "fdfa962883bf0b96a8b89c0717d96bdfa3304bf57a8566c21707bddad43fc202" => :el_capitan
+    sha256 "bfb415ac8ba7c94e6b73784a7fc379206c10d9b6f847d4df3284781ba17ce1af" => :yosemite
   end
 
   depends_on :java => "1.7+"
