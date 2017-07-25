@@ -12,6 +12,8 @@ class Httpflow < Formula
     sha256 "159bb97cf4d34ae30506fb5ce854231e95423ecd904d985ae1c4ee43e81dca6c" => :yosemite
   end
 
+  depends_on "pcre"
+
   def install
     system "make"
     system "make", "install", "PREFIX=#{prefix}", "CXX=#{ENV.cxx}"
