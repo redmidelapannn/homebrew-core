@@ -19,13 +19,6 @@ class Libqalculate < Formula
   depends_on "readline"
   depends_on "wget"
 
-  # Fix "error: typedef redefinition with different types"
-  # Upstream commit from 9 Jun 2017 "Remove clang build fix"
-  patch do
-    url "https://github.com/Qalculate/libqalculate/commit/63c6b4f.patch?full_index=1"
-    sha256 "ed545a27f9a583146ff524c3359d6e176830b60f97da6364c027515c826a6952"
-  end
-
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
