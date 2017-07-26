@@ -6,9 +6,10 @@ class Libmagic < Formula
   sha256 "09c588dac9cff4baa054f51a36141793bcf64926edc909594111ceae60fce4ee"
 
   bottle do
-    sha256 "6a7e572c28d4c00208f932be8dbd563dfd0c8bd3105dcab8d4fb5a6030040075" => :sierra
-    sha256 "204d00e32a1a05814b199e4786bcc66e362d2105b16f1765d860f0121a62c250" => :el_capitan
-    sha256 "beedeaab3dde42a38c75203af104d82872de5f4bceec31ac8308a3ccec24ae2c" => :yosemite
+    rebuild 1
+    sha256 "c1de4d589891467c7dd7eba6ce21df9cae3d813748224c0ed14a26558a67154f" => :sierra
+    sha256 "1d12504bb58f8d6a4b1a89d820315ff43ea4f14098792e6f79013dfbc7d246a1" => :el_capitan
+    sha256 "7fd201a12920a752009cffa84df1d2b1504869ebb6842a1bc9a4db3f8ff4669a" => :yosemite
   end
 
   depends_on :python => :optional
