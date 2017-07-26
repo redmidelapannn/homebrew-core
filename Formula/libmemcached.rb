@@ -7,9 +7,10 @@ class Libmemcached < Formula
 
   bottle do
     cellar :any
-    sha256 "f0fc1410caf2e9bfa130c52758a3d3a98a34032fe3d37a20980ab219042b6487" => :sierra
-    sha256 "7b2540dda66e3de1be0603aafa10a18a006768f698a7db289c380235dad109a3" => :el_capitan
-    sha256 "4e7e0cfb8f4d8f31e36c23b545ad3b0153c2f6d99645abf603f7e9f1ed427296" => :yosemite
+    rebuild 1
+    sha256 "0a5bd7c22bce732975703014e59de087b905cdd71dda0a3c952861efcfb646ca" => :sierra
+    sha256 "e02d5dc5c1fb4fde85be1cca6bb4672e2ff83d401defbb36a3fac85058f3767e" => :el_capitan
+    sha256 "f4beb10da33dc49d19e210ad345d0afbda3463f1c3e98e4a8ec64de1c3f13d21" => :yosemite
   end
 
   depends_on "memcached"
