@@ -11,9 +11,10 @@ class HighlightingKate < Formula
   head "https://github.com/jgm/highlighting-kate.git"
 
   bottle do
-    sha256 "30eb74e8f7dbc3ab83437302d9f69be46dca325886f4aaa9e462a7dc1d210d79" => :sierra
-    sha256 "f15b73e74530813a984c842b8f6982ec7eabfed10c0cf4e98128f752bd7404a4" => :el_capitan
-    sha256 "93a41cef9345cbb6ce2d55ff97f5fe5e8c02ab3d51814d0783372b8e3ad946f5" => :yosemite
+    cellar :any_skip_relocation
+    sha256 "e84a604f0a78503912629b47542c3325c47d7b4b3a0ca0009218d27b47c2ca53" => :sierra
+    sha256 "5874dc7bb11ff5a18451ee4499430c08c5f755c7281ad936813abbcd57ad07cd" => :el_capitan
+    sha256 "3349c3e02c0ad2949739eb5def47f3721b26c8fea0b852db72444c692eebbe82" => :yosemite
   end
 
   depends_on "ghc" => :build
