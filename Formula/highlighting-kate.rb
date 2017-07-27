@@ -7,7 +7,7 @@ class HighlightingKate < Formula
   homepage "https://github.com/jgm/highlighting-kate"
   url "https://hackage.haskell.org/package/highlighting-kate-0.6.4/highlighting-kate-0.6.4.tar.gz"
   sha256 "d8b83385f5da2ea7aa59f28eb860fd7eba0d35a4c36192a5044ee7ea1e001baf"
-
+  revision 1
   head "https://github.com/jgm/highlighting-kate.git"
 
   bottle do
@@ -16,7 +16,7 @@ class HighlightingKate < Formula
     sha256 "93a41cef9345cbb6ce2d55ff97f5fe5e8c02ab3d51814d0783372b8e3ad946f5" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
 
   def install
