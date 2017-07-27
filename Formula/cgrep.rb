@@ -7,6 +7,7 @@ class Cgrep < Formula
   homepage "https://github.com/awgn/cgrep"
   url "https://github.com/awgn/cgrep/archive/v6.6.17.tar.gz"
   sha256 "2508563701365d9b49c9a5610a4ff7ea3905b2d9cd77ac332f485322d93bcd07"
+  revision 1
   head "https://github.com/awgn/cgrep.git"
 
   bottle do
@@ -15,7 +16,7 @@ class Cgrep < Formula
     sha256 "015553f35840cd8e3f88b231a90cee8ad96b90772356f411d87f40b50fc36863" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
   depends_on "pcre"
 
