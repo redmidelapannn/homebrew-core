@@ -7,7 +7,7 @@ class Cless < Formula
   homepage "https://github.com/tanakh/cless"
   url "https://github.com/tanakh/cless/archive/0.3.0.0.tar.gz"
   sha256 "382ad9b2ce6bf216bf2da1b9cadd9a7561526bfbab418c933b646d03e56833b2"
-  revision 1
+  revision 2
 
   bottle do
     rebuild 1
@@ -17,7 +17,7 @@ class Cless < Formula
     sha256 "7e5f360fccaee62ea35aaba208d88a20e64fabf4a512da71323191cd582fb35d" => :mavericks
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
 
   def install
