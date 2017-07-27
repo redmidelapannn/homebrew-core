@@ -7,10 +7,9 @@ class Qriollo < Formula
   head "https://github.com/qriollo/qriollo.git"
 
   bottle do
-    sha256 "eac8f1a19aebca8ab21b5d992b61f8d7d702a2a81d1bc04534acb5f46517f6d4" => :sierra
-    sha256 "c570641b476c08b7e8d26ea37486f6db64cb6f573e0228b3893742857ceca7a0" => :el_capitan
-    sha256 "dab13bc1d92169631801eaa347f58a71049a762b3994ace1efbbcb813a72afb3" => :yosemite
-    sha256 "bc0ef3114f072bfcbf3b647f47d77f82e24f650b52edfbd1b3f34fd4dcc08c98" => :mavericks
+    sha256 "8bd4ac99cf809efdc8e46725947411589dc67abaebe8219c84a292f46750644d" => :sierra
+    sha256 "30b7e9da35b36b55ba6b0504c3e31153e058889218a9ba60dabe965857b64d58" => :el_capitan
+    sha256 "feaf060a7810f243af346ebbe0a95c054169d93a0b564384ce467c67903a503d" => :yosemite
   end
 
   depends_on "ghc" => :build
