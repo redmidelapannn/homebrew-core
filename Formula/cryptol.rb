@@ -7,6 +7,7 @@ class Cryptol < Formula
   homepage "https://www.cryptol.net/"
   url "https://hackage.haskell.org/package/cryptol-2.5.0/cryptol-2.5.0.tar.gz"
   sha256 "910928617beb1434ad5681672b78ede5dda7715b85dcb8246fa8d9ddb2261cf1"
+  revision 1
   head "https://github.com/GaloisInc/cryptol.git"
 
   bottle do
@@ -15,7 +16,7 @@ class Cryptol < Formula
     sha256 "1771ed234b8889a79618847eee03c2e748496c37d56f4e2336a5be8a8cb89692" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
   depends_on "z3" => :run
 
