@@ -7,6 +7,7 @@ class Shellcheck < Formula
   homepage "https://www.shellcheck.net/"
   url "https://github.com/koalaman/shellcheck/archive/v0.4.6.tar.gz"
   sha256 "1c3cd8995ebebf6c8e5475910809762b91bebf0a3827ad87a0c392c168326de2"
+  revision 1
   head "https://github.com/koalaman/shellcheck.git"
 
   bottle do
@@ -15,7 +16,7 @@ class Shellcheck < Formula
     sha256 "c8b22afa52149b48b9e58c60cd200b937c2e9b3ef12abb8914c7f6c31ab63e43" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
   depends_on "pandoc" => :build
 
