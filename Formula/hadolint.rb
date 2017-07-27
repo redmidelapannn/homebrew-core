@@ -7,6 +7,7 @@ class Hadolint < Formula
   homepage "http://hadolint.lukasmartinelli.ch/"
   url "https://github.com/lukasmartinelli/hadolint/archive/v1.2.2.tar.gz"
   sha256 "600731b0ebf8b86d561ea7ff37424d3249ccd36b91c440551200829c2f80f646"
+  revision 1
 
   bottle do
     cellar :any_skip_relocation
@@ -15,7 +16,7 @@ class Hadolint < Formula
     sha256 "c079436775b7811e6e3b566fa040d9c39580c31e9362fad7386f2527212fde10" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
 
   def install
