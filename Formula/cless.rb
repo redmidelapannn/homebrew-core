@@ -7,7 +7,7 @@ class Cless < Formula
   homepage "https://github.com/tanakh/cless"
   url "https://github.com/tanakh/cless/archive/0.3.0.0.tar.gz"
   sha256 "382ad9b2ce6bf216bf2da1b9cadd9a7561526bfbab418c933b646d03e56833b2"
-  revision 2
+  revision 1
 
   bottle do
     rebuild 1
