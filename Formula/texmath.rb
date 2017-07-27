@@ -7,6 +7,7 @@ class Texmath < Formula
   homepage "https://johnmacfarlane.net/texmath.html"
   url "https://hackage.haskell.org/package/texmath-0.9.4.1/texmath-0.9.4.1.tar.gz"
   sha256 "302202b2c896403963aefe63044ca65ca277482d0e661607010ca3bf8d9a9d04"
+  revision 1
 
   bottle do
     sha256 "64cc76e382d392a69864d1d5da95a1c1b862fdd9a547d2553f08f054d42ef15f" => :sierra
@@ -14,7 +15,7 @@ class Texmath < Formula
     sha256 "94138d1753ba7b996faa23e437ab594d5908f32e221360dbb8b3e9a65001a6b7" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
   depends_on "cabal-install" => :build
 
   def install
