@@ -7,10 +7,10 @@ class Gmp < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "cd4a916966007092af477a76655cc1f66546d00bf5e581a5dfef334f8436aeb0" => :sierra
-    sha256 "01b24de832db7aa24ee14159feb5a16e0e3e18932e6f38d221331bb45feb6a1a" => :el_capitan
-    sha256 "3752709f0bab1999fa9d5407bcd3135a873b48fc34d5e6ea123fd68c4cf3644d" => :yosemite
+    rebuild 2
+    sha256 "6189262a57d89574ffaa095710d08d0a0ecaa0a58afdb8d7bd62a480c1a6cad9" => :sierra
+    sha256 "1f68ecc5d91b50685944c4d0588c7beff89661c89bc6db3406f70f26ab988daf" => :el_capitan
+    sha256 "38420f326d31417b7b3fe5ca36ad93f0b1747f501eb48f4726f98a878d6fa908" => :yosemite
   end
 
   option :cxx11
