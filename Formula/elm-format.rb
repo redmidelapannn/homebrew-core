@@ -13,9 +13,9 @@ class ElmFormat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0d803f1ba6449fc85db9edac0bf55f14c9358868b015559ec2836c799bdf9cb4" => :sierra
-    sha256 "034a1da2a60646992a7571e1879f6ff31ebc43c3f43250689d4b6d6f1c12286d" => :el_capitan
-    sha256 "964df8c9e60c3ab2968fa6d6304beee5d0eefd993001a35e26da279b54e2e543" => :yosemite
+    sha256 "61563691d11419d4cb1cd849694fa36b72c00939a4be294c53fb505fdcee1598" => :sierra
+    sha256 "38d1b023cbdb0843d13b173e89ca29406807ef6568af5d19041ea226613e9a84" => :el_capitan
+    sha256 "d7c35dbdebd5b8d9b18347fbf0ec502777832e392df9df22328e73b1c3f1b882" => :yosemite
   end
 
   depends_on "ghc" => :build
