@@ -3,6 +3,7 @@ class Qriollo < Formula
   homepage "https://qriollo.github.io"
   url "https://qriollo.github.io/Qriollo-0.91.tar.gz"
   sha256 "c8357af8254a082d8e4da1de1bbf13bee27cfde8adb31ea0a5a0966bfbb7b28d"
+  revision 1
   head "https://github.com/qriollo/qriollo.git"
 
   bottle do
@@ -12,7 +13,7 @@ class Qriollo < Formula
     sha256 "bc0ef3114f072bfcbf3b647f47d77f82e24f650b52edfbd1b3f34fd4dcc08c98" => :mavericks
   end
 
-  depends_on "ghc@8.0" => :build
+  depends_on "ghc" => :build
 
   def install
     system "make"
