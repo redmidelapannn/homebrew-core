@@ -5,9 +5,10 @@ class Libpeas < Formula
   sha256 "f392fffe2dc00072a51bb2a1b274224a06bdc5f9c3b3c0ac4816909e9933d354"
 
   bottle do
-    sha256 "9bad6478fc3a334a1446286375bc467b16d34bcf3e8c9c05f12208edf370e496" => :sierra
-    sha256 "b8fafb1141cbce2ffbb09fdc56bb79b48a3106119046f366fb3e56181c43f04f" => :el_capitan
-    sha256 "cbaaef5811b5f5417d491d360749901e98afdddc5f3b6db8f6d6a4a1b62fb7a1" => :yosemite
+    rebuild 1
+    sha256 "484b592a9869a432ddcfbfd6d290356ca1d4932de5910bff51baa0cd32f6e64d" => :sierra
+    sha256 "17667a9864b04bfb8709c1aae457835ec97757c8c10bdbd0917648eb60b9b9fe" => :el_capitan
+    sha256 "19dce2e338287499717acff9edee7ec915ad9db7c5c59c483966ba8f61209593" => :yosemite
   end
 
   depends_on "gettext" => :build
