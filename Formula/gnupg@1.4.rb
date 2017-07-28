@@ -6,9 +6,10 @@ class GnupgAT14 < Formula
   sha256 "6b47a3100c857dcab3c60e6152e56a997f2c7862c1b8b2b25adf3884a1ae2276"
 
   bottle do
-    sha256 "75e3d0b64aa7c8b0a1909401881542b82890380e36ca61711cf68e584387702c" => :sierra
-    sha256 "53c0d078cb7858cc138b976d7248368678171475a1d42afd0115be067c2c9ae5" => :el_capitan
-    sha256 "e3c430f6e012f9033c3cd704ce599b30e5e557fe459b92afc222753640b43fdc" => :yosemite
+    rebuild 1
+    sha256 "f88082f60c27422c5e3bc4c9cf34923f940a7be2069550555cf5e23338e11c53" => :sierra
+    sha256 "55c4a155fc44bc5939d85dfd1cdba61e984bfd909bcb51f30380404096d984ba" => :el_capitan
+    sha256 "d74301548a96472a55dd3ca09aad9ecf7258583cc1c95e31d050b08f65da7aec" => :yosemite
   end
 
   depends_on "curl" if MacOS.version <= :mavericks
