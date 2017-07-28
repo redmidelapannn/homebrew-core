@@ -7,9 +7,9 @@ class Dbus < Formula
   sha256 "e2b1401e3eedc7b5c9a2034d31254c886e1fcbc7858006e0a1c59158fe4b7b97"
 
   bottle do
-    sha256 "aefbf1cc0f4187045e59c0ca806bba7485c956eb91f6c6cd536e181cd28b796c" => :sierra
-    sha256 "076f9fdd5b89a600d7ac26a0e241a63fa9a39c5609b5a5a478cb64ab473194a2" => :el_capitan
-    sha256 "8d8814ab6605c0188f49ebfb4a29734820c3cc74a8bb1501bf0f6e769d0f6b46" => :yosemite
+    sha256 "c0e04c2f7af402b5a9618db8534c0114ea6714e219563386e59fdb491c8cba85" => :sierra
+    sha256 "a2880c49da2c834c37c1434154ae18bc77987f152d55d42f97f9a2e83b3aba45" => :el_capitan
+    sha256 "ae443c0344df9742d0cb8ceb4f5e09724fb5ea44102ca5a52943a86b2baeb7f9" => :yosemite
   end
 
   devel do
