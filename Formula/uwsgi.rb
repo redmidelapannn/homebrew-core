@@ -6,9 +6,10 @@ class Uwsgi < Formula
   head "https://github.com/unbit/uwsgi.git"
 
   bottle do
-    sha256 "09cd8cf501bb7ffd6dc1ce48628c80798700d3b79e329321e59c98a6e3d127e1" => :sierra
-    sha256 "94d275b2699c23828ff7610372a3b6b5ff11ec63222eba33db6de22adb806424" => :el_capitan
-    sha256 "986cb7457249c53bf40df451f39675a8871fdefe1f111ae7e02eb70a89404ab5" => :yosemite
+    rebuild 1
+    sha256 "a645fcf0d12fd7d9882ed6445979ba33e6b05207e73501dbb290fde6344012b5" => :sierra
+    sha256 "f117a65787f70dbf638ef7136c038d454221274174cbfc95e310d2fcd74c5450" => :el_capitan
+    sha256 "e5206fa39015f489efe31eddad1e9ec35c996df9cda3b46fe57bdf500104cbd4" => :yosemite
   end
 
   option "with-php", "Compile with PHP support (PHP must be built for embedding)"
