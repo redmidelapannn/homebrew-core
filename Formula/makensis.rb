@@ -6,9 +6,10 @@ class Makensis < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ad705d703ce08086971ea662c0aaf9fd794c0f141e415680222e0cc20e5e4929" => :sierra
-    sha256 "7e40085a63e244754a62213d00084fce86ff2d77d0ad2c29427fca244087bcc3" => :el_capitan
-    sha256 "91f586655bf0ce929e42a5f5868b2c4f15d6608a964a5430fedf78e1ebebf3e3" => :yosemite
+    rebuild 1
+    sha256 "230baa33fe0292b2020583e73ac0af52e0e8560cea55c9b07f78fefc40698c88" => :sierra
+    sha256 "29c238390c35920d88f6dbb69e374a6878ffb45a932b7650951aa11f644ff47a" => :el_capitan
+    sha256 "ed40768d2d9354fb64a85b3d258900f0b07b3fc8e33e62a764b8842d0b332c2d" => :yosemite
   end
 
   # From http://nsis.sourceforge.net/Special_Builds#Large_strings
