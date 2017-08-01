@@ -7,10 +7,10 @@ class Jsmin < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "21ce8792fb1bb8b004f884953b2ab97ebd0d00568f5507c3b168f594ebbbd084" => :sierra
-    sha256 "7672c92faa52fbc0684808da9803ebfa8883df0e0243e63a9a0b7c6441218b85" => :el_capitan
-    sha256 "92ce35c390c8a2723e7b7cef8655e61ab9373f274c719ab4c04256cab1c42d1d" => :yosemite
-    sha256 "248da380666e6e08f25b75588c32d1dcad3952978e31d2a08c59c99756946bb4" => :mavericks
+    rebuild 1
+    sha256 "73395fd0a3e31d1b9fb5961f14522a2dc31676a1476d71f6f51b8ae993ce6c6e" => :sierra
+    sha256 "b38783593431d12cc861efcc5ab2cf745d475c1b923c61b75aa33ba60d94b256" => :el_capitan
+    sha256 "f8c5455f1ef7ff5b324ddb353652459dc4d1e43b33fe1ac765784b81b1224d9f" => :yosemite
   end
 
   def install
