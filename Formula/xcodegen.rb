@@ -5,6 +5,11 @@ class Xcodegen < Formula
   sha256 "29338d4fb17160408fc781e01143b3eff3dc4dc8db8305ef04864dea9e11bb62"
   head "https://github.com/yonaskolb/XcodeGen.git"
 
+  bottle do
+    cellar :any
+    sha256 "4db91e885570e807bc2cb0f7f0b9c207a0b598633ab5dc9b1ca695dabfd9a330" => :sierra
+  end
+
   depends_on :xcode
 
   def install
