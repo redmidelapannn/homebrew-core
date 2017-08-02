@@ -3,8 +3,8 @@ class Platformio < Formula
 
   desc "Ecosystem for IoT development (Arduino and ARM mbed compatible)"
   homepage "http://platformio.org"
-  url "https://files.pythonhosted.org/packages/89/5c/e04c950f9d3663a797e00a0cfabfdd6eceefbe60c8006223752bb16b7958/platformio-3.4.0.tar.gz"
-  sha256 "2311715e98a56964f6f032d22abb883167d34bc64360ccc54be3a3d515452887"
+  url "https://files.pythonhosted.org/packages/e2/de/ede21c60de7f866f7294a36ead989f32de001af6600d06ec7fc7ecb48bdd/platformio-3.4.1.tar.gz"
+  sha256 "a2720b649f1d9e310183dce84a3a3cdd10b83a1083f11eb60e0551718c5a94ac"
 
   bottle do
     cellar :any_skip_relocation
@@ -56,13 +56,13 @@ class Platformio < Formula
   end
 
   resource "pyserial" do
-    url "https://files.pythonhosted.org/packages/1f/3b/ee6f354bcb1e28a7cd735be98f39ecf80554948284b41e9f7965951befa6/pyserial-3.2.1.tar.gz"
-    sha256 "1eecfe4022240f2eab5af8d414f0504e072ee68377ba63d3b6fe6e66c26f66d1"
+    url "https://files.pythonhosted.org/packages/cc/74/11b04703ec416717b247d789103277269d567db575d2fd88f25d9767fe3d/pyserial-3.4.tar.gz"
+    sha256 "6e2d401fdee0eab996cf734e67773a0143b932772ca8b42451440cfed942c627"
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/51/fc/39a3fbde6864942e8bb24c93663734b74e281b984d1b8c4f95d64b0c21f6/python-dateutil-2.6.0.tar.gz"
-    sha256 "62a2f8df3d66f878373fd0072eacf4ee52194ba302e00082828e0d263b0418d2"
+    url "https://files.pythonhosted.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-2.6.1.tar.gz"
+    sha256 "891c38b2a02f5bb1be3e4793866c8df49c7d19baabf9c1bad62547e0b4866aca"
   end
 
   resource "requests" do
