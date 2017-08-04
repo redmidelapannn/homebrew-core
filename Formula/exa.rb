@@ -7,9 +7,10 @@ class Exa < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "96577212829215a642d989b6de615bdf36d4b7170fa8d4e2e8cafb259b442f99" => :sierra
-    sha256 "b356d32e38e2b7d0ca3b9874ab33a9aead45d1c46d8fa84e1b4819f0c7a78632" => :el_capitan
-    sha256 "5693b6852ccdf92ec6b71dd671be1980aeefea0c0e86aaf9e3d86058afe42b52" => :yosemite
+    rebuild 1
+    sha256 "efab11826c6d761d1e9d449b9319f4a4e19cfdabb83585a97af967914dc6ed48" => :sierra
+    sha256 "c8ed0ad43d37e6b1833db660883e1349d36d15b7334433ad708078caff04c79c" => :el_capitan
+    sha256 "19b784e7799fa7576718b66c6d903da8ecd7890f9f9d3be3926a122cca75f829" => :yosemite
   end
 
   option "without-git", "Build without Git support"
