@@ -7,10 +7,10 @@ class Influxdb < Formula
   head "https://github.com/influxdata/influxdb.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "2be927951b1c4312ca020a31d1b4d64dae5b3363e34711f77cf452b42f2bddfc" => :sierra
-    sha256 "c74824dd44bb5ad69ab286a0073b7e12b74366ee1d753bdb47a3c0e43bf2f9d6" => :el_capitan
-    sha256 "fccee2e7ea53eb6c61b3fd2f4041efa1975da16cdd0f11a7bd83180700675fcd" => :yosemite
+    rebuild 1
+    sha256 "5c32a305a0c078636b8d9e1d0ba9e27c522a0be5c808632bc65dea8c1b0b32f5" => :sierra
+    sha256 "4cb50b87da5080173778f07fd32f9d73a97e740cfb7f07043f1fadbd4516219b" => :el_capitan
+    sha256 "a9f50ec668abd3cd237896af67e20fc5a94e5dbbbba9d6f9e5ac8aff0b9b54fb" => :yosemite
   end
 
   depends_on "gdm" => :build
