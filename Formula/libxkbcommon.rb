@@ -24,15 +24,6 @@ class Libxkbcommon < Formula
 
   def install
     system "./autogen.sh" if build.head?
-    inreplace "configure" do |s|
-      s.gsub! "-version-script $output_objdir/$libname.ver", ""
-      s.gsub! "$wl-version-script", ""
-    end
-    inreplace %w[Makefile.in Makefile.am] do |s|
-      s.gsub! "-Wl,--version-script=${srcdir}/xkbcommon.map", ""
-      s.gsub! "-Wl,--version-script=${srcdir}/xkbcommon-x11.map", ""
-    end
-
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
