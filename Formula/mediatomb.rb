@@ -6,11 +6,10 @@ class Mediatomb < Formula
   revision 2
 
   bottle do
-    rebuild 1
-    sha256 "8eb40e0276320c6765b7dbc208afe1c53a06ed13ff5e410e16aee57c366bede7" => :sierra
-    sha256 "06cb4aaff088fc91d9500b10640d2b1632f8c88c95277f9cface991a06801ad6" => :el_capitan
-    sha256 "089217abe05ea91a8dc1df796974495f87b8bcde7b4d80a93b1129e12cfc344d" => :yosemite
-    sha256 "7022f700071652e20eb3d93b3d0b0a9d5f4cf1485cd350d85116fcbdea1ac104" => :mavericks
+    rebuild 2
+    sha256 "4caf2149f43dc62614a04c9a9eb0142b1b4b1db075298d5cac596d660f7eef94" => :sierra
+    sha256 "bbbd91c9cc668a357c6409c4290d59b81d8924a77a03e58219c934ed41d0c47b" => :el_capitan
+    sha256 "d78571a173400ddbc139eec84736c27db24e6b3992ded6f10eb43fc97126f26e" => :yosemite
   end
 
   depends_on "libexif"
