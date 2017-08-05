@@ -6,9 +6,10 @@ class Residualvm < Formula
   head "https://github.com/residualvm/residualvm.git"
 
   bottle do
-    sha256 "92efc0e5090dc459c1a5b4b79c59e737a3f0c42548d4aeea6c93b6fe695340df" => :sierra
-    sha256 "74cdadcb02c40721d16aa613ba70fcd09d137cbcc69259444c1cf3cceb924419" => :el_capitan
-    sha256 "b1aa19050c3ee60834ebcf49f40dc1ec90d246e4d0ca70343218e0f08c3b5e96" => :yosemite
+    rebuild 1
+    sha256 "8b48d96ae5d7e3dd033f4220f5b05bc787e758de0daf0c22c0e31b1dc71c227b" => :sierra
+    sha256 "7375f5e5f7a3822134e2b35e54cae0b2be77193448faf09386fbe3e5076e4383" => :el_capitan
+    sha256 "de4419d11625179b60c70161c9bb866f956f48526361000f2077f1acbaec87a8" => :yosemite
   end
 
   depends_on "faad2"
