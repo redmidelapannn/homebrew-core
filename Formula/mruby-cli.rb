@@ -7,9 +7,10 @@ class MrubyCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d436b8d717f89db9807338345f4b0f385abcfc45f56e9b0b7decc333d4d05ad6" => :sierra
-    sha256 "2f56375783e9365bafc0868d505b54eea315f6dad9a0095decbbd61abeb345ac" => :el_capitan
-    sha256 "a06806ca6a22d3b015e073a984e832013f2efe729870e2aa6d0b17e91a4b9855" => :yosemite
+    rebuild 1
+    sha256 "275ec769b8eeaa24e93250b8eceb5bff0b41487e5fbfb3efea180cf69445763e" => :sierra
+    sha256 "9a49da2198cdf00ca34d06b066ff106193357242995ba1b1ba017ecb90920e91" => :el_capitan
+    sha256 "8fb39409936efd4fdfcb0d665fddff8f3855b3da9dab7b3ca8e00808271c8963" => :yosemite
   end
 
   def install
