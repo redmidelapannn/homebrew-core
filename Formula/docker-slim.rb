@@ -8,6 +8,13 @@ class DockerSlim < Formula
     :revision => "624f7a2022057184d982d8b74f035a9f518662b6"
   head "https://github.com/cloudimmunity/docker-slim.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1bc440a00d8400a3d26b02e92b2c0fdc46ddfff42bd7013bd651ca3225b396d0" => :sierra
+    sha256 "1323cd954e58c83e938f73a0c112691551b968dfcf49b2fffa303dde011b9a50" => :el_capitan
+    sha256 "af72bd9da953e6fa7451c14b62cbe2f243d7d0eece1b7b8a4b58bd0416b724a9" => :yosemite
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/mitchellh/gox" do
