@@ -9,6 +9,6 @@ class Istio < Formula
   end
 
   test do
-    system "#{bin}/istioctl", "version"
+    system "#{bin}/istioctl", "--help"
   end
 end
