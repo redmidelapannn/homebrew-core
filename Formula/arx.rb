@@ -7,6 +7,7 @@ class Arx < Formula
   homepage "https://github.com/solidsnack/arx"
   url "https://github.com/solidsnack/arx/archive/0.2.2.tar.gz"
   sha256 "47e7a61a009d43c40ac0ce9c71917b0f967ef880c99d4602c7314b51c270fd0f"
+  revision 1
 
   bottle do
     cellar :any_skip_relocation
@@ -16,8 +17,8 @@ class Arx < Formula
     sha256 "47d9f6b76fe542ae8553a9c7ad56eaecd59a755210be97265774949e67562936" => :yosemite
   end
 
-  depends_on "ghc@8.0" => :build
   depends_on "cabal-install" => :build
+  depends_on "ghc" => :build
 
   def install
     cabal_sandbox do
