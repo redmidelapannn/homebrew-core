@@ -5,6 +5,12 @@ class Chunkwm < Formula
   sha256 "6f5913476a5e0e7afab59b79061be4952ab575f9d9d06ed91de6297bd169bd38"
   head "https://github.com/koekeishiya/chunkwm.git"
 
+  bottle do
+    cellar :any
+    sha256 "6b63fc143c91cde55fed5345d9aecf5872b3cec00656a2f317be8f9e01fe2305" => :sierra
+    sha256 "4e63940e718c437ac2f010b549299a6e09a3c62356b4c1b251d1cee5ff607093" => :el_capitan
+  end
+
   option "without-tiling", "Do not build tiling plugin."
   option "without-ffm", "Do not build focus-follow-mouse plugin."
   option "without-border", "Do not build border plugin."
