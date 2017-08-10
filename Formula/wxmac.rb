@@ -8,9 +8,10 @@ class Wxmac < Formula
 
   bottle do
     cellar :any
-    sha256 "fb15ea55d8393fafa1c286485fc8c1da91b3f41d76a234d9766689cfe4635e1e" => :sierra
-    sha256 "b26fa72e62558efa45fc89a4cc9cea74845369764e74fffa339b3f9eb6549827" => :el_capitan
-    sha256 "591bffb395156566ef3e55a9a8f2c193bdcde8b941d42cc6e6b41833ceeeaba2" => :yosemite
+    rebuild 1
+    sha256 "834018e5bb222cd49fecefbbb905d9cdf1569c217d194575d71e55a7fa0b6cd7" => :sierra
+    sha256 "80d2e20beee62a12fbe19f5d429a088411ae9c918292499363533bdc06ab4e95" => :el_capitan
+    sha256 "539534df33134394b6641b84f07296f2db981b359eff5a0ed7dacd6c94977cc0" => :yosemite
   end
 
   # Fix compilation on High Sierra
