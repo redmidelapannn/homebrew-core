@@ -7,9 +7,10 @@ class Flann < Formula
 
   bottle do
     cellar :any
-    sha256 "96ed9c1fa35e36a2981ccdb973ed7411b1794470d4237ed8a5ce5dbaa93040f8" => :sierra
-    sha256 "37edd98d6f63cc3ebcf76ee08fb282bb5397f8d65a639e332052faee329b874c" => :el_capitan
-    sha256 "551141c983b58fead9f9cf15b5c2b2e6c591af56acb7bfb2b64bc3760218c755" => :yosemite
+    rebuild 1
+    sha256 "d97ae4a3395981c8884f2e851f17c79450c85d922dbd2ce0f29732fd9997fa9a" => :sierra
+    sha256 "b2a45716323b97060c2a9d31ace4c2601ff2be85b7c654dd5b202c4b6e961c9d" => :el_capitan
+    sha256 "61313967adf9128c75c1ef63f81921c1bb24bc7a4a5b385637251fa9be0b6455" => :yosemite
   end
 
   depends_on "cmake" => :build
