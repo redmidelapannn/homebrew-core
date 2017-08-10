@@ -4,6 +4,13 @@ class Scanssh < Formula
   url "https://www.monkey.org/~provos/scanssh-2.1.tar.gz"
   sha256 "057eec87edafbbe5bc22960cbac53e3ada0222400d649a5e2f22cc8981f5b035"
 
+  bottle do
+    cellar :any
+    sha256 "770a8d7ad3a50828eef36454c910f8c587356c3fc9eb9f0895c1522ddcb2cec4" => :sierra
+    sha256 "15e2a9c696717025cc5d179e99f720b4bd1789bbb14cf5c1e96ac5d234bd3415" => :el_capitan
+    sha256 "2703138bb2262a3b983c8e9606cfa92e11ba77d8e395ffbeb20210d7a81282a4" => :yosemite
+  end
+
   depends_on "libevent" => :build
   depends_on "libdnet" => :build
 
