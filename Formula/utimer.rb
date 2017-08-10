@@ -5,10 +5,10 @@ class Utimer < Formula
   sha256 "07a9d28e15155a10b7e6b22af05c84c878d95be782b6b0afaadec2f7884aa0f7"
 
   bottle do
-    sha256 "83857df76553031baf373cf3c8d0124d5d7424bd9d42b2860e7fec530e6e91ca" => :sierra
-    sha256 "d7a0ec14fe3d04b314cb0c6c9e5d70b6f72d2de02e4e3227039919551eb118a6" => :el_capitan
-    sha256 "6009a679cfedeecb55dbdf0e952bc2b09a7c292f8aba5d6e861072139e2a8a23" => :yosemite
-    sha256 "a1841baa5d50002615efb07d07d5049e5965c06099e120f71654eec83dd4f1a3" => :mavericks
+    rebuild 1
+    sha256 "35e26988242ad2d346b781e0e636086be0e3b759102f87826f223b284c29c439" => :sierra
+    sha256 "ed04357b4901c847c18f115284974fa0a249036ca5256b5d36d08b61ad407098" => :el_capitan
+    sha256 "8eb8548c13c553ae16d2dc54c2b8a89ccc9ec46a35b306512320f736b99d0939" => :yosemite
   end
 
   depends_on "pkg-config" => :build
