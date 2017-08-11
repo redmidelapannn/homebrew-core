@@ -10,9 +10,9 @@ class Spim < Formula
   version "9.1.19"
 
   bottle do
-    sha256 "f7088896690bf5d131b89b101f7e6a56dcb927c7be741a92d3041a5943130e5c" => :sierra
-    sha256 "8e3b92783684c8e0e2fa55d1dc748579a496b545d4ec53f2b3d4832ac11da95b" => :el_capitan
-    sha256 "f8e4dbc74c5261a24df6913d496d002b9a8e597b0fe4a738f42adbb042ef6a80" => :yosemite
+    sha256 "d52f4d9e09c85949d7dec36379a4e29f03aa884151c16b43a33d3d576b65de73" => :sierra
+    sha256 "422ac2cbac2feee2361fd94b2c594e47fb8e5cf71e9df9272089415c0db6d65e" => :el_capitan
+    sha256 "4ad8598c889fdd1fa87aba2f0b7cf642d2b239ff690a278d80ea4761dd1ca944" => :yosemite
   end
 
   def install
