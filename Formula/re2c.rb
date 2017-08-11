@@ -6,9 +6,9 @@ class Re2c < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c11f57cdde394a072ddb8952ebaaea37aafd3c8b6ac304d7bcb956a46f7818e3" => :sierra
-    sha256 "5ca925ec9bedadb50237ce862d7aeac99a55af1cb5468c47af711dcdea7a1256" => :el_capitan
-    sha256 "9050cac314fe497b42b42b23e52043973b0f800c1ab39a2791482ab6cdd254d6" => :yosemite
+    sha256 "e5ad15ba2f0a79e0c8bd84db39fed5c26f0571ea3a89d1b93df07bb869e5bf3b" => :sierra
+    sha256 "0f6654d151846be9199ad2498f41d5a2ad7904ccca815645e477d99addb891e0" => :el_capitan
+    sha256 "fbc094e5a5053ca3baa4281ff7c2576341dcef87759d275b208a2d4d7bb464e3" => :yosemite
   end
 
   # Upstream commit from 11 Aug 2017 "Fixed #193: 1.0 build failure on macOS:
