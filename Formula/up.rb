@@ -5,6 +5,13 @@ class Up < Formula
   version "0.1.6"
   sha256 "4d421689c7493891c355bd08078020195d35625292e2a18b89cee4d988408669"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "388736304eb0b1ed0f417ebe5268a9d352f7f16dd67359823d74659cec1c8543" => :sierra
+    sha256 "388736304eb0b1ed0f417ebe5268a9d352f7f16dd67359823d74659cec1c8543" => :el_capitan
+    sha256 "388736304eb0b1ed0f417ebe5268a9d352f7f16dd67359823d74659cec1c8543" => :yosemite
+  end
+
   def install
     bin.install "up"
   end
