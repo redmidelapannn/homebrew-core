@@ -5,9 +5,10 @@ class Unbound < Formula
   sha256 "df0a88816ec31ccb8284c9eb132e1166fbf6d9cde71fbc4b8cd08a91ee777fed"
 
   bottle do
-    sha256 "53d185a4939f5a2186478289cf41e294d77c2a1ee1ba1e3e1edb2706214ea324" => :sierra
-    sha256 "8b63f65a77a8c7d7de1a27c86983dac0ecf6851d78ff47218ae02a5ab2ab5973" => :el_capitan
-    sha256 "6c28b979421307de00000d28987914f2bbcdd76be5be65fe9705c2971c42ae43" => :yosemite
+    rebuild 1
+    sha256 "2784b965f8bd19472ae4f1a5b210dc3c9afca6854600745fe47263ed01d7ea4e" => :sierra
+    sha256 "798fe0f105200169d47a37972af7c23bc9bb39af6c5a3491b76c14bc4896d34a" => :el_capitan
+    sha256 "bdc907acd9a0f481af38be52113327378acd09cab38650489e2898dba50f2a4d" => :yosemite
   end
 
   depends_on "openssl"
