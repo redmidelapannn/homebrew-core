@@ -1,6 +1,12 @@
 class Faust < Formula
   desc "Functional AUdio STream is language for signal processing and synthesis."
   homepage "http://faust.grame.fr"
+  bottle do
+    sha256 "2ce7dd6c514f941047a293f43ef9f143565feac74a1ea49b7b994f0e27108542" => :sierra
+    sha256 "f65a29b8fb905b33d0e5b69acbf589c3a7258ce277660a968511b4e5948c6dae" => :el_capitan
+    sha256 "bacc26db8bb2d307189d4a270ab8ad34335c8e02a31c81e80a2efc7d439fde86" => :yosemite
+  end
+
   option "with-faust0", "install faust 0.x.x not faust 2.x.x"
   depends_on "pkg-config" => :build
   if build.without? "faust0"
