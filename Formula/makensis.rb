@@ -6,10 +6,10 @@ class Makensis < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "0a5adaa8cc82a78075755a80f68a72e34f3a59c1e72823c49c2c1d23bd5209ff" => :sierra
-    sha256 "932fd48662e03d1f964482ac5aa812c60486126f1138b2f774aeb7641e6b406b" => :el_capitan
-    sha256 "4e7ee251f0e53b7cc3b254f6d7ee5a247f18287327f25dbba586ee75a43084fb" => :yosemite
+    rebuild 2
+    sha256 "1fc565f3625bb80cec7113b045ca7eed13fc9cd2caffc1355500f25b2646733a" => :sierra
+    sha256 "ff63a52adee2fe1c41ee81b2e36def6fb3e740e9896da7acc745cd052b158ae8" => :el_capitan
+    sha256 "945635ee3ffb95f00b1f4502f64ca9b90186ed56e8eaed5ac3ed1653ef1ce976" => :yosemite
   end
 
   # From https://nsis.sourceforge.io/Special_Builds#Advanced_logging
