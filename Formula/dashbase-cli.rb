@@ -6,6 +6,13 @@ class DashbaseCli < Formula
   url "https://files.pythonhosted.org/packages/1e/a1/a66cf8c37a4c660344361951dd8da1a41e744f14481a50cbe25149b2e54a/dashbase-1.0.0rc8.post3.tar.gz"
   sha256 "d7fdb0e3287eba88dbea81e93e4e24679ace473099752c658f4ef11b179c8873"
 
+  bottle do
+    cellar :any
+    sha256 "b87ab84e2749eea4e8346f015ee2e616d087105a57a949793d0d0c2e5cc1774e" => :sierra
+    sha256 "6b7ac8cbe030d60fdfea45c63845392ed79447223f61b7038cd11656432d964d" => :el_capitan
+    sha256 "6e5956710ba46780955f5dabb2b95d4b6c4bdae1f5369c2e15706610689f9660" => :yosemite
+  end
+
   depends_on "pkg-config" => :build
   depends_on :python
   depends_on "openssl@1.1"
