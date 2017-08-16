@@ -5,6 +5,13 @@ class MecabIpadicNeologd < Formula
   version "20170807"
   sha256 "ad134f17eae4469b16eb5506cf5dfb11bae248ccb0f0936afacd9179d1be8e5b"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c7158d4896f8adf805054c76e4fedbfdbacff2071f5deeeef6e45e7f04ad2fea" => :sierra
+    sha256 "c7158d4896f8adf805054c76e4fedbfdbacff2071f5deeeef6e45e7f04ad2fea" => :el_capitan
+    sha256 "c7158d4896f8adf805054c76e4fedbfdbacff2071f5deeeef6e45e7f04ad2fea" => :yosemite
+  end
+
   depends_on "mecab"
   depends_on "xz" => :build
 
