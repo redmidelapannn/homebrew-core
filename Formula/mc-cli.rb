@@ -6,6 +6,13 @@ class McCli < Formula
   url "https://github.com/HexagonMinecraft/mc-cli/archive/0.0.3.tar.gz"
   sha256 "ad75949dbe8bb1f1e55ff91377fec5a10e7bea4d42cdd23235e2e72195e9faba"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4fe52333cead34f26e9878464c286c99b943e676855dd81fdeea44a54b590280" => :sierra
+    sha256 "0c0d804803859aadce2488b25e0c35b554b14343f7af6f8544e5e6033b1bd728" => :el_capitan
+    sha256 "578018f68db30bd2dd1653277ac47db3f750e544da22249b5ba48d95d90a1d98" => :yosemite
+  end
+
   depends_on "go" => :build
   go_resource "github.com/Masterminds/semver" do
     url "https://github.com/Masterminds/semver.git",
