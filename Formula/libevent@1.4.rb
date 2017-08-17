@@ -11,6 +11,9 @@ class LibeventAT14 < Formula
 
   bottle do
     cellar :any
+    sha256 "bfeb7e5f6fb82b1bb172a1cad5839940a93465e92c5ad4e2b5ae1a9220116281" => :sierra
+    sha256 "06425a2becafac02db0ff65235f282bac03fde72861c22528146c50b9244281f" => :el_capitan
+    sha256 "ea0aa3d6ddb5c41c9fa52efbadad1483102f20caf8494029fa43097a6185aa30" => :yosemite
   end
 
   depends_on "autoconf" => :build
