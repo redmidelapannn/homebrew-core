@@ -5,9 +5,10 @@ class Tmux < Formula
   sha256 "ae135ec37c1bf6b7750a84e3a35e93d91033a806943e034521c8af51b12d95df"
 
   bottle do
-    sha256 "232d1d04e4b6fb4c860d0d72a6e98dc000d33028b2d6cea87f476d2502fc7bac" => :sierra
-    sha256 "3bcc934afd1b4067dcd57400d5296c38d37f9e671b716578eae3ad150a64b3b3" => :el_capitan
-    sha256 "d137eb4f725cd7784162c01b1e6053c88059079aed639b685f3a3eba82efe31f" => :yosemite
+    rebuild 1
+    sha256 "e0e7bbbf42a904573c41dfd9aa013242a7e681902fd6c9a69ed2ad1fced800b7" => :sierra
+    sha256 "7a8b86a22c721a4059a997e57feeee1d7ba13b18540b500e5347b1a48d034774" => :el_capitan
+    sha256 "40b2e480f25ad47d7609cb2b0172860a626b6d426517eba9c1cb690118526a91" => :yosemite
   end
 
   head do
