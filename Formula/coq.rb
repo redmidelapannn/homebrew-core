@@ -19,9 +19,10 @@ class Coq < Formula
   head "git://scm.gforge.inria.fr/coq/coq.git", :branch => "trunk"
 
   bottle do
-    sha256 "275c1d6a33704757eb283ec5d2562193387f093e7dbe7c2cb4a4e96264d3aedf" => :sierra
-    sha256 "7c8e6073149ee473fbeb7801975e6b57e1297ef113292504ac120556fdec1dc6" => :el_capitan
-    sha256 "d6b4b69e7c3ae0f5b6aed761dd552ad35c9f7b7eac8646909e483b8940268f74" => :yosemite
+    rebuild 1
+    sha256 "8174eb0e16839f32827219ed34003e7a6c9499a1527b84d7dd0e94f6d327f4b5" => :sierra
+    sha256 "a9502ff3ee34282f1561d9b298c4838da6e686cc8c74b76584e1efa0a92a4b41" => :el_capitan
+    sha256 "5ada9e5c96c448f02a8e9f0805437325f044c9c802ddd536a460ee9994170b9a" => :yosemite
   end
 
   depends_on "opam" => :build
