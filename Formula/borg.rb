@@ -8,9 +8,10 @@ class Borg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bd251596f570c3ec103d60ad04f78626c69a79cc20fe99f5bc483ffce12b695f" => :sierra
-    sha256 "f88e6457bfdd91b124d18395f80c988ae0ef4020153f43028ccdfd4e5fdff0e8" => :el_capitan
-    sha256 "4b4c4781a4b90104c1bda9243bb3d8f901eba9e57a3e2f2d923bf573e5065819" => :yosemite
+    rebuild 1
+    sha256 "97ea040a17bea9f35e21503911bcc9a358c2d89bff09bdff65332cfd614b741e" => :sierra
+    sha256 "a58604e7d37e819f359f8d175f026bbcecb9616f0643303941cd1702417aefea" => :el_capitan
+    sha256 "e2831618c442c3286008f18e3d48d2a6641e7b586fd394f2df1d39318ce50b51" => :yosemite
   end
 
   depends_on "go" => :build
