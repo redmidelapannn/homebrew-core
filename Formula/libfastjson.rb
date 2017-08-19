@@ -10,7 +10,9 @@ class Libfastjson < Formula
 
   bottle do
     cellar :any
-    sha256 "4eb6f15066dab2afb374eddbec9cc4e659dbdaa17b24f7ff522587c20d52a6e3" => :sierra
+    sha256 "3d9c4f57fa3c9fc660cfbd7ea5776e84ae0afb6d675e40e765f3d837d7e03acd" => :sierra
+    sha256 "0e3a9ab66624f91740108c0808115b44aeb740e75f6dedb2829128f944e0df37" => :el_capitan
+    sha256 "a17c1a642eec3897196bec92577ba1e5048be866f293f0537fcbf7c8879197f8" => :yosemite
   end
 
   head do
