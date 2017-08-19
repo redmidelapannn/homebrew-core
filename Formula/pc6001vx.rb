@@ -25,6 +25,12 @@ class Pc6001vx < Formula
     ENV.append_to_cflags "-Wno-reserved-user-defined-literal"
     # Use libc++ explicitly, otherwise build fails
     ENV.append_to_cflags "-stdlib=libc++" if ENV.compiler == :clang
+
+    # Unix scope in QT project file includes MacOS, therefore always enabling x11 and x11widgets
+    # As a temporary workaround, remove 'macx' from the set
+    inreplace "PC6001VX.pro", "\#Configuration for UNIX variants\nunix {",
+                              "\#Configuration for UNIX variants\nunix:!macx {"
+
     system "qmake", "PREFIX=#{prefix}", "QMAKE_CXXFLAGS=#{ENV.cxxflags}", "CONFIG+=c++11"
     system "make"
     prefix.install "PC6001VX.app"
