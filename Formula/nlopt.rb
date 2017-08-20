@@ -5,6 +5,13 @@ class Nlopt < Formula
   sha256 "8099633de9d71cbc06cd435da993eb424bbcdbded8f803cdaa9fb8c6e09c8e89"
   revision 2
 
+  bottle do
+    cellar :any
+    sha256 "699a10fe4a2977921788466fa85464400dfa729e4cd9ca0519a5471bf77bd6a2" => :sierra
+    sha256 "93acc6f749da2c8d6db0cd23fc86e92ca030e293c1454d25410a6206ee09f6a9" => :el_capitan
+    sha256 "9e7243b3f145d28dddb0c01423c0e531dcfc94e427956e0f401a495626ff8fb9" => :yosemite
+  end
+
   head do
     url "https://github.com/stevengj/nlopt.git"
     depends_on "cmake" => :build
