@@ -6,10 +6,10 @@ class GstPluginsBad < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "984fdfbdaf10dcb0d8c4e0c8c2851189952a154356f9da6952af19731af8c4db" => :sierra
-    sha256 "4b42ba3f130dc2b402ee7a9898121a79faa00f1f2d2e3ee6da46fd0cf48d123e" => :el_capitan
-    sha256 "b0f8e3f944433ef8c4b46d2be9997e5c73d76e659764b98f434dce50abf24538" => :yosemite
+    rebuild 2
+    sha256 "d8b8869dd68c9abb8d1f177bd5069d5763081bcc837ace1d915dba634120e9b1" => :sierra
+    sha256 "d313d97847e9fdb6965b5d75cbb2ea278ae8621cc3695f273c5ad2ddbd8ad1a8" => :el_capitan
+    sha256 "68bad3f2edf7553922fc12c8dd1ce6b942aa7e235b049462a4651e14b0abf8dd" => :yosemite
   end
 
   head do
