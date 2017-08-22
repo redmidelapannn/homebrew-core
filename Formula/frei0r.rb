@@ -6,9 +6,10 @@ class Frei0r < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c5c4efcf43d6c2cd495c82bfcf3839574b1d7f507b963151284ed186f53974a5" => :sierra
-    sha256 "4f4e3e6ed474ba0e667f161e7e05c8cd8a3b67ad67201818ebc0cdac8e737220" => :el_capitan
-    sha256 "a8ee4a509fa1d10137a3be9f2791d088606dcd1727079fa681a237ebc65e8fe7" => :yosemite
+    rebuild 1
+    sha256 "03669c59744e7c2c3b89296736a9c9c4dc925032628c4732aa7a5a8ddfc03344" => :sierra
+    sha256 "ef029dada8411c4f9caf02e76c125dd72a1ccc98aa2294327c7412d186580b52" => :el_capitan
+    sha256 "5f7582a22c4d793fec706a433c38b80b1efcba4a5dbe780c84af22d8de790793" => :yosemite
   end
 
   depends_on "autoconf" => :build
