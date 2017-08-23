@@ -5,6 +5,13 @@ class Kplex < Formula
   sha256 "a2a3e48971b7154b2769c30e7943ed8370ee5f359c66bcba11b88b87fa2b1b35"
   head "https://github.com/stripydog/kplex.git", :branch => "develop"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "164e463f1b2844ba61188a8298386010759625eb27e68a4e5f8f9b31844fe3c3" => :sierra
+    sha256 "19044dbed211e7a3b2163f3137497f5a16c350a0c51387aaec2e57a11d0f4ce9" => :el_capitan
+    sha256 "a3d07b5fef848bb6a9f101f0485ec626dab0d62e371aaaa4f5690ebd2c646b3e" => :yosemite
+  end
+
   def install
     # kplex's make install target tries chowning and chmodding the binary,
     # so just make and then copy the binary into place ourselves.
