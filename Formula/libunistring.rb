@@ -7,9 +7,10 @@ class Libunistring < Formula
 
   bottle do
     cellar :any
-    sha256 "d82c6b7c72707aa04eb00bd3e6a4a995ef830b41b02271111ee6006585eaca80" => :sierra
-    sha256 "c80c64fdd7d05bf0e387b3286238e1740e7989098ba6bde403151a1c14d57812" => :el_capitan
-    sha256 "e2143b25bf7bdc85ddb00b065cf1f72c665d77a6737563cd81a88420bc72e51f" => :yosemite
+    rebuild 1
+    sha256 "5ceacc53e981ee2572b6c0e569b94076db1a4397f199bb6255cee0d4db3b0e4a" => :sierra
+    sha256 "db9c34a01a49a2a84f6bb2ed90b50272f3fd2728997bfe41f01bf7d79e67dafc" => :el_capitan
+    sha256 "0c09ce3bf7341a0a2c4f20df7b9d4ee0891726e828d22efe3ac7ff3ce09affff" => :yosemite
   end
 
   # Fix crash from usage of %n in dynamic format strings on High Sierra
