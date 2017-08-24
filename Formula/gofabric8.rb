@@ -19,7 +19,6 @@ class Gofabric8 < Formula
     dir.install buildpath.children
 
     cd dir do
-      system "make", "templates"
       system "make", "install", "REV=homebrew"
       prefix.install_metafiles
     end
