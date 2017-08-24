@@ -6,11 +6,10 @@ class Pla < Formula
 
   bottle do
     cellar :any
-    sha256 "c6edebbefcf192ea4bcad704ca5b4c27157f77b4a47e3a993ac2a61e7165c13c" => :sierra
-    sha256 "3fd0d11d1bdfa24e93bf94cb854e28382307c291b25994c82a2a8c1a64ce5072" => :el_capitan
-    sha256 "308920e8bf8642826cd973eaa63e22f0fc3dec43a0152485d358ba575638291f" => :yosemite
-    sha256 "df4b500589672dc1c415866b7da4c678621858f48cbac2cab5765c2b4fb1857d" => :mavericks
-    sha256 "81969ccdf4fe754600e348d7aa34243ccf86d4ee4bcaf85b12fa5b5df99d9ec7" => :mountain_lion
+    rebuild 1
+    sha256 "c67cb283c41049d04ae84e7f3ea8b93bb8d0d9382862bc3a2aba71b3dfe42b10" => :sierra
+    sha256 "33c2fec742a5d53f879178cabeaa0f17ec856c64b24c086ef06a66b79b669be4" => :el_capitan
+    sha256 "228ffd735c2db2e08618fc8d544fd93fa31c1bd23cd815bd789020609d684619" => :yosemite
   end
 
   depends_on "cairo"
