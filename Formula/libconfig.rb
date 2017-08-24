@@ -5,11 +5,10 @@ class Libconfig < Formula
   sha256 "18739792eb463d73525d7aea9b0a48b14106fae1cfec09aedc668d8c1079adf1"
 
   bottle do
-    cellar :any
-    sha256 "76c392efe1620331e9840eb426d9551c15f0c1f5b3db6bd255f7a6f7d28a70ec" => :sierra
-    sha256 "b761558d36680478ea69e888a35bb64df066a561f9534e9b893b26e07a4062e4" => :el_capitan
-    sha256 "da3783f62333e9f65b235c7359de96264476e7bb7a0e472f7f81d288cbd059ec" => :yosemite
-    sha256 "dfb06c8602d8cb3a81a0d63127fc45c112bbdd494772f5ce50715f06383d596d" => :mavericks
+    rebuild 1
+    sha256 "a423e68bcc65d89d22401074f729f59b098b4906436eaeef272f627743c17c29" => :sierra
+    sha256 "6da05c98d1a476ee9d7b2c7db8d6238383cb717c42ba4ae26efa1a130d8d10ce" => :el_capitan
+    sha256 "0d770abb77338014f1986c56b7bf6b0f4f735b3a3d95992f8f2226f605c81fc7" => :yosemite
   end
 
   head do
