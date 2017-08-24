@@ -5,9 +5,10 @@ class ProtobufC < Formula
   sha256 "5dc9ad7a9b889cf7c8ff6bf72215f1874a90260f60ad4f88acf21bb15d2752a1"
 
   bottle do
-    sha256 "e5f44ef7b504b7744ec4bc51f194e49861885cf0c0278f16386d216c80390ef5" => :sierra
-    sha256 "c3484962cab3d35bad7632379958566cad1318e7a03180950852089227316372" => :el_capitan
-    sha256 "b747524137691a433e44fb7ab5015cdb73425c70e5fd07be2d40b9601abfd6d4" => :yosemite
+    rebuild 1
+    sha256 "979c8e9d361123eeaebc9b0cb299c0ca90795296a4018e9dd2e38bb8e73f41fb" => :sierra
+    sha256 "532b2c41c9383b01e39b1134d487da5d1460d71be250eb21140cc72dfacf02c5" => :el_capitan
+    sha256 "b025397e646946522b0e71d2fb9e3e8482660f2631282b922a2be2693027947b" => :yosemite
   end
 
   depends_on "pkg-config" => :build
