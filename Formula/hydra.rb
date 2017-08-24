@@ -7,9 +7,10 @@ class Hydra < Formula
 
   bottle do
     cellar :any
-    sha256 "6621e3262ff70cfe2c9521c912a4a904102598d89d656f995816067a30a8242e" => :sierra
-    sha256 "293aecd98616776d46ed947a98a3becf5b4ffe33dbfa4731d82c3db47088d1bb" => :el_capitan
-    sha256 "6bb7064cfde7148b94481738631e961cbec0d2339dbfc2f75aae076b617d7baa" => :yosemite
+    rebuild 1
+    sha256 "2ff1bf196f5f50a7f8cc740b63c2bb9c8d82317e33dccf6e333161490171bfdc" => :sierra
+    sha256 "3e0d8fca41f9ce585a86493779b6045d72ed82c9332dc4aeac8de9035495c5e5" => :el_capitan
+    sha256 "fc9ad4feb711ad42e92d69a09142cc5fb6e4e561424b596447558e666a7894bf" => :yosemite
   end
 
   depends_on "pkg-config" => :build
