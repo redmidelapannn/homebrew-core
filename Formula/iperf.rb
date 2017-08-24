@@ -6,11 +6,10 @@ class Iperf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "441219fd5a227aa8df41c61067d9ae20bb268c48bbdcdad5bce8deb5f32a45fe" => :sierra
-    sha256 "4fabcfbc462ea67189847e6faba598a5952bd155e292696cfd39f4d709f926a2" => :el_capitan
-    sha256 "37e46ed0ee35a3f0957d847ce4afc871c352108279f8c001c7879282a8706495" => :yosemite
-    sha256 "67d2c2cef38fc34704f379a0dcf7d32d0b1bd5d30cd44f0533a6bd55f275bb8a" => :mavericks
+    rebuild 2
+    sha256 "4e0f7ce2ca2bc1ddb7c107f8887f34cc1ec1f2969a39dcf235f50c3e614efba2" => :sierra
+    sha256 "dca5a57f66385b36df9e4b3ff72b55e0504e36c13ce8e34901e13fb0a6f7b494" => :el_capitan
+    sha256 "d49f47f78a1b5f54841f7070101481e8a45ac88afe051b08112953dcf861005a" => :yosemite
   end
 
   def install
