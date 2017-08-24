@@ -6,10 +6,10 @@ class Systemc < Formula
 
   bottle do
     cellar :any
-    sha256 "8859b4ceae769af2d8d5b00e8f40df1165df99b583039647501103b2032b2eb3" => :sierra
-    sha256 "3228efad334a8e66478c85245205e3b2d9f45fd227da07ac35aa8a9cca43565e" => :el_capitan
-    sha256 "6f97dab7564f10fe17f43289576e4ae8a2c748bbb907538d04e79e0640744ac6" => :yosemite
-    sha256 "a63276361d0399c899b61d068bf3fe92aab9882b218b749a6520920ae4c5e56b" => :mavericks
+    rebuild 1
+    sha256 "dc711ee0e53b9ee4c3aadadaaec38489aa347a21a73e0a4471454f82252c420e" => :sierra
+    sha256 "eca918ca9eec3f1cbbae221f2b5ea15813eb39c8ed5757f7822115c6f3506bfc" => :el_capitan
+    sha256 "9f9d8d245286b83941c4b5fc9ef8b339c37e8be6e1c71b40d7991b007d233a37" => :yosemite
   end
 
   def install
