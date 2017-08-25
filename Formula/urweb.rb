@@ -35,16 +35,16 @@ class Urweb < Formula
 
   test do
     (testpath/"hello.ur").write <<-EOS.undent
-    fun target () = return <xml><body>
-      Welcome!
-    </body></xml>
+      fun target () = return <xml><body>
+        Welcome!
+      </body></xml>
 
-    fun main () = return <xml><body>
-      <a link={target ()}>Go there</a>
-    </body></xml>
+      fun main () = return <xml><body>
+        <a link={target ()}>Go there</a>
+      </body></xml>
     EOS
     (testpath/"hello.urs").write <<-EOS.undent
-    val main : unit -> transaction page
+      val main : unit -> transaction page
     EOS
     (testpath/"hello.urp").write "hello"
     system "#{bin}/urweb", "hello"
