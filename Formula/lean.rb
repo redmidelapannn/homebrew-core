@@ -7,14 +7,13 @@ class Lean < Formula
 
   depends_on "cmake" => :build
   depends_on "gmp"
-  depends_on "jemalloc" => :recommended
-  depends_on "gperftools" => :optional
+  depends_on "jemalloc"
 
   def install
-    mkdir_p "build/release"
-    cd "build/release"
-    system "cmake", "../../src", *std_cmake_args
-    system "make", "install"
+    mkdir "build" do
+      system "cmake", "../src", *std_cmake_args
+      system "make", "install"
+    end
   end
 
   test do
