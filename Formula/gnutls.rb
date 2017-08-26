@@ -6,9 +6,10 @@ class Gnutls < Formula
   sha256 "046081108b8b1fe455a13a4c5a4eaa0368e185b678f1670fe09a11a2d7ecfad5"
 
   bottle do
-    sha256 "80b734325c3829c83067eee6d97adefb06480588be402e4e9f73109ea66f9d2e" => :sierra
-    sha256 "6a700e60e886a36fd4f1a10dab6dd0a400677a7ff2f42b967974cf262e28d0a7" => :el_capitan
-    sha256 "4a1b43d75b7a0d13ad5ab35429453bd31585170de79f9d9c945841382506d6d7" => :yosemite
+    rebuild 1
+    sha256 "4db42c71c536267a7f927839534def3b2515c83cc2dcdc86df44eec17fdbc677" => :sierra
+    sha256 "904065fb3ace9bdc435e2be7ede243036534c362b6fd37aadd9db5d16f8558fd" => :el_capitan
+    sha256 "3122a6b045dfa1e67fb7a9f0b31873da2408d45c8241da80a1a3e97f769fc431" => :yosemite
   end
 
   devel do
