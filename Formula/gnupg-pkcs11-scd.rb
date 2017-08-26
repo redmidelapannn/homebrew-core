@@ -21,22 +21,23 @@ class GnupgPkcs11Scd < Formula
   depends_on "pkcs11-helper"
 
   patch do
-    url "https://patch-diff.githubusercontent.com/raw/alonbl/gnupg-pkcs11-scd/pull/9.patch?full_index=1"
-    sha256 "74040b49333dcade4ba3a079f426a04fcc569e33f08aa13041738eb44191f644"
+    url "https://github.com/alonbl/gnupg-pkcs11-scd/pull/9.patch?full_index=1"
+    sha256 "d4a2d37e9d54eefd69244422ff8bfffc98b43816a2e24ea8b59b8cb1b04d7195"
   end
 
   def install
-    ENV.deparallelize
     system "autoreconf", "-fiv"
     system "./configure", "--disable-dependency-tracking",
                           "--with-libgpg-error-prefix=#{Formula["libgpg-error"].opt_prefix}",
                           "--with-libassuan-prefix=#{Formula["libassuan"].opt_prefix}",
                           "--with-libgcrypt-prefix=#{Formula["libgcrypt"].opt_prefix}",
                           "--prefix=#{prefix}"
+    system "make"
+    system "make", "check"
     system "make", "install"
   end
 
   test do
-    system "#{bin}/gnupg-pkcs11-scd --help > /dev/null ; [ $? -eq 1 ]"
+    system "#{bin}/gnupg-pkcs11-scd", "--help"
   end
 end
