@@ -11,13 +11,23 @@ class GnupgPkcs11Scd < Formula
     sha256 "6bf4094eb3e6fc940aecc773813d5ae990e6e61eec937044724fb293f7185cc2" => :yosemite
   end
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "libgpg-error"
   depends_on "libassuan"
   depends_on "libgcrypt"
   depends_on "pkcs11-helper"
 
+  patch do
+    url "https://patch-diff.githubusercontent.com/raw/alonbl/gnupg-pkcs11-scd/pull/9.patch?full_index=1"
+    sha256 "74040b49333dcade4ba3a079f426a04fcc569e33f08aa13041738eb44191f644"
+  end
+
   def install
+    ENV.deparallelize
+    system "autoreconf", "-fiv"
     system "./configure", "--disable-dependency-tracking",
                           "--with-libgpg-error-prefix=#{Formula["libgpg-error"].opt_prefix}",
                           "--with-libassuan-prefix=#{Formula["libassuan"].opt_prefix}",
