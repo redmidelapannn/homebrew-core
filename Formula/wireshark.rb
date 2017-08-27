@@ -32,6 +32,10 @@ class Wireshark < Formula
   depends_on "gtk+3" => :optional
   depends_on "gtk+" => :optional
   depends_on "libssh" => :optional
+  depends_on "nghttp2" => :optional
+  depends_on "lz4" => :optional
+  depends_on "snappy" => :optional
+  depends_on "spandsp" => :optional
   depends_on "gnome-icon-theme" if build.with? "gtk+3"
 
   def install
@@ -64,6 +68,10 @@ class Wireshark < Formula
     args << "-DENABLE_CARES=" + (build.with?("c-ares") ? "ON" : "OFF")
     args << "-DENABLE_SMI=" + (build.with?("libsmi") ? "ON" : "OFF")
     args << "-DENABLE_LUA=" + (build.with?("lua") ? "ON" : "OFF")
+    args << "-DENABLE_NGHTTP2=" + (build.with?("nghttp2") ? "ON" : "OFF")
+    args << "-DENABLE_LZ4=" + (build.with?("lz4") ? "ON" : "OFF")
+    args << "-DENABLE_SNAPPY=" + (build.with?("snappy") ? "ON" : "OFF")
+    args << "-DENABLE_SPANDSP=" + (build.with?("spandsp") ? "ON" : "OFF")
 
     system "cmake", *args
     system "make"
