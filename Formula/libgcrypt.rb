@@ -6,9 +6,7 @@ class Libgcrypt < Formula
 
   bottle do
     cellar :any
-    sha256 "f05ef0b1309ebab4e9606ed0b237ba3b262cfa70108d17df4882424f15c221d4" => :sierra
-    sha256 "13297e186d6cfab8d90edb52f69d4f4ea732464d6d5d039829243b3c5ed60f19" => :el_capitan
-    sha256 "8abd405da76c3f3361c529721a48f4ee1d75884fad8699526833e6b6d85fe3dd" => :yosemite
+    sha256 "7f7e40f277b864cefc2fceacd13266d1ef5ee9405caab821d883c1e3d09e8e0a" => :yosemite
   end
 
   depends_on "libgpg-error"
