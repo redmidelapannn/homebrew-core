@@ -31,6 +31,7 @@ class Wireshark < Formula
   depends_on "qt" => :optional
   depends_on "gtk+3" => :optional
   depends_on "gtk+" => :optional
+  depends_on "libssh" => :optional
   depends_on "gnome-icon-theme" if build.with? "gtk+3"
 
   def install
@@ -55,6 +56,9 @@ class Wireshark < Formula
       args << "-DBUILD_wireshark_gtk=OFF"
       args << "-DENABLE_PORTAUDIO=OFF"
     end
+
+    args << "-DBUILD_sshdump=" + (build.with?("libssh") ? "ON" : "OFF")
+    args << "-DBUILD_ciscodump=" + (build.with?("libssh") ? "ON" : "OFF")
 
     args << "-DENABLE_GEOIP=" + (build.with?("geoip") ? "ON" : "OFF")
     args << "-DENABLE_CARES=" + (build.with?("c-ares") ? "ON" : "OFF")
