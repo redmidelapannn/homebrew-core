@@ -8,6 +8,13 @@ class Kubeval < Formula
       :revision => "4406f51d632038699ec49496aef233a7d7e4bffc"
   head "https://github.com/garethr/kubeval.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "57520c81101852211cb70462a5da4f05d7a4ff1aa0fd7bd42ef1485d7af536bb" => :sierra
+    sha256 "46e316738bb37a3288d261b585fa5d4423f934610d4586fcc10a0a2c4050b5b5" => :el_capitan
+    sha256 "f49033acf5cc0675e6bb2daa60d0ccbe71de980693f2a7845ce9acce230d44cb" => :yosemite
+  end
+
   depends_on "glide" => :build
   depends_on "go" => :build
 
