@@ -19,12 +19,10 @@ class Wireshark < Formula
   option "with-qt", "Build the wireshark command with Qt (can be used with or without either GTK option)"
   option "with-headers", "Install Wireshark library headers for plug-in development"
 
-  depends_on "pkg-config" => :build
   depends_on "cmake" => :build
   depends_on "glib"
   depends_on "gnutls"
   depends_on "libgcrypt"
-  depends_on "dbus"
   depends_on "geoip" => :recommended
   depends_on "c-ares" => :recommended
   depends_on "libsmi" => :optional
@@ -37,7 +35,7 @@ class Wireshark < Formula
 
   def install
     args = std_cmake_args
-    args << "-DENABLE_GNUTLS=ON" << "-DENABLE_GCRYPT=ON"
+    args << "-DENABLE_GNUTLS=ON"
 
     if build.with? "qt"
       args << "-DBUILD_wireshark=ON"
@@ -46,6 +44,7 @@ class Wireshark < Formula
     else
       args << "-DBUILD_wireshark=OFF"
       args << "-DENABLE_APPLICATION_BUNDLE=OFF"
+      args << "-DENABLE_QT5=OFF"
     end
 
     if build.with?("gtk+3") || build.with?("gtk+")
@@ -57,33 +56,13 @@ class Wireshark < Formula
       args << "-DENABLE_PORTAUDIO=OFF"
     end
 
-    if build.with? "geoip"
-      args << "-DENABLE_GEOIP=ON"
-    else
-      args << "-DENABLE_GEOIP=OFF"
-    end
-
-    if build.with? "c-ares"
-      args << "-DENABLE_CARES=ON"
-    else
-      args << "-DENABLE_CARES=OFF"
-    end
-
-    if build.with? "libsmi"
-      args << "-DENABLE_SMI=ON"
-    else
-      args << "-DENABLE_SMI=OFF"
-    end
-
-    if build.with? "lua"
-      args << "-DENABLE_LUA=ON"
-    else
-      args << "-DENABLE_LUA=OFF"
-    end
+    args << "-DENABLE_GEOIP=" + (build.with?("geoip") ? "ON" : "OFF")
+    args << "-DENABLE_CARES=" + (build.with?("c-ares") ? "ON" : "OFF")
+    args << "-DENABLE_SMI=" + (build.with?("libsmi") ? "ON" : "OFF")
+    args << "-DENABLE_LUA=" + (build.with?("lua") ? "ON" : "OFF")
 
     system "cmake", *args
     system "make"
-    ENV.deparallelize # parallel install fails
     system "make", "install"
 
     if build.with? "qt"
