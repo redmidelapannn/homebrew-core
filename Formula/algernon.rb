@@ -36,7 +36,7 @@ class Algernon < Formula
         exec "#{bin}/algernon", "-s", "-q", "--httponly", "--boltdb", "my.db",
                                 "--addr", ":45678"
       end
-      sleep(1)
+      sleep 5
       output = shell_output("curl -sIm3 -o- http://localhost:45678")
       assert_match /200 OK.*Server: Algernon/m, output
     ensure
