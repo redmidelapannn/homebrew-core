@@ -16,7 +16,7 @@ class Wireshark < Formula
 
   option "with-gtk+3", "Build the wireshark command with gtk+3"
   option "with-gtk+", "Build the wireshark command with gtk+"
-  option "with-qt", "Build the wireshark command with Qt (can be used with or without either GTK option)"
+  option "without-qt", "Disable the Wireshark Qt GUI"
   option "with-headers", "Install Wireshark library headers for plug-in development"
 
   depends_on "cmake" => :build
@@ -28,7 +28,7 @@ class Wireshark < Formula
   depends_on "libsmi" => :optional
   depends_on "lua" => :optional
   depends_on "portaudio" => :optional
-  depends_on "qt" => :optional
+  depends_on "qt" => :recommended
   depends_on "gtk+3" => :optional
   depends_on "gtk+" => :optional
   depends_on "libssh" => :optional
@@ -71,7 +71,7 @@ class Wireshark < Formula
 
     if build.with? "qt"
       prefix.install bin/"Wireshark.app"
-      bin.install_symlink prefix/"Wireshark.app/Contents/MacOS/Wireshark"
+      bin.install_symlink prefix/"Wireshark.app/Contents/MacOS/Wireshark" => "wireshark"
     end
 
     if build.with? "headers"
