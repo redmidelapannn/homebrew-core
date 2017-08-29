@@ -6,9 +6,10 @@ class Pillow < Formula
   revision 1
 
   bottle do
-    sha256 "2efa5b2de0de085f8d3baeffec23f91fdb871910afcca9f35a676b4f913637f4" => :sierra
-    sha256 "24ef23461bc60cce0268f4c00cb3748cfcad5e21394785c5d2b437bb4f188872" => :el_capitan
-    sha256 "db7d8da114fef04db91e7dec7b468729ea284851b9ed1e42972d662c89bb4d68" => :yosemite
+    rebuild 1
+    sha256 "dfe14f94ccdf002da35e92c060f382628cc655bb8cb4c0986515b0bf3574964f" => :sierra
+    sha256 "62049f3b063457e2c5d54f27741e2f3528e34bf473af0705c5c7f9b94a1a5abb" => :el_capitan
+    sha256 "db62012122c4125952521481d99ca10355217fa4676bdf54402d6d60b847481d" => :yosemite
   end
 
   option "without-python", "Build without python2 support"
