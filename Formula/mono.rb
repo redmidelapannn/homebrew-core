@@ -32,7 +32,7 @@ class Mono < Formula
 
   resource "msbuild" do
     url "https://github.com/mono/msbuild.git",
-        :tag => "d15.3"
+        :branch => "d15.3"
       #:revision => "5633e38dd86d5ca588a7a3b9c8e961b5f7bdcf62"
   end
 
