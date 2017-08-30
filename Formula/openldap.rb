@@ -6,9 +6,10 @@ class Openldap < Formula
   sha256 "cdd6cffdebcd95161a73305ec13fc7a78e9707b46ca9f84fb897cd5626df3824"
 
   bottle do
-    sha256 "809a58277010241b76cb9474b303d55540ae71c59ef401ece495f6b5ab57949c" => :sierra
-    sha256 "645727db7cc901fa3493c66c06e55ecce778846961874deff6b1a4687aa04b35" => :el_capitan
-    sha256 "ea5d0a84b570b85c6711a5c99dd12f2ba6811c7b3515ddd1b1d1761490a8fa81" => :yosemite
+    rebuild 1
+    sha256 "03e9578b166a1e0ba7bce74fca931c24a97461ae54cf3d6de4b9f5ac6741fb16" => :sierra
+    sha256 "0b31f81ce8a1394427a490a394c8457d77405ec5aadbb2d8ee1d1597c8713e8a" => :el_capitan
+    sha256 "482950de2d5e87230d85dc7fa78e4be3bd2d1d70430645a01421170c72e8920d" => :yosemite
   end
 
   keg_only :provided_by_osx
