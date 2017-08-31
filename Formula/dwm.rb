@@ -7,9 +7,10 @@ class Dwm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ab241356f8f38fb9e1ff6bba2dfbb07b8b82a5be0eee7fe75ba128548034115a" => :sierra
-    sha256 "1f900b061eb8c36118c85c494aeb634da01d5dd7e3d6e58f9a1d8d5c53da2208" => :el_capitan
-    sha256 "0e8c7d9f991b3269569e0d990dbf9fc56e89f9a6274a1abd72d41248253afca8" => :yosemite
+    rebuild 1
+    sha256 "ffdfc837189fa59c0087c1c3c9eb5914ecf258f4b68943f90ba3a17cea88bbbd" => :sierra
+    sha256 "1fd177390281018b874b3adb348307b58c80519ad21ca0f54973608d6e4611eb" => :el_capitan
+    sha256 "0cfba9b0ef84f3f412cf3d5ffd820f5296360e6d1b0bfc9c2bb1325c04ee9583" => :yosemite
   end
 
   depends_on :x11
