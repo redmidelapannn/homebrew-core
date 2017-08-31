@@ -8,9 +8,10 @@ class Dmenu < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2ef9de864fabaaae5e7214658d0bae190e0e895353fccbb5cdebc2a94f22306f" => :sierra
-    sha256 "0c2038a9f53d43a393d6108f49465fb095f2854d4f31acb777645018d84a6cd8" => :el_capitan
-    sha256 "75598d67eac5f745e325ae0f0f5eed063873f92bbd64c02126cf2ea95682c2c3" => :yosemite
+    rebuild 1
+    sha256 "13bde2c9bb2ab39d5c0c80065e2716402f5ee9a5850abc4e4cf9259abc8a8ae6" => :sierra
+    sha256 "6308a752ea0d36309127f90aceb24a7a1d93e0138d3429e6986f031318be2a22" => :el_capitan
+    sha256 "a793c5c3fd96c5ae31bf54287bfb008073bd48584223f870ad135a3fac8c9dc5" => :yosemite
   end
 
   depends_on :x11
