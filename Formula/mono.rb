@@ -58,6 +58,19 @@ class Mono < Formula
     libexec.install bin/"mono-gdb.py", bin/"mono-sgen-gdb.py"
 
     resource("msbuild").stage do
+      patch_str = <<-EOM
+      tar -xf $__DOTNET_PATH/dotnet.tar
+
+      __SHARED_DIR="shared/Microsoft.NETCore.App/1.0.1"
+      __OPENSSL_PREFIX="/usr/local/opt/openssl/lib"
+      mkdir -p __SHARED_DIR
+      cp $__OPENSSL_PREFIX/libssl.1.0.0.dylib $__SHARED_DIR
+      cp $__OPENSSL_PREFIX/libcrypto.1.0.0.dylib $__SHARED_DIR
+      EOM
+      inreplace "init-tools.sh", "tar -xf $__DOTNET_PATH/dotnet.tar", patch_str
+      #inreplace "init-tools.sh" do |s|
+      #  s.gsub! "tar -xf $__DOTNET_PATH/dotnet.tar", patch_str
+      #end
       ENV.prepend_path "PATH", bin
       ENV.prepend_path "PKG_CONFIG_PATH", lib/"pkgconfig"
       system "./cibuild.sh", "--scope", "Compile", "--target", "Mono", "--config", "Release"
