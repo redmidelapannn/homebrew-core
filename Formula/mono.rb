@@ -33,7 +33,6 @@ class Mono < Formula
   resource "msbuild" do
     url "https://github.com/mono/msbuild.git",
         :branch => "d15.3"
-      #:revision => "5633e38dd86d5ca588a7a3b9c8e961b5f7bdcf62"
   end
 
   resource "fsharp" do
@@ -62,7 +61,7 @@ class Mono < Formula
       ENV.prepend_path "PATH", bin
       ENV.prepend_path "PKG_CONFIG_PATH", lib/"pkgconfig"
       system "./cibuild.sh", "--scope", "Compile", "--target", "Mono", "--config", "Release"
-      system "./install-mono-prefix.sh", "#{prefix}"
+      system "./install-mono-prefix.sh", prefix.to_s
     end
 
     # Now build and install fsharp as well
