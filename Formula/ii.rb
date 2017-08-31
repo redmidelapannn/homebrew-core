@@ -7,11 +7,10 @@ class Ii < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "1880d429b9a1cea13b1dcd194a32887e06721bc781ddc86ce7a9f67e580c00a4" => :sierra
-    sha256 "94552db0ec06e1266deac0ec19e5d67de8d1bcb9028aac7230e54c60d89f6d82" => :el_capitan
-    sha256 "80269185a9b95dbe935859d056ba4f1510210f639a27aff6a5bfc2e847d7d985" => :yosemite
-    sha256 "5be7e1ba2e3dddf0d8700366c2ebee273c6c570fc4d6e20655d0bd9219478e9b" => :mavericks
+    rebuild 2
+    sha256 "298b082d44429789da8d6a2bdfbca88c2bfad41a1c177b536da6e3b98a12c668" => :sierra
+    sha256 "61a12416b83a9be2a393b7c45c0b3ca581ebe6800dd1ec0c151f14268bdba089" => :el_capitan
+    sha256 "44cd54e3d8e5818a06e18a67bc672ead34e63f6796979f45125bd9706ba492c9" => :yosemite
   end
 
   def install
