@@ -69,9 +69,9 @@ class Mono < Formula
       cp $__OPENSSL_PREFIX/libcrypto.1.0.0.dylib $__SHARED_DIR
       EOM
       inreplace "init-tools.sh", "tar -xf $__DOTNET_PATH/dotnet.tar", patch_str
-      #inreplace "init-tools.sh" do |s|
-      #  s.gsub! "tar -xf $__DOTNET_PATH/dotnet.tar", patch_str
-      #end
+      # inreplace "init-tools.sh" do |s|
+      #   s.gsub! "tar -xf $__DOTNET_PATH/dotnet.tar", patch_str
+      # end
       ENV.prepend_path "PATH", bin
       ENV.prepend_path "PKG_CONFIG_PATH", lib/"pkgconfig"
       system "./cibuild.sh", "--scope", "Compile", "--target", "Mono", "--config", "Release"
