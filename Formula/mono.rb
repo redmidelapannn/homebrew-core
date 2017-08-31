@@ -27,6 +27,7 @@ class Mono < Formula
   depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
   depends_on "cmake" => :build
+  depends_on "openssl" => :build
 
   conflicts_with "xsd", :because => "both install `xsd` binaries"
 
