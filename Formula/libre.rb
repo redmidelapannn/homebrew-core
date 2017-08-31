@@ -7,9 +7,9 @@ class Libre < Formula
 
   bottle do
     cellar :any
-    sha256 "513b4ceb7dd3c50cebe436fe57eae549e3af5e97f074231b337dac4075d8f40d" => :sierra
-    sha256 "948b614c46b7ee5943f93412e46efdcb15497349d61398b1720ee4351b8df4ed" => :el_capitan
-    sha256 "cecbe216cbb73cb8f6b0cadf4198eb2f3ad296e0e5ced9acb51c24cd0efc8f71" => :yosemite
+    rebuild 1
+    sha256 "c5b867cf9a46d763235cdabba3356232c073985861f7d51b04332e3c39f43035" => :sierra
+    sha256 "7266dbea7c64bc01f07d888c41b2f458a56dd94ab35c4731713cde12e559c985" => :el_capitan
   end
 
   depends_on "openssl"
