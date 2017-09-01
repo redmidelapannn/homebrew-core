@@ -6,9 +6,10 @@ class Fio < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e91decdaad19c6816f4a7bca87cdf6c2e44dd53e22378f917390e3a43d60ff7d" => :sierra
-    sha256 "dea747683bfbb0f99a03f6bd8c30e4f9c02b7811e01ce2c96d4e41e2983aeb37" => :el_capitan
-    sha256 "96da6492cf6f0f5e391ac6d1928df6cecf5757dbc3d7cc080f6f19eb7b66c241" => :yosemite
+    rebuild 1
+    sha256 "66f4d47940f46e05ecd79ff4e6fe00bf2bd8253ae1aca5469f44bd94187a3270" => :sierra
+    sha256 "f2c98c58c92100bcf7c10d723cbd2a30a0f66b744e15993e8bb91f0f7a4c5cd0" => :el_capitan
+    sha256 "0c84acca8ccf637e00e3fab355ddd065f886ab106cd5e2880734b9120cfda948" => :yosemite
   end
 
   def install
