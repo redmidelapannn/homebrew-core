@@ -6,9 +6,10 @@ class Bochs < Formula
   revision 1
 
   bottle do
-    sha256 "8dd191ff5085b435ff26cd53026d8afada7fa9e18d84a985da2a6a9d6b179a64" => :sierra
-    sha256 "395ce5d3047ee0b98c8eb2130a8661d319a0926c19e7ebf6b31fc01dee0e8edf" => :el_capitan
-    sha256 "b32844f457ead67e1a656a1a6d05c0a67d56cc1b68d0ffb60f86d3c8ec0f50cf" => :yosemite
+    rebuild 1
+    sha256 "e49d9bf3752ddc49d964d9606a4ca3d6c19735fee3c91b2dee9feeb5bf367887" => :sierra
+    sha256 "362b4dce96c03666ae0fdd173e487f83a3b3e54268c84967d44bf6dbd4ee149a" => :el_capitan
+    sha256 "c13e608c9624a8a1b74cc7d2dc900cbc6de593ead830f7d38b86fb6334ec834e" => :yosemite
   end
 
   option "with-gdb-stub", "Enable GDB Stub"
