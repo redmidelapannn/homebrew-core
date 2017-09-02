@@ -7,9 +7,10 @@ class Xpdf < Formula
   revision 1
 
   bottle do
-    sha256 "a1abda067ab10b0e3a79ab9a93695ca2ad5fc674fff46a686ff11df47a076119" => :sierra
-    sha256 "e99ea80af29dd4dc4b3898ff4fe6dad14e904181b274be785da16103e4ec425f" => :el_capitan
-    sha256 "3bd281f7bbc232ec0e353e3a54955383e13897fe563dfcadc4057e625803a6fb" => :yosemite
+    rebuild 1
+    sha256 "6ec9ed21503d317125752ac75ca45abe2d8cfeb2155785c0994ae51259d87eff" => :sierra
+    sha256 "0310eb5ea4ad944ecb151f4a40fa4f5887d16a8befff14437a40f654e45f91b7" => :el_capitan
+    sha256 "e0db810a597f5d35a5d26741a7beafb9d8263eddac44bc3c9532281a55514c8a" => :yosemite
   end
 
   depends_on "openmotif"
