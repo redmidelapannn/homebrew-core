@@ -5,9 +5,10 @@ class Xpdf < Formula
   sha256 "ff3d92c42166e35b1ba6aec9b5f0adffb5fc05a3eb95dc49505b6e344e4216d6"
 
   bottle do
-    sha256 "a1abda067ab10b0e3a79ab9a93695ca2ad5fc674fff46a686ff11df47a076119" => :sierra
-    sha256 "e99ea80af29dd4dc4b3898ff4fe6dad14e904181b274be785da16103e4ec425f" => :el_capitan
-    sha256 "3bd281f7bbc232ec0e353e3a54955383e13897fe563dfcadc4057e625803a6fb" => :yosemite
+    cellar :any
+    sha256 "9866c3107e953217a15db98fd4924f0b029e83c87b99f11ff18473aa1e035fac" => :sierra
+    sha256 "bb30b06df6ac9d3ecbd1ae38f09073b61c43eae76e540e9073983ec86b7dad65" => :el_capitan
+    sha256 "667a6cf9d9c896f7ed357cfd57ac0bdf3d43420312dd57ed81dea72980391ca6" => :yosemite
   end
 
   depends_on "cmake" => :build
