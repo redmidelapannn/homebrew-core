@@ -6,9 +6,10 @@ class Watchman < Formula
   head "https://github.com/facebook/watchman.git"
 
   bottle do
-    sha256 "d42c5a991e4cddef004773474b3d28f3275113a6c1858d0ddaae274a11bbeb33" => :sierra
-    sha256 "83db75e3e7b186521d4b910a49836ec53ec85b987b6b35d63bc32b7282209dc7" => :el_capitan
-    sha256 "da774a8464b5ddab2342d7d8ba0211220cd630d8099b2605bc977a4574dfee1e" => :yosemite
+    rebuild 1
+    sha256 "2d935fe37c8453066bc8bcf88e3e9979d9c2de97d750392aeb6d92eb68ac6573" => :sierra
+    sha256 "454e83b945d3fa63856f80bff34bad20fe64f9f2644a899eab63e44cc573c608" => :el_capitan
+    sha256 "c0910f6d47d0ed12c5f9d7ab68f4edf1d065f42a30ac8e83c57ae66fca56519d" => :yosemite
   end
 
   depends_on :macos => :yosemite # older versions don't support fstatat(2)
