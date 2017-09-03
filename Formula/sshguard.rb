@@ -8,10 +8,10 @@ class Sshguard < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "87d6c9a576f06394b76c57837e1fdd700a48a58a720a546acc013818eb341e79" => :sierra
-    sha256 "dc712e331dd208b919076b5c4317809f081a274460dde1c3fd3d0226463fe32f" => :el_capitan
-    sha256 "dd5cfdc92ff81e8dc725ed3e263e0e1358149a3298bb9803c39a50d045e17421" => :yosemite
+    rebuild 2
+    sha256 "4d8e5e10d59d5a938effafee2823c4bb902cc771752bb7b314313a3b53fa8b71" => :sierra
+    sha256 "836b4489e895da154694d8c6b84019ac997c104aab5e89121a885730bc887d0d" => :el_capitan
+    sha256 "b415c117d6d73a477fc5a9d7f43ef160dc7ac88171f433ed1f5183d7a921e4f8" => :yosemite
   end
 
   head do
