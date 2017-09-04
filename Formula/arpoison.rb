@@ -6,11 +6,9 @@ class Arpoison < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "2ed60cb186440c24eaf0c8e040acb89ba60cdd730c83f4c6793add25c80a67ca" => :sierra
-    sha256 "33e496f9d1ca384ad23c50a1868fc2682352176d1cf5b37472299a9e36dc7e6c" => :el_capitan
-    sha256 "9d902ac3611dd0422783aecb7d46f39dd0278f65f5cab1aa99490fb527de5e22" => :yosemite
-    sha256 "0737a954fa5f4d6794f7a373b90b5d2b2008a0bf7cdc4e2fd51266485e86b983" => :mavericks
+    sha256 "67511ad97eb3fd0ef6276af5e2502b25f7a7ef4c4cd0f89e5e5bf32c589129a4" => :sierra
+    sha256 "52ac8e7ea13b83ff250beeeea8026d6045aa3447e69285f56c733b7b6b68893c" => :el_capitan
+    sha256 "3f23e0e51ea21834fe099d1975c920f7a406c18848af6d259fc592b55340ce83" => :yosemite
   end
 
   depends_on "libnet"
