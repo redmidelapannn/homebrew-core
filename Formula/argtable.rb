@@ -7,10 +7,10 @@ class Argtable < Formula
 
   bottle do
     cellar :any
-    sha256 "9485d1e045ed40c0145eb867f9d24425ccedd53b4f0cb0ec949139b0c99507c7" => :sierra
-    sha256 "0a720e738557215bf1b58fa642ec2fc51971da38e98b987862fcd05cc54756f7" => :el_capitan
-    sha256 "9e9d1451712580f090f0078ec7774a0daeb1057be3b1762e3d8465264d969432" => :yosemite
-    sha256 "7081198c76023e34380d35682b7a4274a9faf98d3e3e3fa2a9fa801e0a320a8c" => :mavericks
+    rebuild 1
+    sha256 "daaf6febd3634d8bfc7183ecff055b447b47399d5139ae945a4999c275c384be" => :sierra
+    sha256 "3706836b6abca975a5f4d07248543c39e84b3afbcbac136eac812da6bb84ef5d" => :el_capitan
+    sha256 "ee5b16cc98b4518b72d8d3f6a25cf0a4e189eee76f8dcb2c23fb54d8254a3491" => :yosemite
   end
 
   def install
