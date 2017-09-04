@@ -8,9 +8,10 @@ class ParquetTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4759d5a7d777828b8fd59182b3436cef50933927d99b12fc55a0e8f5edaf8e62" => :sierra
-    sha256 "fcb4bd168264a7c7703443c1441e4bb24a1f6c0f161f96879b31cfb867091473" => :el_capitan
-    sha256 "92bd9e54d5e447504dc61b51520bcce62f325f9aee09e3aac580b15a0fc4734e" => :yosemite
+    rebuild 1
+    sha256 "c1d81ac9d76135091418a6ba5ec8985507b75a73d281de63febf17f056557545" => :sierra
+    sha256 "bc55fd467e44d74a97b47a16fee6cb93c02d42261208d26438a6274588d27ea5" => :el_capitan
+    sha256 "79fb80b3a2197e51c8a6f32c1a94d7d008e69c97451c029c00355ba2eb907938" => :yosemite
   end
 
   depends_on "maven" => :build
