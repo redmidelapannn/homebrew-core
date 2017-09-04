@@ -6,9 +6,10 @@ class Htmlcleaner < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "87838ab8f3acda2911416178fd1bdf11d37ac7d3b6e21007f6218d1ad7e7139b" => :sierra
-    sha256 "cc0afb1dd3c56cd78700138590142baa370480ff979ff757a4b5f7a18f66219c" => :el_capitan
-    sha256 "2082bbebc107e771ed502971cec401c9b23b5c977c2fcc9324cd54c28f78f5a8" => :yosemite
+    rebuild 1
+    sha256 "d2cbdddc13b57fbff068e7e18c6eaa8fa9b08f2fde47b8b8c4e8f9ac03467b7c" => :sierra
+    sha256 "c34a368e31f4bb6f4fd95b79059afcd7418d6cd818939efaa9bbb7d8b6ba1943" => :el_capitan
+    sha256 "4520b6862f9476df2ec82ecfaac0ea08f87538d83c4902bdd1a4bbbc841fc194" => :yosemite
   end
 
   depends_on "maven" => :build
