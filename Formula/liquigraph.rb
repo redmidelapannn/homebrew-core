@@ -7,9 +7,10 @@ class Liquigraph < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ee6482ffed0bc44bde7872809206eb94a7d2be36bf16458c3d25d699e82637ea" => :sierra
-    sha256 "b9977e94e803b3c9b5686e3a77707c3658142b78d7389c653117c88aa4afb560" => :el_capitan
-    sha256 "1414e187544b115f58805ecbb4ad4beb84f9620ef9b29c104c5ab2577b1de6e5" => :yosemite
+    rebuild 1
+    sha256 "e7f601e737e844635771964923316ee2f17ae446c96529b0b454ae67f630ee51" => :sierra
+    sha256 "27b9c2bf2e7d4bf15884a1065c0feb648be1bfc7a6e6f7000f32182a559b89f6" => :el_capitan
+    sha256 "050b4c538ca58e04da1a54351023e9f7a7d1dade73d4a33430c8f9bd46b21ab3" => :yosemite
   end
 
   depends_on "maven" => :build
