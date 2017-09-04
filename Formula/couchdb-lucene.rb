@@ -6,9 +6,10 @@ class CouchdbLucene < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e3cddc411b93a39bf753de4b26b256817b4288b2ea52f4631abb0f2050a1d98f" => :sierra
-    sha256 "850f5359429ce0ed64c852d52776aa5284221e2475889b5f2a8a72a3d0b10564" => :el_capitan
-    sha256 "6f0e7de6cfa7149edf58967d0dbd35f259d5a889ba5f36e9d00b9ae06e6efbbd" => :yosemite
+    rebuild 1
+    sha256 "121708ab19f34f956c2463034ab8796cefc19e9278303b24500f8b807d6a2a6e" => :sierra
+    sha256 "0ffd87c287eb95db30edea8692b95e465494a0cc74d903ed686b08f658d49736" => :el_capitan
+    sha256 "134c937d61f82655bb565304353ff5e14994bd3a9b7e8da2d9de7c441603422e" => :yosemite
   end
 
   depends_on "couchdb"
