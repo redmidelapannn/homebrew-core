@@ -6,9 +6,10 @@ class R < Formula
   revision 2
 
   bottle do
-    sha256 "9e142bd997897eae4cf785a2ffc712557237c10f191369f338b1b23f02c78954" => :sierra
-    sha256 "8b2cd74e219afb9477a4459aa7096190e0d19ac7f8ff02410026febcc897d749" => :el_capitan
-    sha256 "123be38bdb449655f0b66043af5c1b756f752004117b0cc31385b667600f4f38" => :yosemite
+    rebuild 1
+    sha256 "96cfdded81bd1cbed30b7106e21a922139d1514899cab3d78759dcb0f34c11aa" => :sierra
+    sha256 "3d2cac99005ac07aa2172d5c1e6a5ef48ae9a7dfbe94fd0a38f1f058104c0d65" => :el_capitan
+    sha256 "a13a765ed05e9b5cc3006242770a4bc1a762e995037f70cacac3565c8b532424" => :yosemite
   end
 
   depends_on "pkg-config" => :build
