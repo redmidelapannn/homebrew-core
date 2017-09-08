@@ -7,9 +7,10 @@ class Root < Formula
   head "http://root.cern.ch/git/root.git"
 
   bottle do
-    sha256 "670fb1844918af34669436dc9c2e503dfb6f7b43c1d959495fe73235f3eda8d0" => :sierra
-    sha256 "1c6406fb816573f8bf640ce13f1d74ff22df4aa4426139eaeba07abbfc63fc9f" => :el_capitan
-    sha256 "d4783e3fa16a01a570d58c545501524f826d9d6ad72be773010800b9695759b1" => :yosemite
+    rebuild 1
+    sha256 "88fe133f5b8a111c42c159bfe74c23bc6c0e01031e8996d18ffdeca90a7ddba3" => :sierra
+    sha256 "06277c8b0177e9d81c087ae00d27fb5c81d24df0e8e573edc92e3c891d9bdf5d" => :el_capitan
+    sha256 "4a3956105501a9d652956d8b69ddf7cbe925331f2ba1ac28de4d39565bbed2cb" => :yosemite
   end
 
   depends_on "cmake" => :build
