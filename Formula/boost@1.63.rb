@@ -4,6 +4,13 @@ class BoostAT163 < Formula
   url "https://downloads.sourceforge.net/project/boost/boost/1.63.0/boost_1_63_0.tar.bz2"
   sha256 "beae2529f759f6b3bf3f4969a19c2e9d6f0c503edcb2de4a61d1428519fcb3b0"
 
+  bottle do
+    cellar :any
+    sha256 "582857ccc2a24c7d5ce86543dea750b8d16f8c925ef742376cbe8a513772841b" => :sierra
+    sha256 "0acecbb30d776c6a57e18d8f6955ad4c4e6abb3df4db5f0265bcb5f773695df8" => :el_capitan
+    sha256 "778bb92ca68f4049a779173d04b96b3bde2abe641e03661eeb532b65bf9bacc0" => :yosemite
+  end
+
   keg_only :versioned_formula
 
   option "with-icu4c", "Build regexp engine with icu support"
