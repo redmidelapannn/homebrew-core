@@ -10,8 +10,8 @@ class Lean < Formula
   depends_on "jemalloc"
 
   def install
-    mkdir "build" do
-      system "cmake", "../src", *std_cmake_args
+    mkdir "src/build" do
+      system "cmake", "..", *std_cmake_args
       system "make", "install"
     end
   end
