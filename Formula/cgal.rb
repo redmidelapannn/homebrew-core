@@ -6,9 +6,8 @@ class Cgal < Formula
 
   bottle do
     cellar :any
-    sha256 "074e917036065d1fcb67dce5dd03e97015c12657460c391b3c20cb689e2b09a1" => :sierra
-    sha256 "9f103a1be97cbf9cc5b3086d72c735897fccb632b79df98b0f62310f41ff17ef" => :el_capitan
-    sha256 "861fcbdd2cea9fd8365e53e8ec7218f11c33b6b2fc1d0d732eeaa39c1b0343fd" => :yosemite
+    sha256 "3be28d966243789b5547e702a8df86c98641eeaea54b72a17422e32531aa0150" => :sierra
+    sha256 "fa1ecd8d3c53c34e9d595803e399d44583106758834e4dbe0968ad7c8b3113b8" => :el_capitan
   end
 
   option "with-qt", "Build ImageIO and Qt components of CGAL"
