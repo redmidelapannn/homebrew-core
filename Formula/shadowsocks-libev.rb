@@ -13,6 +13,7 @@ class ShadowsocksLibev < Formula
 
   depends_on "asciidoc" => :build
   depends_on "xmlto" => :build
+  depends_on "c-ares"
   depends_on "libev"
   depends_on "libsodium"
   depends_on "mbedtls"
