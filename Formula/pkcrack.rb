@@ -6,10 +6,9 @@ class Pkcrack < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "264358646b08985192cd06c9bc032c16296eb00198dd9852521e0cfdfe1703ef" => :sierra
-    sha256 "9b46e1c0097cc4024d4f5b182ac8fdbc27e3caec52874b19d570aba6f946fc10" => :el_capitan
-    sha256 "47f2ffa2e27f0dc5e6df45de7335e316a8ea83288153b274ae5d8e11c7157055" => :yosemite
+    rebuild 2
+    sha256 "534ca470868eb5c8ddba9d6cad0b32a2b61aa2ce24894bf845b54e8848450b34" => :sierra
+    sha256 "73fd9802d53d40ec28d4a8d520e77113e2c6d97116f0ffed825589a9e50d8c9d" => :el_capitan
   end
 
   conflicts_with "libextractor", :because => "both install `extract` binaries"
