@@ -7,9 +7,9 @@ class Libfreenect < Formula
 
   bottle do
     cellar :any
-    sha256 "5b15e3bc7e75c5916b236be3f4c42929302f47edc2d269e7a76131ea4fec1939" => :sierra
-    sha256 "46af9983bad90585eb9eafb10b08af0f5d4b27d57d392f4a327719ac4338fea8" => :el_capitan
-    sha256 "985526f21c7730bd63b213151fefec7a87f134a89c44dcfc0ee14abfcab31a62" => :yosemite
+    rebuild 1
+    sha256 "160c24385b53d8f9c463067f4c549daf964b808d1c59c728bee46af0e634cbb5" => :sierra
+    sha256 "b0d69ee2eda1b139d05324783a3cdace98bd0a4533cd6f15396a6f233517b48f" => :el_capitan
   end
 
   depends_on "cmake" => :build
