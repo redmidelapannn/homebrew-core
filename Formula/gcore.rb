@@ -8,9 +8,9 @@ class Gcore < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5fbccf36d0bd51cc4261859b7faf2cc15fe89244109b64abf83512ea73f3259f" => :sierra
-    sha256 "5c48b53869e00e0456d57bfa5adde594b5c5e46f3b0678434139765f5d8167ba" => :el_capitan
-    sha256 "e215d77d74b8c878a7d7449aada4817714b13024d6bfad78b2b700271e6218ec" => :yosemite
+    rebuild 1
+    sha256 "b8533fa1b02ab0ae18891e2f6affd16c99353fb79462ea3da9d862a682f25c98" => :sierra
+    sha256 "7e5b96be788624db7ed63fd5782f2f85e94d5485b92bbbc4403f1df5c8d53808" => :el_capitan
   end
 
   keg_only :provided_by_osx if MacOS.version >= :sierra
