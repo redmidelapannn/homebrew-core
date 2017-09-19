@@ -5,11 +5,9 @@ class Bsponmpi < Formula
   sha256 "bc90ca22155be9ff65aca4e964d8cd0bef5f0facef0a42bc1db8b9f822c92a90"
 
   bottle do
-    sha256 "010a408ccfab02979fc109296747caa43355c469a3eb7c21ab50c06689dfab13" => :high_sierra
-    sha256 "0586c2eeb116c81a76a154f3391a9cb711afd505cb96b5a180de27c0066e9c51" => :sierra
-    sha256 "5a5ab6a124590499808d601b0b7cdca8ba661b33540a0d09de76172d795fa28c" => :el_capitan
-    sha256 "327737da76860b7954ba14bf4abb90f4647432c065069bdc968ef5860a5ae7fe" => :yosemite
-    sha256 "9656ddf73df0162b8d35368c6db97df996343d83a03471866e461529dba5e424" => :mavericks
+    rebuild 1
+    sha256 "280057ce5a34a811ca7bec7b2a74b6e15f1c58df3fc85ec0419de8108c3203d7" => :sierra
+    sha256 "0af8d5353a48b6f35b1304bbd63e9572c9c908ea1b8041560476b17f6573d33b" => :el_capitan
   end
 
   depends_on "scons" => :build
