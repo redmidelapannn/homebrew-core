@@ -4,6 +4,12 @@ class SconsAT25 < Formula
   url "https://downloads.sourceforge.net/project/scons/scons/2.5.1/scons-2.5.1.tar.gz"
   sha256 "0b25218ae7b46a967db42f2a53721645b3d42874a65f9552ad16ce26d30f51f2"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c371c85554e4cff151009744a1c2f3b95cc53241d73698378ecb6bdfcffdfbc2" => :sierra
+    sha256 "c371c85554e4cff151009744a1c2f3b95cc53241d73698378ecb6bdfcffdfbc2" => :el_capitan
+  end
+
   keg_only :versioned_formula
 
   def install
