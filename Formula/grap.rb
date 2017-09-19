@@ -8,10 +8,9 @@ class Grap < Formula
   sha256 "906743cdccd029eee88a4a81718f9d0777149a3dc548672b3ef0ceaaf36a4ae0"
 
   bottle do
-    sha256 "4e4b22198d42beea1e531a6903f4085b67692e7da7bc1b7a3e51f42c235169d1" => :sierra
-    sha256 "b9491c4bf9baeb0e9edc3cb0256f0199256b26fcc2fb76ac15153fd6f74c48f9" => :el_capitan
-    sha256 "97c15c60c09da87b12c779fde541bff202f96327e76286a591d52a18b1c74d4e" => :yosemite
-    sha256 "036bb10da8e432b027a2a88714d91e60ba3e297c94b8fe27ab48040e3800760b" => :mavericks
+    rebuild 1
+    sha256 "e3a1ad4346c17f8b1aa9197b6eca5e6ff78140c4db9e2894e86e5e6d0c1bc5e1" => :sierra
+    sha256 "23d2d4dde1cebad798dcd76dca4b86f54f6ff3b379300d1fa216479e288bcb5e" => :el_capitan
   end
 
   def install
