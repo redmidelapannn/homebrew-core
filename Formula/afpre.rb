@@ -6,6 +6,12 @@ class Afpre < Formula
 
   head "https://github.com/leflamm/afpre.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5390b2b681113cf028299535cf70c770a8162f551587e7834d7f0a76632c28f0" => :sierra
+    sha256 "5390b2b681113cf028299535cf70c770a8162f551587e7834d7f0a76632c28f0" => :el_capitan
+  end
+
   depends_on "jq"
 
   def install
