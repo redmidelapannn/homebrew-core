@@ -7,6 +7,7 @@ class TelegramCli < Formula
   head "https://github.com/vysheng/tg.git"
 
   bottle do
+    sha256 "de29d9a719acf5a253eb7358685c627c44ce175a62f982631a02bb00569d91e8" => :high_sierra
     sha256 "e3d11d044d22c704c4cce49b3e02c1016361c0ca0416cb9c97648c7b6972c6da" => :sierra
     sha256 "899040eda68f601bcdfbf317159f885d6f6adc59b4c58ce4e1e9d72f7943dc7e" => :el_capitan
     sha256 "55487d971dec4cbfc5944ba94c691ade8a814de805ea451dea1c5884f2e28925" => :yosemite
