@@ -7,11 +7,8 @@ class Libhttpserver < Formula
 
   bottle do
     cellar :any
-    sha256 "5dc4f569cf86961564e5954220d9049af40ef28796eefa350c12c6df8b32e45e" => :high_sierra
-    sha256 "aac717fe37c9fa0491185e237100288f2d8ebe8544bfc16115f20b13fd242782" => :sierra
-    sha256 "ee7c3025c9678a97f326c69a8a9faa4963eefc8f972c78096b3f237cf7368945" => :el_capitan
-    sha256 "d6ec883a992e348d69b90c37b3c0f1ab2329cc9bae3cb8d1f1db7d112ca65200" => :yosemite
-    sha256 "aec3bba3f8db0cb1e9fd99d66aafb1f2ed399197f11af43654f911205b62d5ee" => :mavericks
+    sha256 "f76679a624ea5aa854ec42afe8499367e84097ec66603a3fa2546020e58edb63" => :sierra
+    sha256 "0ad1fd14bce23878d1584a020db1e647b9ebbcb0459fb0f5a116dfff349344b9" => :el_capitan
   end
 
   depends_on "libmicrohttpd"
