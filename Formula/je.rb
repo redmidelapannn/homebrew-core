@@ -5,6 +5,11 @@ class Je < Formula
   sha256 "5217ec2fc91a1817d2dc3da05c78867a94aaf281c8e664103238c416b886bce5"
   head "https://github.com/tamediadigital/je.git"
 
+  bottle do
+    sha256 "f3548fc1d5a1bb66774df8eed911d2c085978bda57faafdc896724cc1d038f80" => :sierra
+    sha256 "db75fcbdae6a55c40c068c4aa2f1492a0bf34683b62f55c4c95d1085468dd17a" => :el_capitan
+  end
+
   depends_on "dub" => :build
   depends_on "ldc" => :build
 
