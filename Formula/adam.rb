@@ -5,6 +5,12 @@ class Adam < Formula
   sha256 "31624954eb473f2ec24354af7e6303a47887cf2ca4076bb71f54618aef59e15b"
   revision 1
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "640847da46ea2d4deb7003011cfa2198f55b810651e08574c1648c8ee1d8abbc" => :sierra
+    sha256 "640847da46ea2d4deb7003011cfa2198f55b810651e08574c1648c8ee1d8abbc" => :el_capitan
+  end
+
   head do
     url "https://github.com/bigdatagenomics/adam.git", :shallow => false
     depends_on "maven" => :build
