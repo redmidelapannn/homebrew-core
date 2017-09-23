@@ -7,10 +7,9 @@ class Wordnet < Formula
   sha256 "6c492d0c7b4a40e7674d088191d3aa11f373bb1da60762e098b8ee2dda96ef22"
 
   bottle do
-    sha256 "873bcb33510b3211fc34bb986f9527ab554f01177fb765c7db48509291a6f7cb" => :sierra
-    sha256 "412b4cc4b65d5083176aa69647ab5a15b96b63b758fa8900c80b402c5a9d2cb6" => :el_capitan
-    sha256 "876de343c8e2d508af818a7aacdcc8015f7e662edf8f08e068ca7800f48d50d4" => :yosemite
-    sha256 "786bc9b811d958b71888cc87e0ef75a6cd66ebc05202278b7827f847f6b4dfe5" => :mavericks
+    rebuild 1
+    sha256 "c56c08b6e7e3a5ecf11bcbe2c6c8e99dce18ecb22dca0e374b17d7c19cd8442d" => :sierra
+    sha256 "01a9e150624f1463429949a10493458c6f11b9f6c00153046a3bb810f6d8cb53" => :el_capitan
   end
 
   depends_on :x11
