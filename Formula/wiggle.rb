@@ -6,10 +6,9 @@ class Wiggle < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0f002fb282dfaa1df66f28cd3f2135b571095b4f5db5528e288dcf439d480a2f" => :sierra
-    sha256 "7e832c2b0e4e4564f15c3a66b1d0b78c309a0f28ca548b5e39b6967bdf12a542" => :el_capitan
-    sha256 "e6799084357708eb5142ec5c1104f43c9fdcc0d953f0b80c458e931f53e210e8" => :yosemite
-    sha256 "09c23ec2dce1bc70a93671b85780f47f9bbb24c024a48cbfa9c3a13b79b048a5" => :mavericks
+    rebuild 1
+    sha256 "d62dec3faa32ba6a9428ddc994b8450b976ee206948b0b50b02270505865282e" => :sierra
+    sha256 "9fad64e3d2e5baf6f3668008e382b17ccb6d6433692b3179e717756c711faf80" => :el_capitan
   end
 
   # All three patches are upstream commits
