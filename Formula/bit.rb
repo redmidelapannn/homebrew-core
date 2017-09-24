@@ -8,11 +8,9 @@ class Bit < Formula
   head "https://github.com/teambit/bit.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "67a6a52d87f99c90171b82f1f10c784a686969a30366e5c119d6b450a04271bf" => :high_sierra
-    sha256 "67a6a52d87f99c90171b82f1f10c784a686969a30366e5c119d6b450a04271bf" => :sierra
-    sha256 "67a6a52d87f99c90171b82f1f10c784a686969a30366e5c119d6b450a04271bf" => :el_capitan
-    sha256 "67a6a52d87f99c90171b82f1f10c784a686969a30366e5c119d6b450a04271bf" => :yosemite
+    sha256 "afe3d143711a5af30fd1ed82b42c7264d5bf5b54cfa7ac540ae86f5fe617809a" => :high_sierra
+    sha256 "bff947e5bfffe8ce05b87cee0f7a8def87404ce0f21e927ab56fb5cfc58327ec" => :sierra
+    sha256 "ad7c79f56cc40ec7996f5112db8009f549f5f05cf6966a5c141fcafd01dd626e" => :el_capitan
   end
 
   depends_on "node"
