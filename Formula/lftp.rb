@@ -15,14 +15,6 @@ class Lftp < Formula
   depends_on "openssl"
   depends_on "libidn"
 
-  # Remove for > 4.8.1
-  # Fix "error: non-constant-expression cannot be narrowed"
-  # Upstream commit from 17 Sep 2017 "Fix build on FreeBSD-i386 [1] (#391)"
-  patch do
-    url "https://github.com/lavv17/lftp/commit/ee60a0f7.patch?full_index=1"
-    sha256 "a45f4ac27f9957839b99742e7d097c632fb4c44cf935ca514410284861d4ac09"
-  end
-
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
