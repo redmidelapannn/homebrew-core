@@ -21,14 +21,6 @@ class GnupgPkcs11Scd < Formula
   depends_on "libgcrypt"
   depends_on "pkcs11-helper"
 
-  # Remove for > 0.9.0
-  # Fix "incomplete type 'struct ucred' and undeclared identifier 'SO_PEERCRED'"
-  # Reported 26 Aug 2017 https://github.com/alonbl/gnupg-pkcs11-scd/issues/8
-  patch do
-    url "https://github.com/alonbl/gnupg-pkcs11-scd/pull/9.patch?full_index=1"
-    sha256 "d4a2d37e9d54eefd69244422ff8bfffc98b43816a2e24ea8b59b8cb1b04d7195"
-  end
-
   def install
     system "autoreconf", "-fiv"
     system "./configure", "--disable-dependency-tracking",
