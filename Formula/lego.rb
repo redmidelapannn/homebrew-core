@@ -3,8 +3,8 @@ require "language/go"
 class Lego < Formula
   desc "Let's Encrypt client"
   homepage "https://github.com/xenolf/lego"
-  url "https://github.com/xenolf/lego/archive/v0.4.0.tar.gz"
-  sha256 "2768fe44bc7a31e8ee3779983142143f5db4aee43548f89f3531f23ee402dd87"
+  url "https://github.com/xenolf/lego/archive/v0.4.1.tar.gz"
+  sha256 "365802c02a7f7106370525444c18af53f010153631f27b7cbeb1b4574631f3e7"
 
   bottle do
     cellar :any_skip_relocation
