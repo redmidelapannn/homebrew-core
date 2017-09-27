@@ -60,7 +60,7 @@ class Lego < Formula
     url "https://github.com/edeckers/auroradnsclient.git",
         :revision => "8b777c170cfd377aa16bb4368f093017dddef3f9"
   end
-  
+
   go_resource "github.com/exoscale/egoscale" do
     url "https://github.com/exoscale/egoscale.git",
         :revision => "325740036187ddae3a5b74be00fbbc70011c4d96"
@@ -85,7 +85,7 @@ class Lego < Formula
     url "https://github.com/rainycape/memcache.git",
         :revision => "1031fa0ce2f20c1c0e1e1b51951d8ea02c84fa05"
   end
-  
+
   go_resource "github.com/stretchr/testify" do
     url "https://github.com/stretchr/testify.git",
         :revision => "890a5c3458b43e6104ff5da8dfa139d013d77544"
