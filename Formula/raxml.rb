@@ -6,6 +6,13 @@ class Raxml < Formula
   revision 1
   head "https://github.com/stamatak/standard-RAxML.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "41ec6b8e702ef1e962867e2488827cae6a1962ce825ee41682f98175dbe2d8c3" => :high_sierra
+    sha256 "191b8b2ebb4b58d15470cc265ecb01e22ce14e41780bdd44a08feab018a14b7f" => :sierra
+    sha256 "e68d92ea8db100d9407cffa4914a5b7a0c1e3ef21788cefd0ead998701ea0cfe" => :el_capitan
+  end
+
   def make_clean(makefile)
     rm Dir["*.o"]
     system "make", "-f", makefile
