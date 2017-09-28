@@ -6,6 +6,13 @@ class Y2j < Formula
   sha256 "e11ac6886937b3c9784f61d3c77d00d9b4dbf3fa10ec6ddc6f847b68196d9f5d"
   head "https://github.com/wildducktheories/y2j.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8e3b7d92798fa3ce07263cf5dc24ce6ec6c7ec322f478c441244996c860b6cb3" => :high_sierra
+    sha256 "5d42227ac437502945d9c1e195dd35a3b360d508669edab46e6701b563f3368a" => :sierra
+    sha256 "acd79077c3e179d0f2b14990161769739943c0e113c004b2068ad4525ca1994e" => :el_capitan
+  end
+
   depends_on "jq" => :run
   depends_on "base64" => :run
   depends_on :python => :run
