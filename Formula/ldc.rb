@@ -54,6 +54,8 @@ class Ldc < Formula
         -DLDC_WITH_LLD=OFF
         -DRT_ARCHIVE_WITH_LDC=OFF
       ]
+      # LDC_WITH_LLD see https://github.com/ldc-developers/ldc/releases/tag/v1.4.0 Known issues
+      # RT_ARCHIVE_WITH_LDC see https://github.com/ldc-developers/ldc/issues/2350
 
       system "cmake", "..", *args
       system "make"
