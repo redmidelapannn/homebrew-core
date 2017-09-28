@@ -10,12 +10,10 @@ class Jbigkit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c8a003d12559b6f506fbd912c3b68163f7ab6022fd53e069bfbd55c813f52df5" => :high_sierra
-    sha256 "831dd1ec7e8013ddc6c23641a21292eae26f397e8b61d95382a6240f18fc5602" => :sierra
-    sha256 "bdec08cd92dd59183b698c6bbd9072881fdfce64b4ecb6182e405e0f2ad26c00" => :el_capitan
-    sha256 "764396342e87b84253aa06f5046f90c778cacca998ce970900cb2fdf1cfdc3fa" => :yosemite
-    sha256 "0ce925915b984307d2e679622138143c5cc5baf832b0a16003fa1e6111a5df9f" => :mavericks
-    sha256 "0afb6297101bc3269f0ebca1590cda66a62cbd90e3fdbec38dc011131711d32b" => :mountain_lion
+    rebuild 1
+    sha256 "b31228dcebe82fc49546b1cdf2e1ab35b10e4a242f96c5f71ee4adda7c7504af" => :high_sierra
+    sha256 "879ffe3b1d1848a0f0a20941419851dd2a01563f93492c7fa9540c4b1565c99a" => :sierra
+    sha256 "af9cae0b52c1dca1aab4908c57d05e61cb07dcc0a93ccdbf5d04b03529a13e22" => :el_capitan
   end
 
   option "with-test", "Verify the library during install"
