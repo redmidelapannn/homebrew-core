@@ -6,9 +6,9 @@ class Py2gobject3 < Formula
 
   bottle do
     cellar :any
-    sha256 "33baed6f8f429ce30f19a8a02d8c9c16ed82bcfc9f1a10a96545092b5c5e5245" => :high_sierra
-    sha256 "af9b369423638e8fc2e31c6d777cb284886ac21fac08edad6823050a010ad09c" => :sierra
-    sha256 "223ce7f1ca5c4b93666b50a81efd497551fe05c90f4cc73f6279eac7e733c89e" => :el_capitan
+    sha256 "09b704e926cd2514c7a7c9393cc305c3bab08d46fedd3a12b5736c9f54bd380c" => :high_sierra
+    sha256 "f68518e5cd385e293ea2b1a214799cb8f3e6b3b82a22d135e1e9c4f82860f5eb" => :sierra
+    sha256 "6c697c72740eb9ebc885e1b82325235c3798cb69cd4e4b2776ffbddbdaf37f09" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
