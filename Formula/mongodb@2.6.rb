@@ -6,9 +6,8 @@ class MongodbAT26 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "233a848522494300b37a97498d6349b9d734a0bf637ade1d9a5ed56783e6982f" => :sierra
-    sha256 "3178051c3c82b0f0b306bd85a43693fc3f5dfb898fa2eb13ab21620e00c8a916" => :el_capitan
-    sha256 "57b17de046e3808e1357271eb7fd0de4b33aeaa1fdfcce5494a35daf4ba95260" => :yosemite
+    rebuild 1
+    sha256 "8bc512d5d7602072dcb77d6393de98d21fb9e7d8e327d6b1446a6932a3e308ae" => :el_capitan
   end
 
   depends_on "scons" => :build
