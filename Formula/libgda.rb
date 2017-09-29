@@ -6,9 +6,10 @@ class Libgda < Formula
   revision 2
 
   bottle do
-    sha256 "e165830cedc3a0955989746145b310cc03fe96b84f18b33c4c3f2b827bdd473c" => :sierra
-    sha256 "7809bb97ebcd233a740c1e5b5cb0f291a902639a6479d5e53fdcfedd928b6582" => :el_capitan
-    sha256 "01e46f8673fcf3fad0bccdd70e9bd6fac08f0f5b7035e85318a3add4db329a9b" => :yosemite
+    rebuild 1
+    sha256 "86048e42c5ab58942e064a3f83261dd259a31c7ddc91365f79e1aeb36764d860" => :high_sierra
+    sha256 "18a166200166e02e200a19c8f6a3c5122f08032f27d2fecdf4677ba7e4ea8a67" => :sierra
+    sha256 "ee60937a6e8a2883955c86a8aaa216c178bbcd2bc5f3963c133ba98bcd509431" => :el_capitan
   end
 
   # Fix incorrect encoding of headers
