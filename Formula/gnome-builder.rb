@@ -6,10 +6,10 @@ class GnomeBuilder < Formula
   revision 3
 
   bottle do
-    rebuild 1
-    sha256 "f9c3e3649d49844ae48d8d5da563ddd9cc2f3fa156defad956aadb7f7a367679" => :high_sierra
-    sha256 "809503f452ccf7b23b2dbd6426608beee8f6d03053b1ca68b0bea443cab84d95" => :sierra
-    sha256 "13a808b79271fa682f6d07aa59034afca0636fce78611c0396687cb67c5583c3" => :el_capitan
+    rebuild 2
+    sha256 "eabee6ef9823c251bbecd68da5a0a88baec8d5d0c3002884b712105fe13f9e82" => :high_sierra
+    sha256 "519f9073074900553ebf1ee11b84f87dfedc4cae07cfb3a20698e7b49865d1fd" => :sierra
+    sha256 "78f3d5f04e270c0c851c29acbebcf6a52f4563e7ff3f27fae562eafd2e9b3f7d" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
