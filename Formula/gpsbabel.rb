@@ -6,9 +6,10 @@ class Gpsbabel < Formula
   head "https://github.com/gpsbabel/gpsbabel.git"
 
   bottle do
-    sha256 "573d8ca5e3785f8f5b02b148c63fcaa59d59b30ee4617a7e1cc6ae89df348973" => :sierra
-    sha256 "61011f8373be4e2810679c3c608e39f73fc7b47033ada9ae0b6f33513f185827" => :el_capitan
-    sha256 "b9dc431b4db6bd91e1a839e4650eafdb9dcf71f238b6d7fda606aa1c36303f10" => :yosemite
+    rebuild 1
+    sha256 "29ab0a06208c75f2bec9c550c4a9f36f3718ee5f714a56fadb2c8925dd9b0ea7" => :high_sierra
+    sha256 "5f21270e763c86350958ddfb5fad6a588c3e25b105d6b4a035c77618fac8f601" => :sierra
+    sha256 "d7d48b973863b715106d09d3e23e7d75922ea22446e0365db0b95d1e9cf48a5f" => :el_capitan
   end
 
   depends_on "libusb" => :optional
