@@ -8,6 +8,13 @@ class Wuzz < Formula
       :revision => "ef041bc912ea39081ddc5f8b3896ded90e8b053b"
   head "https://github.com/asciimoo/wuzz.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "fb96c74a57de30da3b0617e03520f7e8a9105508f300dbb5be8417de694933d2" => :high_sierra
+    sha256 "030d11994a2e76460a0532c08aa1a317885716f0fdae60ac5ed453d063e87d19" => :sierra
+    sha256 "f842a27e76b88d0c8f8cb662f485897b607dc6d3d1414180936534a07ff48467" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/BurntSushi/toml" do
