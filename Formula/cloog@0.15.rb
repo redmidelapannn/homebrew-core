@@ -7,11 +7,10 @@ class CloogAT015 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "8c202cbeee724aa7127ac7338f50caae847c3d36741102adf68a77cd0f073e9a" => :high_sierra
-    sha256 "44c06713c26b42ddc9cf13ec6a3d29181210dcc8d60c80e10e31415c022e1bf6" => :sierra
-    sha256 "a81e2487e340bec8b5fcc1624f10f1786cdf046900cb433c51a728971e820342" => :el_capitan
-    sha256 "6d542434511b3a90639672f3cd58e5495b5304516c7cf46c2fbf7483ad9494d8" => :yosemite
+    rebuild 2
+    sha256 "97aee54d30ed660b361039b1782d5e3a233aa259c5b6f21008a17ecb122fe4b9" => :high_sierra
+    sha256 "4c9f0e26713afb6b0069b8d7fcbb70df708e15452f0d958cff52aee23e0773bd" => :sierra
+    sha256 "72479c728502427a1778499b73bfdc7dd89262e349230af6798f938a93eceb74" => :el_capitan
   end
 
   keg_only :versioned_formula
