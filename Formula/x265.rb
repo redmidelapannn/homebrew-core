@@ -8,10 +8,10 @@ class X265 < Formula
 
   bottle do
     cellar :any
-    sha256 "df0f4cb68dc5593b2da6d5e0a9b81b711780f82f019c26fab836c008d5e41b0c" => :high_sierra
-    sha256 "e5533fb7b1c32a7bfcd95495eb17388b68e848cd87884bc22dfa6e0f5dfd1dca" => :sierra
-    sha256 "eb45d06b00b7da14f508291f20add9892db9cbcc08a8ebfb29c2bf80a46be394" => :el_capitan
-    sha256 "a715de311bbcfbcc65353681a5665d395230b2f70e27621c088456f5490f4328" => :yosemite
+    rebuild 1
+    sha256 "82626e8656b1135bed236f9eaa205449753f32b7d83acc4b4b51fced9e90256e" => :high_sierra
+    sha256 "a5630bc95c2995ef83bd121478382517484321ccb4b339ee429722ee6e262231" => :sierra
+    sha256 "5791023d550c3e1021f0cc3f442686cecdc11adf1ecd75a94ea62f88db71b6bd" => :el_capitan
   end
 
   option "with-10-bit", "Include 10-bit support (default: off)"
