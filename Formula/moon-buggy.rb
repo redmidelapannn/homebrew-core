@@ -7,10 +7,10 @@ class MoonBuggy < Formula
     sha256 "f8296f3fabd93aa0f83c247fbad7759effc49eba6ab5fdd7992f603d2d78e51a"
   end
   bottle do
-    sha256 "54948d0646240382661b765ab2253258946fb10b2974587d719b24a771172d91" => :high_sierra
-    sha256 "fb2abda84d3e2b20f286caa036fadb9bfd6c4df151352a171385a54ca43acda9" => :sierra
-    sha256 "b71bfe4abfb1d2c3d35db544850cb56f1b2ba50df18d27d3fef3ed5845b30e76" => :el_capitan
-    sha256 "08b485a97197d8a0a2733e74622a232a8a1407ebd2564caccdffb9438176c1ee" => :yosemite
+    rebuild 1
+    sha256 "0289822bb9d59360dc7cb04d08b4b9e2ee83b4ec42d66a4ceea7d5b221dd0630" => :high_sierra
+    sha256 "28043a45f26969e5e698c17ac7566a3e1c0da23c75105e3fefde169b7687e54d" => :sierra
+    sha256 "df3a8f9203cf10acd3e3a64f643f73cefc37c4ee7f7fb6ee404d12834d6242e5" => :el_capitan
   end
 
   devel do
