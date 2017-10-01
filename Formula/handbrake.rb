@@ -125,9 +125,10 @@ class Handbrake < Formula
   end
 
   bottle do
-    sha256 "61a9dce983af5963dc6233fadef0a4c4c79391057f71e584298172e6fe80d3dc" => :sierra
-    sha256 "37c825fa81b75fa8ea85ff58b00fe152a71acaaa52d02a490a8c13766dfa33c1" => :el_capitan
-    sha256 "b14c568a5f20f04f6f15805111df263dd231ad86f599af9a928aa6eaf0b4f9d7" => :yosemite
+    rebuild 1
+    sha256 "5942e20b2c2efb35abc1c3cf2af9944e9d09cbe4e43f87a38ae10f363a9310e1" => :high_sierra
+    sha256 "10250a666778278f911f786850df03b619d9a3b5d10af6d8bd6a0cea12c0be92" => :sierra
+    sha256 "6984d2c86e674a74a4827c2e6cef03057868cc530b391fd33dc3463610756624" => :el_capitan
   end
 
   depends_on "autoconf" => :build
