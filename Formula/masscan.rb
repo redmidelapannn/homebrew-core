@@ -7,9 +7,10 @@ class Masscan < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d2770cd3ff575b998818f5586f182fe626bc336a48542d1c01656fd9617df1ed" => :sierra
-    sha256 "8dbe578c48b421e03a264c82912e10009b1b6163f704f3388a017799accaf0a9" => :el_capitan
-    sha256 "969e348d0a3738b1fcc5082a6c0feef0f18d1f462b3d9bec0cd1751781b263e3" => :yosemite
+    rebuild 1
+    sha256 "5a21b86b9721dd3d15c61db4d6f6fbeb3b381ee51c4dcab3bcb693ded7292b54" => :high_sierra
+    sha256 "3b1f42f36336fde9860c5f164b5964cc33f5a2cd9a1c8c13346e44faeb9b9490" => :sierra
+    sha256 "fa3deced0f8b627fa8124ab630123b4b937f1c956977229e9b10e3017291f0bd" => :el_capitan
   end
 
   if DevelopmentTools.clang_build_version >= 900
