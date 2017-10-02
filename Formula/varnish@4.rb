@@ -5,9 +5,10 @@ class VarnishAT4 < Formula
   sha256 "908e7fbfa0325498717686b2050181134aa0a69d1495c02b2625cd34d35a4ff1"
 
   bottle do
-    sha256 "feee2d796d10d27aab921d531d74be2e0a7ec789d5e5387d55d1628f0eb1d25a" => :sierra
-    sha256 "8e8e30c902fbce8dc6ed1533bf604a9d4a197645240ca770fe51928a29ec3aaf" => :el_capitan
-    sha256 "7ff168bb774232159547fdc251f4548e4e68cdcc7d01261b612872ef90c6030f" => :yosemite
+    rebuild 1
+    sha256 "e22bf851944503da221a87b59fad6fa5eb934796edd0e24130d59fb8c2a7230c" => :high_sierra
+    sha256 "6838b32658b2e8b6a8bf546d93f6d00bb3cc2084eee04b7bc1b41f92dc1a83ae" => :sierra
+    sha256 "7f88e571f84ebb05f0d011a1f412dc7da8d6a9ddd1320b1d23cbf9422a226d98" => :el_capitan
   end
 
   keg_only :versioned_formula
