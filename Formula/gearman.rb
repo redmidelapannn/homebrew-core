@@ -5,9 +5,10 @@ class Gearman < Formula
   sha256 "f9fa59d60c0ad03b449942c6fe24abe09456056852fae89a05052fa25c113c0f"
 
   bottle do
-    sha256 "529a37d7f9648ed0371529bab74b12173ca3ead3c9d6bd4e193f2097c0a9fe83" => :sierra
-    sha256 "8f70079e03761e0711231a5ca77f450e490bfeb4e668e4be9c8ce6de2ef52fee" => :el_capitan
-    sha256 "12616febecef3a1a5951296bf3f7efa30637688318713969c74931b95f01313f" => :yosemite
+    rebuild 1
+    sha256 "cdef3cbbc2127b3d94e3856097f4414f8c9727c88cecb7916d5e9a46ab84cbac" => :high_sierra
+    sha256 "5877ad85cdf8a5e0a8842bf50de092495a9be5d20f738d3ec3edc7c0c51dae22" => :sierra
+    sha256 "8ca48fdb459ceed5ed1e12cf6e0106d4d29f3b62701199e5028ee7071f63ded4" => :el_capitan
   end
 
   option "with-mysql", "Compile with MySQL persistent queue enabled"
