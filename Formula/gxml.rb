@@ -5,9 +5,10 @@ class Gxml < Formula
   sha256 "b4f9739f924fefc90dd5d54da7680a50377bfba1342bd16436ab387c631e3b41"
 
   bottle do
-    sha256 "0822d594967ff897b5da4f78312bcb4acaa0ffa7e2ac046e4c1e07569d6726f7" => :sierra
-    sha256 "ab52ecbdd84a6213ac2d96ed167d4e367b3f980360e1aa5b0cfd3e118717dd38" => :el_capitan
-    sha256 "c515994080f2dab325b5777142a785bb6ba8c42a0c0a5bf89f5a6d25e1fd8bd1" => :yosemite
+    rebuild 1
+    sha256 "b4ec6d24e823d933affe5e66ad4c627074bd3ea743044ee0a96857f3c1e29b7e" => :high_sierra
+    sha256 "c31455add2509a858721026aca5807208c8bbfb91871fd33097b17648c426a93" => :sierra
+    sha256 "7c36f55a8803ca960cb233bb6a1b3d29240213fcb8e1dcf544004c32b32bc204" => :el_capitan
   end
 
   depends_on "gtk-doc" => :build
