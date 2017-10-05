@@ -16,11 +16,8 @@ class Qbs < Formula
   depends_on "qt"
 
   def install
-    cd "qbs-src-1.9.1" do
-      system "qmake", "qbs.pro", "-r", "QBS_INSTALL_PREFIX=/"
-      system "make", "install", "INSTALL_ROOT=#{prefix}"
-      prefix.install_metafiles
-    end
+    system "qmake", "qbs.pro", "-r", "QBS_INSTALL_PREFIX=/"
+    system "make", "install", "INSTALL_ROOT=#{prefix}"
   end
 
   test do
