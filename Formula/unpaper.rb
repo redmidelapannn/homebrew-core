@@ -7,11 +7,10 @@ class Unpaper < Formula
 
   bottle do
     cellar :any
-    sha256 "b37d324fd0e60d59421e19434c46c72a9593119d55958b96628b64f498a42191" => :high_sierra
-    sha256 "f37e1cc563b2eaa5bfde892d775200c86fcabd4261745a62e76f4ff175fad8c6" => :sierra
-    sha256 "7332b87cd5d0e087774f41fd0df69d5f26c616ca469a1d33cdfdcf4baa6153ff" => :el_capitan
-    sha256 "c84f37be3e99fcf3d47bf4bbffba7192d451761a31056705f11d6a4a19dcd45a" => :yosemite
-    sha256 "318d0e90644880ee357818a8d6d144d7ccc4873cca90a1ff77f1031f20994b93" => :mavericks
+    rebuild 1
+    sha256 "2d375c5f37980d0b7de47a4d8f34a68c0f5da7e6e1c673a61ffeca69eb3f65d4" => :high_sierra
+    sha256 "27d59caa7a6c117505a1a0ef579296f62af56098aff775b9149b8aa44f1a8b70" => :sierra
+    sha256 "96b7d480dc3ad4e546b859e0ac18ae7d6d5adeae0ec9bfca24d5daabf6b60c20" => :el_capitan
   end
 
   head do
