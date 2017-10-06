@@ -7,12 +7,10 @@ class Capstone < Formula
 
   bottle do
     cellar :any
-    sha256 "82e40e06f3a41633326d3ceb7f268945441dcb7a0ae1caa88e06fc0504c73cc0" => :high_sierra
-    sha256 "7d0f04a49d42bd9c953a5ea6cb85159f72f8e948d6aea4d7c64b3e82a12459f1" => :sierra
-    sha256 "3aa8d8b679cc5261a3fbf44b191c61480cdb34576f71b769e63d68c5e27c19b1" => :el_capitan
-    sha256 "5bbd8f7d9e0ae0d3b23c7d478fdb02476e8cee847577576d543bf98649985975" => :yosemite
-    sha256 "0cfd7478b21360ffea1aac61ec64eeae612bce247a681b0205ffd14790f8f7dc" => :mavericks
-    sha256 "585042b1452fbeda9efd07da4b8400d56d166afd5e5f1120da20975e41001e88" => :mountain_lion
+    rebuild 1
+    sha256 "ec281caa3676a1de46c542f28e65cb64e68766f905367227fb691b9cc848e654" => :high_sierra
+    sha256 "2e3d6c6d268776453bc6603bcf68db836d235e88b452320f1ca8947d76debc20" => :sierra
+    sha256 "b610ce660db33a7ca18ed57569b8393558f043c7e70a51159b4ff3fa1ec95aa9" => :el_capitan
   end
 
   def install
