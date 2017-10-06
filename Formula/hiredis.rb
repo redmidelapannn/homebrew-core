@@ -7,11 +7,10 @@ class Hiredis < Formula
 
   bottle do
     cellar :any
-    sha256 "de253e88983ee372b611e7c9343987cd486dd19d5878a07935b265e7b651634f" => :high_sierra
-    sha256 "93ea600964980acca0d01e7bcf34630280ce88edb01e2cd385e19e8a4e9d33cd" => :sierra
-    sha256 "9c5dd3b595179560b3a22c685b87b32466edbfaea059659c72399e6b8c86b181" => :el_capitan
-    sha256 "f038cdff672abde1099b34daac067172cf9545e04b49248f6a580732d242183d" => :yosemite
-    sha256 "70fed127330cd583478cef89d89d34af112b60e5341cc7f42aa5d06f4b9575ce" => :mavericks
+    rebuild 1
+    sha256 "c1be14e58e93d6e1bcdfa8cb473bf2a28e72c6b8631150787a6a26326083588b" => :high_sierra
+    sha256 "e526a615022fd6aa5a07b2b9337c4155b4a805c0856c07a1b59699271db36e19" => :sierra
+    sha256 "3154b3a6d5c86db07c225b948c579c1dd6f3ef47c2093dfe711304c0fd8c80a3" => :el_capitan
   end
 
   def install
