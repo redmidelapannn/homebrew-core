@@ -1,9 +1,8 @@
 class Ponysay < Formula
   desc "Cowsay but with ponies"
   homepage "http://erkin.co/ponysay/"
-  url "https://github.com/erkin/ponysay/archive/3.0.2.tar.gz"
-  sha256 "69e98a7966353de2f232cbdaccd8ef7dbc5d0bcede9bf7280a676793e8625b0d"
-  revision 1
+  url "https://github.com/erkin/ponysay/archive/3.0.3.tar.gz"
+  sha256 "c382d7f299fa63667d1a4469e1ffbf10b6813dcd29e861de6be55e56dc52b28a"
 
   bottle do
     cellar :any_skip_relocation
