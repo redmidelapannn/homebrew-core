@@ -8,12 +8,10 @@ class Cuetools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4393d6db857a9568a34de3a09ff049fbec9a55a95b029eacd24e35d6ce792074" => :high_sierra
-    sha256 "9456e5957a78f993f5a8cef76aa583ac6a42a8298fb05bded243dbaf810f9a44" => :sierra
-    sha256 "7f0effc75d64fca0f2695b5f7ddb4d8713cc83522d40dcd37842e83c120ac117" => :el_capitan
-    sha256 "81d06ef2e3d98061f332a535b810102c1be0505371c1ac1aed711cf2ae8de5a3" => :yosemite
-    sha256 "95216c0df3840b2602e61dd3bef7d4c9b65cec0315e5b23ac87329320d9f6be9" => :mavericks
-    sha256 "cc5240434bb054a51ebb4e4bb3adc8e97844da66aa425fc667f54ecf53ad9aa6" => :mountain_lion
+    rebuild 1
+    sha256 "b66e54a12bbddedd49d5d29ba1bc43afaef5a572c247d9197ff66afe2e1be0be" => :high_sierra
+    sha256 "c5cb327de3373f0329474a8b1a0d6269f813a5c7fc299c856ba33994b8f3073f" => :sierra
+    sha256 "dfcd6c54b233ae2684af1155c0f3d71cd12fddeeddf43616e8fbe16633d76b6c" => :el_capitan
   end
 
   depends_on "autoconf" => :build
