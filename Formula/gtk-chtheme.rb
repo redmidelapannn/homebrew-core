@@ -7,10 +7,10 @@ class GtkChtheme < Formula
 
   bottle do
     cellar :any
-    sha256 "0c228f7f5b8cfcc95556443db4acea3bd763b99a30a9108bd0eb68ad228838ca" => :high_sierra
-    sha256 "913c9417ea21ecebdaeefb0329178d0304530310e4cfe64bf8831da5510bad4b" => :sierra
-    sha256 "dc5fb21e189707e3bbc2bea4ac6e8d2091961bae4ea5c593ad2ff7272c5709e6" => :el_capitan
-    sha256 "bdda9f20a50734e3ed0802fd12062160dfa378c47a09affb7a4716b892e70afe" => :yosemite
+    rebuild 1
+    sha256 "d8d3fc5a7584aa958a27c97081bb9019e2de2b0d2f3ae247a20230cf8cd4ab48" => :high_sierra
+    sha256 "4586f283f93c8bd5a26f713f679c6043a206eb330b10d9a8bdfae4b49532dba4" => :sierra
+    sha256 "0e0c04b9c557a0714438c684cf2d8fc2cd0396a819494e1a14f3ded6d305ec66" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
