@@ -19,13 +19,6 @@ class Osm2pgsql < Formula
   depends_on "proj"
   depends_on "lua" => :recommended
 
-  # Compatibility with GEOS 3.6.1
-  # Upstream PR from 27 Oct 2016 "Geos36"
-  patch do
-    url "https://github.com/openstreetmap/osm2pgsql/pull/636.patch?full_index=1"
-    sha256 "4e060b20972b049e853b4582f8b3d41a2b98eeece7a5ee00ababdf14eb44154a"
-  end
-
   def install
     args = std_cmake_args
 
