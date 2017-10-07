@@ -5,6 +5,10 @@ class Insighttoolkit < Formula
   sha256 "8ba2183111723c4405af80724c60d07484c2bff8120ee4cef543bb726d07855e"
   head "https://itk.org/ITK.git"
 
+  bottle do
+    sha256 "7f4952f66b5e2a3e84c8fa6dfafb50e6ebaee4fe9ec79e61243ac7ac5d9b91da" => :el_capitan
+  end
+
   option "without-python", "Build without python2 support"
 
   depends_on "cmake" => :build
