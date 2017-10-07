@@ -4,6 +4,13 @@ class Pixiewps < Formula
   url "https://github.com/wiire-a/pixiewps/archive/v1.2.2.tar.gz"
   sha256 "6da09b8ac67cd556b901606e5a72548174cd1e6a89cc52a246d49e0a5ff83db8"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5321aa5076784cebb5c83374712d20b86849344448e4dd644af91d04d3d2c5ea" => :high_sierra
+    sha256 "7b32f694b46480241b276c745f45673339c65ef8d82a2c4614326112b756bfe1" => :sierra
+    sha256 "98954eb6aa15f9ee2c34366e27b78ca9e4416673b9a8a21c41fe66eb87dedbfc" => :el_capitan
+  end
+
   def install
     cd "src" do
       system "make", "PREFIX=#{prefix}", "LOCDIR=#{bin}"
