@@ -5,6 +5,12 @@ class Mothur < Formula
   sha256 "9f1cd691e9631a2ab7647b19eb59cd21ea643f29b22cde73d7f343372dfee342"
   head "https://github.com/mothur/mothur.git"
 
+  bottle do
+    sha256 "3c2070dc9eeae30343695530a7fb64aec9fdd5ba2208d6ae024e828d83c50436" => :high_sierra
+    sha256 "fa459f03a83099c1b96a73b14cb9b31b078467df1c1309ad766252e3fbbc7691" => :sierra
+    sha256 "3aaec5c9b33bc6c6396d02baadc2dc9ad089f405e68debcab036ceba87f46e25" => :el_capitan
+  end
+
   depends_on "boost"
 
   # patch related to https://github.com/mothur/mothur/pull/385
