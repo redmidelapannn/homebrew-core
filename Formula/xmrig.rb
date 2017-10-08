@@ -12,6 +12,7 @@ class Xmrig < Formula
   end
 
   depends_on "cmake" => :build
+  depends_on "libmicrohttpd"
   depends_on "libuv"
 
   def install
