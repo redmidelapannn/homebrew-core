@@ -6,10 +6,10 @@ class Ncrack < Formula
   head "https://github.com/nmap/ncrack.git"
 
   bottle do
-    sha256 "3238195981e41fa370773424e84259ab50504d21974498c83be208f1c229532a" => :high_sierra
-    sha256 "7e3a16f3b37949e91338e50f2e2cd1f50da7f3b1700b8ef242ce457673d3c397" => :sierra
-    sha256 "aab525771a1fb8eee4d2aab1d9164482b62cef6664ff3f2a8034b4171207be6c" => :el_capitan
-    sha256 "dbaa016ba2cb398e4e7da7352ca889fd5f26bd91926549badd9d80227cf1f5b4" => :yosemite
+    rebuild 1
+    sha256 "462e5372874f8c9a8272f281d71cdc84fe4dd14c02d9b387be254c4935e49d4f" => :high_sierra
+    sha256 "899e9f5a98cc7357ae9190ee3a666bb6b2956aa47ecff3976171ccf1c8c0a6e7" => :sierra
+    sha256 "a9988074da7f7949f7bb5e3c13a4d30d9a6fc49900c5a64d528873d8c82e81ec" => :el_capitan
   end
 
   depends_on "openssl"
