@@ -6,10 +6,8 @@ class Picolisp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c8b846b43842406298ecfd6f5153b4e04a199280201513e4878efe48aa1ee563" => :sierra
-    sha256 "ffac3fb9ba77a5d339c1898fcab56255cf1e7763742c3ae5749ad10e75819578" => :el_capitan
-    sha256 "5760a9797f4477adeadf8bb8cd27d30e406cf5784a911832a759eb09128fedbb" => :yosemite
-    sha256 "7b3121d448479a6d6f1d150da4cbe0c6558626edcb7a4cbdb9d6f02230d5bf9b" => :mavericks
+    rebuild 1
+    sha256 "4e9fd5d5a3900edc4ae1a38f22b27542d3a040d31ed78d7d4785e17c33ef4552" => :el_capitan
   end
 
   depends_on :java => :build
