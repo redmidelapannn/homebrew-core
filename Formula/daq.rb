@@ -6,11 +6,10 @@ class Daq < Formula
 
   bottle do
     cellar :any
-    sha256 "f0be58035bc6f4764567cf186673035818e6025d027695795f959fdfc88c7806" => :sierra
-    sha256 "9c2720bd46954e9f2631801d8f8283974436a82827f01c9e954e319f0b9f7e88" => :el_capitan
-    sha256 "02d198f42f56471feaf127824230d7ea752490b3c7f5a34f8b50ff0a85062f01" => :yosemite
-    sha256 "8ce4fbbbb9f6189f6ee51d3223a81ebc7ea76069353bd284822989d6ccc364a5" => :mavericks
-    sha256 "bced15005e13eaa11ec6d47afbb1137f61231a191fb05a295e2762cc6cc8ef29" => :mountain_lion
+    rebuild 2
+    sha256 "d6a841e847f05d134a1bb8a9e42a9705db292a99a23e93f43f8efcd0a79eebdc" => :high_sierra
+    sha256 "8d73f89b6b76b107aba76e22090819301ad254dbff97e224d57905c1ee2a52a6" => :sierra
+    sha256 "01d6d37edc3d802c3a307112669080aadbfcf7920c48209db5ac68c2e1cad582" => :el_capitan
   end
 
   # libpcap on >= 10.12 has pcap_lib_version() instead of pcap_version
