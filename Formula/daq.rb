@@ -6,11 +6,9 @@ class Daq < Formula
 
   bottle do
     cellar :any
-    sha256 "f0be58035bc6f4764567cf186673035818e6025d027695795f959fdfc88c7806" => :sierra
-    sha256 "9c2720bd46954e9f2631801d8f8283974436a82827f01c9e954e319f0b9f7e88" => :el_capitan
-    sha256 "02d198f42f56471feaf127824230d7ea752490b3c7f5a34f8b50ff0a85062f01" => :yosemite
-    sha256 "8ce4fbbbb9f6189f6ee51d3223a81ebc7ea76069353bd284822989d6ccc364a5" => :mavericks
-    sha256 "bced15005e13eaa11ec6d47afbb1137f61231a191fb05a295e2762cc6cc8ef29" => :mountain_lion
+    rebuild 2
+    sha256 "09b2ef1e06cc5db39543e3898d1cd3b5ac734ecfea75a8ef379706a6516dc348" => :high_sierra
+    sha256 "89085cc5d3c051bcfd7268070b11f76f92f18a44d4e56e1033b6419a227dc215" => :el_capitan
   end
 
   depends_on "libpcap" if MacOS.version >= :high_sierra
