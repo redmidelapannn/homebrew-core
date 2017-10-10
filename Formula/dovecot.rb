@@ -20,8 +20,8 @@ class Dovecot < Formula
   depends_on "clucene" => :optional
 
   resource "pigeonhole" do
-    url "https://pigeonhole.dovecot.org/releases/2.2/dovecot-2.2-pigeonhole-0.4.19.tar.gz"
-    sha256 "629204bfbdcd3480e1ebcdc246da438323c3ea5fea57480ab859e8b201ad8793"
+    url "https://pigeonhole.dovecot.org/releases/2.2/dovecot-2.2-pigeonhole-0.4.20.tar.gz"
+    sha256 "6fe17d0b8f25f2ad580e01ad81ce47a9e965255e383a1f80e455f9ca0f00be5b"
   end
 
   resource "stemmer" do
