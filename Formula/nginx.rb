@@ -7,10 +7,10 @@ class Nginx < Formula
   head "https://hg.nginx.org/nginx/", :using => :hg
 
   bottle do
-    sha256 "97cc615490e05b2c642d9c317e6bc64c00503f4ffbd763a1e1a13f26d553409d" => :high_sierra
-    sha256 "93bcf8e3aec465c219b6c0b4f4d5437c61bf00f2a930ef5702e0521edc51f20e" => :sierra
-    sha256 "8a7c3580534aa0854927f750d4f044a2a85f90d4c1936338a4a09fef7db0824e" => :el_capitan
-    sha256 "0caae754f402abbe1eca413a7f0291fe2499d5779bb1e537d7f80a4d7d3156d3" => :yosemite
+    rebuild 1
+    sha256 "a2a45cb2716f64ed27ed64d4dddac81dbd8e67d47d4b0afb128ed3d6cc5983fb" => :high_sierra
+    sha256 "8c1cf5be6c3aba61feba26a525224b633776e9aa94465873d6385dbda7b6e51c" => :sierra
+    sha256 "77a37678e80169b856d8cb19a92c979de1a9ad8a7535c905f2b04e8a7d574b59" => :el_capitan
   end
 
   devel do
