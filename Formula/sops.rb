@@ -18,11 +18,6 @@ class Sops < Formula
   depends_on "go" => :build
 
   def install
-    # Reported 25 Aug 2017 https://github.com/mozilla/sops/issues/237
-    if build.stable?
-      inreplace "cmd/sops/version.go", 'version = "2.0.9"', 'version = "2.0.10"'
-    end
-
     ENV["GOPATH"] = buildpath
     ENV["GOBIN"] = bin
     (buildpath/"src/go.mozilla.org").mkpath
