@@ -1,8 +1,8 @@
 class Expect < Formula
   desc "Program that can automate interactive applications"
   homepage "https://expect.sourceforge.io/"
-  url "https://downloads.sourceforge.net/project/expect/Expect/5.45/expect5.45.tar.gz"
-  sha256 "b28dca90428a3b30e650525cdc16255d76bb6ccd65d448be53e620d95d5cc040"
+  url "https://downloads.sourceforge.net/project/expect/Expect/5.45.3/expect5.45.3.tar.gz"
+  sha256 "c520717b7195944a69ce1492ec82ca0ac3f3baf060804e6c5ee6d505ea512be9"
 
   bottle do
     sha256 "f49994bf93a0d51de030ef15a07c8b31c7abd04241054cc831cbbdeb442b81b4" => :high_sierra
