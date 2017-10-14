@@ -24,13 +24,6 @@ class Expect < Formula
   depends_on "automake" => :build
   depends_on "libtool" => :build
 
-  # Fix Tcl private header detection.
-  # https://sourceforge.net/p/expect/patches/17/
-  patch do
-    url "https://sourceforge.net/p/expect/patches/17/attachment/expect_detect_tcl_private_header_os_x_mountain_lion.patch"
-    sha256 "bfce1856da9aaf5bcb89673da3be4f96611658cb05d5fbbba3f5287e359ff686"
-  end
-
   def install
     args = %W[
       --prefix=#{prefix}
