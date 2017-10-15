@@ -8,10 +8,9 @@ class MoleculeAT23 < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "bb2c94a0b78cadbf9ddd9ace48f479a7fb9ab69fe2300ecd730c620dfc111165" => :high_sierra
-    sha256 "23e417ecf65861515498f99ce76b31f474b8e3f089c7dcc4e0643d1bc94b96e0" => :sierra
-    sha256 "1b1e618a6f47580ab6badf747ffd8bb7dd68d9f4c4fe2a2b5e6e60f4ff93e35c" => :el_capitan
+    sha256 "d91fb166f9d5e05a4cfb3cf7747d032ffbe39676555652c56122996578405d7d" => :high_sierra
+    sha256 "db36769ad8f25262de915bc216014675aa6acb459b7441c7b3335b9027f77991" => :sierra
+    sha256 "5ee8af1edd6136b439dee91abe793c43935a1656b5d51247a2b432e92ee7bc8c" => :el_capitan
   end
 
   keg_only :versioned_formula
