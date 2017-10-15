@@ -6,10 +6,9 @@ class Ccache < Formula
   revision 2
 
   bottle do
-    sha256 "e3626c377f89870cccce127738340a1cc22d59506c2175319120112cdc25323a" => :high_sierra
-    sha256 "d911581c45bb1509b5656424cc0dcf954bc0eb1700d0430874e3c6a07d081535" => :sierra
-    sha256 "d6d4bfe20a86b2cd8af28954f935d779959c5102cea01d80e0e31ff6e2be9a9a" => :el_capitan
-    sha256 "2cb770d4b672811fe461f888728a90680a41e86a2cfe04bcbcafd01a0385c232" => :yosemite
+    sha256 "6e2fe35e5a03c0c50a5c1ea66625b476bd390929e7ab5cc3dc5408a5d73ff4f4" => :high_sierra
+    sha256 "181390a68fece54d3098610dca24419da063211ad48d15e3e2b5c82df886d476" => :sierra
+    sha256 "5b9dab36b7b2868302b4277b9706899699707e7bb236a55be793f4a8eba44e40" => :el_capitan
   end
 
   head do
