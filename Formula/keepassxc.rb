@@ -5,6 +5,12 @@ class Keepassxc < Formula
   sha256 "6761cdcef482941d958557466bb113be2c514b9847b0d0a65c7f5ef2c6d67dbe"
   head "https://github.com/keepassxreboot/keepassxc.git"
 
+  bottle do
+    sha256 "c44fd37df4964122ec2e01187650689cbb2f17f3bb1c737d08e5d68f4942ee1f" => :high_sierra
+    sha256 "0d0c291d7a04f59f7f6059df059db5b418f39a0860eaeacf00d50c0a3e99343d" => :sierra
+    sha256 "b3beb57592e2395a89802a20e6baaa35ebde4dea570dfa485f3f2e3e016fc651" => :el_capitan
+  end
+
   depends_on "cmake" => :build
 
   # Per upstream - "Need g++ 4.7 or clang++ 3.0".
