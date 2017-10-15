@@ -6,10 +6,10 @@ class OpenalSoft < Formula
   head "http://repo.or.cz/openal-soft.git"
 
   bottle do
-    cellar :any
-    sha256 "e166ede768b1bdef14b5ae85043e05b34ac6c53e57bb6f73b4fc4b0954f8aab4" => :high_sierra
-    sha256 "24dd59b5106fb9d6884b20aaf0c79691c7d0eda8e13ba5b943ba5bc49a794787" => :sierra
-    sha256 "a7946da113c242708cf9aa80c12cc2beedf555fd6a9aed5e7656a983a80e1df4" => :el_capitan
+    rebuild 1
+    sha256 "7b062973bcc44b0fbe920f4a67a51cd3d485c6ac17ba1e0b7dd7f410b33e883d" => :high_sierra
+    sha256 "6d12b56e0c3bc257e1c54444573ec5b17b4ee9615ecaeeea40f1ebded898f46e" => :sierra
+    sha256 "b02d89d7407e4fd3346dea6349e034ccce4ee377e1589292d6bd302989aafe98" => :el_capitan
   end
 
   keg_only :provided_by_osx, "macOS provides OpenAL.framework"
