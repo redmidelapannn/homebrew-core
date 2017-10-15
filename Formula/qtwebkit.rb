@@ -4,6 +4,13 @@ class Qtwebkit < Formula
   url "https://download.qt.io/official_releases/qt/5.9/5.9.1/submodules/qtwebkit-opensource-src-5.9.1.tar.xz"
   sha256 "28a560becd800a4229bfac317c2e5407cd3cc95308bc4c3ca90dba2577b052cf"
 
+  bottle do
+    cellar :any
+    sha256 "902b0ed34a16c5a180501ab1f607ace60bb26f1027be9d876366e9a0bfd934bc" => :high_sierra
+    sha256 "f3a3d07d9fb213ff3cdd26fc6b6fa186a6326b979310a45acc990b0a6fab85ef" => :sierra
+    sha256 "326baeee4b7b6581cea9ef6ae0b226a5d898f01b5ca24d185cd8a7e5b0c4fcad" => :el_capitan
+  end
+
   keg_only :provided_by_macos
 
   depends_on "cmake" => :build
