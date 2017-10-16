@@ -6,9 +6,10 @@ class Ponyc < Formula
 
   bottle do
     cellar :any
-    sha256 "ed102b8274b71f05b92ad92becfaed03016ba28d6797f4139ac512900bfb5a82" => :high_sierra
-    sha256 "20f5c21768b04d1f4b03314b6452d541059f689df151c41dfe73fc25ce875db9" => :sierra
-    sha256 "1f1ccb35f4912e4d24b048cf32e46c39137f7ef0e9826f6389262a397342846b" => :el_capitan
+    rebuild 1
+    sha256 "b6e8a5ee77ed30d19c833eaac2121c397d9144c53bd40295ff48807549c9ad7e" => :high_sierra
+    sha256 "872ae1fac4d65127058c28f6e03a16f9db3a319f99f1e32853a8f9836c443ddd" => :sierra
+    sha256 "d8b0bfbb2def81f1c334834c78bcd9c64cd1ae0efecf1aaf3a73b2802d587c5c" => :el_capitan
   end
 
   depends_on :macos => :yosemite
