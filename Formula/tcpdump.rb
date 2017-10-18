@@ -7,10 +7,10 @@ class Tcpdump < Formula
 
   bottle do
     cellar :any
-    sha256 "321254c4ef9c9d005b59bd6ecc2511a6c8444eda92c93f836db4ffecaf4c36c9" => :high_sierra
-    sha256 "f383f086f232e06e01c9d206c98f65d9df5109366f13ba684910b8e249e35a6e" => :sierra
-    sha256 "10486fd04e4b4df5f7fbd2b9aba3d48c903730c53df3ee9b7f57887db0347df8" => :el_capitan
-    sha256 "97fc8337c3808fa208b72f1eea5eea6d53bf67c083ca6b1b3ddf751b8342c574" => :yosemite
+    rebuild 1
+    sha256 "2f4b72f378b24d067f54b87c58dad06fa275dcd3f0d594c2bb1f0c020013ac72" => :high_sierra
+    sha256 "763720a7ebdd853bb5ae302153576fc0211e5ed6b49755236298b075aa2eca7a" => :sierra
+    sha256 "02ac1bf69b9d6ea0bf66d55566702ff146ed8989484fff2a6494f033b220be13" => :el_capitan
   end
 
   depends_on "openssl"
