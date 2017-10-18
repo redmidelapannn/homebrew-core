@@ -7,10 +7,10 @@ class Libedit < Formula
 
   bottle do
     cellar :any
-    sha256 "537d74532e5778f106e87e682169c7ebfc3acd6624286d3ded9e79262bafc4d4" => :high_sierra
-    sha256 "1bac371537a7a38d1193bcbe80170b5a2d592f568c5d7f6f8e01fd2fada68a3f" => :sierra
-    sha256 "3015b4190af4a5ddf26739884dde6ebb289cc16187958213d904551a51777013" => :el_capitan
-    sha256 "45a9c2abf6fb9cd0c8cdcbad8a708e00879aef224b573069cc21cdb6e42e109b" => :yosemite
+    rebuild 1
+    sha256 "011b034d8dffbb64134c988ee3a98011b9b60f32ba34b0369479cefb208c2a5e" => :high_sierra
+    sha256 "739d831c97b647f8bb8ae9e39540653bfb43e90f191b6b9bc9fcf7535e4be90b" => :sierra
+    sha256 "2dbaf680d9d68b46d4da597914d22ab47334d4f78599ff80553b356320538f17" => :el_capitan
   end
 
   keg_only :provided_by_osx
