@@ -94,7 +94,7 @@ class Httpd < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
       DocumentRoot is #{var}/www.
 
       The default ports have been set in #{etc}/httpd/httpd.conf to 8080 and in
@@ -109,7 +109,7 @@ class Httpd < Formula
 
   plist_options :manual => "apachectl start"
 
-  def plist; <<-EOS.undent
+  def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
@@ -133,7 +133,7 @@ class Httpd < Formula
     begin
       expected_output = "Hello world!"
       (testpath/"index.html").write expected_output
-      (testpath/"httpd.conf").write <<-EOS.undent
+      (testpath/"httpd.conf").write <<~EOS
         Listen 8080
         DocumentRoot "#{testpath}"
         ErrorLog "#{testpath}/httpd-error.log"
