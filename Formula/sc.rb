@@ -4,6 +4,13 @@ class Sc < Formula
   url "https://saucelabs.com/downloads/sc-4.4.9-osx.zip"
   sha256 "c88731ffe03c1f0c7ff98e0036a467ea5bce1ff757b27b31c85d6e6e219cdfc5"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "67bbc45b49218fd47a00bb26dfe0b9347291f1d409857348b9a4562a711e6cda" => :high_sierra
+    sha256 "67bbc45b49218fd47a00bb26dfe0b9347291f1d409857348b9a4562a711e6cda" => :sierra
+    sha256 "67bbc45b49218fd47a00bb26dfe0b9347291f1d409857348b9a4562a711e6cda" => :el_capitan
+  end
+
   def install
     ohai "By installing this formula, you agree to the license.html file included with the installation"
     ohai "See: #{doc}/license.html"
