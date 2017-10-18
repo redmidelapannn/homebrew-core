@@ -7,10 +7,10 @@ class Glktermw < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c8ecb98e15edfdb02c5aed42590291e45c0dae29640a209428f1382991a23a2a" => :high_sierra
-    sha256 "8f62b5b2b920573742886d31a7c579b174bb60fad1bfeabae346f8893dc440cf" => :sierra
-    sha256 "5b302ada83cd6185c262277c3836d9e071a050a677fd41d86cab31aa0e8257d0" => :el_capitan
-    sha256 "9e1cce9e7bbc7d1bb1ea781bcd49c8cd1a3a933ca00637bf5c637a5dfa7c5ccc" => :yosemite
+    rebuild 1
+    sha256 "0519b93a3cc7d2c42c51792903817229828fc7f46538e920a5fd3cef4ebcf646" => :high_sierra
+    sha256 "bc07ce771bd071ae80545d8509f79457ed7e97b27a4ff713186863280130b93b" => :sierra
+    sha256 "09ffe40e67f663cc8ac15986a29b3e1a33fed4e46502b8d3510abc1b668d3af7" => :el_capitan
   end
 
   keg_only "conflicts with other Glk libraries"
