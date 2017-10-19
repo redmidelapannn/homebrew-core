@@ -26,6 +26,11 @@ class Bitcoin < Formula
   needs :cxx11
 
   def install
+    if MacOS.version == :el_capitan && MacOS::Xcode.installed? &&
+       MacOS::Xcode.version >= "8.0"
+      ENV.delete("SDKROOT")
+    end
+
     system "./autogen.sh"
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
