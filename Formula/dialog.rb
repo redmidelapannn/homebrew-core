@@ -7,10 +7,10 @@ class Dialog < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "55ca70e0f0e409e4ce74fb52fced006a43a2201ed635f90513a62b52dd8381ac" => :high_sierra
-    sha256 "ae701f5888a92c5471a133d3af23ec16de80f484a613f665c22c72bd9dd3e8cb" => :sierra
-    sha256 "c7f6b3631580d468acdea09309b9d3073c4ab6bb474f3479a679c75c93215f14" => :el_capitan
-    sha256 "d7a24282dfa9cc3a5a6b45aef751291079816f3560ec1ec3f1c1bffe787c374a" => :yosemite
+    rebuild 1
+    sha256 "514aefbc8e33917710253e707084cc0f1f7c27e98a8b30e23a2d6ba8da7f0941" => :high_sierra
+    sha256 "0c15863087aa926b776da0b891d8f6b6b1ba78e1bc0c5d90734eaa9d88a6e838" => :sierra
+    sha256 "4381c9b8b7b55f26e52b8ce0d687a704cdfde5111752c008b3c61c53fbaadb95" => :el_capitan
   end
 
   def install
