@@ -8,9 +8,10 @@ class PureFtpd < Formula
   revision 1
 
   bottle do
-    sha256 "def15854f9eea616cfb9b22d003b44d6302f2115df8ee8b682f67431a3048e78" => :high_sierra
-    sha256 "64d935c2a271f301b095eefbdd78d103a20e21842d2d1bc800c47d4646d983b8" => :sierra
-    sha256 "e1dc733cce0594ae92ebba708673f64e4c88f01d11ce9cc04ba318e04db395a4" => :el_capitan
+    rebuild 1
+    sha256 "95ec718e5a17a845c9316f5756a76d2fc9dec31c185bd4ca9dc2776249f68222" => :high_sierra
+    sha256 "4f2c9e31646a9a49c9f900484da4efaf9d67a628ab172fac9bcfff44fb4b17aa" => :sierra
+    sha256 "722e6d25e7ef8dbb08d8238f908521e2043fd9c8ad052736aecb0fcfb5e764cd" => :el_capitan
   end
 
   option "with-virtualchroot", "Follow symbolic links even for chrooted accounts"
