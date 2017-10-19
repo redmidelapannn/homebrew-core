@@ -8,9 +8,10 @@ class Cfitsio < Formula
 
   bottle do
     cellar :any
-    sha256 "8b21e0a610d1caa8d8900546d2b2d9f83f74a9f1bd0d3e729f1ab1ad28b81813" => :high_sierra
-    sha256 "b2f55b8504d79e27d23b5fa93f77ff9bc2488eef4f5ed94c7a16757505df4462" => :sierra
-    sha256 "7681f60baee8d9a73639be3f54d7f4a1c71c9fc9f4ac7fd0e3ba20cb2a2c3c7b" => :el_capitan
+    rebuild 1
+    sha256 "6514ab5f67a80432da2306065d856d148b241f026152df1b6f99ff377f072e25" => :high_sierra
+    sha256 "daf47cb03b82ff0b60a5eb78d76839488cdc877aaa5a206a360114692d6dc21f" => :sierra
+    sha256 "b1697d65d5b16f4a9f3440e551b1dbfde8c1fdc4ef98ca99249b3e13bf8e0856" => :el_capitan
   end
 
   option "with-reentrant", "Build with support for concurrency"
