@@ -6,11 +6,10 @@ class Dssim < Formula
 
   bottle do
     cellar :any
-    sha256 "f1eb2a6f9a2dabe6613943d12255017c6af64c7adcfc24f882c772d477de605c" => :high_sierra
-    sha256 "140f682a13b7fc63fa094dde9df6088a377e8317d30e0f208ffb0513e2baed26" => :sierra
-    sha256 "46ff2909894a5d0ec443a84e16b87e6fe746bd53c816091002dde0da15581222" => :el_capitan
-    sha256 "b5e6df645abb73ab9b1227d87039397f6acc56c63f422bebc13d7e29a0c9d56f" => :yosemite
-    sha256 "51756e74240d03c87a79ff0e14e494d249701d4069ea336b529b47a179c469d3" => :mavericks
+    rebuild 1
+    sha256 "421aa588644564d0fde1f0bf1ec46c32b6bfacb1eda224bc048a0cf3d683c9e9" => :high_sierra
+    sha256 "c4da2e03cf2b7131da65e6e299e4e1d86bb32a4fa2a10fef56374c24cee9c561" => :sierra
+    sha256 "906f52022c2530dc340712797098a5ae07997f01e3913fa7eb6ab4a45c7f5244" => :el_capitan
   end
 
   resource "meson-0.27.0" do
