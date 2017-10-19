@@ -7,10 +7,10 @@ class Raine < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "5c3d0fa6dcef53ac42e2ca4b54ae91f4cbbdf83e3614056c3c6b58a2b6083db2" => :high_sierra
-    sha256 "74e67059ae1ba9105c47aef4d46b871273023c2778f2cc939e9e6e2dd9020114" => :sierra
-    sha256 "6cbc1585005c114105d1dfc758b3e522df63970086a79feaefeb8c496bf041e8" => :el_capitan
+    rebuild 2
+    sha256 "4cf635cdbd648cc460abf14e7596f557691c54f7dbe686b4400b3a7490346645" => :high_sierra
+    sha256 "90c8421d7e9dcba42aab86597bd5ed5d8bf159be52d19bc23f2942eb4c24cf7b" => :sierra
+    sha256 "871b36541224e1953e137961795cc2eecb9c7769be9474c20002daa775e36b92" => :el_capitan
   end
 
   def configure_args(package)
