@@ -5,10 +5,10 @@ class H2o < Formula
   sha256 "d40401ca714d00ca5204e8d22148dbaa9cae3407e3b4b6b62bd208543901ea51"
 
   bottle do
-    sha256 "4f75cace57f8cbeeef2964a2223914de29739022c2c7a17c04bfbb5d32c34080" => :high_sierra
-    sha256 "738b83a5aa48a1ae48ac663ef097abedf1b1f9918c468e13a4b99c51a942fc90" => :sierra
-    sha256 "b7b4d761821d02360d40d876dcca57d3bc2f63ec2eddd80793ccf0fcbae91746" => :el_capitan
-    sha256 "449f50d6f97fb361f34e37e98aedeb368cc709d1114d7db4372a0cb6aea23e07" => :yosemite
+    rebuild 1
+    sha256 "3a3944b61b21882e3c0e052f93dd16e6edaca8b80d4f096a00eaa69761b7b120" => :high_sierra
+    sha256 "4d4d7e9215d9a33a23571a2906300af4aacfbf0987f59a88bab2e43ceeeb3152" => :sierra
+    sha256 "50320de6d6f9ab3a79c30f89afd6d8015242f676e81f971bc4ea85749328fb9e" => :el_capitan
   end
 
   option "with-libuv", "Build the H2O library in addition to the executable"
