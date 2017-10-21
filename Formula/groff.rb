@@ -6,10 +6,8 @@ class Groff < Formula
   sha256 "3a48a9d6c97750bfbd535feeb5be0111db6406ddb7bb79fc680809cda6d828a5"
 
   bottle do
-    sha256 "fc636952c14127c45b4846e6a7fea45710514ecaf6282dc24094029393f38f10" => :high_sierra
-    sha256 "bc116f66735a0b9113319e2fa8fc52172ce7e34dbfb7683f79664093ee119432" => :sierra
-    sha256 "7a83070643f180e6e2644a4631a24ee908f80158e43166d7d9fabd1f60d039ca" => :el_capitan
-    sha256 "55da66201119dd58fa96bbdb94a421d40fc6daba86bbc10ab6abc33763be17df" => :yosemite
+    rebuild 1
+    sha256 "c6d8ec5c390167a02db2f991c0c920977009599bd3beeffcdcec614b064f4282" => :high_sierra
   end
 
   option "with-gropdf", "Enable PDF output support"
