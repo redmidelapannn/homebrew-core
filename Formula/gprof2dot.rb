@@ -8,9 +8,10 @@ class Gprof2dot < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b557363c9161ff1cd9de06cfb116eac29886c31f655c57d031ef2c6641fe876c" => :high_sierra
-    sha256 "4cbf98d1320170ed6287d0b58bc7c810e29529de2ea5d5c4c2545443c6f5e3e2" => :sierra
-    sha256 "2fe7080ddad320a9f73638f8d1ad072e97d6ba80825221414bae015019672852" => :el_capitan
+    rebuild 1
+    sha256 "feda21a07f544c738452d071dc3edc57ebb6aeadb1a3268aebba9fd523982eeb" => :high_sierra
+    sha256 "351cc544c4bde1dd1c4639669c9effc8b8f292633aea9818064fa69378e103f7" => :sierra
+    sha256 "1bdd77e8f320f43b452c680a1d3208123574eff724e2f1136b1e3c5e67b77509" => :el_capitan
   end
 
   depends_on "graphviz" => :recommended
