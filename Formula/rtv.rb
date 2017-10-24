@@ -3,8 +3,8 @@ class Rtv < Formula
 
   desc "Command-line Reddit client"
   homepage "https://github.com/michael-lazar/rtv"
-  url "https://github.com/michael-lazar/rtv/archive/v1.18.0.tar.gz"
-  sha256 "44e49253db01bcda5992b80804444c6e996092146c5176a7f44ca1a1f1abe815"
+  url "https://github.com/michael-lazar/rtv/archive/v1.19.0.tar.gz"
+  sha256 "2d5719cd47113917b924ed1bbb9882528433906dceb816fad1f40a31de30de8b"
   head "https://github.com/michael-lazar/rtv.git"
 
   bottle do
@@ -18,7 +18,7 @@ class Rtv < Formula
   depends_on :python3
 
   def install
-    venv = virtualenv_create(libexec, "python3")
+    venv = virtualenv_create(libexec, "python")
     system libexec/"bin/pip", "install", "-v", "--no-binary", ":all:",
                               "--ignore-installed", buildpath
     system libexec/"bin/pip", "uninstall", "-y", name
