@@ -4,6 +4,12 @@ class Codelite < Formula
   url "https://github.com/eranif/codelite/archive/11.0.tar.gz"
   sha256 "9eb23ea635fc746318a832efd752b08027c11efcd9af7f494f31dbaacdd651a1"
 
+  bottle do
+    sha256 "7c23350f5c578a27d42db6423ab80a7c811297bacd8e101f4d5c7b061a0b0903" => :high_sierra
+    sha256 "106276123ab4fc36163f33ccc5e2170692c12735e724c6617564b8e644f04399" => :sierra
+    sha256 "2fc6f972da5247e1bcb0293d44b95336840f9f2428cbefbe61460e7566f54f1a" => :el_capitan
+  end
+
   depends_on "ccache" => :build
   depends_on "cmake" => :build
   depends_on "openssl"
