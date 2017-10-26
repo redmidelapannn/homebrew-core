@@ -18,7 +18,7 @@ class Rtv < Formula
   depends_on :python3
 
   def install
-    venv = virtualenv_create(libexec, "python")
+    venv = virtualenv_create(libexec, "python3")
     system libexec/"bin/pip", "install", "-v", "--no-binary", ":all:",
                               "--ignore-installed", buildpath
     system libexec/"bin/pip", "uninstall", "-y", name
