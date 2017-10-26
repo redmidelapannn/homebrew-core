@@ -4,6 +4,12 @@ class FgslAT1 < Formula
   url "https://www.lrz.de/services/software/mathematik/gsl/fortran/download/fgsl-1.0.0.tar.gz"
   sha256 "2841f6deb2ce05e153fc1d89fe5e46aba74c60a2595c857cef9ca771a0cf6290"
 
+  bottle do
+    sha256 "b9ff13098dad604ccfcb99fbb006f22b8295f9993afb6b55501890cca7e64f1c" => :high_sierra
+    sha256 "92fec4561dacf5c245bc168e6f90ca632417679779c6219b0a8d3978c14792e7" => :sierra
+    sha256 "01749e4892d6ec640a13339c758460b18d935440d317346be6074dfadffc0850" => :el_capitan
+  end
+
   depends_on "pkg-config" => :build
   depends_on "gcc"
   depends_on "gsl@1"
