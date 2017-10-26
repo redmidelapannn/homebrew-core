@@ -4,6 +4,13 @@ class Faktory < Formula
   url "https://github.com/contribsys/faktory/archive/v0.5.0.tar.gz"
   sha256 "388eefa0834ff71803a3353db5ae336e73246e1ca2a5866c218e8172a253fceb"
 
+  bottle do
+    cellar :any
+    sha256 "389a04e79058c68b0cf482f183b359c694d9ad648283887978c5cf54da485f93" => :high_sierra
+    sha256 "3d14bc5837979b8a08fb4f48609cfc04fce204d5e01b98f3f2e79f891df17081" => :sierra
+    sha256 "7b3120b82c38fb3ac647845e151ff72fe1cb5beb48349f72bdda4e6c4eea3ee9" => :el_capitan
+  end
+
   depends_on "rocksdb"
   depends_on "snappy"
   depends_on "dep" => :build
