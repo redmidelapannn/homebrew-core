@@ -12,7 +12,7 @@ class Duck < Formula
     sha256 "ca0a5a36481a47b5ef3651327b16dcf05cd530496db0f84bda7e5c16177548cd" => :el_capitan
   end
 
-  depends_on :java => ["1.8+", :build]
+  depends_on :java => ["1.8", :build]
   depends_on :xcode => :build
   depends_on "ant" => :build
   depends_on "maven" => :build
