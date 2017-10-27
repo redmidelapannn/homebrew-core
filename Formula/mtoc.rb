@@ -3,6 +3,13 @@ class Mtoc < Formula
   homepage "https://opensource.apple.com/source/cctools/cctools-895/"
   url "https://opensource.apple.com/tarballs/cctools/cctools-895.tar.gz"
   sha256 "ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "242f8dab060d2471cc083f1bdaba0fb3f7595d29c54eeaf174793d19bd9859d4" => :high_sierra
+    sha256 "145616986ecbc57ccee0460fd26de55d9f003b6257b19ec953fcd4c62dbd9d9e" => :sierra
+    sha256 "5c0c84bf5d883f7e4b9fc362f5da17876fc1a89fa787c9273e7bbf790327ac5d" => :el_capitan
+  end
+
   depends_on "llvm" => :build
 
   def install
