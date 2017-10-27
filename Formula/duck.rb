@@ -25,7 +25,7 @@ class Duck < Formula
   end
 
   test do
-    system "#{bin}/duck", "--download", Formula["libmagic"].stable.url, testpath/"test"
-    (testpath/"test").verify_checksum Formula["libmagic"].stable.checksum
+    system "#{bin}/duck", "--download", Formula["when"].stable.url, testpath/"test"
+    (testpath/"test").verify_checksum Formula["when"].stable.checksum
   end
 end
