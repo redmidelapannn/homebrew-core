@@ -10,9 +10,10 @@ class Exiftool < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5039ab4f2bc31d2afc9b4cd1fab9ab5d6deec2bf2d1bba0a95f4d54e747dd117" => :high_sierra
-    sha256 "5039ab4f2bc31d2afc9b4cd1fab9ab5d6deec2bf2d1bba0a95f4d54e747dd117" => :sierra
-    sha256 "5039ab4f2bc31d2afc9b4cd1fab9ab5d6deec2bf2d1bba0a95f4d54e747dd117" => :el_capitan
+    rebuild 1
+    sha256 "2721a624ad9c5a93fe30a9b5eb8203b595b3c4d6ca907de34ccdf47a220baab7" => :high_sierra
+    sha256 "2721a624ad9c5a93fe30a9b5eb8203b595b3c4d6ca907de34ccdf47a220baab7" => :sierra
+    sha256 "2721a624ad9c5a93fe30a9b5eb8203b595b3c4d6ca907de34ccdf47a220baab7" => :el_capitan
   end
 
   devel do
