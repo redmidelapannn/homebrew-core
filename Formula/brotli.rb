@@ -7,9 +7,9 @@ class Brotli < Formula
 
   bottle do
     cellar :any
-    sha256 "6144a0ca96854448af4ff96c06a0e4aba23266f9283851e787cfa0b2a3cb2c49" => :high_sierra
-    sha256 "5d2597581c6af21f4bb53f2966c3cbd7a203305a66b6697b44664326f625e0e2" => :sierra
-    sha256 "d559e3e3c1b2efab8727b04d51805eccdbf5215353b5a2d0603a3d1f878854d7" => :el_capitan
+    rebuild 1
+    sha256 "ef5a88d788d1eac83038ecd7b2c72a47b468277113655dbb47c6f5fbb996b1f8" => :high_sierra
+    sha256 "0b3828ccd5514206d9a575353d0ffd6553df8d466bee5c6652ac5d522ff9d9a2" => :el_capitan
   end
 
   depends_on "cmake" => :build
