@@ -6,10 +6,10 @@ class AntlrAT3 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ed849f2435e121d0a0dbbbed4a027dd4f6f71db9a17a2f639bb1e492bdb1b7f0" => :high_sierra
-    sha256 "450bb2d748965c0f25a280a2eb4fd9b371e6f403107053b610dedb030229009e" => :sierra
-    sha256 "450bb2d748965c0f25a280a2eb4fd9b371e6f403107053b610dedb030229009e" => :el_capitan
-    sha256 "450bb2d748965c0f25a280a2eb4fd9b371e6f403107053b610dedb030229009e" => :yosemite
+    rebuild 1
+    sha256 "ee51eb414b5e1790b8b4aa6036c82a1ad86ff10834537b20374c7402ad8de290" => :high_sierra
+    sha256 "ee51eb414b5e1790b8b4aa6036c82a1ad86ff10834537b20374c7402ad8de290" => :sierra
+    sha256 "ee51eb414b5e1790b8b4aa6036c82a1ad86ff10834537b20374c7402ad8de290" => :el_capitan
   end
 
   depends_on :java
