@@ -7,9 +7,9 @@ class Binutils < Formula
   revision 1
 
   bottle do
-    sha256 "8b09492986a9dc598763dacd168c6e30508e39fb6c61864e78e9bf8368d77563" => :high_sierra
-    sha256 "274240a3aa74644d55054f45e26bc4242197cb514ae4817c128f194dc7b97901" => :sierra
-    sha256 "e7e5167576c31a03bdc517ba46f28e8a0dc49531b004c96dd1598418f4dce8aa" => :el_capitan
+    sha256 "6efc320540a3ec36734a1981c693f512c6a5bfd29413c8a91eef7d010cd3bda6" => :high_sierra
+    sha256 "c062fbbb20649f55d86f50006d7cca7db978b573bada5e097ebed10ab257176a" => :sierra
+    sha256 "df416814ecfd1851e4d77ba1eda88d6e0a03e17a261205e2ae34300a17cbea79" => :el_capitan
   end
 
   def install
