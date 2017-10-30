@@ -6,8 +6,9 @@ class MarathonSwift < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "14541e2edb49c0eb2118b61ff0245e0654dc49d4b48e461df6cb1d8c6698112e" => :high_sierra
-    sha256 "80fc6f4b1ff33081f4b27091ea42901c3921e00f6ffc3a2017662e6905e562df" => :sierra
+    rebuild 1
+    sha256 "edb1572fd9ed2eeef45586b1be46e7a9a21135a218b13d7bb1be041d962ec6ca" => :high_sierra
+    sha256 "e1df41d4462346f75a95f928c8c1898301b4bb3b470d3b7bc70f3052c398a312" => :sierra
   end
 
   depends_on :xcode => ["8.3", :build]
