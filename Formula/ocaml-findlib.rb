@@ -9,17 +9,18 @@ class OcamlFindlib < Formula
   def install
     ENV.deparallelize
 
-    system "./configure", "-bindir", "#{HOMEBREW_PREFIX}/bin",
-                          "-mandir", "#{HOMEBREW_PREFIX}/share/man",
-                          "-sitelib", "#{HOMEBREW_PREFIX}/lib/ocaml",
-                          "-config", "#{HOMEBREW_PREFIX}/etc/ocamlfind.conf"
+    system "./configure", "-bindir", bin,
+                          "-mandir", man,
+                          "-sitelib", lib/"ocaml",
+                          "-config", etc/"ocamlfind.conf",
+                          "-no-topfind"
     system "make", "all"
     system "make", "opt"
-    system "make", "install", "prefix=#{buildpath}/output/"
-    prefix.install Dir["output/#{HOMEBREW_PREFIX}/*"]
+    inreplace "findlib.conf", prefix, HOMEBREW_PREFIX
+    system "make", "install"
   end
 
   test do
-    system "#{bin}/ocamlfind", "query", "findlib"
+    system bin/"ocamlfind", "query", "findlib"
   end
 end
