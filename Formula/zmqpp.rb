@@ -6,12 +6,9 @@ class Zmqpp < Formula
 
   bottle do
     cellar :any
-    sha256 "69f9c485ca2569e6f2e81e796aae9bb8fc0762857ab23fcadddbfc0188f5c88f" => :high_sierra
-    sha256 "b4e7722935e4ee4798e1b175308ea52a0a2c698d07fc5c32363501ee90e03d02" => :sierra
-    sha256 "8485c260791953899ef966e0e65104702519310520a790e4a4237f0336df49fa" => :el_capitan
-    sha256 "b685138f83319a736cac81faf480f95fd08b4634c8b19e785e611b39ebbfe39c" => :yosemite
-    sha256 "9e4a0cf143c037cdc1b5c8440f09ab2b67e79edb78b3b2d638cc4cb523fe7d1b" => :mavericks
-    sha256 "2392c3090822256c05a35a2e09e99096512838f51704281a2a3b26af10739813" => :mountain_lion
+    sha256 "45ed9cec30d14c2f0425e659ad453771c1eb16b4f2bc97e8cf2c97b108c38dc1" => :high_sierra
+    sha256 "6cd10a451b42ef20a2c991f7af23f355efe82e4bf4371c12d239a00077848e34" => :sierra
+    sha256 "a4b141ce1b06b7d050567021d5b136a509978f18e339798829550dc3ba1baef6" => :el_capitan
   end
 
   depends_on "zeromq"
