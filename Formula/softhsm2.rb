@@ -12,17 +12,12 @@ class Softhsm2 < Formula
                           "--disable-silent-rules",
                           "--with-objectstore-backend-db",
                           "--with-migrate",
-                          "--with-openssl=" + Formula["openssl"].opt_prefix,
+                          "--with-openssl=#{Formula["openssl"].opt_prefix}",
                           "--prefix=#{prefix}",
                           "--sysconfdir=#{etc}",
                           "--localstatedir=#{var}"
 
     system "make", "install"
-
-    include.install "src/lib/pkcs11/cryptoki.h",
-                    "src/lib/pkcs11/pkcs11.h",
-                    "src/lib/pkcs11/pkcs11f.h",
-                    "src/lib/pkcs11/pkcs11t.h"
   end
 
   def post_install
