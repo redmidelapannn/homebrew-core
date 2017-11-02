@@ -5,6 +5,13 @@ class Clingo < Formula
   version "5.2.1"
   sha256 "e5bd853e6240192c6fd98de972a48a86d4f1b9df2c34d0bb198c324268ee2cde"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c004f970e0e023d0c6de64e30405385bb9306a2ce984533a045a171db374f6f5" => :high_sierra
+    sha256 "c004f970e0e023d0c6de64e30405385bb9306a2ce984533a045a171db374f6f5" => :sierra
+    sha256 "c004f970e0e023d0c6de64e30405385bb9306a2ce984533a045a171db374f6f5" => :el_capitan
+  end
+
   def install
     bin.install "clasp", "clingo", "clingo-python", "gringo", "gringo-python", "lpconvert", "reify"
   end
