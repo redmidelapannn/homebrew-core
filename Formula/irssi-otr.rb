@@ -4,6 +4,13 @@ class IrssiOtr < Formula
   url "https://github.com/cryptodotis/irssi-otr/archive/v1.0.2.tar.gz"
   sha256 "4619208b9c9171aa97a41960b3e892390b6473e2988a056b9fe8e110daa1ae9c"
 
+  bottle do
+    cellar :any
+    sha256 "51cb4b1e22d1d40dea8a799734fd6abc0b56d09f6a3763410b4474903dffda19" => :high_sierra
+    sha256 "5be0c5f94bcd5c9b5d13f2915be7b8b2bd598fd8f9f059f83f31b03a164bb16d" => :sierra
+    sha256 "4de26505cb98eb4a6c6bd7950245d498fb67e5875936ef2ff4781ba8557d570d" => :el_capitan
+  end
+
   depends_on "glib"
   depends_on "irssi"
   depends_on "libgcrypt"
