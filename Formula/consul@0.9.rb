@@ -5,6 +5,13 @@ class ConsulAT09 < Formula
       :tag => "v0.9.3",
       :revision => "112c0603d3d6fb23ab5f15e8fdb1a761da8eaf9a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4b3f9486da1ae5999531037b8854acfdd4ac5df59e06fe3acc0ebee1dc74c4af" => :high_sierra
+    sha256 "bd8418cca4f8cf2a573aa91defcb8b0a3853b0bcf7a3a19e0e9612d5985608de" => :sierra
+    sha256 "8cf74c9ad9ec74f9a9e94dcd0490fe80a9eeaf74969f3766d9f00a3e7a38a454" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
