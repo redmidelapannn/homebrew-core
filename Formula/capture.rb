@@ -4,6 +4,12 @@ class Capture < Formula
   url "https://github.com/krad/capture/archive/0.0.1.tar.gz"
   sha256 "cdec379de2832b0a21ad5f3b973685f4684a0926166e70ba147003838fb1285d"
 
+  bottle do
+    cellar :any
+    sha256 "0bdff8786972727a87be42923b3e3964781e7899fac60e0cdc7403fc57582a0b" => :high_sierra
+    sha256 "63fcb358c651b6da69e331c4b747213d506f7e078a3e919e5e36ec070ab0fa7b" => :sierra
+  end
+
   depends_on :xcode => ["9.0", :build]
   depends_on :macos => :sierra
 
