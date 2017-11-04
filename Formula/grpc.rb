@@ -9,9 +9,9 @@ class Grpc < Formula
   end
 
   bottle do
-    sha256 "6a5c18584c79c72376a976dac256558f6f4217c9ce852aac53d46342581db575" => :high_sierra
-    sha256 "cdee88720146ca4854126adf19981c8f53fde2286103327f71702e2b7fab64a6" => :sierra
-    sha256 "22f0bb317c166c5bb076debbec4b78560b869051fff07daa7a25e28e93d6cc95" => :el_capitan
+    sha256 "efedf24ac3ab35d250be476c29b236d5552d624fcfd50217c3b00135536af0ec" => :high_sierra
+    sha256 "8a809b53037b5a66dabe42b694fe8445b2eaea7d5a417344eefb29212ebf0d48" => :sierra
+    sha256 "79126a0d3816f20c97eda6f6835736a3f5cbe46834231a1380d384c706943948" => :el_capitan
   end
 
   depends_on "autoconf" => :build
