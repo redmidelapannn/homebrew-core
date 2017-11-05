@@ -8,11 +8,10 @@ class Arabica < Formula
 
   bottle do
     cellar :any
-    sha256 "0d3da860ba0b953abb9f70665cc73620ae2b0cd0570dacb55bfe8954ae0d58e7" => :high_sierra
-    sha256 "6a08cb5b8af8d2034569451ad499260acebc610ab390383b20398fc10a6fb115" => :sierra
-    sha256 "185edd120b5759f25d1e69b9f24840eef6a404b1001c90e684546e359cf75928" => :el_capitan
-    sha256 "1882f30edf8da8d98df603a6006c3dce96e21941e4266103366930b3e5a922c2" => :yosemite
-    sha256 "5d247d4d5819106404bc7091e3b6141b4d298c77636bee39bfc524a3c5481e7f" => :mavericks
+    rebuild 1
+    sha256 "dc4291a97f58d3d77027fb17aa7936b1309f6a2734cb555cf527264af2f9d467" => :high_sierra
+    sha256 "f7b68e77f9b6e34ba114126a74c9734089cafd8687fe4589e767314e6a415e76" => :sierra
+    sha256 "01e935c00e82e4a957c14a67b2f598a86fccc5f5ee28786a28e92516468df5f6" => :el_capitan
   end
 
   option "without-test", "Skip compile-time make checks (Not Recommended)"
