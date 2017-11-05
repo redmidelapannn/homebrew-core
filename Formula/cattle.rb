@@ -5,10 +5,10 @@ class Cattle < Formula
   sha256 "e8e9baba41c4b25a1fdac552c5b03ad62a4dbb782e9866df3c3463baf6411826"
 
   bottle do
-    sha256 "bf68a1bc30056789724407aff1a9edbea6671494fd766277ecea8fa14aa8f628" => :high_sierra
-    sha256 "9155787316cc502e87a4f2f9fc96d0e68da0de47a125af4dd47dff0e409c9737" => :sierra
-    sha256 "4db6aba09bf4b3fa6f59423b8d34f108e6a5d63d0338672e1bdcc305b8fdac67" => :el_capitan
-    sha256 "0cd99db357d824c250d115146959c710ddd52a6fbb165308867d2b29c65c5c42" => :yosemite
+    rebuild 1
+    sha256 "45d82601ff83592e624679e963b279d04f8496d7bff5458be4a6a31002c393f9" => :high_sierra
+    sha256 "d558bed929d69a4bb6046fb4d1618369a4a690d0bcf27ffeed3880f60c47d359" => :sierra
+    sha256 "cbaa33bb9a6527f07beb21c1a6b2eaf0383d10a457e15fb02e415ad6223b4c4d" => :el_capitan
   end
 
   head do
