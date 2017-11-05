@@ -5,6 +5,12 @@ class RstudioServer < Formula
   sha256 "6edc85f98366a94f0c9939dde8d25950c65580c9eed7ac245903e0aa1205c818"
   head "https://github.com/rstudio/rstudio.git"
 
+  bottle do
+    cellar :any
+    sha256 "63af5d29c02fbf1c0308031202946300f65a7ab0e0a9d1702977c94a82971c6b" => :sierra
+    sha256 "d6ff4e90ba3410ab73d0a3483e1540f39e0b65e7996ec5ce1438ecfacbd5314b" => :el_capitan
+  end
+
   depends_on :java => "1.8"
   depends_on "r" => :recommended
   depends_on "cmake" => :build
