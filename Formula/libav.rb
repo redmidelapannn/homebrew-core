@@ -7,9 +7,9 @@ class Libav < Formula
   head "https://git.libav.org/libav.git"
 
   bottle do
-    sha256 "f5e07daaf273dfd195589bcad8c5b5ac76a2d2a5303f5049982d8571229e5588" => :high_sierra
-    sha256 "eebcb1c507573e727c3c0fdaf71c7eacd3e812dd2291d9d810e351ba51d44a3d" => :sierra
-    sha256 "2e1471577657408ca11733bab5324f6dcd8ee62db06fa8a0e1d28dc05498981b" => :el_capitan
+    sha256 "64ee4341178606d2e8bf80888f8f43f99334043fbd19b9f52daa964a6394a236" => :high_sierra
+    sha256 "9343326c95d1b1ba3314d882d4d96e8c4c0a1a6f9e9f29cf03b416acaa826cca" => :sierra
+    sha256 "ff3de68a93fe3c20b0c18ee65ed3a6b097198b8125719ab843573b6e79e363eb" => :el_capitan
   end
 
   option "without-lame", "Disable MP3 encoder via libmp3lame"
