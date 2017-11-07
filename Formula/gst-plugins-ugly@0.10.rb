@@ -6,10 +6,9 @@ class GstPluginsUglyAT010 < Formula
   revision 1
 
   bottle do
-    sha256 "4a76a18b274c71cdee34d3ef39a776de69adf0efcea8dfb2275badc28bf82ac5" => :high_sierra
-    sha256 "333c70ada40a6a998b528d8e053d2ad7563a76f94b43302d608483c0a1e0b8dd" => :sierra
-    sha256 "57670ee8e35998b12758f0ab25b0e7e4d1c0ee4971c5a102b2945c6fda66ed46" => :el_capitan
-    sha256 "6b808ae9de72d26b178279e6d38711a7e4d869ca0de1e456de4424eaea009693" => :yosemite
+    sha256 "05c9397aca4308dc1220eba063d3c51f80fe5026481abb1bf58358a543e103e4" => :high_sierra
+    sha256 "60c829fbe7349756becaf9825d157a4377b46002841f245576b86713a74725a0" => :sierra
+    sha256 "ad4b2320b979c5c832410904d73ccc9efcf6cf6cb51cd3df8c1c53002019db42" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
