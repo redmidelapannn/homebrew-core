@@ -5,6 +5,13 @@ class Spotbugs < Formula
   sha256 "ac6169a551212756a05dd9c066ef9212653d8a99b754ef4dade6a7008f8ad781"
   head "https://github.com/spotbugs/spotbugs.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "72b2801333a1557c0f6c2e796cafa14781fa0ffdfc472e81db31225350a110ce" => :high_sierra
+    sha256 "698de9229339f56e6800ca88f79a72c3b5bb4ac1395392cbf2b4fd6f1975e02a" => :sierra
+    sha256 "a5b9ebb540f663e95e9fcf1e3bada98b434222b54f0025bf3aa3dd5ac6d0324b" => :el_capitan
+  end
+
   depends_on "gradle" => :build
   depends_on :java => "1.8+"
 
