@@ -4,8 +4,8 @@ class Grpc < Formula
   head "https://github.com/grpc/grpc.git"
 
   stable do
-    url "https://github.com/grpc/grpc/archive/v1.6.7.tar.gz"
-    sha256 "0ed08e406eb3ecb1ab88b1eb183c7c51a996dae8fa79a0e6fbb9561c9098bf96"
+    url "https://github.com/grpc/grpc/archive/v1.7.2.tar.gz"
+    sha256 "0343496a3e79d5fb7ea7be5fa466d8e00ef0ad459394047b1a874100fd605711"
 
     # Fix "error: use of undeclared identifier 'INT_MAX'"
     # Upstream PR from 12 Sep 2017 "Fix headers on flow control"
