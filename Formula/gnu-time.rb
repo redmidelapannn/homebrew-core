@@ -18,11 +18,6 @@ class GnuTime < Formula
 
   option "with-default-names", "Do not prepend 'g' to the binary"
 
-  # Fixes issue with main returning void rather than int
-  # https://trac.macports.org/ticket/32860
-  # https://trac.macports.org/browser/trunk/dports/sysutils/gtime/files/patch-time.c.diff?rev=88924
-  patch :DATA
-
   def install
     args = [
       "--prefix=#{prefix}",
@@ -40,18 +35,3 @@ class GnuTime < Formula
     system bin/"gtime", "ruby", "--version"
   end
 end
-
-__END__
-diff --git a/time.c b/time.c
-index 9d5cf2c..97611f5 100644
---- a/time.c
-+++ b/time.c
-@@ -628,7 +628,7 @@ run_command (cmd, resp)
-   signal (SIGQUIT, quit_signal);
- }
- 
--void
-+int
- main (argc, argv)
-      int argc;
-      char **argv;
