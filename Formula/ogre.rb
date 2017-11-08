@@ -4,6 +4,12 @@ class Ogre < Formula
   url "https://github.com/OGRECave/ogre/archive/v1.10.9.tar.gz"
   sha256 "85ba2cc6a35c67ff93a9a498af9f8f3113fd3a16e7cc43c18b9769d8bf1e9101"
 
+  bottle do
+    sha256 "13d4a2a4fd52e6c4ee93438dea05dc0cd57df6c8c73ec3938346756517ff88bf" => :high_sierra
+    sha256 "7dd6b728e63097948b9298ac192245e324286c03cb9dc4152cf8d662d25077fa" => :sierra
+    sha256 "1fe832b144009e7da5a41b8d72081830758f0d3e80207182fd1ac2711b0bfc84" => :el_capitan
+  end
+
   option "with-java-component", "Build with java component"
   option "with-python-component", "Build with python component"
 
