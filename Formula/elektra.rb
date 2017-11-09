@@ -5,6 +5,12 @@ class Elektra < Formula
   sha256 "e9cbc796e175685ccb6221f1dd5ea5c43832f545c40557c32b764ff5d567b312"
   head "https://github.com/ElektraInitiative/libelektra.git"
 
+  bottle do
+    sha256 "9c9c070358993c0996362a39b8e4d3c1d49e63eb60958414edae70cb6e05f37f" => :high_sierra
+    sha256 "35cc063989d912f1e2584ab23c61569509adbc73d204530d1690a8d61d6938e5" => :sierra
+    sha256 "f4359bf67379f7508a6c041f02e7a2ed3e710278c8161e411f434a3fc57f9e09" => :el_capitan
+  end
+
   option "with-qt", "Build GUI frontend"
 
   # rubocop: disable Style/ClassVars
