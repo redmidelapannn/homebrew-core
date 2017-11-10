@@ -7,9 +7,10 @@ class Ice < Formula
 
   bottle do
     cellar :any
-    sha256 "12c868b7c154912199a6d30b43cbd01dfdf8b40c84e2a617a12c7c1b566511a4" => :high_sierra
-    sha256 "61278509d486649a63866a88cc398b623a4bfe42bb12f91361748de62cea33f8" => :sierra
-    sha256 "57bfd40f9d453215b197b5043de07554de9848c69ffdaa8909781bdf792b4b1f" => :el_capitan
+    rebuild 1
+    sha256 "db304ad4c5db9e702051b71f4b6636e1cb2d297eb51bb38f164d699e9e9733ec" => :high_sierra
+    sha256 "bfb3113977da711b5c8e39911f0c614d939ac074b24d5826c56894048d88586a" => :sierra
+    sha256 "fc5a4c020010b31b30d544a989249400fd1cffa73167a54acb16ca247cafeafe" => :el_capitan
   end
 
   # Xcode 9 support
