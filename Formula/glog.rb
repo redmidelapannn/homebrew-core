@@ -8,10 +8,10 @@ class Glog < Formula
 
   bottle do
     cellar :any
-    sha256 "3dbfe1c481193f13798455f27962297e90d37244802fa0056af333d02236d76d" => :high_sierra
-    sha256 "c5ed5359196732957cfabbe516c87437df4969547471d8ba6dff78414ab0feb8" => :sierra
-    sha256 "2a7a2aef322dfd7431221bb8b5807c67d06bbe8d6407d44ed6cedceda8a45098" => :el_capitan
-    sha256 "ccb8f5022bffec4a768851feb5a8cc1bf52ee7d9b8b87b8f9ce6bc4cd28278f9" => :yosemite
+    rebuild 1
+    sha256 "b505520586c154c2ac851928b85f6c83f8e009806141a512d0f9197a09c3a50c" => :high_sierra
+    sha256 "95ae771eb9ff5d18d3d56a50a8674dadeef2a4dd89241d67359db534e9513717" => :sierra
+    sha256 "dd95a4be662c2b96e5df7a725bfbcf7d02c5d8d481ca8ccd6b0144ffed983d73" => :el_capitan
   end
 
   depends_on "cmake" => :build
