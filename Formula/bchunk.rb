@@ -7,11 +7,9 @@ class Bchunk < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "db47b08d8b2a9c0a609c04871650a539e032015058cd45f90ebb802575674259" => :high_sierra
-    sha256 "fe99f8ae0d17d4e2c1aaea4379d074d9d7299d911b66ebf3f061405471ace147" => :sierra
-    sha256 "150759123521a6c5aa18471a6474d248cc69b5f5b4c6284f8081988c95e26353" => :el_capitan
-    sha256 "196d12168c9e570676e5ae905e7a85226b7b37d867b5f850d3d82e6157627750" => :yosemite
-    sha256 "d823c661e0786dbde185a8f7de5f70c2ba2304ece128d4abfa35c0eb2c471477" => :mavericks
+    sha256 "e29da4dbd99a3a7b582e994ec78cf0018eec1cd82c9ace86b3961c2d6aeb64f6" => :high_sierra
+    sha256 "ba5ad8a82621672b6757969aba543e0cece6e62b5f96af4c95017eaf92f0cc5a" => :sierra
+    sha256 "206bcc4d69cd733d66350c98a095bbb48c5806e88b1caa2ab7fa7b8588ab2530" => :el_capitan
   end
 
   # Last upstream release was in 2004, so probably safe to assume this isn't
