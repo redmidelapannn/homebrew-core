@@ -4,6 +4,12 @@ class Survex < Formula
   url "https://survex.com/software/1.2.32/survex-1.2.32.tar.gz"
   sha256 "ac15252618f6a59617ec1142609f04bba69b1f18b3490729e405ff89a4b22852"
 
+  bottle do
+    sha256 "bf32e61d12dff4dcfb9de00b1df0096ccb7df2dc1b72eb59243f5511d04b8066" => :high_sierra
+    sha256 "75bad5436a295cf01cbdde91267932d82fad3805e036e1c2debe892c3eae89db" => :sierra
+    sha256 "55808208969b90b44aaf736d4d5ad20f52fabcd8202c7608f3805299a8b1440f" => :el_capitan
+  end
+
   depends_on "wxmac"
   depends_on "proj"
   depends_on "ffmpeg"
