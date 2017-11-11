@@ -6,10 +6,10 @@ class Nsnake < Formula
   head "https://github.com/alexdantas/nSnake.git"
 
   bottle do
-    sha256 "53160e1d77458a3116a8b65273bae7d515b9e1c817523a1f632ae357c835877b" => :high_sierra
-    sha256 "b1de1091630f4e16fc2e0767801034fc9e81618888035ab7dbc17bb3a0082d83" => :sierra
-    sha256 "ea456b15c9edb91530c56e0f0f1da78aef138eb4805cfd083a7fdf9e3579c36d" => :el_capitan
-    sha256 "bb902bc64d9028e4d2341eed665809c77e7e4bb6fb614309111962c1e46c8c17" => :yosemite
+    rebuild 1
+    sha256 "73cda71920d9902dc0e88b8cce3099d91ae850d7860a97400f5397987160d952" => :high_sierra
+    sha256 "dbc22643cf88d4f433c4f0aa0ff0086344e2fa41fb44ec09661ff39ede4c859e" => :sierra
+    sha256 "9e2e0a9b9a13647f584acc8496d282c68ed67e091874502a232324f2712771dc" => :el_capitan
   end
 
   def install
