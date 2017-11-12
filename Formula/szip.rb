@@ -8,9 +8,10 @@ class Szip < Formula
 
   bottle do
     cellar :any
-    sha256 "6c943de437b7c14a689a18dd69885cd90c978880e11dd0874cc995c86ac3d140" => :high_sierra
-    sha256 "4672a4989b84ae533a158dd001b35d37dcc48f83e819e10014b7f2d36498082f" => :sierra
-    sha256 "7233abf10076a2cf358b9fcb00e5b1db55ccbb99251341842188aeb64b3c3b63" => :el_capitan
+    rebuild 1
+    sha256 "9aa9ce237bdfef71b3d58364ba424fd8e32da1a867337c0a981a76216610603a" => :high_sierra
+    sha256 "e77c677b0cb50b398492cb506bec80ec93be63ddde0d9f6dfc71b8e52ec8989d" => :sierra
+    sha256 "4e95dae6246c4081f307501cb5e3e0b4750f7c753422fc3a589dc320fc4baed6" => :el_capitan
   end
 
   def install
