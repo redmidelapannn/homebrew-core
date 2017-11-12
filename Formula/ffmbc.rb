@@ -7,10 +7,9 @@ class Ffmbc < Formula
   revision 4
 
   bottle do
-    sha256 "ef47a0b90417c9464ca3ffc59aaecac8eb84f34c33d665d7a41c6f16bd93b617" => :high_sierra
-    sha256 "a8fbeffc4fd920bd4ec76de3633f598c0f8a3019dbbe7af843e59d407a294b93" => :sierra
-    sha256 "541f19e04edf29bba1381677ed35acc8bdd048cb55497801261ea128df706a6a" => :el_capitan
-    sha256 "fa213ac76b9c9a7fc9e733c5ccb00d81d741ce4dfdda50c2bcf519151fffc598" => :yosemite
+    sha256 "f73f0cf9ba05d4726c14ebea29741a64e7e3b2b97e4d4db4a9922bd353e836d8" => :high_sierra
+    sha256 "a52c1da020adad2b6319e3ec54ce1dd5202ef951337bcc429df73a8a592032e6" => :sierra
+    sha256 "05af0544e85ac5831496ec182bfc4633ae1ce52f2d4520da844620eb0d7e9e68" => :el_capitan
   end
 
   option "without-x264", "Disable H.264 encoder"
