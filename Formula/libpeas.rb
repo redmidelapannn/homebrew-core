@@ -5,9 +5,10 @@ class Libpeas < Formula
   sha256 "5b2fc0f53962b25bca131a5ec0139e6fef8e254481b6e777975f7a1d2702a962"
 
   bottle do
-    sha256 "2ea4bc3ecb98d714926827f205ec7a38023c99809e6c76112966c46ca029560e" => :high_sierra
-    sha256 "761fe27f39245b4e7604d8dc49872a659432e788c179209b63b3a993f273071a" => :sierra
-    sha256 "0f521913ca0eaf13b55aacb75e4b87a730be1f527215741ae2ba207caac523b2" => :el_capitan
+    rebuild 1
+    sha256 "7895c83b83599db78de407e525d2249378667928d11c6db348678038b3950ab6" => :high_sierra
+    sha256 "656d12418ae9c64d0c17e96e0c82e066c819f86558f956c7b30b12db20566916" => :sierra
+    sha256 "49aca96c79606eba018e598aa877190e92454910b89e038962c4972c21d519ff" => :el_capitan
   end
 
   option "with-python", "install support for running Python plugins"
