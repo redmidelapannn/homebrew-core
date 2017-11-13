@@ -6,11 +6,10 @@ class Bchunk < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "db47b08d8b2a9c0a609c04871650a539e032015058cd45f90ebb802575674259" => :high_sierra
-    sha256 "fe99f8ae0d17d4e2c1aaea4379d074d9d7299d911b66ebf3f061405471ace147" => :sierra
-    sha256 "150759123521a6c5aa18471a6474d248cc69b5f5b4c6284f8081988c95e26353" => :el_capitan
-    sha256 "196d12168c9e570676e5ae905e7a85226b7b37d867b5f850d3d82e6157627750" => :yosemite
-    sha256 "d823c661e0786dbde185a8f7de5f70c2ba2304ece128d4abfa35c0eb2c471477" => :mavericks
+    rebuild 1
+    sha256 "e52609c6c4e221f235073a402218d51c49328aef95ccb76d351c104e11b4a17f" => :high_sierra
+    sha256 "4eb51e9adba6b548a5d2a2787339b9cb8c0308b857d5a48e3c0efc8b1a40ba98" => :sierra
+    sha256 "7e9bfafe062ca15c5286ce9b66de9d58fd77ef64ee5f9f82145e98d47ccab74a" => :el_capitan
   end
 
   def install
