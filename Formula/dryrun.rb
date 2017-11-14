@@ -4,6 +4,13 @@ class Dryrun < Formula
   url "https://github.com/cesarferreira/dryrun/archive/v1.0.0.tar.gz"
   sha256 "220a07109bc5f4a7ef2561a3f55a01c67de1c4c63c59047d10c811d093e26414"
 
+  bottle do
+    cellar :any
+    sha256 "d252d6082ca20b7d0e96bf399a01bc2bbbbe2053b0bc3a68dd97cefb2bfff021" => :high_sierra
+    sha256 "e3712cd47e8b059306f186855a97fe07be99e63aec4df2ebe877bf1703e75821" => :sierra
+    sha256 "f3b10f0e40f5a3d860a964a860be66f6e4067c87ebdb6220e895a592543a5353" => :el_capitan
+  end
+
   depends_on :ruby => "1.9"
 
   resource "ansi" do
