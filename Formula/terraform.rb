@@ -17,7 +17,6 @@ class Terraform < Formula
   devel do
     url "https://github.com/hashicorp/terraform/archive/v0.11.0-rc1.tar.gz"
     sha256 "1d2be011ab2023973de473ee32b9f3cd92e55edb0ceca99113cb8f65026c53fc"
-    version "0.11.0-rc1"
   end
 
   depends_on "go" => :build
