@@ -5,10 +5,10 @@ class Ncftp < Formula
   sha256 "129e5954850290da98af012559e6743de193de0012e972ff939df9b604f81c23"
 
   bottle do
-    sha256 "bd53fba3c13ba333f8e22ce0adc67a9ee3fa0d95e571f9833f4928d0adb0ee30" => :high_sierra
-    sha256 "25caf7d9c7ac3c1642d3d205fcedfbea05878798033c0ff82cc3b5fbab4674d5" => :sierra
-    sha256 "821f66bcd8991168314bb77f1404b3af6f93fda5c4fdcb3c651d3b7fbdd7f4fe" => :el_capitan
-    sha256 "ac12f87bb648eb4dde883ad5ccca0c8cf80c60e1437ce03e5fc8d768fcec1bde" => :yosemite
+    rebuild 1
+    sha256 "dc83ff35d0801abeaecaac10b02ff20b3e1ec7a34c6390c985c37ed06f968cf6" => :high_sierra
+    sha256 "0edbaffa997a33026c23a9e5d59d97a895803605291818ca368e50793f90bb92" => :sierra
+    sha256 "c11676b8ef2878c521c72571e04b07d03b640a17310b7f78ad23e963e50ba654" => :el_capitan
   end
 
   def install
