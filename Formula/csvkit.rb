@@ -8,9 +8,10 @@ class Csvkit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "76107c7ba4afd9cb68e8d8ec364374932d7130456fd6e7b4f7f55958c80c17cb" => :high_sierra
-    sha256 "e915fdcd3ab965e464fc0a4216e7d1bd398ed659d7ef03c334168ea9c489826e" => :sierra
-    sha256 "cbfeef9899fd671d862f06e55974639bfeb60adbef9e44fd23bee25ad21c887a" => :el_capitan
+    rebuild 1
+    sha256 "885f80612f79377fe03a50cf56834585c538271eec15a820d97fced724669220" => :high_sierra
+    sha256 "10a5080f761c52fbaf89a38dce505854cde2fdb9d138bb75ddecb9ce62668ca1" => :sierra
+    sha256 "c4f1b88f56361b4ecdfa475e6fb7885e50af4a77bb8453615f85d2acd9f50053" => :el_capitan
   end
 
   depends_on :python3
