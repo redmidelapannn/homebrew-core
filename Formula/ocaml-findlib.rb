@@ -7,12 +7,11 @@ class OcamlFindlib < Formula
   depends_on "ocaml"
 
   def install
-    ENV.deparallelize
-
+    ENV.deparallelize # See https://gitlab.camlcity.org/gerd/lib-findlib/merge_requests/8
     system "./configure", "-bindir", bin,
                           "-mandir", man,
                           "-sitelib", lib/"ocaml",
-                          "-config", etc/"ocamlfind.conf",
+                          "-config", etc/"findlib.conf",
                           "-no-topfind"
     system "make", "all"
     system "make", "opt"
@@ -21,6 +20,6 @@ class OcamlFindlib < Formula
   end
 
   test do
-    system bin/"ocamlfind", "query", "findlib"
+    assert_equal "#{HOMEBREW_PREFIX}/lib/ocaml/findlib", shell_output("#{bin}/ocamlfind query findlib").strip
   end
 end
