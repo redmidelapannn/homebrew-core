@@ -8,10 +8,9 @@ class Casperjs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1569410fafea04cb0d78066a4b842448d43b1fb2156ae99a789d6556b89ba815" => :high_sierra
-    sha256 "885f4f9d0b7e6ceabcde8c5542d14766212e7d189ae426c4bbe6ecd99eb25148" => :sierra
-    sha256 "8f0ae4b24ce77c1fa4b93f480dcaa24b64dd0b0b8ac10ea695b91c18d1908568" => :el_capitan
-    sha256 "8f0ae4b24ce77c1fa4b93f480dcaa24b64dd0b0b8ac10ea695b91c18d1908568" => :yosemite
+    sha256 "aca8be6be76df6f799a7e15eab10009bd0ccb90878ea8bb5a5deadc6cbe4294b" => :high_sierra
+    sha256 "aca8be6be76df6f799a7e15eab10009bd0ccb90878ea8bb5a5deadc6cbe4294b" => :sierra
+    sha256 "aca8be6be76df6f799a7e15eab10009bd0ccb90878ea8bb5a5deadc6cbe4294b" => :el_capitan
   end
 
   depends_on "phantomjs"
