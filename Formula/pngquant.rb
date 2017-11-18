@@ -1,7 +1,7 @@
 class Pngquant < Formula
   desc "PNG image optimizing utility"
   homepage "https://pngquant.org/"
-  url "http://pngquant.org/pngquant-2.11.2-src.tar.gz"
+  url "https://pngquant.org/pngquant-2.11.2-src.tar.gz"
   sha256 "c8142084d056ad35b5c2616077735f40453202f4b47e99a762fe0f9ac305112b"
 
   bottle do
