@@ -24,6 +24,7 @@ class Libfreehand < Formula
                           "--disable-dependency-tracking",
                           "--enable-static=no",
                           "--disable-werror",
+                          "--disable-tests",
                           "--prefix=#{prefix}"
     system "make", "install"
   end
