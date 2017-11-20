@@ -9,13 +9,10 @@ class Liblqr < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "b54e684b469c952a453ec72ca7e8559198b2de0bf0b7a572b7191f266bbcda41" => :high_sierra
-    sha256 "ce5899d11af881965bed731baac1ef6f35e77bf5d4daa1e0fa579e90b82e3d35" => :sierra
-    sha256 "9d47668f2c1b428499931a32bcb55c957d837e677ce14215cd4d9a674eff1485" => :el_capitan
-    sha256 "a0f647159bd2c17e449381c67b5e4718b3629196bbf71da999a852794899fe67" => :yosemite
-    sha256 "5912e95a5c22808ee83053af73817b5514708bb0a9c9549ac2e819f20676e941" => :mavericks
-    sha256 "61c2f4e9ed619d0995ddd160cf50f9219aa1dbbbaea717372d8197572a79c112" => :mountain_lion
+    rebuild 2
+    sha256 "47dae79a2664d07dcb055b9d0f3f6409317258f9607a17706cc8a1224a1a94b5" => :high_sierra
+    sha256 "e3d689665516875f80a32c4cc4811373a63653c3cccc0221f3ecbe0f86b16039" => :sierra
+    sha256 "44613d77c4fd76afe5539dd0432a4a67c0f89e2c8089349443135ed74e253764" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
