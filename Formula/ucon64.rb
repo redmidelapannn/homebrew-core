@@ -6,10 +6,10 @@ class Ucon64 < Formula
   head "https://svn.code.sf.net/p/ucon64/svn/trunk/ucon64"
 
   bottle do
-    sha256 "2a10d76b713429bda5a2257b47864029ab8eab2806b7bff956917e8dff8104da" => :high_sierra
-    sha256 "ebea93e0d5d70ac09e0e0dd633fe5cb0c6a9cf7807ed269d90e985d03f1e0ea9" => :sierra
-    sha256 "c967e556e861fc8c7237473d5a672da27064d1e4f92d965cfded55686e776b59" => :el_capitan
-    sha256 "6931f246836b4d75c8027b4447f88544f8c5b24683bcb2e7d8260efb3e35598c" => :yosemite
+    rebuild 1
+    sha256 "4ac0272a1cd22710a37fcff9b632e06385876b97cb8faf261b22b0a9523457ed" => :high_sierra
+    sha256 "af7e5a61ca8f612fcf181d8d3df1585791ef1962261ca70f4d31973d6493e607" => :sierra
+    sha256 "103292bd5e30f9487e28612404b0176a889f010ea76ed93e14cb2ea32358ab53" => :el_capitan
   end
 
   resource "super_bat_puncher_demo" do
