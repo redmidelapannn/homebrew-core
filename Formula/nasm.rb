@@ -6,10 +6,10 @@ class Nasm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb072a7cb278fa0c89c4aa2c2ffbe501fdca499075f2b1e4ff90c62d25ad79ae" => :high_sierra
-    sha256 "3bf967e428595a156fe97185a07d82bba91c3b2003b08f329bf94fb87136f463" => :sierra
-    sha256 "138c9fd695681960f7eecb1ce352723bbb313afb1fdd4a7966427c4b5199e22b" => :el_capitan
-    sha256 "821356bf15a266e2c3d45ef019c237422ced030696ca5f0b0f69a6974e7bd8fa" => :yosemite
+    rebuild 1
+    sha256 "5074ff78ba71c4580ada26f31a6f273ee564ec095339f451a222d909466b77e0" => :high_sierra
+    sha256 "d432aae84d8dba2c5ebd1fdc63c475612ce87c6530fa7429d0234bb980e3ac67" => :sierra
+    sha256 "1bf8406294183ea19d988d1fdb40247d6b8ef2981dd6583d7ac87d0748cb9f61" => :el_capitan
   end
 
   head do
