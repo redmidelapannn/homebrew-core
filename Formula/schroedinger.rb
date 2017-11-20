@@ -7,12 +7,10 @@ class Schroedinger < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "1e9953cbef67e87a7ca9ebecfcc4af5f0eb2261d17f3a1195386b7512b9312be" => :high_sierra
-    sha256 "7d2d6d343f571e21f27ce5c13645ebe7039e4d45d2b96dba550f6383185c18f6" => :sierra
-    sha256 "1b990c49b7d72f3030bcee52bf70094a6cf16111867565cdb7541f670636cf05" => :el_capitan
-    sha256 "5b1355803b730a9727c959261f0e2afc217f77502eac88120f77941c5cf373db" => :yosemite
-    sha256 "64042317d9919652ab8577cec94435fb15d8eae3ad960196fc54bf9499b7c30e" => :mavericks
+    rebuild 2
+    sha256 "759305e93b1a978825e7f9309bfe10c651377c8112117d014021d5f53ae8cc9a" => :high_sierra
+    sha256 "ed093f438e5d19eb30464bb8a78cbdcbad3afed3bf1a467ca653a40acf2d7814" => :sierra
+    sha256 "4f846c0262abf97f56030452ca93299be1fcfcbe65e9bfc16322c2546f842506" => :el_capitan
   end
 
   head do
