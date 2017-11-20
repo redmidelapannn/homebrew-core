@@ -8,10 +8,10 @@ class Amtterm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "eef6949767ce3e19a88f0eb4b146b1444ea39541ab7a075311a8bf11a327f781" => :high_sierra
-    sha256 "256736b4dd1d0b427bdb7ca2f9931cc1c403ffe1e43695920160f4f3ffabfe88" => :sierra
-    sha256 "4035d9bcb4f6785255a5ea3df1dcc309dbf69441b69dde15b1936e8522fc8e95" => :el_capitan
-    sha256 "387897642ba8bcb6daff01adae021264eaf9deea1f264e210e9592b6bc5cc44a" => :yosemite
+    rebuild 1
+    sha256 "5adcc7d3da637b86ee4f7e621fab1ab56e7bdd01b25ed595aeaf4c15302a8da2" => :high_sierra
+    sha256 "5fecb8c3e4d444ffa1a3ec103d448cd4ab53fd3992a8b9d6e22b2b6e58930698" => :sierra
+    sha256 "d0b4dd3d23a5461a204ef540d288e8b9b57451a2d417b857bde940da82d9669f" => :el_capitan
   end
 
   resource "SOAP::Lite" do
