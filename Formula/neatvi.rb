@@ -8,9 +8,10 @@ class Neatvi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2e34d03e212479064e86e8d1024447badeb61a54205f1fda24f9b6633e22afe7" => :high_sierra
-    sha256 "339a7880dea5f7ff0e290bc890f95719da7e5ba4b64a7205760c8f6cf64e10a2" => :sierra
-    sha256 "c773025ad559bb25cc095a7e1efc8950424a4cd86ff81ee4b0093a0e2e3c3c84" => :el_capitan
+    rebuild 1
+    sha256 "ffb0222388530c840c5b301f5d39e5039cb7465dbf582ba0762b80994d5204dd" => :high_sierra
+    sha256 "5b60461e4db36db367fd65ed7857d625c1d67012a45e29501c8707fb87c64fe2" => :sierra
+    sha256 "3f8e00be41864e3c9ff58175ece334cdea84ffac063cdc39d1bee925c370d57d" => :el_capitan
   end
 
   def install
