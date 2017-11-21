@@ -5,10 +5,10 @@ class Mspdebug < Formula
   sha256 "347b5ae5d0ab0cddb54363b72abe482f9f5d6aedb8f230048de0ded28b7d1503"
 
   bottle do
-    sha256 "4124d4fbd9e191d941153962bb74aed50cc200c473b5ad5850610a1bc85f87b4" => :high_sierra
-    sha256 "e16447e04c99d74b8cdc49a063c230c64d09e34402d0221542594f3aacac5940" => :sierra
-    sha256 "22fc92bc5a594451eb0d0b943bce812619302c795fdad0ca4305c059ccf10a88" => :el_capitan
-    sha256 "8b23c23287fc9ab143921257a1859f8ac0dbb9e093261dfe931ec7d6a3548d97" => :yosemite
+    rebuild 1
+    sha256 "78774f24893a6813cc5481f74cb536b433f2dfe3676b5689e9bd7a7b18fe3781" => :high_sierra
+    sha256 "40903f0afd0df4477eaa639db0bd6b54aff674c209b327560e5868d61d2d8e3f" => :sierra
+    sha256 "4e39a7d8ee1a0ecd30a313449f20c7177db6c4eb01089b4a3983f3405d608a88" => :el_capitan
   end
 
   depends_on "hidapi"
