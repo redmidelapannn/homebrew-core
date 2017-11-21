@@ -6,11 +6,10 @@ class Exiv2 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "5b7833350aac57127e8cb770b3c310503d43f03f4ecccdbdfda17132dbd201d1" => :high_sierra
-    sha256 "c651fe47fec9f541d47d2dd769cf94d4063baeff2b08be2b8c1056d6609499fc" => :sierra
-    sha256 "9f5f339b761aca8910ee859e6630e9eb3f84a7298c029b98baf801f36075ab51" => :el_capitan
-    sha256 "1d14797afa32ff75b50ff2737baa8ac27ab7bf90da38359a9721f7e15c398481" => :yosemite
+    rebuild 2
+    sha256 "299a66844e436d62367acec6954691cee595afe6d285d75237b70036d562b856" => :high_sierra
+    sha256 "d7d01ec73aafae54f0a5dba74001970861cdbdd4c78f0e26e7c67d7f47657fe8" => :sierra
+    sha256 "312e08cccdecb7801e489008ad7374b2d1e0aa7aded6450b83ceda3beed3e567" => :el_capitan
   end
 
   head do
