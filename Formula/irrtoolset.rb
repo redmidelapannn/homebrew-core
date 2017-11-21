@@ -6,11 +6,10 @@ class Irrtoolset < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d80526a2be3e45463d775c12d4e53a4d16bee7d6b153f13df679c4b02c291dcc" => :high_sierra
-    sha256 "c3bdb3567581aff255053d8ee218f3715e94cb05555456406982186a1bcffda0" => :sierra
-    sha256 "3ab236e3d5041ddc54bf932d23f0a4da30d6dd876cb6ad4ec61a9b570c910779" => :el_capitan
-    sha256 "2ce9b4ff7b1604e05d771e70f457394e1e6c642df4b456e38ba11be50f7a9cdc" => :yosemite
-    sha256 "87576959ef0948ec184322a4d6756e62ca6e4695fd708c773317fce8570b2dcf" => :mavericks
+    rebuild 1
+    sha256 "93a58b3888ade1fcdcea8631f9e019b9c60c5c542e92e133840db8942786b988" => :high_sierra
+    sha256 "938917024896260f75c31c3fdd8b54c66631d55fb97d2eabdbc0c43a1681bea3" => :sierra
+    sha256 "d33f653f2b479e4d31c5d33f344b8a7690c55b873ff40054e4850fbe174235f0" => :el_capitan
   end
 
   head do
