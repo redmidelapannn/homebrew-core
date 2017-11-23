@@ -14,6 +14,12 @@ class OpenrestyOpenssl < Formula
       sha256 "6d6e02c21769784b106b62a146bfbfeac54884e23520c8dd29b74f3e1348d4a1"
     end
   end
+  bottle do
+    sha256 "0923630b2bc751c8e42c9c75251e834a9899c1366d6bb4cc6d1b07ef9e779e67" => :high_sierra
+    sha256 "c95c499dd476a8335c8142e37628aafc57ae8d783e48b601dc76cdf8969c50d7" => :sierra
+    sha256 "cfbe22de4ead9bd2a382158ee4c2cc0cff0f6d4dc026230b6eafd480a240f019" => :el_capitan
+  end
+
 
   keg_only "only for use with OpenResty"
 
