@@ -1,6 +1,12 @@
 class Openresty < Formula
   desc "Scalable Web Platform by Extending NGINX with Lua"
   homepage "https://openresty.org"
+  bottle do
+    sha256 "b70b6681b5a3a2f4968cf8a033ec3f0ec4ae8a11330582c598fdd12164b29491" => :high_sierra
+    sha256 "4959ab0bc009c58fda660a5752027ecb1b13c1ad2d83640e88cff29ee1effdc7" => :sierra
+    sha256 "271c8f1f66476a978d576b9d6a3b390e51e68299ad78874f7f9963545d1ecd6a" => :el_capitan
+  end
+
   VERSION = "1.13.6.1".freeze
   url "https://openresty.org/download/openresty-#{VERSION}.tar.gz"
   sha256 "d1246e6cfa81098eea56fb88693e980d3e6b8752afae686fab271519b81d696b"
