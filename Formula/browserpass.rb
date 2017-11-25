@@ -5,6 +5,13 @@ class Browserpass < Formula
   version "2.0.8"
   sha256 "5df921f0cfb3ebb0b4c867af08bf69f5cfef30d16101e35fba4c0ce3a558bb51"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "9643d771be8e7cfa86ce2052050a236e5d7dafa4fb15d5588b28c5a0c6d9b049" => :high_sierra
+    sha256 "3df3dd970dc76cfd03db8c67c997b5a1b99983418366a160807c42d7839b3bf7" => :sierra
+    sha256 "324ba1a1b0cf08538a10a544b79d0d2b88677d9f80318ca78bb23edd4eb0773e" => :el_capitan
+  end
+
   depends_on "go" => :build
   depends_on "gnupg" => :run
   depends_on "pinentry-mac" => :run
