@@ -6,10 +6,10 @@ class Libsndfile < Formula
 
   bottle do
     cellar :any
-    sha256 "d06bf0bf936cde67857ac3d3599944d2050ea8dc6237bad8b4c27ef86ac2eb3c" => :high_sierra
-    sha256 "4e4bde6464cfbefcf7f2a9001af0ea34c6273b466ffa71ac953b2bb41eb619ec" => :sierra
-    sha256 "49d17fa55815680936b529b7bbb8e5cf180c98722c7f8b45d763bfe2d1f0a5de" => :el_capitan
-    sha256 "9df59790751d64c7f61682233a733030de9e6406682f3a15e30e708103930038" => :yosemite
+    rebuild 1
+    sha256 "f457c8a931ea64624bbaae2de8ebd65667119e04c59dda85c20f7b8eb621871e" => :high_sierra
+    sha256 "67f9f37fbbd454bb7e78842318c9b8dea220b268565f033fee86fb46928387f3" => :sierra
+    sha256 "9c7f4a37350a89c0b7163f8bdb46613d04b6ecda94ea1ff6b2bf6f260f6becb3" => :el_capitan
   end
 
   option "without-external-libs", "Disable external libraries (Flac and Vorbis)"
