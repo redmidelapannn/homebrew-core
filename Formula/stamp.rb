@@ -3,6 +3,13 @@ class Stamp < Formula
   homepage "http://www.compbio.dundee.ac.uk/downloads/stamp/"
   url "http://www.compbio.dundee.ac.uk/downloads/stamp/stamp.4.4.2.tar.gz"
   sha256 "1305753d251b6e8d17feb7e28d80ba0ceb47436384dedc910ffafcad7d82dd6e"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c9192f20bf017e84c5ef28452c3447e5ad1dad835c8eb97e2109823d07f3dd5a" => :high_sierra
+    sha256 "df2a2c55313fd1269ed682e3c5363c9aa5f0a698bcd5c84b7093d0fc36d69162" => :sierra
+    sha256 "5e356b947644133354ed53585b14e2b82ea77cf347f31a5c3f0bea47d702282e" => :el_capitan
+  end
+
   # tag "bioinformatics"
 
   resource "pdb" do
