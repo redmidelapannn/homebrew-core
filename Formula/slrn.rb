@@ -7,10 +7,10 @@ class Slrn < Formula
   head "git://git.jedsoft.org/git/slrn.git"
 
   bottle do
-    sha256 "73238ccdd5f84b813446674f5be88f604c4e44107ab5bf367caee0bdd00ea410" => :high_sierra
-    sha256 "46721d6d7a4ac469837a4e41bfdc279727ee7c3dd38351eb3d47aa7b43e64062" => :sierra
-    sha256 "d45e3c8765302bd61709b091143becf4c7ce78913256620c956dcf2b95431910" => :el_capitan
-    sha256 "06d71ffeb008854c63eeadf6f45633cf692e648490cb20c2ba5f3229cc3dc808" => :yosemite
+    rebuild 1
+    sha256 "9f56b0a8ceaf5da64176a4f0053dcd6e746aa9958540df4ddaf96820bfbeed65" => :high_sierra
+    sha256 "b512bf5c45323b8de1eebbc2892bcc45cd3f085ff5a1e73d7f5ce1e68ed7a95f" => :sierra
+    sha256 "fdd3797fcd93a36afd0ac02d24efee2f3aa07abd0f45f3347cf4bb385cbf3936" => :el_capitan
   end
 
   depends_on "s-lang"
