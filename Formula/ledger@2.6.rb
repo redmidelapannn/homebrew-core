@@ -6,10 +6,10 @@ class LedgerAT26 < Formula
 
   bottle do
     cellar :any
-    sha256 "e3bef43460afc61bbc8182dd62cb98c06068c863e787147cb2e38186dd1808ab" => :high_sierra
-    sha256 "795cae0983cf60a2f920e37c5ce93eece903d105b7482ec82135310d8c4ce37c" => :sierra
-    sha256 "7b0e5ba6ae9eafc22c2d7e7f1c037110dc62da74884e35a23cf225afce062273" => :el_capitan
-    sha256 "e2d42c404f3f3a0826498fc9d323392021e4ded1c57d08c27f8e2ac22b5450d0" => :yosemite
+    rebuild 1
+    sha256 "6e95d470e579f63b316aa4df339df2afe8f89f58dedf9929bd6f27a27232bad2" => :high_sierra
+    sha256 "06d09633c95ba8687f4261de21aa094631c996f5ecf4bc86e723b28b23604d40" => :sierra
+    sha256 "ab1f08b793ca7f16c3c83084f028c1eed1e4e2e69086c0749caf1237f19993cd" => :el_capitan
   end
 
   keg_only :versioned_formula
