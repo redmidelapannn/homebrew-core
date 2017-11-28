@@ -7,12 +7,10 @@ class Most < Formula
   head "git://git.jedsoft.org/git/most.git"
 
   bottle do
-    sha256 "90678b6798fb5eaadf38359fc8f1652fb8dbe3c96c58113742a0727a3d3fb51c" => :high_sierra
-    sha256 "33ff883a9327d71e8d8eaffeb7e12e224ac1e04f06bd3d940317e7d9c431145b" => :sierra
-    sha256 "9e645b60950d18dea0b58c95b0525992cb55bbddc5cdc664dce11e94b552e568" => :el_capitan
-    sha256 "7b2828c656ba7ef31fc03d5570f8d6701f365fd4a96252bcdfae66b266713bc3" => :yosemite
-    sha256 "f7d99563678653a673eddee924ca90f76819eed8a25a47780762571f35187241" => :mavericks
-    sha256 "a5e6342f6f4046aa9f47b588734a4f0ad614aa3c461a83fe61a4d4f2666e792b" => :mountain_lion
+    rebuild 1
+    sha256 "a71a3bb9844677517922056f550d4f88bc4b5f0c2eafba535aa6ce2073ba0cd0" => :high_sierra
+    sha256 "809631bbbef2cbce5c5804fe9d2020845d708a5694bf9b556392c8f52a7ebbf2" => :sierra
+    sha256 "684d9e6bce50614f7c44523f538ea7c5346f68c0de3a9250a940df62c37aeb32" => :el_capitan
   end
 
   depends_on "s-lang"
