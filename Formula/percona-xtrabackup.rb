@@ -32,6 +32,8 @@ class PerconaXtrabackup < Formula
   end
 
   def install
+    ENV["SDKROOT"] = MacOS.sdk_path
+
     cmake_args = %w[
       -DBUILD_CONFIG=xtrabackup_release
       -DCOMPILATION_COMMENT=Homebrew
