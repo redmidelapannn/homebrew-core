@@ -7,6 +7,13 @@ class Aggregate6 < Formula
   sha256 "8b48e4e7cbe0177d9ffe00c093c980272903043e391f1a815b1ed1637d451ddf"
   head "https://github.com/job/aggregate6.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7afc93fc3c071c00a7bcc4bc77f479fbb4649cb4ace4011446da9a49a70e4f52" => :high_sierra
+    sha256 "0407f56603c602678f193e09bae6ce662837ef3843674f016ab6c8efd2c1ea68" => :sierra
+    sha256 "dd05d7b7ffd970b5b990e3c120b898b4e7b6cd2eccd1807cfc27b73597e356f4" => :el_capitan
+  end
+
   depends_on :python3
 
   resource "py-radix" do
