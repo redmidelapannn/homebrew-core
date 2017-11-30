@@ -7,9 +7,9 @@ class Cling < Formula
   revision 1
 
   bottle do
-    sha256 "db1bf4e905c6b787b63b50c03a43028b71a00110b5008b48ee01a24400efbdb9" => :high_sierra
-    sha256 "83fd0ba864ef3261b3ab6e58647d44036029298dd55408ac0527c4953259e024" => :sierra
-    sha256 "4f327b0cab15cfc5f77c1ae77651861af5855c1b324d55175246f24d9d2743e5" => :el_capitan
+    sha256 "6aeba9d81dd204545c4498e83205746dff6f99bf4b8eb4b19ae6b446bddf76bf" => :high_sierra
+    sha256 "728dfa2485e7ac43a1b0573a208e4723a6305c73fdbdc938381f2160530fbf93" => :sierra
+    sha256 "d5075bd17352490e2b78e2c52f22209f11ad78a1e8421e0af2c16cd4b6daefea" => :el_capitan
   end
 
   keg_only :shadowed_by_macos, <<~EOS
