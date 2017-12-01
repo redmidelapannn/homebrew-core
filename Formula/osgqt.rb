@@ -4,6 +4,13 @@ class Osgqt < Formula
   url "https://github.com/openscenegraph/osgQt/archive/3.5.7.tar.gz"
   sha256 "dcc4436590639168e6470fe9c5343c82bca738d3296ebee014f40f2dc029afa1"
 
+  bottle do
+    cellar :any
+    sha256 "45399eef4f5152104da3cbf3154e693e3d35b76d89991dfb4d62250cac135b5c" => :high_sierra
+    sha256 "256c98e81bf9fa89e7d58153bf37d368e1d5b7c3edab1031178b38709caa7110" => :sierra
+    sha256 "8a1b4853f0d6ec723cb6e5bbbf69507fd3e5dce423d1d557bf58fa1d59ed2f6c" => :el_capitan
+  end
+
   option "with-docs", "Build the documentation with Doxygen"
 
   depends_on "cmake" => :build
