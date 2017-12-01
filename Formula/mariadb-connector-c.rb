@@ -4,11 +4,9 @@ class MariadbConnectorC < Formula
   url "https://downloads.mariadb.org/f/connector-c-3.0.2/mariadb-connector-c-3.0.2-src.tar.gz"
   sha256 "518d14b8d77838370767d73f9bf1674f46232e1a2a34d4195bd38f52a3033758"
   bottle do
-    sha256 "d569c9bbc70e38697625aaf1ff939689b1b7189d2fcf890546a72dc0e4d8f4c8" => :high_sierra
-    sha256 "2efc882d3518dc6932d711b62d5d65a6b2151f7e44d2e6a15917ca4f1d3ce897" => :sierra
-    sha256 "fe5606d7c8ac822398f01f2b2b9045c8d6b3a46df8b862e1fe151aa17619d3b2" => :el_capitan
-    sha256 "6b5b743616a46585a9bfe1505a94addccf24802090094a9dcd791852bf8d566c" => :yosemite
-    sha256 "14f9440a48d0035a8e77ff8e7b260b50c89326453041ec77d0cc38febbf4f5cc" => :mavericks
+    sha256 "a25c99ec96338dba978b8c53d346ff1b5f6ffaa47d55f050f677d8333806aad7" => :high_sierra
+    sha256 "9ec27d8aa749028c83ae4d03f93b00880d78f03d9da0b47d7c6ccf464f26fc6e" => :sierra
+    sha256 "854246f75a9d945d20d6ce055b52b54e87393614e32d8bc0d473195ea2490a2c" => :el_capitan
   end
 
   depends_on "cmake" => :build
