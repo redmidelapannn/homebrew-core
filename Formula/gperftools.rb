@@ -21,6 +21,8 @@ class Gperftools < Formula
   end
 
   def install
+    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
+
     ENV.append_to_cflags "-D_XOPEN_SOURCE"
 
     system "autoreconf", "-fiv" if build.head?
