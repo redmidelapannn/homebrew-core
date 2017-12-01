@@ -4,8 +4,8 @@ class Flow < Formula
   head "https://github.com/facebook/flow.git"
 
   stable do
-    url "https://github.com/facebook/flow/archive/v0.59.0.tar.gz"
-    sha256 "732f4d3018bba2d082537190fda68c7cf4d84e24a3a4714361e9949b6ea02961"
+    url "https://github.com/facebook/flow/archive/v0.60.0.tar.gz"
+    sha256 "da2ff9d452530f850608bd704dd78822aab1864f02e7779e124a47e2ebbc23fe"
 
     patch do
       url "https://github.com/facebook/flow/commit/ff9c1038c.patch?full_index=1"
