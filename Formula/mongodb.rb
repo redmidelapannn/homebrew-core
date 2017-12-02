@@ -29,6 +29,11 @@ class Mongodb < Formula
     depends_on :xcode => ["8.3.2", :build]
     depends_on "libyaml"
 
+    resource "Cheetah" do
+      url "https://files.pythonhosted.org/packages/cd/b0/c2d700252fc251e91c08639ff41a8a5203b627f4e0a2ae18a6b662ab32ea/Cheetah-2.4.4.tar.gz"
+      sha256 "be308229f0c1e5e5af4f27d7ee06d90bb19e6af3059794e5fd536a6f29a9b550"
+    end
+
     resource "PyYAML" do
       url "https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz"
       sha256 "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
@@ -63,7 +68,7 @@ class Mongodb < Formula
     if build.devel?
       ENV.libcxx
 
-      ["PyYAML", "typing"].each do |r|
+      ["Cheetah", "PyYAML", "typing"].each do |r|
         resource(r).stage do
           system "python", *Language::Python.setup_install_args(buildpath/"vendor")
         end
