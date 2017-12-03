@@ -6,10 +6,10 @@ class Gv < Formula
   sha256 "2162b3b3a95481d3855b3c4e28f974617eef67824523e56e20b56f12fe201a61"
 
   bottle do
-    sha256 "afc07271447c8455ac3313775832a1aa264245436b16f0333a4b7dddaf32d702" => :high_sierra
-    sha256 "ae08a48cf7464fbf8af390ac017646cfa986fd95447ed8af5b91687350e10c93" => :sierra
-    sha256 "80956fd9b222cb9185517f3bb2809d93fd23a8acff70e0bbb9e295cc3b54725b" => :el_capitan
-    sha256 "aabf19a4073bae6b5b337c595169f18a3c4af9157bfcbd2b9b15744c3d0e4f2c" => :yosemite
+    rebuild 1
+    sha256 "c211739c97392e88d5316173bc86a9382976c9970619b3e85837a953c23203da" => :high_sierra
+    sha256 "c5670cc992d3b781588abb6a4144937d44450402a097dc6946cd961b06180de7" => :sierra
+    sha256 "af486a6b1fa2257742e2e245931c6ec26cc761b0108ba0a8192c0701c0040958" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
