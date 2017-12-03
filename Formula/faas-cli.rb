@@ -81,7 +81,7 @@ class FaasCli < Formula
       rm_rf "template"
 
       output = shell_output("#{bin}/faas-cli deploy -yaml test.yml 2>&1", 1)
-      assert_match "stat ./template/python/template.yml", output
+      assert_match "Stat ./template/python/template.yml", output
 
       assert_match "ruby", shell_output("#{bin}/faas-cli template pull 2>&1")
       assert_match "node", shell_output("#{bin}/faas-cli new --list")
