@@ -6,11 +6,10 @@ class F3 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "43e671cd918bb967db742930a092fe814b366a2293613797b13c376c190d7dd9" => :high_sierra
-    sha256 "e10885461941cca0ed989763d1677e0322c2b7e542710dd7104ee34c0508710b" => :sierra
-    sha256 "1b3eb529dd5ed455ecc8c1420c9fa1011ca84fc841fdb1570b5651ce171b988f" => :el_capitan
-    sha256 "ea3c848931257bbeb60e85a672d7132556528646bd2b1f5e35ace60461b80a34" => :yosemite
-    sha256 "96ee5681212139b960fdaca98839e2e5e23446f1b890b751c459b05bedabaf6a" => :mavericks
+    rebuild 1
+    sha256 "f475ae160e0a58772d0094e98549649034b86d9b626bad871cbe7d10b08d4bd0" => :high_sierra
+    sha256 "65c9009616afd89fa3852eae780d0c875f53535135d526936c5a13d6438d57b6" => :sierra
+    sha256 "a384af9f3df54cb7c2cb8aaa3659f61f445e63f5789793cc00305a9796a71d8a" => :el_capitan
   end
 
   head do
