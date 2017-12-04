@@ -7,6 +7,13 @@ class Webbreaker < Formula
   version "2.0.2"
   sha256 "f66d545cb29e2186315815ba6a8766b3f6024ca14807e46bcf807a401aea9902"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "461358a2b8a0522477c5c4140ee1a584bbfcc75adc3273caa1b60616163529c3" => :high_sierra
+    sha256 "461358a2b8a0522477c5c4140ee1a584bbfcc75adc3273caa1b60616163529c3" => :sierra
+    sha256 "461358a2b8a0522477c5c4140ee1a584bbfcc75adc3273caa1b60616163529c3" => :el_capitan
+  end
+
   def install
     bin.install "webbreaker-macos"
     mv("#{bin}/webbreaker-macos", "#{bin}/webbreaker")
