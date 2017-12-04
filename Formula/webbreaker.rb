@@ -7,6 +7,12 @@ class Webbreaker < Formula
   version "2.0.2"
   sha256 "f66d545cb29e2186315815ba6a8766b3f6024ca14807e46bcf807a401aea9902"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "074f7fb2e8cf9295efc49c3cbbb61785334b6ac85620af5b57dc804638f671e3" => :high_sierra
+    sha256 "074f7fb2e8cf9295efc49c3cbbb61785334b6ac85620af5b57dc804638f671e3" => :sierra
+  end
+
   depends_on :macos => :sierra
 
   def install
