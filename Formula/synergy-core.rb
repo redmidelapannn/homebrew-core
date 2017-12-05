@@ -6,6 +6,11 @@ class SynergyCore < Formula
   version "2.0.0"
   head "https://github.com/symless/synergy-core.git"
 
+  bottle do
+    sha256 "162a8d64cdcea7a71ec225ba5c9e6d6a677c2c16753750fc9759deab4d82c094" => :high_sierra
+    sha256 "5e2a6518aaafcbfd4d29b66bac14db51fc5c4a70d662354fb4bd485b276f13ff" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "qt"
   depends_on "openssl"
