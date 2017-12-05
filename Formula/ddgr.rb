@@ -6,6 +6,13 @@ class Ddgr < Formula
   url "https://github.com/jarun/ddgr/archive/v1.1.tar.gz"
   sha256 "6fbf7a638e3e4c0db57ef4a86f253b5810e5755b88727444b17d4528e3a4f5d8"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "07deb05aa5cf295d4ee4720a8838585c31882468d5adaef6dbdf805d19961d3b" => :high_sierra
+    sha256 "47b13321316adfc8652802aae760b66605b7146bee7f34f631ce1ee4148688cc" => :sierra
+    sha256 "35b2b7301f248c8636511d36374c07dd820bbc2307f7690dd8f03f734e153529" => :el_capitan
+  end
+
   depends_on :python3
 
   resource "certifi" do
