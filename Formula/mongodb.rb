@@ -10,9 +10,8 @@ class Mongodb < Formula
   depends_on :xcode => ["8.3.2", :build]
 
   bottle do
-    sha256 "9d9929d9502d958840929355daf8a3c71ce6779d63b0a3ab4123562e1c840b2c" => :high_sierra
-    sha256 "715942c2e23e39ac1ad365860cb084d53bb2b35aef1fae2df4e38a18434438ef" => :sierra
-    sha256 "5bdb6c3a4fea9d74afd54497f3b508c2f85034ff9de6a92b15783dadb06e575a" => :el_capitan
+    sha256 "376e5cec18cc0822d5311e454ef6ad4a05589aa7d7d44ec6e57e1e9ce1c644c4" => :high_sierra
+    sha256 "1472bd3f6be253ae2a05ce65a13ca83f14747bb7ed32551c6f313025c873c550" => :sierra
   end
 
   resource "Cheetah" do
