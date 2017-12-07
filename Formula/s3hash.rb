@@ -8,6 +8,13 @@ class S3hash < Formula
   sha256 "bd627eebb14b244196d4e98282d779a4d76ce6913458850dfbb501200b843b0d"
   head "https://github.com/peakgames/s3hash"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "511131e8998247a352bf76ab758be0191c4d03bcfce209d80a7e901aa6f8d6b3" => :high_sierra
+    sha256 "e083afe8a95897337de713fcb9e96a8cb2210420d8530bd9cf67c84bf05dc2ad" => :sierra
+    sha256 "715cd34099447d010340b2e6a26f15a77055bc524732947b59ff96f8965026a8" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
