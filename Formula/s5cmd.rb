@@ -8,6 +8,13 @@ class S5cmd < Formula
   sha256 "99095c440ba4a1aeb5e1451d2fc8f396dcc401489e9f59cfbad6477bfec419e9"
   head "https://github.com/peakgames/s5cmd"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c35b52ec3d008f291a959fdad41c2873b78c5339cbae8dd908cfc075181527d8" => :high_sierra
+    sha256 "9c2953fb4aad372e990b4205b175f2d5a8d4f0ca5dcad661f83f7322aef954be" => :sierra
+    sha256 "e32f120a4e8146b1e753ce809bf2f57e329c907b1d901bcf4265f494bb607d05" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
