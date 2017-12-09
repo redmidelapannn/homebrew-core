@@ -8,9 +8,9 @@ class Ndpi < Formula
 
   bottle do
     cellar :any
-    sha256 "5c3eb3bebc87fa5d005aab71f15227122dc4cc37f997a9867dc447f533798f64" => :high_sierra
-    sha256 "bd5611ea958ac8e8c1e87a7cae4aba3a10bdacf8570fb6efc9e2d78a8d4a6bb6" => :sierra
-    sha256 "b39ffc60028e51156dcf5891c6fab0b1c717c9a9664bca7eadeec5d9aa4c170a" => :el_capitan
+    sha256 "fea0c066f8fa45b48f3ce5c65bc074e9e8bb3d0d86d49d1f564ef51ef00655f0" => :high_sierra
+    sha256 "0506a154212f5919fb22bb3c6f3a5b44a383997fda48ae0b535df953315ba399" => :sierra
+    sha256 "a3697881b5b122a5e81308e04e1787acc55f9a97b8e3aadde56445d6ac13a81d" => :el_capitan
   end
 
   depends_on "autoconf" => :build
