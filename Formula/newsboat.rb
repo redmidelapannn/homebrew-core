@@ -6,9 +6,9 @@ class Newsboat < Formula
   revision 1
 
   bottle do
-    sha256 "9dcbf0d0a026bc0c0667ce52698365f2f172e1222334657a4327c1101304b8ff" => :high_sierra
-    sha256 "2094f90b7a64c045e408973420cec64805f4ec517a9397f5850d35d9c013151e" => :sierra
-    sha256 "9af1f9da45dcb359481827c3e61e2aef3e21c253b29d436962369b8816be25cc" => :el_capitan
+    sha256 "0daa1da97ef823dae571186befdd78d543878c4d6d3b2072973e2c33ea3bef8a" => :high_sierra
+    sha256 "aaa7d22cfaedb89bd7def5caf8132257ebc9b45089848a15cc20a9c409653cae" => :sierra
+    sha256 "6fab33ee3864ce58a8ac4416fc932f9d576ced4471aaeea5d63bd6407d16430b" => :el_capitan
   end
 
   head do
