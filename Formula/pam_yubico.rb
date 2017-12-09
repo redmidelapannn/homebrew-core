@@ -7,9 +7,9 @@ class PamYubico < Formula
 
   bottle do
     cellar :any
-    sha256 "960ffd825e0d8ecf9c75ef3c958a88903e6aeb713b7d11e9093fc1a821eefb01" => :high_sierra
-    sha256 "68098087eb87639f10607c030e58b7cf7ae86a8a95ff863a17ca1e7cfa2ca5b0" => :sierra
-    sha256 "ce01a964d539a569478c9dd882a9652354d9d7ab35d935df9aa543eb31716b58" => :el_capitan
+    sha256 "f6c1d70f8007854f00cbfd25476e52aeda17d196fa126a51665ef0d5381fe0c1" => :high_sierra
+    sha256 "22b0c836a347a17d7176a2126f7d1791c2041547bc86431e448024e995b174e5" => :sierra
+    sha256 "5a074fdb4a16694715bee9afd1427acc696cfe1ffc717254270f7f6b59e59b9f" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
