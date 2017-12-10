@@ -9,9 +9,9 @@ class QtAT59 < Formula
   head "https://code.qt.io/qt/qt5.git", :branch => "5.9", :shallow => false
 
   bottle do
-    sha256 "570ca1b244dbcecc74d2b7813e5659024eba1500640c84b1b6eedcd96dd1ba6f" => :high_sierra
-    sha256 "a05e2f102433b8e0eee1c8cbd0f27949c9314f7ebf237766bcf191ffdb4b6940" => :sierra
-    sha256 "42eae12f322119d24b695fdb29678b50b020dfde0a24bdd8caf4a952649ac2d0" => :el_capitan
+    sha256 "7d4fc7a1afabc1a98779e6d4f5c430c3b265e46dbb1590c691a50a50091e8e4f" => :high_sierra
+    sha256 "59577d057b6a5c778a6777aa72496058daf9c38ca04dc5490e04cd2e6aa4b999" => :sierra
+    sha256 "95f79fcc5116ad3f4348702890e24f62c2c8a0e49e7daa00be1d268712e2fbad" => :el_capitan
   end
 
   keg_only :versioned_formula
