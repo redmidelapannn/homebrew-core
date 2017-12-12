@@ -14,9 +14,6 @@ class Gearman < Formula
   option "with-mysql", "Compile with MySQL persistent queue enabled"
   option "with-postgresql", "Compile with Postgresql persistent queue enabled"
 
-  # https://github.com/Homebrew/homebrew/issues/33246
-  patch :DATA
-
   depends_on "pkg-config" => :build
   depends_on "sphinx-doc" => :build
   depends_on "boost"
@@ -106,24 +103,3 @@ class Gearman < Formula
     assert_match /gearman\s*Error in usage/, shell_output("#{bin}/gearman --version 2>&1", 1)
   end
 end
-
-__END__
-diff --git a/libgearman/byteorder.cc b/libgearman/byteorder.cc
-index 674fed9..b2e2182 100644
---- a/libgearman/byteorder.cc
-+++ b/libgearman/byteorder.cc
-@@ -65,6 +65,8 @@ static inline uint64_t swap64(uint64_t in)
- }
- #endif
- 
-+#ifndef HAVE_HTONLL
-+
- uint64_t ntohll(uint64_t value)
- {
-   return swap64(value);
-@@ -74,3 +76,5 @@ uint64_t htonll(uint64_t value)
- {
-   return swap64(value);
- }
-+
-+#endif
