@@ -7,11 +7,10 @@ class Jq < Formula
 
   bottle do
     cellar :any
-    sha256 "0da7ed90f4bf73aeea7079ab46e5b765491f3929be6d55651dd80cfc9dc32d53" => :high_sierra
-    sha256 "f3a31965bcaf187dae9a46b8f7acf02af7d9bbadb21bd834197ed12699b63c25" => :sierra
-    sha256 "16fd34adec21188f7e13655cde69289acf0a87f4241395357f1c4d47f492eda1" => :el_capitan
-    sha256 "8fbfede40ab806d8a93c1551a00af4aa46f7289d47fbb96836c58197f33e13a5" => :yosemite
-    sha256 "b55d226db14edc9ada42ecfd00ae64497702c616247fc8d5d7c35c01d25b26e5" => :mavericks
+    rebuild 1
+    sha256 "0c3fd998fd8bedf9048bf0e66406ef919406f2fbbd1bb0c0f28464d70efc3efc" => :high_sierra
+    sha256 "3c5f80a6580b77696bfb4e61825d87b84aa315392dd1a1f4faa50fbe8b3a365e" => :sierra
+    sha256 "f28deda5e8f05ff24364d2285dec5d5899c9a9c7f36637a5a101621b70c37413" => :el_capitan
   end
 
   devel do
