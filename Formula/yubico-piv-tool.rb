@@ -11,6 +11,7 @@ class YubicoPivTool < Formula
     sha256 "184f77d93b88564c7fd82b5c928f433a521bd3d2cd0da16a3915e307ab2528f6" => :el_capitan
   end
 
+  depends_on "check" => :build
   depends_on "pkg-config" => :build
   depends_on "openssl"
 
