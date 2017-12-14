@@ -1,6 +1,6 @@
 class Kedge < Formula
   desc "Deployment tool for Kubernetes artifacts"
-  homepage "http://kedgeproject.org"
+  homepage "http://kedgeproject.org/"
   url "https://github.com/kedgeproject/kedge/archive/v0.6.0.tar.gz"
   sha256 "8df6c9251c8ea447c67cda0eac89a145573d4295b11d76191b3da803189b20d0"
 
