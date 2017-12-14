@@ -5,10 +5,10 @@ class Flex < Formula
   sha256 "e87aae032bf07c26f85ac0ed3250998c37621d95f8bd748b31f15b33c45ee995"
 
   bottle do
-    sha256 "0abf12786daea0fb1be796e24f41163f41943eb3dfb7ba71e4c09f1821083c11" => :high_sierra
-    sha256 "89fb9ae2ac9be0f60706f40379cdfa51ced78f1638ac8729bc0074e4fcde70cf" => :sierra
-    sha256 "95c2da56e5487b53ee4afe3ed52a7f59ffe86df4508768b3e48ef042d66e6cc1" => :el_capitan
-    sha256 "c8aaca29a77a6b3e2383f7d80b12eccbbf131162e5157a4a320117d4c564a4bf" => :yosemite
+    rebuild 1
+    sha256 "e3801cac02d8ccfb78050c76beef8f65c673a19390efdea042c031c818d0f107" => :high_sierra
+    sha256 "c56f17d9651581ee4702eff61eff566884c0ef187a79597844bd0b87bce117d4" => :sierra
+    sha256 "226b5926c40408a26d3c15e110c611ca88d366f509548368c525ebbc2b29751b" => :el_capitan
   end
 
   head do
