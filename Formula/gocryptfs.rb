@@ -5,6 +5,13 @@ class Gocryptfs < Formula
   version "1.4.2"
   sha256 "74e896cbab9beae05c668248d3b2d1a6b3839d72d0e277cde6396e4c1858f1e0"
 
+  bottle do
+    cellar :any
+    sha256 "dd2a7e6dca935ca13ccf74e772a589d17f401371f3b19ff3e43867db2cf85892" => :high_sierra
+    sha256 "47313c3e6f232c9f0a0e8f4aceb456fcab932de73e4cee92420fab96dc4f8cba" => :sierra
+    sha256 "831d7c7c2b07a06a869db2eff45005bfb93009b8543702acf2783bc3d483d984" => :el_capitan
+  end
+
   depends_on :osxfuse
   depends_on "go"
   depends_on "openssl"
