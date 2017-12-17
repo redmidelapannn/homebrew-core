@@ -14,14 +14,6 @@ class GnuTar < Formula
 
   option "with-default-names", "Do not prepend 'g' to the binary"
 
-  # CVE-2016-6321
-  # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=842339
-  # https://sintonen.fi/advisories/tar-extract-pathname-bypass.txt
-  patch do
-    url "https://sources.debian.net/data/main/t/tar/1.29b-1.1/debian/patches/When-extracting-skip-.-members.patch"
-    sha256 "6b1371b9abd391e1654f7d730aae9c4dee703a867276b1e8a9ef97a2a906b7cf"
-  end
-
   def install
     # Work around unremovable, nested dirs bug that affects lots of
     # GNU projects. See:
