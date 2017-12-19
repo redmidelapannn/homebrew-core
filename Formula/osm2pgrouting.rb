@@ -21,13 +21,6 @@ class Osm2pgrouting < Formula
   depends_on :postgresql
 
   def install
-    inreplace "CMakeLists.txt" do |s|
-      s.gsub! "RUNTIME DESTINATION \"/usr/bin\"",
-              "RUNTIME DESTINATION \"#{bin}\""
-      s.gsub! "set (SHARE_DIR \"/usr/share/osm2pgrouting\")",
-              "set (SHARE_DIR \"#{pkgshare}\")"
-    end
-
     system "cmake", ".", *std_cmake_args
     system "make", "install"
   end
