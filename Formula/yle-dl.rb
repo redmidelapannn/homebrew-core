@@ -57,9 +57,9 @@ class YleDl < Formula
     sha256 "940caef1ec7c78e0c34b0f6b94fe42d0f2022915ffc78643d28538a5cfd0f40e"
   end
 
-  resource "Py3AMF" do
-    url "https://files.pythonhosted.org/packages/0a/b7/60823a6a19db09573cca3a65bef6af14fba23b894461184559d7bf61f46e/Py3AMF-0.8.7.tar.gz"
-    sha256 "6b3c876f70039b9d885c53eb6c1508afcdcbdca5e6a49e4a80ee37e0c73fb6e7"
+  resource "PyAMF" do
+    url "https://files.pythonhosted.org/packages/a0/06/43976c0e3951b9bf7ba0d7d614a8e3e024eb5a1c6acecc9073b81c94fb52/PyAMF-0.8.0.tar.gz"
+    sha256 "0455d68983e3ee49f82721132074877428d58acec52f19697a88c03b5fba74e4"
   end
 
   resource "pycrypto" do
