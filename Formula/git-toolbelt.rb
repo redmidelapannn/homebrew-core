@@ -4,6 +4,13 @@ class GitToolbelt < Formula
   url "https://github.com/nvie/git-toolbelt/archive/v1.0.0.tar.gz"
   sha256 "039fbd0f6529d6d4d29eac4629d6b1a4d0a94440ec9a3121260c3274d7094e8f"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "ab1bba4c9d83a3f9797df367d43aad7b8ce0880b74c5b25d1611f9a3b4259a87" => :high_sierra
+    sha256 "ab1bba4c9d83a3f9797df367d43aad7b8ce0880b74c5b25d1611f9a3b4259a87" => :sierra
+    sha256 "ab1bba4c9d83a3f9797df367d43aad7b8ce0880b74c5b25d1611f9a3b4259a87" => :el_capitan
+  end
+
   def install
     bin.install "git-active-branches"
     bin.install "git-assume"
