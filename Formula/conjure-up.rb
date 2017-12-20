@@ -3,9 +3,8 @@ class ConjureUp < Formula
 
   desc "Big software deployments so easy it's almost magical"
   homepage "https://conjure-up.io/"
-  url "https://github.com/conjure-up/conjure-up/archive/2.4.2.tar.gz"
-  sha256 "ca5557ca7c11eb01bb0c840a4897b4048eea9313e0a1db309e8326c478add96e"
-  revision 1
+  url "https://github.com/conjure-up/conjure-up/archive/2.5.0.tar.gz"
+  sha256 "2d13f9b27ad4c82a6ef33079b24278cfef8c65d23f65e7e57895e10ec8ccb760"
 
   bottle do
     cellar :any
