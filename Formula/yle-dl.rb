@@ -42,6 +42,11 @@ class YleDl < Formula
     sha256 "24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
   end
 
+  resource "future" do
+    url "https://files.pythonhosted.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz"
+    sha256 "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+  end
+
   resource "idna" do
     url "https://files.pythonhosted.org/packages/f4/bd/0467d62790828c23c47fc1dfa1b1f052b24efdf5290f071c7a91d0d82fd3/idna-2.6.tar.gz"
     sha256 "2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f"
@@ -52,9 +57,9 @@ class YleDl < Formula
     sha256 "940caef1ec7c78e0c34b0f6b94fe42d0f2022915ffc78643d28538a5cfd0f40e"
   end
 
-  resource "PyAMF" do
-    url "https://files.pythonhosted.org/packages/a0/06/43976c0e3951b9bf7ba0d7d614a8e3e024eb5a1c6acecc9073b81c94fb52/PyAMF-0.8.0.tar.gz"
-    sha256 "0455d68983e3ee49f82721132074877428d58acec52f19697a88c03b5fba74e4"
+  resource "Py3AMF" do
+    url "https://files.pythonhosted.org/packages/0a/b7/60823a6a19db09573cca3a65bef6af14fba23b894461184559d7bf61f46e/Py3AMF-0.8.7.tar.gz"
+    sha256 "6b3c876f70039b9d885c53eb6c1508afcdcbdca5e6a49e4a80ee37e0c73fb6e7"
   end
 
   resource "pycrypto" do
