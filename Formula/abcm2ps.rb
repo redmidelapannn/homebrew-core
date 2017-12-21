@@ -14,7 +14,6 @@ class Abcm2ps < Formula
   depends_on "pango" => :optional
 
   def install
-    chmod 0755, "configure" # remove for > 8.13.15
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
