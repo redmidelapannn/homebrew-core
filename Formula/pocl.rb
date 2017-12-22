@@ -4,6 +4,12 @@ class Pocl < Formula
   url "http://portablecl.org/downloads/pocl-1.0.tar.gz"
   sha256 "94bd86a2f9847c03e6c3bf8dca12af3734f8b272ffeacbc3fa8fcca58844b1d4"
 
+  bottle do
+    sha256 "fd333160d683171d0897348c79b07dee6268b92a630ce8c1c4434a341eec5517" => :high_sierra
+    sha256 "372fdd4ac5e5d552d4a9f895287f406cb181c5e34c7d103d1085486b22f8c423" => :sierra
+    sha256 "3cc4dd305afaa7098edcec94dbf3c7867e860027028aef61db52f1509776b5f5" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
 
