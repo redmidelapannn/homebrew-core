@@ -19,7 +19,7 @@ class PcscLite < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
                           "--sysconfdir=#{etc}",
-                          "--with-systemdsystemunitdir=no"
+                          "--disable-libsystemd"
     system "make", "install"
   end
 
