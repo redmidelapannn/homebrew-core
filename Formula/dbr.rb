@@ -3,6 +3,13 @@ class Dbr < Formula
   homepage "https://www.dynamsoft.com/Products/Dynamic-Barcode-Reader.aspx"
   url "https://download.dynamsoft.com/dbr/dbr-mac-5.2.0.zip"
   sha256 "34fa6a39ace60f768b2bd46606ac995d3a3881a8169313f6aeabefa2dae08c38"
+  bottle do
+    cellar :any
+    sha256 "4c660ae80b534f6a52d191ac0cd27cc998a2ca0cbe964467e14baefe5739a4fc" => :high_sierra
+    sha256 "4c660ae80b534f6a52d191ac0cd27cc998a2ca0cbe964467e14baefe5739a4fc" => :sierra
+    sha256 "4c660ae80b534f6a52d191ac0cd27cc998a2ca0cbe964467e14baefe5739a4fc" => :el_capitan
+  end
+
   def install
     include.install Dir["BarcodeReader5.2/include/*"]
     lib.install "BarcodeReader5.2/lib/libDynamsoftBarcodeReader.dylib"
