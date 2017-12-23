@@ -7,10 +7,9 @@ class JsonC < Formula
 
   bottle do
     cellar :any
-    sha256 "b8f06e2b22f08912346e318cb293cc988a3fa3fe3de7ea2e3c84b2b52357ee6f" => :high_sierra
-    sha256 "2ce9b90873fa07bcb526c7b9aea55e58af52d88402e891227a5927a41d525ef5" => :sierra
-    sha256 "6055bdc414153c7928fa30f215e8354510d9610cb3b75c75def3e6850b48e11f" => :el_capitan
-    sha256 "4e6850e0b1627f622b64ae270883df999ab986046b1d4f9f0ca446fbd24a729b" => :yosemite
+    sha256 "0ec0e1e15ddfb6b7aa7e9b6f4bd3e330dfc3fef60b8405ed6ecc93ede6b29ec9" => :high_sierra
+    sha256 "540ba3e6b407892baf44cd0df015530d2afd13390e9ead2d9b8c999337916014" => :sierra
+    sha256 "180559246fabd2fa9e5a6909ed4383c20f8297c185324ddab88d055734c5ffbd" => :el_capitan
   end
 
   head do
