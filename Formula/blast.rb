@@ -8,6 +8,10 @@ class Blast < Formula
   sha256 "0510e1d607d0fb4389eca50d434d5a0be787423b6850b3a4f315abc2ef19c996"
   revision 4
 
+  bottle do
+    sha256 "59101afe6bf1b6016f195f0d2e1d4f0094fdab5c4dd04da07e6e22d915e66500" => :sierra
+  end
+
   depends_on :python if MacOS.version <= :snow_leopard
 
   patch do
