@@ -30,8 +30,8 @@ class Cayley < Formula
       system "go", "build", "-o", bin/"cayley", "-ldflags",
              "-X main.Version=#{version}", ".../cmd/cayley"
 
-      inreplace "cayley.cfg.example", "/tmp/cayley_test", var/"cayley"
-      etc.install "cayley.cfg.example" => "cayley.conf"
+      inreplace "cayley_example.yml", "./cayley.db", var/"cayley/cayley.db"
+      etc.install "cayley_example.yml" => "cayley.yml"
 
       (pkgshare/"assets").install "docs", "static", "templates"
 
@@ -47,7 +47,7 @@ class Cayley < Formula
       (var/"cayley").mkpath
 
       # Initialize the database
-      system bin/"cayley", "init", "--config=#{etc}/cayley.conf"
+      system bin/"cayley", "init", "--config=#{etc}/cayley.yml"
     end
   end
 
