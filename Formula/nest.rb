@@ -5,10 +5,9 @@ class Nest < Formula
   sha256 "afaf7d53c2d5305fac1257759cc0ea6d62c3cebf7d5cc4a07d4739af4dbb9caf"
 
   bottle do
-    sha256 "4f7d765cd75ae3272ce15bb293c20a6cdfc9ccb551f0a07d00016c75ae0ef267" => :high_sierra
-    sha256 "60e4b0595c5d11003ffe1eca3fdca3c197b8711336ead21eba67620db96454c0" => :sierra
-    sha256 "8a4c8e6d0d2e4ce93d76af73197c693f8c303095800e82b7266b922848f1a39b" => :el_capitan
-    sha256 "6207dea13f90b17a95313b964323f7971cd5e2507a38b0ffd5d64b2f346e7851" => :x86_64_linux
+    sha256 "4310a9df056ffcd7f7fa271f8cef12eab13995444e112d1af91fe32d13d7cb53" => :high_sierra
+    sha256 "bf0b2bd3e978d46e406c7f26559012e9509b2f49f25b228816c2baf88459c220" => :sierra
+    sha256 "bb13b3f44fe4427311f63fe8c7b3286f14ec95d23ec97bf5d9137749d451ecf8" => :el_capitan
   end
 
   option "with-python3", "Build Python3 bindings (PyNEST) instead of Python2 bindings."
