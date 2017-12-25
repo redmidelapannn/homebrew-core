@@ -12,6 +12,7 @@ class Mikutter < Formula
   end
 
   depends_on "gtk+"
+  depends_on "libidn"
   depends_on "terminal-notifier" => :recommended
   depends_on :ruby => "2.1"
 
