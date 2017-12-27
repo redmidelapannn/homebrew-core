@@ -1,5 +1,5 @@
 class Librealsense < Formula
-  desc "Camera capture for Intel RealSense F200, SR300 and R200"
+  desc "Intel RealSense D400 series and SR300 capture"
   homepage "https://github.com/IntelRealSense/librealsense"
   url "https://github.com/IntelRealSense/librealsense/archive/v2.8.3.tar.gz"
   sha256 "4b99e684d047089e6b641ed1975ee50f862e7ea56280466ab7d8cb822627cdc6"
