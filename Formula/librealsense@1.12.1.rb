@@ -26,7 +26,7 @@ class LibrealsenseAT1121 < Formula
       #include<stdio.h>
       int main()
       {
-        printf(RS2_API_VERSION_STR);
+        printf(RS_API_VERSION_STR);
         return 0;
       }
     EOS
