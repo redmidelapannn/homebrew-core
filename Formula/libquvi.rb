@@ -5,9 +5,9 @@ class Libquvi < Formula
   sha256 "2d3fe28954a68ed97587e7b920ada5095c450105e993ceade85606dadf9a81b2"
 
   bottle do
-    sha256 "bb5a4201afd814e87ee496b8cefbcf126f0245d7b3c600039e71e7b355115bf7" => :high_sierra
-    sha256 "9968d412860717f837082f0e9d225b741d8430a99a3d1c4e12b7a1cdc95cd456" => :sierra
-    sha256 "d91506a098fa564598b4aecbad97a2fa30728fafd8ad82bf8c4ff4bedb8d6c0a" => :el_capitan
+    sha256 "d6326d0dc29f604f221b5fc52070b802966330de43699295a2ce36c2ffa1ba5d" => :high_sierra
+    sha256 "3d24bb0981cfda56bdb1c97d4e91a120ccb3a30b2a80584eb598578ebfca3a0d" => :sierra
+    sha256 "098080208694b41910ec33d29b0c4326aed79fe1205507a6ec176f53b10a90e3" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
