@@ -35,7 +35,7 @@ class Cclive < Formula
   end
 
   resource "luasocket" do
-    url "https://luarocks.org/luasocket-3.0rc1-2.src.rock"
+    url "https://commondatastorage.googleapis.com/moonrocks/54/luasocket-3.0rc1-2.src.rock"
     version "3.0rc1-2"
     sha256 "3882f2a1e1c6145ceb43ead385b861b97fa2f8d487e8669ec5b747406ab251c7"
   end
