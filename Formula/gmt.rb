@@ -9,9 +9,10 @@ class Gmt < Formula
   revision 1
 
   bottle do
-    sha256 "4b04dea31bebdcfd82673de995e037f852397258a90852622aee8a917aa3a03d" => :high_sierra
-    sha256 "fbd37a8573c3935b9404db3fea2260c654f787740755ddba3d88afde3553271c" => :sierra
-    sha256 "d05657c555e8e1f3dab2bd57de31a016dd3a5d9e6059c3b1fd123081e0d584ef" => :el_capitan
+    rebuild 1
+    sha256 "0d052f533f1b07ba0ebce4cfb2b3c28e4a016964d9f303b9b59dd9a23352f09b" => :high_sierra
+    sha256 "48c3618273384b81cf852c54af0f75a53789d82396c074418f3923602dfc35e1" => :sierra
+    sha256 "68af4b3ce5b37ebf7afaa16baf358b6e428378c1c73b3f00cf7bc49ddf29772e" => :el_capitan
   end
 
   option "without-module-links", "Install only the main gmt program without links for GMT modules."
