@@ -6,11 +6,10 @@ class Distcc < Formula
   head "https://github.com/distcc/distcc.git"
 
   bottle do
-    rebuild 1
-    sha256 "73e68824284081284a7a155fcee8343affa3e74c5758928cf35e6451f3170359" => :high_sierra
-    sha256 "7550914e05bccc38cf002ae14a2209248166149fa2720f0b8716320433d51c28" => :sierra
-    sha256 "7a457a41b795c825e315a296e6883a8b8ab749f8329d492026f4b9072571dc7b" => :el_capitan
-    sha256 "4b38fccd7d1f3ac119bc50f4252fd593a828a6564dfb98d6bc819adff332a4b5" => :yosemite
+    rebuild 2
+    sha256 "00af17479e527dce8f94b435343100e489edcd72d479ceec6acf661d3d79c1cc" => :high_sierra
+    sha256 "57773f40ff2e40b476204195ef72e7bf9ab6059af85a5d4acf5fb707e4487de3" => :sierra
+    sha256 "1139ea0e7cf997c2f9470a4ef54bd4f8d61e9ead750f5922ea02bd6ff919303d" => :el_capitan
   end
 
   depends_on "autoconf" => :build
