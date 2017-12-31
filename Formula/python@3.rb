@@ -7,10 +7,9 @@ class PythonAT3 < Formula
   head "https://github.com/python/cpython", :using => :git
 
   bottle do
-    rebuild 1
-    sha256 "c222fb024b619c0bcb9e212017974753322f63629f660786800f5747e9530298" => :high_sierra
-    sha256 "51ac251ec7576525e635f9abd5aba7adf913d4fba85d7543978adf4f70898079" => :sierra
-    sha256 "741d232041e285dfcc861e51de1089af48b350fa2421ff63690926c761881c39" => :el_capitan
+    sha256 "4c55698e03333f113d6d4ede1e7118fe6933b04b8e10dc9af030eae3fc2ec6e2" => :high_sierra
+    sha256 "c66752e9e1a75cfbf994504004b8b5fc0ab096c4ba0ca6e61a341d0fa37fa5d3" => :sierra
+    sha256 "ea698bbc98733eeefad8b4a38b753ad500b36be618d7e929f3b5bbc1c500be8b" => :el_capitan
   end
 
   devel do
