@@ -7,9 +7,10 @@ class Elvish < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a99318970d2004834f9bb991a3a76ed1b29aefc58422b654f8ae447d18906e7a" => :high_sierra
-    sha256 "c651330cab6b79ab5c0168a8e82b583940e8d75b19aa48f472be4ab1067e2d88" => :sierra
-    sha256 "dc6cbed0466aa0acc45ee8467d073c4238574f425c7047f27ebc5b6b63f4b244" => :el_capitan
+    rebuild 1
+    sha256 "c9e8d26bba98af3b89f1498dcd8a4fd77651af8d734401ac8120c118aa852808" => :high_sierra
+    sha256 "eddfe7ce6d45df266adbe9c815c85cd0e4654ab43e440c3ed1d92acc8b0d41a4" => :sierra
+    sha256 "b7b52771b8182c411ed7eaa750d33e4941865ebdb729a896155c0779c280c0cd" => :el_capitan
   end
 
   depends_on "go" => :build
