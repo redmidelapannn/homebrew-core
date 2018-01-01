@@ -5,10 +5,9 @@ class Nvc < Formula
   sha256 "6c98468ba73558c454176f5176a4c63c85bdc3c930be6f77fa3b7efb3aa8ddb8"
 
   bottle do
-    sha256 "f11933a05847b9433fd505c03755767043872e145f247b7d87603e3a9dc51dc4" => :high_sierra
-    sha256 "23b8d156e8ee517b80e7736eeb31bfa3ac59e30bbdca157b53320b8cf987b633" => :sierra
-    sha256 "fec8eab13df57ffec18283f6a83366afcf431640f9e25142a4da04f63e43e2bf" => :el_capitan
-    sha256 "f33ffc17ef6123f97750b76fddedbb6ba3865fab02ebbca04c7441631740092d" => :yosemite
+    sha256 "d4502cb577850cd0f44c790c9eb86daed6ac3a6258ea48911812993b9b5dfd7e" => :high_sierra
+    sha256 "afec10d1a57f5acc58a1e69d8886fb785e1ba90323c4ebac0e8ec4ccae495b93" => :sierra
+    sha256 "06ec647b83c692ef0920d85e7f6d599ea8ac9e775189d36b8ccb25ef6611ac84" => :el_capitan
   end
 
   head do
