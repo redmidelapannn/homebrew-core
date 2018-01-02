@@ -31,7 +31,7 @@ class Mumps < Formula
                   "ISCOTCH=-I#{Formula["scotch"].opt_include}"]
 
     scotch_libs = "LSCOTCH=-L$(SCOTCHDIR)/lib -lptscotch -lptscotcherr -lptscotcherrexit -lscotch"
-    scotch_libs += "-lptscotchparmetis" if build.with? "parmetis"
+    scotch_libs += "-lptscotchparmetis"
     make_args << scotch_libs
     orderingsf << " -Dptscotch"
 
@@ -102,11 +102,7 @@ class Mumps < Formula
     ENV.fortran
     cp_r pkgshare/"examples", testpath
     opts = ["-I#{opt_include}", "-L#{opt_lib}", "-lmumps_common", "-lpord"]
-    if Tab.for_name("mumps").with? "openblas"
-      opts << "-L#{Formula["openblas"].opt_lib}" << "-lopenblas"
-    else
-      opts << "-L#{Formula["veclibfort"].opt_lib}" << "-lvecLibFort"
-    end
+    opts << "-L#{Formula["openblas"].opt_lib}" << "-lopenblas"
     f90 = "mpif90"
     cc = "mpicc"
     mpirun = "mpirun -np 2"
