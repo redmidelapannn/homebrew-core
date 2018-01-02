@@ -39,6 +39,6 @@ class Librealsense < Formula
       }
     EOS
     system ENV.cc, "test.c", "-I#{include}", "-L#{lib}", "-o", "test"
-    assert_equal shell_output("./test").strip, version.to_s
+    assert_equal version.to_s, shell_output("./test").strip
   end
 end
