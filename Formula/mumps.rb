@@ -1,21 +1,14 @@
 class Mumps < Formula
   desc "Parallel Sparse Direct Solver"
   homepage "http://mumps-solver.org"
-  url "http://mumps.enseeiht.fr/MUMPS_5.1.1.tar.gz"
-  mirror "http://graal.ens-lyon.fr/MUMPS/MUMPS_5.1.1.tar.gz"
-  sha256 "a2a1f89c470f2b66e9982953cbd047d429a002fab9975400cef7190d01084a06"
-  revision 1
-
-  bottle :disable, "needs to be rebuilt with latest open-mpi"
+  url "http://mumps.enseeiht.fr/MUMPS_5.1.2.tar.gz"
+  sha256 "eb345cda145da9aea01b851d17e54e7eef08e16bfa148100ac1f7f046cd42ae9"
 
   depends_on :mpi => [:cc, :cxx, :f90]
   depends_on "openblas" => :optional
   depends_on "veclibfort" if build.without?("openblas")
   depends_on :fortran
-
-  if build.with? "mpi"
-    depends_on "scalapack" => build.with?("openblas") ? ["with-openblas"] : []
-  end
+  depends_on "scalapack" => build.with?("openblas") ? ["with-openblas"] : []
   depends_on "metis"    => :optional if build.without? "mpi"
   depends_on "parmetis" => :optional if build.with? "mpi"
   depends_on "scotch@5" => :optional
