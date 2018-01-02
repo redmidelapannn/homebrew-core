@@ -38,16 +38,10 @@ class Scotch < Formula
                    "CFLAGS=#{cflags.join(" ")}",
                    "LDFLAGS=#{ldflags.join(" ")}"]
 
-      if OS.MacOS?
-        make_args << "LIB=.dylib"
-        make_args << "AR=libtool"
-        arflags = ldflags.join(" ") + " -dynamic -install_name #{lib}/$(notdir $@) -undefined dynamic_lookup -o"
-        make_args << "ARFLAGS=#{arflags}"
-      else
-        make_args << "LIB=.so"
-        make_args << "ARCH=ar"
-        make_args << "ARCHFLAGS=-ruv"
-      end
+      make_args << "LIB=.dylib"
+      make_args << "AR=libtool"
+      arflags = ldflags.join(" ") + " -dynamic -install_name #{lib}/$(notdir $@) -undefined dynamic_lookup -o"
+      make_args << "ARFLAGS=#{arflags}"
 
       system "make", "scotch", "VERBOSE=ON", *make_args
       system "make", "ptscotch", "VERBOSE=ON", *make_args
