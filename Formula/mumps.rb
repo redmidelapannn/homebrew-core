@@ -56,12 +56,10 @@ class Mumps < Formula
     system "make", "alllib", *(shlibs_args + make_args)
 
     lib.install Dir["lib/*"]
-    lib.install "libseq/libmpiseq.dylib" if build.without? "mpi"
 
     # Build static libraries (e.g., for Dolfin)
     system "make", "alllib", *make_args
     (libexec/"lib").install Dir["lib/*.a"]
-    (libexec/"lib").install "libseq/libmpiseq.a" if build.without? "mpi"
 
     inreplace "examples/Makefile" do |s|
       s.change_make_var! "libdir", lib
@@ -69,9 +67,6 @@ class Mumps < Formula
 
     libexec.install "include"
     include.install_symlink Dir[libexec/"include/*"]
-    # The following .h files may conflict with others related to MPI
-    # in /usr/local/include. Do not symlink them.
-    (libexec/"include").install Dir["libseq/*.h"] if build.without? "mpi"
 
     doc.install Dir["doc/*.pdf"]
     pkgshare.install "examples"
@@ -112,16 +107,10 @@ class Mumps < Formula
     else
       opts << "-L#{Formula["veclibfort"].opt_lib}" << "-lvecLibFort"
     end
-    if Tab.for_name("mumps").with?("mpi")
-      f90 = "mpif90"
-      cc = "mpicc"
-      mpirun = "mpirun -np 2"
-      opts << "-lscalapack"
-    else
-      f90 = ENV["FC"]
-      cc = ENV["CC"]
-      mpirun = ""
-    end
+    f90 = "mpif90"
+    cc = "mpicc"
+    mpirun = "mpirun -np 2"
+    opts << "-lscalapack"
 
     cd testpath/"examples" do
       system f90, "-o", "ssimpletest", "ssimpletest.F", "-lsmumps", *opts
