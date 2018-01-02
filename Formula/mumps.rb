@@ -5,14 +5,11 @@ class Mumps < Formula
   sha256 "eb345cda145da9aea01b851d17e54e7eef08e16bfa148100ac1f7f046cd42ae9"
 
   depends_on :mpi => [:cc, :cxx, :f90]
-  depends_on "openblas" => :optional
-  depends_on "veclibfort" if build.without?("openblas")
   depends_on :fortran
-  depends_on "scalapack" => build.with?("openblas") ? ["with-openblas"] : []
-  depends_on "metis"    => :optional if build.without? "mpi"
-  depends_on "parmetis" => :optional if build.with? "mpi"
-  depends_on "scotch@5" => :optional
-  depends_on "scotch" => :optional
+  depends_on "openblas"
+  depends_on "scalapack"
+  depends_on "parmetis"
+  depends_on "scotch"
 
   resource "mumps_simple" do
     url "https://github.com/dpo/mumps_simple/archive/v0.4.tar.gz"
@@ -30,35 +27,18 @@ class Mumps < Formula
     makefile = "Makefile.G95.PAR"
     cp "Make.inc/" + makefile, "Makefile.inc"
 
-    if build.with? "scotch5"
-      make_args += ["SCOTCHDIR=#{Formula["scotch5"].opt_prefix}",
-                    "ISCOTCH=-I#{Formula["scotch5"].opt_include}"]
+    make_args += ["SCOTCHDIR=#{Formula["scotch"].opt_prefix}",
+                  "ISCOTCH=-I#{Formula["scotch"].opt_include}"]
 
-      scotch_libs = "LSCOTCH=-L$(SCOTCHDIR)/lib -lptesmumps -lptscotch -lptscotcherr"
-      scotch_libs += " -lptscotchparmetis" if build.with? "parmetis"
-      make_args << scotch_libs
-      orderingsf << " -Dptscotch"
-    elsif build.with? "scotch"
-      make_args += ["SCOTCHDIR=#{Formula["scotch"].opt_prefix}",
-                    "ISCOTCH=-I#{Formula["scotch"].opt_include}"]
+    scotch_libs = "LSCOTCH=-L$(SCOTCHDIR)/lib -lptscotch -lptscotcherr -lptscotcherrexit -lscotch"
+    scotch_libs += "-lptscotchparmetis" if build.with? "parmetis"
+    make_args << scotch_libs
+    orderingsf << " -Dptscotch"
 
-      scotch_libs = "LSCOTCH=-L$(SCOTCHDIR)/lib -lptscotch -lptscotcherr -lptscotcherrexit -lscotch"
-      scotch_libs += "-lptscotchparmetis" if build.with? "parmetis"
-      make_args << scotch_libs
-      orderingsf << " -Dptscotch"
-    end
-
-    if build.with? "parmetis"
-      make_args += ["LMETISDIR=#{Formula["parmetis"].opt_lib}",
-                    "IMETIS=#{Formula["parmetis"].opt_include}",
-                    "LMETIS=-L#{Formula["parmetis"].opt_lib} -lparmetis -L#{Formula["metis"].opt_lib} -lmetis"]
-      orderingsf << " -Dparmetis"
-    elsif build.with? "metis"
-      make_args += ["LMETISDIR=#{Formula["metis"].opt_lib}",
-                    "IMETIS=#{Formula["metis"].opt_include}",
-                    "LMETIS=-L#{Formula["metis"].opt_lib} -lmetis"]
-      orderingsf << " -Dmetis"
-    end
+    make_args += ["LMETISDIR=#{Formula["parmetis"].opt_lib}",
+                  "IMETIS=#{Formula["parmetis"].opt_include}",
+                  "LMETIS=-L#{Formula["parmetis"].opt_lib} -lparmetis -L#{Formula["metis"].opt_lib} -lmetis"]
+    orderingsf << " -Dparmetis"
 
     make_args << "ORDERINGSF=#{orderingsf}"
 
@@ -69,13 +49,7 @@ class Mumps < Formula
                   "INCPAR=", # Let MPI compilers fill in the blanks.
                   "LIBPAR=$(SCALAP)"]
 
-    if build.with? "openblas"
-      make_args << "LIBBLAS=-L#{Formula["openblas"].opt_lib} -lopenblas"
-    elsif build.with? "veclibfort"
-      make_args << "LIBBLAS=-L#{Formula["veclibfort"].opt_lib} -lvecLibFort"
-    else
-      make_args << "LIBBLAS=-lblas -llapack"
-    end
+    make_args << "LIBBLAS=-L#{Formula["openblas"].opt_lib} -lopenblas"
 
     ENV.deparallelize # Build fails in parallel on Mavericks.
 
@@ -110,17 +84,10 @@ class Mumps < Formula
     resource("mumps_simple").stage do
       simple_args = ["CC=#{ENV["MPICC"]}", "prefix=#{prefix}", "mumps_prefix=#{prefix}",
                      "scalapack_libdir=#{Formula["scalapack"].opt_lib}"]
-      if build.with? "scotch5"
-        simple_args += ["scotch_libdir=#{Formula["scotch5"].opt_lib}",
-                        "scotch_libs=-L$(scotch_libdir) -lptesmumps -lptscotch -lptscotcherr"]
-      elsif build.with? "scotch"
-        simple_args += ["scotch_libdir=#{Formula["scotch"].opt_lib}",
-                        "scotch_libs=-L$(scotch_libdir) -lptscotch -lptscotcherr -lscotch"]
-      end
-      if build.with? "openblas"
-        simple_args += ["blas_libdir=#{Formula["openblas"].opt_lib}",
-                        "blas_libs=-L$(blas_libdir) -lopenblas"]
-      end
+      simple_args += ["scotch_libdir=#{Formula["scotch"].opt_lib}",
+                      "scotch_libs=-L$(scotch_libdir) -lptscotch -lptscotcherr -lscotch"]
+      simple_args += ["blas_libdir=#{Formula["openblas"].opt_lib}",
+                      "blas_libs=-L$(blas_libdir) -lopenblas"]
       system "make", "SHELL=/bin/bash", *simple_args
       lib.install "libmumps_simple.dylib"
       include.install "mumps_simple.h"
@@ -133,13 +100,6 @@ class Mumps < Formula
       static libraries are available in
         #{opt_libexec}/lib
     EOS
-    if build.without? "mpi"
-      s += <<-EOS.undent
-      You built a sequential MUMPS library.
-      Please add #{libexec}/include to the include path
-      when building software that depends on MUMPS.
-      EOS
-    end
     s
   end
 
