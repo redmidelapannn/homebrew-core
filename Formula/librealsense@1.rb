@@ -11,7 +11,7 @@ class LibrealsenseAT1 < Formula
   depends_on "libusb"
 
   def install
-    system "cmake", "-DBUILD_EXAMPLES=true", *std_cmake_args
+    system "cmake", "-DBUILD_EXAMPLES=ON", *std_cmake_args
     system "make", "install"
   end
 
