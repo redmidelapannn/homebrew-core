@@ -12,7 +12,6 @@ class LibrealsenseAT1 < Formula
 
   def install
     args = std_cmake_args
-    args << "-DBUILD_EXAMPLES=true"
 
     system "cmake", ".", *args
     system "make", "install"
