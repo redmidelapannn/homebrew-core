@@ -8,10 +8,10 @@ class Yasm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ddb536410f898cba342c9c2d01696a690a28a4f1e9e30c67a3e352a41791fc85" => :high_sierra
-    sha256 "2ca19bb3f563569aa4eac4fd3398a7eb14a7fb1268b4ffe86ad7980f9701d1b7" => :sierra
-    sha256 "0dd9ef773dfbf9c59ab13c1fb7ec616d1ffba1c240357497d75482e0743c4119" => :el_capitan
-    sha256 "fc205e75319ba9e63a2e5fa6beccc66a163325a3a4a51807a2cf1844512f2c24" => :yosemite
+    rebuild 1
+    sha256 "e946e6aa23e7afcd93795a91aa4217b5f339d12d6a0fa793860fb44b59c29bf6" => :high_sierra
+    sha256 "aa5858ac95525e62500adc5098ee3184064210435ea359dea8bd834e7e7220ca" => :sierra
+    sha256 "a7120864228e2a5d5f37aa42cd5bf5ed4cfeacf69d2f92adcdd156c1e51fa989" => :el_capitan
   end
 
   head do
