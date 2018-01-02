@@ -6,9 +6,10 @@ class Nano < Formula
   head "https://git.savannah.gnu.org/git/nano.git"
 
   bottle do
-    sha256 "87e5ec4ff6dabd259139dd4a6c7977aafd39583063f57a70b579b907740a7f4f" => :high_sierra
-    sha256 "038973caa98da42bd6a428fef97aeca0f50241e95d9ce3210c55d33f31c7dbca" => :sierra
-    sha256 "7e7b88ef39fa11b16014cd13866a25da27694e9d4583906b1c1ff9f4f49bf16c" => :el_capitan
+    rebuild 1
+    sha256 "fe9658ff96ca4c2bbe3e8a5b583e5407aece4e503652ab6d65df06ee36671356" => :high_sierra
+    sha256 "7502edce8f2da178b958bf857ac2e8fc0c24c0e6bfb55b6fd01afb3485aa2dbc" => :sierra
+    sha256 "c16bb71752f02e0231ad6b694bf5fdb6d8ed8e5bcfe1704d7103bdba54e3236d" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
