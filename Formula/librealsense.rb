@@ -21,7 +21,6 @@ class Librealsense < Formula
 
   def install
     args = std_cmake_args
-
     args << "-DBUILD_EXAMPLES=OFF" if build.without? "examples"
 
     system "cmake", ".", "-DBUILD_WITH_OPENMP=OFF", *args
@@ -31,7 +30,7 @@ class Librealsense < Formula
   test do
     (testpath/"test.c").write <<~EOS
       #include <librealsense2/rs.h>
-      #include<stdio.h>
+      #include <stdio.h>
       int main()
       {
         printf(RS2_API_VERSION_STR);
