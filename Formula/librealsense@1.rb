@@ -7,11 +7,12 @@ class LibrealsenseAT1 < Formula
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
-  depends_on "glfw" if build.with? "examples"
+  depends_on "glfw"
   depends_on "libusb"
 
   def install
     args = std_cmake_args
+    args << "-DBUILD_EXAMPLES=true"
 
     system "cmake", ".", *args
     system "make", "install"
