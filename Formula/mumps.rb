@@ -9,21 +9,17 @@ class Mumps < Formula
   bottle :disable, "needs to be rebuilt with latest open-mpi"
 
   depends_on :mpi => [:cc, :cxx, :f90, :recommended]
-  depends_on "openblas" => OS.mac? ? :optional : :recommended
-  depends_on "veclibfort" if build.without?("openblas") && OS.mac?
+  depends_on "openblas" => :optional
+  depends_on "veclibfort" if build.without?("openblas")
   depends_on :fortran
 
   if build.with? "mpi"
-    if OS.mac?
-      depends_on "scalapack" => build.with?("openblas") ? ["with-openblas"] : []
-    else
-      depends_on "scalapack" => build.without?("openblas") ? ["without-openblas"] : []
-    end
+    depends_on "scalapack" => build.with?("openblas") ? ["with-openblas"] : []
   end
   depends_on "metis"    => :optional if build.without? "mpi"
   depends_on "parmetis" => :optional if build.with? "mpi"
-  depends_on "scotch5"  => :optional
-  depends_on "scotch"   => :optional
+  depends_on "scotch@5" => :optional
+  depends_on "scotch" => :optional
 
   resource "mumps_simple" do
     url "https://github.com/dpo/mumps_simple/archive/v0.4.tar.gz"
@@ -32,18 +28,13 @@ class Mumps < Formula
 
   def install
     make_args = ["RANLIB=echo"]
-    if OS.mac?
-      # Building dylibs with mpif90 causes segfaults on 10.8 and 10.10. Use gfortran.
-      shlibs_args = ["LIBEXT=.dylib",
-                     "AR=#{ENV["FC"]} -dynamiclib -Wl,-install_name -Wl,#{lib}/$(notdir $@) -undefined dynamic_lookup -o "]
-    else
-      shlibs_args = ["LIBEXT=.so",
-                     "AR=$(FL) -shared -Wl,-soname -Wl,$(notdir $@) -o "]
-    end
+    # Building dylibs with mpif90 causes segfaults on 10.8 and 10.10. Use gfortran.
+    shlibs_args = ["LIBEXT=.dylib",
+                   "AR=#{ENV["FC"]} -dynamiclib -Wl,-install_name -Wl,#{lib}/$(notdir $@) -undefined dynamic_lookup -o "]
     make_args += ["OPTF=-O", "CDEFS=-DAdd_"]
     orderingsf = "-Dpord"
 
-    makefile = (build.with? "mpi") ? "Makefile.G95.PAR" : "Makefile.G95.SEQ"
+    makefile = build.with?("mpi") ? "Makefile.G95.PAR" : "Makefile.G95.SEQ"
     cp "Make.inc/" + makefile, "Makefile.inc"
 
     if build.with? "scotch5"
@@ -118,7 +109,7 @@ class Mumps < Formula
     system "make", "alllib", *(shlibs_args + make_args)
 
     lib.install Dir["lib/*"]
-    lib.install ("libseq/libmpiseq" + (OS.mac? ? ".dylib" : ".so")) if build.without? "mpi"
+    lib.install "libseq/libmpiseq.dylib" if build.without? "mpi"
 
     # Build static libraries (e.g., for Dolfin)
     system "make", "alllib", *make_args
@@ -159,7 +150,7 @@ class Mumps < Formula
                           "blas_libs=-L$(blas_libdir) -lopenblas"]
         end
         system "make", "SHELL=/bin/bash", *simple_args
-        lib.install ("libmumps_simple." + (OS.mac? ? "dylib" : "so"))
+        lib.install "libmumps_simple.dylib"
         include.install "mumps_simple.h"
       end
     end
@@ -187,10 +178,8 @@ class Mumps < Formula
     opts = ["-I#{opt_include}", "-L#{opt_lib}", "-lmumps_common", "-lpord"]
     if Tab.for_name("mumps").with? "openblas"
       opts << "-L#{Formula["openblas"].opt_lib}" << "-lopenblas"
-    elsif OS.mac?
-      opts << "-L#{Formula["veclibfort"].opt_lib}" << "-lvecLibFort"
     else
-      opts << "-lblas" << "-llapack"
+      opts << "-L#{Formula["veclibfort"].opt_lib}" << "-lvecLibFort"
     end
     if Tab.for_name("mumps").with?("mpi")
       f90 = "mpif90"
