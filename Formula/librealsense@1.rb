@@ -11,17 +11,14 @@ class LibrealsenseAT1 < Formula
   depends_on "libusb"
 
   def install
-    args = std_cmake_args
-    args << "-DBUILD_EXAMPLES=true"
-
-    system "cmake", ".", *args
+    system "cmake", "-DBUILD_EXAMPLES=true", *std_cmake_args
     system "make", "install"
   end
 
   test do
     (testpath/"test.c").write <<~EOS
       #include <librealsense/rs.h>
-      #include<stdio.h>
+      #include <stdio.h>
       int main()
       {
         printf(RS_API_VERSION_STR);
