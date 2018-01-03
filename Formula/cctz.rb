@@ -4,6 +4,13 @@ class Cctz < Formula
   url "https://github.com/google/cctz/archive/v2.1.tar.gz"
   sha256 "a86b9b2d339f5638a03a4bbcc1d8c632d2c429aecc44f5c548839c239c3b6e38"
 
+  bottle do
+    cellar :any
+    sha256 "dba925e17994c278234dba2d384809b40265169f9ac0c89bab1fb94e5f00abc0" => :high_sierra
+    sha256 "b911fd1637650e15c0678c6c7ad7a47503bef200e912a3f8ee44d3584f0d11c0" => :sierra
+    sha256 "c59308f00ce40d472028882d2e42d51125be6948c27b0d946e04c78daeb02802" => :el_capitan
+  end
+
   def install
     system "make", "install_hdrs", "PREFIX=#{prefix}"
     system "make", "install_lib", "PREFIX=#{prefix}"
