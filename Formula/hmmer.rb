@@ -1,6 +1,13 @@
 class Hmmer < Formula
   desc "Build profile HMMs and scan against sequence databases"
   homepage "http://hmmer.janelia.org"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5eaa5cadbc4c79e36f0d2e832835b9d14cf63ab846af09f697453ed43065bb4c" => :high_sierra
+    sha256 "5f78176d59dc103db4e9d043cbd3cdd304e902b4563ed80bc5f08a444f6aaa2c" => :sierra
+    sha256 "e1bca630986b195e8138aeaf058caf8d146b3e839f2c3679e8e012185a764ce6" => :el_capitan
+  end
+
   # doi "10.1371/journal.pcbi.1002195"
   # tag "bioinformatics"
 
