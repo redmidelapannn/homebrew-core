@@ -4,6 +4,13 @@ class Vg < Formula
   url "https://github.com/GetStream/vg/archive/v0.8.0.tar.gz"
   sha256 "e7267b1306c36b3a4a4d10cb9e7ece66a9436a430bbf15028b82313496c92ebe"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5e0bffd9d7ec606c9117c0d5f7172c27ca27e81f6a7fc0622c90b977e5208c61" => :high_sierra
+    sha256 "a15c8a6ff23866785bf7b5ff266f715604c5bcb33d241030e982a7b26bba3dd5" => :sierra
+    sha256 "02237e89c35aa1ee16748a598e83c32024217073f14c83ad58413097ae33935e" => :el_capitan
+  end
+
   depends_on "go" => :build
   depends_on "dep" => :build
   depends_on "bindfs" => :optional
