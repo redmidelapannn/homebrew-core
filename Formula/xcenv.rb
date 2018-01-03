@@ -7,10 +7,9 @@ class Xcenv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "801f48f671d9658695f7cdb00c1de4f49bff7231856112b597c398f744cc4264" => :high_sierra
-    sha256 "000e0d3d363de9398ba5655f5536cb817a6f1019f2679b4469556d86bf012a4b" => :sierra
-    sha256 "000e0d3d363de9398ba5655f5536cb817a6f1019f2679b4469556d86bf012a4b" => :el_capitan
-    sha256 "000e0d3d363de9398ba5655f5536cb817a6f1019f2679b4469556d86bf012a4b" => :yosemite
+    sha256 "a099775336d8717d7e5b10aa1660aa310e45bd234a376841b67ac160aec3ca2a" => :high_sierra
+    sha256 "a099775336d8717d7e5b10aa1660aa310e45bd234a376841b67ac160aec3ca2a" => :sierra
+    sha256 "a099775336d8717d7e5b10aa1660aa310e45bd234a376841b67ac160aec3ca2a" => :el_capitan
   end
 
   def install
