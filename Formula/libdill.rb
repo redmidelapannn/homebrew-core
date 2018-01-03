@@ -4,6 +4,12 @@ class Libdill < Formula
   url "https://github.com/sustrik/libdill/archive/1.6.tar.gz"
   sha256 "2539d3440971c876b117bc87295b0caabc8c8ec5f544856ca9e74ed12705ea51"
 
+  bottle do
+    cellar :any
+    sha256 "64422357b6d98fe85cd810495409ebe2aa8d6293931481fc5342ede0121491e5" => :sierra
+    sha256 "e595be2af687d0a277ec5f5ba3bb736d10f8a41dfc5048a638e7f7f03700eb11" => :el_capitan
+  end
+
   option "without-sockets", "Compile without socket support"
   option "without-threads", "Compile without threading support"
   option "with-valgrind", "Compile with valgrind compatibility"
