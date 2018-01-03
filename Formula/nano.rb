@@ -14,14 +14,6 @@ class Nano < Formula
   depends_on "gettext"
   depends_on "ncurses"
 
-  # 28 Nov 2017 "stat: fix compilation failure on macOS Sierra"
-  # gnulib commit https://git.savannah.gnu.org/gitweb/?p=gnulib.git;a=commit;h=cbce9423af01902fde4d84c02eedb443947f8986
-  # nano bug report https://savannah.gnu.org/bugs/?52546
-  patch :p0 do
-    url "https://savannah.gnu.org/bugs/download.php?file_id=42510"
-    sha256 "a07c826502b119113be3a376fac1c0be8e07f2b29b0a201ee95b2678317934dd"
-  end
-
   def install
     system "./autogen.sh" if build.head?
     system "./configure", "--disable-debug",
