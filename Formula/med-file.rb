@@ -4,6 +4,13 @@ class MedFile < Formula
   url "http://files.salome-platform.org/Salome/other/med-3.2.0.tar.gz"
   sha256 "d52e9a1bdd10f31aa154c34a5799b48d4266dc6b4a5ee05a9ceda525f2c6c138"
 
+  bottle do
+    cellar :any
+    sha256 "426177ac4910c2d09ac58371c7592426be740dd22313fc2bac3348cb0c7702d2" => :high_sierra
+    sha256 "7f2731c14dec96c44bdb589b7dea0be78166ce16393c3cd557a9eb5bb70bf1dd" => :sierra
+    sha256 "40a524460518e45f0ee28f02b98b19fee3e5e8c2ffac32254caa47bbadb70e26" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "gcc" => :build   # for gfortan
   depends_on "swig" => :build
