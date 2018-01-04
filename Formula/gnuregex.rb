@@ -1,4 +1,4 @@
-class GnuRegex < Formula
+class Gnuregex < Formula
   desc "GNU regex library"
   homepage "https://ftp.gnu.org/old-gnu/regex/"
   url "https://ftp.gnu.org/old-gnu/regex/regex-0.12.tar.gz"
