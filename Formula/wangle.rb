@@ -4,6 +4,13 @@ class Wangle < Formula
   url "https://github.com/facebook/wangle/archive/v2017.12.25.00.tar.gz"
   sha256 "02abb153bc5be63a82d39fd4af879a09915ea2093412c749c86f878816ad0184"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "71ddea8b34355d73a8ecafe571a3a0679a1e2209b7df6e174adf2682a5d0d232" => :high_sierra
+    sha256 "fda681b4c141daa2cb1be2b9237b73c4c4a78ec28e29982071db223efe4bf67f" => :sierra
+    sha256 "840786e58db322d15db41638f989bd0238f0ff1867b053bf9b65da8b9a9b69f2" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "folly"
   depends_on "gflags"
