@@ -6,9 +6,9 @@ class BazelAT080 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d520b2179836981c0caa8bf6f30c0af358a04ed25531f07a723091a323512850" => :high_sierra
-    sha256 "23f5efc1f93950b8a66fed135e6e4ffd492df6664455c2ee35ff92fb927499d3" => :sierra
-    sha256 "348245044d0eae3182d0521b28469cedf0a9de40286a1efbe728ede0c85b1f3c" => :el_capitan
+    sha256 "071bc4053cbb8deced26cae69f5ba2ce812288fdf0af0cb26c38c9260d2c0140" => :high_sierra
+    sha256 "eb2ed13d97090bb9b7848f3937e81166ad3290187842837303263a5ff63553f4" => :sierra
+    sha256 "516ebb26386eaffabe8268c68c661a6f98a82ff550362be2bdab69dab479289a" => :el_capitan
   end
 
   keg_only :versioned_formula
