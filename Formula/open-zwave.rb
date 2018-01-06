@@ -5,6 +5,12 @@ class OpenZwave < Formula
   sha256 "efb54adf0cda12f76fcb478f7cf3b7d108b5daf38d60b4410cca7600aa072e83"
   head "https://github.com/OpenZWave/open-zwave.git"
 
+  bottle do
+    sha256 "4fe71346e683a085f43bfcb15bf3ca83d1f191db1559f9ec1b6041cc74a3bae1" => :high_sierra
+    sha256 "ae461084330df47a702a7ded655d2b02f0efa9f1562854ff215da1133c49b5fa" => :sierra
+    sha256 "ad9bcc26cb31716a419873e55aca51dda71e4589c7fd6573a74c74cb57ce25c1" => :el_capitan
+  end
+
   depends_on "pkg-config" => :build
   depends_on "doxygen" => :build
 
