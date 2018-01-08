@@ -8,11 +8,10 @@ class Libdrawtext < Formula
 
   bottle do
     cellar :any
-    sha256 "56701e24e6d2d89dfab1e6857ee450394ca155409e659d87578874e5dcb09fdc" => :high_sierra
-    sha256 "b964ecf876b0e7118dbc8f6b39f0295f3f93244db5109d512258f0f036975e9b" => :sierra
-    sha256 "f0ea7bf5a4ddaa71eabcf015be0c774a707eb44c0bab20dbb87633f3fbe11941" => :el_capitan
-    sha256 "9aa0cb7f932e819bf07d4da05a5e134bb0dbce0aa07057a78af14ae03ef2423f" => :yosemite
-    sha256 "e734a70c82a43accad6adc21b747accce048efb521f04f03767ddaa16ffc53e4" => :mavericks
+    rebuild 1
+    sha256 "bb5ce8c08995d65a2ebeb481e0ae7cc81220d4557d8748d2ecb68adb413a5a98" => :high_sierra
+    sha256 "afa2dfbd5253bf1730b609d037de4e836d949b7e1d9ea6d618580ed6c2a06f9c" => :sierra
+    sha256 "2547c5dc61bedc3fbcddfced76e68a5b280e062c37bdc46cf133fcec9ea4625a" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
