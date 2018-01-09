@@ -8,12 +8,10 @@ class Mplayershell < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c0b558e0508d80fe05a1d9617b7aa1986066c54bc0a3da585631eb406da5eb93" => :high_sierra
-    sha256 "e9377eaebb65903037105bf3ed6ee301a182452791e9daeaadd08ccb732d9d1b" => :sierra
-    sha256 "ae4c1c9d069053afa7e71867256b577e23bd0dec87a90ccab2ebeab089a3634b" => :el_capitan
-    sha256 "1637360e180d7b48367cb7c4f01d03856b9d13247000e4cc33f0af5f6ed92101" => :yosemite
-    sha256 "a95437813704c56c3e52bd1b17974bec24c209e26df8e9dfe07af45d51ecaf49" => :mavericks
-    sha256 "0553f3ff5cae0a8938c3dc09e6448621029b52bbbc6c17d53225c1f3e7881ae4" => :mountain_lion
+    rebuild 1
+    sha256 "d0dbe312554c755df3179b5f49ded4c400266be6e7a5ec445d42754d2d7f73b7" => :high_sierra
+    sha256 "20a1f6787adbe5f2bdf04e9ec08c119392feb1946ccfe51bb3e414dc92515258" => :sierra
+    sha256 "ac51e19f210ebb13e9cbf401c4db0b12e5e7b4e646dbf25f11a168da146d9574" => :el_capitan
   end
 
   depends_on "mplayer"
