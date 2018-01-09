@@ -5,11 +5,10 @@ class MariadbConnectorC < Formula
   sha256 "93f56ad9f08bbaf0da8ef03bc96f7093c426ae40dede60575d485e1b99e6406b"
 
   bottle do
-    sha256 "d569c9bbc70e38697625aaf1ff939689b1b7189d2fcf890546a72dc0e4d8f4c8" => :high_sierra
-    sha256 "2efc882d3518dc6932d711b62d5d65a6b2151f7e44d2e6a15917ca4f1d3ce897" => :sierra
-    sha256 "fe5606d7c8ac822398f01f2b2b9045c8d6b3a46df8b862e1fe151aa17619d3b2" => :el_capitan
-    sha256 "6b5b743616a46585a9bfe1505a94addccf24802090094a9dcd791852bf8d566c" => :yosemite
-    sha256 "14f9440a48d0035a8e77ff8e7b260b50c89326453041ec77d0cc38febbf4f5cc" => :mavericks
+    rebuild 1
+    sha256 "379caac1bf68c73c4d7a4767da57aef47d9efa21b3a5600a5687a6dd064d4246" => :high_sierra
+    sha256 "7074b53b21a478876e69e2b90868d9273b7238d7b461969f8bd233c21962f825" => :sierra
+    sha256 "b6689fc04c330d1bfe23f89b417013179281c77dace8ab771a41f48230455511" => :el_capitan
   end
 
   depends_on "cmake" => :build
