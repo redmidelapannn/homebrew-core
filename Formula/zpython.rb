@@ -26,11 +26,10 @@ class Zpython < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0c575603cf568eaef05ef7de2a0f5f143a08728c97baebf508fc132926028146" => :high_sierra
-    sha256 "6fd2ca965e862af6ebf0b24e158d34bbe66bafc522854adc96efa70e2a0fdb9b" => :sierra
-    sha256 "aa8efa349bbf477746aee3cb977d1b0c430ec05d1947f2bd33667f054d8692cc" => :el_capitan
-    sha256 "3f469a0820ec250a6875c97fd50626462b94a6d81ea93888d32391ababcf25bf" => :yosemite
-    sha256 "9137eefb79a7a529b016e3c949e24a15d4747e4f35108f91db6ea58441f456a9" => :mavericks
+    rebuild 1
+    sha256 "207555e56d37ecff69efad15dd2e706eb4a8045bc596763efb2edc9d30e225e8" => :high_sierra
+    sha256 "d0e4ab7be835f9bdb34eca10a57222d33da3ee276dfe431b85f7cea7acc46fa0" => :sierra
+    sha256 "d7d47777de68b374efce2e54db6c0c3a1bf77f05334817c985b6535abdb2495c" => :el_capitan
   end
 
   depends_on "zsh"
