@@ -6,11 +6,10 @@ class Splint < Formula
   sha256 "c78db643df663313e3fa9d565118391825dd937617819c6efc7966cdf444fb0a"
 
   bottle do
-    sha256 "4d97939d58a64670256ea18422ae7ddd75ea1d12e89d12f40faa0b54e6d9d3a8" => :high_sierra
-    sha256 "e5847a77e137e1f2339b55ae1fff93a94de33c6ad1a3a34c8a45b3d06a6bf0f9" => :sierra
-    sha256 "9eac9f8e530c1d9fc238b57f9d4e143fbf5727450657ba92e6d721660777753b" => :el_capitan
-    sha256 "4b385e4fcf9b82fa2ebd8dabaef7e712039b3f7c83d2f6d5e3263ebf51e7b6d7" => :yosemite
-    sha256 "ad8551b508f303c69499a60456de49d2b77d1f0f2383383d3c01c1b657a230b6" => :mavericks
+    rebuild 1
+    sha256 "ff38abf1f9964ebec5bb8b31c4dc8c2b085aec3a4e1b0b7bf0739b5d285326b3" => :high_sierra
+    sha256 "aee9be58e8321179562ff1dc13d3f330fe47d114b02a469687aa64f6ac4e8250" => :sierra
+    sha256 "dc217c273f90b55a6d9299006159d2b296d7079023a22bb897a0c909abb3cace" => :el_capitan
   end
 
   # fix compiling error of osd.c
