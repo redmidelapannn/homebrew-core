@@ -8,10 +8,10 @@ class Libggz < Formula
 
   bottle do
     cellar :any
-    sha256 "9a749d02e1f492d53f1398998c78b47b8b6eeb6907a4fb4ed1d27833b37653c2" => :high_sierra
-    sha256 "cb95d1deb75b87bc4d9a814e838b7ffff205d1251c998708a52dfc932ce73ebc" => :sierra
-    sha256 "1fc7a664f9d4376fd21aad2e75f7a3990cf8994cb0b4947362ddcb7732e5bda0" => :el_capitan
-    sha256 "6408ac1f15a3cfa780197456ffed4f4e152fc3b7c0eb5dc8938b17ab280f7d11" => :yosemite
+    rebuild 1
+    sha256 "127d6ee6beb6d2df8c932ed065bfa623adc966b6b2480fb086c3cb6e61a8a4bf" => :high_sierra
+    sha256 "46b779adb26b7173363a445d986a7ff09d86dda579c4a111d0a6d70c782155d1" => :sierra
+    sha256 "f1f7b77d909c8a3d7fbccfdf6f854e0bdbbb05707e40966e532992596cb0a62f" => :el_capitan
   end
 
   # Libggz of this version is unable to build with gnutls-30 and later.
