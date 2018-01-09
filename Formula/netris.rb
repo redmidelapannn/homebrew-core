@@ -7,10 +7,10 @@ class Netris < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2ba4eea757cc21504d1da74796a29fcd23264b5d735c0c6debe1083614c2d57a" => :high_sierra
-    sha256 "4ac49c49b3d000fcb5c9161f4b217231e9bee9faf29d5e4e7fc9f5d8e10772ec" => :sierra
-    sha256 "0e793cab922cded47c3eccbf4e9ba8840a71f24830d7e01da8e2262d08d61c56" => :el_capitan
-    sha256 "1a1e54ff92dd1e8ecd745e149874071cb6e67662296c96d84538cf71b65b9bfe" => :yosemite
+    rebuild 1
+    sha256 "b2df69c65692bbad2f40f9a611c83b0d015e088af3d278621b1852458c2c6404" => :high_sierra
+    sha256 "1782cc7ab822081181b1a7e7440367b21c0bbc1ea739779ef1fd30e58642808b" => :sierra
+    sha256 "15e16cd51d6f1112201f85c88e6b57693473c10f9b15e19eeb378d516d21b6e5" => :el_capitan
   end
 
   # Debian has been applying fixes and security patches, so let's re-use their work.
