@@ -81,5 +81,6 @@ class Graphicsmagick < Formula
   test do
     fixture = test_fixtures("test.png")
     assert_match "PNG 8x8+0+0", shell_output("#{bin}/gm identify #{fixture}")
+    system "make", "check"
   end
 end
