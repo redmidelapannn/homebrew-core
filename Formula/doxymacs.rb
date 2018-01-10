@@ -6,12 +6,9 @@ class Doxymacs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "29a4865170b12a2194c238c35ec5e0902b8e637e378f9013b7aef64fa21eb0fc" => :high_sierra
-    sha256 "2fd3dc59a8c0c8fdccf8195265d320aaa7b5d67e9a81b5a085f27cc287e7370e" => :sierra
-    sha256 "fb892db831aed57dbdcb2d3a81d78bd05c5b689376d4b7f14bffc56826205ce9" => :el_capitan
-    sha256 "09eb19921c2ecce5bb02b185c1040caef07d18706866006bdd5fa428bf6b8560" => :yosemite
-    sha256 "9efc35f7eee0ff431afbd36367676afb608498f823e6094b67d4c86d83694dd4" => :mavericks
-    sha256 "2a08771aecf0d6475b8f1e3bf9858c13fa190529a1fe1652ad59dc927a141de4" => :mountain_lion
+    rebuild 1
+    sha256 "2d21f8d30637949f49b0673a03c4f8931e5a69de8bd255d91d964341986e5345" => :sierra
+    sha256 "83059d1c4fbc9e64af7d16039229b76566fcd4ea3322dc257dff504101a9a8d6" => :el_capitan
   end
 
   head do
