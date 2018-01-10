@@ -6,11 +6,10 @@ class Nesc < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5077de3810398dc077f787737d1f1cb7d9c25e1ed7d498e01afcf18e7aa0ae47" => :high_sierra
-    sha256 "9ace59027be9cb7e1cb9ea2b29e0694cedbf0554c5c2da650cdd3dbbece8519e" => :sierra
-    sha256 "3fc08a72e93eaf45c95d093defbbf57c56e8dd228bd74d86b05ab83948f528a0" => :el_capitan
-    sha256 "073708be8b88d4299187e7989c19db18ed637976728e8bceb4bb2201f121d526" => :yosemite
-    sha256 "af64d00069e798e3ccdcc84fc1d29bd42afbca0563fd790d9d95fced12fc7ff1" => :mavericks
+    rebuild 1
+    sha256 "4081f8187e845ce5e75356a95518ceb708b874d787a853530076ef767acbd875" => :high_sierra
+    sha256 "c357d7c3fee58aee28bfbf40f171fdb010fa6ac6c72ab804abe095ac0bb496d6" => :sierra
+    sha256 "2185b73456bde11406004ae7035aeb83fdc75ceee6fc183ccbf0727e9be30347" => :el_capitan
   end
 
   depends_on "automake" => :build
