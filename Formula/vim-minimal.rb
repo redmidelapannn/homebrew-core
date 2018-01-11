@@ -6,6 +6,13 @@ class VimMinimal < Formula
   sha256 "9e9cdfc137858f2d52276b6df826875aafc9d65b3e46d5d7f8c68deb40da3dbb"
   head "https://github.com/vim/vim.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f238a92f14341234c049b8356ffdefaccca68c15b58c5799491378a5483c9a12" => :high_sierra
+    sha256 "13e803577eb5b15b56f4fcfb6bfbd7200c3b1b33896b480966bfc9aa6bb35045" => :sierra
+    sha256 "1a4439f75fe7eadabaa2b4f6debc476ba80131bd314ef0a636a39906eb0b7dd1" => :el_capitan
+  end
+
   option "with-override-system-vi", "Override system vi"
   option "with-gettext", "Build vim with National Language Support (translated messages, keymaps)"
   option "with-client-server", "Enable client/server mode"
