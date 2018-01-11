@@ -6,9 +6,10 @@ class Weechat < Formula
   head "https://github.com/weechat/weechat.git"
 
   bottle do
-    sha256 "86f9c7062cd5f4ca6625b175144ec37b55f462a9463a3f9852d74f56b404302b" => :high_sierra
-    sha256 "1655ae54d7be8e9617c7d65d7ccc3f25e3ea1cd93d301b3ccb2d4fd056029db7" => :sierra
-    sha256 "e8070f500a5f922b3f862ea67104ee9e8c7dd0f929caf408700c664ef07bfb7a" => :el_capitan
+    rebuild 1
+    sha256 "ec57444483cf33c7c177db6b7edc03437db47534b0b6fab8960e6486e1221013" => :high_sierra
+    sha256 "d130dd3c3a70f7c5fc9cf9fe66bcb438d15facc43f9ec51134234dd5dff1df74" => :sierra
+    sha256 "db690d6b4e425a77895322c379858f1aa1a0a42d480ad9ca1afdebf61782873a" => :el_capitan
   end
 
   option "with-perl", "Build the perl module"
