@@ -4,10 +4,6 @@ class Caffe < Formula
   url "https://github.com/BVLC/caffe/archive/1.0.tar.gz"
   sha256 "71d3c9eb8a183150f965a465824d01fe82826c22505f7aa314f700ace03fa77f"
 
-  head "https://github.com/BVLC/caffe.git"
-
-  option "with-test", "Run tests during build step"
-
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "boost-python"
@@ -21,6 +17,11 @@ class Caffe < Formula
   depends_on "python"
   depends_on "snappy"
   depends_on "szip"
+
+  resource "test_model_weights" do
+    url "http://dl.caffe.berkeleyvision.org/bvlc_reference_caffenet.caffemodel"
+    sha256 "472d4a06035497b180636d8a82667129960371375bd10fcb6df5c6c7631f25e0"
+  end
 
   def install
     args = std_cmake_args + %w[
@@ -38,16 +39,14 @@ class Caffe < Formula
       -DUSE_OPENMP=OFF
     ]
 
-    mkdir "build" do
-      system "cmake", "..", *args
-      system "make", "-j8"
-      system "make", "runtest" if build.with?("test")
-      system "make", "install"
-    end
+    system "cmake", ".", *args
+    system "make", "pycaffe", "install"
+    share.install Dir["models"]
   end
 
   test do
-    system "#{bin}/caffe", "--version"
-    system "#{bin}/caffe", "device_query"
+    model = "bvlc_reference_caffenet"
+    m_path = "#{share}/models/#{model}"
+    resource("test_model_weights").stage { system "#{bin}/caffe", "test", "-model", "#{m_path}/deploy.prototxt", "-solver", "#{m_path}/solver.prototxt", "-weights", "#{model}.caffemodel" }
   end
 end
