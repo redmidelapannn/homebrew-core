@@ -41,7 +41,7 @@ class Caffe < Formula
 
     system "cmake", ".", *args
     system "make", "pycaffe", "install"
-    share.install Dir["models"]
+    share.install "models"
   end
 
   test do
