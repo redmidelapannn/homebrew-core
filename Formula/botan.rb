@@ -20,15 +20,6 @@ class Botan < Formula
 
   needs :cxx11
 
-  # Fix build failure "error: no type named 'free' in namespace 'std'"
-  # Upstream PR from 3 Oct 2017 "Add missing cstdlib include to openssl_rsa.cpp"
-  if DevelopmentTools.clang_build_version < 900
-    patch do
-      url "https://github.com/randombit/botan/pull/1233.patch?full_index=1"
-      sha256 "5ac83570d650d06cedb75e85a08287e5c62055dd1f159cede8a9b4b34b280600"
-    end
-  end
-
   def install
     ENV.cxx11
 
@@ -46,9 +37,7 @@ class Botan < Formula
     args << "--enable-debug" if build.with? "debug"
 
     system "./configure.py", *args
-    # A hack to force them use our CFLAGS. MACH_OPT is empty in the Makefile
-    # but used for each call to cc/ld.
-    system "make", "install", "MACH_OPT=#{ENV.cflags}"
+    system "make", "install"
   end
 
   test do
