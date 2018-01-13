@@ -6,6 +6,13 @@ class Coredns < Formula
     :revision => "dc6c40740f882d6edc38bd1714a597ff65bf064e"
   head "https://github.com/coredns/coredns.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6ffed7c04f79f54eae29ffa2af69e3f74e5fd1cded574846ef8fd74bfff7e09b" => :high_sierra
+    sha256 "363085b78388455d4ee18eb2805c594bcd93dcd736917264b60523036d6e5923" => :sierra
+    sha256 "ff0937ab1b033f829aefadf29cd95ccfa779a76fff0a18383dd48bde2487ad83" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
