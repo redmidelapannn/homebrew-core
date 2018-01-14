@@ -30,7 +30,7 @@ class Urlview < Formula
                           "--sysconfdir=#{etc}"
     system "make", "install"
   end
-  
+
   test do
     server = fork do
       system "#{bin}/urlview"
