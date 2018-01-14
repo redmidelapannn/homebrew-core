@@ -30,4 +30,12 @@ class Urlview < Formula
                           "--sysconfdir=#{etc}"
     system "make", "install"
   end
+  
+  test do
+    server = fork do
+      system "#{bin}/urlview"
+    end
+    sleep 1
+    Process.kill("TERM", server)
+  end
 end
