@@ -33,7 +33,7 @@ class Cdargs < Formula
         #{prefix}/contrib
     EOS
   end
-    
+
   test do
     system "#{bin}/cdargs", "--add", "/~/testfolder"
     output = shell_output("awk '{w=$1} END{print w}' ~/.cdargs")
