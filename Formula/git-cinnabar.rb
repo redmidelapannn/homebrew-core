@@ -25,9 +25,10 @@ class GitCinnabar < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "30cc00b0406ccca2d8c5e29ca6217cf0ae8cb6925e7607b0fb67385aab973f63" => :high_sierra
-    sha256 "fddd63b61e1e4b624bf7e9585f32467915437bbc093588e2e0c6c209b649b5bb" => :sierra
-    sha256 "8549a043b40628b7141ed2d58cd8d473bb49345b52e4f6586554d5990770ddd3" => :el_capitan
+    rebuild 1
+    sha256 "989150c3f543839b8fe97deb012a8d66fe6d3cbf5e141843f409a369f377bbca" => :high_sierra
+    sha256 "0947a39c7502b4f2bdc931b7bfba2c76587871e22a48644673e6e073b0eaf08c" => :sierra
+    sha256 "0cd83613d45988d9eb31c2a74893eb2223714f81a911a9a09632bd938840cb59" => :el_capitan
   end
 
   devel do
