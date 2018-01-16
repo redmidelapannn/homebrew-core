@@ -17,7 +17,7 @@ class Cfengine < Formula
   depends_on "openssl"
 
   resource "masterfiles" do
-    url "https://cfengine-package-repos.s3.amazonaws.com/tarballs/cgine-masterfiles-3.11.0.tar.gz"
+    url "https://cfengine-package-repos.s3.amazonaws.com/tarballs/cfengine-masterfiles-3.11.0.tar.gz"
     sha256 "052a25d8dc9f2480825a4c6097e9db74762d6726afc163fbc1fef010bb6adab8"
   end
 
