@@ -6,10 +6,10 @@ class Libgetdata < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "7f5ee3942fe5c4b11be5a93d875ff57af244c4b5339ab4adf5f9a5784dd3ee20" => :high_sierra
-    sha256 "c07420abe7db3df124e9203fbe88c0a39cca34edf7a6386449ac11c845b6210c" => :sierra
-    sha256 "a08f8f9d9102484dc988c729e94d7864f40c655355edc4a85efd2b91bb2a2738" => :el_capitan
+    rebuild 2
+    sha256 "bb8fd4ce06b3ea269926c3896a7435f050736af2998f178cede4d4d787183b57" => :high_sierra
+    sha256 "c4f787c7cc60d7b0d461e1dd8b3838de57bbe537f90b349730b79c4ef90e333b" => :sierra
+    sha256 "daeae85a7a816bd37a6ed0967b5ba7e6357b860d438825cd90c313263e013c8c" => :el_capitan
   end
 
   option "with-gcc", "Build Fortran bindings"
