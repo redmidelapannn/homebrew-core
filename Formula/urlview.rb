@@ -31,6 +31,7 @@ class Urlview < Formula
     system "make", "install"
   end
 
+# urlview is based on 'curses' library and therefore cannot be tested using normal piping
   test do
     server = fork do
       system "#{bin}/urlview"
