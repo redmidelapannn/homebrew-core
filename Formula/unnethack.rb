@@ -7,10 +7,10 @@ class Unnethack < Formula
   head "https://github.com/UnNetHack/UnNetHack.git"
 
   bottle do
-    sha256 "7da0d5eada4191f5bfd1d3beb6c9d74ed3bc26c54c3ec0d7ff6620592504c131" => :high_sierra
-    sha256 "2801362d487c397485b6849a2421c080ddb1261563e77bf64d16aa982843d332" => :sierra
-    sha256 "f0e6315f7a8d6135f80290dd20d8e2d80dc8224ad865b073fb71c05771d799eb" => :el_capitan
-    sha256 "a6345197d1067ce08e9220bd74701355d19add9c251794b3f12210cded3dce46" => :yosemite
+    rebuild 1
+    sha256 "21fbec384abbbbc8550dc9a113ef2d6a3a71a6ec8874e23906f9fa8ad89efd20" => :high_sierra
+    sha256 "2c18c2708085c87121c05cdd3ef3eb653f327cd3ba7476b78f9208aa87dcbe7e" => :sierra
+    sha256 "1d3bf8f45464aaae791a3bdc840e745a7ee5cf868e7d3851f89817ed3656e869" => :el_capitan
   end
 
   # directory for temporary level data of running games
