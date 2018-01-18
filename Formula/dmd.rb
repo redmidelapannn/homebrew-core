@@ -23,9 +23,10 @@ class Dmd < Formula
   end
 
   bottle do
-    sha256 "373d098ca25d0e80f828d129516f57a9fca89db99e9315f4e99ce34c2f8e04de" => :high_sierra
-    sha256 "78cc3c58b3e4eb2f3fcccff2d74a7198cf3a9825d5ae22d566114c2f017001f0" => :sierra
-    sha256 "3f3644c3c07cdb167616a337fdb87958b3c4a8fb62070dcaab078bf75f5349e7" => :el_capitan
+    rebuild 1
+    sha256 "72300c5e1226a6f85fab0e1e52a88dd0bb89ec838e51a16c329def826ee64df2" => :high_sierra
+    sha256 "40ec5091be39db1011ca5425faed68a3bc2e127a657d98e6289a3482006b5fc7" => :sierra
+    sha256 "469a82733f03c046f384aa9b5e305e917733268a8a45d827937f06a6ecf67977" => :el_capitan
   end
 
   devel do
