@@ -4,6 +4,13 @@ class TmuxXpanes < Formula
   url "https://github.com/greymd/tmux-xpanes/archive/v2.2.3.tar.gz"
   sha256 "4357b8ac76f3d0b93dbb1626e0881f03143910f428a78db3d8437950bbd15fef"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "42bc0df01a375c03fa045092852df22b4bb2212b67fcb0528b348d2bcfeb5894" => :high_sierra
+    sha256 "42bc0df01a375c03fa045092852df22b4bb2212b67fcb0528b348d2bcfeb5894" => :sierra
+    sha256 "42bc0df01a375c03fa045092852df22b4bb2212b67fcb0528b348d2bcfeb5894" => :el_capitan
+  end
+
   depends_on "tmux" => :recommended
 
   def install
