@@ -7,10 +7,10 @@ class Xlispstat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a2847ae5a3820e85b826117f59a809981fcbfe325abd2f38760cf8003ab9814b" => :high_sierra
-    sha256 "0180be9b973a87ff7feb72dbaebed8a46f857e1f670e864276e43cc294515870" => :sierra
-    sha256 "f83a1cc043c82daf6bf4fa9717f090e10e04388544d79771ce8b6848c880b757" => :el_capitan
-    sha256 "c4004c8fc128a187c35923eff3cb0c5a641f7928aff558559279d5d98abe849d" => :yosemite
+    rebuild 1
+    sha256 "249e7d065e6339d2cdab475c6f366f254825541875c0473c1ba0cac679d2347f" => :high_sierra
+    sha256 "eefc65bea8c28889cdc24ace652ff17726ecd634af6730847dedef3eb9c08812" => :sierra
+    sha256 "4e371f53d39e7d3c1f062937244d2ff4709e8c6fa6768d9d4bd883c6600eb37c" => :el_capitan
   end
 
   depends_on :x11
