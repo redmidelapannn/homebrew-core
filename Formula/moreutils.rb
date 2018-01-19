@@ -8,9 +8,10 @@ class Moreutils < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "82df31e79d7946b055bb7be4e0cedf745bd96448114514d58509559736fe85fc" => :high_sierra
-    sha256 "6f32d96f7023379b6cf4637bd65cf3e4fc0eb0b721991a625f0d38ba5145bfff" => :sierra
-    sha256 "9f2e15ade4e996988704728fa9d3b9263a1337b33847ba68afb8863a3293162d" => :el_capitan
+    rebuild 1
+    sha256 "48b93e0cef7e7f96e28f57c9ecd149de1fdc2626ea1eca80bd75fb04ffb17be3" => :high_sierra
+    sha256 "f3697e7462ee6160996a6e93fd3ecce238d7d49fa69b40886fcacffa2d28a63e" => :sierra
+    sha256 "83eb7cf7b52bd97671884ddb1dea503a9226a0632904f823e027974e6868c48e" => :el_capitan
   end
 
   option "without-parallel", "Build without the 'parallel' tool."
