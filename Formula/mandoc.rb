@@ -7,10 +7,10 @@ class Mandoc < Formula
   head "anoncvs@mandoc.bsd.lv:/cvs", :using => :cvs
 
   bottle do
-    sha256 "c16d34b3c6c0e22ede164139f6fdb0268a440e39ca94ce791d5f580b4c2c01f1" => :high_sierra
-    sha256 "59709d56bff5dedfe3f544b4da3d6791f32dbf4e4299a242719b39a21dc0c050" => :sierra
-    sha256 "2e23fd7255dc440233289f138edc9dada06eab91ff3570329fa5ebce425f5714" => :el_capitan
-    sha256 "dd4131a36901d8650f896c90bd6e9cc08bfe6d146db5c7461e63e0e6e2b3d49a" => :yosemite
+    rebuild 1
+    sha256 "9dc293c7d81883510385a1ce4603de18d6ed23c90b9ddd43857fb19cda137f65" => :high_sierra
+    sha256 "fcc2655cb1654b0188bc3f4295e0d514841d4dbfb25468c070a26afdd4eb6cad" => :sierra
+    sha256 "05482538ff8a3e634c9104036b370d906f8a87087e688236b0653cae4f4fe445" => :el_capitan
   end
 
   option "without-cgi", "Don't build man.cgi (and extra CSS files)."
