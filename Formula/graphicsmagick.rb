@@ -6,10 +6,10 @@ class Graphicsmagick < Formula
   head "http://hg.code.sf.net/p/graphicsmagick/code", :using => :hg
 
   bottle do
-    rebuild 1
-    sha256 "cd8fda2a82b10d739b945fe36f714fb3477c8e962182012fb233357e3e4da636" => :high_sierra
-    sha256 "a5e128edf71e38d6aa068134ef7979a7e67b074b66121e755b3b275b01836afa" => :sierra
-    sha256 "7a50cb8bb67a70029fc3491a01a9c084168b7b5b76497b385b04a407bae4e731" => :el_capitan
+    rebuild 2
+    sha256 "739632612ad407bdd999bab121f7bda3725b7339276a0d4445c53d9b25a0ef03" => :high_sierra
+    sha256 "f8621298b36a7864d8d4d7c69f1af6b07503a209d1489b5c70ff6fbb1b05e25e" => :sierra
+    sha256 "d9794e43b3e3873b4a93cdcf32269ff671196e4f1d91fe08f024ff21c0d63ed6" => :el_capitan
   end
 
   option "without-magick-plus-plus", "disable build/install of Magick++"
