@@ -9,9 +9,10 @@ class Cockatrice < Formula
   head "https://github.com/Cockatrice/Cockatrice.git"
 
   bottle do
-    sha256 "b758e61b7b75441e4e32b4eb09d95c5756d95f2e1960e9fa5fc7caf2fe7874b5" => :high_sierra
-    sha256 "a677a4a67620fe47c14f25a0349ea76b086870ada0cab93aecaf78aff1dea919" => :sierra
-    sha256 "bc12c371557059da0a1c277ed49208f495deb817275ca4b82a38e7713a90c99e" => :el_capitan
+    rebuild 1
+    sha256 "13116f90546088816a7bb05b79def2cd9a36b8f97da9264e57ae5726c250c4e7" => :high_sierra
+    sha256 "2ecf5cbb1c8bb01167de1f311c08b60ce71142b3a6294d99ef974dd022b64491" => :sierra
+    sha256 "3ca71a38071d75fac872452f3e5323fc3dea79c0efdcf524bfb1592a53aebbae" => :el_capitan
   end
 
   depends_on :macos => :el_capitan
