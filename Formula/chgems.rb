@@ -7,11 +7,10 @@ class Chgems < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a9913aa39c5901bc434ce9774d5ccf3e618fa20784a709f7185bc3e26430b367" => :high_sierra
-    sha256 "01e2e0335391df51b5fb2003e79d4994a48b4515077904b4e924062a0bf79b3c" => :sierra
-    sha256 "395b45c3493721bccfc7fdefa2d81ec61b7f07f8cfd799eac5f1e96011a618f3" => :el_capitan
-    sha256 "aac706b654c0e5a617bfa9dab9310334d874d561f2eca10a16778a3b49804545" => :yosemite
-    sha256 "d3e7aba5d1fb3da9f66a1e5fd3149c6eec3afb37286ade3e40f235bdbafc8d78" => :mavericks
+    rebuild 1
+    sha256 "c9b167c2b56b45a6636d59fd51c921384789a401a932b8fe3863db67d64da318" => :high_sierra
+    sha256 "c9b167c2b56b45a6636d59fd51c921384789a401a932b8fe3863db67d64da318" => :sierra
+    sha256 "c9b167c2b56b45a6636d59fd51c921384789a401a932b8fe3863db67d64da318" => :el_capitan
   end
 
   def install
