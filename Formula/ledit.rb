@@ -29,7 +29,7 @@ class Ledit < Formula
   test do
     history = testpath/"history"
     pipe_output("#{bin}/ledit -x -h #{history} bash", "exit\n", 0)
-    assert_predicate history.exist?
+    assert history.exist?
     assert_equal "exit\n", history.read
   end
 end
