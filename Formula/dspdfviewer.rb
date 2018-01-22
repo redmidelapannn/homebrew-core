@@ -9,9 +9,10 @@ class Dspdfviewer < Formula
 
   bottle do
     cellar :any
-    sha256 "18345b86cbf00c7239b1314153c77545e8a91917435f1171c55ee3f749a65c74" => :high_sierra
-    sha256 "7c196c52c4ff0e5fabf5765d9123eee3d1ced53566d5709aebf98c0071ed99d6" => :sierra
-    sha256 "9766cf4079d172bb80c91a561b0c762f0404c06391a3522177c3925b120e604e" => :el_capitan
+    rebuild 1
+    sha256 "0458e62465899ef9e550fbd81fcc0cc1e77365f824f8d1a17fbae00450d17239" => :high_sierra
+    sha256 "0785afdcd51f80d1840b70fa1a6e9c4fa2eb66746cebe357d2ede4205240eacd" => :sierra
+    sha256 "da034d4d7f02411022cffc3f0acc40102fc8f791fc9aed66515283d078f2bb87" => :el_capitan
   end
 
   depends_on "cmake" => :build
