@@ -19,7 +19,7 @@ class Chgems < Formula
   end
 
   test do
-    output = shell_output(bin/"chgems", ". gem env")
+    output = shell_output("#{bin}/chgems . gem env")
     assert_match "rubygems.org", output
   end
 end
