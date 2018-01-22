@@ -33,11 +33,11 @@ class Dspdfviewer < Formula
 
   test do
     require "pty"
-    PTY.spawn(bin/"dspdfviewer", test_fixtures("test.pdf")) do |stdout, stdin, pid|
+    PTY.spawn(bin/"dspdfviewer", test_fixtures("test.pdf")) do |_stdout, stdin, _pid|
       # wait for the program to start
       sleep 2
       # quit the program by sending q via stdin.write
       stdin.write "q"
-    end 
+    end
   end
 end
