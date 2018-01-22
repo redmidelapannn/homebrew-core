@@ -6,10 +6,10 @@ class Riak < Formula
       :revision => "d96b67eeb5f934c673ee8e5c75c00a3861f388aa"
 
   bottle do
-    sha256 "163efe4af2492bd3885aebeafb894c2ec5f6c3cbc08cdfaf78de07deaf645336" => :high_sierra
-    sha256 "07304227841afc17ee201ccaed0fc8607f55c05c2f7920d5785cfda3c0979cf1" => :sierra
-    sha256 "98169ac6af3d395dac47522d17759ac165af24158dbc403ccc88603921f6528c" => :el_capitan
-    sha256 "803da1ba13fca2ff1c5ed1d341c064218a03697d8114e40c325553a430920653" => :yosemite
+    rebuild 1
+    sha256 "dcddd3db5e6204f41aa129d8e5477178cf736e1b8935cc70dc6e1e594d08b1c1" => :high_sierra
+    sha256 "7770e480b2953f2945ae1a6aa30996f94039445b890889beb00607f4d897583e" => :sierra
+    sha256 "065ca87f2962a4a853eaeb41525c7fbf78d71e121b51416c29983df330c310da" => :el_capitan
   end
 
   depends_on :macos => :mountain_lion
