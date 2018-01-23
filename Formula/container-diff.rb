@@ -18,7 +18,7 @@ class ContainerDiff < Formula
   end
 
   test do
-    output = shell_output("#{bin}/container-diff analyze docker/whalesay 2>&1")
-    assert_match /gcc.*ubuntu/, output
+    output = shell_output("#{bin}/container-diff analyze gcr.io/google-appengine/golang:2018-01-04_15_24 2>&1")
+    assert_match /-gcc-4.9-base\s+4.9.2-10/, output
   end
 end
