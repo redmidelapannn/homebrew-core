@@ -22,9 +22,9 @@ class Cryptopp < Formula
 
       int main()
       {
-        byte digest[SHA::DIGESTSIZE];
+        byte digest[SHA1::DIGESTSIZE];
         string data = "Hello World!";
-        SHA().CalculateDigest(digest, (byte*) data.c_str(), data.length());
+        SHA1().CalculateDigest(digest, (byte*) data.c_str(), data.length());
         return 0;
       }
     EOS
