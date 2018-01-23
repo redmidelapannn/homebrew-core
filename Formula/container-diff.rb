@@ -18,7 +18,7 @@ class ContainerDiff < Formula
   end
 
   test do
-    output = shell_output("#{bin}/container-diff analyze docker/whalesay")
+    output = shell_output("#{bin}/container-diff analyze docker/whalesay 2>&1")
     assert_match /gcc.*ubuntu/, output
   end
 end
