@@ -3,7 +3,6 @@ class ContainerDiff < Formula
   homepage "https://github.com/GoogleCloudPlatform/container-diff"
   url "https://github.com/GoogleCloudPlatform/container-diff/archive/v0.5.2.tar.gz"
   sha256 "9f64267b01e9f96efd053eadbac6435bdb15c05597e8ebe4e7081e13fb7e45cf"
-  head "https://github.com/GoogleCloudPlatform/container-diff.git"
 
   depends_on "go" => :build
 
@@ -248,7 +247,7 @@ class ContainerDiff < Formula
       -xkb-data                          2.10.1-1ubuntu1                         2.8M
       -zlib1g                            1:1.2.8.dfsg-1ubuntu1                   171K
     EOS
-
-    assert_match expected, shell_output("#{bin}/container-diff analyze docker/whalesay")
+    output = shell_output("#{bin}/container-diff analyze docker/whalesay")
+    assert_match expected, output
   end
 end
