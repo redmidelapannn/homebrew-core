@@ -7,12 +7,9 @@ class Libfreefare < Formula
 
   bottle do
     cellar :any
-    sha256 "6c2de11e9321e8ed3bb09dd15ab5f383c9d0208e5902545c5e69f18071b78b58" => :high_sierra
-    sha256 "03d3fffd9c4cf59b2a5a735e2b32262a7bbe1dde56e7ebf6d0e9f71eff8def87" => :sierra
-    sha256 "3314a682b1c0443f3e924bdc4a3294de0d3d979860224f72b74531701915f914" => :el_capitan
-    sha256 "673490a072b9154050596a7f189c9f49f4c4b314fecfc2acf8c851716fbd6de7" => :yosemite
-    sha256 "d4e5f965c145948da6a9dd8edb7e6475b3fa0504ac06a0885ce391f94a3edffa" => :mavericks
-    sha256 "83eb9ce57c62b8c08c912452642ea75cfb5377ded85073cd3c7d709d38ccc5f5" => :mountain_lion
+    sha256 "4c52d6a60226b54554928128277e14daa682941342c2e9388633b9ab6b3d2a96" => :high_sierra
+    sha256 "123f3fb74733907389b29d6c3a3cbb7b137f625807f660e01aa671221027ec01" => :sierra
+    sha256 "3d1d6de12ebb6daca1c655ddb4bc470e47525705078c3cd260a9c77e71f213ce" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
