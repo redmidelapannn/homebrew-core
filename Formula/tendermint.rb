@@ -6,6 +6,9 @@ class Tendermint < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "eaf21b5a4bf31da9fa59729e634e00f8b2244d5096b167cf251057dd96524b95" => :high_sierra
+    sha256 "03a4ae3b2a708deb38d907862b353555a330da61858c8c162b4e08dfee6e713d" => :sierra
+    sha256 "6d882b7f6df46729976aaa861d048df84fa655c1a144c43f193811da98ed6d1e" => :el_capitan
   end
 
   head do
