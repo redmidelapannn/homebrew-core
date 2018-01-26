@@ -6,6 +6,9 @@ class Ethermint < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "643d89653a5c6a4d6abc1c9609156896c3e883a1ceac892d60ec5e26f591e50b" => :high_sierra
+    sha256 "f1436109950a3a802b740abb99f7a3f3b0f35a85b71dda694a9de73bd164dd2f" => :sierra
+    sha256 "7328b1433ba3e172b0f1031b40c19b4736dcdd1933203b91cea72f323ed6b60e" => :el_capitan
   end
 
   head do
