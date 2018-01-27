@@ -7,10 +7,10 @@ class Ilmbase < Formula
 
   bottle do
     cellar :any
-    rebuild 3
-    sha256 "f53b502c8a59462466c610d127cdc2be288b472c4fbe76fa6affbff9498dac44" => :high_sierra
-    sha256 "6fee028cc8dc306fc1c48b9015c48c02049f3c281e496af1448ca65d13c8405c" => :sierra
-    sha256 "a18e2d6ecd45ff0ea78f856374aa11386b5fd2c2e82a335271b62c917f33caf4" => :el_capitan
+    rebuild 4
+    sha256 "abd015b61c2fee5467faabb2d162269384452304aaa6665f29083779409d1355" => :high_sierra
+    sha256 "8c8073dc1c5ae71091910ef2f90538e21050e08d6fac8e9e0b92f423ddeec36d" => :sierra
+    sha256 "b4668250482d810e23c46fbdcff7233400e3a420746eb0daab105ea65d04da90" => :el_capitan
   end
 
   def install
