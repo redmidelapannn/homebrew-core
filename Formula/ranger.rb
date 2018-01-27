@@ -7,10 +7,10 @@ class Ranger < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ddfa5373f14c26414497b6135735e7ca872ac5da39cc995d07832cf26f3bdcc2" => :high_sierra
-    sha256 "53183d431e6bcf9cf49a462130fb5e0929a4bf557a2d109c354e3194bfd36cc0" => :sierra
-    sha256 "224dce8bf10cb4f29a182e00d8a684a388f5dc1544f427149ee85e050c07a833" => :el_capitan
-    sha256 "224dce8bf10cb4f29a182e00d8a684a388f5dc1544f427149ee85e050c07a833" => :yosemite
+    rebuild 1
+    sha256 "9ce69a7e330502a27cb7466a6f869b570f86cc651bef02f5493ad142fbf8ef47" => :high_sierra
+    sha256 "9ce69a7e330502a27cb7466a6f869b570f86cc651bef02f5493ad142fbf8ef47" => :sierra
+    sha256 "9ce69a7e330502a27cb7466a6f869b570f86cc651bef02f5493ad142fbf8ef47" => :el_capitan
   end
 
   def install
