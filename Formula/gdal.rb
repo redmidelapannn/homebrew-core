@@ -5,11 +5,9 @@ class Gdal < Formula
   sha256 "52f01bda8968643633016769607e6082a8ba1c746fadc2c1abe12cf7dc8f61dd"
 
   bottle do
-    rebuild 1
-    sha256 "4d084ada89aa6461c48730686ae157ae0f3447cc7b04aa11ffecb3e19feb81a7" => :high_sierra
-    sha256 "69dcd735eb3543c602e65d2b35be1f09dd62724d8673571397f2802a38d5e3de" => :sierra
-    sha256 "4d960f47450a62f7b59fa3d83691c8379111f6d00ad7231774d21bdcc45ebcc2" => :el_capitan
-    sha256 "4107e0b06a0466f37f5ffe8dfddae8ccc8eafce8c187ccf4382a3986851115bb" => :yosemite
+    sha256 "ffb2a02fe8091b69ef2000765196211130538dabe1ba3e757c61a2bff0765de7" => :high_sierra
+    sha256 "67697d171ec1a7fc4e63c44579f5e26859efaa82d8f0272be9d13198e2fe195e" => :sierra
+    sha256 "b965f037738f28b54cd8e6ad884240f27a6a5f15a34b791eaa1dd40578575fa4" => :el_capitan
   end
 
   head do
