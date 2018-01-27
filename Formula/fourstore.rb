@@ -5,11 +5,10 @@ class Fourstore < Formula
   sha256 "a0c8143fcceeb2f1c7f266425bb6b0581279129b86fdd10383bf1c1e1cab8e00"
 
   bottle do
-    sha256 "413841f69291b5a871c9fefc96f8bd439348cbb5fe35e03e6670ac74cbe89771" => :high_sierra
-    sha256 "8f9626f161e1b3f063672cd07cc0d62d476eeaed5ca420aee90882d5efb9424f" => :sierra
-    sha256 "e19d98e6be69d8f75483403714a639cf21976a9d21b1c10252f5798049690581" => :el_capitan
-    sha256 "ce5b35020141bbe67afde2d1882ba39cdb00da479d64a833004d0688e9537581" => :yosemite
-    sha256 "b2ad54ba983117388e256212e55ea67e4f9548c0c7d0d1c1b8a420ac025b5f10" => :mavericks
+    rebuild 1
+    sha256 "acaa6725a10db9f58e14c8f132767ca9a9266a0ac1528174d80911656328ac5a" => :high_sierra
+    sha256 "7655a266361759dcdf9f12f734de5c42085797812b68f160ad05a8dc884dd11d" => :sierra
+    sha256 "ca88a1d94cadfaaf66a5a530cfaf078a568542d32739c3dc563c0b185cc3c5eb" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
