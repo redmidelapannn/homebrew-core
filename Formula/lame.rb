@@ -16,6 +16,10 @@ class Lame < Formula
   end
 
   def install
+    # Fix undefined symbol error _lame_init_old
+    # https://sourceforge.net/p/lame/mailman/message/36081038/
+    inreplace "include/libmp3lame.sym", "lame_init_old\n", ""
+
     system "./configure", "--disable-dependency-tracking",
                           "--disable-debug",
                           "--prefix=#{prefix}",
