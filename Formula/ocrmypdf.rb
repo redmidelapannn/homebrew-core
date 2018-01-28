@@ -6,6 +6,13 @@ class Ocrmypdf < Formula
   url "https://files.pythonhosted.org/packages/9b/c0/13a0ffb2184b85018b64466d1303ec1ceee05acff0b8ada16fdbf2ec101d/ocrmypdf-5.4.4.tar.gz"
   sha256 "e523591c5d4e4a8cdeee2e9e24c3f631c8638a803dba74c5b8b274681784dbf4"
 
+  bottle do
+    cellar :any
+    sha256 "1412486fc4f93b8c250ff508d284b2bb401b04b54ba16a1d90fd15eac0c18b89" => :high_sierra
+    sha256 "8fb59196a4089166a234a135bafce982f4b40ecbd638960057fd0fcd4a4b59ff" => :sierra
+    sha256 "346722ac0aa0559eef466c0755f14857ed7cd3b91014c62d54db91e3e6906442" => :el_capitan
+  end
+
   depends_on "pkg-config" => :build
   depends_on "freetype"
   depends_on "ghostscript"
