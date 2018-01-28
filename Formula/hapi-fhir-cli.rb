@@ -4,6 +4,13 @@ class HapiFhirCli < Formula
   url "https://github.com/jamesagnew/hapi-fhir/releases/download/v3.2.0/hapi-fhir-3.2.0-cli.tar.bz2"
   sha256 "cabe82d3b5107f7d789db2a057130ff5eec2ca5e889f8dfdaa03fae8202ee67c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "89d4a99065f3da20adadbda95d7e21ba5cba304eee8256df80fa3b50b1640b90" => :high_sierra
+    sha256 "89d4a99065f3da20adadbda95d7e21ba5cba304eee8256df80fa3b50b1640b90" => :sierra
+    sha256 "89d4a99065f3da20adadbda95d7e21ba5cba304eee8256df80fa3b50b1640b90" => :el_capitan
+  end
+
   def install
     inreplace "hapi-fhir-cli", /SCRIPTDIR=(.*)/, "SCRIPTDIR=#{prefix}"
     prefix.install "hapi-fhir-cli.jar"
