@@ -6,11 +6,10 @@ class Eventlog < Formula
 
   bottle do
     cellar :any
-    sha256 "be5272b1fb50fb84ba175d4acdbe0632d46444df4e93fb913a9e3ee3ba2d6d33" => :high_sierra
-    sha256 "266c920dec2b898e620a5de1bdcbcc68c3b06663c8b4f8d155138ba989958b99" => :sierra
-    sha256 "9073fb11ae9c20375295c36b5bb6845639ea1f9c17a677c1d93ff206075ff871" => :el_capitan
-    sha256 "2bdc1f762ea05e79f486e7e78b8a173ea99a5a76b4bedd28a03a1c8912f39925" => :yosemite
-    sha256 "9d747019f60dfa8fc13472815c18c20c46c2cb2cd53dd754a99e8029afb85cbf" => :mavericks
+    rebuild 1
+    sha256 "891e3da55ec1a415cdfdd199d3eb32e00b17089ab8b69cea8c08474a5ee14ccb" => :high_sierra
+    sha256 "c23f2de39fa79efc13d6625e31c412f37af848d853c2b8f0926798a06b082706" => :sierra
+    sha256 "46f317eecdb6fc02db013a8c387b3c32b258de873870c1b4a5462bbdfc837976" => :el_capitan
   end
 
   def install
