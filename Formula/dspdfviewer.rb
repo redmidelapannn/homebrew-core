@@ -32,6 +32,10 @@ class Dspdfviewer < Formula
   end
 
   test do
-    system bin/"dspdfviewer", "--help"
+    require "pty"
+    PTY.spawn(bin/"dspdfviewer", test_fixtures("test.pdf")) do |_stdout, stdin, _pid|
+    sleep 2
+    stdin.write "q"
+    end
   end
 end
