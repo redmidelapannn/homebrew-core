@@ -15,10 +15,6 @@ class Udpxy < Formula
     sha256 "45dcc2c1a7d1f0170ae44edf600fee1f6112fd1e11530548a7e3b1870d71a7d8" => :mavericks
   end
 
-  # Fix gzip path in Makefile for uname Darwin, this is needed to fix the install task
-  # https://sourceforge.net/p/udpxy/patches/4/
-  patch :DATA
-
   def install
     system "make"
     system "make", "install", "DESTDIR=#{prefix}", "PREFIX=''"
