@@ -5,6 +5,13 @@ class Beets < Formula
   url "https://github.com/beetbox/beets/releases/download/v1.4.6/beets-1.4.6.tar.gz"
   sha256 "62079b2338799a64e7816096c5fae3b8909fb139e4d481ec3255336e67765b50"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "aed79a670f3296a7c624fc45b368774780bafdb025695a2dc77e78353b9eeb42" => :high_sierra
+    sha256 "69a14ab629f58d5b4382db51dfcabce3e95764f9b3db5165a04d8dbc9d1702d3" => :sierra
+    sha256 "8cf48b086e5796c25ab1a0f653710b47023cda37508c776dbeec7d41bfa6c4a5" => :el_capitan
+  end
+
   depends_on "python3"
   depends_on "ffmpeg"
 
