@@ -6,13 +6,10 @@ class Libntlm < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "16f8a36b728098991792d9a1f83090997db76123545250e09953b8607a943885" => :high_sierra
-    sha256 "3ecf99f8e70bbbcdef3a6ce5f6fb6c887ed2a85421faf1af0b59ac7d87ae3d7d" => :sierra
-    sha256 "c8da369479c9e222ee9e89af8da7991bed067ee3a1e496220226c9adc883d4a2" => :el_capitan
-    sha256 "605133351d91c2a3f0f2899deef01b6536143ffe804495fb19b6e134511e2a8c" => :yosemite
-    sha256 "800b5d2108aa693a47f6559797ef1c6fb3c906ecd35607e57eb96ad10cd7c78b" => :mavericks
-    sha256 "9f44dc14df7fdcb4657bb9ccae97c2df5e23977025ee202cfe2f615ed7ee9597" => :mountain_lion
+    rebuild 2
+    sha256 "ca5528d01eb7d7a174057484667fbb98179b6732641e06f143b2f30ceaab17f7" => :high_sierra
+    sha256 "8b1556fbb3aa4f6dbd9a8651fa70ca33a62463057f005d5b2566f5523d73d31e" => :sierra
+    sha256 "9ac53e29194f7711ee0970dfc958d76e0e164903d06a210a1ccf8b665f9baa11" => :el_capitan
   end
 
   def install
