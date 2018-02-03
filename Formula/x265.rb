@@ -12,9 +12,10 @@ class X265 < Formula
 
   bottle do
     cellar :any
-    sha256 "a108074ba899ceb9ec7ee2254e7ec564d2629413f310f71da4e3fcf451bfb92e" => :high_sierra
-    sha256 "49a58ac4ba4965bd3fafc3a188064c2b29573cb3e991b949198175c72bf223c2" => :sierra
-    sha256 "868310a95be1b8ad9e784a111fd41ec4a2ac4547f437e7cf5920f391dabdc454" => :el_capitan
+    rebuild 1
+    sha256 "1afc540af6dc55cccb6a5ca4e7f63b60677aa5899ed85acd73bdc2aaf0b93507" => :high_sierra
+    sha256 "c6827e8190db07e717d958a6813902eea69f3ea67b15c40c3c8b4f61cd439bed" => :sierra
+    sha256 "d70c032fd7061e0b82487e1b3174a09a8c2f6ec21a813df2a7acb40a4f2518d5" => :el_capitan
   end
 
   head do
