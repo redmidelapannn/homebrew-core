@@ -5,9 +5,10 @@ class Nmh < Formula
   sha256 "cd05c7ca2cae524ae99f6ba673463a5cdeff62df93e85913aa9277ae8304ce44"
 
   bottle do
-    sha256 "5f1dcf95645d0ce83b947e79726aba3dab1443ea9177d7c8140862c91d632572" => :high_sierra
-    sha256 "82df837775df9738a632f0364ff87c97790d7b4efb2f92c609f0a66b0eaada1c" => :sierra
-    sha256 "0cfd2f3f5a004515700bec2ddd251ddec754f0d28e62416e7b95072543d56d04" => :el_capitan
+    rebuild 1
+    sha256 "a8e3643099ebf21285a9f7a6a76e85ab5ead98bb892ea72c9a79893531f46970" => :high_sierra
+    sha256 "1f21e2e6537da10311b384286412191203cff0dd695a3b786af823139605ace3" => :sierra
+    sha256 "dfa43d83702415ee518a7f746329ba9bc609a8168b4fc11a66bcbdb9df7745d4" => :el_capitan
   end
 
   depends_on "openssl"
