@@ -6,11 +6,10 @@ class Daemonize < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "dac699a014e8bf9b1cb68dbe526a1898616cff2b3d88416c29b716c8734ac2fc" => :high_sierra
-    sha256 "50c47ba9d070c10807b1861688082c2a242f0f2df6f6fd021da9e061fabc8806" => :sierra
-    sha256 "cc17945de7476011059bcb7541776a02db3db45566af2ef86780b4d468fe1d14" => :el_capitan
-    sha256 "badaed3738790f69926bbc9cc377b9d4a12c1972e004261cf492a9460cd9d3ca" => :yosemite
-    sha256 "a05ef16ac15480ea28e235288ba025a75a7017e03ab0df48b08cceb255416032" => :mavericks
+    rebuild 1
+    sha256 "c07d497534fde1e044932b881f504d9af23532b6e8673f9feab00d78fa246d7c" => :high_sierra
+    sha256 "ea2e85fec6d79d5755d4ace1aa1843c6ef4333753a4ef97b9c302a97133a86a8" => :sierra
+    sha256 "fe5f9187cede1a244054d497a1a8f2408f8647ffdfa717fe1daa83cca8968e69" => :el_capitan
   end
 
   def install
