@@ -13,8 +13,9 @@ class Htop < Formula
   end
 
   bottle do
-    sha256 "012058c2b3b3d4061b51ea4782ab4ecbe7063e0256ff4275d5f2f6514617faf4" => :sierra
-    sha256 "fbb902d02cb45215128fe96a81132f6eb02afc91de38c8cc21e4ad28171c9119" => :el_capitan
+    rebuild 1
+    sha256 "b237b596a4f579ba8f713f633f437118db50be521b559f98655579c282b97aac" => :sierra
+    sha256 "ba0d3b028c037bdf2521790c11d16ffbadc03c9e2d178cb882aa70247d263b09" => :el_capitan
   end
 
   devel do
