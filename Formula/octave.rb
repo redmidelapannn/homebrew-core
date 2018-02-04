@@ -111,5 +111,9 @@ class Octave < Formula
     system bin/"octave", "--eval", "single ([1+i 2+i 3+i]) * single ([ 4+i ; 5+i ; 6+i])"
     # Test java bindings: check if javaclasspath is working, return error if not
     system bin/"octave", "--eval", "try; javaclasspath; catch; quit(1); end;" if build.with? "java"
+
+    output = shell_output("#{bin}/mkoctfile -p FLIBS")
+    assert_match Formula["gcc"].prefix.realpath.to_s, output,
+                 "The octave formula needs to be revision bumped for gcc!"
   end
 end
