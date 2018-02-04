@@ -7,11 +7,10 @@ class Task < Formula
   head "https://github.com/GothenburgBitFactory/taskwarrior.git", :branch => "2.6.0", :shallow => false
 
   bottle do
-    sha256 "6a651be957b736bef14633efedef011a81c49ee37178eae4d8ef863549d7c584" => :high_sierra
-    sha256 "d1cb582ab9ee211ec154690634b5988f8058ead31000c74d5cdfa949d319d0ed" => :sierra
-    sha256 "07aa2c19ae6d7a9a46b286bfc48fa970aa9a9e0237e034bbaab354dcfc4f6848" => :el_capitan
-    sha256 "113fc7ce057c51ea14021006a4106c25d29e361e4b70113e33fb7a83e57ee8d1" => :yosemite
-    sha256 "7888e42210edb6691ff57d056585536abd318d62b43a898bb98e286373519164" => :mavericks
+    rebuild 1
+    sha256 "9ec311975c446c576dfa871fe206ef7d5dae5b10beb9c9437de90c0b4fedeb41" => :high_sierra
+    sha256 "27fce986ec745c311be98192e00580488e3ae2bd1ee7943205bd9e318bb0b406" => :sierra
+    sha256 "2c1cc57fd525ce8b03cdfba4e046d302f7239aa385f6c5619af6ef0c805c1168" => :el_capitan
   end
 
   option "without-gnutls", "Don't use gnutls; disables sync support"
