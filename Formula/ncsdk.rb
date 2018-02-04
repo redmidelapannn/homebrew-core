@@ -4,6 +4,12 @@ class Ncsdk < Formula
   url "https://github.com/movidius/ncsdk/archive/v1.12.00.01.tar.gz"
   sha256 "aceca6ffa87c87c2b29f5a89ed97a96f0b0238ff16d9c45e61e3e891a63c6386"
 
+  bottle do
+    cellar :any
+    sha256 "f2012db46aca773d1308af54142f583025c8b87d015055a3b5ec2577e2f301d9" => :high_sierra
+    sha256 "8d2bfa5f63ff36ece56da0a82f7d9d09262258beff32ba58b4219b1cade9ea47" => :sierra
+  end
+
   option "with-test", "Run build-time check"
   option "without-python", "Build without python support"
 
