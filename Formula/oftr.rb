@@ -6,9 +6,10 @@ class Oftr < Formula
   head "https://github.com/byllyfish/oftr.git"
 
   bottle do
-    root_url "https://dl.bintray.com/byllyfish/bottles"
     cellar :any_skip_relocation
-    sha256 "13d992194d8b97827905c8d9e2c159e382b299deb77b503657a9e3c2620e78a3" => :high_sierra
+    sha256 "e4fb1c8e39efc947b464f634ae3deb56adbd49ae0f14a9bb2752508270264999" => :high_sierra
+    sha256 "00a0fdb643407b59cdcb768ed6e5f4f7b21bfaa12f07d1cbc6f4796febcf5ccf" => :sierra
+    sha256 "9a0ece33203c2e0674cfe66e40183ae4fcec8a5c619acd52941d75d3171e68ed" => :el_capitan
   end
 
   depends_on "cmake" => :build
