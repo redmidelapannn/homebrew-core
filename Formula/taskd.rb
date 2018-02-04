@@ -8,11 +8,10 @@ class Taskd < Formula
   head "https://github.com/GothenburgBitFactory/taskserver.git"
 
   bottle do
-    sha256 "53ea3abeff00da4d69f53d089416c1e003bae625decbc44412b8ff51b9ccf302" => :high_sierra
-    sha256 "93b3a449cc983885491a01511275b3b4b8ff6cc624aa4326a9e268d4a28ff4af" => :sierra
-    sha256 "d7806f456a540d6052928f6e1c9fcd5e89f0d1b3c5496d552e187b117fc94b24" => :el_capitan
-    sha256 "2c1a95a98ea309c776ab0f210fd8a9297bc866e25b2ee7ba0301d6f8df531a2a" => :yosemite
-    sha256 "a83899074cf81fcf6737546f9f572db6ce1a8762af943e7663fe14760fd5ef77" => :mavericks
+    rebuild 1
+    sha256 "9922dd74c40b0c3b5ae98c5403b2216c875861d9cb8d4593eed2296496f6fba6" => :high_sierra
+    sha256 "717f7302bad0400c5a65323c7b377d944e3b218233cd367c2a471964fad37634" => :sierra
+    sha256 "8d0f84841d1b7e558003eb10be7f94f3e4a60e97cb895a74fb4cbc2b4c2dcc23" => :el_capitan
   end
 
   depends_on "cmake" => :build
