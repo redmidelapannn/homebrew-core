@@ -4,6 +4,13 @@ class Parmetis < Formula
   url "http://glaros.dtc.umn.edu/gkhome/fetch/sw/parmetis/parmetis-4.0.3.tar.gz"
   sha256 "f2d9a231b7cf97f1fee6e8c9663113ebf6c240d407d3c118c55b3633d6be6e5f"
 
+  bottle do
+    cellar :any
+    sha256 "c31e55a9e27ed42d14c1ef1774e802d6cc95696606921772cae4aba690570370" => :high_sierra
+    sha256 "a5b1cc5b4084f8293c68f378a2619c7e21d47e23e6f455cb6df17bcf9d00959b" => :sierra
+    sha256 "def7149a8ad8fb2acea836ee125f60d005fe14e131722452945e6fcb8ddee80f" => :el_capitan
+  end
+
   # Prefer our metis over the bundled one
   depends_on "metis"
 
