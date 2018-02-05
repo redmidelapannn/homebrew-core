@@ -5,9 +5,10 @@ class Mariadb < Formula
   sha256 "2ab22d7fbacfabc30fe18f71a8afb173250074502d889457e3cde2e203d341ec"
 
   bottle do
-    sha256 "c03353edcdc591307a78cee85e045e716be7f36d833e89fdec3d974a8cf0abb9" => :high_sierra
-    sha256 "ec4dcb42daa3bcaf4def1768f0385a343621e175908ac913e0e238b6584f4c91" => :sierra
-    sha256 "a072ff975ddcae52760fc2ede46b4f8940cf53201dadc16dc58a2a44d02edee7" => :el_capitan
+    rebuild 1
+    sha256 "df1f820ea5eb07cd122c7bb811d1ee664016c4916b7b6155e7a806c182d2ca7e" => :high_sierra
+    sha256 "d21e5027467ea1310fe772500c5a6afb6c8a20260b2c3f0adea1f6d3bf891199" => :sierra
+    sha256 "c13759456bb97f486099010b9ef5d3f655fba124385c3081b73c327ed99912ac" => :el_capitan
   end
 
   devel do
