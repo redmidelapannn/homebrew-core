@@ -7,6 +7,13 @@ class Dashing < Formula
   sha256 "f6569f3df80c964c0482e7adc1450ea44532d8da887091d099ce42a908fc8136"
   head "https://github.com/technosophos/dashing.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "23ea8006588297ab326360a06434d185cc17ba9c882a5d66bbd1c3fd4d3aac86" => :high_sierra
+    sha256 "dd1470b30bbe952a327ad0b8430fd5534a0b9973b5da7700924b513bcf16f017" => :sierra
+    sha256 "e11bce70eb680816852355a1578844e42594732fc8b279e94adde7e824fb7b41" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/andybalholm/cascadia" do
