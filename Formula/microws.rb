@@ -4,6 +4,13 @@ class Microws < Formula
   url "https://github.com/uNetworking/uWebSockets/archive/v0.14.5.tar.gz"
   sha256 "4e4a4bcde543baae57ca8f327304874d1bb1fb11b2c4f71618d2b3279003f2d5"
 
+  bottle do
+    cellar :any
+    sha256 "3e68aa1eed2f97fddc5aa7c0e088ae39a073ad17e606e812d8cc3af365334d98" => :high_sierra
+    sha256 "6bb838d1b0ffa36069dd409b88259c4b431c6b895a4dcc5fbbecec76f386021e" => :sierra
+    sha256 "2099f239114511ff36411bed4508ee9dd739b78ab70ddb9d1038553228481610" => :el_capitan
+  end
+
   depends_on "libuv"
   depends_on "openssl"
 
