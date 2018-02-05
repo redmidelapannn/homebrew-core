@@ -6,9 +6,10 @@ class Karn < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a837fd65265db402d67fda5ff5bb4337822d1efd945bee56f7a664e6bc67c343" => :high_sierra
-    sha256 "0b29500ed8d75753402ea041190021d679624b739665b3a4d11df3d4a3100e59" => :sierra
-    sha256 "bc217bf56d073ffabd11c81382387029aa09d216ef8060b3134a6190997ef0f5" => :el_capitan
+    rebuild 1
+    sha256 "921c191ddc25c1aa2368f6341899d87ae79bb0aac5b82bfed762e8bfbc8cffaf" => :high_sierra
+    sha256 "aff19e36e071f9c0fc78a1dc75ce4fecb01980380813b04c8c2e1595ebbc7337" => :sierra
+    sha256 "e855c58f4a751057d7df920da158b7c59632afd9e99ff3d45426fd30d6a91f61" => :el_capitan
   end
 
   depends_on "go" => :build
