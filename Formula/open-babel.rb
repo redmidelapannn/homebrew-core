@@ -7,10 +7,10 @@ class OpenBabel < Formula
   head "https://github.com/openbabel/openbabel.git"
 
   bottle do
-    sha256 "2e830e6b8a7ae79015bb06e05b04935f6a63525cac28cca53dcb72f49334bc83" => :high_sierra
-    sha256 "28bb84f75639741efbbf3a19ebffc1fc122d15fa74584440b84e265cdfd18db0" => :sierra
-    sha256 "d2ca98556d58c6268b6be3f93cfc9a00a79559d081d7713ed14bc7882212b2ef" => :el_capitan
-    sha256 "48724ff8b63ea446ea0f2095361ea93de0647eec2e220c8369b9910a11450213" => :yosemite
+    rebuild 1
+    sha256 "fa7e16e2447efa4facb8ca7a3bc82a6d6ef67feb3db38f008963b2f3eb7267e9" => :high_sierra
+    sha256 "0b3e8fd8e5ef1837792ac5de2372b88c0c4ee974856ff5d177e949f7f1f57e53" => :sierra
+    sha256 "96db14223da38b2f67fcb2331a13e91a12decff85a961b08c585d6017968b2aa" => :el_capitan
   end
 
   option "with-cairo", "Support PNG depiction"
