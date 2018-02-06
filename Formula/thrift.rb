@@ -6,9 +6,10 @@ class Thrift < Formula
 
   bottle do
     cellar :any
-    sha256 "d1c648d84f21b567f1468625523b78d496d49954a3f5f28ce127f3eca7c0e2e4" => :high_sierra
-    sha256 "710f79cf150713e4e24ce03b605fcd3ea56651b58bb7afe64d8b4a948842616f" => :sierra
-    sha256 "e6f40c95f93331dda62d7cbfe0ce4f467c17e73e4a4a05f859e29a58533b52d8" => :el_capitan
+    rebuild 1
+    sha256 "99d6544e15f949ec6736e9d4d0e029fcfeb2de39645cd0f67d6c171215cfb126" => :high_sierra
+    sha256 "309395cc39d24e5de22afb6220ad3710e1e37833e514de7fad8830161fe1291f" => :sierra
+    sha256 "f2bc360fe33757938bfb1c26dfe02395ae86eaba1ac1f8d98b50d347f507e3fd" => :el_capitan
   end
 
   head do
