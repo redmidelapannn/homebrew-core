@@ -8,9 +8,10 @@ class Urlview < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ded9ca6285a2c87ecfe9af130e5bc231adfa501c2aae5602c13f40b998077f6a" => :high_sierra
-    sha256 "0f75c9a2a4018f9bac7262314a9f391c63353abd707f820b92a389b21bbf08b8" => :sierra
-    sha256 "f748da269d23717c525cc0272bf90a1c286a16aaa868d9433505f6a72d28bfed" => :el_capitan
+    rebuild 1
+    sha256 "ab5a106ac9f3fd7c2485319f0e033df59b13e3d96462018b71a47b9b42082e6d" => :high_sierra
+    sha256 "6c4210f53268284726f7456fe721cdb038c05f5abbeb537adabe9446bfd07afd" => :sierra
+    sha256 "09952d25b83f1c3fe5b154c3c24584cae71f1f6a1cb70bef28169ab4a3e2afa3" => :el_capitan
   end
 
   patch do
