@@ -5,6 +5,13 @@ class Visidata < Formula
   url "https://files.pythonhosted.org/packages/49/95/15af273f829a97944baf15f6fc36b427a0bff5917913d87d3cd01a4582ee/visidata-1.0.tar.gz"
   sha256 "79ad431f6bc1c4df7f8ecd8b26421d03f49f186c4e883b73310ffc5747b5a653"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "48bbb4d780311dbf61f2bf69ad5734b25acc64873f33a3633eabd5a7775e794d" => :high_sierra
+    sha256 "ffa93e584bbec5182748af66319136348544fe46aff880d65f412930b4e0f69e" => :sierra
+    sha256 "cb7478122967255716cf5990bc8b08863195a1cf8abe07257f45dcccec469e16" => :el_capitan
+  end
+
   depends_on "python3"
 
   resource "six" do
