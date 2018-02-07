@@ -6,11 +6,10 @@ class Cdargs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "10a170bfe1b70f6c8909ddb6fb88b7615219d6847576e72ee1e4011aba482e9b" => :high_sierra
-    sha256 "5ba84d6dff14f5743296721a91e6d01ce984bf6e4589ce2128041b1ed9560a3a" => :sierra
-    sha256 "de9d5777eb0179f9ffacb5bcbb0ff0ce7f0c1fb208bb992290eb5a36e1d3f159" => :el_capitan
-    sha256 "cf098fc4187835ef1c970b38ab41719e0900c01d2772572f697e9773a6c632e6" => :yosemite
-    sha256 "2bb555d4cf65f3d11595350135582599fd6ccf988bc7bb76c58155ddcef29223" => :mavericks
+    rebuild 1
+    sha256 "3a03941b04561d8f09822a8fc4c0750aa0242ec5f18e23673c4091bac4efa1a2" => :high_sierra
+    sha256 "03af5c5a447bca086e49ef4dbfa4fd051ced432b95567a234221a950d1c74b13" => :sierra
+    sha256 "309a6113848ef538bf268f8189a8bd442f908ba01cd18384356aed3e3d761153" => :el_capitan
   end
 
   # fixes zsh usage using the patch provided at the cdargs homepage
