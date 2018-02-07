@@ -31,12 +31,14 @@ class Urlview < Formula
     system "make", "install"
   end
 
-# urlview is based on 'curses' library and therefore cannot be tested using normal piping
   test do
-    server = fork do
-      system "#{bin}/urlview"
+    (testpath/"urlfile").write <<~EOS
+      https://www.github.com
+    EOS
+    require "pty"
+    PTY.spawn(bin/"urlview", testpath/"urlfile") do |_stdout, stdin, _pid|
+      sleep 2
+      stdin.write "q"
     end
-    sleep 1
-    Process.kill("TERM", server)
   end
 end
