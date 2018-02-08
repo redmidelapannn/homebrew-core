@@ -4,6 +4,13 @@ class Scotch < Formula
   url "https://gforge.inria.fr/frs/download.php/file/34618/scotch_6.0.4.tar.gz"
   sha256 "f53f4d71a8345ba15e2dd4e102a35fd83915abf50ea73e1bf6efe1bc2b4220c7"
 
+  bottle do
+    cellar :any
+    sha256 "3cfec546d3304e04fecf2e844c401890fe71bf31375e071762a1c26c4fce4e50" => :high_sierra
+    sha256 "971bf43edae627383d55b8cc6b5d7a7787af08f78d758afb5d7517ea67027587" => :sierra
+    sha256 "330de7507d0e1c6d50ff8545413ab5f89776138537a58f2b76dd55edccb905ed" => :el_capitan
+  end
+
   depends_on "open-mpi"
   depends_on "xz"
 
