@@ -4,6 +4,13 @@ class Mumps < Formula
   url "http://mumps.enseeiht.fr/MUMPS_5.1.2.tar.gz"
   sha256 "eb345cda145da9aea01b851d17e54e7eef08e16bfa148100ac1f7f046cd42ae9"
 
+  bottle do
+    cellar :any
+    sha256 "e849929833eb3632dd9bf011292de7cc90364257be1e517a10c458740c02080b" => :high_sierra
+    sha256 "8d45f75fe02e871af4c7756b005d522c57f5ff9e34642845a2356e2964416bfa" => :sierra
+    sha256 "ef0ef2d13abe61fa3d5aed09a7af183455deb93ac6b74de082a6eb945f83111e" => :el_capitan
+  end
+
   option "with-mpi", "build with MPI"
 
   depends_on "open-mpi" if build.with? "mpi"
