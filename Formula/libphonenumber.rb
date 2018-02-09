@@ -25,6 +25,7 @@ class Libphonenumber < Formula
 
   needs :cxx11
 
+  # Remove for > 8.8.11
   # Upstream issue from 2 Dec 2017 "Libraries getting installed in lib64 by default"
   # See https://github.com/googlei18n/libphonenumber/issues/2044
   patch do
