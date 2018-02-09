@@ -25,11 +25,11 @@ class Libphonenumber < Formula
 
   needs :cxx11
 
-  # Upstream PR from 2 Dec 2017 "Only use lib64 directory on Linux"
+  # Upstream issue from 2 Dec 2017 "Libraries getting installed in lib64 by default"
   # See https://github.com/googlei18n/libphonenumber/issues/2044
   patch do
-    url "https://github.com/googlei18n/libphonenumber/pull/2045.patch?full_index=1"
-    sha256 "ff6602d4414573340bf61ebb51d2b29ac1ca9c4b10a257fb825ca4e2bb275a20"
+    url "https://github.com/googlei18n/libphonenumber/commit/8dcd3f924.patch?full_index=1"
+    sha256 "1da8e0e7a476d1cfbf32d14016c1a86e5fc85ae928aa031b55fa35ec912f6e83"
   end
 
   def install
