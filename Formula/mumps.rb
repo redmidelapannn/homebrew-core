@@ -4,6 +4,13 @@ class Mumps < Formula
   url "http://mumps.enseeiht.fr/MUMPS_5.1.2.tar.gz"
   sha256 "eb345cda145da9aea01b851d17e54e7eef08e16bfa148100ac1f7f046cd42ae9"
 
+  bottle do
+    cellar :any
+    sha256 "6c72ef9c82fb53c2242a6a0eb96207936f59ae07f1384563d470dc879e3a3e5b" => :high_sierra
+    sha256 "15892ebe67271eeab76e3ad2b07cdfdb2430ab466bb0137857fdcf9e5a0ebe38" => :sierra
+    sha256 "90a63651ae8d06110bb8f110c4bb53a950fd3c6db8885047d2816ced0f8838c2" => :el_capitan
+  end
+
   depends_on "openblas"
   depends_on "gcc"
   depends_on "metis"
