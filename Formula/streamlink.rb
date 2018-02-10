@@ -6,9 +6,10 @@ class Streamlink < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b438821813d9a50ba5d446801ef1e96bbfc975f98b870db8d64468bccceab3cc" => :high_sierra
-    sha256 "0bad8cd2b8228a6e39e3fb0d1876c7b2fb01053e354cec9ea320513760249a8f" => :sierra
-    sha256 "acb8eb68831ce54c860abe5623395de053df2ce7af9bc158d81e890ae87bc47c" => :el_capitan
+    rebuild 1
+    sha256 "ee0e129542506fc7389dbec1debcdaf33fd6db6440266d9c76361d0de6b6de6d" => :high_sierra
+    sha256 "40975975a38f56be3dfec6c693d53473e41b9668730cab5267f70fb2a4c15541" => :sierra
+    sha256 "87c972525e7d29ce79347282caf026305277a5e04dba08715b1587cacb2c3dda" => :el_capitan
   end
 
   # Use brewed python on Yosemite and prior to avoid needing urllib3[secure]
