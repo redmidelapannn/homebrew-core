@@ -7,10 +7,10 @@ class Flactag < Formula
 
   bottle do
     cellar :any
-    sha256 "d066a517308ad0f3cbc6603fd7eeb53dba73dc796298163b6c1ec8c0379f72f6" => :high_sierra
-    sha256 "c23293dce964c701fbaa822bda3a5f87602b28216b3862afced4da53c12728f3" => :sierra
-    sha256 "d3e7a517f69ba267c5ff36c065837a4c2925a31d2b0cfe6f5cb32d8d0582fd8a" => :el_capitan
-    sha256 "f5f0123f156ccf4c40e810fc5f0acc83638e35da13ed900b2f7165fbea28e080" => :yosemite
+    rebuild 1
+    sha256 "19edcd3a87001e4b59650382c19bbec88a220266158f66c67d056b8f7ad731fa" => :high_sierra
+    sha256 "8718a646ed191d8234b526e2971d5aa4d47d88908c196e4eaa36b1c5333213c5" => :sierra
+    sha256 "fd91dc05635b2ff1033b5c3871e5ed0094d6b6da4e27c1efcda78ee8edc42550" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
