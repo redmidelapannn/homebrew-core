@@ -29,8 +29,8 @@ class GetFlashVideos < Formula
   end
 
   resource "WWW::Mechanize" do
-    url "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.86.tar.gz"
-    sha256 "0e5468b89afeff096fb6d9b91a9a58418746c89445fb01adb5caa25ecf32d469"
+    url "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.87.tar.gz"
+    sha256 "819342a55cdaaf742e8511ecf72c7764b71789f4d1ef0eb6f4b4db4361f3b9cf"
   end
 
   resource "Term::ProgressBar" do
