@@ -6,10 +6,10 @@ class Io < Formula
   head "https://github.com/stevedekorte/io.git"
 
   bottle do
-    sha256 "686d5d23790b53c27765d49da0a74ec96ee949353b31646a0a92ee931270a23d" => :high_sierra
-    sha256 "2d0e05344917ad3a1d322f2860030013315ceb7e8ae962cf6070d1ee8cc395d4" => :sierra
-    sha256 "3a5a0e9a1ec0ce7f4bc6bcfc5fb8c782f0b1ba0451251aaab51a796452b59e67" => :el_capitan
-    sha256 "16d31a7062e2c7ebab815bcd48b03aab9597a6c40071cb407e2bc6dec91fef0b" => :yosemite
+    rebuild 1
+    sha256 "eb0ad97eba69a42cf17e4cebeff1a1c73ad49fb6efcd45b09b57c760759d4163" => :high_sierra
+    sha256 "af138e6e418d9b0d66b14d48bee40bc01d26816dfc91d3eca74f67ca690e5632" => :sierra
+    sha256 "c8768d4b1863346339b9af3c10ecfd81dff93e7c0a525978e222bf2019b9a279" => :el_capitan
   end
 
   option "without-addons", "Build without addons"
