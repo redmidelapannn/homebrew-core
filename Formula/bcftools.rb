@@ -15,22 +15,10 @@ class Bcftools < Formula
   depends_on "xz"
 
   def install
-    # Remove for > 1.6
-    # Reported 2 Oct 2017 https://github.com/samtools/bcftools/issues/684
-    inreplace "Makefile",
-      "PLUGIN_FLAGS = -bundle -bundle_loader bcftools",
-      "PLUGIN_FLAGS = -bundle -bundle_loader bcftools -Wl,-undefined,dynamic_lookup"
-
     system "./configure", "--prefix=#{prefix}",
                           "--with-htslib=#{Formula["htslib"].opt_prefix}",
                           "--enable-libgsl"
-
-    # Fix install: cannot stat ‘bcftools’: No such file or directory
-    # Reported 21 Dec 2017 https://github.com/samtools/bcftools/issues/727
-    system "make"
-
     system "make", "install"
-
     pkgshare.install "test/query.vcf"
   end
 
