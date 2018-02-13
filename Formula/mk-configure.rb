@@ -4,6 +4,13 @@ class MkConfigure < Formula
   url "https://downloads.sourceforge.net/project/mk-configure/mk-configure/mk-configure-0.29.3/mk-configure-0.29.3.tar.gz"
   sha256 "1f483f717a09d06c82a6f3f284dd34234f54ead032e6987d33f3cf8109490c05"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e493890a580f24dc107c38996a92a02fd271d43de31b4237765df8110689970e" => :high_sierra
+    sha256 "e493890a580f24dc107c38996a92a02fd271d43de31b4237765df8110689970e" => :sierra
+    sha256 "e493890a580f24dc107c38996a92a02fd271d43de31b4237765df8110689970e" => :el_capitan
+  end
+
   depends_on "bmake"
   depends_on "makedepend"
 
