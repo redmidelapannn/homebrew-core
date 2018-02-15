@@ -15,6 +15,7 @@ class Vdirsyncer < Formula
     sha256 "ce5aa130fc07264519c09e833f104beafc886161239ce204d262e29f8af4782b" => :el_capitan
   end
 
+  depends_on "rust" => :build
   depends_on "python3"
 
   def install
