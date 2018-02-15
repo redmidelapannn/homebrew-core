@@ -6,10 +6,10 @@ class Curlpp < Formula
 
   bottle do
     cellar :any
-    sha256 "0e5f9adbb17bd9e725fbe7ec11ada7a6d73e4a8ffb2448570b6ed16ed9fd2701" => :high_sierra
-    sha256 "0d721493b94879cdf25162903fd5d10299b5d8386942efb0969c470afeef6b35" => :sierra
-    sha256 "fd5c8375a1f4ef8aa20cfb740e8bac45c381ce6dbadc90f731e47b00c8a404b3" => :el_capitan
-    sha256 "fd39edf63c0745f9d39a76f7b428eba285af313967ad4697d4fb08b705ee3eef" => :yosemite
+    rebuild 1
+    sha256 "e5eec2f5a1a5c3868bab6e628d5b688bebbd343184bb3460c075dd2fa9746d89" => :high_sierra
+    sha256 "fa415342b2911848bea2c2e97da36c7f93105e3754e3e164f009aeb8b6fd2293" => :sierra
+    sha256 "7bd1805c56ce47fb07e895c3ebbf67d46103f0cddb1e8cbb31b8aa4729869fa1" => :el_capitan
   end
 
   depends_on "cmake" => :build
