@@ -7,12 +7,10 @@ class Reclass < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "4fb34da3464d6ea2ddc038149328613613bc09ca5c4350e26dc2c25b15524c0d" => :high_sierra
-    sha256 "0c381ac12c60fa23c9069f670cf262ce1068d346fe1e577ecb28ee566aa3fe51" => :sierra
-    sha256 "92c143420d36d71d49ecde69eca47da2a46f1ae6d37e0f7522cb95a9d19735e7" => :el_capitan
-    sha256 "7be55ff36c5e4b02e3bf2c6ea297e8a3248452dc6b15c1e6fd77633373ff3bb3" => :yosemite
-    sha256 "7c63989f940dc69a54c8e1eebb1d14a1ea04141a4a806354ed1ad338c8d4ea6b" => :mavericks
+    rebuild 2
+    sha256 "23c8cefd13f93b29d2a5437dfa97cf46f809538edeca63eb9f7db6df1962dbea" => :high_sierra
+    sha256 "92daf35bb095c96024c69567cbb163aa738f0d0dc3ea81f779dc330df45f0f21" => :sierra
+    sha256 "ccea1563b816a70e9f806d8c5a490d8bf2955777d7406f25398079327088e131" => :el_capitan
   end
 
   depends_on "python" if MacOS.version <= :snow_leopard
