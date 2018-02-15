@@ -9,10 +9,9 @@ class Vdirsyncer < Formula
   head "https://github.com/pimutils/vdirsyncer.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "65b1250f343816a633759a856bf6f78dac1c42ce3a88253404454bb57a46fbd1" => :high_sierra
-    sha256 "3f20510c77a0b59ae522e48e0ecbc182f64927c6c2704b9b8cf6212d5d908369" => :sierra
-    sha256 "ce5aa130fc07264519c09e833f104beafc886161239ce204d262e29f8af4782b" => :el_capitan
+    sha256 "a567e41f8adcc88c78b196be12c75f1009efc8bd931f3733e444aa8db2ffbfeb" => :high_sierra
+    sha256 "1853a593d55d96db883a9dcf32b24b3bac3ecf615580b308f7f8a8c3d2bde9ac" => :sierra
+    sha256 "298f68f3872d1239bf0680b8863454d401326421cf17cb4c060c3fb2a49c353e" => :el_capitan
   end
 
   depends_on "rust" => :build
