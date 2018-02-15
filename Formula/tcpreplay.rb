@@ -6,10 +6,10 @@ class Tcpreplay < Formula
 
   bottle do
     cellar :any
-    sha256 "9be61ec3aeeac7be8cd51225d5914a7ba7ee8f0c9fbd4393e452f6b9447a53c7" => :high_sierra
-    sha256 "569bdb4ac12e4ff62c723b1fdabad4b037c54423a70742306ba852f9bc43e25d" => :sierra
-    sha256 "b5ba1668dddf52946866c866bc1ba2ab2983b67d99c69b6c41fabe91e816139a" => :el_capitan
-    sha256 "3eaba6e1af68c8af3f7d1d0a15c2563b178368a74a760e3fafa5b3c4774f9129" => :yosemite
+    rebuild 1
+    sha256 "224d4e83ed66ef7b58cdc0a95b235d33c37d8f5e9d17537b08e41cf6b03338dd" => :high_sierra
+    sha256 "beacce916df1d07e5992ff727b88f80265c680963dfe2c1d1cc8e4e32b1841f9" => :sierra
+    sha256 "3bac7fd782444372e6d51e4af0c92f9115053f9b5d67d15bcd6c8bbe8f1c0231" => :el_capitan
   end
 
   depends_on "libdnet"
