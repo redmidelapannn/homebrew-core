@@ -5,11 +5,10 @@ class Rsyslog < Formula
   sha256 "f5e46e9324e366f20368162b4f561cf7a76fecb4aa0570edcaaa49e9f8c2fe70"
 
   bottle do
-    sha256 "cf810ad399795d9a031783649e1f1d19df652d0e346d9c93b1569a6f8090a95e" => :high_sierra
-    sha256 "edf1c58262540bc3d4409d6a74a5784114ce31e9481064c6a147d299d61fa0b3" => :sierra
-    sha256 "fe4b4b7732000b54f6bcc09495920fa27d2f09f31b575d424b9f71b73e32ae6e" => :el_capitan
-    sha256 "a3434bafdb1c54eb0ea50fcbabbbf87f241dac07dd68be55c4de344db3daa114" => :yosemite
-    sha256 "2f41f4e354de6cb6cd95630ed396a2099753adef10a63e0304fba550097f6237" => :mavericks
+    rebuild 1
+    sha256 "9093c4c37dae150b8971f8d1176a8c60ef880ab937fe23ac6672032411a7350a" => :high_sierra
+    sha256 "b439a95ea17e8d2c81a018f61447593abd886c0fb97de74b3bd9433521c24ec2" => :sierra
+    sha256 "00378bdfc340d8fbd9af4b4d02840cecc5a1079035e2923a8cbfe8940105f19d" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
