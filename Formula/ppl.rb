@@ -6,11 +6,10 @@ class Ppl < Formula
   sha256 "691f0d5a4fb0e206f4e132fc9132c71d6e33cdda168470d40ac3cf62340e9a60"
 
   bottle do
-    sha256 "e7f36d463f0324f5a7f951b09ba0a0916b65a16d5155ced9bcccbf3349536754" => :high_sierra
-    sha256 "925201fe3772b8dc994c8edc742fe6925426a534a62f8d706c94ba8a859eacf7" => :sierra
-    sha256 "34a1396fefc946754958e92d7ecffde0175b33f16f4545f46a00d4f63408cfd8" => :el_capitan
-    sha256 "83c3f03aa0766155e98e322409f6d4389bfee3ec510848c7eab1c91329d5fa82" => :yosemite
-    sha256 "d174ac172a3c986dfa92fe650354ce6b614d080f5ab497c90fc9b6395faf5caf" => :mavericks
+    rebuild 1
+    sha256 "40aec16b022fca20619e88f0534da4232ed538308100f7669755d9b61bc4697f" => :high_sierra
+    sha256 "df7bb904392db79497637fcdf80936aa02d82555816121469a3651bf0d04902d" => :sierra
+    sha256 "a62fdc166a1cddffcc3f31c458bf744ddbe68e3783b90745065fab41edb1b172" => :el_capitan
   end
 
   depends_on "gmp"
