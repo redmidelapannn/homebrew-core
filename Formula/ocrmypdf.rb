@@ -95,6 +95,6 @@ class Ocrmypdf < Formula
 
     system "#{bin}/ocrmypdf", "-f", "-q", "--deskew",
                               test_fixtures("test.pdf"), "ocr.pdf"
-    assert_predicate "ocr.pdf", :exist?
+    assert_predicate testpath/"ocr.pdf", :exist?
   end
 end
