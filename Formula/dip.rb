@@ -7,6 +7,13 @@ class Dip < Formula
   sha256 "40c527a4415c6f15edb056a6f318581ed8872f7c6f9dbf6046ab017028e14d57"
   head "https://github.com/amancevice/dip.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4b08514c5117de5fd5b281664b895767af44825c3114888fef6494be8f4d077a" => :high_sierra
+    sha256 "5bc9f8ecd3dbbb99263c10a35d4b44261e18d1bfc566c109ccf660a093d0cc1f" => :sierra
+    sha256 "0ada2d8346cc25538d2fbcfbe6a7311ad004a9cedfebf8fee5c1e9417a9d7caf" => :el_capitan
+  end
+
   depends_on "python3"
 
   resource "cached-property" do
