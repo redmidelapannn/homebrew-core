@@ -19,6 +19,7 @@ class Singular < Formula
   end
 
   depends_on "gmp"
+  depends_on "mpfr"
   depends_on "ntl"
 
   def install
