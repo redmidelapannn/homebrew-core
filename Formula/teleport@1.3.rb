@@ -5,9 +5,9 @@ class TeleportAT13 < Formula
   sha256 "fbe6f1b02107f01865053d086224f78d5944556fc7d870b5454582391505b728"
 
   bottle do
-    sha256 "31de9d5fe3e9e69f7086012c10dfb8018430ffeb4d8669751a06bd94918ddd0f" => :high_sierra
-    sha256 "c892603ff642579bbc816a407a0ede5d06224d3cf65364eabe3ff7976790c20d" => :sierra
-    sha256 "664a76eaeb9b5b716bedcf54abb380667eeeb49cef3063bc404515337b0f0c4e" => :el_capitan
+    sha256 "960e3c96677c7d65c2ae8518d1238352a35f05c2ad299092d2b56e89f05289ab" => :high_sierra
+    sha256 "212e944e31393e353e1d405131ea450c35450881f41383131e11cc616348a7d4" => :sierra
+    sha256 "a30a5f02c9299a26bdcc2b111856fe4d63e91660985b4f46bdfd477c62e801d6" => :el_capitan
   end
 
   keg_only :versioned_formula
