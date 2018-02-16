@@ -6,10 +6,10 @@ class Cweb < Formula
   sha256 "038b0bf4d8297f0a98051ca2b4664abbf9d72b0b67963a2c7700d2f11cd25595"
 
   bottle do
-    sha256 "e6888449565ebd6620ebc6851dbef48765a0654b3e5d429cfffb617ca33e2479" => :high_sierra
-    sha256 "377a987173b8274ab97de6d8978816372d6f380a0fe4c9e0b09cfcd7d27ab66e" => :sierra
-    sha256 "86ff3ceca459e8f087644249378a19a7f53f4ebbd5c74ddfbbe6ea795003a1a2" => :el_capitan
-    sha256 "27c017af8f2e004888240d99a14b29ea9ac8d1fa5339d228b6a79ecda8031e4e" => :yosemite
+    rebuild 1
+    sha256 "cbf31503336a1ed1fb4a4d262aaab6c468e55df2286205a15d4ff1f6fe4e4251" => :high_sierra
+    sha256 "eec3126b64e540dff048ec709c006338947dac275a3268621a7521203b3d48ea" => :sierra
+    sha256 "f2ca9786db6dce10daeebc3a447d373b6922b5adad57cb4a77b5ce587eed53a6" => :el_capitan
   end
 
   def install
