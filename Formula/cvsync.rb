@@ -5,10 +5,10 @@ class Cvsync < Formula
   sha256 "75d99fc387612cb47141de4d59cb3ba1d2965157230f10015fbaa3a1c3b27560"
 
   bottle do
-    rebuild 1
-    sha256 "77f37d3a029bced4283a805186c371c11525cf678d760cbe0095a248afe6c6a8" => :high_sierra
-    sha256 "fcea1a0cb513de493fdf74adca3ca2a6d07ca78638521412d8bc9dbed0c0b5c4" => :sierra
-    sha256 "f76f09e679c8bfe1454cc0602fe38c119ec94af456716ead97add4244f2eb2b0" => :el_capitan
+    rebuild 2
+    sha256 "404da475cd55cec510e2e9cd2e775eb7ccdd54cb0948ff6f35dc6114c574a1c5" => :high_sierra
+    sha256 "cee0b7e6c05b3852609862df8098d62e010ce1d69de289eaa09b9f4f82ce5358" => :sierra
+    sha256 "c7dc26d8b61f5f985f770fcf6756503a88d440d5b3050c7e75771b0803c1aebf" => :el_capitan
   end
 
   depends_on "openssl"
