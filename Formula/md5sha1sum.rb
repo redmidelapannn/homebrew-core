@@ -7,13 +7,10 @@ class Md5sha1sum < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "7bf0df78b9d06ef9cee025b92432217eee87eb337e51c1315862922438e65246" => :high_sierra
-    sha256 "6407844631c35a9dd03f7de29b811710af572cb0cd61afe6a184ec37ce7b8289" => :sierra
-    sha256 "f2f58d429e422e58a4bc58ab872de048bd873c1cdee017ebc0e133440a223745" => :el_capitan
-    sha256 "5ff64041e3ce1028522dabfa6e6260d1502033e207434e9d41598259f426af56" => :yosemite
-    sha256 "ea565d1739e48e43d36d46a86772e6159fef7c98260aa5d82404f3d2ffea81ef" => :mavericks
-    sha256 "f3925bbf60e1b8eaf47fe26cf19d49e61dd9623f891ec62a5500b07dbc186410" => :mountain_lion
+    rebuild 3
+    sha256 "108454471a530a9600a93f26f6e28386fae3d29dc945163cdd2a18e19bf039bf" => :high_sierra
+    sha256 "26ea15db5d15657e1029495cdf9881426904d84c985e9db1cff9e803fcf45a56" => :sierra
+    sha256 "bbfd834346d3af82db34e26c2a85242eeba8c38394734a9aeccd7648dbcbb963" => :el_capitan
   end
 
   depends_on "openssl"
