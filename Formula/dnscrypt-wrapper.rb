@@ -24,7 +24,9 @@ class DnscryptWrapper < Formula
   end
 
   test do
-    system "#{sbin}/dnscrypt-wrapper", "--gen-provider-keypair"
+    system "#{sbin}/dnscrypt-wrapper", "--gen-provider-keypair",
+           "--provider-name=2.dnscrypt-cert.example.com",
+           "--ext-address=192.168.1.1"
     system "#{sbin}/dnscrypt-wrapper", "--gen-crypt-keypair"
   end
 end
