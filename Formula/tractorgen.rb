@@ -6,12 +6,10 @@ class Tractorgen < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "936883746158534e9650a0b26f18e680eed527fb56f71ad51e5ec203d8f7f451" => :high_sierra
-    sha256 "646d87ca0cb1a5ec93a8aa1ddaa1f28233347ca0a1f56e49c323809ec8295432" => :sierra
-    sha256 "ccac503b4577fc81e69d3e778c27c31fad9a1c5fa8627e97f293d87ab1177f8d" => :el_capitan
-    sha256 "e50de2fd2d9015873282a62fc7a21f3ef419d527d07eeab3830ace52ec25c3c9" => :yosemite
-    sha256 "acbfbe90462924fbc6f2658ca0ee591a122639356ce6ff042b558199b477bf4a" => :mavericks
-    sha256 "bcc0f270ae8414659db18f339044a3030beff37c8a4a305c1c544919b2fb0a7e" => :mountain_lion
+    rebuild 1
+    sha256 "0d18d07e73765fb0cf6630ce4e9f27333527db72bdcdcdf261fc98d0f1a3b742" => :high_sierra
+    sha256 "79538cf899fb91b982347199a5d7031b90efae3999b2d37b24c41202f4488606" => :sierra
+    sha256 "c58f7fb2f22282be8460eaf0caa2f428c9cd39983a793c7ca29b4984b2301fcb" => :el_capitan
   end
 
   def install
