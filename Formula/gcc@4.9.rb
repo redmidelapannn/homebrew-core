@@ -27,9 +27,10 @@ class GccAT49 < Formula
   revision 1
 
   bottle do
-    sha256 "0c4f2650325b060bf72beafd78dabab80973ee4ab330d4de16eb648b88225096" => :high_sierra
-    sha256 "01a231e69b3c3e10a9e6aa99b5cbb6077eb1a011660bbbf06871ee262b6f31e6" => :sierra
-    sha256 "1c407f31d58ab8e41230a83c6ffd1d77503c0c6528ccbc182f6888c23c5fb972" => :el_capitan
+    rebuild 1
+    sha256 "ea56cfd0a2a6834664cce2674a24252a939c229330c200d3998049ec07cd4060" => :high_sierra
+    sha256 "15f985b683ac9993ee5c6c3c0c467bdb00212b5e368abca04421154074ddd19b" => :sierra
+    sha256 "f78eb697cc8f4c9870f428bfd0f991b28bac7fc65a526155eb155f50568a0cec" => :el_capitan
   end
 
   option "without-fortran", "Build without the gfortran compiler"
