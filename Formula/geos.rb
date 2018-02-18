@@ -6,10 +6,10 @@ class Geos < Formula
 
   bottle do
     cellar :any
-    sha256 "bd35ebbcc9d142b0ee4d1f1837520cd0e195e13e3ea1804c5cfd1cc99d660b9b" => :high_sierra
-    sha256 "a435dcf855256300793f56c3d0af6597f39958bde52adc29d07736f897b40c1b" => :sierra
-    sha256 "8fa4f17ee4b0f8c52bdb155f4264043f12245858e413975cfea4355d569db207" => :el_capitan
-    sha256 "5966c5ecea54189c67a3ffb5856176f4bb070ca72b3c3628ad7b76fb67e35de8" => :yosemite
+    rebuild 1
+    sha256 "74b9b297cdb4dfd8b7eb1e5c903b6a8a097a823d1bd4fbf55416a240ca29bbb5" => :high_sierra
+    sha256 "80a4a3f0e7aa3ad8aeac3c11da6bf09d4f524754ec3ec4509b7ac97a0ef80069" => :sierra
+    sha256 "0a461c2c57448e340cd813552bd9481eeab266d677bc9a952e3fe97253ac87f2" => :el_capitan
   end
 
   option "without-python", "Do not build the Python extension"
