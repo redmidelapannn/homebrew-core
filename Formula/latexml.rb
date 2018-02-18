@@ -7,11 +7,10 @@ class Latexml < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bbbeb393b7ed0258fdbf875e103a6f2f82103a6c19fce6b77ce5dd99fde9dc72" => :high_sierra
-    sha256 "3d995988dc683269f6949f8071148ceaf7454e8e7eb37cd8d391a1eb4467fc76" => :sierra
-    sha256 "5ae3ca257610559471ea0e1bbc9d5ff8f122790564a8e7027841e5b2356b6f8f" => :el_capitan
-    sha256 "5205887f374d4bd15905f5f13b4c661c5a6cb2725fc631836cff0668e34085b5" => :yosemite
-    sha256 "884426eb041a9fa05ba6ebc64c64f4ce76f7c10cab3c5c1b98bcce201831c9d2" => :mavericks
+    rebuild 1
+    sha256 "7381ad764480b5c4d657d1d0277fa2acffba820c358ca571cb3612d8de0489c7" => :high_sierra
+    sha256 "4e08c4895880dabc22270ffa2ff2bff38cbaca4e1245b9c239a46ef87eb7e804" => :sierra
+    sha256 "98bee607b20f8283423c9339a4ed4441bf578efea9f5c89d634123b7d11e177b" => :el_capitan
   end
 
   requires_perl = []
