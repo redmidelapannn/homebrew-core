@@ -6,10 +6,10 @@ class Libgeotiff < Formula
   revision 1
 
   bottle do
-    sha256 "47f9a4c29186e4e4b17ea1598b22c85fff045a06c64cbe44a878966f32f5489c" => :high_sierra
-    sha256 "3e497773ae48cb38f7d7bdbaa19f137d23d87b5b1980d3feea2c818680acd145" => :sierra
-    sha256 "97b06d1759717ccfed9b2e21de20d256b8852d472ed2aaa7ce7ec16f260fbe1a" => :el_capitan
-    sha256 "90b680bcf7a45cd17ca3066713bea7c0162811ff5a20804a8afa282bf1c87638" => :yosemite
+    rebuild 1
+    sha256 "dfa5364d8234802bb57a776f3e7f67529c4b0f8e2c97215fce34b8a4f002b481" => :high_sierra
+    sha256 "eb0db1568a5504ac68cf73883926114294b079bf1ffbaa1ed58da4d9f303de23" => :sierra
+    sha256 "de68fbb071e3af74eea5528ed75ec30a8a6c6a14839fc462c8c0b6e325570105" => :el_capitan
   end
 
   head do
