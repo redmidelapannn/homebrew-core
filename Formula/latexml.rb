@@ -32,7 +32,8 @@ class Latexml < Formula
       Test::More URI XML::LibXML XML::LibXSLT UUID::Tiny"
     # Remove all CPANM files
     remove_dir "#{libexec}/localcpan", :force => true
-    remove ["#{libexec}/bin/config_data", "#{libexec}/bin/cpanm", "#{libexec}/bin/crc32", "#{libexec}/bin/imgsize", "#{libexec}/bin/json_xs", "#{libexec}/bin/lwp-*"], :force => true
+    remove ["#{libexec}/bin/config_data", "#{libexec}/bin/cpanm", "#{libexec}/bin/crc32", "#{libexec}/bin/imgsize", "#{libexec}/bin/json_xs",
+            "#{libexec}/bin/lwp-download", "#{libexec}/bin/lwp-dump", "#{libexec}/bin/lwp-mirror", "#{libexec}/bin/lwp-request"], :force => true
 
     system "perl", "Makefile.PL", "INSTALL_BASE=#{libexec}"
     system "make", "install"
