@@ -5,6 +5,13 @@ class FuseExt2 < Formula
   sha256 "d2e49e9cddc06dd14a3e06f0bdb4bbd76abef60e9c145d90ece997b7943a36e9"
   head "https://github.com/alperakcan/fuse-ext2.git"
 
+  bottle do
+    cellar :any
+    sha256 "1332a7b6ca1ad511f9f8bf5af9ed23bd95a2cbfc6d64f29edb1885e65fe586d1" => :high_sierra
+    sha256 "ef1a3791af3b3f97b0fcb6345b5a77981513296a407c99b377439fafba10d5f6" => :sierra
+    sha256 "e5dfce3b43740b34659da9f8eb21ddc0661283ecd8b7f3328d5b7662b2e38fd0" => :el_capitan
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
