@@ -9,9 +9,10 @@ class Dep < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0b974c08cfb94c31a652908312620e6dac1a617ffd2d21816c5e9c8f259ea559" => :high_sierra
-    sha256 "4e6e39bb9678fd4ddf200a80ba657f09d3d91bd133f5795775153a3aa12688eb" => :sierra
-    sha256 "4e95ecf37819ce91f1e52a6b11e6c875c2e9b3b17edba1b919c55ffc98ba95cf" => :el_capitan
+    rebuild 1
+    sha256 "07344d28542fa798219be47eee3393eac45c0ecb74f42d249ac32896e48f7aae" => :high_sierra
+    sha256 "0e10612cbd15b93536da050ffa8ddf13ce97e59669ab24e787319bf313aa3a11" => :sierra
+    sha256 "cd2d87c105543b8cfd875086e45365e436ee4875c81330687ab8077edfa98260" => :el_capitan
   end
 
   depends_on "go" => :build
