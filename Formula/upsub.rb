@@ -5,6 +5,13 @@ class Upsub < Formula
   sha256 "bfa743baa10bd8fb02f9da1f48ea13fdb3481b3190ac749f9dd32b568f99b3e6"
   head "https://github.com/upsub/dispatcher.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "ab7d5450100e987e72c809a119e16774f4224789832cea62ec6d15e72d671949" => :high_sierra
+    sha256 "d1a4b48bc8108333cdd0cdb77c6e54e52560fe9870ff65cd53fc83692b788791" => :sierra
+    sha256 "e47cc0c254cf366d66869710319b88dcf7a1fa58841647b14b8219f749663a70" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
