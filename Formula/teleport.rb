@@ -15,6 +15,8 @@ class Teleport < Formula
   conflicts_with "etsh", :because => "both install `tsh` binaries"
 
   def install
+    inreplace "Makefile", "-j 4", "-j 1"
+
     ENV["GOOS"] = "darwin"
     ENV["GOARCH"] = MacOS.prefer_64_bit? ? "amd64" : "386"
     ENV["GOPATH"] = buildpath
