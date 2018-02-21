@@ -15,6 +15,7 @@ class Teleport < Formula
   conflicts_with "etsh", :because => "both install `tsh` binaries"
 
   def install
+    # Reported 21 Feb 2018 https://github.com/gravitational/teleport/issues/1708
     inreplace "Makefile", "-j 4", "-j 1"
 
     ENV["GOOS"] = "darwin"
