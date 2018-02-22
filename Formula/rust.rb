@@ -61,6 +61,11 @@ class Rust < Formula
     # for -stdlib=libc++ (requires OS X 10.7 or later)"
     ENV["MACOSX_DEPLOYMENT_TARGET"] = MacOS.version
 
+    # Prevent cargo from linking against a different library (like openssl@1.1)
+    # than libssh2 and causing segfaults
+    ENV["OPENSSL_INCLUDE_DIR"] = Formula["openssl"].opt_include
+    ENV["OPENSSL_LIB_DIR"] = Formula["openssl"].opt_lib
+
     # Fix build failure for cmake v0.1.24 "error: internal compiler error:
     # src/librustc/ty/subst.rs:127: impossible case reached" on 10.11, and for
     # libgit2-sys-0.6.12 "fatal error: 'os/availability.h' file not found
