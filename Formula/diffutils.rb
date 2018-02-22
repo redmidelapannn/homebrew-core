@@ -7,10 +7,10 @@ class Diffutils < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "fd411d030058f27f1ce31cdb5d8a4c338195d43281fa477242100e43bc523e1e" => :high_sierra
-    sha256 "e25b8b0c5e7cde495e36ab63e7e6d682dbe8039f0de292b85ce7f19b94ea1e41" => :sierra
-    sha256 "b333804e8f86f2d99ac44c5cee06a3f615b8e69de0b68090792fd48436e8463a" => :el_capitan
-    sha256 "e5c66fefaabbcbf9149128538bde4935be2bbc60849721c90546b21bca932399" => :yosemite
+    rebuild 1
+    sha256 "aebc986fcc5cc4043fa46fc7b4583e906a221c67b4a562c9fec1aa1cecf63327" => :high_sierra
+    sha256 "0564a5d3784acc898c84f92c11e61218071933eab4ec1a0fae195e53b4d354f4" => :sierra
+    sha256 "3e45a34e9bc0d44b291b73cad347a86aa33110fb3b4a0b96b7bcb0531fe066b9" => :el_capitan
   end
 
   option "with-default-names", "Do not prepend 'g' to the binary"
