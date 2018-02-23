@@ -7,10 +7,9 @@ class Curl < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "715031cce2686a4855a62db8ca9cf9dc0d755514c44cfd72f9e64cbdabe1f86c" => :high_sierra
-    sha256 "ac45f84489d00522fb2ef362917da780434422b598133a3e64c84f0f28b12790" => :sierra
-    sha256 "2b4490f5d3839e29b3898d50745419e372e770d1fcaff3680f15d4cffc4c8653" => :el_capitan
+    sha256 "844ebfcbb6bbf44d03d6a8a80a81c31e2776e3b9475d9b9b94404aba85c2af44" => :high_sierra
+    sha256 "2ef0279a7aea18edb481c14cf680588792710a011242ee8b0de0867ab1961dad" => :sierra
+    sha256 "a3ad0e37d4836cc16b947fbb3075781612ad42f973cf79b910aa1af4d5582ed9" => :el_capitan
   end
 
   head do
