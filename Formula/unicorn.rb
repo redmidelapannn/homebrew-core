@@ -7,10 +7,10 @@ class Unicorn < Formula
 
   bottle do
     cellar :any
-    sha256 "a12e18a0a334fa19a2dc54a43fc5d56861e31cf5a9ad352cb1150bb6ec61703c" => :high_sierra
-    sha256 "81d29e7f28335317dd40976d904636ccd7d0679b71747ad13530dc991f327122" => :sierra
-    sha256 "3519d8189333c5ae43eb618e18db7b6be4cf9cc288c6a45ca3b618964d62395c" => :el_capitan
-    sha256 "f8c7cb546985c5e34dddb2c2e338314d024e266085fcbdc3f7e52e0f426e4e29" => :yosemite
+    rebuild 1
+    sha256 "23de9b41139c8b1cd9590f3a31c2dbee38397865fe01cb90efbc74723e4b1479" => :high_sierra
+    sha256 "c05d7ded7fa32bab706d3c723e7042f4e2012e5184f92377a8cee872f52aaaf7" => :sierra
+    sha256 "d3762125373503b54c30a582718327821bd752a689273b473d8d3430e99c9835" => :el_capitan
   end
 
   option "with-all", "Build with support for ARM64, Motorola 64k, PowerPC and "\
