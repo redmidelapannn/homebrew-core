@@ -16,11 +16,10 @@ class Mongrel2 < Formula
 
   bottle do
     cellar :any
-    sha256 "67696f654ab1d878ac7c2a3fa254b0ee86c1d444578045997a971ca44189b2fe" => :high_sierra
-    sha256 "293b0edc8bcc0b7e3a97748a6accbc5000916ed145fd467aeb809303438a207a" => :sierra
-    sha256 "7a6880cbc814b084a3ac91e379b7a720438951e31a18119c232f976fded229c3" => :el_capitan
-    sha256 "0b2926fe3d79ab934e95f0e5c067e8bb23b6900b99255482defee9388a0dee07" => :yosemite
-    sha256 "dd07092a2384c243fcd8c54ed67f2a728f3da698276540fc1c9b201eb3c5cbbb" => :mavericks
+    rebuild 1
+    sha256 "20ec374a3f071722f627ed37a24ef84ae6d119b89ad71ec1e3609ad27937e1af" => :high_sierra
+    sha256 "b498ce67c3f4a3e2602493078912aa0615810c8b626d19b6cf14cc987bbdd5dd" => :sierra
+    sha256 "e49f3f54250d0fa137ab731e95a780efedbeed00f890d0f5d685cc9142aa4a6e" => :el_capitan
   end
 
   depends_on "zeromq"
