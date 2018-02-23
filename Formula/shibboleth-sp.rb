@@ -6,9 +6,9 @@ class ShibbolethSp < Formula
   revision 1
 
   bottle do
-    sha256 "1a91c531f1be5c05e66aa27f486034dc80f8a43b831ef7af67cbf4df5b8b3f67" => :high_sierra
-    sha256 "e2bd8a05bf07e9b746b240331b9b5a8588cedf2b21d6919fc8096c00721e9e16" => :sierra
-    sha256 "e6be9e88eaf93270e7cb2aad05fb3841d39560220ca2b4541c7bc24762d36b59" => :el_capitan
+    sha256 "87f9992933cde27783c9d1c1997153dc9c1a75cffd69658cbf77b4f21f10bc1b" => :high_sierra
+    sha256 "126b8a45b4dd5e44a97bab5833b53685474f4498f969f1eacfd6963214bb77d6" => :sierra
+    sha256 "7145f9988817e5b91d422f76ed618e9315baa0b88e2e0f68f6e97fa773aafd80" => :el_capitan
   end
 
   depends_on :macos => :yosemite
