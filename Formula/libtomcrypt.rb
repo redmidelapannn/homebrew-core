@@ -6,9 +6,10 @@ class Libtomcrypt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "db05bfc16ef60355d9079efeb274e9106755bedb4e891ea2b9e455bf784a1c38" => :high_sierra
-    sha256 "031781e5baf4fad0febb66182e66b99a4f32aad9d6376eaf7f70c2496ed6fc5c" => :sierra
-    sha256 "bb0d91090b6bbe1f49fa14d32fe137f08a80cd5d5a2a79dd79e641f8ab57794c" => :el_capitan
+    rebuild 1
+    sha256 "058d09cd0cabe5cd5067b24bb57f6934997d2c2352cec1eed56bd78cb7e6c615" => :high_sierra
+    sha256 "332642729c99fd4ea11269b94ea35959626a35b9a7e726a7e8d5d3384ebcb997" => :sierra
+    sha256 "967ba9d679e33ffb8e7c6bc7038f929af3643fe4cf06577e5460be62d8d874e5" => :el_capitan
   end
 
   option "with-gmp", "enable gmp as MPI provider"
