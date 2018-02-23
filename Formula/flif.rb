@@ -8,10 +8,10 @@ class Flif < Formula
 
   bottle do
     cellar :any
-    sha256 "40b85a93738e195a6eec2b3bf9bfe7b2831f74d464e1e5145681f9ec2c3cfe68" => :high_sierra
-    sha256 "756f685e55f7c798743756723815fb3f39d82ef92f5cc78eb175d8cea52498a3" => :sierra
-    sha256 "3fd4e69366470a6810815d111a8e0188c627fe7d50375cd93c0da00ad6617fb2" => :el_capitan
-    sha256 "bbd4e35f6947e3b304469031f42c3720a94c10d9fb7540eed9e7b08bef6ee319" => :yosemite
+    rebuild 1
+    sha256 "6afae4791a793338fa27a42dd1b39852006794e2fcd33c5706de0c872a333b61" => :high_sierra
+    sha256 "c4c6326aa929ffb3eeff628deccfda295889ae8bafa0301f6c628d4a0317b0a9" => :sierra
+    sha256 "3fc1756c93511d5a84c2bc7039d851c61ad1e74b76412af5f37e8ace784f202d" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
