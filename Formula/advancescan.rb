@@ -6,10 +6,10 @@ class Advancescan < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d0a8416434aa03573dcbadebd135fbcfa6f4829934622ab8afe68aa496ec5e48" => :high_sierra
-    sha256 "0bc4290c65271b84aec455adbaf85795857b19102e6efb152a64623420ae5757" => :sierra
-    sha256 "e4295866cda2370aa37cb1144ff1269ada4df6b76145a25efaf072d7a6b09b5c" => :el_capitan
-    sha256 "f91cbe31c7c8072fffffcd0cc8766e20df6f728abc73f66140f97c0a49d6f6c8" => :yosemite
+    rebuild 1
+    sha256 "08b744ae16118838144a858abff7997408d5c152260b7ad3f023d2a61931b534" => :high_sierra
+    sha256 "239939bf76cdaace97bffb6ed94813a9f317761c34426848cb5e98a310ada7a2" => :sierra
+    sha256 "b24e212df834977e0c881bdf8a1ab5a4dd0a0bf02e6487715ae2a8179a82981c" => :el_capitan
   end
 
   def install
