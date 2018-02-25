@@ -7,11 +7,10 @@ class Stormssh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3be664afd826e9782f18ba555bdfc680c7cb8b2fa2b5fe27fddadfd433f4b8e2" => :high_sierra
-    sha256 "d095bd03b0c4f6b3d0bd5392452e2c5a411582c204b710319fff9ea3e203f45d" => :sierra
-    sha256 "f2a8c7b99647b5b7e0e578329c126842670610ca667c28609afbd40bec032409" => :el_capitan
-    sha256 "1f15fa5349824fb2de682b577d7b1a8208008d64050c1c6189ef8abac108cc97" => :yosemite
-    sha256 "902cb6751c1af1c04a23419f3bff6ad2f34a36690c44059526142f886a93b6dd" => :mavericks
+    rebuild 1
+    sha256 "562425ecac9a4583f8d5560ef0a229973df3d51021d12d3d9eb9697373a9ba96" => :high_sierra
+    sha256 "c1edb7e1b733b89366282d6a36618961c96d0a0daec667bb704fbc598ebf5944" => :sierra
+    sha256 "4da2d83cb7a518f330c8affd2710a84b3a9932f51a14eb78b6ea48708f761dc5" => :el_capitan
   end
 
   depends_on "python" if MacOS.version <= :snow_leopard
