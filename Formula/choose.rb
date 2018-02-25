@@ -8,12 +8,10 @@ class Choose < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "8c99ba985ed4102767beb1413508731726f78ab7329e192cd54461f5d5c78856" => :high_sierra
-    sha256 "f1f78c46406518bfb8197922d199737d5ae44913e86e1753df84a759c6670556" => :sierra
-    sha256 "0e597243f20f7a5a0699d72dcd4d0395976e481a1fc32c24725c2a4b4fee6992" => :el_capitan
-    sha256 "24a9edea9e97823c333d0352244d7b30f72ddb0c8df291706463f8c76a0ca2e9" => :yosemite
-    sha256 "47d5c12604878a2f3eb75da8c80a15d991b47129a17684fde8f02fe97f16e78b" => :mavericks
+    rebuild 2
+    sha256 "2ec4e3158a8f7876cd9de26d21d09452d626c3cf5655ec0e0698ed2d706ef80f" => :high_sierra
+    sha256 "c200af5f1c0eba278e39466cee5f4ee2c0bfd8c1caf10591ca9027f494d04e20" => :sierra
+    sha256 "7da2e4eb1955f3212774762f227f3553f64b8dda92920860cca80ebcee931052" => :el_capitan
   end
 
   conflicts_with "choose-gui", :because => "both install a `choose` binary"
