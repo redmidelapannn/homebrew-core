@@ -8,12 +8,10 @@ class Onepass < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "fe29b54dd8b047eb73dc9d00ec65ad823870733e0948e02d2303b0af8ce4a664" => :high_sierra
-    sha256 "6f67d2c8a4bc28317c517bd407df63a5fb849dc001fdcd02bc5fdbe15d8d27af" => :sierra
-    sha256 "8410258ade7f471629235368ba63f11d124335a8af394a6b16493622b3aac825" => :el_capitan
-    sha256 "2172e0aee7c33b6b2f5b2ff8fd7e92064d5bfc3fe03dfcbce6aac9881f08e263" => :yosemite
-    sha256 "beb5a20a0642cff5f9e43b6ce1ce9a9c45589ba748150f333e81a0c70090b7f2" => :mavericks
+    rebuild 3
+    sha256 "867f3bec0a46302c07f73028854550a6a8687ab09e426ae13208bda8862d4902" => :high_sierra
+    sha256 "e379965209ad57f81455fbcd73571d17b4896ab91c2731df085bc1b1b347aa6a" => :sierra
+    sha256 "9c56f18415f25dc932f995fb60d2019b8b1dbc5d9491ff9733e00ba46c523c02" => :el_capitan
   end
 
   depends_on "python" if MacOS.version <= :snow_leopard
