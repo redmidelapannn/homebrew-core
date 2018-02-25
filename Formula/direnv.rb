@@ -7,9 +7,9 @@ class Direnv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c1ba63af502ec2f42ecacf9b927920d9697d47f7828b7b61da4d037f7f8243a7" => :high_sierra
-    sha256 "8332498c8f1cc305f7841974e5378e7fd3bf4951778d65f952c72eb63141763f" => :sierra
-    sha256 "47a1bcc399e34358383947bc042de6fb0424ce18514bc2fe6c7e6eb1ee885182" => :el_capitan
+    sha256 "25a3b9209ed827d647ee963da6d9b50e5cbd1a63a9cb41d5408a6152de82333b" => :high_sierra
+    sha256 "6a47aa29a7996d546999b6ee9b6a2649c994e63665b05dd5e7dbb2d3996452a3" => :sierra
+    sha256 "e04fbe8d1e16ea8b6080f05754579f0de6836f64b9b63a916a814186e114ed15" => :el_capitan
   end
 
   depends_on "go" => :build
