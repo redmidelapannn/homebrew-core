@@ -6,11 +6,10 @@ class Inetutils < Formula
   sha256 "849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37"
 
   bottle do
-    rebuild 1
-    sha256 "f57b7d080b62fc569e9f1085a2edda0f6c5bdf0ff93d76ee9df009983ae14c99" => :high_sierra
-    sha256 "e138ac43402b4a19991ad5fcbcdb7e1e5e2a4e13f71b4423db5102aef9da0db0" => :sierra
-    sha256 "5fdac142afc7e9a376534e825d90c91b89e7fcae4f9ccebaadf568017ee6de78" => :el_capitan
-    sha256 "1c9d32aa9b97b6119cad466b9a5efeef6bf74f54dbeccd096860e1500658d866" => :yosemite
+    rebuild 2
+    sha256 "88d3041f553a3e0b6086f44f1ad67190939b36bd5679f9e6c2d9959368a0142a" => :high_sierra
+    sha256 "ad7a22712e3eec10623835aa2b0d55da8112884f1accd591fe4ad24e2abae124" => :sierra
+    sha256 "67ec7c03f855d0dc7d5d894b02e5b99d6d9e19d4d28cf323aa69b18fe3e5a3b3" => :el_capitan
   end
 
   option "with-default-names", "Do not prepend 'g' to the binary"
