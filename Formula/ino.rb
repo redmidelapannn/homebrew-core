@@ -6,11 +6,10 @@ class Ino < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cfd6fb6e8e05af32a75064404ed6217bcac47c9d7dfb1bd3c53bfd60fa2c4dd4" => :high_sierra
-    sha256 "ba6d8a28197816999132d07732bf522e8b50f5c8030aba43b2fa48556c9c8115" => :sierra
-    sha256 "fe8bd44bff433014afad389f2afd63253ac747eba19ecbd055f2f37bef236430" => :el_capitan
-    sha256 "326863d7187f8c280a39c0d20a5ef568ad58a6c2f9d5f20d9fba75f4d2c2f03d" => :yosemite
-    sha256 "a2a0aeb71d02e6d67578f9c3265fa2b11ef716bc47519f3b31d001f9712e8b6e" => :mavericks
+    rebuild 1
+    sha256 "eb3c7760c5630d61bd097fff5b389cf4a19663fa2564943ca850f037639486ae" => :high_sierra
+    sha256 "90b6d80f3d79d702eeac340ddefdda2cf83c9f4b4a13cf067146e684847ac848" => :sierra
+    sha256 "bee6651b62db98c5d4d779a28c1ebd609d106affb889ea6a987f3968663c65c1" => :el_capitan
   end
 
   depends_on "picocom"
