@@ -7,12 +7,10 @@ class Sickbeard < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "d9db0e5fd4383ca3c388e597dd09f0240be542e54eab6e70265dca613c62f78e" => :high_sierra
-    sha256 "6138d1320eeaa59271e29ac77f922054368ce833b1bb913e44c9931b2b112961" => :sierra
-    sha256 "2954e69685502cf87b91ace26ed1d8ac5f7286368bacb38c786cb0f23f3b36dc" => :el_capitan
-    sha256 "e6948de6d4e6a4511f16b83d06e6d5c65adfb422a371620ddc90354a270b151f" => :yosemite
-    sha256 "f8a28c1b638f8041a226e8a19606b42cf9e3d000501217f85fb3b024ec50b205" => :mavericks
+    rebuild 2
+    sha256 "77868ceda6a36fd9a483a0e54d1965406708bc972c1ba06328d574bd04c462e4" => :high_sierra
+    sha256 "9c2db2b8ae7e827a3309459eec5c8431eca5fda18c0b3823c97065ab7a8eab97" => :sierra
+    sha256 "bd5b5a8070feab81ded15a8f4bc32672440b54ed2e726dffb9ec91e8ce2e840d" => :el_capitan
   end
 
   resource "Markdown" do
