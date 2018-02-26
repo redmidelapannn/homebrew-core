@@ -6,12 +6,10 @@ class Swftools < Formula
   revision 1
 
   bottle do
-    sha256 "2db933a79589905a67f36a9ea96a692a684c676d70b5299b087ae892195ff007" => :high_sierra
-    sha256 "479570fcb99302996b55c361db1a6bb4a3abee611533b854fa350956f6b8cf61" => :sierra
-    sha256 "7343a6c406b0374b460f1d814e5542372f85df5d6ee500759648084713e33174" => :el_capitan
-    sha256 "f672348156459f385c6b08ed67c7055cd1cb9ee9dee8d868777596a57ac01a7f" => :yosemite
-    sha256 "7f18b7dae61164cd47eb34712884dea4de8df821d51ce955c6c33f36c165eaa1" => :mavericks
-    sha256 "900f2dd522f48c9ea72a3bf8dba53a8f0f35a4867dc68fab5dc85921a769c206" => :mountain_lion
+    rebuild 1
+    sha256 "2a95a0fb3ae71bdad5432193691a33adcbc7d6c227f7ad27fbf963797b78834e" => :high_sierra
+    sha256 "5bd58543d4e81191afdac61ae4ee0a7d404283058d87ae50363d0fa3b1a829bb" => :sierra
+    sha256 "995b9034661af169556d209f5332415000243e9beeb9b2fef3c9d0f9f98da364" => :el_capitan
   end
 
   option "with-xpdf", "Build with PDF support"
