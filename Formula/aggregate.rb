@@ -6,12 +6,10 @@ class Aggregate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "6dc7626282f519003e1d559ac42a983f4a571494ac04e5b61858fdf16d1ca924" => :high_sierra
-    sha256 "ebe7aa16c7cf36684463292995c60fdde12cdac889de551d8f85b89e6b77416c" => :sierra
-    sha256 "87507a739f2bd5ba57ccd23b34f2b7c41d68a897c128231dbbc32ba23b869ed5" => :el_capitan
-    sha256 "813ccd28b00f94e1574079f7f6816858e32c5d8f9a964b783307d25c7e449d2b" => :yosemite
-    sha256 "169598a0d41382215ba51ed0c377c98857804e82fb1658414dd04ee94ddbb993" => :mavericks
+    rebuild 2
+    sha256 "81ab12a3cb2152734049b6e761c2afa42eef989be3f91b0663d94168e0c1596c" => :high_sierra
+    sha256 "80f27bcc5e6ddc6540b123bdfe7c94439818345ca33d7bdedd7666ca4e510ab3" => :sierra
+    sha256 "af541f0c8afa7aa1a3499dd1e1add5f7f46f81a56fc264909710e7cacffb611e" => :el_capitan
   end
 
   conflicts_with "crush-tools", :because => "both install an `aggregate` binary"
