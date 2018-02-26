@@ -6,13 +6,10 @@ class Falcon < Formula
   sha256 "f4b00983e7f91a806675d906afd2d51dcee048f12ad3af4b1dadd92059fa44b9"
 
   bottle do
-    rebuild 1
-    sha256 "6349ea1828c7474157a6bac4131c4ac952aba1330014ffd92efeaecc6ebe486f" => :high_sierra
-    sha256 "560217a0114fb31f303271eb925da7959d8e02fb8e3d118c0ea449f34ddd3e7b" => :sierra
-    sha256 "48f3fc7a4ee3f479b0dafae18262cb900d64f43f5a3f2fa32727b65f6836f81e" => :el_capitan
-    sha256 "e5dc11f9529c43c216dc304df212eab022ce654fc551ad244a291a6b861931b8" => :yosemite
-    sha256 "bf2a677c2d6777b577bffc22d3c75a65525700bef6478035dececa002e5e11ec" => :mavericks
-    sha256 "9730e050c70ad2803afdf9cd03b108b8c4bb57b797bd92595523ad0731639b81" => :mountain_lion
+    rebuild 2
+    sha256 "db9a92ca7f654dd69c9663b6cb0774e039f67bf6870c0b4a852b8057a0daf6d5" => :high_sierra
+    sha256 "c11908d33efb0e6a28d689615e50e7222023c2b14ed23d3e3d1c7cf6b39cd2f1" => :sierra
+    sha256 "6a4f0c5768d62e00a7db9efa17015908b8e8386c1d7936b86fd84d904b2894f7" => :el_capitan
   end
 
   option "with-editline", "Use editline instead of readline"
