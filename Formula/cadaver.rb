@@ -9,10 +9,10 @@ class Cadaver < Formula
   revision 2
 
   bottle do
-    sha256 "25a0e28cd5861306d85971db60a3f0e3141cf8506aa8def86fbdb5b2f5bc073a" => :high_sierra
-    sha256 "a67a574144407776beb82dbe6ddafc74f426e2c159e144d1bddb9b30c0719892" => :sierra
-    sha256 "33ea3e322fb91ce080693dfc11fc631eb4103a20c8b3b5eaa06dcc02d61a44bf" => :el_capitan
-    sha256 "cbfcae8d96f1c55f58220c319cf75fb953abfc765c3eb76d3dfb3973fff8d343" => :yosemite
+    rebuild 1
+    sha256 "142ec418f687cfeb2c0c5eccbee282815f852b5d80093c44e43247b801a8bcda" => :high_sierra
+    sha256 "de888f072a9c11dd258b80035c0e9e319e451fe38af41ff5b872a40e6b2bcd35" => :sierra
+    sha256 "bee574a098fbf297dde7f9e26b3cb17a0894d8f9b543db08ec5a81e036c31e70" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
