@@ -7,10 +7,10 @@ class PerlBuild < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "eeb64fad11c3e0cf8b5a5df38e0fcdf6f7019047fbe80dd5cf81023245c069fe" => :high_sierra
-    sha256 "bcfeb9326b4783d8fb60c0e9850854528677e5d81bf7c6863584bba9f27d52e0" => :sierra
-    sha256 "a6a0f5a53f5755544ac0422288a7f163ca41a8a7f6747bc6564c3498dfae4320" => :el_capitan
-    sha256 "5b52eb99f45233a8776170cb31fc0b1e9057b1c74e7e5d9ceddd8bad1460b61d" => :yosemite
+    rebuild 1
+    sha256 "644a1df42bdc70868c2f23be529a6d2d794532f7399ebf671d15d67b8d59c1e6" => :high_sierra
+    sha256 "0c2699e1487216fc4292a004d9545a24eacfbef0f3528c5587e41d0542cda414" => :sierra
+    sha256 "f1cc5896cb02a7767cc0c5da34b7b055ea45829a015a75cc0ebb507ba1c6ea8c" => :el_capitan
   end
 
   # Perl::Strip dependency
