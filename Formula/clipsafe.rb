@@ -7,10 +7,10 @@ class Clipsafe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "211d670b61c6a68650736df3deb3ae783c320491ba3205e035cc28c014fca705" => :high_sierra
-    sha256 "7c894e55e215fffa121aef718dbf7fa0f2c71531cf7970ae8d27f4b5eb939877" => :sierra
-    sha256 "ffd255c6ff1bd4c403bc4040f1751eef61b4ae341c33b226bf9a696b2836b02e" => :el_capitan
-    sha256 "01dbb7b4cf71ae2b174cfec45cdf4a69e211a5154bc6541fb19e1b5aa20f8389" => :yosemite
+    rebuild 1
+    sha256 "838f4b7ca48525704363603c55ed53ac202236feb09c8473cad1d5faa409a133" => :high_sierra
+    sha256 "fcb79676c6c787ac2daba877033833f1588e2294e7b7baa14b853cae93622ab1" => :sierra
+    sha256 "3e5ab7457f472197c228267551abbcff18403aba62689860c94895c41dfe7ebd" => :el_capitan
   end
 
   depends_on :macos => :mountain_lion
