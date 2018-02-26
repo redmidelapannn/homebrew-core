@@ -8,11 +8,10 @@ class Compface < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "15f3ed9a165fa2f4966fde4de5b8b1c62d583425e0c3d9961b26348f6355bfcc" => :high_sierra
-    sha256 "092d90367b0fa75ff8a1be3982cda127226fb9805c681170f66fe27c148c8d1b" => :sierra
-    sha256 "50200eb6f7cb61be39420d2e127eb4e2af9391a514f7cfbd26fa9203ca137d21" => :el_capitan
-    sha256 "4f7a202ead9c7b6ba1498be71c937500d64cad15ae451ec37c54a8fba70816a0" => :yosemite
-    sha256 "3208feb3c0055906ee163662c0d5b5cbe561222128a0979f6e159110973ee3fa" => :mavericks
+    rebuild 1
+    sha256 "7a87c7030dd01ca8ac9e7f4b095944bf7d744467d854c984af3e154c018e5115" => :high_sierra
+    sha256 "847706e57311b6db22515b3fe685baeadfca4a36969ba06ef4545d440768050c" => :sierra
+    sha256 "46d960b743cea8d607c7d2f34665300e79db12efadc7e697f0f22dfba45da1c9" => :el_capitan
   end
 
   def install
