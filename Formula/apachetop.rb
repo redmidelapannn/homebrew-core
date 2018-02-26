@@ -7,13 +7,10 @@ class Apachetop < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "e41dce58ad184e880c1f198ae1d5c0d0d1f1fc9fd27f1296a02a1b23e33c09cb" => :high_sierra
-    sha256 "3a3f3b20db8183a8c642ce732d9ecc3eac68ea1c292cab0594c3d5000c181442" => :sierra
-    sha256 "f1dd6f8ac7cb973228227b4cb678ef0bb61f618c482dc8d7d3144acccfebcf5b" => :el_capitan
-    sha256 "1cfb399a8548e1ac48d7cb61374e23273aa1eb289e49ba452aa2c55641fe5bae" => :yosemite
-    sha256 "78aa56c9141cfc658120edfb27e795cf178067d54f66c79fc752536d8e0335ea" => :mavericks
-    sha256 "d2383e14241b9af39c197462339393463ae6f8161dae508f49b0753dff846287" => :mountain_lion
+    rebuild 2
+    sha256 "38afbc04151d40dc81fd4921d51acdc83407d34bc6acd37b50b09453de3a9803" => :high_sierra
+    sha256 "b4e9afcdef433a7c6e7c6eeae09ae4570d41e99a99eefe3a0ebf963bde11683c" => :sierra
+    sha256 "fa7fc747849bab199d97af44709ff1f90e41b9afb60e5e556c7ba5d9c112be2b" => :el_capitan
   end
 
   # Freecode is officially static from this point forwards. Do not rely on it for up-to-date package information.
