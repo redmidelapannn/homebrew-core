@@ -10,9 +10,10 @@ class Imapsync < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c405d6b723342e7c0f2cac4c787248ae3711d695bca522acf64f6c87933f0a29" => :high_sierra
-    sha256 "0efae72d9a685e85d849c687c7442f7c9a58cf9e803c74775c66c0c6119fdc5a" => :sierra
-    sha256 "159df486c3ea16ae209b7dbfd487dad0d8fd79571adaf25102f253ed13abe314" => :el_capitan
+    rebuild 1
+    sha256 "2d6f68e86a6fc8df8f6e6c3a4a2c9a02205680ac75b7c5022b29bdf7395e9723" => :high_sierra
+    sha256 "a8f9219cd8e50038e92b4a86871e8bb5ee24928263d76d69043b87cba5eb7634" => :sierra
+    sha256 "ad7ac59b835ba004f80e3e73e410f435512aac271e32b390a5285cef91404b1f" => :el_capitan
   end
 
   resource "Unicode::String" do
