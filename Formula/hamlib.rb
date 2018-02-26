@@ -5,13 +5,10 @@ class Hamlib < Formula
   sha256 "a2ca4549e4fd99d6e5600e354ebcb57502611aa63c6921c1b8a825289833f75e"
 
   bottle do
-    rebuild 1
-    sha256 "60e67d17ef2573f5022e5bc85e70c0ca3bb42d273b9b079b465b5ec6108dffe7" => :high_sierra
-    sha256 "66d07ea64a912f95f989638124fe14658bfed6d34b609b50ce33691f06fae0ed" => :sierra
-    sha256 "d4e86dbc6d9bf5e0b4a1c1bce2471e90becf05b19b1c595952c94b3bda91e0db" => :el_capitan
-    sha256 "31a75a43cf17a17d35ee0c57048522e73de7c69f43279b45c766a903b5239372" => :yosemite
-    sha256 "6d9dd131db4baa70355822033257f822e029aa167b6c43643419bd75ef06395a" => :mavericks
-    sha256 "0e78439f806f68ae1ae36fa3e5315d13cbabf6da714571eec9816945a90b2985" => :mountain_lion
+    rebuild 2
+    sha256 "435aa01d0c0d8b0eb42e9450c8f27cd80148d98259bd29d4802a43f5ea9aa29d" => :high_sierra
+    sha256 "3a13ad6021ca10b54510f69491f6b1241c3e46ed5e0a2044579ab24c75519773" => :sierra
+    sha256 "3afbab9ea6146217b4f9b81821064e5a98dd3993b1f96b5ce6297dac36bc9b63" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
