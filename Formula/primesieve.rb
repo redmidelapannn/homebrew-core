@@ -6,9 +6,10 @@ class Primesieve < Formula
 
   bottle do
     cellar :any
-    sha256 "af3893734990e12ecea5f2137ceddcf0a96464b942c1e35bc9245355ccc1f20c" => :high_sierra
-    sha256 "6a4af4c35f124c87885009ee345d2f4d65514ce1441ac443723374913783f1b3" => :sierra
-    sha256 "ae3dde00955961cef5c8e46b5f8f7f9c2a9581e9cfc01ea31407d825a4cf0b7c" => :el_capitan
+    rebuild 1
+    sha256 "ca95acba7cf7bb290500afb732fb3374c8e3e86ed0723508cbc370411796f7c7" => :high_sierra
+    sha256 "3ccf8979896a682291dd9646628428c3cbdb6e821b4946e657f6fac317b04764" => :sierra
+    sha256 "e27109815b0c26de1160d28750defa236346869265a04d8b59fce867dcaa1bca" => :el_capitan
   end
 
   depends_on "cmake" => :build
