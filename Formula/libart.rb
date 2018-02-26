@@ -6,11 +6,10 @@ class Libart < Formula
 
   bottle do
     cellar :any
-    sha256 "c5ae59f4955fd1b4e3c49976b06609d56c5079d2b0f6e0675b356b1eb09181cd" => :high_sierra
-    sha256 "e9e14623ba0284a89dd09c7be72393619582c5d0489891cd1f654b6c26b0fabc" => :sierra
-    sha256 "18fb7a842650151fef102efadefa52aa12dc3f597ace95b8e25efe6518a65d2e" => :el_capitan
-    sha256 "006a9bf5e40ea99cdb4a10b7a2a2ac6a249f511254be1954a937dac0e50a6f0d" => :yosemite
-    sha256 "276eafd432499ab988a21d9e87104d744e82cf1adf4cc55d47639b1f72ab410a" => :mavericks
+    rebuild 1
+    sha256 "6960b09c88458f1f92db53993258199fc642761a7646e2dd1b5fc4c70c574bcc" => :high_sierra
+    sha256 "d7fa625ea8812a601acbafb82f7fb61ca5f7780c9908fc1509bf63cb18f1cc95" => :sierra
+    sha256 "cbc53f2b77b2a22af772f248c61233e1a4f08970457b7acb86e57476db79a52a" => :el_capitan
   end
 
   def install
