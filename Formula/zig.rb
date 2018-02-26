@@ -5,9 +5,10 @@ class Zig < Formula
   sha256 "fabbfcb0bdb08539d9d8e8e1801d20f25cb0025af75ac996f626bb5e528e71f1"
 
   bottle do
-    sha256 "2184016574a84b2c0a8cdedd95727a265bb6459d580348200722e4cf36b82ed7" => :high_sierra
-    sha256 "78b8bac1021aa558183c8f9d46a918c89378b6473a688f20713d9b9c85879562" => :sierra
-    sha256 "2862e1ca07f7150b31a034cb486351b7499f6c6ba9c8dd46015b5517a876c6aa" => :el_capitan
+    rebuild 1
+    sha256 "c75b1c24bcf3ca68161a040352fd2c818e3f6d570b0f55d32e5c09283d399d42" => :high_sierra
+    sha256 "22d012ce488a5d38e3b5c1f08a80114003625697725fa304f46b74da420d51a6" => :sierra
+    sha256 "b38b95626f10d460da0cebdc17cddb6dae83b5e1f7b0f7408f715a2c3c72ae72" => :el_capitan
   end
 
   depends_on "cmake" => :build
