@@ -5,10 +5,10 @@ class FreetdsAT091 < Formula
   sha256 "be4f04ee57328c32e7e7cd7e2e1483e535071cec6101e46b9dd15b857c5078ed"
 
   bottle do
-    sha256 "00870a22aefb2a8f0253b6a4657a02675eae56f37271c7142737e8b78cea7b46" => :high_sierra
-    sha256 "ab0419c2290e4204524a74de3e652e8fae23b9d29dce793554c38c79a28be947" => :sierra
-    sha256 "3e9bfe7bf16e71cc6a68e1296c4af381f40ccb68363edaf94f276393e05d8ac6" => :el_capitan
-    sha256 "55b8960ca59ecc738e5973451195da1b4133eb0e31559454e87c5b1f103337bb" => :yosemite
+    rebuild 1
+    sha256 "342bafc8dfbf0ebe116dc937078b01ec407a5ebf2baf065fcf3f3412c2796715" => :high_sierra
+    sha256 "057fc802d01720971f950b384119def28275ec8a33fbe72f5a6c12674b6c2e0a" => :sierra
+    sha256 "2c0d272ce5b0104efe4b5841d4b73f15f9f51c0fa55cd424b0a8c7301b514b58" => :el_capitan
   end
 
   keg_only :versioned_formula
