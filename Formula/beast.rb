@@ -7,9 +7,10 @@ class Beast < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7d04adbad7f141cc0e7465855a098e46c4c156e1ac59a400911e67ee1c62571d" => :high_sierra
-    sha256 "fd0b8225774ad857e296ca5fe8540ab21de86a5e951d963e2af5473f6e85a5e2" => :sierra
-    sha256 "30fa27c365bed00f62c399e7724044bfc2eef0e211ca7ca41211d01446c7a27d" => :el_capitan
+    rebuild 1
+    sha256 "5cc0bde13c8a0f552e98ab531272a6069db40695049cbc25a8506060bcf4aa1b" => :high_sierra
+    sha256 "8c32042a75b4f6e2ca28947a1b4f86792f7a23a4a31be99250d3501d7c0298ba" => :sierra
+    sha256 "8be6c1688b04f9da0512d3f2273b54160dfecd787fd23c97efe2cdb41e9bc9e1" => :el_capitan
   end
 
   depends_on "ant" => :build
