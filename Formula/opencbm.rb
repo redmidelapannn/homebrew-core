@@ -6,9 +6,10 @@ class Opencbm < Formula
   head "https://git.code.sf.net/p/opencbm/code.git"
 
   bottle do
-    sha256 "d9555da83fc70f801663f13cfc4ed34241feec72d29125fb12a2105fce414210" => :high_sierra
-    sha256 "6ff076233d442f7f15e22595623cf46c38cf1024997240bd48db1e4bb01c44c2" => :sierra
-    sha256 "6ba3fc869e59f002f6ae897cbb34b4ece023c11371c3d611453b330714b65cba" => :el_capitan
+    rebuild 1
+    sha256 "2d83be1d98782118288d9bf172fcefa15393e94be42cf79682d7d5d4186589ae" => :high_sierra
+    sha256 "3584cf03ec90bdb695fee6d46834bcec28037b22ddff4d314d76d501ebb14a6b" => :sierra
+    sha256 "c8b419cee585751aaa531ebbb222a2262ac4284d5641094cc5ebd662e4ed9dd2" => :el_capitan
   end
 
   # cc65 is only used to build binary blobs included with the programs; it's
