@@ -3,6 +3,13 @@ class Kickassembler < Formula
   homepage "https://www.theweb.dk/KickAssembler/"
   url "https://www.theweb.dk/KickAssembler/KickAssembler.zip"
   version "4.19"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f587fd73db24869abd5db0f4e76b57ab6f2a88ece9b1411b707135fd767af58c" => :high_sierra
+    sha256 "f587fd73db24869abd5db0f4e76b57ab6f2a88ece9b1411b707135fd767af58c" => :sierra
+    sha256 "f587fd73db24869abd5db0f4e76b57ab6f2a88ece9b1411b707135fd767af58c" => :el_capitan
+  end
+
   depends_on :java
 
   def install
