@@ -4,6 +4,13 @@ class Maxwell < Formula
   url "https://github.com/zendesk/maxwell/releases/download/v1.13.1/maxwell-1.13.1.tar.gz"
   sha256 "3ab7489d47f2ec04677122c8786cf573572b9bbb511b184802d2dcfe82e83781"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e57c1411b381334853172ffee488048d0ccd904cb7edbe7a73800ea29904bd58" => :high_sierra
+    sha256 "e57c1411b381334853172ffee488048d0ccd904cb7edbe7a73800ea29904bd58" => :sierra
+    sha256 "e57c1411b381334853172ffee488048d0ccd904cb7edbe7a73800ea29904bd58" => :el_capitan
+  end
+
   depends_on :java => "1.8"
 
   def install
