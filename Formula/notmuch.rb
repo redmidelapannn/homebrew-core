@@ -22,7 +22,7 @@ class Notmuch < Formula
   depends_on "xapian"
   depends_on "zlib"
   depends_on "emacs" => :optional
-  depends_on "python3" => :optional
+  depends_on "python" => :optional
   depends_on "ruby" => :optional
 
   # Fix SIP issue with python bindings
