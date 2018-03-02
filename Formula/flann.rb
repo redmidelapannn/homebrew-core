@@ -15,7 +15,7 @@ class Flann < Formula
 
   depends_on "cmake" => :build
   depends_on "hdf5"
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
   depends_on "numpy" if build.with? "python"
 
   resource("dataset.dat") do
