@@ -34,7 +34,7 @@ class Weechat < Formula
   depends_on "aspell" => :optional
   depends_on "lua" => :optional
   depends_on "perl" => :optional
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
   depends_on "ruby" => :optional if MacOS.version <= :sierra
   depends_on "curl" => :optional
 
