@@ -89,7 +89,7 @@ class Gdal < Formula
   end
 
   depends_on "python" => :optional if MacOS.version <= :snow_leopard
-  depends_on "python3" => :optional
+  depends_on "python" => :optional
 
   if build.with?("python") || build.with?("python3")
     depends_on "gcc" => :build # for gfortran
