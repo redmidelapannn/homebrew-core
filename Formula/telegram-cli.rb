@@ -20,7 +20,7 @@ class TelegramCli < Formula
   depends_on "libconfig"
   depends_on "jansson"
   depends_on "lua" => :optional
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
 
   # Look for the configuration file under /usr/local/etc rather than /etc on OS X.
   # Pull Request: https://github.com/vysheng/tg/pull/1306
