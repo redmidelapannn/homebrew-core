@@ -14,7 +14,7 @@ class Whitedb < Formula
     sha256 "aa86b2acca68b9999ecb4cb9da7c64f659a97ffbd50d7aeb78c021df13866474" => :mountain_lion
   end
 
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
 
   def install
     # https://github.com/priitj/whitedb/issues/15
