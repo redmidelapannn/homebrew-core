@@ -16,7 +16,7 @@ class NetSnmp < Formula
   keg_only :provided_by_macos
 
   depends_on "openssl"
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
 
   def install
     args = %W[
