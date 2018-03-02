@@ -31,7 +31,7 @@ class Thrift < Formula
   depends_on "boost"
   depends_on "openssl"
   depends_on "libevent" => :optional
-  depends_on "python" => :optional
+  depends_on "python@2" => :optional
 
   if build.with? "java"
     depends_on "ant" => :build
