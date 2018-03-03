@@ -7,6 +7,13 @@ class Up < Formula
   sha256 "f8a123c282c959ea3f7ba4cc0cebbfcd124a7dfd807d34c0f13dcb795ad1b5fb"
   head "https://github.com/apex/up.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "160edf0e630111d4f6d4f5e0da6ad8bba0af28115de72f326cc186cbc051efad" => :high_sierra
+    sha256 "f159549b3dcefa57c316cb2d83b9f7e58f576cc07a5ca3d8c87d17472b7ebf64" => :sierra
+    sha256 "7ea4deec126aee9f4913578b9fc9d5b42a9a1d3b04c399bd49b377bc3b3973f6" => :el_capitan
+  end
+
   depends_on "go" => :build
   depends_on "dep" => :build
   depends_on "go-bindata" => :build
