@@ -3,6 +3,7 @@ class Geckodriver < Formula
   homepage "https://github.com/mozilla/geckodriver"
   url "https://github.com/mozilla/geckodriver/archive/v0.19.1.tar.gz"
   sha256 "f590ddfef42995a23e781b52befdbc2ac342bf829008e98d212f2e1e15d9f713"
+  head "https://hg.mozilla.org/mozilla-central/", :using => :hg
 
   bottle do
     sha256 "469b6c642b0029195c94eacf68cc4b8d90a51fcd39f1c6eee7a38b74face0f35" => :high_sierra
@@ -13,7 +14,8 @@ class Geckodriver < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build"
+    dir = build.head? ? "testing/geckodriver" : "."
+    cd(dir) { system "cargo", "build" }
     bin.install "target/debug/geckodriver"
     bin.install_symlink bin/"geckodriver" => "wires"
   end
