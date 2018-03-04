@@ -1,9 +1,17 @@
 class Geckodriver < Formula
   desc "WebDriver <-> Marionette proxy"
   homepage "https://github.com/mozilla/geckodriver"
-  url "https://github.com/mozilla/geckodriver/archive/v0.19.1.tar.gz"
-  sha256 "f590ddfef42995a23e781b52befdbc2ac342bf829008e98d212f2e1e15d9f713"
   head "https://hg.mozilla.org/mozilla-central/", :using => :hg
+
+  stable do
+    url "https://github.com/mozilla/geckodriver/archive/v0.19.1.tar.gz"
+    sha256 "f590ddfef42995a23e781b52befdbc2ac342bf829008e98d212f2e1e15d9f713"
+
+    patch do
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/8920856c/geckodriver/bug-1435830.patch"
+      sha256 "578cdb22803c2f6ee00e8e0b1ca6fcde622c743572aad7038dda0d63cbce4500"
+    end
+  end
 
   bottle do
     sha256 "469b6c642b0029195c94eacf68cc4b8d90a51fcd39f1c6eee7a38b74face0f35" => :high_sierra
