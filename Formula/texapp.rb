@@ -6,9 +6,10 @@ class Texapp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6615c40b9f733227163ad90b0082c40e7a5885c8ffa36dcb6c5892c09367c279" => :high_sierra
-    sha256 "6615c40b9f733227163ad90b0082c40e7a5885c8ffa36dcb6c5892c09367c279" => :sierra
-    sha256 "6615c40b9f733227163ad90b0082c40e7a5885c8ffa36dcb6c5892c09367c279" => :el_capitan
+    rebuild 1
+    sha256 "4e671e7f398f441c462fd8fb60222a3e664b6efa7b729659d2bf0384ab9a5228" => :high_sierra
+    sha256 "4e671e7f398f441c462fd8fb60222a3e664b6efa7b729659d2bf0384ab9a5228" => :sierra
+    sha256 "4e671e7f398f441c462fd8fb60222a3e664b6efa7b729659d2bf0384ab9a5228" => :el_capitan
   end
 
   depends_on "readline" => :optional
