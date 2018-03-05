@@ -7,9 +7,10 @@ class Keystone < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb281d9882f991ce15f0c7c421af9af9ed7f9ac1d563bc6bbe5ff7ce5352617d" => :high_sierra
-    sha256 "b6cd1a7208fa16627366dfa4ba297edbf1dba6baf01a031d830b292e0e6cd019" => :sierra
-    sha256 "25a45e702238530539973a7a28ffdfe5aa512be3cd639b3247895d11d6f9576f" => :el_capitan
+    rebuild 1
+    sha256 "06c5d18dc1fc8a09ea7342ba16c720eb65e9bf6e9bd9929701239924fd3a6c47" => :high_sierra
+    sha256 "1308660dccc884f14a1184c8435ca2f7d0d3e3adb2e0073800297a6976fd2faa" => :sierra
+    sha256 "7eabb20d599bec123962411847d9e149c1981646e630221beb14ac3928f7fa0b" => :el_capitan
   end
 
   depends_on "cmake" => :build
