@@ -24,10 +24,10 @@ class Freerdp < Formula
     end
   end
   bottle do
-    sha256 "849254a5206feace01a07302a2e483c82cdc2403b85c6ad6a13917da19a53fb4" => :high_sierra
-    sha256 "429e7a072afb895dbb2dd35a5d0ec64d6225c42af1e81c415454edd94336a5cf" => :sierra
-    sha256 "6f7c7f1ccfe392cdd983e53ff662f7dae3c2ea94f47637760dc2e41fb707f172" => :el_capitan
-    sha256 "a371c32a6fd8c6ccd28dad7260ecc84b042128f157aa85f2e2ffe9efcc19e0bc" => :yosemite
+    rebuild 1
+    sha256 "d55f49aa1bca255916ae25a34f9dcf0e2276b27411dbf74231964f22aafb8e24" => :high_sierra
+    sha256 "ff7081815da046ea3ee0127e353f0d26a6a240949707ed4122e4e0e77a15476d" => :sierra
+    sha256 "5be56f102de133fd20b56cd2aca8f7ab997c39244c5f9b163b73fa3fbbcc694e" => :el_capitan
   end
 
   devel do
