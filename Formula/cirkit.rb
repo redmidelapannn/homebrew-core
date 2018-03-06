@@ -6,6 +6,13 @@ class Cirkit < Formula
 
   head "https://github.com/msoeken/cirkit", :using => :git, :branch => :develop
 
+  bottle do
+    cellar :any
+    sha256 "e5da8d0c100c777e26e2ff4ce7a1aeba2c7ee634467c57d40fc3f56ec28c0923" => :high_sierra
+    sha256 "3e6dfb543ca9b030d4f46b814c3397b418a3b1401902fc09a8e9e113b9d3f745" => :sierra
+    sha256 "e19a7dd5393caac1cb533a1eb583ca3e167bcabe9c3197305d28376956b602a6" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "gmp"
