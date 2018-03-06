@@ -6,9 +6,10 @@ class GoJira < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "146cdcca1cfcf0c950fea209100769aa9832bee22c924cb21f8da1e13433b1f1" => :high_sierra
-    sha256 "f5710f28a79317fcbe98eb3bb6674e78d957811e4517266b09dd3375915dc03f" => :sierra
-    sha256 "3c97af966b4ef4dd2ef1df1f7982120785ecc2ab5b3b58148b2913a0de7e5ad1" => :el_capitan
+    rebuild 1
+    sha256 "0c1c6afad6b1d519925557e60ad9a05983c4c23bc35294c2b3d018975edf31af" => :high_sierra
+    sha256 "d2a88a1545c4e64fc68ba843a4c509977acb5292d9747b933d29bf090b9616c4" => :sierra
+    sha256 "fa9ac035f3df337690ec4eee54bc1b1f14b8b4991015e60c6d1254580ae9e5d0" => :el_capitan
   end
 
   depends_on "go" => :build
