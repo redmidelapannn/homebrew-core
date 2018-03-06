@@ -7,10 +7,10 @@ class Pygtksourceview < Formula
 
   bottle do
     cellar :any
-    sha256 "9582384dbab4ec015a32617fba8bf87e05c28d5fd15b3fcbdc4345e75fb23d40" => :high_sierra
-    sha256 "2977f3362dde914537ab9e43afb9d248fe59701465d422d9e6d83a2a1b37d1e6" => :sierra
-    sha256 "42d3f3836f0a32f68b9537b9b4f6696da118fd3d5e9154b338c9fffb50e77e43" => :el_capitan
-    sha256 "a5ad125288cf06f63460588298bd0d20395f0163b8b599f77e470e0567dfbb2c" => :yosemite
+    rebuild 1
+    sha256 "6df393a5302290616ba46a31723be8fdeb78041279e720c962b7820b5c36d440" => :high_sierra
+    sha256 "acac4a283cba2dd2fb2b9dcd92897a35e9993e6fe544f946cd61e55a199f8a1b" => :sierra
+    sha256 "14dabb273ddbf89761be7b973ae545255f25c603ed544f3a162e30cbf5a95a42" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
