@@ -5,10 +5,9 @@ class Nest < Formula
   sha256 "afaf7d53c2d5305fac1257759cc0ea6d62c3cebf7d5cc4a07d4739af4dbb9caf"
 
   bottle do
-    sha256 "4f7d765cd75ae3272ce15bb293c20a6cdfc9ccb551f0a07d00016c75ae0ef267" => :high_sierra
-    sha256 "60e4b0595c5d11003ffe1eca3fdca3c197b8711336ead21eba67620db96454c0" => :sierra
-    sha256 "8a4c8e6d0d2e4ce93d76af73197c693f8c303095800e82b7266b922848f1a39b" => :el_capitan
-    sha256 "6207dea13f90b17a95313b964323f7971cd5e2507a38b0ffd5d64b2f346e7851" => :x86_64_linux
+    sha256 "6d2a3e9f0800f760e6160b3c0cda871a8a9ec24e4720a25bf62485d02db28f8a" => :high_sierra
+    sha256 "1b88915522e3e13a6d3df39fe23cb8333db80da9e7bba9207d8ff58dd4b55173" => :sierra
+    sha256 "774ef1397701b4352965311f2c5dbc08d86b256c601eee88120007dc933ecf91" => :el_capitan
   end
 
   # Add patches for matplotlib removal in upstream:
