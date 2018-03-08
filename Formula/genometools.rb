@@ -7,9 +7,10 @@ class Genometools < Formula
 
   bottle do
     cellar :any
-    sha256 "41b8f4a189050f98d0f78c3972d8efb095a2eea8400c486eb6d785a3f89cadae" => :high_sierra
-    sha256 "b081ac73906f972a1858d86070d6d79ad3985e703f347c1fe49b0511e15e0232" => :sierra
-    sha256 "06a7a3d2450c7c6538f2005d12135e8a26e2d086fc6f1d5867e9fe03fcce9833" => :el_capitan
+    rebuild 1
+    sha256 "0a836fe5686ef5a3ceaf6b2cad6a74f6be5440429a60ade5ba7618adc59b48cd" => :high_sierra
+    sha256 "e78e3a1fc57c55db372ede957648c9560f4e44951438168e09b44de411b58242" => :sierra
+    sha256 "dca14267b810d94b5861e2778526e39098fdc7cf6c733c5d3f5d7777c3db4a44" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
