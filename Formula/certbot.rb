@@ -11,9 +11,9 @@ class Certbot < Formula
 
   bottle do
     cellar :any
-    sha256 "8f15a640368df61b7d55bed5424a5d298abdf15bc87ad62665d22e54f792f822" => :high_sierra
-    sha256 "8561ac9c3b9e51d0839253e312019d0f82c94c242e2437be5ce3c345c5e59c5e" => :sierra
-    sha256 "1ece61b233c6ec451e1993ad235409ffd616ce162290c913727560954330e0c9" => :el_capitan
+    sha256 "deb0750e4f54e4a0a098d16e7b604d24983c4a4b6062579f49b92fb662b4759b" => :high_sierra
+    sha256 "c2470bd1aca4c48868868f7eed6ab60259f269082c53a0d48c13d6ab36ba68e9" => :sierra
+    sha256 "c8f0ef750f7ae9c4b2770f7e5158d8ae94a972a8e1273b733efe652331684480" => :el_capitan
   end
 
   depends_on "augeas"
