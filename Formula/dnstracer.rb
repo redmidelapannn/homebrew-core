@@ -7,12 +7,10 @@ class Dnstracer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "29086b127a2967e8e481c60e397fe803165be2d1ad46be7176642567d8844cc0" => :high_sierra
-    sha256 "4d89811df14c8564d1ad2dae5a2f45f5e11a51f7b7ecb5f75f692b9507451b7b" => :sierra
-    sha256 "d90b34cfc2d03af3c80ef6118484ddff05863a0e4d9a7a5db8bcf3801bcb3414" => :el_capitan
-    sha256 "13eaef32eb5d1dd11e71adeb6abe9bd43200a219951648d0d4eb707ea935c542" => :yosemite
-    sha256 "d4b8c5352a711e86091779e6565f752828af549c5806fdf3d58cb572e977aaa4" => :mavericks
-    sha256 "cb878a09be7de0d7a3e354c086a74d6de61b9e53f4ce499c931706f24598f3ae" => :mountain_lion
+    rebuild 1
+    sha256 "4c03c4115a747ef87f931628cf9d3506d6649793dac82f46804e3fcb9b416adf" => :high_sierra
+    sha256 "7f4f1a2ddb7491e0fe57ef0192a9af28147c85e69bb4ffc874777f49499b35ad" => :sierra
+    sha256 "7822ec8a8a7b10321c1e7821c6ad9794367f60023a8813da277ce55f30b03465" => :el_capitan
   end
 
   def install
