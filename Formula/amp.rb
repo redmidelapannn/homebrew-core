@@ -5,6 +5,12 @@ class Amp < Formula
   sha256 "c950560292984d135ed5c92c87a2969a7b2b2d3ab97c5d4d5f66075edbc95169"
   head "https://github.com/jmacdonald/amp.git"
 
+  bottle do
+    sha256 "76c56fce963c2162c8c122332b03b09a5ad18dd0701ee34423c4d642d9eb0a8d" => :high_sierra
+    sha256 "4169c788e04f82549d4d59eea021875e2d781badbae9ec47d2f1df62169a0215" => :sierra
+    sha256 "7561f3016672413ce39d92269e28015b5d71a564a733c54b0cb3baf5d540f3bf" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "rust" => :build
   depends_on "openssl"
