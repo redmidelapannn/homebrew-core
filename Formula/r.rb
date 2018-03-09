@@ -6,9 +6,9 @@ class R < Formula
   revision 2
 
   bottle do
-    sha256 "49f0c4d16ae8ee11cbb06da9d2ed10371e3d1099117f72b0850ab3a47d88c514" => :high_sierra
-    sha256 "d4cb1268d6adeb1ee6be0e85b7f1f257277f3fd9666f3a9ab0e1b24b216ce2ab" => :sierra
-    sha256 "361c2934f40bc20fca7e0db3c25291095155a473c663f64a0b028f9dd7c0940d" => :el_capitan
+    sha256 "ee5d8f5c46078666b7a2e79180303bb11636b76b3c45ca3238989f15dd34d61f" => :high_sierra
+    sha256 "c0e3bed5d88d103a425e990f0d9ded643b8f99dd272327266d44c929db1ab54f" => :sierra
+    sha256 "27f2e3c8c2906ce3a60654b1432f3eb964cd59bd447f2e3dabc2540691bcc6b6" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
