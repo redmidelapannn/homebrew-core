@@ -6,9 +6,10 @@ class Par2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "569f6c3227a6e65de30991c3b921e321cb3b5e4e85e341042b2e3fcb00d2685e" => :high_sierra
-    sha256 "85ca540e5daeb33c115c6cc37ae2bcb52b4db822679471ccf31598125f475d63" => :sierra
-    sha256 "d6e135782c3e4279e2233cba53d5fc62dc6ea3b5c8f0d2c07c653cc66cac2bcd" => :el_capitan
+    rebuild 1
+    sha256 "78a6b4ef2ef1d3785e51280c493f1206a9b2c1b55b7adba2403612aa0d17dbde" => :high_sierra
+    sha256 "2924b769db754907e12025d332a1cb227b4953c3350982782e561f3691caae92" => :sierra
+    sha256 "36b3991860c78ffc40be60a45bba36614b233d0274540a410b4240c557f62cec" => :el_capitan
   end
 
   option "with-openmp", "Build with OpenMP multithreading support"
