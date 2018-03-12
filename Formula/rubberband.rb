@@ -20,12 +20,10 @@ class Rubberband < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "b05e8e38194a9b067ccfa2df621d4f36b7d4bb24b0fb61bd2dc430b5bf5b7ddc" => :high_sierra
-    sha256 "fd0d92643b23e338992204be763362480ffd8ee54c407908bf0dcd589d066b68" => :sierra
-    sha256 "ec6ec212a0173ba661601b2fb5ae1dace5dab1100688d3b5c9a460796eae705b" => :el_capitan
-    sha256 "6a62c8da1d779672bf0ef276656b2dfa5edf885e704a875c606a27b9aea863fe" => :yosemite
-    sha256 "5ca9579f1b84a3a843e5b52654f41b25e4c02fdc5df05a0966c6d8627843dac4" => :mavericks
+    rebuild 2
+    sha256 "3b8b51915f2339fcc7929e16cdd49f208505199e0a0c4a4fffdd3ec948d2fbbd" => :high_sierra
+    sha256 "ab20b0d3ac080afecb597907be354be1fac78db82292e96d2457980b0dd2c589" => :sierra
+    sha256 "0bd09892a9cfc9592bc4aa1ea870efa030339eaa7fc18b657b5bf067d5e18ff9" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
