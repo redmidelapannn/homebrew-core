@@ -25,9 +25,10 @@ class Nethacked < Formula
   sha256 "4e3065a7b652d5fc21577e0b7ac3a60513cd30f4ee81c7f11431a71185b609aa"
 
   bottle do
-    sha256 "d2c880eb02b32bc6a976b16502f400a94b395375b5cd59e731fb209580e3ceee" => :sierra
-    sha256 "dcbe9a404fb0215e35dc9d08e73595ba8dadad55e6ca898078a66ce04c9dc11b" => :el_capitan
-    sha256 "08b24568c94b14271e5d1b2880a0a78e6eea5cbbabfb9519347b5be1d2cc0893" => :yosemite
+    rebuild 1
+    sha256 "c7dd8f0daa73a4939df3e8ff3b522eebdbe99ed92c0df5fe9a7857fa47445254" => :high_sierra
+    sha256 "c8dd16688a36ceea56228d4812e84b57d29997bbede78a166f62487818185341" => :sierra
+    sha256 "b092fef3c6255e0b86217c9064dc46c399d5893257f4a63692def70f5e349297" => :el_capitan
   end
 
   # Don't remove save folder
