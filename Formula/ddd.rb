@@ -7,9 +7,10 @@ class Ddd < Formula
   revision 1
 
   bottle do
-    sha256 "c37e9851b799befc425280b8e62e2c7b12dc79ecf46eaed9e740f9e2ef87d373" => :sierra
-    sha256 "0effedf657591027f917ea1dd048e32e136da61490ba64a51e1b8dddad17acdf" => :el_capitan
-    sha256 "9753fcc17d509faf60b8566da742c8eaaefc2e52e5d360366b6fa827a61c733b" => :yosemite
+    rebuild 1
+    sha256 "c76e90f231da8a232c081b5d1c37c615a16a4143dfcb64bd50a08de70dc1024a" => :high_sierra
+    sha256 "c903ebe6666b54f8a427c13061bea0fd1d6957d4a5e8d58783739d8c547cc41f" => :sierra
+    sha256 "f20dfd22f44e240a28fbefc993b9aef9c42e6c5a81c6c80612a438355b5804cd" => :el_capitan
   end
 
   depends_on "openmotif"
