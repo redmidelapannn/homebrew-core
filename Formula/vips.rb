@@ -5,9 +5,10 @@ class Vips < Formula
   sha256 "f85adbb9f5f0f66b34a40fd2d2e60d52f6e992831f54af706db446f582e10992"
 
   bottle do
-    sha256 "25f44ca911e94f5590407365eb7a04faaf973bfa8be8979f889b91a6b559256b" => :high_sierra
-    sha256 "236d724ea332f2081c58ae0aed377daf655698c84971284843db4f119c1f6ac0" => :sierra
-    sha256 "618ad45f5acc03cdf7f77439956d8e1ba948efc4a88eb452b85ca1c73ba80af4" => :el_capitan
+    rebuild 1
+    sha256 "90c710bf69be834a5837ca0b38d7cd5aa1d8ee57396ed4f4ef98af04d6cd5233" => :high_sierra
+    sha256 "275cb4d11c7c30a0f058b15bead5aa2b69d48c6e21b2bc1da5865cd35ac50c9a" => :sierra
+    sha256 "239363151ee7f8736346b018aecf08cafae60751c0f4c3e332e555ae8db36afe" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
