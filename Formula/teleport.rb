@@ -21,7 +21,7 @@ class Teleport < Formula
     ENV["GOROOT"] = Formula["go"].opt_libexec
 
     # Reported 21 Feb 2018 https://github.com/gravitational/teleport/issues/1708
-    inreplace "Makefile", "-j 4", "-j 1"
+    inreplace "Makefile", "-j 3", "-j 1"
 
     (buildpath/"src/github.com/gravitational/teleport").install buildpath.children
     cd "src/github.com/gravitational/teleport" do
