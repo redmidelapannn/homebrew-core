@@ -6,9 +6,10 @@ class Neomutt < Formula
   head "https://github.com/neomutt/neomutt.git"
 
   bottle do
-    sha256 "c00efc604fc47b33502594bd164190e0864bf12b2d6490074529d4c38a92ffad" => :high_sierra
-    sha256 "50a45599e372e0662306f4fb4b5a49cdfaf9e13a3bb25fce4992e3177b734244" => :sierra
-    sha256 "089407d9e5b6743ad574e259e3a7efa7179f6ae16cd9594c4bdcafff2cf626f0" => :el_capitan
+    rebuild 1
+    sha256 "8951d43016e0a41f16583559e21e4d0361dff10cee39ceda76ba9db7788a0b48" => :high_sierra
+    sha256 "734e5f9c0022b42707c4037b08a451921c70ac91cfcf1771dadd3e13745d557c" => :sierra
+    sha256 "94594e1071e9d083f743296583da9e77b2c118653aa7be538637892e6f13b34b" => :el_capitan
   end
 
   option "with-s-lang", "Build against slang instead of ncurses"
