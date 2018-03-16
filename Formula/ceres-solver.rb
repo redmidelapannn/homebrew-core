@@ -9,8 +9,13 @@ class CeresSolver < Formula
   bottle do
     cellar :any
     sha256 "f6df97e01cf7ca228bd8c64fcd301b822146670a615e0a3b47876209cf0bb251" => :high_sierra
-    sha256 "fdfbceefc7aea2f89ff72ee1ff6229535a12881997a68aca4f6b983b1c3662f9" => :sierra
+    sha256 "44c9fde3416688c1804188a9c15dcd4b3cfdf7cb27ee29c5f3b7531b23e122d9" => :sierra
     sha256 "14835cb26577c3385d5f75d37295d758e82c039b954c0aa38c7cf0bb99cc1215" => :el_capitan
+  end
+
+  devel do
+    url "http://ceres-solver.org/ceres-solver-1.14.0rc1.tar.gz"
+    sha256 "44c9fde3416688c1804188a9c15dcd4b3cfdf7cb27ee29c5f3b7531b23e122d9"
   end
 
   depends_on "cmake" => :run
