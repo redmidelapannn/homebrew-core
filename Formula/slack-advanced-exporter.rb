@@ -6,6 +6,13 @@ class SlackAdvancedExporter < Formula
   url "https://github.com/grundleborg/slack-advanced-exporter/archive/v0.2.0.tar.gz"
   sha256 "7aaf68249512a8000ae969742aeaad77bea3997915e35187a0c45f7d69728fdc"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1f270dabcba219961b6f555043c880d39d19556845e19bf1b086db82255b7674" => :high_sierra
+    sha256 "0a8d7154ddff40520c9f871ea2e72b7e9754f99a51f91b32bfef8ae72bc66c15" => :sierra
+    sha256 "c578bf62afbdea4586be8b43bbafea06e327ef7baceb6f767a078efe2bbb5511" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   go_resource "gopkg.in/urfave/cli.v1" do
