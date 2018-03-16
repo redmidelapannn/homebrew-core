@@ -16,6 +16,7 @@ class StellarCore < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
+  depends_on "pandoc" => :build
   depends_on "pkg-config" => :build
   depends_on "libsodium"
   depends_on "postgresql"
