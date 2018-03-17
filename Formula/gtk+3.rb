@@ -5,9 +5,10 @@ class Gtkx3 < Formula
   sha256 "a07d64b939fcc034a066b7723fdf9b24e92c9cfb6a8497593f3471fe56fbbbf8"
 
   bottle do
-    sha256 "f0da1db055be144b29224fb08f0e568f632afaff4eaf244d4ac96dc4f0acc8f8" => :high_sierra
-    sha256 "f2817d29594658a94347ace594c77dbc80ee278569cc58dae5b97bb45867e626" => :sierra
-    sha256 "5ab8f3d5e6d1b83272cfd5db9bd637cb9e92060068a7ebb5ede87491233e902b" => :el_capitan
+    rebuild 1
+    sha256 "eac27038b5ab6725b6e3450314354e100af1419535e2d8382eba06b929335a3c" => :high_sierra
+    sha256 "52394aa7b2861d1e415fa3360cad5d212dc69e0312462f27b300fdfac82adc88" => :sierra
+    sha256 "9fe3ac9bb7f077ec816fa7f84aeba97841808becc2bb5a99bb231e73c69c2eec" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
