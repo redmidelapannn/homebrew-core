@@ -4,6 +4,12 @@ class ManDb < Formula
   url "https://download.savannah.nongnu.org/releases/man-db/man-db-2.8.2.tar.xz"
   sha256 "45bdff87df888ddd93dc2a68abca91a2012d6e08333a8fc7c0dfefe9cbde0c5c"
 
+  bottle do
+    sha256 "85c3555a79eef828b9602544f8ba555957427f477a81aa1f3db3a416613c332b" => :high_sierra
+    sha256 "fdd0d865b1f7614f02a1d82a607102b0390bfbe3222d19150f4b1220bf88e6bb" => :sierra
+    sha256 "fa30e32353b8ee5381e2191e0a32861c7a8633ac7a7647c2359df3ecadf3a050" => :el_capitan
+  end
+
   depends_on "libpipeline"
 
   # First patch explanation:
