@@ -4,6 +4,13 @@ class Libpipeline < Formula
   url "https://download.savannah.nongnu.org/releases/libpipeline/libpipeline-1.5.0.tar.gz"
   sha256 "0d72e12e4f2afff67fd7b9df0a24d7ba42b5a7c9211ac5b3dcccc5cd8b286f2b"
 
+  bottle do
+    cellar :any
+    sha256 "3dd8d34f28fb59c2ab385f6d73e238499db5e01e32ff0e5115a62d527cc96801" => :high_sierra
+    sha256 "c8523c67014f7473eed7b1a2d895d1f3e7d12d23d96f2e0f0421d47a8634f249" => :sierra
+    sha256 "7c12bb6f6fbae7211ae4f6becab3a84343661e4d408912f0d17496c27682362d" => :el_capitan
+  end
+
   depends_on "pkg-config" => :run
 
   # Patch explanation:
