@@ -3,8 +3,8 @@ class Legit < Formula
 
   desc "Command-line interface for Git, optimized for workflow simplicity"
   homepage "https://www.git-legit.org/"
-  url "https://files.pythonhosted.org/packages/dc/bd/c24a5a5d285d2f92ac142cf5974ad5a7d52976c13b150713880e8b01c617/legit-1.0.0.tar.gz"
-  sha256 "53a67ad7a7caefab7a6c28a76d7967022e2aee956993b1b074cc4d8c78cc1500"
+  url "https://files.pythonhosted.org/packages/44/72/a086485566cf7b5ff7b6858b7dc144c76323e021d88f455ceacd5a6c02fd/legit-1.0.1.tar.gz"
+  sha256 "e71c2dd4139afc0e4b8c2d1b5ab1265ad930e2cc8e4d6badf92923cee4e5baff"
   head "https://github.com/kennethreitz/legit.git", :branch => "develop"
 
   bottle do
