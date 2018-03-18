@@ -5,10 +5,9 @@ class JsonGlib < Formula
   sha256 "2d7709a44749c7318599a6829322e081915bdc73f5be5045882ed120bb686dc8"
 
   bottle do
-    sha256 "ef94f622668cfdc0bbf6f9788ab9b41742fb9c6e80639e0212e4d33fdba8af4f" => :high_sierra
-    sha256 "3faa6b4be8e06f768fc550e7373edccd09ec308e00a65fd48a01eb46f0d77bac" => :sierra
-    sha256 "d26028a584955b8ebe2002261ccd34cd8ef8b5f287b6da211276fb981bd405dd" => :el_capitan
-    sha256 "6bd1f2ed688b6f637a942400d55fc6f4e51db40887421a80b1ffcce185d3e084" => :yosemite
+    sha256 "b06e67109a5bc398ad5a8efe84ddc03af363bd590c2c6b224b4f2a606205cf17" => :high_sierra
+    sha256 "68ca99816b5e9d7a2435e9829a7c73eedef1714bb1806e97f3e664e9ef7d5902" => :sierra
+    sha256 "ba68be8aa9eeb8aeb96da5d18a5d91eb7b3d28e367057ff5d546cfa8217fdb49" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
