@@ -7,9 +7,10 @@ class Pngquant < Formula
 
   bottle do
     cellar :any
-    sha256 "15fab42baf4df4cf6fb56554024eed3ec28fd94ebcedd7075acfb5fcc5ee5291" => :high_sierra
-    sha256 "d5c88987657ada8f05f0632701d691fa518815ba5b084f9e31c77722700d4da7" => :sierra
-    sha256 "5ee791b257c7ca2a3cd08f87adc5f674b24ab08a3384f7f8745f72f166e3fea3" => :el_capitan
+    rebuild 1
+    sha256 "8e9e90fb30ad2672960a8b1523dc42d1f3f3851c5e29779df85cfcf08e6de7c5" => :high_sierra
+    sha256 "70402300e35984ac3c1a4661091a44f6e66926a4036737fcfced7b28310efaf0" => :sierra
+    sha256 "fac5fcda9da72744f38b35534f04ad4213cb55c8ad7a4c629e7311f50c9d9e40" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
