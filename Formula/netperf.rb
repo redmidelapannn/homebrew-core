@@ -7,10 +7,10 @@ class Netperf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "cf086e0d276a572aba8318f7080cedc94b36a7b612cdbb4bcc3ceefef0080c53" => :high_sierra
-    sha256 "4d3f648081c84ad697d608b56bcfce3237de7c34c4e4a53d9851628f9d50cd5d" => :sierra
-    sha256 "c6e96625b1f83a7f83d3c9b53b8584ab65d73cfd59bc38672588ba82d37ecc1d" => :el_capitan
+    rebuild 2
+    sha256 "ce53a4bd4b180b52421b7e1d8226a92ddd8ac1cebb8186c0bafb90ca6531f7ff" => :high_sierra
+    sha256 "07a2f89374c745d02dc49df9760da13ab53b10c12c23a9780612ef9c95a92fcf" => :sierra
+    sha256 "2bbbf61286858bef63cc48365a7138770af1512cda158c8b3274e7f465188ee1" => :el_capitan
   end
 
   # We need the patch to build with demo mode on OSX. This is already fixed in
