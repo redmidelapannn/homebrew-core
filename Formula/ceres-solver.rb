@@ -8,9 +8,10 @@ class CeresSolver < Formula
 
   bottle do
     cellar :any
-    sha256 "0b17248fd221429a82b9bbcb4057be1b5094c75cdf58101975e2392b4b748179" => :high_sierra
-    sha256 "04c2e77155bc5deb98550cc72fb555d9f10577174f8c6eca242b3385c872a7cd" => :sierra
-    sha256 "1f6c27b13b15437d6a23dac7b4cbefff7e14a4e234580cd7c76a2197b6af918a" => :el_capitan
+    rebuild 1
+    sha256 "c637755e31bc408f923713f53db23f532d0f16c15a2ba72d9b7d13d097eaaf54" => :high_sierra
+    sha256 "e70f89587bfd4c02c44f97dfdbacf794241c5da710b10d0caf05381471020959" => :sierra
+    sha256 "e07bc057774c5162ee85c3fab683b3e2bc13820c31a252da3df1fcbdcd411625" => :el_capitan
   end
 
   devel do
