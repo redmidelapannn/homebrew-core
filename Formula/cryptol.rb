@@ -11,10 +11,10 @@ class Cryptol < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "04ed08859f18cb0fdbc5c37b2db15f474ad241b908a06aeb0d890145d84fdf8b" => :high_sierra
-    sha256 "caad7d780203e43fd57a8cb0eb0d30e59bc7dea5bc258dfdf938b84e26a9e207" => :sierra
-    sha256 "6679c45e92d3093e89b54bcddeb1e107445afb47243a766b197240362c281d1a" => :el_capitan
+    rebuild 2
+    sha256 "d8efc21fd87a8794f4b8e9a7d514105a3d451c1fa674eff8a8c8f5f1ca6dc563" => :high_sierra
+    sha256 "74e8225c23eede7b9492ade0237165ddb48020b32d610a5f96b797696429a0e2" => :sierra
+    sha256 "8e635e99d3b87b7ff10a08462eaa980ddb65c0177e081d4346ccb3dd451c0f61" => :el_capitan
   end
 
   depends_on "ghc@8.2" => :build
