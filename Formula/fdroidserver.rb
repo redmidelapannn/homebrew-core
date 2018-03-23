@@ -238,7 +238,7 @@ class Fdroidserver < Formula
         f << ".\n"
       end
 
-      system "#{bin}/fdroid", "checkupdates", "--verbose"
+      system "#{bin}/fdroid", "checkupdates", "--verbose", "--allow-dirty"
       system "#{bin}/fdroid", "lint", "--verbose"
       system "#{bin}/fdroid", "rewritemeta", "fake", "--verbose"
       system "#{bin}/fdroid", "scanner", "--verbose"
