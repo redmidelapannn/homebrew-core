@@ -8,9 +8,9 @@ class Libressl < Formula
   head "https://github.com/libressl-portable/portable.git"
 
   bottle do
-    sha256 "d2abc3ab5d504cb47551a2cfb92a74891545dfad91286dd38c656091e8d8a904" => :high_sierra
-    sha256 "a122b93e665a7c20c98593267c13ab4a927a0e53517fd97458a4a2205e5f0f67" => :sierra
-    sha256 "5bd61a5f92787788895ff88aabd9bfd15e3661207c1c55610ff42e96a44ca771" => :el_capitan
+    sha256 "eeff98f32f79b95bf34aaf1982764b1ed380367477b872d40a4f9c01bb3d96a8" => :high_sierra
+    sha256 "a5fca01ab894306317c2ade4440da3a8d87c4f37639aa3570f7b96e68365f837" => :sierra
+    sha256 "eca39be39c6db7597c4b3d00f72221ce7db6e051db80c595f45814725c2e4621" => :el_capitan
   end
 
   keg_only "LibreSSL is not linked to prevent conflict with the system OpenSSL"
