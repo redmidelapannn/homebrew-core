@@ -6,9 +6,10 @@ class Klavaro < Formula
   revision 1
 
   bottle do
-    sha256 "de9f3cad2e98abd81d4c9597c3a90dd502aa2ac1586ef49f8f55f3a255d23654" => :high_sierra
-    sha256 "25a171b81e8e90d3c92625e89567abcf8ca6b8f326189e40d90714844bbbfa89" => :sierra
-    sha256 "298080d48f362d502364a1048a6dceb581137c918da31d68d526ffcc14118d64" => :el_capitan
+    rebuild 1
+    sha256 "26769ce683580ea27e7990efbb03d4fae6c59eaa06d2fc5be0bec19d89bb9fd2" => :high_sierra
+    sha256 "db8d262996aa286650fc02e054a6a57f6c1a44c392549c70347bbed3a83290d7" => :sierra
+    sha256 "4ff22d725097816747306d0484d76ffd9108c7ef5bdf83fd83b08264f3b9458b" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
