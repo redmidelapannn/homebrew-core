@@ -6,9 +6,10 @@ class Libchamplain < Formula
   revision 1
 
   bottle do
-    sha256 "f6164d934f20edac3cce56807031c6398ab4135ac2d1de189fa507d53646d4fe" => :high_sierra
-    sha256 "4cd4422e4ea30fb60d77bee37e96d2a221cf78d5cfbb56c7bd4ddff503dd9e63" => :sierra
-    sha256 "77dc11f2f53f414fb94db5a48c60827eeda2d54f296a6608aface2d7d7adcba2" => :el_capitan
+    rebuild 1
+    sha256 "e885ec6b136dd5230880b1fa3d952e955843a4f81a65ce8f254036ab101c5b80" => :high_sierra
+    sha256 "eb5d370719069b4b55af94cfd22ded0d18234e4c3373998e01fdb7399058c3a2" => :sierra
+    sha256 "2f21fc1be31d531b3a2c974936d1484776c136f21a38f773bc73edc50574baa2" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
