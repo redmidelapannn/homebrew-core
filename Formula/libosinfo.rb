@@ -6,9 +6,10 @@ class Libosinfo < Formula
   revision 1
 
   bottle do
-    sha256 "f4a54c53fe160f16818d4db569f8818a30c55e777c326982d140478fdd4c8b35" => :high_sierra
-    sha256 "538937526c8ad280e978e5e1dba5fa2d73ed6636d7962bc59bb0048a07b7d906" => :sierra
-    sha256 "1da58b656ab9eb087eb4d8b6990d40b4a5fd92fc4e0c08c561c139ad4fcef039" => :el_capitan
+    rebuild 1
+    sha256 "faece8e431ac829fe264ef983227297679f20b1b0babcbd5cb0edc93de73cb1f" => :high_sierra
+    sha256 "c4f50f193e87080362364f69a4bb59b0c0cb12eac045fa0e91807ffb84a843de" => :sierra
+    sha256 "ed241303410d5baf643e008a34a99ad3b6ce343782041b5d0ecfc020dee67379" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
