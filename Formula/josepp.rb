@@ -7,6 +7,9 @@ class Josepp < Formula
 
   bottle do
     cellar :any
+    sha256 "f26ad92d21ba99417d2e498535b9277885a592a78e0e9c68c69d031b9bb003a9" => :high_sierra
+    sha256 "12fae6005d0f312463feae94be2f7b0a8db70fec0db974ff3e064c7f1a185769" => :sierra
+    sha256 "0762cf63b134a236041fadf56bec24348a46dd1b6609a32b668a93522af3f55b" => :el_capitan
   end
 
   needs :cxx11
