@@ -6,9 +6,10 @@ class VimAT74 < Formula
   revision 9
 
   bottle do
-    sha256 "8530e454feb0fb5e3fa488badc2293a0901732a022a1c959816890aa6e0652a8" => :high_sierra
-    sha256 "eaf2ba742a899e19f5f34395abed9fd33b111364c70d6c57959654a5c69dbcf0" => :sierra
-    sha256 "59fe86d41360d632d1c2172cb8d3145c4f14fe0a843b48ea2f4698268da8b8b2" => :el_capitan
+    rebuild 1
+    sha256 "2b7b531ff5bb450898e3d05ba3646f476ff392e964b48a9cf3b067ab698021c1" => :high_sierra
+    sha256 "03cd37e8036e8d023cd962a1b41f27ecb29e268035ce3fef34d0899121ccddd5" => :sierra
+    sha256 "b6b15bef3e7b6d139b00b8cc98900b8518342360a65fd361d5ee7e211fdb9e01" => :el_capitan
   end
 
   keg_only :versioned_formula
