@@ -7,10 +7,10 @@ class Iamy < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "65aec3b7fda4554e1ae2d68a1f1828b237767d9d1b03e1a4010147dec671d07f" => :high_sierra
-    sha256 "0032e8af26d5f19e127680b3c2a46edf8acfcdcc43705ec28c59c29b5cb7cf8e" => :sierra
-    sha256 "e423ebfa60cb94e4af9d2bbe396c10791201f5be000da123981dbbce8bfca5fe" => :el_capitan
-    sha256 "7711c9a181026bbb9f662fa04b08da34cff6a3bc7744b5e7546e47bf1615b1b0" => :yosemite
+    rebuild 1
+    sha256 "eb8b630205490560e5bc85854aec5257052166f42f5501d8d95df0684b4f3576" => :high_sierra
+    sha256 "826ea714f03220eb5dfbf0fc83a87de95e948ba6b8f739b6039a2be8d1907f09" => :sierra
+    sha256 "0318cbb8e631beefa6ee8e6711e8b6a2f8b21d20f997c6d027f11190668f4061" => :el_capitan
   end
 
   depends_on "go" => :build
