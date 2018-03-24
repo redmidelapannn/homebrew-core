@@ -3,7 +3,6 @@ class AwsEsProxy < Formula
   homepage "https://github.com/abutaha/aws-es-proxy"
   url "https://github.com/abutaha/aws-es-proxy/archive/v0.8.tar.gz"
   sha256 "f1462dcfd75aa2a8e7e370f2cfac3241bcc44de3406181fc164b9c1f90315f2c"
-  head "https://github.com/abutaha/aws-es-proxy.git"
 
   depends_on "glide" => :build
   depends_on "go" => :build
