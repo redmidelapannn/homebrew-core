@@ -7,9 +7,10 @@ class Twtxt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9d8568efc50dbb4d9a4563d01d852755c87088220e4704bb0d867cc91a980306" => :high_sierra
-    sha256 "e2acb2fa1cd36efa4de3a739406c38bc5b778d00e4d0a74c359a6fb1167b4322" => :sierra
-    sha256 "f1a2d991ea0e742dd12092c521cb8d886a4c6800b2d1d2aaeefa325f642d6eab" => :el_capitan
+    rebuild 1
+    sha256 "47928825f90a6cc2ea5d3b5e09c8fa1e910587e703a81845b5a5efcd6c9b26d2" => :high_sierra
+    sha256 "d83256528734ccddec41cda10cb5537995443b991f9e3b2911f80519cc99459d" => :sierra
+    sha256 "36e98693134667e778edf32d22ef0bd2a7671492e0b1628908398d5167ef4a1e" => :el_capitan
   end
 
   depends_on "python"
