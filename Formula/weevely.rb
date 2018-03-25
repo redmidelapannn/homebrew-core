@@ -4,6 +4,13 @@ class Weevely < Formula
   url "https://github.com/epinna/weevely3/archive/v3.5.tar.gz"
   sha256 "edb285469b2c8504797c1a35e30d728ddd88b56de37376c4464081c4d1cdbe9e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "ff876ff53b618af3396c804dfd586ab0a41a499c19deaf66ef6323ad692ff6f6" => :high_sierra
+    sha256 "657d18afe8b34d5f64d80a88f094a08c32ee329c0dab841769ed4f614e05c094" => :sierra
+    sha256 "e5f8ea0237a9ed72a03d32ca793fd7de4222b45a80a3ccf5ba0026001a4e4499" => :el_capitan
+  end
+
   # Python requirements.txt
   resource "PrettyTable" do
     url "https://files.pythonhosted.org/packages/c7/21/8911c1b4aab57b891a54bcb6b1fab2ef59e80a78f7f699dd3d162ddda87f/prettytable-0.7.tar.bz2"
