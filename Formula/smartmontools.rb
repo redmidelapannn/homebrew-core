@@ -5,9 +5,10 @@ class Smartmontools < Formula
   sha256 "51f43d0fb064fccaf823bbe68cf0d317d0895ff895aa353b3339a3b316a53054"
 
   bottle do
-    sha256 "555457dd2f346be5471a4297610e6ed7807e7986ecef5bc9e1087a3a831137f8" => :high_sierra
-    sha256 "72708ed71cc68fb23516bc971dc1360ffdd63d20ca191b183f3abc10b976269b" => :sierra
-    sha256 "8868a3b550422f2366878f57fd823d69475880cca6a9ffe7c0324b3f78df3730" => :el_capitan
+    rebuild 1
+    sha256 "690247f12cf3dbc2c5b0497761cd5bfe6e21598f1d89e6901f0874a401514802" => :high_sierra
+    sha256 "9f060a40799b63d4d398b01d632ac3d594742ce297bc265d74a779465c0d6d38" => :sierra
+    sha256 "f82bef14d2119b5b53d141c56c4b2055986ae4015b173068a69b397e0194ed9f" => :el_capitan
   end
 
   def install
