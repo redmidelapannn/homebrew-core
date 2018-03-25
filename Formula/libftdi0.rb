@@ -6,12 +6,10 @@ class Libftdi0 < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "ef988a7e074542fb5df2c8e803b19e9d20b8602e3899833b10d6cdf862b4c5be" => :high_sierra
-    sha256 "f89e79f5eb94d55e130dcc55deca87f1241b386bf45070dda52c2c22707ead15" => :sierra
-    sha256 "8fbc5ef456600b919430d86dd4e7090ae1f1064e4a51d631ab9bd7b39887ead2" => :el_capitan
-    sha256 "92ecdb3a110e1abcba05561f0def8e573d1f8174d4e04247375dd5cd47d3bc24" => :yosemite
-    sha256 "29d786dcb87e4251c4cbd25c0d5e215eb248b74304f175054b31cbd6a464c071" => :mavericks
+    rebuild 3
+    sha256 "3716c6d2a7769cad931df178fd9556d3295dfe3432b130223738fd43b3b2dcc2" => :high_sierra
+    sha256 "3d236cbc0a8dd9622c8b41934ba73eb67b86a8c56c7d0478e256850b1750bcf8" => :sierra
+    sha256 "f335959ce4b735e89f99526cae3e9e648a76972b5657eea5f52358449190b16f" => :el_capitan
   end
 
   depends_on "libusb-compat"
