@@ -6,9 +6,10 @@ class Lnav < Formula
   sha256 "33808b07f6dac601b57ad551d234b30c8826c55cb8138bf221af9fedc73a3fb8"
 
   bottle do
-    sha256 "9739f82778ae562845fb7a21166b8d235284b0b7c64fe41b9b99aba3aa4d79f4" => :high_sierra
-    sha256 "7a689257734cdda57ec95ec3d0358062c3995c19eccd7836b094a249326a9d3a" => :sierra
-    sha256 "db14f8c8d274575871d94396c4d81e6e8a0b56069051c82badf3d636a2dc44b9" => :el_capitan
+    rebuild 1
+    sha256 "86123bdb0d9aaa2ab743b31bfc35bd63d53bb481088d8b3037e5fa652ea2844a" => :high_sierra
+    sha256 "c3e0c85c6829e39d2cca31c138c445f0c1f4bcbb4bc3466ffdcf306634e09aa5" => :sierra
+    sha256 "457283ab2079939659d39aa541853a03f8ab4f27b9fa9960abe74ed90eb8c3ef" => :el_capitan
   end
 
   head do
