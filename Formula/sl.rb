@@ -8,11 +8,10 @@ class Sl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "627b0b5f8027f876466d03038da7dd0d75804cccc3bbcf45f0fe9c91199be3c3" => :high_sierra
-    sha256 "afd30cb3a99d238a8ac52810834244d5f47fc2ff597db9ad61012bd2014395b9" => :sierra
-    sha256 "f186cb86f4d48929aa671434dbd6be0a861069608098a30dc952697bcca85972" => :el_capitan
-    sha256 "696104243a18e08279d461e66e6a696791e6c36b67df43e361ad6f6de1200440" => :yosemite
-    sha256 "c7d4432bfc169f7338eeb0c8300a975495b229d6e85bfff4fdd6bbd11eb8da17" => :mavericks
+    rebuild 1
+    sha256 "673458d8cfd37d45b53f0ea93b67e7916f1069029111286b636face417e5f3d7" => :high_sierra
+    sha256 "781f637761c449695ea604dc899310ceb950e3960bd98031b6fedef394837b62" => :sierra
+    sha256 "9b928866e9145a0eb89fa5a94b5bce88f1b5dc448c19a4ce82c4eeab0a9da7d2" => :el_capitan
   end
 
   fails_with :clang do
