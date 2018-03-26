@@ -12,11 +12,9 @@ class ApacheArrow < Formula
     sha256 "64d0e868864c37293a454052420d3203d4e689d4be5a4e6b2892a5a6aac6fd3a" => :el_capitan
   end
 
-  # NOTE: remove ccache with Apache Arrow 0.5 and higher version
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "jemalloc"
-  depends_on "ccache" => :recommended
 
   needs :cxx11
 
