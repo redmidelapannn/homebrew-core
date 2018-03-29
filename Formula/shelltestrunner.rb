@@ -10,9 +10,10 @@ class Shelltestrunner < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e6c941fb8a8b18e51789a9523fab1d1e8ab312d6c0ce93af72f2caf495a54870" => :high_sierra
-    sha256 "3ddd0cf1e9baf4f31e667bb1477af3e7a7b905071041569bb1bd6031118a377b" => :sierra
-    sha256 "2f954da156e2d7aea6059738913124883a78797d1118ba11b8366bc4b7dd03dd" => :el_capitan
+    rebuild 1
+    sha256 "eb114fd8499ae21d379cba581a96f2e76e81da46d2fba9c52021c27b03b8a190" => :high_sierra
+    sha256 "46aaf4e7730a5f5bec9232feb52ca521c916d18facacfb0b140071d4a82acd67" => :sierra
+    sha256 "ec198ee16c33f4bfe1064eaf069c0e041c81e279d7062b92e4d2cdc1dbdff855" => :el_capitan
   end
 
   depends_on "cabal-install" => :build
