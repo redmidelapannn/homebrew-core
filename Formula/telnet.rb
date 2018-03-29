@@ -6,10 +6,10 @@ class Telnet < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "f68d8152cca7ae73a3c598d55d58083ef4795f1ace88794ea949baa21a75c975" => :high_sierra
-    sha256 "62d5a07da6030b6006f16572ad3b1d17aee0a09d03c8690ffaed964c6bd089ae" => :sierra
-    sha256 "13911a70794917c973d7cd56450f02ec376819542053a5954cb6264ca31c21f5" => :el_capitan
+    rebuild 2
+    sha256 "4c8d89033c31344542011981b495e3360a84c2b50b823e1c13dee0fb95c1cff8" => :high_sierra
+    sha256 "8552228cc667d0366890470510cffc4806c3af69ae72454ea31123d3bb7b3c0d" => :sierra
+    sha256 "1cc5487aa536698de041bb0efb68e2da9fe47027cb9ad785a7cf35aebd524524" => :el_capitan
   end
 
   keg_only :provided_pre_high_sierra
