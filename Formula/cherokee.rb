@@ -5,11 +5,10 @@ class Cherokee < Formula
   sha256 "790777e7b4355b60698443161e45b5a20a9d0ab8c4c47924e00d19da8b74dfcd"
 
   bottle do
-    sha256 "e149e2a50f0954be520def65943abf020f44460ceeb41d428627c5d65be2d177" => :high_sierra
-    sha256 "db0adb2f4e099777e5309d1b2ca2102c8ae576eb45a51c827f0e2fb7866b66ed" => :sierra
-    sha256 "f6944776619d9338169b1676cc10d9960c27cb7a88b1189a4e02e1f577d4e2d6" => :el_capitan
-    sha256 "af00f0cc177c2c16063aa3abe8dfe025568874db126edfacce4a33c8a3fbd5cb" => :yosemite
-    sha256 "ef4d94b51cc425dd704d0007cf9980024035406cb00345158fd84b1901c04437" => :mavericks
+    rebuild 1
+    sha256 "8350480ff8516eb1d51ca74948e92e3e937869c7c8b299e65faa56f7367ad724" => :high_sierra
+    sha256 "fcc9e4016c5920e06ee0c4314ca39608054a586249947e232f2b467b5ee1ca28" => :sierra
+    sha256 "9b782f75dd655bd49aa2a71bee739897b1dbdcefcf495851e5226706c10de12e" => :el_capitan
   end
 
   depends_on "gettext"
