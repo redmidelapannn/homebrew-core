@@ -6,9 +6,8 @@ class Passenger < Formula
   head "https://github.com/phusion/passenger.git", :branch => "stable-5.1"
 
   bottle do
-    sha256 "8e12133a04a8c77ab1362c8b08494fbff9e567a8ad97d22546a5bb5f0f311273" => :high_sierra
-    sha256 "78e7b4f034822bb27022f9d747c183c7ad773cb8feb465c3fd6751338736df84" => :sierra
-    sha256 "f78e43bc318f260129579331416edc74ccbd965fb3a89617024e1f37949aa740" => :el_capitan
+    sha256 "938b912bd67e3ec0c50e5d300f7148502445085c7352a77a9d2399015a1a8d63" => :sierra
+    sha256 "901822c09e1f05d55593c315b49e8d1f887cb274ca8235f0546b0dad01904c80" => :el_capitan
   end
 
   option "without-apache2-module", "Disable Apache2 module"
