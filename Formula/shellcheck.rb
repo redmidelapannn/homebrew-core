@@ -11,9 +11,10 @@ class Shellcheck < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4670b4952117677a171f4e3312d5b6660ad6b443c1e2c65aed8fb17fe46b2342" => :high_sierra
-    sha256 "8eb344f3f20995bd7210f12b337116b0295755bf78990ea824ba160e8e6b0bf9" => :sierra
-    sha256 "7136c486a8faf29e840b96abc02a68420b641261ba3ed252fbc5ac0da7161721" => :el_capitan
+    rebuild 1
+    sha256 "4ef919c94963d534bbb6d9c737396cac07c89b17f8caf0cfd416b119f5f540c3" => :high_sierra
+    sha256 "ca99bd8a4ae4e7538fa030e29857c74b9865195115e6d09498bae5b89eb19af8" => :sierra
+    sha256 "007e6d9639ae568875ed06d3b9edfc920acaa6e571abd01c7068979a16af9698" => :el_capitan
   end
 
   depends_on "cabal-install" => :build
