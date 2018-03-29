@@ -12,10 +12,10 @@ class ElmFormat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d63d07ef26edd91e1b10c4b1286dd271ac7f2958eb5e92aa78bb62ec49f4802a" => :high_sierra
-    sha256 "0d803f1ba6449fc85db9edac0bf55f14c9358868b015559ec2836c799bdf9cb4" => :sierra
-    sha256 "034a1da2a60646992a7571e1879f6ff31ebc43c3f43250689d4b6d6f1c12286d" => :el_capitan
-    sha256 "964df8c9e60c3ab2968fa6d6304beee5d0eefd993001a35e26da279b54e2e543" => :yosemite
+    rebuild 1
+    sha256 "507274c4b82f7418d42416d4f873b0f7b7d315d61defb1d587dc87998890bff0" => :high_sierra
+    sha256 "39921e571409186ca26c90b97996f145ee7db30d0bf201865f5a24fc5a373940" => :sierra
+    sha256 "4b73e75ae35876655c60da1851f048f0e7ab44d415f34e4987fa954336641d08" => :el_capitan
   end
 
   depends_on "cabal-install" => :build
