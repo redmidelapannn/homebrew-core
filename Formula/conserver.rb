@@ -5,12 +5,10 @@ class Conserver < Formula
   sha256 "251ae01997e8f3ee75106a5b84ec6f2a8eb5ff2f8092438eba34384a615153d0"
 
   bottle do
-    sha256 "3bcd02c87d5ad4864ec2e086c6f79f3391c189750326b41063506b47c354e8a6" => :high_sierra
-    sha256 "74f40d6d02b64102a69a8d7b197dc9ff63283969e753a5850ab5b96abaefeb71" => :sierra
-    sha256 "d1bd6a4154604db42e233e9c9ea03a9bcdfd73498e15d56840ea03903c2a3230" => :el_capitan
-    sha256 "0afc8a0539f05c8226c0d75775558e98f42e597e2e9755988164dc5f2e0f3cf7" => :yosemite
-    sha256 "40af1ae864c47df564f22760f96969c3a6e9575610d9cd1d3348b44d6eef5a9e" => :mavericks
-    sha256 "88887688a6de1d1cb9ed36899477e16ef233b80392854220291fa1a5499ea833" => :mountain_lion
+    rebuild 1
+    sha256 "504d615ddd99ccce1e0e88a73b1a9fbcfa0f975f2285ff385656b243bdd80aa6" => :high_sierra
+    sha256 "26a753e15050f03a88389e18055a2cabe079e08d145df532fbfd24afca570dfe" => :sierra
+    sha256 "3cbcffcf8af0aa9a71721fb21a0c0faa695f5a70862bcb59ac16596943ce5f2b" => :el_capitan
   end
 
   def install
