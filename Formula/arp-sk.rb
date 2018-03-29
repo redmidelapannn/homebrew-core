@@ -7,11 +7,10 @@ class ArpSk < Formula
 
   bottle do
     cellar :any
-    sha256 "db71e1610feac13246511f6c67bbf224e20b49e9a130d76dc5ca3317fe755601" => :high_sierra
-    sha256 "d933c37e26f227918a6e770dc3214a76f06ca79abbf1f646a6c00447ad9933ac" => :sierra
-    sha256 "5d112e8d54329bff104270b7ca27cd4884e48f8c47904bb5838a2e107c035736" => :el_capitan
-    sha256 "11253608a659d16a179c9c7b25050989991a29a68c9c9b4647fe9614e191fcff" => :yosemite
-    sha256 "cea3047a876b12520e9614be8cfcf09348a49522bb5c8bbb7d2c185950e4c08d" => :mavericks
+    rebuild 1
+    sha256 "13473edfbbac32185e2746cb29e80a6d575f1d48b5addb72b143b5f78873e1c7" => :high_sierra
+    sha256 "364f830bda757df1badb228da017dcf9deaaaec48df6dcd0c0c69fdc99ffaefb" => :sierra
+    sha256 "986fb0bf2049ea70352620bc0cc4bc9b683491ec254a609200f2bfd4c12e1c9e" => :el_capitan
   end
 
   depends_on "libnet"
