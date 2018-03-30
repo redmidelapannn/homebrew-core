@@ -24,7 +24,7 @@ class Gutenberg < Formula
   end
 
   test do
-    pipe_output("#{bin}/gutenberg init mysite", "\nn\nn\n", 0)
+    system "yes '' | #{bin}/gutenberg init mysite"
     (testpath/"mysite/content/blog/index.md").write <<~EOS
       +++
       +++
