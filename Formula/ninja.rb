@@ -7,9 +7,10 @@ class Ninja < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "eeba4fff08b3ed4b308250fb650f7d06630acd18465900ba0e27cecfe925a6cc" => :high_sierra
-    sha256 "90ecf90948f0fa65c82011d79338d7c5ca2a4d0cb7cb8dc3892243f749fbe2eb" => :sierra
-    sha256 "675165ce642fa811e1a0a363be0ba66a7b907d46056f89fd20938aa33e7d59f7" => :el_capitan
+    rebuild 1
+    sha256 "44571b6151b8d6b180fa86594ec68418209b9e6913eef0f6cc557c20dab17773" => :high_sierra
+    sha256 "f24186bcfd0f82b7ddba3332d2691705d75f7fc4a0bd7fb2d1b24a1a0a739339" => :sierra
+    sha256 "4812a67283336339a599c0e4a4805f3369291ef76dbbe3ac21d0295983e95f69" => :el_capitan
   end
 
   option "without-test", "Don't run build-time tests"
