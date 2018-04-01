@@ -7,12 +7,10 @@ class Atomicparsley < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "ea4399b0ed2025590068deda729e9c566094cda9a9e38149e116d97fc6d034d4" => :high_sierra
-    sha256 "345eb5a19de38e476a0b39627ea243efdfc9a7a7dd980e5e51e4db74599c3f20" => :sierra
-    sha256 "b43ba5577c7e8b2dd9b4852a5d6652e1600a460584096646f38b69b7d103cee9" => :el_capitan
-    sha256 "b1825326c53079bd37a098cf100ae29d2b2763c985be0f2592ba89f10b914eb3" => :yosemite
-    sha256 "8797e94e5a1083d41fd9843a94362a714a48430918ed95fa9d7f37b31e0ba1e9" => :mavericks
+    rebuild 2
+    sha256 "0ec221eef42e859fb23fb586b3e09bb068ba69d27cb8b085bbf84091dda263e3" => :high_sierra
+    sha256 "42e0af7283d4696cd68f949dd55efe26e39f0c26961f37fba18a83b6f2e9942d" => :sierra
+    sha256 "4118d37d1c3d2a39a6ab82a0e2c76cefb5741cb0e14ecb5f91f159751eac29bc" => :el_capitan
   end
 
   depends_on "autoconf" => :build
