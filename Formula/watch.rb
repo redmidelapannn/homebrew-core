@@ -24,10 +24,6 @@ class Watch < Formula
   conflicts_with "visionmedia-watch"
 
   def install
-    # Prevents undefined symbol errors for _libintl_gettext, etc.
-    # Reported 22 Jun 2016: https://gitlab.com/procps-ng/procps/issues/35
-    ENV.append "LDFLAGS", "-lintl"
-
     system "autoreconf", "-fiv"
     system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make", "watch"
