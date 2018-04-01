@@ -25,7 +25,9 @@ class Watch < Formula
 
   def install
     system "autoreconf", "-fiv"
-    system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
+    system "./configure", "--disable-dependency-tracking",
+                          "--prefix=#{prefix}",
+                          "--disable-nls"
     system "make", "watch"
     bin.install "watch"
     man1.install "watch.1"
