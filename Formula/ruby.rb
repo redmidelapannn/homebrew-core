@@ -5,9 +5,9 @@ class Ruby < Formula
   sha256 "8f0290f409307c45a107360e7883f2fad3c19aa995133ab53e6f36ae9452d351"
 
   bottle do
-    sha256 "e90c8e08dc6236adbef651d7767fe9230c13cceacee39655707fadc7c92965f4" => :high_sierra
-    sha256 "7fafda1950b60283b2b85b607f2251e42917c727775d7c47cdeeed5feef2fe87" => :sierra
-    sha256 "c5bf17dcfa36cd061fc70b7a5a5ae7e46273ecc87d84bdf65412f98105da135b" => :el_capitan
+    sha256 "176e02f1a6382ad076a2c57f3f400b90f802d4e75c190f6b882609d26d6c7ad2" => :high_sierra
+    sha256 "8fcca2a7f9e2bd4fbb5d3ddf33c47c8728fd4fe00cf25410ee82f4a2660fe39a" => :sierra
+    sha256 "5d8f1e990ad517d95addeafebdddcc1bffa9a2bf5204b16fc792128d75287f11" => :el_capitan
   end
 
   option "with-jvm", "Build also for jvm as an alternate backend."
