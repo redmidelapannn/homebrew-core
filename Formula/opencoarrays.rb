@@ -7,9 +7,10 @@ class Opencoarrays < Formula
 
   bottle do
     cellar :any
-    sha256 "6587a7fe98a9795f0c11264e52cea7f3de3eb0fd19c42d127984cd47fbb46b08" => :high_sierra
-    sha256 "0cd630acadb12b005734ac3cd680c3b1ff473be7f57ca8cb11ec93b79e52bc97" => :sierra
-    sha256 "84cbce876804c2f46cda80bec9b4b310aa0d06300e65473a89207ae6ea8679a3" => :el_capitan
+    rebuild 1
+    sha256 "670c3cb70f388bf714a911f241f7a3602fdc790627f09eb51f32b01c8816cae8" => :high_sierra
+    sha256 "e711d501e46883fe72316acd5b7f1862dc5b094eee7e5a8f298ffb1f6ed42cb8" => :sierra
+    sha256 "12857ba4775ef38f4acc9c2081c6e7425672d6092e64602d7dac018390abf018" => :el_capitan
   end
 
   option "without-failed-image-support", "Disable F2018 failed image support that uses experimental MPI features"
