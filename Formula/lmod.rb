@@ -37,6 +37,7 @@ class Lmod < Formula
     end
 
     system "./configure", "--with-siteControlPrefix=yes", "--prefix=#{prefix}"
+    ENV.deparallelize
     system "make", "install"
   end
 
