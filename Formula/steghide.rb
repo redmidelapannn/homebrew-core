@@ -4,6 +4,11 @@ class Steghide < Formula
   url "https://downloads.sourceforge.net/project/steghide/steghide/0.5.1/steghide-0.5.1.tar.gz"
   sha256 "78069b7cfe9d1f5348ae43f918f06f91d783c2b3ff25af021e6a312cf541b47b"
 
+  bottle do
+    sha256 "c82d1315e65e2297e6f602d29132f1721b63cfd4ba78b9e733979d5f594415f4" => :high_sierra
+    sha256 "62718557da9611896f91c9e73d9f08c7919fe52c1cdbf08596a64f853b158462" => :sierra
+  end
+
   depends_on "mhash"
   depends_on "mcrypt"
   depends_on "jpeg"
