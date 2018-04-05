@@ -9,10 +9,10 @@ class Nethack < Formula
   head "https://git.code.sf.net/p/nethack/NetHack.git", :branch => "NetHack-3.6.0"
 
   bottle do
-    sha256 "3a87d95f55694f603ef141893be865db0762c2244a40072034314b0aa6bc6ebb" => :high_sierra
-    sha256 "31ba131716f9e1deb6d4facca23855823ea916dc8d0edc6c4a50bcc744684936" => :sierra
-    sha256 "1fc48d05f9ca71d73292c03b8860a22ca6c8a35f09b92f700918ae4290a73ecf" => :el_capitan
-    sha256 "c15f61fb6867b3a68dbb4f68d09e787afda6e6f2498123bb9972547803a0a19e" => :yosemite
+    rebuild 1
+    sha256 "17bb09293c1ac5758691bac2ab289c6269dc43976b561f0b4b245d623d2ab741" => :high_sierra
+    sha256 "0755260c8c3baf64ee9b29d4128e6289f3a998c1d826b65d060bd962b05951df" => :sierra
+    sha256 "8b24172b181c5c349812cc7d6a5aa4bb118cf0050d9aba28e25fe22f4f2250c7" => :el_capitan
   end
 
   # Don't remove save folder
