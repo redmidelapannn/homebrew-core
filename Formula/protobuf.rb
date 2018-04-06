@@ -6,9 +6,9 @@ class Protobuf < Formula
   head "https://github.com/google/protobuf.git"
 
   bottle do
-    sha256 "89d3e4a62799951c2a908f102ed305691f0fd0141b27c4337ef9bfe64840d8a9" => :high_sierra
-    sha256 "917abbf787422c4702b3104f5f6fb77f48dae573284f5aa7a9a2ef53793e5834" => :sierra
-    sha256 "5a0956aa0639b5943bee597942e7c0ab1439f2db6e322423a72a5ad68e28af82" => :el_capitan
+    sha256 "e91d612834a2ce9fabb651d6fdd2aa0601cae722dcc8df7c8391d74094e57e3d" => :high_sierra
+    sha256 "28ae845a2e4791c2c2f4362bfae5b84d9a8f476fc36a2944a9b51afd2b5b38f8" => :sierra
+    sha256 "d62b6bc2e2f15ede5f38ac553872020161c0287eb7a596e13723ab4671d86a92" => :el_capitan
   end
 
   # this will double the build time approximately if enabled
