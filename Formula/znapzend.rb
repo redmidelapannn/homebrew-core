@@ -7,10 +7,10 @@ class Znapzend < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c45731738fb108265f45b306fddbe092abd87cc3142cd0865da0232e0fc5f66f" => :high_sierra
-    sha256 "eb53a6be8ea72b0a38ad708117680607438f5a6be8bfbd343372c2504fed6c3f" => :sierra
-    sha256 "f9dfe88cd397e098035ef459ca50f3221f94438eb60cd0f39fe146958bc930f9" => :el_capitan
-    sha256 "0e39422d2f6fd57fd26a23b137e98f09fcb97b43c0d9d980b0fda26012e469e3" => :yosemite
+    rebuild 1
+    sha256 "4e96c4a7dc7f2947d81518a0eff555bf9b7476d6777f99e325a79ad2353d2dbf" => :high_sierra
+    sha256 "bb736786f41579488ec440ea6c9a85ee7c8ef6f4d3216a6737d26e3c0d439fc3" => :sierra
+    sha256 "8a7ce4e94187a7e51fffeb5779512289dd94731fb76274a19a69002ae085f5b4" => :el_capitan
   end
 
   depends_on "perl" if MacOS.version <= :mavericks
