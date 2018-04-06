@@ -73,6 +73,6 @@ class Bash < Formula
   end
 
   test do
-    assert_equal "hello", shell_output("#{bin}/bash -c \"echo hello\"").strip
+    assert_equal "hello", shell_output("#{bin}/bash -c \"echo -n hello\"")
   end
 end
