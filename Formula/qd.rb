@@ -7,9 +7,10 @@ class Qd < Formula
 
   bottle do
     cellar :any
-    sha256 "37b044703d09d11200e23d45a138649dbba9c8876579bfc3201c26c35579e818" => :high_sierra
-    sha256 "b3b9f5d238ffdd8b8992e2f6be9396666bb41650a5697261b197df5b0782d147" => :sierra
-    sha256 "f733c61c8c22c46091fd6007fc555bc53b02adc8f625ed33f5ca56a049ab9c01" => :el_capitan
+    rebuild 1
+    sha256 "532c29aac2baef61db3095cedf6341d81725666a4e929a8c4e8015506572697d" => :high_sierra
+    sha256 "14566b55a8e5c3f84d6037343ead658203611c670690c321c89a5518920cf1c6" => :sierra
+    sha256 "80921a17368f4c9732b794b2c54cd5041fbcb511a71d53593af4dd0d1427c417" => :el_capitan
   end
 
   depends_on "gcc" # for gfortran
