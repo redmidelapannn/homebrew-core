@@ -5,9 +5,10 @@ class Unbound < Formula
   sha256 "94dd9071fb13d8ccd122a3ac67c4524a3324d0e771fc7a8a7c49af8abfb926a2"
 
   bottle do
-    sha256 "8c7e2cd18ce125440cfc6545de5fb437c4e4a386786211c9b0956406b00169e7" => :high_sierra
-    sha256 "9cfd4dc5892ae2a762b5413b2fe61ff18c59aea036a56a6616699e5b992e234b" => :sierra
-    sha256 "701dbf2f8fbccfee9a8f843814639eb65d8fbcc57a8802a96964077a95f059b8" => :el_capitan
+    rebuild 1
+    sha256 "8887e57aee53e76bdf06c59fe8279c41bb022eb5110365c6c8a8fefbd602ba44" => :high_sierra
+    sha256 "7abfde2b1ad159fcadeaf93a53263bfb87fd9b061d9ef90619ae3d490536795a" => :sierra
+    sha256 "534dc1df5ca056b2570db049986be739bae508720b762d0c67aa4885ee65de0a" => :el_capitan
   end
 
   deprecated_option "with-python" => "with-python@2"
