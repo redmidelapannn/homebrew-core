@@ -29,6 +29,6 @@ class Calicoctl < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/calicoctl --version")
+    assert_match version.to_s, shell_output("#{bin}/calicoctl version", 1)
   end
 end
