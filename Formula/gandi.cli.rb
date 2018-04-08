@@ -7,10 +7,11 @@ class GandiCli < Formula
   sha256 "e2534fae2136dc03f85e0d906e6c61ce2c76c38e70b33783aeb54feabc3ecf2e"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "e10419a340f36c6dc7c084bcc2a11e6842518e269d6d1556e24371c608d42797" => :high_sierra
-    sha256 "e4c50c0808a2612f4f0e8760c67bc8881e0e6298e54e97209c146e18f5c7f37e" => :sierra
-    sha256 "b60eddd8819423f9baf6f4a3b4ee1df5c8996bd35094170384145a5eefa15cff" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "0fc4387f8f48521f6ff01cb7c2254bae2c26860ce822d829d15e019f179bc274" => :high_sierra
+    sha256 "307d93a7d5d3b3d3e573ead08e99e1f4331335b3336dfde6d2d5e7a257730d5f" => :sierra
+    sha256 "7788b19489df833df05abec87f29d11651a5be7301b58c43932f219e55837054" => :el_capitan
   end
 
   depends_on "python@2"
