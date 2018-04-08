@@ -7,11 +7,11 @@ class Mdv < Formula
   sha256 "58dbdf8c051a2d7f8c00e4dc13c655c335cbc2bc96851dd0388d73a21c4507b6"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "94a95cabd6f75d33d7d91d5b4304a77a0a068ff6abb15d36b92565ba966eef7c" => :high_sierra
-    sha256 "85fe18363a3c8b9f56526a6cf0d2bde2eb212cbb80ba8f1175a646c749f50ced" => :sierra
-    sha256 "5c371c8a9313f7cd8104d23978217916b2991d02da9605b2798d9d292b15f118" => :el_capitan
-    sha256 "d2ac3612660964bc8a33780f50c076ce884094735b3f1cc3686ac606c154af13" => :yosemite
+    cellar :any
+    rebuild 1
+    sha256 "f18dc377638b901224c1a951e7614fca70e8e5bc65a23087411e4843fae13f9b" => :high_sierra
+    sha256 "cb08198f6b93577c696fcf41c6bf21234b0190cabadfa44e931679e3179b459d" => :sierra
+    sha256 "8b9a30da1f5c42d14682a5efcb06a6ae91b1f24a90def2ab9418f439cb16aa98" => :el_capitan
   end
 
   depends_on "python@2"
