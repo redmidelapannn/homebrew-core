@@ -8,9 +8,10 @@ class Mitie < Formula
 
   bottle do
     cellar :any
-    sha256 "d73f3db219902d12a9321273adb0be485156d870e43cbf0106db550cef210cbe" => :high_sierra
-    sha256 "e3776d82c4712cd1532a2a54456e61c67f08b23b90ef946d475952dc4cb0f308" => :sierra
-    sha256 "de7e18c61774eff595acafeeaa22733c13269face211a179f3a46c0b6aa7dc60" => :el_capitan
+    rebuild 1
+    sha256 "8ba36618952401aa6ed4a3e1f0e4c214efd53005e6f2ec59841fc79ea655ddea" => :high_sierra
+    sha256 "0a8f81ad98a5f3254133b6c28eaf5881c3ed17261787780d2b9f721d2013d6eb" => :sierra
+    sha256 "261e91b9fa8aeacfba91f5c1c8718fcb382cf195efb2767f84c5d75bb406b9ef" => :el_capitan
   end
 
   option "without-models", "Don't download the v0.2 models (~415MB)"
