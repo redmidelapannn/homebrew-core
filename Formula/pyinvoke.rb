@@ -9,9 +9,10 @@ class Pyinvoke < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "22caddb4a74b1d916fee0352c5ca99f4abe7f7544d5afa870d9d9b22442a8105" => :high_sierra
-    sha256 "b649f689fa537171c909318338baa5147b4c6abe0e0d3ab4405bda9f9e433d3d" => :sierra
-    sha256 "f6576a575d302c1549e7cf76d3d07f5fc0f5c38efdd3534e915c0a39f4de57f9" => :el_capitan
+    rebuild 1
+    sha256 "e051a85798c3d04a9358e00ead5598cb389d64105e87f3a3a70e73c9b769f195" => :high_sierra
+    sha256 "4c05f336bd990bc5010fc34dfb9732cf9229fe0743eae61e032cf22a42f2612e" => :sierra
+    sha256 "509d46cab55498cb300e019c259bcf23261cc5c7ddf927af9dd10fe9d665542d" => :el_capitan
   end
 
   depends_on "python@2"
