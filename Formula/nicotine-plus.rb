@@ -10,9 +10,10 @@ class NicotinePlus < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "35e7bf104f3d38a0d04611bf55190e47cc0b37628c820b6a94a4793c1a3bf451" => :high_sierra
-    sha256 "7fc8c5bfd9f131df9cc30887240a064129d65794a1a2cde8205f4eda88548cce" => :sierra
-    sha256 "c8243dedb84548dee2f8c663bd3cd4211885b2a1a928bc733a2ee663a9f63fe0" => :el_capitan
+    rebuild 1
+    sha256 "1e61fcaad725aaadf03419b2ac3fe3dddd67b167515347a8e99aecdae99f7ddf" => :high_sierra
+    sha256 "71893eb09321e30d1cefdae6854119cb0606bf3638e4f233754e0ad2c5506f14" => :sierra
+    sha256 "2fa554abef95be72ac14a41dc3c44121cd14261ff46eb6e46f6381ac6e210971" => :el_capitan
   end
 
   depends_on "python@2"
