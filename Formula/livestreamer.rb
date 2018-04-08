@@ -6,11 +6,10 @@ class Livestreamer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "84d580d9c9de044903fab8326349a0b3beb928a953c087de4ab9d94f76eab445" => :high_sierra
-    sha256 "4830984511ba774a7047417ce2c304a79ef6c9c95170ef628f754300e081eab9" => :sierra
-    sha256 "08751c90099fb817e5adb721dae3cb1e11852e975c731909baff4001bae4da2c" => :el_capitan
-    sha256 "4f3e898e82718fb8c6fe9597cd0e7289388283c30cedd8c78d699989a0805977" => :yosemite
-    sha256 "b91f4e0f5a293dbb12134bc5be6b2d4ec7c80e309fca8d4901376e15c8b5df87" => :mavericks
+    rebuild 1
+    sha256 "426516f60d9bee40d7abac76f05fc5c3e4951cee05956566a9f82313fc54dffb" => :high_sierra
+    sha256 "426516f60d9bee40d7abac76f05fc5c3e4951cee05956566a9f82313fc54dffb" => :sierra
+    sha256 "426516f60d9bee40d7abac76f05fc5c3e4951cee05956566a9f82313fc54dffb" => :el_capitan
   end
 
   depends_on "python@2"
