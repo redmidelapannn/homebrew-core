@@ -8,9 +8,10 @@ class Binwalk < Formula
   head "https://github.com/devttys0/binwalk.git"
 
   bottle do
-    sha256 "8c5c20fa4f9744e2461882c2c7a77b8532885583e10c0f943d3a92c1299450b1" => :high_sierra
-    sha256 "eb564bd84ee2d904ccc6e054e66c3d3f2d9f40f62845fbe84c426536ba8b71f8" => :sierra
-    sha256 "551c2949f58da9f864e19a088f421785792bb51bbebecc3b457155846a2dd69f" => :el_capitan
+    rebuild 1
+    sha256 "bb5ced7d9fa935a86b931f032e8400e8672bc0b0b7388e8ff9c6a223d7c7b5d3" => :high_sierra
+    sha256 "8663a611d49250c579f7012a8599c9f307dd8e3058901d4c801185e95fd8b961" => :sierra
+    sha256 "faa6d6a852ecec915ba2ee2cfd122fbcb8d484bcd7d3d0f33cb2f6f5e1e349bb" => :el_capitan
   end
 
   option "with-capstone", "Enable disasm options via capstone"
