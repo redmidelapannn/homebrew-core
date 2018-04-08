@@ -7,10 +7,11 @@ class Bzt < Formula
   head "https://github.com/greyfenrir/taurus.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "ab527d54592451da2e6536cfd6746d834ac3278c489057f82d5f8731cd04ac5d" => :high_sierra
-    sha256 "e1ff079986f6d63bc72e60a2b8d4a644bfb933bd089f05122c257488dfca2e8a" => :sierra
-    sha256 "7fafb2258a17695306d7b2489456480ef8213818f4333d6fff69a8bffb2c8710" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "6e1e5aad0f808d0e4225ad0bc66f8bcf0d1567b482d059caeffdd713795e592f" => :high_sierra
+    sha256 "37875cc1135826c6f61b9dbfeb5cd0dd21f5a3e44f114f9a56f3df54518e9df2" => :sierra
+    sha256 "4dac842872985812214c09aad6e9931fe8f6fc8707b4bb56b121a338a938ca48" => :el_capitan
   end
 
   depends_on "python@2"
