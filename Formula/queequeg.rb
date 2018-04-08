@@ -6,12 +6,10 @@ class Queequeg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d8c26c0d9f1ddff16db0a9e0268b42ce30f6f430a0a729e351ece66e85cfec86" => :high_sierra
-    sha256 "0d8427cef8ea21dd597e46e443b02cb60c07efcaac7df2c731cce370b80a9bb1" => :sierra
-    sha256 "be1c951e32a68fa5f324f499bbe5ee721f40292467425eed6d96c2056eecc2bb" => :el_capitan
-    sha256 "4b34b55b1e0686180a0b12b4d03a50d4b4a47aa63637cea6bcd8653b7bf4f39b" => :yosemite
-    sha256 "8356dfd1ec596b87d62a5bc9df8a7574f8d85b06ccc6c55fcc5d1483676f9be1" => :mavericks
-    sha256 "adc25d3e542a2d71924a1c2470fb86bed1eceb1938d259b4013fb8d36206e374" => :mountain_lion
+    rebuild 1
+    sha256 "4ed5771e115c653a8cd2087fe506c2919bca4d146a708157d31e738e206d7831" => :high_sierra
+    sha256 "4ed5771e115c653a8cd2087fe506c2919bca4d146a708157d31e738e206d7831" => :sierra
+    sha256 "4ed5771e115c653a8cd2087fe506c2919bca4d146a708157d31e738e206d7831" => :el_capitan
   end
 
   depends_on "python@2"
