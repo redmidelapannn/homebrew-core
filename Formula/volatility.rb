@@ -10,11 +10,10 @@ class Volatility < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "45afc584a2c272a157adf218b31609e350025080bfc6bcdf6dde916e1a2dcad4" => :high_sierra
-    sha256 "c6a71814aa288cb111544a727f333b7f3f82c77a07c980f16038275f375835b6" => :sierra
-    sha256 "a0613ac4dd0a9b06ac6a9dabbc86c77faabe585af2e884d44d264cdaddac2308" => :el_capitan
-    sha256 "e14faea2003aada9ede7d52c09497ea8eb90b5153853ecfe86c3416a043dc70a" => :yosemite
+    rebuild 2
+    sha256 "18804f1b004b4ca79ac9612ebc140c56dd8e74f005b2139bc4277db8a8a2c868" => :high_sierra
+    sha256 "a84e148ee50579071562d1bb8457811886fc1e458ea85d672678f6db493561f7" => :sierra
+    sha256 "bbfd54927dce7c1a7436be8c07124629dfa71938471ca79ba605b56e382c1c03" => :el_capitan
   end
 
   depends_on "python@2"
