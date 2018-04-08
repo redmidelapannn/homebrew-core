@@ -6,12 +6,11 @@ class Stormssh < Formula
   head "https://github.com/emre/storm.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "3be664afd826e9782f18ba555bdfc680c7cb8b2fa2b5fe27fddadfd433f4b8e2" => :high_sierra
-    sha256 "d095bd03b0c4f6b3d0bd5392452e2c5a411582c204b710319fff9ea3e203f45d" => :sierra
-    sha256 "f2a8c7b99647b5b7e0e578329c126842670610ca667c28609afbd40bec032409" => :el_capitan
-    sha256 "1f15fa5349824fb2de682b577d7b1a8208008d64050c1c6189ef8abac108cc97" => :yosemite
-    sha256 "902cb6751c1af1c04a23419f3bff6ad2f34a36690c44059526142f886a93b6dd" => :mavericks
+    cellar :any
+    rebuild 1
+    sha256 "1072ec7b5a0a4b64b6d56e207c3931beca9d16f574b7e00acb2c4e63f40cd0f6" => :high_sierra
+    sha256 "e4130cb5600717a7640a37da15045063d6ca37bcb8cbca511c2fe033afc3f7b0" => :sierra
+    sha256 "39d554a81740307efddbf4dd36c99cf3c00061560a082a581739883f83c6d187" => :el_capitan
   end
 
   depends_on "python@2"
