@@ -6,9 +6,10 @@ class GstPython < Formula
   revision 2
 
   bottle do
-    sha256 "9544d0be8252c0199884f7a327710bf891369ffe5ab153493f92623bcad5a870" => :high_sierra
-    sha256 "b0adaefeaadac19768117c34698d7ce676296820505cfdee83d4d0cc02e4ce10" => :sierra
-    sha256 "97edb68319984a8383a4c68ae617aa275f9bc3268c321742c13eb62eac163f88" => :el_capitan
+    rebuild 1
+    sha256 "48a46fb4cf8a2ae70b243e377ea66292b3e3056e72d293e353ff51a541b044dc" => :high_sierra
+    sha256 "3244257a699c9323df66d8d955fd26c3a6ef73be7c09a93cf4e1ad27281ee9d7" => :sierra
+    sha256 "2d4ad317971ea75b6c64514ae9cf466c0cdc3551cd979ed830403ca441673ca3" => :el_capitan
   end
 
   option "without-python", "Build without python 3 support"
