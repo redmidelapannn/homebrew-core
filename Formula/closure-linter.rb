@@ -8,12 +8,10 @@ class ClosureLinter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b93802ba6fda7d6efe06b996c3400b8b3f378608398394c6739191fbbc3259fe" => :high_sierra
-    sha256 "8e4828aa41cd75296b08d19d01bedd4657c8ebd19f9da8e471c8c8e720381bb2" => :sierra
-    sha256 "44607d2104144e462b1a87313345f9205f66d9d2ee03f5ad306e5f532a95d0c0" => :el_capitan
-    sha256 "1fba2b6ce208cc1944ecb7aaf1e4998f439f248234f51854523b04be96babb8d" => :yosemite
-    sha256 "a5f04eab15b5496bc5309b420552a2f13392606bab465beaf0cce27119557b61" => :mavericks
-    sha256 "beaed6105607c8d7096707904aa6b1d51dfe3f119d709ddb6d0dba93691323bb" => :mountain_lion
+    rebuild 1
+    sha256 "6599a70b4a4dc9f5de1c317ec70ab157a6fd4d2a6c31d18a8036f18e679a4550" => :high_sierra
+    sha256 "6599a70b4a4dc9f5de1c317ec70ab157a6fd4d2a6c31d18a8036f18e679a4550" => :sierra
+    sha256 "6599a70b4a4dc9f5de1c317ec70ab157a6fd4d2a6c31d18a8036f18e679a4550" => :el_capitan
   end
 
   depends_on "python@2"
