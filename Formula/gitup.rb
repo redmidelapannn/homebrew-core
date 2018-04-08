@@ -7,9 +7,10 @@ class Gitup < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8a11d7864ef368045ba5ebed1580fe3a22f4e04b24f4f24c9678eefbf186afc7" => :high_sierra
-    sha256 "8a11d7864ef368045ba5ebed1580fe3a22f4e04b24f4f24c9678eefbf186afc7" => :sierra
-    sha256 "c1659d82d045517de16860042a53360b5ce061c8d13e57b8ea15db624ad7289f" => :el_capitan
+    rebuild 1
+    sha256 "cdc8961cf79b5d3eddc7592b3f8000343b35a09b4620f2fe79bbd814135804a9" => :high_sierra
+    sha256 "cdc8961cf79b5d3eddc7592b3f8000343b35a09b4620f2fe79bbd814135804a9" => :sierra
+    sha256 "cdc8961cf79b5d3eddc7592b3f8000343b35a09b4620f2fe79bbd814135804a9" => :el_capitan
   end
 
   depends_on "python@2"
