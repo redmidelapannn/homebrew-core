@@ -7,10 +7,11 @@ class Reposurgeon < Formula
   head "https://gitlab.com/esr/reposurgeon.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "e466c365599128dd3cf22a6c0b825d198bc3aca9b0ffa2363405e8074e355d1d" => :high_sierra
-    sha256 "54469dad50f8885739c659201f77b49b224de6e09dd4fbb558ca33f85caebc9d" => :sierra
-    sha256 "eb28acb491ef786f599c664e41a908ebc08b04bfe32362c18c6e76b6e1a958d3" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "3cfe843200dc5b987ba60b19987eb109162e15556e114472f4f0f4c4a6ca6fa7" => :high_sierra
+    sha256 "a9ba8e5741710af5c234084ce6ef570293926bf5534c9616cdd20d867579473a" => :sierra
+    sha256 "e1e5235cabd1dc5e66726d421f2e71f0ad710fc2919ffa00cdb551b580c8089a" => :el_capitan
   end
 
   option "without-cython", "Build without cython (faster compile)"
