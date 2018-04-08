@@ -9,10 +9,11 @@ class Passpie < Formula
   head "https://github.com/marcwebbie/passpie.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "c76cf8962d2cef65aa5a59672e58be1ad0fd74f48ef94608f34275800f243d29" => :high_sierra
-    sha256 "858a53fbd86235af38263ff97b7f283f434fe59623f6bf170845fc51a0ebc0c7" => :sierra
-    sha256 "9676b9237428cd46ce1fcfb42b7911ebf96a7df2535e936bb60d3f57507db8f4" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "44307a2e331075809b5c8e3b47518e773ddedd671d704669dd4dd773bdc2208f" => :high_sierra
+    sha256 "7aafb6051d943ef0186680a85cb8f1e8083d6150a8c70e32c650beee9e4d8b90" => :sierra
+    sha256 "0bf6e19d714df02851fbcd021084082244328738e2e842bff0bd16f26f15534e" => :el_capitan
   end
 
   depends_on "python@2"
