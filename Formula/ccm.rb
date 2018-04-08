@@ -6,10 +6,11 @@ class Ccm < Formula
   head "https://github.com/pcmanus/ccm.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "996ae7df7b2eff3e519f056ac05ac86529355f2d2c2023683464c3043794a187" => :high_sierra
-    sha256 "996ae7df7b2eff3e519f056ac05ac86529355f2d2c2023683464c3043794a187" => :sierra
-    sha256 "e370947953aa56e48eb71ea1555d3ce971a6257f741f8c3abccf9fe9a002eef5" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "dbb7c59a9bf1e91400f6ddc39cba314924e372bb31c65a4ef7b53ae3f0c7062b" => :high_sierra
+    sha256 "022738c2e77c029005315753ada98b7273d9a0cd6ff2e6e887a081d277a912a5" => :sierra
+    sha256 "436c2e44322ea7420dbb39d41e2ccccbf99190539800dcf1da7a113cb1cb8350" => :el_capitan
   end
 
   depends_on "python@2"
