@@ -8,9 +8,10 @@ class Z3 < Formula
 
   bottle do
     cellar :any
-    sha256 "c2493989f46145689553af054cf41a7c21995fcdb5f84ab5992e2f3cc73f6e65" => :high_sierra
-    sha256 "356863daa6b6701579e1840b5c069fe021a013e2cdef293e91e8984867c87804" => :sierra
-    sha256 "c351bed3d338b1eff6801956915d22b86f8b00fb056b1048c8c88983aa724748" => :el_capitan
+    rebuild 1
+    sha256 "e57532ddd6e5440ea8b9da9cad0dcd01a0f8d6834764a35f549eb214cb725fdc" => :high_sierra
+    sha256 "03f74dca3cf6d463acc4d482fb34953b75282a3909005108ae27f628a8c6641c" => :sierra
+    sha256 "59533a4e39d191ff08816daf27cd77903dc3454930826bc8b91f15e3e8011126" => :el_capitan
   end
 
   option "without-python@2", "Build without python 2 support"
