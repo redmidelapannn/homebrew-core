@@ -7,9 +7,10 @@ class FbiServefiles < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bf639c9734a1ae31d6b699d16dd2e385dcb299b270cd58a370056e74695ecad3" => :high_sierra
-    sha256 "87f57b317f8da416795cad01c810a9a6bd902ae3c2d629669eb6c880b31fe828" => :sierra
-    sha256 "567ba0e6e5470c47832d4acfd7a2b61adfece4758e847a7c83955e9973aee16b" => :el_capitan
+    rebuild 1
+    sha256 "982911ca8d6357260ca1f25eba84f3ae9b3b5ce37f9ffe7faffb4af1284ceaaa" => :high_sierra
+    sha256 "f2a664c4e34080a03fd6136e340094a9a14f085d13bf743998ea0b6030eb3756" => :sierra
+    sha256 "85ac0d65a08a2613e723d306b3c7ded425b4ba8549407d4095a788e9871ad4c3" => :el_capitan
   end
 
   depends_on "python@2"
