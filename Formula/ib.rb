@@ -7,9 +7,10 @@ class Ib < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "51b002426c06c820d4133e3b88ac9264aad81b7c554d08991ced951a0f43e0e1" => :high_sierra
-    sha256 "51b002426c06c820d4133e3b88ac9264aad81b7c554d08991ced951a0f43e0e1" => :sierra
-    sha256 "51b002426c06c820d4133e3b88ac9264aad81b7c554d08991ced951a0f43e0e1" => :el_capitan
+    rebuild 1
+    sha256 "d0025aa7b9f10d7e84f53eca2a727e2494df126191e2f88fc95a4020f8afacd2" => :high_sierra
+    sha256 "d0025aa7b9f10d7e84f53eca2a727e2494df126191e2f88fc95a4020f8afacd2" => :sierra
+    sha256 "d0025aa7b9f10d7e84f53eca2a727e2494df126191e2f88fc95a4020f8afacd2" => :el_capitan
   end
 
   depends_on "python@2"
