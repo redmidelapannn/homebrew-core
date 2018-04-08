@@ -9,11 +9,10 @@ class GitRemoteHg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "3c3a3ba464469298a0e1fb01bb85954f91e1baca5c6863e8bbd2455bac8e741e" => :high_sierra
-    sha256 "f0b8d090aaf5e8aa4b63418efcc8a0e6fc1fe7cafc39bee6a8bc85abd8c106db" => :sierra
-    sha256 "6af3e5642dbe91d832b035baf74d199cbda4af7bdb39b0a0d09d336098fa4693" => :el_capitan
-    sha256 "45529e66698b9505e61c718d43f46c99dc31ef2b37802939e17d391ede5ae912" => :yosemite
+    rebuild 2
+    sha256 "3287f8c0065de58b3b758d247c98747d00d29f5c16d6743a19aa9450cf48c89c" => :high_sierra
+    sha256 "dd304e5b230dc1104b0ffcb897a80c937e950f1bd50d9262c46bf1807c7d464f" => :sierra
+    sha256 "4b7464728ee5f7b2137a86620ba3ac2bcc1f7858b8336a57f40e2aa0b977e366" => :el_capitan
   end
 
   depends_on "mercurial"
