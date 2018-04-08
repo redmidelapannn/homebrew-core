@@ -6,9 +6,9 @@ class GpgAgent < Formula
   sha256 "3fa189a32d4fb62147874eb1389047c267d9ba088f57ab521cb0df46f08aef57"
 
   bottle do
-    sha256 "aad65c67de59226ab94dcd307f75dfd007cb4a8d3050863d23c9c39f72dd4b87" => :high_sierra
-    sha256 "7767c0f021cfab5e062d18069bd7bbbfd82249e1a0d80b5bfbf4eee125c617d4" => :sierra
-    sha256 "6f07d8e495b5eee2d0b13d0b1397c543ac710d5416fbb3571ec67a5937650bab" => :el_capitan
+    sha256 "483be6b6324459690101e200831c4b5e95295bf60fd24cdab37c3793d038160e" => :high_sierra
+    sha256 "88b7fe07d4e8f6445acf9bbb0a5c08fd01c9387eae405d70b7e522de7949804e" => :sierra
+    sha256 "7fde8ecb77af4c724f9226c604a456199c16e82dd76815312569b149aa9ddf7c" => :el_capitan
   end
 
   keg_only "GPG 2.1.x ships an internal gpg-agent which it must use"
