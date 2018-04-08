@@ -10,9 +10,10 @@ class Alot < Formula
 
   bottle do
     cellar :any
-    sha256 "79c1bdd07fa75983d06f4a6c27e81741d0553e3635dd3836c65dc6f3c08c0954" => :high_sierra
-    sha256 "227895c908fda25c07555e5514b067d086d6d961f71a40c2098763cfd63deccd" => :sierra
-    sha256 "ba94977585c50e29025be7e592a31809d2f520d50fdb8f023a445dc78ca1bd9d" => :el_capitan
+    rebuild 1
+    sha256 "42ae1ed14fb192a899562dd4f6285db837dc377d6d9ea9f6f60beea94ab5720e" => :high_sierra
+    sha256 "bd9043d854584d8ad4fbffeb33d5c8e92bb3411e7e837895be2d55489eb085f3" => :sierra
+    sha256 "5c434dca85c460d169d4662856bdebc988306bf18b1c613439581954a0eca759" => :el_capitan
   end
 
   option "without-sphinx-doc", "Don't build documentation"
