@@ -7,9 +7,10 @@ class Hashpump < Formula
 
   bottle do
     cellar :any
-    sha256 "479a1f7187b1d126ada855c3368179a97d4cddd5bcd6e869a6418e6f1349d586" => :high_sierra
-    sha256 "53dd1f981a635e415dc0459f410a8854b90e04ffc034b87e6abed97bab5027d8" => :sierra
-    sha256 "981c229f983ad5b42e4b975e21112ecb0d3715b61b5b278037ceba5a03f82fe8" => :el_capitan
+    rebuild 1
+    sha256 "024b5b706f5eb95ababc1f6f33f92ba8dce52053dae3f762851edc1573ce6408" => :high_sierra
+    sha256 "3be6e3a2038bb6798f3c8a44e7b9cf6c097a1d5f39c39c932487df576f5cf571" => :sierra
+    sha256 "ae2d8b1f802b8243665ddf8eef75f73a288759231b16b49fb66bd84bf945ee2b" => :el_capitan
   end
 
   option "without-python@2", "Build without python 2 support"
