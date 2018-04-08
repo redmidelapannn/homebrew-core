@@ -6,9 +6,10 @@ class Howdoi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3aaa5642bcddd076158bf16e0d3698ee579878b4b7d96b6d3a0bb0120e19de38" => :high_sierra
-    sha256 "8088279d37fb0ab1ffb3369c76358ecec29494d69d30a260c4b3a027e897a61f" => :sierra
-    sha256 "899bff6bb142255b716f83d612fc7d9388411b5416b3c2a90a3f19c4847f78d1" => :el_capitan
+    rebuild 1
+    sha256 "b76c94f26ff190a64e467441f94bce4434f1fab7c9db3f310cf254977294e420" => :high_sierra
+    sha256 "9f00ca1c3ba357b23c3c3f54eb9e7a6b2989a5307b6a0f7b43071136b9edb2f0" => :sierra
+    sha256 "bdc64cd5fe45b1de96588b2e827c7502464eaf05c7c84fc89cddbe2fec3d1137" => :el_capitan
   end
 
   depends_on "python@2"
