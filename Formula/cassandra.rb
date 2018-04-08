@@ -7,9 +7,10 @@ class Cassandra < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9609704a7870ee077dc3edf67da2488a0877f0124542b5a7e80dc7a52d3704e7" => :high_sierra
-    sha256 "3f62e647a3dd80bfcff060e5122df5b6a60440e7fca02ad51b416620698361cf" => :sierra
-    sha256 "ff780a2b88ae8a3a619aa0a9429570a94ef6fe40c008392e5b046a7e3799dc2a" => :el_capitan
+    rebuild 1
+    sha256 "df2aba3de4a6d9a1ab114610dec2337810a047400cfd62bf54a20ee89e75bf7e" => :high_sierra
+    sha256 "6edcf35a06883a9418329856ce21ce0cbea62e12656c977a1f8172c72b94799a" => :sierra
+    sha256 "9fa7623c5faca871c8aed1b7b36cf31f7f7a1b632a8cbb3d8184177a0b6edf9f" => :el_capitan
   end
 
   depends_on "python@2"
