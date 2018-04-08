@@ -6,9 +6,10 @@ class Fontforge < Formula
   revision 3
 
   bottle do
-    sha256 "06dbc9a8d4bc58b2097d455074118db2b0c9063d6e341e8f36034f7dbb896aec" => :high_sierra
-    sha256 "c1c341cc9e10bb504fee8b8cdcb827ae1ee32db9a2c723743a79e39df32da8fd" => :sierra
-    sha256 "ec69ac98f88c91f84f83d929310c6b7bdb4ccdc731e2603d2402dbdccd54a6d2" => :el_capitan
+    rebuild 1
+    sha256 "21e0d31c088b0d0bc77e38836acb1eb8c78825dddd9103d71a8be1fb142ddf81" => :high_sierra
+    sha256 "51ae97659fd37c2481f30256f87663c4b586d2538f8a3216832afae771507c5e" => :sierra
+    sha256 "d131cfb88f5a8c53e6052f971c5dad0617ca057ed4d622dd32c8935ef641d394" => :el_capitan
   end
 
   option "with-giflib", "Build with GIF support"
