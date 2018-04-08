@@ -10,9 +10,10 @@ class Sshuttle < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f9fbc1a692fe6e7e633be34c8379763437901142676348e7c1fd1b9c90da6a10" => :high_sierra
-    sha256 "e35af7e75eb90bc4deb67ea297a37343d9f56b4493aa0fec90438946e1baa880" => :sierra
-    sha256 "a4dac5efa96e42dabf26c5569a1cc57d3a3caf2363d33a0027308278dc161fd1" => :el_capitan
+    rebuild 1
+    sha256 "1e3aa8ea29c01c830de075a3e678a04fe632c7c249a1a26ec1adb710dfbaaaaf" => :high_sierra
+    sha256 "e2244343e61e6b4e236502ae7ce059eb25c726083fead7abb56b83143679d9ed" => :sierra
+    sha256 "d175b8701719ca4b21bec43fad17fdcc192271577a3a4fcf6d8bbd66283a10ca" => :el_capitan
   end
 
   depends_on "python@2"
