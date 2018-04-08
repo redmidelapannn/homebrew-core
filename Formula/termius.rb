@@ -9,9 +9,10 @@ class Termius < Formula
 
   bottle do
     cellar :any
-    sha256 "1b43d37c254e794c47286c544fc5d4f18eab191840ec02a5204b0e315693394c" => :high_sierra
-    sha256 "e30b066415aa95b92890721ba3225e38e89afbad566887f15f8b404f447f880b" => :sierra
-    sha256 "884c8ca4db96e065ed6d6b660f7919f68b0e4715724eaf39015be98cf5ded7c6" => :el_capitan
+    rebuild 1
+    sha256 "63ebc8bad87a8eaca78019b394ff45713cfa81221bab1aa7ddc2ec18205af0e9" => :high_sierra
+    sha256 "2c641aa3560ea4b719962f5cb0cd0b58e2f297b3a8030dff8c32924ea2218e6c" => :sierra
+    sha256 "a3fb54b67cf7ebb5c4e049d12372f0d5fbf7ea37824df1a62a0d98ad13b1b21b" => :el_capitan
   end
 
   depends_on "python@2"
