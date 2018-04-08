@@ -5,10 +5,10 @@ class ProtobufAT31 < Formula
   sha256 "fb2a314f4be897491bb2446697be693d489af645cb0e165a85e7e64e07eb134d"
 
   bottle do
-    sha256 "8648436399064763689f1e39b6c2e7a0ce8d6682064197adb467d7ccc803aa9e" => :high_sierra
-    sha256 "941385129ac0e5a34923a373cb57daccfecbaaa25b429624c741873e144ba581" => :sierra
-    sha256 "b7d053c5f1dfef00da3c05fd9ad3db7317a8d0abb983290869844d1ef28a799e" => :el_capitan
-    sha256 "813126845f50a0d885b9fedb213e566fc5e3d5959f1f69733d8c2d04fa530c67" => :yosemite
+    rebuild 1
+    sha256 "118156b8aa44bcebfeb185531b3a2d503ba1d084fe90829113da4c3abc60ae87" => :high_sierra
+    sha256 "e05f83bc056c6cd7efcf88c9d9d8f53132831d9bbdb77a36bff3e983b382556a" => :sierra
+    sha256 "5b362d7dea78fd6b6773de5048f1ecfab9d0fcd5e8730ed7b1eec39e274ea8f7" => :el_capitan
   end
 
   keg_only :versioned_formula
