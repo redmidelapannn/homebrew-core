@@ -7,10 +7,10 @@ class Sshconfigfs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8a6fe6649349ad9d1f14bcbe96d4bef0039aaab16bc8b320f052c053d468af70" => :high_sierra
-    sha256 "5e5f5ccfa8356cc53e19bf1a794b0152d6a2083cee84f0777c4e5b9d371e4dfc" => :sierra
-    sha256 "f84991229a6701f9483c79232c5e25f3e4577d2e6748c06b5f49808c0ee8354b" => :el_capitan
-    sha256 "f84991229a6701f9483c79232c5e25f3e4577d2e6748c06b5f49808c0ee8354b" => :yosemite
+    rebuild 1
+    sha256 "a17882d6e67ce6a37781e910e5652ad8b2409f2dc0f392eeb21318e55c293b66" => :high_sierra
+    sha256 "a17882d6e67ce6a37781e910e5652ad8b2409f2dc0f392eeb21318e55c293b66" => :sierra
+    sha256 "a17882d6e67ce6a37781e910e5652ad8b2409f2dc0f392eeb21318e55c293b66" => :el_capitan
   end
 
   depends_on "python@2"
