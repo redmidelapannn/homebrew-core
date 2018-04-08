@@ -8,9 +8,10 @@ class Ooniprobe < Formula
 
   bottle do
     cellar :any
-    sha256 "63c467de1c93e89d6eb555587ccf5048fc7d48646a1359ae51549635d619fe27" => :high_sierra
-    sha256 "190aa6d0fc5824a8f34c364ba6c436c6a7c4a6485afd10b9aaf39885ee2e870c" => :sierra
-    sha256 "21c9bbeaf1f5ab28751714147db3257824535eda0068c701707c8ad02fe50372" => :el_capitan
+    rebuild 1
+    sha256 "5791ec712b0d4843c3a74f5594c356d96b6fd407cbc3a261907f5dcd264bf3ad" => :high_sierra
+    sha256 "7b57cdf834c7f5117f621ba0bfa7bf4330d542031542ed45024e0578028c3ae1" => :sierra
+    sha256 "bec206dc183a4517e463a906c1f04f1d62c14bb607785862612d5ee25eda876c" => :el_capitan
   end
 
   depends_on "geoip"
