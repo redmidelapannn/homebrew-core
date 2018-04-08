@@ -6,11 +6,10 @@ class JujuQuickstart < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3afbea1daad8a4b8618de0eba9fb9bea0e8d8f87739dd03a17fe6e1e122355ab" => :high_sierra
-    sha256 "32b70041e0433294ac291b531dcb7340efc20b2d1609a96496d654a03c24322c" => :sierra
-    sha256 "a6dd9cb553b399995f36a076ffdb949f429a46a312bd9d8580ba28d3fe172b2a" => :el_capitan
-    sha256 "55994b277c93c19b9534f56ac23c183ec0f27e7441609107e510f892e2e98c86" => :yosemite
-    sha256 "b4c3a7b5d42d808bd96ec8b1a398e4d2950e1f5e3c0d1e00cfd259069e1191f5" => :mavericks
+    rebuild 1
+    sha256 "fc918393a29db3a410b126da1c1e35988057ffafa0e656bb64bcca86bbc15135" => :high_sierra
+    sha256 "877505a28f98f05e875cb184c3201fd63c1e36739bbb3d5eb71aeac237c92112" => :sierra
+    sha256 "1970e91895f96772a12d9859f55b04c91fe2f04869fa1dc0a8e9dd2ef11b86bf" => :el_capitan
   end
 
   depends_on "python@2"
