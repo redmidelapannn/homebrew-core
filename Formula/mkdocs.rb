@@ -7,10 +7,11 @@ class Mkdocs < Formula
   sha256 "dc104ea8677a5e55cde4d5a2cf6be613dbc905c4111e09d434d8d9183851c2da"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "dbabb4392de12114a773ebff7517558cd60b3061d1ce17562a3304d52af74147" => :high_sierra
-    sha256 "d681555682de9b035d13f700e1c36dac36f61c444e93883a6c579c794619a132" => :sierra
-    sha256 "687d04afebfe2c6894688e2e189062f66efb200cd2ef7cfeb5aa86079cbe24f4" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "4a3fb1eb86e7d461d4289ad0ec662d3d3e88ba6a6638859c3a026fbfa34ac6c4" => :high_sierra
+    sha256 "7fb20da17dc2c4f989a9baffc8e9e8e98e64773baf184d1793f55682ce67d81a" => :sierra
+    sha256 "ab786216d11ba81df8084bc959ac712aa640f91de0813c45e3e575fc76210b5e" => :el_capitan
   end
 
   depends_on "python@2"
