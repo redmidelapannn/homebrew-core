@@ -8,9 +8,10 @@ class B2Tools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "94ddeb7d56a0c164120429cf819001d950cce3ec7996f8057a7a1e20bf33f99b" => :high_sierra
-    sha256 "6210536251b3a1a4066a7b2cd0bc3e7a0b0173525a792da2e4003b917799b4d7" => :sierra
-    sha256 "a15207e3615b4865877c8d48976708c926e0d095303b4c95a49b196e14acda04" => :el_capitan
+    rebuild 1
+    sha256 "5df2e9ba446f47fe88138303e979e402b86c7b0fd11a262a73664798cca130e8" => :high_sierra
+    sha256 "ce4afd67060bbc982cc9d140dd721bb4189bf458b374808365ec2bd323b19566" => :sierra
+    sha256 "8e7faf054abb0e20257d3fb0aea4caeecdeeaa9d4d62f89a123a9ef0efdc4ad8" => :el_capitan
   end
 
   depends_on "python@2"
