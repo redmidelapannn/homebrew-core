@@ -7,12 +7,10 @@ class Joshua < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "15cd2defc70734d455c6adda067193905e0debe97c21c551e364bb67a4e5157b" => :high_sierra
-    sha256 "7b04fb7031b9f002a418eb7d674d2ceb05be0926c0a7d8abfea644be6d381df4" => :sierra
-    sha256 "b649095ea4a944799fbc1ccd8425464b7d2711b0a149049b4d2d5e92d604c5ae" => :el_capitan
-    sha256 "6ac9fb24f8b1bb70a32c72c8436b8ad43717cf83d65499cb011214061b6ce6ba" => :yosemite
-    sha256 "176fa47a6a2722fb5b6bf1e2efba8da32bab6355f3d844424a817882ed7b3a8e" => :mavericks
+    rebuild 2
+    sha256 "9374d32740fdce06ddf1dc4d8b1b3ba31b2644d0cbe82f897c4ad1174e4fef49" => :high_sierra
+    sha256 "9374d32740fdce06ddf1dc4d8b1b3ba31b2644d0cbe82f897c4ad1174e4fef49" => :sierra
+    sha256 "9374d32740fdce06ddf1dc4d8b1b3ba31b2644d0cbe82f897c4ad1174e4fef49" => :el_capitan
   end
 
   option "with-es-en-phrase-pack", "Build with Spanish–English phrase-based model [1.9 GB]."
