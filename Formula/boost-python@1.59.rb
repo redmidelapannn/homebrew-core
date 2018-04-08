@@ -6,10 +6,10 @@ class BoostPythonAT159 < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "3aeba5e1e8a29f40ee518787d06323762c8fed8dff7510d71e075d744c2e529a" => :high_sierra
-    sha256 "00434235b9857114ec0d23f0023190f40b3e541b7b7448eb09363d293c03b648" => :sierra
-    sha256 "df22f5aa11aaf8b39915be0f5bb45bc22878c77755ba1e99a393151b62c289a0" => :el_capitan
+    rebuild 1
+    sha256 "efd0d75fcafeb17935ee02ce5711b02849241f6480dc8eeaaad59312e5b98ab9" => :high_sierra
+    sha256 "cdd566d5b597ce4c42fed0caabf0e6f52684e1e88e30c5298ee3ecc5468d6144" => :sierra
+    sha256 "e92f15e6df28a143e7fe21ac0aa9cd02c850463a82efd1694e5f8fbcb0726fc7" => :el_capitan
   end
 
   keg_only :versioned_formula
