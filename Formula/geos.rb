@@ -6,10 +6,10 @@ class Geos < Formula
 
   bottle do
     cellar :any
-    sha256 "bd35ebbcc9d142b0ee4d1f1837520cd0e195e13e3ea1804c5cfd1cc99d660b9b" => :high_sierra
-    sha256 "a435dcf855256300793f56c3d0af6597f39958bde52adc29d07736f897b40c1b" => :sierra
-    sha256 "8fa4f17ee4b0f8c52bdb155f4264043f12245858e413975cfea4355d569db207" => :el_capitan
-    sha256 "5966c5ecea54189c67a3ffb5856176f4bb070ca72b3c3628ad7b76fb67e35de8" => :yosemite
+    rebuild 1
+    sha256 "36bffa345ed6738645c2034d53965e7b4acc0a39feb4dc3cf811ea068aba30e2" => :high_sierra
+    sha256 "11ecc1befadf9ddf5440f338503c958e69a22cff80e17ac3ecf96c5b7c7b134b" => :sierra
+    sha256 "6d2ad89e65ae39f26fa0acf79d983ffa29f36d3fb4ceaf8cf47a75ee2f7486f7" => :el_capitan
   end
 
   depends_on "swig" => :build
