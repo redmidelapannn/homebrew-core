@@ -6,9 +6,10 @@ class Latexila < Formula
   revision 4
 
   bottle do
-    sha256 "692f383ca261bea02b2853ee77ae398a8efcbb666b25ae758d087f7d1b96263d" => :high_sierra
-    sha256 "b95d43825b9d4844db8bfc709c61fa447b56c36e7fa5c8b225890044433d1375" => :sierra
-    sha256 "bae5d366a89baaaff691c8bd178092b2b953f6fcd6ea7689aae154fcb15ede60" => :el_capitan
+    rebuild 1
+    sha256 "7afa5fd3426939f97db7b44481d93512b642a0271c5fd37f850376b27bad349c" => :high_sierra
+    sha256 "b1f0421bebd5025d7d7566e4aac2fcf4698d3716047e030cddcd6905635aaf27" => :sierra
+    sha256 "5156cd8f10873a561b9358569344e74d7621e45315ed007ae5a0977ba082627f" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
