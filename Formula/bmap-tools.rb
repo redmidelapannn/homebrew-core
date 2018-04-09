@@ -4,6 +4,13 @@ class BmapTools < Formula
   url "https://github.com/intel/bmap-tools/archive/v3.4.tar.gz"
   sha256 "483c5dd9589920b5bdec85d4cdbe150adb3ca404d205504f85c0fb03edc69c2a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "340f2783fd6fa32884c61721b491a18f9239155a7351ca9ba2f8fc88132efc2c" => :high_sierra
+    sha256 "340f2783fd6fa32884c61721b491a18f9239155a7351ca9ba2f8fc88132efc2c" => :sierra
+    sha256 "340f2783fd6fa32884c61721b491a18f9239155a7351ca9ba2f8fc88132efc2c" => :el_capitan
+  end
+
   depends_on "python"
 
   def install
