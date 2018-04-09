@@ -14,6 +14,6 @@ class Ansilove < Formula
   end
 
   test do
-    system "#{bin}/ansilove", "-e"
+    system "#{bin}/ansilove", "-v"
   end
 end
