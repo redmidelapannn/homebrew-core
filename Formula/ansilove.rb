@@ -10,10 +10,12 @@ class Ansilove < Formula
   def install
     system "cmake", "."
     system "make"
+    prefix.install "examples/43-nslv1.ans"
     bin.install "ansilove"
   end
 
   test do
-    system "#{bin}/ansilove", "-v"
+    system bin/"ansilove", "-o", testpath/"43-nslv1.ans.png", prefix/"43-nslv1.ans"
+    assert_predicate testpath/"43-nslv1.ans.png", :exist?
   end
 end
