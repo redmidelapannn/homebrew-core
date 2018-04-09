@@ -28,9 +28,6 @@ class Offlineimap < Formula
     man1.install "docs/offlineimap.1"
     man7.install "docs/offlineimapui.7"
 
-    inreplace ["offlineimap/bundled_imaplib2.py", "bin/offlineimap"],
-              %r{^#!/usr/bin/env python$}, "#!/usr/bin/python"
-
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
     resource("six").stage do
       system "python", *Language::Python.setup_install_args(libexec/"vendor")
