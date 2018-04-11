@@ -15,10 +15,9 @@ class OpencvAT33 < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "2630c2fd1da17ddcb66cfc443d274f42d1e5ae22689f168d4c643f1d43d54470" => :high_sierra
-    sha256 "68b6d2312f1593fa82033504eaf58aed90a9038a21096e5a275c16e861f1f2fe" => :sierra
-    sha256 "5f36f3c1d5790bfac52dfeb131798d5bf0a0ed4aed8f8523223b502515b76339" => :el_capitan
+    sha256 "fa12f8b08fefd2148cfeb8dd2079a95ee16b1f58957e9bc23a5d69f59e67387d" => :high_sierra
+    sha256 "f30bf639da92a4df89c0246c0a8436e4340cefea3f1d9e64256e54caebaee546" => :sierra
+    sha256 "2faa39e1ebf37d1e48a1a78e02281c521865181f9c2e6c47b4197b0de87701ae" => :el_capitan
   end
 
   keg_only :versioned_formula
