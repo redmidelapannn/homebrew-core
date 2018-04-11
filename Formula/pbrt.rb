@@ -7,11 +7,9 @@ class Pbrt < Formula
 
   bottle do
     cellar :any
-    sha256 "f9c266a03e8c47a0d18ad3a0cc5633c54fec804f7ac943d933f41cf31d32ddfa" => :high_sierra
-    sha256 "7dfc107dbc633a3273433e7f763ffaf743660281c223e8ef27816836bd6dfa79" => :sierra
-    sha256 "77510b79395468971a567029052265fd03e9c9eeaf4e6056d1a225d7ade5d718" => :el_capitan
-    sha256 "ddfc01d16de04891db883377f509768768e374f2a8fab1536f5487fe559d707b" => :yosemite
-    sha256 "ac424bf47ea119d977b7e2f2a0bfca9a994838437cd9c1f189a71eed83b816d1" => :mavericks
+    sha256 "73158fad9aedb912e3ec36165588ab854da1ca78b463e4091e17d33153798d44" => :high_sierra
+    sha256 "c28bde34450942ed0e47627e314363cf620e11cb61c9ee56cf385e2d2fcc5cb5" => :sierra
+    sha256 "47f90958788384efc771191f4a0364f5eae47034cdb6ed1926b1f440eff424f7" => :el_capitan
   end
 
   depends_on "openexr"
