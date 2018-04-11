@@ -6,12 +6,9 @@ class Ctl < Formula
   revision 2
 
   bottle do
-    sha256 "1636fbe6e0ff3ed1f44b9e9eb1061065d40d9fe5e3239d29606eb72384e9f867" => :high_sierra
-    sha256 "3f8e680a2ffe275cf0b719c3d092d9d38d068bb90def12bb84021a1c95205e52" => :sierra
-    sha256 "c66847b6d0da88f917d5c701b0faeb91678f9622718fa09734973bef46a2599f" => :el_capitan
-    sha256 "d04f2f46eaa9b3fa1d6e67e0493e8b206f873c6211874962b8ef06865bbf5c71" => :yosemite
-    sha256 "59a4e155666ed1854a2b38204d750ddc0af75ebd988367b1629be4a9f00a6c1f" => :mavericks
-    sha256 "84aaaa696f7ea8837d13a3a1e58d826978be781c01dd5a77fa20197f45b7d25b" => :mountain_lion
+    sha256 "0710a11b85d449226ac410fba8bcb5e78d4a7f34a1695600f9257fdb9e0a97d2" => :high_sierra
+    sha256 "0350b865e850d65bc55cec0f9733609aa7798fb03e69b0681b889de4f9b46c63" => :sierra
+    sha256 "6fd5ba3efa39bceef631d6033565b6b2d55c547fa45fe57841ce48a72eb46c1e" => :el_capitan
   end
 
   depends_on "cmake" => :build
