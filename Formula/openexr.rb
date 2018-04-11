@@ -6,12 +6,9 @@ class Openexr < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "12c2585a07369da6668cacffe07ddd7a6b0f9750d107f0d053eefcb992e4df85" => :high_sierra
-    sha256 "0220d0edcb161cb56a1cbe8477cc2ecd45fee320ce48f99c114454421a527198" => :sierra
-    sha256 "a73d66076b03d20908db659b965cee768d82408ddca5196fef8164b779091765" => :el_capitan
-    sha256 "ad973fc780bb731a5ee8be347283903e8343448913e46a23fbdede0145ef980a" => :yosemite
-    sha256 "9c21b70caff58d8d699a58a50249f220b03c23f450a219276782827e6c03ff33" => :mavericks
+    sha256 "1d4ff5f87d9bf1722b17b7ad7748c74d863dcd4747b2f13372e0b9865f6d5cb3" => :high_sierra
+    sha256 "007444b2148348d41277da2bdff8de38f6e0a10065b16693fa4893192f54b178" => :sierra
+    sha256 "af3beb5ec83a109dc93557837ad5ece3d2322e301fabc29b86efc9fb959f9ba1" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
