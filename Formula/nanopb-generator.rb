@@ -7,9 +7,10 @@ class NanopbGenerator < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "162e82a5d987e11b4b451d6d23a5d1e4e193ba2a802ab8eeed2395910519598c" => :high_sierra
-    sha256 "162e82a5d987e11b4b451d6d23a5d1e4e193ba2a802ab8eeed2395910519598c" => :sierra
-    sha256 "162e82a5d987e11b4b451d6d23a5d1e4e193ba2a802ab8eeed2395910519598c" => :el_capitan
+    rebuild 1
+    sha256 "8f4b99e87122582b3fe84578f1043836867077351f18f147ba8decb75693dd33" => :high_sierra
+    sha256 "8f4b99e87122582b3fe84578f1043836867077351f18f147ba8decb75693dd33" => :sierra
+    sha256 "8f4b99e87122582b3fe84578f1043836867077351f18f147ba8decb75693dd33" => :el_capitan
   end
 
   depends_on "python@2"
