@@ -8,9 +8,10 @@ class Dnsviz < Formula
 
   bottle do
     cellar :any
-    sha256 "af19e811f005a5fde01489c7364fe8cd9d98467466ccb4d215e2aac9799ce967" => :high_sierra
-    sha256 "b5e94daf80161fc321668a9f63062a0e4b994fec5e020a60e133686dde81fadd" => :sierra
-    sha256 "fabdeb85ef8745e3c1fb3a56efb44b0d583c3833a9c20200da193a0055b335b8" => :el_capitan
+    rebuild 1
+    sha256 "7aba5330caedf7fecba4343c32f4b18c2a4af1c0a9f1962a25ea17def646a274" => :high_sierra
+    sha256 "a4ddde79e719b2216a3a1026814d033523d39f480102647272d2a0c279c955f4" => :sierra
+    sha256 "a2292e29ffa8ec912490913adc2aa4993059ac9efb44c708b6ca1ac6b5085899" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
