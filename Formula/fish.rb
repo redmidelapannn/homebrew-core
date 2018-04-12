@@ -6,9 +6,10 @@ class Fish < Formula
   sha256 "e42bb19c7586356905a58578190be792df960fa81de35effb1ca5a5a981f0c5a"
 
   bottle do
-    sha256 "b75d873885ecfe3a6e28e8de9a7f292b03c3fb3ebedd3d6ac7a74219148af04e" => :high_sierra
-    sha256 "20e6c49692cef13eaadd8ee94e9831557130d449405fe12bfd9403659865f5b3" => :sierra
-    sha256 "017610f146a161b4383b905a675ac935568a721ed042c3f41f97aaa7f4b5037b" => :el_capitan
+    rebuild 1
+    sha256 "ce2abb19cb379c8bd0ccf0c2cb90883e95d5a8088b5cf0444ba0a34dd30e905c" => :high_sierra
+    sha256 "973a202d72dc742c026217951873b515485e9f91c3e6ca12927de434f3d6eb60" => :sierra
+    sha256 "707154d1e229f15390ff1c70b76b209e59cd77be23edd97cf902b60dc2cc8b9c" => :el_capitan
   end
 
   head do
