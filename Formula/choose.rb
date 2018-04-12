@@ -8,12 +8,10 @@ class Choose < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "8c99ba985ed4102767beb1413508731726f78ab7329e192cd54461f5d5c78856" => :high_sierra
-    sha256 "f1f78c46406518bfb8197922d199737d5ae44913e86e1753df84a759c6670556" => :sierra
-    sha256 "0e597243f20f7a5a0699d72dcd4d0395976e481a1fc32c24725c2a4b4fee6992" => :el_capitan
-    sha256 "24a9edea9e97823c333d0352244d7b30f72ddb0c8df291706463f8c76a0ca2e9" => :yosemite
-    sha256 "47d5c12604878a2f3eb75da8c80a15d991b47129a17684fde8f02fe97f16e78b" => :mavericks
+    rebuild 2
+    sha256 "97cf8d937cfa6cec6e997428291a9db85b2c54a26d754c4f3443b87d469cfd39" => :high_sierra
+    sha256 "b5d3ca9b415971152d747f257f54d1eda7f3339ebd0903aac12c200e75444437" => :sierra
+    sha256 "a4dc328693ed87ef21175c3b045f601739f51bfd8bac2666f7c8c078120dd2b4" => :el_capitan
   end
 
   depends_on "python@2"
