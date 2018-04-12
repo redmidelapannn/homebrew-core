@@ -9,9 +9,10 @@ class Pius < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a35dcffc50bb72dd015b41c072ce59450af3f5be7d80c1ab147c5d073f5fef82" => :high_sierra
-    sha256 "9d0f1df1935a72f6e0375272f0f6bd1bf0e3bef7e823592c7db48337359a3ca4" => :sierra
-    sha256 "41ec87c9e2e8d2b480cf7041066cbf9fcb24bb885f9794c3c44a1b0e314d38d3" => :el_capitan
+    rebuild 1
+    sha256 "d30a097d0b647320fd7f268adbf503b1ef2a26c4cee766771ebb9f271a9de954" => :high_sierra
+    sha256 "65c6e52a841c9792cea06c8481d52bca9e150d4b05e96ae62e9827d77e4c652b" => :sierra
+    sha256 "9ba949f5bb7186dd1802e24a2aa3e66f937cb5bf56ecb5ab13585bcfebd873ef" => :el_capitan
   end
 
   depends_on "gnupg"
