@@ -7,10 +7,10 @@ class Portmidi < Formula
 
   bottle do
     cellar :any
-    sha256 "c8f2755fd775064c282da84d666336d9125c6e70082975ffdc0867dee60b5802" => :high_sierra
-    sha256 "3ab40020a258be907f829205952a3336f424c0de4588fe41c5859e8c16ebaf72" => :sierra
-    sha256 "0d699de535a558e1bc72811f0b0ac7ccc158ee224564ff8e4d0b959c5872a9dc" => :el_capitan
-    sha256 "c36b7219ff6d838884d8fbe13a1d159b5375e5868b9a9c0d84de332952549e36" => :yosemite
+    rebuild 1
+    sha256 "ae4a7e98ffae79f75a81571a9994a7985e6b3f7cb3a22fb9035444a4a79f7f94" => :high_sierra
+    sha256 "e602784783349fd6f22dec78e536e5ba395d874fc53f065fb0b6a77f7fe50392" => :sierra
+    sha256 "faeeff120a27b690bbfe75451341bb1bac2e4e32454a42e88eb7695a476bd963" => :el_capitan
   end
 
   depends_on "cmake" => :build
