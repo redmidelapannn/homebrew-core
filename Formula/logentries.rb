@@ -9,9 +9,10 @@ class Logentries < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "76338a8179b342a815cc03c2a074b6bc2fcc1dbea309d676e33e0a9ce659760d" => :high_sierra
-    sha256 "bf29b4ac8bba11425b5a06ce68568c60f83cc0676927b967cb8d9c41995df60d" => :sierra
-    sha256 "231eb13cd13914785b8b09f63e0758201ae7e36ad57cf6c847e0f9effc25b556" => :el_capitan
+    rebuild 1
+    sha256 "a71c941e820127ee2a22bf7d5bb80504f7380fc46d942cfabf0cbd1523339b39" => :high_sierra
+    sha256 "34fc4abf67e53a88022b98c1edca0d5353addf2eea73162cc3094ae68b945a9c" => :sierra
+    sha256 "a2ae060984c9553ecc7c226d68f8d42f623a828f0dd8a64d1a4bc80bc5b4ea47" => :el_capitan
   end
 
   conflicts_with "le", :because => "both install a le binary"
