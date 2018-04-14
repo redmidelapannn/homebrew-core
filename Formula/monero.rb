@@ -6,9 +6,9 @@ class Monero < Formula
       :revision => "c29890c2c03f7f24aa4970b3ebbfe2dbb95b24eb"
 
   bottle do
-    sha256 "4605768a865c17daae09b3e1ddfd96babe0779126ff1ed90db26238e020d8283" => :high_sierra
-    sha256 "8c2edbf826bcb23015e050ac072ff64d9d400ed0ef223b8fc53ddd14d4bb1335" => :sierra
-    sha256 "6c4777177c56f4f1ef68393033421e0628a8c657cf4373ccbeb6c009c4b02430" => :el_capitan
+    sha256 "ed7d01e28bd8d25e7171c0d83be68b48856a0fa81de1e31ca5e25b0a659d0c2d" => :high_sierra
+    sha256 "b6ed3b9f4a9a2cc0acb6081f57c630e7cdbcc5a2ca513304766e4031a848feb9" => :sierra
+    sha256 "0032bacd0303ab31ac6ed609fdf5979d3c5089dcbda4748f26395f9559cd4c64" => :el_capitan
   end
 
   depends_on "cmake" => :build
