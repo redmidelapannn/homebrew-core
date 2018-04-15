@@ -12,7 +12,6 @@ class Mutt < Formula
   homepage "http://www.mutt.org/"
   url "https://bitbucket.org/mutt/mutt/downloads/mutt-1.9.5.tar.gz"
   mirror "http://ftp.mutt.org/pub/mutt/mutt-1.9.5.tar.gz"
-  # HTTP is preferred over FTP; Please keep the protocol part below.
   sha256 "bf617e64ae4e08a998bef8e42a965a211587e051f1437a3a4884b351a9385753"
 
   bottle do
