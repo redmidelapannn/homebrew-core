@@ -9,10 +9,10 @@ class Supertux < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "66385b85ba64e6ce35f5d74e9c2304e73795b977b75f814ff4eeb55cbfccba0b" => :high_sierra
-    sha256 "fbde2e2249a89401fd9893b095857b283c4a7a3a4ab9dec47b8c30d2030d0268" => :sierra
-    sha256 "c66b6e14fc23160f5024ad7790286ec0bcb7f8ed262ce6c400dc8757c1c16ba8" => :el_capitan
+    rebuild 2
+    sha256 "cb63b6494944a8ec0d5c1ef0951f00af84cebdc891e715231b514a3e8da377be" => :high_sierra
+    sha256 "7b4d6e99ce5ce3a88aedc86a49b54b45fe498a817456a3b71173bf385195e263" => :sierra
+    sha256 "710cd5ccb6ba50a0fecd3d354128da71b06bded9b781c7f8350a8ee4505c55e0" => :el_capitan
   end
 
   depends_on "cmake" => :build
