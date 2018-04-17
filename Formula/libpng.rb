@@ -7,9 +7,10 @@ class Libpng < Formula
 
   bottle do
     cellar :any
-    sha256 "d38a64089526ecc1413acbc22373821fd181442b80ffccfd8322a5724dc09759" => :high_sierra
-    sha256 "d587603b3079fb7ad5cecdd451ee7fdf88f80a8b88f457ed199270d85753208c" => :sierra
-    sha256 "0c17ca28357c801a0fb81667ba69c1ed820d0348ca7728766ea16e3bd9b0ff19" => :el_capitan
+    rebuild 1
+    sha256 "efa57d81788f359ab4b6f95a1cd4042165caf12d41c53ab3fa67a5b0ff6d15ff" => :high_sierra
+    sha256 "294cdd03d0a30fb296c4cf53f974fbb7031e61adec19c0567488b734288747cd" => :sierra
+    sha256 "8a409e793c23c7c8c99b20b0a1576e7c3b8528c49d5bacbc8eaaf12c15a0444f" => :el_capitan
   end
 
   head do
