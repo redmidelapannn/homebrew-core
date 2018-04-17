@@ -6,10 +6,10 @@ class Vimpc < Formula
   revision 1
 
   bottle do
-    sha256 "cfbf82448637f02a2df18f3e48cae13d693335a8c18ceda70178cee16cf263ce" => :high_sierra
-    sha256 "b82c822bb057772a0edce2c5a8f61863efd130b682b67eae3c27c287674b3839" => :sierra
-    sha256 "9114eadfce8e890ea003ef9ea763905dcd47e6a9dc72e8388071721ebabd1820" => :el_capitan
-    sha256 "2cdc5fc0899ac53a35ae1e1ee99eb0e282750277a407699d37afe419068ffce3" => :yosemite
+    rebuild 1
+    sha256 "a2500dcc78346a67f36bf79d9fd54176605b8ae65b8baaf0c208dd2a79cd9759" => :high_sierra
+    sha256 "e136691e81820f8801eee8968387c48e148c8506fdfcba5426130fe2bf3bcefa" => :sierra
+    sha256 "c4672d885a5a2f00c36dfa0c8a1d0b08abd43d4060357cb04deabda46b0206a4" => :el_capitan
   end
 
   head do
