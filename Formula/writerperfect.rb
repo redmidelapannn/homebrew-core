@@ -6,10 +6,10 @@ class Writerperfect < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "12f30a1f15f5887da7675026656f59dd74b7fbffdf4129a2c1778578dbf4cc4a" => :high_sierra
-    sha256 "36981e968c146d8aeca47d96327b3f3e909a3f58ca15bed17202e93fef6e17db" => :sierra
-    sha256 "549f41525d1a5cf4cad493650ea0f8daae0208246f36984d6a56a4af533fc881" => :el_capitan
+    rebuild 2
+    sha256 "b3a48c02b049444bfc485db5e40c3a2503ad579173d61a67e65fd7a1ad09f748" => :high_sierra
+    sha256 "49c568d56fbecd3a9b95590bfb018fdd3dfa9c68e77f4f9a654beab0d7a88204" => :sierra
+    sha256 "65b0d4a421569d88e4afd7cae5d215d601193f06210ade22fccd9c29ac7b9366" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
