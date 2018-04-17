@@ -8,9 +8,10 @@ class Dub < Formula
   head "https://github.com/dlang/dub.git"
 
   bottle do
-    sha256 "7484306cfaba14aff965a6a32ab47d194592ea8ae6720f617b545de586db3785" => :high_sierra
-    sha256 "309c7a42cdf6b1eda8dfc8c3500c51ece625be157ee9ee6233b75655f9a14413" => :sierra
-    sha256 "0f12587d134ada1588db6f6f228f8ff679101c0c53db4715bdb93a03292b65da" => :el_capitan
+    rebuild 1
+    sha256 "eef06fb77d5885ef6a80f436c90db5fc73400e3bb4d1da8e7e9eb48baaded007" => :high_sierra
+    sha256 "fc2e17e559f28441438baae1118db78ec48720d947b4edf6d84c8ff3cff2679e" => :sierra
+    sha256 "a27117ae280b5917adc2ab6245ccbeddd31691126f68121075a6bc29d45e11e3" => :el_capitan
   end
 
   devel do
