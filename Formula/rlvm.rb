@@ -8,10 +8,10 @@ class Rlvm < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "ffbe5c1893759c495572d8338f4b7d18bb37a8fb8a88e4d0ef11e1f552e591e8" => :high_sierra
-    sha256 "bf5a864796942f72edf91b4ca86696050e694edd718418b01c23227f23c5fe33" => :sierra
-    sha256 "d6d62997e9ca3378380e96fc7f1f633b755b88956d009195b3e91832b8466c64" => :el_capitan
+    rebuild 3
+    sha256 "3390b54ce97e822bdd1fa29f93f425c1a20b06597a34514c94c688bccdbb422e" => :high_sierra
+    sha256 "675d011fe813f3c8451c07c9478aaf353dbaacf2d92a1cdd29962393599f33e3" => :sierra
+    sha256 "f767384e93a2713f585dcbe10e984dd2ab45ed3b1c58c7b9d04984e9e1e74663" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
