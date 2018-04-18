@@ -6,9 +6,10 @@ class Dartsim < Formula
   revision 1
 
   bottle do
-    sha256 "ba22d7c91a38221a5c3e0237c42ddd2af044eb3e96222bb6f8402033eadc4e5e" => :high_sierra
-    sha256 "48025d5e1a006dfb5e1772a25d931b5cf50c8f3dd58d665c3d01f8b2169a7ff4" => :sierra
-    sha256 "af0cfdad029623574519c5eaaf503a5c5e39148ac29806e57fd784ae787b72ff" => :el_capitan
+    rebuild 1
+    sha256 "b0216fd74c9576c020f4ffb1c4e4f7b417e85623ff39e0c6b192298f3d52c015" => :high_sierra
+    sha256 "4a5381bc05e89386a648c6252f44acbd025b3badbf5240145dfaa4c1eb10e55e" => :sierra
+    sha256 "c161adda710244de19e1d28130f94fcd2d7bf483c9115ac246b1fb5deb2992b4" => :el_capitan
   end
 
   depends_on "cmake" => :build
