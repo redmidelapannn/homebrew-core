@@ -6,9 +6,10 @@ class Augustus < Formula
   revision 1
 
   bottle do
-    sha256 "6ffeac4edd4805321ea0957959f85da8cc1f5978cdc8a98903a78c407d5d183e" => :high_sierra
-    sha256 "b87f6e5824186aaa1a02cc6665dde1328a4255aed653de85edd3e4bd40f65c60" => :sierra
-    sha256 "19a761ef4afa0cd5e9699b59b11eaac2e7e1d3dbfa14e2c8ced1b27eb57c2c1e" => :el_capitan
+    rebuild 1
+    sha256 "3adfa10e56dc5700632b87cfe2cc1010c6e8b3f966034da54db4e9a72ba087f4" => :high_sierra
+    sha256 "4435a25f636d19006227f38b00ddab84aa6c847d92f5417a3d887b46ae45a478" => :sierra
+    sha256 "f78aba8eaa5850466e9f7fc7b6e7aebe88ec91079136eb8d692f0449f1c7f27d" => :el_capitan
   end
 
   depends_on "bamtools"
