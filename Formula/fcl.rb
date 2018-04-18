@@ -6,9 +6,10 @@ class Fcl < Formula
   revision 1
 
   bottle do
-    sha256 "72a5ca040739722599576b579a6f864ca3307bf01ad8403765d739813a3e1fd0" => :high_sierra
-    sha256 "8fd76b19ab4408397f161947d7da47f619ec710ddcdc2c012579440a6885f192" => :sierra
-    sha256 "a2bc2115c9cc18a7f155583e6209ade38e73b80a10704e4d26e44ed177bcf5a5" => :el_capitan
+    rebuild 1
+    sha256 "84730ea2d1c0b0136e6344d225b706895cc80bfb20925b54bead3828bfbf20f6" => :high_sierra
+    sha256 "a73ee70fd1eae3dbbb8ff68f84bf2491c17fc6793311bd6e3ebd29b033e7ff6f" => :sierra
+    sha256 "bcc850751696cb44f1383496a9e118fad5fd5b084bcd64966d3d440dfb6d93f2" => :el_capitan
   end
 
   depends_on "cmake" => :build
