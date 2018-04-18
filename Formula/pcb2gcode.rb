@@ -7,9 +7,10 @@ class Pcb2gcode < Formula
 
   bottle do
     cellar :any
-    sha256 "43926c9d78d4e3adebb356af8082c8c262963ffecd7e82b786ee75159695a8f4" => :high_sierra
-    sha256 "92a477352bb02e909c126aea17c50ae9687be1d4e1c227ac58b8f41f3ee8af74" => :sierra
-    sha256 "fb8c42999d631688d76f32488db16d129bd4930941ad5a8f6fae5781e2edb302" => :el_capitan
+    rebuild 1
+    sha256 "769fd308adb169c6bf4604b8a5313e187fb52b0771c804ca9c83e478e6d8f6b5" => :high_sierra
+    sha256 "b6f2d67a29c55d9af4c83560c765da097286a4f3a73dad177d56224413ff424c" => :sierra
+    sha256 "e1a742307d5bc9db2eb26baf24057127e78c27638a5f338b647545ba4dc8bb0c" => :el_capitan
   end
 
   head do
