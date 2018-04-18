@@ -6,10 +6,10 @@ class Plustache < Formula
 
   bottle do
     cellar :any
-    sha256 "7be831bc5c4402d088a31cd3e3c55e9e0ae105d969eea9a676744b212bdbc446" => :high_sierra
-    sha256 "5122ac5404ae416955c5f3b64b63bfd617a530e746194590d3779ae61710f281" => :sierra
-    sha256 "d5a98c71ef6162127b0a9017a85e929effff39ce1d75318a75cfca93086ff922" => :el_capitan
-    sha256 "71e6a72ee994c2cabe2639dcd030a2ee577c1ceced012027766e108812bf7505" => :yosemite
+    rebuild 1
+    sha256 "0e04b8e5cf259e3657a65b033bd1735df4dde00e8372a6c442b5fb3e4dc86202" => :high_sierra
+    sha256 "716c68f6db28135ea361387658e3a3f339f614343165baae5d3a5d4d5deb0e24" => :sierra
+    sha256 "37e612368af36460d7b33363abc46f755b5d8f753013efc6b216cb8ac06fbb72" => :el_capitan
   end
 
   depends_on "autoconf" => :build
