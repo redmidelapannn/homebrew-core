@@ -7,11 +7,10 @@ class Sdcc < Formula
   head "https://svn.code.sf.net/p/sdcc/code/trunk/sdcc"
 
   bottle do
-    sha256 "7266fec7f01ef10413606fd784fe85d6f6bb6cc60fadaca7af34d1c9e033d499" => :high_sierra
-    sha256 "b5b8e259cf24cf913201fa4db9da37a3a7a7464dd351e9aa2e3ce5deb2221db2" => :sierra
-    sha256 "18750431c03b67a6df0e81dc881d4f1fe041fd228b449dd4de575fee1cac4d12" => :el_capitan
-    sha256 "85594a6e63c1565877a36d415105a44401f3e77c5fbf04cbfa4a8613c96b24f7" => :yosemite
-    sha256 "873b8a76f4d16379f5a57516306924a39053c3ddffb75b9bf7796c2bf0b4078f" => :mavericks
+    rebuild 1
+    sha256 "82540827a045ea45497bae47774761421f6d0f95642baa184bcfe78468111c1f" => :high_sierra
+    sha256 "d1f568019ad7ff1ca9cfcc973538f914cf3deacca4b5794a1057835264a43e4d" => :sierra
+    sha256 "71abff06efa7f35d577419837fdd1dda5819e97efa59f70595a789f91ce1c66f" => :el_capitan
   end
 
   option "with-avr-port", "Enables the AVR port (UNSUPPORTED, MAY FAIL)"
