@@ -7,10 +7,10 @@ class Servus < Formula
 
   bottle do
     cellar :any
-    sha256 "fc9303986cd2dda58a7ed71e96273eef4517120b4e8b32f2956f672f3125e312" => :high_sierra
-    sha256 "6946b4f5b7151f94cdb6e75ae47fda08a1da867f5690e757ee9d82875836905a" => :sierra
-    sha256 "39e8d21f40ecf08f3bf68e565648c9b94e4eb5d1acda854d8ff58676dce9a7dc" => :el_capitan
-    sha256 "3f23b83c09997e5e51b0089b7d2fad4ee8d7527fe29633cb6551a239acff59d7" => :yosemite
+    rebuild 1
+    sha256 "d95a523522900e68b3b2e610366191d4646866f88203444a416f4345c05194e3" => :high_sierra
+    sha256 "172eea6aa54ab45a3d798397275e9f0a78198b2bf250028d9dc263a623077897" => :sierra
+    sha256 "8f4bbddd2c6dfa887a2942175f12cc3bacf18c2622a846711fc903bb7986918f" => :el_capitan
   end
 
   depends_on "cmake" => :build
