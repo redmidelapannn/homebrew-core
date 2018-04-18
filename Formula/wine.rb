@@ -21,9 +21,9 @@ class Wine < Formula
   end
 
   bottle do
-    sha256 "bf84c0a02b7d7b4fc8814891f5542c0e35c30c922e0d2bcf4af168a1f34e36e4" => :high_sierra
-    sha256 "cceea27c906e9e5e7916281a57c36872c943802e998fede387fa7ccbc9d297ac" => :sierra
-    sha256 "309e0b2978bb79ea627caba23d7f3bbb0cb54d3a6b08836b2cde387a743dae50" => :el_capitan
+    sha256 "3342f5badafc0d97e63dcb610ac698f7e4096975668579bd431bfb97f62f14c1" => :high_sierra
+    sha256 "9e60aa5d4364628ca8543c93632a62260e58c5d5ad7cbeeb352b61bc3f79ce35" => :sierra
+    sha256 "c280864597b3d2974441f2ed671f17d5a0d417cf4e6367cccc3168f9892e07dd" => :el_capitan
   end
 
   head do
