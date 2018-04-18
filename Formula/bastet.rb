@@ -5,10 +5,10 @@ class Bastet < Formula
   sha256 "f219510afc1d83e4651fbffd5921b1e0b926d5311da4f8fa7df103dc7f2c403f"
 
   bottle do
-    rebuild 1
-    sha256 "188658452934d4ef5d48d6837fb0c6bf3e3875488e0c1da8dcf62ca37c1ee998" => :high_sierra
-    sha256 "8133c13d1b98d96eacf5d420d30378fbfcd9cbe898b0f13b188112618f4338f5" => :sierra
-    sha256 "e3745b716c09ce7f3834f4fc30163fa132f93feeec4c301dc9d46b0bc9ca564f" => :el_capitan
+    rebuild 2
+    sha256 "5e66a2b2adbeec12171e860018dc0b011e7cf9dc5359776347642a3ef875090a" => :high_sierra
+    sha256 "b5ce790dab8db9ab54e8cb24b49c878031a13cf15dd1651e7850ce10ef5340ad" => :sierra
+    sha256 "787620e1c51cbc0c46dab86386e71ccd351b4a2722ce1950f12088d3adb4fcd0" => :el_capitan
   end
 
   depends_on "boost"
