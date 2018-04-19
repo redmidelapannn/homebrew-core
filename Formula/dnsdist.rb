@@ -5,9 +5,10 @@ class Dnsdist < Formula
   sha256 "aa67cd4db8404a13ed4ed1097dd850203dab8a327372f72bb140df11ef7eba08"
 
   bottle do
-    sha256 "7aacb96a39ca2fc3f8bf08ca62f2a2bd7bcff290f06cfb0517ba552e9bdf5cdb" => :high_sierra
-    sha256 "bf56956092df94ba2ede745dff8ea37fb5059f252593cb4dc7c0699fe3b081ac" => :sierra
-    sha256 "009d81af1fcec266485d5706bf9df16850346d5ac0285a75d695c12a3ef49869" => :el_capitan
+    rebuild 1
+    sha256 "10f33433313b4b4392fdb7566e5220d6d4ab99916d75b79a06083cca73545c7d" => :high_sierra
+    sha256 "1f6079ef588b8a03dfd6872eb76ea0c3df76b7161f7b83a62641ff90c7e9644b" => :sierra
+    sha256 "0f7ae483f62238e9f3d1117ec567236b4bd73832f1919c5553c887ad8c39c3f3" => :el_capitan
   end
 
   depends_on "boost" => :build
