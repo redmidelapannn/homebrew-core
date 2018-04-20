@@ -12,10 +12,10 @@ class HighlightingKate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "5bc082453692f0d95f5e09fdcc85732b987da5a1ce33be520389e957bc2f5393" => :high_sierra
-    sha256 "29ad60e21820b116e4f91c8000e2c890c081f08c4ccfc02340ca44ae9892084b" => :sierra
-    sha256 "bce28e772d40cc270aa78c376a1d6fed78eaba841ca7b90e4290daad0f72d058" => :el_capitan
+    rebuild 2
+    sha256 "73eb7da98d22d2b8f1c080ca98e62c9b301526f7ed2f365142203483d51d9c37" => :high_sierra
+    sha256 "c67d3da206a903a798f2f4832dd286868812c3a4287847439d679838567d3758" => :sierra
+    sha256 "9bca430dedb58bb76e5b3d2ffa739b018ad36e083395e795c77e06f64626e985" => :el_capitan
   end
 
   depends_on "ghc" => :build
