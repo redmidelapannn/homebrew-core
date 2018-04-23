@@ -11,9 +11,10 @@ class Cquery < Formula
 
   bottle do
     cellar :any
-    sha256 "0f567e5d88299f28d489b666fca2cf320b91062fc053e0c2a8a1ad9e1bc76598" => :high_sierra
-    sha256 "06bb25b1c91c76c894d3aebdc18b76591ab2ff1c5f8190c376b69e60d6c22787" => :sierra
-    sha256 "9692d28682c009a9bec583ff20aa16ce5c790975375755a5a48a28ec3e3953c4" => :el_capitan
+    rebuild 1
+    sha256 "72af8463ffcfc4ead08f894c7481083b96f9354624b97a77bd04c61b4276d73f" => :high_sierra
+    sha256 "4ad4f49c895a466e5719853cf2dd6f1802a179e616fca8d416d11cc9fb70955b" => :sierra
+    sha256 "feb488e69c97f34528f3d53d6015923c4f56751ae8deb35a3807d356fe6e0d49" => :el_capitan
   end
 
   def install
