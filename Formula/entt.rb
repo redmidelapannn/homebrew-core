@@ -4,6 +4,13 @@ class Entt < Formula
   url "https://github.com/skypjack/entt/archive/v2.5.0.tar.gz"
   sha256 "6246501c6589eba9832538c47a23a239eaa1066c77471cae7d79e741141ade82"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "126be1a43308e653db75848f616edb02b22031dc204daf29784854cc39e3001c" => :high_sierra
+    sha256 "2ee583c0dc0ca36a89baf63264bc603c35e96b7527e1e154fd562a2b1af0d963" => :sierra
+    sha256 "126be1a43308e653db75848f616edb02b22031dc204daf29784854cc39e3001c" => :el_capitan
+  end
+
   option "with-docs", "Install the HTML documentation"
 
   depends_on "cmake" => :build if build.with? "docs"
