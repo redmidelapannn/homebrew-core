@@ -15,17 +15,16 @@ class Cayley < Formula
   option "without-samples", "Don't install sample data"
 
   depends_on "bazaar" => :build
-  depends_on "mercurial" => :build
-  depends_on "glide" => :build
+  depends_on "dep" => :build
   depends_on "go" => :build
+  depends_on "mercurial" => :build
 
   def install
     ENV["GOPATH"] = buildpath
-    ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
 
     (buildpath/"src/github.com/cayleygraph/cayley").install buildpath.children
     cd "src/github.com/cayleygraph/cayley" do
-      system "glide", "install"
+      system "dep", "ensure"
       system "go", "build", "-o", bin/"cayley", "-ldflags",
              "-X main.Version=#{version}", ".../cmd/cayley"
 
