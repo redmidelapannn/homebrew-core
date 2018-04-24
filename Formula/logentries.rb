@@ -9,9 +9,10 @@ class Logentries < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "76338a8179b342a815cc03c2a074b6bc2fcc1dbea309d676e33e0a9ce659760d" => :high_sierra
-    sha256 "bf29b4ac8bba11425b5a06ce68568c60f83cc0676927b967cb8d9c41995df60d" => :sierra
-    sha256 "231eb13cd13914785b8b09f63e0758201ae7e36ad57cf6c847e0f9effc25b556" => :el_capitan
+    rebuild 1
+    sha256 "621576c922df103bdade11b81e00dc5b5cae674009f8a8a5d4e07018e2d7c7ae" => :high_sierra
+    sha256 "aa732f1d7032ff522e40030d6ea86b76921f8e2f3e49e54db9bdfaad9890596a" => :sierra
+    sha256 "771e2913718bb26593968fca3b91d854989b60fae3ebd823f9e7847f34f8800e" => :el_capitan
   end
 
   depends_on "python@2"
