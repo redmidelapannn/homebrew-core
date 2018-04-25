@@ -16,19 +16,14 @@ class PerconaServerMongodb < Formula
 
   depends_on "boost" => :optional
   depends_on "go" => :build
-  depends_on :macos => :mountain_lion
+  depends_on :macos => :sierra
   depends_on "scons" => :build
   depends_on "openssl" => :recommended
 
   conflicts_with "mongodb",
     :because => "percona-server-mongodb and mongodb install the same binaries."
 
-  needs :cxx11
-
   def install
-    ENV.cxx11 if MacOS.version < :mavericks
-    ENV.libcxx if build.devel?
-
     # New Go tools have their own build script but the server scons "install" target is still
     # responsible for installing them.
 
@@ -56,7 +51,6 @@ class PerconaServerMongodb < Formula
     args = %W[
       --prefix=#{prefix}
       -j#{ENV.make_jobs}
-      --osx-version-min=#{MacOS.version}
     ]
 
     args << "CC=#{ENV.cc}"
