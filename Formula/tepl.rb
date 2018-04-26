@@ -5,9 +5,9 @@ class Tepl < Formula
   sha256 "a4b6219877b25a376b129c26484946481b7fc1ef6a7a66d804dcf7f48250e997"
 
   bottle do
-    sha256 "e0ba816839705deacfc0777bb80fe3f4fa600dcd817b6d7245725efaf855e738" => :high_sierra
-    sha256 "03220deb6669b5dc71768a98482ba1e36e168f2bbee80de694e661386de40ce8" => :sierra
-    sha256 "b078e641436811c2a788f0a6a671d98ad38d2a4619c0fd21ead43d7a8946e1be" => :el_capitan
+    sha256 "0d9367e0863e13dfbd1cfab6ad2713832a75f5376f58d66c98e27f32efe8595b" => :high_sierra
+    sha256 "378aa3f9a3b1e69b5199496e6893d957f92c8eb36783c4b1769667317bdb1a05" => :sierra
+    sha256 "5c5f8032f4342f0869dc07ea7f0b0a76c6069b3933359ccea9b37f38ef6c5c6a" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
