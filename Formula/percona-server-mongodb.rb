@@ -23,7 +23,32 @@ class PerconaServerMongodb < Formula
   conflicts_with "mongodb",
     :because => "percona-server-mongodb and mongodb install the same binaries."
 
+  resource "Cheetah" do
+    url "https://files.pythonhosted.org/packages/cd/b0/c2d700252fc251e91c08639ff41a8a5203b627f4e0a2ae18a6b662ab32ea/Cheetah-2.4.4.tar.gz"
+    sha256 "be308229f0c1e5e5af4f27d7ee06d90bb19e6af3059794e5fd536a6f29a9b550"
+  end
+
+  resource "PyYAML" do
+    url "https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz"
+    sha256 "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+  end
+
+  resource "typing" do
+    url "https://files.pythonhosted.org/packages/ec/cc/28444132a25c113149cec54618abc909596f0b272a74c55bab9593f8876c/typing-3.6.4.tar.gz"
+    sha256 "d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"
+  end
+
   def install
+    ["Cheetah", "PyYAML", "typing"].each do |r|
+      resource(r).stage do
+        system "python", *Language::Python.setup_install_args(buildpath/"vendor")
+      end
+    end
+
+    (buildpath/".brew_home/Library/Python/2.7/lib/python/site-packages/vendor.pth").write <<~EOS
+      import site; site.addsitedir("#{buildpath}/vendor/lib/python2.7/site-packages")
+    EOS
+
     # New Go tools have their own build script but the server scons "install" target is still
     # responsible for installing them.
 
