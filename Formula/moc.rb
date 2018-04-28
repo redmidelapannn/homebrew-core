@@ -7,11 +7,6 @@ class Moc < Formula
     url "http://ftp.daper.net/pub/soft/moc/stable/moc-2.5.2.tar.bz2"
     sha256 "f3a68115602a4788b7cfa9bbe9397a9d5e24c68cb61a57695d1c2c3ecf49db08"
 
-    # Remove build deps when > 2.5.2 comes out
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "gettext" => :build
-
     # Remove for > 2.5.2; FFmpeg 4.0 compatibility
     # 01 to 05 below are backported from patches provided 26 Apr 2018 by
     # upstream's John Fitzgerald
@@ -58,10 +53,6 @@ class Moc < Formula
       sha256 "601b5cdf59db67f180f1aaa6cc90804c1cb69c44cdecb2e8149338782e4f21a8"
     end
 
-    # Remove build deps when 2.6-alpha4 comes out
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "gettext" => :build
     depends_on "popt"
 
     # Remove for > 2.6-alpha3; FFmpeg 4.0 compatibility
@@ -95,12 +86,13 @@ class Moc < Formula
   head do
     url "svn://daper.net/moc/trunk"
 
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "gettext" => :build
     depends_on "popt"
   end
 
+  # Remove autoconf, automake and gettext when > 2.5.2 and > 2.6-alpha3 come out
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "gettext" => :build
   depends_on "pkg-config" => :build
   depends_on "berkeley-db"
   depends_on "ffmpeg"
