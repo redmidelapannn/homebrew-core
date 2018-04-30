@@ -9,9 +9,10 @@ class Qt < Formula
   head "https://code.qt.io/qt/qt5.git", :branch => "5.10", :shallow => false
 
   bottle do
-    sha256 "8b4bad005596a5f8790150fe455db998ac2406f4e0f04140d6656205d844d266" => :high_sierra
-    sha256 "9c488554935fb573554a4e36d36d3c81e47245b7fefc4b61edef894e67ba1740" => :sierra
-    sha256 "c0407afba5951df6cc4c6f6c1c315972bd41c99cecb4e029919c4c15ab6f7bdc" => :el_capitan
+    rebuild 1
+    sha256 "da39b42e6b6fdab3e4bebe68524eb3b691269647f5c492dcad2872ac67115fe7" => :high_sierra
+    sha256 "aea9daf9930818cc6b9b07c18a46e6ff506191b7850f99728d7bdb287d87275f" => :sierra
+    sha256 "97ea52576adc26b06370fe571a9f44cb0dd444cb0b6305e28a934f79b360380d" => :el_capitan
   end
 
   keg_only "Qt 5 has CMake issues when linked"
