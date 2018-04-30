@@ -16,12 +16,6 @@ class Mednafen < Formula
   depends_on "gettext"
 
   def install
-    # Fix run-time crash "Assertion failed: (x == TestLLVM15470_Counter), function
-    # TestLLVM15470_Sub2, file tests.cpp, line 643."
-    # LLVM miscompiles some loop code with optimization
-    # https://llvm.org/bugs/show_bug.cgi?id=15470
-    ENV.O2
-
     system "./configure", "--prefix=#{prefix}", "--disable-dependency-tracking"
     system "make", "install"
   end
