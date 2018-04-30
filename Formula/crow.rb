@@ -4,6 +4,13 @@ class Crow < Formula
   url "https://github.com/ipkn/crow/archive/v0.1.tar.gz"
   sha256 "140ca4a4d75ce5996cb103155580cb13b0b27082d1efbc331000a34af55b4390"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "fdc9607563d930c5116b17c348b42cbc83c2b28249eb6e38c2bbea46bf1eccd1" => :high_sierra
+    sha256 "fdc9607563d930c5116b17c348b42cbc83c2b28249eb6e38c2bbea46bf1eccd1" => :sierra
+    sha256 "fdc9607563d930c5116b17c348b42cbc83c2b28249eb6e38c2bbea46bf1eccd1" => :el_capitan
+  end
+
   depends_on "boost"
 
   def install
