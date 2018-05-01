@@ -5,12 +5,10 @@ class Namazu < Formula
   sha256 "5c18afb679db07084a05aca8dffcfb5329173d99db8d07ff6d90b57c333c71f7"
 
   bottle do
-    rebuild 1
-    sha256 "15f536a0c9e3212af68689dc2202ae0d9a7634d161aa0ac3aa6d55977506f8da" => :high_sierra
-    sha256 "2514d7e9209225e9f388feda1116c193ec98034952dd9c6b89bcaccafabedb1f" => :sierra
-    sha256 "39cad2ecd3948e2afd69fc58b6390e1fd7fa7e82cee8176fec7f71880c6e52c2" => :el_capitan
-    sha256 "01a0bf11f2ad2095306055016b430c19900ea6203af5fcf4bb5c92c085d44a67" => :yosemite
-    sha256 "ca6e854a626eaafd4ac26661b9a3db86dc9bc140f4aa98effd5843882aba7ecb" => :mavericks
+    rebuild 2
+    sha256 "3606add273bdd59cf2bf943f7ba4269eaf2a9b440218957854b64183f63cf9b6" => :high_sierra
+    sha256 "3f1c20a3cb5f5031a26b4d3166326bd08d6396fef838e5218c716773f6b42ec3" => :sierra
+    sha256 "000648d065fb09c18caa483c8354d390b93fae553a85c80686b932a560b3ef9e" => :el_capitan
   end
 
   option "with-japanese", "Support for japanese character encodings."
