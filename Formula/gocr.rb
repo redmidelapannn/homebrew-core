@@ -37,7 +37,7 @@ class Gocr < Formula
   end
 
   test do
-    system "#{bin}/gocr", "--h"
+    system "#{bin}/gocr", "--help"
   end
 end
 
