@@ -30,12 +30,6 @@ class Openimageio < Formula
   depends_on "webp"
 
   def install
-    # FFmpeg 4.0 compatibility
-    # Fix "ffmpeginput.cpp:333:72: error: use of undeclared identifier 'CODEC_CAP_DELAY'"
-    # Reported 21 Apr 2018 https://github.com/OpenImageIO/oiio/issues/1923
-    inreplace "src/ffmpeg.imageio/ffmpeginput.cpp", " CODEC_CAP_DELAY",
-                                                    " AV_CODEC_CAP_DELAY"
-
     # -DUSE_OPENSSL=OFF can be removed in 1.9, see
     # https://github.com/Homebrew/homebrew-core/pull/22522#issuecomment-364831533
     args = std_cmake_args + %w[
