@@ -13,12 +13,6 @@ class Nnn < Formula
 
   depends_on "readline"
 
-  # Upstream PR from 27 Feb 2018 "Makefile: don't use non-portable -t option"
-  patch do
-    url "https://github.com/jarun/nnn/pull/83.patch?full_index=1"
-    sha256 "e3196f69407a81b19cd42c9fafb6b420d99ebeed592dd0948efbb9665a6c4a9f"
-  end
-
   def install
     system "make", "install", "PREFIX=#{prefix}"
   end
