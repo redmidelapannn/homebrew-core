@@ -3,7 +3,7 @@ class Flashrom < Formula
   homepage "https://flashrom.org/"
   url "https://download.flashrom.org/releases/flashrom-1.0.tar.bz2"
   sha256 "3702fa215ba5fb5af8e54c852d239899cfa1389194c1e51cb2a170c4dc9dee64"
-  head "https://code.coreboot.org/svn/flashrom/trunk", :using => :svn
+  head "https://review.coreboot.org/flashrom.git"
 
   bottle do
     cellar :any
