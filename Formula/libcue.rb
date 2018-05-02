@@ -14,7 +14,7 @@ class Libcue < Formula
   depends_on "cmake" => :build
 
   def install
-    system "cmake", ".", *std_cmake_args, "-DBUILD_SHARED_LIBS=ON"
+    system "cmake", ".", "-DBUILD_SHARED_LIBS=ON", *std_cmake_args
     system "make", "install"
     (pkgshare/"tests").install Dir["t/*"]
   end
