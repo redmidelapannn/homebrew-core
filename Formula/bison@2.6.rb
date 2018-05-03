@@ -6,6 +6,12 @@ class BisonAT26 < Formula
   sha256 "de2d15dfdcfc24405464cb95acc9d5ef31fb2e5be4aca6a530ec59bb57c30e5d"
   revision 1
 
+  bottle do
+    sha256 "28d633bd0070ee04ef7b1e6ed155fb93f3112076de1374907f597f7b61016aba" => :high_sierra
+    sha256 "b47a9b7be35de020b287c36616e7c2ff99559d6b7ab650ae13bfe1bbc6044ece" => :sierra
+    sha256 "4f8a7348082f2c7440404a21859bdafc98e1c15d9113e132a725d2f7463b5181" => :el_capitan
+  end
+
   patch :p0 do
     url "https://raw.githubusercontent.com/macports/macports-ports/b76d1e48dac/editors/nano/files/secure_snprintf.patch"
     sha256 "57f972940a10d448efbd3d5ba46e65979ae4eea93681a85e1d998060b356e0d2"
