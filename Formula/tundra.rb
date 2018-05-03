@@ -12,7 +12,13 @@ class Tundra < Formula
     sha256 "d25e7d649a74cce7ecf9646799e577ba8338c1306f2d2e0692a4fe38f26bc04f" => :yosemite
   end
 
+  resource "gtest" do
+    url "https://github.com/google/googletest/archive/release-1.8.0.tar.gz"
+    sha256 "58a6f4277ca2bc8565222b3bbd58a177609e9c488e8a72649359ba51450db7d8"
+  end
+
   def install
+    (buildpath/"unittest/googletest").install resource("gtest")
     system "make"
     system "make", "install", "PREFIX=#{prefix}"
   end
