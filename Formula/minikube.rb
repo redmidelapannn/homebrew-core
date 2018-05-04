@@ -5,6 +5,13 @@ class Minikube < Formula
     :tag => "v0.26.1",
     :revision => "6ded2b647d1b1f62100c630bcfcc1363c631ce2d"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "be03d3d9e722e367a274ba4e157a201973e49e797a5456fea10362d0ed200987" => :high_sierra
+    sha256 "4d0bafb3fdf2c13988b6d2cc54053e9c060ada0d5b5ebc53ae427ebefc05e487" => :sierra
+    sha256 "98c3a016b257cbd7d5af93dc2fb1027789dc07406e85458ea2c9ba84929d5d55" => :el_capitan
+  end
+
   # Docker required for non-Linux builds
   depends_on "docker" => :build unless MacOS.version == Version::NULL
 
