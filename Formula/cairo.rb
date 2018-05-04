@@ -6,9 +6,10 @@ class Cairo < Formula
   sha256 "8c90f00c500b2299c0a323dd9beead2a00353752b2092ead558139bd67f7bf16"
 
   bottle do
-    sha256 "5bdc28de8e5a615ab664d43f7f322ed02d58071171415bb6e2750f486b9465e2" => :high_sierra
-    sha256 "102847d74a0a11bb6143d93b9f32e1736e88036fb4c685d554a8bcd376bbd929" => :sierra
-    sha256 "bec85433a35605164bdbf5f8913e29eb6d9ceb5acc5569dd9d864706ae6c8d49" => :el_capitan
+    rebuild 1
+    sha256 "7fef2c9c5563887c84c720cb6b13a705b0deec6914e06609e32a87440034a920" => :high_sierra
+    sha256 "0e12f83f09ab6c91ad6218d22dad24fb89ca6f1836042194f65dfce7a5d347d8" => :sierra
+    sha256 "dd3c25434c360df8edefebdc6fe3bd8f60a6c6badabac8cd38a60eed3f169f82" => :el_capitan
   end
 
   head do
