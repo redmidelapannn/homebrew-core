@@ -5,7 +5,7 @@ class Xonsh < Formula
   homepage "http://xon.sh"
   url "https://github.com/xonsh/xonsh/archive/0.6.3.tar.gz"
   sha256 "982d75983518f83037afe51ea5926f8ebde54c7874174035e40ff710a5c9b022"
-  head "https://github.com/scopatz/xonsh.git"
+  head "https://github.com/xonsh/xonsh.git"
 
   bottle do
     cellar :any_skip_relocation
