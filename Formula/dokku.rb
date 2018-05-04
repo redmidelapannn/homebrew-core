@@ -4,6 +4,13 @@ class Dokku < Formula
   url "https://github.com/dokku/dokku/archive/v0.12.5.tar.gz"
   sha256 "f336cd983ce060e2aa54a6e7de0f89d3ef7f908939daa9e958a055c88412493a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f667627d9ce0a8b3195d34484a01a475ad886c290a5eea705930cac49d93bebb" => :high_sierra
+    sha256 "f667627d9ce0a8b3195d34484a01a475ad886c290a5eea705930cac49d93bebb" => :sierra
+    sha256 "f667627d9ce0a8b3195d34484a01a475ad886c290a5eea705930cac49d93bebb" => :el_capitan
+  end
+
   def install
     bin.install "contrib/dokku_client.sh" => "dokku"
   end
