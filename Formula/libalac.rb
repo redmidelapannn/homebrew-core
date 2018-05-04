@@ -6,6 +6,13 @@ class Libalac < Formula
   sha256 "97ea9376145d38d898f8d5f969d3c7a7a36aa8bcb0e93378c81fbf8d77fb913d"
   head "https://github.com/TimothyGu/alac.git"
 
+  bottle do
+    cellar :any
+    sha256 "4c33221b2b3d6ac1746dabfd09b6618d6a3cf7edb2cda7310b2b68a60b8937f6" => :high_sierra
+    sha256 "156bc655c05ee8ba139567872b8b4aa550577a2f1d34f143058b3132ec736d9b" => :sierra
+    sha256 "af9d8b9433c7a70e26292d13ad2a6be8905d276cd033ceb5fda88058beef2ed8" => :el_capitan
+  end
+
   depends_on "automake" => :build
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
