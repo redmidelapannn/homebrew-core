@@ -11,8 +11,8 @@ class Akamai < Formula
     sha256 "e73f1a1a4f7d5c66d1ac727d7e2e7c5cc16878ad1bef74c2ab8277430589ada5" => :el_capitan
   end
 
+  depends_on "dep" => :build
   depends_on "go" => :build
-  depends_on "glide" => :build
 
   def install
     ENV["GOPATH"] = buildpath
@@ -22,7 +22,7 @@ class Akamai < Formula
     srcpath.install buildpath.children
 
     cd srcpath do
-      system "glide", "install"
+      system "dep", "ensure"
       system "go", "build", "-tags", "noautoupgrade nofirstrun", "-o", bin/"akamai"
       prefix.install_metafiles
     end
