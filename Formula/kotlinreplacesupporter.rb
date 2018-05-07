@@ -3,6 +3,13 @@ class Kotlinreplacesupporter < Formula
   homepage "https://github.com/youmitsu/KotlinReplaceSupporter"
   url "https://github.com/youmitsu/KotlinReplaceSupporter/releases/download/1.0/kotlin_replace_supporter-1.0.jar"
   sha256 "f7b5feafaea72057235809f6d587539863eb6f5785fa044ff42f891ef91d55e6"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "fbb55655f7778004b1321dfe565a39e867f2097a5b6935d7ba683d53401af0a5" => :high_sierra
+    sha256 "fbb55655f7778004b1321dfe565a39e867f2097a5b6935d7ba683d53401af0a5" => :sierra
+    sha256 "fbb55655f7778004b1321dfe565a39e867f2097a5b6935d7ba683d53401af0a5" => :el_capitan
+  end
+
   depends_on :java => "1.6+"
 
   def install
