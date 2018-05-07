@@ -7,9 +7,10 @@ class Openslide < Formula
 
   bottle do
     cellar :any
-    sha256 "9118b45fe096442eb436126366d3f617d8fc5e356b1a764535686115941b0aac" => :high_sierra
-    sha256 "e5f7b2fe405fcbc70797c326fba07b7311b334bdd03e7ce88cfd28231557ea51" => :sierra
-    sha256 "8d8bdded3aa4db040a15f1cf0c31db10832d0349320a550eaa73a0fe77abfcd6" => :el_capitan
+    rebuild 1
+    sha256 "9cafdc09ef783c6935bc9d2e0210a962741c280677bb3de3d70052caa655f03a" => :high_sierra
+    sha256 "40f4bc12659271a1681ab45abb72c6f6beb56fa5f661d71441c9b3f838f80085" => :sierra
+    sha256 "4b23a5bde0d2ade582237e7baa8c02220e90f7d2ff8ea0ed799fdc6423e18d15" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
