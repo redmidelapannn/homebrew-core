@@ -5,11 +5,10 @@ class Nut < Formula
   sha256 "980e82918c52d364605c0703a5dcf01f74ad2ef06e3d365949e43b7d406d25a7"
 
   bottle do
-    sha256 "102d8b6e9635321a7585d79c8c3c95d0f973c91cbf031be4d6839cf10c06ad2d" => :high_sierra
-    sha256 "45949916c354f6c3ba50df8ada5690f36d15ca1114185f1d92f66c4b08110f63" => :sierra
-    sha256 "df1f1a4b7efa73d48ada9d97ec13983fd1ba674773a058f771044dcd841a4b79" => :el_capitan
-    sha256 "d544abc34f9ed56f76fae104b8a472fe081c5072e32aeddbbd674316e9c0931d" => :yosemite
-    sha256 "83183c2346ec3642b45a20e47439225d94a58d6617669dd2001922f12d544942" => :mavericks
+    rebuild 1
+    sha256 "737af043baaf6830779b3b218c28ac14e39588d603f9be59eb978cefeb69b3cb" => :high_sierra
+    sha256 "7b1695de80d54001ceed5bc61893fe329f30959ce3b26d42d5ffdb19ff9d8019" => :sierra
+    sha256 "9a7b55c48badaf3d03bd34f402c3c367278a93512c782a16fc1ed1437c41842b" => :el_capitan
   end
 
   head do
