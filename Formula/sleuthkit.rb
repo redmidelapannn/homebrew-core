@@ -7,9 +7,9 @@ class Sleuthkit < Formula
 
   bottle do
     cellar :any
-    sha256 "191e42868facb70b4a2d73e9d23d4283aee9248c2aae5865dc3eb5209f402cf4" => :high_sierra
-    sha256 "dc59fb5ee7eb2467fa01e1743fb4ba25660a898f7cb7a202aeab8ec90abd84c9" => :sierra
-    sha256 "994034b47b0992fa5c651787de90a548edf5a2ccddee7eb4e7a96bd74b23b470" => :el_capitan
+    sha256 "1e38d11563ae91226ac4f90c8225a5a4a483c58a4526db69794bfcb40c5bb116" => :high_sierra
+    sha256 "70c430d1eca19d127670e40a3d0a663e23f5414fcec6e7df7a2ae58a28665a91" => :sierra
+    sha256 "87120b753ce53c4224e94320c7ca935bfb034ce91572ee30854af3accb590e89" => :el_capitan
   end
 
   option "with-jni", "Build Sleuthkit with JNI bindings"
