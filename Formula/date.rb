@@ -5,6 +5,13 @@ class Date < Formula
   sha256 "98907d243397483bd7ad889bf6c66746db0d7d2a39cc9aacc041834c40b65b98"
   head "https://github.com/HowardHinnant/date.git"
 
+  bottle do
+    cellar :any
+    sha256 "92ebd44d7cd2172a5879e8a048c640867806c041858e7834231d26216669b6e5" => :high_sierra
+    sha256 "37b3fb4cfe9d1fed2c6e47ff209c0114cc309b21d086bed09bcdef6494e23eae" => :sierra
+    sha256 "b3f9a297015457cd59183d5d184b0dbb52148faddc4a3beb93ba4f9e302e1a87" => :el_capitan
+  end
+
   option "with-system-tz-db", "Use the operating system's timezone database"
   option "without-shared", "Build a static version of library"
 
