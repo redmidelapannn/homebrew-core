@@ -7,9 +7,9 @@ class Libwebsockets < Formula
 
   bottle do
     cellar :any
-    sha256 "98e839747183274970c3a62fcffe9f6e390405d488f5e7b3c57743f281cd512c" => :high_sierra
-    sha256 "87878e4c44ba0dbf6608675f20afc1f0c272c2e8d4f61fbd6110a3130ad83a95" => :sierra
-    sha256 "f4176df2b2d8cf9e23efa30f0e1dbbf8d3b7acd89b2f737272ed105626a9570f" => :el_capitan
+    sha256 "29ae873cfbba0a1e9b4bcab599fd22ac8097bc607ce4d36ac4288617c7ebb509" => :high_sierra
+    sha256 "137ad76d4def119c5524e085bda897202bc91a87132b7f336605c9d3524797e1" => :sierra
+    sha256 "e9de1465e29a7535ec5142984af0abb042fe97ddb8717fe4682c126494b6f72d" => :el_capitan
   end
 
   depends_on "cmake" => :build
