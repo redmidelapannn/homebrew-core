@@ -7,9 +7,9 @@ class Tgui < Formula
 
   bottle do
     cellar :any
-    sha256 "88096b417c5a8b9282cc05a11e2477adf38befa8401869ac84a74cc00f2c7877" => :high_sierra
-    sha256 "07c1e772bd19375796830af0fe28e567b1d05516507ca0a871586afed4eb0b35" => :sierra
-    sha256 "6421f8a014f5246fd3261eef0c3d9b1030139081d02c24dad865ba635e601f25" => :el_capitan
+    sha256 "62f5bbd6ec174d6ac3a5f120338a494aefb5151f8d45fe052b0fe9be3691d469" => :high_sierra
+    sha256 "fd113022ae7fef0b5d9efaef958bb833ae24f15ce2ca3184c0dc9d3d0a5aa674" => :sierra
+    sha256 "b0900290f302d63b1fb390654af50f503d6da362a4b2886babae4de36ac728d6" => :el_capitan
   end
 
   depends_on "cmake" => :build
