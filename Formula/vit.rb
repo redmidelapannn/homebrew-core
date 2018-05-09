@@ -8,11 +8,10 @@ class Vit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d2ffe07bc8ede58d12bcb7401db8f3086eaba071f57b3ec4ce377e0ad18e4d3d" => :high_sierra
-    sha256 "26c2d6376f2c94d32d11972dbd061e5d4ef1edd31c889a084558339494c34b5b" => :sierra
-    sha256 "148f01bcfe731892cbfbc63eb9e8d95fded12f07c2d56a7429f8ddea27207f51" => :el_capitan
-    sha256 "e91023aac9f44f67570d248255fc61ed614091fdfafb16003b49064d90866d91" => :yosemite
-    sha256 "3f7e65dd15708aaf63ed1d3d3bc948cd020371b35c4537a1366d34a94181767e" => :mavericks
+    rebuild 1
+    sha256 "6c19c6c0b7bada094dd7cb046a4e14450a37632fa5248f4f30b44d980af840d5" => :high_sierra
+    sha256 "56901db83d2721e9e40b33a04f9942be396762bb58b590945bfbd6ffd1393803" => :sierra
+    sha256 "42a61d1bfad397d0ad8c07e9278d659ae38f341e72e00ba1874bf6e78df8defe" => :el_capitan
   end
 
   depends_on "task"
