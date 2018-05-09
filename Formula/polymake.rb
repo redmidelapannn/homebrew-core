@@ -8,6 +8,8 @@ class Polymake < Formula
   depends_on "ant"
   depends_on "boost"
   depends_on "gmp"
+  depends_on "libxml2"
+  depends_on "libxslt"
   depends_on "mpfr"
   depends_on "ninja"
   depends_on "ppl"
