@@ -13,6 +13,13 @@ class Arcanist < Formula
       version "20180412"
     end
   end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "441c5e25ba9aaf41dfec0e8602eefd5f0f0bc92565136afb3eedb33d4de8fb94" => :high_sierra
+    sha256 "441c5e25ba9aaf41dfec0e8602eefd5f0f0bc92565136afb3eedb33d4de8fb94" => :sierra
+    sha256 "441c5e25ba9aaf41dfec0e8602eefd5f0f0bc92565136afb3eedb33d4de8fb94" => :el_capitan
+  end
+
 
   def install
     libexec.install Dir["*"]
