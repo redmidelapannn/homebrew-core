@@ -6,11 +6,10 @@ class Ifstat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8e385a8fdf00266e63bd7a3af17cdcf07da3cb86a08bd3431cfa3b4cc88bb7a5" => :high_sierra
-    sha256 "99eada14bfc555bd8f64d447bddd8a53c7325afed40446e5edbcfb5d7bdc7dd6" => :sierra
-    sha256 "e3b3f843c9fba2770a49dd7abcdacc30aa6b5e57f06b5ed96f09d20ada58bd6f" => :el_capitan
-    sha256 "ecce408a9ae1a82c7b2457e5a5263ec760096e7e0e71cf0da1ce98523787bcbc" => :yosemite
-    sha256 "9107e6b49f17fc1a4eac3ded9e499d164fe73f1c8d9307146b9db00952a72de9" => :mavericks
+    rebuild 1
+    sha256 "3d022f97c690f59953a2481e1dfd444a2d1809c6b3080c3ea73d175ca55c7d48" => :high_sierra
+    sha256 "9eec7650b9014fec74a8bef1b6594dd61e88716c45e88e1911688f86ed8268ad" => :sierra
+    sha256 "caf807bd574ad2481adb8b698f2b24012e51c3b5e5d180f1d1970c1f2852906f" => :el_capitan
   end
 
   # Fixes 32/64 bit incompatibility for snow leopard
