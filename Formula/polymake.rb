@@ -8,8 +8,6 @@ class Polymake < Formula
   depends_on "ant"
   depends_on "boost"
   depends_on "gmp"
-#  depends_on "libxml2"
-#  depends_on "libxslt"
   depends_on "mpfr"
   depends_on "ninja"
   depends_on "ppl"
@@ -31,7 +29,17 @@ class Polymake < Formula
     ENV.prepend_path "PERL5LIB", prefix/"perl5/lib/perl5/darwin-thread-multi-2level"
 
     resource("XML::LibXSLT").stage do
-      system "perl", "Makefile.PL", "INSTALL_BASE=#{prefix}/perl5"
+      flags = %W[
+         INSTALL_BASE=#{prefix}/perl5
+      ]
+      if MacOS::CLT.installed?
+        flags << "INC='-I/usr/include/libxml2 -I/usr/include/libxslt'"
+        flags << "LIBS='-L/usr/lib'"
+      else
+        flags << "INC=\"-I#{MacOS.sdk_path}/usr/include/libxml2 -I#{MacOS.sdk_path}/usr/include/libxslt\""
+        flags << "LIBS=\"-L#{MacOS.sdk_path}/usr/lib\""
+      end
+      system "perl", "Makefile.PL", *flags
       system "make", "install"
     end
 
