@@ -6,11 +6,10 @@ class Syck < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a5a983847ae0e83a5f1d83adac736c602f7cce9ae00b9700d81ed766b4fe54bb" => :high_sierra
-    sha256 "5a5f8c0f9a9def7ab59a052d85fbb128bc9a1c9c9b7ea2f9639109147eeba252" => :sierra
-    sha256 "a2270f693ce6e8f0542f7d57dc6c8fcb731a268aee3c75a314523446c68602d6" => :el_capitan
-    sha256 "cacc98eb6fab2440d3f69708688cb80b54bd14e5c472b7097ab9e235d5a670d6" => :yosemite
-    sha256 "17606e97952cbea53c5649814d0d86c0cc2cdc5893b8063dcb4be8b4606c4f40" => :mavericks
+    rebuild 1
+    sha256 "6149d820012482065e9dcc32326c5d209a271f321edb7b88b1f3bf947fa3720a" => :high_sierra
+    sha256 "08fc15e32b3bc080b8d7b11acfd65b4c873e3a9de1049f0a7fdad60c2e7a75ee" => :sierra
+    sha256 "deff89b282fac47bcea98247cfd9c72b03cfd1ece6134d2a4de6fb19d935d66e" => :el_capitan
   end
 
   def install
