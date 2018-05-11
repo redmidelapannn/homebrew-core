@@ -6,9 +6,9 @@ class File < Formula
   sha256 "1c52c8c3d271cd898d5511c36a68059cda94036111ab293f01f83c3525b737c6"
 
   bottle do
-    sha256 "bd5083a984a62056a9aa0e47997b8c02110e4c8c3cc5114a56fce6c02434c2db" => :high_sierra
-    sha256 "4231cdb08d5090c66aa226aa618c9befaa29687e732e1ebd48a930096187daf5" => :sierra
-    sha256 "02553f09e8f751547aaf5c98fd0210055472680840a86f9377bbd3712aea6096" => :el_capitan
+    sha256 "d5adfa29d416948f5e6233e260dc1b9880cc75f2ea6ac2c882ed45157eaebae0" => :high_sierra
+    sha256 "444e015bf19c3fb3a7de67f74b2b85f449ef9a84b98a140464286271f366040d" => :sierra
+    sha256 "f1a660d83f9ef065b6d100a8ebc6d77c5b2e023821b54fd1260901227261ccec" => :el_capitan
   end
 
   deprecated_option "with-python" => "with-python@2"
