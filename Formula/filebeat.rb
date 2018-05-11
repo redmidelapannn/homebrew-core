@@ -7,9 +7,10 @@ class Filebeat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6fb82adc6d41dff52ee5407211f14f3d6b8eaf2451dce045e04533f8200a16d5" => :high_sierra
-    sha256 "f8a9672cc5c88dfdb35a46b731f05d34d1b749f5a58f0b70393a854787eebc39" => :sierra
-    sha256 "86e8f72ae2e7404c3e8de74ddd154efbc003b26bb83ca5d28813a38d403b4a45" => :el_capitan
+    rebuild 1
+    sha256 "0328fc8bccd0d68059a67f40fd8c319399744aeb6115bdfc6c2b37bbb9bc23eb" => :high_sierra
+    sha256 "be165bfd200c4a70df1367e35db15c6b135cc61a01aab3727b4f6b73b12fb00d" => :sierra
+    sha256 "a842047bdcab9c58965479ab016ff1f3c227b69dba8b52931f767f0eed8fd7cc" => :el_capitan
   end
 
   depends_on "go" => :build
