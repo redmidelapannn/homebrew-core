@@ -19,29 +19,9 @@ class Polymake < Formula
     sha256 "575d32d4ab67cd656f314e8d0ee3d45d2491078f3b2421e520c4273e92eb9125"
   end
 
-  resource "XML::LibXSLT" do
-    url "http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.96.tar.gz"
-    sha256 "2a5e374edaa2e9f9d26b432265bfea9b4bb7a94c9fbfef9047b298fce844d473"
-  end
-
   def install
     ENV.prepend_create_path "PERL5LIB", prefix/"perl5/lib/perl5"
     ENV.prepend_path "PERL5LIB", prefix/"perl5/lib/perl5/darwin-thread-multi-2level"
-
-    resource("XML::LibXSLT").stage do
-      flags = %W[
-         INSTALL_BASE=#{prefix}/perl5
-      ]
-      if MacOS::CLT.installed?
-        flags << "INC='-I/usr/include/libxml2 -I/usr/include/libxslt'"
-        flags << "LIBS='-L/usr/lib'"
-      else
-        flags << "INC=\"-I#{MacOS.sdk_path}/usr/include/libxml2 -I#{MacOS.sdk_path}/usr/include/libxslt\""
-        flags << "LIBS=\"-L#{MacOS.sdk_path}/usr/lib\""
-      end
-      system "perl", "Makefile.PL", *flags
-      system "make", "install"
-    end
 
     resource("Term::Readline::Gnu").stage do
       ENV.refurbish_args
