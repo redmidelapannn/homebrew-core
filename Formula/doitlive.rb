@@ -19,6 +19,12 @@ class Doitlive < Formula
 
     bin.install Dir[libexec/"bin/*"]
     bin.env_script_all_files(libexec+"bin", :PYTHONPATH => ENV["PYTHONPATH"])
+
+    output = Utils.popen_read("SHELL=bash #{libexec}/bin/doitlive completion")
+    (bash_completion/"doitlive").write output
+
+    output = Utils.popen_read("SHELL=zsh #{libexec}/bin/doitlive completion")
+    (zsh_completion/"_doitlive").write output
   end
 
   test do
