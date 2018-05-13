@@ -8,8 +8,6 @@ class Polymake < Formula
   depends_on "ant"
   depends_on "boost"
   depends_on "gmp"
-  depends_on "libxml2"
-  depends_on "libxslt"
   depends_on "mpfr"
   depends_on "ninja"
   depends_on "ppl"
@@ -22,6 +20,12 @@ class Polymake < Formula
   end
 
   def install
+    # Fix file not found errors for /usr/lib/system/libsystem_symptoms.dylib and
+    # /usr/lib/system/libsystem_darwin.dylib on 10.11 and 10.12, respectively
+    if MacOS.version == :sierra || MacOS.version == :el_capitan
+      ENV["SDKROOT"] = MacOS.sdk_path
+    end
+
     ENV.prepend_create_path "PERL5LIB", prefix/"perl5/lib/perl5"
     ENV.prepend_path "PERL5LIB", prefix/"perl5/lib/perl5/darwin-thread-multi-2level"
 
