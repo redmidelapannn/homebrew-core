@@ -6,9 +6,10 @@ class Goocanvas < Formula
   revision 1
 
   bottle do
-    sha256 "79ef1d7dd6f20f0b26c171bbe38243d8e21167b27080488b45723ef1a1eb53b1" => :high_sierra
-    sha256 "e006d106b20aa040106983b51142bf134dd1925f4e6df11f09a89fea96189a22" => :sierra
-    sha256 "26d6c8d30f7a9056af03e59691a4112147cff745855042244413b83be99c7ae9" => :el_capitan
+    rebuild 1
+    sha256 "e37256346d8d468651c0cf11cdd1a39d9adddef3ac3b6d53e83f77acedc65c5d" => :high_sierra
+    sha256 "1fc0e98ed7f6f0102a00d4536588ca7f28844caf688e2ba239b63c19e9fde175" => :sierra
+    sha256 "4158658fcbe5314d851b0fb7bad6e4acf70e093051b2f326708e3c0fe36d1ccc" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
