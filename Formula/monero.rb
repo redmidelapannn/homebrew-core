@@ -21,10 +21,10 @@ class Monero < Formula
   depends_on "zeromq"
 
   # Fix "fatal error: 'boost/thread/v2/thread.hpp' file not found"
-  # Upstream PR from 19 Apr 2018 "Unbreak build against Boost 1.67"
-  patch :p1 do
-    url "https://raw.githubusercontent.com/sammy007/homebrew-monero/master/boost_fix.diff"
-    sha256 "228c2c2f9f2b42c3c62e7c27c91ad04459448e4aad6bb0355e2dcc733f8cc8df"
+  # https://github.com/monero-project/monero/pull/3667
+  patch do
+    url "https://github.com/monero-project/monero/commit/53a1962da18f952f6eb4683a846e52fe122520e2.patch?full_index=1"
+    sha256 "c5869f9da9429047fdad4386d0310cd88aae499a9ff148120612ab52c5a20b74"
   end
 
   resource "cppzmq" do
