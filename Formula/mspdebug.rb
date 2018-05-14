@@ -6,10 +6,10 @@ class Mspdebug < Formula
   head "https://github.com/dlbeer/mspdebug.git"
 
   bottle do
-    sha256 "4124d4fbd9e191d941153962bb74aed50cc200c473b5ad5850610a1bc85f87b4" => :high_sierra
-    sha256 "e16447e04c99d74b8cdc49a063c230c64d09e34402d0221542594f3aacac5940" => :sierra
-    sha256 "22fc92bc5a594451eb0d0b943bce812619302c795fdad0ca4305c059ccf10a88" => :el_capitan
-    sha256 "8b23c23287fc9ab143921257a1859f8ac0dbb9e093261dfe931ec7d6a3548d97" => :yosemite
+    rebuild 1
+    sha256 "6ebd117045392d6d922b82c8452107c86a216f22f6ec7aa1c0a538ec7293baad" => :high_sierra
+    sha256 "755e7164616ca7fbcb31be90ec9352734667e430c989e1ba473f06fd5629255b" => :sierra
+    sha256 "ce1077c3133323c2c673075f7da1e11c2e33a109e3334981242d51855dc199ac" => :el_capitan
   end
 
   depends_on "hidapi"
