@@ -6,11 +6,10 @@ class Lrzsz < Formula
   sha256 "c28b36b14bddb014d9e9c97c52459852f97bd405f89113f30bee45ed92728ff1"
 
   bottle do
-    sha256 "90c283b839ebd3dc24c81192955e8ba697368fb2c2dd641d66ebbf7baf41d0f2" => :high_sierra
-    sha256 "1ae883de3fa1c03f926ab1c35c5a8564fc955096ca166a801bfcfdeefa9dc860" => :sierra
-    sha256 "578641aa80e798cfea91cd20b1d6f0b6a3190f2656dc81e3ccc24caadcf1c3b2" => :el_capitan
-    sha256 "c417cab543224228762023031d93f2b4acfe0f970ed3ea1cc6616893e83cad6b" => :yosemite
-    sha256 "2644d211f486bbc5e67094d80454025a53e9dbda37154e9161f6a5908958788c" => :mavericks
+    rebuild 1
+    sha256 "a606886e5eab00cfae483e2788f358bbec013e7446ddd32c0a023c8eaeb1cf49" => :high_sierra
+    sha256 "f1a4481fa9f4573693ff1f9a85e3ba3e2753e91db90041b47c28f03b614bb063" => :sierra
+    sha256 "35f386a323e67cc7f5ceafea09bdfca8c48b9c6fde5f1564a5ac7a2a2aa04001" => :el_capitan
   end
 
   def install
