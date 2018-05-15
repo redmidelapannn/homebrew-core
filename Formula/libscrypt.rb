@@ -6,11 +6,10 @@ class Libscrypt < Formula
 
   bottle do
     cellar :any
-    sha256 "46cf17f2a05e5e418822a306899de14be3fbdfe71fc017f6eb1169fc3ad1de3a" => :high_sierra
-    sha256 "3adc43863f9b966dcecd89f507a4706891f94129dd88ba810ed0269278e931cf" => :sierra
-    sha256 "bc2c8318384a72f82802937f7e6dd8017ec44fb6fc94583e5f0c38056e1a660c" => :el_capitan
-    sha256 "0e870b01dbbfc49432cc8ea81c90ee6d8732b6d8adc4665368844536d5c6e092" => :yosemite
-    sha256 "fe3bc1ca8b19e7c86e103f1345cb9294da01cc15b950302ad5486ef49b2b212d" => :mavericks
+    rebuild 1
+    sha256 "8e0af24844daa40345c73dfd606cdec79267eac233620f13d1a0c61b851bf4de" => :high_sierra
+    sha256 "4f25335a72aa040611436d50311527d8574a8c20a62344dcceb6707f7d6e2020" => :sierra
+    sha256 "06071c40aca4ed58c87aed75b3d1b5ba54747aa03b71e498849bf8ca93daf214" => :el_capitan
   end
 
   def install
