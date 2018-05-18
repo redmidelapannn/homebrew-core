@@ -4,6 +4,12 @@ class Fcgene < Formula
   url "https://downloads.sourceforge.net/project/fcgene/fcgene-1.0.7.tar.gz"
   sha256 "4e1f85f2ec812e2528bd19b6c18ecf297666cd83046e003bc57d9ed5f25783d6"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "790dc71d26d58047163404f3fb27710d3cbe3675ee1c4627b1f0ee537b817809" => :sierra
+    sha256 "7712c3fbc525150d63262d4396b9eb648532e2241529ca811fd9b50a3f49e07c" => :el_capitan
+  end
+
   def install
     ENV["AC_CXX"] = ENV["CXX"] # otherwise CXX is ignored
     system "./configure", "--disable-debug",
