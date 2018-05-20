@@ -6,9 +6,10 @@ class Polyml < Formula
   head "https://github.com/polyml/polyml.git"
 
   bottle do
-    sha256 "5a1f478b3b2b26ab1f2326031c5ea930aa97ac08b83881151e976942c674df65" => :high_sierra
-    sha256 "d4c027b336791cc932cebddb6ea901af8a17f482511e9858a4766b380a1b3391" => :sierra
-    sha256 "5adaaa6d45b674090dd49918532a5035737e7d7d2a1acf861a053ac96d297596" => :el_capitan
+    rebuild 1
+    sha256 "4cdd4d6c7f5db402497d969db0abd5a3048b038146afc97f8041446bf6699846" => :high_sierra
+    sha256 "b493074c483ca78047ffbb7a36660d053ab78dcb4919dce7bdc4e7d1a5cadd2d" => :sierra
+    sha256 "c846f2a30a38171313fddd7380b7966897e938ac758b50c49e195cdc43c59ac7" => :el_capitan
   end
 
   def install
