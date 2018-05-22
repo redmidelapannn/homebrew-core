@@ -19,9 +19,10 @@ class Creduce < Formula
 
   bottle do
     cellar :any
-    sha256 "fbf09e354c9e1da58a93153eade303df094affe643e52422abb3795971723c79" => :high_sierra
-    sha256 "f2e4746773e42becc90d3068eaf9aee64701a51dab6349ea44947a88c128b0ee" => :sierra
-    sha256 "667d3b67033eb93718a83f63eede85f1d48965e2cb729d4ddb33f655c485c936" => :el_capitan
+    rebuild 1
+    sha256 "fd089f186c31d5940b07e5adb6df6b41dd86ec21ca351aa6dfc589e1ab83a713" => :high_sierra
+    sha256 "d2fa2ba4a0f99dc1a3b16524c9d53b048b083b000e24b371662f27892ab4b487" => :sierra
+    sha256 "1b725a48d25c23633031a74011fecfa2b5c0da1d5a7cf23096f462f239ecbb21" => :el_capitan
   end
 
   depends_on "astyle"
