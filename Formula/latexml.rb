@@ -7,11 +7,10 @@ class Latexml < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bbbeb393b7ed0258fdbf875e103a6f2f82103a6c19fce6b77ce5dd99fde9dc72" => :high_sierra
-    sha256 "3d995988dc683269f6949f8071148ceaf7454e8e7eb37cd8d391a1eb4467fc76" => :sierra
-    sha256 "5ae3ca257610559471ea0e1bbc9d5ff8f122790564a8e7027841e5b2356b6f8f" => :el_capitan
-    sha256 "5205887f374d4bd15905f5f13b4c661c5a6cb2725fc631836cff0668e34085b5" => :yosemite
-    sha256 "884426eb041a9fa05ba6ebc64c64f4ce76f7c10cab3c5c1b98bcce201831c9d2" => :mavericks
+    rebuild 1
+    sha256 "b13225d642650ec1bcb208d30f0ff5eb05ff57e6aa907f65429a17217fceb283" => :high_sierra
+    sha256 "ee5ec8a7b43a32e466a1405e0e778991572a03db7ef91332dd1036698fb2b080" => :sierra
+    sha256 "3f3008e942d4c67619cfb67abf1c5bce3d1dab9d99c3f12ef9174296737e8800" => :el_capitan
   end
 
   resource "Image::Size" do
