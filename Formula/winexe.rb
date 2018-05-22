@@ -6,11 +6,10 @@ class Winexe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "765ad670de08f86b8c9b11ec43493148d1368e6c3ffa5e65d1bca898480996c2" => :high_sierra
-    sha256 "e9594f927f9ef58608951175c0bd118b82cf7b25d5b829453195b66f45c2cbc1" => :sierra
-    sha256 "58080b3729c9b261a65c7db2072ec867176bfd6a802c23f9b343feb44592789a" => :el_capitan
-    sha256 "fa7654ed5641e517a658fe8852a9ee5459acca047518c433d989f1aef69a7a6d" => :yosemite
-    sha256 "32261fefc9c9fd32e91ddb0776d6e43dcdda32b958f9382a8d784972ba09eb3e" => :mavericks
+    rebuild 1
+    sha256 "6c90e1b5dbdb631411f94a0d3958ca5a350af99b2ab20164cbcb72533f2d0022" => :high_sierra
+    sha256 "b212b8ded62dcf5f632746fce12ddb453b3e926fe115a5d1d8178eb1d9192ded" => :sierra
+    sha256 "afe3de2ad6a21a8dba976182d73aa9f7869a46d60e17422cce8ee3e16be1a429" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
