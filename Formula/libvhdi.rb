@@ -5,6 +5,13 @@ class Libvhdi < Formula
   version "20170223"
   sha256 "5a9fedaab51a14a92320cd672a48a0fa0b014b975d5dcea5d4e944b32bf1498d"
 
+  bottle do
+    cellar :any
+    sha256 "9dffa8d6630143c4dcb652dc4de0aa10dbd1c2987c489f113bdafbd830dc1681" => :high_sierra
+    sha256 "3c4ae0625aad7b499cb548f233f8fff77ca1ee3f58c841707b1ba90c23309f71" => :sierra
+    sha256 "13cc6ef577743f96c02d2ec4b1de96da5e40c6c6f0018748f13d1f9b76d63970" => :el_capitan
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "gettext" => :build
