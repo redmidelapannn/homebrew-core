@@ -6,10 +6,10 @@ class Sslmate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "5b829450ad24c38b9b4ee19e853422387345710473df25f689ef10e388f1dee0" => :high_sierra
-    sha256 "5b829450ad24c38b9b4ee19e853422387345710473df25f689ef10e388f1dee0" => :sierra
-    sha256 "5b829450ad24c38b9b4ee19e853422387345710473df25f689ef10e388f1dee0" => :el_capitan
+    rebuild 2
+    sha256 "ba03a50f659654da455e452fba016d24673523256712eed7cc9a6c593bad6ab1" => :high_sierra
+    sha256 "ba03a50f659654da455e452fba016d24673523256712eed7cc9a6c593bad6ab1" => :sierra
+    sha256 "ba03a50f659654da455e452fba016d24673523256712eed7cc9a6c593bad6ab1" => :el_capitan
   end
 
   option "without-route53", "Disable support for Route 53 DNS approval"
