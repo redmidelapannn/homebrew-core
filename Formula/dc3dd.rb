@@ -7,9 +7,10 @@ class Dc3dd < Formula
   revision 1
 
   bottle do
-    sha256 "1b509e74c2a309676eefcd37fd82de1f4646395123e0cbdb38715598e2ea6fef" => :high_sierra
-    sha256 "2f7f30890920cddd8b35c5b0f0c0c27fd3f4d3528e18156f8ae86ed9b144b9aa" => :sierra
-    sha256 "9455b48212360afa374b22a5387604d310abb5dbfa90818d8745753b22d8a367" => :el_capitan
+    rebuild 1
+    sha256 "690dcb5eab32dc00869f4fa2405fdb95d4242fe786adc289cb2dd299549450bf" => :high_sierra
+    sha256 "ce35dc77a6473a693ebcf1d89e7c9f1a9d803340aa49bfc96e7a8b6a46920775" => :sierra
+    sha256 "183ef14e6b2d4bfc79be127c7378d68bf591db87fddec45807b9825464189103" => :el_capitan
   end
 
   depends_on "gettext"
