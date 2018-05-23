@@ -21,6 +21,9 @@ class Handbrake < Formula
   depends_on "yasm" => :build
 
   def install
+    # -march=native causes segfaults
+    ENV["HOMEBREW_OPTFLAGS"] = "-march=#{Hardware.oldest_cpu}" unless build.bottle?
+
     system "./configure", "--prefix=#{prefix}",
                           "--disable-xcode",
                           "--disable-gtk"
