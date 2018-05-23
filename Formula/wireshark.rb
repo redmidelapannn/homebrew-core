@@ -17,9 +17,10 @@ class Wireshark < Formula
   end
 
   bottle do
-    sha256 "0b3c8f3dec1fb90c9704d7009adcb09281491583eb92fc3f38e1210d6ef895b0" => :high_sierra
-    sha256 "ec69fa058d4d165234182069940a20f8b6b9a08898818854eec88c4890ca69e3" => :sierra
-    sha256 "cbd0649938676719180cf30b2c8932e7d49f400e302978a5e8719a33b37d0502" => :el_capitan
+    rebuild 1
+    sha256 "3009f91fbc819a402dedd348a8915a368f90fd4252ea19d58e74a5b77f764576" => :high_sierra
+    sha256 "8cb493f123a20f344c1a6b8d7b781046d039f96ad3863b795a0296a22e64fea9" => :sierra
+    sha256 "0b6feb44a609fd86f6963f603770c4dac69894fe395e70866e2c6f9199fe9aa2" => :el_capitan
   end
 
   deprecated_option "with-qt5" => "with-qt"
