@@ -5,9 +5,10 @@ class Calcurse < Formula
   sha256 "31ecc3dc09e1e561502b4c94f965ed6b167c03e9418438c4a7ad5bad2c785f9a"
 
   bottle do
-    sha256 "0fbabcf326ec92cf28ec57ff76f77e1a6fa41217f7d11ef5090c18b7bfc5b8aa" => :high_sierra
-    sha256 "0a4237919a02a48d0c661ae43a4da579c69bf826921af07d14d9ade6f835374a" => :sierra
-    sha256 "4cca241225bacb88ffd8c9f97e8c7b4027068551523f07874975362995eacf54" => :el_capitan
+    rebuild 1
+    sha256 "2ef3b922361a04d08bf639f4fb93699b146c27e6b12c40d12d44be151e8af2da" => :high_sierra
+    sha256 "bbb9fa04ec7d5e145866736f6a0be214dc65a066f07dad2d99de89f544766575" => :sierra
+    sha256 "e8e2368f3134b8bb5869fc080bf85ec8af49e2f2f98adaaea9c75a47b487b188" => :el_capitan
   end
 
   depends_on "gettext"
