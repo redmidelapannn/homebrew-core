@@ -8,10 +8,10 @@ class Pwsafe < Formula
 
   bottle do
     cellar :any
-    sha256 "be2e0da22fa321f9745b9f9bfe09c20e9fee17852f6369fe365fc457654afb34" => :high_sierra
-    sha256 "2e8928d27de84dac239832ba22f66ebbc85d14ac8c420f5971db90b407e5781e" => :sierra
-    sha256 "124f8d5da3927bf76826f0a3ccfeb59e1fc8674b7f7c8ed4e2b6aed3e86a5263" => :el_capitan
-    sha256 "6c8fffd07460664b877c97d00a9507b232d6fae885a29ed5f0842192bee410f4" => :yosemite
+    rebuild 1
+    sha256 "4ce3e48c4afaf130598b3c4bc19dc9d46e0a4eedd0b4256c3258113ae8134445" => :high_sierra
+    sha256 "177f4dfd04d012bb33a8822caaa58d96a7323f39cd40b21d75c43bad0d93ab8c" => :sierra
+    sha256 "0cca355dafb40d5f69f855fb372914208361908f1a7a06e1f7d4cfff13e9617f" => :el_capitan
   end
 
   depends_on "openssl"
