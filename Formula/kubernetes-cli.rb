@@ -7,9 +7,10 @@ class KubernetesCli < Formula
   head "https://github.com/kubernetes/kubernetes.git"
 
   bottle do
-    sha256 "2b821f0003cda3345d098da9d854777296bacb9cf4b7cf381e1bafdbd18f9b7a" => :high_sierra
-    sha256 "b2a8b815c45aca284538f45a2705bf8dc74c05a217aa5e7a0c3c98db2d48ee26" => :sierra
-    sha256 "ac6ea67a29a7e1b3581538c752097084734af77807831ed787084b081542a49f" => :el_capitan
+    rebuild 1
+    sha256 "391ec41ea134afdc9c929eed09aed20f7de6b9430ea0d920768e60682c84313d" => :high_sierra
+    sha256 "0df2147ca5c04f9e4ceaf0e498f38e4fadfef0fdc926e6c66184510c89272f3a" => :sierra
+    sha256 "bda0d46f8b112e625d50fcaf89bc8b17a3300dd271c422bc9a5311636da4dba5" => :el_capitan
   end
 
   option "with-dynamic", "Build dynamic binary with CGO_ENABLED=1"
