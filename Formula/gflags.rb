@@ -6,10 +6,10 @@ class Gflags < Formula
 
   bottle do
     cellar :any
-    sha256 "db36aa60a2c383dddad4774a0e0129c5cf2183f6ae813afffa9b0311ed81d8a3" => :high_sierra
-    sha256 "519562ecebe66cf89803786d0b0ba9ac02cfa2376c822c8726fa274c1e380d0a" => :sierra
-    sha256 "9e9c1a067b324ccd372ac00cd0ac00545415cb4407ea90b15c181cbfb67a4260" => :el_capitan
-    sha256 "5e6fcff184b2d6caf333a74cb24222da11bc1721eb6ab12a31bda7802cf8dfd9" => :yosemite
+    rebuild 1
+    sha256 "21b4fef445bb73c5f7d6d868c383d9a87d05f5c5c0b4fa2f0b902aac944da92c" => :high_sierra
+    sha256 "2e83de6c84144c53d8aa0f4deeacfec14cca79cc4cf277430bd2f25213be52bd" => :sierra
+    sha256 "5e9cf9ec6753753c00b4c06f50b25ddb2c35eb9e9ebc625981cdf8eb95461659" => :el_capitan
   end
 
   option "with-debug", "Build debug version"
