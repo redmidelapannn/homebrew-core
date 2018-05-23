@@ -6,10 +6,10 @@ class Devtodo < Formula
   revision 1
 
   bottle do
-    sha256 "43399f7f4820bd683334ecc5acbd0047b446663043bbee483bc3476819121be3" => :high_sierra
-    sha256 "0eba33a6154e4c1a77c7253c11b3d5f4366e692496e8ae32db986e24a0a5d5e4" => :sierra
-    sha256 "e11b6bf766ba86aa6eb92e2d1b018a0608766ba6b2c38db55b335664d415ad57" => :el_capitan
-    sha256 "f97442776b7d80a7ef7b8b750086e3e936c297e78cac75ccbae16d14506d7e05" => :yosemite
+    rebuild 1
+    sha256 "2cd2c56373d8ed1f29143dcb3f3aa35556012420b807532f906b55c214af85c8" => :high_sierra
+    sha256 "fc6c4830f15efb3524890df41e2a7e888f4e154cd78f796110b4305cc3c7fd20" => :sierra
+    sha256 "8be8a77e52b99029346bbb4fcbfacb2727f891d54be9710395bd33ec96d8d974" => :el_capitan
   end
 
   depends_on "readline"
