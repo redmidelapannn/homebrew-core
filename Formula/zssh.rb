@@ -6,12 +6,10 @@ class Zssh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9cb26f1bd359977406fae945abd311b2cdc5770570e6350f2ac278bfbe458f5b" => :high_sierra
-    sha256 "49e01bb86097999f21f3d96b0f9cd63a975d4fd52f6e286d42ceee16ee996eb7" => :sierra
-    sha256 "04212f19c1d9a6b97fd56ffe937606f1779849fdf04b93e3f285889599845c8f" => :el_capitan
-    sha256 "94280569f9e1c1deb9d8c3be4256cd501399fd51758f8e2ea6d77fd9f1b6ef2e" => :yosemite
-    sha256 "94b16bb29616a839134527fd869ac40a8fb5fa88b0048d1a93a828e306c2a270" => :mavericks
-    sha256 "e81d8a0d4c8107898aff0cda9abbf4a2caaf098f16c37bd92aa168943c7e6554" => :mountain_lion
+    rebuild 1
+    sha256 "7e8ca598482952e2a0f46d670ebd0906b965c0b04f38d9e8e71e94d2deeae5a3" => :high_sierra
+    sha256 "087c9caf12739204500611f875ac594dd207575495a6fa70fca7d3dd642233b0" => :sierra
+    sha256 "7b7031051642f4d4646fa9d15a65d67ac61a75ffa35b3517a5e98f729ff354ae" => :el_capitan
   end
 
   depends_on "lrzsz"
