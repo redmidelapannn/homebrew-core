@@ -6,9 +6,10 @@ class AcesContainer < Formula
 
   bottle do
     cellar :any
-    sha256 "4297afa069f1cd305e93038ed43260b3643f0bd27f39e33355061fc111fb7f6f" => :high_sierra
-    sha256 "6b276491297d4052538bd2fd22d5129389f27d90a98f831987236a5b90511b98" => :sierra
-    sha256 "16cf230afdfcb6306c208d169549cf8773c831c8653d2c852315a048960d7e72" => :el_capitan
+    rebuild 1
+    sha256 "b4b38bcc7155b0641bf6d3d2bfad8d4a7889d6b745281f6e96ad99bae1792a7f" => :high_sierra
+    sha256 "3e0602ee29665f251e9c9e5a6fdbb744c5e21d5ce647e22ffba88cf0f059bdc2" => :sierra
+    sha256 "a7fff22d95b036bf08f8be1dfc7b7dc9d458c136b954e8c987691fa3db608b09" => :el_capitan
   end
 
   depends_on "cmake" => :build
