@@ -4,7 +4,6 @@ class Vegeta < Formula
   url "https://github.com/tsenart/vegeta.git",
       :tag => "v7.0.3",
       :revision => "f5e8a53b900b1509b8719aa94c30d4cf087a77e9"
-  head "https://github.com/tsenart/vegeta.git"
 
   bottle do
     cellar :any_skip_relocation
