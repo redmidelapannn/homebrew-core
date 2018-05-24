@@ -8,9 +8,10 @@ class Skaffold < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2318623dd2cc21b6674609e8ecf81890f63025a3651dd33fdc83a01a0f6068b7" => :high_sierra
-    sha256 "20e3cc723f81b4520a2a6c3d37058c9e9411321b4a49880a5070fe596ade7c80" => :sierra
-    sha256 "0a7e4a6ff56f542e55e55396823f65d35f2fe64d3ea40d11f5e7be6ceb3d5e90" => :el_capitan
+    rebuild 1
+    sha256 "c0ca6f99cd457601019ceceec79db069d4fcee66c977ebb34db5aae439a2558c" => :high_sierra
+    sha256 "ef18f74708fcfa6cc2c78cca4975a5bc62242af503f00788d1f9daae7fc343d3" => :sierra
+    sha256 "1b817de15ec2c56c325c0fe18c575faa89f494395a84579c579fc9891b70ab92" => :el_capitan
   end
 
   depends_on "go" => :build
