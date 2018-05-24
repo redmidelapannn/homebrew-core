@@ -2,7 +2,6 @@ class Polymake < Formula
   desc "Tool for computations in algorithmic discrete geometry"
   homepage "https://polymake.org"
   url "https://polymake.org/lib/exe/fetch.php/download/polymake-3.2r3.tar.bz2"
-  version "3.2"
   sha256 "8423dac8938dcd96e15b1195432f6a9844e8c34727c829395755a5067ce43440"
 
   depends_on "ant"
@@ -12,7 +11,7 @@ class Polymake < Formula
   depends_on "ninja"
   depends_on "ppl"
   depends_on "readline"
-  depends_on "singular" => :recommended
+  depends_on "singular"
 
   resource "Term::Readline::Gnu" do
     url "http://search.cpan.org/CPAN/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-1.35.tar.gz"
@@ -30,6 +29,7 @@ class Polymake < Formula
     ENV.prepend_path "PERL5LIB", prefix/"perl5/lib/perl5/darwin-thread-multi-2level"
 
     resource("Term::Readline::Gnu").stage do
+      # Prevent the Makefile to try and build universal binaries
       ENV.refurbish_args
       system "perl", "Makefile.PL", "INSTALL_BASE=#{prefix}/perl5",
                      "--includedir=#{Formula["readline"].opt_include}",
@@ -40,7 +40,7 @@ class Polymake < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--without-jreality"
 
-    system "ninja", "-C", "build/Opt", "-l2", "install"
+    system "ninja", "-C", "build/Opt", "install"
     bin.env_script_all_files(prefix/"perl5/bin", :PERL5LIB => ENV["PERL5LIB"])
   end
 
