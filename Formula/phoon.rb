@@ -7,12 +7,10 @@ class Phoon < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b02d96f879caf26f69d807a5f7e4ede911e3d8d954fa3ab943e27efe6da15814" => :high_sierra
-    sha256 "ef7e685f7a9894e894807a555c4a9d52dd947184c15986f0a5578a46d892e46a" => :sierra
-    sha256 "ae91a1dc089678416ddeab9bd3dfbe76f0fd9f4789a86b187740167d0658926d" => :el_capitan
-    sha256 "d6f259769364eab6cacb4e45301f0ab8cd6edab369da99b4ecfbef7927791adc" => :yosemite
-    sha256 "378c1f09dcffbd0a0fd79cbcbe9a988d8505fa9b657fc803e6c0e5bb62545047" => :mavericks
-    sha256 "e6ddb6af5a0f4f1fe42ad4cb653434159fb9849d364fea7bb2e2784e7e0d8fa6" => :mountain_lion
+    rebuild 1
+    sha256 "4ea6f959ed4080378ad11a1180320852034045290bc354c59c966eea7fbc89f4" => :high_sierra
+    sha256 "8b163db72ac74b35b99922ca14b9899c682a73dc3b4d21173378a22fde45461c" => :sierra
+    sha256 "f16773e6d59682a54eb0c2af74c2afef1ba2a162bf604024be34dbdb959742e5" => :el_capitan
   end
 
   def install
