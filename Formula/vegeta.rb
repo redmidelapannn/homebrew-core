@@ -30,6 +30,6 @@ class Vegeta < Formula
     input = "GET https://google.com"
     output = pipe_output("#{bin}/vegeta attack -duration=1s -rate=1", input, 0)
     report = pipe_output("#{bin}/vegeta report", output, 0)
-    assert_match(/Success +\[ratio\] +100.00%/, report)
+    assert_match /Success +\[ratio\] +100.00%/, report
   end
 end
