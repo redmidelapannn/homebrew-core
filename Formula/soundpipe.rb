@@ -6,9 +6,10 @@ class Soundpipe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4f0b6f6a15345ce24137c640ab6c7a3a6a8c27d2391db3349672008feaaf67e3" => :high_sierra
-    sha256 "2d4accbb857729269d28c0812f08bb329258622f2ef584e37f48c5a846001804" => :sierra
-    sha256 "134c366d9bc06559fcfd2fb3a9aadf779bd974da23884b3b87eb9edac9dd22c9" => :el_capitan
+    rebuild 1
+    sha256 "2cd5cad64cf80a40b55f8763245db607ee1362f78ddb097c21481f407c2b75c5" => :high_sierra
+    sha256 "2ae5365c6f886f97684b44ad85c2e260af33427a826bdc4330216f06f70f3317" => :sierra
+    sha256 "118ac74143825ef92e186317118baa7362888409139823b59389149bd170e60c" => :el_capitan
   end
 
   depends_on "libsndfile"
