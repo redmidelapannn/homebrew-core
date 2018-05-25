@@ -7,9 +7,10 @@ class Libbi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f6de84b935be578ab58847976642adadd15682d0855fe2eedb5602263e30e79c" => :high_sierra
-    sha256 "9785aa1e32f6fcf835b9b89b404d1eb1f602b5a0f3c47658ae00e0984cd500cc" => :sierra
-    sha256 "b0a338b54bbab1958afad22e0e7b6f7d3595d71650192af991e39982e3bf87eb" => :el_capitan
+    rebuild 1
+    sha256 "73bdf67d74641f563a880423e1672c0e42598a6cb167126fa35e404f63f0cb1f" => :high_sierra
+    sha256 "0646a835bad8d0e54b0df9eb54542bd558bd4fa9bbed7dec604959176fbe2938" => :sierra
+    sha256 "0477befd8e26ce9ed67ff34256f02b4941ca13018af2be7819ba2e7935eccc6e" => :el_capitan
   end
 
   depends_on "automake"
