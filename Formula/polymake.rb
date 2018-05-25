@@ -14,7 +14,7 @@ class Polymake < Formula
   depends_on "singular"
 
   resource "Term::Readline::Gnu" do
-    url "http://search.cpan.org/CPAN/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-1.35.tar.gz"
+    url "https://cpan.metacpan.org/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-1.35.tar.gz"
     sha256 "575d32d4ab67cd656f314e8d0ee3d45d2491078f3b2421e520c4273e92eb9125"
   end
 
@@ -25,13 +25,13 @@ class Polymake < Formula
       ENV["SDKROOT"] = MacOS.sdk_path
     end
 
-    ENV.prepend_create_path "PERL5LIB", prefix/"perl5/lib/perl5"
-    ENV.prepend_path "PERL5LIB", prefix/"perl5/lib/perl5/darwin-thread-multi-2level"
+    ENV.prepend_create_path "PERL5LIB", libexec/"perl5/lib/perl5"
+    ENV.prepend_path "PERL5LIB", libexec/"perl5/lib/perl5/darwin-thread-multi-2level"
 
     resource("Term::Readline::Gnu").stage do
       # Prevent the Makefile to try and build universal binaries
       ENV.refurbish_args
-      system "perl", "Makefile.PL", "INSTALL_BASE=#{prefix}/perl5",
+      system "perl", "Makefile.PL", "INSTALL_BASE=#{libexec}/perl5",
                      "--includedir=#{Formula["readline"].opt_include}",
                      "--libdir=#{Formula["readline"].opt_lib}"
       system "make", "install"
@@ -41,7 +41,7 @@ class Polymake < Formula
                           "--without-jreality"
 
     system "ninja", "-C", "build/Opt", "install"
-    bin.env_script_all_files(prefix/"perl5/bin", :PERL5LIB => ENV["PERL5LIB"])
+    bin.env_script_all_files(libexec/"perl5/bin", :PERL5LIB => ENV["PERL5LIB"])
   end
 
   test do
