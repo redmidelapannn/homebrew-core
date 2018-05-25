@@ -5,9 +5,10 @@ class Redshift < Formula
   sha256 "d2f8c5300e3ce2a84fe6584d2f1483aa9eadc668ab1951b2c2b8a03ece3a22ba"
 
   bottle do
-    sha256 "39794fc0af4bae10ccfa98921acb933c414dbb858e25515dfbff38659d7b8b77" => :high_sierra
-    sha256 "30ff6fd3a0bb4d73bd9c3855467fe9b0cf78c8f084083e103ef702587fba98cc" => :sierra
-    sha256 "365aba46b3ea942d56749f405633093fc7e774bc4b27acefdc5ed0a87bdd4d67" => :el_capitan
+    rebuild 1
+    sha256 "23860a0c463d071aee249afd83e995db5768f0d272ad7684cca90dab7058ffe5" => :high_sierra
+    sha256 "842534b056e78f0382b9f65bf0a8d6594c82473df607f24a3495d8c1c13bed35" => :sierra
+    sha256 "c87b1643b3d3280f12dcf60fb3ee0d5c6417bf514236ddab69ca9bb16cd172a6" => :el_capitan
   end
 
   head do
