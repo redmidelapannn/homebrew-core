@@ -6,13 +6,10 @@ class Popt < Formula
   sha256 "e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8"
 
   bottle do
-    rebuild 1
-    sha256 "242ffcbf7f9796f970d45612b025d8be787f739aa5f16a02ce097196d3f56941" => :high_sierra
-    sha256 "ceae94fc8e588309670a7a045186eee8ff3a9966a68650f044a14d101267b7b2" => :sierra
-    sha256 "60a7f19e8fecafd92a5beb7d6438efac915e8f3afe3d83575fb64bb4a6190aab" => :el_capitan
-    sha256 "56d1104516e23bb314a248904b8ec85afe2fdbf71555417eb8f91edc1286e6da" => :yosemite
-    sha256 "ba122e7f34b9b03ab5a32ab01124b61eb608c29e0c0d023462953ed03782dd2a" => :mavericks
-    sha256 "6d95c3530a7bd4d7099d91f448669b53bb51a071c5e9a8b9915cdc750bd72aec" => :mountain_lion
+    rebuild 2
+    sha256 "fded21bc4faa50351f9699c426d8f351f90a352595232ebe5595cf65177f77fe" => :high_sierra
+    sha256 "1bc9e168ede8da0740fb93877b2267fedc470b5a3871235e76bcd9077db23489" => :sierra
+    sha256 "82b518afdf73b78664016547b0a276f5affd0808fca57938c1a286a7f9a3ac3a" => :el_capitan
   end
 
   def install
