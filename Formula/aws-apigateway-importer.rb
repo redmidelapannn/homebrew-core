@@ -13,10 +13,10 @@ class AwsApigatewayImporter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3e194aa8c79d1609040430c5d2e804b69df9ffd4cfd0c0501cdecce249591f83" => :high_sierra
-    sha256 "65d77c58ac90e7767f93896c9ec95a478dc1388316bcdafb4c06ed10db089caf" => :sierra
-    sha256 "bbe12dac66d033674840eace741bcf5c3549e7317ab9ca6fa9f349418a6c9861" => :el_capitan
-    sha256 "bbe12dac66d033674840eace741bcf5c3549e7317ab9ca6fa9f349418a6c9861" => :yosemite
+    rebuild 1
+    sha256 "6540eb59829e13175261c58d9650684aacf4aeacb7a7da3b4fbd03af8c2629e0" => :high_sierra
+    sha256 "363c7406379e3ddaaa4790f5a0dd8e497c9020d957a7bcd9c9530d51052da30a" => :sierra
+    sha256 "363c7406379e3ddaaa4790f5a0dd8e497c9020d957a7bcd9c9530d51052da30a" => :el_capitan
   end
 
   depends_on :java => "1.8"
