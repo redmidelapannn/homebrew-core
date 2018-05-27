@@ -6,11 +6,10 @@ class Drip < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6fe1110fb43b5e32e16c9053675313468ca0fbdf92d3ec9f0c9d5be105e4c409" => :high_sierra
-    sha256 "5d84f90eae53dbd9055e429d42981933cf5f3a2f213862ba7892643c5289e9df" => :sierra
-    sha256 "69a071055da45949c56df74c4959336f9511f863f447aed941a66547169f2c88" => :el_capitan
-    sha256 "14711be9325c0b2df465197156b4b78bed673bf441011d0ce29d48a0c2ee0045" => :yosemite
-    sha256 "69207c24aa1f8e6ba406e6cc3f811cd7000ee14c713cc32b49d72f2c76a702bc" => :mavericks
+    rebuild 1
+    sha256 "fdcc01576dbfec4eb37f7b6b00d95418f13e3454ca0bc4dd271983536861ae18" => :high_sierra
+    sha256 "ce69e38021a8bf1b8de0365b7792af1e8235ad9b3094ae213085181296ddcbd4" => :sierra
+    sha256 "a4597e34661d9e931da426d5fa09b1e2a7cea5f1cb6289d9ed763ac6085da46e" => :el_capitan
   end
 
   depends_on :java => "1.8"
