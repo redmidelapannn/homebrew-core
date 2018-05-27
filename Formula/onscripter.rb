@@ -7,9 +7,10 @@ class Onscripter < Formula
 
   bottle do
     cellar :any
-    sha256 "c7843b57d4404e6a7ac61d521bc60e9b572dff73d916c6a95c3ba2a5f5527125" => :high_sierra
-    sha256 "d32055f6e69f36da381320ffffb898b4a94e5d29e7a7ae1a00c60a4766439e8c" => :sierra
-    sha256 "dab8de0970901e7c63b32ad3d2071895c4259c5eb20a7abf8701b328d55bb8cf" => :el_capitan
+    rebuild 1
+    sha256 "f3ddd3fdf0f955f289d39d42685b805b727d490e5a478324d221fb9f93878a88" => :high_sierra
+    sha256 "1c6d21f4163f3fa955d4f60f9b6b849e481100f3db4bdac5c9dd6db28b2073a9" => :sierra
+    sha256 "f97e023fdd93c0313b2035f7621a4711c6bf178dfad6278edc684342676020df" => :el_capitan
   end
 
   option "with-english", "Build with single-byte character mode"
