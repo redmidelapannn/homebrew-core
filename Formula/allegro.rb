@@ -8,9 +8,10 @@ class Allegro < Formula
 
   bottle do
     cellar :any
-    sha256 "13e8c8518d9925dd1480b7217233262ac098e40728d5f4f3be6c2dcc6f872340" => :high_sierra
-    sha256 "7b8fdcdbfc49555517f654a9b8ad961bb675509b7e365aa58d5f0b7f6b23024c" => :sierra
-    sha256 "b8ab4c72c7e3f6b8a46fba5af812ebe7f7b1821c44485facd6bec622a1f00300" => :el_capitan
+    rebuild 1
+    sha256 "7f1ba7be821dfe04f222af910f01ac0ed5dc3f0be076ffe4cef0cee1eb937067" => :high_sierra
+    sha256 "7bbe0d5dae7fd66d5101ca5aaf22f3a52f65fdde02542753032761b58ee1d870" => :sierra
+    sha256 "0c36ea4cf06328f20d90f49d346866dfa31cf9c359eb7817240f00fffc1b31e0" => :el_capitan
   end
 
   depends_on "cmake" => :build
