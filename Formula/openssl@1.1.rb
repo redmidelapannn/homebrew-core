@@ -8,9 +8,10 @@ class OpensslAT11 < Formula
   version_scheme 1
 
   bottle do
-    sha256 "bbd397eec4b1eccc2da9da7b546c07913339fdb475e46ddfeb034f628e17b2d9" => :high_sierra
-    sha256 "b9626f5fa02f1dd1087fe97fc801be03e531c200bf46eb86be0deba1a6d7cb18" => :sierra
-    sha256 "aefb8af514d06dcf80d50855bc5ca64ab128602a2ca6bf2dfe66844b94b462d8" => :el_capitan
+    rebuild 1
+    sha256 "ac9d62f74efd6381c1a51d78351a10eb673f92c5efb1d56fab93cc055c3f898b" => :high_sierra
+    sha256 "d12d0ad085efd06989fb6e5ec4e7e78ccc95262d2a42e9460e1b30b0f211b140" => :sierra
+    sha256 "38ee6e25a4eccee7b4e07901232a19bfeb0bd7f51ec17666f835ec0f8138b130" => :el_capitan
   end
 
   devel do
