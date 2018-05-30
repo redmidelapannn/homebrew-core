@@ -10,9 +10,10 @@ class Hledger < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b98a55685dc4c619e59f102c91b75af384711b4d41ad05a184cec258cc5f9995" => :high_sierra
-    sha256 "7ca8c6444c3f5226f7e7831d31c9f389aa2f56540c9f9310a5b3842520dbffac" => :sierra
-    sha256 "59566873ae4f71158ea1f0ea4a551372a5b3b88bc121347d620428d4e30b326a" => :el_capitan
+    rebuild 1
+    sha256 "2688f71523dc7a70df9bd474e3bf589a32b688c77e157c3b7ced8915cf5c0955" => :high_sierra
+    sha256 "a9261b98f313ab58819b1c21a3d49274514abe4574b6e89ea76e27db516bcb75" => :sierra
+    sha256 "c60bf68f777a29b52c3b63dd842dcd04398dfb4b8fcda79567712c71cf1a27bf" => :el_capitan
   end
 
   depends_on "cabal-install" => :build
