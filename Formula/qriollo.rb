@@ -6,11 +6,10 @@ class Qriollo < Formula
   head "https://github.com/qriollo/qriollo.git"
 
   bottle do
-    sha256 "589772b174426b627088e6586e8fb95196db74543b28d2871b3c643ed0570107" => :high_sierra
-    sha256 "eac8f1a19aebca8ab21b5d992b61f8d7d702a2a81d1bc04534acb5f46517f6d4" => :sierra
-    sha256 "c570641b476c08b7e8d26ea37486f6db64cb6f573e0228b3893742857ceca7a0" => :el_capitan
-    sha256 "dab13bc1d92169631801eaa347f58a71049a762b3994ace1efbbcb813a72afb3" => :yosemite
-    sha256 "bc0ef3114f072bfcbf3b647f47d77f82e24f650b52edfbd1b3f34fd4dcc08c98" => :mavericks
+    rebuild 1
+    sha256 "ca05e01b144aa79137f2676746c4e6c7999c9c669c4f03482ab7cf64374736b4" => :high_sierra
+    sha256 "cc6928508a3295a1a6e7075f659063208cb46d208902277311263e9516c217d5" => :sierra
+    sha256 "b61e1159822ba1a798f21728d0e6a8df7b627c8f843b9f196ae8e532ddc10281" => :el_capitan
   end
 
   depends_on "ghc" => :build
