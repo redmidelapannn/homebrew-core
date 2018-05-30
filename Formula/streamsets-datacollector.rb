@@ -4,6 +4,13 @@ class StreamsetsDatacollector < Formula
   url "https://archives.streamsets.com/datacollector/3.3.0/tarball/streamsets-datacollector-core-3.3.0.tgz"
   sha256 "c980e4ecca091c8be2d7769d5c0a4a469e8a2096d1f70b1d502536520d6f980f"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "75567778651083872f311e6d017af536117fc9c56ed9b42d9e6d53ae1a598b8a" => :high_sierra
+    sha256 "75567778651083872f311e6d017af536117fc9c56ed9b42d9e6d53ae1a598b8a" => :sierra
+    sha256 "75567778651083872f311e6d017af536117fc9c56ed9b42d9e6d53ae1a598b8a" => :el_capitan
+  end
+
   depends_on :java => "1.8+"
 
   def install
