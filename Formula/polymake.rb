@@ -47,8 +47,8 @@ class Polymake < Formula
   test do
     assert_match "1 23 23 1", shell_output("#{bin}/polymake 'print cube(3)->H_STAR_VECTOR'")
     stdout, stderr, = Open3.capture3("#{bin}/polymake 'my $a=new Array<SparseMatrix<Float>>'")
-    assert_match "", stderr
-    assert_match "", stdout
+    assert_predicate stderr, :empty?
+    assert_predicate stdout, :empty?
     recompiling_info = /^polymake:  WARNING: Recompiling in .* please be patient\.\.\.$/
     _, stderr, = Open3.capture3("#{bin}/polymake 'my $a=new Array<SparseMatrix<Float>>'")
     assert_match recompiling_info, stderr
