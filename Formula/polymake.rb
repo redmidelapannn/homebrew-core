@@ -4,7 +4,6 @@ class Polymake < Formula
   url "https://polymake.org/lib/exe/fetch.php/download/polymake-3.2r3.tar.bz2"
   sha256 "8423dac8938dcd96e15b1195432f6a9844e8c34727c829395755a5067ce43440"
 
-  depends_on "ant"
   depends_on "boost"
   depends_on "gmp"
   depends_on "mpfr"
@@ -38,7 +37,7 @@ class Polymake < Formula
     end
 
     system "./configure", "--prefix=#{prefix}",
-                          "--without-jreality"
+                          "--without-java"
 
     system "ninja", "-C", "build/Opt", "install"
     bin.env_script_all_files(libexec/"perl5/bin", :PERL5LIB => ENV["PERL5LIB"])
