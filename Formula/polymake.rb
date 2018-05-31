@@ -4,6 +4,12 @@ class Polymake < Formula
   url "https://polymake.org/lib/exe/fetch.php/download/polymake-3.2r3.tar.bz2"
   sha256 "8423dac8938dcd96e15b1195432f6a9844e8c34727c829395755a5067ce43440"
 
+  bottle do
+    sha256 "512b5fbc0a5546d69d9d4415ba98227445adb290833794094337c38701879b71" => :high_sierra
+    sha256 "4a92f5bafa001ad097722dc023b80a89d26def169535a4e62310cdc935b05ff2" => :sierra
+    sha256 "e4d088985bcf555d2c01ac3833d799a33b72d4350a412079132a3968b55fa569" => :el_capitan
+  end
+
   depends_on "boost"
   depends_on "gmp"
   depends_on "mpfr"
