@@ -4,6 +4,13 @@ class Duktape < Formula
   url "http://duktape.org/duktape-2.2.1.tar.xz"
   sha256 "3abe2eed2553305262b892c98f550bb1a94cf4fd73b51dc5c176fe08e7ade7f2"
 
+  bottle do
+    cellar :any
+    sha256 "3741089d4609c60d571570ab16bf341f17271efaba2dd0489bd7b7abf677bbfa" => :high_sierra
+    sha256 "83b0acbee2312f10aa9632449486ac0ab756505e16a1e473fe698fd1e3ea98ff" => :sierra
+    sha256 "fa86c3bef321b0d8d60eb15599569690e898ea8c26dcf0e520b7b0aaf7628a26" => :el_capitan
+  end
+
   def install
     inreplace "Makefile.sharedlibrary" do |s|
       s.gsub! "-soname", "-install_name"
