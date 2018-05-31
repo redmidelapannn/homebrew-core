@@ -37,7 +37,9 @@ class Polymake < Formula
     end
 
     system "./configure", "--prefix=#{prefix}",
-                          "--without-java"
+                          "--without-java",
+                          "--without-bliss",
+                          "--without-soplex"
 
     system "ninja", "-C", "build/Opt", "install"
     bin.env_script_all_files(libexec/"perl5/bin", :PERL5LIB => ENV["PERL5LIB"])
