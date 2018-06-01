@@ -11,9 +11,10 @@ class PinboardNotesBackup < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1138cbd05fc88464afb783d8509336fb8bb82495700b34199d5c16dee1cbac41" => :high_sierra
-    sha256 "77d4f8e3de1887bbae724aaaf2b72b7399adb8435153a192b7f39cabb8846c54" => :sierra
-    sha256 "357931ecd198a6fad58d6a9cf3d8543b1dbc3a2fd0ec60e1887725791a2e6c6b" => :el_capitan
+    rebuild 1
+    sha256 "909c2bba6d821a4e1297a215cb24270ac99bfa869e30f57230407a45c088ff38" => :high_sierra
+    sha256 "7ba1c7e8a28ea61fb2f60c8cbd7931f5a1d0efc1df89639c64bf0e93533d93e4" => :sierra
+    sha256 "bf5a4ef5d2489e903b2ec8ccddcab346b42129f537a9e6220b8d02713be769c4" => :el_capitan
   end
 
   depends_on "cabal-install" => :build
