@@ -7,9 +7,10 @@ class Mpfr < Formula
 
   bottle do
     cellar :any
-    sha256 "223ac973eb796b275cf751111c458dc1466f82f302e96ca764ea091309d1a963" => :high_sierra
-    sha256 "a29b4585cb97715cdab177ea586b3fbee2c578248b115e3b86505724f2b0fc76" => :sierra
-    sha256 "33b9a9b53120eae11bf2d241d0285f1bb0410ff133d2ecc1d4df07846da93018" => :el_capitan
+    rebuild 1
+    sha256 "15a4858d0e313a647d177126eba39ae63fc9d196ad7db87e815e3c5f55c031f5" => :high_sierra
+    sha256 "a8d8753bda5b223c753d888bb9118dc3d6ecc1675b7851b478aa745922bbe837" => :sierra
+    sha256 "00e1978ce3aa88e0453be42baeca784f4e0f316dbf48dcc89235fe9a6d3d89f3" => :el_capitan
   end
 
   depends_on "gmp"
