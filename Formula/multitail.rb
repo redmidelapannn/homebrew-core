@@ -6,10 +6,10 @@ class Multitail < Formula
   head "https://github.com/flok99/multitail.git"
 
   bottle do
-    rebuild 1
-    sha256 "b8d2ab93cd8bf7954ffc49ed929aa0cf2c60a2ebeb872e9d3686d314af043be2" => :high_sierra
-    sha256 "ec1007a1ab7ffc9394f25d1a838d54051c04c14667721e8db9f49803084f6dcc" => :sierra
-    sha256 "b9c5e200dab1bf30ef4bd9bb257d5728c6779552aab97a1ddc65d02ad697cd8f" => :el_capitan
+    rebuild 2
+    sha256 "29e45507010c6d9ad5fb9365bed1231d843b970d701ae008521392290feced5c" => :high_sierra
+    sha256 "525fb33257cb04f1eef00aabcea75cc09fb20fb657d9e5505898b9856e913440" => :sierra
+    sha256 "dea5ac34023d93fcb42de3fb40d1e22d11c37c233f77c52971c7bb87dcefdf40" => :el_capitan
   end
 
   def install
