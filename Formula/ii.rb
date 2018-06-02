@@ -7,9 +7,10 @@ class Ii < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cb33673d9ff4f1ae5df30e60ece783e6c7e2024f2722fe96dd60ab9504b124e5" => :high_sierra
-    sha256 "1315c3181d0c2320d05927e84f84a8b1a0de21d9f53e448993e95fb00a1489a0" => :sierra
-    sha256 "7f1cb092b6940dc4d9b1e1e47b78165c6f37c0dc322dc0bfd5053afcb42e3fb6" => :el_capitan
+    rebuild 1
+    sha256 "648e918f43acf582f2c80ec0ac3c9f08b44ea2147c5396bb486bc5193d840abf" => :high_sierra
+    sha256 "a001b2a7b10322a463beb313e41572086866149a4fcc5a247799a345dce9f868" => :sierra
+    sha256 "4d21e37e53c768ec5fcd1d61b618e8ef9b7897a735bce29fc942b3cc70238016" => :el_capitan
   end
 
   # Updates Makefile, and provides an option to use the system strlcpy
