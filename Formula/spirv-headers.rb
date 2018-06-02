@@ -3,6 +3,13 @@ class SpirvHeaders < Formula
   homepage "https://github.com/KhronosGroup/SPIRV-Headers"
   url "https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-1.1-rc2.tar.gz"
   sha256 "cad18d4f05dee13976741c379f042d0d21562bd03e9f0e1496221e2682acf052"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1ad198758f517f57d94dc7cb79273a08feab270e981530a0d5f9f980fe80aed1" => :high_sierra
+    sha256 "1ad198758f517f57d94dc7cb79273a08feab270e981530a0d5f9f980fe80aed1" => :sierra
+    sha256 "1ad198758f517f57d94dc7cb79273a08feab270e981530a0d5f9f980fe80aed1" => :el_capitan
+  end
+
   depends_on "cmake" => :build
 
   def install
