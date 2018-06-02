@@ -5,9 +5,10 @@ class Php < Formula
   sha256 "1f004e049788a3effc89ef417f06a6cf704c95ae2a718b2175185f2983381ae7"
 
   bottle do
-    sha256 "7cec50548d1c9fd6860d7ff3eef51b1f5e223ac4553041a6ea325579aba08a64" => :high_sierra
-    sha256 "8cd50f2e516f99916d634edf060fc649370f9c8b7f01c6d1c87426567a5df7b0" => :sierra
-    sha256 "2caaa197e42d56794f44d1bfc71363b435920cfe5fdafb6f64af3812e58ceb00" => :el_capitan
+    rebuild 1
+    sha256 "c4b0550ef163a4a408f4cb86b8ec058c9bbefd962581c6a14293738c16b8b24b" => :high_sierra
+    sha256 "d424c5debe864cbde71531c3c6ef93a6c06a8fd6ae2943cef0fef20e05c36f43" => :sierra
+    sha256 "72bb64766112856b615c176327bfdadf0234b584594c6a35075a79a5ef69be32" => :el_capitan
   end
 
   # Bad system lib linking: https://bugs.php.net/bug.php?id=76403
