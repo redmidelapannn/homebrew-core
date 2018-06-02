@@ -4,6 +4,12 @@ class Tclreadline < Formula
   url "https://github.com/flightaware/tclreadline/archive/v2.3.1.tar.gz"
   sha256 "1b0941fabb1f7494201079caff3ff96401fbc26b1c56245034b0b5e7f33c20d1"
 
+  bottle do
+    sha256 "46bb3bd85ed74119e7e3dfe27d2f763d78e071de1de3ef86d98257abd0dace8f" => :high_sierra
+    sha256 "8e236f2f467dac73ac6122c6c9e0ef622d8befde18951b61736fb3e3ec778621" => :sierra
+    sha256 "1765d37d73c881da39984bb1cc6e4be944fca15df40302441063c63cca29fb14" => :el_capitan
+  end
+
   option "with-tcl-tk",  "Link against a brewed Tcl/Tk instead of the macOS stock one"
   option "with-tclshrl", "Build readline enhanced replacement for tclsh"
   option "with-wishrl",  "Build readline enhanced replacement for wish"
