@@ -7,9 +7,10 @@ class Emacs < Formula
   revision 1
 
   bottle do
-    sha256 "f7cb2b2b9b7e519186657ac86929b0e07ab885781f3c0d5e281a4df9beb61b3a" => :high_sierra
-    sha256 "3e517198c33af574942a5d7beb031791825aedc029f98a2dd0ec5d24ba9f7121" => :sierra
-    sha256 "490eb74c1f94db84d77311eb9d3aa6c0c9085e9f971a48e31386488a92799514" => :el_capitan
+    rebuild 1
+    sha256 "0220450911baea462b850d19cc328b20abd2f9995e18dd2755d89bdf3794d531" => :high_sierra
+    sha256 "d60054938ec42ad6942656cd272393bbc4af6c8f8d735730d2f1d7f87db5efc0" => :sierra
+    sha256 "b733b9b5b4c11cd0b06bcd67b4c8cbda918f28c6ad9dbe3d470c02af4e6d6400" => :el_capitan
   end
 
   head do
