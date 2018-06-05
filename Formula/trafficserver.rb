@@ -10,9 +10,10 @@ class Trafficserver < Formula
   end
 
   bottle do
-    sha256 "34d24867b84b672d3ba4c07066c15b2db0ee3fab29469e916f54728c808f4200" => :high_sierra
-    sha256 "d871b084da0193a97c97ea9e5dd9b81be73ed7719f0185c797044d98951c558f" => :sierra
-    sha256 "5267f82f7a7d59cd592b4ae5351f17a075ad2dc5fb5d6efb7f880cd9024ec232" => :el_capitan
+    rebuild 1
+    sha256 "360665c8b8e4b5f9b632b54193aa01d1b99ca709fc293d947b62df48ffd43cd4" => :high_sierra
+    sha256 "fc740b931e8e0df44d959a833616e25f4525c4c0aceedc0dfe23892ac7408fb7" => :sierra
+    sha256 "b2ea2cd9b7e2097062d5225ab35e26759a1016b22118b1e481782e780913ac31" => :el_capitan
   end
 
   head do
