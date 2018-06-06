@@ -8,10 +8,10 @@ class JdnssecTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "410115bfea6c2107754902e990fcc5a365a9330fe72035627843ccc12426d559" => :high_sierra
-    sha256 "4a39d75830447d4399772906dac12fb9444c8ddaef618874dbb8db06bf7aa288" => :sierra
-    sha256 "0b48a68553a1d76d38efe6557d7bc52662a3b361f5f07a44c128d5e15be4622c" => :el_capitan
-    sha256 "0b48a68553a1d76d38efe6557d7bc52662a3b361f5f07a44c128d5e15be4622c" => :yosemite
+    rebuild 1
+    sha256 "84c6de9fe8f48ecf172b0491da253a7d8722d4da267cc8ab946642f267665852" => :high_sierra
+    sha256 "84c6de9fe8f48ecf172b0491da253a7d8722d4da267cc8ab946642f267665852" => :sierra
+    sha256 "84c6de9fe8f48ecf172b0491da253a7d8722d4da267cc8ab946642f267665852" => :el_capitan
   end
 
   depends_on :java
