@@ -5,9 +5,10 @@ class PcscLite < Formula
   sha256 "5a27262586eff39cfd5c19aadc8891dd71c0818d3d629539bd631b958be689c9"
 
   bottle do
-    sha256 "0ed981ad7244d50d3084cef08991c5662658cd321d24784b2a6c2f8586f8f205" => :high_sierra
-    sha256 "16167530e755c8c59a43b72433e9e1aba53b14f4f7364e85fc3159ecdc8ce75b" => :sierra
-    sha256 "9a2816b3aaa1717d6c5d2c59495681915b62de67e496bb3edfecf1e5b6d537c0" => :el_capitan
+    rebuild 1
+    sha256 "4755543b38d1d265492118e3841ac85a51ba6713ae101a0869156b158f39a675" => :high_sierra
+    sha256 "63c11204690f566c5b0caa6b08220f809d5b1ce44ec707adf8ab2b1985a2b20d" => :sierra
+    sha256 "d4d074a6d9e515729eb9a34de0f0afcd3a092e4d3f286be60d01e65923c27285" => :el_capitan
   end
 
   keg_only :provided_by_macos,
