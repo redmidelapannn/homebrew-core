@@ -13,12 +13,9 @@ class Cctools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "884da525162c316ea2375417148d696f3db9c0995d54b9caf089c634f46c8424" => :high_sierra
-    sha256 "d1cdbb626ef536c6e25884eafe2bdfb8e2c4d4011e4e37eea9c69b834c55cfe4" => :sierra
-    sha256 "398333f85c3944de889172ca9d3aa5ffd709403ca2225316f130be817f09873a" => :el_capitan
-    sha256 "a76a710f5f164feace5ad107eb40bf5e6a25e916f7334e69ee197a8e3d02b90c" => :yosemite
-    sha256 "3b0c895c6f0832ef9509720ebc15478e188ea6396ba41729273eb64d7b2f7ec2" => :mavericks
-    sha256 "f9f74d98119d2efd5530f8d98eb7838a77be35576880ecec73fe9d535aa2afb0" => :mountain_lion
+    sha256 "158c99b7f169c1a8b3b91fd639730c8f9f3fba7fc055b6e97e8a35bb263ec0b6" => :high_sierra
+    sha256 "075a3a828d3408f8e509a8fc070f68c25e1f6b704cdcfbfadbc8e641ce3ab988" => :sierra
+    sha256 "42af2245744f33bea6c104f66c662c908d0d1510c1796cd0954d6c2a64a48411" => :el_capitan
   end
 
   keg_only :provided_by_macos, "this package duplicates tools shipped by Xcode"
