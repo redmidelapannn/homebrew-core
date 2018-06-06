@@ -10,9 +10,10 @@ class Flake8 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "929140b14958e23321f395143c3ef31166f344058fdbaac843deca1a94b48782" => :high_sierra
-    sha256 "825dd5873edf54a9acbf35daa908559b4323f27e6800401d097217d9db28128c" => :sierra
-    sha256 "cfbc382496c31b5c57e31ac2487d022a07673d9efd2d64cbc956d3e05c8d9afe" => :el_capitan
+    rebuild 1
+    sha256 "f815ad8ca800f0aa395cd92859f0bd37c102acc12ca805ad012ab17a13127cb5" => :high_sierra
+    sha256 "95e4c489a30e9175efe804cbae56f9cd3e2457b3607716193f30110a009b83df" => :sierra
+    sha256 "b2c2b85ecaf362340e9f09ba88aad9374c5f9850432aa620b04c030902108b44" => :el_capitan
   end
 
   depends_on "python"
