@@ -6,10 +6,10 @@ class Slackcat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "81bf29fac1f47bfaa4064b9b03aae96c4ea179158b0baeb0868203c6b7144221" => :high_sierra
-    sha256 "7a0331e03695488f07eba24c4ebef11b406face8dcdbfc632beb8c5eb3227395" => :sierra
-    sha256 "bd75f396807917734adec3c541faebee3789841474fdd81c343c61c6a739d293" => :el_capitan
+    rebuild 2
+    sha256 "1abf10e3e0bdb223ce2211c8953476d1bc3371ee931abcfd5cbe99c19eb20548" => :high_sierra
+    sha256 "93a717219423b2d8446cfd3b49fdc068ebc1e0e781fd45d23f4c187e24f9515b" => :sierra
+    sha256 "626d4656d8b26728f3e6f1582787bd1a0e991c83e58bce083957a103316899b8" => :el_capitan
   end
 
   depends_on "dep" => :build
