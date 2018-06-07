@@ -18,7 +18,7 @@ class Goose < Formula
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/pressly/goose").install buildpath.children
     cd "src/github.com/pressly/goose" do
-      system "dep", "ensure"
+      system "dep", "ensure", "-vendor-only"
       system "go", "build", "-o", bin/"goose", ".../cmd/goose"
       prefix.install_metafiles
     end
