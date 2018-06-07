@@ -6,9 +6,10 @@ class Vert < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b7c63c671335e19afca83f08091a987c35576eb4cb94f1d7b00490d1448f3e77" => :high_sierra
-    sha256 "e189a592a062ef9e2cc19506f99272ffc9f97f3e529a54eddd7287f0c9574935" => :sierra
-    sha256 "534043c69cbd56a22d656ba873e180e628b3a0ace433d8f020b886212afa050e" => :el_capitan
+    rebuild 1
+    sha256 "9c97d5b7b5107a39c3aca384b72e4079b46ca6e10d330c9ace19ab986d114717" => :high_sierra
+    sha256 "33dd66474b57d6e624bff97fa32a0a9c09e48b6a4235279e56839ff4224f01e6" => :sierra
+    sha256 "1d5ff5c977a63aa0a43bf4911beea469b36830f723e14bf37312dabbbe2f4da1" => :el_capitan
   end
 
   depends_on "dep" => :build
