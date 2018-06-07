@@ -6,9 +6,10 @@ class Bochs < Formula
   revision 2
 
   bottle do
-    sha256 "6704008062d55a66ca8a8ab359db801f806f5e40b18a2ae2af18ac76353ea187" => :high_sierra
-    sha256 "f866b444fc8dd6c31a5104d8f6115720bd0e0ee46775d92a4258f68ccea214ce" => :sierra
-    sha256 "d7c0d5ee817ba9f3c596ab6364c62b0160c74aefce2db1033438cb17978a8291" => :el_capitan
+    rebuild 1
+    sha256 "c5fd4c8cbfdec09a213774ee56d25fec6d751da375445e096327b88e4651b460" => :high_sierra
+    sha256 "d75389a529c9fb31278229a744b89f02aabc7324f38b66aae0224b87c0b0acd1" => :sierra
+    sha256 "eed513240abe9c57e8af9f4ed8a2e6ebf04fce87edb1efeff7a1991d4a8ae490" => :el_capitan
   end
 
   option "with-gdb-stub", "Enable GDB Stub"
