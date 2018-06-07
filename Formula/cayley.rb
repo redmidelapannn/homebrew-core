@@ -7,9 +7,10 @@ class Cayley < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9a1b558fe6b45116bba953495630eaa0690cfd85c13ff5dbf1a152ec28d17278" => :high_sierra
-    sha256 "58ef82f20c9db1fa8c472d7c9958bea9a58f693c879b934c526636a3d852340a" => :sierra
-    sha256 "45699dd103618510a86c61a57cb32c7d3dabec1718d05e2b0dee278b3f193ee3" => :el_capitan
+    rebuild 1
+    sha256 "cda22f5774cb4081da92341917ecf35a9ff8bd8bf3c041060095191fcde31ffd" => :high_sierra
+    sha256 "f0e9ef3da9c491ac66820deed4f2fc5e153b443437dc8db4c6408d8e2aaf3f31" => :sierra
+    sha256 "4f439138221940e93b94870fd0fd176e530c44e714a960c266975a5cb70fb358" => :el_capitan
   end
 
   option "without-samples", "Don't install sample data"
