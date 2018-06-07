@@ -50,6 +50,6 @@ class Luciddb < Formula
       <string>/dev/null</string>
     </dict>
     </plist>
-    EOS
+  EOS
   end
 end
