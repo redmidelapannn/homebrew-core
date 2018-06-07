@@ -8,10 +8,10 @@ class SshVault < Formula
   head "https://github.com/ssh-vault/ssh-vault.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "449945a60458fde34c31a6a8b97fd1e6572dc295ab70bee410a4c3ae2f4c57c1" => :high_sierra
-    sha256 "6fa89a87974ee2b4a791ba0a2f28249b7bd12abc64436a5015e207cb0d73b6a0" => :sierra
-    sha256 "57ab92a375411d4cc60796247a77ea8855ca6ca16411d051ebac75782f1d1403" => :el_capitan
+    rebuild 1
+    sha256 "734faa91c9d964ca7e8a7491e4ad70f84d454046287b737eb4bf0bfe5cf72518" => :high_sierra
+    sha256 "f435604dfbbfcb317d320694c67d815dc58f0e8326713dad3d9e28f07edf81bb" => :sierra
+    sha256 "939a6ede63874bca216361ddfa402377558f81ff1271db6021934daf7c271487" => :el_capitan
   end
 
   depends_on "dep" => :build
