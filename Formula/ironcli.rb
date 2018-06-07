@@ -6,9 +6,10 @@ class Ironcli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c4f4ad82734f93b32a2f64e1adaaf493fa38b4e34cbc9298fbbdc02851003343" => :high_sierra
-    sha256 "14d4bcd4ac89e89fb09b27994ba372d1e25690724c99b7ffbfb0231466c01bca" => :sierra
-    sha256 "62bed7f56cf23a148407527ff2b1234638ae0b365806ccc79c602ee081eed1dc" => :el_capitan
+    rebuild 1
+    sha256 "ae334dcdfb366ee3dce2a0740a74039f2dc4b45f56f6065ce835bebf0779927a" => :high_sierra
+    sha256 "d1f93964e214d81e6d053d830a04c69365c961b138163c78649bf90e7cb299d5" => :sierra
+    sha256 "ebe1dbf7554ade6c738f34f6207728e348561ace41cc14f32851cb0056356c95" => :el_capitan
   end
 
   depends_on "dep" => :build
