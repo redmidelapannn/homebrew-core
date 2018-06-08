@@ -4,6 +4,12 @@ class Inkscape < Formula
   url "https://inkscape.org/en/gallery/item/12187/inkscape-0.92.3.tar.bz2"
   sha256 "063296c05a65d7a92a0f627485b66221487acfc64a24f712eb5237c4bd7816b2"
 
+  bottle do
+    sha256 "905bb8dd5f17c557537c3d2a9902b49293cd0713b9b19aad094ef0c9189eccfb" => :high_sierra
+    sha256 "38cd11259c453a4466a44c9801d445c2556b4d30768db56f7617ce57fe27c5b6" => :sierra
+    sha256 "7a65ded1f49835c6f176b49234ac1e17b7a75bcab27f69062c5b5498eb3b543b" => :el_capitan
+  end
+
   depends_on "boost-build" => :build
   depends_on "cmake" => :build
   depends_on "intltool" => :build
