@@ -6,9 +6,9 @@ class Krakend < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "71235262350e1906c25406f4e707f1c3bd9ecfe31b14b5af0ed785c8f274d9cf" => :high_sierra
-    sha256 "74168eb0350f654bafd98d5919cf0c07434543af1f16aa3e7312865cce2e0900" => :sierra
-    sha256 "b49037c17c6f80891ae9fa194424abbfbb92d031205df3cd103fd0f03f69bdbb" => :el_capitan
+    sha256 "39f85cd1563ea74979935c81df50b438c8c33e20a4a0376e32269f1832551f8e" => :high_sierra
+    sha256 "d9622508b0b8fb4c1b9bd203b7faec557386926f5a8d9a2149f4d637976d42f9" => :sierra
+    sha256 "0ca60885fc69e612b589bad09f136fc5124a5b52909608b693665211479807a6" => :el_capitan
   end
 
   depends_on "dep" => :build
