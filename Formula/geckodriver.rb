@@ -6,9 +6,10 @@ class Geckodriver < Formula
   head "https://hg.mozilla.org/mozilla-central/", :using => :hg
 
   bottle do
-    sha256 "619cbf30892108fcd05a423321392f27332918560a1498d71c37eab4e7294b72" => :high_sierra
-    sha256 "e048038a056738d753e9937737753331e564306a5ea034079652c4dd40b27399" => :sierra
-    sha256 "39f790fa76fe15069eaf4d49dccc28408344a5381c6bbb59fb655ef5213f5444" => :el_capitan
+    rebuild 1
+    sha256 "6926f8ba82199759049a367dd0658dba9be9d63eab919e2c42b384593a1511a8" => :high_sierra
+    sha256 "f485267f7d2eebfeb6749adf9457f905442687a18411cafe5ef5bdefadb44953" => :sierra
+    sha256 "0d6defce824729f2a70f4ec65927fd535ba4782bb263f9ad834d17d819199e43" => :el_capitan
   end
 
   depends_on "rust" => :build
