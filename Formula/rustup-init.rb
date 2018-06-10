@@ -6,9 +6,10 @@ class RustupInit < Formula
   sha256 "000b873f239e8c5219ede3fd5836d6346ebea64ea928e2d754cdfc0f2071a874"
 
   bottle do
-    sha256 "c426ae411e48c723c5c6fd6a1bd99a5187337139bd9e4d30cee2cad37d88d254" => :high_sierra
-    sha256 "ed86ccc7cb99ee87903b75d6238d388f00d7500cd9b18c806f795e35bc80b762" => :sierra
-    sha256 "bcffb2ac04a2c77bfec589a5c2d3d9f6125e41d22b56a11041dd823846ae9437" => :el_capitan
+    rebuild 1
+    sha256 "03eba51c86a4ae94183172912cd40b1b15198903453af8e192e3164782a4464d" => :high_sierra
+    sha256 "c7aa37593c5600bae63f6b16289de7616beba9a7e2199785ce4be74273e77c88" => :sierra
+    sha256 "06b3cb155aec5755843a09aac2ef42b57043c5d946a02215da2c6b4b93fc933f" => :el_capitan
   end
 
   depends_on "rust" => :build
