@@ -5,9 +5,10 @@ class Loc < Formula
   sha256 "1e8403fd9a3832007f28fb389593cd6a572f719cd95d85619e7bbcf3dbea18e5"
 
   bottle do
-    sha256 "2c66f5b54d8769dd96f34992db4dd6fc5d84344ce16553f2ee47c6fc6818a861" => :high_sierra
-    sha256 "276bb55a29fa8e24a968376e040a648aefac8710e968c507040a12a2d5979edd" => :sierra
-    sha256 "c3a745729bbcbb8fbda867e82946ce3d20078beca4bb08265ceb6467691ca0da" => :el_capitan
+    rebuild 1
+    sha256 "9efd6a7a47034b64face6b2be8ae4c7e4a22f9557ca7319f07290dd1bdaf64b2" => :high_sierra
+    sha256 "af0979fe1bf8dd425ef4dbd765b25525f7461e1cfe9abfdb6d4f4320ca38450d" => :sierra
+    sha256 "355e37f1e0b0ef7c36481d7fe46a5a6b0401e7110df55d8ed34243a5e4b35f23" => :el_capitan
   end
 
   depends_on "rust" => :build
