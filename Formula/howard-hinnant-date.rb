@@ -7,9 +7,10 @@ class HowardHinnantDate < Formula
 
   bottle do
     cellar :any
-    sha256 "92fa4808e4dcde7540032ce0aac6a0a33e468e654944706ba2661187e2111616" => :high_sierra
-    sha256 "f42440908ef92ade61d8b1b3c152355162768b0a5eaca3fcc1ed3deae72f8c17" => :sierra
-    sha256 "c3902905c2a51ae0e35fe54b84b00f68d97408f502d83b21f293087d16b9e175" => :el_capitan
+    rebuild 1
+    sha256 "fe8522f03e1bf008186f96217c1ff041a3df5c13c8f782500886d9b8bf4720ee" => :high_sierra
+    sha256 "6bb86f353173dbafb8a230abaf99712cdff0e97b38e5f7b13325ccbff9601d13" => :sierra
+    sha256 "b83ae912b2f6d96f6995e84364c9f31c0cd2aab99566b233e60dca258bd921c4" => :el_capitan
   end
 
   option "without-string-view", "Disable C++ string view"
