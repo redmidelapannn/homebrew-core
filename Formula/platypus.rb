@@ -7,9 +7,10 @@ class Platypus < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ab371d96215d160ee7638d1dfe3d49cc5cbbf7fc03b01524f3fe18bb7c6ed767" => :high_sierra
-    sha256 "11b199eb483328298a49792055306558182807fdf993b448c2f88145b57b14e0" => :sierra
-    sha256 "edb6178b284a8701fb4e7e57ff57230269a774afc684776a557fa2572c2ac057" => :el_capitan
+    rebuild 1
+    sha256 "2a582a40f1e1f038be24448a373d4b3c3df7c951f6ec10b21ada09b736ba711f" => :high_sierra
+    sha256 "8e627729c8f29444575db7274b83bf4d54f23281bb6b4d368c4bb2eb535243c4" => :sierra
+    sha256 "dacb448f19e8bd1f339f3549e4436713aba4e75757c9607f71cc467c360ef55a" => :el_capitan
   end
 
   depends_on :xcode => ["8.0", :build]
