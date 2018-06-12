@@ -5,10 +5,10 @@ class Apcupsd < Formula
   sha256 "db7748559b6b4c3784f9856561ef6ac6199ef7bd019b3edcd7e0a647bf8f9867"
 
   bottle do
-    rebuild 1
-    sha256 "beee3be60fc8aafbd2a8fdb215ec8f0d531cc6750d00fd176039a0e5d8ee0d1e" => :high_sierra
-    sha256 "8cf3f4840ec564f859fa0b02eda9aec274180de519b512e28e19a31b6eab583c" => :sierra
-    sha256 "d000cc771fde79714b634a49b31afd207d6a26b76924c586e0af9fa80f539db5" => :el_capitan
+    rebuild 2
+    sha256 "9ab8d2e210e80fcffc5a144b740dda8d4e92c5b808083139e8366b6dc0c3ee93" => :high_sierra
+    sha256 "e0da767b8dc9111ff6ceb12da16537036c079e8b0fbfc725775528dbcd9ce60e" => :sierra
+    sha256 "1231a0fce68cc62d4463f6215ab9f4aa6d31fb24441de223d0744218fb9239c1" => :el_capitan
   end
 
   depends_on "gd"
