@@ -54,8 +54,13 @@ class Neovim < Formula
   end
 
   resource "lua_cliargs" do
-    url "https://luarocks.org/lua_cliargs-3.0-2.src.rock", :using => :nounzip
-    sha256 "3c79981292aab72dbfba9eb5c006bb37c5f42ee73d7062b15fdd840c00b70d63"
+    url "https://luarocks.org/lua_cliargs-3.0-1.src.rock", :using => :nounzip
+    sha256 "d165b627b11dc83a11270d7d51760e5b714e3fd2388733c32af53e9b63bf27d4"
+  end
+
+  resource "lua-term" do
+    url "https://github.com/hoelzro/lua-term/archive/0.07.tar.gz"
+    sha256 "c1a1d0c57107147ea02878a50b768d1c3c13aca2769b026c5bb7a84119607f30"
   end
 
   resource "luasystem" do
@@ -93,6 +98,16 @@ class Neovim < Formula
     sha256 "c9e9b3bf1610e382043c6348417864541327108da92290a3be454c40be439953"
   end
 
+  resource "luv" do
+    url "https://luarocks.org/luv-1.9.1-1.src.rock", :using => :nounzip
+    sha256 "d72db8321d8b3be925e1c14e6c13081466d1c31420f600154ab5c77fe6974fac"
+  end
+
+  resource "coxpcall" do
+    url "https://luarocks.org/coxpcall-1.17.0-1.src.rock", :using => :nounzip
+    sha256 "11feb07f08927c39b0b93e8c0bbaf15433f86155cba4820a31a09f4754ab3258"
+  end
+
   resource "nvim-client" do
     url "https://github.com/neovim/lua-client/archive/0.1.0-1.tar.gz"
     sha256 "d2254c70eab7e7b6d7dc07caffe06f1015897fc09fdfa4b33f0b3745e6b0d03c"
@@ -115,7 +130,8 @@ class Neovim < Formula
       cd "build/src/penlight" do
         system "luarocks-5.1", "make", "--tree=#{buildpath}/deps-build"
       end
-      system "luarocks-5.1", "build", "build/src/lua_cliargs/lua_cliargs-3.0-2.src.rock", "--tree=."
+      system "luarocks-5.1", "build", "build/src/lua_cliargs/lua_cliargs-3.0-1.src.rock", "--tree=."
+      system "luarocks-5.1", "build", "build/src/lua-term/lua-term-0.7-1.rockspec", "--tree=."
       system "luarocks-5.1", "build", "build/src/luasystem/luasystem-0.2.1-0.src.rock", "--tree=."
       system "luarocks-5.1", "build", "build/src/dkjson/dkjson-2.5-2.src.rock", "--tree=."
       system "luarocks-5.1", "build", "build/src/say/say-1.3-1.rockspec", "--tree=."
@@ -123,6 +139,8 @@ class Neovim < Formula
       system "luarocks-5.1", "build", "build/src/mediator_lua/mediator_lua-1.1.2-0.rockspec", "--tree=."
       system "luarocks-5.1", "build", "build/src/busted/busted-2.0.rc12-1.rockspec", "--tree=."
       system "luarocks-5.1", "build", "build/src/luacheck/luacheck-0.21.2-1.src.rock", "--tree=."
+      system "luarocks-5.1", "build", "build/src/luv/luv-1.9.1-1.src.rock", "--tree=."
+      system "luarocks-5.1", "build", "build/src/coxpcall/coxpcall-1.17.0-1.src.rock", "--tree=."
       system "luarocks-5.1", "build", "build/src/nvim-client/nvim-client-0.1.0-1.rockspec", "--tree=."
       system "cmake", "../third-party", "-DUSE_BUNDLED=OFF", *std_cmake_args
       system "make"
