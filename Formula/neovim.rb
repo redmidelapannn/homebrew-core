@@ -74,8 +74,8 @@ class Neovim < Formula
   end
 
   resource "say" do
-    version "1.3-1"
     url "https://github.com/Olivine-Labs/say/archive/v1.3-1.tar.gz"
+    version "1.3-1"
     sha256 "23e8cd378bb4ab1693279100a785acb2246418e3570b7de7d995b5847b3507ca"
   end
 
@@ -85,20 +85,20 @@ class Neovim < Formula
   end
 
   resource "mediator_lua" do
-    version "1.1.2-0"
     url "https://github.com/Olivine-Labs/mediator_lua/archive/v1.1.2-0.tar.gz"
+    version "1.1.2-0"
     sha256 "faf5859fd2081be4e9e4fb8873a2dc65f7eff3fd93d6dd14da65f8e123fcff9b"
   end
 
   resource "busted" do
-    version "2.0.rc12-1"
     url "https://github.com/Olivine-Labs/busted/archive/v2.0.rc12-1.tar.gz"
+    version "2.0.rc12-1"
     sha256 "c44286468babcc38e90f036d25471ab92f19a8a0a68482e0c45a9cfaeb1c0e35"
   end
 
   resource "luacheck" do
-    version "0.21.2-1"
     url "https://luarocks.org/manifests/mpeterv/luacheck-0.21.2-1.src.rock", :using => :nounzip
+    version "0.21.2-1"
     sha256 "c9e9b3bf1610e382043c6348417864541327108da92290a3be454c40be439953"
   end
 
@@ -108,14 +108,14 @@ class Neovim < Formula
   end
 
   resource "coxpcall" do
-    version "1.17.0-1"
     url "https://luarocks.org/coxpcall-1.17.0-1.src.rock", :using => :nounzip
+    version "1.17.0-1"
     sha256 "11feb07f08927c39b0b93e8c0bbaf15433f86155cba4820a31a09f4754ab3258"
   end
 
   resource "nvim-client" do
-    version "0.1.0-1"
     url "https://github.com/neovim/lua-client/archive/0.1.0-1.tar.gz"
+    version "0.1.0-1"
     sha256 "d2254c70eab7e7b6d7dc07caffe06f1015897fc09fdfa4b33f0b3745e6b0d03c"
   end
 
