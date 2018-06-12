@@ -4,6 +4,13 @@ class OpenapiGenerator < Formula
   url "https://github.com/OpenAPITools/openapi-generator/archive/v3.0.1.tar.gz"
   sha256 "348f0163733a0bea9afedde1b75dd27bb51fba348b5e56edceff4663f32f346f"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "37ff125ff090505bfa6ff70582110d5efba3d08b05f402c2d6459384665b1996" => :high_sierra
+    sha256 "a9d7d67f7609b854cfa2194ef6d64e465e688656c41964a9c2274cf37a5ba5b1" => :sierra
+    sha256 "9de1d88c339ea8acae9fb3877e4db5226a39abb4c50319725bfe1e6de4430e1b" => :el_capitan
+  end
+
   depends_on "maven" => :build
   depends_on :java => "1.8"
 
