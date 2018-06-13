@@ -4,10 +4,10 @@ class Python < Formula
   url "https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz"
   sha256 "f434053ba1b5c8a5cc597e966ead3c5143012af827fd3f0697d21450bb8d87a6"
   bottle do
-    rebuild 1
-    sha256 "7e0fc1b078b51d9478ab08660d5df01611976a7af0f6c24054bda58264bb506c" => :high_sierra
-    sha256 "2fe5ca9be0f1596798927c4aa1d4d187ca7f83adc4681483cec2cc52d7c95386" => :sierra
-    sha256 "bccf50de973644608af29652f2660124d033f3213d422fe44a7f012a47643a95" => :el_capitan
+    rebuild 2
+    sha256 "c219c8b639f2f9d86237667138809b440fb3230c7d568b18565ef5e9d802b0b0" => :high_sierra
+    sha256 "88f49a5c2abc3847dea443ac61882102ec4032982b79eae83278a0b86d059e13" => :sierra
+    sha256 "e63f8426c7642378e1f43f0a5c05126621ef5ca6f77cb0003f8bf1353517fe62" => :el_capitan
   end
 
   devel do
