@@ -7,9 +7,9 @@ class ApmServer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8371817897ace0a1c3ed28700f684a555214a6f61acbefa52253f07170902634" => :high_sierra
-    sha256 "1f6ed039a917a43dfd5eebb7e392324e4a63ac05d22516ce2cd6a0f11821ec6c" => :sierra
-    sha256 "a0be0b0f6241c98bca1de560dfa7ebd1b153ca09708ac34dd19693cc4c5cbba7" => :el_capitan
+    sha256 "3843e57bb59b4400f79126f7e63d35f0a13d2c08d0cef1f51fc9716a8245f100" => :high_sierra
+    sha256 "bbf532ca0e1ce509551b24d90eb47e7d20bd56fc12a7c5bd51c949ee243241cf" => :sierra
+    sha256 "22844d9a73a7f0a4ff33f9fab4869da7fe1680a0537072569b64c83912db1476" => :el_capitan
   end
 
   depends_on "go" => :build
