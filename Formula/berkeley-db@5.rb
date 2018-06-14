@@ -4,6 +4,12 @@ class BerkeleyDbAT5 < Formula
   url "https://download.oracle.com/berkeley-db/db-5.3.28.tar.gz"
   sha256 "e0a992d740709892e81f9d93f06daf305cf73fb81b545afe72478043172c3628"
 
+  bottle do
+    cellar :any
+    sha256 "7cc1835a69e72e5bd00e83609c85be4e7356592a939995ee88dd97bf22bc22af" => :sierra
+    sha256 "fd93864ea4a28e437710ee2f6581d8976971e86b7f60d7b7991d32b2b1afd2d0" => :el_capitan
+  end
+
   keg_only :versioned_formula
 
   option "with-java", "Compile with Java support."
