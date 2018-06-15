@@ -10,17 +10,13 @@ class Squashfuse < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
-  # Hard dependency for OSX FUSE
+  # Compression algorithms supported by squashfuse
+  depends_on "lz4"
+  depends_on "lzo"
   depends_on :osxfuse
-
-  # Makes sense to have this
-  depends_on "squashfs" => :recommended
-
-  # Possible compression algorithms to build with
-  depends_on "lz4" => :optional
-  depends_on "lzo" => :optional
-  depends_on "xz" => :optional
-  depends_on "zstd" => :optional
+  depends_on "squashfs"
+  depends_on "xz"
+  depends_on "zstd"
 
   def install
     configure_args = [
@@ -29,10 +25,8 @@ class Squashfuse < Formula
       "--prefix=#{prefix}",
     ]
 
-    %w[lz4 xz lzo zstd].each do |algorithm|
-      if build.with? algorithm
-        configure_args << "--with-#{algorithm}=#{HOMEBREW_PREFIX}"
-      end
+    %w[lz4 lz0 xz zlib zstd].each do |algorithm|
+      configure_args << "--with-#{algorithm}=#{HOMEBREW_PREFIX}"
     end
     system "./autogen.sh"
     system "./configure", *configure_args
