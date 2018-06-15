@@ -39,10 +39,10 @@ class Elm < Formula
   end
 
   bottle do
-    sha256 "4a7232fc62d4c340ddf49f6e63924734f66f5cb0861ea4fc042d41cebc139884" => :high_sierra
-    sha256 "64f0a490d8bce84b1541a2a219c7298d515d64b3042bb48c41d52f83adf9260d" => :sierra
-    sha256 "1c3f415cf011dbadc6265a22fd1671c2461f3e906cecc54172b67c7295b28344" => :el_capitan
-    sha256 "428fb7d2719fee543d9cc8a5e25d0cbd697fe447e585e322f01f29f35fcc1011" => :yosemite
+    rebuild 1
+    sha256 "245dee4d3df9e70be2d79adbbe5e8d87eb0835bf6fa1ecac4b4171e88b1c85da" => :high_sierra
+    sha256 "7d41ec5aa9fdb2345bec0ce929ac33a5f4b9b53585f5f3ff01067f35ba821306" => :sierra
+    sha256 "d17348c531009c09bb24905229725910a90002e5fde717dd33700e0eb83ccfae" => :el_capitan
   end
 
   depends_on "ghc@8.0" => :build
