@@ -15,14 +15,6 @@ class Openfortivpn < Formula
   depends_on "pkg-config" => :build
   depends_on "openssl"
 
-  # Remove for > 1.7.0
-  # Fix "configure: error: Required function not present"
-  # Upstream PR from 21 Apr 2018 "Build with missing pthread_mutexattr_setrobust()"
-  patch do
-    url "https://github.com/adrienverge/openfortivpn/pull/298.patch?full_index=1"
-    sha256 "e70b74e583fdab584bda6be649d5a8853464552b160c132544dac0fe0841eb8c"
-  end
-
   def install
     system "./autogen.sh"
     system "./configure", "--disable-dependency-tracking",
