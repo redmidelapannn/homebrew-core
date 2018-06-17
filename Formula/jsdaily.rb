@@ -7,6 +7,13 @@ class Jsdaily < Formula
   sha256 "f63c3af41d157d3a0d5a79a2d79982368435af9e27e779ca1e2bf029d8f19b42"
   head "https://github.com/JarryShaw/jsdaily.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "36bb21b1734bbe49ba3f1a4a78fe65b6a671e84c975450f200cac3e8088c61e6" => :high_sierra
+    sha256 "43b32e9bcdb3057421b7d55ecdd4333bcc3166f32f470ed4bfd9a9819982aefb" => :sierra
+    sha256 "e08296582b611e73f842130ab02afe0b3fc7b0683d421e34ce0d27c97e4f8cdc" => :el_capitan
+  end
+
   depends_on "python3"
 
   # resource "setuptools" do
