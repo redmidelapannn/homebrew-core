@@ -9,9 +9,10 @@ class Dps8m < Formula
 
   bottle do
     cellar :any
-    sha256 "0c436100ea3f71f5e7fcb2a39ca6d6e08a4981b661117e6e8d18685df3c8d040" => :high_sierra
-    sha256 "eab4df90e0f3573923e9baab97f0685d793a5ae200f167be8f99fc1ec957b60a" => :sierra
-    sha256 "f079087bc567e575f5c7d83890d84cf872a58a3707fb08467b4eda2b6a10ccd7" => :el_capitan
+    rebuild 1
+    sha256 "4b8efbe2ebc494e643ce9597bcbf7d1ea33567b647193a15aab2e5daeff40acf" => :high_sierra
+    sha256 "a6aa5ffaa10e8b5eb5e6278a5a0ae18a2e9b68fe4be2613021dca0f325d019d9" => :sierra
+    sha256 "e4ee701ce2e607e1098dbd7130f9e129b16e3b6726c95472815e5cfa3367000e" => :el_capitan
   end
 
   depends_on "libuv"
