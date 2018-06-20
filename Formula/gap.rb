@@ -5,6 +5,12 @@ class Gap < Formula
   version "4.9.1"
   sha256 "d93abb263e6b9ce9f56bfb820ac263b9a0f349f6bd1584244c7b242931d0dd3a"
 
+  bottle do
+    sha256 "5a693d13f24589c269dd7b1f98bf5c5fb1d779dc125c01fc6ca8ced2155cddfc" => :high_sierra
+    sha256 "6e588016dfa23a6307e48f39fdd4a17662f6103c526fa416aeab3290f25b684c" => :sierra
+    sha256 "a8241789b6e0a9659b1bbe65f9e7edcc07397a6361c433b2f501d85953a01b23" => :el_capitan
+  end
+
   depends_on "gmp"
   depends_on "readline"
 
