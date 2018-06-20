@@ -4,9 +4,8 @@ class Uwebsockets < Formula
   url "https://github.com/uNetworking/uWebSockets/archive/v0.14.8.tar.gz"
   sha256 "663a22b521c8258e215e34e01c7fcdbbd500296aab2c31d36857228424bb7675"
 
-  depends_on "openssl"
-  depends_on "zlib"
   depends_on "libuv"
+  depends_on "openssl"
 
   def install
     system "make"
