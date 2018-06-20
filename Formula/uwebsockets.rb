@@ -5,6 +5,8 @@ class Uwebsockets < Formula
   sha256 "663a22b521c8258e215e34e01c7fcdbbd500296aab2c31d36857228424bb7675"
 
   depends_on "openssl"
+  depends_on "zlib"
+  depends_on "libuv"
 
   def install
     system "make"
