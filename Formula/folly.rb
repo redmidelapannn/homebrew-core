@@ -6,10 +6,11 @@ class Folly < Formula
   head "https://github.com/facebook/folly.git"
 
   bottle do
-    cellar :any
-    sha256 "c5ff244dca57f6040284a5d2697f567e5a784a6ea5655b123fc90aee7d7b9c2f" => :high_sierra
-    sha256 "de304666bb819ac8a8d846d25f305668106894589464deae95589f6b265f9908" => :sierra
-    sha256 "4613ee76c11e5ef6ed13c6c09d49cee4a5620023c0263fe16acc44d97fce84b4" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "cd4393bc8cf1f5253832e8df14ccda8caac106757bbee7de8d6e8db3647fcac6" => :high_sierra
+    sha256 "1f326f83d18300ec9b59ba161880447348d13ab2767f454be1349885b1b896ab" => :sierra
+    sha256 "ff3277b6819721dab2d9493c386269eaf80e848255093da814bd668dbc3bb169" => :el_capitan
   end
 
   depends_on "cmake" => :build
