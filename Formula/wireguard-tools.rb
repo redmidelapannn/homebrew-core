@@ -6,8 +6,8 @@ class WireguardTools < Formula
   head "https://git.zx2c4.com/WireGuard", :using => :git
 
   stable do
-    url "https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20180613.tar.xz"
-    sha256 "c120cdedc3967dcb4ad5c1c7eadd2a1b04ef5dbf2fe60cc8e7c0db337bcda7dc"
+    url "https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20180620.tar.xz"
+    sha256 "b4db98ea751c8e667454f98ea1c15d704a784fe1bc093b03bd64575418a7c242"
 
     # Remove for > 0.0.20180613
     # Upstream commit from 14 Jun 2018 "tools: getentropy requires 10.12"
