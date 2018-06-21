@@ -6,9 +6,9 @@ class ProtobufAT35 < Formula
   head "https://github.com/google/protobuf.git"
 
   bottle do
-    sha256 "89d3e4a62799951c2a908f102ed305691f0fd0141b27c4337ef9bfe64840d8a9" => :high_sierra
-    sha256 "917abbf787422c4702b3104f5f6fb77f48dae573284f5aa7a9a2ef53793e5834" => :sierra
-    sha256 "5a0956aa0639b5943bee597942e7c0ab1439f2db6e322423a72a5ad68e28af82" => :el_capitan
+    sha256 "0baeff2f7bbaf1f839d686cf10318efc8cd2ecde1326258b25d0ea4245f5d190" => :high_sierra
+    sha256 "fecd135026e26b91c8d89936edf5e84c8e5330d1000d6a8f6f49791315fddb34" => :sierra
+    sha256 "3cde6a7575d9e2eadcb0baf0d40aa00d042c80e70e0e44648aca20b3598f4157" => :el_capitan
   end
 
   keg_only :versioned_formula
