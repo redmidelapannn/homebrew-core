@@ -5,9 +5,10 @@ class SstpClient < Formula
   sha256 "487eb406579689803ce0397f6102b18641e4572ac7bc9b9e5f3027c84dcf67ff"
 
   bottle do
-    sha256 "f910157864b32a5cd004366b0e8ee6cefd09b0edd36afb89d751ede34e27df96" => :high_sierra
-    sha256 "1bbbe9f5558b4757f8244064144106b0bda636c2adcc3da734634895b960ff68" => :sierra
-    sha256 "c4b0b6b1ebc16783d22327173bfe1e90bd5fd329786a613422c858fc352672eb" => :el_capitan
+    rebuild 1
+    sha256 "d331e3d95ca79203813a75eb9e88828a8aef3bd4d7526ca7f37e458f7a75e0ca" => :high_sierra
+    sha256 "ed0997f6d2d74e716a3352e4999fdd301b2fee758c0ba5d9d604fbaea8568030" => :sierra
+    sha256 "4236bc20dcf411dd616ecd938140f7a566d9ad75c56a2f945003fc3b9de0092a" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
