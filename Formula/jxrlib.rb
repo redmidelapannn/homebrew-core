@@ -7,11 +7,10 @@ class Jxrlib < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6d24053d591022594ab92f880c56da4057a9e4f8d8ecb6f942e3558900385def" => :high_sierra
-    sha256 "0eb8602ab389d9fff5bce803b085af322309592dc41aa0902b223e353a9f8abc" => :sierra
-    sha256 "47c308b47ec8227d813a21c8092b32ada9b7f862aef102bf619d6bb19f0144e1" => :el_capitan
-    sha256 "0dae977caf9e34289c9dd09f7e12bdf7158ccc42d9fa2dc00b4164b82c1caf3f" => :yosemite
-    sha256 "cc49654146951a561ca6fce7c485f7f3f3511ab5549a7db8263e4e8ddc95e740" => :mavericks
+    rebuild 1
+    sha256 "7fc83266575c597f896c632ddc60089d4876a85257bc11d5602ee4aafc3f2411" => :high_sierra
+    sha256 "2fe47881938bc336279f6467d3640cbf1d4531a194fd8178df55bf5856aabc46" => :sierra
+    sha256 "6c7a3ae1b451d095bb85126382ed33c9bb5c2ea4fba8cc97c90af9a9fab74ac9" => :el_capitan
   end
 
   def install
