@@ -7,9 +7,10 @@ class Jags < Formula
 
   bottle do
     cellar :any
-    sha256 "6f3e40e482b03deb728487e3b9c7089d900f1aa518c74de0859a2877833b16b0" => :high_sierra
-    sha256 "0651db81905348bb0c48c20529c5bab0d4eb735da50fcc9ec26aef38672cf26f" => :sierra
-    sha256 "6c82f61d6cacec46e7863f9b9cb92f33eac63339822fd196e6a029a75dfb01f7" => :el_capitan
+    rebuild 1
+    sha256 "92576b5ab06d1e422640eea9dae555a24c54ce796ae01429ca8b6964cd60d25c" => :high_sierra
+    sha256 "42f118fce9a017d7e27929bb3f8c4913ca1b48ad8d3e3fffa3575a2042ec619d" => :sierra
+    sha256 "19df55a514a7638d33531aec6226b992c309390ff9188d7fa85845efa266c219" => :el_capitan
   end
 
   depends_on "libtool"
