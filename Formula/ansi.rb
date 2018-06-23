@@ -4,6 +4,13 @@ class Ansi < Formula
   url "https://github.com/fidian/ansi/archive/1.1.0.tar.gz"
   sha256 "0930acff725a505e430c68784e12731e8329998d60efcd759a7ff52e6baac959"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "720165d5252abf60ace2efc658d91e9c268eed63a030694ab4b5704ccf20cd0a" => :high_sierra
+    sha256 "720165d5252abf60ace2efc658d91e9c268eed63a030694ab4b5704ccf20cd0a" => :sierra
+    sha256 "720165d5252abf60ace2efc658d91e9c268eed63a030694ab4b5704ccf20cd0a" => :el_capitan
+  end
+
   def install
     bin.install "ansi"
   end
