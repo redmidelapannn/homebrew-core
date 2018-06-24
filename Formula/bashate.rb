@@ -6,6 +6,13 @@ class Bashate < Formula
   url "https://github.com/openstack-dev/bashate/archive/0.5.1.tar.gz"
   sha256 "44fa6645fd7d5169c40747714986f1093ed24e2474e4a368c2695bf339c1551e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7df8dca71ee644938cffd3ab84e2b4a3e770cc86738469becb5ac5cc5406de41" => :high_sierra
+    sha256 "39a820d9e368b931b4b8c78c3c8b09d33fdff0f0e8e38e76203398583e68997c" => :sierra
+    sha256 "6114e0029af47ee5e68c216f2af560ba2d7f64d5fb5ba6db1a886061e2619618" => :el_capitan
+  end
+
   depends_on "python@2"
 
   resource "pbr" do
