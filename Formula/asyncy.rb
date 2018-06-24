@@ -6,6 +6,13 @@ class Asyncy < Formula
   sha256 "5522f8b7184bfb23fc01fdf7195712a82fcc60a0ae8149560e59bc6ba03b2cd0"
   head "https://github.com/asyncy/cli.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7b8699c39fac56ac6b558bb22008f7c1753cfb8621377bea780598bc5ba3bbef" => :high_sierra
+    sha256 "6f4d682173cee42b57571a506db648fef18be9934c318b22dd54c92668ce8158" => :sierra
+    sha256 "c8a21cc15ba53063a729ad8022fac725bdfa5ffaa6c1cacad275ef0a31a89d7c" => :el_capitan
+  end
+
   depends_on "python"
 
   resource "certifi" do
