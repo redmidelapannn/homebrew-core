@@ -6,9 +6,10 @@ class Archivemount < Formula
 
   bottle do
     cellar :any
-    sha256 "e5ec32c8e34385931fe8a9cbd97b02dbba56650194e8cf8d0bfae628132ca096" => :high_sierra
-    sha256 "bbe1f730c843b49dbdf8fcb05822314eacec63535e5a13096bf672e4446bc0c0" => :sierra
-    sha256 "0723ee2f777084e9ed749c996ef0f48dd68d55925a008ed4283902c814e5748e" => :el_capitan
+    rebuild 1
+    sha256 "acdea89137176a12fbf50adb11a7d61dc6874231bd576d96633df688e748a360" => :high_sierra
+    sha256 "34b119ef9c6baa5b222af47bf909eaccebf557e9919a7d3e780f5a3be5306e7a" => :sierra
+    sha256 "d22d9a6dcc4e10c1c80a2c87256f7739cd2122e6f08a40e9d38f6a2be3bcd998" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
