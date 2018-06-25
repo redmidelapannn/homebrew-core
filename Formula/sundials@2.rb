@@ -4,6 +4,13 @@ class SundialsAT2 < Formula
   url "https://computation.llnl.gov/projects/sundials/download/sundials-2.7.0.tar.gz"
   sha256 "d39fcac7175d701398e4eb209f7e92a5b30a78358d4a0c0fcc23db23c11ba104"
 
+  bottle do
+    cellar :any
+    sha256 "fb468ee28731fbd662cfc626c088297c818f8a50c35dba7503a6bb0cee220531" => :high_sierra
+    sha256 "6ac79eba75b2be2979bc676df239c2235996a6c1c9570e09013481abf0ee3bda" => :sierra
+    sha256 "1761c1e53274136bc362ff3406a5f977ca5a72acbaaf0677d788ba5c26928ad3" => :el_capitan
+  end
+
   keg_only :versioned_formula
 
   option "with-openmp", "Enable OpenMP multithreading"
