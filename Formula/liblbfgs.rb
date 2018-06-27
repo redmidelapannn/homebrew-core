@@ -3,6 +3,13 @@ class Liblbfgs < Formula
   homepage "http://www.chokkan.org/software/liblbfgs/"
   url "https://github.com/chokkan/liblbfgs/archive/v1.10.tar.gz"
   sha256 "95c1997e6c215c58738f5f723ca225d64c8070056081a23d636160ff2169bd2f"
+  bottle do
+    cellar :any
+    sha256 "6b2d24ce01f2315e38f389da75c9610ada7921023679cdf6e3129614165ce498" => :high_sierra
+    sha256 "2b5ef35e3510e68165b315f6aa53ff73fd3313e736247de55f162b7632d75e09" => :sierra
+    sha256 "4cdd2ceaf4c30b04af71f6f79d2a672d038fe79a5fc02b15a0eb3975ad8733b6" => :el_capitan
+  end
+
   depends_on "gcc" => :build
   depends_on "libtool" => :build
   depends_on "automake"
