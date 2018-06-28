@@ -19,8 +19,8 @@ class Keepassc < Formula
   end
 
   resource "pycryptodomex" do
-    url "https://files.pythonhosted.org/packages/6a/c4/21d55c2bf30995847406cb1a737d4ae5e19615eca39c9258f0548b5656f1/pycryptodomex-3.6.1.tar.gz"
-    sha256 "82b758f870c8dd859f9b58bc9cff007403b68742f9e0376e2cbd8aa2ad3baa83"
+    url "https://files.pythonhosted.org/packages/e6/5a/cf2bd33574f8f8711bad12baee7ef5c9c53a09c338cec241abfc0ba0cf63/pycryptodomex-3.6.3.tar.gz"
+    sha256 "008ad82b8fdd1532dd32a0e0e4204af8e4710fc3d2a76e408cbdb3dddf4f8417"
   end
 
   def install
