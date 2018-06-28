@@ -4,6 +4,12 @@ class I2pd < Formula
   url "https://github.com/PurpleI2P/i2pd/archive/2.19.0.tar.gz"
   sha256 "7202497ffc3db632d0f7fed93eafaf39aa75efea199705dae7d022249b069eb9"
 
+  bottle do
+    sha256 "b232c9ae52196f692221af0b59ddc0abaae329fcbbfc6d397ca1be9ca0300fda" => :high_sierra
+    sha256 "47393ea7e9c9d5598b5af6491c314ff6c6d961e2a4bf43955092b138f4b6aaa7" => :sierra
+    sha256 "206f96d971eb6f12e408878f53b88d7c587fa7080c050a04792ec9e8eb3fe1f6" => :el_capitan
+  end
+
   depends_on "make" => :build
   depends_on "boost"
   depends_on "libressl"
