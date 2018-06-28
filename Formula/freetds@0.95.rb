@@ -5,9 +5,9 @@ class FreetdsAT095 < Formula
   sha256 "be7c90fc771f30411eff6ae3a0d2e55961f23a950a4d93c44d4c488006e64c70"
 
   bottle do
-    sha256 "4a70b136b61e9943354b61a01cf535e84c6820dbebea9f88a9c6adb9401a21a2" => :el_capitan
-    sha256 "48b0dbc593a5f6c5404384db0210e80e1b65756011ac40aa91934890fcb2a7e9" => :yosemite
-    sha256 "bf73e6a118ffbaed6cc18a7a327debf533c85a36803f7316b0a5b0e3a9fd18e2" => :mavericks
+    sha256 "68ca5f5fb65364ebb0c9d40ba55567f15c3ffd15e9f9e98242622a77004884b0" => :high_sierra
+    sha256 "0b110cfa1802f0be1c2866abbfddf4a4f04c5c23e89e3edf254b9e1037f8c7a8" => :sierra
+    sha256 "c404bdb3711d5f5a1c1821c908d35b30c4a0ebbc9f35c1791ae132ae00d5cd00" => :el_capitan
   end
 
   option "with-msdblib", "Enable Microsoft behavior in the DB-Library API where it diverges from Sybase's"
