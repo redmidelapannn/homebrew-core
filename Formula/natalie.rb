@@ -11,7 +11,7 @@ class Natalie < Formula
     sha256 "6e101ed8ac70707b8366665bea49d98c9095d9a8f91b3736a772d968c4045ed8" => :sierra
   end
 
-  depends_on :xcode => ["9.0", :build]
+  depends_on :xcode => ["9.4", :build]
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release", "-Xswiftc",
