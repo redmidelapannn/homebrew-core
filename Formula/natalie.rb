@@ -1,8 +1,8 @@
 class Natalie < Formula
   desc "Storyboard Code Generator (for Swift)"
   homepage "https://github.com/krzyzanowskim/Natalie"
-  url "https://github.com/krzyzanowskim/Natalie/archive/0.6.5.tar.gz"
-  sha256 "ea0586e07ad4aaeea557fdd6bc8a874b206259568c4d9a74932dac7bce00acc6"
+  url "https://github.com/krzyzanowskim/Natalie/archive/0.7.0.tar.gz"
+  sha256 "f7959915595495ce922b2b6987368118fa28ba7d13ac3961fd513ec8dfdb21c8"
   head "https://github.com/krzyzanowskim/Natalie.git"
 
   bottle do
