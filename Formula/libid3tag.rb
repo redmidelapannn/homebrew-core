@@ -6,13 +6,10 @@ class Libid3tag < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "42909989a248048c3c03c64d937ab3ffc655dbf8fc90d6deffaa74f979bdbdba" => :high_sierra
-    sha256 "f80ff2abda5796fcabba3ff54405d9626628c3969f844723e9232d66e85e745f" => :sierra
-    sha256 "75e446174dd2a9dc17326c998757c4218a89cddb734f3000d0b0506de801732a" => :el_capitan
-    sha256 "07ef662e3ab9be0cce16eabb13dbc046fc60c42184ac003285371dc955859697" => :yosemite
-    sha256 "d832f73e16b185fed6a66d2f00199a7d76411e438854988262463f4769b40d5b" => :mavericks
-    sha256 "35d74caea8ad8110b36e9718175ef9a7f2824cc70c0d470018ad70319ced7b69" => :mountain_lion
+    rebuild 2
+    sha256 "c7778178d7fa8becc29b6821d074f13d3851459a689e155e7ed3132bc6a50c96" => :high_sierra
+    sha256 "858fbb1887da3f1c96ab333be62bb0a55bfc6b7e88feeafd604c90545e100959" => :sierra
+    sha256 "e150bd2b5cf182baec61433bf5c1f74fd0da1a3746499c64df2f86c58683725e" => :el_capitan
   end
 
   # patch for utf-16 (memory leaks), see https://bugs.launchpad.net/mixxx/+bug/403586
