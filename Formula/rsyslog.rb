@@ -23,15 +23,6 @@ class Rsyslog < Formula
     sha256 "338c6174e5c8652eaa34f956be3451f7491a4416ab489aef63151f802b00bf93"
   end
 
-  # Remove for > 8.34.0
-  # Fix "fatal error: 'liblogging/stdlog.h' file not found"
-  # Upstream PR 14 May 2018 "pass liblogging cflags when building fmhttp and
-  # imfile plugins"; see https://github.com/rsyslog/rsyslog/pull/2703
-  patch do
-    url "https://raw.githubusercontent.com/Homebrew/formula-patches/a4f4bb9/rsyslog/liblogging-cflags.diff"
-    sha256 "f5d02e928783e34d0784136e7315a831f09309544d9b49a7087468063447c736"
-  end
-
   def install
     resource("libfastjson").stage do
       system "./configure", "--disable-dependency-tracking",
