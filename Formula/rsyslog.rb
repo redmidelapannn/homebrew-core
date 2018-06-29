@@ -18,20 +18,8 @@ class Rsyslog < Formula
     sha256 "3544c757668b4a257825b3cbc26f800f59ef3c1ff2a260f40f96b48ab1d59e07"
   end
 
-  resource "liblogging" do
-    url "http://download.rsyslog.com/liblogging/liblogging-1.0.6.tar.gz"
-    sha256 "338c6174e5c8652eaa34f956be3451f7491a4416ab489aef63151f802b00bf93"
-  end
-
   def install
     resource("libfastjson").stage do
-      system "./configure", "--disable-dependency-tracking",
-                            "--disable-silent-rules",
-                            "--prefix=#{libexec}"
-      system "make", "install"
-    end
-
-    resource("liblogging").stage do
       system "./configure", "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--prefix=#{libexec}"
