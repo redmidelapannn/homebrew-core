@@ -16,9 +16,6 @@ class Diffoscope < Formula
   depends_on "gnu-tar"
   depends_on "python"
 
-  # Python 3.7 compat
-  patch :DATA
-
   resource "libarchive-c" do
     url "https://files.pythonhosted.org/packages/b9/2c/c975b3410e148dab00d14471784a743268614e21121e50e4e00b13f38370/libarchive-c-2.8.tar.gz"
     sha256 "06d44d5b9520bdac93048c72b7ed66d11a6626da16d2086f9aad079674d8e061"
@@ -55,29 +52,3 @@ class Diffoscope < Formula
     system "#{bin}/diffoscope", "test1", "test2"
   end
 end
-
-__END__
-diff --git a/diffoscope/presenters/formats.py b/diffoscope/presenters/formats.py
-index 24b7190..df84fe2 100644
---- a/diffoscope/presenters/formats.py
-+++ b/diffoscope/presenters/formats.py
-@@ -109,5 +109,5 @@ class PresenterManager(object):
-         """
- 
-         return any(
--            x['klass'].supports_visual_diffs for x in self.config.values(),
-+            x['klass'].supports_visual_diffs for x in self.config.values()
-         )
-diff --git a/diffoscope/comparators/json.py b/diffoscope/comparators/json.py
-index 41c5ec7..8e210b9 100644
---- a/diffoscope/comparators/json.py
-+++ b/diffoscope/comparators/json.py
-@@ -39,7 +39,7 @@ class JSONFile(File):
-             # Try fuzzy matching for JSON files
-             is_text = any(
-                 file.magic_file_type.startswith(x)
--                for x in ('ASCII text', 'UTF-8 Unicode text'),
-+                for x in ('ASCII text', 'UTF-8 Unicode text')
-             )
-             if is_text and not file.name.endswith('.json'):
-                 buf = f.read(10)
