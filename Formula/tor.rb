@@ -6,9 +6,10 @@ class Tor < Formula
   sha256 "ea6bb512c4adfbc4e05b22e4c2d06bddff5b358a53de982273fec846b75bde0c"
 
   bottle do
-    sha256 "71b8c135e265a6a10e304e4993cced0b26656dfdcc9ea926d1b4ea0349237d35" => :high_sierra
-    sha256 "96176d5930a03cfb9699137da0d13bbdb52f4fb19481138240e18a0c580b73d3" => :sierra
-    sha256 "5bf2a1aa75fcc9c0a3db2ebaab9d91f498151744a9459ecbca19d4a9179732e7" => :el_capitan
+    rebuild 1
+    sha256 "ea11beef495cedda7e71eefb4b925f9d7779a72e50297f999911685bafe3399b" => :high_sierra
+    sha256 "3d96caed820c0748112e056ee6ff25e99899d40331978b4412a62f29d16773af" => :sierra
+    sha256 "428944fe1e0240a160ba71bc40fdc3c1f8c5754108203489bc0e0220ebef6bd9" => :el_capitan
   end
 
   devel do
