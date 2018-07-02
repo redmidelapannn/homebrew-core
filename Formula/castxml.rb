@@ -15,7 +15,7 @@ class Castxml < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "llvm@5"
+  depends_on "llvm"
 
   def install
     mkdir "build" do
