@@ -7,12 +7,10 @@ class JohnJumbo < Formula
 
   bottle do
     cellar :any
-    rebuild 6
-    sha256 "6612d2001d80361ec70a19a8c54254a76fe1919a9cc72918032304e714144530" => :high_sierra
-    sha256 "6a2460e120f697e09a1ed62a948e5ecd767fc1b24a3f331aa4d59833205e48a4" => :sierra
-    sha256 "a87bf02d882413393f3f3759ab0fa6a171438609d101c7c9bc7772fe69e2ab47" => :el_capitan
-    sha256 "cf9c82f416a4eb3aad7d4202b21105988d346be8d8df262ea4ca18e683475d32" => :yosemite
-    sha256 "b36f66b0469b5c6cde95f780671db5b32e4e4dd7c16c4e7e591043bfdef2b65c" => :mavericks
+    rebuild 7
+    sha256 "51b3f67c8f130c050bd065885001df7580567e8d6ae98416fc114d0e824c84ad" => :high_sierra
+    sha256 "a6d322cd7ebd7e79998b80898a31f0653aca557b1b7178551b1547568ad035ea" => :sierra
+    sha256 "b0f23286519bee8c7ea1457122dfdf416c21aa23b811e5d746a0e8837ab88b3f" => :el_capitan
   end
 
   option "without-completion", "bash/zsh completion will not be installed"
