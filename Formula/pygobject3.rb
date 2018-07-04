@@ -7,9 +7,10 @@ class Pygobject3 < Formula
 
   bottle do
     cellar :any
-    sha256 "47aa7d49c32d6805573f84732d9f0a1ff2d88547493b0d7ee2eaa09bdeacbdcb" => :high_sierra
-    sha256 "c667c8ad161a8c3a3b86eeb7e74a499d3d0208b216a104211b5714f590525d7c" => :sierra
-    sha256 "d9a345b4bda8c9f669377486bd661332a5ece0e9cc429f59189356167733584b" => :el_capitan
+    rebuild 1
+    sha256 "cac4c4cc9b35f896d5be8f89ae4e880532b90dbc7192187dc83d88e8d476a900" => :high_sierra
+    sha256 "754dcf61d8c9962c288b37e9dde708e2a4bab4dc40eafebc53bf5272fa99f163" => :sierra
+    sha256 "7d64314eb5aa4c0ec243c0bc929123aad334ca23ccbf1ea7fa9ea1ec6c712e44" => :el_capitan
   end
 
   option "without-python", "Build without python3 support"
