@@ -48,9 +48,6 @@ class Dmd < Formula
     make_args = ["INSTALL_DIR=#{prefix}", "MODEL=#{Hardware::CPU.bits}", "BUILD=release", "-f", "posix.mak"]
 
     dmd_make_args = ["SYSCONFDIR=#{etc}", "TARGET_CPU=X86", "AUTO_BOOTSTRAP=1", "ENABLE_RELEASE=1"]
-    if build.stable?
-      dmd_make_args.unshift "RELEASE=1"
-    end
 
     system "make", *dmd_make_args, *make_args
 
