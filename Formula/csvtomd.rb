@@ -9,9 +9,10 @@ class Csvtomd < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9676da327548cff3c4e1235b7d9071939315b22f8a7fcce3c555b308890b8338" => :high_sierra
-    sha256 "b38719288a0ba84c2a2143ac0f13965eac1f796e2a6ab20918fc59d304415f2b" => :sierra
-    sha256 "d343b9087bbaf2b5a5be09f71d23ff9b07742cc262f5fd66b7b220d2db73b4b2" => :el_capitan
+    rebuild 1
+    sha256 "b6e8eb2266a080fdc4a7bec46c24af74dac1d1f9b0b1ad22a4b6eb797184ff1d" => :high_sierra
+    sha256 "6a08840b74e568180a08c8ffeff849a63fd1245636f54a473432ef879fff159c" => :sierra
+    sha256 "5676eaf5502c692da6ae9cc0e10d86c6ee1b689fb3b55b923acd64456da9b00c" => :el_capitan
   end
 
   depends_on "python"
