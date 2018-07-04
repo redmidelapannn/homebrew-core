@@ -5,10 +5,10 @@ class Fftw < Formula
   sha256 "6113262f6e92c5bd474f2875fa1b01054c4ad5040f6b0da7c03c98821d9ae303"
 
   bottle do
-    cellar :any
-    sha256 "79b08a5da9b091c43d4fdaabd73ecb6e4dba6525598d376d7d74bdf5d1183acc" => :high_sierra
-    sha256 "17f2f88898b2754adb35f19857cd7c80966299fcdf2158cc1466b054deaa460e" => :sierra
-    sha256 "a94c5f646948f918e986ab0be56672ac52f527debe1ed4cc783fd1ba6c99fe73" => :el_capitan
+    rebuild 1
+    sha256 "c249ebfff3839876eaa3b34ea11e441ca7d32cb18ce6bba1e60bdf57a1d54ca1" => :high_sierra
+    sha256 "a08df2ee1fa275b2612f8e3835144fc058e090c554180b0d38d814983e3feab0" => :sierra
+    sha256 "38bd0ffc4b39d1cc0a35b87f1b00d15fce223478c264c405f929c73ef66a3fd3" => :el_capitan
   end
 
   option "with-openmp", "Enable OpenMP parallel transforms"
