@@ -10,9 +10,10 @@ class Shyaml < Formula
 
   bottle do
     cellar :any
-    sha256 "9c781b5842ae5ac70560d07fa4bdd044777e66b25b594ad6e72bb1ea879fbbf7" => :high_sierra
-    sha256 "c89bdfdd3d8b63503602ce9bccd7d2d4e418ad8f3a20661f17b643e14a9bc129" => :sierra
-    sha256 "a217c5eeecdba87d025c7c089b69ee96a12704feb7f40ff02529a1b129991e75" => :el_capitan
+    rebuild 1
+    sha256 "d548506e004f6e1419958eef027d367010259f13532d6159f8c7b180584fb00e" => :high_sierra
+    sha256 "81a54d722ad7f97da9be3ad9ac5b90efcf706bd76c48e29ad2541f673a7d6930" => :sierra
+    sha256 "0eb530bfc68beac37e5c28feb8be9ce5d0d231712c4533b1ae2bd81ba45002c8" => :el_capitan
   end
 
   depends_on "python"
