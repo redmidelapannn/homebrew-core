@@ -5,10 +5,10 @@ class Jumanpp < Formula
   sha256 "01fa519cb1b66c9cccc9778900a4048b69b718e190a17e054453ad14c842e690"
 
   bottle do
-    sha256 "87555f0efa065cd86d3344c8304972567d4b8a84ef1c0e53acb09afabbd1fa9e" => :high_sierra
-    sha256 "afddd3445d86fa1969611b413d0ae460fdaa7b106cdf5edf6ce0bf9d14689a49" => :sierra
-    sha256 "4b4dd5ca55ba7d380a9a6bc7dda462c3825aa8650e9dc6b131e53fadbf64dc63" => :el_capitan
-    sha256 "d53d25e49f4bd8cddd2657ee09eeaec56844996b10445c15561be1a12977a888" => :yosemite
+    rebuild 1
+    sha256 "bdbfa6ed7fe56ba98f2b338da821d98b3d13df25c7c64ddd813b3017da279385" => :high_sierra
+    sha256 "34ce45e26698b9a77e1d0628cde4d9632b19b2906b7514ee456922ba19ae2af5" => :sierra
+    sha256 "f9b134d6c7f12db812436a850d84ceaa22ca38d22aa7cc74679a2639f65b166f" => :el_capitan
   end
 
   depends_on "boost-build" => :build
