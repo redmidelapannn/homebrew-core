@@ -6,9 +6,10 @@ class Gom < Formula
   revision 5
 
   bottle do
-    sha256 "90cc6ffc759414df0b846d26adf400ffc512c408854923e9aa34da0506351883" => :high_sierra
-    sha256 "e74c3a447e1732a170689526644c6d1f208ce4d48ba3c7f82de491f6c4620ca5" => :sierra
-    sha256 "7b08fdd3e5744b3bfa8e72333dde59a9a258692e680d67e191d09b0460008dc0" => :el_capitan
+    rebuild 1
+    sha256 "1c506fda0f40962968f3e6aca69870beddb3ad28e966fd0b77297a0d5f94c7a6" => :high_sierra
+    sha256 "8d05fa5b926e48ed501126a9cfe7df89b96aa5d9f5e83e9fcf1b03572933cd00" => :sierra
+    sha256 "186bbe1bcb275716b658410a08aea7829ae31684a0b82e6e151b9248b8971f07" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
