@@ -7,9 +7,9 @@ class Xrootd < Formula
 
   bottle do
     cellar :any
-    sha256 "9d0c1ebbf9d77d4afcd96aa8e12562a9678297306a000f2e1ac6d5a4fc5c2ad4" => :high_sierra
-    sha256 "6c27e086bfab2dfda91e34814d588fd294c18f0cede4240b69582abc693f0a99" => :sierra
-    sha256 "70bdb9f69fcda66b1ea863d55360ac65657cc6bfafb3adafef07115bd7fe0cfa" => :el_capitan
+    sha256 "d9c1fa3cfe71e691c90ece299eaac13e8add4458480b8da6b72926fc4d9bec2c" => :high_sierra
+    sha256 "54266f85884d3cbbab18f73df9653d35f943d700f04e922771c8124c6d93ab9e" => :sierra
+    sha256 "3c19f981344b5f788c4725c5aabd37c2dffc6bac7187e673d979a764c30a83a6" => :el_capitan
   end
 
   depends_on "cmake" => :build
