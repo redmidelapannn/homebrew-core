@@ -6,9 +6,10 @@ class Yq < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5ee9ef043633dad2643ea979430d101e944ef9228f8667004a2084572cca78b4" => :high_sierra
-    sha256 "124ead65092c9b8a43d1d907660f77bf6e1cc482219e34cd46d931681b984eb2" => :sierra
-    sha256 "cf358cac95f68ad36a368be6cae4d7a0bf164879c23c57c69adac025f197de66" => :el_capitan
+    rebuild 1
+    sha256 "dd234910dd6d9337121d7b365e361506921f84937c7696318c18e8db4c5c9109" => :high_sierra
+    sha256 "2d8f872dc2ccde2536f7fdb68efe879202f61153b994b00ef36c34eed52cebd5" => :sierra
+    sha256 "2834ca0cf4fe190cf54018f84ab4f4e2e7921a71fe885d2bb098f43030665f62" => :el_capitan
   end
 
   depends_on "go" => :build
