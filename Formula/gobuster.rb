@@ -28,12 +28,12 @@ class Gobuster < Formula
 
   go_resource "golang.org/x/crypto" do
     url "https://go.googlesource.com/crypto.git",
-        :revision => "13931e22f9e72ea58bb73048bc752b48c6d4d4ac"
+        :revision => "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
   end
 
   go_resource "golang.org/x/sys" do
     url "https://go.googlesource.com/sys.git",
-        :revision => "810d7000345868fc619eb81f46307107118f4ae1"
+        :revision => "1b2967e3c290b7c545b3db0deeda16e9be4f98a2"
   end
 
   def install
