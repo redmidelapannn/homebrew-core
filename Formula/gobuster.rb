@@ -3,8 +3,8 @@ require "language/go"
 class Gobuster < Formula
   desc "Directory/file & DNS busting tool written in Go"
   homepage "https://github.com/OJ/gobuster"
-  url "https://github.com/OJ/gobuster/archive/v1.4.1.tar.gz"
-  sha256 "d5b8032aac6c4e1975b8302a6192274610f601a659253861e71ec5bca1c4da38"
+  url "https://github.com/OJ/gobuster/archive/v1.4.2.tar.gz"
+  sha256 "e90990f45f06324eb2378369b795a526a6145ca12c8a631493505f1ecfada74f"
   head "https://github.com/OJ/gobuster.git"
 
   bottle do
