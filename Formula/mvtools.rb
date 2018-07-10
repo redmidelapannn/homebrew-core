@@ -13,7 +13,7 @@ class Mvtools < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "yasm" => :build
+  depends_on "nasm" => :build
   depends_on "vapoursynth"
   depends_on "fftw"
   depends_on "autoconf" => :build
