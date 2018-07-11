@@ -13,14 +13,13 @@ class Pilosa < Formula
 
   depends_on "dep" => :build
   depends_on "go" => :build
-  depends_on "go-statik" => :build
 
   def install
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/pilosa/pilosa").install buildpath.children
 
     cd "src/github.com/pilosa/pilosa" do
-      system "make", "generate-statik", "build", "FLAGS=-o #{bin}/pilosa", "VERSION=v#{version}"
+      system "make", "build", "FLAGS=-o #{bin}/pilosa", "VERSION=v#{version}"
       prefix.install_metafiles
     end
   end
