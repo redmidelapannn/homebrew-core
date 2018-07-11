@@ -8,9 +8,10 @@ class Ode < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d392aba8c14119ee6072c2677835e928d9a9cca95d4b3c0ef0b82aedf1bc0147" => :high_sierra
-    sha256 "34670979e3b841475cbbef0038203bae036baa753a6c03af179a0aff7b27d168" => :sierra
-    sha256 "4f2986f5867bd16da6836dc9a580f1ca2a01f4d7177fd3308b4fcea41443ac7e" => :el_capitan
+    rebuild 1
+    sha256 "b7e5652d521b5c6d96d995cd4dd034ac351634889d0fd03a7d154247578cc8d3" => :high_sierra
+    sha256 "2a35965f7147a91c6da41011bbe05ef64078e6a5ec0b4740b128a66e414592a0" => :sierra
+    sha256 "493faeb63b40bebedecd1764da8efa771fbab300fe0400ec04b69cf9695a203e" => :el_capitan
   end
 
   option "with-double-precision", "Compile ODE with double precision"
