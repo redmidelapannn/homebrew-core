@@ -7,9 +7,10 @@ class Ocamlsdl < Formula
 
   bottle do
     cellar :any
-    sha256 "5b3c887b0120e2c2bd245039a61112515d589ec612b5aa9549997c86ff0c7e95" => :high_sierra
-    sha256 "d17971236af3fe65db605b25423399e239d622428b34157e6c4e636ed0a52652" => :sierra
-    sha256 "c59f56c6176d701173eb224d430889132a57053cc1a4856940c272bda9d51cac" => :el_capitan
+    rebuild 1
+    sha256 "6f3bfc3b44c79161027cab46b1cee72a5dfeac66f5b93468a3e231c103ca8fc8" => :high_sierra
+    sha256 "7857257f866589ae5f149af795c406f14c6c22fb8bf9ddb4db9a6e55bf3fd8b5" => :sierra
+    sha256 "aacdbb9a7edade7d46aea49e061fae6b21a884df031d5488796c6bcde591ff2d" => :el_capitan
   end
 
   depends_on "sdl"
