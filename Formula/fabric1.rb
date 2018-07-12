@@ -6,6 +6,13 @@ class Fabric1 < Formula
   url "https://github.com/fabric/fabric/archive/1.14.0.tar.gz"
   sha256 "5a6549daceb4c9a2ff60c6597384c30eab46fcb13081f7fd2e158af721a11b00"
 
+  bottle do
+    cellar :any
+    sha256 "aaeb505ef908246d8df8e5c278ece433f60d03d3404a33e6650c103b481f67ea" => :high_sierra
+    sha256 "6322c9f61a200a11e1a1fef73574a5eeab41dbcace324ecc3b2aff147adda724" => :sierra
+    sha256 "754dc466472cf96d1cfa368da7d01fae5bc84c3cf53b45c6c3386c1929a5c4ac" => :el_capitan
+  end
+
   depends_on "openssl"
   depends_on "python@2"
 
