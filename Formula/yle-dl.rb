@@ -22,6 +22,11 @@ class YleDl < Formula
     sha256 "b79e8a4c8544953c39b79a622049c4deced57354adb9697e8c73420c12547229"
   end
 
+  resource "attrs" do
+    url "https://files.pythonhosted.org/packages/e4/ac/a04671e118b57bee87dabca1e0f2d3bda816b7a551036012d0ca24190e71/attrs-18.1.0.tar.gz"
+    sha256 "e0d0eb91441a3b53dab4d9b743eafc1ac44476296a2053b6ca3af0b139faf87b"
+  end
+
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/4d/9c/46e950a6f4d6b4be571ddcae21e7bc846fcbb88f1de3eff0f6dd0a6be55d/certifi-2018.4.16.tar.gz"
     sha256 "13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7"
@@ -48,8 +53,8 @@ class YleDl < Formula
   end
 
   resource "lxml" do
-    url "https://files.pythonhosted.org/packages/e8/5d/98f56e274bdf17f2e0d9016d1788ca80d26d8987dcd5e1d9416d86ee0625/lxml-4.2.1.tar.gz"
-    sha256 "e2629cdbcad82b83922a3488937632a4983ecc0fed3e5cfbf430d069382eeb9b"
+    url "https://files.pythonhosted.org/packages/54/a6/43be8cf1cc23e3fa208cab04ba2f9c3b7af0233aab32af6b5089122b44cd/lxml-4.2.3.tar.gz"
+    sha256 "622f7e40faef13d232fb52003661f2764ce6cdef3edb0a59af7c1559e4cc36d1"
   end
 
   resource "Mini-AMF" do
@@ -58,8 +63,8 @@ class YleDl < Formula
   end
 
   resource "pycryptodomex" do
-    url "https://files.pythonhosted.org/packages/13/06/92830e35071c49dff28f60ce2425b183240d7cf93167dbd2d788ca9fd279/pycryptodomex-3.6.2.tar.gz"
-    sha256 "8ed51799f6c060b4f62459e1bd9f3b3855bec6fa68202e76639d628001fdf3b7"
+    url "https://files.pythonhosted.org/packages/55/8c/1a06174a38d1a1a351c31329dcd9653f2a1e16351e53dc87df9263c04ab9/pycryptodomex-3.6.4.tar.gz"
+    sha256 "4daabe7c0404e673b9029aa43761c779b9b4df2cbe11ccd94daded6a0acd8808"
   end
 
   resource "PySocks" do
