@@ -2,6 +2,13 @@ class LpSolve < Formula
   desc "Mixed Integer Linear Programming (MILP) solver"
   homepage "https://sourceforge.net/projects/lpsolve/"
   url "https://downloads.sourceforge.net/lpsolve/lp_solve_5.5.2.5_source.tar.gz"
+  bottle do
+    cellar :any
+    sha256 "520d5d50818b91bf4e518a21027192572cf767d4b5d4282d8a7082a8ce2f12f3" => :high_sierra
+    sha256 "0f883fd846d7a8b14907f828afa739dd6b5498fc519d42418961051ec7997a76" => :sierra
+    sha256 "cffecb77097bc878ca57375fb7583fbafb16b050f391cbdc1f7f696206228058" => :el_capitan
+  end
+
   version "5.5.2.5" # automatic version parser spits out "solve" as version
   sha256 "201a7c62b8b3360c884ee2a73ed7667e5716fc1e809755053b398c2f5b0cf28a"
 
