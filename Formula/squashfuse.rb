@@ -5,7 +5,6 @@ class Squashfuse < Formula
   sha256 "42d4dfd17ed186745117cfd427023eb81effff3832bab09067823492b6b982e7"
 
   depends_on "pkg-config" => :build
-
   depends_on "lz4"
   depends_on "lzo"
   depends_on :osxfuse
@@ -14,13 +13,9 @@ class Squashfuse < Formula
   depends_on "zstd"
 
   def install
-    configure_args = [
-      "--disable-dependency-tracking",
-      "--disable-silent-rules",
-      "--prefix=#{prefix}",
-    ]
-
-    system "./configure", *configure_args
+    system "./configure", "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
     system "make", "install"
   end
 
@@ -35,7 +30,7 @@ class Squashfuse < Formula
     end
 
     begin
-      pid = fork { exec "squashfuse", "--help" }
+      pid = fork { exec "#{bin}/squashfuse", "--help" }
       _, status = Process.wait2 pid
 
       # Returns 254 after running --help.
