@@ -3,8 +3,8 @@ class Credstash < Formula
 
   desc "Little utility for managing credentials in the cloud"
   homepage "https://github.com/fugue/credstash"
-  url "https://files.pythonhosted.org/packages/92/b3/5590e3404b4ed051112ba6e2091296105763004c7fb259bc4c94c2f57fe6/credstash-1.14.0.tar.gz"
-  sha256 "718b337f7a6fa001e014386071f05c59900525d0507009126d2fe8d75fe0761d"
+  url "https://files.pythonhosted.org/packages/5f/fa/c10fd986419d489e72ed1e0d94424e848ad1dba82ed5299b472ac8618689/credstash-1.15.0.tar.gz"
+  sha256 "814560f99ae2409e2c6d906d878f9dadada5d1d0a950aafb6b2c0d535291bdfb"
   head "https://github.com/fugue/credstash.git"
 
   bottle do
