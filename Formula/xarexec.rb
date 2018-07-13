@@ -1,4 +1,4 @@
-class Xar < Formula
+class Xarexec < Formula
   desc "The eXecutable Archive Format"
   homepage "https://github.com/facebookincubator/xar"
   url "https://github.com/facebookincubator/xar/archive/v18.07.12.tar.gz"
