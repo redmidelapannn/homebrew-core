@@ -18,6 +18,7 @@ class Httpd < Formula
   depends_on "pcre"
 
   def install
+    ENV.deparallelize
     # fixup prefix references in favour of opt_prefix references
     inreplace "Makefile.in",
       '#@@ServerRoot@@#$(prefix)#', '#@@ServerRoot@@'"##{opt_prefix}#"
@@ -64,6 +65,7 @@ class Httpd < Formula
                           "--with-pcre=#{Formula["pcre"].opt_prefix}",
                           "--disable-lua",
                           "--disable-luajit"
+    system "make"
     system "make", "install"
 
     # suexec does not install without root
