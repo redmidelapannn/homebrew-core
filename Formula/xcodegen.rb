@@ -3,7 +3,6 @@ class Xcodegen < Formula
   homepage "https://github.com/yonaskolb/XcodeGen"
   url "https://github.com/yonaskolb/XcodeGen/archive/1.10.3.tar.gz"
   sha256 "30944e90b9855ff893c6581e0d6dcdf7e8ab2c0c5edadacba7fb5ce27164975a"
-  head "https://github.com/yonaskolb/XcodeGen.git"
 
   depends_on :xcode => ["9.3", :build]
 
@@ -17,7 +16,7 @@ class Xcodegen < Formula
   end
 
   test do
-    (testpath/"xcodegen.yml").write <<-EOS.undent
+    (testpath/"xcodegen.yml").write <<~EOS
       name: GeneratedProject
       targets:
         TestProject:
@@ -25,8 +24,8 @@ class Xcodegen < Formula
           platform: iOS
           sources: TestProject
     EOS
-    Dir.mkdir(File.join(testpath, "TestProject"))
-    system("#{bin}/XcodeGen --spec #{File.join(testpath, "xcodegen.yml")}")
-    system("xcodebuild --project #{File.join(testpath, "GeneratedProject.xcodeproj")}")
+    (testpath/"TestProject").mkpath
+    system bin/"XcodeGen", "--spec", testpath/"xcodegen.yml"
+    system "xcodebuild", "--project", testpath/"GeneratedProject.xcodeproj"
   end
 end
