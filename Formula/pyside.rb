@@ -5,9 +5,10 @@ class Pyside < Formula
   sha256 "fbc412c4544bca308291a08a5173a949ca530d801f00b8337902a5067e490922"
 
   bottle do
-    sha256 "8b9e5689c3a267f36d88cf2933a56cb9f93d4537edc3daafac89774846abf570" => :high_sierra
-    sha256 "790da93c0c05e9bd0ff14d7f3a43b7f418d619da36caebcd6159d08a38daa2cd" => :sierra
-    sha256 "fc26b8c47d5d2c1a4b51a7cc50e4b364b92c2ff1523efbfbb35cd6c39575e63d" => :el_capitan
+    rebuild 1
+    sha256 "5d93499ee74b67c75783d7b22a572d929c59e308924f2ca5b792b277d4bfa85c" => :high_sierra
+    sha256 "3910de8ecebafe150e96bf931bbedbe6b705a8023c421ba511b97f5ca4ff8d26" => :sierra
+    sha256 "426bdb1763136829d0ab4ecac5bfb588b8f869ad75bddd003f366d718be2a20d" => :el_capitan
   end
 
   depends_on "cmake" => [:build, :test]
