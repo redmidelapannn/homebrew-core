@@ -54,18 +54,18 @@ class JenkinsJobBuilder < Formula
   end
 
   resource "pbr" do
-    url "https://files.pythonhosted.org/packages/cd/9f/8f14a51b522c47a315dd969fbdf39233e41f0bfa8b996b4ff0ad852ff43d/pbr-4.0.4.tar.gz"
-    sha256 "a9c27eb8f0e24e786e544b2dbaedb729c9d8546342b5a6818d8eda098ad4340d"
+    url "https://files.pythonhosted.org/packages/04/69/25fb4c68ae8093cf7698cec37dbbfdd3f6161ccd94a407aea0c6c1d8ce29/pbr-4.1.0.tar.gz"
+    sha256 "e0f23b61ec42473723b2fec2f33fb12558ff221ee551962f01dd4de9053c2055"
   end
 
   resource "python-jenkins" do
-    url "https://files.pythonhosted.org/packages/49/41/c52270f1b738ffe1ca4432577d1dffd521c3dfec505f2af55ac2f94d16f1/python-jenkins-1.0.2.tar.gz"
-    sha256 "54aba30cf49f78f9eb64e9717ad8049dacf090731a3e0c27e6035f9ec52ff78e"
+    url "https://files.pythonhosted.org/packages/74/38/43f8b4a0ac108b6331a9514699c3bfcf0510c28fa04777b7798bf35857e6/python-jenkins-1.1.0.tar.gz"
+    sha256 "38224194d5a5055489f547b9c994bd8f6f9f6c2bbe69255255a20344b2bcca4c"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz"
-    sha256 "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
+    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
   end
 
   resource "requests" do
