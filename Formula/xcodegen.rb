@@ -18,7 +18,8 @@ class Xcodegen < Formula
   test do
     (testpath/"xcodegen.yml").write <<~EOS
       name: GeneratedProject
-      bundleIdPrefix: com.project
+      options:
+        bundleIdPrefix: com.project
       targets:
         TestProject:
           type: application
