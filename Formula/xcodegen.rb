@@ -27,6 +27,6 @@ class Xcodegen < Formula
           sources: TestProject
     EOS
     (testpath/"TestProject").mkpath
-    system bin/"XcodeGen"
+    system bin/"XcodeGen", "--spec", testpath/"xcodegen.yml"
   end
 end
