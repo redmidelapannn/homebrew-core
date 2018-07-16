@@ -4,7 +4,7 @@ class Xcodegen < Formula
   url "https://github.com/yonaskolb/XcodeGen/archive/1.10.3.tar.gz"
   sha256 "30944e90b9855ff893c6581e0d6dcdf7e8ab2c0c5edadacba7fb5ce27164975a"
 
-  depends_on :xcode => ["9.3", :build, :test]
+  depends_on :xcode => ["9.3", :build]
 
   def install
     # fixes an issue an issue in homebrew when both Xcode 9.3+ and command line tools are installed
