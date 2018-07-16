@@ -128,8 +128,8 @@ class Mikutter < Formula
   end
 
   resource "nokogiri" do
-    url "https://rubygems.org/gems/nokogiri-1.8.2.gem"
-    sha256 "382af505a11b735e97f52ec6279ea484be7a7560d5599e81def40943601fd515"
+    url "https://rubygems.org/gems/nokogiri-1.8.4.gem"
+    sha256 "ecad8473fbaebaadd060eec15a872fb67c4bd7c6d64904ebbe15d40113ad36c1"
   end
 
   resource "oauth" do
