@@ -28,5 +28,10 @@ class Xcodegen < Formula
     EOS
     (testpath/"TestProject").mkpath
     system bin/"XcodeGen", "--spec", testpath/"xcodegen.yml"
+    assert_predicate testpath/"GeneratedProject.xcodeproj", :exist?
+    assert_predicate testpath/"GeneratedProject.xcodeproj/project.pbxproj", :exist?
+    output = (testpath/"GeneratedProject.xcodeproj/project.pbxproj").read
+    assert_match "name = TestProject", output
+    assert_match "isa = PBXNativeTarget", output
   end
 end
