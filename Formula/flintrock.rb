@@ -3,9 +3,8 @@ class Flintrock < Formula
 
   desc "Tool for launching Apache Spark clusters"
   homepage "https://github.com/nchammas/flintrock"
-  url "https://files.pythonhosted.org/packages/30/de/e4ec7cdfd3381f136a47e9951f0d09337aa278f52414bee96983826ecd84/Flintrock-0.9.0.tar.gz"
-  sha256 "bdcbfe4fbe753cd8d82dc400ca71bb8ef68edd2446d2d9d7b4904e52310020ce"
-  revision 1
+  url "https://files.pythonhosted.org/packages/50/2b/615976ae41ae0060fbacb17c19030f6410e126c17ac93e1082bb8ac4429f/Flintrock-0.10.0.tar.gz"
+  sha256 "8a0b52b460567b1f5600ac3dd2fc35e632c7b39fcbc4eba74ebc64b707f496ac"
 
   bottle do
     cellar :any
