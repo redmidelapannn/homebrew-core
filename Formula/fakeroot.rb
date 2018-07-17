@@ -7,10 +7,10 @@ class Fakeroot < Formula
 
   bottle do
     cellar :any
-    sha256 "999c3be4f098cab81b11516ce2b9e8ac41e5bf9255f9acf3c5cda90f1c657eb3" => :high_sierra
-    sha256 "dedb2018898785d98f98370fb88a89865d6a5e2f679166a457a511c305af0a30" => :sierra
-    sha256 "c7d19659c7d8bca8dead320d7d1ec49fda852629d5061a5760fcb88bd0059b4c" => :el_capitan
-    sha256 "d1be0e8562a2d80b505d253bc308ed0afee830b9e4c151a3039326adbd17b59c" => :yosemite
+    rebuild 1
+    sha256 "b51c80a046d437fbe2b86f690344df35649b6d54ef4a64d0ecf0e75eeea52631" => :high_sierra
+    sha256 "deacd5ccbb553a9aa084d5f081b73f919240b8f47b37aa8bd4263c319d29044c" => :sierra
+    sha256 "7f470b37cd3083f4afba7fa51a51a20716adf438a2d230a3b880bff5ea556506" => :el_capitan
   end
 
   # Compile is broken. https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=766649
