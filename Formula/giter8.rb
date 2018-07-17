@@ -15,8 +15,8 @@ class Giter8 < Formula
 
   resource "conscript" do
     url "https://github.com/foundweekends/conscript.git",
-        :tag => "v0.5.1",
-        :revision => "0a196fbb0bd551cd7b00196b4032dea2564529ce"
+        :tag => "v0.5.2",
+        :revision => "a3904ee175cd202a5cf35ff2d2a21d999f63516a"
   end
 
   resource "launcher" do
