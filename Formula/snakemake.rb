@@ -106,8 +106,6 @@ class Snakemake < Formula
   end
 
   def install
-    inreplace "snakemake/shell.py", "async", "async_" # Python 3.7 compat
-
     xy = Language::Python.major_minor_version "python3"
 
     ENV.prepend_create_path "PYTHONPATH", buildpath/"cython/lib/python#{xy}/site-packages"
