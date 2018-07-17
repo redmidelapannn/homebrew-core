@@ -6,12 +6,10 @@ class Aterm < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "f56a13be464fa577fdad7fe82779f5e6bbe820995e1849b6741ca92807c10bf0" => :high_sierra
-    sha256 "dd7b81b3bd9a31746ab461b8d79e4c32838b7e86f540769e4c17825a4b89c1c2" => :sierra
-    sha256 "5140e20287eda941f8756dfdaf377663f84f6872d1ca3f6d70e04b554591d11a" => :el_capitan
-    sha256 "d12bebbfa2e764abb9cfac1aecd6fc04e58f83eadf0fb3db298d5be03d7f8dca" => :yosemite
-    sha256 "f565d64b5b19b549cfe6eacedd587ff6d2b0e0b3129e1018b364edc0c2d9c415" => :mavericks
+    rebuild 2
+    sha256 "48f233e2e9e0bed97bc24ea0947fe1cb85e291062a19c8390e8542a0d077036f" => :high_sierra
+    sha256 "1bd8336938038a0117adeeb25e9057c533475e0fece0e34ad319adb2c9f1d156" => :sierra
+    sha256 "2ad471c490ac4e1b97fe9e547a571c61c85a5b19c7efff9fd86394389b5143c1" => :el_capitan
   end
 
   def install
