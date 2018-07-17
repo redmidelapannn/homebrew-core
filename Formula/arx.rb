@@ -5,8 +5,8 @@ class Arx < Formula
 
   desc "Bundles files and programs for easy transfer and repeatable execution"
   homepage "https://github.com/solidsnack/arx"
-  url "https://hackage.haskell.org/package/arx-0.3.1/arx-0.3.1.tar.gz"
-  sha256 "67f41a921b6aa91b11d0aafdd6c75d26e4e27c2c66a5b88d19732b1ce457ddf1"
+  url "https://github.com/solidsnack/arx/archive/0.3.1.tar.gz"
+  sha256 "f07b759cff649240f1bc5e8c89fe330e36c71d5e642920551271957f585b62a4"
 
   bottle do
     cellar :any_skip_relocation
