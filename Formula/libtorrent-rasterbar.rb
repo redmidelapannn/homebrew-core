@@ -26,20 +26,6 @@ class LibtorrentRasterbar < Formula
   depends_on "boost"
   depends_on "boost-python" if build.with? "python@2"
 
-  # Remove for > 1.1.7
-  # Upstream commit from 11 Apr 2018 "fix boost-1.67 build"
-  patch do
-    url "https://github.com/arvidn/libtorrent/commit/64d6b49004.patch?full_index=1"
-    sha256 "97987e7ec1100c3ae9a0a0b82c1c2237672f15d2abc3b1707c6c8b328c37ce32"
-  end
-
-  # Remove for > 1.1.7
-  # Upstream commit from 12 Apr 2018 "another boost-1.67 build fix"
-  patch do
-    url "https://github.com/arvidn/libtorrent/commit/9cd0ae67e7.patch?full_index=1"
-    sha256 "185d59167d89884849408e7ff831badd3fbf4048b48b634e847134b4a8033299"
-  end
-
   def install
     ENV.cxx11
     args = ["--disable-debug",
