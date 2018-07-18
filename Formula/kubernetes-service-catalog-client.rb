@@ -1,5 +1,5 @@
 class KubernetesServiceCatalogClient < Formula
-  desc "Kubernetes Service Catalog Client: Consume services in Kuberentes using the OSB AP"
+  desc "Consume Services in k8s using the OSB API"
   homepage "https://svc-cat.io/"
   url "https://github.com/kubernetes-incubator/service-catalog.git",
       :tag => "v0.1.23",
