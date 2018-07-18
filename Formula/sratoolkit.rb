@@ -1,9 +1,9 @@
 class Sratoolkit < Formula
   desc "Data tools for INSDC Sequence Read Archive"
   homepage "https://github.com/ncbi/sra-tools"
-  url "https://github.com/ncbi/sra-tools/archive/2.9.1-1.tar.gz"
-  version "2.9.1-1"
-  sha256 "561dea9bb00f76a6f9a65cb20d6794379353d02a9e33b0db4f10eb38a42465db"
+  url "https://github.com/ncbi/sra-tools/archive/2.9.1-2.tar.gz"
+  version "2.9.1-2"
+  sha256 "6f3be8e4781804b8689a085ce979594da1ea2d1873864641cedf9e8cbf953181"
   head "https://github.com/ncbi/sra-tools.git"
 
   bottle do
@@ -22,8 +22,8 @@ class Sratoolkit < Formula
   end
 
   resource "ncbi-vdb" do
-    url "https://github.com/ncbi/ncbi-vdb/archive/2.9.1-1.tar.gz"
-    version "2.9.1-1"
+    url "https://github.com/ncbi/ncbi-vdb/archive/2.9.1-2.tar.gz"
+    version "2.9.1-2"
     sha256 "c1ee7443599d2cedab13eb44af0a2d29a4c3e8bf0130c2a6b34a9aa7016287e4"
   end
 
