@@ -22,8 +22,8 @@ class Sratoolkit < Formula
   end
 
   resource "ncbi-vdb" do
-    url "https://github.com/ncbi/ncbi-vdb/archive/2.9.1-2.tar.gz"
-    version "2.9.1-2"
+    url "https://github.com/ncbi/ncbi-vdb/archive/2.9.1-1.tar.gz"
+    version "2.9.1-1"
     sha256 "c1ee7443599d2cedab13eb44af0a2d29a4c3e8bf0130c2a6b34a9aa7016287e4"
   end
 
