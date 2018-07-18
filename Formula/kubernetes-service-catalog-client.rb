@@ -1,11 +1,10 @@
-class KubernetesServiceCatalog < Formula
-  desc "Consume services in K8s using the OSB API"
+class KubernetesServiceCatalogClient < Formula
+  desc "Kubernetes Service Catalog Client: Consume services in Kuberentes using the OSB AP"
   homepage "https://svc-cat.io/"
   url "https://github.com/kubernetes-incubator/service-catalog.git",
       :tag => "v0.1.23",
       :revision => "87a5db0e1e0359ce372037a235ce4448944c8611"
 
-  depends_on "coreutils" => :build
   depends_on "go" => :build
 
   def install
@@ -16,8 +15,7 @@ class KubernetesServiceCatalog < Formula
     dir.install buildpath.children
 
     cd dir do
-      ldflags = "-s -w -X github.com/kubernetes-incubator/service-catalog/pkg.VERSION=#{version}"
-      system "make", ".generate_files"
+      ldflags = "-s -w -X github.com/kubernetes-incubator/service-catalog/pkg.VERSION=v#{version}"
       system "go", "build", "-ldflags", ldflags, "-o", "bin/svcat", "./cmd/svcat"
       bin.install "bin/svcat"
     end
@@ -25,6 +23,6 @@ class KubernetesServiceCatalog < Formula
 
   test do
     version_output = shell_output("#{bin}/svcat version --client 2>&1")
-    assert_match "Client Version: 0.1.23", version_output
+    assert_match "Client Version: v0.1.23", version_output
   end
 end
