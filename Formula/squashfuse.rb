@@ -22,21 +22,7 @@ class Squashfuse < Formula
   # Unfortunately, making/testing a squash mount requires sudo priviledges, so
   # just test that squashfuse execs for now.
   test do
-    def pid_exists?(pid)
-      Process.kill 0, pid
-      true
-    rescue Errno::ESRCH
-      false
-    end
-
-    begin
-      pid = fork { exec "#{bin}/squashfuse", "--help" }
-      _, status = Process.wait2 pid
-
-      # Returns 254 after running --help.
-      assert_equal 254, status.exitstatus
-    ensure
-      Process.kill "TERM", pid if pid_exists? pid
-    end
+    output = shell_output("#{bin}/squashfuse --version 2>&1", 254)
+    assert_match version.to_s, output
   end
 end
