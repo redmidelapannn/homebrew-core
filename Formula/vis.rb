@@ -6,9 +6,10 @@ class Vis < Formula
   head "https://github.com/martanne/vis.git"
 
   bottle do
-    sha256 "ffc8d98f7a249059c9783c57fa314f9f32b5365fa61088f393631ce9b47a2f55" => :high_sierra
-    sha256 "23b00a23675b61dc53dc714d78aed4f4cb5fefd89be4d63149fd5adf8787e9e7" => :sierra
-    sha256 "2d216793842bb70e954d460282495bfc0af44d386c25495d44e2304ff60d2a6d" => :el_capitan
+    rebuild 1
+    sha256 "074351f3edfbcfef9a7d79363aa3398d2ebe8ea8770916e965080602e9fc5db5" => :high_sierra
+    sha256 "74fdf3333a04c7d770d7fa808e8e3a2f6b4e92565e3185fd71c4f8dc2023db5a" => :sierra
+    sha256 "72438b32b36c05ed27f9cc0d479053892ce1b7d9d873b7c856e0e49428e31fb3" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
