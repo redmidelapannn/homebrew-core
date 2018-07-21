@@ -36,8 +36,8 @@ class Dxpy < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/66/54/d561347dbfa0a1eeaf49a005da5fd71c0a0be8e4e2676f14775dd0097430/python-dateutil-2.3.tar.gz"
-    sha256 "2db67d8832f19332908b4b9644865ced34087919702140862093e347e95730e4"
+    url "https://files.pythonhosted.org/packages/b9/d3/7800c2560d81f112417d245468b8c8d71a068d98cd13c3c14f193a297036/python-dateutil-2.5.0.tar.gz"
+    sha256 "c1f7a66b0021bd7b206cc60dd47ecc91b931cdc5258972dc56b25186fa9a96a5"
   end
 
   resource "python-magic" do
