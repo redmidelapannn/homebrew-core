@@ -5,9 +5,8 @@ class Mono < Formula
   sha256 "100d4ea7ac3e4a26740e0f284344272d6c5dcfef5c6e21e500d59b64814dcfbf"
 
   bottle do
-    sha256 "bd914502b997ba891e948791b4f9e4709ccab551c93f3f6389ebdd081a060b19" => :high_sierra
-    sha256 "03bc79c25e36f17ae200a1ff9750e3bdc7e9bb7bbd4c823672b759be310a03fc" => :sierra
-    sha256 "595d90ac60e236fdbb84ac6b6aed4f119e8e3d77c411b3cf727a833e0a6547ba" => :el_capitan
+    sha256 "ac29ad3efaf91abcb36d928dd6d0ccee7ac3bc5188d59efe3d6d2e32d2d184d2" => :sierra
+    sha256 "668b373b39a0ad270ee329ddeefd1dfca9fc4858ec99bf5f7634d79964dfde39" => :el_capitan
   end
 
   # xbuild requires the .exe files inside the runtime directories to
