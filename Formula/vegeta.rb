@@ -17,8 +17,8 @@ class Vegeta < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    ENV.prepend_create_path "PATH", buildpath/"bin"
     (buildpath/"src/github.com/tsenart/vegeta").install buildpath.children
+    ENV.prepend_create_path "PATH", buildpath/"bin"
     cd "src/github.com/tsenart/vegeta" do
       system "make", "vegeta"
       bin.install "vegeta"
