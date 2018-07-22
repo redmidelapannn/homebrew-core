@@ -8,9 +8,9 @@ class Nativefier < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "223ea219afcf3f60d2beacaf1411785cd50868b6f9a6c0a882e4b5fb42248ab8" => :high_sierra
-    sha256 "a18d52466601e976170397475a109611db7f2271820a999c154e6b5fef5e5a5c" => :sierra
-    sha256 "7307e99eec50966174ca53501a86c7112ae678bcfcea1264d2a8747ac28bf52e" => :el_capitan
+    sha256 "71083e0c7e4de4ff0a788d233a007dfbd8a95b6df857396d4bd86e6cea5eae5a" => :high_sierra
+    sha256 "699de1684a6102b1c1d89a91daa401d093dcfb97f948f1b66564723271baa3c9" => :sierra
+    sha256 "1b88edf68a46655b22d98d5765c38c2a4b58ab136fc92e1f17e37d004d7f5cad" => :el_capitan
   end
 
   depends_on "node"
