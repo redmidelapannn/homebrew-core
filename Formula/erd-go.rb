@@ -8,6 +8,13 @@ class ErdGo < Formula
     url "https://github.com/kaishuu0123/erd-go/archive/v#{HOMEBREW_ERD_GO_VERSION}.tar.gz"
     sha256 "aa5b799f80391b7dec99a201b460d1858ee53cee1031753a5b1eb3eeb8611480"
   end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "ffb0eb002a322d7ca2047d58d4395cbfc4f7a0a7eadd37e3bde697014aa1ab42" => :high_sierra
+    sha256 "11dab024dc7cbdeaabc485ef8413d28a423dfd3f70824939139e3ccdc28ba555" => :sierra
+    sha256 "266c22e19dfde5655a8215778050973c985b52718b0aba7259d69d0d85802e5c" => :el_capitan
+  end
+
 
   head do
     url "https://github.com/kaishuu0123/erd-go.git"
