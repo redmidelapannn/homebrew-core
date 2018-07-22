@@ -46,6 +46,11 @@ class Mpv < Formula
     sha256 "51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274"
   end
 
+  patch do
+    url "https://github.com/mpv-player/mpv/pull/6004.patch?full_index=1"
+    sha256 "8467cafdcf1d724b4bd1103179a9f29da58ee303aebb506bff43e78f90c99bf0"
+  end
+
   def install
     # LANG is unset by default on macOS and causes issues when calling getlocale
     # or getdefaultlocale in docutils. Force the default c/posix locale since
