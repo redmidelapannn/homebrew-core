@@ -18,11 +18,12 @@ class KubernetesServiceCatalogClient < Formula
       ldflags = "-s -w -X github.com/kubernetes-incubator/service-catalog/pkg.VERSION=v#{version}"
       system "go", "build", "-ldflags", ldflags, "-o", "bin/svcat", "./cmd/svcat"
       bin.install "bin/svcat"
+      prefix.install_metafiles
     end
   end
 
   test do
     version_output = shell_output("#{bin}/svcat version --client 2>&1")
-    assert_match "Client Version: v0.1.23", version_output
+    assert_match "Client Version: v#{version}", version_output
   end
 end
