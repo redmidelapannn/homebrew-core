@@ -6,9 +6,9 @@ class Hss < Formula
 
   bottle do
     cellar :any
-    sha256 "9a41aa73345f45ad440ae92c188c9ea6ff868d128024fcfd2abe39b2a3aa027a" => :high_sierra
-    sha256 "b16182f23f97fbd1dac75f6b61264e39084c03a7864f37940127bf4460fd76f8" => :sierra
-    sha256 "e65e32761d3d0485a62ff9a8826318ab53a6f92aed084435b5dfe0cd9a09a92b" => :el_capitan
+    sha256 "95b08d83860d1461224cf9994add1a73bed77abaa6fda2b51edfbd7def8837f4" => :high_sierra
+    sha256 "11bc2d0281ae697987202009db537e0c8a404ce9a6829e5a24420414d89da920" => :sierra
+    sha256 "bc824089b12797ff9135682eca72591271e57615a3f9cf1de3b1a908e98ae611" => :el_capitan
   end
 
   depends_on "readline"
