@@ -20,8 +20,8 @@ class Libosmium < Formula
   depends_on "doxygen" => :optional
 
   resource "protozero" do
-    url "https://github.com/mapbox/protozero/archive/v1.6.2.tar.gz"
-    sha256 "1196441f98932c219e5684248249c5fd404023843b0a862034d5daf24eb74433"
+    url "https://github.com/mapbox/protozero/archive/v1.6.3.tar.gz"
+    sha256 "c5d3c71f5fb56d867ff0536e55cd7a3f2eb0d09f6ebbf636b0fde4f0e12552f5"
   end
 
   def install
