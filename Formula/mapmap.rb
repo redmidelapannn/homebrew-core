@@ -5,6 +5,12 @@ class Mapmap < Formula
   sha256 "2f1b8236d448b6839395fd78b1d407c034749a549666270f2a17e6b5f2d25c78"
   head "https://github.com/mapmapteam/mapmap.git"
 
+  bottle do
+    sha256 "fd832fd40cd0e9d3de51578f860c5a162eb6bf176646be6ae9f40f217edd7ae3" => :high_sierra
+    sha256 "136d40ee449cf549a44ae06b7bca5fd6a006406963321d325cbdcd89b9837c02" => :sierra
+    sha256 "ac519a0890b3c165b0258bffe12e39e9fedfdbd179b67dcab5f1046667894409" => :el_capitan
+  end
+
   depends_on "pkg-config" => :build
   depends_on "gst-plugins-base"
   depends_on "gstreamer"
