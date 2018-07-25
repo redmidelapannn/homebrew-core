@@ -38,7 +38,7 @@ class UtilLinux < Formula
       rm_f share/"bash-completion/completions/#{prog}"
     end
 
-    # install completions only to files we have installed programs
+    # install completions only for installed programs
     Pathname.glob("bash-completion/*") do |prog|
       if (bin/prog.basename).exist? || (sbin/prog.basename).exist?
         bash_completion.install prog
