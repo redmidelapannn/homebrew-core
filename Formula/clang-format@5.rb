@@ -3,48 +3,23 @@ class ClangFormatAT5 < Formula
   homepage "https://releases.llvm.org/5.0.2/tools/clang/docs/ClangFormat.html"
   version "5.0.2"
 
-  stable do
-    if MacOS.version >= :sierra
-      url "https://llvm.org/svn/llvm-project/llvm/tags/RELEASE_502/final/", :using => :svn
-    else
-      url "http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_502/final/", :using => :svn
-    end
-
-    resource "clang" do
-      if MacOS.version >= :sierra
-        url "https://llvm.org/svn/llvm-project/cfe/tags/RELEASE_502/final/", :using => :svn
-      else
-        url "http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_502/final/", :using => :svn
-      end
-    end
-  end
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "d45589054615e47aca8acc51c84c484a8b3428a3d89079aa19457c3cae475653" => :high_sierra
-    sha256 "aab479b0747bb1f48b7efebb1477b6dad2f93a5cabdb44aaf2428d74aea3a6a4" => :sierra
-    sha256 "9751ab418b3b7760513b3e56e97c705f9fda45b84a4885cf1ce21fbf81dcd8a3" => :el_capitan
-  end
-
-  head do
-    if MacOS.version >= :sierra
-      url "https://llvm.org/svn/llvm-project/llvm/trunk/", :using => :svn
-    else
-      url "http://llvm.org/svn/llvm-project/llvm/trunk/", :using => :svn
-    end
-
-    resource "clang" do
-      if MacOS.version >= :sierra
-        url "https://llvm.org/svn/llvm-project/cfe/trunk/", :using => :svn
-      else
-        url "http://llvm.org/svn/llvm-project/cfe/trunk/", :using => :svn
-      end
-    end
+  if MacOS.version >= :sierra
+    url "https://llvm.org/svn/llvm-project/llvm/tags/RELEASE_502/final/", :using => :svn
+  else
+    url "http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_502/final/", :using => :svn
   end
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "subversion" => :build
+
+  resource "clang" do
+    if MacOS.version >= :sierra
+      url "https://llvm.org/svn/llvm-project/cfe/tags/RELEASE_502/final/", :using => :svn
+    else
+      url "http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_502/final/", :using => :svn
+    end
+  end
 
   resource "libcxx" do
     url "https://releases.llvm.org/5.0.0/libcxx-5.0.0.src.tar.xz"
