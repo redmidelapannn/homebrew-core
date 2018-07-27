@@ -4,6 +4,13 @@ class Scummc < Formula
   url "https://github.com/AlbanBedel/scummc/archive/v0.2.1.tar.gz"
   sha256 "1d9b412d7ab6197495589a19a4745f58b35a002e26cea21bf6874a7ae4f1fd2e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e3c9519d1ef14ca8593f58a2e5ca35362fa9a7b1028ee658fbb29ed0ec8be743" => :high_sierra
+    sha256 "974c79ef00689257253403e1cf3a52662cfb3879a028708104da42ef4fe0aff2" => :sierra
+    sha256 "288d8eb1ccbefcda8e22ff044d27a797019bd704ad6c436f6503cf793ca8cf4f" => :el_capitan
+  end
+
   depends_on "bison" => :build
   depends_on "freetype" => :build
   depends_on "gtk+" => :build
