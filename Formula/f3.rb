@@ -4,8 +4,8 @@ class F3 < Formula
   head "https://github.com/AltraMayor/f3.git"
 
   stable do
-    url "https://github.com/AltraMayor/f3/archive/v7.0.tar.gz"
-    sha256 "1aaf63cf73869633e7e03a2e12561a9af0b0fbba013a94b94e78d2868f441d71"
+    url "https://github.com/AltraMayor/f3/archive/v7.1.tar.gz"
+    sha256 "1d9edf12d3f40c03a552dfc3ed36371c62933b9213483182f7a561e1a5b8e1cc"
 
     # Set up flags for argp-standalone; will be in the next release.
     # https://github.com/AltraMayor/f3/commit/5ad4130088f183e61ba90ff38af1eca614d89eb2
