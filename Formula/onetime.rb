@@ -23,9 +23,10 @@ class Onetime < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9f73f9cdb465fce1aefc3cf80c00bc8e43b41a33c3e999fb3ec531251cfc3da0" => :high_sierra
-    sha256 "9f73f9cdb465fce1aefc3cf80c00bc8e43b41a33c3e999fb3ec531251cfc3da0" => :sierra
-    sha256 "9f73f9cdb465fce1aefc3cf80c00bc8e43b41a33c3e999fb3ec531251cfc3da0" => :el_capitan
+    rebuild 1
+    sha256 "2b232a7c06eb4541b3fc184214c2fe2f5bc2aadae0dff80cf764188596aab203" => :high_sierra
+    sha256 "2b232a7c06eb4541b3fc184214c2fe2f5bc2aadae0dff80cf764188596aab203" => :sierra
+    sha256 "2b232a7c06eb4541b3fc184214c2fe2f5bc2aadae0dff80cf764188596aab203" => :el_capitan
   end
 
   devel do
