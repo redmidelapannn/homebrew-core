@@ -8,9 +8,10 @@ class Jpeg < Formula
 
   bottle do
     cellar :any
-    sha256 "178200fd8aa50d5db22c5faa4ca403652d2bf912616c34dfbc6b035a456c2fc6" => :high_sierra
-    sha256 "8ecc3407d188472a7f775bb44314fff40f0e3b17a83da1666f3fa306d8fffeec" => :sierra
-    sha256 "931236302e58c53a9728dde5cb93a896b8a39b16d1f195c85381da04ea17c407" => :el_capitan
+    rebuild 1
+    sha256 "f472410f7a8f5b666727857474bdd88bcb4b01e0afd15c7d7c672ce93a68a946" => :high_sierra
+    sha256 "8dc1b3e0f0eed3dc84c523ce171f2bca2c2acef64411c36da291fc2fdd0210f1" => :sierra
+    sha256 "7124f57bd2fa8fb66ad148e66cf5708259c23aab258298e04f8cf8dcbb0147c3" => :el_capitan
   end
 
   def install
