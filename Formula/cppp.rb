@@ -6,11 +6,9 @@ class Cppp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "93bc70ed7bfe05cf901c8cb8400253c0bce2d245cbb5f47698e8c81c81ed6a85" => :high_sierra
-    sha256 "af58094ee1d80d6d09163b42755d827aa5b8be15b636a6ad087b334978ad2e38" => :sierra
-    sha256 "3bb773301b97402f783e506f3ccc339d7363df6e292d255d6b3209e5be8d1c1a" => :el_capitan
-    sha256 "7c18c1844a89ca3a0ee7084b06c908de2288378eaeac09c7872b0eae97129fc3" => :yosemite
-    sha256 "2765ea90bea4f32ba431ef1f53699a61c2abaf0d3035ed32fb579d42794c9567" => :mavericks
+    rebuild 1
+    sha256 "fbccbfacf99d1a28e21fc2cefff06c168515dcffc562701b7abfc34ad6df3b67" => :high_sierra
+    sha256 "104e46ef2919e8b7edaaea225e3758b3795c70a3199ba53e6c81e195f7c3a7a4" => :sierra
   end
 
   def install
