@@ -6,12 +6,10 @@ class Ezstream < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "8dda7ec4014a1c4f13a3a17f7e243b9e7153c069f5c8cff1a20c7b2518d78be6" => :high_sierra
-    sha256 "eee3cc2ed988d5c0e131d9ba8f0aef0e7bb520311096a9719b914c0a1ca6ffe4" => :sierra
-    sha256 "365c26a87addf50359e65ccd98ce4244b61f7e9015a335ff47bf55a90b35ad19" => :el_capitan
-    sha256 "dfa4b2537b1ce6b0da0c4214ccedca664bdd2e69962fa6579d9c437b1ff94e92" => :yosemite
-    sha256 "04e3a89b8b1e91ce160ec94c981b71d8fb08d7be8fef3da3f1c33b29dc9e3f8c" => :mavericks
+    rebuild 2
+    sha256 "741857c766061229264101c6410132d2714d50cc395805c89fb8b1fd06445c60" => :high_sierra
+    sha256 "6bb7748022714c7e5207cde3e6bfece0a5d949df82592eec99e89a6007f65f35" => :sierra
+    sha256 "1f24ea06a833170bd7b7c143d73d2c2fb3b391afd5ec05875f4dd093ad92d403" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
