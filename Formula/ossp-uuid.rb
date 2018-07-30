@@ -8,11 +8,10 @@ class OsspUuid < Formula
 
   bottle do
     cellar :any
-    sha256 "a04214b22c58bd5167778925cb9e55b98f28330bcc6c6a37929e6085ea3a0162" => :high_sierra
-    sha256 "3c15cd0e25e3039e0d05b94d14b714745cec3033863d5dc7a6d9ddd7cacc1c71" => :sierra
-    sha256 "ac4456fc1c29db7e0d565ebdd392cf827be315b52c9eb3abcd113c4c7b981f25" => :el_capitan
-    sha256 "c6cfa39816d19fa8d4586d6a364cd17e3a089ea018242875dc371731578a4ac7" => :yosemite
-    sha256 "5253f4fab035aca3ca3b867ce0d081812eb17fe0dcaab6599087abaa385c478d" => :mavericks
+    rebuild 1
+    sha256 "e13613e3cb7c843a9a892ae6181c3d8afc2b69c24989ccf336284763c62152c5" => :high_sierra
+    sha256 "3e8f13cca7a204520822889c70e131e02359ecde8fe2a3dc11ef9111a3ff2ee3" => :sierra
+    sha256 "02f07c3d57b0f7836da6a0c0d581bc0645aa415c7dcb4280d6e6339b56702227" => :el_capitan
   end
 
   def install
