@@ -3,6 +3,13 @@ class ClangFormatAT5 < Formula
   homepage "https://releases.llvm.org/5.0.2/tools/clang/docs/ClangFormat.html"
   version "5.0.2"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7a9bf21a39444d29a5064ab1e54c910d2137e12e0ad941a1d424fad29e012aba" => :high_sierra
+    sha256 "07a8db0986f4d5b27bcd5d8561422e81221c88517b13cf36e9459c37d94fe97c" => :sierra
+    sha256 "4413ad37f35e9a22820f141de8e80b03577e889e95d184059021fef780c47bf6" => :el_capitan
+  end
+
   if MacOS.version >= :sierra
     url "https://llvm.org/svn/llvm-project/llvm/tags/RELEASE_502/final/", :using => :svn
   else
