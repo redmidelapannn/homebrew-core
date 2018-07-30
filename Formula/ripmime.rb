@@ -6,11 +6,10 @@ class Ripmime < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "915cd6326fe857e0608d25c9b6e2f4fab06734df23d0ad938184c1b791981345" => :high_sierra
-    sha256 "09a2b60d927bbc236998e29ea50969ce95ab4470d74cd7a40a54f9f4ec24252b" => :sierra
-    sha256 "1151fa0bb8a10779979cec95c7039832eb81b7126f808ba9c89ccb73cf658814" => :el_capitan
-    sha256 "6ef2fdabe468bc42be725020ef23cc924d1572c7446648e38dbd6de3f1399a38" => :yosemite
-    sha256 "741b45ca155022fb6b540dd1cc0882f5f29330b6909e37fd5115e84705d9d6bb" => :mavericks
+    rebuild 1
+    sha256 "9a30b404042a4f673d072817d0040b8f11ddf31b222867b0663602cc23f3fa26" => :high_sierra
+    sha256 "e36b04f4730b3bee47f3db26277fc3877932cef6bca7a62d81da3391d13e72e6" => :sierra
+    sha256 "39ca3ac6ac2a7fffa3a3f6ff34cf6908a31b8b81a37e89cd19bf6f0a140c59dd" => :el_capitan
   end
 
   def install
