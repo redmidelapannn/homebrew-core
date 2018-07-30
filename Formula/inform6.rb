@@ -10,10 +10,10 @@ class Inform6 < Formula
   end
 
   bottle do
-    sha256 "99fbc0e56d7a8eb8b5dad3c7604332a04286908cbfe51c385c52b958a058ff37" => :high_sierra
-    sha256 "9ba31815431daff2d34c193bc48acaeb7d97cf312162efd809a28ea53c0e3e04" => :sierra
-    sha256 "7907b51b7c5b95d258a0418e6c8a455b814266ca72498d28573b9021761a57e2" => :el_capitan
-    sha256 "517cb99fc16eb03a54deb203c90c891982d6bbcaa1a135dfec4f8b4bb79029ab" => :yosemite
+    rebuild 1
+    sha256 "6fd6643d7c837d95e5ccfe1db32c538885bb47b4f1d3dd36e010ea4ba7ab048f" => :high_sierra
+    sha256 "cce0e54926422cbfd639ff9ffb163decf72e2b5f36de0f5e3794c2c5b909bce8" => :sierra
+    sha256 "4c41eb25e67c2de168134c85629eda416585daa55b0c758d1e02626126b14bdd" => :el_capitan
   end
 
   resource "Adventureland.inf" do
