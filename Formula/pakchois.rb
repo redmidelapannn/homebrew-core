@@ -5,11 +5,10 @@ class Pakchois < Formula
   sha256 "d73dc5f235fe98e4d1e8c904f40df1cf8af93204769b97dbb7ef7a4b5b958b9a"
 
   bottle do
-    sha256 "ee7978dad7998e747e468f1b9afaa692304efb2ca857d4c0903945f030841fb7" => :high_sierra
-    sha256 "84a90b245c59676817d4c9100d64d7747068e0d3557fc5c3218d8a83a98f78fe" => :sierra
-    sha256 "b02057a2cc01daa05754c537820b58d7c77b632fc5fdb2a6f6dcec77341fe65b" => :el_capitan
-    sha256 "30a06a914f2025d7d23dff48fa8523be455bf925a3282a8c35f56779fd8bd27a" => :yosemite
-    sha256 "03d6ab9d51bdebf61b3c415908e222467fd31cefc4811200eee9e407c604f7f5" => :mavericks
+    rebuild 1
+    sha256 "be0e2851e0008ca2eda5101230c64c73976622354eaaeba16364f3586e289d24" => :high_sierra
+    sha256 "a2f1ee0022f260bb6aa102027eb5aebff9c3282bb3a64b5d70efb027c2ce3ee8" => :sierra
+    sha256 "be726bed71a569092e003386124b8ef104f190c9fa76f5908f1afda4d467ac42" => :el_capitan
   end
 
   def install
