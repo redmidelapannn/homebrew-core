@@ -51,5 +51,20 @@ class ClangFormatAT5 < Formula
 
     assert_equal "int main(char *args) { printf(\"hello\"); }\n",
         shell_output("#{bin}/clang-format -style=Google test.c")
+
+    # below code is messily formatted on purpose.
+    (testpath/"test2.h").write <<~EOS
+      #import  "package/file.h"
+      @interface SomePlugin   : NSObject  < ParentPlugin >
+      @end
+    EOS
+
+    # NOTE! different formatting depending on version
+    # clang-format 5.x
+    #     @interface SomePlugin : NSObject<ParentPlugin>
+    # clang-format 6.x, 7.x
+    #     @interface SomePlugin : NSObject <ParentPlugin>
+    assert_equal "#import \"package/file.h\"\n@interface SomePlugin : NSObject<ParentPlugin>\n@end\n",
+        shell_output("#{bin}/clang-format -style=Google test2.h")
   end
 end
