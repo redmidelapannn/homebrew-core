@@ -7,8 +7,9 @@ class Configen < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "46e883171ac5cf880ae7a8f58ece9d7d0e33d3d1d5ca3414626a4c067df5da6b" => :high_sierra
-    sha256 "3b445fd66dc371d20cd561f2ceb13b61c9814d02f759e458708cf5355077fb25" => :sierra
+    rebuild 1
+    sha256 "b40602b6e7ff4d9b9e6ed61f3aa5f127797c9158c78d83467ed0d686412861dc" => :high_sierra
+    sha256 "971c09a8bf180ac39fc605fc77a357169b941b30b31b84c4f7b7420aa89616bc" => :sierra
   end
 
   depends_on :xcode => ["9.0", :build]
