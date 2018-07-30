@@ -20,7 +20,7 @@ class Bnd < Formula
     test_file_name = "#{test_bsn}-#{test_version}.jar"
     (testpath/"index.xml").write <<~EOS
       <?xml version="1.0" encoding="utf-8"?>
-      <repository increment="0" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+      <repository increment="0" name="Untitled" xmlns="http://osgi.org/xmlns/repository/v1.0.0">
         <resource>
           <capability namespace="osgi.identity">
             <attribute name="osgi.identity" value="#{test_bsn}"/>
