@@ -12,6 +12,9 @@ class ArmLinuxGnueabihfBinutils < Formula
   end
 
   def install
+    ENV.cxx11
+    ENV.append "CXXFLAGS", "-Wno-c++11-narrowing"
+
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--enable-deterministic-archives",
@@ -20,8 +23,7 @@ class ArmLinuxGnueabihfBinutils < Formula
                           "--target=arm-linux-gnueabihf",
                           "--enable-gold=yes",
                           "--enable-ld=yes",
-                          "--enable-interwork",
-                          "CXXFLAGS=-std=c++11 -Wno-c++11-narrowing"
+                          "--enable-interwork"
     system "make"
     system "make", "install"
   end
