@@ -4,6 +4,13 @@ class Kcov < Formula
   url "https://github.com/SimonKagstrom/kcov/archive/v35.tar.gz"
   sha256 "74c172dae2ac2866e0adc91d3fd80276e5acb970d11ac71679a0f7336897a476"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "058131533fdd79e78427c9c0d20a50b598e59497532168c21d1875b4ab4c0bc6" => :high_sierra
+    sha256 "3734e04776935dcfbdfddb05cee0baf0ae4c4a1024e51115fcac11d9ab55bc6f" => :sierra
+    sha256 "299177a941baeaf2585d2c0d185c14e5b5cc14e1d9ac591178133c987de51b4c" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on :xcode # Needed for LLDB. See MachO work below.
