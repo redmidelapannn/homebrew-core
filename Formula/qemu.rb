@@ -16,9 +16,10 @@ class Qemu < Formula
   end
 
   bottle do
-    sha256 "ef4da4274e0e582cff223d46736d386ea78444e7943bcb47f4541bec9e6b7786" => :high_sierra
-    sha256 "c896fa77d0b63a9c7fc5e7ad9ee64ab72c3d0995cc1031ef9326b41a3d189240" => :sierra
-    sha256 "95a8d1f152c57161dee4f0f36a7409ff413631d0ca5afb7fe5d986b13abaf0ae" => :el_capitan
+    rebuild 1
+    sha256 "cd4f95857f1240162a48b87269d7c12efb6d5b583268adf5d81f86cca527f4d8" => :high_sierra
+    sha256 "31bbb812a13e79ddccc156858a6498420c1e6b26f94cdf59036a7c6ad5c58d7e" => :sierra
+    sha256 "bb9b6e5e67707e911235b7fb6bbd47a1cd1ea55389b7773b6f0d106c69ac84f4" => :el_capitan
   end
 
   devel do
