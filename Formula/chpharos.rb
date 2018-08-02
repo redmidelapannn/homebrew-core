@@ -5,6 +5,13 @@ class Chpharos < Formula
   sha256 "0f4ab62996416bf290909dd1638caf2dd224069d6218222ce0969141f289ca15"
   head "https://github.com/kontena/chpharos.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d96d079670db930f5c0c58ea0c9ec984369e6eeda84dbbd4ba2e6aae9cf0788c" => :high_sierra
+    sha256 "d96d079670db930f5c0c58ea0c9ec984369e6eeda84dbbd4ba2e6aae9cf0788c" => :sierra
+    sha256 "d96d079670db930f5c0c58ea0c9ec984369e6eeda84dbbd4ba2e6aae9cf0788c" => :el_capitan
+  end
+
   def install
     system "make", "install", "PREFIX=#{prefix}"
     bash_completion.install "opt/bash-completion.sh" => "chpharos-completion.bash"
