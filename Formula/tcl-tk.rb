@@ -26,9 +26,10 @@ class TclTk < Formula
   end
 
   bottle do
-    sha256 "cd4dec2b564dcad86b151803c852142366bc48ec1b13d48a2e495c83fc32a688" => :high_sierra
-    sha256 "96144fc3d7eaeec6125ff9f534f0aa21b61b673914dd8cb4898b10ca0530d90e" => :sierra
-    sha256 "79222749d221013eb7d1fb529ace13293a819b43d6633b964d1f8f318ac66f33" => :el_capitan
+    rebuild 1
+    sha256 "ab13617f4ff2cc8c1d1a1fb8e011b9dc27e0e4afcc73151768c93d32af0992a0" => :high_sierra
+    sha256 "5691fa9471de1605a1d975c66aed34b1bad5c64082ad52d9ff974f729d2276b0" => :sierra
+    sha256 "f5845a0d76ebeff4269677f1132c19b1abf52d8655b996c89dc7d7689a50b27b" => :el_capitan
   end
 
   devel do
