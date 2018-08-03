@@ -22,11 +22,6 @@ class Abcde < Formula
   depends_on "glyr" => :optional
 
   def install
-    # Fixes MD5SUM being set to nonexistent md5sum
-    # Reported upstream 2017-03-18 18:03 GMT
-    # https://abcde.einval.com/bugzilla/show_bug.cgi?id=59
-    inreplace "abcde", "OSFLAVOUR=OSX", "MD5SUM=md5\n\tOSFLAVOUR=OSX"
-
     system "make", "install", "prefix=#{prefix}", "sysconfdir=#{etc}"
   end
 
