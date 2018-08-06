@@ -48,7 +48,7 @@ class Mpv < Formula
 
   patch do
     url "https://github.com/mpv-player/mpv/pull/6004.patch?full_index=1"
-    sha256 "8467cafdcf1d724b4bd1103179a9f29da58ee303aebb506bff43e78f90c99bf0"
+    sha256 "65bfeac2e02847d72d54ac55e9da0011556fd4a6466151927e0535d2355a8ffd"
   end
 
   def install
