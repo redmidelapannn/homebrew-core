@@ -3,6 +3,13 @@ class Json11 < Formula
   homepage "https://github.com/dropbox/json11"
   url "https://github.com/dropbox/json11.git", :revision => "ec4e45219af1d7cde3d58b49ed762376fccf1ace"
   version "1.0.0"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "46d76a391c03ba45077e9e548223aecff07ed199de36e1b1098878c9902693ac" => :high_sierra
+    sha256 "2d0b38f14adec139276df06b29de752ab34d5ea45fd61c6a6ca6af6e52d60c50" => :sierra
+    sha256 "4d4c6377a1ca43cf240bf0855b5d8755599951f07e3d1d5bad03f07b395f0416" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   needs :cxx11
 
