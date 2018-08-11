@@ -4,6 +4,13 @@ class Libclang < Formula
   url "https://releases.llvm.org/6.0.1/llvm-6.0.1.src.tar.xz"
   sha256 "b6d6c324f9c71494c0ccaf3dac1f16236d970002b42bb24a6c9e1634f7d0f4e2"
 
+  bottle do
+    cellar :any
+    sha256 "d4f96e405f6abb6c3ac9b6f18a770f19aa75646ebfe92301da5f755328f447cd" => :high_sierra
+    sha256 "a5d7248e969c82f74cd9f49568f44677e12835f9c71039da7de8485519b25056" => :sierra
+    sha256 "34b45fb992c6b9c7b98c6deafa923cc5a5480b8da1618b56a58ffae324b862ba" => :el_capitan
+  end
+
   keg_only :provided_by_macos
 
   depends_on "cmake" => :build
