@@ -6,9 +6,10 @@ class Node < Formula
   head "https://github.com/nodejs/node.git"
 
   bottle do
-    sha256 "5f9325b4556d4874fb8b917f1e5a9b7f6cdc224b8d683387065577dc41a6020e" => :high_sierra
-    sha256 "17d515210e284aaed53d97765a1932026dbe967304f3101f3e2d2d4b896d5ac2" => :sierra
-    sha256 "f3f9dd0a91bbd765ae4ed88d72dbedf88b3cffec4e4978e2143f7d7b20f874dd" => :el_capitan
+    rebuild 1
+    sha256 "111a1ab4128a52ae7f15f3c77df0237d1c7226e7ac1f9a8efc8dbd31ba45138a" => :high_sierra
+    sha256 "6adc7ae2e3767ae3a2be7a81976f5bcc714ea81b9104723908cab0b0410c0545" => :sierra
+    sha256 "bbe6e944e48d7b795e013f7ab3fd544ca648d412b534597481fc9525e62fc4f1" => :el_capitan
   end
 
   option "with-debug", "Build with debugger hooks"
