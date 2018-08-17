@@ -6,9 +6,9 @@ class Jasper < Formula
   revision 1
 
   bottle do
-    sha256 "086de22e8e8a01299962f3bea5374c90490b66e84b7e10a4078f172e64b0079f" => :high_sierra
-    sha256 "86058296fb5efea3ca509bd335bf7da48a83078fc237c1ccb1bb2d428ef2343b" => :sierra
-    sha256 "c481b8887b8d29e3c63735dd2151c9246e08f21bf50334033de4a054f700a6db" => :el_capitan
+    sha256 "a53b8fa354c134cf43ce750adda3f438a0fd880428d858762c3f545548153e90" => :high_sierra
+    sha256 "4b2b27abf01c3ef8a3b325f9cb9807bb9f4a0babc0679a7557ef93b3e91e65a3" => :sierra
+    sha256 "bc31a89bfbf7c61e822f6f09c577e766a98b173333b315c82fb071a05e155bb6" => :el_capitan
   end
 
   option "with-large-image-support", "Allows handling inputs with more than 67108864 samples (Allows 536870912 samples)."
