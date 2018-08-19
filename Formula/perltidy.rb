@@ -6,7 +6,10 @@ class Perltidy < Formula
 
   def install
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
-    system "perl", "Makefile.PL", "INSTALL_BASE=#{libexec}", "INSTALLSITESCRIPT=#{bin}", "INSTALLSITEMAN1DIR=#{man1}", "INSTALLSITEMAN3DIR=#{man3}"
+    system "perl", "Makefile.PL", "INSTALL_BASE=#{libexec}",
+                                  "INSTALLSITESCRIPT=#{bin}",
+                                  "INSTALLSITEMAN1DIR=#{man1}",
+                                  "INSTALLSITEMAN3DIR=#{man3}"
     system "make"
     system "make", "test"
     system "make", "install"
