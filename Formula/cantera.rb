@@ -5,6 +5,12 @@ class Cantera < Formula
   sha256 "012da50fa1aabf0cd8f5204f96977eefcfd6efd9794d95a56d64c86e0202a3d6"
   head "https://github.com/Cantera/cantera.git"
 
+  bottle do
+    sha256 "16bd03faf20cbef1606f6e1ba538de3c5921bdf7e215f2eef65b87cd8527a473" => :high_sierra
+    sha256 "556e21878d4841aeebede5cfe9a004ac733f1fd1a077488e3d3474f8a7605223" => :sierra
+    sha256 "a7e281f2e7873eaa0d90a1c14b8611c3cec435f4232d62211dc757e1898ba7cd" => :el_capitan
+  end
+
   option "with-matlab=", "Path to Matlab root directory"
   option "without-test", "Disable build-time testing (not recommended)"
   option "with-minimal", "Only build the minimal Python interface necessary to convert input files. Recommended when only the Matlab interface is desired"
