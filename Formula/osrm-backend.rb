@@ -7,10 +7,9 @@ class OsrmBackend < Formula
   head "https://github.com/Project-OSRM/osrm-backend.git"
 
   bottle do
-    cellar :any
-    sha256 "f5195f12aac91662e4523d7e22557e1a027d6588a69b913ba91f688160662539" => :high_sierra
-    sha256 "90d3930e7744678a686e111ed9f334eb65cb46c72b1a84faf81e4c976ba9fce7" => :sierra
-    sha256 "82c744cc45f7347ebac04b5af6528ecfe49b5715e77401ae9a39af8c03038a20" => :el_capitan
+    sha256 "4579b9e060e1e8b14fd471398f1d5ad601ffd303219a0f7ee2134701a7baa9fb" => :high_sierra
+    sha256 "f7c6111e5a6bba3c92ea27a67f7ecea8064853c699a8935512fee05318970854" => :sierra
+    sha256 "e2068dc9214b6443fdcbdd0e59ca1244ed01fe390ac5105e11dd5ae3c02dc3c6" => :el_capitan
   end
 
   # "invalid use of non-static data member 'offset'"
