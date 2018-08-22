@@ -6,6 +6,13 @@ class Mfa < Formula
   url "https://github.com/limeburst/mfa/archive/0.1.1.tar.gz"
   sha256 "1db41a7cc1215f44ea7ddb8e0e2d8a97f2a924b46660bbab71fa64cc332a859d"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "662a04305948ef2bffa444ec934a7bae4baac9a9793a3da2ac36eedb055ae061" => :high_sierra
+    sha256 "ddfbf99a595f4d414e8139036e3501c8ff892cfeb86b1cdd43e6a778dc04f101" => :sierra
+    sha256 "55d6b96c7a5b5b14e7bc73dd488d60e40e8752a90ed929131bd9214eab5657a1" => :el_capitan
+  end
+
   depends_on "python"
 
   resource "click" do
