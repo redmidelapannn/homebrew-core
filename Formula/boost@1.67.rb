@@ -4,6 +4,13 @@ class BoostAT167 < Formula
   url "https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.bz2"
   sha256 "2684c972994ee57fc5632e03bf044746f6eb45d4920c343937a465fd67a5adba"
 
+  bottle do
+    cellar :any
+    sha256 "6b24a9793abfc11bebfb8bb9edf8125bf5c3aaaa2a5bed03ac45bcc132f3f19b" => :high_sierra
+    sha256 "4462a86914055d7eeb9f2b9858f5de66b1103867e0c572ab6033d032bb88223b" => :sierra
+    sha256 "da7627ea3cf4a3f03cb0c7ae6b9b2efd2d958ef0e6f46bf6fa4e725edaab9ff6" => :el_capitan
+  end
+
   keg_only :versioned_formula
 
   patch :p2 do
