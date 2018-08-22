@@ -7,11 +7,9 @@ class Folly < Formula
   head "https://github.com/facebook/folly.git"
 
   bottle do
-    cellar :any
-    sha256 "c232212e0bc865e0a3ec1412b3baf49bb5258e69917df05842d220192ed83b18" => :mojave
-    sha256 "c09c21e837ceda82e208795bd38fa1d6a2a1a893f429321886bd6e05e568f058" => :high_sierra
-    sha256 "704e798f82bf53a7ee956fb8f80d2cdf29c193683f1986bf39ab8fd00761c81d" => :sierra
-    sha256 "2dab2f61c69959cbfbfd0482f16909a5fa8dc309ab63fa1f5913bdd99587f639" => :el_capitan
+    sha256 "2c37ea97c227ddab9c7ebd5617f58107bf54904742e38321ed28218cc5a5caa2" => :high_sierra
+    sha256 "7978cfbb7f9a39f62fc8f78a0d4b1523b3e1afe20c036c26409d90f518b4b3d1" => :sierra
+    sha256 "18fa9bd140f32567520f770ae49042181f086b3e833b264f2937176b9c26b73a" => :el_capitan
   end
 
   depends_on "autoconf" => :build
