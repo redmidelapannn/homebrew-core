@@ -4,6 +4,13 @@ class Satysfi < Formula
   url "https://github.com/gfngfn/SATySFi/archive/v0.0.2.tar.gz"
   sha256 "91b98654a99d8d13028d4c7334efa9d8cc792949b9ad1be5ec8b4cbacfaea732"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "04129683963bdaf8c876391cc1bfd588fc129d27b898b75434f1844d3eae13c1" => :high_sierra
+    sha256 "f211a49d657bbe99ec9225c925d64e82c71657bc99d54e05346edaa6db213e09" => :sierra
+    sha256 "cb6dc1e19aa198b20dde3e38a5fe5b93054ea4e6738e868e5ac3efcbbfc1a53b" => :el_capitan
+  end
+
   depends_on "ocaml" => :build
   depends_on "opam" => :build
 
