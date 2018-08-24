@@ -4,6 +4,13 @@ class XtensorBlas < Formula
   url "https://github.com/QuantStack/xtensor-blas/archive/0.13.1.tar.gz"
   sha256 "3798fedc0def008662d2c99948b35ff01d6a86deffb6245b80fd37745c6c37d5"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8131c2ebc286f204ea3e357b7a62b4f0cd08f80185865e591d745e8bd27fbebb" => :high_sierra
+    sha256 "8131c2ebc286f204ea3e357b7a62b4f0cd08f80185865e591d745e8bd27fbebb" => :sierra
+    sha256 "8131c2ebc286f204ea3e357b7a62b4f0cd08f80185865e591d745e8bd27fbebb" => :el_capitan
+  end
+
   depends_on "cmake" => :build
   depends_on "xtensor"
 
