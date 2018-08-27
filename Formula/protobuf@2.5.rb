@@ -6,11 +6,10 @@ class ProtobufAT25 < Formula
 
   bottle do
     cellar :any
-    sha256 "9b8bd06980b0e7b9b3f86c405f5da1fceac9c756e6d2937fb07646e13cee123e" => :mojave
-    sha256 "57b751631332e48464f3547d6608b24422001d7e98f50eb67bc8594f3dfc6284" => :high_sierra
-    sha256 "2666bcf184708bdd23c1df2c209f3bf6fcdfe4769e02db878632be3b2267a106" => :sierra
-    sha256 "738a1b9437b4fa18d607d9b385e83c5065c683da3aee3d88b7b30c06a85b7960" => :el_capitan
-    sha256 "18c6d55b58fa0e9b8d36738f937a86cb2583b7eeb66412905ffe4870f7e5b60b" => :yosemite
+    rebuild 1
+    sha256 "0f425b9a608bd6b1498172686fd14365d9c3baddb889a3e55a684526f01ae162" => :high_sierra
+    sha256 "b43fef2201c7a2023f2e3a5bc393e95db97d689c69efd7b2cf074b0a525c44dd" => :sierra
+    sha256 "e5409f26086e411c1a8b6463c2f8906e81869712a7fcc1004e9c2d7d9b4a7cb6" => :el_capitan
   end
 
   keg_only :versioned_formula
