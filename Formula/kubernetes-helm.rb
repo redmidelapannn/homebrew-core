@@ -8,9 +8,10 @@ class KubernetesHelm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "68294dc3abb779233fdbfa14648aaa06ea78ff63b7484716d39ed8b280d4a18a" => :high_sierra
-    sha256 "c5c53af3256aa619058e7ab1d265ed4fb54d7dacc80a455de7df6e43176da310" => :sierra
-    sha256 "987174d800b65c9350e198152cf05a5f605f49149da382d81c39b8e6da2c97e5" => :el_capitan
+    rebuild 1
+    sha256 "85bf775733a4dfa3ac890d860320a95817cd2a36b5421a41c371b169977c7579" => :high_sierra
+    sha256 "3869c85eee8a83bc3736abeb2196fedabed54cf7d15ca17c2fe9897fb97fd770" => :sierra
+    sha256 "64c1cc09b818678a336120aa6490739f7d2425c4e5fae6567720b8e1e8c6d541" => :el_capitan
   end
 
   depends_on "mercurial" => :build
