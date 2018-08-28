@@ -6,9 +6,11 @@ class Kakoune < Formula
   head "https://github.com/mawww/kakoune.git"
 
   bottle do
-    sha256 "963dcb1f0cb83f49b4fca50b556299f7b817d6186cf0ccf57ace72ec465f449e" => :high_sierra
-    sha256 "d49c1a22732564d9a88ec1a14edb2481840f5041abfb954fd323c6b1d4153c90" => :sierra
-    sha256 "8eb380637d9d50b956b7dd7e7e46a8a789ee3743ef6a783ff885958a5337c5cb" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "9d285cdc93f28fb91553906745a52df561682dbed4e065640755b65d1f7b8cc4" => :high_sierra
+    sha256 "0cb5eda2169725e2185de73292da0d83af4707095576eaf03e0aca69ab92955d" => :sierra
+    sha256 "8df2561456a0c369eb05fce0de4eabfe4f10fb1a2bee401c03d304e242a7fe90" => :el_capitan
   end
 
   depends_on "asciidoc" => :build
