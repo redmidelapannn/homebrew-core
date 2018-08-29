@@ -7,6 +7,13 @@ class Kbdgen < Formula
   version "0.5.0"
   sha256 "da5c3ca2bacae518d5157b053ee91f43a025fbba13bbbf284b8c1b9f74bde829"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "43930c829b14e3c85fef071057511b106ea951645299bfc509c39368241f655a" => :mojave
+    sha256 "f60fdbd7f0691d8df40f746fb789ae0b9b922b60a82701ea9aa6dba3632efc0d" => :high_sierra
+    sha256 "27abf5f30a06eacdca4802aab1314c1ed9cf0d4ada913e8a29ce3d21433b7178" => :el_capitan
+  end
+
   depends_on "imagemagick"
   depends_on "python"
 
