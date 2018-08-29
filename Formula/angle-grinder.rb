@@ -5,10 +5,11 @@ class AngleGrinder < Formula
   sha256 "9d99ae18666f0e63fe7aef9ad4eed18440d4f395329ef616758d087b9b1f758b"
 
   bottle do
-    sha256 "1316f4764532232c9af0c349b5b0dfa2dea1759bf4c0a7d6fc121406a732c68a" => :mojave
-    sha256 "8f2f356c465074a10d7ced0e41da052df20b7443cdcb5703f0c014f6d7c78223" => :high_sierra
-    sha256 "635c1e2d84f5a176150628cc281550d0b0aaf7fe4d2dbc5a79752847e83ec0f8" => :sierra
-    sha256 "0291d2073ce16b5f7edb8c6b1ae4b4722f9770e43ca1bac247d76da2adfff504" => :el_capitan
+    rebuild 1
+    sha256 "bc5eff6f9e7aae6906aac12b76399bb3128346f4906b6c3b1e0a9ada5bd861b1" => :mojave
+    sha256 "99bbb32e476d7e036507ee4b16d67f82665cb3d3182b6329393eb461d88e02a0" => :high_sierra
+    sha256 "a5c0e98d96ac5553e861a94f8bc6eeb3130b26afd712fcd8c8a45fb3db733a0f" => :sierra
+    sha256 "202612ef0dce8be47360b0213a818aea5f66bcdd344ef325d1e429c6869bf3d8" => :el_capitan
   end
 
   depends_on "rust" => :build
