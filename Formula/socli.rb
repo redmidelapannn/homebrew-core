@@ -6,6 +6,14 @@ class Socli < Formula
   url "https://files.pythonhosted.org/packages/79/68/614425c81c1a0ba827148841f72e9762a39d82a351e956c1af3002bc1863/socli-3.6.tar.gz"
   sha256 "cf50b17f4032aa0488876febff4714ae49252e99cc4d9a80836bbdddac927d5c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "293aad4aad88e63306bc086b19ff871444715e21746312aca27f38ccb508eaa5" => :mojave
+    sha256 "95b36c2f91499111e6a78549eb53ce5fb79cf4e642714b21f382335c507e2b62" => :high_sierra
+    sha256 "e50f7d45ba91b6de191f6dc5c3d05bd2a3761b6eff50081049d7312c38ebb51a" => :sierra
+    sha256 "f62225ca7bdaf0500bc47dfca1c9b68ac16fb858f462ef623c60070ce5478f84" => :el_capitan
+  end
+
   depends_on "python"
 
   resource "BeautifulSoup4" do
