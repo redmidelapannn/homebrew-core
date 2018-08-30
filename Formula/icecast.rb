@@ -6,11 +6,10 @@ class Icecast < Formula
 
   bottle do
     cellar :any
-    sha256 "23034293d31b692fc9a8e7ae3c69d69d5cb21627a4b00a2e2ecea21943e33a86" => :mojave
-    sha256 "da71d730b60e2dd85a9be89974ec9e7418ae594644bc4652e4ee273cb3739dd6" => :high_sierra
-    sha256 "f3660f43ecaab1b126d38916d1bbb4644f395301130e05f80855c3923729fa5a" => :sierra
-    sha256 "6904fc3c70e67be98bd73a0cd362f7ae7960b0a8beab1cd924ab84ae42a782a3" => :el_capitan
-    sha256 "bfaa0aaec3dec64fdd933bf21913cdfa5883acdc79b58f542072eefb29f12fbf" => :yosemite
+    rebuild 1
+    sha256 "bbaad981097fdc7d3ea7b22e492446b153d16630676df3b7c0667a2c3dc9cc09" => :mojave
+    sha256 "65889aa735a3b6007bedf7f957aa086cf019723d16067e6fcc33fae8c401a97f" => :high_sierra
+    sha256 "2352ff9e57fd0aaba39a1f3aae506d4a5656e0deace07287a882e57c8a9063c4" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
