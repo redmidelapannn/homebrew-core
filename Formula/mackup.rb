@@ -7,10 +7,10 @@ class Mackup < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0d65e929160426fb570d378bdfadada7378cce9a73c053e2ae38a54cc7383973" => :mojave
-    sha256 "b2087f95402ac5cb65f9e26636e86989f66922a24e22938444bb0ee9c84216b1" => :high_sierra
-    sha256 "b2087f95402ac5cb65f9e26636e86989f66922a24e22938444bb0ee9c84216b1" => :sierra
-    sha256 "de89332a8a2ab48d0b71f1d24f444f6376cbba4077f9fa1214b03a20a58538ec" => :el_capitan
+    sha256 "3314003a17c1cab32919e712008e15df7c46c82bd393b5bf66b1eff5bcc22ad4" => :mojave
+    sha256 "0a3e6fb011c7f9612c01c0a36adf9bae754547668a7faffb360a140561ff95f6" => :high_sierra
+    sha256 "0a3e6fb011c7f9612c01c0a36adf9bae754547668a7faffb360a140561ff95f6" => :sierra
+    sha256 "0a3e6fb011c7f9612c01c0a36adf9bae754547668a7faffb360a140561ff95f6" => :el_capitan
   end
 
   depends_on "python@2"
