@@ -7,12 +7,11 @@ class Icon < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "824e189b6c174efa7e0f675c7bd4d90f19810f379d71b0195b508d2f6ec43986" => :mojave
-    sha256 "7c2d0794956448b8bebf166c97a65aa23fde0847eeb7c6c9f8197eff2835ffb5" => :high_sierra
-    sha256 "13d3963ef90d3f94f13a97e922185ea640233aee356e3bf8c2a0336de278482c" => :sierra
-    sha256 "5218afb915b7892d4c242c659218735293136c3b100f54aa7199bcc716915939" => :el_capitan
-    sha256 "44450b176b56db833a91ca6ae681e3876b2864a094b254340bcb5cd136957f17" => :yosemite
-    sha256 "ca5ba233b4713e54680525ffd3ee7554988aa48f6a959f78b53c24e58d8c1c59" => :mavericks
+    rebuild 1
+    sha256 "533327d46c6cc719c58215c43f4cdfcff083ce3b1f547a78cd5ddb04b713d88f" => :mojave
+    sha256 "ee410f2185659e42d30f80c61eca34e04e1388b00c99aa61646cbeb115399023" => :high_sierra
+    sha256 "c9007a6e839a999c163cf1c341215a32ae81c787c1b4045279fd79cf206773ff" => :sierra
+    sha256 "1391a90e95a4eca3613603d90d5a86db829dc8f3401c26d434cfae8ac9a0a1b9" => :el_capitan
   end
 
   def install
