@@ -6,10 +6,11 @@ class Ldns < Formula
   revision 1
 
   bottle do
-    sha256 "62e817640791c4f6e6f3f99ed3621cdc62033772094a7fe9365813de0ab26c9e" => :mojave
-    sha256 "59e16e20f7ec9324f2f0381eaa626788dc61f1a7acad8360d648ce9627669f3c" => :high_sierra
-    sha256 "f696aa117920984beb08f77884fb6cc919d48f737f2684a6dd754ef76e069346" => :sierra
-    sha256 "4022d01b29df2ea81bd8f722c1b1883d718e7804e8c950cdc539c0e7046eb146" => :el_capitan
+    rebuild 1
+    sha256 "55dfcc019ee3d05d03a951bc2c89728b89c61cc61a346667e34cd17bb0e727f7" => :mojave
+    sha256 "be74f7d561ef1551f084c0824b6e6e04658ff5ebda637369127b72f93326ad39" => :high_sierra
+    sha256 "673a1e33ad2ba374c45c444eb05d9160598c9e449e3abb5e452140907b3eac75" => :sierra
+    sha256 "ac389f3bcdc4d485e632a9718d8d47cbcb7ab113ab490951480101a41e521b13" => :el_capitan
   end
 
   depends_on "swig" => :build
