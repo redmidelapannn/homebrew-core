@@ -7,12 +7,11 @@ class Md5deep < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5f5636f7731398f775d757cb4ae913762f725d4d7bd3060a2640c155207d7a2a" => :high_sierra
-    sha256 "4ee90230c25f9872541d3f895fbe010765dd2e5449e56a0987e3652f89014916" => :sierra
-    sha256 "986dad46d2945aac775eb625e41b0236f2413b3924244d5e9aba445994c38687" => :el_capitan
-    sha256 "227b8b8e4f4dd71972cd02062faefef90515b44ef5c3ce55f5c665cf679a26d1" => :yosemite
-    sha256 "1bacd45d420975ff8b90d633e361b54c7f6a14776a41f175313360d31fb03ba4" => :mavericks
-    sha256 "5d68af238b95cffd8959418d804212c50a69cbae90c203d4abb56ceafea93399" => :mountain_lion
+    rebuild 1
+    sha256 "3f6697d767437776e73b50417bedf3ebccdb315ecf3a60de9ba78deb0cccfb76" => :mojave
+    sha256 "5bfbe6b2b3400ea50cd053e8864242ab4832828e6a9e5a6fa64a408ff7354ddc" => :high_sierra
+    sha256 "9407a31f948566270c46ff2012ce9fe0431c0fadbf2c76afd864713313aaec9e" => :sierra
+    sha256 "9e0b7d45adc33537fc5a99c8aaa8c39a4a1a35db855ca40b80a4cead054d5e85" => :el_capitan
   end
 
   depends_on "autoconf" => :build
