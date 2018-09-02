@@ -5,10 +5,11 @@ class Pijul < Formula
   sha256 "da3fcba4ab39a4371cda7273691364c2355c9b216bb7867d92dae5812ebb71d2"
 
   bottle do
-    sha256 "f3a26a1788fc22994cb3523a776f137bcb2cd40af185ac6a4a3419a4b7909354" => :mojave
-    sha256 "471d6fe7837fa61170561c1e19d5a0fe455bae57a5a793b4e087cc3ff0d49e41" => :high_sierra
-    sha256 "8682e459dd342214e3524ecb8849e19dbf38ec5a91fc192d1818d44f1d8e84d7" => :sierra
-    sha256 "6343c522e7fe764dee0141721648060078f20364df4d2c3100683ed1063adf6a" => :el_capitan
+    rebuild 1
+    sha256 "95465c9894da95d24f9cefca31f24e3a983054836af259e4bb9cde5ca3d44b9e" => :mojave
+    sha256 "0558519189f2668cb5543916943b54b761aa230a556f062fde5e55833d106978" => :high_sierra
+    sha256 "aaa3221cd5b1332d422a95dab60b1e052a015014970bd17e5862375ae05c733b" => :sierra
+    sha256 "b91ff77607076dbfcf53a84e65a2abd49b42c0a9aad212fa2499105564e766f8" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
