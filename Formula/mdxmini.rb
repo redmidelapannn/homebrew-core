@@ -6,13 +6,11 @@ class Mdxmini < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "e93281dc0c64642e33763f0dc2a4cfa0a6da0dd4739222b0411e54913435ee27" => :mojave
-    sha256 "5bf36e82084146ab4604b4746bcf6634cfe4268f2044712e4d13519b21ab5165" => :high_sierra
-    sha256 "8e0daf3d508dad59074c567b8c8e60bd88c8026b7dfe1305e4e9c50ec5d8fbbd" => :sierra
-    sha256 "d20b94107c25833096401be6336544f283e6956758d4238e207e6a4e34fa5fdf" => :el_capitan
-    sha256 "55cf6b84d9a0e649e25db7626db954a47bf1061afd20a959972470b6e5cc9fa2" => :yosemite
-    sha256 "d08a617e3a8791b9e5dc93426f3d471408550a4a0bab85e33a726ccdcdcb683c" => :mavericks
+    rebuild 2
+    sha256 "e07f6567ba39cb793faecf8ddd148a498317e44ee0debb319beb06eee90dbf79" => :mojave
+    sha256 "4a0c6eefe14a422738f9033a1d919c18354b61302adc495c06d8a95b778af4d3" => :high_sierra
+    sha256 "5cf076066f7a7ef78eeb735b111ea89e112045621f783305f4ff094ce4f0251b" => :sierra
+    sha256 "6100c215b17f6f47b53ac73560c16bfcd0356125b52b03edbfdc93bcaadf21c3" => :el_capitan
   end
 
   option "with-lib-only", "Do not build commandline player"
