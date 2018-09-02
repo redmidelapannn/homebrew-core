@@ -6,12 +6,11 @@ class B2sum < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a82ef919d2964758ec362f58a177f74d114a4c3186d2ca1b499dfe9f9ea602de" => :mojave
-    sha256 "788c7a6c48666983e7ad84b1a360e7cff97769c2ceeb720f854cc11cd3c2225b" => :high_sierra
-    sha256 "26e11b434c3416172d848b237f67ca5e171c7c11188a5f86c83a5d54a53a8a3f" => :sierra
-    sha256 "ff4a36110ddee427728c3c7027b6e64d4ecdcab4bbe73bf69cf200cbfd877657" => :el_capitan
-    sha256 "ac07e18f25467617297e60a4a46d2309241ecf16adc642d8ef0abfbd6dd2cd70" => :yosemite
-    sha256 "d2adbbbe2cce0efe380586ebbfd6a765fdc092c9d205134119613b0dbf9964ab" => :mavericks
+    rebuild 1
+    sha256 "3b36b9220ed4e19e5fc943d439ed467e6501139ec9a426a5486a0873c5abaf05" => :mojave
+    sha256 "5d2986826bac2a327a00f5e704c94a6abd178e9abb26f61a90ad3232cac72571" => :high_sierra
+    sha256 "113f58e2bfa748263048a38ceb06b9ce9b157c39c72a387e3e424bbb47553c4f" => :sierra
+    sha256 "b4a644160ecdf8ebf8e1d1014ceb706790198e691b296d3643daf7bd38460eed" => :el_capitan
   end
 
   def install
