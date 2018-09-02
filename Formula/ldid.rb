@@ -8,11 +8,11 @@ class Ldid < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2bf739a0271fc467fc18e26d9dd6bb54d824173af0cd45d466aeef3a37031c1b" => :high_sierra
-    sha256 "a10adbb230ad11abdb044006e740b2bb33023a998b111c62e99aa69d8dad4839" => :sierra
-    sha256 "a10adbb230ad11abdb044006e740b2bb33023a998b111c62e99aa69d8dad4839" => :el_capitan
-    sha256 "fda9d5608ad5e6446ed8fd7b3135d8407fc44b88f628dd4c19391738bd57bf6c" => :yosemite
+    rebuild 2
+    sha256 "4da13449cc76cbe75279a03f30752927c17a52d6861bec30f1984b477a340846" => :mojave
+    sha256 "02d23c83888d33a65727af0b98f20181ead2d30e3b30c3380785fa410b5c38ea" => :high_sierra
+    sha256 "bbdc0c85c788311037ced1d5dd194c1d599523843632e623d6f3ead762da79b6" => :sierra
+    sha256 "0f4b637138dddc099a455eaccd7d5c2374a394c2f67cea7d75fa9a997e864433" => :el_capitan
   end
 
   depends_on "openssl"
