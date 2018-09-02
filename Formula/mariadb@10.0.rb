@@ -5,10 +5,11 @@ class MariadbAT100 < Formula
   sha256 "edf5c73b171ebdd0ef1d847c16f6702e831c351662515bf570bdf025d727f1ce"
 
   bottle do
-    sha256 "3fa95d075bb940f91102bee60f3cf201b8b7af4afc867b0c7b4d90f2bcdd6915" => :mojave
-    sha256 "a594cccab73353240192522566c3417a18c6bcd444259c859577be7757604951" => :high_sierra
-    sha256 "56a4d40024e7eac10d022844ffe689b98dcbfa1d6677939747243adaba5ae4de" => :sierra
-    sha256 "488770be03939157c2dd98efbe073b9a57db19a5aad840421e2b9dc1cd7b973b" => :el_capitan
+    rebuild 1
+    sha256 "98c5447f92fad2097cbd36082e3583d13b57bfc4ea3ee0ba3b8bcf9a240948b5" => :mojave
+    sha256 "e5bd96f4cc430e5b91af16784b784e6d202caa8c5646f4975e9599cbf5568409" => :high_sierra
+    sha256 "5b089203266f9547840433ba5f4c419cb5acfa4f3eb0ce8ba7580124744c87b0" => :sierra
+    sha256 "337214069062c33c17d60faf695af9dd5c0efc58f04fec2e51e50dcd41602ec0" => :el_capitan
   end
 
   keg_only :versioned_formula
