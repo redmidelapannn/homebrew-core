@@ -5,10 +5,11 @@ class Mariadb < Formula
   sha256 "561c6969bbd24dbb22d1d196a6b037665389b91e6dab881f39c5616389f156f4"
 
   bottle do
-    sha256 "e09014bc57988d11f2ca998fe15b4cb6b7d94daecd84e4ad03021c3e1bc9f2db" => :mojave
-    sha256 "877f9ffae551b1b424e862d4538e3ef0f09d78da032c013f48dadf33b95bf398" => :high_sierra
-    sha256 "38348d94c86b2604fb3aee0b63c903fd12f7887acf45652805b0b5abd74b8b9c" => :sierra
-    sha256 "98e6b36fce8469107064135fc52d6554fb9ea5e5a5b61fced06213fe7047a4f5" => :el_capitan
+    rebuild 1
+    sha256 "fb27cf438b66e0ef255e5053a837bac9055d79559b708c638a06a9755f197332" => :mojave
+    sha256 "8b069ecbda01306ef4522a0a58d4756c58e1d219236520e13f0da448e5bff68f" => :high_sierra
+    sha256 "bf1222c757452f1f0f63cfc9bdd8e583da11ade3b57aaa3216e731ffba59fad5" => :sierra
+    sha256 "e24f102d887e0250fa829742cc32ffa325036de743ebd3fe584f37576909281a" => :el_capitan
   end
 
   option "with-test", "Keep test when installing"
