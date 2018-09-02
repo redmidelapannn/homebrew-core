@@ -7,12 +7,11 @@ class Libharu < Formula
 
   bottle do
     cellar :any
-    sha256 "70363d91450426724b94040b3fc5130d0e024fc13e08e5747cf47017fb94c76e" => :high_sierra
-    sha256 "860cda2675feea36f82f4b8108927c6a0b1cabca5429c119f63557da11394f74" => :sierra
-    sha256 "68003e06f893b8df9d412960a06c69f6b45cb4ab5abd96e9f10c5936ab8724ac" => :el_capitan
-    sha256 "fd4201d2cf6e068aed5e946b09ae1b22a390ca4ed968084bfed18ed705047987" => :yosemite
-    sha256 "74e714dd0419580bbde47d9458abd95efd4ea316ec0a28e4c665bbeb89401329" => :mavericks
-    sha256 "76798fc963932099d6760d1fcb46cf3b1d829f97cc00ac36b55a5a5aadf4bc3e" => :mountain_lion
+    rebuild 1
+    sha256 "54000fc6d71b7132e4352a43814f075fbb4da1c7aec832069388aa4fba974721" => :mojave
+    sha256 "c38be2b86b7c68540b4e7fe80a43fd0ec4415fe6037a0479d392d8d38db05ce4" => :high_sierra
+    sha256 "41a70337205175651ca15a77cfb793c67b9fa5f08e39941ef1a70e4ab83b3bc3" => :sierra
+    sha256 "f452af553688cf0ea7d17ba62a71707635ea2642395a15cb69469a7bb94679fd" => :el_capitan
   end
 
   depends_on "autoconf" => :build
