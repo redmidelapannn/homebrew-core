@@ -6,9 +6,11 @@ class Travis < Formula
 
   bottle do
     cellar :any
-    sha256 "8b27cde40d7c73e67204e074f5c5870238913f2c0ee98e53d2ee380e79c2a34d" => :high_sierra
-    sha256 "949f0c7f3ae3597a8d496bae2b5edc225eb2c58d19b49dc7c6e80b1c89358ff3" => :sierra
-    sha256 "709c5db7623942d491477ee47637f2012e3e9002aa1d6bceaffdafc87d49565d" => :el_capitan
+    rebuild 1
+    sha256 "c64a8dd01648d7020f195c676c6192b376bedf4501a52c0da66b8c4457eac9e1" => :mojave
+    sha256 "8066772af3785c984ddd1818164fc71117b7745a00c823c820eda2ae69535d88" => :high_sierra
+    sha256 "f73fac13f3f77358ecbf48694a13f79859feb7088e1db8b8634ae11055164641" => :sierra
+    sha256 "d92500a1423b42faaf4f7666f0d527e978474435d0c4a70f444a432f6e5c5ce1" => :el_capitan
   end
 
   depends_on "ruby" if MacOS.version <= :sierra
