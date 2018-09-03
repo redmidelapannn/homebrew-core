@@ -7,8 +7,8 @@ class Catsay < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d05b391718fa15f1e8149522acc3d8dbce72be2b37e6dbf6126204dcebfe36f4" => :mojave
-    sha256 "d05b391718fa15f1e8149522acc3d8dbce72be2b37e6dbf6126204dcebfe36f4" => :high_sierra
+    sha256 "01c36f9177fa205e8c027950d6b4367e40e54d3664a1255a4cc68a04908cb5d7" => :mojave
+    sha256 "d1f2e6658c24074cd04fb8fae1db54b0e54fdb2c543288dcdbf27bad9806bd9b" => :high_sierra
   end
 
   depends_on "go" => :build
