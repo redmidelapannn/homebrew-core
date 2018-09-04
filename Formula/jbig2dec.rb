@@ -6,9 +6,11 @@ class Jbig2dec < Formula
 
   bottle do
     cellar :any
-    sha256 "197656bee979449ea283d855f0332afa414a31f7114123f477f3f9f2cc192763" => :high_sierra
-    sha256 "a98bac77f5b916d67c1c7742ee3462af053c2ff0726dacaf5b0bcb2e9aef7e74" => :sierra
-    sha256 "beb6ea36ce8edffa4ff8569231413fab5f3de7338379b35b49d208e16243577d" => :el_capitan
+    rebuild 1
+    sha256 "b66bfe3d9038b94c648a3423185828e19d7bc68e88f85722572274f7467a7c34" => :mojave
+    sha256 "77a357bfe8dc83cc5c7e5fae38b61672b2220e88b2f4c30dfce057adb9fe03dc" => :high_sierra
+    sha256 "4d367d861e57542bd1b60e17f476d145be6ff30fbfdeff0e64147ab2c7ae2fea" => :sierra
+    sha256 "29339bafdd899bfc155dd7c017bb13c0e1f1044e059923cfd9ecf5c93366fbdf" => :el_capitan
   end
 
   depends_on "libpng" => :optional
