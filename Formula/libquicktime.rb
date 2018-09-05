@@ -6,11 +6,9 @@ class Libquicktime < Formula
   revision 4
 
   bottle do
-    rebuild 1
-    sha256 "2bd4f42d7ce3fe5201adc32a8a861a6a2dffc3fb9a7aaf8abbdd2e976ef37cfd" => :mojave
-    sha256 "aece680a44a90c17ec0302731951e9d6be28e3805faebbcb2c83112051faa621" => :high_sierra
-    sha256 "2d5e161d907515618e2a90795803069d0ceec5d2480b1126041706e480349ded" => :sierra
-    sha256 "bb90ed12e349973bbc4cfd143718801aa60de918325e1a109dd60b704497faae" => :el_capitan
+    rebuild 2
+    sha256 "20551a06977418d55fb5f0f7501f91b9ff3e3ddb6fa75d67433a9e67901151ed" => :mojave
+    sha256 "124bf97cad91d6c59b6c54d21e51d5290c83990f6cd3d0ab722a6954543dbc55" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
