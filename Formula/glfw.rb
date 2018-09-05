@@ -7,11 +7,10 @@ class Glfw < Formula
 
   bottle do
     cellar :any
-    sha256 "04b6332acfa686339994bd5b8409a11601bdf03c70ba611792e3575eec638ac9" => :mojave
-    sha256 "dd4e0a7ec81510315f7f3a443c09f682ff95b6edd59f1f1e507d656aabe86b41" => :high_sierra
-    sha256 "c19bbe78ab9d7d376b2cd265389348e4ad4572b9881bb1048b05d3eb4bc67762" => :sierra
-    sha256 "874e364604c386252a1d639f24c8d2333bc4715c67acd77109c291d724509538" => :el_capitan
-    sha256 "ecfc037c61cedd936d230880dd052691e8c07c4f10c3c95ccde4d8bc4e3f5e35" => :yosemite
+    rebuild 1
+    sha256 "c1444f5d32bc3c92629c2fbb85504bafbb5cf6d62a902754e10d3252684d4e16" => :mojave
+    sha256 "4205ce7b8cde6e6deb5eb3f4f36ae618015a69e8bb7d3411035eac094a3511e4" => :sierra
+    sha256 "3e014b376eb1eaf447ce39bebf00bf56bc1f8d33263017d418d2d9f6ce17b9f1" => :el_capitan
   end
 
   option "without-shared-library", "Build static library only (defaults to building dylib only)"
