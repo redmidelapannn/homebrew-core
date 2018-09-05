@@ -7,10 +7,11 @@ class Lean < Formula
 
   bottle do
     cellar :any
-    sha256 "f9b31e72b4a0c314c09af988e21172bcfce644487a2e7f4d0bafb898be3a8ee0" => :mojave
-    sha256 "5afcb08796f1e4bf4600006c7b3ebcb76e90f15a14bce73af97f55f1896a4ef1" => :high_sierra
-    sha256 "4c25bc5a6233614a706323e9a4bfec26bb83f10d67a96f05272ad2c0fe2c7e71" => :sierra
-    sha256 "711ed18ebd939e8db24c1c87cba002fd6e590fbc92e110aae7e78310852343b2" => :el_capitan
+    rebuild 1
+    sha256 "5cc170c2da907399bf72c6bb6b84258cc627fa329dbefedc147b57ad6ea0c49c" => :mojave
+    sha256 "872b759b44ce76bb431e7a6774bb866a8c022df22a78e80394711e41708e333c" => :high_sierra
+    sha256 "a4baff592d5f239d257e35671bd301f361c0d19151c8ac902da38c42a6433fd1" => :sierra
+    sha256 "62dfc2361842e8dfdf2ceb2f7af4dc9972543bd57540bd6e0cf9883c017b6ad9" => :el_capitan
   end
 
   depends_on "cmake" => :build
