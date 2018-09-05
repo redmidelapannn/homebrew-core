@@ -6,11 +6,9 @@ class Libgetdata < Formula
   revision 1
 
   bottle do
-    rebuild 2
-    sha256 "fa65dd52dae9d73aeaa6fdf33edb9c589b537c7aa8dde1bc07ba62ecf5718370" => :mojave
-    sha256 "13e9d36f7ee8156ad9b5ffaa646588084e9212238aafbab50849f60c6cad0ab9" => :high_sierra
-    sha256 "9a96ebcf2d456594b5205c2ff0918dc7bcfff29be358fd6e369131f941e02f75" => :sierra
-    sha256 "88055dcabc5ed8b6cc068e244f8174eb798fd778e67a27867b3a0b33b3453121" => :el_capitan
+    rebuild 3
+    sha256 "9438b16a68169cca57a4496a4ccd8cc5fe3d662dd3a26e0dc67a8695af11e380" => :mojave
+    sha256 "12d0efbac8923f9697c1ba15578004b7e2404caddb72c9b9a85cbcd03e3fc51a" => :el_capitan
   end
 
   depends_on "libtool"
