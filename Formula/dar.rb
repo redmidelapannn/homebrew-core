@@ -5,10 +5,10 @@ class Dar < Formula
   sha256 "e957c97101a17dc91dca00078457f225d2fa375d0db0ead7a64035378d4fc33b"
 
   bottle do
-    sha256 "ade6a894717bc00148d259f5c48b19172f12a307b84d2003f9a56ee95017d0a4" => :mojave
-    sha256 "b8e79c81345db6df1b985d0b05d7fef3f0f72c3a0dfd356cd048de5e483f31ed" => :high_sierra
-    sha256 "235d95dab2ef03ef746019989ca0939602903d79505bc3767d974f411996bb6b" => :sierra
-    sha256 "0f3d68d33877c3d98b9d8fbacdbd52c54569ccc1a46130ecec244415c58c5c73" => :el_capitan
+    rebuild 1
+    sha256 "8d267c188eed7df39466212dcfdd850845d0baa17782fef9c07dd2dcbead53ce" => :mojave
+    sha256 "492d86c20aaa281380d222d74703ff19404b95e9f786782ef18fb4b44affa373" => :sierra
+    sha256 "cf9932017786500c3270a78bae3e7793d4a565b72e4b53a6694edde75265b508" => :el_capitan
   end
 
   depends_on :macos => :el_capitan # needs thread-local storage
