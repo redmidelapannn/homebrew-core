@@ -21,10 +21,11 @@ class Audacious < Formula
   end
 
   bottle do
-    sha256 "e32b10763bb9ff68a632a6f5adfbd55f3884637dbdb892830ea77ab91d1446e0" => :mojave
-    sha256 "facd97bdfb3935149d7c51035b38e3a1f7f3c7b705074eb75a1a795844bf739a" => :high_sierra
-    sha256 "1acf6566b58d9ab31e088ed8e3f30aba30e171a32e0121f46f0f954a3871f7e9" => :sierra
-    sha256 "c9238f08f8f9328ca7b427e2616698d6bea975b33fbcbe2e52c8a2f4b8f5b009" => :el_capitan
+    rebuild 1
+    sha256 "ab40418a2f83b1bac94304d1ecb28226cfc786dc680fd19099840f66ce5e0f60" => :mojave
+    sha256 "58d9eb72f5d8d0c37219ddc8c4b70919a6a398dba2b2abf8cd33e04769af2bff" => :high_sierra
+    sha256 "a595687aa569e7308da89bae1d23276766119400f6fb9a757b422e921a8600a7" => :sierra
+    sha256 "ea6e2046e8b9f48848aca4cf9938f46404b66a8be2e61fc55731f71a266005ab" => :el_capitan
   end
 
   head do
