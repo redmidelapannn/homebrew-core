@@ -5,10 +5,11 @@ class Imlib2 < Formula
   sha256 "fa4e57452b8843f4a70f70fd435c746ae2ace813250f8c65f977db5d7914baae"
 
   bottle do
-    sha256 "bf73b51f136932cbf6403da131f9e509eb05b6c677a42c1edcc82e5003d3e40e" => :mojave
-    sha256 "7edcb670d36ba9a1ff093c23f08a87162e7ff0969591a5666ba4e7c42b91a047" => :high_sierra
-    sha256 "2e9f97ed9f360067b209b424ef476282a12be3bea11cc30ef10b9848d7a754f8" => :sierra
-    sha256 "90bd1801b3f7c1ada18b6a2982770453893c3f71b2fa07621e6a5c051e1776a9" => :el_capitan
+    rebuild 1
+    sha256 "0174474e2fdaac2443d5e0df0db63ea44cb2d7d070d61e17a25f0378f30f5d18" => :mojave
+    sha256 "40d94a9bc178e41f50fb03891bb3d63c64bc67d0d7374d05f42b9c8e318f1897" => :high_sierra
+    sha256 "7185b0a647b50e3f84fb009ab3124a379ead5afdfc62340887c20477db3c91e8" => :sierra
+    sha256 "430af9843fe2fe524b0fcb59055e01f55d4a0af70efbd9a30206e37d76816a58" => :el_capitan
   end
 
   deprecated_option "without-x" => "without-x11"
