@@ -7,11 +7,10 @@ class DockerMachineDriverXhyve < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "826c8da536f8a69110a0b0ad81e94b23449fa0adc5aaa4c4a77f2ed4bc4108b6" => :high_sierra
-    sha256 "407e1ed8a553f39fab89269acf1d94c28f6496e1314d7166d35463178c170640" => :sierra
-    sha256 "1cef89278cc1df107d71187bdc0f24d941d4d92d4d773fe0ffe50033a16118f5" => :el_capitan
-    sha256 "10bc22b8ece5f7ae8fa190d3c95b6f0f4825a5d1adcb941500c993f4b9ddf2a9" => :yosemite
+    rebuild 2
+    sha256 "7ea1872dea10129ff17a94e73a832876b0dd710d533435840bc7d79a26e8c153" => :high_sierra
+    sha256 "5702faf4b0875678f60dabb96f7aca2bc4c84fad447359025a66b99e01b9bc94" => :sierra
+    sha256 "f471c39f03f204ad66f9233293ef6691f162caa123a422489b59553b80c76158" => :el_capitan
   end
 
   option "without-qcow2", "Do not support qcow2 disk image format"
