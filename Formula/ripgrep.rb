@@ -6,10 +6,10 @@ class Ripgrep < Formula
   head "https://github.com/BurntSushi/ripgrep.git"
 
   bottle do
-    sha256 "b168815e3e220bb89b602862e1fef3bae6750ae3c6a81efb6042bc772a5e7c53" => :mojave
-    sha256 "e653274f21c9e0999512f7afd79490920c1ef70b6f22920088153f02aca3ef5c" => :high_sierra
-    sha256 "254e9f86612959b580f200351051ba280f69d4e90b130788fde98803b9af2404" => :sierra
-    sha256 "ec3feeb2827f940b783545b9b8fc9b42b54ea0d8307655d682fa24df70cd4f43" => :el_capitan
+    sha256 "9aa23dac90f133c58c7ac69d53eaca4550e12a23b0c4741e7e436eb957b35849" => :mojave
+    sha256 "d12d7933090a913801e8f8bf43039409ff9e4f60a270bc20aa70e97a5783ed1e" => :high_sierra
+    sha256 "05241afd9845ef7dbe99d104cd8551b354422275cb635ce6904d68c1e7881f17" => :sierra
+    sha256 "a0383557f24f5d6e187b3652f2226b51e7204bc0427d6cdda6d86e0d05b8a1df" => :el_capitan
   end
 
   option "with-pcre2", "Enable PCRE2 support"
