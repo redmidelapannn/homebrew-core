@@ -5,11 +5,11 @@ class Soci < Formula
   sha256 "1166664d5d7c4552c4c2abf173f98fa4427fbb454930fd04de3a39782553199e"
 
   bottle do
-    sha256 "2e20ceced92132166cffae968a007d5150a6e620c1059e54e82ae0938eaf42ed" => :mojave
-    sha256 "b6186caa197c5111b9704cc4b4f133f0f5f656727ed3211c7351e2a97302f10f" => :high_sierra
-    sha256 "61ac3ada591371a743198251fa35d70a18cc6018d23e4a36e3ec45aa6ec99db2" => :sierra
-    sha256 "4b8d8acc29c2ed8e826be84c9dc777d947033396336885440fb823530460b470" => :el_capitan
-    sha256 "b802ee253ceb25ebfd2b5a90ef4dc8b229a90c7b1cae1a33533c9bd2ff9e7d50" => :yosemite
+    rebuild 1
+    sha256 "0ef48b17911e885691dae7acad8f6085b85aec719b6d183eaa2c51cd2ddb9650" => :mojave
+    sha256 "8eca32f34e057891de14e7c024d6ade797e0a796a4b90a2fa5d78a8c15ab825d" => :high_sierra
+    sha256 "ad3b3bad49e14a21fd908dbabf30e7553bbb65f1f4e55f1aff6d16a1bb44d689" => :sierra
+    sha256 "8b356d5c7ba6ef1554b5fd271ced0a024166b7b5b051eb1076750a53ea21e7e4" => :el_capitan
   end
 
   option "with-oracle", "Enable Oracle support."
