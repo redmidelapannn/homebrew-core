@@ -8,9 +8,9 @@ class SwiftlintAT0260 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "69de36cfca7bd7a753661a33217fac434b621e889ce77527cb91f34cf0de5d36" => :mojave
-    sha256 "ab239a665b7546749a38ceb9f7ac1f7199efebc1a015d22f36f467fc9d0c69ea" => :high_sierra
-    sha256 "fd36f14e08a2ec39fcd9ed0eca050a204ee29d58141f9fcbce555331af9138e8" => :sierra
+    sha256 "cb312c9ff63dbd86197ef5bb7ee7551f8259f07959a2085201a10b5f81dbd844" => :mojave
+    sha256 "17c9de4b45ef31cd2684f0f07f5808921f3d6026991bbd64fa97df1a490820e4" => :high_sierra
+    sha256 "294c06a2981e418ebc6e11e75453bc9e5f341611cf4d1a477564b3415455a8b0" => :sierra
   end
 
   depends_on :xcode => "8.0"
