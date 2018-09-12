@@ -7,11 +7,12 @@ class Syncthing < Formula
   head "https://github.com/syncthing/syncthing.git"
 
   bottle do
+    root_url "https://homebrew.bintray.com/bottles"
     cellar :any_skip_relocation
-    sha256 "3a26783cde5ad67e0b8b98a5ec0e5f3328fedea532f4c240b7c243b41c7f3aba" => :mojave
-    sha256 "a8b3a24dfd2c2cc05370999d0366e4ccc286d26f6527f6070592e9a6be30f263" => :high_sierra
-    sha256 "734eb4c3b62015ef1a8cec32b6cb18a9563f00ac9aacd19f90dbfc1ea3956f6c" => :sierra
-    sha256 "a491e90ab72f271bf5275df4988d6f0e1eb817cbbb9f93c07fc2361637a83dba" => :el_capitan
+    sha256 "b1f69e1595025ca22e9eec1584efbf3de88201351a3f579b1fb8c985de9b0350" => :mojave
+    sha256 "bd9430c6012274e69b263903d99324a16ee2d0dd9582e4858d0c69bcaa1a2a3c" => :high_sierra
+    sha256 "35a322ea276ee6b27aff264d3ca7ff42f97446f00cba699267d62540b14dbb82" => :sierra
+    sha256 "0d2df95873ea8c084b515fcb64ac24babc7bad20738da75e0515ac76889eea2c" => :el_capitan
   end
 
   depends_on "go" => :build
