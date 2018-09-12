@@ -6,11 +6,11 @@ class Unbound < Formula
   head "https://nlnetlabs.nl/svn/unbound/trunk/", :using => :svn
 
   bottle do
-    rebuild 1
-    sha256 "f47192f79b85a6d21f7837aa85d0061cdd97a4976e41b5fbf49cf215b0482959" => :mojave
-    sha256 "c6a5ac9d52f141bcf0e2d8c3625a95a125c7868663e3145cb4cdccbcacaa7bbd" => :high_sierra
-    sha256 "388a28ae2b7f4cb03fc7e1461115671799f0e356aa375d35313c29f1e0448f9b" => :sierra
-    sha256 "457aefbc06c993b8c8712d7686f8542b59fc993d49f2efe4493543404be95ace" => :el_capitan
+    root_url "https://homebrew.bintray.com/bottles"
+    sha256 "91c9433b511c3adb51e28494fda633dbac9f68e90fcc668139ecd14a8427a458" => :mojave
+    sha256 "779797785e9cf4d1e3c0aff23c05ada1e153313e9a1288ab07f8a4c347f929ec" => :high_sierra
+    sha256 "fb5d7bdaa815cfd59f0ab056aa92fd74d5c037749092b46cfef55e907f1e302e" => :sierra
+    sha256 "053ca8187353cc5699154e0a699f133dc5e706604826c4e9a1f9f3f951b6a992" => :el_capitan
   end
 
   deprecated_option "with-python" => "with-python@2"
