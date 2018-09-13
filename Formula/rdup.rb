@@ -7,12 +7,11 @@ class Rdup < Formula
 
   bottle do
     cellar :any
-    sha256 "c198ebca564d97de07f9571c296c93239a58dbc195648e9c6eb25e5ba8c363e5" => :mojave
-    sha256 "9a5c191bea14d721e49d5622567104e6fc1b6e6c3326e528ba8a08498fb66c46" => :high_sierra
-    sha256 "43582c3cc5fb02bb50a73d71963045fa27cc38d03eed2e1e57d915a7f5c162cc" => :sierra
-    sha256 "c9afd06e3d3cfb9628c9618723d1913916f2563d2b18159cffe2b2586ce0c508" => :el_capitan
-    sha256 "0b83116666ac22439d46a6d92f6d75eb3dd7f231021dbc441c2388b4bd076e00" => :yosemite
-    sha256 "ddfd0b0a7116c618739caffb054a0b149e17c7bf517c512ccb1543c3e7784275" => :mavericks
+    rebuild 1
+    sha256 "e3043e6b39f95f70208fdf6f498990c8ab70b0e74180c7c8e7d500edcc88b30c" => :mojave
+    sha256 "ea28df7b2ad7ee2c343b2e18f1339d4bfcb61010956a740837df636a6f4bd03a" => :high_sierra
+    sha256 "e1d155ed13f5c8676e08171e21a0bf54d3abda0d4a9dee7c1e27c1b5401f3c91" => :sierra
+    sha256 "d0644ae5e23551c75d33c0834267824285f654c0bdb061ce6fdec150d3790ce2" => :el_capitan
   end
 
   depends_on "autoconf" => :build
