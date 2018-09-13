@@ -6,13 +6,11 @@ class Sha2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 3
-    sha256 "2091072f27778b0a921e7f4a937e90745f75186f7e532db1170847458275aea7" => :mojave
-    sha256 "ae8fb4e03f1272bd6d323669b311ddffd021a945e0beba52ae288f1fa7d4639b" => :high_sierra
-    sha256 "133588f831b1848abef49c88fd7587052990ad4b7133dc300a5c6aed806b1801" => :sierra
-    sha256 "84ce281185ba415257d8507e9b16ba8dc3189ec8b8414d21a6421d5979a025d2" => :el_capitan
-    sha256 "da63b7e9be95c91bcdc3290e3c6caee12016c5d59960144ea26f8c6438dfe680" => :yosemite
-    sha256 "34650fbb427aa57f452acc23a338696756792907bd7e127d7b495a7fd7e4573a" => :mavericks
+    rebuild 4
+    sha256 "5f8c15a0894a01e0bc3fb215cd9131e27ebd6e8d394e24a33d5a33449e7134ac" => :mojave
+    sha256 "bcde6347d09fabeea0c4758cb69925812e9133703afabe0759357671e5aa6a11" => :high_sierra
+    sha256 "78ffa5b44d996d289a1421e11668279e529b2f77458eead61e5c5453c3a52517" => :sierra
+    sha256 "9f88787ab1a8a82543665940fea3c4b3e231a4a4998cc184364d324e0f28e9f5" => :el_capitan
   end
 
   def install
