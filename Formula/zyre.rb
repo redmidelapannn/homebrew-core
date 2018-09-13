@@ -6,11 +6,11 @@ class Zyre < Formula
 
   bottle do
     cellar :any
-    sha256 "0bcd7f6da37e2249b2a80b00703064ec2b1332bff9979a40bff84a19c38c1d3f" => :mojave
-    sha256 "7f9c25da501db588f3268e4f1fe99ec58357b41cd601a61859ebbce2eb875dee" => :high_sierra
-    sha256 "f8f694368da98cd4781d43b1e4e18db94584ce1f8508b41d492d81194a15db3c" => :sierra
-    sha256 "1402b11567fa689064366bf9f8fe9527dba8dfe9246e35b02130a344aa879a9b" => :el_capitan
-    sha256 "1170a594d0eff7a57df26150d92daa37382ca6469d320e84957afb184560f691" => :yosemite
+    rebuild 1
+    sha256 "d812868733801aa4db9f83c3bb1c66f48a66754d6f17f065e84a1e267b8f27d8" => :mojave
+    sha256 "e791b216309160f36fb2fc4ba35fae67a753ffe1b8b0e46051af8942a1ae0afb" => :high_sierra
+    sha256 "687a93277c2d8d53b6c8aa37a9659fb8958d678174e68a1b0ce63d0faaadef42" => :sierra
+    sha256 "57cff19c5b862f3ab746227fbbff0b9c10cad6451e44868e063516f862b267bc" => :el_capitan
   end
 
   head do
