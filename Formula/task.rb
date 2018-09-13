@@ -6,12 +6,11 @@ class Task < Formula
   head "https://github.com/GothenburgBitFactory/taskwarrior.git", :branch => "2.6.0", :shallow => false
 
   bottle do
-    sha256 "bba98b6bdfb3f79f1434229d8ade4b0622119320353da0eb8fec39809d66947d" => :mojave
-    sha256 "6a651be957b736bef14633efedef011a81c49ee37178eae4d8ef863549d7c584" => :high_sierra
-    sha256 "d1cb582ab9ee211ec154690634b5988f8058ead31000c74d5cdfa949d319d0ed" => :sierra
-    sha256 "07aa2c19ae6d7a9a46b286bfc48fa970aa9a9e0237e034bbaab354dcfc4f6848" => :el_capitan
-    sha256 "113fc7ce057c51ea14021006a4106c25d29e361e4b70113e33fb7a83e57ee8d1" => :yosemite
-    sha256 "7888e42210edb6691ff57d056585536abd318d62b43a898bb98e286373519164" => :mavericks
+    rebuild 1
+    sha256 "751351a1e214149d30af3aac83a6ddee9c16eb1c88f4c558fb1b0a7c872bbc99" => :mojave
+    sha256 "bebdda05252dd770b59b06d52f47df761f3bfee8a4f076ffbbfc5790380ef5ca" => :high_sierra
+    sha256 "1a561db3e60cbe31ddcb57da00ecb7e2e7298f9f6b6ea23cd8dda63d24fb757c" => :sierra
+    sha256 "f55a5a83a6aeb56262dbebd09ba3531747ecc7ddb8875053d9e5e7a24642da34" => :el_capitan
   end
 
   depends_on "cmake" => :build
