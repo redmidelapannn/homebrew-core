@@ -8,12 +8,11 @@ class Arabica < Formula
 
   bottle do
     cellar :any
-    sha256 "448e31922f8c9b913ca5ca450599bfd631ed9781007cb7ff64fe69f14014cc27" => :mojave
-    sha256 "0d3da860ba0b953abb9f70665cc73620ae2b0cd0570dacb55bfe8954ae0d58e7" => :high_sierra
-    sha256 "6a08cb5b8af8d2034569451ad499260acebc610ab390383b20398fc10a6fb115" => :sierra
-    sha256 "185edd120b5759f25d1e69b9f24840eef6a404b1001c90e684546e359cf75928" => :el_capitan
-    sha256 "1882f30edf8da8d98df603a6006c3dce96e21941e4266103366930b3e5a922c2" => :yosemite
-    sha256 "5d247d4d5819106404bc7091e3b6141b4d298c77636bee39bfc524a3c5481e7f" => :mavericks
+    rebuild 1
+    sha256 "aefbce0108cec20902dc7e80ba1eaad05129fc837dc7f212ce64af10f61837dc" => :mojave
+    sha256 "f304bf738fa0e2b09fd341c13be57bfbd404362548ce2b6cd3bc26019371b497" => :high_sierra
+    sha256 "bf5e673a2e09f796de2de88b8878f58122baac54da47cc3c0d44808669e11eaf" => :sierra
+    sha256 "63026cc1843e09ab44a3988d8032087b7cb6a5b7ba23b1223e84914263cbcf70" => :el_capitan
   end
 
   depends_on "autoconf" => :build
