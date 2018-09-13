@@ -6,10 +6,11 @@ class Pmdmini < Formula
 
   bottle do
     cellar :any
-    sha256 "fe87429ee546fa0629d178c52476c4cc5696abac76b21abcd3e4977c7527bd22" => :mojave
-    sha256 "c3195012d5b5333e76c1a8a44b3f734575540deee884dfb6685e139e1038c138" => :high_sierra
-    sha256 "59b287650c6e40c20da8000f5e73b910f8096bd949e4432b4f11e70b1c779a5d" => :sierra
-    sha256 "72afd84c66fef9f142a1922fd0995a6a173b46c40d06715808345cc1c71b6702" => :el_capitan
+    rebuild 1
+    sha256 "aceaee918964780ee6a7fefd7cb995b003f566dcfe18c76437f5d75b14d93e79" => :mojave
+    sha256 "a01c2c1c1dcfb6d5e1c04a88d92ff39b24d994b393a79b19ec538b257371144b" => :high_sierra
+    sha256 "2a56c9afe96358398cfc8cae60d2292f6bdbdb0391a051eb69c8b8bfc8986b48" => :sierra
+    sha256 "841b6a8e08a33fcbb5960548535ac7dcb862f39846d0306f155c2cfa678df776" => :el_capitan
   end
 
   depends_on "sdl"
