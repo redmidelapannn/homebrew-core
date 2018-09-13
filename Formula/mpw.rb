@@ -9,10 +9,11 @@ class Mpw < Formula
 
   bottle do
     cellar :any
-    sha256 "8c63ff8456087dc2476df24055a58dfc6f8eb79f84c611f963ef1964fa13819b" => :mojave
-    sha256 "46677cf8649983d5b77103d2ca56d9ad3697808ecc406f626a3462a089f932da" => :high_sierra
-    sha256 "19bf22915b3c534ad3ee6f1dfc20f142d53ae6c0c88757ae2632b7b1daa6667f" => :sierra
-    sha256 "7090c3d31289d2ac5529bd0a6bae2632a36ba7fcd4bb7974248bb36a15f67c7e" => :el_capitan
+    rebuild 1
+    sha256 "17a1dc09f000bfd2f45b4c74f3b3ea0a58016f80e726ae5c7fb10392da4a8815" => :mojave
+    sha256 "723eb3f761e2711472980ecb3de7ef218dc5bea25c8aee95e9c156c97b4527a6" => :high_sierra
+    sha256 "3f3e4c272be0858dce668f338d71cbed4542accc2f5956805eae04e8b351ccf7" => :sierra
+    sha256 "23c11d9f7e070dd3c1caf677a7b5106ef72d2813f38a7c8ebd577601494fe11c" => :el_capitan
   end
 
   depends_on "json-c"
