@@ -16,11 +16,11 @@ class ArxLibertatis < Formula
 
   bottle do
     cellar :any
-    sha256 "9e9f88d9c0c24e99bed8f2243da32fe41b1859aaa25121dab9d4c20a354ef5e6" => :mojave
-    sha256 "eaff0f12ab121a5964e7d0cd8c9272a39daba70a268d039728947c72885be8b2" => :high_sierra
-    sha256 "9a7629e5033f4180f9e0a82bb018c2f00403c09aa473cfa0224301cc405fb6d3" => :sierra
-    sha256 "8824a97e84542832da85eeb48b79a6b1de189ddf6ebe041fc7f1c9cb874fad21" => :el_capitan
-    sha256 "1fc2d3c07f6f1a1cf1470138329290484145f7774b16fc5a8ca82d01ea194312" => :yosemite
+    rebuild 1
+    sha256 "135aff9b1959e13cf8eb3db199bf19960bb417f54469343e37d21c42757f301d" => :mojave
+    sha256 "eea05283ebdc64acf8be60b090609b522218a2e29fcbd6208810e9cee3740ae7" => :high_sierra
+    sha256 "db0253ba3ff997010ecdc3fa781ab63ffc0d1051ad4e2c9918e577fa3c760e21" => :sierra
+    sha256 "a7b764e45818c3a96fedd99cbae2ed9391f2de97bdcd2a919d3038dfa9668b28" => :el_capitan
   end
 
   head do
