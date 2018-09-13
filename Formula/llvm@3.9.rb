@@ -24,11 +24,13 @@ class LlvmAT39 < Formula
   revision 1
 
   bottle do
+    root_url "https://homebrew.bintray.com/bottles"
     cellar :any
-    sha256 "82fcabcbc4e8594bba74a511c0f127f7b8187e5452e0cd77d6e6fc2f008f1b1c" => :high_sierra
-    sha256 "6349b9f0e6202230c159a3b08ca835931b922589e328b5f7fc850ac651c3eff6" => :sierra
-    sha256 "227667c28cb291529dba440a43cc19504ef621ffd1990303f0d7f2b4a9978e67" => :el_capitan
-    sha256 "aed4411921127ddfc377c4203dc2a4f313d56103a79126be83a9b954d1cb8223" => :yosemite
+    rebuild 1
+    sha256 "7aa4d371faf1d4049930e4e41eba8273dd3c6b410dc77a2b6995054eb50e2341" => :mojave
+    sha256 "07b7332212d759922c9ec50256c28950856cbdfefbd434dd5b7491f837a4fd6d" => :high_sierra
+    sha256 "b0a9e98be7beb66c21ad0afe2306b4adab12e7a04b0a9d020fa6a5f0f68e4aaa" => :sierra
+    sha256 "8b842d535659c4b2ca538113071f832cea0e8b7dfd04e7adc0fd07d02cfc9404" => :el_capitan
   end
 
   keg_only :versioned_formula
