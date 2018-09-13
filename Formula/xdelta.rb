@@ -6,12 +6,11 @@ class Xdelta < Formula
 
   bottle do
     cellar :any
-    sha256 "29a63934406537a96b023609a87998574d41943ed2cfe816b3febc24b7cc7db1" => :mojave
-    sha256 "a65a726ce73eeebb9abfdf8069b08658dc4fad13527d4d162d1119cc32702b11" => :high_sierra
-    sha256 "7f51b76d06a6ac8aae36c10b41776a374d5fafa6b55c4908a885be7a88194676" => :sierra
-    sha256 "e07f928aadf6a9d8beb8a19fb72cb673cf0ae13c339ccd75c5df134cb3bc5c09" => :el_capitan
-    sha256 "2581a9d0aabf6f6b34d35aae4d7ab07b6aaebdb70fd3b00ef14eff3bd96aa6c7" => :yosemite
-    sha256 "a0801a8bd9796d03d8c031905e28a6e5f50b155da3102337070ec787ccb5cee9" => :mavericks
+    rebuild 1
+    sha256 "23338bc82166824de8f6d6356977ffd0b5ed2dc5a1283913f2b07fc0a009eab8" => :mojave
+    sha256 "6def325ace77308c533df41a5577aa14474394d1f36f17dbc589ab95bf7bd744" => :high_sierra
+    sha256 "d7dd0f2bf5c42e03c0d718c6a633d0e4a2193dc29a47f3837156bcc28393cf43" => :sierra
+    sha256 "9ae3af4a4e1f9ca00c3ed3ce16aaa7090939a7fad6a741b042b0aabec9fac172" => :el_capitan
   end
 
   depends_on "autoconf" => :build
