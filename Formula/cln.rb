@@ -6,13 +6,11 @@ class Cln < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "fb15fc6efff1c2266f858dc081bb5d2d67e8e2ae2abc50a23883879fab343f22" => :mojave
-    sha256 "8ba5137f3ca736e16650418d4ea075f0e2c85ea87d88824e68f367bf5c4216dd" => :high_sierra
-    sha256 "da1f2677ac3df8180bfebd9fa59804610d4b3e0020adcc47ffe839ad831006e4" => :sierra
-    sha256 "b816f165673f58fb952669c7fa542b2fe52257e6572853785efee0048ea35d6a" => :el_capitan
-    sha256 "95e74408a4b9dca4e7a939d2ff79e9ab16f3193622027d3d741eb6fc9cc7695d" => :yosemite
-    sha256 "048947d9343c8848897be272cae74d98cd869fa3d64fa6f2bfe82cb68ca100b9" => :mavericks
+    rebuild 2
+    sha256 "44f3adc07d2554ac1ec9f5c1dc70ded373a12f5785aaa27acd0dcd4b452b30e9" => :mojave
+    sha256 "d72de6f6f81da0bf70a268a047342b0bee58a9e34e3479a8acdf888907238c82" => :high_sierra
+    sha256 "7bccb975ae4bff3a0cdfeb7122f097c98b2c4d406192656cc0886233f1d2de6e" => :sierra
+    sha256 "7d8a4fba329eecdbb9a07c87ba603e580f3c13d13be2da348f773dbd23e2dd78" => :el_capitan
   end
 
   depends_on "gmp"
