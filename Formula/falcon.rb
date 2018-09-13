@@ -6,14 +6,8 @@ class Falcon < Formula
   sha256 "f4b00983e7f91a806675d906afd2d51dcee048f12ad3af4b1dadd92059fa44b9"
 
   bottle do
-    rebuild 1
-    sha256 "f9741251c89c441ae25ada11413ae31e988f00f84ddc05b80549d62fd2db31a4" => :mojave
-    sha256 "6349ea1828c7474157a6bac4131c4ac952aba1330014ffd92efeaecc6ebe486f" => :high_sierra
-    sha256 "560217a0114fb31f303271eb925da7959d8e02fb8e3d118c0ea449f34ddd3e7b" => :sierra
-    sha256 "48f3fc7a4ee3f479b0dafae18262cb900d64f43f5a3f2fa32727b65f6836f81e" => :el_capitan
-    sha256 "e5dc11f9529c43c216dc304df212eab022ce654fc551ad244a291a6b861931b8" => :yosemite
-    sha256 "bf2a677c2d6777b577bffc22d3c75a65525700bef6478035dececa002e5e11ec" => :mavericks
-    sha256 "9730e050c70ad2803afdf9cd03b108b8c4bb57b797bd92595523ad0731639b81" => :mountain_lion
+    rebuild 2
+    sha256 "0aeb6eb652e8f2f6d8fb2be7b61cae2503b55dbd4a68449e2421e04aab4cf22b" => :mojave
   end
 
   depends_on "cmake" => :build
