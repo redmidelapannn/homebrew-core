@@ -7,10 +7,11 @@ class Blahtexml < Formula
 
   bottle do
     cellar :any
-    sha256 "23f943fa053e861b0f6c9f2e9cfa1c74d6b8966ac698e6650386d44f7d7de31b" => :mojave
-    sha256 "c2696cdaa1724541f0d07900219247365e30061a471df0b80f6469b3bc2b4a14" => :high_sierra
-    sha256 "bcd628072b5b7d6625e2b2caad1c6f64483807facda1b2eff32795de1b25070f" => :sierra
-    sha256 "b1788b8622b704c67b11295f6bf84ab881298980f8101b5fed6cb7441b4edc82" => :el_capitan
+    rebuild 1
+    sha256 "56999a45fa8f4b46e0728f5df7bb6967988f19a61209450b98d78b18cf6d6d44" => :mojave
+    sha256 "bca29f2cc7aafc1e7d1dc501ff3894195fd7e00fb3d625d50dcb4827308f5f2f" => :high_sierra
+    sha256 "ef0cda96eaa74bdca146fd6f61bbd152507851eddc2deaf7241d13ad2f4c725f" => :sierra
+    sha256 "79a41c85728ecf6ec50d11ca250b317066c95dd7d4fc490d15099334b5750072" => :el_capitan
   end
 
   depends_on "xerces-c"
