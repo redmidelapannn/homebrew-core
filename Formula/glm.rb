@@ -8,10 +8,10 @@ class Glm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ed0abd7ac4c09b0e34d00c7c72800645dea2adb361bb529885ea9ad9775af671" => :mojave
-    sha256 "3edc376c8c288f2693f871d87bfb574cffcf92815defeac8eeb593dd01f1f3c3" => :high_sierra
-    sha256 "3edc376c8c288f2693f871d87bfb574cffcf92815defeac8eeb593dd01f1f3c3" => :sierra
-    sha256 "3edc376c8c288f2693f871d87bfb574cffcf92815defeac8eeb593dd01f1f3c3" => :el_capitan
+    sha256 "e2779aa1be5b31d6c337f55ba0997cded4df0bc45fddc048818b8fb0ca4cead5" => :mojave
+    sha256 "d5d0aa50ea74908b895e31c26dbee5a3b6812198d92757af01021371b6670558" => :high_sierra
+    sha256 "af5b2dbb9223d279a735851dbac213100366eebdec57fac09db63a2fc0b86a1e" => :sierra
+    sha256 "fc63a7a75d86be016dd5006c791ca21c8048c36fbba4ed98a81caa23eaf74278" => :el_capitan
   end
 
   depends_on "cmake" => :build
