@@ -4,6 +4,13 @@ class Samba < Formula
   url "https://download.samba.org/pub/samba/samba-4.8.5.tar.gz"
   sha256 "e58ee6b1262d4128b8932ceee59d5f0b0a9bbe00547eb3cc4c41552de1a65155"
 
+  bottle do
+    sha256 "dee9e5a94ed2d86830bf2e7f740a8be60f00c351f4b127675ba0dc05faebd9a2" => :mojave
+    sha256 "ffa07ea5446074fc59e8cc8507a333b38bbd0fd3499d8740fe8e8b37b961d638" => :high_sierra
+    sha256 "d3657510034f5407b7adeef3782b8dc6e05a26727cc196a2e0d6d24152119d4d" => :sierra
+    sha256 "05cbd6285e5d15547db6d12b06cf327485b04144d5c18e83680f7e93d80fa7b4" => :el_capitan
+  end
+
   keg_only :provided_by_macos
   depends_on "pkg-config" => :build
   depends_on "gnutls"
