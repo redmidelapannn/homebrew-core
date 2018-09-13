@@ -6,11 +6,11 @@ class Qwtpolar < Formula
   revision 3
 
   bottle do
-    sha256 "7526c2528d7bc15e6624d472f4738ad9bf06026ec7708d6e5cd5a167949d1b99" => :mojave
-    sha256 "41e46c5c73df6518ec55cd0c7fba26d98f6b9bce72da7e40a1dba12e6e3f88a5" => :high_sierra
-    sha256 "b558ba6e4b4b269cd8ff207eccf1882073103aa702e2848a7a0f0cce711aff73" => :sierra
-    sha256 "8d9e370d42d980081cf7626fc9a0ff7315e05fe1c41dc48c9de21edf353aab5d" => :el_capitan
-    sha256 "e9ac24fce3339281d5b17f38a6c0fc1ff11b2d1afa3f7f727b620992348bf4c4" => :yosemite
+    rebuild 1
+    sha256 "d898571261060926d75f530f0ded9f85e2ee14af4184c53acadcaa2b750c4fab" => :mojave
+    sha256 "3db0ab4d00fe2b3c7fdcb1b7900cb6af2cc3c4fd3c726864de18e2c284f97088" => :high_sierra
+    sha256 "fea6ae9e60e061811cd92cc6fe9cf6d39464580999d378f1f5e92d8a3bd89767" => :sierra
+    sha256 "7c75056a7f59d814ba84ce7a5756bece4a61d6dcc4f0d3038876675671e225b5" => :el_capitan
   end
 
   depends_on "qt"
