@@ -7,11 +7,11 @@ class Unicorn < Formula
 
   bottle do
     cellar :any
-    sha256 "b873f9b4fcec5aceac0cc978e75f6d82bc133f78fbe3509bab2b8674e1c58d5b" => :mojave
-    sha256 "a12e18a0a334fa19a2dc54a43fc5d56861e31cf5a9ad352cb1150bb6ec61703c" => :high_sierra
-    sha256 "81d29e7f28335317dd40976d904636ccd7d0679b71747ad13530dc991f327122" => :sierra
-    sha256 "3519d8189333c5ae43eb618e18db7b6be4cf9cc288c6a45ca3b618964d62395c" => :el_capitan
-    sha256 "f8c7cb546985c5e34dddb2c2e338314d024e266085fcbdc3f7e52e0f426e4e29" => :yosemite
+    rebuild 1
+    sha256 "6bc088851c257ef4c69c4dd2f50827eeed8be384e607b2bdea4c2b00b6f2aa2b" => :mojave
+    sha256 "2b1761bf45e27f34d246a3a2a54bcb277ab81156407c56125505c6f90eef34c1" => :high_sierra
+    sha256 "dc78e896eb7052b77d52e5d8a0e389bc428a81c986b13a78def6e044b3d54861" => :sierra
+    sha256 "512fe3af4d2300a7617cdad4acdebe608213fab94d5a9dc426bce38276fa54af" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
