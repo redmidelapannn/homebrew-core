@@ -6,11 +6,11 @@ class Speex < Formula
 
   bottle do
     cellar :any
-    sha256 "ed212ec09c4a1a2c789e5c2a7a2679b56c75bcf252a52fe28d6615499d21534f" => :mojave
-    sha256 "525970161e7c1629b242c91d889201ca368814945695efd5b441d58b5b5dcc75" => :high_sierra
-    sha256 "5aa61761fb5426de78297fdc83579515dda1a880f47c925cb3405b7175079b92" => :sierra
-    sha256 "056781a4d7c5fe9a05f30160c059352bda0a4f8a759820df7dde7233aa08cba5" => :el_capitan
-    sha256 "a0b3c91782b8242508adac3ebc0cd86688e75b043ea0d84f4ef7ac9940f8a21b" => :yosemite
+    rebuild 1
+    sha256 "d0c721d3a2da1a5672d90dbd5f79f5eac597b005877e3b5632f3109089e1b310" => :mojave
+    sha256 "c7dc958e30b7045df3be0ef992cd73d20c902960a45fdf317b101460da1bb3ad" => :high_sierra
+    sha256 "b1becb6400a22e188bbcfcd40b4a288af02a725cc27a85e505d9f729d3b6a90a" => :sierra
+    sha256 "e26f0895080fd52ae004aa2232eb59b7c32d22621d4ec28af5a1f2146112fb48" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
