@@ -23,11 +23,13 @@ class LlvmAT5 < Formula
   sha256 "d522eda97835a9c75f0b88ddc81437e5edbb87dc2740686cb8647763855c2b3c"
 
   bottle do
+    root_url "https://homebrew.bintray.com/bottles"
     cellar :any
-    sha256 "be24cba8fab8f07504a75c62888fa208f6a508bbfb416af3385a9704461ae08d" => :mojave
-    sha256 "d76f7ca753dd3464883c0ec21ce6751c7de02b3db9ee4fad19925e5283d902b8" => :high_sierra
-    sha256 "a2eb1622d8ff63b6b38f3611ed5c0d9f5a609468d279d90ae10fb583c3388392" => :sierra
-    sha256 "d240e166d5116243fce9d518da0167678aaa3b17151be702cdf9d38f57f27e54" => :el_capitan
+    rebuild 1
+    sha256 "01a3587c0c72e80fa2a077d89b2418a914267b8f8a348ee3b986b1a1f07f8595" => :mojave
+    sha256 "37995f640abc154f11d3a2053094b731b509b652074771d13aae60be91e90ded" => :high_sierra
+    sha256 "c61ba2c07c0a966a494dbcce47b1d19562974b573e4c027b78ac3cfbc169cef4" => :sierra
+    sha256 "8f88a7021613f0790d1137401b710ab080ed2f530e4945de67697e03bdc969cf" => :el_capitan
   end
 
   keg_only :versioned_formula
