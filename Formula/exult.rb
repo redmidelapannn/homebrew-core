@@ -6,11 +6,11 @@ class Exult < Formula
   head "https://github.com/exult/exult.git"
 
   bottle do
-    rebuild 1
-    sha256 "43967db7a4ff32b78f7478c920eeaf1c730a11952462d9b5bcc2d5b8ee27b932" => :mojave
-    sha256 "642d16cef7ecf374ff50e10b32497f2744468010ee452e3e5819cc698215f8dc" => :high_sierra
-    sha256 "01c7906864324d3ffe1ce9a11ba7bb60093c379e07d15aab2822e0bdd4789cc3" => :sierra
-    sha256 "dcf630b85968a5f4a44f31de4dcc38727ed2d8dbfe3d2e645c585ea3adadfbba" => :el_capitan
+    rebuild 2
+    sha256 "21be68d5ca1b1a00305e2c01efd1c064460a77a42ffa6ea706d4ce1ec3223259" => :mojave
+    sha256 "a0bf3c92ec7a8fc290a01342bdc142fddde6e867421578274a3b3bdf8b9aff80" => :high_sierra
+    sha256 "631503ddec45675c513ac6c45f24e2b2c59729661745afced6b0ead2e77f6010" => :sierra
+    sha256 "4d747a810b73894351cee611c4658b3a2637e9b056fb3c5044439eb1e2328123" => :el_capitan
   end
 
   depends_on "autoconf" => :build
