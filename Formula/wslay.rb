@@ -6,10 +6,11 @@ class Wslay < Formula
 
   bottle do
     cellar :any
-    sha256 "abebf8b1210e19530f0446ce3b2e873bc2f960d259ad5a4b9a930c1f4221969e" => :mojave
-    sha256 "f2537bdaf7a5fd083e21f034fc6fb18ffe36f7dc16b589b8ef1a29cfbfd58286" => :high_sierra
-    sha256 "004c25402d835de2c7c067ee04f64c7cc84207f47483f2b1fcbbcd8c2e3f3a59" => :sierra
-    sha256 "518238850151cd6a73a2ac1896b671105bf6160ce043ba2afbe62b71816267b2" => :el_capitan
+    rebuild 1
+    sha256 "478fef25b0285ee768d6e9ad97df7e9398ee75d57dc7712219e7e17b7e1f0776" => :mojave
+    sha256 "642130b857a8ccc29191706e58d233e6e40d2833f52ba3eecf79d7bb953d462f" => :high_sierra
+    sha256 "590dad6d7f8349020a1ab2a1029a910e5538f52480e53551ee1d3ba47fe65264" => :sierra
+    sha256 "51aa7c82cb789be4ab253c20672c7fcc2cd4aebd18217f4384348d774e88025e" => :el_capitan
   end
 
   head do
