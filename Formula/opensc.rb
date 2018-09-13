@@ -6,10 +6,11 @@ class Opensc < Formula
   head "https://github.com/OpenSC/OpenSC.git"
 
   bottle do
-    sha256 "6784d3e0123aa57babbec1f6d88d01d37ef749b35aad0ab8c0b2944d255eb460" => :mojave
-    sha256 "84b81199751659ed73c4209849aa1f0ed5534788fcdab9c2748f1e765613820f" => :high_sierra
-    sha256 "107d1798ed7303d793aeeae634e44a05cff93a7e65ae6a3635a4567e117d47df" => :sierra
-    sha256 "8be12043d847a94cd56524734f99e49f5bfa884d84ea3c70fa9347d30b8a7ea1" => :el_capitan
+    rebuild 1
+    sha256 "60bae9a4ffbfe97e0c72dfd839745bd91bb092a63971996bd5e1c2497d7f7154" => :mojave
+    sha256 "9cdac92e0d4a9bc261efad160e08cb15d6c96ae451f06bb7b93c1e29ff2e2218" => :high_sierra
+    sha256 "84b15e220c3e4556ae7b47d59c75d95c9e163610ae1d2100b04a0b1f0fd86db6" => :sierra
+    sha256 "cb537d8157c361401ad6c611e491032696da718829bfde8f1887cb76f7634920" => :el_capitan
   end
 
   depends_on "autoconf" => :build
