@@ -6,10 +6,11 @@ class Sipp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e72efd7ec51640ae73f2637a05f99380bef5d8d6205b30a3364e4ba1160d2b76" => :mojave
-    sha256 "eced6e8fc672c1b5cbad1af8e62d916ae6fab835ac6ccfcf8084187d0633484a" => :high_sierra
-    sha256 "28952b40fb839d5c5f4a151fcc85c933503be07112724fb4566dbf3a1eeeec8c" => :sierra
-    sha256 "f2c60af09d5edba1322541c8484c01291b948b2cb2cf78cbc4e0aa854faf0931" => :el_capitan
+    rebuild 1
+    sha256 "adf04af6d1f5fee15a94895dc6970c7f80667b97994a94fa2cb773382efafdd2" => :mojave
+    sha256 "217eb591389cbae6338201758d6db6fe9433159ad81e36829e048885cd9861f7" => :high_sierra
+    sha256 "c298e237fb4e4ae7ddc4fed01b7b0ea1b7eea24f8de806f3f739f07f44ec9b67" => :sierra
+    sha256 "acfa510fd33b9445edb0860f9cf1b080c08fd1fcb0b7ddfc3cdaf0c064922e42" => :el_capitan
   end
 
   def install
