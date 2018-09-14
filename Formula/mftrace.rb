@@ -8,10 +8,11 @@ class Mftrace < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "80eaec2570ed7efc70d82e7a2b8ca9413d6a6b0ab8157c8364c9ae0cfb2a163a" => :mojave
-    sha256 "f81be9cddecffd87a3066f23f90cb1be41ad2d43709a44e59c2d8f645ec4136c" => :high_sierra
-    sha256 "60d36f222820ef0ffa00c3c67f8fc7d9063472062c8771b99bf783781e9c5613" => :sierra
-    sha256 "ca26dc49c3a032568dea9c0a5a7639bd8a117f8f8e052a411679b78d01811e1f" => :el_capitan
+    rebuild 1
+    sha256 "0f52a0687f46318b5edf3b40a90ca7636d67c50687d40aa00f30f66e8584ba2a" => :mojave
+    sha256 "421a79a739f9f65bc13f769a70cb14cb5a8836fcbe525c4a786f9192f49601d9" => :high_sierra
+    sha256 "bd6ec9b6f3b0e2890599a057c4caf11a27d1429ec70edff9792a656e8be7dfe2" => :sierra
+    sha256 "3d7af07230b3a1dc83e412af2555495483b35dd044058086b35d874544896c0c" => :el_capitan
   end
 
   head do
