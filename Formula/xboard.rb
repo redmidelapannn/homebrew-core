@@ -7,10 +7,11 @@ class Xboard < Formula
   revision 2
 
   bottle do
-    sha256 "68471e095e3cd698e3e461d1072a8bbfbcb63da8fc6edaa4d9d8bc0f46618758" => :mojave
-    sha256 "00118aebe71d62daeb3b57f2112dc8f86dcc94cb885e7087b10f609a0307b73b" => :high_sierra
-    sha256 "4a50ceee531601a9a920ca1a2d099113993b0369e5b76fe4125ba43563c2b04a" => :sierra
-    sha256 "47d20242d82c9223754908ec0a7443ea5f7774a82eaf43bfbeaacbda5c750ce8" => :el_capitan
+    rebuild 1
+    sha256 "05343dfcb1094a506186c98ce4164385fea343f36e3efb61ddf2959e7aafd259" => :mojave
+    sha256 "72a86bdd8a6c9bd85f3d5117bfc3eaa3738cc9596de2042cfec9cbc7b8d4d21a" => :high_sierra
+    sha256 "2598c64d47a0584991c91d2cfe374169ff457136878c68bafae802fb42d694dc" => :sierra
+    sha256 "8015af7cea521d8b8859de1c42c564cef0f3905f7846ed52588607cf6cae294e" => :el_capitan
   end
 
   head do
