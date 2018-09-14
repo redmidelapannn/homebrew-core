@@ -7,13 +7,11 @@ class JohnJumbo < Formula
 
   bottle do
     cellar :any
-    rebuild 6
-    sha256 "18a76d1f8abe542239444a3931d1d08f5f745cbb9a202b1d5fd2e1290b30fa4d" => :mojave
-    sha256 "6612d2001d80361ec70a19a8c54254a76fe1919a9cc72918032304e714144530" => :high_sierra
-    sha256 "6a2460e120f697e09a1ed62a948e5ecd767fc1b24a3f331aa4d59833205e48a4" => :sierra
-    sha256 "a87bf02d882413393f3f3759ab0fa6a171438609d101c7c9bc7772fe69e2ab47" => :el_capitan
-    sha256 "cf9c82f416a4eb3aad7d4202b21105988d346be8d8df262ea4ca18e683475d32" => :yosemite
-    sha256 "b36f66b0469b5c6cde95f780671db5b32e4e4dd7c16c4e7e591043bfdef2b65c" => :mavericks
+    rebuild 7
+    sha256 "8875fa3891d8266d52af3547d4c54448c16269f0730ecdfa5026c2d1e74d1629" => :mojave
+    sha256 "40b5aee653fd60a1c4727f5d1a26ccbb8e33c2f597886dfc888eec1ddf8bd0e4" => :high_sierra
+    sha256 "a343522beaa867616f532191e59b8607d10a619be30975ec8f223172791f6f17" => :sierra
+    sha256 "aff625d87f50766e4a2250f58ebe2aac211a71a3ac98ca09d96c086171b16dae" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
