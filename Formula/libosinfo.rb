@@ -5,10 +5,11 @@ class Libosinfo < Formula
   sha256 "ee254fcf3f92447787a87b3f6df190c694a787de46348c45101e8dc7b29b5a78"
 
   bottle do
-    sha256 "65a81abb80579b3816192036705d38be83a8c9f55ab3af8c2333ad079f60560e" => :mojave
-    sha256 "99c9327eb8634f81affaa415b339357eb61a1b5d00cd47551ba97f3bdd9286af" => :high_sierra
-    sha256 "2e1a9e6ab753ae8cccc9e899faa7aa53e83e0c2495f14b49af784a0c1a700e8b" => :sierra
-    sha256 "bd0ccbaa102b45b745ee3ac97efab1cac6ad35e42e5660c63598fd31e0ff9357" => :el_capitan
+    rebuild 1
+    sha256 "29d7e862314ee920f289d03a95b4300999aa6cee5fe6683ef80b763a03c28e6d" => :mojave
+    sha256 "e6b4bad64c5c3bd10393478a248bbb7ce4d3e12bbff23393cbb405381c4776fa" => :high_sierra
+    sha256 "29b243b528a0c186a5bda4bfbf40503271fc05e27b0d07f378d5dd13b78ab461" => :sierra
+    sha256 "082b71dd982e8d3fad7128f4ab87e7915c8e7290a1c68f67463ce4d795f1ec9a" => :el_capitan
   end
 
   depends_on "gobject-introspection" => :build
