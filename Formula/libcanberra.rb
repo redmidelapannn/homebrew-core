@@ -5,12 +5,11 @@ class Libcanberra < Formula
   sha256 "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
 
   bottle do
-    sha256 "63be18f829bb64854eff3c78b7fc75a0bda59dcffa510f86f776734b178a8cc0" => :mojave
-    sha256 "c30a642b46b4da40690fd0c49b77d9ca2cea2c95d8e1f2e39f92d655b9b324c6" => :high_sierra
-    sha256 "066b33288fa7e3741ef45fc2d59578b4f1cf8141b5e6f9847635555a3436ef00" => :sierra
-    sha256 "dc9f8e76c81bb21afedd4deb9b9d9bbf3382f012192e5796658845e2083ca018" => :el_capitan
-    sha256 "3d820f8c9747e8658c226483267536c76b3dfdf44a9e14ea1327cb5cf0385ba8" => :yosemite
-    sha256 "10c6f3c931a349848b6436d10893e9b1bc5051658f125f6b67ddc1f9319396a0" => :mavericks
+    rebuild 1
+    sha256 "1ee9d15ac5df40018bb3c36701d6053321a23f6e0b6fb3bf6105aac8ffb53f3b" => :mojave
+    sha256 "575d9187251d721551d16bd86357141492f91c3ac6e11c35b4a2fe05f254074a" => :high_sierra
+    sha256 "b1ffada79ebd9f4eeea6087406f89d764604b2d39ff7afb8a34995369cfac488" => :sierra
+    sha256 "4c8b3bae89aa5bab3477375188d1c98d0345f0dfc1b831de41712ae91f7a46a5" => :el_capitan
   end
 
   head do
