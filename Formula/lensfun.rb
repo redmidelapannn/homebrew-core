@@ -6,10 +6,11 @@ class Lensfun < Formula
   head "https://git.code.sf.net/p/lensfun/code.git"
 
   bottle do
-    sha256 "974013385efd1386c3605de5352920b98810800ac37387d7f295dd70fcdad074" => :mojave
-    sha256 "2a37991b1e54e6aab5dd75b6bee534010a1af7aa1378999713a96e174ae6f86a" => :high_sierra
-    sha256 "b594d90fb2d169c3200bc4e06a033cf18ad87f89e2b43e1620952bea712ceb04" => :sierra
-    sha256 "a057800dfa6b88a006cab751aa2708579b7d2f1816ac3c59c24fc4b12e4e4b76" => :el_capitan
+    rebuild 1
+    sha256 "74b47d2aa9e115c0d9634a93efadfcfb5aac0e10e5b0eff5b9afe8d23ca615f1" => :mojave
+    sha256 "a09214ad50c21487e25bfdfda750c1c5f43f81d227541ab4dad170584e197b3a" => :high_sierra
+    sha256 "3acd73c6f497b0f9af76b079a9825a360b7fc6b758c61d196e3a7489206eabe4" => :sierra
+    sha256 "ee2cc93988966584506f9ba9e51e7b35bbbde3ffc6b42068e1587a758b03c20e" => :el_capitan
   end
 
   depends_on "cmake" => :build
