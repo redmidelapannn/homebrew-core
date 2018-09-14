@@ -7,13 +7,11 @@ class Irods < Formula
 
   bottle do
     cellar :any
-    sha256 "7a193087877972f11192698db37cbeb220f2e9a167210a85520ac132f0ff3e8c" => :mojave
-    sha256 "5ca48b1240e083236086127b0f8d5fdd64ad3bcf023ced6c684d04945b8555a1" => :high_sierra
-    sha256 "22a5e9bf24a034976491b65af9b36c4311afa16612f072655c556fba7285112b" => :sierra
-    sha256 "510a0c5691702971c670c57c9ed11c5ca9371139b50c623cc950c0f8391a9737" => :el_capitan
-    sha256 "490adc71118dc93c087aa685ddb873c3670575c679c834adc0a95c0b013772bc" => :yosemite
-    sha256 "5d77816c581d12c4c30eb247e9b4a05f096347aa42ff4c069fa9aeff94678f87" => :mavericks
-    sha256 "6b0aa76607c2fec9b0007a6ad4fdca8ab53e7615edc01e3dccd35facbea9bb39" => :mountain_lion
+    rebuild 1
+    sha256 "0058eb8461592f0686aa03278d2d7f4980215b828ab30874008f409217535f2a" => :mojave
+    sha256 "5bbd83f1468dc6bd9fd3d597eb7ed38d94e31ce3f44ee70122c1b545bd3b368b" => :high_sierra
+    sha256 "048c05c46472efb64ea0f62ba3943affaf5e74ab6af8f695d610d33acd3377ab" => :sierra
+    sha256 "b586ec296ad173f797146c74e93fa9f197f999e98ea2ee098cadf2df5772f73c" => :el_capitan
   end
 
   depends_on "openssl"
