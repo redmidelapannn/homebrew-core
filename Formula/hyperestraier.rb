@@ -6,12 +6,11 @@ class Hyperestraier < Formula
 
   bottle do
     cellar :any
-    sha256 "4275d3ad552f225c5b686532d6cc2703481284fa73eaf3c5b35bc5551dc95761" => :mojave
-    sha256 "f0eeb8e60dc0639fdbf5c15fc22c954a627b5136525021706876972b5bfdd816" => :high_sierra
-    sha256 "c6018d888e9a4f03546f1727d9ec7b6d7eb6a87fc4f6755667bdafa71929aca7" => :sierra
-    sha256 "c90ef2d3ccac1af3247726697be33748ec53df85a98af4611b6dbfc9a8dca0c7" => :el_capitan
-    sha256 "d18c19a9d691e2bd209cc05006b608776066352d297865238cc7262a527a82bd" => :yosemite
-    sha256 "b52c716897730a939ba7763492b7b1080a70c918b07571f4a4e296aea42f42ee" => :mavericks
+    rebuild 1
+    sha256 "aa3160a27278fdfe8ab4a4b587f669963c9cd1954411890f99355ef94ca37609" => :mojave
+    sha256 "7c1d148ddce91f6e4df1cbb41119ba36ea2440094d39ccb0d699a2a5e35a7430" => :high_sierra
+    sha256 "0d903292255006427a81a365cd9200c70fa157b54663c1484168a3d58acf3a33" => :sierra
+    sha256 "faf960564cd7145295c06451e246f846b5e03b194d4043638b26d9ad47b601c7" => :el_capitan
   end
 
   depends_on "qdbm"
