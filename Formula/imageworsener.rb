@@ -7,11 +7,11 @@ class Imageworsener < Formula
 
   bottle do
     cellar :any
-    sha256 "7ecb9c599da11d86cc8bc9e46d2758422cad1bb39e94c3b398536b7c144d4def" => :mojave
-    sha256 "1b8964b45f496d8e35c4dc72f2c26b51fa47d301fcd951f109e5062b9dbac13d" => :high_sierra
-    sha256 "e3da0b7bd45f393eb8dd514473a956f7954a6b1e7d5af7e5382b67b9a21d1510" => :sierra
-    sha256 "4bf452a3350cf9121ba3bd7dff9f63bc83bcda4c5e4be194cb1e8cd521a0a0b2" => :el_capitan
-    sha256 "3770deb61aade00b379e422691f4e2b4d13559b5493dd54bc13265b556df1a76" => :yosemite
+    rebuild 1
+    sha256 "117ac4553fe8d7b8c6c69b0c7365832b4797f616c2638ca95b141e68b816a6ba" => :mojave
+    sha256 "b378edc5c6d2b308f19b4bf95fbae229d23bf0cbeea271eb06acbfc01a29c227" => :high_sierra
+    sha256 "dac097d59dc88d4b86c800ec1e11c506ab47d1fd8644b2aa05bfcd663c4c2085" => :sierra
+    sha256 "66bbe742792c5f641592ff26674b1776b70c174bb4efca85b7fd8af7c509f5b8" => :el_capitan
   end
 
   head do
