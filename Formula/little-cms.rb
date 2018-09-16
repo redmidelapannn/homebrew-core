@@ -7,11 +7,11 @@ class LittleCms < Formula
 
   bottle do
     cellar :any
-    sha256 "d04e4cc09f471260e6e86eb866743eb0205b3345bc9e687d85307cdbd1a1fa9a" => :mojave
-    sha256 "cead96af013b65c05e98c89890e66de1cdf864d1b6ed7da811f6618f2e551275" => :high_sierra
-    sha256 "227c16cbe117abeac7398265543c20b905396b214785e1a9dc48041f0f3ce128" => :sierra
-    sha256 "c1125a0074a82747ffc33ab79c617ea448b605ace47d6c5cf788f2d3a49d7c5d" => :el_capitan
-    sha256 "bc02c8267bf616ef0dcfc27db97a849b0f79e8211164ea4a955482b964255a7e" => :yosemite
+    rebuild 1
+    sha256 "0e7861aed55c76eaa13f06774d025bd776e365fa2643c727f303602ad4f95cfa" => :mojave
+    sha256 "6245b6da6c95756319d5b4254753f48ea30cc6197c1bc66311527fdf117ef809" => :high_sierra
+    sha256 "8681df0244b286902975a883bbb4da68286fddbc57e0f642338102327be59700" => :sierra
+    sha256 "25005b6a57fb0a5554094fc44a0029abb728d6419d65dfc15a25e893f1e31810" => :el_capitan
   end
 
   depends_on "jpeg"
