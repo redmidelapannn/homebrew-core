@@ -6,11 +6,11 @@ class Luajit < Formula
   head "https://luajit.org/git/luajit-2.0.git", :branch => "v2.1"
 
   bottle do
-    rebuild 1
-    sha256 "9093866c951b8ec11c896fa2508043081322fcd6a336e6f7710f20b39e535561" => :mojave
-    sha256 "ec3757b184301eba2c0364b7c93a9dbb12357ed045aef02246cab9068d0c14d5" => :high_sierra
-    sha256 "2bec1138cd0114e4df5c56cd14ec2cc88f6e397c1fb7dc1e1763926670645078" => :sierra
-    sha256 "c6090283a2708cf2fb818d2f33845d80d6b01d236ce1306b6f56d7c6879b0b34" => :el_capitan
+    rebuild 2
+    sha256 "01036af975feb486767bd67906424c23c2e178b282bf3b09e25d4805c6213f38" => :mojave
+    sha256 "488d5aa6185cee3d93b1d6bcaf86fc00d5a54f8a7dd3df3bddb333a7b2d68165" => :high_sierra
+    sha256 "027db8e2ca0a7f6eb68d0c338bf24d09e2aa7fb9215b18136774c19fdbcb35e4" => :sierra
+    sha256 "ac423d43e35588100a2372f7fcad77a68b815163ba41baf2362a99d1d6bd1003" => :el_capitan
   end
 
   devel do
