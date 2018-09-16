@@ -6,12 +6,11 @@ class Pkgdiff < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8de5a84d08a9bc063313a7319be93cbaba8b4e293e2604552e2771d9f9c93d81" => :mojave
-    sha256 "28ed130d50f00ec5617be39a8bc627591d310d47e8023844b54f27fbf0daede8" => :high_sierra
-    sha256 "fc92f55909e0499c1d0054100183567465603ac85fa9f8b20d5ab1d84e36ceae" => :sierra
-    sha256 "18895054433b4b050c3a863306c62a910be7fa4e36b0020a742c5c7541c0df65" => :el_capitan
-    sha256 "c566b1a44ed89a1b7b3547adf0a0e0fa784174e1acc4a1dd46a240ea6d09bbff" => :yosemite
-    sha256 "a9ccac49037c91c63af967e67256daa24e878f38fd17959ba30fffb8e1fcc2a2" => :mavericks
+    rebuild 1
+    sha256 "02ad2b5cf4e9f4c519a125ed249f5314c3e975d00f72bacd2a35123fa2906cd6" => :mojave
+    sha256 "33e8998b14443c7617c7fec22e90102eab368fb4f3561f8af45c1991981b643d" => :high_sierra
+    sha256 "33e8998b14443c7617c7fec22e90102eab368fb4f3561f8af45c1991981b643d" => :sierra
+    sha256 "33e8998b14443c7617c7fec22e90102eab368fb4f3561f8af45c1991981b643d" => :el_capitan
   end
 
   depends_on "binutils"
