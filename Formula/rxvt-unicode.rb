@@ -6,11 +6,11 @@ class RxvtUnicode < Formula
   revision 3
 
   bottle do
-    sha256 "126bda5982eb1d785cdaf84ab108024d85c3904cc3039514f13e12ebb80652a9" => :mojave
-    sha256 "01a97a5842a1507ae1e9c99d973811e300d0aac95b3fb744e8181918b6ac11eb" => :high_sierra
-    sha256 "2946f3abe2481ad6e4f52be7a9e51259bcd0846f38602e74384343946479eb4a" => :sierra
-    sha256 "5d6060cc30061763809d7255b8654309be0a709fccdcda1b799f0fac16fd085d" => :el_capitan
-    sha256 "9b674dd3738ab25fa6145680f92ca036df470ced089448abcb6647439320e075" => :yosemite
+    rebuild 1
+    sha256 "f7b65d84dc492ea08d92ce3ad85c4a7ca6ce62ad8081eb2622c0aa776337a439" => :mojave
+    sha256 "a2d4b0429526ab58baac70e7922445c0ed37375a8322cb6bb2e0d8d5091b22d5" => :high_sierra
+    sha256 "810ad5ab80b04d03ce0412ddbc6315109dc604e215013ef55d8606236585fd82" => :sierra
+    sha256 "28958951321b8b29ca594381aceb545c5deb749ca9397d1b02ad29f0f556c7f3" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
