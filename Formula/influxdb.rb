@@ -3,7 +3,7 @@ class Influxdb < Formula
   homepage "https://influxdata.com/time-series-platform/influxdb/"
   url "https://github.com/influxdata/influxdb.git",
       :tag => "v1.6.3",
-      :revision => "389de31c961831de0a9f4172173337d4a619390"
+      :revision => "389de31c961831de0a9f4172173337d4a6193909"
   head "https://github.com/influxdata/influxdb.git"
 
   bottle do
