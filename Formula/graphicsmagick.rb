@@ -6,10 +6,11 @@ class Graphicsmagick < Formula
   head "http://hg.code.sf.net/p/graphicsmagick/code", :using => :hg
 
   bottle do
-    sha256 "cdaf146d656352ce0cbca35f097f55065499340e9383a807b83d4390a46fe531" => :mojave
-    sha256 "701f65ee9855e57d1801bcb9e506cfe4ea559e0d91d80a2d3353114f567e1b05" => :high_sierra
-    sha256 "16d2ca5041f489588fe34683c114190a3f7aeaf7ec9e75eab1f69b69f04d2850" => :sierra
-    sha256 "3bfb42383538f63bb9ede1efe7b74517283e8f23aeb37727da8d747dc7bc9165" => :el_capitan
+    rebuild 1
+    sha256 "6414681b10b58f2288e31f1dc89bd36a17e7bb1465c56dd002590a6c7036fe70" => :mojave
+    sha256 "db05d762fed9913544045a36fe2f3c96f597caf7d69d1deec75c071f807cf4f7" => :high_sierra
+    sha256 "3c6b01414f0a56f2b2ba2dc024f52b8356402417fab410004ce0df0120dfdbe7" => :sierra
+    sha256 "a301b8e2dc13b405052e43804521a27683972a328022bc6b024eff72c354d469" => :el_capitan
   end
 
   option "with-perl", "Build PerlMagick; provides the Graphics::Magick module"
