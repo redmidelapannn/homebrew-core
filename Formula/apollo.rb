@@ -6,12 +6,11 @@ class Apollo < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "0bea2c3db30793391d982ff0d6233e11b93df47a34fe253c8daf8dc6f0fe05fd" => :mojave
-    sha256 "48b09eb2c2be0ed37a27b6b4d6835c5db6d80c877ea10e46296ddd17f8e646ba" => :high_sierra
-    sha256 "1d4d6ac835aa8f72d8fb3084780e215986737c6609dff27a552730f2df9f5fc7" => :sierra
-    sha256 "1521942c30bd7443a79d944c384391cea0944089a0242b89f31c2c2e4dda1e81" => :el_capitan
-    sha256 "1521942c30bd7443a79d944c384391cea0944089a0242b89f31c2c2e4dda1e81" => :yosemite
+    rebuild 2
+    sha256 "90fe0c8b5d7f75372c18f4544cf9e0a5afb8470ba642776c1e145975108a8b7d" => :mojave
+    sha256 "56b7837dd05f70597f26e8024e803f8c63aff159627b1960e8c8259d0fb0dae1" => :high_sierra
+    sha256 "56b7837dd05f70597f26e8024e803f8c63aff159627b1960e8c8259d0fb0dae1" => :sierra
+    sha256 "56b7837dd05f70597f26e8024e803f8c63aff159627b1960e8c8259d0fb0dae1" => :el_capitan
   end
 
   depends_on :java => "1.7+"
