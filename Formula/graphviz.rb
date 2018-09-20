@@ -8,12 +8,11 @@ class Graphviz < Formula
   version_scheme 1
 
   bottle do
-    rebuild 1
-    sha256 "668c64749620f556cf7d26ac96088005b4439acd9488be4c640fdc9cfe66d563" => :mojave
-    sha256 "b592ce51c2a929c3da82e96ec856571ebfc54cf4dac90c2924cd3845078d7082" => :high_sierra
-    sha256 "41b5811054f03978db12525919540fe41e073fb2c20e899247ed9c2a191f7a66" => :sierra
-    sha256 "cab27f92a59d543e2f2c1494c28c7563a4c2d7e0dce4c4fbc22587db91cafc5b" => :el_capitan
-    sha256 "6bd4c01e724cfc965871e1aad9a4fb2a6afef90a1e254d81e2fe33a997f50aaa" => :yosemite
+    rebuild 2
+    sha256 "e15ef73d6697e939c45f397b10a8edfe7b3bf4e560a7a5eb2fa87cc14a2a3212" => :mojave
+    sha256 "379646aa8223c7bf52a82d575c01869100b054b6af83d8949e77b2310f4ec6fa" => :high_sierra
+    sha256 "ee985562c9117311705a06f7d8e1e68927fd4934ef8d1ccb335e118b0a34b3c4" => :sierra
+    sha256 "5f1fcdabbcf1a9ff0c66265e5c3a274eb9518e476243ffeb5dbd61f4392ee3cd" => :el_capitan
   end
 
   head do
