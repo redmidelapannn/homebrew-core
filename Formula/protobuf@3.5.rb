@@ -4,6 +4,13 @@ class ProtobufAT35 < Formula
   url "https://github.com/google/protobuf/archive/v3.5.2.tar.gz"
   sha256 "4ffd420f39f226e96aebc3554f9c66a912f6cad6261f39f194f16af8a1f6dab2"
 
+  bottle do
+    sha256 "b0acd9255c4261c2ad60a0ffb1f137690c82e83f6636a3c826ac87d0b1c9dec4" => :mojave
+    sha256 "b29754753e5a09c0fa96e2db9e7d387d4f6ba0986e0692948c52998f0dad815a" => :high_sierra
+    sha256 "77eb06abfc2ae184f084f87fb50b340bd2e7c3880fda08d367b4a053ac6c9cbd" => :sierra
+    sha256 "1296b996566d4b14dfa96cc0bcab96ebba69a51d354d7c6e40527ad9f2140d67" => :el_capitan
+  end
+
   keg_only :versioned_formula
 
   # this will double the build time approximately if enabled
