@@ -9,10 +9,11 @@ class Jigdo < Formula
   revision 5
 
   bottle do
-    sha256 "85a86018e55a5655fbc0068440dd13427dbc91f3594c4e3da340f16d275c77a3" => :mojave
-    sha256 "b85b4bd96c93058b76ae9eefb4351e06646f532742f2990d3181096f305f14fc" => :high_sierra
-    sha256 "c9782a26984129d77f041f2c8d9e30735170080ef8951c835196e3303e45d6c3" => :sierra
-    sha256 "5b1685bcf35a653a0104f2ca084a55c55729a4c2211b8f18a648b4ef045cc123" => :el_capitan
+    rebuild 1
+    sha256 "cc1aa4ee71cae3e2e3a96109d49952fe6e36669eba28d63751d53e31ab91dcc5" => :mojave
+    sha256 "62f6f74ab71e38f53915b8e3f66956a77ff9b8a8b0fe25d827e35ce2d30d1458" => :high_sierra
+    sha256 "fe8d624002bb78644ea384585a37d0d40c70a7610c018e1c1605d0341d0a6b6c" => :sierra
+    sha256 "099b7e5ff776ed15135f00b1c2931adc3199c99e646d90e80c06ddd9c1cd051c" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
