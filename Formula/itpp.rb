@@ -7,12 +7,11 @@ class Itpp < Formula
 
   bottle do
     cellar :any
-    sha256 "cc0a4a3787d616440ff284f97f87742327a5293b439195143a909b7764eb3ae4" => :mojave
-    sha256 "357a4ee1ed9d2c7509a8ae7a22bda393942c6c40d56dc60468fdeec39b675ad5" => :high_sierra
-    sha256 "168b61ba02bd54e625ccbcac998595dc2e96a4210a0709a7b7296a8ed9b985b5" => :sierra
-    sha256 "c9f2f041dbdbea87029180a253fa0cd470aee6a2144a848b10f9fb5c40f01b8e" => :el_capitan
-    sha256 "6e772c61104760fcf2c9500fa06fb2d032d4db1f53ef44d090e18aca54ee75f0" => :yosemite
-    sha256 "c9e5ed1ab5febb67c61139b451ac70c501e6dd8fe656f7658d9e6aaa3f025e2a" => :mavericks
+    rebuild 1
+    sha256 "655eb41d9c6871758bab9b44d697cc4832beb436ff8de343eddbe3a3a9e90e37" => :mojave
+    sha256 "037138c5bc9f536567f6a98bf8cd995f0044f0dc29cf63708269897ebe51edb1" => :high_sierra
+    sha256 "2e2416d19b3fa948d1449e90334d30f4f5044979d91480c855a9970bb257c16b" => :sierra
+    sha256 "5e92069d6c744c894696f238e0432a225d3e69a4d57d24089f9774e226fb02db" => :el_capitan
   end
 
   depends_on "cmake" => :build
