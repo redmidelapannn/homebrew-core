@@ -6,10 +6,8 @@ class Gocr < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1e87b2dfc0833449b09d6b0129b53b6c02d92949d414783a630d4e074734c309" => :mojave
-    sha256 "9130f859261ff352e24fc1dc17c5b7c73eae89d4387cbf35bd2fbdfdfbac62d5" => :high_sierra
-    sha256 "45dd1209a1a24c9d63c8817eab5be77690be2c0a2ca1e26c71954c3dbaaeeff2" => :sierra
-    sha256 "46a821f9815ad964bc58feff3e5344964e9c164db625c9a8faffc0c7450055fb" => :el_capitan
+    rebuild 1
+    sha256 "8fc52de2456df6be6b0992d577674b5950d7e7bb3c2512af3e98ef05fbbf8a42" => :mojave
   end
 
   option "with-lib", "Install library and headers"
