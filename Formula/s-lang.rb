@@ -6,11 +6,8 @@ class SLang < Formula
   sha256 "54f0c3007fde918039c058965dffdfd6c5aec0bad0f4227192cc486021f08c36"
 
   bottle do
-    sha256 "21c9c8888c682720bc8c29d02ee1749398a730c2ad73b39417c72010a3219f11" => :mojave
-    sha256 "ffe303b001b8d560961a6d5112978cc6419ac1795202fb5da0a40b7ae99728c0" => :high_sierra
-    sha256 "aa8fa7cfaaa44eac118cd9f365ecc81a9a16c41637add489d10416f4a4169d9e" => :sierra
-    sha256 "c3dfe3de137e3ab1d26da0b20bd7e9fffae181f3ba9fbf159cf04b8e92707b38" => :el_capitan
-    sha256 "d96458487649104eeaf01ff36dbd9fd4142130bfbc71f47490e69f532fbf3ffa" => :yosemite
+    rebuild 1
+    sha256 "89c12ec5ddea867180724cea1959812580c02c8ca64eaeb50d45bf39423e7be0" => :mojave
   end
 
   depends_on "libpng"
