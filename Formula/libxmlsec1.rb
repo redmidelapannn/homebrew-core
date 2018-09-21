@@ -5,10 +5,10 @@ class Libxmlsec1 < Formula
   sha256 "8d8276c9c720ca42a3b0023df8b7ae41a2d6c5f9aa8d20ed1672d84cc8982d50"
 
   bottle do
-    sha256 "e424d792f7aef55c782280a3ec0424e741dacec4cd06cae87d7d3cfdc9593201" => :mojave
-    sha256 "dbdc3bb085b68e2c59924dba4193bdacbf305d8b91bada24a45b4ed1462febba" => :high_sierra
-    sha256 "79f41292bc1d6e890b8840119ffc3be5170690d17faa20e9bca18100e66aecfa" => :sierra
-    sha256 "698f1c0e00b8e4d1d98894e0d383f8e7cf9644b03e092213100a76f6e0d5e443" => :el_capitan
+    rebuild 1
+    sha256 "45ec774b0a305fb02da57bc9e6d8209186d1df465401ca432426518efa95cb19" => :high_sierra
+    sha256 "9d60c145615fef403e15e5ed09648e940210826396298f8b4ac3d05d84434d1e" => :sierra
+    sha256 "16478d2e391714adad9bd146abf736c28267ae5a8ce9b37e02216e62b0b8c4a5" => :el_capitan
   end
 
   depends_on "pkg-config" => :build
