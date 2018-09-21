@@ -18,11 +18,11 @@ class GtkMacIntegration < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "99f446a854580ede1ac39c3c6c9bb7575e989391f0ad2b73bfd5e394dd2cd9f1" => :mojave
-    sha256 "ec24d3b0e4c0509dcae72e6d6b9a55d1045de25ecd45d923d0d2744e0775010f" => :high_sierra
-    sha256 "a81bce6683ec07ebe6acf464f5dabf417681ea5785194bf69f1614cef2353c2c" => :sierra
-    sha256 "1be8f19849300cb593fd454d4407620c25fbb04ca4f4d7dc0e16261b1d26e04e" => :el_capitan
+    rebuild 2
+    sha256 "bc561e3e33f0dfcd822cac738fbc166f243ee261b6af2f7388cb198fb540e9e7" => :mojave
+    sha256 "f60591efa6136d01a718e80a7e032b0bf280dba1a03028ff61d8c76b984dbc4c" => :high_sierra
+    sha256 "25ad5d65f861cd0b6ebb6b08386cbbee12725bd4b47d564640940d78f61d03c4" => :sierra
+    sha256 "3e2e7b176c6c0bd8a1827a3458cf1e7f0db2cc9c26e7fe6cc02d72986f40b91d" => :el_capitan
   end
 
   head do
