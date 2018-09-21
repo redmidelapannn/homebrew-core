@@ -7,10 +7,11 @@ class Openjpeg < Formula
 
   bottle do
     cellar :any
-    sha256 "7626f5d3c63cade331daf83d8394ecf85f7bc3b715b4f06d297506ebd7f84ac1" => :mojave
-    sha256 "87762c08c68afefa25166be5d0727a052fd6ad628b25a2d1d57d54b42e3b06d3" => :high_sierra
-    sha256 "66694c288e9c15f54ab8332183d4d15ea204623dd13a5acadb211eef28cd5076" => :sierra
-    sha256 "b5041fc90ace09f0b556072ce5fedfa99ff9025f031a4eb70fdee5b90f9aa438" => :el_capitan
+    rebuild 1
+    sha256 "35a018398e7a4fc02d31455d9ed9b86fa6b1f8bd2e0a2190e75488c6fa051dbd" => :mojave
+    sha256 "c251b082c4f3b5e11673f639c22f4c18cd2ba2cfbc7466deaf4776ea40ca4282" => :high_sierra
+    sha256 "4d74518b63d48fedb5f6d21f3d4df9d2f4026021ab81a813e2da49e928b02e80" => :sierra
+    sha256 "ce989a87333f95c702970a81dcb293f0bd182754f5c09f030ee2f4d7913d4f45" => :el_capitan
   end
 
   option "with-static", "Build a static library."
