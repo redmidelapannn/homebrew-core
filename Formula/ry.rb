@@ -7,13 +7,11 @@ class Ry < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "022769e51adb7393c5b418aef50911e96bb6bc43dfc7d81850b6e71cea7c3a2d" => :mojave
-    sha256 "7d9631e41ff87b979c1d94ce1bfe1a710dd031e923b447332186678e68a0f523" => :high_sierra
-    sha256 "2703cd68ac926b7bd8dac25c93054993706d32a4c9857b450eb19f88bdf81530" => :sierra
-    sha256 "5b324970a3a3c806029241e1c5c453c900f16b3aec8e32bedc5d1a6abb5670c7" => :el_capitan
-    sha256 "7b8c7549875ff9a303735ffae235f520fd85af5796953ab92949d2ec7d69ecc6" => :yosemite
-    sha256 "c94e0176f99aaefcdc84ef95c081aa348177662e1b7f20d429a5c56a5b98ef40" => :mavericks
+    rebuild 2
+    sha256 "3b2946d5677615b27f918a8602c75a7859982a8e9d648f636b71155a68355451" => :mojave
+    sha256 "5c32fd5c416bf4d53a3397cb8f79c638621c5374a5c2dfac5d66480655c01355" => :high_sierra
+    sha256 "5c32fd5c416bf4d53a3397cb8f79c638621c5374a5c2dfac5d66480655c01355" => :sierra
+    sha256 "5c32fd5c416bf4d53a3397cb8f79c638621c5374a5c2dfac5d66480655c01355" => :el_capitan
   end
 
   depends_on "bash-completion"
