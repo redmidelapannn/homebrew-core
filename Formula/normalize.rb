@@ -6,13 +6,11 @@ class Normalize < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "8e1ac6ecbf84164c27a804b158201b75ddaabd3237e5826d7ffc78fbe8ee7377" => :mojave
-    sha256 "e4dd195c639807e3e2e25fee6c5c6f3c4263a37a4c7f8f25ab656a96395faeaf" => :high_sierra
-    sha256 "1165de2721e8b4d7f373b9ad10f52c2cd49c44a24cd8fddab5ba51983164cefe" => :sierra
-    sha256 "052ab2e8b1f6a2aa1e634a30749612d927b5cee5cc9302e057bd02c599a1c256" => :el_capitan
-    sha256 "dcb42f107b9674e50d8994215f6d125e0fb9523b1d99b393fd00ee2b827be5e0" => :yosemite
-    sha256 "9c12615d384a706feb8ddb693dadacfc5bfc48827e5722dd6476325bbe5e90b9" => :mavericks
+    rebuild 2
+    sha256 "1af3261bc843e0e368977d805e399efee86811479eae56e6b2a19a3b08f2241b" => :mojave
+    sha256 "9aba16c020eacae44dda68962add016d6b06558b3ababeea6bfdb2c9c5cd95de" => :high_sierra
+    sha256 "769e1ad6eb9e99bcae3079501dc130b33eb80ab5b15adc4376ada810a05de376" => :sierra
+    sha256 "555af40a81491396bccca1e03ad6a20dbfe475d9768a2cd9c299b1028ca7ea42" => :el_capitan
   end
 
   depends_on "mad"
