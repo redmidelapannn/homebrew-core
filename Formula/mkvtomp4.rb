@@ -7,12 +7,11 @@ class Mkvtomp4 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "06b96194e09c4e952de56492047f83a6af1a173aba059ba9edd3ac2664e2cbf4" => :mojave
-    sha256 "2efab72b382b03ac47c70b1878587afafdd8de2b7361d96f98e837692d5b4ca4" => :high_sierra
-    sha256 "4c085a7e2cbfada2a722dc1d676fab80dacc1f490c14d2a2aff10a4fa60f5225" => :sierra
-    sha256 "f7610334538d3e3df8cfeab0a5cd7d9a44acfb141212b4852e340064657e50a8" => :el_capitan
-    sha256 "7ae6b5351e551f6f04811cc5b963fd67adc18132f9b4dc91fc07886f05b0d10f" => :yosemite
-    sha256 "3346ab8be87d01200616db3887ed05d0d6693d2003ca4c3d5530c439ef732544" => :mavericks
+    rebuild 1
+    sha256 "1f9301b4eec2b997f954f2f55c23bc3e6b426999cbee18776298aa989bdf266e" => :mojave
+    sha256 "67c927e28aff704acfc64a246a3d18cb404524191f0896cc61e4f6e594715e99" => :high_sierra
+    sha256 "67c927e28aff704acfc64a246a3d18cb404524191f0896cc61e4f6e594715e99" => :sierra
+    sha256 "67c927e28aff704acfc64a246a3d18cb404524191f0896cc61e4f6e594715e99" => :el_capitan
   end
 
   depends_on "ffmpeg"
