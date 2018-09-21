@@ -8,11 +8,11 @@ class HttpLoad < Formula
 
   bottle do
     cellar :any
-    sha256 "002c9e11e41446466d42dfe8f094019dcb80541564eca948c6d91abfd99720b1" => :mojave
-    sha256 "99aa7a6ff01be1c5966127174bd9eb7739488f5b4845c96fb66f44055badf2b0" => :high_sierra
-    sha256 "d0ee5757f7b530a23d0c27f603e7bf237599f4d279ea9c9261f1417e7ed3cf97" => :sierra
-    sha256 "70f69abf54c027ae1397ccd17b61e66108a5dbd03e8edd8db1ff6af0f8f135d9" => :el_capitan
-    sha256 "f4702e82a17b0c972164f2bc8ba985edccf0f3dc840627d37d5307d9b914ba25" => :yosemite
+    rebuild 1
+    sha256 "efc4b3048619b840c6db75fa33a53c8043404e58974869c30fa3d09370ee8644" => :mojave
+    sha256 "e870146fb3f8aafd8b69926d978de979729fe943935c4af80fc42d1a0b221559" => :high_sierra
+    sha256 "67002b716ea25257e877ef0375ca610c13a492972ed98bc4d9fe78ada8f5abf1" => :sierra
+    sha256 "d52d52755912d634c514dd07e7ffdc76a0bdbd36b408df91de0a87d5964db7a9" => :el_capitan
   end
 
   depends_on "openssl"
