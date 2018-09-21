@@ -5,11 +5,11 @@ class Newlisp < Formula
   sha256 "2e300c8bed365a564d284bf3ad6c49e036256e7fc3f469ebda0b45e6e196a7cc"
 
   bottle do
-    sha256 "2b05f3886282f344830370be7e8e127850c058779e17c3cf932df9f31437c716" => :mojave
-    sha256 "c8b7b1204c175e91cf29f9783fab02e70692de90007cc5a393cfe0345b9d669f" => :high_sierra
-    sha256 "d3d16b3e31f7c47b467a94dc502385b38d4f137afce726a996576c685c557231" => :sierra
-    sha256 "8ec256c413e06d36004f36658abb28e9c71528b46496e46cfc65aab247df58ed" => :el_capitan
-    sha256 "4993d9b9cb6b081d9b0790fbd9095af3f68f82afbaccc09d187399585bebd1b5" => :yosemite
+    rebuild 1
+    sha256 "b9c24452a2764a50fe918801f07879a32553cab4ae19f31c07cb7e5a92d166be" => :mojave
+    sha256 "c198046d87ef5ef3069c66bf317b3c4f42aed6f85e9afc2a1c62a5807167f55b" => :high_sierra
+    sha256 "511865cf1617361926b5f9b0b22aad8cb497ed91e33c64d49351cd1752889941" => :sierra
+    sha256 "e5997990197a11c673ee0ade6b5ddcf34de32eae5b7424b0f26a2522181729f0" => :el_capitan
   end
 
   depends_on "readline"
