@@ -6,10 +6,11 @@ class Gammaray < Formula
   head "https://github.com/KDAB/GammaRay.git"
 
   bottle do
-    sha256 "f6328e7d1fc47b5853b124fdbbc4c11f80ad5856c42cd1797bc6e0485cf8475b" => :mojave
-    sha256 "90dea0a6374d27a768d2ad6d5cf4b70751199924d2dfb6d47af71fd2d638bb8a" => :high_sierra
-    sha256 "96fbf0b78d74f59b2be7399aa0a2a5f0c2d89629e930ef236e2280d514914218" => :sierra
-    sha256 "d3295f75b82219d58cd8f529e6f0e72bf8d798321f50b55ba7418af48b624060" => :el_capitan
+    rebuild 1
+    sha256 "c7297b83ba137b3c9d3648654ac8ee3ca421c3df8fa4b9a533e932cd8e7875fc" => :mojave
+    sha256 "3a73ae4703aee002cddb72ca3f1cad0a94c7adacf597c0f88543f10eca1a6e3a" => :high_sierra
+    sha256 "06d0091ea03abf618fbd26511909bc4b1a0226a4f949215a51854ed599a485ea" => :sierra
+    sha256 "bc9ddf7b4402392775dc61fe5f3edc10afa928f91b4b0334eaa6c30bbe154da8" => :el_capitan
   end
 
   depends_on "cmake" => :build
