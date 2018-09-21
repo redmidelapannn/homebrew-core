@@ -8,10 +8,10 @@ class Abcl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5eefea90ac903b73abb042dd77d56b38d4183b6ab2bad53506704d6df352b6f7" => :mojave
-    sha256 "8a5e39a470e5022e17c503218cadf989cdda645a94511954f7af5959107e79a9" => :high_sierra
-    sha256 "bb56fa9880fc0d627d94f3d0fa63b1979f6acf24c4dd40de3102dd51736f90ea" => :sierra
-    sha256 "300b8eef97c11953cfe37e28a5cea6ff5e0734c49e08ba8527743156ef9ad04e" => :el_capitan
+    rebuild 1
+    sha256 "816ee918682324d9c382c0d409552e740ca05b26f3336cebce1629870a4294ac" => :high_sierra
+    sha256 "68e32832b66dea1ffe1ca66507dc0d9ea5ea649c107fe7c290156bebf76bc93b" => :sierra
+    sha256 "1c86b3978b3cd8f711ced750f0d36655ef9b5584003cabbb45dbc72178101c06" => :el_capitan
   end
 
   depends_on "ant"
