@@ -7,11 +7,11 @@ class Spdylay < Formula
 
   bottle do
     cellar :any
-    sha256 "10d813d333390d5e8264362de2085e3be8419730fd2333b8101180057f9e485e" => :mojave
-    sha256 "9cb131c7f3205acdf923fd3a978a421f99af649d6262698395e458b1a2ef442d" => :high_sierra
-    sha256 "02084694808e70244e96c4aca7c1351e135215c28375ef84f83d1a86b0324ec1" => :sierra
-    sha256 "613ca2f401b491abe6d16eb51dfe1d955d7e985d04fc82950633c807f15b017c" => :el_capitan
-    sha256 "c4fe31125eaff34fca1a71d7fe923d9e0fe3cde230df0fba0d9bb2c2067ea493" => :yosemite
+    rebuild 1
+    sha256 "1a41b61a3b4f5ce6413f73afc57a8d98e1dd20686cf96208c27f18f21a5a5ddf" => :mojave
+    sha256 "0c0cc862a7bdd4ce341d8746fa0dd63edadc2a616c932fedcd99b37e86578cfc" => :high_sierra
+    sha256 "32489916bc2bc1b8e7f3e735e75ae6514c5b27976fe1090a837b0a15adec1011" => :sierra
+    sha256 "fa174c4382ed8de55cdf026f714d3131c94571e7fb3e0837a33137ad9c3aa9d3" => :el_capitan
   end
 
   depends_on "autoconf" => :build
