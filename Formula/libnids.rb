@@ -6,14 +6,11 @@ class Libnids < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "bbbec23c0bd3f33933c06611e7c2f1cc5a233286dfbda3066c35318539374145" => :mojave
-    sha256 "07675f5eebae5b27ff1b632a927e456c2c4b26435fd01c9556860973652caf1d" => :high_sierra
-    sha256 "5803aac7ddece4e3a430d16d5557721d540f73e23e7a33a67f2ac2f6449a862e" => :sierra
-    sha256 "75494ad58d4718de0ba012866ccde060e494293a93f575d42e95b57f7bbe9cc7" => :el_capitan
-    sha256 "a0375ba5851ffc54b89948d05d843102dbf33dbe8f8d77e46673a985df40ca4f" => :yosemite
-    sha256 "4ad0be7662127faff0e9103f678f9d3f277278de4cdc801e2ecdc40ad81e448a" => :mavericks
-    sha256 "e88e84cda8a3bad62118791243f4642572fa19b9656f30bcdda08c510fd6b366" => :mountain_lion
+    rebuild 2
+    sha256 "d7a521d3c17bff4ca9767842b31d7ec4e2a9f2a64308797266886b4c37f7b73e" => :mojave
+    sha256 "b6dfb3448bf62026865b23bea546d73263e2faa92482ce0d35da2f8aca7d9ae5" => :high_sierra
+    sha256 "49e06c60ebf4714d28ca8ac6e9426b860d10d1acb49b1134c91d01a741caaedb" => :sierra
+    sha256 "dbdd47c248cd36bfa82a3b53fece0ed465c1e3848e537684feab79aff03970d3" => :el_capitan
   end
 
   depends_on "autoconf" => :build
