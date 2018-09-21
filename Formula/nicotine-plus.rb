@@ -10,10 +10,11 @@ class NicotinePlus < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4a771717f5d69be309916cb9016edbdbd5ff55a66d0fe6db89e78bf3aae78a1d" => :mojave
-    sha256 "35e7bf104f3d38a0d04611bf55190e47cc0b37628c820b6a94a4793c1a3bf451" => :high_sierra
-    sha256 "7fc8c5bfd9f131df9cc30887240a064129d65794a1a2cde8205f4eda88548cce" => :sierra
-    sha256 "c8243dedb84548dee2f8c663bd3cd4211885b2a1a928bc733a2ee663a9f63fe0" => :el_capitan
+    rebuild 1
+    sha256 "2b231cb4852568952cb6f32b7e869318ad411929e8bfd2632fc0862021ad5456" => :mojave
+    sha256 "b517891635a68b5af7b75ec10dffe674924850d9a20851cbed75245e490b4cc4" => :high_sierra
+    sha256 "1a6a78b3a3eb40666ab4654837d50f60871edd76cdd3134d21802b3172f0292d" => :sierra
+    sha256 "30dba928768fa41e065dcb507d42f6645eff47b97a76f7dbc6e345eaf9b02854" => :el_capitan
   end
 
   depends_on "geoip"
