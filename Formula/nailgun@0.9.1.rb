@@ -6,12 +6,10 @@ class NailgunAT091 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "9af3172f4c3250029bd6aaf038e8bd1061f66a3fcc479701c2758f98b9c646ef" => :high_sierra
-    sha256 "4d0e4d7cbad1880f6e9d314d448f90f423d6c2c45c268a6cf99b36d103504c58" => :sierra
-    sha256 "02cf71ea505409aedd24b227d67b91a24dc1c2db040185424081ecfdb07f3382" => :el_capitan
-    sha256 "958b5a30b72b237139cfd7723025f5d9f50f6b6a318fad22c3297f84a48c34eb" => :yosemite
-    sha256 "395c49abe28e79d6171f616b2f0cacc317a95aa09123bdee3eae4df4f3249cff" => :mavericks
+    sha256 "bb65fefa6998676e7fb489a0afe326ca58135a32c6714b75523590c0f845acb5" => :mojave
+    sha256 "4d28569b300f27611da2252c337c5a9877f2c4eac4106b23e24552020fcbb28d" => :high_sierra
+    sha256 "82d444ba584de0838a9f70924c87344e07073642944b4b5dd7fbbc6044a633d2" => :sierra
+    sha256 "e90cf398cdda7bda8fde4ebef0639a9c1f25f830b531ea36eb48d8d3ec47c10b" => :el_capitan
   end
 
   resource "nailgun-jar" do
