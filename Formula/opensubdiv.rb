@@ -31,7 +31,7 @@ class Opensubdiv < Formula
       system "cmake", "..", *args
       system "make"
       system "make", "install"
-      mv "#{bin}/tutorials/hbr_tutorial_0", @bin.to_s
+      mv "#{bin}/tutorials/hbr_tutorial_0", bin.to_s
       rm_rf "#{bin}/tutorials"
     end
   end
