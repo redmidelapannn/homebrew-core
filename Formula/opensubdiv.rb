@@ -31,10 +31,12 @@ class Opensubdiv < Formula
       system "cmake", "..", *args
       system "make"
       system "make", "install"
+      mv "#{bin}/tutorials/hbr_tutorial_0", @bin.to_s
+      rm_rf "#{bin}/tutorials"
     end
   end
 
   test do
-    assert_match "Created a pyramid with 5 faces and 5 vertices.", shell_output("#{bin}/tutorials/hbr_tutorial_0")
+    assert_match "Created a pyramid with 5 faces and 5 vertices.", shell_output("#{bin}/hbr_tutorial_0")
   end
 end
