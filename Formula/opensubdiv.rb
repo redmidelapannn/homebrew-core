@@ -6,8 +6,6 @@ class Opensubdiv < Formula
 
   depends_on "cmake" => :build
   depends_on "glfw"
-  depends_on "ptex" => :optional
-  depends_on "tbb" => :optional
 
   def install
     # ptex = Formula["ptex"]
@@ -19,6 +17,8 @@ class Opensubdiv < Formula
       -DNO_OPENCL=1
       -DNO_CUDA=1
       -DNO_CLEW=1
+      -DNO_PTEX=1
+      -DNO_TBB=1
       -DNO_EXAMPLES=1
       -DGLFW_LOCATION=#{glfw.opt_prefix}
       -DCMAKE_BUILD_TYPE=Release
@@ -26,14 +26,6 @@ class Opensubdiv < Formula
       -DCMAKE_CXX_COMPILER=clang++
       -DCMAKE_C_COMPILER=clang
     ]
-
-    unless build.with? "ptex"
-      args << "-DNO_PTEX=1"
-    end
-
-    unless build.with? "tbb"
-      args << "-DNO_TBB=1"
-    end
 
     mkdir "build" do
       system "cmake", "..", *args
