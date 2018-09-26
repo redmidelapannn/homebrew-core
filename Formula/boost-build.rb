@@ -8,10 +8,9 @@ class BoostBuild < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "632210e339a03240347ab9e57b35220d0f0c3a6222b68d65f6eda7134fcb15c0" => :mojave
-    sha256 "d95eb10205664a7cf1c6acad39fbb90cb4510bc8a8d55466c20094f50f1a9ed4" => :high_sierra
-    sha256 "ce84cea580da009b087e31b1de52add90798d4daa9b90222211069f90f1edecf" => :sierra
-    sha256 "d16363f1e6d300e3a082fa62a16b6241dc3297ed092c14c6ffb06bbfdf1d241a" => :el_capitan
+    sha256 "4b7e9bd4e6e1114a0f1b8c7e56af736b241036925e5155eab64b01673ccb66bf" => :mojave
+    sha256 "04f61e6b2e425c2ddce01903af1758b7571fa96025ce9429f0e13942b1e4108f" => :high_sierra
+    sha256 "4b402bc5035a1565b04d07ee612c88c4c9899d53f285a260af92449f8f6fcd95" => :sierra
   end
 
   conflicts_with "b2-tools", :because => "both install `b2` binaries"
