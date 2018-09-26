@@ -6,10 +6,10 @@ class Mosh < Formula
   revision 4
 
   bottle do
-    sha256 "5e05a95d972b509c0469ca933de7a522b74b049cc0dccfe5cb1aa6db34b54fc4" => :mojave
-    sha256 "6cff59a934d2d8fda8f40f59c8ec5d0d2b550617478afa6ad56db20b3bb4e4a8" => :high_sierra
-    sha256 "c62e3806458d92a044bd00f5ddf08d6a1d01ee5870f77b67c5527a4a81f44251" => :sierra
-    sha256 "f990bb41dcdcc581c531138e235d58c6d83dfc53afe5203f44a0db7e92de4ead" => :el_capitan
+    rebuild 1
+    sha256 "3bdc0ce1ea28d7c72cad8798c959efdb6302a1e359201ea45c60ff2e4d230662" => :mojave
+    sha256 "44e46669e1a356253c17b4d17440f51639141103132fb16b526c34cba92e4b2b" => :high_sierra
+    sha256 "f46623b09036a53acf4cbdedaf0fb15e5c4e61473b070f3fe1c0a823edbb0558" => :sierra
   end
 
   head do
