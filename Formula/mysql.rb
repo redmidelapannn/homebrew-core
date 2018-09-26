@@ -5,9 +5,10 @@ class Mysql < Formula
   sha256 "99abae6660b53a462cff7c9fefb56d17f52823e9a964831aee1ae5633d9a2982"
 
   bottle do
-    sha256 "56bf45ecb466d8320771777d0924b7169af5a01e49666686072b5211c5d60cc9" => :mojave
-    sha256 "963bbfbd11282a5dee036f5dafe93c4eb5d9a900e7063fcd883dad5bab826492" => :high_sierra
-    sha256 "44e56ac21c0258735e906b6d01c18a562131b35e2e9d1b5d8f09677562b8b411" => :sierra
+    rebuild 1
+    sha256 "81ba80a0a230d993997d8ed6d779ad32d25eb625e6f602c702a35adcac37c5b3" => :mojave
+    sha256 "36bc4d7b610c5bc939caf6d1ca1ad23b06eb5ee9b4e499f82888211cd78f8118" => :high_sierra
+    sha256 "06c0974fad57a0abd440b319fb7e2a2eaa37404cb9026d77146b70dd9fad2ea0" => :sierra
   end
 
   option "with-embedded", "Build the embedded server"
