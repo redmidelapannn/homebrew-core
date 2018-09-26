@@ -6,10 +6,9 @@ class LibbitcoinServer < Formula
   revision 3
 
   bottle do
-    sha256 "65098e41b6adaa69a3ccb7f176d1296eabe86dabc2b5a21c438a1eb1416bf200" => :mojave
-    sha256 "1cd2e90b8a568f03396914465302706d02fc4a15a6e33f6b617c85128a47ef0a" => :high_sierra
-    sha256 "5c28e1ca65f5416c9dd9e67fab4b5e6668c6338daf052f9d6e43ce26e87169a6" => :sierra
-    sha256 "5ea6f31229523702baafa30778d362aee56fbbac4bb251118089f4a859a51bd3" => :el_capitan
+    sha256 "7aaaca14d6ec4eeafa1c780ad5cc79e91bfe55bf756479e8e3f69db2e9f2f006" => :mojave
+    sha256 "1422408f0bfb203f9e6083deb2c62b588ca8326506be480723ed3d540ecfe324" => :high_sierra
+    sha256 "aea6ad4ba4ecee1492c846a4690eb588b0797435ede9666798363d021e62a444" => :sierra
   end
 
   depends_on "autoconf" => :build
