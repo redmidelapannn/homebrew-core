@@ -7,10 +7,10 @@ class Brainfuck < Formula
 
   bottle do
     cellar :any
-    sha256 "a9e9509e4f0cd5345ffeac741c3a74d5575e17c99ea53822dd77fd4f98687b57" => :mojave
-    sha256 "cf3c31fcf7c4cf099b348d01e619d1791aa3a255199de80afbc637e331947abf" => :high_sierra
-    sha256 "354bb3372301325b49bfd4bd9b53084061af3bc3a3d6375e1c4635297c0dd008" => :sierra
-    sha256 "f8289bed7e6455b63f05baf367069f60fe478f6c78f064c06ab1e571a181c3b7" => :el_capitan
+    rebuild 1
+    sha256 "cd60713987a2f814b4601e8a5ad32590002b339fd0080710234933bab5150a6d" => :mojave
+    sha256 "eb9ecdfc707ac5f4194bdfe714f1a8c016782a4854b45d1d88420f98b9980e12" => :high_sierra
+    sha256 "1a764fdaafc1bbc1349e1a267a50e613366402824814a589d6e70644bf56c62c" => :sierra
   end
 
   depends_on "cmake" => :build
