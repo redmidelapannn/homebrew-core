@@ -7,13 +7,10 @@ class Httperf < Formula
 
   bottle do
     cellar :any
-    sha256 "e6a22b883ddd0194a6dacc13b0144437082cb9a16694db18f9dd03ca4e127d0a" => :mojave
-    sha256 "1ed6c221d700528fa7a74fa12160ef3f25b2ac4d2835f7a0dfc73eb4ac4e5a87" => :high_sierra
-    sha256 "3ecb1323c334cfee3a0e134750c24f07c0f808effcc271c86893ea7d13cdcef4" => :sierra
-    sha256 "42d9ecb49274565dd969ceb5c2c9135caf1011a2f1636f22401a30189298613a" => :el_capitan
-    sha256 "d23d569b210c93d798f319e01ddeb9cca1dd11e5c5330a0df0eef59497dbb12d" => :yosemite
-    sha256 "e6a03dce9f3679d23449b9fed857324d570b8fb6b94a3d31b5e172253eaa99dd" => :mavericks
-    sha256 "e52a0a55a440ba301d8ca469a5a1ef3d6ec5e51fa8df0662674d25f3c9c96b77" => :mountain_lion
+    rebuild 1
+    sha256 "5f4c3cf480eacd7d9ea89535cf6bfbfde0a5cd0ef5cd86cdbe4bc3e59f48d978" => :mojave
+    sha256 "7db0d39474f5e3cfc0d09eeabac66f088570228fff3723ff76238fba63c040ee" => :high_sierra
+    sha256 "06eebc78c9d522e99783ca69329bdeb15a53386e31008ffaca50261d1bc0f07a" => :sierra
   end
 
   # Upstream actually recommend using head over stable now.
