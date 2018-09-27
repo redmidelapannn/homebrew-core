@@ -7,10 +7,10 @@ class Cmake < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "467775398419045ade07ae6f406fcc41299094f1c2d94eeda1b192eda2cb7e90" => :mojave
-    sha256 "852ff3e17fd4b18dad1b321043a2e89020bed0e8b1cabcaf1ca93f454c38e182" => :high_sierra
-    sha256 "10dd90b3aedb656af4ef26f53ff62a6f3b34391fc4774f5704959f643535cb09" => :sierra
-    sha256 "14ad6305d2b795cabe082779eea3875591ddb3b3c881a6056f9c792243fe7135" => :el_capitan
+    rebuild 1
+    sha256 "7a5d5110d1b873d9e01d830344b9bb28fd7dc04baa1934a432f1d35dda08d8a9" => :mojave
+    sha256 "a5e4f0651e5de2145683ed4b010076fce9761440fd28a20ecd866d045fc1ca04" => :high_sierra
+    sha256 "c330dfe0ced965c6eba5bac86279191757a7128ee8c01911bda9c1d33c2f66af" => :sierra
   end
 
   option "with-completion", "Install Bash completion (Has potential problems with system bash)"
