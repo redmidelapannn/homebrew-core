@@ -6,12 +6,10 @@ class Namebench < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "35225323dc77dc1954cd19b1aa0476e4ebab47e91dbabbfc7e169b5b500b0eba" => :mojave
-    sha256 "4c2312daef0aae052b7e65bdb4b20cdcf1bfa601e5f8a484a7f846be1096bcb1" => :high_sierra
-    sha256 "ae766151284842185ceecf1622a82cf55c949994729536015a42eea38f62309c" => :sierra
-    sha256 "3333ef2615f6fbf294cede389d8545487474779a52c18108feb83a4697530cdc" => :el_capitan
-    sha256 "8d400aed171038f248e9d91718fb42625fc1f278df538b34259f26918b245f66" => :yosemite
-    sha256 "ac3d993b71305c18b47fa671ecb4c5875b80fd7ea87a6fff0f123c3c2cfdcb43" => :mavericks
+    rebuild 1
+    sha256 "f4e19ab0ba4a8f36957ad59b5440acacecc34acc5edd677720df3fb445f87126" => :mojave
+    sha256 "e660802024e741dd0643d32641547a185fe08d69d3998128ab10510fdff22778" => :high_sierra
+    sha256 "e660802024e741dd0643d32641547a185fe08d69d3998128ab10510fdff22778" => :sierra
   end
 
   def install
