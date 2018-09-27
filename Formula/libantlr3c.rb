@@ -7,13 +7,10 @@ class Libantlr3c < Formula
 
   bottle do
     cellar :any
-    sha256 "c4df9f53203a7e21abc1fb22bf74256017f646e9177606c7da6c222db16dd3cb" => :mojave
-    sha256 "2de7942e4bc89830c0d92bfda55e60a4ad82723430bcc7477abb5d1b1ade7f86" => :high_sierra
-    sha256 "a5e779c431e16bdaab829c774468ce11f8e7ea359412800e294433b011704541" => :sierra
-    sha256 "fea1cde8ae732cdbbffa6a6d329239b1da067d2b69424d53178e60309748c403" => :el_capitan
-    sha256 "8026d876b20980138c076cb4008f358deb858204b6399c436cf45e93594274e7" => :yosemite
-    sha256 "010c3866a3c183b10dec76f845ce826a26a5a384074f8c56f41abeb9e4aa6e77" => :mavericks
-    sha256 "e734361de9f3f5d81b0a0224cfcb561806fed5b1d5dbeeb86bd2131754aa993d" => :mountain_lion
+    rebuild 1
+    sha256 "fa4811df339a326c4fa8c543dd349750a4594d357b495410663064aa90de3452" => :mojave
+    sha256 "9734ac6246087d1e9ffda83acf6b0ff486b5e558a5b3b91db15245459f39ba7b" => :high_sierra
+    sha256 "c4dad638f8c17b0a8eaa0e4f94aa076b1d712761decc5c134a8b66324b72e1c0" => :sierra
   end
 
   def install
