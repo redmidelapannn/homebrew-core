@@ -6,13 +6,10 @@ class SpawnFcgi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2512789a14b629470c684a4694e7f26fb28a9734b156f0756279bc8f40c2f2bd" => :mojave
-    sha256 "31c9d255c30ac65009b0972c7b9fe8a8835f8c305800c1b147471b44113fd285" => :high_sierra
-    sha256 "23140d56da75279d033d123b5cc5a7d50018dd08e6c74e3ed118eac5adbac555" => :sierra
-    sha256 "4e6f999ebcad8b7ce84473379b6358ec569559f9e4b772d31ef1a5b0e01fc865" => :el_capitan
-    sha256 "7473e3e2cd5322b2f09011e2b5119622e145d136cd0a8d4ce7adcb255a13d83b" => :yosemite
-    sha256 "a19a14cae6fbacdc5aa1a8132f5d290743ba7385c2d76903dbd172ca07b38680" => :mavericks
+    rebuild 2
+    sha256 "202224c58c18c77a6cda192b1013c6a14c0fe72b0d5973475f28dd7921ce82e5" => :mojave
+    sha256 "9f314245460ebece0f42dd563161f3a5ac5078b6ab6dc8fe08aafc2be330554f" => :high_sierra
+    sha256 "24c191555f9882087ed8fdad4fd3da2430612a885ab4f5a8c1f8d94d5ad6f7cb" => :sierra
   end
 
   def install
