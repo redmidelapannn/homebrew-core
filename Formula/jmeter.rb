@@ -1,7 +1,7 @@
 class Jmeter < Formula
   desc "Load testing and performance measurement application"
   homepage "https://jmeter.apache.org/"
-  url "https://www-eu.apache.org/dist//jmeter/binaries/apache-jmeter-5.0.tgz"
+  url "https://www.apache.org/dyn/closer.cgi?path=jmeter/binaries/apache-jmeter-5.0.tgz"
   sha256 "b29e9dc6351394a458fdb9270f5df5636175fe9c433bc86b8ee394bfcabfb142"
 
   bottle do
