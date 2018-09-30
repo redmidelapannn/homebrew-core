@@ -7,9 +7,8 @@ class PerlBuild < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "334d758431276eab85dedb6d85f49ba231cbf6f1403a924ee09bbe036c97778b" => :high_sierra
-    sha256 "db1311750f48a2bd5cb8571f4dc7688c59b510855ca5481f65d57042cbdfc883" => :sierra
-    sha256 "fd55b31409de788975a6118a73786b845a131e944edc8cf41877c5eea21044bf" => :el_capitan
+    sha256 "2ed40e39f7ed16c3e74b01cbe7e336e8e836e79f5bb930fe1bd7e5255c376db8" => :high_sierra
+    sha256 "f3727b7487312e3a604ae785f2fbe3d2b42e868b9c805e06cb08acaafbee3344" => :sierra
   end
 
   resource "inc::latest" do
