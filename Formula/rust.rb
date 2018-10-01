@@ -21,9 +21,10 @@ class Rust < Formula
   end
 
   bottle do
-    sha256 "abdc0b0a444ac961f7a9591ba17a8900aff3f172efc31552d1e57bc74198bba8" => :mojave
-    sha256 "6b1085b783dcfa624754c49133fdda48496c087b2de51c8310fb2262437f3e36" => :high_sierra
-    sha256 "960d757af54b677468728e889698cab3be8e368836c11dd09a6c5b35319e7c33" => :sierra
+    rebuild 1
+    sha256 "c0d1da92e02573ec462192c547eb00e121f62597bf7844651c9d96fdca0ec57f" => :mojave
+    sha256 "207369ed54616a396d76ec633a1e3d7dde849f5b68d9783ee5d45eb26d8a819c" => :high_sierra
+    sha256 "825765ac93eb9fb0f360403d300aed00b1dbf108ffff14002180fd4071d4b9de" => :sierra
   end
 
   head do
