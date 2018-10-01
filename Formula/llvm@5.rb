@@ -24,10 +24,10 @@ class LlvmAT5 < Formula
 
   bottle do
     cellar :any
-    sha256 "be24cba8fab8f07504a75c62888fa208f6a508bbfb416af3385a9704461ae08d" => :mojave
-    sha256 "d76f7ca753dd3464883c0ec21ce6751c7de02b3db9ee4fad19925e5283d902b8" => :high_sierra
-    sha256 "a2eb1622d8ff63b6b38f3611ed5c0d9f5a609468d279d90ae10fb583c3388392" => :sierra
-    sha256 "d240e166d5116243fce9d518da0167678aaa3b17151be702cdf9d38f57f27e54" => :el_capitan
+    rebuild 1
+    sha256 "f456793cc93036104177cc20a1972f592494713139b8dc2118d032d8de1b579f" => :mojave
+    sha256 "1e89bbe604f717124f408e15f2a85aca87da92409440ec702991959fa30e75bb" => :high_sierra
+    sha256 "96150c80c502e3f1f17bf1f174c000682cad7ff412fe4e7fff70e4df70e9f7c1" => :sierra
   end
 
   keg_only :versioned_formula
