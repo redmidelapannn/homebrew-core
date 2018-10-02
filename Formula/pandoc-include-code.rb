@@ -10,6 +10,9 @@ class PandocIncludeCode < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "6af4864b4b6d5df784422d29d136ca22e1d1029e027414de83f2b514af0cf7ab" => :mojave
+    sha256 "77a2c346b4487e89f67af6ed23e1d9bed1a199e826f008d743074bd7bdf1fd4f" => :high_sierra
+    sha256 "9bcd6d66b739f12c82afda72a9effe55d318081caa42907efcae82c7bc9150f5" => :sierra
   end
 
   depends_on "cabal-install" => :build
