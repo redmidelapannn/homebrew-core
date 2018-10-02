@@ -4,6 +4,12 @@ class Proxysql < Formula
   url "https://github.com/sysown/proxysql/archive/v1.4.11.tar.gz"
   sha256 "9d34be2916e4b341820d2e9346a4697464e70d6ae1fb2a0761006299c96067c8"
 
+  bottle do
+    sha256 "06c95d0d50a019c55bec10a9a43e29cc58bf86351e3b51c0c64554b513e90e75" => :mojave
+    sha256 "b30833ca35cae634207e8f247339609a46c0ceb64a6671a6f1c5847e1ea76500" => :high_sierra
+    sha256 "349aac4fd986ff3a01c8f4e164f5bc5c6342c0ad060c85893bfebfab1640907e" => :sierra
+  end
+
   # Build dependencies listed here: https://github.com/sysown/proxysql/blob/master/INSTALL.md
   depends_on "automake" => :build
   depends_on "cmake" => :build
