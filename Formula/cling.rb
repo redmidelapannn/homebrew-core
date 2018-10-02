@@ -7,10 +7,10 @@ class Cling < Formula
   revision 1
 
   bottle do
-    sha256 "b6e842db192bc4ebbf88d5f6cffa8acfb1967d959ddf823cca0a6e522900f410" => :mojave
-    sha256 "fe94e56a3ee12dc8ada76ab4e9f96f4ff754f356a9ca9ad35708c0dbf4a41802" => :high_sierra
-    sha256 "c947df2499dcdeaa9807c3eae023d5c5cf9ba49902a68998e242b24e0fedcd9f" => :sierra
-    sha256 "a735b768dd2e5b9b000ca81660d5472897036d331277595501b341075da5ee8b" => :el_capitan
+    rebuild 1
+    sha256 "4f48439ebb20b230f19adb5feae8a73a3374a718d933fadf9edffa0f1beccb9b" => :mojave
+    sha256 "0165a035db2e56da031f0168cd197ec260ed159c7272faf6a0e0701f3c907945" => :high_sierra
+    sha256 "970868500d833a825cf1c59d27c94b6bde332c67fccc95288cdf8cf58c7bf71b" => :sierra
   end
 
   depends_on "cmake" => :build
