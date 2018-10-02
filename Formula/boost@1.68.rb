@@ -4,6 +4,13 @@ class BoostAT168 < Formula
   url "https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2"
   sha256 "7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7"
 
+  bottle do
+    cellar :any
+    sha256 "b63b3aa4cac8f1ae3eb0bedda148f79a3b452dc3659b5cfd1109ba92aca185d5" => :mojave
+    sha256 "6995c84e3b44a14728db988342b320ed45d3915a62866e11dc10f25b4861a646" => :high_sierra
+    sha256 "3bbeee47641283bd697d3d96fca07b8d9b30782cf258e010cffecf76ba79683e" => :sierra
+  end
+
   option "with-icu4c", "Build regexp engine with icu support"
   option "without-single", "Disable building single-threading variant"
   option "without-static", "Disable building static library variant"
