@@ -15,12 +15,11 @@ class Carthage < Formula
 
   depends_on :xcode => ["9.4", :build]
 
-  patch do
-    url "https://gist.githubusercontent.com/jdhealy/8db93b4e3791fa3715554b01e55d366d/raw/88d2913bd9cc0408a11a75715c593789ebcfb068/patch.diff"
-    sha256 "47a9b2c48373d4eacc54d684f0d55597b07464e1d2bcbde3384cbc61467a96e4"
-  end
-
   def install
+    match = "XCODEFLAGS=-workspace 'Carthage.xcworkspace' -scheme 'carthage' DSTROOT=$(CARTHAGE_TEMPORARY_FOLDER)"
+    inreplace "Makefile" do |s|
+      s.sub!(match, match + " OTHER_LDFLAGS=-Wl,-headerpad_max_install_names")
+    end
     system "make", "prefix_install", "PREFIX=#{prefix}"
     bash_completion.install "Source/Scripts/carthage-bash-completion" => "carthage"
     zsh_completion.install "Source/Scripts/carthage-zsh-completion" => "_carthage"
