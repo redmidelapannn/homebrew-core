@@ -4,6 +4,13 @@ class BoostPythonAT168 < Formula
   url "https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2"
   sha256 "7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7"
 
+  bottle do
+    cellar :any
+    sha256 "3eca83fa493dae74f97cb7db64b3cc25329ce0a744b9de0a5059957cb4ba8419" => :mojave
+    sha256 "68e3f2d9cc108ddbd863f2e2eea4d8e58bd00dfef644156c80be66d81ca0508b" => :high_sierra
+    sha256 "1519f853842f0d36eb92b85dc6fb21b448c3de51bd60e6f1413cf7be5d21573c" => :sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "boost@1.68"
