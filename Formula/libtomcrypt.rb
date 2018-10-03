@@ -6,10 +6,10 @@ class Libtomcrypt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "93de55d83b104750011920b2fa6b977605e6ff822563786d46d3e623ab1c7993" => :mojave
-    sha256 "e7d2345a89bfd72ccb915ffd28dafcb18166a1ddf976bd026c6c2c13efc48cdc" => :high_sierra
-    sha256 "3b0887710aa1aa5b8e352b6b02d742cb44a4b7bcf99bfd1f38cf1eeca16d77a8" => :sierra
-    sha256 "9ecd9f9965864d6c58970ebd6d0c3b1871e38ef787ed8732ef12072a651fd3c3" => :el_capitan
+    rebuild 1
+    sha256 "da68016b386de806055ed23ee44f636a65a02669cbc8229efe125e9d6dd0cdbc" => :mojave
+    sha256 "f899b6425f601c02bd08204380ab80e44abef0747e35d13487e5a6730d2e0805" => :high_sierra
+    sha256 "ca13145ad64fb942d72d30db5389260f5752918ba92ecfc79aa626b9e6ed9723" => :sierra
   end
 
   depends_on "libtommath"
