@@ -8,35 +8,30 @@ class Opensubdiv < Formula
   depends_on "glfw"
 
   def install
-    # ptex = Formula["ptex"]
     glfw = Formula["glfw"]
-    # tbb = Formula["tbb"]
     args = std_cmake_args + %W[
-      -DNO_OMP=1
-      -DNO_DOC=1
-      -DNO_OPENCL=1
-      -DNO_CUDA=1
       -DNO_CLEW=1
+      -DNO_CUDA=1
+      -DNO_DOC=1
+      -DNO_EXAMPLES=1
+      -DNO_OMP=1
+      -DNO_OPENCL=1
       -DNO_PTEX=1
       -DNO_TBB=1
-      -DNO_EXAMPLES=1
       -DGLFW_LOCATION=#{glfw.opt_prefix}
-      -DCMAKE_BUILD_TYPE=Release
-      -DCMAKE_INSTALL_PREFIX=#{prefix}
-      -DCMAKE_CXX_COMPILER=clang++
-      -DCMAKE_C_COMPILER=clang
     ]
 
     mkdir "build" do
       system "cmake", "..", *args
       system "make"
       system "make", "install"
-      mv "#{bin}/tutorials/hbr_tutorial_0", bin.to_s
+      pkgshare.install bin/"tutorials/hbr_tutorial_0"
       rm_rf "#{bin}/tutorials"
     end
   end
 
   test do
-    assert_match "Created a pyramid with 5 faces and 5 vertices.", shell_output("#{bin}/hbr_tutorial_0")
+    output = shell_output("#{pkgshare}/hbr_tutorial_0")
+    assert_match "Created a pyramid with 5 faces and 5 vertices", output
   end
 end
