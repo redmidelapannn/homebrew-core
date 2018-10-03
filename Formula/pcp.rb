@@ -4,6 +4,10 @@ class Pcp < Formula
   url "https://github.com/performancecopilot/pcp/archive/4.1.3.tar.gz"
   sha256 "346caea9df3610319b191b11abdd86c3312eaa20f9db1d9b34bbd9e0204f3939"
 
+  bottle do
+    sha256 "0f4f1bb40385398afe4d5c87e305c8f7302eb77dffc9282358a0886938ac2073" => :sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "nss"
   depends_on "python"
