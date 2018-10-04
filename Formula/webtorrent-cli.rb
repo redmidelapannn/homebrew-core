@@ -8,11 +8,10 @@ class WebtorrentCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "b36cb12217855e7f846904787edff56b262191c3027dc80f695152197d877158" => :mojave
-    sha256 "f742fef76f23303d2e3f00aecc58f0e330151395827b0c1e86965aea15de86fb" => :high_sierra
-    sha256 "684233d167eda9cd325ea50016c1000ac4c4a19764a65da4810bebaa5f49a156" => :sierra
-    sha256 "5fccaa04d58abeed5146887b970264758a3aff86a048766e9d40386bb5ad3dff" => :el_capitan
+    rebuild 2
+    sha256 "3e493844761744cb14f70d23539cb5f13acd2e4e3cfd70cbd7c9a8d2a009a331" => :mojave
+    sha256 "8fe539f47ef0f97f380a278c486694380db1d83f29acc03a70d07b11ad9aea06" => :high_sierra
+    sha256 "92b9ff2b83a954be540b399a38169fb739308c83625ddd9deea0ca95b12434e0" => :sierra
   end
 
   depends_on "node"
