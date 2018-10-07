@@ -22,6 +22,7 @@ class Mpc < Formula
     system "ninja", "-C", "output", "install"
 
     bash_completion.install "contrib/mpc-completion.bash" => "mpc"
+    rm share/"doc/mpc/contrib/mpc-completion.bash"
   end
 
   test do
