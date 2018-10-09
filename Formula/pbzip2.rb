@@ -6,11 +6,10 @@ class Pbzip2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5594212d69f619f7fa59cfec23ce2c6eefa0f8c69d5e77cdd84cf9e2478d0d51" => :mojave
-    sha256 "d72e618d7301937ab6a392e1ef3d9ed1f8d5380cd6516ea17b4e4bde11eea9a7" => :high_sierra
-    sha256 "c15b9c38b5302286033e54ff4be006c3b31ccb179f96641e44f1126958527d7e" => :sierra
-    sha256 "be653d724b6f061cb9939dbdbf457aebc275e16dbf599f598b9ff3999fdd5db3" => :el_capitan
-    sha256 "ad103aef3e2d72293cfed3fcc42999afee9b4fc332f8319e3c079758215411c9" => :yosemite
+    rebuild 1
+    sha256 "cec786f618eeaee93ee0c855e716fae9832ea14e80e28da2a37c745d06e542ed" => :mojave
+    sha256 "d4caa497cc5231ae2b8fef2e2c7d01324bbbebe0911e4d9e417000019f479cb9" => :high_sierra
+    sha256 "b4fbd84f339a89550f545c0218b37ca970e20d1107e9edf1e6ef3dc8f6ffd43c" => :sierra
   end
 
   def install
