@@ -7,10 +7,10 @@ class Quex < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d3dc54f074080d5853374c14ffc866417f4effbe6c547d316f147523ca02c9e9" => :mojave
-    sha256 "e5d0e22c8d988408e52ddabcd0b1ddd7e858c6256b1449b919a83f8da5934354" => :high_sierra
-    sha256 "e5d0e22c8d988408e52ddabcd0b1ddd7e858c6256b1449b919a83f8da5934354" => :sierra
-    sha256 "e5d0e22c8d988408e52ddabcd0b1ddd7e858c6256b1449b919a83f8da5934354" => :el_capitan
+    rebuild 1
+    sha256 "33f31c6e9b08c0425d5a33c86e8a56767680eb2a3ca4dd22923523d961003ac6" => :mojave
+    sha256 "dadb74010c37aeea1aba59618620a056430f0e9caa348fcb60bb9c40049d236f" => :high_sierra
+    sha256 "dadb74010c37aeea1aba59618620a056430f0e9caa348fcb60bb9c40049d236f" => :sierra
   end
 
   def install
