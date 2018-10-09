@@ -6,12 +6,10 @@ class Peg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "335fda7dd0c4cbd0a2c929daf19693729b3e1592f1880f5a1cb2ebd5ae587c3c" => :mojave
-    sha256 "622cd7695294bcac63049e45e934ea1936dfc0f9373046dd028f63a3fe6fa2a4" => :high_sierra
-    sha256 "15dfb147f388a8a486714d17d519a1ad1195f79bad5843d37726e8efaab1ae79" => :sierra
-    sha256 "44d0ab83d1bc3ee71294d328dc70dd14206b8d8ddf05a195f2cdf354d746d5dc" => :el_capitan
-    sha256 "9abe69e43c8e2672aa7b5b26df5c80976c2d0365b5d85d672e8948cebe88646f" => :yosemite
-    sha256 "bbe71ecc8acb17bdf2538f41ae56472bc104a69e310cfd533565507c3468c53c" => :mavericks
+    rebuild 1
+    sha256 "1988648a56576e1fee79ff415591a331c236d20332a3e06ab4f3d53a4763698f" => :mojave
+    sha256 "b9f6d4447d854fc8b5742104c783ab8fe18aee8dafd803d2ff3a1c4dc08329cf" => :high_sierra
+    sha256 "ef6999cdbf779efa9b4c79515211b61e0a7d2e308be4a91256f0e2c58c628db3" => :sierra
   end
 
   def install
