@@ -7,12 +7,10 @@ class Pelikan < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a313660eb003974995537cef07e391d3051218f7c65f3326c270b68f0855a59f" => :mojave
-    sha256 "a80ae1b508d4eae75d03fc5ad07477039a50a37419681b2472af4f9dc5f240ea" => :high_sierra
-    sha256 "37a675674b7ef33f07099029042f56c054f09b5d22400010d583fbfa41c0ce50" => :sierra
-    sha256 "e314ce6288bf76e271bf69ce844e2e846b16cad68ce635faf1e5130c3c6911d0" => :el_capitan
-    sha256 "ab04b8488e6272d0000c8e67842c4b286eb23459a6de9e9a392f14aa87c9978e" => :yosemite
-    sha256 "80459134cbab7aa94ab55d38488b2058696f7408869306f75e80cfa0350ed40d" => :mavericks
+    rebuild 1
+    sha256 "c4a633a6fb8aee31471fa6e63243ab5ca76cc3f34f6410397b7c0ff008e31684" => :mojave
+    sha256 "54d9e76bea6ebad59be71826c4a0cfd3a0ad694f555dc9dcc244e078a2552e5f" => :high_sierra
+    sha256 "448bb518f3f987c9ba0f00c488ce2a9ca587e513485034761c9ac858bab0a83b" => :sierra
   end
 
   depends_on "cmake" => :build
