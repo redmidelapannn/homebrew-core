@@ -7,11 +7,10 @@ class Nlopt < Formula
 
   bottle do
     cellar :any
-    sha256 "9b08f332287446d6eb32c7b6fdf3732b1459dae9b9d04af3bf11d7924d549ebc" => :mojave
-    sha256 "8b24f8a85b1b9e553cfd97a88fb22093926fe787bbeeaa598636baf7adfb1ea3" => :high_sierra
-    sha256 "183d661c2b34ff468162b4bcc3bc7c287bcab47ff1bd4b902ea00fe188db1e52" => :sierra
-    sha256 "cfb26ea39b36e9a9ad472e2600864d040f02531ba2c922798f82455a25b73a30" => :el_capitan
-    sha256 "eed62f227cdfd93ba00d7abe061b4136945a4511d67651d0fa4aa07b196b7b7d" => :yosemite
+    rebuild 1
+    sha256 "0870ceee5693644c69dad517b836a1d4764271d9b35b293b2db4056e9dc0d916" => :mojave
+    sha256 "3e9189eded0858a445c554b0ebd2ecc78425f0989b6a6bc157c22c8a0c19c346" => :high_sierra
+    sha256 "c311738f2c72df7ded3e59e94e1a6b6fbe15632d25a7fc23affeb43801d56043" => :sierra
   end
 
   head do
