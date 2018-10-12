@@ -7,11 +7,9 @@ class AutoconfAT213 < Formula
   revision 1
 
   bottle do
-    sha256 "1ea8c751806adc1ee85dcfef1b66d2d8aaed52d9848362635bed0251b7437fa4" => :mojave
-    sha256 "180a5d234c513e34952d639cfbcb5c486d64ad814d3d422b6cf86d048c0267c8" => :high_sierra
-    sha256 "1631e2f720355ef11b150ebddde824c02eab44a336203bcdb5282e4784ecbcd9" => :sierra
-    sha256 "f6b148c2bcf08f0e143a4757fa6784bf9e0d780d5ca8ec8cd97c042316c50d84" => :el_capitan
-    sha256 "f6b148c2bcf08f0e143a4757fa6784bf9e0d780d5ca8ec8cd97c042316c50d84" => :yosemite
+    sha256 "16ec764548d026a8d68d6b8fe8f68b0f765ab201125ea1faf05063103666ac2a" => :mojave
+    sha256 "9dc92e1357531771f346175bb2aa2bb2319c44e52952e556872d51d6f6a271b4" => :high_sierra
+    sha256 "9dc92e1357531771f346175bb2aa2bb2319c44e52952e556872d51d6f6a271b4" => :sierra
   end
 
   keg_only :versioned_formula
