@@ -5,11 +5,10 @@ class Luarocks < Formula
   sha256 "b989c4b60d6c9edcd65169e5e42fcffbd39cdbebe6b138fa5aea45102f8d9ec0"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "a1acb2e90bea4f3056dd34e95335bbd916034a47ec53813d7b4d0cba9c34fb08" => :mojave
-    sha256 "7a23c8cd3129369ae7502801765242e2e8a1f4afaf6c58d09b812654d5ba2dd3" => :high_sierra
-    sha256 "7a23c8cd3129369ae7502801765242e2e8a1f4afaf6c58d09b812654d5ba2dd3" => :sierra
-    sha256 "7a23c8cd3129369ae7502801765242e2e8a1f4afaf6c58d09b812654d5ba2dd3" => :el_capitan
+    rebuild 1
+    sha256 "eeecb1dbba07cb2855d9f274760de315fc0e7b94728951f1a0a452b5f16aada4" => :mojave
+    sha256 "0e7d6e8513a2b831e500f487c3636a2b2498008f7b4a0e7f182dd39c93edd37d" => :high_sierra
+    sha256 "0e7d6e8513a2b831e500f487c3636a2b2498008f7b4a0e7f182dd39c93edd37d" => :sierra
   end
 
   option "with-luajit", "Build for luajit"
