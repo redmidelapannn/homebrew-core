@@ -20,6 +20,12 @@ class Openjfx < Formula
   version "11"
   sha256 "2a63a4e3b8c22fcbc72d74c2a70548ef14a4f50bec0ba3aa83b5a5bb269b845a"
 
+  bottle do
+    cellar :any
+    sha256 "47b91ea90bd217a71f845b19b31f28d22f92813e0d3e70a64a18ca3b9f7ae826" => :mojave
+    sha256 "a978420bfd0bccec5cce4f84485b26319ae62bb61ebd40890f76364993be51da" => :high_sierra
+  end
+
   # I'm not sure if this is actually the case, but better safe than sorry:
   pour_bottle? do
     reason "The bottle needs the Xcode CLT installed in order to run.  "
