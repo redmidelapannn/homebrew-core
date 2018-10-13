@@ -6,10 +6,9 @@ class Ctl < Formula
   revision 3
 
   bottle do
-    sha256 "16f2a8692af07f7710d558e4de69a88705df2dd153e00dc36fdfb0d3a2accc0e" => :mojave
-    sha256 "edb2ab8944366710827ab289c0c0c6846642524fd0928dfab8cb8be033cd465d" => :high_sierra
-    sha256 "6668abc43f329b3220882182fa9f45c04e273f9f3d91a78a9c352df55d85171c" => :sierra
-    sha256 "744fa25276716928e3b7e43e1f176151fdcf1b60fab95b2f3308467d77bf75a6" => :el_capitan
+    sha256 "31ad07eab3cb56ecc23452e44f3904d8ded54a83eb68a09d9da5ada2f8fdd277" => :mojave
+    sha256 "ac3908aec0cc6340466f62e9d700004e4df2f5a2e2c266541d48707fa1ac6710" => :high_sierra
+    sha256 "7bbc4f13664ab48049197307a934350d28f2f3b54bdb54b991aa844bf5b50417" => :sierra
   end
 
   depends_on "cmake" => :build
