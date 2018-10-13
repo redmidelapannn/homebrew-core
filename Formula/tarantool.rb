@@ -6,10 +6,9 @@ class Tarantool < Formula
   head "https://github.com/tarantool/tarantool.git", :branch => "2.0", :shallow => false
 
   bottle do
-    sha256 "23f25965065306a21c07c8ce4691d1b090f97520d1a50d5853ec1d2149f0d720" => :mojave
-    sha256 "d9ac5b182fbf02fe111f9719c63ffcd806108452fd0492bc3193991f4533af94" => :high_sierra
-    sha256 "1e3f5e5411f95feea7850f027562cdde844034301aa9de6aef4bdd16c7f81de5" => :sierra
-    sha256 "da8e27cdfdb395cd0a0141ea66a00c8a4d3fcc423d6f0bad851160a5f711b022" => :el_capitan
+    sha256 "c98f150ad8a5ab791c826d8763f42899046d19c5f9f515cfa52d9648df0c91f7" => :mojave
+    sha256 "68240ab0225178fcf6d4a2a3b84d1bb4af06ccd318fda8ff611cedb3319804e4" => :high_sierra
+    sha256 "aac16854018a9d71ec782b17760aa2b9e4ffba98b965c4d4a0dc8e573ad54e3e" => :sierra
   end
 
   depends_on "cmake" => :build
