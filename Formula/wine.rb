@@ -30,6 +30,10 @@ class Wine < Formula
     sha256 "aa34f0a67a92a8bae72b08035c0ef43991b96c0109a4a91a909fbdaf685b0c4d" => :sierra
   end
 
+  # High Sierra doesn't support 32-bit builds, and thus wine fails to compile.
+  # This will only be safe to remove when upstream support 64-bit builds.
+  depends_on :maximum_macos => [:sierra, :build]
+
   head do
     url "https://source.winehq.org/git/wine.git"
 
