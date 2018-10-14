@@ -4,6 +4,11 @@ class Rtorrent < Formula
   url "https://github.com/rakshasa/rtorrent/releases/download/v0.9.7/rtorrent-0.9.7.tar.gz"
   sha256 "5d9842fe48c9582fbea2c7bf9f51412c1ccbba07d059b257039ad53b863fe8bb"
 
+  bottle do
+    sha256 "587174ee61d8a3ab49fb25e802c81aea6566e13f41629ad87b81029558979663" => :mojave
+    sha256 "a288d64abb9d5967562ff4b0257dac5b77dd7a5c3382a277c5fbe02ee6545193" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
