@@ -9,10 +9,10 @@ class ApmServer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5a4ab76cc1b52263994f71d69b3a9d94457833f9091d066c9f75696eb1db3090" => :mojave
-    sha256 "8371817897ace0a1c3ed28700f684a555214a6f61acbefa52253f07170902634" => :high_sierra
-    sha256 "1f6ed039a917a43dfd5eebb7e392324e4a63ac05d22516ce2cd6a0f11821ec6c" => :sierra
-    sha256 "a0be0b0f6241c98bca1de560dfa7ebd1b153ca09708ac34dd19693cc4c5cbba7" => :el_capitan
+    rebuild 1
+    sha256 "13e1d11662aeaed37ac13defff37ad355bc921b83a734fac8227b467f9a94d05" => :mojave
+    sha256 "cb5f7d56382263b72b31347d49c81ec51755a1a0c286fcf400ef7dba1db0bac1" => :high_sierra
+    sha256 "1dcc31a3dfb73aac3cea8141463a67ef5a72d753e5651fde552e002bd9e23301" => :sierra
   end
 
   depends_on "go" => :build
