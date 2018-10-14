@@ -6,12 +6,10 @@ class Goaccess < Formula
   head "https://github.com/allinurl/goaccess.git"
 
   bottle do
-    rebuild 1
-    sha256 "02fb228fc96aa4d5f0d1e130428cbba4e7fd47ebfb01f7158c7ba757a1559a41" => :mojave
-    sha256 "33833da9143c81fab96a7bf19452f54e94d32952f86d4a5e110c77e9854deaf9" => :high_sierra
-    sha256 "7b794bcc28f24f010682e2e18d0c480cdf9d75d07b50964944f3b3fd6428972a" => :sierra
-    sha256 "272e53e58e3fcd8c894285d1a90a3288edde0959a3f049bff24a6ed9180dbc3c" => :el_capitan
-    sha256 "af9801407d647456b2421673aeefdc5d1bd00446d912126c8bc662cfad437937" => :yosemite
+    rebuild 2
+    sha256 "bd348a09791ab920c4beeb592a243ce306c0bdc4c7d5acc3fd8738933a927478" => :mojave
+    sha256 "9ae078df13abb3aa7428931287c1e134091dac25a9f8d4b949730f11286c7330" => :high_sierra
+    sha256 "d1d370a5edf14512bbde82a870fecd43fdc34ff7352f2e1ae194c9284318868e" => :sierra
   end
 
   option "with-libmaxminddb", "Enable IP location information using enhanced GeoIP2 databases"
