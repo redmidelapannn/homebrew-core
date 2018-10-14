@@ -7,11 +7,10 @@ class Xu4 < Formula
 
   bottle do
     cellar :any
-    sha256 "0454e0ccdb0c16122e0acaaf34e7ff256d6f8fa8c5f3860c97d68217ad1d1aaf" => :mojave
-    sha256 "e7aac43710b9180710c9af0dcd80a955aa095d6264f92eb482cbe2322c01146d" => :high_sierra
-    sha256 "9d490768b07abfa8c105c88dc0d2a6be97e175f6535afcee0a4c63e37d976f6f" => :sierra
-    sha256 "47700a341c1dc6a700d5a0f2925846b2457e3f470b25c2288c8c0c132202d027" => :el_capitan
-    sha256 "aab6d22274a345209ff25516b2dd11b715088ccab2d31588b8253f65e29f0e96" => :yosemite
+    rebuild 1
+    sha256 "2d672ee5756390a9e573e4d974f76749ff637a700e72306e131f2f8bce940a0b" => :mojave
+    sha256 "86c3f118d9796067bdaeee0523dd34425f4371b51dd4e6831193d0ca001f9656" => :high_sierra
+    sha256 "89b31f25d99209ad9739b7015ff3001158b192b5cb17e14f389a31d4fffde5e8" => :sierra
   end
 
   depends_on "libpng"
