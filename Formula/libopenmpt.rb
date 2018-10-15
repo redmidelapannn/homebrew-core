@@ -4,6 +4,13 @@ class Libopenmpt < Formula
   url "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.3.12+release.autotools.tar.gz"
   sha256 "7134db999d33b96dc2db13dbaf29b7beeb4c58f62e57fd3caf36bb8428aa4b42"
 
+  bottle do
+    cellar :any
+    sha256 "81e447f474e29b884a69888e85c3df1073045a49c9dd8963f5d98b545e834da3" => :mojave
+    sha256 "63a7641132daa96fa5eea42fb31c307af448dc21ab99eb2ad3ffaba0190345b2" => :high_sierra
+    sha256 "0a93b0e8faa40e021e02c764824ea0b842dce26ae12208c475e30a91ab6b8ceb" => :sierra
+  end
+
   depends_on "pkg-config" => :build
 
   depends_on "flac"
