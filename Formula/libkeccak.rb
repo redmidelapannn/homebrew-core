@@ -4,6 +4,13 @@ class Libkeccak < Formula
   url "https://github.com/maandree/libkeccak/archive/1.1.4.tar.gz"
   sha256 "40e27983ea63faf47071402b212da48101b1dae37ce2702da947361ee8d4a313"
 
+  bottle do
+    cellar :any
+    sha256 "de79f9f60527c3e365edac5b4f5c37639b0fae0eba27001f87527e1fb06cb1ab" => :mojave
+    sha256 "9b828ba76ff15a9680fe851e848fab65ba922cbd91c82786de444e424fe4b7b8" => :high_sierra
+    sha256 "0e09f480fe9e08102548f479af67ef0ba13df2fda8924c2920f00afd5ce1fce6" => :sierra
+  end
+
   depends_on "binutils" => :build
   depends_on "coreutils" => :build
   depends_on "make" => :build
