@@ -32,10 +32,10 @@ class Qt < Formula
   end
 
   bottle do
-    sha256 "8c77b5762267b127cc31346ac4da805bbfd59e0180d90e1e8b77fb463e929d60" => :mojave
-    sha256 "096d8894b25b0fdec9b77150704491993872a7848397a04870627534fb95c9e3" => :high_sierra
-    sha256 "0464be51d0eb0a45de4a1d1c6200e1d9768eec5e9737050755497a4f4de66a08" => :sierra
-    sha256 "22e9abc0b47541bb03b2da7f6a19c5d7640ea2314322564551adc3d22305806e" => :el_capitan
+    rebuild 1
+    sha256 "88bbc13c94f9602adfe9f0c86ca5a8fcd0130c12e6ccdb84704ac9a2783161cd" => :mojave
+    sha256 "fd5f360ed29190017152a9cf971b29ccd6949ea25e0526359d079ddcbfe9680a" => :high_sierra
+    sha256 "1dcabdd378612fe9146efd175e38a461a838d670f8f0355abe7f4ed016c90bee" => :sierra
   end
 
   devel do
