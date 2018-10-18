@@ -12,8 +12,8 @@ class Gpgme < Formula
     sha256 "bb4ac5c5bbc9f3f2c54febe2e872c780337d6c8612124778b76826371c673492" => :sierra
   end
 
+  depends_on "python" => :build
   depends_on "swig" => :build
-  depends_on "python3" => :build
   depends_on "gnupg"
   depends_on "libassuan"
   depends_on "libgpg-error"
