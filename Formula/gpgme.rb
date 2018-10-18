@@ -13,6 +13,7 @@ class Gpgme < Formula
   end
 
   depends_on "swig" => :build
+  depends_on "python3" => :build
   depends_on "gnupg"
   depends_on "libassuan"
   depends_on "libgpg-error"
@@ -32,5 +33,6 @@ class Gpgme < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/gpgme-tool --lib-version")
     system "python2.7", "-c", "import gpg; print gpg.version.versionstr"
+    system "python3", "-c" "import gpg; print(gpg.version.versionstr)"
   end
 end
