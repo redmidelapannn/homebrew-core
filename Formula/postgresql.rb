@@ -6,11 +6,9 @@ class Postgresql < Formula
   head "https://github.com/postgres/postgres.git"
 
   bottle do
-    rebuild 1
-    sha256 "4a8a8b196a2d8eec90d8d1db38986af58427033a4819b670638e4a4113f81631" => :mojave
-    sha256 "b41e5c816f6827ef75fa91b4ccffbe432ec2dfdf33c6757f7272c8744face3a6" => :high_sierra
-    sha256 "cff481b53df41d58ac4bf5911757c36959643c0b87566bb172bd33c9b3d65d39" => :sierra
-    sha256 "abd8104c82358d6067399b8001aec86738d2aced1a0c78cd1c9cb33b129098a5" => :el_capitan
+    sha256 "2af4a1ec8e12d929de4b97acadb72ec4d44cd3c4f0b51f5c7910831fb68a7caa" => :mojave
+    sha256 "5a75b78b1312d34e7e4bc17174ca771f00f791c4e93ef2d5e114cc3b64af8249" => :high_sierra
+    sha256 "7680b07df5198d3785d51a82f6012020386bf23542a2036d91ed74e83ab21171" => :sierra
   end
 
   option "with-dtrace", "Build with DTrace support"
