@@ -8,10 +8,8 @@ class Pce < Formula
 
   bottle do
     cellar :any
-    sha256 "43d68fb33e9edfb191d49c5966954f30dd9805b793b8fe31f2f53c4e0b3306a1" => :high_sierra
-    sha256 "5eac356a0cc4e27d748c3eaaba446f64005dd45cfdc7b7be915bdf186eb01655" => :sierra
-    sha256 "8574731084cdd4efd9394e7b92d262e80dcb23dc5d9d8bc14746c81ea9f66bcf" => :el_capitan
-    sha256 "5166b5f8b91d05e8d45f8683326e865cb75e2f574dff790d423ac4f4215d51f5" => :yosemite
+    rebuild 1
+    sha256 "999dff1a00575eb093bc674c4b779620c19d367f133423bd4b895c3761b25eb9" => :sierra
   end
 
   depends_on "readline"
