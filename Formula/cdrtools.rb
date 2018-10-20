@@ -7,13 +7,10 @@ class Cdrtools < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "4a7ba59af434b1302056aafd200f273470e91d27c9ad2a19f05a834ee41dc3be" => :mojave
-    sha256 "465c4ba80bc7733b2ac85a9d17ca7149a32072d453d750795374e8c2021e207b" => :high_sierra
-    sha256 "f97ea5375a9dd443000397890ab8424905f02ea278ab8dd4568ff4c7288d038a" => :sierra
-    sha256 "4724b3dfe367cf28dbd98dad6ddd47179e5b5d1b599a8fff8f0fa8cc4621acb2" => :el_capitan
-    sha256 "5370586e423d9b842b7ebd0cdb3dd2c763c433be9896bcab636cc56ecd5e0634" => :yosemite
-    sha256 "1b3f3ab5baf44ad31f8d09e36de6df59901ce036cc681c54187fe5f41dc8bb94" => :mavericks
+    rebuild 2
+    sha256 "d176c15470641c74f79b8183a430b23224f22116225033a5ee614a51a89412ba" => :mojave
+    sha256 "6c552a032a4897528fd888b1c5d8ca5ff54f136bc0232d867a5741945c6c8f5d" => :high_sierra
+    sha256 "abf6caf272a4fb692b7e59da353f4f6266ba2846c2f9298983c5173b3a87a320" => :sierra
   end
 
   depends_on "smake" => :build
