@@ -7,11 +7,10 @@ class Aspell < Formula
   revision 1
 
   bottle do
-    sha256 "f0264ded1cf174eb37c8a4175bc5f900d8abbe2d06e7f8109aa96106dd044f25" => :mojave
-    sha256 "d5927b312520252d7634902269336fe28148dac0d986e7bb0883327233462f01" => :high_sierra
-    sha256 "69c2de621e5d6c0a18ca7bf43b153deefef24eaa65d8ae3f5939a106d52948ce" => :sierra
-    sha256 "d107e964156e9932303a3569cbfc489d96593d67c5a724e70c45dbe2ed961516" => :el_capitan
-    sha256 "4a50a1b26bcbaa10dc4968332d03ce3e24772a60ec7b1561ab23102d0f46052a" => :yosemite
+    rebuild 1
+    sha256 "978dc5b576f1fe5119d8015c154a8fd167336a559856431790fb19f23ae6275f" => :mojave
+    sha256 "a99cdfd49aefb1848d955ccd06655ec4a5c2858abcc31e3e1f4d75381c472504" => :high_sierra
+    sha256 "7d8654639d4a1ca62480ae1967d3fcba9693c914e2199025957ab57e6568b184" => :sierra
   end
 
   # Dictionaries installed by default: en, de, es, fr
