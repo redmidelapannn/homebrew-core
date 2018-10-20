@@ -8,10 +8,10 @@ class Wxmac < Formula
 
   bottle do
     cellar :any
-    sha256 "1ddeb111fc0519d87dbdb4cf3887c0976ea4e077bb6e6c26493b7d1ec930b048" => :mojave
-    sha256 "32357b2ab1590b209e89c02fd36c54b5378fe79d32e82abc4047ab4fbae2663c" => :high_sierra
-    sha256 "666f423fdee434b4e4f91d6035678f658cf149df8077dae01151c0ebe781445a" => :sierra
-    sha256 "6acfa572e370c0f9c2f48f89ab8807a42d81726151e8ebddccca48aa634514de" => :el_capitan
+    rebuild 1
+    sha256 "0355aeb9014513ad19cfb1cff017333024cb39a132cf0a55717aa4412d1425fc" => :mojave
+    sha256 "8cbb5fe7c3e3daeb3091da3e31930d900e513d49d260a5c8482ab9f74a1b6d1e" => :high_sierra
+    sha256 "48c92670c3d30d8bbebc8c57d915ebd747dc7b0a2b4995295bc59b780787be52" => :sierra
   end
 
   option "with-stl", "use standard C++ classes for everything"
