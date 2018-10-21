@@ -9,9 +9,10 @@ class Codemod < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "46a429f995bc5491ef76d75c3fd850aae40e5414ead2080361f06e69a39c79ec" => :mojave
-    sha256 "cbf4fa912e1a717b55992756b44d10e7eb8640cc541d255625cecb0e65c41377" => :high_sierra
-    sha256 "cbf4fa912e1a717b55992756b44d10e7eb8640cc541d255625cecb0e65c41377" => :sierra
+    rebuild 1
+    sha256 "274e1a75414f6e5211845ba95bb51a1e558e3dcdb6970c3c0ae0b20a69adb115" => :mojave
+    sha256 "03e5886e8654159914c9a423c6ccb69255cacf5f4797a1c54478c18099a5a50d" => :high_sierra
+    sha256 "03e5886e8654159914c9a423c6ccb69255cacf5f4797a1c54478c18099a5a50d" => :sierra
   end
 
   depends_on "python"
