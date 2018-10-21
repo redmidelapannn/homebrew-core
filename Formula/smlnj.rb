@@ -5,7 +5,8 @@ class Smlnj < Formula
   sha256 "1810d3ca768222e120c7a3f2f93aafd652705371fc73929423c671dce3cef832"
 
   bottle do
-    sha256 "d4441907f2dea02188487b3247e402d70b867a6bdd0e84da0cf5e8d7a0d44540" => :sierra
+    rebuild 1
+    sha256 "def65d9b46beb8c618df8d44e644fd3c0b89f336676654b05f339f1f925888a1" => :sierra
   end
 
   # Mojave doesn't support 32-bit builds, and thus smlnj fails to compile.
