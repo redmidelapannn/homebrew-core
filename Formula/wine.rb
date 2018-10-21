@@ -27,7 +27,8 @@ class Wine < Formula
   end
 
   bottle do
-    sha256 "aa34f0a67a92a8bae72b08035c0ef43991b96c0109a4a91a909fbdaf685b0c4d" => :sierra
+    rebuild 1
+    sha256 "b65da8b9b9a931bbb15a7abbf92663768619464a663f458ac41c9ac529a7a781" => :sierra
   end
 
   # High Sierra doesn't support 32-bit builds, and thus wine fails to compile.
