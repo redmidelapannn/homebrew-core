@@ -7,10 +7,10 @@ class Cpansearch < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "69d0e81fd62ba200820ccb848d4b10d970cf01146724653652434d36743a5356" => :mojave
-    sha256 "5d9c3bb958793897bc8933394d1a6a62df3c60a0f96bd8ac33f6486a3f62e8cd" => :high_sierra
-    sha256 "29e1acab7f1755337460172f853968b116d831b43948f6727f5565f3b9ce248e" => :sierra
+    rebuild 2
+    sha256 "45b0770c1d93ecc9ff3338c54914cb69fd9b4b76c7e7711e306fc15a0a3cb3ea" => :mojave
+    sha256 "5dde5bbc3b82e219bc28f4ecf37a5b73704e5722f2b4a2090a6c7b627e71f92d" => :high_sierra
+    sha256 "495c3366ef0ae010bbb9dc645b3845405ff83e9b632c795b1df16683b0ed6a44" => :sierra
   end
 
   depends_on "pkg-config" => :build
