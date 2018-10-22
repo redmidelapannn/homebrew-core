@@ -12,12 +12,12 @@ class Sqliteodbc < Formula
     sha256 "7c550f77c2db4e4927b9f23ed8a57610727b438f6a0fad98e1adecee3c8c1aa1" => :el_capitan
   end
 
-  depends_on "sqlite"
+  depends_on "sqlite3"
   depends_on "unixodbc"
 
   def install
     lib.mkdir
-    system "./configure", "--prefix=#{prefix}", "--with-odbc=#{Formula["unixodbc"].opt_prefix}"
+    system "./configure", "--prefix=#{prefix}", "--with-odbc=#{Formula["unixodbc"].opt_prefix}", "--with-sqlite3=#{Formula["sqlite3"].opt_prefix}"
     system "make"
     system "make", "install"
     lib.install_symlink "#{lib}/libsqlite3odbc.dylib" => "libsqlite3odbc.so"
