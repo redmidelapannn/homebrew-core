@@ -7,13 +7,10 @@ class Noweb < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e37f2dd197cbd312c8635ab73e92d904b1d02d485879aac2077b5361986fcc0f" => :mojave
-    sha256 "7d794eab58f440c640358ba7454f04f007b26b3b35a0d19acec1915c97c25c5b" => :high_sierra
-    sha256 "3235ad9e73a3371058c59319f6c2363444e66e1c43e9576af3e08e14dfca682b" => :sierra
-    sha256 "1a3ec7b1f7fba58e0d8064d279d518d69e50b1f813284792deb6b7db702eae38" => :el_capitan
-    sha256 "34dd66401fe717e1ed384114d7037ea7a6e0aaabe6f2a98f314c8d6bb41c25be" => :yosemite
-    sha256 "54bf1e45409d1c022d08dee3a43c4e2d7f038a646f00a5d5f2f6db90ff54d668" => :mavericks
-    sha256 "d422058f08a621f2d6ab78adabb887b550754cbb3c8581c31fe72f52300fc3f5" => :mountain_lion
+    rebuild 1
+    sha256 "defbd411e94a07418e7790ca92f4c1d4ebc7f4c0d5152233eeb600372e35eea2" => :mojave
+    sha256 "871529e7b98f93e21c1973257e49a4d789b53890ca867a16de71164dc8286fda" => :high_sierra
+    sha256 "46ff0de4534617ba6e061d36e022f4cbed9fd9919445e7c9f15fec132249396f" => :sierra
   end
 
   depends_on "icon"
