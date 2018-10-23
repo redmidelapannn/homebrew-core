@@ -2,7 +2,7 @@ class I386ElfGcc < Formula
   desc "The GNU compiler collection for i386-elf"
   homepage "https://gcc.gnu.org"
   url "https://mirrors.nju.edu.cn/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.gz"
-  sha256 "bb5073db19362b64d948f44a33143b235d2359c93149bb8fa5a146028f5654ff"
+  sha256 "1b0f36be1045ff58cbb9c83743835367b860810f17f0195a4e093458b372020f"
   depends_on "gettext" => :build
   depends_on "gmp" => :build
   depends_on "i386-elf-binutils" => :build
