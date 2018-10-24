@@ -6,9 +6,9 @@ class TerraformDocs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5b266a379750c6c1bf8c7f73a22837f0f5e36ffbb89736724c9270be941ad626" => :mojave
-    sha256 "d5c45f5158c4305be7f558ce277bd8be710a4b92fce50494e9d257a7cb8442a4" => :high_sierra
-    sha256 "30a7ca059b696bd3d52f79ee56c0def0d5cdd0f40405b2be9d49efa966864243" => :sierra
+    sha256 "e9b99761071619ce26d6498a4ec4eb0a17ec4f4c831e1419c6316680f16f8b7f" => :mojave
+    sha256 "d081aee7e025c3bee84bcf629b2df7c713ad72be54e4d4dfac2a8c5631a65ba3" => :high_sierra
+    sha256 "6045d0586922a86846051b8b0736d8f9b7e9175e6758df6edb98465f46f0b637" => :sierra
   end
 
   depends_on "go" => :build
