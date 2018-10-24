@@ -8,10 +8,10 @@ class Tldr < Formula
 
   bottle do
     cellar :any
-    sha256 "c5f99efa930b7f80647496c83fe118bd184feae7c5f256dc67d7594aceba7120" => :mojave
-    sha256 "00f5ce204fa62e51ed3be821abba9fdda36335b6cecf65231158c02b9713f357" => :high_sierra
-    sha256 "06f9609695fb6b14bbd78f3246bb176b341aecda6ce70515723cee8e8e4ced69" => :sierra
-    sha256 "209c571e3472128665194e73451199087236758a0a7cfa6e88ffd7aa444abbac" => :el_capitan
+    rebuild 1
+    sha256 "22ff1a93c615951e804eb8c1d29b0b123d0eb6eb6c741fe842c4f7d1700bd30a" => :mojave
+    sha256 "0fe7b6884d98808c3ab8efa25775cb7c29d2eeab12ba310c9e70620384510aab" => :high_sierra
+    sha256 "69f4eceb401c5a1a07fc0c901296e797b9108045f2351141c948936b1a54f52f" => :sierra
   end
 
   depends_on "pkg-config" => :build
