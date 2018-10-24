@@ -4,13 +4,6 @@ class RedisAT40 < Formula
   url "http://download.redis.io/releases/redis-4.0.11.tar.gz"
   sha256 "fc53e73ae7586bcdacb4b63875d1ff04f68c5474c1ddeda78f00e5ae2eed1bbb"
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "3fe9646ce3289742cea430d232d119e5379cddf046a87fc6e241399958e906db" => :high_sierra
-    sha256 "87ef8c6f7b036f61d2c65b6e9304c9dadff608d956aa132816832e8a760f60c3" => :sierra
-    sha256 "20f218187739eab0d8fe48ba38ed3cf496abd03ae4e9664a90923d78f26e7d3a" => :el_capitan
-  end
-
   keg_only :versioned_formula
 
   option "with-jemalloc", "Select jemalloc as memory allocator when building Redis"
