@@ -8,7 +8,7 @@ class I386ElfGcc < Formula
   depends_on "libmpc"
   depends_on "mpfr"
   def install
-    mkdir "i386-elfgcc-build" do
+    mkdir "i386-elf-gcc-build" do
       system "../configure", "--target=i386-elf",
                              "--prefix=#{prefix}",
                              "--without-isl",
@@ -16,6 +16,8 @@ class I386ElfGcc < Formula
                              "--disable-nls",
                              "--disable-werror",
                              "--without-headers",
+                             "--with-as=#{Formula["i386-elf-binutils"].opt_prefix}/bin/i386-elf-as",
+                             "--with-ld=#{Formula["i386-elf-binutils"].opt_prefix}/bin/i386-elf-ld",
                              "--enable-languages=c, c++"
       system "make", "all-gcc"
       system "make", "install-gcc"
@@ -27,14 +29,14 @@ class I386ElfGcc < Formula
   end
   test do
     (testpath/"test-c.c").write <<~EOS
-      #include <stdio.h>
-      int main()
+      int main(void)
       {
-        puts("Hello, world!");
-        return 0;
+        int i=0;
+        while(i<10) i++;
+        return i;
       }
     EOS
-    system "#{bin}/i386-elf-gcc", "-E", "-o", "test-c.i", "test-c.c"
-    assert_not_empty "test-c.i"
+    system "#{bin}/i386-elf-gcc", "-S", "-o", "test-c.o", "test-c.c"
+    assert_not_empty "test-c.o"
   end
 end
