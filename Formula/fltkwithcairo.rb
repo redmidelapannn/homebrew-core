@@ -5,6 +5,10 @@ class Fltkwithcairo < Formula
   version "1.4.x-r13071"
   sha256 "09ea8ae57aa5a5c0e017607d69e4beba0227181e431a9cbb54c1dfa5d082e3b3"
 
+  bottle do
+    sha256 "0245f6d00e1c2afc3741529931dd06e3e55691eea8e30be76e7d0c9a7dbc1d3a" => :mojave
+  end
+
   depends_on "cairo"
   depends_on "jpeg"
   depends_on "libpng"
