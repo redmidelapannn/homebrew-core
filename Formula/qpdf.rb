@@ -6,10 +6,10 @@ class Qpdf < Formula
 
   bottle do
     cellar :any
-    sha256 "d1dc8195734a59a37b403d4354d5a1df78d9e546ee48b54333f55bdce2fb8f05" => :mojave
-    sha256 "375e32a6c852c44b16fbc143b3b15185607b2bbbcd1084343999839deff1dd0b" => :high_sierra
-    sha256 "dcfc26a15e4cc9031901701cd708440d38cbf92bd3908c941331ade49a94ea5d" => :sierra
-    sha256 "62d7195d5e9aa34dfd55ae65d554d55c4a8ef3f74a3abe1e85c2abfd8bd63c70" => :el_capitan
+    rebuild 1
+    sha256 "9d22ab810252aa75bb2cc61cd1f8458c57896a539bb25432dbc562f99bc6f578" => :mojave
+    sha256 "3ce8cb69f2690a51514da6e48c77916c861ec2b0b311512183b3f375838302a5" => :high_sierra
+    sha256 "dc31db1b6d3ce92b54a8d0fe1f96ea46d1f137dce9a1afd434e9a4020d17e4c5" => :sierra
   end
 
   depends_on "jpeg"
