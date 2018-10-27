@@ -25,7 +25,6 @@ class I386ElfGcc < Formula
       system "make", "install-gcc"
       system "make", "all-target-libgcc"
       system "make", "install-target-libgcc"
-      binutils = Formulary.factory "i386-elf-binutils"
       ln_sf Formula["i386-elf-binutils"].prefix/"i386-elf", prefix/"i386-elf"
     end
   end
