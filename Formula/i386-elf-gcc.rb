@@ -3,10 +3,12 @@ class I386ElfGcc < Formula
   homepage "https://gcc.gnu.org"
   url "https://mirrors.nju.edu.cn/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.xz"
   sha256 "196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080"
+
   depends_on "gmp"
   depends_on "i386-elf-binutils"
   depends_on "libmpc"
   depends_on "mpfr"
+
   def install
     mkdir "i386-elf-gcc-build" do
       system "../configure", "--target=i386-elf",
@@ -24,9 +26,10 @@ class I386ElfGcc < Formula
       system "make", "all-target-libgcc"
       system "make", "install-target-libgcc"
       binutils = Formulary.factory "i386-elf-binutils"
-      ln_sf binutils.prefix/"i386-elf", prefix/"i386-elf"
+      ln_sf Formula["i386-elf-binutils"].prefix/"i386-elf", prefix/"i386-elf"
     end
   end
+
   test do
     (testpath/"test-c.c").write <<~EOS
       int main(void)
@@ -36,7 +39,7 @@ class I386ElfGcc < Formula
         return i;
       }
     EOS
-    system "#{bin}/i386-elf-gcc", "-S", "-o", "test-c.o", "test-c.c"
-    assert_not_empty "test-c.o"
+    system "#{bin}/i386-elf-gcc", "-c", "-o", "test-c.o", "test-c.c"
+    assert_match "file format elf32-i386", shell_output("#{Formula["i386-elf-binutils"].bin}/i386-elf-objdump -a test-c.o")
   end
 end
