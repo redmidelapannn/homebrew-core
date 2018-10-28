@@ -18,15 +18,13 @@ class I386ElfGcc < Formula
                              "--disable-nls",
                              "--disable-werror",
                              "--without-headers",
-                             "--with-as=#{Formula["i386-elf-binutils"].opt_prefix}/bin/i386-elf-as",
-                             "--with-ld=#{Formula["i386-elf-binutils"].opt_prefix}/bin/i386-elf-ld",
+                             "--with-as=#{Formula["i386-elf-binutils"].bin}/i386-elf-as",
+                             "--with-ld=#{Formula["i386-elf-binutils"].bin}/i386-elf-ld",
                              "--enable-languages=c, c++"
       system "make", "all-gcc"
       system "make", "install-gcc"
       system "make", "all-target-libgcc"
       system "make", "install-target-libgcc"
-      # binutils = Formulary.factory "i386-elf-binutils"
-      ln_sf Formula["i386-elf-binutils"].prefix/"i386-elf", prefix/"i386-elf"
     end
   end
 

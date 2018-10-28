@@ -11,7 +11,7 @@ class I386ElfBinutils < Formula
                           "--disable-werror",
                           "--prefix=#{prefix}"
     system "make"
-    system "make", "install"
+    system "make", "install" 
   end
 
   test do
