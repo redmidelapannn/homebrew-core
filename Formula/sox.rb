@@ -7,10 +7,10 @@ class Sox < Formula
 
   bottle do
     cellar :any
-    sha256 "850cd95c4baea2d91467637582f120ab9eff066c7414847512ea9cf49ba218f1" => :mojave
-    sha256 "f1ba26233464499f58cc0cab34c5472d8b9e30a83cbc6e185b451a9476d560f4" => :high_sierra
-    sha256 "de9126013c1bbd7ec728197cc471231cf17c51e7620e995590b8a6ade6c07521" => :sierra
-    sha256 "f3b3ac24d351edb82fcd30119f13f6b86848c62b9130b6d20c8538e8b2b17d89" => :el_capitan
+    rebuild 1
+    sha256 "ab47269f0a0fd69754704543d6706317cbfac60d1b005b3898f860c4b1049b63" => :mojave
+    sha256 "ff9a1eb412ed1f985a2852cb123f461b1fe847c6e9553cd42d43e2b034407787" => :high_sierra
+    sha256 "d4ad74d5791ed5c8b89ea64b783cc0af2d3ef71c1f6264aed709b755ab0477b9" => :sierra
   end
 
   depends_on "pkg-config" => :build
