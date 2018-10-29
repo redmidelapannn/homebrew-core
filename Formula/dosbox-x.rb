@@ -8,11 +8,10 @@ class DosboxX < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "5bccafd80948d5ef2ef3059eae718d1c025880a83c065533daa7befe1bd4cae2" => :mojave
-    sha256 "8cbaa0cf9658118b4b4ba32f4d1718f9bf49d0aec71cc7846463f37966559656" => :high_sierra
-    sha256 "d3fc4b2bd340ed6f7d2624b8daf95397891f8e142d6219437f2cae215f538216" => :sierra
-    sha256 "0b5098e3397a15804a300540be53c98f862c4f7276eb4c1de7966152421a9392" => :el_capitan
+    rebuild 2
+    sha256 "4f77b69bc62590c0bac275429faf330fb626ce4c22bcf67e5a78bc84294aeae6" => :mojave
+    sha256 "1ccd587e817c1dd24c1367c12db36db0ffcdaa8e39c64b60e1624f531f2b7832" => :high_sierra
+    sha256 "9bbbda736ff7aef5ac0ddaa293dac80e10659bcb4ea644ce3d61149a5afb5a73" => :sierra
   end
 
   depends_on "fluid-synth"
