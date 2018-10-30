@@ -6,12 +6,10 @@ class Ahcpd < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8852e7e5e11d6ea413657d012e4d49ca0d9ac406e56da6bf7c0daa6d4d788a16" => :mojave
-    sha256 "ab3221a9f28ded916f8d2ef4b8377a2a793fa2fee5f891b9a97e3dede0d294ae" => :high_sierra
-    sha256 "d3a8a4efb712e2c6a8a055276e5d93d3275a638df4231a4dfe8d428a2606d776" => :sierra
-    sha256 "b37143ee365a4a3afd9623d5f49eab0bc4bdf9ac3662d22db9671cffa1078224" => :el_capitan
-    sha256 "36907bc1aadc9d9d874ebd74624d8c2c2e8b4057181df1e964720a41f72ccae8" => :yosemite
-    sha256 "8518f82187d2b8d2bc24648bd072f19073e159abb2bdaf5418ad31e3ab966d0b" => :mavericks
+    rebuild 1
+    sha256 "7908850b69c9617e6eac1704c0398c0617e2f6975b686b25ab2f5506df0ecbba" => :mojave
+    sha256 "bbf51cd595318da42de33b5576dee003376f805e08b3c1c9a9917e19134a7ccf" => :high_sierra
+    sha256 "c54305eaa027718d6e2be3ce57eefcf790963108ec6763c719ed6f30b288b35e" => :sierra
   end
 
   patch :DATA
