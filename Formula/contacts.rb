@@ -10,13 +10,10 @@ class Contacts < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ad45d22cee04997d286b7e07f19328cd59dcb3a335a6a93e5ed24a8b995080f1" => :mojave
-    sha256 "27b7b256aa6f034b245c6cc1e6c7def038bbf183e73f94db942a220aa876ef0d" => :high_sierra
-    sha256 "21bf2ec23b9f096ed09acd44dbd7c2cc59891c01a821a6695e58d69c54647c0e" => :sierra
-    sha256 "7f6c6817310dacf83041d2017e8841b49e26df0d09039692576b6fe0fed52ecc" => :el_capitan
-    sha256 "9a9c89e40f9ccf4ec45cf63414eaf31266dfc9b71dc96d8c02f7ab2b38e8f346" => :mavericks
-    sha256 "548051ca4c3209a63dda33a6c17103b8cd3ea817bc4090963dbb12ee1763dcc6" => :mountain_lion
-    sha256 "842a3ef87a54aab40009788d034f6095f3c10223867d1b8d5b6e3c933b5e4800" => :lion
+    rebuild 1
+    sha256 "3211f383e931996569009821ae3c0e86e77a2831e2a1ae4df256ee5169969937" => :mojave
+    sha256 "93867664f31be25a97c632fed3fc7f3a245355bc17e4d0c6d586f7e4363a6cf4" => :high_sierra
+    sha256 "dcb7ef450b167cf19fe7ef809fa0c0ddaa2e416e7969ae719ce53a3cb235f577" => :sierra
   end
 
   depends_on :xcode => :build
