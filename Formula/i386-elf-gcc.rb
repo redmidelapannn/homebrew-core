@@ -4,6 +4,11 @@ class I386ElfGcc < Formula
   url "https://mirrors.nju.edu.cn/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.xz"
   sha256 "196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080"
 
+  bottle do
+    sha256 "bc336a791d985d442f443a74ae725b305cfc9398ed3b3af8c6c5dd66eeb673db" => :high_sierra
+    sha256 "22e65e5c3e6e5e56ace35ff5e91dd1e1de1dbd257d6b385da3b94fb3f710775d" => :sierra
+  end
+
   depends_on "gmp"
   depends_on "i386-elf-binutils"
   depends_on "libmpc"
