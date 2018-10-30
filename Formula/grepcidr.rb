@@ -6,12 +6,10 @@ class Grepcidr < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "195665f1f4647ec6ee1f43830cd21079413fc8c1df4dce5e869891d402791488" => :mojave
-    sha256 "7266be7b9262d50ab08d63529cf9858764573784ab63918010454ec2d76363b6" => :high_sierra
-    sha256 "12dfa49026bffb77ed1c4a08e9b60b56859eb183bbf791754d0b1d476ba6d795" => :sierra
-    sha256 "31ccf6792cab3c5022530ef4576ea53e6dedd4855b939d11212fea0d7fa294dc" => :el_capitan
-    sha256 "d0024b81610b4a698de415aef87958e2a61f74a9f1f2b7acf875f2f3d50ecc05" => :yosemite
-    sha256 "c4ed3ba91b4acd41f51850b143ea9826275b221fc8f041098dfe5f5a429a0289" => :mavericks
+    rebuild 1
+    sha256 "126180ddd5f57210e4cc116483207731bda5a57e9d28114f2c56a74f7eeec571" => :mojave
+    sha256 "f5aca73329ca4bf838832a0f2cb358cc0ffc2e41da706580ad718bc1bcdf2ca1" => :high_sierra
+    sha256 "5507a67508d54f88b9cece1be302a6696e09f6bfbd1080301da161c80355200a" => :sierra
   end
 
   def install
