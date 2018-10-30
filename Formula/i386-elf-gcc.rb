@@ -4,8 +4,8 @@ class I386ElfGcc < Formula
   url "https://mirrors.nju.edu.cn/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.xz"
   sha256 "196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080"
 
-  depends_on "i386-elf-binutils"
   depends_on "gmp"
+  depends_on "i386-elf-binutils"
   depends_on "libmpc"
   depends_on "mpfr"
 
