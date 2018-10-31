@@ -6,11 +6,10 @@ class Postgresql < Formula
   head "https://github.com/postgres/postgres.git"
 
   bottle do
-    rebuild 1
-    sha256 "4a8a8b196a2d8eec90d8d1db38986af58427033a4819b670638e4a4113f81631" => :mojave
-    sha256 "b41e5c816f6827ef75fa91b4ccffbe432ec2dfdf33c6757f7272c8744face3a6" => :high_sierra
-    sha256 "cff481b53df41d58ac4bf5911757c36959643c0b87566bb172bd33c9b3d65d39" => :sierra
-    sha256 "abd8104c82358d6067399b8001aec86738d2aced1a0c78cd1c9cb33b129098a5" => :el_capitan
+    rebuild 2
+    sha256 "a8972bdfad4826e02abcfee3af8a7a33220bbc29c6c6df6f12a0dbead6a44c23" => :mojave
+    sha256 "4124c6fb1cea92f026cf08070c3978598f64a69fec33af2615690c8d2569ce62" => :high_sierra
+    sha256 "dac709780c060a62c01dd72a65e057b7bcb5fc665f96c9a1ffd77bce4bafac1a" => :sierra
   end
 
   option "with-python", "Enable PL/Python3"
