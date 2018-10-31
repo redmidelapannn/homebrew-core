@@ -6,13 +6,10 @@ class Zssh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0b1567c1d4aef681ff463f058a884eead039fb0c50a1c03820a03c9f67786b52" => :mojave
-    sha256 "9cb26f1bd359977406fae945abd311b2cdc5770570e6350f2ac278bfbe458f5b" => :high_sierra
-    sha256 "49e01bb86097999f21f3d96b0f9cd63a975d4fd52f6e286d42ceee16ee996eb7" => :sierra
-    sha256 "04212f19c1d9a6b97fd56ffe937606f1779849fdf04b93e3f285889599845c8f" => :el_capitan
-    sha256 "94280569f9e1c1deb9d8c3be4256cd501399fd51758f8e2ea6d77fd9f1b6ef2e" => :yosemite
-    sha256 "94b16bb29616a839134527fd869ac40a8fb5fa88b0048d1a93a828e306c2a270" => :mavericks
-    sha256 "e81d8a0d4c8107898aff0cda9abbf4a2caaf098f16c37bd92aa168943c7e6554" => :mountain_lion
+    rebuild 1
+    sha256 "4058542dd46ccafcb7175337c14120266cd783a24bb7f92bb5a6ab49dc907441" => :mojave
+    sha256 "b3078ec5ca52ba03c59ed1674c9df7a7890ede0ac80eb92d9fdcb8d143966bc9" => :high_sierra
+    sha256 "5215ab6aaf222aa357f0b3361e23265dcf06059e2dd9f0fc8e100b91ca12577b" => :sierra
   end
 
   depends_on "lrzsz"
