@@ -6,10 +6,10 @@ class GoAT110 < Formula
   sha256 "6fe44965ed453cd968a81988523e9b0e794d3a478f91fd7983c28763d52d5781"
 
   bottle do
-    sha256 "708d7da25f16bc496d2031d18e3364cd27307cc81b350efd70cf0129f12d7f3e" => :mojave
-    sha256 "8f61daebea1012743280f2aab830db7d812b6064dffa786a1514dc06550facc0" => :high_sierra
-    sha256 "c198d33774a788840143677bd396fd9f9601c1e568b01f6c41afe1b292a94796" => :sierra
-    sha256 "f8ae863158b47ddbc82df4dcfdd3248d1c55c5f2bbce291a855053850819044b" => :el_capitan
+    rebuild 1
+    sha256 "95e9d593977d73b5508c973b9d4541be48d2c044c2e016fc0bee1191446652ef" => :mojave
+    sha256 "a3c3628dd58d7fc043705565226a3aaf8dc6ce68d2cf1bbbd08e5c0fed8a252a" => :high_sierra
+    sha256 "885edaefd04ff3436746ad5a33f80c76d18e0e7c24761cee75ed34103b6bbaf9" => :sierra
   end
 
   keg_only :versioned_formula
