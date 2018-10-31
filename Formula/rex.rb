@@ -6,10 +6,9 @@ class Rex < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1157e558598fb20ff11203c9e0d2aa0109631d1e7e5942cab09c1547303f16c9" => :mojave
-    sha256 "887d7eef9979e6b9933ea009fc1c97f922d73ca1d4317fb4636b51b5cf58b5cb" => :high_sierra
-    sha256 "f3ff192a1f3b7bdb43434af70d0f7a603d7e7790634b5b479735fbc049014ab8" => :sierra
-    sha256 "abb8c9c4549b4c73bfa84de1d5472ee89fb4203ff2abbdba7b98208b349b3bab" => :el_capitan
+    sha256 "824ae6149a2453ab9a6d43b98f9493507e7166f0d940606a1130cb14c1e6ab1d" => :mojave
+    sha256 "a942ece6a7a47a2b80040ce7f9e35a1e483dc57ac02fc53a35c23574dde1e4bf" => :high_sierra
+    sha256 "221827fd75b3e93c9fcd328ceb9af94c76391bb5928aeeb39f5a6b31288aeccd" => :sierra
   end
 
   depends_on "perl" if MacOS.version <= :mountain_lion
