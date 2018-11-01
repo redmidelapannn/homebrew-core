@@ -1,8 +1,8 @@
 class AppscaleTools < Formula
   desc "Command-line tools for working with AppScale"
   homepage "https://github.com/AppScale/appscale-tools"
-  url "https://github.com/AppScale/appscale-tools/archive/3.5.3.tar.gz"
-  sha256 "ae3f373626d5d88d38cf17fef8bd5faaf92234bc6421d5f5c49cf5788acbe93a"
+  url "https://github.com/AppScale/appscale-tools/archive/3.6.1.tar.gz"
+  sha256 "8f1bcdc5bcb72917ee262ddd50e6cab20a716879dc1d6cf2d7356bc1088f4af8"
   head "https://github.com/AppScale/appscale-tools.git"
 
   bottle do
@@ -17,6 +17,11 @@ class AppscaleTools < Formula
   depends_on "openssl"
   depends_on "python@2"
   depends_on "ssh-copy-id"
+
+  resource "azure-mgmt-marketplaceordering" do
+    url "https://files.pythonhosted.org/packages/30/16/e381dd68bfc281f110a94733abdce0626b9c38647ea17f89adc937c61f49/azure-mgmt-marketplaceordering-0.1.0.zip"
+    sha256 "6da12425cbab0cc62f246e7266b4d67aff6bdd031ecbe50c7542c2f2b2440ad4"
+  end
 
   resource "retrying" do
     url "https://files.pythonhosted.org/packages/44/ef/beae4b4ef80902f22e3af073397f079c96969c69b2c7d52a57ea9ae61c9d/retrying-1.3.3.tar.gz"
@@ -264,8 +269,8 @@ class AppscaleTools < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/72/46/4abc3f5aaf7bf16a52206bb0c68677a26c216c1e6625c78c5aef695b5359/requests-2.14.2.tar.gz"
-    sha256 "a274abba399a23e8713ffd2b5706535ae280ebe2b8069ee6a941cb089440d153"
+    url "https://files.pythonhosted.org/packages/54/1f/782a5734931ddf2e1494e4cd615a51ff98e1879cbe9eecbdfeaf09aa75e9/requests-2.19.1.tar.gz"
+    sha256 "ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
   end
 
   resource "keyring" do
@@ -274,8 +279,8 @@ class AppscaleTools < Formula
   end
 
   resource "msrestazure" do
-    url "https://files.pythonhosted.org/packages/6a/d1/761e69540cc8076a8a64f280638397e2eb1dcba1ff697e5cd1730797eff9/msrestazure-0.4.19.tar.gz"
-    sha256 "43b78f25a432772b48c1dee615bd2c1de2ebb2f8107e96d4eea8cf6f691069c4"
+    url "https://files.pythonhosted.org/packages/cd/ce/1381822930cb2e90e889e43831428982577acb9caec5244bcce1c9c542f9/msrestazure-0.4.34.tar.gz"
+    sha256 "4fc94a03ecd5b094ab904d929cc5be7a6a80262eab93948260cfe9081a9e6de4"
   end
 
   resource "enum34" do
