@@ -7,10 +7,10 @@ class Sqlcipher < Formula
 
   bottle do
     cellar :any
-    sha256 "d3d7e77c5013fc8d31520f4d415c2c3bc4b045ef1b7016006826d9fcec078a4f" => :mojave
-    sha256 "5b8aaeb3f3f41a57f171a3f1175887ea9d98511982354479d4171ebae24377c6" => :high_sierra
-    sha256 "9462222059285b70d3a301812a38516ce0337e7dddb064ab052549124b9aca3f" => :sierra
-    sha256 "6370ce68ccb2f598f42bee2f799f7e97d7f1bac75ec71aeb446ee57761436642" => :el_capitan
+    rebuild 1
+    sha256 "9615ef3d9fe07756d982d026ab99d61bcdaa72784e4043a3e4651ac6226a9235" => :mojave
+    sha256 "4c48a0b288c8edd5ff25e374f000d4baa848e32cc201b7f5d2bb39c6a394b3bb" => :high_sierra
+    sha256 "44e0642d437fed6a8d6babfa22fca5e356602323cc850a3dcd5bac741629539d" => :sierra
   end
 
   option "with-fts", "Build with full-text search enabled"
