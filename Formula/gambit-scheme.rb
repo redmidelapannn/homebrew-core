@@ -3,6 +3,12 @@ class GambitScheme < Formula
   homepage "https://gambitscheme.org"
   url "https://github.com/gambit/gambit.git", :tag => "v4.9.0"
 
+  bottle do
+    sha256 "0dd745db7fb56de81ca7e78e3c54f61e770b64b82283086cb26f57bf47d623c0" => :mojave
+    sha256 "8909ad54b1298caf99c6c6797b024e1e44f3e0a2ec634a75ffe257cf96418218" => :high_sierra
+    sha256 "04042ac1e18aac523db05c4efdd55d4bf81ad6a3aba609a5f62028e06018a96d" => :sierra
+  end
+
   depends_on "gcc@6"
   depends_on "openssl" => :optional
 
