@@ -4,6 +4,13 @@ class Pic2ascii < Formula
   url "https://github.com/wzshiming/pic2ascii/archive/v1.5.0.tar.gz"
   sha256 "fe39d6660bcc95c1d24dbfb5d599f18170d9264380fe218f53702a04953f9305"
 
+  bottle do
+    cellar :any
+    sha256 "a3dbfc65a133c292e5351f15bbb97d77bf22e5db4938ac1003ded77587949ccb" => :mojave
+    sha256 "a81e9fb4396e5068351f19aa87a10fc5d9b331631710b8f460a490d87be00ccb" => :high_sierra
+    sha256 "18016d40ead5ceefb3a12e6892497d6e459c786fa7b9d74b9a4cf80a61aaa536" => :sierra
+  end
+
   depends_on "ffmpeg" => :build
   depends_on "gcc" => :build
   depends_on "go" => :build
