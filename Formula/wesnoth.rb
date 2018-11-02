@@ -6,9 +6,9 @@ class Wesnoth < Formula
   head "https://github.com/wesnoth/wesnoth.git"
 
   bottle do
-    sha256 "415c02b6c6ff9664fb11f41ff9a7441356b3fb70eb4efc1d9dd21c3a9de7b370" => :high_sierra
-    sha256 "d1440a43271ccec672400bd6daefae1c448da134c35d4c282dffa038e934ed33" => :sierra
-    sha256 "f4de6ae40204fa43e16e0a970e508d7b9869965b06b1170e3a8b1c935f187c9c" => :el_capitan
+    sha256 "b853c878afc581602ef2bd6237021c7ab4f3df19f39f092a92cbfe5ea465826b" => :mojave
+    sha256 "788865149c99eab9da79c5587d4471facf8f6e3de0e7290413ebfe1297fd7cb0" => :high_sierra
+    sha256 "9d67663035bd6ddee29dfccf13555c53bfcd274a932edd14028fdcbbf2ba77c2" => :sierra
   end
 
   depends_on "gettext" => :build
