@@ -3,10 +3,9 @@ class Httpie < Formula
 
   desc "User-friendly cURL replacement (command-line HTTP client)"
   homepage "https://httpie.org/"
-  head "https://github.com/jakubroztocil/httpie.git"
-
   url "https://files.pythonhosted.org/packages/44/ee/7177b743400d7f82a69bf30cb3c24ea4bb1f4aea68878bc540f732bf4940/httpie-1.0.0.tar.gz"
   sha256 "1650342d2eca2622092196bf106ab8f68ea2dbb2ed265d37191185618e159a25"
+  head "https://github.com/jakubroztocil/httpie.git"
 
   bottle do
     cellar :any_skip_relocation
