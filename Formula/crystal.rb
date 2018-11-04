@@ -44,6 +44,10 @@ class Crystal < Formula
   def install
     (buildpath/"boot").install resource("boot")
 
+    if build.head?
+      ENV["CRYSTAL_CONFIG_BUILD_COMMIT"] = Utils.popen_read("git rev-parse --short HEAD").strip
+    end
+
     ENV["CRYSTAL_CONFIG_PATH"] = prefix/"src:lib"
     ENV.append_path "PATH", "boot/bin"
 
