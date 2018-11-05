@@ -6,10 +6,10 @@ class Calcurse < Formula
   head "git://git.calcurse.org/calcurse.git"
 
   bottle do
-    sha256 "c3f0fc356930d24114a2ef1c16679f1184ba60a4f5bb888b822f6a343f7ae5b5" => :mojave
-    sha256 "0fbabcf326ec92cf28ec57ff76f77e1a6fa41217f7d11ef5090c18b7bfc5b8aa" => :high_sierra
-    sha256 "0a4237919a02a48d0c661ae43a4da579c69bf826921af07d14d9ade6f835374a" => :sierra
-    sha256 "4cca241225bacb88ffd8c9f97e8c7b4027068551523f07874975362995eacf54" => :el_capitan
+    rebuild 1
+    sha256 "fd7efc6f70b643f017706d99cf14d327da8f66e6b4bd7280169ff8710013caff" => :mojave
+    sha256 "dbafd955885442db102357724f69c49ffc83c7b01f761915a3f53381472104e2" => :high_sierra
+    sha256 "15ac7a1bd4ec8a3278887b95a1fb4f55fedf46472bb2876f26ed850369857d9d" => :sierra
   end
 
   depends_on "gettext"
