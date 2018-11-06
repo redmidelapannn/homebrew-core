@@ -5,10 +5,10 @@ class LibbitcoinNetwork < Formula
   sha256 "e065bd95f64ad5d7b0f882e8759f6b0f81a5fb08f7e971d80f3592a1b5aa8db4"
 
   bottle do
-    sha256 "57181b12da719b610445c4533f20868bc0272e65476dd4c944658455e88038fc" => :mojave
-    sha256 "84059bf2b3557d112a30d5cee534c60c2e852a34ec65bd3e847ef88b118802f0" => :high_sierra
-    sha256 "34f9af49bdbfb835bd917e92aa24aef2a129c587a44188f711c278ed9009eeec" => :sierra
-    sha256 "d83849347ad9b982027380b3777371d9d3703ac9577dc3f2b8abe44a4e3cfdbf" => :el_capitan
+    rebuild 1
+    sha256 "3391ce54e17ec45b634c8db121b1733459acef418e032e15d87836ea284105c6" => :mojave
+    sha256 "039f162c5006b338e06e94bc094c43eaf1116646c7d03221fbc5c028f090875d" => :high_sierra
+    sha256 "65d143767df46d7566ec3bc9fae78c96d51ba922fc9e72ae00c1b6e1f7e3ad13" => :sierra
   end
 
   depends_on "autoconf" => :build
