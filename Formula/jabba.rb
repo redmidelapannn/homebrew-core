@@ -1,8 +1,8 @@
 class Jabba < Formula
   desc "Cross-platform Java Version Manager"
   homepage "https://github.com/shyiko/jabba"
-  url "https://github.com/shyiko/jabba/archive/0.10.1.tar.gz"
-  sha256 "059d5f14a23eba8f3cedf047c99489173fe52fe9bda6484e4000afc9cb7dfb0a"
+  url "https://github.com/shyiko/jabba/archive/0.11.0.tar.gz"
+  sha256 "1eee1ac5a8bf74918b95e933f91037bffa320c28da2013d876888fcf19bc94f8"
   head "https://github.com/shyiko/jabba.git"
 
   bottle do
