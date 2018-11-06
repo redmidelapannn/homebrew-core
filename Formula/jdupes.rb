@@ -12,6 +12,13 @@ class Jdupes < Formula
     sha256 "080393ee6408d004a629c2427455eae484bb7f2edeaf993e2528a16e1c0055c0" => :el_capitan
   end
 
+  # Fix for build issue, remove in next version
+  # https://github.com/jbruchon/jdupes/issues/89
+  patch do
+    url "https://github.com/jbruchon/jdupes/commit/1a88f0ed.diff?full_index=1"
+    sha256 "f086733421f08f93a96f88d7f6bc688761a498e8382250c30b02b0df869fa4f9"
+  end
+
   def install
     system "make", "install", "PREFIX=#{prefix}"
   end
