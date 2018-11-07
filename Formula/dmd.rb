@@ -3,8 +3,8 @@ class Dmd < Formula
   homepage "https://dlang.org/"
 
   stable do
-    url "https://github.com/dlang/dmd/archive/v2.081.2.tar.gz"
-    sha256 "390b51ff994da52fb02fd95ce71282540caa2e8ffd38945b37ee700559b4a3ec"
+    url "https://github.com/dlang/dmd/archive/v2.083.0.tar.gz"
+    sha256 "29a983f3019a1c2be450e2086ed8216805848ecbb2a8aba683a13cf78413f8bc"
 
     resource "druntime" do
       url "https://github.com/dlang/druntime/archive/v2.081.0.tar.gz"
