@@ -1,5 +1,5 @@
 class Termrec < Formula
-  desc "Record \"videos\" of terminal output"
+  desc "Record videos of terminal output"
   homepage "https://angband.pl/termrec.html"
   url "https://github.com/kilobyte/termrec/archive/v0.18.tar.gz"
   sha256 "b74aeea0526b606d0c0a8dfe4149670f7d34be9d4369e974a15abc67509a02ac"
@@ -21,8 +21,7 @@ class Termrec < Formula
   depends_on "xz"
 
   def install
-    inreplace "autogen", "libtoolize", "glibtoolize"
-    system "./autogen"
+    system "./autogen.sh"
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
