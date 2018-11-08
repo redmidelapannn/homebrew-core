@@ -2,8 +2,8 @@ class Docker < Formula
   desc "Pack, ship and run any application as a lightweight container"
   homepage "https://www.docker.com/"
   url "https://github.com/docker/docker-ce.git",
-      :tag      => "v18.06.1-ce",
-      :revision => "e68fc7a215d7133c34aa18e3b72b4a21fd0c6136"
+      :tag      => "v18.09.0",
+      :revision => "4d60db472b2bde6931072ca6467f2667c2590dff"
 
   bottle do
     cellar :any_skip_relocation
