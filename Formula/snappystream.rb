@@ -22,7 +22,7 @@ class Snappystream < Formula
   end
 
   test do
-    (testpath/"testsnappystream.cxx").write <<~EOS
+    (testpath/"test.cxx").write <<~EOS
       #include <iostream>
       #include <fstream>
       #include <iterator>
@@ -43,7 +43,9 @@ class Snappystream < Formula
         }
       }
     EOS
-    system ENV.cxx, "testsnappystream.cxx", "-lsnappy", "-L#{lib}", "-lsnappystream", "-o", "testsnappystream"
-    system "./testsnappystream < #{__FILE__} > out.dat && diff #{__FILE__} out.dat"
+    system ENV.cxx, "test.cxx", "-o", "test",
+                    "-L#{Formula["snappy"].opt_lib}", "-lsnappy",
+                    "-L#{lib}", "-lsnappystream"
+    system "./test < #{__FILE__} > out.dat && diff #{__FILE__} out.dat"
   end
 end
