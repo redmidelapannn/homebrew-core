@@ -5,11 +5,10 @@ class Djbdns < Formula
   sha256 "3ccd826a02f3cde39be088e1fc6aed9fd57756b8f970de5dc99fcd2d92536b48"
 
   bottle do
-    rebuild 3
-    sha256 "b57557c57ac07e053f78b2e73aed4cc9ec72a0c89d68e4ca8bc1dd3b2b9cddba" => :mojave
-    sha256 "f6555710c361d47fabfeeb6d8148b84c3a7e973ba4407def4f0a37e327ac3a5b" => :high_sierra
-    sha256 "ce72334aa541af3a486f90e32b2162ba8b5c86825f0a52f1b6de9cb33640eeff" => :sierra
-    sha256 "9bbf4356e0bb4e25827fdf02d4efa0fc3763600456ad76e63f662dae6e1fb4ce" => :el_capitan
+    rebuild 4
+    sha256 "3451b9f10b5d98df900fbffd8c0c83501bc41effc3038420afcbb1eada851d28" => :mojave
+    sha256 "0153405f93843d3bd3f698724c68825c654b3df4ba881c87341860eca9f0f2bc" => :high_sierra
+    sha256 "abeabf730d9a0c155f3b6fe7cca3fdfbbf9b99bd1dfce1f6482740dd601c7311" => :sierra
   end
 
   depends_on "daemontools"
