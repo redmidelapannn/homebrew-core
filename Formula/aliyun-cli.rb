@@ -4,6 +4,13 @@ class AliyunCli < Formula
   url "https://github.com/aliyun/aliyun-cli/archive/v3.0.5.tar.gz"
   sha256 "fa9a9e736f3a02c454695b75e0dd1e7c140fba63d114537d24babd0b6930f99a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e173c4c5673a2e7d68aad68a960edffe196eeb9f1e1b1e0561952579f7eb636b" => :mojave
+    sha256 "ac94b81c28c715c6adb3dbc92f773c678ac96da3767574f2d236040a154ce086" => :high_sierra
+    sha256 "55cf5b45b114d87c275549652973690a0612ecfadb5ffd876f08ea427b6c0732" => :sierra
+  end
+
   depends_on "go" => :build
   depends_on "go-bindata" => :build
 
