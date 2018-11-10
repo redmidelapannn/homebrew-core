@@ -7,10 +7,9 @@ class Libfreehand < Formula
 
   bottle do
     cellar :any
-    sha256 "1ae055c035c29cb61ccbf58b426c653d335b6718b3e80f25ce60eaccd15f4001" => :mojave
-    sha256 "fd7d65f977cf1261fb28af4fc781c812b29c6417a6e76ec7ead2d10008ad0309" => :high_sierra
-    sha256 "9df762663fdac41d4eeb631efbd3ac5a76a2fb3ca9551b359f771c8d1ad3d1a3" => :sierra
-    sha256 "97056ac49cee3fcdb9b69a1e7113dd38828a6c4b676d89f72114e2025abfdac5" => :el_capitan
+    sha256 "e91c13498c61453e53d0b7b1fee4a16d4d8a0fcbbccbfa66bf66bc86e3412a90" => :mojave
+    sha256 "ffafd744547221769726f7e667b4e6fa1720167f0a722f35729a2de9ea72ec0f" => :high_sierra
+    sha256 "cf7ce50defff679dbf7847bb8e3144e1929b72621b3c931b4f3ccb364dd455ce" => :sierra
   end
 
   depends_on "boost" => :build
