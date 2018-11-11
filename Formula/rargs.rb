@@ -11,6 +11,6 @@ class Rargs < Formula
   end
 
   test do
-    system "#{bin}/rargs", "-h"
+    assert_equal "abc", shell_output("echo abc,def | #{bin}/rargs -d, echo {1}").chomp
   end
 end
