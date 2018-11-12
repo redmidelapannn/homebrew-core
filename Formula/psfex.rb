@@ -5,7 +5,6 @@ class Psfex < Formula
 
   option "without-check", "Disable build-time checking (not recommended); running check will take 5-10 minutes"
 
-  depends_on "openblas"
   depends_on "fftw"
   depends_on "plplot"
   depends_on "autoconf" => :build
