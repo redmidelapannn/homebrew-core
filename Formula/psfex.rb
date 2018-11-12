@@ -3,6 +3,11 @@ class Psfex < Formula
   url "https://www.astromatic.net/download/psfex/psfex-3.17.1.tar.gz"
   sha256 "53f1b449ab7da7e6e0a989c41b82885f52c8f08270ceb4378bb1ec7ef754af89"
 
+  bottle do
+    sha256 "f12bfe217a941d1cfd4eaad08e8d170feb5af30702e9aa704c2356833420a54f" => :mojave
+    sha256 "914d9278f02e0dde19702de33efa12409a21da2c085116bcd026d817926c762f" => :high_sierra
+  end
+
   depends_on "fftw"
   depends_on "plplot"
   depends_on "autoconf" => :build
