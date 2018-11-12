@@ -27,7 +27,8 @@ class Wine < Formula
   end
 
   bottle do
-    sha256 "aa34f0a67a92a8bae72b08035c0ef43991b96c0109a4a91a909fbdaf685b0c4d" => :sierra
+    rebuild 1
+    sha256 "32a58fd77f97e6a41b753058df6b8f7515cb3a896794424ad54610943bd52bec" => :sierra
   end
 
   head do
