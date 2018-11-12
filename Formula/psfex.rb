@@ -3,8 +3,6 @@ class Psfex < Formula
   url "https://www.astromatic.net/download/psfex/psfex-3.17.1.tar.gz"
   sha256 "53f1b449ab7da7e6e0a989c41b82885f52c8f08270ceb4378bb1ec7ef754af89"
 
-  option "without-check", "Disable build-time checking (not recommended); running check will take 5-10 minutes"
-
   depends_on "fftw"
   depends_on "plplot"
   depends_on "autoconf" => :build
@@ -22,7 +20,7 @@ class Psfex < Formula
     system "autoheader"
     system "./configure", "--prefix=#{prefix}", "--enable-accelerate"
     system "make"
-    system "make", "check" if build.with? "check"
+    system "make", "check"
     system "make", "install"
   end
 end
