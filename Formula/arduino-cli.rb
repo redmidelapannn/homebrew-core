@@ -7,11 +7,16 @@ class ArduinoCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "get"
-    system "go", "build"
+    ENV["GOPATH"] = buildpath
+    (buildpath/"src/github.com/arduino/arduino-cli").install buildpath.children
+
+    cd "src/github.com/arduino/arduino-cli" do
+      system "go", "build", "-o", bin/"arduino-cli"
+      prefix.install_metafiles
+    end
   end
 
   test do
-    system "#{bin}/arduino-cli", "version"
+    system bin/"arduino-cli", "version"
   end
 end
