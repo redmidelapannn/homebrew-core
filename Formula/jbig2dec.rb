@@ -12,38 +12,27 @@ class Jbig2dec < Formula
     sha256 "beb6ea36ce8edffa4ff8569231413fab5f3de7338379b35b49d208e16243577d" => :el_capitan
   end
 
-  depends_on "libpng" => :optional
+  resource("test") do
+    url "https://github.com/apache/tika/raw/master/tika-parsers/src/test/resources/test-documents/testJBIG2.jb2"
+    sha256 "40764aed6c185f1f82123f9e09de8e4d61120e35d2b5c6ede082123749c22d91"
+  end
 
   def install
     args = %W[
       --disable-dependency-tracking
       --prefix=#{prefix}
       --disable-silent-rules
+      --without-libpng
     ]
-    args << "--without-libpng" if build.without? "libpng"
 
     system "./configure", *args
     system "make", "install"
   end
 
   test do
-    (testpath/"test.c").write <<~EOS
-      #include <stdint.h>
-      #include <stdlib.h>
-      #include <jbig2.h>
-
-      int main()
-      {
-        Jbig2Ctx *ctx;
-        Jbig2Image *image;
-        ctx = jbig2_ctx_new(NULL, 0, NULL, NULL, NULL);
-        image = jbig2_image_new(ctx, 10, 10);
-        jbig2_image_release(ctx, image);
-        jbig2_ctx_free(ctx);
-        return 0;
-      }
-    EOS
-    system ENV.cc, "test.c", "-DJBIG_NO_MEMENTO", "-L#{lib}", "-ljbig2dec", "-o", "test"
-    system "./test"
+    resource("test").stage testpath
+    output = shell_output("#{bin}/jbig2dec -t pbm --hash testJBIG2.jb2", 1)
+    assert_match "aa35470724c946c7e953ddd49ff5aab9f8289aaf", output
+    assert_predicate testpath/"testJBIG2.pbm", :exist?
   end
 end
