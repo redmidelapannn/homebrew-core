@@ -2,9 +2,8 @@ class Hashcat < Formula
   desc "World's fastest and most advanced password recovery utility"
   homepage "https://hashcat.net/hashcat/"
   # Note the mirror will return 301 until the version becomes outdated.
-  url "https://hashcat.net/files/hashcat-4.2.1.tar.gz"
-  mirror "https://hashcat.net/files_legacy/hashcat-4.2.1.tar.gz"
-  sha256 "7dad73c3406e66756b19e15ae8bcc482a52a422e8fb905feb6db4d2eb32e5320"
+  url "https://hashcat.net/files/hashcat-5.1.0.tar.gz"
+  sha256 "283beaa68e1eab41de080a58bb92349c8e47a2bb1b93d10f36ea30f418f1e338"
   version_scheme 1
   head "https://github.com/hashcat/hashcat.git"
 
@@ -39,9 +38,10 @@ class Hashcat < Formula
     dict_file = "example.dict"
     hash_file = "example#{hash_type}.hash"
 
-    additional_args = " --force" +         # shouldn't be needed with a correct OpenCL installation
-                      " --quiet" +         # we only need the hash:pass pair in the output
-                      " --potfile-disable" # we do not need to check or write the hashcat.potfile
+    additional_args = " --force" +                  # shouldn't be needed with a correct OpenCL installation
+                      " --quiet" +                  # we only need the hash:pass pair in the output
+                      " --potfile-disable" +        # we do not need to check or write the hashcat.potfile
+                      " --optimized-kernel-enable"  # enable optimizations (assumes passwords are short)
 
     #
     # Copy some files to the test folder
