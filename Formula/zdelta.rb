@@ -7,12 +7,10 @@ class Zdelta < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d98c1b4f7a6b63238bacd06d0a5640e7f0d07838bb4b3e15ac7dc9d699a5835a" => :mojave
-    sha256 "12c977074ebb388cb671b3a996cacda4c5c47fbf96100f73ffddcbf83976824d" => :high_sierra
-    sha256 "49b891fbf6b6f93796cb3080dcbefc1d873000e84d74a4bf2dd851b625e6a698" => :sierra
-    sha256 "3a186612374b9b2aca2e56f5dd68049c0b1ef952e4cb0b07263faf2ea62f136a" => :el_capitan
-    sha256 "2ade2838217be1b9f6bc55be6bf05fa5046ae09a42d17b714b9f2a73f934c993" => :yosemite
-    sha256 "86f93c2e260d321d3bf30b34c2313d2cec5bc6d23bfb5a86cf99ab6b5f64f157" => :mavericks
+    rebuild 1
+    sha256 "d24ae123b06cc0f45bbf78a530a6d1aa455e1e463304cffe160701cd3562380a" => :mojave
+    sha256 "232b61a14293e02a177d50267d4a460d68bf9da2030e87272ce868c1e4b17892" => :high_sierra
+    sha256 "a90bf59e2b124d9ff3f5c352b846e5afcd7e6e5e38f7338f4f3f31784949e95e" => :sierra
   end
 
   def install
