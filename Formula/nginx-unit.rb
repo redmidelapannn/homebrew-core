@@ -4,6 +4,11 @@ class NginxUnit < Formula
   url "https://unit.nginx.org/download/unit-1.1.tar.gz"
   sha256 "7c66365f5ea87e7e8903bac9d639676947fe2ab7aa799ce35defc426b3409ee0"
 
+  bottle do
+    sha256 "9857fda3e4c0140ced5cb3d29bfda28d2e4ec90ff914da5596d2353c8a520e93" => :high_sierra
+    sha256 "4c2602bd661990105b070d02095b62f91308dc327796a3468c7887491dc01ee3" => :sierra
+  end
+
   depends_on "openssl"
   depends_on "pcre"
 
