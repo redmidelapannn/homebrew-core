@@ -7,6 +7,12 @@ class EtcherCli < Formula
   url "https://github.com/balena-io/etcher/archive/v1.4.7.tar.gz"
   sha256 "368bada1f23ba5877d1f6ba6fa1d46e0d39f2289a8eb7d2c5cd7de37d80dda8a"
 
+  bottle do
+    sha256 "a0d17415e292695358ddaf33a61397071eb2cfd53cf11956525aa5f028a329bd" => :mojave
+    sha256 "f0e5f1e627790a257bb506e7d126d43453c7edce476ce9f0ab5da3a1b8c8c6c0" => :high_sierra
+    sha256 "2207317a6e3ddd5a3887c0dc3f7c166f69c6e021e686503141d5be09130a0b50" => :sierra
+  end
+
   depends_on "python" => :build
   depends_on "node"
 
