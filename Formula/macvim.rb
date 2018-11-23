@@ -8,10 +8,9 @@ class Macvim < Formula
   head "https://github.com/macvim-dev/macvim.git"
 
   bottle do
-    sha256 "7986e391f3534812c84d321cd4884377c062249c405300c4747a47bd5489539a" => :mojave
-    sha256 "2a93ea907a16f68918376b1d9e4c75293823f7b2a8a0e4d5d49fa608a9e20120" => :high_sierra
-    sha256 "cb015ff88dc664a765fe8b212e0edc186de6efdff5b290d708f531a34bbd8749" => :sierra
-    sha256 "029365cfcc11097d216e12e431cc779c805bff5592a35bc337144e72c093e02f" => :el_capitan
+    rebuild 1
+    sha256 "059b13d730b669869841a283ff97db4dfe28cc177e0e72b8928a7199d58f2350" => :high_sierra
+    sha256 "37e479b3a9a330f63312284c805bade8e594751b7578d276864d53f2fb9b8aa9" => :sierra
   end
 
   option "without-interpreters", "Build without embedded perl, ruby, tcl interpreters"
