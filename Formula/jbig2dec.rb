@@ -31,7 +31,7 @@ class Jbig2dec < Formula
 
   test do
     resource("test").stage testpath
-    output = shell_output("#{bin}/jbig2dec -t pbm --hash testJBIG2.jb2", 1)
+    output = shell_output("#{bin}/jbig2dec -t pbm --hash testJBIG2.jb2")
     assert_match "aa35470724c946c7e953ddd49ff5aab9f8289aaf", output
     assert_predicate testpath/"testJBIG2.pbm", :exist?
   end
