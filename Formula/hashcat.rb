@@ -37,9 +37,10 @@ class Hashcat < Formula
     dict_file = "example.dict"
     hash_file = "example#{hash_type}.hash"
 
-    additional_args = " --force" +         # shouldn't be needed with a correct OpenCL installation
-                      " --quiet" +         # we only need the hash:pass pair in the output
-                      " --potfile-disable" # we do not need to check or write the hashcat.potfile
+    additional_args = " --force" +                  # shouldn't be needed with a correct OpenCL installation
+                      " --quiet" +                  # we only need the hash:pass pair in the output
+                      " --potfile-disable" +        # we do not need to check or write the hashcat.potfile
+                      " --optimized-kernel-enable"  # enable optimizations (assumes passwords are short)
 
     #
     # Copy some files to the test folder
