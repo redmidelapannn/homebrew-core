@@ -7,9 +7,10 @@ class Libxml2 < Formula
 
   bottle do
     cellar :any
-    sha256 "95f2c24465082719001e68aceb17fea3be376d9e636a578b59f6c47db01370ea" => :mojave
-    sha256 "0ac1537873a1ffc9aea9c01b05bafa8ad94df7abd275b8ceed719ce11b08615d" => :high_sierra
-    sha256 "649c48cc1142a0c1febb96fa710327d1a5544b7edd9b7da20bb9597b5d3f2140" => :sierra
+    rebuild 1
+    sha256 "2c1cb31fc44e61513014aa8791d394b43e13db891bb11de3f06544a6f409c421" => :mojave
+    sha256 "e4dbaf9da178b7ce68624fe5891b00a5c1b6ed1f88c7acf3357eef292fd664bd" => :high_sierra
+    sha256 "77389e362220d0d33ee30a5c9a6106759c62477d40e0967dcf29fb5738bed9b8" => :sierra
   end
 
   head do
