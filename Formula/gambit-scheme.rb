@@ -4,6 +4,12 @@ class GambitScheme < Formula
   url "https://github.com/gambit/gambit/archive/v4.9.1.tar.gz"
   sha256 "667ae2ee657c22621a60b3eda6e242224d41853adb841e6ff9bc779f19921c18"
 
+  bottle do
+    sha256 "60fc78e9a2d3801592edb263e4db137b14d4f5255590b9387d631431091a3427" => :mojave
+    sha256 "3343d828e656596ae5742e1c29ed2a87c0434a212366950905edfebf933c681c" => :high_sierra
+    sha256 "84aa725333b4e9ff7eabbb228e5f201720e927320290acd56f1f3c4ca2d08274" => :sierra
+  end
+
   depends_on "openssl"
 
   def install
