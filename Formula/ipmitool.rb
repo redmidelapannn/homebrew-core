@@ -8,11 +8,9 @@ class Ipmitool < Formula
 
   bottle do
     cellar :any
-    sha256 "80039ed77975cdfc9b50ce83750b28be15dca7506c482cc43e60791359ac4240" => :mojave
-    sha256 "ffea0646f0d1ce2d773f1566fe813e36c3ab8d409ad26580c87709d696401fd4" => :high_sierra
-    sha256 "c7e13ccde0f639c52aa915a71f9779ec0b514ed1260c5c9078754498f80c9ec3" => :sierra
-    sha256 "d6ce46b2b93ac040cb3ac235bd68ecab496b8dbebee22fb4fb69ad52aa75e9c9" => :el_capitan
-    sha256 "5e9ad832c757416534a30df441ba41f83a4634bb80c224d4e42e7395b58cb9a6" => :yosemite
+    sha256 "4a92ec76eeef3cf6498e2725437fadc257ae0e41b1814e7b4df45615ed25791c" => :mojave
+    sha256 "f689ffab8bd0a7bcf70578cf7c7fee9a66c73d1abb80ae18554c6c656a1d782f" => :high_sierra
+    sha256 "a787cde0837ac0a5f6e043e87829f8476bfbc9e95b52c3fe54d3cfe2fffe8010" => :sierra
   end
 
   option "with-shell", "Enable ipmitool shell function."
