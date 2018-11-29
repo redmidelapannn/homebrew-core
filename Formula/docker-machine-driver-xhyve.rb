@@ -19,17 +19,17 @@ class DockerMachineDriverXhyve < Formula
   depends_on "docker-machine" => :recommended
 
   def install
-    (buildpath/"gopath/src/github.com/machine-drivers/docker-machine-driver-xhyve").install Dir["{*,.git,.gitignore,.gitmodules}"]
+    (buildpath/"gopath/src/github.com/zchee/docker-machine-driver-xhyve").install Dir["{*,.git,.gitignore,.gitmodules}"]
 
     ENV["GOPATH"] = "#{buildpath}/gopath"
-    build_root = buildpath/"gopath/src/github.com/machine-drivers/docker-machine-driver-xhyve"
+    build_root = buildpath/"gopath/src/github.com/zchee/docker-machine-driver-xhyve"
     build_tags = "lib9p"
 
     cd build_root do
       git_hash = `git rev-parse --short HEAD --quiet`.chomp
       git_hash = "HEAD-#{git_hash}" if build.head?
 
-      go_ldflags = "-w -s -X 'github.com/machine-drivers/docker-machine-driver-xhyve/xhyve.GitCommit=Homebrew#{git_hash}'"
+      go_ldflags = "-w -s -X 'github.com/zchee/docker-machine-driver-xhyve/xhyve.GitCommit=Homebrew#{git_hash}'"
       ENV["GO_LDFLAGS"] = go_ldflags
       ENV["GO_BUILD_TAGS"] = build_tags
 
