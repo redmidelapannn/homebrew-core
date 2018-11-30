@@ -3,8 +3,8 @@ class Sceptre < Formula
 
   desc "Build better AWS infrastructure"
   homepage "https://sceptre.cloudreach.com"
-  url "https://github.com/cloudreach/sceptre/archive/v1.4.2.tar.gz"
-  sha256 "0253ef680c1fe2ff589851f979fbcd28f81dd437cdbe9047ec7d3daac6600bf4"
+  url "https://github.com/cloudreach/sceptre/archive/v2.0.0.tar.gz"
+  sha256 "6c7376c271060089488fee0e58eb7d8714b3abb06d65bc47c22591e1351b6e3e"
 
   bottle do
     cellar :any_skip_relocation
