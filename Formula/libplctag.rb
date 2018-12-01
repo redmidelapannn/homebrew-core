@@ -31,7 +31,7 @@ class Libplctag < Formula
         return 0;
       }
     EOS
-    system ENV.cc, "test.c", "-lplctag", "-o", "test"
+    system ENV.cc, "test.c", "-L#{lib}", "-lplctag", "-o", "test"
     system "./test"
   end
 end
