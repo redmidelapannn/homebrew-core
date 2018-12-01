@@ -6,10 +6,10 @@ class Expat < Formula
 
   bottle do
     cellar :any
-    sha256 "b4ef17fd554af88d5f5a18ed01f5668d448d37f873ed62fb81b5b9d6610a5af1" => :mojave
-    sha256 "f40e7de5136c5cebad824d0977040d6a12ce88d53131a37ade357b069759001b" => :high_sierra
-    sha256 "42bbcc51ea53b2eccc49d10fcf8d7e90d3061fb7f1e35e6f58e8b8adf6fdceeb" => :sierra
-    sha256 "ca9ef3c3c89d70794872e6b7dd2eed560008db47efa16c6c8fad3258940e3263" => :el_capitan
+    rebuild 1
+    sha256 "e50b8c81075a268de049225ed5f24a9c1b97a223ed87f1ec2d1c82435d6aaefb" => :mojave
+    sha256 "13d4798a4eae24e7216c36df1d4f34ae53c0f67ee8c72ad4f23cab1c2a31d788" => :high_sierra
+    sha256 "71ad3505750c6cfb65d1cd09816109b9f9a78e9d018b9537d603f203c0b84cd3" => :sierra
   end
 
   head do
