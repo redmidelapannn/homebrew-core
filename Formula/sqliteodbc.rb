@@ -16,6 +16,8 @@ class Sqliteodbc < Formula
   depends_on "unixodbc"
 
   def install
+    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
+
     lib.mkdir
     system "./configure", "--prefix=#{prefix}", "--with-odbc=#{Formula["unixodbc"].opt_prefix}", "--with-sqlite3=#{Formula["sqlite"].opt_prefix}"
     system "make"
