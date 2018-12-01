@@ -10,7 +10,9 @@ class KubernetesHelmAT210 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
+    sha256 "38d7d296439da3a162822130893eefa7433bcf03130c4aeffc0c37cd45d2c65e" => :mojave
+    sha256 "69dae07f11f69ac0ec50b2857a90ae435e453df2aec59b373e376b0905e15d4b" => :high_sierra
+    sha256 "75b58fbda2ac718e63b6c03e2769e5ba1a2280aa0787a8e63916fc968066d6b2" => :sierra
   end
 
   keg_only :versioned_formula
