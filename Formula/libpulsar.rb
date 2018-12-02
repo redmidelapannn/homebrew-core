@@ -5,6 +5,13 @@ class Libpulsar < Formula
   url "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=pulsar/pulsar-2.2.0/apache-pulsar-2.2.0-src.tar.gz"
   sha256 "a3b1940a803043bb2c365ce9df657d15bf9aacb3c9ff5db86a79dc4374033f08"
 
+  bottle do
+    cellar :any
+    sha256 "6c5550a4a90974ead526c772029eeb0fa1166158b2bcb9df865710e7ecb04eaf" => :mojave
+    sha256 "43a528f024e86b98ad47c73843b0ea2866085885d5d5b51389c962d73524f192" => :high_sierra
+    sha256 "0c78a3ef95e9e5d619533b6b95ea6b746b43279c24efd8d6fab8480706b7b76d" => :sierra
+  end
+
   depends_on "boost-python" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
