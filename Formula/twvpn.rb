@@ -4,6 +4,13 @@ class Twvpn < Formula
   url "https://github.com/bangwu/twvpn/archive/1.0.1.tar.gz"
   sha256 "5a6bc9a5626ac1421be5a681eb60625980f48f89d4c4d575787f2729132b9bab"
   head "https://github.com/bangwu/twvpn.git"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b27a7ee3192bf2c63e447efece46a15408dce6d253887e0efced9854253c66fd" => :mojave
+    sha256 "50a3a5f6997c681fdf699ffbcbc148f1d8c86261c48d6ff1b3ff29713cb43e3a" => :high_sierra
+    sha256 "50a3a5f6997c681fdf699ffbcbc148f1d8c86261c48d6ff1b3ff29713cb43e3a" => :sierra
+  end
+
   depends_on "oath-toolkit"
 
   def install
