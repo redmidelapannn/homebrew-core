@@ -9,10 +9,9 @@ class Gdb < Formula
   sha256 "c50739e9f1a88501dce37adfdbd5e2a5871d53d681d02bb0a38136771e61cf6f"
 
   bottle do
-    sha256 "66aba1de069c94a7dbd24da8f29bba8a2415ba04ca55fc7e57fa33fa482885c4" => :mojave
-    sha256 "6d35586ed4c646df660b4518838f7809c593a851ad171b86d5d44b6d30c780b4" => :high_sierra
-    sha256 "bbf55e88a59cc9ccedd9771a8cab1c57a5395bbbb91ece45daa1214a2b36f5b9" => :sierra
-    sha256 "cd3d64855ad850a25bdf7cb031ae837138579afbd2faebb5ec806dd3d22ca960" => :el_capitan
+    sha256 "a4aedf747304ac6dc14045adab10746cf7aaa0ef9e02473ab89a0b817352b361" => :mojave
+    sha256 "c2a3b7bee75cf33681a5e17e93e3147c03b6df3ad9b877309fa36f09c59ab16a" => :high_sierra
+    sha256 "fc8d458993ef9e2ef5af1ab9c0f7e5654ab62834a35081d294ccd09c8482d854" => :sierra
   end
 
   option "with-python", "Use the Homebrew version of Python; by default system Python is used"
