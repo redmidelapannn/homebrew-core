@@ -9,10 +9,9 @@ class Jpeg < Formula
 
   bottle do
     cellar :any
-    sha256 "1daa0fc0c197d96dd4e1afddb9ad576951a15aafd6b85138b8a60817d1d8173c" => :mojave
-    sha256 "178200fd8aa50d5db22c5faa4ca403652d2bf912616c34dfbc6b035a456c2fc6" => :high_sierra
-    sha256 "8ecc3407d188472a7f775bb44314fff40f0e3b17a83da1666f3fa306d8fffeec" => :sierra
-    sha256 "931236302e58c53a9728dde5cb93a896b8a39b16d1f195c85381da04ea17c407" => :el_capitan
+    sha256 "5be4d7e0144b52a5eee70bec3b1ce2aaa422da54cd3e26503742e02e352bb244" => :mojave
+    sha256 "450929ed1abc79b23f0ff0d763c19de27bba7d7c73f17a9ca00d22123039f209" => :high_sierra
+    sha256 "b0ba9b6c20eedf34cc6ffdb6155d2da537113e97096a56fb339ed684c079fabe" => :sierra
   end
 
   def install
