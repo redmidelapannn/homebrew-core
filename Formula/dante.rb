@@ -7,9 +7,9 @@ class Dante < Formula
 
   bottle do
     cellar :any
-    sha256 "26eb48c9eda005d8486f2dddee23420047a326f82638b71c5aa2f7d28f3ce402" => :mojave
-    sha256 "6a234a72eb6a8bc9439a9a45129ca2214151dee7b63c1ab76c7b5831bda8d1ea" => :high_sierra
-    sha256 "5d4fb552b729372afc0b5450af162d9b49984c64e28d7f1825fd879b4cf3bdf7" => :sierra
+    sha256 "e3e9319cc18b3569fec4913f54e0280ef7e10caadd7ffaf2ac92413b7c1774c6" => :mojave
+    sha256 "405603319eb06a88730303fb292f1ad00dc2c04b0ccd8939c5e2924c01b1ed6a" => :high_sierra
+    sha256 "1d07768b1b84ec8e9419f1dc9d7143fbfd8b445ec510147c0c0c8de29ee74040" => :sierra
   end
 
   def install
