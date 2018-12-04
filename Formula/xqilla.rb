@@ -7,10 +7,9 @@ class Xqilla < Formula
 
   bottle do
     cellar :any
-    sha256 "93ae09129c45ee7b1a4ecfe996c305791e06833c1e73b604b33282e5ea90248a" => :mojave
-    sha256 "38579e6ab1b6f6801ca5404cc79fcd972f395b9dd2e981672889b3eac5441c86" => :high_sierra
-    sha256 "0f1ef8f2aa1349b723062426a3e44fba2821bcf93316bacabf4c5e2948093bc4" => :sierra
-    sha256 "4326ec876d3e05647320c4ab55824c37531af997cc723f303fac4c4b40153753" => :el_capitan
+    sha256 "2e432c12ab4ebe6ee09410c1b4ed634a9fd04d2381d16c26a8211fccfbd078c2" => :mojave
+    sha256 "dd9cc7e77a336b9d1322673cd4319646eece4be95c173018ea6ea23697a9d31f" => :high_sierra
+    sha256 "c7898d6c10e564720dd1ab4fb9c050d11912d73d5a0b6181c5434e240846882b" => :sierra
   end
 
   depends_on "xerces-c"
