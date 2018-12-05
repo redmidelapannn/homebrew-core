@@ -6,13 +6,10 @@ class Whatmask < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "acfac14343f3a746de062b9cbe300bcfb6287df43fd2c4ec5395f7c49e51e7ad" => :mojave
-    sha256 "a46f984a59776d23efc00fbae9841026547f5c4f3884c31007c06acae51d4881" => :high_sierra
-    sha256 "7d9c8318c69271c9b7774a4f84cd315f28986bd7dacc1f1c9a5451880a415a8b" => :sierra
-    sha256 "acf751e4893268ccbee1e48e9f7a147cc38f64a9d178fc50c810d65c0466a648" => :el_capitan
-    sha256 "428a92b2ba5a3f6f39009a7d3a7fc503b4308fadaeddc287b39fd6b5bdddef74" => :yosemite
-    sha256 "c07eb39e586dbc2b78b4c8cf8173c701ac654e4db0fd5fe12b3c7f80ee3ef577" => :mavericks
-    sha256 "1af978f489425defa0d2c700a50fb140a6ce62274f4ab76530f553b2fba2f6a5" => :mountain_lion
+    rebuild 1
+    sha256 "ccd1a7907defc301d7d1997c3ae6b00a559feb0d5299461b8c8e03b4bc1f5e15" => :mojave
+    sha256 "ee335c24b2b1bcce891900dbaf2791dddb0333134cdd75f9655c81e18790d1e4" => :high_sierra
+    sha256 "eccff7f7e6bd6d18e82a4a36fd5fa8bf7f3b3a31ff34a38458c099a51e418c0a" => :sierra
   end
 
   def install
