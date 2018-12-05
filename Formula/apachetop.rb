@@ -6,14 +6,10 @@ class Apachetop < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "f4520c12643b7b9d6afc80729217ecbe7f17298790dbe783e7909c436559ac30" => :mojave
-    sha256 "e41dce58ad184e880c1f198ae1d5c0d0d1f1fc9fd27f1296a02a1b23e33c09cb" => :high_sierra
-    sha256 "3a3f3b20db8183a8c642ce732d9ecc3eac68ea1c292cab0594c3d5000c181442" => :sierra
-    sha256 "f1dd6f8ac7cb973228227b4cb678ef0bb61f618c482dc8d7d3144acccfebcf5b" => :el_capitan
-    sha256 "1cfb399a8548e1ac48d7cb61374e23273aa1eb289e49ba452aa2c55641fe5bae" => :yosemite
-    sha256 "78aa56c9141cfc658120edfb27e795cf178067d54f66c79fc752536d8e0335ea" => :mavericks
-    sha256 "d2383e14241b9af39c197462339393463ae6f8161dae508f49b0753dff846287" => :mountain_lion
+    rebuild 2
+    sha256 "8a88289a39c620ee8f9c43edb9d66f4b8838d4c63ee5370cf15a9b9585369d87" => :mojave
+    sha256 "109cf2acdec815254eba165c438492befefd3e82a413cc9735689927bf94318f" => :high_sierra
+    sha256 "bd4e187fb49df1a5e8c3396863acdc95847b5ba6bcf33831c6b6da5c1e5dc238" => :sierra
   end
 
   # Freecode is officially static from this point forwards. Do not rely on it for up-to-date package information.
