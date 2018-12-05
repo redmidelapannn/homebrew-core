@@ -7,13 +7,10 @@ class Analog < Formula
   revision 1
 
   bottle do
-    rebuild 2
-    sha256 "87337ab3f0049004b3b6e5bdcdb70c07f4a4cd457a917b7ec99e48650e3d560d" => :mojave
-    sha256 "d6cf3bcc19b376b693cc27ccd0ebeafb80a05c783405a13ed0d24abd07368cb2" => :high_sierra
-    sha256 "cb8cb25d3050dc3a08445987739c43b5fd7dad7a798342fb7538c016930a9978" => :sierra
-    sha256 "097f11e7f53078e6b248e38fc326cded49b08cdbe75ab61e20ab7b2a6e770256" => :el_capitan
-    sha256 "f2f29ea2dcbb9e0576c72f009d8814b0c7f84efd49d6f005085c876c85fd29b9" => :yosemite
-    sha256 "c9ca1f30d5b71b7653ecbbdb4ad8d9e81e41b2e33a9dc2c8e0a92af7cd48007d" => :mavericks
+    rebuild 3
+    sha256 "a8e4beaf04c8b115fd7c3152a1f053c402de52f90647f1ffd9ea4bef65bc9de3" => :mojave
+    sha256 "a5347a4e3a0110bb2233654e289e0f139ab2aafe13a435394601f6ddd05faa09" => :high_sierra
+    sha256 "62aea6b03be026521f5671489e79026bbafc6a2288c8952bca562dfa03407526" => :sierra
   end
 
   depends_on "gd"
