@@ -4,6 +4,12 @@ class OpencvAT3 < Formula
   url "https://github.com/opencv/opencv/archive/3.4.3.tar.gz"
   sha256 "4eef85759d5450b183459ff216b4c0fa43e87a4f6aa92c8af649f89336f002ec"
 
+  bottle do
+    sha256 "8aacc9b35bc1b29de4f266637d10178c4ff637004491f053821944dbd5e6ff80" => :mojave
+    sha256 "5d3de4bd3d172fdead709d7cab2df9e85b163ff6e65ed917d8c667f78ae7243a" => :high_sierra
+    sha256 "dd507de50c5f095b72dbdf8b6a05ce83fe49d6e9dad38b72c580a2021fc569f3" => :sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
