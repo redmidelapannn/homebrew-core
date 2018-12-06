@@ -4,6 +4,12 @@ class Opencv < Formula
   url "https://github.com/opencv/opencv/archive/4.0.0.tar.gz"
   sha256 "3787b3cc7b21bba1441819cb00c636911a846c0392ddf6211d398040a1e4886c"
 
+  bottle do
+    sha256 "a94e4e210b41421a32124c3575a0b43dfd749546e15e5534946e376ddc59097a" => :mojave
+    sha256 "36d1d142aa3488ae131aa826a7ad2d0805f80e7fd6bc8f5f84e23d1ab72bb806" => :high_sierra
+    sha256 "eb89014594cf1872710d8d5288d244502c5615e66df7a33936c851c70da32e06" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "eigen"
