@@ -6,9 +6,10 @@ class Unbound < Formula
   head "https://github.com/NLnetLabs/unbound.git"
 
   bottle do
-    sha256 "30f001903153859ba2e755086320d037163d925965e77aefd5e9675e7c5eaa9d" => :mojave
-    sha256 "59ccc8d8381ba9cc6eb89640e99f0378879d55b2c0aa07c029c0f64ecc80b65e" => :high_sierra
-    sha256 "fcc55406d9a0c2ac95df9914629456510b73948bd62c6042fc22720ed3e4a85f" => :sierra
+    rebuild 1
+    sha256 "7069e2132b5f254d5440e8f4ab92eabb534a7e96963869f7af319c612f5f9f1e" => :mojave
+    sha256 "c9020dd23bee4b88c1ebbfa3956a739ed99c51a4805fac0bb8523b3e8d061e97" => :high_sierra
+    sha256 "489910837d38b60a356e562d92a605c1376d4d34d3c66aef74d2c43ec6365eba" => :sierra
   end
 
   depends_on "libevent"
