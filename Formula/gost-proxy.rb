@@ -4,6 +4,13 @@ class GostProxy < Formula
   url "https://github.com/ginuerzh/gost/archive/v2.6.1.tar.gz"
   sha256 "d8231f5869e54066e0f1ba333d0209727bfe14998d296ebdf7b423d0c33209c6"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a2a92df33545dc41c8a3b489978d1e8cb3b9a964e167468005ace18f2700aad7" => :mojave
+    sha256 "d87ca00ed86a8e2b121c773211f18d0f69b9f1f8a18959598f3912ebe3a5e89e" => :high_sierra
+    sha256 "4da57f6b706ee03bfddad91b3898b96d9753216649a3c317ed411041f24497b7" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
