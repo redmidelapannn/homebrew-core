@@ -6,12 +6,10 @@ class Beanstalkd < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "21cef05beb1ef9976251362105694272b8eaa5622a4496359514f31dc5eafab9" => :mojave
-    sha256 "53ea84c7a2dc35bd061a6aebddd0285a57b72cf300846caeacd243a0bf2f07d3" => :high_sierra
-    sha256 "95a75ad2e7f06dfff9881762bddeb1fb06319a411165cba0114e4b7c9b1a4103" => :sierra
-    sha256 "6665ec5a9a493341134eca920517547340b672513f96317620c5095db3db9499" => :el_capitan
-    sha256 "1772e0af60fe42a471437285f29a9c03b52cd8ddd805eaf3339a9d644c4d1bb5" => :yosemite
-    sha256 "3d0c54d751784dd7ecfe1b482f30067ade6e7f99ec21d1e87e8f850fe2582f37" => :mavericks
+    rebuild 1
+    sha256 "48a950c9b9e693982397d8994ee01eb65dad0d1686c9e60889126bb9b59c9188" => :mojave
+    sha256 "1b15f3b1b53f392b0254d7921a7ef27cab8257a6c334348ee8a2c7250e8c6cbb" => :high_sierra
+    sha256 "42d3a2ff5d210bb79d3fa3d1d2e959723b5dcc9450e5d47a7efbc08b0d973e5b" => :sierra
   end
 
   def install
