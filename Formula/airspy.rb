@@ -6,11 +6,10 @@ class Airspy < Formula
   head "https://github.com/airspy/airspyone_host.git"
 
   bottle do
-    sha256 "d593672c7c08aff7b0056aa06171129b9fba717837de653dfb96b26ec78d6553" => :mojave
-    sha256 "44736e1193e3f63fca0c984ac4f594d1ad11a83a810898103652f69af2bce63f" => :high_sierra
-    sha256 "bfc1393f3efe5b58016fbee40a4048e7c7246203cb72b02261da1045941bcd4f" => :sierra
-    sha256 "c86b265ed42d8a976ff4bfc6116e5945d103f22af8ced4b9a9a18827ecf4af06" => :el_capitan
-    sha256 "1d6af7e52534bc50625eabcaa2b586e5824a3abbb4c3b42e032e5b4de41c6bfb" => :yosemite
+    rebuild 1
+    sha256 "7e5fc4452274881b9e06722f67c27368512b8a31639810d1c1bc63b32714e520" => :mojave
+    sha256 "b3e9d0d8489db70c7bfb61f052d4e230777da3d7064b4330ff85ff29791f7e45" => :high_sierra
+    sha256 "dbafca00c96d25edab17655135f141adab48bde5f605bc71559220c43e62478e" => :sierra
   end
 
   depends_on "cmake" => :build
