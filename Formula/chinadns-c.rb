@@ -6,13 +6,10 @@ class ChinadnsC < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "61ccebe523d9e2417385c911beca6a01ee7d2810f1a665fca9a4f6a0e7b81623" => :mojave
-    sha256 "5b0b51abe8a40dee4b1296e81da179aff05ba42befc869e06e081d7e6fc4e726" => :high_sierra
-    sha256 "fa51351f3cdfb63fa672d2011c08ac8a1f9a260bcfaacb13e4657f39e721b96f" => :sierra
-    sha256 "a620bce8421a9773233c51886c6845995569a1fda80e252efa86f6271c1d274c" => :el_capitan
-    sha256 "329351a4f82e4f871cbc2b384902b0c84040bd1df222970d67be7513bbead207" => :yosemite
-    sha256 "4266825a8ecbb6a84d459b41465fe9318a918b171880ac8ddfd8bdf3e37573d1" => :mavericks
-    sha256 "c994af6ca279fa06b42ca3a851d550a04d279b2337c06fb21e91a0fe42708036" => :mountain_lion
+    rebuild 1
+    sha256 "2f5a031d76be80d2a24cf15ec380288217588306719c32a67a04444146641597" => :mojave
+    sha256 "f1e385dff1cbc66a09edf6dd05d220c975fc44f9fe7f5c5a2020ffbc8a1c3494" => :high_sierra
+    sha256 "69307686d4df0dd4ede8934ab60ca7543b71b0437cafc193ac650a6f7a079d2d" => :sierra
   end
 
   head do
