@@ -7,10 +7,10 @@ class Pdfsandwich < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0b298e9deb1b4b62ebfe4eca95b678aff27f9ed76b6f0b13dd6ff9679768cba2" => :mojave
-    sha256 "2471d2ff0242228e150a825e08b051803ffa96442c2949155d89aa5ab0163e0c" => :high_sierra
-    sha256 "55481ac412ee714452c1ef754718e28a215c395106fac5eb25c07d5908c38603" => :sierra
-    sha256 "af5eaeb89d1e89eb0fb48d2e1661ddfdc21c3f35f08cbfb4fb3aff594b4ab1da" => :el_capitan
+    rebuild 1
+    sha256 "8f120fca8de96fd64d68921ecdafce95aef912dca619b049086895edefd6c83c" => :mojave
+    sha256 "0fc4f2d050eb16abcf7ff8651cdb5546959d7e19683cf738c98187937d28c023" => :high_sierra
+    sha256 "3b6ad1042c7e4ea8e032801fd5282ca17fae01296815d6045c46353dfb180f09" => :sierra
   end
 
   depends_on "gawk" => :build
