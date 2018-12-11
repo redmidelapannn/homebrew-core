@@ -5,9 +5,10 @@ class Couchdb < Formula
   sha256 "0b3868d042b158d9fd2f504804abd93cd22681c033952f832ce846672c31f352"
 
   bottle do
-    sha256 "81a9ef09e872ead7a3ae847f57f6cd01f4e7e46384c456b1cf4162cf7eecab42" => :mojave
-    sha256 "726a7e2329d938f0d64552a2b5c724fc665b5de8b1d046c9fdbd270cf941ba44" => :high_sierra
-    sha256 "3b5ed55595f163362f6a583a13fae6353c79b2cf9e66f0d35bcf7e5f13a38613" => :sierra
+    cellar :any
+    sha256 "519ec6a55287fed21d995df731941991c767c846aeca656000ec2b7a83add691" => :mojave
+    sha256 "277221a5cfeabd2e53549a4c556b46dcedfd35891af20b633e24b6ae2aeba1fc" => :high_sierra
+    sha256 "c11599f90142145cd30b5f05ca0e7cfe40767c0bdf780aa409f398dade143f89" => :sierra
   end
 
   depends_on "erlang@19"
