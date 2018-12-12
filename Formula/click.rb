@@ -6,10 +6,11 @@ class Click < Formula
   head "https://github.com/databricks/click.git"
 
   bottle do
-    sha256 "20757fac7b6ce08e1bd3df5275988cbaff40319c1c990428ada624ae313a0aed" => :mojave
-    sha256 "998198613be6e5007df66eee76b9ba108078c58534869a03233e8fed93661b32" => :high_sierra
-    sha256 "f165b40c17fceaa2ceac1a745124008255986e1e8e6da98973aadc49095f62ea" => :sierra
-    sha256 "fcfc3052c5457fae773d76e93d680c3033f54df048f66dd4c38148c684d986aa" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "066d9ac6237746884fce8aa28594e42a2004b6b16372d17407af623e73e15be6" => :mojave
+    sha256 "5bd185285c3360421b59ac472ce25bb0ed83c1ba72648ab8df67ae2017f9e7a4" => :high_sierra
+    sha256 "300f5488017119ec25d82f59693b095824977fcd8dcdd9aa8ebd45e9f44ffab0" => :sierra
   end
 
   depends_on "rust" => :build
