@@ -6,9 +6,10 @@ class ShairportSync < Formula
   head "https://github.com/mikebrady/shairport-sync.git", :branch => "development"
 
   bottle do
-    sha256 "7dc8276b51f1ef0ef4cf38c27228d46e80678425626783efc0e71646b8a6c60f" => :mojave
-    sha256 "8ed5e98d394f2dc6136abbbc15ecdc27a471244ef2c67c69558fbf9c3fae77ed" => :high_sierra
-    sha256 "72a828bd11b9c6a28d0c4b3c90e92ded0c4ee4ba5aa095f06a22362e5c78212d" => :sierra
+    rebuild 1
+    sha256 "9b2c9eb1276a738e22b27312541e9cd58d7ad0399b061a19abc726a246f7185c" => :mojave
+    sha256 "daea28aa2c891d268e477527b7adefa3469522cf065e074cf935a2d9cabeb09f" => :high_sierra
+    sha256 "f54ab3e56a717d88e6434e4acc3f6f9f6982dd202ed6292e4f160f41cd99482f" => :sierra
   end
 
   depends_on "autoconf" => :build
