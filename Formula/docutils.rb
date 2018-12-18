@@ -8,10 +8,11 @@ class Docutils < Formula
   revision 1
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "71bc62531fd234add02633a69b12c2f1f43d6799d5ab1615ab6c9b22064803cc" => :mojave
-    sha256 "5f317d1324dd57a4053c3feb518463ed6e67e13589f94f5738a528d63daa6770" => :high_sierra
-    sha256 "a91be71816c677dac34fe253695440bebaf54d634652622ca1e797f5cebecbee" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "f8beb394bbf6a245a3c157ca5f1971baa9cdd0d5eb1f679dc30778358cd1de06" => :mojave
+    sha256 "151cdc113d02ec4d235fce79b045a08d6f4cace35a6250a7d0fb7107d6db190a" => :high_sierra
+    sha256 "87d74fde67467a6e6fa14454268d561dbf742c00099aa6a2efea7ee07e620eba" => :sierra
   end
 
   depends_on "python@2"
