@@ -4,6 +4,13 @@ class Catch2 < Formula
   url "https://github.com/catchorg/Catch2/archive/v2.5.0.tar.gz"
   sha256 "720c84d18f4dc9eb23379941df2054e7bcd5ff9c215e4d620f8533a130d128ae"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "bef9d7f944bc6af81d2956f1490fa0c0c81228bad408c086b7d33fb756189ca4" => :mojave
+    sha256 "bf83264d668598014900f2ad73245bfeaef60ca0b3cd967bf7a5e684c5f999c2" => :high_sierra
+    sha256 "bf83264d668598014900f2ad73245bfeaef60ca0b3cd967bf7a5e684c5f999c2" => :sierra
+  end
+
   depends_on "cmake" => :build
 
   def install
