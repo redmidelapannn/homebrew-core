@@ -6,10 +6,10 @@ class JpegTurbo < Formula
   head "https://github.com/libjpeg-turbo/libjpeg-turbo.git"
 
   bottle do
-    sha256 "a796ad23629db937b87691b7cd01e1bfbdd4c841a8c534cc92bc13bf80f161fe" => :mojave
-    sha256 "3419adae8718b8b9fc41cd7e7f74803bdc4437d2f754605a59e8768d2630512f" => :high_sierra
-    sha256 "68d14fd1b5a59c349e9bdd639d25841947f790f48d3eb788898599bb62515560" => :sierra
-    sha256 "5782250ca2948367083ccd42aacba569efe888bd5a2727faa01d6ad6234d02ab" => :el_capitan
+    cellar :any
+    sha256 "3a8cd04261a22cccc66f20a70bf8325fd156ce333383c72584e64e16c42df3b2" => :mojave
+    sha256 "b6b46224d47d85627453c39205f10ca1728a1986e5989c65bf3a1d6bea21b400" => :high_sierra
+    sha256 "9107f3e46ab1895d45ee2b0229d9fafa316320a1c48ebadb7ba3bfed54c24f1b" => :sierra
   end
 
   keg_only "libjpeg-turbo is not linked to prevent conflicts with the standard libjpeg"
