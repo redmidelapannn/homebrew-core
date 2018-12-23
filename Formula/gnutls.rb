@@ -7,9 +7,10 @@ class Gnutls < Formula
 
   bottle do
     cellar :any
-    sha256 "b294c2d78f9eff321e6469d77e365bdb03c1611e04678879ec4337584432cb0a" => :mojave
-    sha256 "b4d6c287ca7512397d2f06c7ad5fed7868b74fb8bd32a65bc2e87d3fea8586e4" => :high_sierra
-    sha256 "e7e08cf6a0cb9a3ccb14442eb47e63de97c55aa36971c05707a0c96a38bb6b70" => :sierra
+    rebuild 1
+    sha256 "51d6eb3bd4f731ca2f4fba157aa448ef52cffd0d0ae4f4212fff43a39ac1106e" => :mojave
+    sha256 "764b204c2507ff4d363aeb6281378b136ba52c745ab9d3c4d71bc5d1f0829c38" => :high_sierra
+    sha256 "d52bcc160ac0d4427c42b8ffd13c0f78d9479b1e1f0a15c2fdb6337cd078ce6a" => :sierra
   end
 
   deprecated_option "with-guile" => "with-guile@2.0"
