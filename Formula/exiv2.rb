@@ -7,12 +7,9 @@ class Exiv2 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "6499dd1ef18e797aa8f54f1cecd973007c7bf75f3fcc783dd408a6b091f989f0" => :mojave
-    sha256 "5b7833350aac57127e8cb770b3c310503d43f03f4ecccdbdfda17132dbd201d1" => :high_sierra
-    sha256 "c651fe47fec9f541d47d2dd769cf94d4063baeff2b08be2b8c1056d6609499fc" => :sierra
-    sha256 "9f5f339b761aca8910ee859e6630e9eb3f84a7298c029b98baf801f36075ab51" => :el_capitan
-    sha256 "1d14797afa32ff75b50ff2737baa8ac27ab7bf90da38359a9721f7e15c398481" => :yosemite
+    sha256 "5cc550fce9c723b0ca4c0e9b07baff482a225ecfb7d649fa6509316b1d7fb827" => :mojave
+    sha256 "1759941e17f488a35a4fdcdba24acc6a929f3771498704c7fb47797220657be3" => :high_sierra
+    sha256 "60e924002febb9ceb94c9ab900013e61826e54650b85ec6fbbd4898bd5573aed" => :sierra
   end
 
   depends_on "cmake" => :build
