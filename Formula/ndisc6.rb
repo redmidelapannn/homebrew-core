@@ -4,6 +4,11 @@ class Ndisc6 < Formula
   url "https://www.remlab.net/files/ndisc6/ndisc6-1.0.3.tar.bz2"
   sha256 "0f41d6caf5f2edc1a12924956ae8b1d372e3b426bd7b11eed7d38bc974eec821"
 
+  bottle do
+    cellar :any
+    sha256 "e361be035a0dfaf94e013658b0551de8f21a24b42733467c6df34b2bbe38027f" => :mojave
+  end
+
   depends_on "gcc" => :build
   depends_on "gcc"
 
