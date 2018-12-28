@@ -4,6 +4,13 @@ class Sn0int < Formula
   url "https://github.com/kpcyrd/sn0int/archive/v0.7.0.tar.gz"
   sha256 "3074f1adbdc6f15ff2d9f8c8b5c5ada19266d7efaf9a21dfc044be08c220ab03"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "16c5b4a0c21a7cb5264121abb62e1d47ee65c6cdca5a24c94bd69f68a226516f" => :mojave
+    sha256 "64b8e7f4545c583977bfb00584f1857d2ffa45554c9a32eaf1b0526f437bcc43" => :high_sierra
+    sha256 "cf8ca88032b78874412d98daf03e0592d776e9d78ae68ad0e0a4fb1b6dba9429" => :sierra
+  end
+
   depends_on "rust" => :build
   depends_on "sphinx-doc" => :build
 
