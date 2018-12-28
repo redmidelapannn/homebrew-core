@@ -10,9 +10,9 @@ class Imagemagick < Formula
   head "https://github.com/ImageMagick/ImageMagick.git"
 
   bottle do
-    sha256 "7ab19f473fa3de63812b5ac0733d045b802eeffd07aa96de12a954c19e4c5cdc" => :mojave
-    sha256 "9394b953e1f3311500832ef1592dbe9bc4e6c2d7577a10c129bd161f8005b830" => :high_sierra
-    sha256 "fc2681e21a012516713f4b0bfd502aa2519642890e858b87f6482a67b687779f" => :sierra
+    rebuild 1
+    sha256 "20b95ea8bcdb4a3dd9496add52624a4877227af5cd43e202581a43dc7c42dfd3" => :high_sierra
+    sha256 "4631d4db1bbbd02a795c0a7687fbc1cc261a9505cc36cdad0a6feb0385951d56" => :sierra
   end
 
   # Using LLVM with superenv would make the resulting binaries depend
