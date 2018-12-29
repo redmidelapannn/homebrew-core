@@ -15,6 +15,12 @@ class Meson < Formula
   depends_on "ninja"
   depends_on "python"
 
+  # See https://github.com/mesonbuild/meson/pull/4652
+  patch do
+    url "https://github.com/mesonbuild/meson/commit/c1e416ff619e59845c5272475f2e7c1f48f1d8db.patch?full_index=1"
+    sha256 "3be708cc65d2b6e54d01e64031c83b06abad2eca1c658b97b2230d1aa7d1062b"
+  end
+
   def install
     version = Language::Python.major_minor_version("python3")
     ENV["PYTHONPATH"] = lib/"python#{version}/site-packages"
