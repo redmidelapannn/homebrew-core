@@ -16,11 +16,13 @@ class Meson < Formula
   depends_on "ninja"
   depends_on "python"
 
-  # Fix issues with Qt, remove in 0.49.1
-  # https://github.com/mesonbuild/meson/pull/4652
-  patch do
-    url "https://github.com/mesonbuild/meson/commit/c1e416ff.patch?full_index=1"
-    sha256 "3be708cc65d2b6e54d01e64031c83b06abad2eca1c658b97b2230d1aa7d1062b"
+  stable do
+    # Fix issues with Qt, remove in 0.49.1
+    # https://github.com/mesonbuild/meson/pull/4652
+    patch do
+      url "https://github.com/mesonbuild/meson/commit/c1e416ff.patch?full_index=1"
+      sha256 "3be708cc65d2b6e54d01e64031c83b06abad2eca1c658b97b2230d1aa7d1062b"
+    end
   end
 
   def install
