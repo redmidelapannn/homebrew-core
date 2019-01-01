@@ -13,4 +13,3 @@ class Deno < Formula
     system "#{bin}/deno", "--version"
   end
 end
-
