@@ -6,10 +6,9 @@ class Scons < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "169ca2e43315449b82c660d78c9586a0662c59ea069b09bdf7f941f6a4afff9f" => :mojave
-    sha256 "c791b4905477a5fbc33345cef5e412807ffc90ba6ea35bfc9a263f542702aa1c" => :high_sierra
-    sha256 "c791b4905477a5fbc33345cef5e412807ffc90ba6ea35bfc9a263f542702aa1c" => :sierra
-    sha256 "c791b4905477a5fbc33345cef5e412807ffc90ba6ea35bfc9a263f542702aa1c" => :el_capitan
+    sha256 "d343104536cddfedbb15408f3d854b5dece7bd025bff21e02cf7fae6d7604fe6" => :mojave
+    sha256 "dc9eb3efc27541410e0f74451a6cf0efd42effc95fe71725d4890af5be953d38" => :high_sierra
+    sha256 "dc9eb3efc27541410e0f74451a6cf0efd42effc95fe71725d4890af5be953d38" => :sierra
   end
 
   def install
