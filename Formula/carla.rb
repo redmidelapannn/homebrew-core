@@ -6,9 +6,11 @@ class Carla < Formula
   head "https://github.com/falkTX/Carla.git"
 
   bottle do
-    sha256 "b58bb67d7296dde12f72e1acd0b577974629ca1181b8598cddd8dc1febb38706" => :mojave
-    sha256 "5894be46ea05fb86e31c401cbc05a789bcd4d9007bd19ac10bb6eb4f41bb49b2" => :high_sierra
-    sha256 "1f80475093e48c1fdd3f4c3c21b3e797f25064f6c501d279e6108ef3962fe471" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "06add1bace34600d72b4512bb06b8f73786c523f6bdb6949b6443de9182fd595" => :mojave
+    sha256 "51d7a73a7fa3d785a282eeb4aed140becfb250a62ec3eead6d9870207e85d8f2" => :high_sierra
+    sha256 "e7f1de789e1e0d595cff64eb51deb6945324f93999e2ec604c22a7d2bccbd696" => :sierra
   end
 
   depends_on "pkg-config" => :build
