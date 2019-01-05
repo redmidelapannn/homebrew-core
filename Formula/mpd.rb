@@ -7,9 +7,11 @@ class Mpd < Formula
   head "https://github.com/MusicPlayerDaemon/MPD.git"
 
   bottle do
-    sha256 "0e8b637524e77052e1b8b35ded89033cfa5ea351509474804296506c32d2cbd3" => :mojave
-    sha256 "ec55a408fc1f1c8a90df41488c782eb77e53db92b4766632e008905f12e3decc" => :high_sierra
-    sha256 "9fe5ee4e9126630e02600df8e1a4eb6cebef72bda40ba5cacf0cb452b19bc434" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "01e6c3bc79a5dd00f648a08c6ffa278900845d28878627e0681c761da6c56bb8" => :mojave
+    sha256 "844255238bf92df008792b3cd9b557a63e897c10d614b8af032d2f6e3a14a95b" => :high_sierra
+    sha256 "c16f7e377ef629c6c72bca646a47f12f81931cc72bd9b5779a63fa108d2662e2" => :sierra
   end
 
   depends_on "boost" => :build
