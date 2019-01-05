@@ -6,10 +6,9 @@ class Systemc < Formula
 
   bottle do
     cellar :any
-    sha256 "ed266b79f596258da162637530a1830516ceee6fb4874add5eaa9a84b175cda4" => :mojave
-    sha256 "7d189564e4277390f8fa0c2e067f17dc31148e33af65c0998b6242405f761a18" => :high_sierra
-    sha256 "257ab0155a4e4f5d6dea22696f265d1a523efa24627487a5fad4ad70d43e7fd0" => :sierra
-    sha256 "8dbfcaef7cbca7116bacb300288520ed357768c148a612de2f9a3483266add87" => :el_capitan
+    sha256 "0f0f318fe28ff80e126a788ea88047f1e04a172a510b41d0ab24805688667f82" => :mojave
+    sha256 "13d3ae31e59662a00746fab65ae5cf802fac4e2785e0d3c1ab12639100deb89d" => :high_sierra
+    sha256 "234969c0ce824b4aefa5582115a7ce3f24c160144ed55c7537dce2d4f40ab49f" => :sierra
   end
 
   def install
