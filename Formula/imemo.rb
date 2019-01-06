@@ -6,6 +6,13 @@ class Imemo < Formula
   url "https://github.com/kcwebapply/imemo/archive/1.2.0.tar.gz"
   homepage "https://github.com/kcwebapply/imemo"
   sha256 "fe443ab343e7f335dfa05b772512bc75c303812f43ba7795d7ed1b6a8ca15e70"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6ce3cef77e48344ee9123c300500e8b29af8f65ecc3a37e475e32dc5cbd7cc0d" => :mojave
+    sha256 "9cf82f11d8f0492cc26d9ff3c565154203d8b38ef9157ef14ccef6009523b4fc" => :high_sierra
+    sha256 "3138bc9f54d01c9cc15a0915c9259cb3941a7cf0ef83030278ae681909d1cfaf" => :sierra
+  end
+
   # depends_on "cmake" => :build
   depends_on "dep" => :build
   depends_on "go" => :build
