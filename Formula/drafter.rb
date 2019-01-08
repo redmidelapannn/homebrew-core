@@ -13,8 +13,12 @@ class Drafter < Formula
   end
 
   def install
-    system "./configure"
-    system "make", "install", "DESTDIR=#{prefix}"
+    system "./configure", "--shared"
+    system "make", "drafter"
+
+    bin.install "bin/drafter"
+    (include + "drafter").install "src/drafter.h"
+    lib.install "build/out/Release/libdrafter.dylib"
   end
 
   test do
