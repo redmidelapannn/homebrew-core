@@ -25,9 +25,10 @@ class Gdb < Formula
   end
 
   bottle do
-    sha256 "01b06c2983503c78bc346b5f5e2c2bdccbc41d6f5ca759542eef712bf123ca30" => :mojave
-    sha256 "9824d06b8d0d44e725a1d29f6631828b3b43abb1952c883e9fad559b6a816c04" => :high_sierra
-    sha256 "cf7371e9f6257d1a7dee80239d05917e424e5bb3e7577bd93f0e139fe5174198" => :sierra
+    rebuild 1
+    sha256 "2690478db1f9ed340d1709b97880c816513845894d76528f4dae9f2bca3a0958" => :mojave
+    sha256 "1ae11f4720355c1ac5f04a5c0660800776b805a0243a5c287ca9c8db633e21e3" => :high_sierra
+    sha256 "2ad39e13e8b9b7617beaaf660fcbed269082d7c09c8c84bbe2bb7902429a3932" => :sierra
   end
 
   depends_on "pkg-config" => :build
