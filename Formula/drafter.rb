@@ -6,10 +6,9 @@ class Drafter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "886a7b2595eebd07cee223f5d5a53a4748e91719c7f4f3a37c236c8476b3c532" => :mojave
-    sha256 "5d350d1a7fb4aa5e9561933f0e9638ee59fd93b0d9168d07e665a806e472d5f1" => :high_sierra
-    sha256 "a90e9d4493f252d29d69e186dcc49eb116f6bc506d07769f03864f56d5840f08" => :sierra
-    sha256 "dc86d4e8dc44c2dead52e57c3bf6403d691926b9abf274f16b94c9649dd562fd" => :el_capitan
+    sha256 "8f224f4b9e787908d7752dfec8ee376f58d9b754e55ad4cb2486afbe93114f19" => :mojave
+    sha256 "3eb828078f7cfec605a873fbef16b5ac4ddcd2ad9322e65f0418b33077e60b5d" => :high_sierra
+    sha256 "374ed2a4d9f14519004cac08d2799b97985bccb6f22dbc4a641edebd2812bb83" => :sierra
   end
 
   def install
