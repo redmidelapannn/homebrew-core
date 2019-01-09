@@ -9,11 +9,10 @@ class BashCompletion < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9219c2b46362677e9ae6e19b344b774c3e9f163ae6bf6cf2686da06419aaec89" => :mojave
-    sha256 "b069be5574bdf6d12fd1fda17c3162467b68165541166d95d1a9474653a63abc" => :high_sierra
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :sierra
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :el_capitan
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :yosemite
+    rebuild 1
+    sha256 "8c3c5c5d674465f9e5d160332d6023236ee5912dcad5d1aaa7354f02f6fa5b3a" => :mojave
+    sha256 "2a15df2a3b87cc80c87a60bc8d8dd014cfe4125448bd649946cbe3f2f14173fa" => :high_sierra
+    sha256 "2a15df2a3b87cc80c87a60bc8d8dd014cfe4125448bd649946cbe3f2f14173fa" => :sierra
   end
 
   conflicts_with "bash-completion@2", :because => "Differing version of same formula"
