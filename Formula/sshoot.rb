@@ -7,6 +7,13 @@ class Sshoot < Formula
       :tag      => "v1.4.1"
   revision 1
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8f7fec189c7c00379ecf11c3d8d2bd142b189eb10a750d584507a52ec6d44c76" => :mojave
+    sha256 "cf11e02c17ed64ffb00373ef3523c211d9faece42983761769b6a6dc6ce723f6" => :high_sierra
+    sha256 "5715f2bfb75e8bd6687084dacdbac2880d34eb5608ebec6d5b16cd2e9e632847" => :sierra
+  end
+
   depends_on "python"
   depends_on "sshuttle"
 
