@@ -1,5 +1,5 @@
 class Subversion < Formula
-  desc "Version control system designed to be a better CVS"
+  desc "Enterprise-class centralized version control system"
   homepage "https://subversion.apache.org/"
   url "https://www.apache.org/dyn/closer.cgi?path=subversion/subversion-1.11.1.tar.bz2"
   mirror "https://archive.apache.org/dist/subversion/subversion-1.11.1.tar.bz2"
