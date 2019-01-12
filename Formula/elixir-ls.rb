@@ -4,6 +4,13 @@ class ElixirLs < Formula
   url "https://github.com/JakeBecker/elixir-ls/archive/v0.2.24.tar.gz"
   sha256 "8174cd9cf5cc77a9200fcc8040fe8ddd7ad36e6c6eb914d76f2481ed73f2f4ee"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0bfe46fbb2ad151abada33df8bdd29cd5f70244c926eb2b3cd641191f02bd413" => :mojave
+    sha256 "cddfe27fbc0ade9d542f28d83c4a576483551ba24b0daed05fd5bb873043c8d2" => :high_sierra
+    sha256 "6133cdc4bff9f3895ed5813be553aa8dfb9f1543a0fd55ac94c1f3418b592149" => :sierra
+  end
+
   depends_on "elixir"
 
   def install
