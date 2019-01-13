@@ -7,12 +7,10 @@ class Plan9port < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bdcaa55afb6e28c4f9f1540e9e1d81d111f2ed9f85db76ca4705ad1d610e57e2" => :mojave
-    sha256 "5c2efeb97b9d5a9171fc41e862223682a5b86a9af064a13381d10624bdf32d04" => :high_sierra
-    sha256 "5f2d48d2f3a732795c8ab050bb705caf59a18ee86d3d89c143b22533a46bd71c" => :sierra
-    sha256 "eb56faa4c63a522e34ba609fc0d4eb5af9b22715c0915629776129eb64d8625f" => :el_capitan
-    sha256 "86fd2ed15a0fe79927c04a064222f88455bfc0e72bc1f97576e2962b11a70cc8" => :yosemite
-    sha256 "ef0059997655128f6b41faa1023b37a071ff9976f4c94d3b3bd706be65177aa1" => :mavericks
+    rebuild 1
+    sha256 "dba2c5a3111be670e7db1488c4924fb98bc7bb23414cc78899112f3fa67dee59" => :mojave
+    sha256 "0db7d79518acbe41e2cc00e7ecbd3bcb2885541cffcf47f7059b88fffe8b6941" => :high_sierra
+    sha256 "964fa1436c3abda12d313ac875206f3477f1801d5cefd364c78a569e97dd2b25" => :sierra
   end
 
   def install
