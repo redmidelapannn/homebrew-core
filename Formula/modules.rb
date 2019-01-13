@@ -5,10 +5,11 @@ class Modules < Formula
   sha256 "7eaf26b66cbf3ba101ec5a693b7bfb3a47f3c86cad09e47c4126f3d785864c55"
 
   bottle do
-    sha256 "1bfdf504b019fa4c8ffe7db7d9cef79a1a2c23e381b04d7eed98f041b3507987" => :mojave
-    sha256 "29eacb986d942b621d5aa161952c962250cc6d96acb9929425d8a5284f7a6ca2" => :high_sierra
-    sha256 "4e45ab192bad2a47c3b63e7de10d61c701a1f8a70a011956b21203074dee8418" => :sierra
-    sha256 "b3a8d7c48c0b6c56a706357da2a0b6087c593f2254acd7b84956e6870053b8e1" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "2706bef6b96997069c0846263c04943d9c0f97e3f3941b8f9e94bbc3dc70e2d7" => :mojave
+    sha256 "4e6e5564d22ac9e7356eee5963520a402dade9c195201529593c4816cb236244" => :high_sierra
+    sha256 "9f110584ad51b48203a31df4330888342ed249f5aa08909bc9cba4a0bc62c08c" => :sierra
   end
 
   depends_on "grep" => :build # configure checks for ggrep
