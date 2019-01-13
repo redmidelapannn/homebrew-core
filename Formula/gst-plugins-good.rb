@@ -11,9 +11,10 @@ class GstPluginsGood < Formula
   end
 
   bottle do
-    sha256 "b064a88166dde9a0728e2b4931265c36331fe04763cd86a374f7e871970154b7" => :mojave
-    sha256 "4690c041a027f7f8a4d50a50b704bf4474c457bf6d5587d4f6d00b02e0ae9770" => :high_sierra
-    sha256 "a992fea0e10e1227d9747bfac9a8df892a63e1e23efe753e65a8e9a93f363c34" => :sierra
+    rebuild 1
+    sha256 "d976254ec917c74822127df51a62e568b9fce7810b1bf50c83cfca026d5df770" => :mojave
+    sha256 "268bffaf4a82edd41563e1b94d1ef7d4840935ea05a7071d003511beeb266561" => :high_sierra
+    sha256 "cbdec13ecb21b163326a69e2ac9da8c3d23cdd1a6e29561a7d0120dbec04201e" => :sierra
   end
 
   head do
