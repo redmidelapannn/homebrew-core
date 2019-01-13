@@ -5,6 +5,13 @@ class Solfege < Formula
   mirror "https://ftpmirror.gnu.org/solfege/solfege-3.22.2.tar.bz2"
   sha256 "5a6fcd46b0ce33817752f5b04e053b5342d8d2e3c8b3df2ea789cf3366a38b10"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a32ce318647fef4a5c503de1a40f2f80ac1792dc885aba0a704e3dc73283b102" => :mojave
+    sha256 "a13a002a97e51080f833745bda9c106bc2d24bdd424d2088809ad06a22eb379e" => :high_sierra
+    sha256 "a13a002a97e51080f833745bda9c106bc2d24bdd424d2088809ad06a22eb379e" => :sierra
+  end
+
   depends_on "gettext"      => :build
   depends_on "pkg-config"   => :build
   depends_on "librsvg"
