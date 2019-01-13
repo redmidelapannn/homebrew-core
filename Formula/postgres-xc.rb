@@ -6,8 +6,9 @@ class PostgresXc < Formula
   revision 2
 
   bottle do
-    sha256 "ebd62d467b624fa9c5e39360a04f2b2a270ce8ae5d4c01783c8237f203c6d332" => :mojave
-    sha256 "dc801fc18cb3371ae85ba61569a403b9b49855ea80696518baebc945a43a794f" => :high_sierra
+    rebuild 1
+    sha256 "57fc310e5c5dac65d3349fbdda9ee1e539e066953568c88423fe265d0b19d13b" => :mojave
+    sha256 "d06a33e8fd01284dd61b3cd57fd76208880cd7a43abcc7bc4c805f969f8ff5c0" => :high_sierra
   end
 
   depends_on :arch => :x86_64
