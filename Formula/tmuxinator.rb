@@ -3,6 +3,13 @@ class Tmuxinator < Formula
   homepage "https://github.com/tmuxinator/tmuxinator"
   url "https://github.com/tmuxinator/tmuxinator/archive/v0.15.0.tar.gz"
   sha256 "e5c121126aebe3afc758c0561b8ef05508712a799d3821453063b87445806ed4"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6d93bc3fec2cb40498c047b94efd75e559ae2558edf9ea381ce32cc33fd48116" => :mojave
+    sha256 "ff82d5b51f99bd3ea45b8102ac934c2dd194159474cd7672e32c5cc2e646b050" => :high_sierra
+    sha256 "6124bbefab1184c0eb0d1922c855bb4e763deb599a38f7a55f48144943a789c5" => :sierra
+  end
+
   depends_on "tmux"
 
   def install
