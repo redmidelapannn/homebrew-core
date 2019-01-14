@@ -6,9 +6,9 @@ class Monetdb < Formula
   revision 1
 
   bottle do
-    sha256 "47e2a900b158e95ec44580c381e5bb74798859e1171e60e980e7ca05bbeb5173" => :mojave
-    sha256 "5ad55a48403afa11ba67d7429b002ca3c880ed9b19d669fda02905554d2368ce" => :high_sierra
-    sha256 "96567ed0d7ed70b80b97dc140f0ca2e05c4bd92af8fa8ef113c485e5e16f901f" => :sierra
+    sha256 "1c3126ed23891d21d64e284852d106c6a8d767f54615b3bdbdd4ee3f26b0aef1" => :mojave
+    sha256 "432eaed82640bce00d9df54531f5bfa78c45331752d3bc8543b48f24aaeffe09" => :high_sierra
+    sha256 "9a75026f124dcb2f7e5fa1324fb2a92c5091c5ef3021704411c71478f67a3f2d" => :sierra
   end
 
   head do
