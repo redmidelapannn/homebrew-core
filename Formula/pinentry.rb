@@ -8,10 +8,10 @@ class Pinentry < Formula
 
   bottle do
     cellar :any
-    sha256 "206708ea13875bc8197f7d066bc0cb36893bd95b9ecc7ba6102c2f33b0fbd6c4" => :mojave
-    sha256 "a1a0e526f622d7dc4e2b3e0dcde061dbb383050b8efbe424d916bf983ae66c74" => :high_sierra
-    sha256 "fd93c11a28d38ba1b78c7fe646f027f98ce29c08ba02c7a0e14e69f355614e35" => :sierra
-    sha256 "e8c6180d9d86f008d0d9cdf0bc9638f2c119bb426504955ecbd16ef6b108d01d" => :el_capitan
+    rebuild 1
+    sha256 "50e29c54519a03f8ff58817f072bd6b93571e76b8d1a93065fc21a864bd56515" => :mojave
+    sha256 "2ff89b4c34501b0b86b8b739335732afb8f0c74e40f06a7310469b75dd783245" => :high_sierra
+    sha256 "7717588a434686f98fee0e23f23336c302988818171f2be6d788b593fb122ac9" => :sierra
   end
 
   depends_on "pkg-config" => :build
