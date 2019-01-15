@@ -6,10 +6,10 @@ class Angband < Formula
   head "https://github.com/angband/angband.git"
 
   bottle do
-    sha256 "9f122623c5ef12aecc045f865527bbb85100aa192beab072ea5952574a8377d8" => :mojave
-    sha256 "5659320a3de2e2f84b8dbbb385802ac18e7e80ad53c7aa6d0ae44d5ccbac6faa" => :high_sierra
-    sha256 "b212186bf04d009ac2c6a16bbceda9cdad23fa7eb9b61f4567ff3971b8de6873" => :sierra
-    sha256 "48e336d2c27873aa53c976460346f7523f0b12dbf1939e89c428af4ee95dfa73" => :el_capitan
+    rebuild 1
+    sha256 "de3df9944b2ed2083ce533c7963d35024bdb51e7a4486b2fc1518bc5352cc837" => :mojave
+    sha256 "97140a603601b72738524631497a14fc6feb8dc665724a31e68dc47f0b6e31f7" => :high_sierra
+    sha256 "689cff2e0e017df074ab321a60391dee9283ed534210075eec4e38d679024770" => :sierra
   end
 
   depends_on "autoconf" => :build
