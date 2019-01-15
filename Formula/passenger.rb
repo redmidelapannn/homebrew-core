@@ -7,9 +7,10 @@ class Passenger < Formula
 
   bottle do
     cellar :any
-    sha256 "c8df29e4977d5e7495ac2bca1a5299a38a361955014e2ccb200f6495b2dee464" => :mojave
-    sha256 "4cd91a1f49d517eb4752bfe0c328f97c040a6bde02200863009c3e61bd329eb6" => :high_sierra
-    sha256 "d094cecf62e66a527482b681bdfa01cc7fa956a16ad9e4d2fea520ffc63cac6f" => :sierra
+    rebuild 1
+    sha256 "5221176d5ad252ae1d59d59366ca4f72b7fb732cce1c66e8e9b9d83dc2f413b5" => :mojave
+    sha256 "b61655a0efd62a804ca1d489ca67389477002c3fd7519071ebfc4c3003fc59f0" => :high_sierra
+    sha256 "cf6396a8e39aa938baa7179be0d43602abbf34f4332757d1e322565b1d558c0c" => :sierra
   end
 
   depends_on :macos => :lion
