@@ -8,12 +8,10 @@ class Libtool < Formula
 
   bottle do
     cellar :any
-    sha256 "c92ab35c3706c255a36b733aa7a475159da9cf375c275d230fd6a7802a94e4dc" => :mojave
-    sha256 "ebb50367eb2336ee317841587e24690de124fb2c3e4d346405e9b41c4e6120ae" => :high_sierra
-    sha256 "78a1f6c6644eae01eb5c204ef705f7e48721a0fe8ece492c10c84791061885db" => :sierra
-    sha256 "b7651d0a082e2f103f03ca3a5ed831e2ff5655ccc1044ac0452e4d1825475a35" => :el_capitan
-    sha256 "0eb206c0f51e8ce2e3e9340b5ce3c8ecef961ae6696f676073327a7ac04e5c0b" => :yosemite
-    sha256 "2e51ef82ef2bd1ad9d921a9016b9e5d7fa82d131849e2c32a3c90daa119e2eda" => :mavericks
+    rebuild 1
+    sha256 "18005d9d4ed788c18cf738420710dd5a113748cd70650ab4c0d686ee0a8fc8c6" => :mojave
+    sha256 "91d4560d39b53345fecaf0d014514436eed9489fa8d1c853763661b42c5d95ff" => :high_sierra
+    sha256 "f8fcf2aefec4b87cda23190eb5fa68ca80fc96d0e2e1ea22bf189153a6c6390d" => :sierra
   end
 
   def install
