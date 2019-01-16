@@ -28,11 +28,18 @@ class Bash < Formula
 
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
+
+    (libexec/"bin").install_symlink (bin/"bash").realpath => "sh"
+    (libexec/"bin").install_symlink (bin/"bash").realpath => "rbash"
   end
 
   def caveats; <<~EOS
     In order to use this build of bash as your login shell,
     it must be added to /etc/shells.
+
+    Alternate invocation names `sh` and `rbash` both symlinked to
+    `bash`, have been installed into
+      #{opt_libexec}/bin
   EOS
   end
 
