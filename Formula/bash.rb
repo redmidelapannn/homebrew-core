@@ -12,9 +12,10 @@ class Bash < Formula
   head "https://git.savannah.gnu.org/git/bash.git"
 
   bottle do
-    sha256 "d868e75449043299465b836dd340447d9db3d0a13f318c3ba1d3a57f02cad45b" => :mojave
-    sha256 "2b0c73d331f27d89dcfd32e29b748104e196a1b28e8f3cbb94214d3a8adc7282" => :high_sierra
-    sha256 "4471cac1a768f7daf38d035c2fedda4a0b0780598da8049fc75228e3a26c4fb0" => :sierra
+    rebuild 1
+    sha256 "ee05f0384ca7a3db0bb87f437a3b1deb43e40d1a1bc0780395de0813bd902dd8" => :mojave
+    sha256 "075451feff5cf483ece7d40ab6fd1ce062d0ed14fc830e8bd5e4b692700fd04c" => :high_sierra
+    sha256 "23834773db2f37ed098ce4bad167eff1a50a5cd133dd1d82e1886ebafa457d18" => :sierra
   end
 
   def install
