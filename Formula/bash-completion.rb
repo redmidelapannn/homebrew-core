@@ -9,11 +9,10 @@ class BashCompletion < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9219c2b46362677e9ae6e19b344b774c3e9f163ae6bf6cf2686da06419aaec89" => :mojave
-    sha256 "b069be5574bdf6d12fd1fda17c3162467b68165541166d95d1a9474653a63abc" => :high_sierra
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :sierra
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :el_capitan
-    sha256 "58be92ef01d5068f37b1c00af8e9b202bdb409c93121bb0e07dcbb5e55dc3be2" => :yosemite
+    rebuild 1
+    sha256 "6463904e6ff7750b080d7f646454593380437954e924bdd557c24aa5b870a0df" => :mojave
+    sha256 "9cf9d4da2525669cbb8b8743e2b3d4b2441ceb251233919e0b5a51d14431d998" => :high_sierra
+    sha256 "9cf9d4da2525669cbb8b8743e2b3d4b2441ceb251233919e0b5a51d14431d998" => :sierra
   end
 
   # Backports the following upstream patch from 2.x:
