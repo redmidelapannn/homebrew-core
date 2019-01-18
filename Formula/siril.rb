@@ -7,9 +7,9 @@ class Siril < Formula
   head "http://free-astro.org/svn/siril/", :using => :svn
 
   bottle do
-    sha256 "9a69ae2805e66e70525d009a6f301aaeaf3b000d36b5810b8fb2d2f97d0ef15c" => :mojave
-    sha256 "e203a736b9679c74de308ad82ee1ced63aeff9178f7065f5604385953a4c5c76" => :high_sierra
-    sha256 "0270e3cbbab01ce62050cff3c83faa3f2859be8c7ba87a11eb7d6422f2af197d" => :sierra
+    sha256 "18b06e355a9821c0be8e8a4e46656860ba76471bca5e2240e1e0d32bd380d62d" => :mojave
+    sha256 "925e4c4161cdeb26cf8ec1864cde50c76aac924b58b2fdd78a6ad0c34d6deac4" => :high_sierra
+    sha256 "c03edaade1b17238dc49d359b6aac1b8ad506fd261e4d9c3386d5018a889e017" => :sierra
   end
 
   depends_on "autoconf" => :build
