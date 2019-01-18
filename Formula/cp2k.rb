@@ -3,7 +3,7 @@ class Cp2k < Formula
   homepage "https://www.cp2k.org/"
   url "https://github.com/cp2k/cp2k/releases/download/v5.1.0/cp2k-5.1.tar.bz2"
   sha256 "e23613b593354fa82e0b8410e17d94c607a0b8c6d9b5d843528403ab09904412"
-  revision 3
+  revision 4
 
   bottle do
     sha256 "e6661ebbbe0fc750e0ac29b5af3c446ddf9cada8f591e4213a92062ff6712143" => :mojave
