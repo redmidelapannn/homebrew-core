@@ -8,9 +8,9 @@ class Tbb < Formula
 
   bottle do
     cellar :any
-    sha256 "3b5ac43b2280ebbebc39541a95a63e287b08eceb8ba75912cd8b89f731ffe663" => :mojave
-    sha256 "fc57daae5222af5ba8178f810113ac37066b40d268d3e30da78e1aeaa40cfd0f" => :high_sierra
-    sha256 "77e4f8db4f7bc6c1327567a8944d5eb3ba5a6503cc1404e65f18284e1f7aabfd" => :sierra
+    sha256 "a1f0efc8df78e6efbc995df5528ce032ef7e8766c86bf5e45effb133f6a3b0b2" => :mojave
+    sha256 "a95180e48de23aba22bf7cff4df50a109d033d9cc5e6e73691f24814a0186393" => :high_sierra
+    sha256 "6753dc8e10926b594eda203e5dc7d5c5449fe4f2f395f4df3d9f188b47d5e9b5" => :sierra
   end
 
   depends_on "cmake" => :build
