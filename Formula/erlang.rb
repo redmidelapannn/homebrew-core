@@ -9,9 +9,9 @@ class Erlang < Formula
 
   bottle do
     cellar :any
-    sha256 "6269059ae2aec40be2e5f650fcdc0979709e04e977a0ae6c40dffdbafd8d2d14" => :mojave
-    sha256 "2928dfa397a5c1088e2391c1c555234ddbc0874624e20f066d343fc5533a0788" => :high_sierra
-    sha256 "e672ebeb2b471d1fddc424f0e2767c7a9303bbff9bc32bb3e767f44e88dc7703" => :sierra
+    sha256 "19f65b82573f1ba0f991f1b33c114104cf13933aae2e8bdb328d1c6c9ff895f3" => :mojave
+    sha256 "4119237b34e279fe554c4915652ed154860bedf3496c3a320f124e3fdc67e0de" => :high_sierra
+    sha256 "843505ecd101249aab00f0e71ee8b0ba9708113b98592eb0d7e0bb9079b3e817" => :sierra
   end
 
   depends_on "autoconf" => :build
