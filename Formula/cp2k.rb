@@ -39,7 +39,7 @@ class Cp2k < Formula
       -L#{Formula["fftw"].opt_lib}
       -lfftw3
     ]
-    
+
     ENV["LIBXC_INCLUDE_DIR"] = Formula["libxc"].opt_include
     ENV["LIBXC_LIB_DIR"] = Formula["libxc"].opt_lib
     ENV["LIBINT_LIB_DIR"] = libexec/"lib"
