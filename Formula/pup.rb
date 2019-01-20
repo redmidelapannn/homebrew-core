@@ -7,11 +7,10 @@ class Pup < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "baeef002d46ed4c9872242419ed991b9d9f26d8e5b296f54b2ffb9e1e6bcfc84" => :mojave
-    sha256 "f470de75187b994ef9612c5404dc7622a356c8ee6af21f6b2549b5d7c5d88d32" => :high_sierra
-    sha256 "4ba84cffa7cfd01bd252223055abdf5fd8b6cfc27474131cf313e688ea8eeecf" => :sierra
-    sha256 "a1aa49640871c127c76f4aea6db65487db964a055e2aa4d86ee2d8b7f5dcb561" => :el_capitan
+    rebuild 2
+    sha256 "97f95ff019e311abb407d1ca4e4e4e0d6a3d8af8e342f86cdb1b795a9da300b2" => :mojave
+    sha256 "9c228026a65c5b0e39d52628f29be9bfae5f7a54c09371b0140fcfe1773c242d" => :high_sierra
+    sha256 "759c11014ebadea8e2ef285234a555810b54be2b3e31569c90a0313f278516aa" => :sierra
   end
 
   depends_on "go" => :build
