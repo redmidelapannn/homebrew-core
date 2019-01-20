@@ -8,9 +8,9 @@ class ErlangAT20 < Formula
 
   bottle do
     cellar :any
-    sha256 "5782c6faa4c0f24eedc329a7c1c57abe0bf610310ed85c173e23765838c98eba" => :mojave
-    sha256 "aeb8c5fdf0416e367250b1a1f429ce1a21ba6e9ac3483c37b4df6d060b8c6eeb" => :high_sierra
-    sha256 "697bad8d5c03d0b25c4cf327b634ffa6e2a6a438bb8a83c4cf58339312c6f633" => :sierra
+    sha256 "04a740da919ef654c4c966051dd606a993872b97471d89c8e4f26a627f593499" => :mojave
+    sha256 "52a92a2fa3d210b4cde1da2bef267964e94d5070a4cd751c3c1c0c15a310238c" => :high_sierra
+    sha256 "d2cdc6967dcb6b554499797fb8f569f0d24d31d745f43c70ecce5ea2e6fdac63" => :sierra
   end
 
   keg_only :versioned_formula
