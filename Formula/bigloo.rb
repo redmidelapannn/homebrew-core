@@ -6,9 +6,10 @@ class Bigloo < Formula
   sha256 "1f9557fccf9c17a83fcef458384f2fd748b42777aefa8370cd657ed33b7ccef2"
 
   bottle do
-    sha256 "5280c1fda3fee7c25845f8e14294884fb1b4963ff8e016baba77990d2465aafd" => :mojave
-    sha256 "fac0529651e08dd5ceff5d4a45babb7f86b196753de53fa2487a12f502f5e91e" => :high_sierra
-    sha256 "f3db359b927e3ac6175aac63ca06515738358d9509a137adf4cf8dbbc4ead0ce" => :sierra
+    rebuild 1
+    sha256 "da55a17cd313cb7fd5414106a6ce4a5c7a9fc40b5305b9f7b71652778fdcc2ee" => :mojave
+    sha256 "882ccb38b1cf473f81c09e9d788bb75d30e59e10d263ca87961b2a415c3dcb21" => :high_sierra
+    sha256 "2f675feec2f4ade0b3bc71a21b9b548624ce548320003f1a04bc6d9bfa0addfb" => :sierra
   end
 
   depends_on "autoconf" => :build
