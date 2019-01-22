@@ -7,12 +7,10 @@ class Xhyve < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "babcee304193c68f484434c551732e5657878095f00c4149fc88867317f9252e" => :mojave
-    sha256 "9643b72b869ec57653668f1ed2db0c3a2c7fad77d8000931933824622032d476" => :high_sierra
-    sha256 "edc2e17147d4ae9333033e7317590a48b752b418df689a6dae45bd29a12eaca8" => :sierra
-    sha256 "b0a94f72b09c71aa3bfbbf55669cd9e64ea309d6be8c838f6bc98aeaf8a6895c" => :el_capitan
-    sha256 "e61ee4b3d2d3b5bba47f4288af54980f5de7991cadf6aa83dc058cb36854c789" => :yosemite
+    rebuild 2
+    sha256 "f0123da07c841bc8601a51822e5dc3d235424246ae7a0bff6bd9bdba6afc1392" => :mojave
+    sha256 "abdd1e680d83404c7051bef6b770eea291e0384aafee1d3d891e31c1d36e45b0" => :high_sierra
+    sha256 "c5406d4baa2acd9ac62a6cb8c76cb26210b37dc9cfe46df6006d38ec4a5b1376" => :sierra
   end
 
   depends_on :macos => :yosemite
