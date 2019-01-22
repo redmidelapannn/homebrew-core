@@ -8,10 +8,10 @@ class Wxmac < Formula
 
   bottle do
     cellar :any
-    sha256 "1ddeb111fc0519d87dbdb4cf3887c0976ea4e077bb6e6c26493b7d1ec930b048" => :mojave
-    sha256 "32357b2ab1590b209e89c02fd36c54b5378fe79d32e82abc4047ab4fbae2663c" => :high_sierra
-    sha256 "666f423fdee434b4e4f91d6035678f658cf149df8077dae01151c0ebe781445a" => :sierra
-    sha256 "6acfa572e370c0f9c2f48f89ab8807a42d81726151e8ebddccca48aa634514de" => :el_capitan
+    rebuild 1
+    sha256 "fd1b2725fe176ba5cfdd695cd9b8a66ba0ab57c7faf12caca4fd6e0f00eb69ee" => :mojave
+    sha256 "43708af4801cc99f3a7fdd21e4668e00b751f8bb3ea9ec8c5e4c1a28b0ce5c34" => :high_sierra
+    sha256 "9330e549a5e1be48d3cdce6ad8881d799041996b72a5302756eaa258d3e4fe6a" => :sierra
   end
 
   depends_on "jpeg"
