@@ -20,9 +20,10 @@ class Ocaml < Formula
 
   bottle do
     cellar :any
-    sha256 "f8490faa0dc3814633cb2eb5f6c5af00e4e8996c867f485cca4844b460966868" => :mojave
-    sha256 "d18ce3b54b85ffe8a6ea32c6079fbdfcfdd4cda852b32919a87644ca2153e5b0" => :high_sierra
-    sha256 "6477940a49ea3a5d262a12e559a296511f5445c921ff3fdf304e0f039485b6a3" => :sierra
+    rebuild 1
+    sha256 "b6dd5a8f817717f1836326c47610d3525baf9b16204a76a311563a25528b983e" => :mojave
+    sha256 "b165b6cc6c86fa04dcd92740ad1b042f5dc44e1344d5d0ecff8bd6c9b08b1dee" => :high_sierra
+    sha256 "63221325851938d242bacfb1e3b60dd084547f7b2a81a20ad2c819829a89762b" => :sierra
   end
 
   pour_bottle? do
