@@ -3,6 +3,13 @@ class SignalCli < Formula
   homepage "https://github.com/AsamK/signal-cli"
   url "https://github.com/AsamK/signal-cli/releases/download/v0.6.2/signal-cli-0.6.2.tar.gz"
   sha256 "d917507211b3419e271674df7f03c8189921e2e78a389479a612847ddc8f1614"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a19d152ce2e78f04e98112fe46f95438809a9ce330264e48f80ff30b7186877c" => :mojave
+    sha256 "a66298d2cd3f94badf85d7b777410196c9306bfabef2f53acdc05c2588b1b312" => :high_sierra
+    sha256 "a66298d2cd3f94badf85d7b777410196c9306bfabef2f53acdc05c2588b1b312" => :sierra
+  end
+
   depends_on :java => "1.7+"
 
   def install
