@@ -41,10 +41,11 @@ class Gpac < Formula
   end
 
   bottle do
-    sha256 "e035d74171aa4179277bf62734f21fb06688f0a7b10bb6ac57bcdc7124b0453f" => :mojave
-    sha256 "1e369830820f2e7553bcc498af2a839005c3f8a6327781cd4f6f46252ae42ca6" => :high_sierra
-    sha256 "c9d6d00656293f4d40185460807b7c489d8d2e7db4bc4e95af9ede968260f4e1" => :sierra
-    sha256 "46428c9cb8fdf15ebe9014667f9158444b263e60b5836688625b300f389c64e4" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "bde6ea78093aabc0aa36894fd6ba0ccfd7e0a8c23e225b4047340c5d2704d824" => :mojave
+    sha256 "5c12b440f0354e0851827c99fa96b68b6db3075a8a322040d27e7cab7eba1cc3" => :high_sierra
+    sha256 "82abf5927e53db31aebee7807cd8d8eb6eac814fb9ad794f56d4955be7124165" => :sierra
   end
 
   depends_on "pkg-config" => :build
