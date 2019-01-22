@@ -5,6 +5,13 @@ class ArduinoCli < Formula
   version "0.3.4-alpha"
   sha256 "5ef20b59f27dc8ebeb6e3c6cd854ce3dd79fe2900189ea9bd8b4272ef83defb4"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a143197740bef61d05e670318608b97e2d8aa1aa94b877357e03ddb841ddd9f9" => :mojave
+    sha256 "e7ef94e88dd552e105adc1ef3012633b3fb94c4658d21b7dce237663142b33ce" => :high_sierra
+    sha256 "5acd679c599c9783c27608e027a5d7d69667c8dc4d0e790db23271f763dd6f49" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
