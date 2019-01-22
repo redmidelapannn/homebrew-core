@@ -6,11 +6,10 @@ class Putty < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cf7d4ac28f94d4486e3edd4424d86c7074cd5dd59a876d49a03b6d248277260f" => :mojave
-    sha256 "832bf75b4d9927e461c853e802a7951724522fd083a0774f0609141965c06c82" => :high_sierra
-    sha256 "b212b6d5db7478c43d0f6883c459373e257219f9bfc4aa24abe2992d82f9294e" => :sierra
-    sha256 "658a1736398dedd1dc5bc1c267c08b126a6bd9b2653fb2ef3b425f401a14f293" => :el_capitan
-    sha256 "ef3e944e9b322ce16da3264e68bce6a23f58a23f45f8d84d27954670a8d71379" => :yosemite
+    rebuild 1
+    sha256 "9aab5a1cefee5bc18eed61f8ad791d3e8b73838c256f6b7ce6daa70adad20127" => :mojave
+    sha256 "09077001137389f5708faa69aee786292a4f84e3400633a71b32ac0a288eb3f8" => :high_sierra
+    sha256 "3e9fa7b2cf71cde38657c418c767591e6ccea48453f5317144e1570ac9b1cabe" => :sierra
   end
 
   head do
