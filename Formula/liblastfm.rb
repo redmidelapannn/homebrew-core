@@ -7,11 +7,9 @@ class Liblastfm < Formula
 
   bottle do
     cellar :any
-    sha256 "666b4220844dbab8143a3b04fafc086f08d2246d41eaa7fd6fac9b9cfb60db6a" => :mojave
-    sha256 "b064d2c0725d5500cb5c9b3dff12e3e01fc10c0855b1763885dd489ab9c3c034" => :high_sierra
-    sha256 "ed421bdd81c4643de07048e5d73575bb4a6909fce584c5e5b6760a5103cd0617" => :sierra
-    sha256 "40e10cadb1dc55904ae6114a13597e7209596e1d274b94db8ac96f1ebf7da979" => :el_capitan
-    sha256 "0d5342788a8f4eb95ea970d2247e829d7dac17db2d43713aacbf4617e742bbba" => :yosemite
+    sha256 "1320c717068b006414a6c5f51b3e7a4157680635daf3ec376f2a55959482f309" => :mojave
+    sha256 "4f50aef25d93b0734d8f878acd89a1399244747cacb384ad3a66f90097584396" => :high_sierra
+    sha256 "6c384c4fff700346a7e27d45efa24fdae5dc3ff868676458518e5c4200b41b2a" => :sierra
   end
 
   depends_on "cmake" => :build
