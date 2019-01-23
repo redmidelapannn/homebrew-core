@@ -5,9 +5,11 @@ class Hdf5 < Formula
   sha256 "1267ff06aaedc04ca25f7c6026687ea2884b837043431195f153401d942b28df"
 
   bottle do
-    sha256 "ac1b242a49c884c9572c95089f589243637dab9992f11f120218f7e9c1207e13" => :mojave
-    sha256 "207bb10e9ee432b9e3e71790b2be25efb4fa57a95a30d2a47997ad460d3ae7d7" => :high_sierra
-    sha256 "34af9edb3db5e46887106f70a7f6c7c3e4988c135e739089f5f13e0960edee3a" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "5be9c6aeb36481d754e2abb6395d6a5b86e75d3b05d32e81ce842bdec9a93ee9" => :mojave
+    sha256 "bfb8d2d7c33d22d167daadebd81390d4269bcdabf904bbf41030aece5cb0bea4" => :high_sierra
+    sha256 "906a07e06c3f9f063764987551416a587f982014ca3b964a1c89f72744854d64" => :sierra
   end
 
   depends_on "autoconf" => :build
