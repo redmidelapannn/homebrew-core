@@ -4,6 +4,12 @@ class Visp < Formula
   url "https://gforge.inria.fr/frs/download.php/latestfile/475/visp-3.2.0.tar.gz"
   sha256 "072237ed5c6fcbc6a87300fa036014ec574fd081724907e41ae2d6fb5a222fbc"
 
+  bottle do
+    sha256 "7151610ba0bb39213065bbd587243f13ca4bc9b71e108286fc8abf9ae5da756d" => :mojave
+    sha256 "c8ec6779960d01be60ec3cfae04b1795a68527d340c1f78efbee3799676f4dc2" => :high_sierra
+    sha256 "5d31614fff22d35dfe5c2b2fdbdaf01ba93424ce9e6f81c4d47e8490003d7dec" => :sierra
+  end
+
   # Introduce pkg-config and glew dependencies to avoid cmake issues when checking for pcl
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
