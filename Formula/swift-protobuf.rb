@@ -7,9 +7,8 @@ class SwiftProtobuf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7fe5bcf016fc08e6fab3ac223f10dcf297befa413769f728f9148618048e1172" => :mojave
-    sha256 "7935c650dfa51c286fc979142ee028ebd9ccb9a568868b6c7347af93078ce3cc" => :high_sierra
-    sha256 "0d19496914a2ccf6010308d1c4b695ffcbc7e0e0aa547e559590902b25d6bce4" => :sierra
+    sha256 "2df0b57f30d65eea988dfb8bd1361b4af94acc5ab5d59161bb1b9f3220b382c1" => :mojave
+    sha256 "f76bdb6b8f859717c3f1382b920726ed1511a9dded2fe68815eb17c3782af854" => :high_sierra
   end
 
   depends_on :xcode => ["8.3", :build]
