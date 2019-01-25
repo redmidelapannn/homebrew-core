@@ -14,6 +14,7 @@ class Sphinx < Formula
 
   depends_on "mysql"
   depends_on "openssl"
+  depends_on "unixodbc"
 
   resource "stemmer" do
     url "https://github.com/snowballstem/snowball.git",
