@@ -4,6 +4,11 @@ class Mblaze < Formula
   url "https://github.com/chneukirchen/mblaze/archive/v0.4.tar.gz"
   sha256 "83dffd7fe74fa871642e97db94e27c04506f746fa4d6ba2f95c1a880638d6e0c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "099a4945ae145e1b6592f311a2b6d1492f12b1d264ad142cf0a9f6be905ebf8b" => :high_sierra
+  end
+
   def install
     system "make", "install", "PREFIX=#{prefix}"
 
