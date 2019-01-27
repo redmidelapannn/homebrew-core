@@ -7,10 +7,7 @@ class Perl < Formula
   head "https://perl5.git.perl.org/perl.git", :branch => "blead"
 
   bottle do
-    rebuild 2
-    sha256 "6f9c6519a6c95eb3212abde423688fa01d3d56be0c424f9e6e8bed7b59dfe014" => :mojave
-    sha256 "b04e2b8a5158c6405558e8408d901c7c1899eda8950202f1dfddd6efd7cfa043" => :high_sierra
-    sha256 "8099f37b2521864a095eb06dc5cde02805421a78ddda95fafe3fc538a3ef3553" => :sierra
+    sha256 "c380bbb1bce0ece6a1045a1266bf40a71c4d4a986e389af565460c4c70042585" => :sierra
   end
 
   # Prevent site_perl directories from being removed
