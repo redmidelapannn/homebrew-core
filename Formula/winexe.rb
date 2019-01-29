@@ -5,13 +5,11 @@ class Winexe < Formula
   sha256 "99238bd3e1c0637041c737c86a05bd73a9375abc9794dca71d2765e22d87537e"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "43444e53e90a4f739a533e4a865952369874d9386460205e501631fa2b3ad2bb" => :mojave
-    sha256 "765ad670de08f86b8c9b11ec43493148d1368e6c3ffa5e65d1bca898480996c2" => :high_sierra
-    sha256 "e9594f927f9ef58608951175c0bd118b82cf7b25d5b829453195b66f45c2cbc1" => :sierra
-    sha256 "58080b3729c9b261a65c7db2072ec867176bfd6a802c23f9b343feb44592789a" => :el_capitan
-    sha256 "fa7654ed5641e517a658fe8852a9ee5459acca047518c433d989f1aef69a7a6d" => :yosemite
-    sha256 "32261fefc9c9fd32e91ddb0776d6e43dcdda32b958f9382a8d784972ba09eb3e" => :mavericks
+    cellar :any
+    rebuild 1
+    sha256 "8acd97d134fe553bf9b7ad17e231785bde28a170716034a87e19b727a3eccaae" => :mojave
+    sha256 "f322bf0dc1079860c367d94a08a11e441a5ba356a2ad4463fdede07fa4aab436" => :high_sierra
+    sha256 "1bee14e7196ec3de0c9248f5b142fd95e6a159afa1e8d46ca3f97944b21aa3a3" => :sierra
   end
 
   depends_on "autoconf" => :build
