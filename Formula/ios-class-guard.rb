@@ -7,12 +7,10 @@ class IosClassGuard < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "480f0437e5217cb8a47fcc0e9ffb6ffc62e4f81a79d5df9529320edeed479217" => :mojave
-    sha256 "1962e7dde167e41141680b1347318396c0878fb8eeae55ec9f09460fcee33142" => :high_sierra
-    sha256 "a7843a0767e916aa6be1509a984eb698bb54d125d06ad762fd25f4a3d6a55db1" => :sierra
-    sha256 "0bb9abaac82cbc4e66a12493548659197559a01a779db6ceda4cf6c4439ea0bb" => :el_capitan
-    sha256 "4cada6d32bb82fbd8ad2afa58b7041bd5da12dc5d9fceab6277eec97459a2d33" => :yosemite
-    sha256 "4eddde784c843628cb8bcb8c971142683c5a17373058f5bda62356b432dec00a" => :mavericks
+    rebuild 1
+    sha256 "8621db34c7f4a4c7797093420ce0e75ab275913e2d57c6bb80954bd28ac0eec1" => :mojave
+    sha256 "9785672c2cd7fedb31fffa523cc7aedbc192af1b8a0f216ad7cdf81b57349939" => :high_sierra
+    sha256 "307141066643a0710a800609cf12dd47d831dab1366bad4f3b693559d6af2426" => :sierra
   end
 
   depends_on :xcode => :build
