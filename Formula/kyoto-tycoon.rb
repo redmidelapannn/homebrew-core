@@ -6,10 +6,10 @@ class KyotoTycoon < Formula
   revision 2
 
   bottle do
-    sha256 "8ac87720e1b33402d76d26dd142abc14a3ebe211b92d97d32df7a0959a87d1d3" => :mojave
-    sha256 "7be4c6e507a1d8a1d526c82c11dd41b150806211c48388ab9a0dd790875fff79" => :high_sierra
-    sha256 "55a2e33c172afca9880553097beef413abce0c2f913c0ca1aa20ff5873732d14" => :sierra
-    sha256 "33d857c99b29a62a42965ebd5639990cdbfeb3584adee249caff81ab0cdf4328" => :el_capitan
+    rebuild 1
+    sha256 "ed6f745f07b72688f65d6ced8382cfcb13bc5d56f9226811d2ac9035e2c3c882" => :mojave
+    sha256 "71046c9be40736c056aee80d2d28876e94fee6ea9e3419c6af5b3792c127b362" => :high_sierra
+    sha256 "e8bdb6d26463ae289c035f71dbe44989888a69a6d910dc729b2c1d0108af26ba" => :sierra
   end
 
   depends_on "kyoto-cabinet"
