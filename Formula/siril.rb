@@ -34,8 +34,6 @@ class Siril < Formula
   depends_on "openjpeg"
 
   def install
-    ENV.cxx11
-
     # siril uses pkg-config but it has wrong include paths for several
     # headers. Work around that by letting it find all includes.
     ENV.append_to_cflags "-I#{HOMEBREW_PREFIX}/include -Xpreprocessor -fopenmp -lomp"
