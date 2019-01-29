@@ -6,12 +6,11 @@ class Web100clt < Formula
   revision 1
 
   bottle do
-    sha256 "2b37669adf9e8248295fc31e95659697dcc4b47db89e9db11cea506f02863dfe" => :mojave
-    sha256 "93f6e31d1b28eea6a6f64d6bcacf39db135725bd6130a88173a724c6968c8c62" => :high_sierra
-    sha256 "be444b693ab664de5d521242702bf91a1518cd8945d7d6db1b03126f8a2638bb" => :sierra
-    sha256 "d0998cd6fb89d689aeb6f88bcd92039ad88daa3aef8b718bbcb8be6a3c4a7e39" => :el_capitan
-    sha256 "e2acae1966b2897ef89dcec1610e164f4c8bee054369d2012e1619853c6674d0" => :yosemite
-    sha256 "86b6d51af3d9e33db8220d8834d04aeed0241872a28aeac697b4357d2afbcc2e" => :mavericks
+    cellar :any
+    rebuild 1
+    sha256 "6b34924305a17e1a61521ff56ab9efa84c86ab0228fcc8626bee9acc92ecebd8" => :mojave
+    sha256 "827cdb74b5ea3ad01979e4b01dfdc79d9024b4c78143c2f8c7dee0d8046ffcfd" => :high_sierra
+    sha256 "cb1bd3b07c9b00b500996f92a4e8cdbd7a2032df0f1b56e96b1697e0cbbe5e72" => :sierra
   end
 
   depends_on "i2util"
