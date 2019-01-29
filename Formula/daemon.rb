@@ -6,12 +6,10 @@ class Daemon < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0fd225e226dd07c3f51836f47bf9829dd095a46a13a5b78c3a0e9df3c5820683" => :mojave
-    sha256 "ca2b1016c1bbe48002f70b7beb86063943dadabcb670db9f90f1c259cb34d623" => :high_sierra
-    sha256 "bfc116e8f0853cdf5b4abc38b1f000c90708823bf49c5237f8ec453400a5d606" => :sierra
-    sha256 "ad4f8ad9e7deeb0039c6c603b0108fb6733abe425c49fa6344f762e26b49cf2d" => :el_capitan
-    sha256 "f48000af3631f28d47d01d3d89a1f03e7c4f7eac4a81ab7db9c38a1ce9ff66cd" => :yosemite
-    sha256 "09a420b59d2e5cbaf3073b2daf81d57d01c733b79a928bb58da6418de7f5bd3a" => :mavericks
+    rebuild 1
+    sha256 "04dc5cd0a00ced6829200e710b8b62f0041d427aa3c3f5ce3e8cfa67f8f8ea47" => :mojave
+    sha256 "583b9dee59d8a86ceb8b2a555da16a6dcd24f99ef9f401e5cc1c878dd8f6cc95" => :high_sierra
+    sha256 "d9c56811f6825e9c040d90abfdf52d881785396bbc2ed0b573fa7fdfa09c126c" => :sierra
   end
 
   # fixes for strlcpy/strlcat: https://trac.macports.org/ticket/42845
