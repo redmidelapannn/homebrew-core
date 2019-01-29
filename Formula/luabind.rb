@@ -7,11 +7,10 @@ class Luabind < Formula
 
   bottle do
     cellar :any
-    sha256 "aa095d38915e09287c86d11d65871b5a4e6604799a961f0e055c9bf526ba403b" => :mojave
-    sha256 "736bb4cb6a49338eecab9a179f3104e8328d7133366b921b2fece14b6fd2aa26" => :high_sierra
-    sha256 "39e74593d47fd648230e177e9a8a90e1b3a888c84d6c7d38f358265d5b93ce94" => :sierra
-    sha256 "914a79679264790d9ffb0726a1f303954d816da3dd23db3b8816873cf467677f" => :el_capitan
-    sha256 "171123f48a6cf2431d6b143b84bf31dbb955f103195aa30597a61b7a61943982" => :yosemite
+    rebuild 1
+    sha256 "0fb2c4c19830cdf1cb143cb31a3424b6c68c5c0a52442b5fd90049270e033604" => :mojave
+    sha256 "902c561f57ff143e59ff182860690e3c69daa2f4855339f321ab1a8ee7dc503f" => :high_sierra
+    sha256 "ea8529dac9a9ff6ce0d89d01eb558b37c74cb5a18f1d44027bdb16255a6a2ed8" => :sierra
   end
 
   depends_on "boost-build" => :build
