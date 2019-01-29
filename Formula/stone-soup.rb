@@ -5,9 +5,10 @@ class StoneSoup < Formula
   sha256 "49834a0fbfcba4953359c649fbe52f42b983f5c0cc5e9aa95c5e4066f1453c40"
 
   bottle do
-    sha256 "000858caed6adc83af07e58ae18ae965068467eda9bc55fa857e67b11758aaf6" => :mojave
-    sha256 "9c2728c5e7e0aa9cd005dd88be988c9ce0fd442c2fbf4dfbcd0889ddc44a77e9" => :high_sierra
-    sha256 "6ff5f2ccb4d81ee521d8fd2b86a33c8f382b9d56ac87ec8cf3b15eae69583d64" => :sierra
+    rebuild 1
+    sha256 "f4085a610b45ace9f1629c8f41d3561aaaf1d715e94f4fb67a0b31e96ab22802" => :mojave
+    sha256 "6d235f070015bfec82d5cc197548d7efa1e136a72112a2c02a60459c0db27485" => :high_sierra
+    sha256 "06783378a1d47e53368345c88be35db397c2d01d72e2152fd9456f0377e440a9" => :sierra
   end
 
   depends_on "pkg-config" => :build
