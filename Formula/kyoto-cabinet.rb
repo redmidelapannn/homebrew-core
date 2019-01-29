@@ -5,12 +5,10 @@ class KyotoCabinet < Formula
   sha256 "812a2d3f29c351db4c6f1ff29d94d7135f9e601d7cc1872ec1d7eed381d0d23c"
 
   bottle do
-    sha256 "0430d49ce4fd72454dd8e5d3a326f8172ff85e449d2766ca51f79e9045e8e2c0" => :mojave
-    sha256 "2ba12ca100464a78f42b5b9d3540d99e26458d8bcac0bb9a530858b5bc49bc0a" => :high_sierra
-    sha256 "24d4adf0747bebe9c3d90c509290bb630531f5184793d1866cd8ea7a39a1adce" => :sierra
-    sha256 "c4b2e78762b188a19b3c6c2aec1733c59b03fd69d23aa2ae41ba8e756704c795" => :el_capitan
-    sha256 "149125dc24b899ac4d6dd48a11aebb2ac092252b8e9cccac6472d3713062f914" => :yosemite
-    sha256 "bfed1b4b4aa5e742c89f9aa0ba83375ad4ff1d5daaf0e060260d16df4024582d" => :mavericks
+    rebuild 1
+    sha256 "8d7841a1f1ab81bea099df3c07ba9c7d10da368918fc3ab3ecdc2bba58f78017" => :mojave
+    sha256 "d787df87c4b6824e5c79d8eb737741a389fc7f47219388cfea4c46e33fab9da5" => :high_sierra
+    sha256 "ca2b4ec91410c09519ef8fd2d559fb287204962467c91cdb1e4a67c549671e09" => :sierra
   end
 
   patch :DATA
