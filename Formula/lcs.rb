@@ -6,11 +6,10 @@ class Lcs < Formula
   head "https://svn.code.sf.net/p/lcsgame/code/trunk"
 
   bottle do
-    sha256 "91469578607a9f4d1ae989ee523f2b5dd97c976d32d9a822769129df828163e5" => :mojave
-    sha256 "5b640b7b87dfe6603670addce1b6af77b0cd7ebbda10c445fddc6d365960e761" => :high_sierra
-    sha256 "a8fa614ec5adc3ee2d7417a024bf5e9c78e9f8d4e043e0b916dc5a99f1bb1d9c" => :sierra
-    sha256 "621487b12c93a9b37e1330041f979a28d3d310c1d8c9efecf274808d081d510e" => :el_capitan
-    sha256 "9ca23650e17e177c4c9fa5352dc81a9f415bc3778b2fd8a55330936eb4d7d28c" => :yosemite
+    rebuild 1
+    sha256 "236e7e3ba873ff482237d44c5374e6b54944dabc6c7dbb01636752028cfffb11" => :mojave
+    sha256 "85ec9cecc3f1845b282c187fe37aca854b72630b64114923154063f175d93156" => :high_sierra
+    sha256 "2f3318d43e35f59552b40a16dcd77d24a491533918457024d272ec8ed6c2abd1" => :sierra
   end
 
   depends_on "autoconf" => :build
