@@ -7,11 +7,9 @@ class Gpsim < Formula
 
   bottle do
     cellar :any
-    sha256 "3d31846ad5fc739d011a522728ec92ccb17a5103a287500abe97b6f33087e794" => :mojave
-    sha256 "8aab95ce27710fb23c55f3a772ca389e47cbcbb011954532223a9e4519f0c538" => :high_sierra
-    sha256 "734a058b83a8636d7cac14f03f141ab949e7bc17abb5685747b188e27f1f3e2a" => :sierra
-    sha256 "9b669b415d26e4efe157ed3d2f5f34ff8af6ce2811bbb732aeea46af7f290e94" => :el_capitan
-    sha256 "4049efd02de96753275cfb5119efc843d1da0eba30f314b7b2b3e4776b5cd430" => :yosemite
+    rebuild 1
+    sha256 "32f83c49289824b95e2446469fab10d4c7d84c46a46a8bfb7791e3004d1be11f" => :mojave
+    sha256 "f02e8f45092a666a8ed0f2bebfbb851a60b92f8e946b8e228fa67329b9b0f63e" => :sierra
   end
 
   depends_on "gputils" => :build
