@@ -6,11 +6,10 @@ class Supermodel < Formula
   head "https://svn.code.sf.net/p/model3emu/code/trunk"
 
   bottle do
-    rebuild 1
-    sha256 "85678e40606c4bff6ff454ec15bafd2ab317887b2fb48865433d8cb0cdae7a3a" => :mojave
-    sha256 "83c0dbca7a5c28564eba4e7a73894746004aab5025071b350c3c47271fc42625" => :high_sierra
-    sha256 "1203bb3d289e36e1ca15720dbcd4e63ffcf4fa4d09588cb4fb81092cb72399ec" => :sierra
-    sha256 "78cf8e9fb973e3cd136a212936bdc8003d9897a1bb8a6a1eba3cc7ff0fba3c88" => :el_capitan
+    rebuild 2
+    sha256 "daed69e344c3ffcbb353e9742867c840ce42799ab4cee7303150de4759c73dfb" => :mojave
+    sha256 "7b884718b34f409bcef413c40d063d1b067dab3687bf9a153dd1b0ec28f3002b" => :high_sierra
+    sha256 "1d6f8e6f9a4d77601ee1d5999fe9b7d42b9998fdd399acde4f690c2c21239354" => :sierra
   end
 
   depends_on "sdl"
