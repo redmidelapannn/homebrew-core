@@ -16,11 +16,11 @@ class Ctags < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 "2812884a8f1217767103dc5e0ceb9c7048b5a4d9a34071f76e3c8f9b0f00895c" => :mojave
-    sha256 "497e0220e354a9ec7e0735d3ba68a27892f1f69973d6992e36667ea197a236bc" => :high_sierra
-    sha256 "56bc233d09bc3591ad1f3a9c5282f9f9cf0729b0d5a0ee001d4ea6f68f2b0ab7" => :sierra
-    sha256 "a17ee0cd08909484aeeca9177b356e14655d5f75ecaa4b36a3bd2e2248d8ac91" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 2
+    sha256 "5877c132e278e6f704b225ab6f60650abe4c33e295011b3563b36abbb805e580" => :mojave
+    sha256 "4154c39ab24413ef3870125f782b8f25b57afc77686f2202a5bd461f230e8586" => :high_sierra
+    sha256 "6a38e16df6a5941bf57108dd4d84aa918a7317f73d127d10d223d24fdecf5135" => :sierra
   end
 
   head do
