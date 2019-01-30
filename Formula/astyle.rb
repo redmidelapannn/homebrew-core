@@ -7,10 +7,10 @@ class Astyle < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "65a2f71d86cbc112f12729a0845f47f718cb2751e2e1ccdd78c6c4fc4ad6e817" => :mojave
-    sha256 "a58fdf5320a691b37337973e0ca43d2e69f42adbc96d6ab160066c3574373047" => :high_sierra
-    sha256 "7a3ff647da72399ee8aa05f1c55806b3bc273409e4a7b2ab0f68930227a47b5f" => :sierra
-    sha256 "e6eb9d95f56fa99005173fcd1c147f9335f55c9ccf52067f57da36e95f7f4c7e" => :el_capitan
+    rebuild 1
+    sha256 "674e42fd50a84642da9553914c3bea2f9eb9a27935a60edf23e27aca60588cae" => :mojave
+    sha256 "619134d6eb3ac41562d93c3dc8447e227bc07e8ffcaa32a47132a49296970d76" => :high_sierra
+    sha256 "9b85f3c9912e0084c14d7f2f87c44aa4aa39cd238ae500261d43b9c94bfe872f" => :sierra
   end
 
   def install
