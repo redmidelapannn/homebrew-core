@@ -8,10 +8,10 @@ class Lasi < Formula
 
   bottle do
     cellar :any
-    sha256 "70047a220f5761a9269d7aa9bc9130c9a048b62966efbcd78bef6b4011e254ce" => :mojave
-    sha256 "3046c6587163febbdc84a38059fc87bb9bbee3c07ec092786b0f5565a914d759" => :high_sierra
-    sha256 "31c08380140531a70f3fa53d7026ff8b356508c8643ec1751e26261f1d663438" => :sierra
-    sha256 "85883793893dce87446ac03902394857c5b945b90c42a66eccc48366c5868401" => :el_capitan
+    rebuild 1
+    sha256 "742b9f95a39369dd1d7dd761ad3fcb3c6d154d6fd335d425649ccecefcc147d3" => :mojave
+    sha256 "8b897de1d1ffe3895ff941952677246e6d1dcdd7c2854b5eca6d58425543600c" => :high_sierra
+    sha256 "af527b092035e99e459cb35f1140f6467848c88adc3df183acc9312ba4040390" => :sierra
   end
 
   depends_on "cmake" => :build
