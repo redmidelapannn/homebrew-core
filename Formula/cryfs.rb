@@ -54,10 +54,8 @@ class Cryfs < Formula
     # it should display "Mounting filesystem". If that doesn't happen, there's something
     # wrong. For example there was an ABI incompatibility issue between the crypto++ version
     # the cryfs bottle was compiled with and the crypto++ library installed by homebrew to.
-    Dir.mktmpdir do |basedir|
-      Dir.mktmpdir do |mountdir|
-        assert_match "Mounting filesystem", pipe_output("#{bin}/cryfs -f '#{basedir}' '#{mountdir}' 2>&1", "password")
-      end
-    end
+    Dir.mkdir("basedir")
+    Dir.mkdir("mountdir")
+    assert_match "Mounting filesystem", pipe_output("#{bin}/cryfs -f basedir mountdir 2>&1", "password")
   end
 end
