@@ -19,9 +19,8 @@ class W3m < Formula
   end
 
   bottle do
-    sha256 "571d0562f50fb42eab8fc7efd03e7d3be1418ffdcbe378d2501ba3f53593e650" => :mojave
-    sha256 "74830829e5e3de7ac58b7486a2a8371ba2ea340d657d46693fc16e9db8c7ee34" => :high_sierra
-    sha256 "2d71608f1489de2eea58f1246d54f9cda56ddb94b7f1cd6652af3527823d64de" => :sierra
+    rebuild 1
+    sha256 "f8f4d363b08d90f63b1ad142b8eb18b0ac0233121d2354d03a6899ad8a0fbd49" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
