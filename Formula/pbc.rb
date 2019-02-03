@@ -8,12 +8,9 @@ class Pbc < Formula
 
   bottle do
     cellar :any
-    sha256 "3d34df3cd1f1d357a3893f53d19496721d3dfb04b86b1d22b87fb88df27746c1" => :mojave
-    sha256 "f737a917951f31a9477b2ee46761eb3d9323ca96d77b5b0ab78d7566eb743213" => :high_sierra
-    sha256 "9ec971f355f67d0faf644e955a26e9a86b667066eac0791288b802bbe7c0f4aa" => :sierra
-    sha256 "5295bb2d5b2698685ff7ff8b64e0578a5b8c9b9f9602fc51583cae058ee24b81" => :el_capitan
-    sha256 "5ec07e1b5752aa02b6a479665ca8a57b85ed55d5cd3b05a34cf403d7b47ea142" => :yosemite
-    sha256 "3be60cf755e2d568867c2d5c53a46774627afe1fe7439b7f86437e718ba52ed8" => :mavericks
+    sha256 "7561813f8af15e6232f9fffae558e83b9e8312d6b23db93f22a52c49433d3088" => :mojave
+    sha256 "391d57bdb23a33505ae05ae1d5192d1269ebcafa71ae6d08750ef504406bb3c7" => :high_sierra
+    sha256 "5a587809402cb581732ee0f28b45f70f98643bc22e728505be4fc9bd929cad28" => :sierra
   end
 
   depends_on "gmp"
