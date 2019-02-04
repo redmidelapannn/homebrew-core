@@ -9,9 +9,9 @@ class Vapoursynth < Formula
   head "https://github.com/vapoursynth/vapoursynth.git"
 
   bottle do
-    sha256 "c713072de8230c28fa9a76532b8fd79354addf33017519205a98a56c44f0cebb" => :mojave
-    sha256 "40a4f329f1414e8c6ebc4b1388119ab3908f90e0a5bbec76109a3f86bd1e914e" => :high_sierra
-    sha256 "6d55273a72e636657c5ed8d192876b4da757c07fa991fdd1488ac1cf8792520a" => :sierra
+    sha256 "6e97aefefcedd60e3ae1d41b08041c1657c41f9a219071ed1a560792f7342efb" => :mojave
+    sha256 "7787949ab9897cb3db5172ce4925d9985022d920d68ce7e27de12f679e6e6d9b" => :high_sierra
+    sha256 "b70e2c711b3f8f824390d7aa742601a4a4991c457ec25c340b4764eaba9e77af" => :sierra
   end
 
   depends_on "autoconf" => :build
