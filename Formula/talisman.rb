@@ -4,6 +4,13 @@ class Talisman < Formula
   url "https://github.com/thoughtworks/talisman/archive/v0.4.3.tar.gz"
   sha256 "3aa40773885cbdab4ef5aa5cdc2465879cfe2d61e91619be4a2fb034fb001ae1"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "86e296c148de509a55e4e27ad7c2a4cf81e2440f872ba66810fbe0566f661bc8" => :mojave
+    sha256 "c3d428bce8db213666f837ea50934ba121316eb1828408ae408270e293c05e89" => :high_sierra
+    sha256 "27ec7d1a8a03f60d55aa884ad4345ec86dfdc94ffc9c7e4edfa68cf75578b2fd" => :sierra
+  end
+
   depends_on "go" => :build
   depends_on "gox" => :build
 
