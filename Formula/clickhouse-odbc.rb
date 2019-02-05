@@ -5,6 +5,13 @@ class ClickhouseOdbc < Formula
       :tag      => "v1.0.0.20190201",
       :revision => "26c04d00ebfd0a09e074bc35fb9315a91075ad91"
 
+  bottle do
+    cellar :any
+    sha256 "5bb9dbbafe68f61fbd3b890ef4fdd53c10a5794159999dc5706ac49f38b08f1d" => :mojave
+    sha256 "1d3054c7501cd18df831c68a60875ee05a57e2815c1f883c701613055286b7a7" => :high_sierra
+    sha256 "81181147e989207cfa28546f6c7f49ba4f1cc31ba81346588eaddab044e181a2" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "libiodbc" => :build
   depends_on "libtool" => :build
