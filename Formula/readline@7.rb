@@ -6,6 +6,13 @@ class ReadlineAT7 < Formula
   version "7.0.5"
   sha256 "750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334"
 
+  bottle do
+    cellar :any
+    sha256 "98c3583a98f0b4ca55d7ba2eb6b1eda59d1e9818c31fb5a4771d7c0af5967dcd" => :mojave
+    sha256 "3c776a77c55b3f3488e9fe0fce6ffcfc40a45279e1a45f5ff8379b7b32d91ea6" => :high_sierra
+    sha256 "1fe1243b8e274aa8c4002c610754e25a7654a7e553e8a6cab149ff79f4662093" => :sierra
+  end
+
   keg_only :versioned_formula
 
   %w[
