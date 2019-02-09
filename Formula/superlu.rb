@@ -7,11 +7,8 @@ class Superlu < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "99db35e78ccfb979cfdb922bebf7f79ce9479d5683900d7f64110cb42c92f4c7" => :mojave
-    sha256 "5c037c2cf95a26ea76672e0831ac3fbf34bb8d4378acc21dc99040f7b9b421f7" => :high_sierra
-    sha256 "e4fdd5560b722e5fbb5892cde2795a5dcf18889d4f663315fa29a154a266af3a" => :sierra
-    sha256 "a20af0692236e73bce9cdd4c659ba7b0c98d7dbaf2953bbf0eae4255abec0e1d" => :el_capitan
+    rebuild 2
+    sha256 "2509fe0a6adebedac9bbc366cc32bdd8d59b64d2440a2243db7ebf87b53d0c05" => :mojave
   end
 
   depends_on "veclibfort"
