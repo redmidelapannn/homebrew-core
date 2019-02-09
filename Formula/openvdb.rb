@@ -6,9 +6,10 @@ class Openvdb < Formula
   head "https://github.com/AcademySoftwareFoundation/openvdb.git"
 
   bottle do
-    sha256 "61bae9831330a80fa016b1a4337c2629648076c60ea86f3a37a9c756c16129cc" => :mojave
-    sha256 "948544b41fb3c32e8b3cd793b2b2c8354f66aa7b3dd828eb989735cb4f6ecf23" => :high_sierra
-    sha256 "f8c032884b61bd202b33991cf7bc36bdf996cc65e64e585dc126715642dea41f" => :sierra
+    rebuild 1
+    sha256 "2e242e3701cc3adcb2cf1187cb68d83b7de4ea77530a8bae8a1653e4a36d9c24" => :mojave
+    sha256 "9fcb44dae9c78ec39688538f8b1893cfb1ec1f335da2a066b4f4cf15f0ac8549" => :high_sierra
+    sha256 "b95582d2851b9f1c4847f29af299fa657cbbb49c47777a6ee25569b00de7a5d4" => :sierra
   end
 
   depends_on "doxygen" => :build
