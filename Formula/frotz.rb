@@ -6,11 +6,10 @@ class Frotz < Formula
   head "https://github.com/DavidGriffith/frotz.git"
 
   bottle do
-    sha256 "bd7d173c661883a5ad370c4f2437dfcda10e2852988e4a1b0b681ee19335ed97" => :mojave
-    sha256 "f1be9afe41e33396475d99511760690d3a46f9362fb2229e42ba48146d92f8f0" => :high_sierra
-    sha256 "e190264a540f03ec98b7be45d1edfc73c0bd4946b4d2c4aacdf98521354e4ca0" => :sierra
-    sha256 "6506ec53859a859eb71ab33511a11e9c957e0749cb25efa06d63d6c80d000b4a" => :el_capitan
-    sha256 "887efd67a050038ffb15df8c713eaa40fcbfcc69d36f58373981dba3ccae422b" => :yosemite
+    rebuild 1
+    sha256 "86773dfacbf1d068913e79b587758d45ec9aafdde642b62855469799d497a086" => :mojave
+    sha256 "4995e58d8c8c8ac66ec8683004d4ae330dd7c1a4e1514cef940ad735bf57fdc7" => :high_sierra
+    sha256 "696d64424430efab63211d9dc267719aa2a283b03cc4894cf81ca5b18fc9db5f" => :sierra
   end
 
   resource "testdata" do
