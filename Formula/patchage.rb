@@ -4,6 +4,12 @@ class Patchage < Formula
   url "https://download.drobilla.net/patchage-1.0.0.tar.bz2"
   sha256 "6b21d74ef1b54fa62be8d6ba65ca8b61c7b6b5230cc85e093527081239bfeda9"
 
+  bottle do
+    sha256 "7759ee27a53493fd8bf903ae4ed7ecabdc5ca8e43a5c41c71aa57088faa92ed8" => :mojave
+    sha256 "bd79a1261da74b536cb647f70e8d2ba4d678266c53b4b124817ca93d833ccdfa" => :high_sierra
+    sha256 "3735ad21a367ad672808af0be34a4710a67984d2bb2547bfc78781ae8165f522" => :sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "boost"
   depends_on "ganv"
