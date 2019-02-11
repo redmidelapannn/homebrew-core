@@ -4,6 +4,12 @@ class Pygmo < Formula
   url "https://github.com/esa/pagmo2/archive/v2.10.tar.gz"
   sha256 "2fa95e2b464ddeadb9fc09bd314081293f02a1b6abc11c0b05064729a077227c"
 
+  bottle do
+    sha256 "f23ceaea0fc1aa2035bba7eb933d2cb8df722dd363bf846dfc32ef2a7b29bc6f" => :mojave
+    sha256 "d0c2afd4081c13d8112f00ef1f06efe4100600538cbb95a8b6d3e0711f2a3935" => :high_sierra
+    sha256 "b4575194427cf14048534e12394a47f79de9f25fa3c4ba1dfac09b4f5938f800" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "boost-python"
   depends_on "numpy"
