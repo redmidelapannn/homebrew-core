@@ -5,6 +5,11 @@ class Poac < Formula
       :tag      => "0.1.2",
       :revision => "2a38827050cd797827c8b6154240454ffc518d53"
 
+  bottle do
+    cellar :any
+    sha256 "dc56e45360af779bf68d6c62315eda2e9aa98a5785e9c125499f2b33ed35374e" => :mojave
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on :macos => :sierra
