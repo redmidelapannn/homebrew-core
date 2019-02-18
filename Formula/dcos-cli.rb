@@ -6,11 +6,10 @@ class DcosCli < Formula
   head "https://github.com/dcos/dcos-cli.git"
 
   bottle do
-    cellar :any
-    sha256 "96c9722c152028ed02e76bd782c50722fb6469677e0f4d59e351f5da36802855" => :mojave
-    sha256 "290b09815b412354a29728fd37bb1217192bf6e91913dbc43dbc798f237a6e5a" => :high_sierra
-    sha256 "052ac256bd597fce2dd43ea317f493ec2f355407a525261bb3e6fc8561ce27d4" => :sierra
-    sha256 "f682f24ac66465cc1367e7fe30be40e430f420d8d65a0e7b4fcecc65ae6cad8f" => :el_capitan
+    cellar :any_skip_relocation
+    sha256 "55de6e8a43cf14046283f79e954217df5b02abcfde1313a0136a188c661fdb21" => :mojave
+    sha256 "5bc5b3c0d434c95437e2f1c8469967bf1a6c2d743a3ce3e7d0cdfed913a1baf1" => :high_sierra
+    sha256 "df805b36ed19719a2eb284d7d2f8ea10c8e5ff7ce497f04aacf3ccd3e30d59e6" => :sierra
   end
 
   depends_on "go" => :build
