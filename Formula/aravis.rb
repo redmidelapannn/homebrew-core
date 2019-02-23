@@ -5,10 +5,9 @@ class Aravis < Formula
   sha256 "d9795d36bfb1af230bda21d93bc81390f49d936c6c9b7b3043a5c09bd0f0f8d3"
 
   bottle do
-    sha256 "535b46c36a805622b39db2f1eb0ee30b9a16a3b1cccc99af0fea4253f58a2b76" => :mojave
-    sha256 "e4b43a8840f5e21a9acc48faaced67a58432deb26d38c632d5b8ccda129f2dca" => :high_sierra
-    sha256 "33f2fb3607b7547ac3505c42f74743fa4cd281044bda83a3348e20e3fc5c0a79" => :sierra
-    sha256 "1594fd0d1117da017a5934b5c1444b7ff0f1642817640f33dc12bf23b3a8e5ba" => :el_capitan
+    sha256 "b4afdb103d1880599437e161d285f3fa1c578fa1125d50d22e1d408d944402bc" => :mojave
+    sha256 "4208c03965f10ea0aac58ef1684df8fbc3d576fc28dff2d4b256f6965caf36d5" => :high_sierra
+    sha256 "2e58d72e88f5fd6dd6688135355307a78f79160291289bb3a5940a8fb74c5f33" => :sierra
   end
 
   depends_on "autoconf" => :build
