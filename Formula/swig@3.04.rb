@@ -5,11 +5,10 @@ class SwigAT304 < Formula
   sha256 "410ffa80ef5535244b500933d70c1b65206333b546ca5a6c89373afb65413795"
 
   bottle do
-    sha256 "264a8dc6653c2fc3ae88f1b0a8d60aef2b54db681b4fce4ce783b4f73f6daa84" => :mojave
-    sha256 "fa6edd5df156b7a985bfe6f74f56cf15682af6b01d11f0ed342f2f05444234f0" => :high_sierra
-    sha256 "51b8115c0a2813caf115fb5f082e7aa1b84b7c51acec70822b8619e918969a14" => :sierra
-    sha256 "84988480f25dea3fce15b6ca0e9a3322222cc473066f23626d59b20001574fdf" => :el_capitan
-    sha256 "f5e5251fa5d8f6ce3a7e63c9f3762ccd3bbc49f4664d1d781b71425992c2425b" => :yosemite
+    rebuild 1
+    sha256 "67c9aa76794bdde5f337b1815e9a7c409462382528ceb391313f50f63282f493" => :mojave
+    sha256 "072d88f3ab968289c74913552126bd72aff4dddedeb65d51d2330e2c6b539dad" => :high_sierra
+    sha256 "8881bd4cffd18a5a8f770e9d34556e05fd7775d55063f465c3c42ecb021733e5" => :sierra
   end
 
   keg_only :versioned_formula
