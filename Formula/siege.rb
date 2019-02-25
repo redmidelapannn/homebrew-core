@@ -5,10 +5,10 @@ class Siege < Formula
   sha256 "8f7dcf18bd722bb9cc92bc3ea4b59836b4a2f8d8f01d4a94c8d181f56d91ea6f"
 
   bottle do
-    sha256 "975fa6c60a27b9462d55ef7b4e9faeec0569de3b48bd10dab89c88a001350459" => :mojave
-    sha256 "a5e4990ab448ec37e9e5e7b392a7bf6aee03313bad6d89c6fda45decd4ddecf4" => :high_sierra
-    sha256 "84ad0232db938f558c2ad57b5c61382b136483c3d4f106f6fcea7e647d2b9982" => :sierra
-    sha256 "4ffac4100438cc7d6784a64774770ffe219bf330e96890c77eb012bab0f02ba5" => :el_capitan
+    rebuild 1
+    sha256 "0e11d9c121dba2afe31f86d7924def7b0e8d32ac7e2ab814587d321fb24b84bb" => :mojave
+    sha256 "0bc160a6bdd02771438fb6aca07fc7b51a2c860719d532dbe5436351aecd52a7" => :high_sierra
+    sha256 "99f07912facbf9ce9c82806d8a012e70fb3e2877794e4d60b5793d52010a662e" => :sierra
   end
 
   depends_on "openssl"
