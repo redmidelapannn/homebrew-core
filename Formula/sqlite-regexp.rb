@@ -5,6 +5,12 @@ class SqliteRegexp < Formula
   version "3.27.2"
   sha256 "15bd4286f2310f5fae085a1e03d9e6a5a0bb7373dcf8d4020868792e840fdf0a"
 
+  bottle do
+    sha256 "f981928dd2fb3b23cdb8c6960867f5be9d2279aba636270c12ce623f1d1692a7" => :mojave
+    sha256 "8708ade7e4bb1ea000dea75c83864b526d61196fe07f7c2b093fd0c2cbfbbad1" => :high_sierra
+    sha256 "b2131c1f23cfca45d67ebd9d490b774e89b8c212b7b93fd04585ad32098ad7ac" => :sierra
+  end
+
   depends_on "sqlite"
 
   def install
