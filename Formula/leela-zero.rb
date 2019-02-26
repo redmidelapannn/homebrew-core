@@ -6,6 +6,13 @@ class LeelaZero < Formula
       :tag      => "v0.16",
       :revision => "4fd6e694ead45b7cbb14ea76c5bdfcbfa662304b"
 
+  bottle do
+    cellar :any
+    sha256 "b20a6c516dc14468d243678ce3f25a6191ea460182a28d39e4d8ca732566381d" => :mojave
+    sha256 "c6fc514af546c6a52f9ae338c0defd24c33c2ceab72542a16d8fd22103abb3b9" => :high_sierra
+    sha256 "e30708754210fd37f959332092cb055b9370a7878b3f2598753612c07d2c3414" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
 
