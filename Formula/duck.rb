@@ -19,6 +19,11 @@ class Duck < Formula
   depends_on :xcode => :build
 
   def install
+    xcconfig = buildpath/"Overrides.xcconfig"
+     xcconfig.write <<~EOS
+       OTHER_LDFLAGS = -headerpad_max_install_names
+     EOS
+     ENV["XCODE_XCCONFIG_FILE"] = xcconfig
     revision = version.to_s.rpartition(".").last
     system "mvn", "-DskipTests", "-Dgit.commitsCount=#{revision}",
                   "--projects", "cli/osx", "--also-make", "verify"
