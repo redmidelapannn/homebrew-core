@@ -1,5 +1,5 @@
 class Gnunet < Formula
-  desc "GNUnet"
+  desc "Framework for distributed, secure and privacy-preserving applications"
   homepage "https://gnunet.org/"
   url "https://ftp.gnu.org/gnu/gnunet/gnunet-0.11.0.tar.gz"
   sha256 "b7477a3c3b0d5e8a013685dc208cfb4ccee4145f8668faa8eb5b382af36c7e9a"
@@ -23,14 +23,12 @@ class Gnunet < Formula
     ]
 
     system "./configure", *args
+    chmod "+x", "src/util/gnunet-qr.py"
     system "make", "install"
   end
 
-  def post_install
-    chmod "+x", prefix/"bin/gnunet-qr.py"
-  end
-
   test do
-    system bin/"gnunet-config", "-s", "arm"
+    system bin/"gnunet-arm", "--start"
+    system bin/"gnunet-arm", "--stop"
   end
 end
