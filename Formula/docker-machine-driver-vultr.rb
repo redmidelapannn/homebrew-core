@@ -7,11 +7,10 @@ class DockerMachineDriverVultr < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "8c6a8d5fa979b04816723a10af5f4150228a6e20425defb443061e375020a948" => :mojave
-    sha256 "62f227cf1a4c854fc311024d892a40e71a061576a051818126a469f2213400ca" => :high_sierra
-    sha256 "7af4e94255b4b0ffe451c7f73355adee8ca6fcc4e8a38ba7157acee1a3ba1409" => :sierra
-    sha256 "50ae18bed6b26893049da20e16dbbcaaabbde2078df7fd6c9be6ce2e42f4f77a" => :el_capitan
+    rebuild 2
+    sha256 "3545b9a0ceb91694a4f7dbecbe964de5bb1650b296d30273de09195eca2fe911" => :mojave
+    sha256 "d42323158bbc1dae48713776b34822c18371e7f457d3f73d7718322351d6436d" => :high_sierra
+    sha256 "4442e48b1ff7779dbc0c4f1442bf9557f9bad29a24e936734b50c8a19620a806" => :sierra
   end
 
   depends_on "go" => :build
