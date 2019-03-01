@@ -28,7 +28,6 @@ class Gnunet < Formula
   end
 
   test do
-    system bin/"gnunet-arm", "--start"
-    system bin/"gnunet-arm", "--end"
+    system bin/"gnunet-config", "-s", "arm"
   end
 end
