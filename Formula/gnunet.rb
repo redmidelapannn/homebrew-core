@@ -24,6 +24,9 @@ class Gnunet < Formula
 
     system "./configure", *args
     system "make", "install"
+  end
+
+  def post_install
     chmod "+x", prefix/"bin/gnunet-qr.py"
   end
 
