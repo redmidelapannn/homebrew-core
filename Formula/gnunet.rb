@@ -30,6 +30,6 @@ class Gnunet < Formula
 
   test do
     assert_match /^.*BINARY = gnunet-service-arm.*$/,
-      shell_output("#{bin}/gnunet-config -s arm", 0)
+      shell_output("#{bin}/gnunet-config -s arm")
   end
 end
