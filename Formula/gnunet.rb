@@ -25,8 +25,8 @@ class Gnunet < Formula
     system "./configure", *args
     system "make", "install"
     # Move non executable scripts to pkgshare
-    mv prefix/"bin/gnunet-qr.py", pkgshare
-    mv prefix/"bin/gnunet-qr", pkgshare
+    mv bin/"gnunet-qr.py", pkgshare
+    inreplace bin/"gnunet-qr", bin, pkgshare
   end
 
   test do
