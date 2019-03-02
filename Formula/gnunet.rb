@@ -23,8 +23,8 @@ class Gnunet < Formula
     ]
 
     system "./configure", *args
-    chmod "+x", "src/util/gnunet-qr.py"
     system "make", "install"
+    chmod "+x", prefix/"bin/gnunet-qr.py"
   end
 
   test do
