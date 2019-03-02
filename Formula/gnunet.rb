@@ -29,7 +29,7 @@ class Gnunet < Formula
   end
 
   test do
-    assert_equal "#{bin}/gnunet-arm v#{version} release\n",
-      shell_output("#{bin}/gnunet-arm --version", 1)
+    assert_match /^.*BINARY = gnunet-service-arm.*$/,
+      shell_output("#{bin}/gnunet-config -s arm", 0)
   end
 end
