@@ -5,6 +5,7 @@ class Gnunet < Formula
   sha256 "b7477a3c3b0d5e8a013685dc208cfb4ccee4145f8668faa8eb5b382af36c7e9a"
 
   depends_on "pkg-config" => :build
+  depends_on "texinfo" => :build
   depends_on "gettext"
   depends_on "gnutls"
   depends_on "jansson"
@@ -18,7 +19,6 @@ class Gnunet < Formula
 
   def install
     args = %W[
-      --disable-documentation
       --prefix=#{prefix}
     ]
 
