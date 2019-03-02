@@ -28,6 +28,7 @@ class Gnunet < Formula
   end
 
   test do
-    system bin/"gnunet-config", "-s", "arm"
+    assert_equal "#{bin}/gnunet-arm v#{version} release\n",
+      shell_output("#{bin}/gnunet-arm --version", 1)
   end
 end
