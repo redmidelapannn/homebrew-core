@@ -17,19 +17,16 @@ class Gnunet < Formula
   depends_on "unbound"
 
   def install
-    args = %W[
-      --prefix=#{prefix}
-    ]
-
-    system "./configure", *args
+    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
-    # Move non executable scripts to pkgshare
+
+    # Move non executable script away from bin
     mv bin/"gnunet-qr.py", pkgshare
     inreplace bin/"gnunet-qr", bin, pkgshare
   end
 
   test do
-    assert_match /^.*BINARY = gnunet-service-arm.*$/,
-      shell_output("#{bin}/gnunet-config -s arm")
+    output = shell_output("#{bin}/gnunet-config -s arm")
+    assert_match "BINARY = gnunet-service-arm", output
   end
 end
