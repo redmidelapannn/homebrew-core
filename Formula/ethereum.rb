@@ -7,9 +7,9 @@ class Ethereum < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "757d1c8a236beac386362fad408454e1a7ec93952957ba418b09619a80b3b15c" => :mojave
-    sha256 "5c14b4775121b6785791a4cc5bde7364be288dd2579c39d703e6e21399f9cac2" => :high_sierra
-    sha256 "6c7f55bb3cbe125ee7269acb9eff49b41e1306ca40e13c27fc114b6c3891bfab" => :sierra
+    sha256 "c712ad8dd78c5b932b87e2a34d93892ad8887821de0aa02bf332261234ed8c00" => :mojave
+    sha256 "d3b2af0bce505b8aa8fc7b5fa2edfe30bab6ce0ff7a1b798274e86284e4f3311" => :high_sierra
+    sha256 "cd4022657f95a2bc1ed3783f6e6889f3a13d1665b05c03b268527e38228d74d8" => :sierra
   end
 
   depends_on "go" => :build
