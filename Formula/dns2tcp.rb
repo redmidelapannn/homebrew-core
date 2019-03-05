@@ -6,12 +6,10 @@ class Dns2tcp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f44f4f2e761da51c4552b6c394ae3ee48e2c1ff8b1b506cf35e648b3331b49dd" => :mojave
-    sha256 "d6fb240175854e0a0b5069544a58c4fbcd161d3337288c2f289f48999c4dde10" => :high_sierra
-    sha256 "e948ddde1e95f055a9cd3e73cd2756c22f729d9feed9ebc2929cb3df6fe09584" => :sierra
-    sha256 "2cd5e77bec42f0f5e2715494c38eb8773ab30d53b140509d3f428d38890bf640" => :el_capitan
-    sha256 "3e805ac804eea824b81bd15191b71cdc42d4ac779ebfc1d74d5de51500be18a5" => :yosemite
-    sha256 "2f69efb2f705eb1514e8b46d7daa61379df3f4892cfe2d570c233a18ff109e7d" => :mavericks
+    rebuild 1
+    sha256 "fcc8c99dff63edab1317b6c3ef1945a762cc153ec984bc500608966c24f9b869" => :mojave
+    sha256 "045e8527ef6d3b695e5c8a8054b2110c537e5b3a0800e645afbb0eab694064bc" => :high_sierra
+    sha256 "57016223e37cc946d12947dc69859356c921da5b80cdd8e7e6d838dc1432103b" => :sierra
   end
 
   def install
