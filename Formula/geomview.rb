@@ -7,11 +7,9 @@ class Geomview < Formula
   revision 1
 
   bottle do
-    sha256 "cd70e7bf1004fe4b28933971dc3e817822c2abdd17fd09eb728f26ac85506cb2" => :mojave
-    sha256 "d66bbca7b5fb25556f03f40264d338e5ce99efaeba4e227b14711632a7f97cf5" => :high_sierra
-    sha256 "34cc860cab36fad0c134035897063de637b55c1bd53aafbccd24847af6af3b34" => :sierra
-    sha256 "6857c1bc6d2640c074b53981b2f027eb527a7c103b0c7ab1cd16d868decd35f9" => :el_capitan
-    sha256 "edc57089dc5ba7f2e7ec43c66202f19c460c4a1970f9c60984c0f3fe6c481012" => :yosemite
+    rebuild 1
+    sha256 "9596d14588e309cd199a3404988926e3c99e209c5fcfc1c62d4042c38f5b1ae9" => :mojave
+    sha256 "89eca9d2365ca1f1e667e6d8b930a85d7a49dce72aa1788aa4e294d78c0982b9" => :high_sierra
   end
 
   depends_on "openmotif"
