@@ -8,10 +8,9 @@ class Glog < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "d67fbac8d23e5daac4283c005537f076051a4c98c3ef820a50209579ca6d6700" => :mojave
-    sha256 "578a8d6a064d82e66cb057d4db754965abd0101e77b2e2d9a6552e317667ad4d" => :high_sierra
-    sha256 "5b2995534c71e5cf5a73deaaf8be0578b667280a0b354145cd0743365993b475" => :sierra
+    sha256 "bf945185214e54c7c8c6710d2d9e5d8280667840eb635d45c151e76e801921ac" => :mojave
+    sha256 "d22adef2a88e1b75d68999bdfed890c77df0c3f6e36c3dcc71ec6662314ac355" => :high_sierra
+    sha256 "57d16d0b1aba411680301bd2f8ebdbc524cf0dda42b5907bf2d4757a95e5700c" => :sierra
   end
 
   depends_on "cmake" => :build
