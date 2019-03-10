@@ -6,9 +6,7 @@ class LibbitcoinExplorer < Formula
   revision 4
 
   bottle do
-    sha256 "52ff8c254ed415d258201f8373d74ff173c2aded1d90cfe2943c7ec99b3c30e7" => :mojave
-    sha256 "af697a44b15eb010ddda3c971d4178a8f0816930968241328fe233cf7d6f7dc5" => :high_sierra
-    sha256 "bd30fcbe24c6386a5d63828ba7281a3b61416a909dd978e6dd2b89dad0b02415" => :sierra
+    sha256 "c82a299b39cecc6a06d4c67e0dc4fd9da89c09cf7a9281e476cecc45992acb7a" => :mojave
   end
 
   depends_on "autoconf" => :build
