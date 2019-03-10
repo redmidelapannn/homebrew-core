@@ -4,6 +4,13 @@ class KimApiV2 < Formula
   url "https://s3.openkim.org/kim-api/kim-api-v2-2.0.1.txz"
   sha256 "6b54a9c4bc34c669b8ef00b9be4bbdce6fca2bb813dc1fe7697d618f267860d0"
 
+  bottle do
+    cellar :any
+    sha256 "5fd8485e7ded2dc3ee87a4e3bcd2059c43f2241ac8d20ac7f300ef5ab1b98add" => :mojave
+    sha256 "94aed179d199eb9b70bf67b05aafabcde2e40b2159c91ec23590a95524df2681" => :high_sierra
+    sha256 "968d68ea5af8909170d8206b997620c820cdf75152253f77ece9f289989bec98" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
   depends_on "gcc" # for gfortran
