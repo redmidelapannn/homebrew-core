@@ -5,6 +5,12 @@ class Jack2 < Formula
   sha256 "deefe2f936dc32f59ad3cef7e37276c2035ef8a024ca92118f35c9a292272e33"
   head "https://github.com/jackaudio/jack2.git"
 
+  bottle do
+    sha256 "19b41528d359e8f5e8335d25f42a3a7253656b876d9fa0e8ec82afba3adc2142" => :mojave
+    sha256 "f3cf427780d967fde8be1909aeefbfb362bca49607d0cb1168d7fa70d73aa371" => :high_sierra
+    sha256 "55c4226030c41750567b86a7936e99a649c22b712c1f581fb955cd825c96f378" => :sierra
+  end
+
   depends_on "aften"
 
   conflicts_with "jack", :because => "both install `jackd` binaries and libraries"
