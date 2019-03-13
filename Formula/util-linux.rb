@@ -6,11 +6,10 @@ class UtilLinux < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "977cf2845acc9cdcbcf1b7e92d9c0af0066c5d0cc17df307a123c13180a64e62" => :mojave
-    sha256 "d551dad77ab8c533bab98d5bd91291db1f296564336d59d600f0ce75496a9d08" => :high_sierra
-    sha256 "aeef9c88dd7ea82ac3f71b6f3793b2316b76ee59a8e01cc56f6316efa4e1346c" => :sierra
-    sha256 "f3040a39ad4ffb9eabd9446843dfc3b66df01b3264c875dc68e7339636830357" => :el_capitan
+    rebuild 1
+    sha256 "25ad3e78fe8a37d5553a9a623a2b9f9d08f8d80e15599927553d1d9322e59d2c" => :mojave
+    sha256 "9baa75cd81724ba3031646bd7961a85ac5ab2ed167ee0e760eb4b112b708d2d6" => :high_sierra
+    sha256 "ff4ef56442d8e50c071f9d6fde472e24a8675a8cdf237a4c65bd3967673fdb0c" => :sierra
   end
 
   conflicts_with "rename", :because => "both install `rename` binaries"
