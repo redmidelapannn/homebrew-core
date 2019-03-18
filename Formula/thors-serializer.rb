@@ -7,9 +7,8 @@ class ThorsSerializer < Formula
 
   bottle do
     cellar :any
-    sha256 "4b86902fb5ecb5dcffbcfdc6c1afe86bdf5d3ec84b21ddc1e301cae1f3e1318e" => :mojave
-    sha256 "6af70ec467c673387455eba1f4f6d032aa3dd319fc6736192d4a9115f23c9b5f" => :high_sierra
-    sha256 "3b5cb856a0c0847a3c33295c1fe320752bedd1fb34b6bf55991d1552d4251d44" => :sierra
+    sha256 "8848c5edaea531ec12a1d0409c0c0afd339c7789d4902ad6008c1091b2719fe4" => :mojave
+    sha256 "b80e2b505d9302ed5f3ce7998520b9759516ef931ff55042d9f888222b881ba9" => :high_sierra
   end
 
   depends_on "libyaml"
