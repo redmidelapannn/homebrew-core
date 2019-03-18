@@ -4,6 +4,12 @@ class LibtorrentRakshasa < Formula
   url "https://github.com/rakshasa/rtorrent/releases/download/v0.9.7/libtorrent-0.13.7.tar.gz"
   sha256 "c738f60f4d7b6879cd2745fb4310bf24c9287219c1fd619706a9d5499ca7ecc1"
 
+  bottle do
+    cellar :any
+    sha256 "b76ffe73e7a908106de149c3039832c42b137168417315a47d4c47b2fd60e2ce" => :mojave
+    sha256 "29feabefaa4bb2385f23bd4798d9f0654d88fa59d015db7e1ac0e753b7013d25" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
