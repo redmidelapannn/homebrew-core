@@ -6,9 +6,10 @@ class Coreutils < Formula
   sha256 "ff7a9c918edce6b4f4b2725e3f9b37b0c4d193531cac49a48b56c4d0d3a9e9fd"
 
   bottle do
-    sha256 "f11898e59abf1c9ea9807ab15c7cdfc930bbfe1df14e432e5d2a89f11c405445" => :mojave
-    sha256 "8ceacbb21daeeb2c526d28789fe8d703d437bb72a382a7c3a3c024901f17cae6" => :high_sierra
-    sha256 "3451c10504ed3cc49893e84e6f3e09a0457cd28eb953482489548dfb593d098f" => :sierra
+    rebuild 1
+    sha256 "23f9305956b6b7058b684820175bfbb90bd5c5789a44dd5f1e1ef0e5b92a599d" => :mojave
+    sha256 "3892e6e3b33c3a84a4c528082ea8afd8cd7e373a229a9fc91befc8c212e1866f" => :high_sierra
+    sha256 "44ffefbbdfe30225b527209507694666e1690bb2dd8c07236109271eceadb3fe" => :sierra
   end
 
   head do
