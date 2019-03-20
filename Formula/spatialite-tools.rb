@@ -7,9 +7,9 @@ class SpatialiteTools < Formula
 
   bottle do
     cellar :any
-    sha256 "88d05a58efb6ae3151229766ddc4c3e9c51b0e9a3b9243b196ea390efac9d368" => :mojave
-    sha256 "7011cedf1ed20fdd2700f38247818c4adcf6aff700f6ee3fb6e3a8026554fec6" => :high_sierra
-    sha256 "b3e79ee77a6de71cf4fb9fc834a2430efd836f7be79052956acdc441a60f1778" => :sierra
+    sha256 "88254c871b5423d04e7f7394ab278aa2ea55e290c2fd1ac36bb4da68a5532bb4" => :mojave
+    sha256 "d27157c63d0a85b6c734097ffdc81c7f9f91035ad48d72eaecd963973a5922f7" => :high_sierra
+    sha256 "29396d4183ede4946701aa3651b21c02ebdd3a5761fe3bfd8962067439db8af3" => :sierra
   end
 
   depends_on "pkg-config" => :build
