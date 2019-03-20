@@ -3,7 +3,7 @@ class Libgeotiff < Formula
   homepage "https://geotiff.osgeo.org/"
   url "https://download.osgeo.org/geotiff/libgeotiff/libgeotiff-1.4.2.tar.gz"
   sha256 "ad87048adb91167b07f34974a8e53e4ec356494c29f1748de95252e8f81a5e6e"
-  revision 2
+  revision 3
 
   bottle do
     sha256 "820d3dff282f570595d0a0f184434e8a4673d17241bb5746e7c2a64434b66a8b" => :mojave
