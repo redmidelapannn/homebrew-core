@@ -6,9 +6,9 @@ class Gdal < Formula
   revision 2
 
   bottle do
-    sha256 "448a4cc4dde65b98bae3abaa94e7a037d95cc002ba12e9dc5fd56ed21b7b7a3e" => :mojave
-    sha256 "322f5c80ead8cda7e2466099c5e1fb6306901646234a457cdfe1b8f14e5ebf22" => :high_sierra
-    sha256 "2430ac950db9240c1548d94d410c015c202f30dd10985c229f43c1dda6032966" => :sierra
+    sha256 "7d8be2a01a65638393b1a435f5060eed333a07ab989508d74d91ffb489b05a68" => :mojave
+    sha256 "6d381cb288306a25ff0d895ddb4e358e2707aef873061cc5b4d25763fb9db462" => :high_sierra
+    sha256 "ec902fe1bfc0b42edfbf36179c87b98978ced864926bf0200580324a2cfd4915" => :sierra
   end
 
   head do
