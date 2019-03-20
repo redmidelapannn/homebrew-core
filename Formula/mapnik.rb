@@ -7,8 +7,9 @@ class Mapnik < Formula
   head "https://github.com/mapnik/mapnik.git"
 
   bottle do
-    sha256 "dad661596f6ccbc19dc3ba0943b37547faf3b874c2f27951683b1fde2aa9c5f5" => :mojave
-    sha256 "aafd2fcd785323de7be9e5460826a63852efe57b314e329b916a559fd73d0579" => :sierra
+    cellar :any
+    sha256 "37298145540df4db39a2a6173afe7cda4222b5753e18460494622c986712a4b8" => :mojave
+    sha256 "8818e83ea207a81beebc93552454b7a1773bc32b31cb7cab4a2f386fd0e73f54" => :sierra
   end
 
   depends_on "pkg-config" => :build
