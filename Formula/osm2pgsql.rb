@@ -6,7 +6,6 @@ class Osm2pgsql < Formula
   revision 1
   head "https://github.com/openstreetmap/osm2pgsql.git"
 
-
   bottle do
     sha256 "f549068475acd4c81f6a0da191702ea105d9c29f89e1c811cdde6c001909f031" => :mojave
     sha256 "ec4a8aec68bfece0b4b1e5709c74ac5a28cad76d2266da76fca4405c4c6b6d32" => :high_sierra
