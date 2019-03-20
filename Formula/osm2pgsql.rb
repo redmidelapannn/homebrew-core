@@ -4,6 +4,7 @@ class Osm2pgsql < Formula
   url "https://github.com/openstreetmap/osm2pgsql/archive/0.96.0.tar.gz"
   sha256 "b6020e77d88772989279a69ae4678e9782989b630613754e483b5192cd39c723"
   head "https://github.com/openstreetmap/osm2pgsql.git"
+  revision 1
 
   bottle do
     sha256 "f549068475acd4c81f6a0da191702ea105d9c29f89e1c811cdde6c001909f031" => :mojave
