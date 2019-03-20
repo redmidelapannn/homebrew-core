@@ -7,9 +7,9 @@ class Mapserver < Formula
 
   bottle do
     cellar :any
-    sha256 "3dfb756ff659789cf4253595aa22d2ab0b2b4b6b7bf6cbf4cba6853237b626dc" => :mojave
-    sha256 "ce339daff8744842eb6c82bcb034fce73ec2f53dfa4c522a02ac01382766affb" => :high_sierra
-    sha256 "792a125e13694bdcba3023bf0a068d345050cbf479cb445dd01b96a9772caaf8" => :sierra
+    sha256 "6a5b825dfc901b5f7ec2d815b71b0b3afada675bcdd1ff9af848c538358fb65c" => :mojave
+    sha256 "0836d6e1361f662b42fe75ac212a6bd6af3a4f0c1fd9727f36c71524a923bf5f" => :high_sierra
+    sha256 "63182df874adc8f00a1023e63a8302b743d95d6fcec951c5f3c9bc19bdc31b16" => :sierra
   end
 
   depends_on "cmake" => :build
