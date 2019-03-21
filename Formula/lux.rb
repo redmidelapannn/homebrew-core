@@ -4,6 +4,13 @@ class Lux < Formula
   url "https://github.com/hawk/lux/archive/lux-1.19.3.tar.gz"
   sha256 "e2dd36275c76a087a4b4577bd056a6928a5e5ba5b00d8c366e2a4f94b16f921e"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c3d5307dca009a9bb397ee96c9a6ca6e12479f99396766af8d178f86966b3e20" => :mojave
+    sha256 "94cca20e67cb8c1652a6807c195a5ed1ca2c734995cd99386f74b6b311b2de8b" => :high_sierra
+    sha256 "cf83a49267b266224972628402d5115d87bc2700349b982eb99194ea641cbfe9" => :sierra
+  end
+
   head do
     url "https://github.com/hawk/lux.git"
   end
