@@ -3,6 +3,12 @@ class Trojan < Formula
   homepage "https://trojan-gfw.github.io/trojan/"
   url "https://github.com/trojan-gfw/trojan/archive/v1.10.1.tar.gz"
   sha256 "7524fbff42013528dd19b2202cab0ea24085cbdc153d394d086e6bf8294b889e"
+  bottle do
+    sha256 "7fb70c131d4645de461d51a41720ecc5a0b6394c60384213f43bcb2f3aeb380d" => :mojave
+    sha256 "177f471edaa599373b01ba6df68334478937291fd427798f95ec654d5588e7bf" => :high_sierra
+    sha256 "49b580a32b3987a00909c7fbc425e90ed6fa53622acfc71b0ae31b69b62bb853" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "coreutils" => :test
   depends_on "python" => :test
