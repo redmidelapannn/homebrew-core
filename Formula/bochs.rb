@@ -6,10 +6,10 @@ class Bochs < Formula
   revision 2
 
   bottle do
-    rebuild 1
-    sha256 "e891728542536430a5d04c6fcd645e53fe3521d9a4f0aa4f3ba7eff175b1066b" => :mojave
-    sha256 "2c21df2f382582ab435e1f9534aea7609a59c080d581ca0b1963f0e1720cdc66" => :high_sierra
-    sha256 "5a80b2f0e3447bebc7c29ba7f3b19b1038e84409f5c33766fb029a49ea64ad5a" => :sierra
+    rebuild 2
+    sha256 "00273af48295bb4be3346cf6389e63dfdadc6ae36117f8b192062fec1c6f3170" => :mojave
+    sha256 "e6fec959c1e050146dda871b47b31058fc688115abf5dc9961878cdfcc88fb2f" => :high_sierra
+    sha256 "3c1845a1b84d7608fd140fb4cb34bbbae2bbd839f991082e2ba410309d28e74f" => :sierra
   end
 
   depends_on "pkg-config" => :build
