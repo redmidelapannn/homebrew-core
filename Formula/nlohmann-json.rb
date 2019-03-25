@@ -5,16 +5,12 @@ class NlohmannJson < Formula
   sha256 "80c45b090e40bf3d7a7f2a6e9f36206d3ff710acfa8d8cc1f8c763bb3075e22e"
   head "https://github.com/nlohmann/json.git", :branch => "develop"
 
-  depends_on "cmake" => :optional
+  depends_on "cmake" => :build
 
   def install
-    if build.with? "cmake"
-      mkdir "build" do
-        system "cmake", "..", "-DJSON_BuildTests=OFF", *std_cmake_args
-        system "make", "install"
-      end
-    else
-      include.install "single_include/nlohmann"
+    mkdir "build" do
+      system "cmake", "..", "-DJSON_BuildTests=OFF", *std_cmake_args
+      system "make", "install"
     end
   end
 
