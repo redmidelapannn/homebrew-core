@@ -6,13 +6,10 @@ class Pmccabe < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "660ae3ce966863082ba287ba9e52c0772c41e1d58571e02c3d898b71ac4682a5" => :mojave
-    sha256 "054dd89d0934715b169875d8d0bcce39db919550752eab9cadc083eab0e148cf" => :high_sierra
-    sha256 "220285c0f0ae07835785574504d1d7730fb2abc06ddacfb76e1fe73f999d2cc1" => :sierra
-    sha256 "d6189f6ae7341da933653c687adec0bb8952b14ed8a2883b19aec4db90b65eea" => :el_capitan
-    sha256 "cb369d2f04ce0fccdb22b2640f1f6e37fc056b6edda79767474040cb52f76936" => :yosemite
-    sha256 "d64603cace1f97227e6efc2c26f628fece4e49f762e1e6d0903400a579be0a0f" => :mavericks
+    rebuild 2
+    sha256 "91619989c38fd57402e0b92bbb652181bffc9cd3aa818561440f911bfdcf86ac" => :mojave
+    sha256 "f377f080119d3226504a098dea1cc804ab40b134e4fd467950d67d77c64e565c" => :high_sierra
+    sha256 "1a7085b6a2e17e01cca81e6aabe58a2491b1ba7a4541206da9bc5dfc99fd7ef6" => :sierra
   end
 
   def install
