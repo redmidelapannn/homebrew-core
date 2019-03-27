@@ -1,8 +1,9 @@
 class Plan9port < Formula
   desc "Many Plan 9 programs ported to UNIX-like operating systems"
-  homepage "https://swtch.com/plan9port/"
-  url "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/plan9port/plan9port-20140306.tgz"
-  sha256 "cbb826cde693abdaa2051c49e7ebf75119bf2a4791fe3b3229f1ac36a408eaeb"
+  homepage "https://9fans.github.io/plan9port/"
+  url "https://github.com/9fans/plan9port/archive/de43b162.tar.gz"
+  version "20181114"
+  sha256 "4a7e3eff1ed52d49728bb5a3f9787915e38b006962e7ff8c196a556d272470de"
   head "https://github.com/9fans/plan9port.git"
 
   bottle do
