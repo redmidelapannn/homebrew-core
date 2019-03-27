@@ -8,12 +8,10 @@ class MecabIpadic < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "30967b4167d34f05c79f185d71a40198fff4067d0cce82aed59383548c898681" => :mojave
-    sha256 "ef5cf167b05fd74457d5c31a46750450e8f80720ebc705766ee10df6ed41a861" => :high_sierra
-    sha256 "33f42c18d7347708a56d8846c0bde5c8291b7685ce06b342e96442bca35f6663" => :sierra
-    sha256 "9f0ae0a62141e3b28807349cb7a9560e36770acb869f4a4e7a54ea1a28ef8ba5" => :el_capitan
-    sha256 "55703c812de3e7cff503b9cd1eafa0656b3f17c4885165ce4d8e4d2b2356050e" => :yosemite
-    sha256 "0a9ea36b7cc03f73ae34f72e078b7e84ebe814cf8e1cfbea2d5f876c1893b1c5" => :mavericks
+    rebuild 1
+    sha256 "ab5b2ec24171d0afbdb691593b060090090114d93334838477d87a560567ad13" => :mojave
+    sha256 "ab5b2ec24171d0afbdb691593b060090090114d93334838477d87a560567ad13" => :high_sierra
+    sha256 "803aea7f081b22d67aa29030ddb628d9d6dc2ba94d498ac5eca9463fbcd4c116" => :sierra
   end
 
   depends_on "mecab"
