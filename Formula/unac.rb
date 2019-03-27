@@ -6,12 +6,10 @@ class Unac < Formula
 
   bottle do
     cellar :any
-    sha256 "29753f2d4ea3f9a56f9a3d8fdca4c4fe47044ff1bc986d9ecc06d5f376197da6" => :mojave
-    sha256 "eade4a2fba6e5828dccd3779b5e6681ca2558dbde421639624f089be835c55e8" => :high_sierra
-    sha256 "b97f2799eafd917f8fe1cc47c39634bc91a19ca452ce11ec8fd5edf37ea1dba3" => :sierra
-    sha256 "6c9d63dde182a55e237e63cfa4ab625164ce275e343fd88003483227bd7439bc" => :el_capitan
-    sha256 "0db9b14eae2c3db5d2d268deb4a3369557a13d35dd216f4ea50aa0776eb56fb3" => :yosemite
-    sha256 "1fd7af2c4ef86426dc63f80a14076a37ebabced46a572caf1b0e9fe760ab64c1" => :mavericks
+    rebuild 1
+    sha256 "77c4929c8a5feecf16ed97e6b3ef94af381bce997e7b132e02cd07057e507676" => :mojave
+    sha256 "6790d3251b57d31a5bce12ad4ffc356231a69e77cb1f0510ed9126b7c43f0af2" => :high_sierra
+    sha256 "84dedc5f1642a17b8bca50ed77bb58f4a3a4d450c0635790031c31d1f4944ba4" => :sierra
   end
 
   depends_on "autoconf" => :build
