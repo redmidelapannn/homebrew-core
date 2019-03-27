@@ -16,12 +16,10 @@ class CdDiscid < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "158d91563b2e79574c0a336f775b49033d85ce3b290f122dae853dea45841f5b" => :mojave
-    sha256 "26b88be0312f960484625161d94adf9a44aa88ef5817ba28b61af520a6e17e03" => :high_sierra
-    sha256 "6b0d9c55a1adfce8a2c6e9eabd00c37118a05b60678564e7a9695d876bca117b" => :sierra
-    sha256 "f0c17cfc3c345c661104a6f29562b766cac2a80747feea0c26cda04ece3c8326" => :el_capitan
-    sha256 "3331be095997a1e5e6acb9f82f5e5473ed51c0f35976229371dc1d0c703c2e3b" => :yosemite
-    sha256 "86f0066d344a2a0a37e3c00d08255d4a505b41cc2c38e7d33ac643d16af8ad71" => :mavericks
+    rebuild 1
+    sha256 "42608678998c62e99c31dc32694e9950243392976fa9db579c81c12e1d27753a" => :mojave
+    sha256 "78dfd2de8f6ad26176be40d87ae90f198fa577d3e8c0203ef18d3a351ed66f52" => :high_sierra
+    sha256 "a0021bf86d0cd09cdb48790d11fc5f33718c59ed5cee88ccfd7630e9ac888135" => :sierra
   end
 
   def install
