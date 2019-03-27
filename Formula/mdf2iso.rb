@@ -6,13 +6,10 @@ class Mdf2iso < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "444df3ab6a8ee34700f26459e93488d7ac3d3974ea29baa5d83f59d0014f6232" => :mojave
-    sha256 "b41429cb8a4191a705b656b627a375cc32aaf8992cb241e30fe6c66c4ab56c9c" => :high_sierra
-    sha256 "bc1358412281b1e486d9d1b6d25ae5665b02ac14f93f03603a966bd44ffda1d7" => :sierra
-    sha256 "fbe092bfc501d4abf8b0df052e26307219ea4bb9fb4eddb20df8b7734ff7fdf5" => :el_capitan
-    sha256 "aab6c1b85c8f863016f7db7ca6b35c56cc7442a6bdf6876f7b9b8ba24b58e5a6" => :yosemite
-    sha256 "8a755700501039ec87145fa6acd0d37e9ecaacd538481bf556e7ed69330bd085" => :mavericks
+    rebuild 2
+    sha256 "d08e30e1d5ff2fd86bfe0db4252eae0f7df14bed81122a74ee383f00412cd7e6" => :mojave
+    sha256 "40ed01e97edd92b1bcdd37df1620051ad52de21b01d90b3bee16dd50c2b7c06d" => :high_sierra
+    sha256 "b451a7957d4cd3a21d97d7b407be75b105c588556dc4e49dfa24ec86e4f3f3ec" => :sierra
   end
 
   def install
