@@ -5,11 +5,11 @@ class Runit < Formula
   sha256 "6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18"
 
   bottle do
-    sha256 "e70c75527e992d70255d13631b56e7f1629cb1dc3583881967c6f4468fd296ef" => :mojave
-    sha256 "6f5e25b4f9d7d9128726aa72f97fda3b480cd36a5002041210e11303811f2369" => :high_sierra
-    sha256 "4eefe737db7b327dd6c595f57f34a8b564e170427ffc24ab35c4cd5ee79a6ec1" => :sierra
-    sha256 "3dbc4f1ba3d86e5f3d6900a19ff90b32d2aff91ffb68914be8740d916f3622da" => :el_capitan
-    sha256 "c268f70014699ba6be9a198686547ddd150f0b779aa0a1e623df60068d8cd4be" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "389e7914cce05d6967b4e5cd6e07a301043ebbfcf1a4478fc019a4097bcf935b" => :mojave
+    sha256 "affce0583f8616e3ded5a6b413f807782300e27cfaeff5cd5211e1f087cdaf8f" => :high_sierra
+    sha256 "62bdabe2cfecd8b3f5d43328627f164c65adfcc26ff284f4b963c77a89f69890" => :sierra
   end
 
   def install
