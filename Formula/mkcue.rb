@@ -7,13 +7,10 @@ class Mkcue < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "8efe5acfdcd27c465e5b570d4d0a602370912fa83dd6edbe73b26144e420429c" => :mojave
-    sha256 "284cfe9fe5a81a75f59610d93710627167dbc48c1d72b89311562c87cea8f8ff" => :high_sierra
-    sha256 "b1bec8cabaddb6a78a3c2e0a13f73eb426922b64e6d9ef3c0103e92e203f6af4" => :sierra
-    sha256 "7677f358f99d733a6f43d02cbf5365f3c59b4f93c6a59ee05bd48045a12cbb52" => :el_capitan
-    sha256 "ddd5ad0b0a05a4fe74e0bfa18390370f547e3d21c00fa2499e50021ea3482ee4" => :yosemite
-    sha256 "e8b51b15862be5637828a522e1026409c6eef947836cf787787769d7c5b8b5de" => :mavericks
+    rebuild 3
+    sha256 "04428c0d5efc4d32dc9ffa394251f7723e19da35870c8c41cdcba403942c55fd" => :mojave
+    sha256 "f3dff9e1885d52c0b0767d083b29ab3a1e59a930f550ac566851fce5cc8b0f59" => :high_sierra
+    sha256 "16662e1eaa126972566d11c22e5112c9d0aeb0baa98dbb77bb5a55e5f343eb96" => :sierra
   end
 
   def install
