@@ -8,12 +8,10 @@ class Uni2ascii < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "97c679d5f838e03832a99e83068eddcddfa5276971f8edcd19b53a33d0179305" => :mojave
-    sha256 "e95934b7cfcfc96467f1d9d36ec91e04e53fa0edd71f9c0b8aff6e357128de5a" => :high_sierra
-    sha256 "298ca15b89643dfa4946d485105fed7baa6934556c63d2bf97a3b7af0984c325" => :sierra
-    sha256 "3cc5e96fa9c49edb0b06d60af238f4a4803feefe22bbf5924698649e8c4db5fb" => :el_capitan
-    sha256 "0200efd85e37c8c6e2582f82ff8fbb050bba07d31a1bf3720837f5d30da6a54b" => :yosemite
-    sha256 "b58b9d744048c9e2cc81e75d46c94926d14b2c25a613a05cd0835882221ade7c" => :mavericks
+    rebuild 1
+    sha256 "e2b98a53ed3ec8df7b2f46cb8587a77e135ea44fb8ca43647fe8566db8dd8130" => :mojave
+    sha256 "50d395be9cafe5e360ba492e011f5739e47d2a6cb1805800e3572dff341a5c3a" => :high_sierra
+    sha256 "bde4da96f6689cce8eacc1656b0f31367a1e8c3d314a45b2bec1038c98944941" => :sierra
   end
 
   def install
