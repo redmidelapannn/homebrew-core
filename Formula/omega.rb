@@ -6,11 +6,10 @@ class Omega < Formula
   sha256 "2eea0344a0703ba379d845b86d08a9c2e9faf0deb21834d9ea6939b712c6216e"
 
   bottle do
-    sha256 "0aff76c67bcf3033e2ea54a794d93b85531154be66bf88f1b9cb1c5869337ecb" => :mojave
-    sha256 "7fb7918a5ffd7bb9641dc939ed792586ddc8dc4985c5c9eb442a2196a93b9dcc" => :high_sierra
-    sha256 "53f9899d6a964d8ae8b0de390dec626836aa24a1004d45352dd7746f53af7934" => :sierra
-    sha256 "cdba43e3a877484ee608c3c9a55fc96ebf38b17fb78e1bf2f5b84881aed170b8" => :el_capitan
-    sha256 "be5b012a19ea29890fac384b2a1ea3ffe96654da8fa65390c8345fa4d6c88900" => :yosemite
+    rebuild 1
+    sha256 "f80058e480ff4ae9d9aa7270788166f181fea110176d59c4542749954addabdc" => :mojave
+    sha256 "cce6eddf43979c41a96788c924f36e179c7572909516833a084bf32020faca91" => :high_sierra
+    sha256 "586892ed1ae743fd4a6dee56f59a8e3de87f9206ccff9577edf17292b3f806ad" => :sierra
   end
 
   depends_on "libmagic"
