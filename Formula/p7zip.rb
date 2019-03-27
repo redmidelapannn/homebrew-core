@@ -7,10 +7,10 @@ class P7zip < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb715042a9067df735cd7d032a15988da430fbf5a297d9624b9a4a021af6fea2" => :mojave
-    sha256 "fb52fc214eb4ecd032666997976a514212adcb3c33ca23f15547310d5dc14a6e" => :high_sierra
-    sha256 "a2b914eebce9108f278e33b53ca798999eb81397c370bd1eaa7f63ddc5e51867" => :sierra
-    sha256 "229fc3a0badd5325e69b93121c9d55e7860110093e57ef46af063daccb2af372" => :el_capitan
+    rebuild 1
+    sha256 "02255b08aef27b539f3fe17d64e45b7a9315a23d1063863c939c7d3ca5492eb1" => :mojave
+    sha256 "3dd79783cfb9a66e220b94615ae88e3cf94dd41f60f4b07f81c30daabef8057e" => :high_sierra
+    sha256 "d5a5d955cbe900f1a55142ba1c0265b17bf12118765e9bf369e1e02c499cfdad" => :sierra
   end
 
   patch do
