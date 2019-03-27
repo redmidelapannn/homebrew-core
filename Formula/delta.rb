@@ -6,13 +6,10 @@ class Delta < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "a6116fb7212cb2271b5c73c1bb53f51aeb33bfcc734e77bd42396a968744a42c" => :mojave
-    sha256 "46734f3eb952455ecd9237ce455aebb3e66be791bbf190021d894dae39d55b66" => :high_sierra
-    sha256 "07e775a1054966ad2924512386643bc8cb4ef3ad7e12ce9a140015c82fba3072" => :sierra
-    sha256 "202409012500969cfd034c9d44c441a809445a3b367d514357346438aa850f14" => :el_capitan
-    sha256 "d3374cc3e84c93bb84615b1669503ea8b708ab65baf629ee0be9a728b12b10bc" => :yosemite
-    sha256 "04102ae55ffc2cc4351816b010544b854c21f1c5e2a462a6af0e57ec2f57b501" => :mavericks
+    rebuild 3
+    sha256 "a82f1025787260ba2068d42d7f402905ec77e08271414e68ba123f71bafb3d93" => :mojave
+    sha256 "3e74bd6507988793ac19a22556b8f94e9ea5ccd1d1d6c4c2ef9ec1c2d9a4b4e7" => :high_sierra
+    sha256 "e70569dab2d7b6e40d4fe2a0d82c48797965561eb249e69e2cda387ce1df1e15" => :sierra
   end
 
   def install
