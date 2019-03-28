@@ -6,6 +6,13 @@ class Squashctl < Formula
       :revision => "8c3d21c6525a6be34f92965209d0a85df06178a0"
   head "https://github.com/solo-io/squash.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0602ebdc125c6468b9023bed988cd03f19c3e3ca5234570cfad5452b914cfa38" => :mojave
+    sha256 "89c54e1fa073a52ca8d48749cb6795b34170eabe61896de7ea6a61af19f1114c" => :high_sierra
+    sha256 "53713ed649f29194aeab0f106318debef713bae46d1b85a80c4f50cb84f84e4c" => :sierra
+  end
+
   depends_on "dep" => :build
   depends_on "go"  => :build
 
