@@ -35,7 +35,7 @@ class NlohmannJson < Formula
       }
     EOS
 
-    system ENV.cxx, "test.cpp", "-I#{include}", "-std=c++11", "-o", "test"
+    system ENV.cxx, "test.cc", "-I#{include}", "-std=c++11", "-o", "test"
     std_output = <<~EOS
       {"list":[1,0,2],"name":"Niels","object":{"happy":true,"nothing":null},"pi":3.141}
     EOS
