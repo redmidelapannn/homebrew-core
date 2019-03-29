@@ -7,10 +7,10 @@ class Aria2 < Formula
 
   bottle do
     cellar :any
-    sha256 "a5244c4733c43fdd2441e97abe12211cc718a383d5e7c3be2117cec7d87f9424" => :mojave
-    sha256 "8fe4633e41f67b4a80ad80f6c3423641d39e091779636c7b62e046c50331fe87" => :high_sierra
-    sha256 "04b6207d99d9882c41f11178a70f61c5aebc43e9db0d8ea87c2d870de2f7c646" => :sierra
-    sha256 "82f36d7a6cb88b292430a5ea05389e6e066f7e059df2468a2639cdd7844988c4" => :el_capitan
+    rebuild 1
+    sha256 "879a32c5fc67a5270b5ca8ab9230705f162d0fda12e22f87a7107b11f63a1b02" => :mojave
+    sha256 "3bfca06d1c542d5656e214ca71c05562f40ef18b8f6e076133e4873ce3241368" => :high_sierra
+    sha256 "eea0d0408f34399e7940fb046802d4d3b1c6d631aa196916a84dbdf6afff7290" => :sierra
   end
 
   depends_on "pkg-config" => :build
