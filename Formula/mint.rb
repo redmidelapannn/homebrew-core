@@ -11,7 +11,7 @@ class Mint < Formula
     sha256 "3309359ee8f8b00c8c57b3361a840fc5a2917d9d212dc7bdf3f34c7327decd82" => :sierra
   end
 
-  depends_on :xcode => ["9.2", :build]
+  depends_on :xcode => ["10.2", :build]
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
