@@ -9,12 +9,11 @@ class Virgil < Formula
   depends_on "go" => :build
   def install
     ENV["GOPATH"] = buildpath
-    dir = buildpath/"src/github.com/virgil-cli"
+    dir = buildpath/"src/github.com/VirgilSecurity/virgil-cli"
     dir.install buildpath.children - [buildpath/".brew_home"]
     cd dir do
-      system "dep", "ensure"
+      system "dep", "ensure", "-vendor-only"
       system "go", "build", "-o", "virgil"
-      system "make", "virgil", "TAGGED_VERSION=v#{version}"
       bin.install "virgil"
     end
   end
