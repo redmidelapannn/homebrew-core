@@ -5,6 +5,13 @@ class TidbServer < Formula
       :tag      => "v2.1.7",
       :revision => "f5b52cb9dc5a8a546121aa6ce1fc672bd567ca48"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "193eb21065a530ea2d99f3c9f1c0d722ccd04074c52be5e4391cd945ee78d316" => :mojave
+    sha256 "aa7be837530c13ed2ae72a4e985f9bd8cd6a2c5aeb983497100044553434bfec" => :high_sierra
+    sha256 "d3a87023ceb5978c8611c3bc186e9e2d202e63fa80c3b511e0c07fd9c72fc85b" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
