@@ -1,11 +1,22 @@
 class Virgil < Formula
   desc "CLI tool to manage your Virgil account and applications"
   homepage "https://github.com/VirgilSecurity/virgil-cli"
-  url "https://github.com/VirgilSecurity/virgil-cli/releases/download/v5.0.1/virgil_5.0.1_macOS_x86_64.tar.gz"
-  sha256 "0f149c695e6809f48c5f86fd5d8fea35d9eb787f0792aae6c4edfcd00d99206c"
-
+  url "https://github.com/VirgilSecurity/virgil-cli.git",
+     :tag      => "v5.0.1",
+     :revision => "03ddee65e9cecbdd7ef55b1285c0ca70758d6d40"
+  head "https://github.com/VirgilSecurity/virgil-cli.git"
+  depends_on "dep" => :build
+  depends_on "go" => :build
   def install
-    bin.install "virgil"
+    ENV["GOPATH"] = buildpath
+    dir = buildpath/"src/github.com/virgil-cli"
+    dir.install buildpath.children - [buildpath/".brew_home"]
+    cd dir do
+      system "dep", "ensure"
+      system "go", "build", "-o", "virgil"
+      system "make", "virgil", "TAGGED_VERSION=v#{version}"
+      bin.install "virgil"
+    end
   end
 
   test do
