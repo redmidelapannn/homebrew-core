@@ -4,6 +4,13 @@ class Virgil < Formula
   url "https://github.com/VirgilSecurity/virgil-cli/releases/download/v5.0.1/virgil_5.0.1_macOS_x86_64.tar.gz"
   sha256 "0f149c695e6809f48c5f86fd5d8fea35d9eb787f0792aae6c4edfcd00d99206c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "60d75c9a06a368c86c7e4070907b46642d58c44ff6cb3aa16ea30bd6c95ea921" => :mojave
+    sha256 "60d75c9a06a368c86c7e4070907b46642d58c44ff6cb3aa16ea30bd6c95ea921" => :high_sierra
+    sha256 "3ecb4507e3e6f24128077f6ebbaff1348cba77612ce16e7553196a3d0ed9c34a" => :sierra
+  end
+
   def install
     bin.install "virgil"
   end
