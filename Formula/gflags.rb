@@ -7,10 +7,9 @@ class Gflags < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "e3176e449321b1e2070a9fabc796e6820f2f0f1f4db1c3916f58e6cdd52e510e" => :mojave
-    sha256 "4beffa84f47bdfd9a1a90d9e591d9af4616db464d63046018ef0c58936d58366" => :high_sierra
-    sha256 "6f06466ca55f2174daecbc935e0bca1f2aed9bfb94a92f21d52fb4db1e07cd4a" => :sierra
+    sha256 "29392f96935748355b829b5612ebeed3f8fcb09b713059afec7d2bfc2eb33e96" => :mojave
+    sha256 "bcfd789a7ea95a1cdd894530ed81447509637ddc5eaedd170f0add7b55ce1d3e" => :high_sierra
+    sha256 "cf9fd9dca9b8966b981b097ed0be928096f4e1491bebe1f293be1a5c13f2f556" => :sierra
   end
 
   depends_on "cmake" => :build
