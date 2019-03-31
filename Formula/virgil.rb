@@ -19,7 +19,7 @@ class Virgil < Formula
   end
 
   test do
-    result = %x(`virgil pure keygen`)
+    result = `virgil pure keygen`
     assert_true result.start_with?("SK.1.")
   end
 end
