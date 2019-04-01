@@ -5,6 +5,12 @@ class Rdm < Formula
   sha256 "8f7244813d5a82bc686a3af9f98e1372479c9861d724ba7e7a2b162ccf35d9bb"
   head "https://github.com/uglide/RedisDesktopManager.git"
 
+  bottle do
+    cellar :any
+    sha256 "4253ee12c3358b89372295158498551b2e7605351529c88bd6b1fe4064d849f8" => :mojave
+    sha256 "69b608579579c5c9034e6b7995218525b6c7f61969ad6af026cf3e5d81dbb95b" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on :xcode => :build
   depends_on :macos => :high_sierra
