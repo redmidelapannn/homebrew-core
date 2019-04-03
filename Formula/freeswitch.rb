@@ -7,10 +7,9 @@ class Freeswitch < Formula
   head "https://freeswitch.org/stash/scm/fs/freeswitch.git"
 
   bottle do
-    rebuild 1
-    sha256 "58a7bdb234edccfcd4d6ec0058d4170aec5051e3540b5b3047ae3e90fdd26f47" => :mojave
-    sha256 "01903ecd5069961415c1493a1bf09b3bce19bb9fe7155883fc34d0cbb146384f" => :high_sierra
-    sha256 "e9c57548ee83a2dd1e48611395c3b9d0b7e07d3389c80bfe7ed795f8b11138c6" => :sierra
+    sha256 "1669b30935c801aeba85f30776b1f04f9452d0f006011debb781641f52086401" => :mojave
+    sha256 "219ecf70e72061d7242647e04aefa9f2cc8355101a59225fd07b431a8fd0b9fa" => :high_sierra
+    sha256 "a7d63596ef3e33ac1c7110022eb8476e06a5eff30478bc8759ed7859f7df6ec9" => :sierra
   end
 
   depends_on "apr-util" => :build
