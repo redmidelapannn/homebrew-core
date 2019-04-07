@@ -6,6 +6,12 @@ class Lux < Formula
 
   head "https://github.com/hawk/lux.git", :branch => "develop"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "749b616b2cc188ab29f4d75ef288a806ed8724da394b48f5e970967b84f35853" => :high_sierra
+    sha256 "4847931f135c8655244f7752c5e2f62cb1a54abe7d82553e95d4937b23e6f215" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "erlang"
 
