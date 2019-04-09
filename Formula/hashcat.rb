@@ -8,10 +8,9 @@ class Hashcat < Formula
   head "https://github.com/hashcat/hashcat.git"
 
   bottle do
-    sha256 "e3b79b41df423b3574012ffa580e92b6b4e38d24bdfc652692af128e6cafb1ce" => :mojave
-    sha256 "4f16d55d6180cf0f4dc8bb93c5c747919ff81ca73f49235c9a906020508ae44e" => :high_sierra
-    sha256 "d03c80e77174389dc5c6983a7400810abcf07ecd8cdc88de546a185a9014c727" => :sierra
-    sha256 "63ca34c2ed34998d779e906210e06f3f46c4becc9410c00985dfdecf0daf5f8f" => :el_capitan
+    sha256 "6a307777c26560e36ad259c381bacde264a2b9d52806df7a748ba0b8af9f62b4" => :mojave
+    sha256 "ec0665cd3e4685f37302e50d93b1d99f9e57c64ad57f5a96745af8616244469e" => :high_sierra
+    sha256 "66778ce0582a93ad30cc08c6f36410f1b4b437ba62f00ccab95576716999bac9" => :sierra
   end
 
   depends_on "gnu-sed" => :build
