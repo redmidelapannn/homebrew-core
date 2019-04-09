@@ -5,6 +5,13 @@ class Gn < Formula
     :revision => "f5fc06000379fe2c11fc130431e826e860ea6aae"
   version "1547"
   sha256 "8094c4ac075f918fdb28af10e16c9d4e41481702bd14a2c06cffd50fe03de9ba"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "bfbc67127e88b06cae938e96880f21fe5d9787622941db2af040a8919b565f39" => :mojave
+    sha256 "81a07f91d6dfef812114b71f3fc8aebc8409d47cf5ff18f0eae0b66804178025" => :high_sierra
+    sha256 "322cfc5804958c18301f5e70ed86980f51bac29a2a5989af7849435cdc81df92" => :sierra
+  end
+
   depends_on "ninja"
 
   def install
