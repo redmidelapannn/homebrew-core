@@ -5,9 +5,11 @@ class Libdazzle < Formula
   sha256 "949ed80bcef8a7816a8f281e0c4389e654a1dfa1912226fe4a0d290e023b28d6"
 
   bottle do
-    sha256 "49bc4d85d120c7e8b7e7a5d0f6ebcd5659277f69d8689ee2ee254b107d2d67f6" => :mojave
-    sha256 "f9073d4d24e516af6bfba1fe36f36f2eaafd6c283fdb0b47b7bbf45adf0850bf" => :high_sierra
-    sha256 "904dcdd8c24471ab8d63651f6e358023d262f172ce99447eeedfb3b490ad3f88" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "121d5bcbbedb5a5453d9f261d9e5a150ab2caff08a2702839baf0129a450babe" => :mojave
+    sha256 "9284a9ea17aaa80b3471652d6a0adc86dbd3c10d413b2c5c4ecb659eb2ad2e42" => :high_sierra
+    sha256 "f0565065c307bd202ab7ab3e7435bd0b34dd21b966261e00e29efa3b8599925b" => :sierra
   end
 
   depends_on "gobject-introspection" => :build
