@@ -6,9 +6,9 @@ class Snort < Formula
 
   bottle do
     cellar :any
-    sha256 "2451928b0b98275ecedb347024ea33ed80bb7fca6e67f6f60bd2343159d960d5" => :mojave
-    sha256 "e90378116097477c70bf92381c6fcd5ac122939a1c06c0afaadd797e38fd549f" => :high_sierra
-    sha256 "7143a99771c1482070dc7802da36bc25cc4df7c59c55fd4ad9cb3646e1b60fe2" => :sierra
+    sha256 "a88664fb7e08828749d973c0e3d112d475e8ca0f453573625b7e01f7dbc17b68" => :mojave
+    sha256 "ec6d4b24c30dd55c2e55352b08e5b89ab05f493845a281e660c068b12f91c5fa" => :high_sierra
+    sha256 "fc6e32c8ae4360824571755004c7395c2dda524b8df6b1f2452eb11aadfe805e" => :sierra
   end
 
   depends_on "pkg-config" => :build
