@@ -7,6 +7,12 @@ class ElasticCli < Formula
 
   head "https://github.com/avalarin/elasticsearch-cli.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b7253f438495dda6a16e5a1532cd9970d35dd5f23aa63941a21b5fe1dd2cc582" => :mojave
+    sha256 "e38a33685817555dd3a5bcfe95870ac323b35ad6471f0929b0927f0b61ab43ff" => :high_sierra
+  end
+
   depends_on "rust" => :build
 
   def install
