@@ -4,6 +4,13 @@ class Libpostal < Formula
   url "https://github.com/openvenues/libpostal/archive/v1.0.0.tar.gz"
   sha256 "3035af7e15b2894069753975d953fa15a86d968103913dbf8ce4b8aa26231644"
   head "https://github.com/openvenues/libpostal.git"
+  bottle do
+    cellar :any
+    sha256 "7eabc50a0c601b8071ab0885d2da2acfe37c3c4814a8e8dc66d0ddb72f749ddf" => :mojave
+    sha256 "ab0c0670a7460cdfa9dd187eb6f30999c57e0162efdfcf6146c5fed531f78ee5" => :high_sierra
+    sha256 "36b564fdef538793efd116413c0b078037c911f6b19de990b114208ecc829109" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
