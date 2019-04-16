@@ -6,9 +6,9 @@ class Stubby < Formula
   head "https://github.com/getdnsapi/stubby.git", :branch => "develop"
 
   bottle do
-    sha256 "b4865e26e583345914fde67a883816a45aa5e41ad3aa57ca593a9aa127c21def" => :mojave
-    sha256 "2bf0b1276231e0528dc0cacd7efb4145c719a4f01d14a9ad2a841c558d889ed5" => :high_sierra
-    sha256 "69ff4ee005474914a7b3cd1dd5cda0d26c20cdd6c7bcdaa624411e2511ea620e" => :sierra
+    sha256 "f70ca3fd072befc85ac53968f5e0e7823c5c414816e60f23a80b00c04b23a478" => :mojave
+    sha256 "d18d224859a46f83b1c309e6b0a33bdc07ea774d83864c164efa18b8b4f8038f" => :high_sierra
+    sha256 "1d450790ff05af32953a4fe14c74c7a6702dc054584ca2494d657915ec3c2590" => :sierra
   end
 
   depends_on "autoconf" => :build
