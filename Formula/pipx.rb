@@ -6,6 +6,13 @@ class Pipx < Formula
   url "https://files.pythonhosted.org/packages/b5/42/bdf9b6cc0af79222f69776d931ef79235946095b16594bac1f6bd81f435f/pipx-0.13.0.1.tar.gz"
   sha256 "5134955d0d0595ca8040ecfa4215f2ddb84d34569c118ab2cde84b1d2b240b42"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f935b85bb56ffeff1265a35fe14d8b64e435cadc3366b97b5c47f33ac160685f" => :mojave
+    sha256 "f935b85bb56ffeff1265a35fe14d8b64e435cadc3366b97b5c47f33ac160685f" => :high_sierra
+    sha256 "321cad269edb3106ace49bdd522206e8880b25ce4b668d36c9aa7622cda2992b" => :sierra
+  end
+
   depends_on "python"
 
   def install
