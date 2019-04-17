@@ -5,6 +5,11 @@ class Xcbeautify < Formula
       :tag      => "0.4.1",
       :revision => "aa8b8795c9309c36d138bada74a73d1b8b16cda8"
   head "https://github.com/thii/xcbeautify.git"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "638ce635664c129783066cabdd36f60a44a33417cf581d8ee3ca7f8423fb0b23" => :mojave
+  end
+
   depends_on :xcode => ["10.2", :build]
 
   def install
