@@ -5,6 +5,13 @@ class Qdldl < Formula
   sha256 "a2c3a7d0c6a48b2fab7400fa8ca72a34fb1e3a19964b281c73564178f97afe54"
   head "https://github.com/oxfordcontrol/qdldl.git"
 
+  bottle do
+    cellar :any
+    sha256 "9f3b8691024a9cd1811a0ccfaedd65b59bc081f6dbe29e87632d26109ef6fd0f" => :mojave
+    sha256 "2256168940aef841609808fc973a65708166d41775b5c23517b5151768c27f5c" => :high_sierra
+    sha256 "6fdb09342f5002a41bc330cba79baf469c79ade5b0ae88279af810d5f573ede1" => :sierra
+  end
+
   depends_on "cmake" => [:build, :test]
 
   def install
