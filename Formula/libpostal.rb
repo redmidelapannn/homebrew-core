@@ -5,6 +5,12 @@ class Libpostal < Formula
   sha256 "c8a88eed70d8c09f68e1e69bcad35cb397e6ef11b3314e18a87b314c0a5b4e3a"
   head "https://github.com/openvenues/libpostal.git"
 
+  bottle do
+    sha256 "546f84b55d9dcf5447c32c6265595df2bd4f25c609256adc31a9c0a3218753e4" => :mojave
+    sha256 "fb9b4e3d0b08554c2972b6ee4d0ec25d9c40fef4a61ddf93a465f241a0358fea" => :high_sierra
+    sha256 "ec20de36f2fefd7acd952de50a2ab82497be56f6dc64bafa828d0e13cc3c69c7" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
   depends_on "automake" => :build
