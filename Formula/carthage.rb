@@ -9,7 +9,9 @@ class Carthage < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7f88034cfbd51439cd45467745ea3b1a21e6eec2cdd8a7eb2a8945382404b5f0" => :high_sierra
+    rebuild 1
+    sha256 "43987fd0940c6e34f194349705179968bcf5cd2bc099b691d76904ccfaea96f4" => :mojave
+    sha256 "e492e7043a34e48e465451d71a41df23743d7809d1b8d59c9f0a3b09fa78117d" => :high_sierra
   end
 
   depends_on :xcode => ["10.0", :build]
