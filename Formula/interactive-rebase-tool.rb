@@ -5,10 +5,10 @@ class InteractiveRebaseTool < Formula
   sha256 "74dc96e59820bd3352984618d307d9b4de2e257aed65d0c8b3118580ffb6da56"
 
   bottle do
-    cellar :any
-    sha256 "dcf42e55363693fb261582901be1447ce5230504353ccaca773cbc6261fc456c" => :mojave
-    sha256 "693a7b57bb2ea854153cfa49d18099e1c56ff06edcf1fc1a0ee8486665a3c70e" => :high_sierra
-    sha256 "9673e43caccc0d51939cfdab6bf8ebf03b7e2a4d6c46eaf7ac9e70f0727ea9aa" => :sierra
+    cellar :any_skip_relocation
+    sha256 "4ba9338ee4fdb8dd1eaed67b6a534bfbe0f4f7bc444f53f483cbb666e3a7aec8" => :mojave
+    sha256 "f62d2d5988613ea5041288fe7788dd77ce9705e61dd581bf0b8d688eb92e9359" => :high_sierra
+    sha256 "92f01fd39d2969c9fdcbb4149d3b76ba9cc62b7aec100497ac00fb1a6b90a71a" => :sierra
   end
 
   depends_on "rust" => :build
