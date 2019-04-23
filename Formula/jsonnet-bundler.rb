@@ -4,6 +4,13 @@ class JsonnetBundler < Formula
   url "https://github.com/jsonnet-bundler/jsonnet-bundler/archive/v0.1.0.tar.gz"
   sha256 "7ad25415358b2fd86bac05593ec2e90d9d87df17387fa8fbf4e21b8c06fe9779"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b4eaa9b633ddfce4f08f5355eda855b566386000fd546a6f3990c65ad36b8c2b" => :mojave
+    sha256 "b231c8189109bda2255ecb8699df75296c1ddf6a630e1a42ade6fca7c8f6e482" => :high_sierra
+    sha256 "6862f6484524e9d01cb2ca10fad558c8c8702d4daa01938e5c525037a8a05719" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
