@@ -7,8 +7,7 @@ class Needle < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "85eeb9823bb921011090ac9f3d03859da4e8799815601191dc8096782ac4cd1e" => :mojave
-    sha256 "7a94d05e63913eaa6527dbd5fbad96e1d572b6fed270d7d2136440206e2829a2" => :high_sierra
+    sha256 "d118804ac0c7c21f8dd8a900b3ddf04925e9eb9b822f4e0be314402c1d27d709" => :high_sierra
   end
 
   depends_on :xcode => ["10.0", :build]
