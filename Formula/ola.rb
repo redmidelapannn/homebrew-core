@@ -6,10 +6,9 @@ class Ola < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "a8bd1491e4534a97ae5d31be6a25dda95d5513696e23931846f70d823f32d06b" => :mojave
-    sha256 "0d2cd27e4c0de1896ff237a3334d1a69efb396b1fc9e2ce36f4ecaa46b8fbf00" => :high_sierra
-    sha256 "516b9937272a72a646b2eefb6457bf2eadc125e75140ed6632d2e59fc1677c1c" => :sierra
+    sha256 "6da39972355661a0fab3144d0bc6f61e28f3cfdb54b65689ce7022fe93197ef3" => :mojave
+    sha256 "5e54f6c899e475bd404fc1e45d2c5d7db26789ac5286f87b97d4e5250c60863d" => :high_sierra
+    sha256 "3ce2e18f336df88f80cafb6d4eca317354fddc3f83ed12706070157a2df68dd8" => :sierra
   end
 
   head do
