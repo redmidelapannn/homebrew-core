@@ -6,9 +6,9 @@ class Csound < Formula
   revision 2
 
   bottle do
-    sha256 "90be0b3b8bd7e174b9e08eac56a9e76780e95be8f1a0025fb82e75eff67e741b" => :mojave
-    sha256 "f97c2e61a573ddeb770f0718ffe28167deba0358c58f2c96c5d45351f0d4a6e7" => :high_sierra
-    sha256 "c7ffe61743dadae44f72e1d1707637d17da2721e6134b443964e3a76091e62a7" => :sierra
+    sha256 "2001ece8c3cc22c50430cbc3091c45bd5995048bf24e9b2ac9b5680626abf390" => :mojave
+    sha256 "80d80bf3fd956e0ad5787991b5e1964308a53405825c3eb3286986cea8c1dd80" => :high_sierra
+    sha256 "37f6e165da0f6e28a9bcc175626a82f75c5453ea5a160bfae79f28438e33cf9d" => :sierra
   end
 
   depends_on "cmake" => :build
