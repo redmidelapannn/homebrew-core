@@ -5,6 +5,12 @@ class ViceSdl2 < Formula
   sha256 "1a55b38cc988165b077808c07c52a779d181270b28c14b5c9abf4e569137431d"
   head "https://svn.code.sf.net/p/vice-emu/code/trunk/vice"
 
+  bottle do
+    sha256 "bed149005bfa75cd74223bcb5c157c318a3a5ef3ca5996800bb4d70e0ca7bf89" => :mojave
+    sha256 "c2c0eefa1f5de0b86ed08a6389cc6d5eaab3371dff4c0521e772c398d412ee41" => :high_sierra
+    sha256 "dddf4463459dc57335906b801b9ccd1d3809b57cdcf5604986bce68b60dcf636" => :sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "xa" => :build
   depends_on "yasm" => :build
