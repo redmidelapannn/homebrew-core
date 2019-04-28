@@ -6,9 +6,10 @@ class Ccache < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cf499db9b589b9251fc8187a48786438e52b46c95bd4af073e99aa9d558fd678" => :mojave
-    sha256 "c5a3b27b7ee1094888c4099e1c78eebc2aa9efe84bcb9761fb026ed66cea8b0a" => :high_sierra
-    sha256 "6a304ed5b13c44111272d4d1e4694cac744d7a921cf1c02172b5284a744d0688" => :sierra
+    rebuild 1
+    sha256 "56ddf0d6720178815051b02f9e64fe4689b1817926653e5b90c31552ccbb239f" => :mojave
+    sha256 "77bed26280da11f8e16209d9a82e1b907dcf02462fb2a2f763e1b90627ff936d" => :high_sierra
+    sha256 "5216e23ea20fa9914985735b1a14e50e0915c16a5824ae28de428507b59a97f7" => :sierra
   end
 
   head do
