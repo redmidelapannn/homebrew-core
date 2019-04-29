@@ -6,6 +6,13 @@ class Gitcher < Formula
   url "https://gitlab.com/GlezSeoane/gitcher/-/archive/v2.0/gitcher-v2.0.tar.gz"
   sha256 "0c649235c78e0698fb062b758a12c9c74722eba2db484983fb85f080dbaa29b9"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6badaead8d5cdd5a2d9ea334e9e52540be6451f98d244e2e1216a130217bbd0a" => :mojave
+    sha256 "516d82829d2e9e29b2af441995d25f5f1148a8c09c88ee0c2016c8c8e13f86e3" => :high_sierra
+    sha256 "b586755b3d42449537cc2523107e153fdee058d1a918593a9e5fe4a14cfda833" => :sierra
+  end
+
   depends_on "python"
 
   resource "prettytable" do
