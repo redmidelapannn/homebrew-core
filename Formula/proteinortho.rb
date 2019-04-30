@@ -6,9 +6,12 @@ class Proteinortho < Formula
   depends_on "cmake" => :build
   depends_on "gcc"
 
+  # get the latest g++ compiler from brew (Cellar)
+  CXX = `ls /usr/local/Cellar/gcc/*/bin/g++* | sort | tail -n1 | tr -d '\n'`
+
   def install
     system "make", "clean"
-    system "make", "CPP=/usr/local/Cellar/gcc/*/bin/g++*" , "install"
+    system "make", "CPP=#{CXX}" , "install", "PREFIX=#{prefix}"
   end
 
   test do
