@@ -11,11 +11,11 @@ class Proteinortho < Formula
 
   def install
     system "make", "clean"
-    system "make", "CPP=#{CXX}" , "install", "PREFIX=#{prefix}"
+    system "make", "CPP=#{CXX}" , "install", "PREFIX=#{prefix}/bin"
   end
 
   test do
-    system "#{bin}/proteinortho", "-help"
-    system "#{bin}/proteinortho_clustering", "-test"
+    system "#{bin}/proteinortho -help"
+    system "#{bin}/proteinortho_clustering -test"
   end
 end
