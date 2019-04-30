@@ -11,6 +11,7 @@ class Proteinortho < Formula
 
   def install
     system "make", "clean"
+    system "mkdir", "#{prefix}/bin"
     system "make", "CPP=#{CXX}" , "install", "PREFIX=#{prefix}/bin"
   end
 
