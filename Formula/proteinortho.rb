@@ -2,10 +2,10 @@ class Proteinortho < Formula
   desc "Detecting orthologous genes within different species"
   homepage "https://gitlab.com/paulklemm_PHD/proteinortho"
   url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/v6.0/proteinortho-v6.0.tar.gz"
-  sha256 "400e5a6e147b43e9bb0e6bc977715516043b3e5035586b58b7b48748975c178c"
+  sha256 "e82522cdae62c182fc3bb75903e8ce3a388573fccbea16b72a0a8c47a653a34b"
   depends_on "cmake" => :build
-  depends_on "lapack" => :build
   depends_on "pkg-config" => :build
+  depends_on "lapack"
   depends_on "gcc" # for gfortran
 
   def install
