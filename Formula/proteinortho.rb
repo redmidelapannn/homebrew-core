@@ -4,7 +4,7 @@ class Proteinortho < Formula
   url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/v6.0/proteinortho-v6.0.tar.gz"
   sha256 "b28f05c8c90a98bd65f2f1c1d9ed78e585959428c9f1a8deac1f53e72912de2c"
   depends_on "cmake" => :build
-  depends_on "gcc" => :build
+  depends_on "gcc"
   depends_on "pkg-config" => :build
 
   def install
