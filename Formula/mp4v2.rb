@@ -6,13 +6,10 @@ class Mp4v2 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "bd4c8e435216cbfc4ed60030e1cd4135156643f8befa1477061c1e59292394bb" => :mojave
-    sha256 "359eecfb160a0d31975961933b50c7ba512891aedd053e3e9153edba1da364c3" => :high_sierra
-    sha256 "6cab2b32c845f6d54cdb8d64c558126cec39c27fb77a92f204bb8abda1c0ccfa" => :sierra
-    sha256 "52d299e61126db288d73a3e6e8b40c3eff25af1c7498c4a74787dce2dda02e9a" => :el_capitan
-    sha256 "14ca4b71690959d461d41b4338be70005de4553566996677f973094c1a56c3fb" => :yosemite
-    sha256 "bb51275338ca5b157b303fb9d024922c9b73ddcac69973ba2fe9d880ad6dc914" => :mavericks
+    rebuild 2
+    sha256 "f1a27cc90e2d99edcf32cf61bb1b5e888452c3f6d18b196adae866243b1cd6d7" => :mojave
+    sha256 "3c9b12dfa67428b35c6c57d72e59b1c25e32a09d4822b900b2dc3df8101dfbfb" => :high_sierra
+    sha256 "cfd4350e0922c2bdb8728e84509787b8801abf6f3690ada8a3d0ea5cbd328c1d" => :sierra
   end
 
   conflicts_with "bento4",
