@@ -5,11 +5,9 @@ class Rrdtool < Formula
   sha256 "989b778eda6967aa5192c73abafe43e7b10e6100776971a7e79d249942781aae"
 
   bottle do
-    cellar :any
-    rebuild 1
-    sha256 "1059ba04ca08cf52d7eb4d4327e0d531d751ab8e43f78daa9a4141f78f7264ae" => :mojave
-    sha256 "5ef3f96dffc6ff002feea4d89eadf80a16f9d39f86ec2096600fbbeb229f9c0d" => :high_sierra
-    sha256 "d83b25d91e82350f92041e001fa0652c05198df9490323f6c9582028fde4ea5b" => :sierra
+    sha256 "e6f1fd95257f096c803ea6a09f52d48085cf04f39c9e805a37775b73d28e28b4" => :mojave
+    sha256 "b701dfc41e538f6d4489685709c33f66feb7b0b94e52048853e060e3cdb90a6b" => :high_sierra
+    sha256 "0dca8fedfa1c8b3cc41ae953d7c2739efe79d6b32bff4d554ef319be2aea7e59" => :sierra
   end
 
   head do
