@@ -3,6 +3,11 @@ class Wdt < Formula
   homepage "https://www.facebook.com/WdtOpenSource"
   url "https://github.com/facebook/wdt.git", :revision => "bc22626deede683d11a2668121ebbd2d0389a7b8"
   version "1.27.1612021-145-gbc22626"
+  bottle do
+    sha256 "6a01b14da24b896b0de1173d96307d28f1dbceb882030b49855e3c63018e40a6" => :mojave
+    sha256 "87eefd516832a6d8be73d796dd8259f18022a19ca7656b2dc628809f65bb2ec7" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "boost"
   depends_on "double-conversion"
