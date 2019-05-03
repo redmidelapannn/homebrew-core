@@ -7,12 +7,10 @@ class Cmatrix < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6ae9acaacb6023d2837e2cbf5f7b09acd65035771f61e3c75efc58a4cbcf7dd7" => :mojave
-    sha256 "f5969f9baee33db8614d7fa1b54f3d923474b8516deb7f8d77f31160be174af2" => :high_sierra
-    sha256 "ae46840a9d0e08909665694d161a3a8e0962a5936c523812057dc39d61eda8fd" => :sierra
-    sha256 "da919a1964d6ef0633eac14bd7138ab91f6676d4dfc36fd5e27f956943714d22" => :el_capitan
-    sha256 "14ae5c06eac81783ee61e3547d9de174f6742c688a254e172d7c2e566f14b426" => :yosemite
-    sha256 "8479d25ddc608462c974bbc1a9fb229f6ffa99d19368fcd43f667bc6a6d8493f" => :mavericks
+    rebuild 1
+    sha256 "260e3007198dc77f288cb0712dab06bb08e23920469fb26db9e9dddda4001e83" => :mojave
+    sha256 "ef44453034c22fd6a58d4920895baca33cb81f6b11adde657f312db650dd61cc" => :high_sierra
+    sha256 "f0ec1fde291e30999de5d7fefcc1976c6249f5bae0e08f2842082634c60020bb" => :sierra
   end
 
   def install
