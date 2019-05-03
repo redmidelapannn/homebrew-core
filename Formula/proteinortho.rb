@@ -1,23 +1,20 @@
 class Proteinortho < Formula
   desc "Detecting orthologous genes within different species"
   homepage "https://gitlab.com/paulklemm_PHD/proteinortho"
-#  url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/v6.0/proteinortho-v6.0.tar.gz"
-  url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/master/proteinortho-master.tar.gz"
-#  sha256 "1df4460f7cd5654c1e0c0c7abf546b50288265c895b1bf28dde618d7f080e805"
-  sha256 "1eef1429adb5658b48575b0621863a4bfbafa4f858484427c413d3153f4ca61d"
+  url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/v6.0/proteinortho-v6.0.tar.gz"
+  sha256 "d4f6e90c7e930b85bbab4722636c2348f5cc4fb24764088663f16cf9e1145638"
 
-  depends_on "cmake" => :build
-  depends_on "gcc"
-  #fails_with :clang # needs fortran
+  depends_on "diamond"
+  depends_on "openblas"
 
   def install
     bin.mkpath
-    system "make", "CXX=g++", "install", "PREFIX=#{bin}"
+    system "make", "install", "PREFIX=#{bin}"
     doc.install "manual.html"
   end
 
   test do
-    system "#{bin}/proteinortho", "-help"
+    system "#{bin}/proteinortho", "-test"
     system "#{bin}/proteinortho_clustering", "-test"
   end
 end
