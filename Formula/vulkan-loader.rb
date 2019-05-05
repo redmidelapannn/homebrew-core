@@ -4,6 +4,13 @@ class VulkanLoader < Formula
   url "https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.1.107.tar.gz"
   sha256 "4a20b7887612999d0190c7c405cde84d1e5367984755b6605359addc38c28f1f"
 
+  bottle do
+    cellar :any
+    sha256 "363e786721dbadd3d53549ae50698d5064f0d833d4a1d008de793abca1c2287d" => :mojave
+    sha256 "62f99c80d91c52e82aaa67dec3f00b654adf570b00b0444bd9be1340ae83bdd0" => :high_sierra
+    sha256 "b3133477f0718a5e1de731f69d0065a699120a16e27a984067ee4f29c8756808" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "python" => :build
   depends_on "vulkan-headers"
