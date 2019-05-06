@@ -2,7 +2,7 @@ class Proteinortho < Formula
   desc "Detecting orthologous genes within different species"
   homepage "https://gitlab.com/paulklemm_PHD/proteinortho"
   url "https://gitlab.com/paulklemm_PHD/proteinortho/-/archive/v6.0/proteinortho-v6.0.tar.gz"
-  sha256 "043cdbb1f9d46a6fecf952b3201c2018f9726f4e79adb79bcb8b7037ddfd3701"
+  sha256 "c49337f8b737408deaa04a391595cce892415fd1aa8623eb3c88507b1b8ed3b1"
 
   depends_on "diamond"
   depends_on "openblas"
