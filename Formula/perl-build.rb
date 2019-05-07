@@ -1,8 +1,8 @@
 class PerlBuild < Formula
   desc "Perl builder"
   homepage "https://github.com/tokuhirom/Perl-Build"
-  url "https://github.com/tokuhirom/Perl-Build/archive/1.25.tar.gz"
-  sha256 "1a3b666ebdab1ce0c58f3d19dfff5ea85b7f803b51a77c4165fe65ff4313ec48"
+  url "https://github.com/tokuhirom/Perl-Build/archive/1.29.tar.gz"
+  sha256 "6c355d49540edcbbdc388e4c4c1a3d44107676501dc169ef49b5b60c07e80f0a"
   head "https://github.com/tokuhirom/perl-build.git"
 
   bottle do
@@ -43,8 +43,8 @@ class PerlBuild < Formula
   end
 
   resource "HTTP::Tinyish" do
-    url "https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/HTTP-Tinyish-0.14.tar.gz"
-    sha256 "43fd54bd6d015827801343202f227844ac5af8c9f93c72d9683369be0bd5c194"
+    url "https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/HTTP-Tinyish-0.15.tar.gz"
+    sha256 "5d65f0ee20a9e4744acdb3ef12edae78c121f53dcbc9cf00867c5725c4513aa5"
   end
 
   # Perl::Strip dependency
