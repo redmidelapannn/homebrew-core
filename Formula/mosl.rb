@@ -4,6 +4,13 @@ class Mosl < Formula
   url "https://github.com/0xmachos/mOSL/archive/v2.4.0.tar.gz"
   sha256 "6cf2f301844085f36aa131867a4cc11d7d11a3b04b25c5d3ea35f71c39296eef"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0dfda7a714ef985b4b54786139f42eca4f2d82d27f22c107d32a7f12dc81501f" => :mojave
+    sha256 "0dfda7a714ef985b4b54786139f42eca4f2d82d27f22c107d32a7f12dc81501f" => :high_sierra
+    sha256 "2d5663126f76a8e32e65c5c6166076c90c3dee3eb40aa519d7e7207c926341c9" => :sierra
+  end
+
   depends_on "minisign" => :recommended
   # Required to valide signature against Lockdown.minisig
 
