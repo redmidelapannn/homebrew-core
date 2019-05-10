@@ -23,7 +23,9 @@ class Nethack < Formula
 
     # Generate makefiles for OS X
     cd "sys/unix" do
-      if MacOS.version >= :yosemite
+      if MacOS.version >= :mojave
+        hintfile = "macosx10.14"
+      elsif MacOS.version >= :yosemite
         hintfile = "macosx10.10"
       else
         hintfile = "macosx10.7"
@@ -32,6 +34,13 @@ class Nethack < Formula
       inreplace "hints/#{hintfile}",
                 /^HACKDIR=.*/,
                 "HACKDIR=#{libexec}"
+
+      if MacOS.version >= :mojave
+        # Also build the new curses interface
+        inreplace "hints/#{hintfile}",
+                  /^#WANT_WIN_CURSES=1$/,
+                  "WANT_WIN_CURSES=1"
+      end
 
       system "sh", "setup.sh", "hints/#{hintfile}"
     end
@@ -52,5 +61,19 @@ class Nethack < Formula
     # These need to be group-writable in multi-user situations
     chmod "g+w", libexec
     chmod "g+w", libexec+"save"
+  end
+
+  if MacOS.version >= :mojave
+    def caveats
+      <<~EOS
+        You can activate the new curses interface using
+        NETHACKOPTIONS=windowtype:curses on the CLI or by editing your
+        options file at `~/Library/Preferences/NetHack Defaults.txt`
+      EOS
+    end
+  end
+
+  test do
+    system "#{bin}/nethack", "--version"
   end
 end
