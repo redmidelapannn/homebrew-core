@@ -3,6 +3,7 @@ class Latex2html < Formula
   homepage "https://www.latex2html.org"
   url "https://github.com/latex2html/latex2html/archive/v2019.tar.gz"
   sha256 "095b6d43599506aa0936b548ee92c7742c8b127d64e3829000f7681a254a7917"
+  revision 1
 
   bottle do
     cellar :any_skip_relocation
