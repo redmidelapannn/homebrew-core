@@ -11,9 +11,9 @@ class Imagemagick < Formula
   head "https://github.com/ImageMagick/ImageMagick.git"
 
   bottle do
-    sha256 "fc95492e9fb3ec8a618a3535f29c97289ec07e03e47c0fbecc036ca1a9e70849" => :mojave
-    sha256 "cf1645baf1084294dce6b1ec746a55cbe2c98617097fef743f509339ae242f6b" => :high_sierra
-    sha256 "ccd7e949965aa5a8e4f0293efadb18a9c923b43090495d2727c3ed47508e3d53" => :sierra
+    sha256 "db6e901e29672672ae433d9e884eda93e3e58f4d94787e258c204e17466669d2" => :mojave
+    sha256 "c54e778b652c9b808bbe8edde00bbbaf97a0115aae2cb72f316a0448da65a4cf" => :high_sierra
+    sha256 "76dd403d16a1bc47c8b71dabf1cb55567ef6227c8537bbe8b658df975ef2b034" => :sierra
   end
 
   depends_on "pkg-config" => :build
