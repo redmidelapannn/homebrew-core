@@ -3,6 +3,7 @@ class Pdf2image < Formula
   homepage "https://code.google.com/p/pdf2image/"
   url "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pdf2image/pdf2image-0.53-source.tar.gz"
   sha256 "e8672c3bdba118c83033c655d90311db003557869c92903e5012cdb368a68982"
+  revision 1
 
   bottle do
     sha256 "722d8eefc7f7f12555f4997ca13470fda8b508a2683bc9edc6bfa5b883707202" => :mojave
