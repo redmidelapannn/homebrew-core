@@ -3,6 +3,7 @@ class Fig2dev < Formula
   homepage "https://mcj.sourceforge.io/"
   url "https://downloads.sourceforge.net/project/mcj/fig2dev-3.2.7a.tar.xz"
   sha256 "bda219a15efcdb829e6cc913a4174f5a4ded084bf91565c783733b34a89bfb28"
+  revision 1
 
   bottle do
     rebuild 1
