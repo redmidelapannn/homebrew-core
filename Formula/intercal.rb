@@ -7,11 +7,8 @@ class Intercal < Formula
   revision 1
 
   bottle do
-    sha256 "b37df8dcb2c144fdef576b22097930cd70bfbc293df70d37523ad5d2714e80bc" => :mojave
-    sha256 "cf859045ee10ad86e4d430e86224f5d08e2cac391a39b7f7bab62ef336a59d65" => :high_sierra
-    sha256 "0af682680ed91e303158222255b56bac5c20f46882b90d0e54e500e93f461119" => :sierra
-    sha256 "aedc619191db840cebc64a0c96c7165c4f48e1af44849e4422f1839a6e7cc311" => :el_capitan
-    sha256 "889ab74f3c682bb55558d244781899c730eecb894cfad58083202d0674d46742" => :yosemite
+    rebuild 1
+    sha256 "fec6e2064b881edecc993970b58b0290b6e47d1b1f15bd9c796fa96b89407441" => :mojave
   end
 
   head do
