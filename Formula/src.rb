@@ -6,10 +6,8 @@ class Src < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c5da1fd27c011587281c2e991f53e03c06b32e78b23d293be173141ca007be73" => :mojave
-    sha256 "7b8177edd573490081ab245c28b9b7d93ad333837d754d6ec444461977f79e3d" => :high_sierra
-    sha256 "7b8177edd573490081ab245c28b9b7d93ad333837d754d6ec444461977f79e3d" => :sierra
-    sha256 "7b8177edd573490081ab245c28b9b7d93ad333837d754d6ec444461977f79e3d" => :el_capitan
+    rebuild 1
+    sha256 "be43d353348f72c5d2c7b60e1e7c1613725cfa600a8eb8ddf4d219a36d094986" => :mojave
   end
 
   head do
