@@ -5,6 +5,13 @@ class Gemstash < Formula
   sha256 "511a5773c43507b913c4f2f57d33a3d972bd71378b2669c22a357b3351a82bf4"
   head "https://github.com/bundler/gemstash.git"
 
+  bottle do
+    cellar :any
+    sha256 "e0de0961d5b89d15fc726f3cccd053f44814d2e11db6d299191e476ec655953c" => :mojave
+    sha256 "bb86b2d23f7df5782740305f13e766aecac9f997b01c8939d125462ae01aab7f" => :high_sierra
+    sha256 "e00752c3b8905a51228730b29f209d36a390781e58860b38bcbfc38b6db2ab72" => :sierra
+  end
+
   if MacOS.version < :mojave
     depends_on "openssl"
     depends_on "ruby"
