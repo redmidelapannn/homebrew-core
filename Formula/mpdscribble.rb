@@ -6,11 +6,9 @@ class Mpdscribble < Formula
   revision 1
 
   bottle do
-    sha256 "306e807a9e6169f58968af9f7d6067a03ec632ffe5267150f940fa628e28dfba" => :mojave
-    sha256 "0bb89c4d9cac0bd82f40cc7c7907fa150efb1de05ab7da21e7c7d70a6ebb8602" => :high_sierra
-    sha256 "0e487444754917082060745ab958e70b1718ea7d1bdd24bc52dbd9823060c114" => :sierra
-    sha256 "3dee2dae7ae29bb1a92db5af951740801be7d7204ac6addad6016e8ec07e9fda" => :el_capitan
-    sha256 "93d9066107f752b0c18910c5aac8f6f86beaa03cba627fffd6337dda44cf16f9" => :yosemite
+    rebuild 1
+    sha256 "4f53420725b1988d9d16bb9e24b4e5edfb033f6ac0df32f5dd2f5585eb1e2c16" => :mojave
+    sha256 "d3b6cfa4eb897ed5e7888733f94959bc07a35c44278639a3e6842913a1edbf0e" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
