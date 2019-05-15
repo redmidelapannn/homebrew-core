@@ -6,10 +6,9 @@ class Gkrellm < Formula
   revision 1
 
   bottle do
-    sha256 "7deb82cd7fe3c9cb715f1be733b8f89692ab66fe0e603fd36d617d946d4e319b" => :mojave
-    sha256 "e84742cdd42e7584a6814c9c4cf2b8d7245d48ae0723b77c236f011354ac71e1" => :high_sierra
-    sha256 "53888d3166533669a8649ef295c28813dcb0c051ed4146a33452f90c860978a8" => :sierra
-    sha256 "7cc7e94022669c80d1035efa738388fb264f50e4edaf0720db216f58b0ad3dab" => :el_capitan
+    rebuild 1
+    sha256 "0386afe145b5dcf97248f68b165ac1b59db771cd4025ca128ac2fe4cbe3feab2" => :mojave
+    sha256 "f46e2ca6d972c00261d547c27585219025be55e1b8f5c0e23268cb10b4a45ba0" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
