@@ -6,10 +6,10 @@ class LiquidDsp < Formula
 
   bottle do
     cellar :any
-    sha256 "f8f9a384db2f8832e7f31fa61223a3119a9278d9d6af8a2b11b6ec76c477edad" => :mojave
-    sha256 "5d12243dc96220b6cc34ea32e440c91fd99c9e39f91f08afbbdd889005d06ecd" => :high_sierra
-    sha256 "d58108029dc01dbf26931044f74afcf75d81b7de867fc1904e281ea02acd2dfe" => :sierra
-    sha256 "8e979793bbc8c8101195a9107d1be8d10f6809d14982eb4e464019cf1914f577" => :el_capitan
+    rebuild 1
+    sha256 "4eb251ba85424f274a52a67db467a4beb7ad62826a298fb7791b7938ed517f0b" => :mojave
+    sha256 "5f776c863edc86e127be36adc56ecd376f5690e64ba98b89adeea62c0e9585f0" => :high_sierra
+    sha256 "81605a5c46f27d4b9b67559d654b03f1f1f7dfc311a8de6fe1233cfd570268bd" => :sierra
   end
 
   depends_on "autoconf" => :build
