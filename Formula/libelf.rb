@@ -7,12 +7,9 @@ class Libelf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7cb626407ee7d61546f2493da91ecc63996d6180949b96b84793e075bd130f2d" => :mojave
-    sha256 "e11504a15c64cd7fca3248ca7ed14eead25a5d63d8bbd9a8e00f076c56602295" => :high_sierra
-    sha256 "a771e35555810a4910304e3ca5967ea3e4f8cbe45576e5b2dc6b80cd9c1f0f13" => :sierra
-    sha256 "a06b058c7e401942f442f573b63aa2cdd548b45d38b02b7af92393c67093f56e" => :el_capitan
-    sha256 "3b4ea9ab20228d9e912f80a330b6d6d093f9bb65a712208c83cd49bdcc4fc9ea" => :yosemite
-    sha256 "eded3b774d412e533f37bc6d5dc133859141653ce953a0d4cbf4a950dda633f6" => :mavericks
+    sha256 "c3300c5449b62b1c68c1d0e4a7b05e093e6e0614f6e539cb1e100672908626b9" => :mojave
+    sha256 "8d7c8795ca3f253e157990ceb7a9f260d16c4a3ea36354f9c191ac6db8e11b52" => :high_sierra
+    sha256 "8f43334d17750ca4e08dd0b3905e1c206549ed95f16d62bb57dfd8701b3f7cbe" => :sierra
   end
 
   def install
