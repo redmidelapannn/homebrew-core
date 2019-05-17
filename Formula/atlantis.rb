@@ -15,7 +15,6 @@ class Atlantis < Formula
     cd dir do
       system "go", "build", "-o", "atlantis"
       bin.install "atlantis"
-      prefix.install_metafiles
     end
   end
 
@@ -27,7 +26,7 @@ class Atlantis < Formula
     command = bin/"atlantis server --atlantis-url http://in.va.lid --port #{port} #{gh_args} --log-level #{loglevel}"
     pid = Process.spawn(command)
     system "sleep", "5"
-    system "curl", "-vk#", "http://localhost:4141/"
+    system "curl", "-vk#", "http://localhost:#{port}/"
     Process.kill("TERM", pid)
   end
 end
