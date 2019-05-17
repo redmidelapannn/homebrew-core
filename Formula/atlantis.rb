@@ -4,7 +4,6 @@ class Atlantis < Formula
   url "https://github.com/runatlantis/atlantis/archive/v0.7.2.tar.gz"
   sha256 "ecb0068f6ee1cacc4710b4f77e67b88e5d6b5d1dfae3bf6ce480980c93efa50d"
   depends_on "go" => :build
-  depends_on "curl" => :test
   depends_on "terraform"
 
   def install
