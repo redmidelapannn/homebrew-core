@@ -14,6 +14,7 @@ class Wtfutil < Formula
     dir.install buildpath.children
 
     cd dir do
+      system "go", "mod", "vendor"
       system "go", "build", "-o", bin/"wtf"
       prefix.install_metafiles
     end
