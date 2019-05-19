@@ -1,6 +1,6 @@
 class Wtfutil < Formula
-  desc "Terminal based search engine for bash commands"
-  homepage "The personal information dashboard for your terminal."
+  desc "The personal information dashboard for your terminal"
+  homepage "https://wtfutil.com"
   url "https://github.com/wtfutil/wtf/archive/v0.10.2.tar.gz"
   sha256 "7ed8c63bd7126b39b35026bf25df3ebd4404aa804c54eb47b6fa04c6fe1e478b"
 
