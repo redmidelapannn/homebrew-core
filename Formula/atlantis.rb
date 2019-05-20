@@ -26,7 +26,9 @@ class Atlantis < Formula
     command = bin/"atlantis server --atlantis-url http://in.va.lid --port #{port} #{gh_args} --log-level #{loglevel}"
     pid = Process.spawn(command)
     system "sleep", "5"
-    system "curl", "-vk#", "http://localhost:#{port}/"
+    output = `curl -vk# 'http://localhost:#{port}/' 2>&1`
+    assert_match /HTTP\/1.1 200 OK/m, output
+    assert_match "atlantis", output
     Process.kill("TERM", pid)
   end
 end
