@@ -19,7 +19,6 @@ class Csound < Formula
   depends_on "liblo"
   depends_on "libsamplerate"
   depends_on "libsndfile"
-  depends_on "openblas"
   depends_on "portaudio"
   depends_on "portmidi"
   depends_on "stk"
@@ -30,7 +29,6 @@ class Csound < Formula
       "set(CS_FRAMEWORK_DEST \"#{frameworks}\")"
 
     args = std_cmake_args + %W[
-      -DBLA_VENDOR=OpenBLAS
       -DBUILD_FLUID_OPCODES=OFF
       -DBUILD_JAVA_INTERFACE=OFF
       -DBUILD_LUA_INTERFACE=OFF
