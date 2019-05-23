@@ -19,6 +19,13 @@ class Wtfutil < Formula
     end
   end
 
+  def caveats; <<~EOS
+    Please add a config.yml file to your ~/.config/wtf directory.
+    See https://github.com/wtfutil/wtf for details.
+    open /Users/rchen/.config/wtf/config.yml: no such file or directory
+  EOS
+  end
+
   test do
     system "#{bin}/wtf", "-p", "brew"
   end
