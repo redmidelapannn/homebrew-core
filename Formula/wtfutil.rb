@@ -6,6 +6,11 @@ class Wtfutil < Formula
 
   depends_on "go" => :build
 
+  resource "config.yml" do
+    url "https://gist.githubusercontent.com/chenrui333/746c939f4a30324f1bbc36c4be38c907/raw/8b5b192c3d50845457b7778e0000ffca5e87212b/config.yml"
+    sha256 "edfe1ee724a9625f0fb90f421faf0f0427bcd69183ddda04d24b064f9973951a"
+  end
+
   def install
     # ENV["GOPATH"] = buildpath
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
@@ -27,6 +32,41 @@ class Wtfutil < Formula
   end
 
   test do
-    system "#{bin}/wtf", "-p", "brew"
+    (testpath/".config/wtf/config.yml").write <<~EOS
+      wtf:
+      colors:
+        background: "red"
+        border:
+          focusable: "darkslateblue"
+          focused: "orange"
+          normal: "gray"
+        checked: "gray"
+        highlight:
+          fore: "black"
+          back: "green"
+        text: "white"
+        title: "white"
+      grid:
+        # How _wide_ the columns are, in terminal characters. In this case we have
+        # six columns, each of which are 35 characters wide
+        columns: [35, 35, 35, 35, 35, 35]
+  
+        # How _high_ the rows are, in terminal lines. In this case we have five rows
+        # that support ten line of text, one of three lines, and one of four
+        rows: [10, 10, 10, 10, 10, 3, 4]
+      navigation:
+        shortcuts: true
+      openFileUtil: "open"
+      sigils:
+        checkbox:
+          checked: "x"
+          unchecked: " "
+        paging:
+          normal: "*"
+          selected: "_"
+      term: "xterm-256color"
+    EOS
+  
+    system "#{bin}/wtf"
   end
 end
