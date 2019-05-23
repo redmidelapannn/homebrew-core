@@ -1,18 +1,13 @@
 class Wtfutil < Formula
   desc "The personal information dashboard for your terminal"
   homepage "https://wtfutil.com"
-  url "https://github.com/wtfutil/wtf/archive/v0.10.3.tar.gz"
-  sha256 "8afa15a5729bfa5a8d009e3d03423cf7472e797740b92e6f3e66ca8fd05c8454"
+  url "https://github.com/wtfutil/wtf.git",
+    :tag      => "v0.10.3",
+    :revision => "3eb318324987b6d7bf1daefc9414ac11f7a50ec4"
 
   depends_on "go" => :build
 
-  resource "config.yml" do
-    url "https://gist.githubusercontent.com/chenrui333/746c939f4a30324f1bbc36c4be38c907/raw/8b5b192c3d50845457b7778e0000ffca5e87212b/config.yml"
-    sha256 "edfe1ee724a9625f0fb90f421faf0f0427bcd69183ddda04d24b064f9973951a"
-  end
-
   def install
-    # ENV["GOPATH"] = buildpath
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
 
     dir = buildpath/"src/github.com/wtfutil/wtf"
@@ -24,15 +19,9 @@ class Wtfutil < Formula
     end
   end
 
-  def caveats; <<~EOS
-    Please add a config.yml file to your ~/.config/wtf directory.
-    See https://github.com/wtfutil/wtf for details.
-    open /Users/rchen/.config/wtf/config.yml: no such file or directory
-  EOS
-  end
-
   test do
-    (testpath/".config/wtf/config.yml").write <<~EOS
+    testconfig = testpath/"config.yml"
+    testconfig.write <<~EOS
       wtf:
       colors:
         background: "red"
@@ -67,6 +56,6 @@ class Wtfutil < Formula
       term: "xterm-256color"
     EOS
   
-    system "#{bin}/wtf"
+    system "#{bin}/wtf", "--config=#{testconfig}"
   end
 end
