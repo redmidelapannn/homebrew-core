@@ -12,13 +12,13 @@ class Csound < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "numpy" => [:build, :test]
   depends_on "python" => [:build, :test]
   depends_on "python@2" => [:build, :test]
   depends_on "fltk"
   depends_on "liblo"
   depends_on "libsamplerate"
   depends_on "libsndfile"
+  depends_on "numpy"
   depends_on "portaudio"
   depends_on "portmidi"
   depends_on "stk"
