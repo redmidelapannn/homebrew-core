@@ -5,6 +5,13 @@ class Wtfutil < Formula
     :tag      => "v0.10.3",
     :revision => "3eb318324987b6d7bf1daefc9414ac11f7a50ec4"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2e4af4ac6cb0ecc9e1b4c82fff57df7fe0638d96d9d859c329fff72e784c5970" => :mojave
+    sha256 "889db4f684e4325b0606f6274a1dd743d5a089e6a168a7aba050054376123e89" => :high_sierra
+    sha256 "0a8454d3e6a83101342b1c814dd51274826ab22114acacfebb7b509ff169582f" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
