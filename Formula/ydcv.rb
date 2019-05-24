@@ -8,9 +8,9 @@ class Ydcv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a0f4fb06ecf1aade03aa1851ec9cc4b75e10aaa5a95177440eeff02e07238e32" => :mojave
-    sha256 "3cd596b113010dfbcc5577c1d5b57bfc09e6b6ec843795c6d1aaf7e50690a5c7" => :high_sierra
-    sha256 "1e716fe115344fce903575e5843d380c0edea040725e7548af0ff9b03bdd5bd2" => :sierra
+    sha256 "9a30fb60520b3efc1a17d0bbc3ed82afde2a474d930839b75f143efca51e5e78" => :mojave
+    sha256 "fd91a0ec88de85f75fc8cd103e8df66ee3691b3abf660be17922cba635c6bae3" => :high_sierra
+    sha256 "6aafe5853bdecdb74f58e6bef00f4d6cab10dca9e2087f49cde64014aba91613" => :sierra
   end
 
   depends_on "python"
