@@ -6,6 +6,13 @@ class Gajim < Formula
   url "https://gajim.org/downloads/1.1/gajim-1.1.3.tar.bz2"
   sha256 "261c85444b9cc150f775a5cc5b7dea6031c8fb03f9fe6a9a81cd93d62ee3fd2f"
 
+  bottle do
+    cellar :any
+    sha256 "e9242fc0d6ecaae5c300b8d3b17f19062e8290e14041f58fe4692df526d9fe75" => :mojave
+    sha256 "17eb68f9227ca5e481f964b39b1de650830d9044d6c75efe43ec41ebc7fa83bb" => :high_sierra
+    sha256 "f661e34e7e0ebb1cf2d3fbe78f07b8ffa1c49bb742a9983bb40ded3201f50dc6" => :sierra
+  end
+
   depends_on "adwaita-icon-theme"
   depends_on "freetype"
   depends_on "gettext"
