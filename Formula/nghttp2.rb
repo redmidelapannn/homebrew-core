@@ -28,6 +28,8 @@ class Nghttp2 < Formula
   depends_on "libevent"
   depends_on "openssl"
 
+  patch :DATA
+
   def install
     ENV.cxx11
 
@@ -53,3 +55,19 @@ class Nghttp2 < Formula
     system bin/"nghttp", "-nv", "https://nghttp2.org"
   end
 end
+
+__END__
+diff --git a/src/shrpx_client_handler.cc b/src/shrpx_client_handler.cc
+index 6266c5f..3c5946e 100644
+--- a/src/shrpx_client_handler.cc
++++ b/src/shrpx_client_handler.cc
+@@ -994,7 +994,7 @@ ClientHandler::get_downstream_connection(int &err, Downstream *downstream) {
+   auto http2session = get_http2_session(group, addr);
+   auto dconn = std::make_unique<Http2DownstreamConnection>(http2session);
+   dconn->set_client_handler(this);
+-  return dconn;
++  return std::move(dconn);
+ }
+ 
+ MemchunkPool *ClientHandler::get_mcpool() { return worker_->get_mcpool(); }
+
