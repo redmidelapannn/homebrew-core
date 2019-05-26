@@ -2,6 +2,7 @@ class Fontforge < Formula
   desc "Command-line outline and bitmap font editor/converter"
   homepage "https://fontforge.github.io"
   url "https://github.com/fontforge/fontforge/releases/download/20190413/fontforge-20190413.tar.gz"
+  revision 1
   sha256 "6762a045aba3d6ff1a7b856ae2e1e900a08a8925ccac5ebf24de91692b206617"
 
   bottle do
@@ -23,13 +24,14 @@ class Fontforge < Formula
   depends_on "libtool"
   depends_on "libuninameslist"
   depends_on "pango"
-  depends_on "python@2"
+  depends_on "python"
 
   def install
-    ENV["PYTHON_CFLAGS"] = `python-config --cflags`.chomp
-    ENV["PYTHON_LIBS"] = `python-config --ldflags`.chomp
+    ENV["PYTHON_CFLAGS"] = `python3-config --cflags`.chomp
+    ENV["PYTHON_LIBS"] = `python3-config --ldflags`.chomp
 
     system "./configure", "--prefix=#{prefix}",
+                          "--enable-python-scripting=3",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--without-x"
@@ -60,8 +62,8 @@ class Fontforge < Formula
   test do
     system bin/"fontforge", "-version"
     system bin/"fontforge", "-lang=py", "-c", "import fontforge; fontforge.font()"
-    xy = Language::Python.major_minor_version "python"
+    xy = Language::Python.major_minor_version "python3"
     ENV.append_path "PYTHONPATH", lib/"python#{xy}/site-packages"
-    system "python", "-c", "import fontforge; fontforge.font()"
+    system "python3", "-c", "import fontforge; fontforge.font()"
   end
 end
