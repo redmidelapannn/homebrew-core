@@ -4,6 +4,13 @@ class Libgit2AT027 < Formula
   url "https://github.com/libgit2/libgit2/archive/v0.27.4.tar.gz"
   sha256 "0b7ca31cb959ff1b22afa0da8621782afe61f99242bf716c403802ffbdb21d51"
 
+  bottle do
+    cellar :any
+    sha256 "b3fcd4ca96f5da53b348c2c8ab05b99adf8c9de281674fa8d6eb34434da36914" => :mojave
+    sha256 "06b45008c5c1b2441e8195df06dea2330c102d9346561cdfd6a8f6f16e87fc25" => :high_sierra
+    sha256 "4ca085b02f798b5e078c9c53c8102e26e67f19a35a135ff23f5c5fb63b93c087" => :sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
