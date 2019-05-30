@@ -14,6 +14,6 @@ class Libparc < Formula
   end
 
   test do
-    system "parc-publickey -c keyfile.pkcs12 12345 test 1024 365"
+    system "#{bin}/parc-publickey", "-c", "keyfile.pkcs12", "12345", "test", "1024", "365"
   end
 end
