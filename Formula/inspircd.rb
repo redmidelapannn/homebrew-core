@@ -5,9 +5,9 @@ class Inspircd < Formula
   sha256 "5fd6b30e0285dd2bcf6fd135ffce52a08d8452f820a02e0068ac471e99d465ba"
 
   bottle do
-    sha256 "de7c0627908828d4ec8b317cbf174f043598b38c1916fa64dab5c8b76411ac2d" => :mojave
-    sha256 "679569e694341552a1cc4d50240ebbd28f77850f0adfc482d0e3ddc1a7736495" => :high_sierra
-    sha256 "45b3a6258e87954cb82f98d97ca87d54f4063a06f5b8cdff645ba0be4bf994bb" => :sierra
+    sha256 "95de3174fd3eb4bb6455de0e813f07237611021e8f8e7cbcef84852dfdc6aa16" => :mojave
+    sha256 "8934794a8c1dfcf66f343feb6b3bff4f69fe1d74d9a43af7345c192b82061ef7" => :high_sierra
+    sha256 "1d696589a4ea91e847ed182fe6ebccdcaa266609a0e536654ad6388bcb897c4c" => :sierra
   end
 
   if MacOS.version <= :sierra
