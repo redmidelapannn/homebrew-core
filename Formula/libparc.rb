@@ -10,7 +10,7 @@ class Libparc < Formula
 
   def install
     system "cmake", "libparc", *std_cmake_args
-    system "make", "install", "-j"
+    system "make", "install"
   end
 
   test do
