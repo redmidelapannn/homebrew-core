@@ -21,7 +21,7 @@ class Virgil < Formula
   end
 
   test do
-    result = `virgil pure keygen`
-    assert_true result.start_with?("SK.1.")
+    result = shell_output("virgil pure keygen")
+    assert_match /SK.1./, result
   end
 end
