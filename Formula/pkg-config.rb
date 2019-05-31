@@ -6,11 +6,11 @@ class PkgConfig < Formula
   sha256 "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591"
 
   bottle do
-    sha256 "85e5bbffb3424f22cd1bf54b69161110481bab100f9abea54e0a0f00fcf761b9" => :mojave
-    sha256 "f1b29fb5388dccab0fcaf665ab43d308ee51816b24262417bf83a686b6e308ae" => :high_sierra
-    sha256 "8eb723bfc03cd468d779d54d015d47d2e8ab1dd4d35e595ab4abaca8833b3277" => :sierra
-    sha256 "93f044f166bcbd84db14133ee4f56104031c65409cfd2801c7ac0d182936dc78" => :el_capitan
-    sha256 "d9ccc19f1a55919408a1b27260b0404aa36dc6782a4a5964e6fd8409abf3b830" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "ccc92667994a3e88d81f2fae7aff5073d05ff13eef1a489b51731fb88c2d704c" => :mojave
+    sha256 "7288528ae6db8b765c7ee7c757d8881cc656720f2979299e861b7ccddd39b897" => :high_sierra
+    sha256 "c5067a2ac58b5ef44569c07fbd2ceef37c1d9e968c0a012ac96c401548326b12" => :sierra
   end
 
   def install
