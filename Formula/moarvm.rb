@@ -5,9 +5,9 @@ class Moarvm < Formula
   sha256 "fa281fe3b174399820ddc21a569cb9a3b9ca374f0959b33f28273e567bc4d182"
 
   bottle do
-    sha256 "704a22721fb2a0d96d90903cdd4a6dd9c6da63ed1be33f466d26ffe5380d4024" => :mojave
-    sha256 "c2f02994cca5fd03fc1a4a294dad62369c7169795cf197d780c4f8b0f2f683cc" => :high_sierra
-    sha256 "516d7401ebabc18938e221c2e272b8a1435938f304846ed364c18d3c6464634c" => :sierra
+    sha256 "da117d382c6a8b7f5360a57db83d11ed167bcdde62092e355d064b9131352307" => :mojave
+    sha256 "a19393e14e93b7ed595637b895c886b74ad7af1989e3131536f48999b747afbb" => :high_sierra
+    sha256 "396771f1a17a5d7ce7e0defb37bbd109537c1a4f1bbc3734bb88a5a2f2ed40ac" => :sierra
   end
 
   depends_on "libatomic_ops"
