@@ -8,11 +8,9 @@ class Corectl < Formula
 
   bottle do
     cellar :any
-    sha256 "0b7b837ae2b500b08b342dd0b2cf13cf5a21b56321e9da285767cde2b5c3b56d" => :mojave
-    sha256 "468a78c0f43c9d150313edadd23e4a373fa689243fcd0f6c48af79feb0b1854d" => :high_sierra
-    sha256 "9b83542911995f649091f49cd839c949e975ae71caa220cdc224dbb86f8fd638" => :sierra
-    sha256 "1d90b568db5c0ec1025b0bacb5b06b794b8e24d198cdcf036d2ff81ebd6168da" => :el_capitan
-    sha256 "ae67e7433832ac259736eaa9879e18d7b724f6ffc823f487b31eb1447780f72a" => :yosemite
+    sha256 "469548281d4d4471dcc703f7293abefa1f85a584f91f05c9398de9add6ff1e87" => :mojave
+    sha256 "10c9555c55b71fdab0d3b34fed23785f33ec8a30436083eedc99bfa0fb7724ee" => :high_sierra
+    sha256 "68e80b5e018f8c43516e01b53f26e46d2eb4b99adf4b8d9fd2be4bfa9a08231c" => :sierra
   end
 
   depends_on "aspcud" => :build
