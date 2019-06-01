@@ -8,12 +8,9 @@ class Weighttp < Formula
 
   bottle do
     cellar :any
-    sha256 "2ab4f5e31f9411d55c4a4653f78bb381b70f53f49d07efaf6e99b5a86281b62a" => :mojave
-    sha256 "4225f653fe64067e3330c33202a15ad65a6b194ce23619ae045cbe50528a9b02" => :high_sierra
-    sha256 "242f14d7a7fb477e4722a3818a98ad25ffedd5d2c80e7c97d67c80fe2a20366c" => :sierra
-    sha256 "e96be0135f552ddde0547ca914c2bc6635dcc59ce4bdeb803ab9412100d8d15b" => :el_capitan
-    sha256 "e83c9f99b524b57ba31571dc673ab6d2d2a5e38a5374ce45130f11a51c063662" => :yosemite
-    sha256 "914e5fbf3f6c4fd42c532fa32a741c0558b7b16a71d773722c92c64f0b42a2f3" => :mavericks
+    sha256 "3754c03249938305d816be7c6ba46f4614d261fa839f14ec97561a6e95a08f70" => :mojave
+    sha256 "0d144acf52c7dc4b14b328429790c40a8162ee9f1f3262b12844a6033a5f819f" => :high_sierra
+    sha256 "aa76b442700ac213d5ab68e79d947fc0ab3de4f32e200579e4166df64e842e7e" => :sierra
   end
 
   depends_on "libev"
