@@ -21,7 +21,7 @@ class Virgil < Formula
   end
 
   test do
-    result = shell_output("virgil pure keygen")
+    result = shell_output "#{bin}/virgil pure keygen"
     assert_match /SK.1./, result
   end
 end
