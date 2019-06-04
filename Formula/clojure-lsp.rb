@@ -6,6 +6,13 @@ class ClojureLsp < Formula
   version "20190408"
   head "https://github.com/snoe/clojure-lsp.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6d37d3893a1cfb5ecdd5ea3a543ca5ccef2cf25d62596e74486f6dff6ce3d29d" => :mojave
+    sha256 "d9f2d7991242c2803059b3319bcda915de5c4d5b523ee5da067d28768e8b5a8a" => :high_sierra
+    sha256 "d99ed04247a05fb3e3e87b2237832fdf25abc02cc7c2f03ff12ce2b66f7b4e34" => :sierra
+  end
+
   depends_on "leiningen" => :build
 
   def install
