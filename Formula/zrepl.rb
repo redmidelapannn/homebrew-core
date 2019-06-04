@@ -5,6 +5,13 @@ class Zrepl < Formula
   sha256 "0c16554e4527d14a390d78cf95bce759da425019a83ec63acfed5b4c50d68c9c"
   head "https://github.com/zrepl/zrepl.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "9f245fc3796ad4aabd1471d577cf68bbcbb623646ff6afb48ec02df5c21598a4" => :mojave
+    sha256 "7a79d76ec9645021839534d26662d6b5e39f8c47344c37638ed1fdc87a3057d5" => :high_sierra
+    sha256 "f7c3760ba9c9f18dcb8a8b3423fd3e43f00935d3caf1e63b63f86c01ef0b1269" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
