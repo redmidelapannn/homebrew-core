@@ -3,6 +3,7 @@ class ClojureLsp < Formula
   homepage "https://github.com/snoe/clojure-lsp"
   url "https://github.com/snoe/clojure-lsp/archive/release-20190408T040839.tar.gz"
   sha256 "79c6d812a8ef4af2cfdd78c4b9aa96674ff9fb8dfeb27869215caa4aee954fae"
+  version "20190408"
   head "https://github.com/snoe/clojure-lsp.git"
 
   depends_on "leiningen" => :build
