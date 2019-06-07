@@ -61,7 +61,6 @@ class Icecream < Formula
         <key>ProgramArguments</key>
         <array>
         <string>#{sbin}/iceccd</string>
-        <string>-d</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
@@ -80,7 +79,6 @@ class Icecream < Formula
         <key>ProgramArguments</key>
         <array>
         <string>#{sbin}/icecc-scheduler</string>
-        <string>-d</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
