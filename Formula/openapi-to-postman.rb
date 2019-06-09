@@ -6,6 +6,13 @@ class OpenapiToPostman < Formula
   url "https://registry.npmjs.org/openapi-to-postmanv2/-/openapi-to-postmanv2-0.0.15.tgz"
   sha256 "d38df0bbf4460f464f5124ff6cbc9e246e71af0cee0d174fab9a9c3c0c610787"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6331f5bd5d238ba7e19b3e68f1d8cf36339412836a6ce2ec74c7e5773493d909" => :mojave
+    sha256 "7ac65a0b0e4d33d32e4d1ff424d2c56613e618ca59276bff00dc0ca0373f783e" => :high_sierra
+    sha256 "7cf68459006ea3a07e3b7b4da911236990526fbad5e267a4e0b5ac5c59faefe8" => :sierra
+  end
+
   depends_on "node"
 
   def install
