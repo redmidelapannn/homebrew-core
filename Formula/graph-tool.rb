@@ -19,13 +19,13 @@ class GraphTool < Formula
   depends_on "google-sparsehash"
   depends_on "gtk+3"
   depends_on "librsvg"
-  depends_on :macos => :el_capitan # needs thread-local storage
+  depends_on :macos => :mojave     # c++17
   depends_on "numpy"
   depends_on "py3cairo"
   depends_on "pygobject3"
   depends_on "python"
   depends_on "scipy"
-
+  
   resource "Cycler" do
     url "https://files.pythonhosted.org/packages/c2/4b/137dea450d6e1e3d474e1d873cd1d4f7d3beed7e0dc973b06e8e10d32488/cycler-0.10.0.tar.gz"
     sha256 "cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"
