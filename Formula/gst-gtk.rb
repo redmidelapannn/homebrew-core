@@ -6,6 +6,13 @@ class GstGtk < Formula
     url "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.16.0.tar.xz"
     sha256 "654adef33380d604112f702c2927574cfc285e31307b79e584113858838bb0fd"
   end
+  bottle do
+    cellar :any
+    sha256 "35bbe4e3c3193c252a93b00b023894f4b286ac47bd5173fc19fa4c2ee43b6aa8" => :mojave
+    sha256 "8c413097833297855fd0a9ed73f5507868652ec99df8d5032f637c5057f9aafa" => :high_sierra
+    sha256 "2a933146f1e4a32474567d9067dd874ac29afd62e13dcec9c44145f6a0335e2b" => :sierra
+  end
+
 
   head do
     url "https://anongit.freedesktop.org/git/gstreamer/gst-plugins-good.git"
