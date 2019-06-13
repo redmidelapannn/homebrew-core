@@ -4,6 +4,13 @@ class DockerCommander < Formula
   url "https://github.com/daylioti/docker-commander.git",
    :tag      => "1.1.4"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7e31880aebe057c3ff40c0ba4f9b4b21183d6aae6466d16ba48756d9d3dfecd0" => :mojave
+    sha256 "d5b9b31be2b232607514cb2ae3daf09c34440c692a855e9afa122e9cf289fdff" => :high_sierra
+    sha256 "e8a7ea37ce9466278962e6119932d47db669af53c2d907bf994b617358d75fc1" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
