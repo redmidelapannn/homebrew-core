@@ -6,6 +6,13 @@ class KymaCli < Formula
       :revision => "07d1041389d1cb0b8a9e69cda40e3afa762bbc72"
   head "https://github.com/kyma-project/cli.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2bb7efb05664c08799df4930eee3e231f6098303eac7913aee7730fd2ff73bdf" => :mojave
+    sha256 "47ec845022e0de9cb9a4b9c6ca56c451e117352d8c3d1042c96287d5eb81595a" => :high_sierra
+    sha256 "811edc94dd7816c495e33b1611210ab9cbbc738f62d747ccf5ea06b35880d0d7" => :sierra
+  end
+
   depends_on "dep" => :build
   depends_on "go" => :build
 
