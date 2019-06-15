@@ -141,9 +141,10 @@ class Kontena < Formula
   end
 
   bottle do
-    sha256 "170a42416de88a77d260b3dd2b9d7cfb1820fc52b1d51de6ea21d130a617eb55" => :mojave
-    sha256 "40a456f4b501756fa04f59ffa5ff789fb34e2cef04e56ac7b068e9fc25663e3b" => :high_sierra
-    sha256 "f4fc71532c035c564bbbfdddef58ff75f601bf4d34fefcb6ff5a166cb4c2a550" => :sierra
+    rebuild 1
+    sha256 "e846cc4956e20671037f5f6768904cafee1a23aa636e1f4e4b7c383a85cc4d07" => :mojave
+    sha256 "eb34a92b598bd59b80f1c206bc241bc8786c8e828754a2d1aeff5d1c4e8727e0" => :high_sierra
+    sha256 "7d1d4e490c323189d786c8f4b7731d5059ff43c6caceb99ee448006574e8f7da" => :sierra
   end
 
   depends_on "ruby" if MacOS.version <= :sierra
