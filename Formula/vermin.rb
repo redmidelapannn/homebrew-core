@@ -8,6 +8,13 @@ class Vermin < Formula
 
   head "https://github.com/netromdk/vermin.git", :branch => "master"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "63a13559ea8f37f8f26f5b5be1d7d29919e58c638044637c51c9def2b8a44f9b" => :mojave
+    sha256 "4c0f7ca2eb0fd11bfed34bb4df614758aedc81f3c0037b84d12015f1e2b6c7fe" => :high_sierra
+    sha256 "09d2e2ba87d6146b510fb455df34605ff871790402345ebc71a7b9ee524a2768" => :sierra
+  end
+
   depends_on "python"
 
   def install
