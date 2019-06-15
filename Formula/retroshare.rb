@@ -5,6 +5,13 @@ class Retroshare < Formula
   sha256 "d974d25cbcceccaf6e23e3b8d683d61e91b08c1853b3be0ecb06281809979cb3"
   head "https://github.com/RetroShare/RetroShare.git"
 
+  bottle do
+    cellar :any
+    sha256 "879483e94041aa9dce300acd06fae511bf3204a7d4e67ab64d05f653003aa700" => :mojave
+    sha256 "e05fed2bbaca9582228c9242a0e4ffd4f46dd1636a84f9355384159cd2140e4f" => :high_sierra
+    sha256 "6c92f914dc740e4fabb2d67649a9060325a07a77313252329a8803f55f4acc37" => :sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "miniupnpc"
   depends_on "openssl"
