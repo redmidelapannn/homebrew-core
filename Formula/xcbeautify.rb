@@ -5,6 +5,12 @@ class Xcbeautify < Formula
       :tag      => "0.4.3",
       :revision => "d7363b1990200996040b5aa79106536aa8b132d3"
   head "https://github.com/thii/xcbeautify.git"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1dfa6ee7b27b249879902721b8ea808e0ef538c05f05aae6b32ccbea44a7bbd4" => :mojave
+    sha256 "c7e1c05e5a4a63232c620d3b792379cf28bc7795951536f25f017d51db9b49ac" => :high_sierra
+  end
+
   depends_on :xcode => ["10.0", :build]
 
   def install
