@@ -6,9 +6,10 @@ class Sshtrix < Formula
 
   bottle do
     cellar :any
-    sha256 "a54f2c867dd6539824cc69888975d3cd2041b4b922183262d29fcdf655391cfa" => :mojave
-    sha256 "dd567f106a7fe8a7a6f9e2474b284109e1dbcb14ed847163d1f65f4d69467f93" => :high_sierra
-    sha256 "dafb3bc8c14e729cbbfbf8dc6a9ce789e01732a644aa84b243af24f2bd92ce19" => :sierra
+    rebuild 1
+    sha256 "616ce0f718339ed91f412df65361dd207b5fe05d17f54619dc0652556b9c7bcb" => :mojave
+    sha256 "946b05b98a22c0becc8537a3391bb545937b1dd39782d58b433a8ac7925416be" => :high_sierra
+    sha256 "7f309515846c174eec35a41659a060eb29ca5caf63398598d5650cada1602494" => :sierra
   end
 
   depends_on "libssh"
