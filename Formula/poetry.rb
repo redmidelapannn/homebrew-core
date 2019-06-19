@@ -4,6 +4,13 @@ class Poetry < Formula
   url "https://github.com/sdispater/poetry/releases/download/0.12.16/poetry-0.12.16-darwin.tar.gz"
   sha256 "63f30bc5ef15333f4c638dd82e036fa2425f48b6e3ba0fec515b8f77d63b86c6"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "701c74f52ede38f54be14452ab47eba649c22d0206930f594115a1e713aa602d" => :mojave
+    sha256 "701c74f52ede38f54be14452ab47eba649c22d0206930f594115a1e713aa602d" => :high_sierra
+    sha256 "7e80ec832cc2a70011401dc83ac1e8091dce49c559880314676239607751837c" => :sierra
+  end
+
   resource "install_script" do
     url "https://raw.githubusercontent.com/sdispater/poetry/0.12.16/get-poetry.py"
     sha256 "5c9ea1d3dff0e04369443d38f214e051dc0fc2ea180e706d6b6c368b28ac7f4a"
