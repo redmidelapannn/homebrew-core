@@ -6,10 +6,10 @@ class TaskSpooler < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "319c29e750b0ba183b14accb571c4d210723458d5fcd72302b5ec866e5a76ad4" => :mojave
-    sha256 "8045397e275ade52621a1ab3a21e3eddf277fafd1beea60db2d10bc15d11b8f2" => :high_sierra
-    sha256 "e0f7e33946d3f8c93782692b3bab5833cb2e882f1fb47a4473b69e39ce3e7378" => :sierra
-    sha256 "9403d0c240bad09d576288d6b5ed94057dad03ceb30a4893a935c13f9e58af7f" => :el_capitan
+    rebuild 1
+    sha256 "57b10c9fbd54ead74e879c5dee92a54ced4839e0862d405ae9422d6cadade02f" => :mojave
+    sha256 "563fb19a0c8f282583d195d723efb0e617f15b8e61a61c5b2b5adbc1798804fa" => :high_sierra
+    sha256 "c59ed2ed44e6dab3752d225f36eef163b8191aa71721c261622419fce568a4c1" => :sierra
   end
 
   conflicts_with "moreutils", :because => "both install a `ts` executable."
