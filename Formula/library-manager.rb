@@ -4,6 +4,13 @@ class LibraryManager < Formula
   url "https://az320820.vo.msecnd.net/packages/microsoft.web.librarymanager.cli.2.0.48.nupkg"
   sha256 "ca4f4ab4e57da62d650607b4a7a73b27a23dc2453896eda8d104ddc17e3b42a8"
 
+  bottle do
+    cellar :any
+    sha256 "6a101a23ae43e907595354a97605953a3e3f5f3b42053aebb2f40782c526dd1b" => :mojave
+    sha256 "6a101a23ae43e907595354a97605953a3e3f5f3b42053aebb2f40782c526dd1b" => :high_sierra
+    sha256 "fc236521ad8ef936a48acb264e29eae5de01c90956850c78246d3aa62511ba24" => :sierra
+  end
+
   resource "runtime" do
     url "https://download.microsoft.com/download/9/1/7/917308D9-6C92-4DA5-B4B1-B4A19451E2D2/dotnet-runtime-2.1.0-osx-x64.tar.gz"
     sha256 "075cacb4535656e9fa64adffd1e7cd4b9471b1a06e4d74eb84079c924d7b37f1"
