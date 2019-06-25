@@ -6,9 +6,10 @@ class Icecream < Formula
   revision 1
 
   bottle do
-    sha256 "2118015d81859d3149fcc2ca0cc46f3c33962196763926296adf13eb3e8f6872" => :mojave
-    sha256 "3bf33081248ecf62d9023e72e7a46601768fae1863a9c01cda22a5ca35612dd7" => :high_sierra
-    sha256 "b1a775dafdaf583d71357f389c6851c397e8e56cbbca41f3d426915d74c3a1be" => :sierra
+    rebuild 1
+    sha256 "c90afed7560cf54f9edef19d709d66be20dae591dfcb257bb063b8a385ff1988" => :mojave
+    sha256 "64e543b889b4173ed9da20dfaa75cc8b22131556c239ae301419287a0b74cfe4" => :high_sierra
+    sha256 "4bfd071642d9a556efb04e99ad86d242e6d8f42bb62fc12c63873c384fcab2cc" => :sierra
   end
 
   depends_on "autoconf" => :build
