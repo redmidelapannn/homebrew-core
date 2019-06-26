@@ -7,10 +7,9 @@ class Stoken < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "8b558486eeb55f39205d26201a1613eaaadc9b6615d1e5f24b3487749acfb89b" => :mojave
-    sha256 "2aeef625d9594a2fc26890500d1c8ff611e8c5c69df6f8ac905b6a72f179caf0" => :high_sierra
-    sha256 "0896359e6966f067248616b2393e5e0f24a05639c4059c7f6bbd025acb867714" => :sierra
+    sha256 "f78407d0c40f9c4476bd0cf596fa3ec2eaf0e75124d038b491440f34c5fa6b95" => :mojave
+    sha256 "e2b5ffd565299d6d1d4c7e78e1bc195de80289ea275d99504f6efa348ddc541f" => :high_sierra
+    sha256 "08414abd1981e3806efe03d0833911856ca355c4fd55bc529e3c725a5fc385a3" => :sierra
   end
 
   depends_on "pkg-config" => :build
