@@ -27,7 +27,8 @@ class Watch < Formula
     system "autoreconf", "-fiv"
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--disable-nls"
+                          "--disable-nls",
+                          "--enable-watch8bit"
     system "make", "watch"
     bin.install "watch"
     man1.install "watch.1"
