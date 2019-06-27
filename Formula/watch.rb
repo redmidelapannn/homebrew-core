@@ -26,6 +26,7 @@ class Watch < Formula
 
   def install
     system "autoreconf", "-fiv"
+    system "echo", "\"%s/\\\\(CURSES_LIB=ncurses\\\\)w/\\\\1/\\nwq\"", "|", "ed -s configure"
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--disable-nls",
