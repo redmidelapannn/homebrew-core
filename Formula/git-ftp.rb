@@ -7,9 +7,10 @@ class GitFtp < Formula
 
   bottle do
     cellar :any
-    sha256 "37a19b4e3a957bd80143591d242cb17554cc40930c99ebb6f7a43f9446290dd2" => :mojave
-    sha256 "67f3da9893b3df734502c349004dbef137bc490a860d75630ff2576b2362ff0b" => :high_sierra
-    sha256 "6e0e4282c7ca692ad99675cdc2db8365d59c0aac5f8381f3e0ef064077703d7b" => :sierra
+    rebuild 1
+    sha256 "2d4d1796bb292667310fa38df91cc6145a8f57dc5bf1b23e78d992b497ae1083" => :mojave
+    sha256 "d9aa444626a4292598f15a13bf19708e66b048a1b5dc9f1472e9a49ece57e44e" => :high_sierra
+    sha256 "492ffb2da92fc0f9f5a563c7a67b38c21aa82af1e6efdb4fab09bb904d9c3c50" => :sierra
   end
 
   depends_on "pandoc" => :build
