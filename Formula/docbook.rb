@@ -6,11 +6,10 @@ class Docbook < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 4
-    sha256 "8ddedcb7fc0fa34ce6f641d85fb5ed2ecc470d8bd323648bf00b571b597d3d02" => :mojave
-    sha256 "6ac70ee56739ffbe8d99e18164bc42d8d0df9ce62cc2a5c55be4b65cd74092aa" => :high_sierra
-    sha256 "6ac70ee56739ffbe8d99e18164bc42d8d0df9ce62cc2a5c55be4b65cd74092aa" => :sierra
-    sha256 "6ac70ee56739ffbe8d99e18164bc42d8d0df9ce62cc2a5c55be4b65cd74092aa" => :el_capitan
+    rebuild 5
+    sha256 "6e961e5c38f216d8be965f31d7435c03109195a55bc67aa18e37269e5f1e86dc" => :mojave
+    sha256 "6e961e5c38f216d8be965f31d7435c03109195a55bc67aa18e37269e5f1e86dc" => :high_sierra
+    sha256 "2d901ab929dcd20201eb58f43da5ca4adb1b51b374ce80ae7bd822d21aaa4b28" => :sierra
   end
 
   uses_from_macos "libxml2"
