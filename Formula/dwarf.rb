@@ -7,9 +7,10 @@ class Dwarf < Formula
 
   bottle do
     cellar :any
-    sha256 "c10f3ccbb2dc59b7c76c9dd46a71f1e41d7c7faa8fab5f4326599b3a5467c770" => :mojave
-    sha256 "92db022169f222a0ce002e6c20e6256cc5636f61c1e6fa1c44b56481c5a2422d" => :high_sierra
-    sha256 "dbc5a7043b5888284ddab1d97b57406fc6c24d71c205a54482e3ef0e442e20fd" => :sierra
+    rebuild 1
+    sha256 "67b9b94682cc68c189e30e057d541104aae5b20de2cf83aa888cff8a30f41161" => :mojave
+    sha256 "d3619309db543c7bc5d28a9d40c2911c0d968e9dd5f186abbea8e7f8765bf42e" => :high_sierra
+    sha256 "c0e8d574bcfbd8586c125c1f0d3bd5c05e1aaaf04d542871383547582de91bef" => :sierra
   end
 
   depends_on "flex"
