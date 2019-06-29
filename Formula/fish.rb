@@ -6,9 +6,10 @@ class Fish < Formula
 
   bottle do
     cellar :any
-    sha256 "0dda76c64b0e2b4f1bfe48b816346f54a3fd9531550439caadadc6a1641c6d6b" => :mojave
-    sha256 "aaa15fbea68f8414084124da4347aec31484a3ab6320daf5f1cd54e208bf32c1" => :high_sierra
-    sha256 "65eb56f5d3e5978051743e0e1a6616983f34922cad65cbe0964b671d9bf4437e" => :sierra
+    rebuild 1
+    sha256 "1463d9cee9e34ab1d74986d0ff1b562ebc328c16555426a1bc80dc8aefa1094b" => :mojave
+    sha256 "596d8baada3d728a3a881859020c70545f1b176c792ad92102ac4f1e4a4c0197" => :high_sierra
+    sha256 "e7444bbb0d158ef670e28d9ea27db59aff621348ac526019fb534c0c42cdda10" => :sierra
   end
 
   head do
