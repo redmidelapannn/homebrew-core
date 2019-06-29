@@ -7,9 +7,10 @@ class Hfstospell < Formula
 
   bottle do
     cellar :any
-    sha256 "3fc40f8552901ebf609c7ded5c7c167833b0cd6059f4bfb452ddc8f98a61aec3" => :mojave
-    sha256 "9f21cd52687c76ef0d0a00f35b20856061e3b3885b6c78c84cd0dba5e1168d46" => :high_sierra
-    sha256 "38f16780e69b8f322d73f1d3d5b200261bdc8f03cf821db6591ade42dca52a5a" => :sierra
+    rebuild 1
+    sha256 "d52e1a5f1e640df81f8173a870983e2ad0a39f039f2788a6745cf37980e8b9e5" => :mojave
+    sha256 "c068018aab41929ef7ae3c4f5ea28143008b2199abc43722ad764dc4eea9410b" => :high_sierra
+    sha256 "c338147aa0f686b305b3eb6cee0c97bd446eaf287cfde0aea2fbeed70cced3c2" => :sierra
   end
 
   depends_on "pkg-config" => :build
