@@ -13,11 +13,10 @@ class Jack < Formula
   revision 3
 
   bottle do
-    rebuild 1
-    sha256 "0df230c0f3646fb29ed5ff3041c810f92220d6ce012ace2e5c001f3d7eb05298" => :mojave
-    sha256 "fd05eff6fde13c465c68d03bdd1f66f25e6e4b630348ed19cb2966f71a724601" => :high_sierra
-    sha256 "651fef8ee2b8b844006b41c23c89a787664a76fb2614f9c6b47a8827adee091d" => :sierra
-    sha256 "ee93da9885f06dde0f305fca2d5af6d6213c2133466ca93857a87ffb731ce43f" => :el_capitan
+    rebuild 2
+    sha256 "90e56bd82992a35728eddf4599c87635cf5a9e89996f1adc191e8832ad73c5d6" => :mojave
+    sha256 "eec73ce4092bf674f7f69af795a4bfeee217b63a017ff712e3d4400d0fab5751" => :high_sierra
+    sha256 "3fd2e8a9e272ad1c6485c1a2818f0708de14afe1ac3760a0adfe406ad040e803" => :sierra
   end
 
   uses_from_macos "util-linux"
