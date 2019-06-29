@@ -5,9 +5,10 @@ class Collectd < Formula
   sha256 "e796fda27ce06377f491ad91aa286962a68c2b54076aa77a29673d53204453da"
 
   bottle do
-    sha256 "ffa5b1bd3d607e47410ba26ef11b3d7132f42049a035c9b87ddadad385c3546f" => :mojave
-    sha256 "61e26ab9d8127ddf942dcd163c6c78f50890b05f309ed7e329c7b8f859205c96" => :high_sierra
-    sha256 "486dbe8acc823c12263308eddadf22e56c862161e190c7b2f1b57e6feeb99384" => :sierra
+    rebuild 1
+    sha256 "ab5914612423feb500b383db1b856aa7779adb4996796c6e9b30902c4823c9f4" => :mojave
+    sha256 "62e0eebbb4a08069ccd5030d1543a253e706c5cfd1d769264d6af535e72069dc" => :high_sierra
+    sha256 "d53bb00f4f3f623d4f7433babd45a9691f0760dc1074ffa6148fa0f0525a589a" => :sierra
   end
 
   head do
