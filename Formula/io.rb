@@ -6,11 +6,10 @@ class Io < Formula
   head "https://github.com/stevedekorte/io.git"
 
   bottle do
-    sha256 "9e628fa0879d7d2e370ae5275393d1d52b578f6f10d3f005faf9d0360caf8851" => :mojave
-    sha256 "686d5d23790b53c27765d49da0a74ec96ee949353b31646a0a92ee931270a23d" => :high_sierra
-    sha256 "2d0e05344917ad3a1d322f2860030013315ceb7e8ae962cf6070d1ee8cc395d4" => :sierra
-    sha256 "3a5a0e9a1ec0ce7f4bc6bcfc5fb8c782f0b1ba0451251aaab51a796452b59e67" => :el_capitan
-    sha256 "16d31a7062e2c7ebab815bcd48b03aab9597a6c40071cb407e2bc6dec91fef0b" => :yosemite
+    rebuild 1
+    sha256 "ae69b72617fd73562cad37b96892cd4e4665b5db9244e41d61a9fcbda834c8a7" => :mojave
+    sha256 "92051e6636658406516630bc364ecd151ca6addba70ace7d47ce0e25f69a875d" => :high_sierra
+    sha256 "50c97f9fea8fbea14ad781116b05d90edbc803aec7de9eebb94ae7beac52e1ba" => :sierra
   end
 
   depends_on "cmake" => :build
