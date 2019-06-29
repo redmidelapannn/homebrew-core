@@ -6,11 +6,10 @@ class Arping < Formula
 
   bottle do
     cellar :any
-    sha256 "1ad01f9bf993312c04c2b67d9b0b975e20ea017a88d771b6ab0dafab9ad35114" => :mojave
-    sha256 "10814e4189c25dd909346c39ab9b504244596a8b09dffc9d7ca91272decfded5" => :high_sierra
-    sha256 "fff7a3fa700564778114ad421446a48fedd06e252074c6be66e2c4102e538ec4" => :sierra
-    sha256 "e60c8221e95db34d5d2a66039d229e242f194b05e22aa4ebdefd7b06cd00fb74" => :el_capitan
-    sha256 "cca37d86bc0c93413cd9b1d9259113c21e7b512c780f1e74da71f981e3986c8b" => :yosemite
+    rebuild 1
+    sha256 "13b99429413dbb10d804557111e8d1ac1d5b23284a98d1a8c349b56726f85ba3" => :mojave
+    sha256 "92423c2ec66e46f1aa49922bcbaf4c61e40a2491b7c40914806cddb9c039e88a" => :high_sierra
+    sha256 "fad0ca41c820ac7129758b5c40ac3d8afddb26c00a55bba0d520d81abfc85aec" => :sierra
   end
 
   depends_on "autoconf" => :build
