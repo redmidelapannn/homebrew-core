@@ -6,9 +6,10 @@ class Chezscheme < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "22a69bfdc7cc44396429124104397dc5377b4e1b184064c8adec33bd0ff6203d" => :mojave
-    sha256 "3ce7b28cde766fe8b6f4c517182b5c21f38371108839712ac85c94f3fcd4a07a" => :high_sierra
-    sha256 "e26d93d7b1c4bfefa3238809c81cfe6b30a3d0fd57e716bb712a1258cb05d5f9" => :sierra
+    rebuild 1
+    sha256 "7f47a90f82d2894f39d6d9d6e429c2cf27208da8dec2001f489dec6e77ca1b3e" => :mojave
+    sha256 "f349af59c8904e4e2533142bdc4dcf9a727b96182a996925d87b5aacebf533bf" => :high_sierra
+    sha256 "052b29f8f72d32b31054533d9742389819fa4e811496773df0025daa82f40918" => :sierra
   end
 
   depends_on :x11 => :build
