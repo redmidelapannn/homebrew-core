@@ -7,9 +7,10 @@ class Advancecomp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "798de4490c97283280259ffc1dc39159bd0ded85edb47f3212ad5ec9a174289e" => :mojave
-    sha256 "fdb2a72157445c33a462388f05580489c427f4f0d2a3d4cdc1b7867ef69e7e53" => :high_sierra
-    sha256 "4ef3590e26c5ac96d64dc985b035ec7055f215c84d31dfb09542d958f6ec4e77" => :sierra
+    rebuild 1
+    sha256 "77837f378fa11d8d72b0067d66d87750d925529cb94fe710e723b4db8cf38793" => :mojave
+    sha256 "f66f9d2b77f1077e27169aa99b74862c421655bc05237c501847c88e39aab610" => :high_sierra
+    sha256 "cbd8ac85bd49d7add98f61e621c01737f7f200160f94bab63aad7ca35cf13e43" => :sierra
   end
 
   depends_on "autoconf" => :build
