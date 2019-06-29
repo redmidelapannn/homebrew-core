@@ -6,9 +6,10 @@ class Aide < Formula
 
   bottle do
     cellar :any
-    sha256 "bb68fa349609a0221b2138e3596ceb803242862b771bb0b76440057e31201050" => :mojave
-    sha256 "fff1a3e469346d9181f73d8c3d734801b900c765308f3c36495b1801fb3ad897" => :high_sierra
-    sha256 "77aef168355fa73b01b0967d80058582f7387997ba2c7f7b7aad0eb335939488" => :sierra
+    rebuild 1
+    sha256 "967ce0e2594eacb11ef92cb0574b71731ac37f88aea769879e7b323b67463cae" => :mojave
+    sha256 "37dfc7c751cc64d278d199d11e17cb46f685207222f7b17b02ed63cf9192d48c" => :high_sierra
+    sha256 "42ab164c9e6041fc3d41e758c04c8909e532b769ebdb84c5711c386fc68beba6" => :sierra
   end
 
   head do
