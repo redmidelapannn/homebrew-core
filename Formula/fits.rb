@@ -6,10 +6,10 @@ class Fits < Formula
 
   bottle do
     cellar :any
-    sha256 "456aa46dc03d3ee38f4d6aa2a2c29f2aa3f0499eb2297d24b3c6ca0236742b14" => :mojave
-    sha256 "7d6dd16320473df3523432254f211dc846f8002c72c805f336811d530de7df7f" => :high_sierra
-    sha256 "89566466a165dfca0947c7686ed6559a202da46375344906625a0f0e4cf3a057" => :sierra
-    sha256 "135d0c1a755ecb3cbd2277a789849eb0178f62e972de2e43ea4bfe1b14d17b26" => :el_capitan
+    rebuild 1
+    sha256 "bc6235ec22d549921c51f23df79bacfc43aea5c0edb824cba4ee2114b73c3eca" => :mojave
+    sha256 "5c2b82ad3ddbdf3e7efb73003f55f99616e9ff162e1df9a68f8790a9216a8ba9" => :high_sierra
+    sha256 "abfb591f7f69832f662f45d20dfcdcd653aad414b5dc51141552bfeee783b76b" => :sierra
   end
 
   depends_on "ant" => :build
