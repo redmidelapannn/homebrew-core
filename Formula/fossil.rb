@@ -7,9 +7,10 @@ class Fossil < Formula
 
   bottle do
     cellar :any
-    sha256 "2155fbb40aaacc783a7254c152837115e780ba5675b985a8427198bf0c7f9e90" => :mojave
-    sha256 "39c90e8c292e4759cbfe09e1055127201b8ac8acd0177bd5cb08c79c22cf01ed" => :high_sierra
-    sha256 "8aa65a2ef9b2d15814fc0a19645f21a5c07f66c62e4f0c9c2444247acc798e22" => :sierra
+    rebuild 1
+    sha256 "9158f364a9b36ca1fcd592350e94443551ab218923fda42e9f6c2e132c03ccaf" => :mojave
+    sha256 "df2cb5157114253bb7c15a3d10c6d462128e86dfe38ce4ccbe7239c0640b13c1" => :high_sierra
+    sha256 "5fb84829fdbcef54a0de7ce3321cc69ffc102fcfa1b2a1604356f0f1af4782a1" => :sierra
   end
 
   depends_on "openssl"
