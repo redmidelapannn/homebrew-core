@@ -9,9 +9,10 @@ class Brogue < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "62d88540558c2f014403686898cf68d9a44c62e0095e285e77958b66e5c1ff3a" => :mojave
-    sha256 "864ae48cf80e2f1f3dc2a31a2ea4811177906eda30b11d12d5e3018ca4f1f3b8" => :high_sierra
-    sha256 "b5f6a25670f2eeb737bcde972b78801892971e2af4e3f7df1bbaa237eb4db50f" => :sierra
+    rebuild 1
+    sha256 "bf6daa95789e1dcd760dcf0d3841290b7aa58c93569d40371cbae47daf0c692f" => :mojave
+    sha256 "ab7b30ca5246d751ef1430f2ca25e154e5cba950950015f03bc640157e879f55" => :high_sierra
+    sha256 "be0afc72068ecea51a8b80fb0422012b7e89378e835f8700db2178739a3887a2" => :sierra
   end
 
   uses_from_macos "ncurses"
