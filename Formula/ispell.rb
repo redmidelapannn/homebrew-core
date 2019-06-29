@@ -6,12 +6,10 @@ class Ispell < Formula
   sha256 "5dc42e458635f218032d3ae929528e5587b1e7247564f0e9f9d77d5ccab7aec2"
 
   bottle do
-    sha256 "5e4a1b0bd20714be296012b2b90c7bb92bfa01b997a4d4efccc369b9553a8eb8" => :mojave
-    sha256 "67142ae321c800cc9f4941e8d4e665f195dad06cc483cde11d51fed7a0cde426" => :high_sierra
-    sha256 "697a51b2d4e5d568ef18fdfe5943691a534145829522e3d4bb7d25f2f7978c9f" => :sierra
-    sha256 "81d9f6f9aca0f92ba3bece2ad22d0b0bca29c719304c6c5e8e59b02a3c8763da" => :el_capitan
-    sha256 "ff46baf7aa6daf42fddde68897bd80dbb073922b4556c502e7b0072656b48498" => :yosemite
-    sha256 "f1ee90dcc76682d17c2b758d2a896493448753acc0e556e9b0c8bf7ec0f552df" => :mavericks
+    rebuild 1
+    sha256 "b074972f24b8993fc801914aab1d6c092edc96d744eaae091453c6f487ca8ac7" => :mojave
+    sha256 "52a963dac3e6f06f4604b3bdfba36f196cdc8937cd1ef79bf80b1d06da8c98bf" => :high_sierra
+    sha256 "0588166f6e182249d87b453af81382de796b4be4b195173f1394f713115a5eab" => :sierra
   end
 
   uses_from_macos "ncurses"
