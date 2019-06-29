@@ -7,9 +7,10 @@ class Fontforge < Formula
 
   bottle do
     cellar :any
-    sha256 "755c0de75b7900bfbc5c2d65cad3d65ea51335694738e3bed652ff07fa0fe4cd" => :mojave
-    sha256 "50baa3d0a77de516261e0e81344aac39a40658203badc8916018701e703a2cd9" => :high_sierra
-    sha256 "e9961cd990142589ced45395a0fb676b2bd8181032ca19cd9575e3641832347b" => :sierra
+    rebuild 1
+    sha256 "5e319ddc59a7f353e450d3869758f20785e5b0bf0cc42d4f31f9cf19a6680eb4" => :mojave
+    sha256 "dd599769d423435728c2b07d60b9cc18db0cd9a64ab36baf127619c316b78721" => :high_sierra
+    sha256 "370502ad0460e0506aa7aa667ed1898479f0917283481e875885ec102b25f046" => :sierra
   end
 
   depends_on "pkg-config" => :build
