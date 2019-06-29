@@ -6,9 +6,10 @@ class Autogen < Formula
   sha256 "f8a13466b48faa3ba99fe17a069e71c9ab006d9b1cfabe699f8c60a47d5bb49a"
 
   bottle do
-    sha256 "693b555483cf3f1e67516e45b31ad7718f041c97349ef655e28d55b1918b4e3f" => :mojave
-    sha256 "7b79a5aa968c4d95660efb7a30bfb2c747dde2eefb1cf95efdc9fea7847b9151" => :high_sierra
-    sha256 "19891a89ee7465e2690d34494e2ee41afee0dfda661a0c1c7407d283438e911e" => :sierra
+    rebuild 1
+    sha256 "4b929552169011f3213a2542fb9fa38a061d873c0a5e14aed0befbd1e7d430f2" => :mojave
+    sha256 "bc9a4845ee36d1a1e4354be652634ae6c513314701eab052792fdd729a50c1e9" => :high_sierra
+    sha256 "ca9e5409e6fc374b10f6a4e128093786f5a631b49fae7f394d2e714f0ad4120f" => :sierra
   end
 
   depends_on "coreutils" => :build
