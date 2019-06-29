@@ -6,9 +6,10 @@ class Dcmtk < Formula
   head "https://git.dcmtk.org/dcmtk.git"
 
   bottle do
-    sha256 "46d767ca45268ce74114db9d9593e28acd17ac31ffb055c00653702f11795102" => :mojave
-    sha256 "322ad228d11c068ddab0ce532106aeddfbebd6019c433a918d3ee90eb53d7bee" => :high_sierra
-    sha256 "09ed452dbde3f7eae5233d475a1bbf07824505773729dcc55f6f00b90378d8fd" => :sierra
+    rebuild 1
+    sha256 "b41d7aee3a306a26f5c7da47dba7e93dcf1c04575078cae89c412a0e07e77f11" => :mojave
+    sha256 "e72584fd0f38e9696b07ea058b8258f49035a6846789ea56ddb0c891be50a031" => :high_sierra
+    sha256 "039bf60f7e2b80394268cdc495f6eb0af9ed9d30a438fd17d3b70ee60c3b7cf4" => :sierra
   end
 
   depends_on "cmake" => :build
