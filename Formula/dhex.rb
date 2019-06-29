@@ -6,9 +6,10 @@ class Dhex < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2d6043ce881b7b407fa40691639c25c72d73a427fcdd39a56e0683f48b16b328" => :mojave
-    sha256 "bfc2aa6c73ffff61a471b4dd8e183e493781a5c34baeddffc56fa89b0542a9bd" => :high_sierra
-    sha256 "b83e63ad0f1e2910e1f2495903ac4077aa5caaabe8cb2702094f42c3921c7a9c" => :sierra
+    rebuild 1
+    sha256 "24526bd9b92f34337f3dfcdd9a163a9cc66ddc092aaabec9585eacf17e281264" => :mojave
+    sha256 "478f129d522dd60c684515c36600238040fe767f0761087a5b5f576d63190373" => :high_sierra
+    sha256 "f14b40c1962a5737163ef5b4a382ff0a4d42d7f29d14d1895138d1cdefe798fe" => :sierra
   end
 
   uses_from_macos "ncurses"
