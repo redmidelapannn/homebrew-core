@@ -5,10 +5,10 @@ class Fontconfig < Formula
   sha256 "f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741"
 
   bottle do
-    sha256 "1c704a5a4249252bf42dc4f2a458f911a7858a931858ad257d9ec39978ca5095" => :mojave
-    sha256 "3b763143a4d6e3c74b3a8b237d2e5a383696347ea3599d07957f73a3f6521d23" => :high_sierra
-    sha256 "631531c4eb502bd97e4a5bef30760d1eef87dd50306ef2defb9460ac3338cfe1" => :sierra
-    sha256 "40d70137a970e257de5cf1251b10d56d7db835faee88a9f4c020b4a4e4f82eb1" => :el_capitan
+    rebuild 1
+    sha256 "b940e8fea383dc520e3339d85a47e123a391aa3ff1f11f9a6944a2f7ef05e3f3" => :mojave
+    sha256 "1646611796134d623cc4f346d432a4bda4244a7057e6524827dde85caddcc7b1" => :high_sierra
+    sha256 "5a6f3c47405a1708326083cc805b18095ebc46d7b7d459f94c305f9ec6d79b22" => :sierra
   end
 
   pour_bottle? do
