@@ -7,11 +7,10 @@ class Libagar < Formula
   head "https://dev.csoft.net/agar/trunk", :using => :svn
 
   bottle do
-    sha256 "05a3ac6970817b2ea375fa56e384da8a954a0ac75948cafc5641ff724a35446f" => :mojave
-    sha256 "e04ccaee7f578f806d5544fe130febfb8de0bf3ca7fa3ec3562a623ebf2c9039" => :high_sierra
-    sha256 "718b79132faa46ad0e8d59dd1ae647ecdf89d6e51a9051ad9fdf08becf5c0241" => :sierra
-    sha256 "b0908e5e28f7a7acce3ec0a333f513afedaef0ef464c75a1faa74a35e4eb3291" => :el_capitan
-    sha256 "c030ffe2c1a718afb161bef162b9252a9dd3dad5e4318c818a3f3203c27bdf0d" => :yosemite
+    rebuild 1
+    sha256 "d43d1992ba880d623ee9f154e2ddfbb67a3d352d27ad1c4e3c2ce105179a14b4" => :mojave
+    sha256 "6a55c19c801edf096b7491915a1054cb10d6c668bf54b735e96500d24222ab02" => :high_sierra
+    sha256 "9962cfbb5b90470c8153e42dc31cdab83570d381d31fe616c581097a4ec5e4d6" => :sierra
   end
 
   depends_on "freetype"
