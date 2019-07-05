@@ -8,9 +8,10 @@ class ReactNativeCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8e6e253c7801cc276f89f2988245866080c1409602c5903dbb2984b1a645746b" => :mojave
-    sha256 "387e6f8c0e9f20b4ae2007185d394ff73cc3392085a6a05045b669512780c55e" => :high_sierra
-    sha256 "81ef6bdc246a412022d070b5020b567864b177a53fcfeb15c44f7be38e6130ab" => :sierra
+    rebuild 1
+    sha256 "f821c21f8bfbb3a49833c76aa395c25699c4221b213712952a1186906339445e" => :mojave
+    sha256 "7e4ba0d35a7b13c4c3fbf8894fa59c79777f1bb9e3f976a18e881879cb6a51f5" => :high_sierra
+    sha256 "79d38aafb0167345f89bfe60d95d506324b5f3b5170e76f9ab43cabd98b9701e" => :sierra
   end
 
   depends_on "node"
