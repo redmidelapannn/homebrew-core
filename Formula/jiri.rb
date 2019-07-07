@@ -7,6 +7,13 @@ class Jiri < Formula
 
   head "https://fuchsia.googlesource.com/jiri.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a3cbf6efd6e1bf250b02675796aa88ad22caadaeb648398daa2b7c6603ae3746" => :mojave
+    sha256 "0bb8f36bb5d4ce4e9857f28bd9ffd3dc9ea116826692df8ca52446ddfeda139f" => :high_sierra
+    sha256 "4e7976ed63b1b2bd8ef85a95ad39c896377a1beb00ce08e17c3139d68a9a41f6" => :sierra
+  end
+
   depends_on "go" => :build
 
   resource "gonet" do
