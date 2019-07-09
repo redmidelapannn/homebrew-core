@@ -4,6 +4,13 @@ class Rustfmt < Formula
   url "https://github.com/rust-lang/rustfmt/archive/v1.3.2.tar.gz"
   sha256 "d9ff195fa0f02012c0be8aa7b387e2140271809f61f3b621d7228a338670e040"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4a856a10e6d2ea8d7e6a965c8211997b448d16d228b5825867720936e6b06f3b" => :mojave
+    sha256 "bec73b90c1447dad67342a1c145c34b45b48858ac0193704862782f9a8a563dc" => :high_sierra
+    sha256 "d61233c2854e5836ac29e7a49b41799b56340ab2547dffc2d89808ffc51ecddc" => :sierra
+  end
+
   depends_on "rustup-init" => :build
 
   depends_on "rust"
