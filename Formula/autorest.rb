@@ -8,9 +8,9 @@ class Autorest < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7a733987c3697be46e99912c3c86ddaa8093e41ce544fe2d3b78d94727cc6079" => :mojave
-    sha256 "91d12305931fafaaeef51415db64526c5ae6df78f67511998c98a2498ef9a433" => :high_sierra
-    sha256 "69807952f97305180d1fdb2738c580109e66f845a7e5900b54c708114e7e3eeb" => :sierra
+    sha256 "a01ffb3b8fc23c7b417b1e4977645e581ccd70c17741a592b5d718c35000d796" => :mojave
+    sha256 "43346358889712ca4642bd76b5c1b0888d7b56d539584c19f54310b92d9ebc35" => :high_sierra
+    sha256 "1749c9da28799d3cbe92c84c93b0bdfae2ab5cacb0f8efaeeb0e57edd6eba958" => :sierra
   end
 
   depends_on "node"
