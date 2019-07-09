@@ -6,6 +6,12 @@ class AtomistCli < Formula
   url "https://registry.npmjs.org/@atomist/cli/-/@atomist/cli-1.6.0.tgz"
   sha256 "0c00e070c8525df747676ea30241c772631c622664b26146f313fe1019778adb"
 
+  bottle do
+    sha256 "c96e9478a7ca1041a47e85cce980b0fb0fe099162311500adf6bad7b187a8e8e" => :mojave
+    sha256 "3ec1d29d16e5945e50d45332620f2477f33ac0658d563c899e0e747fa577610b" => :high_sierra
+    sha256 "e9ce852890125f992adbd784d630f61b598a7ef5af3dff93b496ada47770b2c1" => :sierra
+  end
+
   depends_on "node"
 
   def install
