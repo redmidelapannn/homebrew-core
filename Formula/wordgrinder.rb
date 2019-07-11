@@ -9,6 +9,7 @@ class Wordgrinder < Formula
   depends_on "ninja"
 
   def install
+    system "make"   
     system "make", "install", "PREFIX=#{prefix}"
   end
 
