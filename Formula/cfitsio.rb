@@ -6,10 +6,9 @@ class Cfitsio < Formula
   sha256 "418516f10ee1e0f1b520926eeca6b77ce639bed88804c7c545e74f26b3edf4ef"
 
   bottle do
-    cellar :any
-    sha256 "bfb59c9b5b42df93624a3f4a6eca92d89ea58667b560ace653dae5a726f7fb93" => :mojave
-    sha256 "9426e79aa95e40fa1f1e785738cc91df524ad040d4d25cca351ab29f7624f5fe" => :high_sierra
-    sha256 "a7b46f6352f302b0302ba5c5ce5edc89d5d0d1b4b231ed87954493c721d2f9a7" => :sierra
+    sha256 "1b9107f1bea473b3661d6434bb6065cd33bab175bc56a4e5d0bf6e7382896643" => :mojave
+    sha256 "cff65ff1977873738136223db376d5ad6e8f5f5c257f4a7c4e0718b9d94155f7" => :high_sierra
+    sha256 "115b53dee145fb5118f33b2d2d53a2fc4281d0a52dcf089afbe01b787e78c228" => :sierra
   end
 
   def install
