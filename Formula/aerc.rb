@@ -6,6 +6,11 @@ class Aerc < Formula
   url "https://git.sr.ht/~sircmpwn/aerc/archive/0.1.2.tar.gz"
   sha256 "37b58c32dbaa4395deb12974b92ed0725cb248e348b7f45bdc4354f548cbf4be"
 
+  bottle do
+    sha256 "535ea466d7ef54b34b4581d81c9c419a6bd8b07a7e493f418530e2f8cdb014db" => :mojave
+    sha256 "01515cbd41bba3f9d6ccc81d02e010a0ee9d392fd04a69ab99389178434c4b02" => :sierra
+  end
+
   depends_on "go" => :build
   depends_on "scdoc" => :build
 
