@@ -13,7 +13,7 @@ class Platformio < Formula
     sha256 "15d1add995b55416e0d42dad9e884e099416a14650e975e90ec91ff6a418a5bf" => :sierra
   end
 
-  depends_on "python" # Homebrew's Python 2.7.x (if installed) otherwise the macOS system Python
+  depends_on "python"
 
   resource "bottle" do
     url "https://files.pythonhosted.org/packages/c4/a5/6bf41779860e9b526772e1b3b31a65a22bd97535572988d16028c5ab617d/bottle-0.12.17.tar.gz"
