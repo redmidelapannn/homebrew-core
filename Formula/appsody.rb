@@ -5,6 +5,10 @@ class Appsody < Formula
   sha256 "d8ea67620e80e88ee0cd00807ebe8eb6a4ed730b86b47dddb1920c4458c4ad07"
 
   bottle do
+    cellar :any_skip_relocation
+    sha256 "9959022b180f11fcf1bbdf72bb9074eb4897f7d8625a1210ae159d869c603dcd" => :mojave
+    sha256 "9959022b180f11fcf1bbdf72bb9074eb4897f7d8625a1210ae159d869c603dcd" => :high_sierra
+    sha256 "932a9077425fe10af82c10c413a422100e049e971a25874c583a397677baa61e" => :sierra
   end
   def install
     bin.install "appsody"
