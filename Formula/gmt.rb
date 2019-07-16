@@ -8,9 +8,9 @@ class Gmt < Formula
   sha256 "0f84cd2504b6b9945a3a713466972c3876a9561a66524e4278c42471dffdf1c4"
 
   bottle do
-    sha256 "e4378f5c77d0809935ba901fadcf0ac449cf68213d91345a8837a58c7d3a4c0f" => :mojave
-    sha256 "a6358c38157102d2de9530e9312b79275276c3d06b4b515452ba24ec77a537af" => :high_sierra
-    sha256 "e6f57257e1e1c604f9cbf46f709c38d1595b149eafc68652aa7ff88cbc86ee26" => :sierra
+    sha256 "ea95bb9493949cbceea9cc4de71ea999944ba80041661cba74c96880248718fe" => :mojave
+    sha256 "8a20d0ac3b4834406f070cc9055f59844064ace9f85a4e67a9d9982e1132d344" => :high_sierra
+    sha256 "0b91c5836cb57393f1bc599fa864703ccdbed5f1579f85cb7ce3f224a7d48198" => :sierra
   end
 
   depends_on "cmake" => :build
