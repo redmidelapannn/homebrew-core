@@ -5,9 +5,9 @@ class Gnupg < Formula
   sha256 "afa262868e39b651a2db4c071fba90415154243e83a830ca00516f9a807fd514"
 
   bottle do
-    sha256 "2b0472114407f0b8d9e87addc5365593a003e87730538b7830a867d55d7656d9" => :mojave
-    sha256 "fb1bdbc7295dbd7595cd0c15edbd8813428f319c79fa40dcd674c67a02972731" => :high_sierra
-    sha256 "06c9fd498dddb5b88366e1d7cbd0624964d662705d520ddd7490db7ce8ac02f6" => :sierra
+    sha256 "a2f4bd97cc4816e8353fbb1973591cfc7d45f742bb52eed18b46bf7483132432" => :mojave
+    sha256 "d073acf724fc6c6e65bb8a8edaa7e09e3455e4c7a23d7a731f5cb1267e92f317" => :high_sierra
+    sha256 "ee782603426e6c39f2d6eb76c53c9ad3f36358a2fb1d4804fd3d4d73b091c123" => :sierra
   end
 
   depends_on "pkg-config" => :build
