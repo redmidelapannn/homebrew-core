@@ -44,7 +44,7 @@ class Notmuch < Formula
       system "python3", *Language::Python.setup_install_args(prefix)
     end
   end
-  
+
   test do
     (testpath/".notmuch-config").write "[database]\npath=#{testpath}/Mail"
     (testpath/"Mail").mkpath
