@@ -45,6 +45,15 @@ class Notmuch < Formula
     end
   end
 
+  def caveats; <<~EOS
+    Be aware that manpages will only be installed if python package 'sphinx'
+    is installed.
+    
+    Details here:
+      http://stronglyemergent.com/blog/2017/homebrew-notmuch-missing-manpages/
+  EOS
+  end
+  
   test do
     (testpath/".notmuch-config").write "[database]\npath=#{testpath}/Mail"
     (testpath/"Mail").mkpath
