@@ -7,12 +7,9 @@ class Stow < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "05b4b0aea83a487a80fcacdbf0d0e6d255e471cc0fda1b1cb162e9a83244d98b" => :mojave
-    sha256 "e530cfa129ccce32a3a593c9ab09ea5c2976bef981d8ea3dc5af9f65e301e78a" => :high_sierra
-    sha256 "93dc759da363883c6cbf581f957ed0c23abac5563de1680cb11721adc425dedc" => :sierra
-    sha256 "0bf0a55711d83b08953a2de183d20cec481029dc95e9ea2ebd5049bf13ea8e1b" => :el_capitan
-    sha256 "4062d438086c6f9e407db818d318ef9d857f7c909bd4730edfc174573f5958d4" => :yosemite
-    sha256 "1f8ca6143dacc3cebb3551606b51a982b287c3b2f371010c7b10ca82ce89a393" => :mavericks
+    sha256 "e27863758aba3b1147d661ef1cf9beccbb252b98e16deee159944e513afebf02" => :mojave
+    sha256 "e27863758aba3b1147d661ef1cf9beccbb252b98e16deee159944e513afebf02" => :high_sierra
+    sha256 "67eed47537beebcb2356068e9d7ad7bb1dc1fff8028db11e33b3949fbba090ec" => :sierra
   end
 
   def install
