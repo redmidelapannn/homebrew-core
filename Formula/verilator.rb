@@ -5,9 +5,10 @@ class Verilator < Formula
   sha256 "328a8f85c4fb0ecdabbf56e3c261485234dd1c28211e413101c533fdaea9d8a1"
 
   bottle do
-    sha256 "b708e172b2830da1feb12683b226d98c8f6c9e7cdc378d53cb1af6195570c2e7" => :mojave
-    sha256 "0991ccbe69a506b6af09fa4939c23776fe886cd906788054ac0016b448e59ab7" => :high_sierra
-    sha256 "86eb8b57a5188f0a75d612b1019ac073ac1e7fae0143babba117ca658aedbb3a" => :sierra
+    rebuild 1
+    sha256 "c4ac7296538ef3fa2b7599734803567200355014e9f5d0b2c645fb3bfb5f7983" => :mojave
+    sha256 "61d301a04bb8b10220b7f9ca54adb88a7fb862c3b150fa6f72017db74fc01b48" => :high_sierra
+    sha256 "a98d5b46dde68f498501c55b992bda7d5dfbe15c73bb6786028263ad47d8045e" => :sierra
   end
 
   head do
