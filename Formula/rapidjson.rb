@@ -7,12 +7,10 @@ class Rapidjson < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "9871eeed683c9cb7198c00c87225dd44fc4b40dfa20be2301a63c034ecc221e2" => :mojave
-    sha256 "4f40efdbe80e8060d03cfcffdcb2e51d3e4d3924272c96825c6966e00a1ee2e2" => :high_sierra
-    sha256 "9fbe96e76e21457931a5e2fff343833b84941e2387ab02212946ad71665c3f6f" => :sierra
-    sha256 "d0b949a9bd043535e2ff3e032b45b26de0083d319bc094db7ccc1edfea6cbdb3" => :el_capitan
-    sha256 "252ec61e7d5cba129a888bb566d4f2b61bd1bd2886de637f48afa638e6764007" => :yosemite
-    sha256 "806e4c788a675bbb0cff3cc9af68f8cdf46ac3d5bf49a47a94b331cc67ca0f4d" => :mavericks
+    rebuild 1
+    sha256 "5afb166fc604c2d2f33aa79e22af597dbf6553aadefe1e8defeacb66e87d6031" => :mojave
+    sha256 "426d525f21d72f197adbc41ac8a002d8af321c80efd86dff3d95930266c0039f" => :high_sierra
+    sha256 "5fcf0885306579a8a3b0355fb87fa33ae898d8c3b5b960be6d605d388c299042" => :sierra
   end
 
   depends_on "cmake" => :build
