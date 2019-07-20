@@ -5,10 +5,10 @@ class GambitScheme < Formula
   sha256 "a5e4e5c66a99b6039fa7ee3741ac80f3f6c4cff47dc9e0ff1692ae73e13751ca"
 
   bottle do
-    rebuild 1
-    sha256 "a8b9f1adce4260059b05505e13fd9036a9bdb689aa8e7a56ef8d0804199988b0" => :mojave
-    sha256 "8626389fe8f07074733a80f85d6da64b5961258f7f5a6c8258427a5378842f01" => :high_sierra
-    sha256 "e0f5ba1f66edf7b2639280d1e954b43cd539e5501b8c69b543993c85e3f9db90" => :sierra
+    rebuild 2
+    sha256 "95f357045547bed9d450b5482f2078c45f23b39198df475f4ae3a71f83a4dd63" => :mojave
+    sha256 "218116b06dac337787293f79683e29e36a1d1fc5a016bba54528ad62861e54ad" => :high_sierra
+    sha256 "c66c770c035326959643efaa438a5863913e55ea5f280c7403ce3095778c3676" => :sierra
   end
 
   depends_on "openssl"
