@@ -6,9 +6,9 @@ class Itk < Formula
   head "https://itk.org/ITK.git"
 
   bottle do
-    sha256 "043c8bb2431ca4ecb4f8e392afe98c2f6fce5688e80525356ad412fb0aa7af6e" => :mojave
-    sha256 "c0f6268306bd86bf562d0cb28566483967e11bdfc18ca098394c0837de331fb7" => :high_sierra
-    sha256 "24390090a8109b2c50ecf1c51ce3cc168c1b4722f281aa8976642a6ba9d3b367" => :sierra
+    sha256 "42f3dfca1054eab9060d54ced689693dfc1455b952d65c8478ceb830cb09cd5f" => :mojave
+    sha256 "b2494ba3348c2e195ab25b2a5373017eb2c6331c307f64bdb2320d264ee79c60" => :high_sierra
+    sha256 "d43b262b04136dd91e6be539ea5ed05bc0fb8d45555edd08489804c21196d8be" => :sierra
   end
 
   depends_on "cmake" => :build
