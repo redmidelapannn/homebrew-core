@@ -10,9 +10,10 @@ class Legit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "2cd13538dc7d6e78000b8924ee997ff49a64b9de1ce173249c7ea64301caeb99" => :mojave
-    sha256 "9ad1bfcc74bb8a6df6ed3cc3e1f049350ef1431398623415b501df16f6449c59" => :high_sierra
-    sha256 "035a8b4fc67b0f6d5cb5919f551883c51046abcd1b1f5dc7937d02f703b76709" => :sierra
+    rebuild 1
+    sha256 "d0003b518f502be14aa28f2d649edf6533db765dd0a05bbd91179cb11ee5c560" => :mojave
+    sha256 "20490aeca8932f53610c6bc3aa83823acb6e8c8896c8e3515a69894baf46f25d" => :high_sierra
+    sha256 "e72bfdc03d034ce8b7d66325210cd2f9360468bd0af08f59c549a78733d0c0d4" => :sierra
   end
 
   depends_on "python"
