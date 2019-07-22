@@ -6,6 +6,13 @@ class Rio < Formula
     :tag      => "v0.1.1",
     :revision => "271d91966f46b9dc3b7113af43c64cac61576831"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d77fa4a4805e2b218faf064366f8fec5ae05b7fed5841468fe0f963bbf18a8dc" => :mojave
+    sha256 "1d78fbd5a45b1ee6d3acdec36758622e052a2cabfebafd453914b1b9c70f1434" => :high_sierra
+    sha256 "cd831e36e836621f6e60589566c55de101cdb98bc4aaef87f6796527f3c87f1d" => :sierra
+  end
+
   depends_on "go" => :build
 
   def install
