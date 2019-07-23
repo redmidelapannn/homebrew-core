@@ -6,6 +6,13 @@ class Octant < Formula
       :revision => "f3702d9a64ba228b4ffa1c81b37be34780b1cf47"
   head "https://github.com/vmware/octant.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b6342e6b79bd4949b7be8f34d2fae73b03a6ac11d065c907304aedca732e3f84" => :mojave
+    sha256 "225bc17cc8633b808963bdad81dff6a86498066941056fe23dae6cec8f0cbadc" => :high_sierra
+    sha256 "d02085fef04614df49779d56f9ef54e5eb327d2cf939920ddf6f3e891f105fe1" => :sierra
+  end
+
   depends_on "go" => :build
   depends_on "node@10" => :build
   depends_on "protoc-gen-go" => :build
