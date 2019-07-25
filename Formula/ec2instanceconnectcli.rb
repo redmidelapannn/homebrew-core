@@ -6,6 +6,13 @@ class Ec2instanceconnectcli < Formula
   url "https://files.pythonhosted.org/packages/0c/7b/2dbd14b2caf0d834f781ef982bb4b22884245c44af0ebb6ccc5a7019fd3a/ec2instanceconnectcli-1.0.0.tar.gz"
   sha256 "dc818c78d51a475a97d502db0221962e3c42af66900a63d7da69d3d68af29de8"
 
+  bottle do
+    cellar :any
+    sha256 "084a7ff279722ec95e5b2f2854e0820e5bbc9713498906cf55554ce3a5971267" => :mojave
+    sha256 "7301d7346dec7d13841aa0a3bcf7f0d46fc0df6d19b2e66eee526be93e0f037c" => :high_sierra
+    sha256 "5f2b4dbfd37aeadf122bf43d5ac757e69e476ac9023e4491f973a48c832f0f08" => :sierra
+  end
+
   depends_on "python"
 
   resource "asn1crypto" do
