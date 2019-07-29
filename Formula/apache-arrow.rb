@@ -8,9 +8,8 @@ class ApacheArrow < Formula
 
   bottle do
     cellar :any
-    sha256 "cb9b62e236c4d138c3ad06671818c0f1a81ddd97bb5ef9fecc8c449d5f8aee86" => :mojave
-    sha256 "8afda2fb6023553c4c4e2ba4ad3a87e9411e2283905fd3fca0ec7e4ddb3cf612" => :high_sierra
-    sha256 "b5d11576669485b771d2fab149d499b41ec9d0fcda55d7f4ec98716e1e2f5c08" => :sierra
+    sha256 "0e47c0149dbcf80761067844ad2626b60e6909838d7cc4ff7aedaf510d068f87" => :high_sierra
+    sha256 "9aa490852db114a0714a363f7223d8559361e7864d02aa312a63f6f4350afdc6" => :sierra
   end
 
   depends_on "autoconf" => :build
