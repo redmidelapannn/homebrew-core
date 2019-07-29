@@ -9,8 +9,10 @@ class Wordgrinder < Formula
   depends_on "ninja"
 
   def install
-    system "make", "PREFIX=#{prefix}"
-    system "make", "install", "PREFIX=#{prefix}"
+    system "make", "OBJDIR=#{buildpath}/wg-build"
+    bin.install "bin/wordgrinder-builtin-curses-release" => "wordgrinder"
+    man1.install "bin/wordgrinder.1" => "wordgrinder.1"
+    doc.install "README.wg"
   end
 
   test do
