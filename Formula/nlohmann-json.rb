@@ -7,9 +7,9 @@ class NlohmannJson < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a1f0ef0b4ad6f160936a31eb6c2ac4344d25483d9a2e85e9c1b9f0b551d52911" => :mojave
-    sha256 "a1f0ef0b4ad6f160936a31eb6c2ac4344d25483d9a2e85e9c1b9f0b551d52911" => :high_sierra
-    sha256 "6550e6790dea47b3af4cbb4b91ef3361612ecf20c46d635807443d71772c8ba8" => :sierra
+    sha256 "8d1c13575b47dfa3636fbeb997d4eea0703dc82133c98b20297da69407a799aa" => :mojave
+    sha256 "8d1c13575b47dfa3636fbeb997d4eea0703dc82133c98b20297da69407a799aa" => :high_sierra
+    sha256 "e82cdf8926d0649c89eaf3fb0ea63035a027807d24ae1928996d502bf3d01353" => :sierra
   end
 
   depends_on "cmake" => :build
