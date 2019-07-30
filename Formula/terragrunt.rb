@@ -7,9 +7,8 @@ class Terragrunt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "68d9c8e3e367fea3d9a7127aee7c1f3a373bfb4cffad756dec21daf70e1663cd" => :mojave
-    sha256 "0bdf099b7d2866690d3547f316128b3156fc1a2f2f11fbf0a26306d7d7787f4f" => :high_sierra
-    sha256 "99184c1cece069a2f7e736ccbd50b6e745fc5c135e5a22cdd364a814bb657208" => :sierra
+    sha256 "a834b5c0d55ca985b2fd78ebf8e4fde3df9e2214166d60a828f3dc5a700a8ef9" => :mojave
+    sha256 "47812b3ab790e16414409e00da52b09823f081669967f2df5d79accca37ee5ad" => :sierra
   end
 
   depends_on "dep" => :build
