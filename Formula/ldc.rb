@@ -7,9 +7,8 @@ class Ldc < Formula
   head "https://github.com/ldc-developers/ldc.git", :shallow => false
 
   bottle do
-    sha256 "186e5e333a7044155f6438a6bca858470c406583b8e54aa825bc7e72226234d7" => :mojave
-    sha256 "0f418f14ddaf03a0ab5d5bc1ab4034484e073c9291fcb62626df2476e0804599" => :high_sierra
-    sha256 "306afccff0146d5421d42488e728fe610c9c62366f3a65bf67abc701427005fc" => :sierra
+    sha256 "2ff8b03ce2bc2223041c97f7c28e0df4a34d871f1fe4b34d84731775d454eafe" => :high_sierra
+    sha256 "f1238c301400b729aef90cae99411c653fe17557c14019277d4a160fa924f07b" => :sierra
   end
 
   depends_on "cmake" => :build
