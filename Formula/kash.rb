@@ -4,6 +4,8 @@ class Kash < Formula
   url "https://github.com/cbeust/kash/archive/v1.9.tar.gz"
   sha256 "59211d1844f83416faed5fb388670d909793099bf4e195791651b46df2b097b1"
 
+  depends_on :java
+
   def install
     system "./gradlew", "assemble"
     libexec.install "build/libs/kash-1.9.jar"
