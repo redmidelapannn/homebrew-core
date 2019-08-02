@@ -5,6 +5,13 @@ class Wordgrinder < Formula
   sha256 "4e1bc659403f98479fe8619655f901c8c03eb87743374548b4d20a41d31d1dff"
   head "https://github.com/davidgiven/wordgrinder.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d571cba3a529a9cdb57096f127353cc8f82e5b32235787b728454e4919404eb5" => :mojave
+    sha256 "15c8150ec96276ac16629a8fe1ffc6bec03528304d54863317591c2ff809ce32" => :high_sierra
+    sha256 "c71bd73f183cd6ec8b54390bb9270750ef7901e95e447a130816b250891ebfeb" => :sierra
+  end
+
   depends_on "lua"
   depends_on "ninja"
 
