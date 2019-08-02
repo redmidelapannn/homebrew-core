@@ -1,8 +1,7 @@
 class Kash < Formula
   desc "Shell powered by Kotlin"
   homepage "https://github.com/cbeust/kash"
-  version "1.11"
-  url "https://github.com/cbeust/kash/archive/v#{version}.tar.gz"
+  url "https://github.com/cbeust/kash/archive/v1.11.tar.gz"
   sha256 "74d5ab5f7b464e36164e360558d628c8bf934818fe1358b0b0bdde112ce0b057"
 
   depends_on :java
