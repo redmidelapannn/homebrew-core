@@ -8,9 +8,9 @@ class Glooctl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "697c568692a31b1b2f1ed46405fbaabc2dbe6e332c016c76e0307cdbddf9e34d" => :mojave
-    sha256 "8aded70202054032f673f942725ed976a94d5da1a53c5c93ee5546570979bed1" => :high_sierra
-    sha256 "7f8db37f43b85015798eeb58be2dbaea54f6fc63747b25547f59e9d0d4f01466" => :sierra
+    sha256 "4732c06ed0d38d5b772b8fe1d46817bb7fd9ea48adb1449d96901037b1a0ff37" => :mojave
+    sha256 "5d4e3699d89df8e6e332fcd7ee11a8fa4d088e7a6831548d01c10aa18cd74717" => :high_sierra
+    sha256 "2d6384516862a617eeaae83981f19ea107c4ff8fa88c7c8dd456b047a23407cc" => :sierra
   end
 
   depends_on "dep" => :build
