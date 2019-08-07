@@ -12,7 +12,13 @@ class Liboping < Formula
     sha256 "c4f46d01bdace450a49e2c4fc4ba4056070bf1b869ed07f1b0a1d6a4f7646bc9" => :yosemite
   end
 
+  depends_on "pkg-config" => :build
+  depends_on "ncurses"
+
   def install
+    # See https://github.com/octo/liboping/issues/36
+    inreplace "src/oping.c", "HAVE_NCURSESW_NCURSES_H", "HAVE_NCURSESW_CURSES_H"
+
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
