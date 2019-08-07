@@ -5,11 +5,10 @@ class Liboping < Formula
   sha256 "eb38aa93f93e8ab282d97e2582fbaea88b3f889a08cbc9dbf20059c3779d5cd8"
 
   bottle do
-    sha256 "7b0258598b329b83ce9fd0cf18be77aa027226c8391a013cb3699faeeb1fd71f" => :mojave
-    sha256 "accffc91ab24ccba1214727abadb59c497f403e3bcad1dfe8ff0377d32e05ebc" => :high_sierra
-    sha256 "42b80e23afe4fb4f296d039b0bdd4ccd0da21937514fdd04a90bc01d39da7aec" => :sierra
-    sha256 "de0bb72a0752469b262db3a24a41c84746930858462cd08993c057caadd46264" => :el_capitan
-    sha256 "c4f46d01bdace450a49e2c4fc4ba4056070bf1b869ed07f1b0a1d6a4f7646bc9" => :yosemite
+    rebuild 1
+    sha256 "90181ab278a5cefc2e5246c554cc9b09f5e16a0b6776c04d0a5e3e87b5e8c80e" => :mojave
+    sha256 "5ae35ade95acd545b707ba3fb3c7398915a26d66360cb9fcaff09d78236347d4" => :high_sierra
+    sha256 "3f55b92f377243f92be1c64f4cdf2cb11610dcf1312c8aa18b9064b52b05797a" => :sierra
   end
 
   depends_on "pkg-config" => :build
