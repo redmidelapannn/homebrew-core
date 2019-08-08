@@ -5,6 +5,11 @@ class Rmw < Formula
   sha256 "60750279980b450df5b62f12a7c7153584b41acba7bdb4ecf96def043d50f71a"
   head "https://github.com/theimpossibleastronaut/rmw.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "9701803a58601492752f1c89d48593a4f979db6b6717b10fe687ed49c1b0f3dc" => :sierra
+  end
+
   def install
     system "./configure", "--enable-debug=no",
                           "--disable-dependency-tracking",
