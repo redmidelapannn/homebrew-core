@@ -7,9 +7,9 @@ class Libmicrohttpd < Formula
 
   bottle do
     cellar :any
-    sha256 "065c03c15e7cddac444a335ae9a4a581b9cb10f9ea4edbafab86cb9ec083ce49" => :mojave
-    sha256 "2b022a903526ca0d939b8660fd1d9ca82877c29734b177bb865631a6fbf0e375" => :high_sierra
-    sha256 "60a0909d2d0f9784060686b71c58afae980601141d19d20d62c78c451467245c" => :sierra
+    sha256 "61c247d5da747c0d53edd9ae57ca678748a70baeed0f8a0f101695e411652a4b" => :mojave
+    sha256 "9ae32eb6c37a71800a1a4b0be54b2bd6e8cf5c87ed16eb88909a1eb6e9647472" => :high_sierra
+    sha256 "13d9c59bd52f3312e2489085328a39b077144d71f21c181972590da74717b8d6" => :sierra
   end
 
   depends_on "gnutls"
