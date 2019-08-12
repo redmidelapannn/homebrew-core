@@ -6,12 +6,10 @@ class Unittest < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a1ab22f2b4904a5c03ea8642fa096166b9fcc131e535a1d15e07772e1fbcea8d" => :mojave
-    sha256 "b34ab2aa983e33bf86eda07a58af410a769da7e969620e479c6f7e965de2c397" => :high_sierra
-    sha256 "c997c9ce2d6984607af24a6dc7dc21ddefc0570a15d2fb61192b3a361120a83d" => :sierra
-    sha256 "501b61d05de70cfb53116c66daf380cb35a1665eeecf34dfc6b27ab945458f43" => :el_capitan
-    sha256 "8e26d281818bdf26ae2876004f5388fee9bd954589f57a6a25c979949e5f5bf1" => :yosemite
-    sha256 "2acbb80540c9ff3c17cf4ab95db16657947761813915a94fa4afc0204e4b09b3" => :mavericks
+    rebuild 1
+    sha256 "79548f590147d0406ae90062dda925a37bf9bd972c2c5140c2cd06adbe2f9f03" => :mojave
+    sha256 "ffda19ea4a5a1ab46c23b7de21819f3845c3a8f980ed3840e7eb2e70714cb8ca" => :high_sierra
+    sha256 "828d3fcfc87d9a40bdda5c1285b8ee00a5c5bee0fc2f60a52f9221a9e1ea08ea" => :sierra
   end
 
   def install
