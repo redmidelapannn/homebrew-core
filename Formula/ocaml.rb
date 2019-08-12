@@ -19,10 +19,9 @@ class Ocaml < Formula
   head "https://github.com/ocaml/ocaml.git", :branch => "trunk"
 
   bottle do
-    cellar :any
-    sha256 "f8490faa0dc3814633cb2eb5f6c5af00e4e8996c867f485cca4844b460966868" => :mojave
-    sha256 "d18ce3b54b85ffe8a6ea32c6079fbdfcfdd4cda852b32919a87644ca2153e5b0" => :high_sierra
-    sha256 "6477940a49ea3a5d262a12e559a296511f5445c921ff3fdf304e0f039485b6a3" => :sierra
+    sha256 "a85d1861023ec017819c5dc9427cdd0a38a8bd63004423fd9fcdbb54266f1bb3" => :mojave
+    sha256 "d65314abbf12dc4c40048e4711d802a4132f2920a48bef83c21dffcd97e0d45c" => :high_sierra
+    sha256 "f91830c4f2fb6c47cc701088283f3c0ec52f85deb05c87ac784594ac893d08d3" => :sierra
   end
 
   pour_bottle? do
