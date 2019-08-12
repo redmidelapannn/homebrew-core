@@ -3,7 +3,6 @@ class Abyss < Formula
   homepage "http://www.bcgsc.ca/platform/bioinfo/software/abyss"
   url "https://github.com/bcgsc/abyss/releases/download/2.2.1/abyss-2.2.1.tar.gz"
   sha256 "838c478b0fb5092e508f0253e213a820cd3faaa45546236f43b87a7194aa2cdf"
-  revision 1
 
   bottle do
     cellar :any
