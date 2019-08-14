@@ -6,9 +6,10 @@ class Mksh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0028f1d8028129a398937bed7fb3b2f7608932386d116d1b05527ff266c3470c" => :mojave
-    sha256 "d666938f31f5c9e5a0dd4b5f0e823ca7d5f2015cc447284ff0204cdc874d70e4" => :high_sierra
-    sha256 "1fbdae63a63116e3a321b71d632214ea2419d404db8939f7cb3471a2de35c761" => :sierra
+    rebuild 1
+    sha256 "ce5b21dde43d7060f392d43de970042a9636d7072bfd76fd3ed432d9205bd977" => :mojave
+    sha256 "5efdaf2d1992ff7cb3d987129c057b3a7a13853edfb62f89c916b1680a0fc396" => :high_sierra
+    sha256 "ec1b776bc87892435f1ce61a9bcf253a1a0995f5a177a123af5d36384fd54e0c" => :sierra
   end
 
   def install
