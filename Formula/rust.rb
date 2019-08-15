@@ -46,8 +46,8 @@ class Rust < Formula
 
   resource "cargobootstrap" do
     # From https://github.com/rust-lang/rust/blob/#{version}/src/stage0.txt
-    url "https://static.rust-lang.org/dist/2019-08-15/cargo-0.38.0-x86_64-apple-darwin.tar.gz"
-    sha256 "f2c00ef92356cc57b063a0096b0dbc110720a67a0b9d4dfdf229bf57ef65147d"
+    url "https://static.rust-lang.org/dist/2019-07-04/cargo-0.37.0-x86_64-apple-darwin.tar.gz"
+    sha256 "1378e7a0fba0b66dd4d7b621313c149a0d7a76a526ee24c7c1249390e82f9dda"
   end
 
   def install
