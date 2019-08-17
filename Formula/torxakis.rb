@@ -6,6 +6,13 @@ class Torxakis < Formula
   sha256 "72079ddb7ca4a6ea6132141de4d19ba88b9b6c1c326aca228a6086f938f19b22"
   head "https://github.com/TorXakis/TorXakis.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "bbd44f31cca791975c1d384b7ba6735df8569e566ec8b00e67c6af26c23e2f2d" => :mojave
+    sha256 "9fa44d885f38da6620757b43ddb5bc65e2a4e0dfe8bb710d624ad115efb6c4b7" => :high_sierra
+    sha256 "581aa85c14b3e10b2329d9d54c416e59386672d17bac20ef3bb53a2505d55528" => :sierra
+  end
+
   depends_on "haskell-stack" => :build
   depends_on "z3"
 
