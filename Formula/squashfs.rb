@@ -7,9 +7,10 @@ class Squashfs < Formula
 
   bottle do
     cellar :any
-    sha256 "c48d6bf745747564c7b8736c1f703165d0787415d54c09680e272e2d68fdd572" => :mojave
-    sha256 "59fe238379463c52b0e219192139180be496fcc20adc734a84699f34191461c3" => :high_sierra
-    sha256 "2e015389c160a1094f0995e3d5b11f54b0549cbab7a506cbb2706608213735a6" => :sierra
+    rebuild 1
+    sha256 "595a65e690ae1c57a18b420696182236bdc2b8f13943e796b05cd5e87169331a" => :mojave
+    sha256 "26c581fb533d46fcb6ed397f7d5c6e0ea3721fa94952eea29449849b4ea9f004" => :high_sierra
+    sha256 "95bb9d618f4c3a4929eebbb4a166114347f6bd9a578d6096fd8e76fcb9a116e7" => :sierra
   end
 
   depends_on "lz4"
