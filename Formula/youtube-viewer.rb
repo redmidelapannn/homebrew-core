@@ -5,6 +5,13 @@ class YoutubeViewer < Formula
   sha256 "b4d2d17e3ff8aba5f3c358db170867d89ca5e35f3340312c81b9af7c70f3c826"
   head "https://github.com/trizen/youtube-viewer.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e906d61468dcf1c9214f15f1d4a8cfec77b0c6933808eb27b38e8fc05579b45c" => :mojave
+    sha256 "8b62bfe3ab77fe4e75c6a7c48abaacf394167ebf669770d52bf2e285d9bfaaec" => :high_sierra
+    sha256 "a94a9929a4cbc1f383c5d637258b6489da0a162229d2772794b37fa6549b1ec3" => :sierra
+  end
+
   # build deps
   resource "inc::latest" do
     url "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/inc-latest-0.500.tar.gz"
