@@ -7,10 +7,10 @@ class Unison < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "55a361bda2f5a43073508d25702eea6b16470f74619e4a6d1058f7fc89f901e5" => :mojave
-    sha256 "1622a673b2bc8ef6d00dd754c26cfd3d5f737ed1dc48a46bbce486fa0f766181" => :high_sierra
-    sha256 "fd00605490100ec224f5d86a79da341ce639e1d0772fb48cc133672d1bc2a812" => :sierra
-    sha256 "53c945e143961a5d158a36980664d5be7153b84074bfa4220eee2db35404b7d3" => :el_capitan
+    rebuild 1
+    sha256 "c8aea2c9fd4e8dbff3afda8eaaa7e2d8bdf3ca056c63055126b47640e899f3ae" => :mojave
+    sha256 "78725002d3d49c8e565032dcbb7748aeff67c74b462690db55dee0ab7a271188" => :high_sierra
+    sha256 "ef20db6215288c129a601b0e010edbbe4aec22bed74ee96f92c67e15c148b32e" => :sierra
   end
 
   depends_on "ocaml" => :build
