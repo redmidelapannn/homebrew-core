@@ -6,10 +6,9 @@ class Pidgin < Formula
   revision 4
 
   bottle do
-    rebuild 1
-    sha256 "5447d58ebdfdbb28a8488c9fa0d77e4aee6787955826e2674cf53ba903268638" => :mojave
-    sha256 "735db47d591766486801549430960db2e83651ee373add2901ef71333eefea75" => :high_sierra
-    sha256 "f862f996bd1a302d21b13182cc9ac2ba4a00b6a87b63f0a78c9d6a7c2f293b6a" => :sierra
+    sha256 "2b9c765109f9f7466f03917f5a2f94fef859c3aee2ca0464dcac3b932bf36f02" => :mojave
+    sha256 "4010032a68be713ea9769637f5cb3baf7a6b1914739b47103c1f6b50f3783717" => :high_sierra
+    sha256 "902f763d49ecb87766394da0b1d641906e06c6a4d588251ca12d9d13ceb4c4de" => :sierra
   end
 
   depends_on "intltool" => :build
