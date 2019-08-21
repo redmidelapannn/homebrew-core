@@ -4,6 +4,13 @@ class Fonehome < Formula
   url "https://s3.amazonaws.com/archie-public/fonehome/fonehome-1.1.0.tar.gz"
   sha256 "0efc7b3f1755c1ef0e373555010b0cfc8d56d49b1feb76d05e3f2fa7665b35b2"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "bc3ee91ba6423c5559b4eb003efe7882c74e6c5b2ec1cec8cb01855e1df13951" => :mojave
+    sha256 "bc3ee91ba6423c5559b4eb003efe7882c74e6c5b2ec1cec8cb01855e1df13951" => :high_sierra
+    sha256 "7ec5aaecd5794bce7ef5ae756abc344fa9a971dc03f2486d52a3277216f80bc9" => :sierra
+  end
+
   def install
     build_script = <<~EOS
 
