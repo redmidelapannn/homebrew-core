@@ -3,6 +3,7 @@ class Gtkx3 < Formula
   homepage "https://gtk.org/"
   url "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.10.tar.xz"
   sha256 "35a8f107e2b90fda217f014c0c15cb20a6a66678f6fd7e36556d469372c01b03"
+  revision 1
 
   bottle do
     rebuild 1
@@ -147,3 +148,50 @@ index c6f43d5..0f818ee 100644
 +gtk_osxversions = [osx_current, '@0@.@1@.0'.format(osx_current, gtk_interface_age)]
 
  gtk_api_version = '@0@.0'.format(gtk_major_version)
+
+diff --git a/gdk/gdkconfig.h.meson b/gdk/gdkconfig.h.meson
+index 14f9e8e1ae..7db19e0470 100644
+--- a/gdk/gdkconfig.h.meson
++++ b/gdk/gdkconfig.h.meson
+@@ -14,6 +14,7 @@ G_BEGIN_DECLS
+ #mesondefine GDK_WINDOWING_BROADWAY
+ #mesondefine GDK_WINDOWING_WAYLAND
+ #mesondefine GDK_WINDOWING_WIN32
++#mesondefine GDK_WINDOWING_QUARTZ
+ 
+ G_END_DECLS
+ 
+diff --git a/gdk/meson.build b/gdk/meson.build
+index aa2e0ae86c..d56803486d 100644
+--- a/gdk/meson.build
++++ b/gdk/meson.build
+@@ -165,6 +165,7 @@ gdkconfig_cdata.set('GDK_WINDOWING_X11', x11_enabled)
+ gdkconfig_cdata.set('GDK_WINDOWING_WAYLAND', wayland_enabled)
+ gdkconfig_cdata.set('GDK_WINDOWING_WIN32', win32_enabled)
+ gdkconfig_cdata.set('GDK_WINDOWING_BROADWAY', broadway_enabled)
++gdkconfig_cdata.set('GDK_WINDOWING_QUARTZ', quartz_enabled)
+ 
+ gdkconfig = configure_file(
+   input  : 'gdkconfig.h.meson',
+@@ -268,7 +269,7 @@ foreach backend : ['broadway', 'quartz', 'wayland', 'win32', 'x11', 'mir']
+       gdk_backends_gen_headers += get_variable('gdk_@0@_gen_headers'.format(backend))
+     endif
+     if backend == 'quartz'
+-      common_cflags += ['-DGDK_WINDOWING_QUARTZ', '-xobjective-c']
++      common_cflags += ['-xobjective-c']
+     endif
+   endif
+ endforeach
+diff --git a/gtk/meson.build b/gtk/meson.build
+index ac8c1a9926..573b65491c 100644
+--- a/gtk/meson.build
++++ b/gtk/meson.build
+@@ -899,7 +899,7 @@ endif
+ 
+ if quartz_enabled
+   gtk_sources += gtk_use_quartz_sources
+-  gtk_cargs += ['-DGDK_WINDOWING_QUARTZ', '-xobjective-c']
++  gtk_cargs += ['-xobjective-c']
+ endif
+ 
+ # So we don't add these twice
