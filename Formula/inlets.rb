@@ -7,9 +7,9 @@ class Inlets < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "be317eb97ec56bc3d58206540baff2d6649948a6cf7465b82b36cf38aa6a5d68" => :mojave
-    sha256 "97b872fd114cca51f8d0752d5953f86613bd8535f7ce081f0295562523c54fea" => :high_sierra
-    sha256 "3ddfb1d7a7176ed37f38aae68c2066cbdbc1ae0625a8f3fde808220a974b1d6a" => :sierra
+    sha256 "15e9374518ffdf5bb84f928e9d97ceb5045ad80be3efe6023fc2ce0b95a3d05d" => :mojave
+    sha256 "b5a6145fdd20bb9a8837dc389101d84b504b86fd9e6cd6ea7571c1f836b6c8e3" => :high_sierra
+    sha256 "9644b087e374b7c9bf7407531f659afe3f034a5197ef8fbc49f27ffcfcc62c32" => :sierra
   end
 
   depends_on "go" => :build
