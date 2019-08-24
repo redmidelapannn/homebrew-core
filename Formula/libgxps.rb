@@ -5,9 +5,11 @@ class Libgxps < Formula
   sha256 "1a939fc8fcea9471b7eca46b1ac90cff89a30d26f65c7c9a375a4bf91223fa94"
 
   bottle do
-    sha256 "f2a0b5d1e9d85ad84ab041381c3c0bdd8f6f98d2be8586cdf48958e4a85aab27" => :mojave
-    sha256 "ef0b670a2dcbbbc2e42e6dd9ada96353fad1d039c42d8a41ef5271b8370bdd25" => :high_sierra
-    sha256 "949980a659fa2c301992af86c54a91e47a9721e372348bb1e5b49891d55b5285" => :sierra
+    cellar :any
+    rebuild 1
+    sha256 "e07f8fa863b11614b284158082ba6f2db498f39662a44c91e8294c111b1952d4" => :mojave
+    sha256 "22a56a9b51f14cb633b876446fcd4c5e330b1e18d8bd355cbcd099194c50368d" => :high_sierra
+    sha256 "eb3cd6a081af4447dc36164a580de729188fcb014d0ae15b0703926304f66f5c" => :sierra
   end
 
   head do
