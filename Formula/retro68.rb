@@ -5,8 +5,9 @@ class Retro68 < Formula
   sha256 "5ef015d28be868abe397404d66b8feb67c2793dedf4da12ac0048545f333ef61"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "5c94c3c4ca88963fca53295ac9a2e597e486751d9d97bed9d38bcf2ed86b2ce8" => :high_sierra
+    sha256 "fddddbd775e690064028beef073ebad66bdcb95650f8fc3b7c86c7c510b947c9" => :mojave
+    sha256 "abd93c281537cf7b40b60131efd631bb10ac9a82389f0daab954c24b2074a6bd" => :high_sierra
+    sha256 "a4e2262cdd2ba1bda5b8f96938fddca80f73051f09c452eaf910a58b1532dcfa" => :sierra
   end
 
   depends_on "bison"
