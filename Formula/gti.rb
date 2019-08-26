@@ -7,11 +7,10 @@ class Gti < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8e648f9d219c21b6cb8477ec7902c059c936b907bd5d8cae49519b8f22533b41" => :mojave
-    sha256 "125203670f0704594bf4a1779feab364ea04ea7d6cff9a83205628ea85485ac4" => :high_sierra
-    sha256 "9918086fee473669a1ec8ea62eb3b30c0969334790a9c6ba549c7d95e79b6a66" => :sierra
-    sha256 "a3b6c788ea2f773a73b7ff2e04e6a8c44aabe6e090c52b668dfb0c7116b9cae5" => :el_capitan
-    sha256 "0f1865eb7cac49f0ac857718196b70c896e70a636d4443b523e0eca7fe1f7ab9" => :yosemite
+    rebuild 1
+    sha256 "f2e4c620920e991d416af3206874c2f49a1203bf27a7ab9d08ed6bff075c99c2" => :mojave
+    sha256 "e0d6fae64565222057db46e9c807f3ab6c7261dab7bc99d50decb3d43cc7f4ae" => :high_sierra
+    sha256 "22f9a7458b4d790a14504739d311e125791ba146add6a7f0654b1b5e9c0ec3f3" => :sierra
   end
 
   def install
