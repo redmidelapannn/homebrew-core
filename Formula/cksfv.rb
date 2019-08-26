@@ -6,12 +6,10 @@ class Cksfv < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "fcefe9fe38fb4555760f8d7e651f19aca85115583f896ba602b1396e71547743" => :mojave
-    sha256 "095a3a02e99d3f018472202e65231212c818750cd91d42c32a95957b407c1d4b" => :high_sierra
-    sha256 "4414da8e35f9d69a0e04e4a1942745f98b5234891a04935627248e2e6954e17d" => :sierra
-    sha256 "41d81d535cfa41b4eb03709e646b0bdc36a78f99c8e15746b7eb289a98afbb97" => :el_capitan
-    sha256 "9885cadccdeec56d0f665bad80655cfba3397c3ff2958c7a44af514a69bc8114" => :yosemite
-    sha256 "3838548d5febbed5d9db37e8634397a589bcec766ee5ec84949a17dae9b34cdd" => :mavericks
+    rebuild 1
+    sha256 "05a2c30a659e37e95f8fd8998948f329096d91c5d02f5cfed2c0991a95fb042e" => :mojave
+    sha256 "41807cc9efbdf8c9144cff6484ac1975f78aae1e7dde05c92737d911f7e2d91a" => :high_sierra
+    sha256 "3783723e1628f52f1088c7cd5401a4dc7679c9db016bd69781605afea7d07a7f" => :sierra
   end
 
   def install
