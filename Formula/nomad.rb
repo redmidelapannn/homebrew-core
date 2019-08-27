@@ -7,9 +7,9 @@ class Nomad < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "6710cbb7689e2c25e21124c81c68f44ef96aa02d3bd89d3c6c26cf957429087c" => :mojave
-    sha256 "65c0c8f530ec5e595b83da0031be82cfc1a4dec6980db1ae87e07b80f595a245" => :high_sierra
-    sha256 "4f0a898c7c20acd8f928079d609b63e5445a81264131d57b49ebd9d542a85d89" => :sierra
+    sha256 "df3c7d241c347152c284b8f95de31b026f0d111d64723da87d9e2d8a867ed3be" => :mojave
+    sha256 "b1af3898c280e711532876cf50f96017ba74970834583b92a1b4c077a3c4c4d8" => :high_sierra
+    sha256 "82b726591162982a3d467b48f33294f35d88764c20cba59ca8b6cf353cb96a51" => :sierra
   end
 
   depends_on "go" => :build
