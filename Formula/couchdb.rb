@@ -4,6 +4,13 @@ class Couchdb < Formula
   url "https://www.apache.org/dyn/closer.lua?path=/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz"
   sha256 "43eb8cec41eb52871bf22d35f3e2c2ce5b806ebdbce3594cf6b0438f2534227d"
 
+  bottle do
+    cellar :any
+    sha256 "136146a947ddea02343629702529ae4ff92b8676ae5b25a03a1f8bf9b813995c" => :mojave
+    sha256 "bd9b94dc90e6c91aa3c2a8011d8151ef9bb1cf1c5bf1417083af87c01176d3fb" => :high_sierra
+    sha256 "813e0516ce8a0c2db9bdb792285a80654e060076a1a6d7e7857c03a301884249" => :sierra
+  end
+
   depends_on "autoconf" => :build
   depends_on "autoconf-archive" => :build
   depends_on "automake" => :build
