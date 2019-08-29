@@ -8,9 +8,9 @@ class Libagent < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5b60ef8874e77323f2d1a61355f17d35b32f4c0c7b166e837aabfc9da1614236" => :mojave
-    sha256 "26ffb353ec45ef5427ddb03f2425510ce9a43af1248f966780920fa0d24164fe" => :high_sierra
-    sha256 "a28f6f5d0717a5eb459b09a3a3bb464cfca9e70d3dfefd08dbf8b7554ba6c91a" => :sierra
+    sha256 "a13ab7bac53c60a5325d3a50783aaeb662a8247f449bd381e987e656bebd4781" => :mojave
+    sha256 "7c59a35c41345284123ac3511de8e59ed45d7a48c28715828507a1a2d5d06fc1" => :high_sierra
+    sha256 "0c1fcdf70107321ffeaaae4f24b4c952d03d891f84d02f6cfc436bd173aef4aa" => :sierra
   end
 
   depends_on "libusb"
