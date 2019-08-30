@@ -7,10 +7,9 @@ class Nrpe < Formula
 
   bottle do
     cellar :any
-    sha256 "d17a16f0cac16d2c1e075df0834a6c77e4a3489339185e0dc645250597f69cbf" => :mojave
-    sha256 "98eb09fe948052448134155aad5cc16892f9cffeba075cfc9afeb38219047806" => :high_sierra
-    sha256 "d589496fa3b62e1425f93ebf928234bcfec81cf342837e7b741c9def56ea3e28" => :sierra
-    sha256 "50cafb3e1545d93f0ad248a2696b83b90fa3fbb6e5afc731d72779ddab0bf6a0" => :el_capitan
+    sha256 "b32900f10ef4e370f57010e25b75611791d760be7e594a68cd6acd307f997f72" => :mojave
+    sha256 "b670d7ac585e88b572850c45e364e5ce98a36f4c547022b8ddf66cbd0d2e8b79" => :high_sierra
+    sha256 "467d75262618c3102a58229f220547b8467887133cacf09d3ee055c9dd3c6aa1" => :sierra
   end
 
   depends_on "nagios-plugins"
