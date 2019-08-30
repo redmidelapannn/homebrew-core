@@ -6,9 +6,9 @@ class Nagios < Formula
   revision 1
 
   bottle do
-    sha256 "676bab09790305f664681fcca95f430ac73cce4ef64f4aa8589da623288f93cb" => :mojave
-    sha256 "86f5e4b1a684a663e5ad8ef29a733e69c9a71a54aaadf4ea3e6abcc21100c89c" => :high_sierra
-    sha256 "721ea7aef1cd9d18fdf804a4af417822133acf2fb464c58d006049f9f4c37e9b" => :sierra
+    sha256 "3933ae6259f210f33b2d378032bb4d4be0358a8f7717aa736eabb972446b420f" => :mojave
+    sha256 "c6a73c6980424177f09658ba657da7145db0a008a45511f0d435d8459edcf856" => :high_sierra
+    sha256 "0d4b2a5ce94dc0e7bba6df7f87cebbefb8cdac2fa981a7f5ba5ac85083efcece" => :sierra
   end
 
   depends_on "gd"
