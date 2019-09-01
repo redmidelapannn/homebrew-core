@@ -7,9 +7,10 @@ class Mktorrent < Formula
 
   bottle do
     cellar :any
-    sha256 "22bc8649ce5fea25549610eec4110d45f3fa1d05335cfc982df82806ff34d71b" => :mojave
-    sha256 "60be732dfea657c6faffa7e9d644f6ade7f974e7fea6ec46fa2941baac5eee80" => :high_sierra
-    sha256 "3e7f91587dbea47713351b40a99b50728a878a9eb720eca14bd125541e62606f" => :sierra
+    rebuild 1
+    sha256 "e81d31f8303befa463ed7e00df15623a93babd4fadd66efe2b34b7fe84ce6998" => :mojave
+    sha256 "241386f30ce4caa5e2d68901542c1ae23739cb38742ce0986ba506c7c89b4d1c" => :high_sierra
+    sha256 "6cec953cbc9694943bcfe47c6d6fe751c4db710e76886a46fd1d9958a9f5e9b3" => :sierra
   end
 
   depends_on "openssl@1.1"
