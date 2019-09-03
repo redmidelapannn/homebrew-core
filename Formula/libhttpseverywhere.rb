@@ -7,9 +7,10 @@ class Libhttpseverywhere < Formula
 
   bottle do
     cellar :any
-    sha256 "7ed8d7cc4934185649bb1d3efc00f0ffac955310085db2cf44434cdf476a7e8d" => :mojave
-    sha256 "109e95eba0ebfe5a6d3c358055bc07861e2dce33e2376aa33843e73fba9a52eb" => :high_sierra
-    sha256 "f161a27096199a9810416b47d93c1bbf95b3948641ab009a7cfb049e5264a76f" => :sierra
+    rebuild 1
+    sha256 "f9ec57ddc961e779d4dd017b84e3b635eb663d89fbfbbe4334c1a0740ed8e349" => :mojave
+    sha256 "7e70477a00a2125f73c1127b4bc64672d8f5bad7a23a5cd8afb4b5a2d94c2eb0" => :high_sierra
+    sha256 "53ccdb72256484fad9281640381db95f364a869845691a951ec54b6b848b7d03" => :sierra
   end
 
   depends_on "gobject-introspection" => :build
