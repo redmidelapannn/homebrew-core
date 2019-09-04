@@ -8,6 +8,13 @@ class Ossutil < Formula
       :revision => "70f26cd844d77a4cb90a4260d282d127d73d8061"
   head "https://github.com/aliyun/ossutil.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "97284d97690b6fde58eab28f19a2bf352fff47eec0da29147818245ee628072e" => :mojave
+    sha256 "dfec6220802c18d65cbbec658e8f6f216e19bfbae5183ad276c884f16013b4fe" => :high_sierra
+    sha256 "a22b5f8786c79b5bd1a8d3dc9a702fadb03d3ade0eb891d947e52a18e4e25e35" => :sierra
+  end
+
   depends_on "go" => :build
 
   go_resource "github.com/aliyun/aliyun-oss-go-sdk" do
