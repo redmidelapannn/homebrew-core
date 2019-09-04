@@ -7,9 +7,10 @@ class ClozureCl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8725b08fc19b2330d25b78d56d06564b01f8c70ec09763a5a6823db05b81d928" => :mojave
-    sha256 "06426d4b5d6f5875734eac8d6bac1e1a99e37b6ca26696d458274eb36b23e8b0" => :high_sierra
-    sha256 "f4bbb8190f307cfc272e80879e88c51e1ca8bf9382fcf93b0cc628e7169fe522" => :sierra
+    rebuild 1
+    sha256 "a8bd36117536a10e698e02bca7e30c2dc6de344eb4d0230499cd242136e0ecbb" => :mojave
+    sha256 "43f594f16eef553d2423101b04e5aee16aa6c6751d1dd95369999c58b250ef1b" => :high_sierra
+    sha256 "a5f19b59c3b2a48c768eccd91d0f18933d593ce0f90927e7be9bf8af034a4969" => :sierra
   end
 
   depends_on :xcode => :build
