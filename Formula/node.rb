@@ -13,7 +13,7 @@ class Node < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "python@2" => :build
+  depends_on "python" => :build
   depends_on "icu4c"
 
   # We track major/minor from upstream Node releases.
