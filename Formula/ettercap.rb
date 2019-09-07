@@ -6,9 +6,10 @@ class Ettercap < Formula
   head "https://github.com/Ettercap/ettercap.git"
 
   bottle do
-    sha256 "664e169c1fa33c383ae8f3b874927764d8ada4302d8e65ea8b43f6eedb8e0638" => :mojave
-    sha256 "f93268dc6dadd2523a6146addfa5f6df9bf2603190c9e18fdcbc4e9e116793ba" => :high_sierra
-    sha256 "6e9571eaebd4730cbfa5be6a44791c2a0b715470f0c86750879ad9ab48650306" => :sierra
+    rebuild 1
+    sha256 "8da11e91ef46159da4b05adb0177bb23b1dda12382f952b019d6b2c1775b3fd0" => :mojave
+    sha256 "9981069d7e41103bc63d7d869802582be50aacebd54b6700918628c02c882dbe" => :high_sierra
+    sha256 "417dc5eb2294e54e758e1fd8af1888fd7215980e7f91374fb294f063ded928fe" => :sierra
   end
 
   depends_on "cmake" => :build
