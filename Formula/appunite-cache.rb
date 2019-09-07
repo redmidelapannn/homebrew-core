@@ -7,6 +7,11 @@ class AppuniteCache < Formula
       :shallow  => false
   head "https://git.appunite.com/szymon.mrozek/appunite-cache.git", :shallow => false
 
+  bottle do
+    cellar :any
+    sha256 "c2b2f0c066df585dcccc3527b5e03f9659e86fca7d096b0803a6de3a45413e8d" => :mojave
+  end
+
   depends_on :xcode => ["10.2", :build]
   depends_on "libressl"
 
