@@ -13,6 +13,13 @@ class BpmTools < Formula
     sha256 "f1219d522f61e89606f3e607a636e406faf5f954846b48965e37cc25dbb29b87" => :sierra
   end
 
+  patch do
+    # fix tagging mp3s
+    # from https://aur.archlinux.org/packages/bpm-tools/#comment-660852
+    url "https://gist.githubusercontent.com/eljojo/f26b0e5bc1723e073f7117638fa04998/raw/510f7044b42032a69f968e1e313dea83805b13c4/gistfile1.txt"
+    sha256  "5046830c624a66c968de0d5f1d67ba36ee732aa83657e95739f99131b45c3f71"
+  end
+
   def install
     system "make"
     bin.install "bpm"
