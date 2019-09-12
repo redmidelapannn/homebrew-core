@@ -6,6 +6,13 @@ class Fift < Formula
   version "0.0.1"
   head "https://github.com/ton-blockchain/ton.git"
 
+  bottle do
+    cellar :any
+    sha256 "bd3c9fa5b147110b47cf5528e7e08b72457150b98ed912e4d2308c9c757e31cf" => :mojave
+    sha256 "b01ffdb028fcb5ddb60edcf23b18c42a570b6a77c54c65122d2b1aeabfcca8eb" => :high_sierra
+    sha256 "cd78db078792c39b582429f7d95cefe05aaa6dbcd05eb9a1a4137fa0a2333feb" => :sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "gflags"
   depends_on "openssl@1.1"
