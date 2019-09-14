@@ -7,9 +7,10 @@ class Pgbouncer < Formula
 
   bottle do
     cellar :any
-    sha256 "47856e33e4e537ee50b39573d63f1366f332b57d57be21a797bd7da6d19eb11b" => :mojave
-    sha256 "728418195cb273b74d67b791a0e9834cbc7dc9828f928c9dd44fe015e404b117" => :high_sierra
-    sha256 "ec357f9ba0bd22a1f34b0ce1d9174376ba4aedf43904318430cd109f076a4188" => :sierra
+    rebuild 1
+    sha256 "7b784d04c21ea70494cbf42cdec903f01cc9cf344d33e10889f0ab87e6168ca3" => :mojave
+    sha256 "7b2ea7b500518ce27e063c1bc7b0268100d196982c6fe29c244bf5cc0c23a39a" => :high_sierra
+    sha256 "34f07b4f08b75d911fcd5d49efb700662473f538541f2f3a75f8ba463458ef8d" => :sierra
   end
 
   depends_on "libevent"
