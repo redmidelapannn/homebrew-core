@@ -6,9 +6,10 @@ class Newsboat < Formula
   head "https://github.com/newsboat/newsboat.git"
 
   bottle do
-    sha256 "0ffa77388011a97cb696ec2e264702faeef9ddb07522109282930dd7681c7395" => :mojave
-    sha256 "75550ca76884dcbf7a75e60b53ba5470ab4e4d690fead6772fbe7bf5a8b36991" => :high_sierra
-    sha256 "249281b2b4228e69893c09f0a8f503ae59f3819bff5e7fc6c12d3045586141be" => :sierra
+    rebuild 1
+    sha256 "d48afac5dabd0751b3b1ef33b9e743df4d57b64120f3b0651573031b2103a727" => :mojave
+    sha256 "e6d09b00e15e418f383b660316891f38aff630c88efd0fe887793c12f6e0bdbc" => :high_sierra
+    sha256 "10a25b47e17175ef3dbdef828a1e410071b60c08ff9896be7ae8849fdcc54af9" => :sierra
   end
 
   depends_on "asciidoc" => :build
