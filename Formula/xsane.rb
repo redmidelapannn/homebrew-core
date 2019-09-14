@@ -7,9 +7,10 @@ class Xsane < Formula
   revision 4
 
   bottle do
-    sha256 "93064b6ec70657f6815a0aba5d52c8b7e54e9ef6f223c608351b790887c62b92" => :mojave
-    sha256 "4242d28d56f5ed634f7f8632d41e441e1cbeaf60a362628796a436ba2f8eac11" => :high_sierra
-    sha256 "f247067d49d44f8c0662cd64c99524f13c4b3a18ef7e49a19dd377bb449c859d" => :sierra
+    rebuild 1
+    sha256 "54599524ee09f3e7dfe44d131680a3fdc84f1c4e5b4a9498846c7dac44593b5e" => :mojave
+    sha256 "19c8670d6e78625e0f451a367d238127f78358fb8f3b7ff9c7596fdd12289c34" => :high_sierra
+    sha256 "ca5bd0ecb179976fc9062f6a8019fd55c660306f717c8b245e82977278cbfe50" => :sierra
   end
 
   depends_on "pkg-config" => :build
