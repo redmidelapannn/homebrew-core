@@ -6,6 +6,13 @@ class Topshell < Formula
   url "https://github.com/topshell-language/topshell/archive/v0.7.7.tar.gz"
   sha256 "a24c759b231fbd5aaed3409ed5d12e98ae2987cc27672fef27964a21017dccd6"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c1ffea38a1017b75a6a6d81abf98b9e3291e12f28a2eeff99bbfc8f8b8733066" => :mojave
+    sha256 "9a7de128fc977e6778825378b503f4bca3b2f9bd69bc517080f85c6e00a53896" => :high_sierra
+    sha256 "e78a711f1f55b34d512898cc20011c1c7b5e7674c73264162ca28225f16e8b28" => :sierra
+  end
+
   depends_on "node" => :build
   depends_on "sbt" => :build
 
