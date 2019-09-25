@@ -7,9 +7,10 @@ class Hey < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c65e3a95c59f8263d5f38a3e605ecdda801511095e54009aaaa2c362a1bfa07e" => :mojave
-    sha256 "8de8655664bfa9ad639e113db3b21d517b2bd35a7d6efa0796cc74eb594451a3" => :high_sierra
-    sha256 "901cfcb578352c650a3e7ecb77e5102effdea8e6c8bcd76e4b14021e57d3a189" => :sierra
+    rebuild 1
+    sha256 "4f07ea0764c980fabd4d89badc24a9049a48e1675362dd60b6a8e15517d4b359" => :mojave
+    sha256 "d67f529ffda55afb1fdb3793123fad2672d33c24d118224d7feec7ece5f60856" => :high_sierra
+    sha256 "e3a450586e62ab3b82bdb75bbcd9dcd3cd1d55ade38a84574a98f87dbeacc936" => :sierra
   end
 
   depends_on "go" => :build
