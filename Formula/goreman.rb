@@ -6,9 +6,10 @@ class Goreman < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4bd1c4412693e31ddc84eb29ae4fe5bd9612e0e5b2973b38e9ff0f0b4258c029" => :mojave
-    sha256 "4b2929d2a39a08456394b23b34be00206d26070211e8e80b2d659f94d8c8a8a1" => :high_sierra
-    sha256 "c5ccc2b4a4ecd7fa50f5bedffd93809aa42c36a89290b62e743f08a4a60f4ad4" => :sierra
+    rebuild 1
+    sha256 "0e12e04e84b47f8899817f2f828875c67a283588b34b62a66a43f8b88e9579c2" => :mojave
+    sha256 "eba12ae4e6a5e0f0c573d1cfff95a3cf3ae788daa6dace003e45cdfab20d7815" => :high_sierra
+    sha256 "133783990df19048c41c80108ebc003ecce6ada23fa574dda70911732418587a" => :sierra
   end
 
   depends_on "go" => :build
