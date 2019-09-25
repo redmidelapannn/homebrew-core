@@ -7,9 +7,10 @@ class Serve < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a339885f14479144ebe771f5caba2239290d89926a1a8bbbaa56751b9ef62f8f" => :mojave
-    sha256 "2b1474e49ed747c67fde6ed65e404da4c4e4d2f39190995241e10e62a99cca17" => :high_sierra
-    sha256 "c23f691164cbd2f96630d273215f300e1e05ad99427b63e830db52c01eb9ac08" => :sierra
+    rebuild 1
+    sha256 "03a2a6a41d1af37a41dcc1cd34d5cf0eb868c4905153e07219338595c3be3947" => :mojave
+    sha256 "effd5d9be5deaf28bd76dfaf7e8adea40de96bff12a8878ce00c704a8b9073fd" => :high_sierra
+    sha256 "f51a03b4dccf226a9a18142958ccfe35decaf7b78e77eaa77b9a43330493ae70" => :sierra
   end
 
   depends_on "go" => :build
