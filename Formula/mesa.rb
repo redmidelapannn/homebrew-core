@@ -2,8 +2,8 @@ class Mesa < Formula
   include Language::Python::Virtualenv
   desc "Graphics Library"
   homepage "https://www.mesa3d.org/"
-  url "https://mesa.freedesktop.org/archive/mesa-19.1.7.tar.xz"
-  sha256 "e287920fdb38712a9fed448dc90b3ca95048c7face5db52e58361f8b6e0f3cd5"
+  url "https://mesa.freedesktop.org/archive/mesa-19.2.2.tar.xz"
+  sha256 "7e4f0e2678bfcf3b94f533078b514f37943378a4a8604e477c888ec8a2904394"
   head "https://gitlab.freedesktop.org/mesa/mesa.git"
 
   bottle do
@@ -19,7 +19,6 @@ class Mesa < Formula
   depends_on "freeglut" => :test
   depends_on "expat"
   depends_on "gettext"
-  depends_on :x11
 
   resource "Mako" do
     url "https://files.pythonhosted.org/packages/b0/3c/8dcd6883d009f7cae0f3157fb53e9afb05a0d3d33b3db1268ec2e6f4a56b/Mako-1.1.0.tar.gz"
@@ -42,7 +41,7 @@ class Mesa < Formula
     resource("gears.c").stage(pkgshare.to_s)
 
     mkdir "build" do
-      system "meson", "--prefix=#{prefix}", "-D buildtype=plain", "-D b_ndebug=true", ".."
+      system "meson", "--prefix=#{prefix}", "-D buildtype=plain", "-D b_ndebug=true", "-D platforms=surfaceless", "-D glx=disabled", "-D c_std=c11", ".."
       system "ninja"
       system "ninja", "install"
     end
