@@ -7,9 +7,10 @@ class Nsq < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "dfff1005e1c48d1669aafb79cb903ade485ceb9ebbb748d8a6f85f9f71a6ce7b" => :mojave
-    sha256 "54c31bf18fcb185ca5a4dd0192ed846df8d5e6dccf5564d99252d3960555fe11" => :high_sierra
-    sha256 "bcfcd2d5b6ef1bb767631be70ee5aa72bd5987ba3cc75df1043b24aaa08eac8e" => :sierra
+    rebuild 1
+    sha256 "e205b40bfc180cdd34885f4414554ce9f1ec6b154feab871e16adea97046b9ba" => :mojave
+    sha256 "d479896635db1fb243815c6e4e7cc027c380cfce9491e5ceae17388b9c7a5df6" => :high_sierra
+    sha256 "c684878cef8ccdbaf4aefeea9250dfb922cf6487e5dcd204e45c4a416d570d22" => :sierra
   end
 
   depends_on "go" => :build
