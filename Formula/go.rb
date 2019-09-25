@@ -15,9 +15,10 @@ class Go < Formula
   end
 
   bottle do
-    sha256 "8573f3564e58cfaf54bd6274d41f259a8f510fbc08c49a56ca3e534586314014" => :mojave
-    sha256 "012e3abe4a383df19188799abf2d4f7a8a258ff7ccb28bc0038261a37306b67c" => :high_sierra
-    sha256 "a20cf6c8416d98712c4715b2aa88b37d2217f3c668c3d5152d6067585f924646" => :sierra
+    rebuild 1
+    sha256 "2ecabfa91905f2f7bd04420e8328c4695cb22fbf75e0cd70e7d89dc159439a53" => :mojave
+    sha256 "ba552a1e0289f324c821aa6770934b5581835771015d06e7f194665cf5d545af" => :high_sierra
+    sha256 "f1bc759f42594bbb5ee123db3a8edec360da78a342b500fcab0d18c343d8f4d1" => :sierra
   end
 
   head do
