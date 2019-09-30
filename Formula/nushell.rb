@@ -17,8 +17,8 @@ class Nushell < Formula
   # Nu requires features from Rust 1.39 to build, so we can't use Homebrew's
   # Rust; picking a known-good Rust nightly release to use instead.
   resource "rust-nightly" do
-    url "https://static.rust-lang.org/dist/2019-09-24/rust-nightly-x86_64-apple-darwin.tar.xz"
-    sha256 "7f2f743c68db122ced0dd8b92f309a8ee96c68282ecfa80b4c859436976cacfc"
+    url "https://static.rust-lang.org/dist/2019-09-29/rust-nightly-x86_64-apple-darwin.tar.xz"
+    sha256 "20705fd08e2c2706a840f928eceac5f394d29fe34ad566df68ce046d9552dcbf"
   end
 
   def install
@@ -30,6 +30,8 @@ class Nushell < Formula
   end
 
   test do
+    assert_match version.to_s, shell_output("#{bin}/nu --version")
+
     assert_equal "#{Dir.pwd}> 2\n#{Dir.pwd}> CTRL-D\n", pipe_output("#{bin}/nu", 'echo \'{"foo":1, "bar":2}\' | from-json | get bar | echo $it')
   end
 end
