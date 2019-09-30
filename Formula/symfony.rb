@@ -5,6 +5,13 @@ class Symfony < Formula
   version "v4.7.0"
   sha256 "c9be77cda0ee6b2f144bf8c5648a7500b01d3f4bd19d838d7a11a32be0f648b3"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8e08c7405751b339e04911c0676613cddeb03c48304aabd9155bfabbe777ddd1" => :catalina
+    sha256 "8e08c7405751b339e04911c0676613cddeb03c48304aabd9155bfabbe777ddd1" => :mojave
+    sha256 "8e08c7405751b339e04911c0676613cddeb03c48304aabd9155bfabbe777ddd1" => :high_sierra
+  end
+
   depends_on "php"
   depends_on "composer"
 
