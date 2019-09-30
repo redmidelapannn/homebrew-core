@@ -6,9 +6,10 @@ class Gettext < Formula
   sha256 "53f02fbbec9e798b0faaf7c73272f83608e835c6288dd58be6c9bb54624a3800"
 
   bottle do
-    sha256 "fa2096f80238b8f4d9f3724d526626ab4db5c0586f3746ee13fc66e5a625aa1a" => :mojave
-    sha256 "10dd5c2b9c6613b5310f95931d7233a8b7947c541433fcc5891ce837c45595a0" => :high_sierra
-    sha256 "85c7bf74ba9b0209a08f2b87d69b54d03ec21985ad0bb7b9aeeda30c195529f8" => :sierra
+    rebuild 1
+    sha256 "6354adfc22f1d78b1a671862db906ff1e55482be9c58a6ee6a43245f8895fef2" => :catalina
+    sha256 "3e78cfbfb76171b45ea5a607696cd2ba9528774d254b33356694570824a7b93b" => :mojave
+    sha256 "56a45a0903efb1fd250c66a87ad076aba604462ba344a855c940f2e3223a8373" => :high_sierra
   end
 
   keg_only :shadowed_by_macos,
