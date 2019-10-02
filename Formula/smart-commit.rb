@@ -4,6 +4,13 @@ class SmartCommit < Formula
   url "https://github.com/sbimochan/smart-commit/archive/v2.0.tar.gz"
   sha256 "468afe13dd5d09ff149f62f128acc44aaff8a59020ae7d34f30360dbbeacab3f"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "5c1b72931a245a61744b4225be930595a5711878ec8e389c7f444514fa72d5ca" => :catalina
+    sha256 "5c1b72931a245a61744b4225be930595a5711878ec8e389c7f444514fa72d5ca" => :mojave
+    sha256 "5c1b72931a245a61744b4225be930595a5711878ec8e389c7f444514fa72d5ca" => :high_sierra
+  end
+
   def install
     bin.install("commit")
   end
