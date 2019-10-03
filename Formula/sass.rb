@@ -22,7 +22,7 @@ class Sass < Formula
       }
     EOS
 
-    assert_equal "div img{border:0px}",
-    shell_output("#{bin}/sass --style=compressed test.scss").strip
+    output = shell_output("#{bin}/sass --style=compressed test.scss").strip
+    assert_equal "div img{border:0px}", output
   end
 end
