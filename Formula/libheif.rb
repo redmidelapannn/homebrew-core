@@ -7,10 +7,9 @@ class Libheif < Formula
 
   bottle do
     cellar :any
-    sha256 "28833a4c3ca9806930944f3f714ea95ec7d5c2e8e9b7120cf32d212aa350c772" => :catalina
-    sha256 "09b000d29523544e6ebbaabce1550b6e51575d3b61522621e01efd7a8fab1622" => :mojave
-    sha256 "2d1831b3668450da2d30befc0caa18916cdd429a1c9f22557ec03e3e584549db" => :high_sierra
-    sha256 "9bee18eba422e4c23bf6260321d9a1680a7ba795e9d983e5c628ac0bf1d108e0" => :sierra
+    sha256 "b0ff837baa88401c52419d10669c72cc945028c465027ba88125fc59dc77cf8b" => :catalina
+    sha256 "e6ed6a1c1002d55a3436a1f42b0903dde7d880353ce970de5a222d12c0b13956" => :mojave
+    sha256 "db0a8ff21c4d0ebb28f63cbd905bd255a4dab06c7d4fa63631eb03d2c100f283" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
