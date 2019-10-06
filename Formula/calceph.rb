@@ -4,7 +4,6 @@ class Calceph < Formula
   url "https://www.imcce.fr/content/medias/recherche/equipes/asd/calceph/calceph-3.4.0.tar.gz"
   sha256 "f176f8356d6a3514c60956386260986ee3bc98f5111b1e2bcc83581bbed20f1d"
 
-
   depends_on "gcc" # to enable fortran API
 
   def install
@@ -14,9 +13,8 @@ class Calceph < Formula
                           "--prefix=#{prefix}"
     system "make"
     system "make", "check"
-    system "make", "install" 
+    system "make", "install"
   end
-
 
   test do
     (testpath/"testcalceph.c").write <<~EOS
