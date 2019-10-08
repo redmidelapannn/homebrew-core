@@ -4,6 +4,12 @@ class PostgresqlAT11 < Formula
   url "https://ftp.postgresql.org/pub/source/v11.5/postgresql-11.5.tar.bz2"
   sha256 "7fdf23060bfc715144cbf2696cf05b0fa284ad3eb21f0c378591c6bca99ad180"
 
+  bottle do
+    sha256 "bf12aecd37d7f30d30a2280bb7f9d1e4256eefb3d033e3a6503edcb476eeb333" => :catalina
+    sha256 "bf09eb2fae35505402ec64bfd3a37a63911f6a5d26487fc0d720f527edc31372" => :mojave
+    sha256 "6b4cf49dd11e6238a9047341beeaaea86bdbb7d2758fbd9081973c2c4ad2e6ee" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "pkg-config" => :build
