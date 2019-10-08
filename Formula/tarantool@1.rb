@@ -5,6 +5,13 @@ class TarantoolAT1 < Formula
   sha256 "b416bc33d5067c4053f159e8274480c2bdf19d5f07399c6ad8b6bc1311d9d928"
   head "https://github.com/tarantool/tarantool.git", :branch => "1.10", :shallow => false
 
+  bottle do
+    cellar :any
+    sha256 "b73f79e43ca30c820086f937ffbf2c714c7df3a4718cd9f72027f5fe60b384b8" => :catalina
+    sha256 "79305e9f8a203d07ac7af5b42bf899d5a00cdb03aa0b1ca9807ae47714204522" => :mojave
+    sha256 "b448b102d61b1788b0937f781baf3d6e3e0bf290b5fc82184e32d7e50a5351f8" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "autoconf"
   depends_on "automake"
