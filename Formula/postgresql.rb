@@ -5,6 +5,12 @@ class Postgresql < Formula
   sha256 "cda2397215f758b793f741c86be05468257b0e6bcb1a6113882ab5d0df0855c6"
   head "https://github.com/postgres/postgres.git"
 
+  bottle do
+    sha256 "758193d133c73dc92bedb140b7bf788180944da15f24737e1ccb249dbb709ca9" => :catalina
+    sha256 "d3968a9752058fa76f3cebab4599890ac2bf22c5a495738187bf5deb343d9d33" => :mojave
+    sha256 "fdc3c3636ef6ae05c9bf72cb6c07a57d99292ebaf41559d63496e71b19ee3c6f" => :high_sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "icu4c"
   depends_on "openssl@1.1"
