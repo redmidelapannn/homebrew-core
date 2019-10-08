@@ -4,8 +4,8 @@ class Form < Formula
   url "https://github.com/vermaseren/form/releases/download/v4.2.1/form-4.2.1.tar.gz"
   sha256 "f2722d6d4ccb034e01cf786d55342e1c21ff55b182a4825adf05d50702ab1a28"
 
-  depends_on "gmp" => :build
-  depends_on "lzlib" => :build
+  depends_on "gmp"
+  depends_on "lzlib"
 
   def install
     system "./configure", "--disable-debug",
