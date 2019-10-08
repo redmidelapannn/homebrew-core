@@ -18,6 +18,6 @@ class Form < Formula
   end
 
   test do
-    system "false"
+    system "#{bin}/form", "-v"
   end
 end
