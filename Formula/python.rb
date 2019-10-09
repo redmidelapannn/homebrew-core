@@ -7,10 +7,9 @@ class Python < Formula
   head "https://github.com/python/cpython.git"
 
   bottle do
-    sha256 "d3f6d7105952f676e187c9cb7a8e0e4d78a5d028e90df58f181a4eb710e71f9a" => :catalina
-    sha256 "a1283e332d0754e450a7e46a1e1b0df2f1ba6b18a9540db9b2da07bb6b7b1ec1" => :mojave
-    sha256 "5e8e399e1a2a00754bff73c7605ff381094f3346351d2a6ef4fc1c798e6ebe10" => :high_sierra
-    sha256 "8875dc7112c3a98f6423d00915b4ca5242f18965463c0c2e266c7e511ddec026" => :sierra
+    sha256 "a8104e30ec27c3644cfd1062564dc5a66b7b8aff0851f411e36c6d114044603d" => :catalina
+    sha256 "ed7f67cd239c237040f04cb9bccba9713e4e931ddf3ddbf03ea78e7f69e26a0e" => :mojave
+    sha256 "a9920da04b7abad9df9f061092ac495d7bf58c197ac9dca3a6f311c5b9648782" => :high_sierra
   end
 
   # setuptools remembers the build flags python is built with and uses them to
