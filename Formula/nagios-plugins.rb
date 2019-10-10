@@ -7,6 +7,7 @@ class NagiosPlugins < Formula
 
   bottle do
     cellar :any
+    sha256 "cbe8c2586d4d634362703f6779f070383836f657ae1bef80f03aae00fd080636" => :catalina
     sha256 "bd7d15750d00a4b75d6e8c0b2fe75a5e508c00ab832c206e4cf017d53c793c68" => :mojave
     sha256 "14e25d0a27df813595c6060767fb9e24545efe6065f6c15e2b27d3f5e704c449" => :high_sierra
     sha256 "4119699bb703aea5a3a9369300b209587209c4d8675d22997a16ed75089e141b" => :sierra
