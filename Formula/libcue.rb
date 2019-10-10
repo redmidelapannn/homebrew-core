@@ -6,6 +6,7 @@ class Libcue < Formula
 
   bottle do
     cellar :any
+    sha256 "e98ca719b66aed0cd78cc3c3c917821320d75e733a6437d5d4f281aa801a1361" => :catalina
     sha256 "e3f6c16d235459f97b299627d359cb9fbe7526b8635e08521b1c36460b045162" => :mojave
     sha256 "209e548399503830e0f786c6faef21836aa350d67db644b9ad291703ebe2e9c5" => :high_sierra
     sha256 "14a6edb39d2887ad6beeb34dad944501d01f70480a529cb7e50d838833404f4f" => :sierra
