@@ -7,6 +7,7 @@ class Ttyrec < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "6847dbc0221d167ea198ddb2f88d391ba64538e0dd28f57206048e070aa3fa55" => :catalina
     sha256 "fa4e19544555ebf7956beceaa656bb8aed894f26b82683a5db32b88501cc5a85" => :mojave
     sha256 "8121debd07c4ecdd24d86fc7dadb00a7807e028f512418b5ba0d85768619628d" => :high_sierra
     sha256 "0323b20a0905ad1c3a2f997714572d779bcf6db63d8798840c14f6a75fd70cd5" => :sierra
