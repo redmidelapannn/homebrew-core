@@ -6,6 +6,7 @@ class Jhead < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "50096d305469d5841f632bd167e03d5da6ba62a6692feb82d9595f5d4f927109" => :catalina
     sha256 "1fdaa2ab0e5066688f1d3ff80821447f0957f95ba37c4c1c8d8f40b6d3a38ee9" => :mojave
     sha256 "d62f1ed9f99df061893021df1f5dc8928e52eb6ac73cfe47b41cf50bc2369f49" => :high_sierra
     sha256 "b5af56763e92712207332e51208c918b71c1b46985cb9df44eb1d8a30f59348f" => :sierra
