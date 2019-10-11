@@ -6,6 +6,7 @@ class Ncdc < Formula
 
   bottle do
     cellar :any
+    sha256 "0f75b3348b9732bb5efe6999df2d6d2230e69e89e0a6152cfce765ab33979fe0" => :catalina
     sha256 "4490571bb2101e00e3edc39ab25baf75a63dfd9617381ae0f102a274a2fbf622" => :mojave
     sha256 "bd143dd032839762597253796c562607e43c654c128d4f4162fd382fd660dbfd" => :high_sierra
     sha256 "59f5011b9c39b78c75a2bf5d93ae398a16660852a3b8fd8ed3a3389ea463fbf7" => :sierra
