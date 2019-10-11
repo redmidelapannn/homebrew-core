@@ -7,6 +7,7 @@ class Libpqxx < Formula
 
   bottle do
     cellar :any
+    sha256 "6a4212e982b2af07af80fb66d84698da1c701b7bb9387229b934587ae671b44b" => :catalina
     sha256 "1db58d276d390dcff3308ec986ab97d0255f8ac90408430f35ec5f60adba0bf9" => :mojave
     sha256 "33ddf4baad228b955914bf4c6c9fabe22458d5aaa345094ba682974576350994" => :high_sierra
     sha256 "fc29d0e35a593d461f4ba570b66431a241743210e467bcba47dcbc46956083f4" => :sierra
