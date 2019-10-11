@@ -6,6 +6,7 @@ class NuSmv < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "5abbec4dc44e26e895b139f828a20da26c8f5bf38edab9e30c9d29e442d7c30f" => :catalina
     sha256 "c2cc207758d6f315db1116e0e162be72edc0356312c460cd3359dca8c7de597e" => :mojave
     sha256 "f2e93143e60b64244fd25958a88480acee332fd4109a6bd356719dc6259efc36" => :high_sierra
     sha256 "64f825eac53c6c16c9b3db4b505d37a6de9f1f3471863b39081b5a98d517fb3e" => :sierra
