@@ -8,6 +8,7 @@ class Scrub < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
+    sha256 "e79f7a2b70dc727e5d69f329a21f3b1873007c7f7466dd092b5be8b96f9e791f" => :catalina
     sha256 "9343d2cc328739d3315f319eeb6704cbd8e98e8105065ff194fcb51456114c4e" => :mojave
     sha256 "c9e96dce0a6f2d7c3b32d481aae3a3aa2c0f42cd3c53b10e2fd60c6479ebf128" => :high_sierra
     sha256 "703ee9b222437bf008ceaa25ab802ace51f207bcba8503f88037896aee2fde40" => :sierra
