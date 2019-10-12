@@ -7,6 +7,7 @@ class Jmxtrans < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "461356f94d4942706f3f702f22f8ac04fcc198dfb33f3f07b51721a64b1a940a" => :catalina
     sha256 "8ba9f5d54de8350421d72dfbbaa821e89d8707e5177a7156ce55f87e89befcfd" => :mojave
     sha256 "a443805c63b0b51d4b13dfa2cc92b0d3f04ec2bcca3cffedb27ccd1e8d124fad" => :high_sierra
     sha256 "3b9479ac46dc39a6f0a69bf43c5469abb31f33de6f51159ba6754a52d4127d7c" => :sierra
