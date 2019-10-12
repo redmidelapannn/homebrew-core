@@ -7,6 +7,7 @@ class Picat < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "2fbe3bf07c764a60b1a4c9a130688baa4ec7c322a58b536e259c9098d96816f5" => :catalina
     sha256 "1f65a7f14dc8aae1a1c680c9bcabf79f283581def0349564d2a4aa34cdbb0a63" => :mojave
     sha256 "950628799e8fe03c6c70b5f54e4658502429e7e5c067a230d2e14f0066ef05d2" => :high_sierra
     sha256 "1260179d1a7beca07fb71423f0a2d8d1b6eacf338ac1aafd077caaa49139acd6" => :sierra
