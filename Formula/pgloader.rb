@@ -7,9 +7,8 @@ class Pgloader < Formula
   head "https://github.com/dimitri/pgloader.git"
 
   bottle do
-    sha256 "38db7f6a7695e08463a32172d9b31a14766fbfe8c7aaa4c552c9336537be6d5d" => :mojave
-    sha256 "3d569cdcdc3a27a6a0401582dd09b21aecf2032ec13e6df29d7f92c087857e84" => :high_sierra
-    sha256 "d4f9b42c3ec8d2794b887d659e7da03390f799cbfcbca0defa6c5387a6dbe00a" => :sierra
+    sha256 "8097b100278adb93629e6677ff4ddec23e5ffc6dda76c2a562d2d997358c7100" => :mojave
+    sha256 "5f22ba0dbbfc388a461322673b58e988bc962751d8df2a4fdbfb810b78b1933f" => :high_sierra
   end
 
   depends_on "buildapp" => :build
