@@ -7,6 +7,7 @@ class Libcmph < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "6c8a67ef51f205f22af91030a73a8a3a42bea26810e7f72abbc20d701a785eee" => :catalina
     sha256 "e8163bd5b5de8d4faa7c797432abd2d5d5f411e78d0d23cb851d7bca82b3c24f" => :mojave
     sha256 "31113e8e40d7f6b1c95976b83e74bb46b1fb2f927eb32adf5aac3a3aafb15811" => :high_sierra
     sha256 "925bfc37517acf2e0284e3d70280848104107b5aa1c6dd3402b3d4b1f03ab59a" => :sierra
