@@ -10,6 +10,7 @@ class Scour < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "0f68235264a0c8c99c7cd58d4e329187f938f3197fffc157666f21ebe58ada9d" => :catalina
     sha256 "df293a2b797a034bfad0f70ceea4224c7ebf4c3bb9dc5f4c00b7e7f660dd9872" => :mojave
     sha256 "2b7a9141c9bdf1f81504ef26d6f5d8a406960a80524e161ac72511c02d80053f" => :high_sierra
     sha256 "034447e6f32a3c4925682911e97a89d62ca418347ad0be425a64d299db1f7f20" => :sierra
