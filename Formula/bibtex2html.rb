@@ -7,6 +7,7 @@ class Bibtex2html < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
+    sha256 "b3bdcded3e74e17b2e8a52680a19cd6e18609786c3fc3a008d88a8bb5eb5fbd2" => :catalina
     sha256 "25f6eb3f580bf87ffe7453a3d98fdd8040ac9e2845fcf1985ed5805f3eff98b8" => :mojave
     sha256 "ae155ef0c5f2d07f2559d0b4d661b1b0bf5f96546053f623dec074aee9415b71" => :high_sierra
     sha256 "269cbbac8dbae6a4e20e06df609d27fe60cc62ea176dd495eabeb2f9518fa736" => :sierra
