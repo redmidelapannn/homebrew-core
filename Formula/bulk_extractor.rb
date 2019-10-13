@@ -7,6 +7,7 @@ class BulkExtractor < Formula
 
   bottle do
     rebuild 2
+    sha256 "a4ba057132f773d50e4f027ec59edf1addf8cfd27923f6733c5e124153697818" => :catalina
     sha256 "d9a23deb7c19b4efba7c4079ff8cf3f7bc56f2d13e4d10fa74a28ee1e08ddd86" => :mojave
     sha256 "110583d688900e06f1607469145eba60fe807bb1c41020b8ba9decf379685a9e" => :high_sierra
     sha256 "712520309fa42fb430631cf8d5746e0ae71a87c07760e2f8b3532c04bac8d171" => :sierra
