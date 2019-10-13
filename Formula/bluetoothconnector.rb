@@ -6,6 +6,7 @@ class Bluetoothconnector < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e3e5f6da95a5e64163f5ef313204aa9cfc40c739a08dd199229cf22d77ac084d" => :catalina
     sha256 "b49cd1726285c91d42935e0052814940a9c33a99df54ea1da2eab4c5b7411c71" => :mojave
     sha256 "b49cd1726285c91d42935e0052814940a9c33a99df54ea1da2eab4c5b7411c71" => :high_sierra
   end
