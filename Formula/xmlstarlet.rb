@@ -6,6 +6,7 @@ class Xmlstarlet < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "87726a53f889e1995f92dff24349b0a57e0ff43f043ee423c8d5f20f82724c78" => :catalina
     sha256 "6e5d11ee1419a61a9f043663c1236d064ee692fd187ae15bf2114b42d8f0889e" => :mojave
     sha256 "56ce0e3190080e6e1111ebb31aa06aea53f16cde50359a356c24ff86a4df72b3" => :high_sierra
     sha256 "4958bf868beefb9a2b391c0fe05f5289b67a4cded708d71c4cc5fced130bac55" => :sierra
