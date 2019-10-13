@@ -7,9 +7,10 @@ class Stormssh < Formula
 
   bottle do
     cellar :any
-    sha256 "ff0a5b97f1450f89fe8ccd0ccb04067200db88fd36758b3847d06fa678f1ce98" => :mojave
-    sha256 "b9eee122d5ff26e4bfea039705f3bc6aa7677556bf904fa3b9afda495d58c278" => :high_sierra
-    sha256 "8a359d6072d36572383630fe7632cc59b8526993dc7071d3fca88a0bcc486226" => :sierra
+    rebuild 1
+    sha256 "91a2bbddb2ca236967b4d25788eae79a16dd2db2123666930a2f9a5b496d9ee3" => :catalina
+    sha256 "0f7a11649bdff35bd886ba166206b1bf642047616d6607e02867aa374ca0407b" => :mojave
+    sha256 "ec31e37456ef687d0dbfa8ed2453469fad95bd09e1aff0c94b51599fb95425f7" => :high_sierra
   end
 
   depends_on "python"
