@@ -4,7 +4,7 @@ class Couchdb < Formula
   url "https://www.apache.org/dyn/closer.cgi?path=/couchdb/source/1.7.2/apache-couchdb-1.7.2.tar.gz"
   mirror "https://archive.apache.org/dist/couchdb/source/1.7.2/apache-couchdb-1.7.2.tar.gz"
   sha256 "7b7c0db046ded544a587a8935d495610dd10f01a9cae3cd42cf88c5ae40bc431"
-  revision 1
+  revision 2
 
   bottle do
     sha256 "3418496d83e41753b9c27beef215728342da499fd3e0881ca2830377aefe36e0" => :mojave
