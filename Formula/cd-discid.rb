@@ -16,6 +16,7 @@ class CdDiscid < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "a1cc357280a14e632cd974851481dcb96b3519b4c81d37ca95729fe6900c8817" => :catalina
     sha256 "158d91563b2e79574c0a336f775b49033d85ce3b290f122dae853dea45841f5b" => :mojave
     sha256 "26b88be0312f960484625161d94adf9a44aa88ef5817ba28b61af520a6e17e03" => :high_sierra
     sha256 "6b0d9c55a1adfce8a2c6e9eabd00c37118a05b60678564e7a9695d876bca117b" => :sierra
