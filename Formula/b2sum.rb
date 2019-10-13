@@ -6,6 +6,7 @@ class B2sum < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "eade6d24190ba06170e9a15cf6db5a42a0668132796c3108de7b28358a3526ad" => :catalina
     sha256 "a82ef919d2964758ec362f58a177f74d114a4c3186d2ca1b499dfe9f9ea602de" => :mojave
     sha256 "788c7a6c48666983e7ad84b1a360e7cff97769c2ceeb720f854cc11cd3c2225b" => :high_sierra
     sha256 "26e11b434c3416172d848b237f67ca5e171c7c11188a5f86c83a5d54a53a8a3f" => :sierra
