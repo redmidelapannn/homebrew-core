@@ -7,10 +7,9 @@ class Fftw < Formula
 
   bottle do
     cellar :any
-    sha256 "271f7a5febd92b8757948c86fa24546aca9025087406056b7cf4036ca97b29e4" => :catalina
-    sha256 "fafc0d1b43619cf3ac63946a4380782747903378dfb4f7b21387c40131ad2d59" => :mojave
-    sha256 "da4329aec211bdc19e9404b35318517d8a3d029dde6e0e28dac646330a7554c4" => :high_sierra
-    sha256 "eb140060084d40bc484f8e7048b516b7afe92902c6da04f9e283bfa83f271551" => :sierra
+    sha256 "d61ba42fc4b83b3080f25d05de6a0a01599b7e73e2479857caba62e454f601ec" => :catalina
+    sha256 "38ffa74aca0b5e75a352761379a21612ff1d93017a88b27c2fefd90e531ee16e" => :mojave
+    sha256 "66a2d8b13f32178d0cb7eecfafd5b8d2d700fcd22373118b1b4a0d72b7dcb9b8" => :high_sierra
   end
 
   depends_on "gcc"
