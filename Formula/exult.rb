@@ -7,6 +7,7 @@ class Exult < Formula
 
   bottle do
     rebuild 1
+    sha256 "fb6dc3ba78d3fe64be464f4b4840f56e7d3c7488429d0264e5f80b16b60b84b7" => :catalina
     sha256 "43967db7a4ff32b78f7478c920eeaf1c730a11952462d9b5bcc2d5b8ee27b932" => :mojave
     sha256 "642d16cef7ecf374ff50e10b32497f2744468010ee452e3e5819cc698215f8dc" => :high_sierra
     sha256 "01c7906864324d3ffe1ce9a11ba7bb60093c379e07d15aab2822e0bdd4789cc3" => :sierra
