@@ -7,10 +7,9 @@ class Mimic < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "5637b3526827e1e32d2010ca9a4b1aa2bea53a5a1c5f8f5a1000e74be96b1884" => :mojave
-    sha256 "6de781e65c88a019639614c87bd38b59227a2d085b136cf8a63e3d62a7cd0437" => :high_sierra
-    sha256 "e10c327921ef68c64fc76915fdec61d3ea210f8874fab2af5ffac14bef8ccdb8" => :sierra
+    sha256 "f5eda1c3e6a1670e9e9caa779a4d1c8bbeb4b0d547f269e166b84deddfaa4244" => :catalina
+    sha256 "e9e6708470da01d84dd841a3aceda92e47acde207085c18d6a680f11a68e758a" => :mojave
+    sha256 "1065cca33fd211d5212da17a6708b344885a54687f55cb0a0e7594a346fbc641" => :high_sierra
   end
 
   depends_on "autoconf" => :build
