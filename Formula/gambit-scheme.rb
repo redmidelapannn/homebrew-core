@@ -6,6 +6,7 @@ class GambitScheme < Formula
   revision 1
 
   bottle do
+    sha256 "b57d91007f1a040fa5b26f9d357442a713447e7a9c84be145ce9bef8d765538d" => :catalina
     sha256 "5e10d73020823bad8ca4b5aec00391fcd06d200756084ddd86ecaf12082608be" => :mojave
     sha256 "397dc40ff05f988c80c438c804ad344ad8033eef845c3f36f50b5cb3d67178f9" => :high_sierra
     sha256 "cca0083994c00b4d8199330c6292359e7361eec9def7e6c3fcb0a0dd4d155acf" => :sierra
