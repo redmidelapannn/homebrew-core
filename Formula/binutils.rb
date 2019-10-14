@@ -6,10 +6,9 @@ class Binutils < Formula
   sha256 "98aba5f673280451a09df3a8d8eddb3aa0c505ac183f1e2f9d00c67aa04c6f7d"
 
   bottle do
-    sha256 "cc0be2b4198597a513413e2957423e6db06b183dfef802f4fa1a493a42388ddb" => :catalina
-    sha256 "101c47b5ba0dd14c33ae6252f0f732f2c9e3db9bb5bf03c880533b62e9f18dc2" => :mojave
-    sha256 "b82cf83f50a4822652022612c4f51052a56741e281ee509c8f18e1485b29cdaa" => :high_sierra
-    sha256 "7fabb9b6e95bbc156469a765189e153917adb9b8fbdc24a7662f42b4995ba825" => :sierra
+    sha256 "5a4d2469d5e4c31b672cfcd0e8716ad5fb467a016d5e38ae19635ca05b3d9ed4" => :catalina
+    sha256 "4c7a7a10d92b64f4d4e99321f47f3aa8e7adc1c23daf0f1c0607579b660f01bf" => :mojave
+    sha256 "80792ce1a80ea67218c73becde3bf2a0a92bfc5257fe962e27238ab1de0fe4d4" => :high_sierra
   end
 
   uses_from_macos "zlib"
