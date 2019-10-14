@@ -1,8 +1,8 @@
 class CreateDmg < Formula
   desc "Shell script to build fancy DMGs"
   homepage "https://github.com/andreyvit/create-dmg"
-  url "https://github.com/andreyvit/create-dmg/archive/v1.0.0.5.tar.gz"
-  sha256 "de76c8a7a1f4705720d61d39de7c87b7bc2acc7c35f6ec8d6d2dbdafcedc21b6"
+  url "https://github.com/andreyvit/create-dmg/archive/v1.0.0.6.tar.gz"
+  sha256 "1eb1e06fed5bf66a304c4439ca7a05cbe731f64374c0c7bc7a446090a0e94688"
 
   bottle do
     cellar :any_skip_relocation
