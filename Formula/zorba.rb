@@ -6,9 +6,9 @@ class Zorba < Formula
   revision 11
 
   bottle do
-    sha256 "55376a15e18dff204a8c5699749249d880e18823f9c6bc33c1331eb83e13ba3f" => :mojave
-    sha256 "4fed67773a58207a2ead212f4250ea74febf4bd4ba114f9f5092a7cc5face43b" => :high_sierra
-    sha256 "d2bbe83eaf99a61e496b6fd923c4ae0ff809af4fc2557170d84293a3607db46f" => :sierra
+    sha256 "73eaa9f5220e7ad42c8eabf1071a02d2127d82a072f0a5e2c74551626e3aae28" => :catalina
+    sha256 "ac257e3a8dbaefb3efe9cb3389b3e89a2157a4c439c771a99f6380c1a3a33e56" => :mojave
+    sha256 "7b50af357f853919ebfb7ff7a9f29737bf7777717f15ac5928a73b489158cd7c" => :high_sierra
   end
 
   depends_on "cmake" => :build
