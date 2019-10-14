@@ -5,12 +5,10 @@ class Ocp < Formula
   sha256 "d88eeaed42902813869911e888971ab5acd86a56d03df0821b376f2ce11230bf"
 
   bottle do
-    sha256 "e07892e27e711cfaafd3a7ba2bc2a86bfe8fbc5438cc443e11a1033486a567fb" => :mojave
-    sha256 "93017205557b9629a506023b466400c12b4333b6d99ce48b83d53ceb02b538b5" => :high_sierra
-    sha256 "5566054299b2a05716a3234c7c3d0acee15b4077360c89ec815b6162bee89319" => :sierra
-    sha256 "4bd576f3d75594928348d30b3b3436cdeebba844be8a8ba65251eb1731de437e" => :el_capitan
-    sha256 "e6b941f5aa2508a9628487cf40a186188f1dbf986a9a5ab2a824c57a03d45055" => :yosemite
-    sha256 "d2a095ce47bdea35fad3f6f7ffac500ccc4dc8dd149a9c1dbbae2bbf92809886" => :mavericks
+    rebuild 1
+    sha256 "0027de6c7f165a0461d3496fb77e00f8aa3be238f36c73b29dbb6f15120f561d" => :catalina
+    sha256 "871c42fcf0ae627e3f88b933b6e0f112452e726a2dd29846f1555b3b695e7eb3" => :mojave
+    sha256 "bed0fbb814e5c0e81b03db5892a86083ff400effd859a556714bd2ac651116d0" => :high_sierra
   end
 
   depends_on "adplug"
