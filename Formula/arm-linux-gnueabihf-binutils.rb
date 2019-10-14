@@ -6,9 +6,9 @@ class ArmLinuxGnueabihfBinutils < Formula
   sha256 "98aba5f673280451a09df3a8d8eddb3aa0c505ac183f1e2f9d00c67aa04c6f7d"
 
   bottle do
-    sha256 "ce0dcfa1e43603353f9961b4f0a4d7be8410311c0a26c94eeb5fb4b9300631f2" => :mojave
-    sha256 "5f8b6709262fc2a62dec89d1b8b3c4f85ff1c20916e7c33a9be6b87205b6f285" => :high_sierra
-    sha256 "a884754782026786a2f4b2a440110ba1da07c3ffa61849706277e2550b353e79" => :sierra
+    sha256 "485a3c8427e97f567971a9e064ada41ad3e40a6349e15b54b6f9ec0ea3fdd142" => :catalina
+    sha256 "b32bc51d82f1994819d4e08e13119bdace15ba32fda95ef6d8d9bfb888021253" => :mojave
+    sha256 "9f97ce727f745aa7022ab567ac4b722ac862b5b68e7d976cb20362baa8b37a0d" => :high_sierra
   end
 
   def install
