@@ -1,8 +1,8 @@
 class CreateDmg < Formula
   desc "Shell script to build fancy DMGs"
   homepage "https://github.com/andreyvit/create-dmg"
-  url "https://t.keka.io/create-dmg-master.zip"
-  sha256 "95e9628034f0854c8e3f5a79bb4bfa503a5900f9075e1a9f9e76934989775f60"
+  url "https://t.keka.io/create-dmg.1.0.0.6.zip"
+  sha256 "bdfc3a671b54aba21ec3da5fdadeedde1e25369edc46d4a3e5dab5dc1025ebf1"
 
   bottle do
     cellar :any_skip_relocation
