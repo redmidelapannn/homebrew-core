@@ -9,6 +9,7 @@ class Fcgi < Formula
 
   bottle do
     cellar :any
+    sha256 "32c015af7237d3ba4a70e95e724e94022d298866fa948ff5ab2542ad315aea8b" => :catalina
     sha256 "1d091b591f3e4ae9fcb5474beaa519c644a6c52fb79d4cd22c936fffa9e74f5a" => :mojave
     sha256 "d5ebce52eefded7c5e911c1bd4771316cc8110da4644d86077b2c66551b2d3dc" => :high_sierra
     sha256 "a8062d977c2e8b1d63557b703eac13ce75ce8331f16dc68de153309cfd7b2166" => :sierra
