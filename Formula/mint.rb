@@ -18,7 +18,7 @@ class Mint < Formula
 
   test do
     # Test by showing the help scree
-    system "#{bin}/mint", "--help"
+    system "#{bin}/mint", "help"
     # Test showing list of installed tools
     system "#{bin}/mint", "list"
   end
