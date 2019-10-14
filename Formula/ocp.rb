@@ -13,10 +13,11 @@ class Ocp < Formula
     sha256 "d2a095ce47bdea35fad3f6f7ffac500ccc4dc8dd149a9c1dbbae2bbf92809886" => :mavericks
   end
 
+  depends_on "adplug"
   depends_on "flac"
   depends_on "libvorbis"
   depends_on "mad"
-
+  
   def install
     ENV.deparallelize
 
