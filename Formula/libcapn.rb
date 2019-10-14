@@ -15,6 +15,7 @@ class Libcapn < Formula
 
   bottle do
     rebuild 1
+    sha256 "61cc5ce646b141a02d787d37942efb7d5e12db65fd72f67c48cd0f5c47d3ce9d" => :catalina
     sha256 "eaf58b0b396a97f84f8b477bc0f668577640c25b0dbbdbba08361bf584546c79" => :mojave
     sha256 "795b187aa64a56ca4ae63a398b8422200b839eed12ab6d5676d277fd3e6226ba" => :high_sierra
     sha256 "c23c4a366edf36912ebc70fadde0207bc780ef32742459015230d4adbf71028a" => :sierra
