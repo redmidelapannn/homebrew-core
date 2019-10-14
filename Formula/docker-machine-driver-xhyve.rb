@@ -8,9 +8,10 @@ class DockerMachineDriverXhyve < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d64c4216f55e38b2da5ddcdda337133858c678570acd909a0f5c3910c272b8a7" => :mojave
-    sha256 "53f287a301b4df97248850ef0160eda8ea804f502be7b37574f88290ce5d62e7" => :high_sierra
-    sha256 "19ee4c65be0c2dcbe3b5f504e67cc0d81165164f90c007c066d9cc7b9d21cd2c" => :sierra
+    rebuild 1
+    sha256 "e200fe2ce2882b91695f38c7f2c361389ea041a55b8d524bc05e521adb63dd68" => :catalina
+    sha256 "a3ba571fd3deadda9afcd4512d4bb162748c8aa611c4720e587e41923dce7e42" => :mojave
+    sha256 "24627181a1ac460ddfde2f05fb870cb78fb48417baa1083776ff16fd92bacfd3" => :high_sierra
   end
 
   depends_on "go" => :build
