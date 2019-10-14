@@ -6,6 +6,7 @@ class Dosbox < Formula
 
   bottle do
     cellar :any
+    sha256 "bd322878a1eeb35bb0db68b2eb355b9b4b0a43fc40d2b47f4f0560c4e96d62d0" => :catalina
     sha256 "de46ee6c3c638829ba3b9dc3ee009811d26a19359d10804b9ff93706df2a6863" => :mojave
     sha256 "66b1b073b1ae7db629c64f66249254aefcb8fb6585c065c858a364bd258785d4" => :high_sierra
     sha256 "3bd2c41c7f76e214c0964acec02723d2a2a611eca92cf5edb93c029333a78adf" => :sierra
