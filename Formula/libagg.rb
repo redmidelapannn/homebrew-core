@@ -8,6 +8,7 @@ class Libagg < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "75f6e73d7c20aa7e00c4f63a7c636724ee8c524e87d996bcefe82dbf8668d660" => :catalina
     sha256 "97e0bd763cda63b61cefba2e46048275dda4d03cdaed251be5ebd0b7369b8e38" => :mojave
     sha256 "de1daeb1b324b1797f46ff6e6799498019de9256b4e09a128cf686e2572f6f60" => :high_sierra
     sha256 "872f49f0fd96ee65dca4bedba3e82c4fcf0e0b0c45de15afc82a9e70e0f0623c" => :sierra
