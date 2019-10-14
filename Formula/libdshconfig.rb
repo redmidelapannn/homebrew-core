@@ -7,6 +7,7 @@ class Libdshconfig < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "b1eb871edb892800f964c757da6b2e3cfedc57426ee4776f5d83e69fb53c3a1d" => :catalina
     sha256 "7e2632a44dad0f9eedc38577c8dcb8c11856e036f05ba444a814f8bd93dd47ea" => :mojave
     sha256 "2000ae2106bb3b10a77b91b75a40dbb6ec60a8aad8de220aa2af69e1a41b905f" => :high_sierra
     sha256 "82fc9db7c3ad20bdcd5681be1075ae4853b6f19caeb41624dac33d53470b2523" => :sierra
