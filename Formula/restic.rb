@@ -19,7 +19,7 @@ class Restic < Formula
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
     ENV["CGO_ENABLED"] = "1"
 
-    system "go", "run", "build.go", "--enable-cgo"
+    system "go", "run", "-mod=vendor", "build.go", "--enable-cgo"
 
     mkdir "completions"
     system "./restic", "generate", "--bash-completion", "completions/restic"
