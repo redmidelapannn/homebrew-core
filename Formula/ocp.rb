@@ -17,7 +17,7 @@ class Ocp < Formula
   depends_on "flac"
   depends_on "libvorbis"
   depends_on "mad"
-  
+
   def install
     ENV.deparallelize
 
