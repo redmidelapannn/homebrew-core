@@ -8,9 +8,9 @@ class Liblcf < Formula
 
   bottle do
     cellar :any
-    sha256 "af1b2189ec52ff85cd7bbf53aee54c988bf933bb36333194831ffeb873a2d514" => :mojave
-    sha256 "400b4d459f287f0c935233a25298cbe3d4ca6b2d2a6f09bb75fd95b917fff811" => :high_sierra
-    sha256 "c27dea64d039f5dc4ed3d57f17c85035b95a3426bbc687edf35aba2d03801bf1" => :sierra
+    sha256 "51fcb3439072cffde86631428b56f914ae6eed09a488285ba85135e217b9dae9" => :catalina
+    sha256 "8eaaf77ac1b57be5f28b28e37fc81cd986d384cbf68f3427ce46aee6ce8bbd61" => :mojave
+    sha256 "cbb00f7f59dc88a4178a30a9e2d927571576d9e3481540a4fa954d2fcf66e233" => :high_sierra
   end
 
   depends_on "autoconf" => :build
