@@ -6,7 +6,6 @@ class Restic < Formula
   revision 1
   head "https://github.com/restic/restic.git"
 
-
   bottle do
     cellar :any_skip_relocation
     sha256 "9f9218c65c562b2eace35015cff1a2dafd5a59dc5973165f3b59d7165f7d0a6c" => :mojave
