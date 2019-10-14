@@ -5,7 +5,7 @@ class Restic < Formula
   sha256 "e22208e946ede07f56ef60c1c89de817b453967663ce4867628dff77761bd429"
   revision 1
   head "https://github.com/restic/restic.git"
-  
+
 
   bottle do
     cellar :any_skip_relocation
