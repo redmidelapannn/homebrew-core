@@ -16,6 +16,7 @@ class Dosfstools < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
+    sha256 "613f319014d5b8e793a891f579bf9f80023dee7d4acaa05fa6d7b312bd307ab6" => :catalina
     sha256 "a12605487c15e462c7ae652bb3f1587d254fc0001bfbae9261903c9f85542c2e" => :mojave
     sha256 "44d8a1baa92d553ec9c24c1152c875b0f7d3730146d3decf4cdfa8f7b1516434" => :high_sierra
     sha256 "b14dc5d79955f0ee586a33c7e265df2def55b1c64b7eb123539fce827cdeb6ec" => :sierra
