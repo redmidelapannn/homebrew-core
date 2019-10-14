@@ -7,9 +7,9 @@ class Gnuradio < Formula
   head "https://github.com/gnuradio/gnuradio.git"
 
   bottle do
-    sha256 "f36fef90f0118a04b3f7cdddf109d99388e01ccdf0375224aa753bc68318bac9" => :catalina
-    sha256 "215229e531d21fe319f7d5a861e4d567b5acbcad6775c8d7dd3389d535950c4a" => :mojave
-    sha256 "774f51b9cb123e9ad9b4560802099c5050447855c931454d4473f107e818223e" => :high_sierra
+    sha256 "16d5bf586a021680e19091e4ac1858a70ae2a199361e5f3cddffbee561848235" => :catalina
+    sha256 "02d4d33f30e2d1f014e6ce1852e0973deeee64b6aa8d942da436e42852717aca" => :mojave
+    sha256 "32c282ee429cff89fc60c7577ec4c020cb846c0bee4cd7e89f81ac10d7c7071e" => :high_sierra
   end
 
   depends_on "cmake" => :build
