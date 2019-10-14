@@ -7,12 +7,9 @@ class Metis < Formula
 
   bottle do
     cellar :any
-    sha256 "b410b124973bf31beb58806d4050b8dda1fb3dca679fc3443514025200fd4a37" => :catalina
-    sha256 "f3cdcf0cc5af4ddd27a4550d4a73cffcb34058fe34604b09d453610460d24465" => :mojave
-    sha256 "88b6965d941a87044150238387971c4bb94ed2ffca327affccaf311d666a2b4b" => :high_sierra
-    sha256 "9c8deed80ece8c24e7ebccbce8410557b27afe711d3f59fccb7d781254d0cc34" => :sierra
-    sha256 "54f75262475744bc6ad3ba66ac801e03c18bbac00a9bcf0ca9d05853f2022498" => :el_capitan
-    sha256 "b33c2fc2c8a1cdb9f48faf41201bdc6384090b8dbd6ed3eecd05264eb6431c0b" => :yosemite
+    sha256 "1b100a3490e7c1963fa810d2a3367ace9220913d583feb5457d331e252471661" => :catalina
+    sha256 "96a1efaf22a2dc560f0e49e32adadf2698f7d27d56a106ba950f35eb4a352b03" => :mojave
+    sha256 "71dc9c65c2ae7a23063121ee0d1e389b4ae9ea40be84e0ff7168aad11b945b74" => :high_sierra
   end
 
   depends_on "cmake" => :build
