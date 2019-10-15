@@ -6,6 +6,7 @@ class Geographiclib < Formula
 
   bottle do
     cellar :any
+    sha256 "78a8195f2b4ab3b1e0685f4b4b6ba33ca0bf76009631d0b26c0beb7bc3294ea3" => :catalina
     sha256 "5c7c3e1686f06107ea12cffeffae30e22c63a199b1b36ba5a68dcfad812277b9" => :mojave
     sha256 "65dd48aba3d3697283c608f46ec262cdf99bf1f08db2a599bb191962609dcd4b" => :high_sierra
     sha256 "cb19d70deee081b876d7c004f0bea3d903a54897f5bc56cb5d3009faafc05659" => :sierra
