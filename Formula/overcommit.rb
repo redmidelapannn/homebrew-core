@@ -4,6 +4,13 @@ class Overcommit < Formula
   url "https://github.com/sds/overcommit/archive/v0.49.1.tar.gz"
   sha256 "6bf60311211efdd036abe14d62cd314226f99d6c0676810e79df555a72bc9ac3"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7dcd6327001be0deab82a388e84ce113a9438c5179c3dc59f6600bdb64892a04" => :catalina
+    sha256 "b1417a090fb6aefff7aee1ba23b7b2f1f6edfb2f4a5161e1dce8c9643e424a79" => :mojave
+    sha256 "0398100ec1de49a88e418c9cbbc51760f8a8365862a3a6f74b089001665ddd9f" => :high_sierra
+  end
+
   depends_on "ruby"
   depends_on "git" => :test
 
