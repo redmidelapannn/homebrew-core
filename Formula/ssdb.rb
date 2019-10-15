@@ -7,6 +7,7 @@ class Ssdb < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "6fa107c2e939396f9ca5e8a1d1b19be78ddeeee50ac0a69a69574c90c2402122" => :catalina
     sha256 "e0909c2c863ae8995a2a2e28caa9e14f0a410e02bed59e3e1d099264ee1f0ba8" => :mojave
     sha256 "b6682e1b7e93c577e69c60308cc99a0e7124ddc48006207d963888863fb21dd9" => :high_sierra
     sha256 "79903c5f68970f2c92716aa357dc7d02842ab9838aed81eb0d10a84a6b7b3277" => :sierra
