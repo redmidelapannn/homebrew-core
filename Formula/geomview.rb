@@ -7,6 +7,7 @@ class Geomview < Formula
   revision 1
 
   bottle do
+    sha256 "7c564e118aa6a3a5a27387953f944f1c353ab3514a8c9acbabf8a4de807afe6c" => :catalina
     sha256 "cd70e7bf1004fe4b28933971dc3e817822c2abdd17fd09eb728f26ac85506cb2" => :mojave
     sha256 "d66bbca7b5fb25556f03f40264d338e5ce99efaeba4e227b14711632a7f97cf5" => :high_sierra
     sha256 "34cc860cab36fad0c134035897063de637b55c1bd53aafbccd24847af6af3b34" => :sierra
