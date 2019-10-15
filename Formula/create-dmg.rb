@@ -2,7 +2,7 @@ class CreateDmg < Formula
   desc "Shell script to build fancy DMGs"
   homepage "https://github.com/andreyvit/create-dmg"
   url "https://t.keka.io/create-dmg.1.0.0.6.zip"
-  sha256 "bdfc3a671b54aba21ec3da5fdadeedde1e25369edc46d4a3e5dab5dc1025ebf1"
+  sha256 "3d9b80c8a133de446f8055d839e08f1f55ab5150fd783981ad12d031049ecd64"
 
   bottle do
     cellar :any_skip_relocation
@@ -20,6 +20,6 @@ class CreateDmg < Formula
     File.write(testpath/"Brew-Eula.txt", "Eula")
     (testpath/"Test-Source").mkpath
     (testpath/"Test-Source/Brew.app").mkpath
-    system "#{bin}/create-dmg", "--sandbox-safe", "--eula", testpath/"Brew-Eula.txt", testpath/"Brew-Test.dmg", testpath/"Test-Source"
+    system "#{bin}/create-dmg", "--sandbox-safe", "--skip-jenkins", "--eula", testpath/"Brew-Eula.txt", testpath/"Brew-Test.dmg", testpath/"Test-Source"
   end
 end
