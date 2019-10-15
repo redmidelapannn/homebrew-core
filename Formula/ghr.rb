@@ -6,6 +6,7 @@ class Ghr < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e6b4b95643b07520624556377dd80ba12ccc96ace25d5adeba0527dc6a1f981d" => :catalina
     sha256 "7890c5b66ae184b37fa958c49dbc83759eb392b1895c646f1ea7026ac0a3d266" => :mojave
     sha256 "4ddd6326018db9e44584c9d730999fbfa78dd075ebd9007cb24d026630e69006" => :high_sierra
     sha256 "3d96e05a7cc1bb89e910845db0f6ed80175f8f77c31adc0938a5716414296fad" => :sierra
