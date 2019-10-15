@@ -18,6 +18,7 @@ class HasteClient < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "fe9b663cc6f95a621092445ab754b7452a842fcfa4cf6198b14220204136b263" => :catalina
     sha256 "c38551ce841f7a3cd825e1ae20b774836aba13fe6e129c1539eadde9b9e64a02" => :mojave
     sha256 "a97b7aaf38ec730bffa45ffc073ccf4921b4e5714069a21bf63e682a9d21527e" => :high_sierra
     sha256 "746af59be7c010e6e13b67d1f98766c0237061eabca601e5f0cad935e1c648bf" => :sierra
