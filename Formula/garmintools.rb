@@ -6,6 +6,7 @@ class Garmintools < Formula
 
   bottle do
     cellar :any
+    sha256 "8375f57cb0ecb82df6dcf7f7e0ee4ca316afc7f5ee22e806b75b7a044210cf45" => :catalina
     sha256 "ee15b7a5ca1312a9ed358f22ce2c36681eedda24ae7b855b079f196e39280101" => :mojave
     sha256 "9ecdb8294089c84a229db39a395bf3f4817f185f30135a6f92711b95705ab869" => :high_sierra
     sha256 "c747a668400406f6625a3832e351a4f27fd1308d8ef840120eba086d3d6adcb4" => :sierra
