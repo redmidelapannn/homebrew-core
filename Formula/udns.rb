@@ -6,6 +6,7 @@ class Udns < Formula
 
   bottle do
     cellar :any
+    sha256 "fc177151fb2ec67a2e347a21ac3d915b600f1c35bb52cf211a19b3a48c0ef19d" => :catalina
     sha256 "ce9ffcdbc08861f382e251d66293c4de690e5bffe1ca3015909332b71ea306c8" => :mojave
     sha256 "806e631f04904c4e550e3397a6519ee1803cb3cbef916967f42aed331e875afa" => :high_sierra
     sha256 "8fbcc7a26f6be81abfe4766e9efc012c720938e8ea9dc9f20497cb82b101e659" => :sierra
