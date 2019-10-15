@@ -6,6 +6,7 @@ class Sourcedocs < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e327b00d6c19c127e89d30c714dc5c5b2808b6101e4fbc90562e266e943b7845" => :catalina
     sha256 "256b06c1425620af744d17bac21d993c54f12f1543206ae08b29e09fe28d1fc5" => :mojave
     sha256 "7a7c4205340af10ab3cb41ea097f3be5fcf134c461c84869216b568aaa86b429" => :high_sierra
   end
