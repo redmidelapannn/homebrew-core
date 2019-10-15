@@ -6,6 +6,7 @@ class Swftools < Formula
   revision 1
 
   bottle do
+    sha256 "b44972cc4da5e30abcbecf44f36916cca20233940d328db14d8aa9f9232a0510" => :catalina
     sha256 "2fa840ad38183d656158ae3055e776ed122df16b866e31125e3b9327a27198c4" => :mojave
     sha256 "2db933a79589905a67f36a9ea96a692a684c676d70b5299b087ae892195ff007" => :high_sierra
     sha256 "479570fcb99302996b55c361db1a6bb4a3abee611533b854fa350956f6b8cf61" => :sierra
