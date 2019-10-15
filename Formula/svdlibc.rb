@@ -8,6 +8,7 @@ class Svdlibc < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 3
+    sha256 "79b62ce3960302d6428dc6ff15ab7fe6b53ace3b3988d9b3dee1aadb5bfd75da" => :catalina
     sha256 "dc6f967a82e022b8bd193a0f346aa50b17df609de22acda3ead9eac89b1fd103" => :mojave
     sha256 "7b1c2af44513a0280c2922b22dd0107189e9872a6dc2e0476df2b8c47902cf40" => :high_sierra
     sha256 "91a70ced4042615305d39e9d4d88d91b4d971bf8bb40e883b8f7a2682bb2e729" => :sierra
