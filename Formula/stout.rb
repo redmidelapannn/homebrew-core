@@ -6,6 +6,7 @@ class Stout < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "4e83be4346246c18e238f3fa0c848fde72011c52b5e4eca084528b7b5fdcb034" => :catalina
     sha256 "7d90dec0fbc23cfc58b56261957818a0fb1af5c77086b1979b77ea1196484a25" => :mojave
     sha256 "cfff658fcb5319cd6a5053c645a9679d3db94e9dff4fbe91ae488ca31658a1fc" => :high_sierra
     sha256 "26554af96b6044316abecb1a2142e81b1aab8315bff941cbdad9b39fe143b74e" => :sierra
