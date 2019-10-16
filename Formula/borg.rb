@@ -8,6 +8,7 @@ class Borg < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "b572dc3c54b3299ee621f10b2e9b5aeadf10a31632474fcefe2e22a9081fb8ea" => :catalina
     sha256 "64101a697ea132b7987ad365a92bc06bb0362963fd00d41589c3f12c07d05571" => :mojave
     sha256 "9fe24cedf3b86f48d3d70a22cd161145d690fb0592d6169ccc175e874a89a209" => :high_sierra
     sha256 "bd251596f570c3ec103d60ad04f78626c69a79cc20fe99f5bc483ffce12b695f" => :sierra
