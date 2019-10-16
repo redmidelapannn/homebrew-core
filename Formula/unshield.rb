@@ -7,6 +7,7 @@ class Unshield < Formula
   head "https://github.com/twogood/unshield.git"
 
   bottle do
+    sha256 "b3267f9fbd30bef147d1eaa3e9d3a7c3fbceacc7a837d59fc13d486bf57615a3" => :catalina
     sha256 "ec5db176e7f9557645cfdb63062802d37a8e516f39f1e53037e37ed398992b3b" => :mojave
     sha256 "c68a5391b55e5101979c69d174160564d88edc7263afa140fd69ce289c6662ed" => :high_sierra
     sha256 "96cc0aa68d191d1bc98d09a48abaa44b58b4e979bfcec3b2abc384c30d56684d" => :sierra
