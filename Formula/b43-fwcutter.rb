@@ -7,6 +7,7 @@ class B43Fwcutter < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "3bcb11fef8c37dcdbcfdecc47829749f89ec3518af9f02d121c20075dee71777" => :catalina
     sha256 "51b5702dd05e2afc1f8f0e4c10ccf38023610706fae51112a220284bd9976daa" => :mojave
     sha256 "abbde23073e94982c1f47ea1884abf4b855f8ab0ed8d0e2434de4ca32bfc8dca" => :high_sierra
     sha256 "f5238356964126642e9dd5c88de5564f221db86d488ca826055629d504a71426" => :sierra
