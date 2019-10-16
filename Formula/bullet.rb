@@ -6,6 +6,7 @@ class Bullet < Formula
   head "https://github.com/bulletphysics/bullet3.git"
 
   bottle do
+    sha256 "f49eb8df18c98c98f166af4d20913a13b341d72f3bc6ca845edfe26f5db41dd1" => :catalina
     sha256 "441f12cab157a05a69e5a7de426296b096fef0b88d0ebf386ce15503e114814d" => :mojave
     sha256 "febfaa699309bb100f9614fce6bdcbdf9f8521be10d2885bf5ad42073c351c4f" => :high_sierra
     sha256 "cfcaf1990cc8f2fd8ebc8ecf93b10a448c51e6991eca5fab599c9c913e1d94e0" => :sierra
