@@ -6,6 +6,7 @@ class Tmpwatch < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "b45885abb0f63fe757bcb70c0b96b70807792fa4851b01c215e64c96f1c31a61" => :catalina
     sha256 "727f356600eb58bb27a23ab91a4ffc8904eec726c2e9f85025d810e3a19030eb" => :mojave
     sha256 "18ca8e16075315e3aca9cd4e2e445358c33d5911a647557ad8971edb232e4cc4" => :high_sierra
     sha256 "945dbe942b232586517a2fcd81faab1fc20d3936e53ddf9154158dd0b7d3d55c" => :sierra
