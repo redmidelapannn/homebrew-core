@@ -8,6 +8,7 @@ class BoostAT155 < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "f2538e053d07255bb3bd5340a55f643e814aea03ec6db08f4d20d15ff248dff6" => :catalina
     sha256 "655c9b514a797113af2e4199457ccb9dd8d8e0364f227390f0ca54b254439f2a" => :mojave
     sha256 "15894f998719ef4130d2dea076accadb709a6d5d0809114452f5175585ccd454" => :high_sierra
     sha256 "16a7e98e578adbf8c353bc868b9cd98e80b41928329743dba1b54ee53d76295c" => :sierra
