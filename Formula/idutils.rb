@@ -7,6 +7,7 @@ class Idutils < Formula
   revision 1
 
   bottle do
+    sha256 "8bcd698ae16d3d790ab28e22345f6988097c019309aa70f9c9c7fdb17ff3946e" => :catalina
     sha256 "6917d20826d315163a75422d8dba2c735e6bc9d3d9b528597e2a1e7c8fb90cd5" => :mojave
     sha256 "f91b3e43aae6bb6d645a5900920364f34baae6e124b9d11f3f58a230b60d47af" => :high_sierra
     sha256 "8a3edf99858c93dda9dc51ee15efd75b9a4fd89f828c6663470ea113a814e305" => :sierra
