@@ -9,9 +9,9 @@ class Macvim < Formula
 
   bottle do
     cellar :any
-    sha256 "5ce9df18a54e2aeb9101366da65b850c1d07a123c887a782658a9a55668e4219" => :mojave
-    sha256 "3d337903a891f23a97dd13a488085113e325c25606ece59da9dafa897f353946" => :high_sierra
-    sha256 "7c190d79f4cf1226fe4e0c9b11a90feab83cc9546b83cd18b5cba05d1ce6f322" => :sierra
+    sha256 "5f1c07eb30b12d916786646b038856211624ddc6dc9ba5993be4dce5e78add6d" => :catalina
+    sha256 "a893d100681373970eedec9a0a58c64d536578dda43d38c2b80a1314787fe514" => :mojave
+    sha256 "9d03ba20bb12ae23942f17e05cf783af4495626160deba9b8a04186bdb97ed06" => :high_sierra
   end
 
   depends_on :xcode => :build
