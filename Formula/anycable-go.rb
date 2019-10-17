@@ -6,6 +6,7 @@ class AnycableGo < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e95d2c16f32176b61bc633166a9dfcc6552b1618204710501b56e397cb35dd73" => :catalina
     sha256 "a65ac740e2d0ce092b84c958334418b206f725cf2e6fca77be68f146817a5a88" => :mojave
     sha256 "a9e268c4eb4e313e6fd3b3e6e3508039fb8abb7c0f3ce17f5ce952efc7a5fadc" => :high_sierra
     sha256 "eec5c786934d53b6260727f73f7a08ed29626aef25782687b0f7251b47f42497" => :sierra
