@@ -6,6 +6,7 @@ class Namebench < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e905ca03f63fe54d1ccafb36047d24f336c66644a263134433f8d782ee189497" => :catalina
     sha256 "35225323dc77dc1954cd19b1aa0476e4ebab47e91dbabbfc7e169b5b500b0eba" => :mojave
     sha256 "4c2312daef0aae052b7e65bdb4b20cdcf1bfa601e5f8a484a7f846be1096bcb1" => :high_sierra
     sha256 "ae766151284842185ceecf1622a82cf55c949994729536015a42eea38f62309c" => :sierra
