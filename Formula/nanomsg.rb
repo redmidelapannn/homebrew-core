@@ -6,6 +6,7 @@ class Nanomsg < Formula
   head "https://github.com/nanomsg/nanomsg.git"
 
   bottle do
+    sha256 "c2d6327cab44948bf136d061fccc2b07df2a0ca1fe46a6d54cdfa37a65b5b101" => :catalina
     sha256 "95609047c54b0207587db3a5b3cc8985b35fc922fe8785c63d4d2a44a78ff57f" => :mojave
     sha256 "11390e904a94e60865186a846af14565b379ec84942a9bc512ba4e5e3ea7ec85" => :high_sierra
     sha256 "95192ebc59926ff064d7f4cff5ebf9037c7549af61d2f1c23375827c91b88282" => :sierra
