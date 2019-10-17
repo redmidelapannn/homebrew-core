@@ -7,6 +7,7 @@ class Pbc < Formula
 
   bottle do
     cellar :any
+    sha256 "9c161d2129ebb154bf0def404999272e4e0a8b5a13efc05a71411489eabda837" => :catalina
     sha256 "3d34df3cd1f1d357a3893f53d19496721d3dfb04b86b1d22b87fb88df27746c1" => :mojave
     sha256 "f737a917951f31a9477b2ee46761eb3d9323ca96d77b5b0ab78d7566eb743213" => :high_sierra
     sha256 "9ec971f355f67d0faf644e955a26e9a86b667066eac0791288b802bbe7c0f4aa" => :sierra
