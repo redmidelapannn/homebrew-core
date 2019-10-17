@@ -6,6 +6,7 @@ class Ppl < Formula
 
   bottle do
     rebuild 1
+    sha256 "0192c363cacedb9dcf00f1a1c27c51089d192c9751dc71e13fe453525f734b41" => :catalina
     sha256 "59aa81dbfdc59de055e528724282fb0a1f7c627fc4bbc2f6b2d026e0c623db6c" => :mojave
     sha256 "c6ff41541033e2c27648dff1c336aa0d4548f80fb355569f1e6677991ae6436f" => :high_sierra
     sha256 "f9aef2f3cfb6bfd0732b544e836baf59f279efc9830531f104509b11d8964b0d" => :sierra
