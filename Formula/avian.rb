@@ -8,6 +8,7 @@ class Avian < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "c8e195c612fdcde32255dc012d51fd23b382b361b14ae8a294719c7abdb21e8d" => :catalina
     sha256 "07a5c761ffc3bc57db4a5b0dbd952a47fcb2b62f1083eee3106be50031adfa5e" => :mojave
     sha256 "ee881641717eed4a61ab64f832ab420401ed7a814fd32e546ae0765b5b27de6b" => :high_sierra
     sha256 "ef092ec60093190857b558fd9a663ca0c6d0356bb9af7798be21cf466678f27e" => :sierra
