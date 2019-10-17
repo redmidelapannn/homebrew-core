@@ -6,6 +6,7 @@ class Primesieve < Formula
 
   bottle do
     cellar :any
+    sha256 "62fac6c69963fdd91778677401ee56fc75ee0f8a24c3e7bee3e7a7e3f7162ab5" => :catalina
     sha256 "c932276f2380adb0931435638641dcce166d2ab542ec7254a6fc4257b9b2f259" => :mojave
     sha256 "799b34ea32419dd37598adeaac9b6b779351cfd91a3dba99c122ba3b518e5a04" => :high_sierra
     sha256 "afdbe6ecf6907a23e1e1b20ec5f24293063cb246cb9da2ff903b353e6604ba28" => :sierra
