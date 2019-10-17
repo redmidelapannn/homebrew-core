@@ -6,6 +6,7 @@ class Appledoc < Formula
   head "https://github.com/tomaz/appledoc.git"
 
   bottle do
+    sha256 "fa9b989437fd6ab4db30c588cc81f1eca07db9874c3cb2fb9c8cab111cbb4f1d" => :catalina
     sha256 "2964d5f269086c396b9ffef15c52f2af29b9bb61b7b208b62ab9dcc95d86c649" => :mojave
     sha256 "53e67d5fb1067078a1fde8cc17c5836313d6303a9fe03b9df4d0727fb89974ca" => :high_sierra
     sha256 "2d986524eff2914b52f2336ab19dfd8bf21fb98a278e47690355c0cce525a06b" => :sierra
