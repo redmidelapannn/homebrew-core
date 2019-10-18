@@ -7,6 +7,7 @@ class Musepack < Formula
 
   bottle do
     cellar :any
+    sha256 "5cee0453815dd50865a42a046b2635eaa06e00e50fc8360a07243961678bd7dd" => :catalina
     sha256 "ec10306392c8b871cb2d9fa2fe4920c6de43e8bdebb8f35095bf853031c098e9" => :mojave
     sha256 "717935f1cb28a6f4b19fb8c9e8e606aa3156479539a809ce6e69ebf3016c2166" => :high_sierra
     sha256 "26b774c3ca9b6c43cfdc868d71e635d292bcf218d0577fbc271be5138e8ef3c0" => :sierra
