@@ -7,6 +7,7 @@ class Mdxmini < Formula
   bottle do
     cellar :any
     rebuild 1
+    sha256 "41af6ed3c115e9ab1f1f89883732a98df8a4229c617d8c8fdffecc5d7ec0add4" => :catalina
     sha256 "e93281dc0c64642e33763f0dc2a4cfa0a6da0dd4739222b0411e54913435ee27" => :mojave
     sha256 "5bf36e82084146ab4604b4746bcf6634cfe4268f2044712e4d13519b21ab5165" => :high_sierra
     sha256 "8e0daf3d508dad59074c567b8c8e60bd88c8026b7dfe1305e4e9c50ec5d8fbbd" => :sierra
