@@ -8,6 +8,7 @@ class Corectl < Formula
 
   bottle do
     cellar :any
+    sha256 "a61f12d99ee3bf37f874647222e4d3c9518b2ba41f5b216c9b97d3ee9b187331" => :catalina
     sha256 "b3d030cf97c738ef427b24cd492a7b746b738be84f234f5904eedbff14661570" => :mojave
     sha256 "74527235d27b207a4b4331f16cfbb4f5b72b1dac36f9c9a4470626c32e882d5f" => :high_sierra
     sha256 "89e963f61102d26d5fe756b06f50aa73bf9f827f81f92cefa2da6c195b7865da" => :sierra
