@@ -4,6 +4,13 @@ class TarantoolAT21 < Formula
   url "https://hb.bizmrg.com/tarantool_repo/2_1/sources/tarantool-2.1.2.1.tar.gz"
   sha256 "1b651bef8badfa44767bbb88087be86f74c0af6b2a6828a8a0308b68c3d66ece"
 
+  bottle do
+    cellar :any
+    sha256 "227ec698c86addc90c900182f3726d9ffb0e3fec129929a699119c37e894f53c" => :catalina
+    sha256 "b1791c69339ed78b9cb1780667047b15d1a130840d12dfff4b1c633799de51c0" => :mojave
+    sha256 "c73a36ddab021a22bdfda1d362ff15c728702f259e81eab2055f060510376327" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
