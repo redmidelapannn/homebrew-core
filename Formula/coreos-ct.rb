@@ -6,6 +6,7 @@ class CoreosCt < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "1ec1acd4c016eaa334ab45771ca4b93101565107c36d4fab48c6246595873656" => :catalina
     sha256 "883c46865e141d74fa7f0815fc51d3f9ea3145019f28dcec402fc457d3f67e27" => :mojave
     sha256 "5acd28f4e5dd0c74938cc7e7e10c5501badbab1d05316537a9afa173ff64f44e" => :high_sierra
     sha256 "8f09ba9875fe34e55de7fd25514493f41276d5c5e9f3cd37e00288fb6d44323e" => :sierra
