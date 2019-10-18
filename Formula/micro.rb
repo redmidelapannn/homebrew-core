@@ -7,6 +7,7 @@ class Micro < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "eca136c7ad4214208da52d3d88ce3a9aa0a34d0e5f400e0773d9b0d4ef9b779a" => :catalina
     sha256 "f5176ac6e12e25b7b8c88965cc8d92fe0892f6eaec60c28359c3be3e2f460df0" => :mojave
     sha256 "863a1f4f3cb0f48efe6ca22a0df05cf2c9adcaf63857aea622f2e26e21836dc5" => :high_sierra
     sha256 "8426c70077cf223e6fb677de514ede5546c3635b9760da0c1980577c7b2dd016" => :sierra
