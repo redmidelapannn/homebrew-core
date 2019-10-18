@@ -6,6 +6,7 @@ class Lbdb < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "b8cdea038b2f235b8601f479d96ef755449a7e08aae871286f8e5f0d3e08b8f1" => :catalina
     sha256 "a02ea4967e809c9254dac7726c7ee9365e1ba99a8eef68fe6dfd4de34d2fa5af" => :mojave
     sha256 "0e5c126d7cb1c5ed3211ee1758a388597b00f32c3fb22c0420919e3667371ee2" => :high_sierra
     sha256 "d22e5b8b66ab51d8c6d324330178284c9b35e3ef17362724089e1e979e9c05d4" => :sierra
