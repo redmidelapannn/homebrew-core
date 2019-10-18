@@ -7,6 +7,7 @@ class Myman < Formula
 
   bottle do
     rebuild 2
+    sha256 "e64cf905a34bb02ccc3cba35a45793342f0f40943a5a8f3bf610f746f0b3109e" => :catalina
     sha256 "1ff1470d676dabb177f06c2683b67da5e70e39bbab28f7457762d4adda5cffb0" => :mojave
     sha256 "b5f0af51ce1098ea35e48bc50f4097cbb9e647989decd6d7791476b062ef7582" => :high_sierra
     sha256 "376c71ad2f5abcc0233b3873d70cc963e54ac0ca00a552eceb025ac09b931ff6" => :sierra
