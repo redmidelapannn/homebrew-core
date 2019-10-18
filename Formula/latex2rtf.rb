@@ -6,6 +6,7 @@ class Latex2rtf < Formula
 
   bottle do
     rebuild 1
+    sha256 "7c042396985c31c80910562d17b3f5a6c563c5bd7225bc7b7c2f5b4243ad487f" => :catalina
     sha256 "9a7eef875235eddd166ed39af0f86cc60a46951815dc062096404d13766b500c" => :mojave
     sha256 "bac08529740f87a4ebb10a643d8b5186cf10b43da780cc5fcf572466a83c917d" => :high_sierra
     sha256 "4f33f12349062b0efd27ea745934daf7d2530188f0dfe9b86df7d9647c54c208" => :sierra
