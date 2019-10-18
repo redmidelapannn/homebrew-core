@@ -8,6 +8,7 @@ class LaunchSocketServer < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "8e8db81fccf4d96dff35a20153e158902d90c96be2d2404a33eebb67a0099fe5" => :catalina
     sha256 "9b24bccedd9e8e8dde7e2efaec197cd7e7695830692074f64ebe916b4b5c8822" => :mojave
     sha256 "fe79eb83f0516ca648f75c0f0e2442ddbdd7475971b799e2cca56c75ae2f2cae" => :high_sierra
     sha256 "c41218460d421b9cbed6740f00ac0e1cd3a2d1a5fd91a58ba58f354e77faba55" => :sierra
