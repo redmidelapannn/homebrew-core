@@ -5,6 +5,7 @@ class Mednafen < Formula
   sha256 "fad433ac694696d69ea38f6f4be1d0a6c1aa3609ec7f46ce75412be2f2df2f95"
 
   bottle do
+    sha256 "a8095f5dfd8cb5ecbde0cd14ebb8c2d6815170dd2c8a8bcd8c8bb35584d7dcc5" => :catalina
     sha256 "3f76cf3b0e73253f75e869d3609515ddbb134de52aaeac6e897894a380544e65" => :mojave
     sha256 "35c60b66fa52ec6607879bb58344e6876c5a0311dac931d66aff47f8e35a16a0" => :high_sierra
     sha256 "52da73bee0b92c80e23be9f3585ee5eccfb4f3daf92fe604855fd047a10b823b" => :sierra
