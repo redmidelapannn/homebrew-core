@@ -5,9 +5,10 @@ class LcdfTypetools < Formula
   sha256 "fb09bf45d98fa9ab104687e58d6e8a6727c53937e451603662338a490cbbcb26"
 
   bottle do
-    sha256 "0fd983396dbcf027e560753e6f25797500d085762edcf59a1a2034cd55c24cfd" => :mojave
-    sha256 "cdff1c16d03fd920033f85dd2e2180f91791057729fbd26b6f193ac7cd0ce9f4" => :high_sierra
-    sha256 "2bfe28f9e869eec676cada56bcf6efe97024e0e1f93b126a7b26ac2a292db2af" => :sierra
+    rebuild 1
+    sha256 "a1e61f060d882f4392e49db1cc2ad3be93383f73da9fcc0f8eb50d8806677503" => :catalina
+    sha256 "d0381c74919a14d0e3b3187eced249f0099f47a146f9aef075e16d1d4f75168c" => :mojave
+    sha256 "ba9866f192b0c72c1a98f070c037fb6490f3f5b0ac2ba119665b267b09572424" => :high_sierra
   end
 
   def install
