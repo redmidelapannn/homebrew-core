@@ -4,6 +4,13 @@ class TarantoolAT110 < Formula
   url "https://download.tarantool.org/tarantool/1.10/src/tarantool-1.10.4.1.tar.gz"
   sha256 "dc99562840512151beca46d5618e6659b61e0749a99345750b14702f59a868fb"
 
+  bottle do
+    cellar :any
+    sha256 "24aae67db50dd0b3ba006b93af098d718efa6d3ea1e20a43efb01cdf38d50638" => :catalina
+    sha256 "289ec4012eac64ded4a6ffbe0bcf6f9fcecb4b080c3e7629dc54dd5aa937265a" => :mojave
+    sha256 "73837d6ba97bc7601f2c048bb8084fc1221e1dcf9a672ec14bf7928734f9bfa8" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
