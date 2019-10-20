@@ -5,6 +5,13 @@ class Millw < Formula
   version "1.0"
   sha256 "00528ff087739f2fc5e8b43d2f376ebb8eb30bd745bcdd69283a108968a42580"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7f53b42c59f06e7feee6eb6f97c64a7d22445249a504421e7c5aac79b49610b3" => :catalina
+    sha256 "1132a6250e1496454369b57a0dd9058934fc23e8f3022134d320d44b0c85697c" => :mojave
+    sha256 "aaff7379d1ceb8ef394f4a14160ebb5a2c825ae42a6ad0e2c22fc9550c173400" => :high_sierra
+  end
+
   conflicts_with "mill", :because => "millw is an improved version of the mill starter script"
 
   resource "bashcompl" do
