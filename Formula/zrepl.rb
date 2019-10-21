@@ -7,10 +7,9 @@ class Zrepl < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8ece7cecbe0d7225996cc5844d3a470425cb943fd5c9052915780051e51a93da" => :catalina
-    sha256 "9cec0ea416a2a394452fac82be895e8931c8e882465518e237a2b847e3e168d7" => :mojave
-    sha256 "2fd02af7892953417e8a4e4322c40ea2e1e2ac0181719d5afeaa88df62a91029" => :high_sierra
-    sha256 "05827e523e9e3c6e25579abc41d7367cd877694d6f4a90174dd4f801a775f9e3" => :sierra
+    sha256 "d254204d20cd293237c4308787b60bdcc63e5ebcd1f5b4edd762d726e4555e9f" => :catalina
+    sha256 "b27b1787049f65e74150658dde3731b269acb3919f8ef3527ab1ff6d321c853a" => :mojave
+    sha256 "873984ead5816474e1f5961bcc4454cf73a44970086efda9f4f59669c23e7468" => :high_sierra
   end
 
   depends_on "dep" => :build
