@@ -6,13 +6,10 @@ class Vsftpd < Formula
   sha256 "9d4d2bf6e6e2884852ba4e69e157a2cecd68c5a7635d66a3a8cf8d898c955ef7"
 
   bottle do
-    rebuild 2
-    sha256 "43b17ac94b152a4922a915b7e2efc89c3da7ee53e00f860136c5c58489e2b782" => :catalina
-    sha256 "5605a908ab4b24008e48f2280107695a7afaae8a1a521964b8f2248d2baa960a" => :mojave
-    sha256 "dbfc9b28f5ea49dda09d31fb630d995b72fd63b83b358e04156329252c3ab25b" => :high_sierra
-    sha256 "22349437bd4d75b1ffd2fddfd90f92367e0a4f478f540b9086457541883f2c3b" => :sierra
-    sha256 "108243559f3fea06d140173a3e3cb497c2f22c47d45e85ae108c088c1a1370df" => :el_capitan
-    sha256 "25a9d2e92ca7e3efda6c9882a62ad5927c0c5e450eca4d62d7829c467dd086d9" => :yosemite
+    rebuild 3
+    sha256 "d2274d01c0069b8130399af5a59a2326526b598d31a19028b71b0c3bab2557f8" => :catalina
+    sha256 "f8b87aeacccee43a0a378f6649ecf58ecf161fcab840fd6c25ff1c53d3347762" => :mojave
+    sha256 "2517595ad0358b69908c07d6dd1b0089734cfb198745f2cc03df703380f1e53e" => :high_sierra
   end
 
   # Patch to remove UTMPX dependency, locate macOS's PAM library, and
