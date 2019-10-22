@@ -8,11 +8,10 @@ class Xsd < Formula
 
   bottle do
     cellar :any
-    sha256 "8de0a3cfd410a3b2640a557e009b751f67c6f2416e38e42aa3a6634e73941847" => :catalina
-    sha256 "cb064aa81b48f1777f14888e4c6df4ae3782159f5a315944df49882bce06b231" => :mojave
-    sha256 "25dfd3dbcbe7f6f442bf6d45adaa849b5fbc4e7360ca4d9084bb1910252f992d" => :high_sierra
-    sha256 "935d1bcd6d9cf35cdd42e68ddb9931ad29df0834b76d6f4b9cdaa743176d7bae" => :sierra
-    sha256 "4e4a26fc0a99b11e8a740b6f5041964b682048de7ff0a9cbfd15ffea263f0c62" => :el_capitan
+    rebuild 1
+    sha256 "9ddc1f5fc81e2c034c479816439889c3daf69311d2bc4ef6f3a9363e83e999ec" => :catalina
+    sha256 "c5392dc2a5daca8caf429c7a198374a35dbb540d4772ee2a463fa8b8be885bf0" => :mojave
+    sha256 "ce215b2f2f5bd6536feded7c40733f7d4b51a7c0ea4aea523caca9efbc2eec7d" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
