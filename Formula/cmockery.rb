@@ -6,13 +6,10 @@ class Cmockery < Formula
 
   bottle do
     cellar :any
-    sha256 "1df72472ccf182fc7de6a14b047affceba8e7c986110f883ef55701b93b19d0f" => :catalina
-    sha256 "d239e243454b5bac5d0bab915ff506199c97bd27bf188c0938911c5c091af020" => :mojave
-    sha256 "8ee7bb6453fae2cdfc129f6aad3ac9a8766a396ec7df9d38444f6b688697c3ea" => :high_sierra
-    sha256 "f3b1c3d5c96ea9e30dc008e557239e972a18e65b3dd1ee8a593a0eb6e11d7858" => :sierra
-    sha256 "6cc440503b2fce7def7d584aacf8e9142ad430de799b466f609f57fd9beb4ede" => :el_capitan
-    sha256 "a6ac86af8d5b7f5964a480cc91bfbdaf260c59eae2c4b79663ebab2dfdb7d062" => :yosemite
-    sha256 "673662bebae6bc4e43b60137ebad7141af0eeecffa41f4e7c61065b0f2262d25" => :mavericks
+    rebuild 1
+    sha256 "4f7c8ab32069e43bbfaf8b13bb1a1ad4791c767ec30864800754109738adad5f" => :catalina
+    sha256 "539bb1185ccaa8737d4cef637411d11e57e2f80ba62c21da653376fcc13b20e2" => :mojave
+    sha256 "16721a54ef9664ea15cd89a0e9ea258bd445637fcf90480c0f40a0ba40fe8b14" => :high_sierra
   end
 
   # This patch will be integrated upstream in 0.1.3, this is due to malloc.h being already in stdlib on OSX
