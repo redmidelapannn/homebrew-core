@@ -6,12 +6,10 @@ class Einstein < Formula
 
   bottle do
     cellar :any
-    sha256 "54ce5ebd0b06256ecdda309bc0a0b500a0bf29411021fb5525dd647b923c3354" => :catalina
-    sha256 "1430c04b154114c5ada29708033872f75a1c1ca361d997747aac748806d0182d" => :mojave
-    sha256 "faa76a6c3363ec2c5f814940560db5fb52d8d7af89149dae7bbdf14967c51e3a" => :high_sierra
-    sha256 "b2f4290bc28e3dd1c528b7c58fa363f8e5832c00283fa79f2f9243d8e5a02c4c" => :sierra
-    sha256 "d0424faaf640750ab3ff8e8e24216a93227b9ff40d33405e3a55a7bdf14d1a36" => :el_capitan
-    sha256 "e884bcdb8f1644707fceb03a8d7732a528495e9655216eff42336c64fdd90179" => :yosemite
+    rebuild 1
+    sha256 "18a7a75507f2c1c621be477e41fabcfbfbae53838842fbe55ed2b78332420d87" => :catalina
+    sha256 "c3e9ee2977b4a378c1b93bb4da44df1c232a0646c77929ca97eda54e6a8dbb4a" => :mojave
+    sha256 "e99287612918dbb9ca6a2d26eef0d1c6d9aac53c8d155e47d731f27536be624f" => :high_sierra
   end
 
   depends_on "sdl"
