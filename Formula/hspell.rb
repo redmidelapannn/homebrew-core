@@ -5,12 +5,10 @@ class Hspell < Formula
   sha256 "7310f5d58740d21d6d215c1179658602ef7da97a816bc1497c8764be97aabea3"
 
   bottle do
-    sha256 "95b64e844560f948bdd487f1aa8a36fa6b54af18a278be1793b2f34614e08736" => :catalina
-    sha256 "92fac64ac02e38e225184831bda82521c4136d480660d52f599c6a92f6647860" => :mojave
-    sha256 "62cf9605edbaf21775ddc788367d78260d79058fba8c90674620d1ee59c9b273" => :high_sierra
-    sha256 "50be9b91b5158ce882207622b6a2581185f67a5c999c8f1105d522d800344a37" => :sierra
-    sha256 "f9648fc0bbf530759a8cd7057ebed5310c3b293c5cd2c1e284aef28f55e44ba7" => :el_capitan
-    sha256 "6ccb57a3f549935b58b3aaa56b0a49b5a7fc41692594d2e4a0d718a5be30fa84" => :yosemite
+    rebuild 1
+    sha256 "97cdb5302fc45bcaac9adb8f1863d9dfd21f141b80d75e02b496bbb7a36ca97f" => :catalina
+    sha256 "74cba40a2eebd633781a1716a3fa68c84f913b888e0a81250027151177caa800" => :mojave
+    sha256 "e890453a9077621df3ea813623e7b6f89ca0d37ed3692d225d206c51d72ed19c" => :high_sierra
   end
 
   depends_on "autoconf" => :build
