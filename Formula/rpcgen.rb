@@ -6,11 +6,10 @@ class Rpcgen < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bff5b2c16c8f161b4828d4f1cd6fe7353b63cb12bec8f4646716199b7f2fb522" => :catalina
-    sha256 "e4c588689133af91de553a2a586cdaaebe27fc49c274ae1e2c7c889dc836a327" => :mojave
-    sha256 "53ca92eda3bb7eb7f81aa70794ca1b5c16deaba84fe7ad41aaca11f32ebb8988" => :high_sierra
-    sha256 "0d3a08d255ccbb538b0e818155e079ff74c65965d6effd67fd74775b837bdddb" => :sierra
-    sha256 "75acb2995dda96d42faf6a3f83b1b30c9d0a6502ac1b031f92567282a1c67f69" => :el_capitan
+    rebuild 1
+    sha256 "279358ea0efa1a8703fbcff57285ae0bf86d13de5a23db3407a42c5a24732e14" => :catalina
+    sha256 "82c764505540e84f54a4472246660a32c944a1a143604df0d41c912ddb4f0254" => :mojave
+    sha256 "7989ecf4b0e81192bbbc6aa11d2f42d723c82d05cf2b14fa172f63e27cf8f3a2" => :high_sierra
   end
 
   keg_only :provided_by_macos
