@@ -6,13 +6,10 @@ class Udns < Formula
 
   bottle do
     cellar :any
-    sha256 "18ac00a1a30fea027e398558edf149e464712c94fa68242740cc8e086e1ec036" => :catalina
-    sha256 "ce9ffcdbc08861f382e251d66293c4de690e5bffe1ca3015909332b71ea306c8" => :mojave
-    sha256 "806e631f04904c4e550e3397a6519ee1803cb3cbef916967f42aed331e875afa" => :high_sierra
-    sha256 "8fbcc7a26f6be81abfe4766e9efc012c720938e8ea9dc9f20497cb82b101e659" => :sierra
-    sha256 "59939957b47912ebb286426391a4e2c904ecc416e9de18dc8c0a74052ac82ffe" => :el_capitan
-    sha256 "342aff7270a4251655eb7cfc538b39db1805cfe965ada5cad1a2819b727d9107" => :yosemite
-    sha256 "d6be7acb570845e63c6ac69b8169c4ce1d5a31f5f76f60bad10168a5b13126ff" => :mavericks
+    rebuild 1
+    sha256 "15027e0dcb3b7e373e0641b8e3cb9e2242d70f276589b9c4e8699883aefc77c1" => :catalina
+    sha256 "d4b2419830903e596c85b5fc05f93d044f50e4a1262d99e837bf035d59963678" => :mojave
+    sha256 "235d3f976ec4e6038917c51648331d7ac4316159c2a9d0b48897f2094c4c63ff" => :high_sierra
   end
 
   # Build target for dylib. See:
