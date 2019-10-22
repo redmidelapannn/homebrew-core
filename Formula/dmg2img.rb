@@ -7,10 +7,10 @@ class Dmg2img < Formula
 
   bottle do
     cellar :any
-    sha256 "e16b42ead321d5e0c85a98592154ef13a2206355a13cfe021735653a1dd995be" => :catalina
-    sha256 "fb90741dc01f5c7b115c9d5bf142e36a90d7cf0995ecb4a5183150ec6d6161ac" => :mojave
-    sha256 "367ab961e50114debc983e5665443ee8fa5a85a2b4fab024753f38df48fb26f1" => :high_sierra
-    sha256 "8616423fd5b0109c66a000932b2aa5bf4f3979c5a065617e8ef7dd4ae0ee820b" => :sierra
+    rebuild 1
+    sha256 "96fe4a1e473ae143847d7b52c124e81463c5942b1bb69e2124b7c13614494ef1" => :catalina
+    sha256 "8030e0b1850a3a0957143bf5742f81653ec318c46e87d63385c780d958d95299" => :mojave
+    sha256 "edda34b2c0f615b42ad0b3cd0eee5a9de8d267cd9700f4e4021e99859860d414" => :high_sierra
   end
 
   depends_on "openssl@1.1"
