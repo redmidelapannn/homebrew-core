@@ -6,10 +6,10 @@ class Jhead < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "449ddd95273bb9287758c6ba58aed81a2002f2eba95031027c97b615ce93ed49" => :catalina
-    sha256 "1fdaa2ab0e5066688f1d3ff80821447f0957f95ba37c4c1c8d8f40b6d3a38ee9" => :mojave
-    sha256 "d62f1ed9f99df061893021df1f5dc8928e52eb6ac73cfe47b41cf50bc2369f49" => :high_sierra
-    sha256 "b5af56763e92712207332e51208c918b71c1b46985cb9df44eb1d8a30f59348f" => :sierra
+    rebuild 1
+    sha256 "215c2227a5f615815c1657c0df656ed62e5f29b3df27a6044d50d4e386899f55" => :catalina
+    sha256 "1178b84627e09581e0b089f2226a876bb85bb02328e26cbcdc71426c14100119" => :mojave
+    sha256 "9d5ec17f5dd0fafc4dd0b0cdf09f6de501d027c571630785b61a4cfe97ff99c5" => :high_sierra
   end
 
   # Patch to provide a proper install target to the Makefile. The patch has
