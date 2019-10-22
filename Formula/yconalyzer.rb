@@ -6,14 +6,10 @@ class Yconalyzer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2e834b5134e7670fc97cb45131b732a7dc7a6f41598dacb20dd65b575713dc16" => :catalina
-    sha256 "d5b2345a94b2590f9f533f30d3770cc2008ce294fd8c56015f025181ba951b35" => :mojave
-    sha256 "4341ba620cc2724608dea783a2ddbd3bde93fd2017cc675e906f233941fb4ab3" => :high_sierra
-    sha256 "3bf190ad069a4ee9423e79415907a684320e8e776916329f46d7620274a03434" => :sierra
-    sha256 "918ca6d2bca328923ec3ff6e5612e9a0336aad666e993cfb0d1bc42a99758f1c" => :el_capitan
-    sha256 "e3e3fcebfdd0d25fbdad33c8f2aa13976c70ab4ff4bb81ed1fbae5cb8a7c2ffd" => :yosemite
-    sha256 "c2c6d2a81a8b13515192b716bac7df7db078e986f8306d37d3b4da5a2f05ccd6" => :mavericks
+    rebuild 2
+    sha256 "950f9e3f42ec5217a9879930af4a94d0fcf4b34306b2b5b5f78ad4f3cade2b39" => :catalina
+    sha256 "ad9d8def035a0d7aea6d418238f8a0dea0a0263cf9d9a3cf264d138df49c59d1" => :mojave
+    sha256 "adcf33748b44f62740f0cbf53a98bb392e970f7bae7960b37c1c35de9dcdfda7" => :high_sierra
   end
 
   # Fix build issues issue on OS X 10.9/clang
