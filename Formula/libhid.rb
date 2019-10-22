@@ -6,14 +6,10 @@ class Libhid < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "049d5c106ab738e55af18878f19cc0510d78bbda54f0c5626e3ccb725e415c68" => :catalina
-    sha256 "7457dc1791e661356e54059fb7b49f9629f2814694057bb38c6ad6698b3c4556" => :mojave
-    sha256 "b2949cef974f368856304506aecea44d3daca81b2d8c798bc141ef376723eded" => :high_sierra
-    sha256 "b92f274a981788b3092927223099f4f3220877417c766ec8e8bd63171e9a9849" => :sierra
-    sha256 "a22388fc2ac89d99ed04449c590b035308a81c8f1a2e80ee68ca64a7e10ced7e" => :el_capitan
-    sha256 "4920ff4278cbc288fc8c84ef9b3137d99010ba047d6f072b9a6eccf07588721a" => :yosemite
-    sha256 "cda30ad7a75c6a9b156806f398d39afd8288dd7c94c6d06685f8168125906cae" => :mavericks
+    rebuild 2
+    sha256 "fb4feb1cd2185077b0aa7157e28077c509da301d22763edb2a0b2dd19453c2f7" => :catalina
+    sha256 "b137013764a442e7d9c899deda12e6ae1e7347e0366648b12d4d721dd57f4b41" => :mojave
+    sha256 "abcbc6bab75e256763bb0caa42429abe7a11bfa2ba52addcca705a674d91a8d1" => :high_sierra
   end
 
   depends_on "libusb"
