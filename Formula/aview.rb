@@ -6,13 +6,10 @@ class Aview < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ad92a0e964ccbebe685edf9c595efd420475490d255caed072985cb128a8230b" => :catalina
-    sha256 "fe70cf7dbd1d2e1473da3818b96d3a94d811e93d52ecbb6ecfc1c1e1ccb8b12a" => :mojave
-    sha256 "4f5fa09318475fca46c584b52e5d5b845cd4d331df04744ca41d6789575b32ec" => :high_sierra
-    sha256 "95cbb14a2a5cb4d8d11d9ca3621e81705df77f47d85f89383913e3a02da56041" => :sierra
-    sha256 "cb20b8513b3b7d2977943d7ba14f2627892697e9a6b69c4366563786810ca95c" => :el_capitan
-    sha256 "886a6800deefcf7a1e377db57c9df0579b6f1fcb4b491a6262171411bce3517b" => :yosemite
-    sha256 "142a0b64e457e900e395f35d5112bd968e605fa6182bdc9ca77b923a5e5263f6" => :mavericks
+    rebuild 1
+    sha256 "64ce4989bccb03c4e8f7cb242159c366a6add82142a4b4e72e453de3942cbab4" => :catalina
+    sha256 "6a3b04d8156b8343ce1803e1fa3187476a17cf672e0b3c097819e0744e2114ee" => :mojave
+    sha256 "3eb439e802c27e8213d140ccb68a6c5ea1a0f3fa855613c8700d130d8cdaa0e3" => :high_sierra
   end
 
   depends_on "aalib"
