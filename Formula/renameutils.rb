@@ -7,10 +7,10 @@ class Renameutils < Formula
 
   bottle do
     cellar :any
-    sha256 "c4828ddd8305c394eb1cba076d8863447dc243191990be37de19acfe6ec1c8c0" => :catalina
-    sha256 "9f13f1f0096e9875dfa28466cf6689203c7018a8b38cf32def6567f63fd1d3e0" => :mojave
-    sha256 "69dacfc5145602d3310aac38122aa7385956fbfb56c9af97adee0f77c2c01453" => :high_sierra
-    sha256 "89d596e819476c80807653aaf8a20f7cef7976f53570e4242d87ccebea4cb92f" => :sierra
+    rebuild 1
+    sha256 "079db2e7ea82e06bc63b80b4fde81aa96d1a5535dd372517e36471d481dd4a23" => :catalina
+    sha256 "b421c481996bfdd22da2a3de6ef33a48505b3468f7f94c11d98880a3d448eca3" => :mojave
+    sha256 "a7c21f3a61c0c98152acf84f9e8fab37625a8137f436391b62a0c48dbe07d9e4" => :high_sierra
   end
 
   depends_on "coreutils"
