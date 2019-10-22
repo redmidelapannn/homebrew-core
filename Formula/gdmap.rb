@@ -6,10 +6,10 @@ class Gdmap < Formula
   revision 2
 
   bottle do
-    sha256 "d465a02727acca541229325a9d3ffa79e1ef9693512da5b1d3a3b37437fbe00d" => :catalina
-    sha256 "9c178f409b81ce7808efe356bf09d82804265de11d4527dcc1dea20948a76b16" => :mojave
-    sha256 "1f82d4cf21c4166fd579e132e3ecf7302179cba2d6b19bf33ef18618f5354416" => :high_sierra
-    sha256 "2a5da8dc2b00407271001ef511d61cad03f043cc98b45442ab1aff7d9263ae19" => :sierra
+    rebuild 1
+    sha256 "552e28a0f4395aff3336b9015e9ccf553dc046eef1ac60b9df399e867d545c7f" => :catalina
+    sha256 "81848118c5dcf5894a99f90026bb610143e8b11105dfe404dce7c60a5154c9aa" => :mojave
+    sha256 "05e5ab5f969f07b5af33db43dc6952bbab137a64f718f895eff7e9d304807718" => :high_sierra
   end
 
   depends_on "intltool" => :build
