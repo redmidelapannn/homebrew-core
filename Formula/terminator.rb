@@ -19,11 +19,10 @@ class Terminator < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d5fd05f45801f35ef5d37630fca05eb66bcba14221290a04d28270c7fd652027" => :catalina
-    sha256 "684029ff528fce3fc54d7449574539948d0d53255e3ad7f58ec679af58c2c96e" => :mojave
-    sha256 "00e85432871cb5e7df4bcbe8e835cf9ad619f772de9018c41ed781bef4fa6643" => :high_sierra
-    sha256 "00e85432871cb5e7df4bcbe8e835cf9ad619f772de9018c41ed781bef4fa6643" => :sierra
-    sha256 "00e85432871cb5e7df4bcbe8e835cf9ad619f772de9018c41ed781bef4fa6643" => :el_capitan
+    rebuild 1
+    sha256 "f6f2045be8d1e3a6308967923f85fbd7d4c2abf974db5449d3a4f06ec921ea67" => :catalina
+    sha256 "f6f2045be8d1e3a6308967923f85fbd7d4c2abf974db5449d3a4f06ec921ea67" => :mojave
+    sha256 "f6f2045be8d1e3a6308967923f85fbd7d4c2abf974db5449d3a4f06ec921ea67" => :high_sierra
   end
 
   depends_on "intltool" => :build
