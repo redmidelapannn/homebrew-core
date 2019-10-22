@@ -5,13 +5,10 @@ class Mpg321 < Formula
   sha256 "056fcc03e3f5c5021ec74bb5053d32c4a3b89b4086478dcf81adae650eac284e"
 
   bottle do
-    sha256 "fdea1076a22b6af12c33b02e9eb040fceb11d39ed2eaa7307574bf5331d8f8dc" => :catalina
-    sha256 "d587b58200397ad4e8f7fa8c861e01c2c5e344d89a235e78d22fb7bd5ddf04f2" => :mojave
-    sha256 "6a8f8f58c8bf02f99e8206a231fce4e9f2bd7333b888581dd1838246983d139f" => :high_sierra
-    sha256 "a69f242f57e4211f96fa56f10573777204d5ed7d61cd7b35a04e0bbd33b9064e" => :sierra
-    sha256 "6c8921b0703d2952b6038ce7097957c3c2bfe9b59c2d41b5caddc268e96b245d" => :el_capitan
-    sha256 "48b9ac480d966fc344c4867f3dcef7cd59be1440b11fe7d8280d51134a881f78" => :yosemite
-    sha256 "bf86f590672fdb27f6fc92c706db1bfcb2ca0a1e35129c5435821640a11a422f" => :mavericks
+    rebuild 1
+    sha256 "574172157688d9b42589873c85574a8b5ec6b23ccaa1bcfa6507c00d83a9547a" => :catalina
+    sha256 "981231e23ec0097e80ff5eae0edaaf48a391df3371c96b2c890a452e5d30661b" => :mojave
+    sha256 "060eb2f39387f49daf9c0fbef825bcd6e0e962b7ac5c7c2cd1a1d18e30a3729e" => :high_sierra
   end
 
   depends_on "libao"
