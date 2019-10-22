@@ -6,14 +6,10 @@ class Aldo < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "2a574bfd1a76ef4733d941234df142dfc87b05cefefaf58d0617113d7af85999" => :catalina
-    sha256 "4c510b7da186be5d55c990d97265952de8fad51079ad2fa18058b8a57d8eeebb" => :mojave
-    sha256 "d30e5e60defc2e2d2110cf52a60898d94ae3331a679f1c228e0d598421a594d9" => :high_sierra
-    sha256 "ad5216c04fce4d1f4da63af2fa4d298a3414073db186991ec4389a942799ddd1" => :sierra
-    sha256 "0691c4b9b7ae5b6f104c5b5205f731d4348563b8a9a8c3631395f619ce00aabf" => :el_capitan
-    sha256 "f5d55cefcfc65033f50bf2aedb30298db1540a8dd5f5c028feb3b4b1c7e5610b" => :yosemite
-    sha256 "fea59d120862f6a04da3993dde1b2f6db60183fc6d7f90f77bb622efdf8a16ac" => :mavericks
+    rebuild 2
+    sha256 "45e2aa7235800def3e1436ee42d60a312bb2f19d8425e55ca9807cb513aa446a" => :catalina
+    sha256 "7bf0cf1e4bf1eabf172b402261c52fb6ac92c780fa5879b2a62f34a1fff29ed1" => :mojave
+    sha256 "fae3fb00d5b9c3949a1e6eaf6bd03e1c783a62c981c69901287a7979bc7a9fae" => :high_sierra
   end
 
   depends_on "libao"
