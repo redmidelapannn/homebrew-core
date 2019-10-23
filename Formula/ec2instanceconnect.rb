@@ -8,6 +8,13 @@ class Ec2instanceconnect < Formula
   revision 1
   head "https://github.com/aws/aws-ec2-instance-connect-cli.git", :branch => "master"
 
+  bottle do
+    cellar :any
+    sha256 "67927bf83e5ec437e17e51e34208fc08c5fc2f9ea774ff2cee97a98cc8103a3a" => :catalina
+    sha256 "de83b4c95a04d669ebea81423905e6443254b973683a9765f351f50f64031ca1" => :mojave
+    sha256 "b670a2d53b39018999d3bf227a79eca7c3d36fe216689c458ab5183b6113ef18" => :high_sierra
+  end
+
   depends_on "python"
 
   resource "botocore" do
