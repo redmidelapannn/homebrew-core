@@ -7,10 +7,10 @@ class Kafkacat < Formula
 
   bottle do
     cellar :any
-    sha256 "cc01ec929d214eedcec98151842b38587f35e986436f5bb1cabe64d836627beb" => :catalina
-    sha256 "c3b196b7c491b9640c268591df790f89d5c12c6551e54f49a39193bdf100eea9" => :mojave
-    sha256 "13717f4c5cc332fda009d2cafba1433414e6c2def7c3131129f8d2e4a8dab307" => :high_sierra
-    sha256 "e09845976996cd838656e0065309e06f65e8446e1f0eb01f471bda2da36553ed" => :sierra
+    rebuild 1
+    sha256 "bfd61f840613b37486e58112fdb92d7aafbf8a4d293fd2c7e60cc20254f74614" => :catalina
+    sha256 "935e3437f53c22c547a8bb04d32bc0ee845d8e381ef8f0dae69ccac1f4d630a8" => :mojave
+    sha256 "142045681705a66727f2fa2a6496a49277631336924ece9c67e59fa3a80de087" => :high_sierra
   end
 
   depends_on "avro-c"
