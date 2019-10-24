@@ -7,6 +7,13 @@ class HasuraCli < Formula
 
   head "https://github.com/hasura/graphql-engine.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "d1027dcb0085e37e2b881502848d493562d79dbb73b6e952595c47074f659c83" => :catalina
+    sha256 "3324b96b3d8f30aa343d0f75a9b0f807475abe8fa567a1a509dc8ab0b4f2f1ac" => :mojave
+    sha256 "83705f97c7a1b33c227a9e25770ab274c3ec3008eeda0e165d12e444d836c6a1" => :high_sierra
+  end
+
   depends_on "go" => :build
 
   def install
