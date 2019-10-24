@@ -5,11 +5,10 @@ class OpenOcd < Formula
   sha256 "7312e7d680752ac088b8b8f2b5ba3ff0d30e0a78139531847be4b75c101316ae"
 
   bottle do
-    rebuild 2
-    sha256 "73738a0c3bfffa98beea25c441d5eddfd743dc5c7c79418685519354975bb840" => :catalina
-    sha256 "491bec9acdc4e446a6515975041f21dec919ba330f88b5a69e8651ddd9c07468" => :mojave
-    sha256 "0258f4d658907060d890c978a4d122ac5501119c4d28bb272e4bf5bc59bd8852" => :high_sierra
-    sha256 "790605e83cc22ab4a455a382f7b6a434d44c19f82e0b8a0ee6a3bf28ac6f9f31" => :sierra
+    rebuild 3
+    sha256 "cfa6152c1586c3af39704955153d8c0a52b8470b3dcb2500997e49c13d69c83e" => :catalina
+    sha256 "f1804ed1b490b779ad27bcd28706e72de6b53d79cb7d210eb8621d7d083bf32e" => :mojave
+    sha256 "17ec4082f4423e99fbbbb0f54b9cd15f8cc83d80579220716db591a00819b6c9" => :high_sierra
   end
 
   head do
