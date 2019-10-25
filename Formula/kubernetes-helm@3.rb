@@ -8,9 +8,9 @@ class KubernetesHelmAT3 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f055d13d28b5f76e19718cb93bd5e64f34e27c1602de39fb6ade3449756153cc" => :catalina
-    sha256 "245bdf17ac134d98f7e022ddd36678ae62c0aa02116d3a61229f5fc1c5de5665" => :mojave
-    sha256 "859c2dd730bf2e6c593ca19bbc18a9e155470193770a7824ff1ad74f906ed7b9" => :high_sierra
+    sha256 "1eb45236d99af01af26d0fbd2c7349177247542c2c4a7c602523efb651295be8" => :catalina
+    sha256 "f4e78a7570c3461d88772415ad952fb8885fdad4d85aa3755a04330814ef79fd" => :mojave
+    sha256 "43603cce8c769c18aa8c7d0609b75a294b87ef7e1071ea2d9af9a06f0fa3e734" => :high_sierra
   end
 
   depends_on "glide" => :build
