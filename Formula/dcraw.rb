@@ -7,11 +7,10 @@ class Dcraw < Formula
 
   bottle do
     cellar :any
-    sha256 "df26056a9b3374154b499b4dbdee4a1417a58a15cffe22ac40f095747ee1f8a7" => :catalina
-    sha256 "4673710b946c4fa3eb47d0b693b380e8abb636202ce86e0e13372a8539141bd8" => :mojave
-    sha256 "21f31347e500f314a1f2e6fe03f0d6009b25fa5bd9f1f339b0fe77fc38050e81" => :high_sierra
-    sha256 "dc99d6de1166a3f4fa66d23b798dad9a58e0fac24f72c02ab38ea32e74b30a9e" => :sierra
-    sha256 "022f85e8da7b4cd8c68d7251d39bf3084ec28a15cb859d9cfe49bd439e312466" => :el_capitan
+    rebuild 1
+    sha256 "7e6578adbb0eaed9deb8ef53246eeea0eb901055786c6da704075bd4ae1fb45d" => :catalina
+    sha256 "6e43144b90e10b8cee8bbfa147910a9a719b2d9498701d628ac099e608ffdf24" => :mojave
+    sha256 "ff98634b21e2efbc9de47dbfd679f932ce9f20b49803133ed90d225164a0e3df" => :high_sierra
   end
 
   depends_on "jasper"
