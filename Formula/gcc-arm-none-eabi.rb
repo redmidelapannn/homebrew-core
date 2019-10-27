@@ -5,6 +5,10 @@ class GccArmNoneEabi < Formula
   version "8-2019-q3-update"
   sha256 "e8a8ddfec47601f2d83f1d80c0600f198476f227102121c8d6a5a781d0c2eeef"
 
+  bottle do
+    sha256 "c8f30f558d2d0ba2994d9509d09bb8c646aaf6206759300b25b1105c2bb71a87" => :catalina
+  end
+
   #env :std
 
   depends_on "gmp" # 6.1.0 6.1.2
