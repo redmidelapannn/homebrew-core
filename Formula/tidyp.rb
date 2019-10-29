@@ -6,13 +6,10 @@ class Tidyp < Formula
 
   bottle do
     cellar :any
-    sha256 "ed67353f58e09c04387453c92536d7980c3408391bae0db77f3af421779cee57" => :catalina
-    sha256 "234868d17b7ca6e890d0adc4e339e2a35c81b3c72f0fd8487d1d3352b03fddc5" => :mojave
-    sha256 "52ef5e1d78ef5a3404e2345683fc03a61b0fad8084b74508473a042b1858b54c" => :high_sierra
-    sha256 "6b5b65c1476004cc973fff0992dfaf77887b5a5df583ac31fc22665d250b538a" => :sierra
-    sha256 "5274bb4cd33d9c15d8c73dbe4cfb54e686da29cd29093adba549024fe520b82c" => :el_capitan
-    sha256 "710962782d909bf11987f8b147d7e141ccba48643ab2db02c7f267d6cf871dd9" => :yosemite
-    sha256 "7501f78d5f8e549fec7f689cd24aafa716e2097744ec78359d8092183469e4c8" => :mavericks
+    rebuild 1
+    sha256 "9ef05d25a3ebb96811a0739c469283daa3c9c35c4e5deae9d436557e6b38df2c" => :catalina
+    sha256 "a01f77ec9a336284d6fe48ea1893454c84596d18689bbeaab7d21ee3a1d19b87" => :mojave
+    sha256 "88fd4274088350a44db2b887736c9a254caf8c1aa6a0cf03cbae0c3f297ccaff" => :high_sierra
   end
 
   resource "manual" do
