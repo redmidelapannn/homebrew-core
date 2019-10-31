@@ -8,11 +8,9 @@ class SimpleTiles < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "f4afdf9fc92f2e50bb9d9d688b13f0a498d67b33c96604d01d826f335450ac78" => :catalina
-    sha256 "bb724cfcf8966cc53a5f0bf7905cd8703b1cb10e8bfa78401f8e294b38b9f40e" => :mojave
-    sha256 "4ac4a9283ace0bf83b51c9edfd88c2d013ddb994cccc7fddc339dd6052c9f6d8" => :high_sierra
-    sha256 "5459625985be9b05f9e77c1876b5cfc10b085dab3f9efaa2a142d822f2b6ecea" => :sierra
+    sha256 "671cf70b8481420391d2407ae148ffa21bafd620c7ee4e60fab0e87f9c0d289d" => :catalina
+    sha256 "13ba67c7c097f0c3946a44b63e17361eee999a091fb19d768070aa95d839a032" => :mojave
+    sha256 "d418671fc5f1cfc8f2ed4a62867ca5119d118d117394b47a367cf5dc7483d098" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
