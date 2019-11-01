@@ -6,11 +6,9 @@ class Libmaxminddb < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "7c28cec294ec7108b63159fcf8c2a994821e4e3f0480d81101eef919a499d72f" => :catalina
-    sha256 "acf88e8898d4fe9f8edb9ec139bc69c7837d4559841e23c2c605461b4c64fa23" => :mojave
-    sha256 "a36f2a9faa9fcea3fabb861023787991ac047691c4016fdcdab320ff172f0f61" => :high_sierra
-    sha256 "8a93a000841cffd2f64d33f26a0777eb860ae0bac887bb72b539047acc61e3c0" => :sierra
+    sha256 "7c11dcf8ec14518649e9ffefa9c178a941d4103bc94aa89e8091dfc085d9c76a" => :catalina
+    sha256 "1994f1dfd44226a0c860b5774f529d4b0e5bc75561e48a1f98d1dc1482a2fea0" => :mojave
+    sha256 "38ea3189f1930a8eb46ed102c55409a73690ffea5b5ecc6659e8f3dcc96e50ca" => :high_sierra
   end
 
   head do
