@@ -7,6 +7,7 @@ class Cql < Formula
 
   bottle do
     cellar :any_skip_relocation
+    sha256 "e5a6524afad7b5284da9aee3da95e13ea4be1172ca798891567d092d7b1b3455" => :catalina
     sha256 "49533c8489134ec2059062f52cdcbcc09eec2b51c0732bfd7920a16c99eeabf5" => :mojave
     sha256 "fc13d8162b67116b9542e055a6ae6772a2c48a000c594baf2a799a74b4ca5edc" => :high_sierra
     sha256 "fa82fc3f35356e8ea6278117c185e0cba469d80fbaca38d25f5adfdc96e4c910" => :sierra
