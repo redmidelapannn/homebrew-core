@@ -6,6 +6,13 @@ class Gitsome < Formula
   url "https://github.com/donnemartin/gitsome/archive/0.8.0.tar.gz"
   sha256 "6b0c9196d43c730b2d66ce39a78c25983661c2629ecc07f8bd50e92e25f8a841"
 
+  bottle do
+    cellar :any
+    sha256 "6b4a32f6ea31fcb17dd2449732e254ee351e8977138b6d87c0abe19ce5ac4a55" => :catalina
+    sha256 "277eac2008e970c80fa68c3ea34d9f6d6f04a9ad0c8f0b6650775221dc1daaa5" => :mojave
+    sha256 "204d6d87ef2e7d712cfaf92d12c30b18c69ff307f6ef9c5151ef1f3dc9423fa6" => :high_sierra
+  end
+
   depends_on "freetype"
   depends_on "jpeg"
   depends_on "python"
