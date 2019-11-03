@@ -6,11 +6,9 @@ class Unixodbc < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "03ba378d971af98d07652f978548ffacb4c155ba11dd36af9d46af36e2d5674b" => :catalina
-    sha256 "d9f30688c0639d73b9e3a4b4b94d3679b2762e2cf0bff6b2ad64fcd175cc30ca" => :mojave
-    sha256 "0b30b166c0e6bbd9df375a018d0f2a80b944617230b15531093d20eb015971e6" => :high_sierra
-    sha256 "44407c41dc2c5cc58fcd2c254fa54ede75e7782b82567f4f1ba421d357203105" => :sierra
+    sha256 "041fa5e8db89fd3000713b48df44c97b15ce5290dcd4ec7b656c26be4342fc34" => :catalina
+    sha256 "98e852c04a13d0a020113e1359cac14a453320b81e9f026936af5cb19d0a2cfb" => :mojave
+    sha256 "b9fa166afb09b99b8dd1bdf13a6943323b1f11d3f5a6144964b35e992237f923" => :high_sierra
   end
 
   depends_on "libiconv"
