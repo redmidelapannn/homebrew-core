@@ -6,13 +6,10 @@ class Rdate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2d4c93b21caa56d3228d8ff2ff790f4142421ad6316cd74d77c568e84602a996" => :mojave
-    sha256 "02e41a79e9aca3bad86802e1bc32c7148e8a2ea2f410c57765f9e9d8b2686fd1" => :high_sierra
-    sha256 "9f4a6300d6d3ebc9034abeb5388fd40face1f286a7b97610b6a40a1dcdf166b5" => :sierra
-    sha256 "acb2ae5951a0f32cbdce39e02d86c63cdb85b41fd02aff74aac6ea4939d71d8d" => :el_capitan
-    sha256 "553782017635be9c8d80bbf6fd033f294cddcb427a2d83fe82af8c069c60867f" => :yosemite
-    sha256 "3a36b6feccd119c90db3373a3de1b67f4aa03fc72aacdf7b11165b538206ae14" => :mavericks
+    rebuild 2
+    sha256 "ba52c04f1da5fe0eabb0f3a45063f4207136cdcb5b0df5a0e1f42fbecaa0b762" => :catalina
+    sha256 "90fb3c330955e41bacb54d854584f57ac0f7095548d00d6c7d5f42f262a425f1" => :mojave
+    sha256 "0e5937a691f76ab5b8a6ec8bcb53c2afd2b4ead8f370346017cf9e84a0817809" => :high_sierra
   end
 
   def install
