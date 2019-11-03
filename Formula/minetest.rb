@@ -13,9 +13,9 @@ class Minetest < Formula
   end
 
   bottle do
-    sha256 "21668f152c915c3376690da7c99f4efddaf8dfb138c550322b40789d4a50173b" => :mojave
-    sha256 "4d05b170855c4215a39ba37e520f4f338de88e6bef724ac7201683272f4c7fdf" => :high_sierra
-    sha256 "5122d65cef9f5f63b3511f627e25408cadf8f0158c119262413a9e8b8666ddc5" => :sierra
+    sha256 "2a037da7f3082424878f157761f6af96ae75336d77b79df4e7f3993cc940c0c5" => :catalina
+    sha256 "1a7b75131284c619f533c45dbd12b57e474c6db399b774a2f529dbcd456c63be" => :mojave
+    sha256 "a0cd850ec0ac104ee67bf81683e5fd194b47bccca88646c9048840983660e740" => :high_sierra
   end
 
   head do
