@@ -30,7 +30,7 @@ class Calceph < Formula
         calceph_seterrorhandler (3, myhandler);
         calceph_open ("example1.dat");
         assert (errorfound==1);
-        eturn 0;
+        return 0;
       }
     EOS
     system ENV.cc, "testcalceph.c", "-L#{lib}", "-lcalceph", "-o", "testcalceph"
