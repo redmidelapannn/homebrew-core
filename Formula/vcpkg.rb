@@ -6,6 +6,12 @@ class Vcpkg < Formula
   sha256 "1a3e81b50702522ede10806f38d929d9aa4c7ffb5c2595eeee07a04cafacc77c"
   head "https://github.com/microsoft/vcpkg.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7f86534a8b4914fa78745a5556482215739c1970f9d3008a0187d254fb3eea34" => :catalina
+    sha256 "62de52bdb5fd1b319ad715f42709fa7356d4c761266414f7cc20ac6e3470323e" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "gcc" if MacOS.version <= :mojave
