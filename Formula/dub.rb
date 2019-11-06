@@ -8,9 +8,9 @@ class Dub < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bf9fce6bc8be76547f3fb0aa6fd0ac96762d13ffc6db365b1c571eaa4edaa8fe" => :mojave
-    sha256 "91b64a2a139ea068832c053a97798e5adb79736a052a89732dcc950789e700f9" => :high_sierra
-    sha256 "434b0862c37564e3ac7764dd92a75f7f092b373ba0792c9a628974946417a5df" => :sierra
+    sha256 "fe96ed564ff2166deef6f67a8803fa703d90718a174c302d15fac0c6b3d72362" => :catalina
+    sha256 "d0f441f470a369b310a5b014f0e8e65ad95e21449d7d83f1c20f47a883dbdf2b" => :mojave
+    sha256 "0377bd69e0299ac4823f4d2feff378966be33ed6ba510a0bb19c53be8f950bad" => :high_sierra
   end
 
   depends_on "dmd" => :build
