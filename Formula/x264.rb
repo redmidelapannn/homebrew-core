@@ -13,10 +13,10 @@ class X264 < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "9e49fa8cc8e0bd02bdb85f8b2def682a8c6aab5d3f7bfe6bb51e2e78da1b2eb9" => :catalina
-    sha256 "07d6a4de866c38296a3cb788c3370857bd745e88cd7e1723fc0261c4e44a1081" => :mojave
-    sha256 "80b6d49faed147546c8639bdc09143968587d7fed7c45dcd9c4e0f56cdb932ff" => :high_sierra
+    rebuild 2
+    sha256 "6ba8abc14a40e819f765c3d28598e03d030577e27ddc74c4a5cf4d7cbd4098a2" => :catalina
+    sha256 "faf6091d6c714d8ad1df90bda42cc9107a85a8a2cec7ba3f21e9af07d1ed897c" => :mojave
+    sha256 "0d510c7ccc6f4757502bd8888c5ddbba3668ef810e48b35aaedd5128938534cf" => :high_sierra
   end
 
   depends_on "nasm" => :build
