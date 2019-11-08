@@ -7,10 +7,10 @@ class Gdb < Formula
   head "https://sourceware.org/git/binutils-gdb.git"
 
   bottle do
-    sha256 "fbc1eb60dc46eb6517ea530049496336e1a4d3c9b3bdf8816665cac528fd99a4" => :catalina
-    sha256 "16da5f61ca304740defde7f8a772d5fb5f5c48ac658984ef186d1c77f53b5d6a" => :mojave
-    sha256 "2721c3a733fba77d623f84c33cce6a1cca46c6a020649269f4431de402704fa1" => :high_sierra
-    sha256 "b2343fca9963d198248c98ee069211c28e04135effcc2e7ed0900fec7c7d95a3" => :sierra
+    rebuild 1
+    sha256 "c6a3cd18df0aaa6ccfde6ecfc5c049a11e0064e8bc543af70a007d5eae19ae60" => :catalina
+    sha256 "d7b627278a373561f8a451c0ecb6fd509b40d575450164101b89e186435e302e" => :mojave
+    sha256 "b815d21a674326ac844d40852e91f187a966f8aa9c5b412cf651702349cd12f4" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
