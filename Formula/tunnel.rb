@@ -6,9 +6,9 @@ class Tunnel < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "550e9b1fa482bf8277696ab8f4f036749235310fab0626f7bcfb82efe13f4c91" => :catalina
-    sha256 "130a866ef498c75b71a302ea6917f734cea7a68eccb87133deabd2f6122e48bd" => :mojave
-    sha256 "3ae0daf4bfd4e4461146bb5cfeca28ada68ad9657db9519dc27710b4f51956f8" => :high_sierra
+    sha256 "36c9d6195ae1035eab027f1ff46cdba46c4f4a96f6b875ad588a4ae92e9c6337" => :catalina
+    sha256 "ec0fe1f9b9d300bf811f88faa2eb63cfe6492dfbe4690faeae2dc097a7e92636" => :mojave
+    sha256 "964a9401cd3090ad6fbde534e9a30e6fd55999d52b923fb581b8f9ac471a79dc" => :high_sierra
   end
 
   depends_on "go" => :build
