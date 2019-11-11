@@ -6,6 +6,13 @@ class AdguardHome < Formula
       :revision => "64d40bdc47081ed80e597e61e5c96953c1e35c30"
   head "https://github.com/AdguardTeam/AdGuardHome.git", :using => :git
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0b574070954f1399dda799e9f0e54489f00c028f020a3ac57b059b272b1b0a2c" => :catalina
+    sha256 "196804784e91226a14ff27228fe3f94f3cd2524f25c0f45da7756c06d9bd9aac" => :mojave
+    sha256 "5927111ce37cc52779d0fda8a46e2931c2edba9cfb7613c4f403801b8c0b836b" => :high_sierra
+  end
+
   depends_on "go" => :build
   depends_on "node" => :build
 
