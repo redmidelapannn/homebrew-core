@@ -5,6 +5,13 @@ class Bitmarkd < Formula
   sha256 "aa492d3aa4436671e14b1a5f1853159e6c644eeb3c2b9b5d878bdf80bd5cd933"
   head "https://github.com/bitmark-inc/bitmarkd.git"
 
+  bottle do
+    cellar :any
+    sha256 "986ed9773e66aa43b1902fdbffdc61b9de747b9a46a14079b75cf18537393170" => :catalina
+    sha256 "2a077849cd1d1fce781f1ded3c1d3e647bf195e0ac4feafbfd16881334e64796" => :mojave
+    sha256 "102a9753903baa448fb035f0a121e0f17ec54a71e7a769a587f79fcd56bc1782" => :high_sierra
+  end
+
   depends_on "go" => :build
   depends_on "pkg-config" => :build
   depends_on "argon2"
