@@ -9,9 +9,9 @@ class Sip < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "55d3dbbc80a7d87d4c4c4e0644e473edfbfc6ea8c00f96b745c788ed0de16114" => :catalina
-    sha256 "52c3ab51c8754323ef8219e84235214c5cf1f12e6c704d5fe70b2b95372f306e" => :mojave
-    sha256 "3e037042028c83b9329d376ed6663ddfe7ba90f714cc623421ed8ff2e87f90b5" => :high_sierra
+    sha256 "abc0ea902c7074dfc4c1dcc4e335a562b33a9104e86d798670fd7f1fb3b27676" => :catalina
+    sha256 "2b2099f8ee37c0929d7f41a7603760916308946441f7a14801c0faf536091525" => :mojave
+    sha256 "712e1f2214d5a7b1d801bc4d69d2272a1cb501a08f38f6f2c49e4d2bc8b95b43" => :high_sierra
   end
 
   depends_on "python"
