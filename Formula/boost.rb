@@ -15,6 +15,8 @@ class Boost < Formula
 
   depends_on "icu4c"
 
+  conflicts_with "hana", :because => "boost contains hana"
+
   def install
     # Force boost to compile with the desired compiler
     open("user-config.jam", "a") do |file|
