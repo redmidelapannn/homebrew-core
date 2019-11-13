@@ -16,6 +16,8 @@ class Hana < Formula
   depends_on "cmake" => :build
   depends_on :macos => :yosemite
 
+  conflicts_with "boost", :because => "boost contains hana"
+
   def install
     system "cmake", ".", *std_cmake_args
     system "make", "install"
