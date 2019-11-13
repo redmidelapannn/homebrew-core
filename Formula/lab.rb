@@ -5,6 +5,13 @@ class Lab < Formula
   sha256 "bba7ca506343080de75c673aa8333cb97308a7b8e9e17547eb5325980c25c54a"
   url "https://github.com/zaquestion/lab/releases/download/v#{version}/lab_#{version}_darwin_amd64.tar.gz"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "bb3ec7b599285a0ff87bbaccb69037e5317fc5efde4fca8025532c75f3664e66" => :catalina
+    sha256 "bb3ec7b599285a0ff87bbaccb69037e5317fc5efde4fca8025532c75f3664e66" => :mojave
+    sha256 "bb3ec7b599285a0ff87bbaccb69037e5317fc5efde4fca8025532c75f3664e66" => :high_sierra
+  end
+
   def install
     bin.install "lab"
   end
