@@ -6,6 +6,12 @@ class KubernetesHelmAT2 < Formula
       :revision => "bbdfe5e7803a12bbdf97e94cd847859890cf4050"
   head "https://github.com/helm/helm.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "538da97f72107dc3c1be3aa34447bb5e32663d76fbc1aa2679718806494ce049" => :catalina
+    sha256 "494a3002450c32169f806fa7affe5472c172fda41e203fed3a0692d350256832" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "glide" => :build
