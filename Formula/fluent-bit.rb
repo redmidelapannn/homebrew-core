@@ -12,6 +12,8 @@ class FluentBit < Formula
     sha256 "d0136990b48d1fe3f5ac0e7e55b41ac0925404349730605d1f1b38f551cd5b03" => :sierra
   end
 
+  depends_on "bison" => :build
+  depends_on "flex" => :build
   depends_on "cmake" => :build
 
   conflicts_with "mbedtls", :because => "fluent-bit includes mbedtls libraries."
