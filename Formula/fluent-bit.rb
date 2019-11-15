@@ -13,6 +13,7 @@ class FluentBit < Formula
   end
 
   depends_on "cmake" => :build
+  depends_on "bison" => :build
 
   conflicts_with "mbedtls", :because => "fluent-bit includes mbedtls libraries."
   conflicts_with "msgpack", :because => "fluent-bit includes msgpack libraries."
