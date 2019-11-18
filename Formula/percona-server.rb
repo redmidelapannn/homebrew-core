@@ -6,10 +6,10 @@ class PerconaServer < Formula
   revision 1
 
   bottle do
-    rebuild 1
-    sha256 "1d185a20987cc90ddadf67b3a0bfa99c65b5e903c04cbf5618c6840d0e5c2c52" => :catalina
-    sha256 "698a9e8aeb74952720a1ec7173504ac81e1bedb37df33bcdbdc73c6406f43258" => :mojave
-    sha256 "e1ef93655f32e10839745355c8b54801eb5400df0e3095bf6a77db217a648c20" => :high_sierra
+    rebuild 2
+    sha256 "05e02f2dd7857484b176889698a2380b4dba185f9ce833a1f5bc6a0f68b3a1f4" => :catalina
+    sha256 "eb362571573947188a1bb38f0928443a7435b8c4fd5af1ccdcdc6a676c14c0ff" => :mojave
+    sha256 "5ef0eae2da3c64a81a90ee28a5f065f8440f34da0d5903728295e792415fcf46" => :high_sierra
   end
 
   pour_bottle? do
