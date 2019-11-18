@@ -14,6 +14,7 @@ class Pspg < Formula
 
   depends_on "ncurses"
   depends_on "readline"
+  depends_on "libpq"
 
   def install
     system "./configure", "--disable-debug",
