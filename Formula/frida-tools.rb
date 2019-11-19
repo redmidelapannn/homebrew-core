@@ -6,6 +6,13 @@ class FridaTools < Formula
   url "https://github.com/frida/frida-tools/archive/5.3.0.tar.gz"
   sha256 "45033ff6edbabb2b11e8b7198e5d2ee865fc616386d1adc735039bf8dd0302e9"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "08a3cc8b06eb1cdbe6a2cdc64978332156f4f2b688d3ffe557d08ed09d0ac456" => :catalina
+    sha256 "5467484c7153306c8c03b61c595d5d5deed617081d3c61966a67920ecc4868bd" => :mojave
+    sha256 "58ac8ea63b4d89c46f171dad3aecb97ea0deae764cdb4e942c51c7dfbce42e06" => :high_sierra
+  end
+
   depends_on "python"
 
   resource "colorama" do
