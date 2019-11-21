@@ -8,9 +8,7 @@ class Kibana < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f8634e98d1d8ed79f691e7bf6faa4365741011f01d4be389b8ae00305baf67cd" => :mojave
-    sha256 "6e79191708e71fecf8d6a7c7757d45237af992e64fd0f15f16e1f124c61749be" => :high_sierra
-    sha256 "a4186dcb4f9a6e57614b0b7c03d297f845f91c6e1e914078c5d491750b43734b" => :sierra
+    sha256 "17cc6735f035db86847606bfcbdd54a21ea6ffaa6818274b52035e899562c0ea" => :high_sierra
   end
 
   resource "node" do
