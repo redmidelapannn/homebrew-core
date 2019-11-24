@@ -7,9 +7,8 @@ class Mpi4py < Formula
 
   bottle do
     cellar :any
-    sha256 "c7986ad3dd30dad9ec0e39d0bb8a6b393e83928602911cce0c8ba9fa754f573d" => :catalina
-    sha256 "6ab550d9030af6de7be420e8c09789f39b378850206c6bdac92ee34507418688" => :mojave
-    sha256 "a7240ca7705037a69127ae6337274e2f4fdf4675897195199d63339d12011d1b" => :high_sierra
+    sha256 "34bf70188699739bb931808d524dce693bb2c452469b32316e1bddda12468a91" => :mojave
+    sha256 "c857e238d534085150c99af67d1378bc2044f95e45907c20477662fa29b810a4" => :high_sierra
   end
 
   depends_on "cython" => :build
