@@ -6,10 +6,10 @@ class Libgsf < Formula
   revision 1
 
   bottle do
-    sha256 "1a1cfea4de83f58bc0b21040700f980033f679c83d752377a3fc4e31b37b4d19" => :catalina
-    sha256 "e4ce2838b44594d27c99dac9d17ad1f7d2752bd7cf33d514fce0a54e94542efe" => :mojave
-    sha256 "8016acb38bd84a9d659a2c938b52e84128a242e54bf0c44236da9d875ae5de92" => :high_sierra
-    sha256 "7534eb511218574e344d0c5ebc4ebdb110e6c476d6a2936277f9d584b88f765a" => :sierra
+    rebuild 1
+    sha256 "230fb32d692803fee68cd004d3e21d712c9a2bc157f0d2253e54b49971dac33a" => :catalina
+    sha256 "09223be958c8176be32e101e3f5b371d33a150b2b73d241d5dddb18a25bdec06" => :mojave
+    sha256 "286251c9bc6436ca4446ec9e458d4728c46fb7d168d720ecbb3f02b3329a7844" => :high_sierra
   end
 
   head do
