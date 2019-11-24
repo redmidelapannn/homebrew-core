@@ -9,9 +9,10 @@ class AwsGoogleAuth < Formula
 
   bottle do
     cellar :any
-    sha256 "44f635f9ed0028f17542e73f5318040a5848c74ccf54c5aefaef599046674991" => :catalina
-    sha256 "7874bf9cf14dbec7ec8ba2cc1af8e22c72ff693212bcc7b7aa0b0d32a756fec2" => :mojave
-    sha256 "fb7cf1b3aa3897922c22f78e14b3ee98a830ad8f71652740c50c9775511fb8d8" => :high_sierra
+    rebuild 1
+    sha256 "bbeb2ac25e2b1f80a411028896c548b86d61b817bdd971e68ed24aa5badcb15b" => :catalina
+    sha256 "5c12c78c4110605f189b03d1b6b73e4b760661e60e719362e7923aef7514b256" => :mojave
+    sha256 "3e52211882b934b12a59a30748f14e1a75faf1543de4469ffdaa86b6dafdd34a" => :high_sierra
   end
 
   depends_on "freetype"
