@@ -6,9 +6,10 @@ class SharedMimeInfo < Formula
 
   bottle do
     cellar :any
-    sha256 "137dfd734f5e7fe9b9ee80d1efa135f95a3ade95ceab83b2f79cd7ca1fd4d313" => :catalina
-    sha256 "1be57687d8aef14d6bc95be0a02a5dfdbce4bf859ea057c93e3ff8545c700fcd" => :mojave
-    sha256 "87ec03b8d25d6c3c455c98dbc8d9ac3569df6abaae0c07ad9444a1cfa462cd06" => :high_sierra
+    rebuild 1
+    sha256 "5329bdb5a565deb9b33efc32eefd0007d4f82b1f4f2ac8fc721580f49e509532" => :catalina
+    sha256 "ade652cbb42a3504a5fdce61f3ef793f4502bdf3385e6ff3ad6cc0ceaa338f7c" => :mojave
+    sha256 "b87243d0d3de5a4e5fee3b3deb24473179e8fafcd0c36a2bc5c0f709a4892fb6" => :high_sierra
   end
 
   head do
