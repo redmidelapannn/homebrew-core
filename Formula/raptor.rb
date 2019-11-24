@@ -6,13 +6,10 @@ class Raptor < Formula
 
   bottle do
     cellar :any
-    sha256 "d0be0655a9546fe278830f8b60a19f66dcc10a77445e2bf2cf76ad61a0a802e2" => :catalina
-    sha256 "cbfcd2b8ce9fa8701a15eba572e766e3a9b3b19eba8438d41618e6ee3ab4501d" => :mojave
-    sha256 "194f9a66e1aeccb23185abd6f1f1408422594dfd54cad5460c5a5ac3f5e0c48c" => :high_sierra
-    sha256 "dba42ee8efa54c0b5722f0e12a7a585c2a9fe07a22aea6aec9124aaf09860f1d" => :sierra
-    sha256 "cc2feb9cd1d6f9eb0f511853f19c43bc96d143de6a73edfd3cdb854647d1d14a" => :el_capitan
-    sha256 "c23392012fb5edffbe800771eaee6ae81d288e62c477c27332474f2ed342d1b3" => :yosemite
-    sha256 "5e640e01d5cdd6899ca00704ba581358d254f7cfb9b81d62c901c825bb347681" => :mavericks
+    rebuild 1
+    sha256 "af05617744912dc8a21f89d453878ae906984fbb62afb23b3d8bc712c1ae1336" => :catalina
+    sha256 "baa946053e88fa6ea45058b54f73715d95c0304d0e222f92d3f292f57b5fc384" => :mojave
+    sha256 "e4fe52ab17b804ad864fbfd1ca79d0027fe0b55833649276a3bac7b9664ddae1" => :high_sierra
   end
 
   uses_from_macos "libxml2"
