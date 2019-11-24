@@ -7,10 +7,10 @@ class Libcroco < Formula
 
   bottle do
     cellar :any
-    sha256 "bc64de8725726ae0188ec23dc9946759565f06e45d3eb10e510d5d42d0888e28" => :catalina
-    sha256 "edf97f493296bfe01b2a8cfe156f1e8052e181bed6ea34cabaf18ed59ef28b17" => :mojave
-    sha256 "f6e7d7d608dfcf6e57eaad77eef3cca27c15db0746e102f6dc33cccdd5a8a7bc" => :high_sierra
-    sha256 "a95e3733bd72b789cc9a3cb9dfc9a92153939b984c4d1d47b8aa806e99e99552" => :sierra
+    rebuild 1
+    sha256 "b51db6f71a923840dae8f72f0f607839fc4ba00810ceefb725bbccba2df16c5e" => :catalina
+    sha256 "b17c4c27c249b8fd6ce500de80146f6b2b5aa1fe94ac8c4277a210aeeb4a9ae7" => :mojave
+    sha256 "2d08e71aea151d76c2ce5665318216df9d572604291c6c16d848a73a774ece28" => :high_sierra
   end
 
   depends_on "intltool" => :build
