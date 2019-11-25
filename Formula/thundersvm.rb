@@ -4,6 +4,13 @@ class Thundersvm < Formula
   url "https://github.com/Xtra-Computing/thundersvm/archive/0.3.3.tar.gz"
   sha256 "0328511caa762ebbf5f7174c2a3cf7a05393b93fff51a6819bcdd5b25e5c54ae"
 
+  bottle do
+    cellar :any
+    sha256 "647f4d5aa0275b39b33edfb1653d8437ba5411ecd5543fae9b4d79c9f3561b9a" => :catalina
+    sha256 "52ec9d6d2e6629cd1fc9b913ae565016e1882fa91fc090f7be8fdb3236fd5136" => :mojave
+    sha256 "321b3db648d0b2e80cefddb5deebf8ac560e6e6cf7d9ef13f15999a680cec7f8" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "eigen"
   depends_on "libomp"
