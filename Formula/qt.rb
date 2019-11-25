@@ -19,9 +19,10 @@ class Qt < Formula
 
   bottle do
     cellar :any
-    sha256 "68a2a7ef99d04e5110aae09726a19786b45c8f9bb1ce3a24d2291ba9211274ee" => :catalina
-    sha256 "54adc82fe157323b12b5d83b92a99580d6c0bab81005ef15daf045380fdf72be" => :mojave
-    sha256 "d4c27dfa16f0587c0168b363b209eb508b6105b4c5528809146c541eb9cb4039" => :high_sierra
+    rebuild 1
+    sha256 "458bebc80cda444c9ae4965f1232443fb8cf24e507ecafb394e964cdb9568aa9" => :catalina
+    sha256 "0d6e0be11ea602a0bca2a582a53ab471a5b4d7c0200100e8997aef1dc9946c91" => :mojave
+    sha256 "f8c28a845005677406ba9ec60eabad9a437c6378fe2bce60411a6f01470f19a6" => :high_sierra
   end
 
   keg_only "Qt 5 has CMake issues when linked"
