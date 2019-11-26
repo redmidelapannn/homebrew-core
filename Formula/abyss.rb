@@ -1,6 +1,6 @@
 class Abyss < Formula
   desc "Genome sequence assembler for short reads"
-  homepage "http://www.bcgsc.ca/platform/bioinfo/software/abyss"
+  homepage "http://web04.bcgsc.ca:8080/gsc/content/platform/bioinfo/software/abyss"
   url "https://github.com/bcgsc/abyss/releases/download/2.2.3/abyss-2.2.3.tar.gz"
   sha256 "ac7679ececbdd89cc050998eae31fa5f8bf7cdab6a0c05eb5eb1e3867c7e75cb"
 
