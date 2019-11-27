@@ -5,9 +5,10 @@ class Pianod < Formula
   sha256 "0de916d8df19c045a98fd9b63ec25f157d30235c412689c00c3cead99c64ba76"
 
   bottle do
-    sha256 "6c0dee18b03c7dfd0c4d752164b7e86edd84098f3dfccd4e248d4e2085314988" => :catalina
-    sha256 "f5f17916dd35eb4ec45b7ad25ed7b82cd7f8b7dd4cd53846b4fd023e331cd622" => :mojave
-    sha256 "0d3430afe66553f3b3a87798766ff1bccc2972ed2867a363ebf6d1b8a3ae57b1" => :high_sierra
+    rebuild 1
+    sha256 "b0f8dc74b232ed61f3f700e7991edbd7c1ea23e9fdf01b09aebb5f1bb50d83c4" => :catalina
+    sha256 "7e3ebeded1fe0fefd6bdbb63946e2809ebefe82f145740bd6843c7f6fcb20478" => :mojave
+    sha256 "d2528d2914b50fddd2eb97af285ecd02e170e44763382c8867854705854b3273" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
