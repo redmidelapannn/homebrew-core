@@ -6,6 +6,13 @@ class Deadlinks < Formula
   url "https://files.pythonhosted.org/packages/91/65/302dc199ba8035f066a298775f90035228a9a61bd24645af0ed90f859fba/deadlinks-0.1.1.tar.gz"
   sha256 "8c7087087c00d7f597a6e6c5e2c26d031b164a8f77f09fe6b9c87f15f8b17a61"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "7c27c90bde132fe372ea2f0a1fd4508b7d412c44ef2db018cefdb03401a25580" => :catalina
+    sha256 "4516ee6f1be382afd7cb54b57163decff86ecfb146dd961424fbb662eab01f64" => :mojave
+    sha256 "1e8e81eee4ac19636c93ea6d378928e9a2a4e80eba3295dd17ad08b12c6aab50" => :high_sierra
+  end
+
   depends_on "python"
 
   resource "requests" do
