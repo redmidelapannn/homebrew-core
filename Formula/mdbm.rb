@@ -4,6 +4,12 @@ class Mdbm < Formula
   url "https://github.com/yahoo/mdbm/archive/v4.13.0.tar.gz"
   sha256 "99cec32e02639048f96abf4475eb3f97fc669541560cd030992bab155f0cb7f8"
 
+  bottle do
+    cellar :any
+    sha256 "88c061d93e661d7275aee038ee2cf454d9847e52ab32d8e8da5c1f562c0212db" => :catalina
+    sha256 "ec40f2426d2a76721a2368ade6a0f2865b2b52dffd09241b1cc2862549eda9ba" => :mojave
+  end
+
   depends_on "cppunit" => :build
   depends_on :xcode => ["10.2", :build]
   depends_on "openssl@1.1"
