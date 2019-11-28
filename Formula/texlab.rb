@@ -7,6 +7,13 @@ class Texlab < Formula
   sha256 "aa36f3f23656da0d58357fe044d2f60bc01a99bbaa2481132231f4791ff82d17"
   head "https://github.com/latex-lsp/texlab.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "876c48522e22908640adad5d38d53f0366b33f5de0508c0c6d8ac75c6da0ddc7" => :catalina
+    sha256 "7f7c0fa7d8f8f75b5cfd699af14b811cb3cc4f02dd6ab986fffa41a4fa2c0e2a" => :mojave
+    sha256 "d234b8b31328032443ff767bb755633cacf7d4daed26fe090f71f3212a10ba31" => :high_sierra
+  end
+
   depends_on "node" => :build
   depends_on "rust" => :build
 
