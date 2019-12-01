@@ -5,6 +5,12 @@ class Sorbet < Formula
   version "0.4.5085"
   sha256 "79d73af69ac393db244c62b3847a496669a4dbd9c9b1c3fcf55d9d2be382aec5"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c41f1809d34f5a1b1561ee777c6a16901b7579f4f8ccc1f74c6996e06d4c6990" => :catalina
+    sha256 "cd6996c7a20cd0edea736fc7d5ac9448c08d346dc53a7ba01357bad33089a87e" => :mojave
+  end
+
   depends_on "autoconf" => :build
   depends_on "bazel" => :build
   depends_on "coreutils" => :build
