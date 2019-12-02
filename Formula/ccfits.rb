@@ -5,7 +5,9 @@ class Ccfits < Formula
 
   bottle do
     cellar :any
-    sha256 "49649b730f406133c22ab2990f06393a70ff2688ac48d56b2c1e48e103ab4270" => :x86_64_linux
+    sha256 "96d58a07febb18b6ccf1bb33db18337d64e35c1d3eccb79e7228714d4fb58115" => :catalina
+    sha256 "5386107af844e51cfa831c28a5fae29aff5be2803dc6ad112a42cd988ed176c4" => :mojave
+    sha256 "5e3ae19484999079f571449990150a0b0c9b11224f9a80fd0cc123c96c814dd7" => :high_sierra
   end
 
   option "without-check", "Disable build-time checking (not recommended)"
