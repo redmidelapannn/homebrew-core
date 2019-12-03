@@ -7,6 +7,13 @@ class DartSass < Formula
   url "https://github.com/sass/dart-sass/archive/1.23.7.tar.gz"
   sha256 "1b73dec233a1cea21748b3f70bcdd46597a11951ec19d2c77a6e1e44446d1c37"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "132f6f3232a75c468dd999a7b072816d0155414e95aa22f0a55f30923dad5f27" => :catalina
+    sha256 "23fe7292d57c51da8725a61fc979d6ca70f5e8f53e26d36a10e33935330f0ceb" => :mojave
+    sha256 "05cdefccde842c5b2536f03652cd894a61737d06f1cfb02ceed0cff5fdf8a1b2" => :high_sierra
+  end
+
   depends_on "dart-lang/dart/dart" => :build
 
   def install
