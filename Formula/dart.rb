@@ -3,6 +3,13 @@ class Dart < Formula
   homepage "https://www.dartlang.org/"
 
   version "2.6.1"
+  bottle do
+    cellar :any
+    sha256 "884dbe702a3fd0e2e2bfd03f9d0a9ad6fef7baed656f5084d3c8f88212c3920f" => :catalina
+    sha256 "884dbe702a3fd0e2e2bfd03f9d0a9ad6fef7baed656f5084d3c8f88212c3920f" => :mojave
+    sha256 "884dbe702a3fd0e2e2bfd03f9d0a9ad6fef7baed656f5084d3c8f88212c3920f" => :high_sierra
+  end
+
   if OS.mac?
     if Hardware::CPU.is_64_bit?
       url "https://storage.googleapis.com/dart-archive/channels/stable/release/2.6.1/sdk/dartsdk-macos-x64-release.zip"
