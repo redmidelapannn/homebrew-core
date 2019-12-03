@@ -3,6 +3,12 @@ class PythonAT38 < Formula
   homepage "https://www.python.org/"
   url "https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz"
   sha256 "b356244e13fb5491da890b35b13b2118c3122977c2cd825e3eb6e7d462030d84"
+  bottle do
+    sha256 "7404b66148f2db423b71805c39061cef2fc2d0034c4ce3aeae211d56cca1ae3d" => :catalina
+    sha256 "1d5aa3fb6e77adc53a80de87a43ab0a72a527e0082caef8b7ee0c6ab845d9205" => :mojave
+    sha256 "fe4ebf2c6a19528ee772196dcd727ca2d42474d67736cb8272e505f5872fee62" => :high_sierra
+  end
+
   # head "https://github.com/python/cpython.git" # Commented out for migration period (3.7 -> 3.8)
 
   # setuptools remembers the build flags python is built with and uses them to
