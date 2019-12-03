@@ -6,6 +6,11 @@ class Scf < Formula
   url "https://files.pythonhosted.org/packages/77/27/2c1caae5eaed17fc0b00815c916796702784814d8af1aa3da072c8ca2310/scf-0.2.6.tar.gz"
   sha256 "3bf756f96901eca45e2e42f62fd48ed1ce81b220d0cb350a78cc1519581781fa"
 
+  bottle do
+    cellar :any
+    sha256 "874051b79d76280b668824caca299520305d414a9b249afb5339bfec1ff8aad4" => :catalina
+  end
+
   depends_on "python"
 
   resource "certifi" do
