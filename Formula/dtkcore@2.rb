@@ -4,6 +4,13 @@ class DtkcoreAT2 < Formula
   url "http://packages.deepin.com/deepin/pool/main/d/dtkcore/dtkcore_2.0.16.1.orig.tar.xz"
   sha256 "79b19a9b01f8a53d2794afa3073d3303b54d6e07da94cc1ef20eb32ea0c3f465"
 
+  bottle do
+    cellar :any
+    sha256 "2ee518f1832c65c67d298b71e78afd9a691e006e2b30664aa2ec14a25eda0478" => :catalina
+    sha256 "2ee518f1832c65c67d298b71e78afd9a691e006e2b30664aa2ec14a25eda0478" => :mojave
+    sha256 "548949ac8218d8f1d8bfeb3bc5e9c17c2bd1f03bf86ca5a7d03806a15eb99fcc" => :high_sierra
+  end
+
   depends_on "pkg-config" => :build
   depends_on "qt"
 
