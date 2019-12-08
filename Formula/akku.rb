@@ -5,6 +5,13 @@ class Akku < Formula
   sha256 "33d6ca54122bc565b91520006f97f611dc5f5ae2ebcf77953544b50f1b1bd7c7"
   head "https://gitlab.com/akkuscm/akku.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "29651b8f56f085c97cb7e9c3dbc3b81e00395cf3920c47bd435284038ae9625a" => :catalina
+    sha256 "55f3ebc5030d0c640f846e759d53fbf5618dea3927190269b9587c9a45283885" => :mojave
+    sha256 "4f2e20e76f36629870905b168216d1f6b83ba452e0913aee1d8aa050d8061d7a" => :high_sierra
+  end
+
   # TODO: Akku supports both Guile and Chez, but the actual tarball to download is
   # different depending on which you choose for running Akku. I wasn't able to get
   # the Guile version working, so this uses Chez.
