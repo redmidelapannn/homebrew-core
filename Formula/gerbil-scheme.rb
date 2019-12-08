@@ -6,9 +6,10 @@ class GerbilScheme < Formula
   revision 4
 
   bottle do
-    sha256 "cee68143a4d8bb472e85f053f01b7093a357977796cdfb13a996a68011a0b7c6" => :mojave
-    sha256 "5bb66072a98aea792244409f27d2a9f0e00921d2e1990fd38dfac982b9f3581e" => :high_sierra
-    sha256 "f31e458288a9c332efb8038418ecfea4a2b999aeacf3adc0e1e87bbc77bd5cc0" => :sierra
+    rebuild 1
+    sha256 "07fde61b3c778f88ca008d18fc06ca9499c9945d607649b786c21d21eb93f44e" => :catalina
+    sha256 "7176d9aa3ae2a2430d2ddc23ba74c6b66b91b0db56cfbd2e2c0f2948a0245850" => :mojave
+    sha256 "6851134137f6f7051036f16dbdb08f851185bb40763b2d90c27c18a07a41fa8f" => :high_sierra
   end
 
   depends_on "gambit-scheme"
