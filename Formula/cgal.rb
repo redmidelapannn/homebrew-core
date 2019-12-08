@@ -6,10 +6,10 @@ class Cgal < Formula
   revision 1
 
   bottle do
-    cellar :any
-    sha256 "d9b8e3f6b52853ac92f6eaa4023a074dc8ce317ceea9e9be8b98e5a9eb06aa88" => :catalina
-    sha256 "d5899f80357aaf49b2c318813ea6c39fd4c02b354495d9a5f488452808af0ccf" => :mojave
-    sha256 "f7354a832cf0eb5ec2558a288ca21b9e5d4664370597d2a079ec35bce80e7ff7" => :high_sierra
+    cellar :any_skip_relocation
+    sha256 "8e41fd29ae2e3acef63bfa4ca46c1f5e394dfcb3ccd9ba9c259adcc090141570" => :catalina
+    sha256 "8e41fd29ae2e3acef63bfa4ca46c1f5e394dfcb3ccd9ba9c259adcc090141570" => :mojave
+    sha256 "8e41fd29ae2e3acef63bfa4ca46c1f5e394dfcb3ccd9ba9c259adcc090141570" => :high_sierra
   end
 
   depends_on "cmake" => [:build, :test]
