@@ -8,9 +8,9 @@ class KubeAws < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f0b1583eb75932cbc1db07d78a1ce63c0629098df97bc78091831c0742c878f9" => :catalina
-    sha256 "1219db803ad5dc3825dcd5d199b1c7cb2f08eb904a88ef38df6d8d1e3f041292" => :mojave
-    sha256 "d3ee4593133be9a3ec09bdd3d683cf95f5ffc0797119bdb90c7ace7077384094" => :high_sierra
+    sha256 "990bdaa7acb0c12a80925a987b1cafd32b6fe0bfedba87288d333ae581dc360d" => :catalina
+    sha256 "4f9bd15c62cdda8513f468ee2f2345c43ab378db1e64f390bd3671c1708a26e2" => :mojave
+    sha256 "d2d286914c00fecc224f0f43bbd018657c7da614b1106eb479f25098b4577f13" => :high_sierra
   end
 
   depends_on "go" => :build
