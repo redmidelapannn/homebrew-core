@@ -6,9 +6,9 @@ class Poppler < Formula
   head "https://anongit.freedesktop.org/git/poppler/poppler.git"
 
   bottle do
-    sha256 "9b97533f63d2e09d7fdbeeff064015d43d7490cad118ca559d8c699985e9778c" => :catalina
-    sha256 "c41c9aff6ed97d122c0806da50ed6ec8d9e7df118c38379530bf72850979927e" => :mojave
-    sha256 "b55894e5ad440cd064a7dbac82510d91041d188501a9659f4ba76bef13acbe6d" => :high_sierra
+    sha256 "2e345a29241f3fe39f613433509c3479b1efdf2464524be0e9d50664008acaf9" => :catalina
+    sha256 "2c499e06db5f20fcb3cc1e7e1e8179c5878f873d48f66633f930ce28372fe99b" => :mojave
+    sha256 "997ae43003a20c91ac0589b05b868da76429f541b4eec44a0035c670b390bf13" => :high_sierra
   end
 
   depends_on "cmake" => :build
