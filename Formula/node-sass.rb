@@ -9,7 +9,7 @@ class NodeSass < Formula
   depends_on "node"
 
   # pull request at #47438
-  #conflicts_with "dart-sass", :because => "both install a `sass` binary"
+  # conflicts_with "dart-sass", :because => "both install a `sass` binary"
 
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
