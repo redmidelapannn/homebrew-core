@@ -5,6 +5,12 @@ class X8664ElfGcc < Formula
   mirror "https://ftpmirror.gnu.org/gcc/gcc-9.2.0/gcc-9.2.0.tar.xz"
   sha256 "ea6ef08f121239da5695f76c9b33637a118dcf63e24164422231917fa61fb206"
 
+  bottle do
+    sha256 "bc6fe2fdef986564ce54f08234bad276600d47ca771f76b8da774186c7d9b03c" => :catalina
+    sha256 "6633f21fba70c0c57880b6e4711e0084773d8a4e86e42af41ae631a5426a3d85" => :mojave
+    sha256 "eaeeca0e18dfa2c12381ff1bd196932f88bd18fc91e1aed2116363cef034e736" => :high_sierra
+  end
+
   depends_on "gmp"
   depends_on "libmpc"
   depends_on "mpfr"
