@@ -7,10 +7,10 @@ class ActivemqCpp < Formula
 
   bottle do
     cellar :any
-    sha256 "c06d4253f9496b49b63c224637a97525b13ecb834884a3548adbdafe4dde0a73" => :catalina
-    sha256 "024bf1c2c3ef8e612180b9f82c98f854235e8e371e01210c142304a762a30b3c" => :mojave
-    sha256 "21855925e7e9ecfe125c959c84a6bce710ca409a2a33f4f8d396f45cc52a4ab9" => :high_sierra
-    sha256 "c994de229e86fb7e80c846d6f2b44acba306014f334ba65550c15102214dbcb8" => :sierra
+    rebuild 1
+    sha256 "41d9b1bb67b0066b275522c5585eb82dbc944b2d6b9c4f85f1ceb27272512ae0" => :catalina
+    sha256 "6abb15d8b4beb98d1455accb17d98076da1a5bd225b05fa9c0863599e8bf6e55" => :mojave
+    sha256 "c941066b23823d672d1a2342cbb5c19c160d5f3d8b23775ba2d4c4c2913bc59c" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
