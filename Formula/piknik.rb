@@ -7,13 +7,10 @@ class Piknik < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "4c8bce52891ea6547f5644108b72300405c27e84e539fde0fa60c25e69db7a8e" => :catalina
-    sha256 "eee56739c24346b50d4fb7afa1285c87fbea135f3acd5fa90d1c2b9a81f84284" => :mojave
-    sha256 "1209dc34580813c42b1075174e9f78e049f43449845c63aa3f033e761ecf0bd0" => :high_sierra
-    sha256 "fffe6c2329ae0840061a464162703ec7cd26649cd985d1ff4de37315059b9357" => :sierra
-    sha256 "40b1bdb322e89f3c955519a3156f8ab9ed7aa3833f0887f1bb1ccf6224038de8" => :el_capitan
-    sha256 "c1bb1b4632aca54d93490f53b9142f7f808abec1cd6761418df63f11abeb80fe" => :yosemite
+    rebuild 2
+    sha256 "085dfd50bfb254b8f1c2feab294665591299c9334878aea44a2fddc3f5572739" => :catalina
+    sha256 "4b014f483d8555c98fd17664e59fa8e00e67fabdf860cd332f870eb86df7fa41" => :mojave
+    sha256 "98fd12dd1dea894bdddac59086bcad80c6a4556cc81995f8c767e46841f95a19" => :high_sierra
   end
 
   depends_on "glide" => :build
