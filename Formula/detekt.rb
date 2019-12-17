@@ -6,9 +6,9 @@ class Detekt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e3788d2fa44d85703fac30c55da318c3f772a9c6dc8274c631c69f8b25872f6e" => :catalina
-    sha256 "e3788d2fa44d85703fac30c55da318c3f772a9c6dc8274c631c69f8b25872f6e" => :mojave
-    sha256 "e3788d2fa44d85703fac30c55da318c3f772a9c6dc8274c631c69f8b25872f6e" => :high_sierra
+    sha256 "9ad546ab4a1d58fd28188470257b4ee128e3a96c6565e2db4df026f3020f3f52" => :catalina
+    sha256 "9ad546ab4a1d58fd28188470257b4ee128e3a96c6565e2db4df026f3020f3f52" => :mojave
+    sha256 "9ad546ab4a1d58fd28188470257b4ee128e3a96c6565e2db4df026f3020f3f52" => :high_sierra
   end
 
   depends_on :java => "1.8+"
