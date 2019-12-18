@@ -4,6 +4,7 @@ class Auditbeat < Formula
   url "https://github.com/elastic/beats.git",
       :tag      => "v6.8.5",
       :revision => "22b590e4e8dbb91bdcfe8689e59dcb04447eeef6"
+  revision 1
   head "https://github.com/elastic/beats.git"
 
   bottle do
@@ -14,7 +15,8 @@ class Auditbeat < Formula
   end
 
   depends_on "go" => :build
-  depends_on "python@2" => :build # does not support Python 3
+  # https://github.com/elastic/beats/pull/14798
+  uses_from_macos "python@2" => :build # does not support Python 3
 
   resource "virtualenv" do
     url "https://files.pythonhosted.org/packages/8b/f4/360aa656ddb0f4168aeaa1057d8784b95d1ce12f34332c1cf52420b6db4e/virtualenv-16.3.0.tar.gz"
