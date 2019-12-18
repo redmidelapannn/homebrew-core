@@ -21,11 +21,6 @@ class Mpdas < Formula
     etc.install "mpdasrc.example"
   end
 
-  def caveats; <<~EOS
-    The example configuration file was placed in #{etc}/mpdasrc.example
-  EOS
-  end
-
   plist_options :manual => "mpdas"
 
   def plist; <<~EOS
