@@ -8,10 +8,6 @@ class Awscurl < Formula
   sha256 "0faef7dc822cef9c423185ed176636b710954bdaa36218f0d40d1a73ad444dab"
   head "https://github.com/okigan/awscurl.git"
 
-  # TODO: If you're submitting an existing package, make sure you include your
-  # bottle block here.
-
-
   depends_on "python"
 
   resource "certifi" do
@@ -80,6 +76,6 @@ class Awscurl < Formula
   end
 
   test do
-    assert_match "Curl", shell_output("#{bin}/awscurl --help")
+    assert_match "Curl", shell_output("#{bin}/awscurl")
   end
 end
