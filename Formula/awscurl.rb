@@ -70,7 +70,6 @@ class Awscurl < Formula
     sha256 "f3c5fd51747d450d4dcf6f923c81f78f811aab8205fda64b0aba34a4e48b0745"
   end
 
-
   def install
     virtualenv_install_with_resources
   end
