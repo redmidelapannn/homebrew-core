@@ -8,6 +8,13 @@ class Awscurl < Formula
   sha256 "0faef7dc822cef9c423185ed176636b710954bdaa36218f0d40d1a73ad444dab"
   head "https://github.com/okigan/awscurl.git"
 
+  bottle do
+    cellar :any
+    sha256 "2bb4366ed3ff8a1f797405ea98b4b3dbdb664df318cd6c20896fa1f210051a2e" => :catalina
+    sha256 "f33441fb887a4c76ecf05bf030ab03329b341da014d8f95c9425d9992b292e9d" => :mojave
+    sha256 "b42b8c9ab095cd8bff022ef4bfd7a98f210dd2b5a6944d94f2418d3b5bd16fef" => :high_sierra
+  end
+
   depends_on "python"
 
   resource "certifi" do
