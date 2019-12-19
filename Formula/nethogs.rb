@@ -6,13 +6,10 @@ class Nethogs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cc7d9af4eebb27c162e280dd551742ed0346cc807e45980e2ce6de8b1f8b26ff" => :catalina
-    sha256 "a43516ede7e2046c39f1984e4afaee53a3705a81d78491827e33a6a3f631bed8" => :mojave
-    sha256 "b70632b33aeb7f23c93cbd27cdb36d49382f3619684c32b60c76129a5d64195e" => :high_sierra
-    sha256 "25731b08cad9b8f5a420172bab21d6986d49ee7044cbdd3a7717c6b10ee8da8d" => :sierra
-    sha256 "f133cdfd28bd88778241a607fda39d17419d8aaf24fd6de49d8a086e112fc7bf" => :el_capitan
-    sha256 "aa00775f5f8add09c031b13d3ec2575b082da47aa573e869288b28cad879f431" => :yosemite
-    sha256 "3652cadd0558c01c522e586a483b03b95badf98028ab3b7f9a227f8bae275def" => :mavericks
+    rebuild 1
+    sha256 "086d32f392218955ae99c7c5d03d40d5d50326f1dc073c40b3b4010676575397" => :catalina
+    sha256 "81c45eb47c80ecc8d94e83bec831f07e8be9b7657a4b72cad3d1bd7f03ee7fb1" => :mojave
+    sha256 "93f9ea3c8ca1d1386fefbeda2d2b480e46894d2b9d8a6c53c84da8586d87b89b" => :high_sierra
   end
 
   uses_from_macos "libpcap"
