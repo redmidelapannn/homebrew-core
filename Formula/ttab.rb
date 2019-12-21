@@ -4,6 +4,13 @@ class Ttab < Formula
   url "https://github.com/mklement0/ttab/archive/v0.6.1.tar.gz"
   sha256 "5ccfb01c8798bcc78de09ffaeb586eddd5b93166ddf6101167ac9b3202c6e5e1"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "0ecae475d8c4b33e000f833f1e1bb3bb3e2b8673c1dea4ce3601ca004eebc52a" => :catalina
+    sha256 "0ecae475d8c4b33e000f833f1e1bb3bb3e2b8673c1dea4ce3601ca004eebc52a" => :mojave
+    sha256 "0ecae475d8c4b33e000f833f1e1bb3bb3e2b8673c1dea4ce3601ca004eebc52a" => :high_sierra
+  end
+
   def install
     bin.install "bin/ttab"
   end
