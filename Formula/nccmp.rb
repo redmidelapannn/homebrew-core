@@ -4,6 +4,13 @@ class Nccmp < Formula
   url "https://gitlab.com/remikz/nccmp/-/archive/1.8.6.1/nccmp-1.8.6.1.tar.gz"
   sha256 "5b30245dbad04afd6f349010b34e404c316671ac69ea778d4b3c5d12b680ed7c"
 
+  bottle do
+    cellar :any
+    sha256 "4317e1167cf6810427dbe299c5ce0d161f2fbf5d2276163c90c8d749e318035c" => :catalina
+    sha256 "e062dc3a3749aba6f5ec40b0b3c486e00799f738ba1e53a68a5c0b89e7ecc84d" => :mojave
+    sha256 "325fb7db76da2de201451141f87100e2211ab97705ebe527b18b439687c807e2" => :high_sierra
+  end
+
   depends_on "netcdf"
 
   def install
