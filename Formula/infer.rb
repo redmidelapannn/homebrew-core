@@ -8,9 +8,10 @@ class Infer < Formula
 
   bottle do
     cellar :any
-    sha256 "b6e5941d9be1c640b2dd0430801be1b59eb91ddc56c9e8e454c45af01c812476" => :catalina
-    sha256 "166a3baf77f343a2bdd43fb772b93bd3610d6baf4f1e39e8fc6aa83e46029ef8" => :mojave
-    sha256 "c7bb9d37a9d77fbc2019ffd6f80ce7e7a3992c4ac0a95235c335ce61f43993e9" => :high_sierra
+    rebuild 1
+    sha256 "5c7b56daa5861ab90372a7d52b94e50b5f0d1a714378ad443043b1b1384b080c" => :catalina
+    sha256 "364f7256b5a1abddaeefe4b723a1c462d58b227b1448bd97081abb069061b5b9" => :mojave
+    sha256 "8a97e4e2511e92175877152011aead9b4dc8b477c0e7c3ac4dbf654850047e21" => :high_sierra
   end
 
   depends_on "autoconf" => :build
