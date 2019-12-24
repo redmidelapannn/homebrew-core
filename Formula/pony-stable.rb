@@ -7,10 +7,10 @@ class PonyStable < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ac8a8ee51543c3529f4d6d0d385c93602b146a7d62a9e7012c4d61bb374f9f78" => :catalina
-    sha256 "7da637b58849f22f8ff032854b405eb5a7c32ea3603b524146e4cf24f67ded1c" => :mojave
-    sha256 "a81295a6570890eb1b6ae816a80d58ffa8960858efbd4744a8ec7bd22986eadc" => :high_sierra
-    sha256 "7e6c0e27461f443549eeaad7430ccee0fc8b833acf5c9658255de4d5dcd52b21" => :sierra
+    rebuild 1
+    sha256 "c40f7c807e4ae56bee9681bd9b7c524ab491745e94d6955a48431f7bd5926f55" => :catalina
+    sha256 "c40f7c807e4ae56bee9681bd9b7c524ab491745e94d6955a48431f7bd5926f55" => :mojave
+    sha256 "7e9fe537d567fd28dd94b5b451b7f4109eb14f462e6882a21e5d722c808352fe" => :high_sierra
   end
 
   depends_on "ponyc"
