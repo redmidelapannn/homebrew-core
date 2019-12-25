@@ -4,6 +4,11 @@ class GitMachete < Formula
   homepage "https://github.com/VirtusLab/git-machete"
   url "https://pypi.io/packages/source/g/git-machete/git-machete-2.12.6.tar.gz"
   sha256 "86cfbd32d66c193302b0b27993b4c5d5a1a9b2d1c338f133b6f4024d8e53edc0"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "058e417dd4a5f8f63c1b7b5c46e3202c1e5a12b167a6983b0617d368e9b78b06" => :mojave
+  end
+
   depends_on "python"
 
   def install
