@@ -7,10 +7,9 @@ class Libvisio < Formula
 
   bottle do
     cellar :any
-    sha256 "2eb8a748fa58bcd991bcf433d78895d54082f1634999b51b8eef0a6c7108509e" => :catalina
-    sha256 "eceb874ef98ff8e83b1459b946c4a5d2da805107555e31c4b9b6421fa6afcfa5" => :mojave
-    sha256 "21bf0ad3a0c856356491eec3eed8ed9daf739089597ce4649183bd0be4255266" => :high_sierra
-    sha256 "12f6114e5d146f54b3faba8015ac5d85b94a72b52898b975145d410aa7bb49db" => :sierra
+    sha256 "6c642d3d5e094f57dc5d3d907a625842eeff60a0e7356d121e9121857caa6681" => :catalina
+    sha256 "ce3c8d9d9f6fa05466622288339a7cd224ca5f874b1d7fc81204294efe212bc4" => :mojave
+    sha256 "0dd0c9f7d5f607dea5bad9c09c2edb63e9107dfca9b6d26173f1b0d4a242ba06" => :high_sierra
   end
 
   depends_on "cppunit" => :build
