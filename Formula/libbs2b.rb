@@ -6,14 +6,10 @@ class Libbs2b < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "61ba0d4bf4a016a7634256d2c7eef59d55dacb3f33730d8f2905f9fa35db0108" => :catalina
-    sha256 "b1236f81550a661e9b6ca6db5c828465d32cf0ca8e7db9504cb94871760c4a22" => :mojave
-    sha256 "0d2faffb7452ddd66d306746065dc7264d66c3e8f60a3525ee4eb911cd546bcd" => :high_sierra
-    sha256 "0431cb3f7cac90d18d854abe956ad296ba399832b733293e55ea58f0f11ba1b1" => :sierra
-    sha256 "7949aa7768466a789d992d079a63d5933d19e76ebfb330b38d3b4822929a71ac" => :el_capitan
-    sha256 "62a45fde4ae7db34b1c14212d2c0ec5c603fdc403dc1df2b629972789dc7489e" => :yosemite
-    sha256 "7cf43c31d5aee33a241af345c4b8a05fc73f48afc8b9f37d5ad9c4fa22d6920e" => :mavericks
+    rebuild 2
+    sha256 "a4b25a00fdef0b9d758c11beba2a3e50e7ccfd9fdde6a0ff02dba0fd0ada320f" => :catalina
+    sha256 "0c619cee58a5163d89a5bf7d08ad1fbb12d92488d9359c7b01236efd962752d0" => :mojave
+    sha256 "7d118599b12923bb693ffd2ec817c76e36201d629c606bc66ee3f92d6f24d138" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
