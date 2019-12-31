@@ -6,8 +6,9 @@ class Orbit < Formula
   revision 1
 
   bottle do
-    sha256 "eac54e39ca245af7863d5cdc89bc0aace7043fe61673075452e559a680062043" => :mojave
-    sha256 "c3157060c685ebb73cfdc51acf0ce3ab62f549302c976d220136aa5fa8123a0c" => :high_sierra
+    rebuild 1
+    sha256 "395819db6af8805166862f2d55ce3678ddc40303ff11d335f49d258646bd8dec" => :catalina
+    sha256 "0cd4c221d1cac74ab76ff29a83e220d3bd9496bb97bd3f1c550e2db87089bcef" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
