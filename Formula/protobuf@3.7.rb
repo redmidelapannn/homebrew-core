@@ -8,9 +8,10 @@ class ProtobufAT37 < Formula
 
   bottle do
     cellar :any
-    sha256 "de40ff1011be89e49ac1baf9a973349d7ec26b3a3ae0f94defe7230d07099ca5" => :mojave
-    sha256 "cfe4d90579043bd7b4c4844c7a0154a936aada8cf173a78725d1e574547dd290" => :high_sierra
-    sha256 "df1240601237fe2ae9b40be83c340e7527ab0e442727e4b47afe9468eeb357a7" => :sierra
+    rebuild 1
+    sha256 "53dcb2702726fca256e5e1a2be16f7418c50d5b350c5b8cb38f580ca4b794850" => :catalina
+    sha256 "5dfee5cc9a6b26a368d2d0177bab241a3347e3c0910d5bf8ea62c3816e1fd945" => :mojave
+    sha256 "003a63786d77f534fb70bdd96fe25d2209dd8b63d8b5395d2e01e8580e8547c1" => :high_sierra
   end
 
   keg_only :versioned_formula
