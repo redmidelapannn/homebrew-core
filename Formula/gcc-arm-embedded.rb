@@ -5,6 +5,10 @@ class GccArmEmbedded < Formula
   version "9-2019-q4-major"
   sha256 "f162a655f222319f75862d7aba9ff8a4a86f752392e4f3c5d9ef2ee8bc13be58"
 
+  bottle do
+    sha256 "195b131efaccfacf7fd562e93dad3ede1afe4873bfb6e48506c2fb6669a62437" => :catalina
+  end
+
   depends_on "gnu-tar" => :build
   depends_on :xcode => ["10.0", :build]
   uses_from_macos "expat"
