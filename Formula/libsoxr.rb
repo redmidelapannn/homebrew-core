@@ -6,11 +6,10 @@ class Libsoxr < Formula
 
   bottle do
     cellar :any
-    sha256 "a6c8f1003e47e95e1653d617df2a228935fcea753bb578904687eb211d24d213" => :catalina
-    sha256 "060d8d9eff5fc5152bdb8e1be67e2dbbdeebc6bfeb1deaf0561f96ba0a2de184" => :mojave
-    sha256 "10b952f7e1ca5f9c839f87a2920e6739d4e3c262e88b05a3b8a62074de69e5ac" => :high_sierra
-    sha256 "b469390e789389d10825c86d2ed825e1cb64efd14ecf98870043178846ed38ab" => :sierra
-    sha256 "473b6f61851824ec47918a423295332f00d2ac802f2da4ef7058c621a4f365b0" => :el_capitan
+    rebuild 1
+    sha256 "e17c2437f5ad1977ac2dc5d90d595e67f4639de0fadcbcb2912b82a159cb7a8f" => :catalina
+    sha256 "364306e1c0e7e77ccd684cc798dd8803b50f7eedddb7c285ef346bdd3802ea7b" => :mojave
+    sha256 "ca0535f099d23482b83a81b032ad84154b5a43bd58cc869d260c93174e8b01f4" => :high_sierra
   end
 
   depends_on "cmake" => :build
