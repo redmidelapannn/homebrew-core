@@ -4,6 +4,12 @@ class Aflplusplus < Formula
   url "https://github.com/vanhauser-thc/AFLplusplus/archive/2.60c.tar.gz"
   sha256 "8b82c585c255f87536a7aef76da635d72675d75674dfc017dfe2e0d8d8bf397b"
 
+  bottle do
+    sha256 "ad5d70b574242f927b29716b800fb69057f4b567e65da9edab119e271935ce44" => :catalina
+    sha256 "512bede8922ec4a40b2642638ddb843cee2e19633f6f762e26c47b176a411b57" => :mojave
+    sha256 "f6cb3566e82e6a8e9e9abcb873e891dd6eb04010500acef328a0a8433a9c5c9a" => :high_sierra
+  end
+
   depends_on "wget"
   depends_on "automake"
 
