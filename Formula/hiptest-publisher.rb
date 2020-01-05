@@ -5,6 +5,10 @@ class HiptestPublisher < Formula
   sha256 "ec2e89637655935616e7f427778c4dbe205891ea0f58e9b30c7130532a48dcfe"
   head "https://github.com/hiptest/hiptest-publisher.git"
 
+  bottle do
+    sha256 "1ad4f4710b3620982958684df8010e4e70abf20ee44ef60fdbe2c197500ecdfc" => :catalina
+  end
+
   uses_from_macos "ruby"
 
   def install
