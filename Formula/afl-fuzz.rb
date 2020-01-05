@@ -5,9 +5,10 @@ class AflFuzz < Formula
   sha256 "1d4a372e49af02fbcef0dc3ac436d03adff577afc2b6245c783744609d9cdd22"
 
   bottle do
-    sha256 "7b72b8e23c2227ced43e7cd51fd14e9134af5dab41acefcd76b2dd9671f483ad" => :catalina
-    sha256 "8746ae555c6f7fb52b8deff1a9584e121568da557eb29e967147dc1c6beee305" => :mojave
-    sha256 "cb0c464f59c82a4df3a8ec0cae87ceea54b49445da53be4f32c6a343d7180601" => :high_sierra
+    rebuild 1
+    sha256 "7dc10c4e66db83f756c14510293e185379af29ddb51abc0f5067080347cd9072" => :catalina
+    sha256 "5102f7a2c46f00bc96fe6e49ba8c5051e3e264ab7f3cde81f9b0d1b8b46330ae" => :mojave
+    sha256 "85e1575f237cfd13a2b2300345509566f08e2f850339f4d41ac2b461a3a751e5" => :high_sierra
   end
 
   conflicts_with "aflplusplus"
