@@ -6,11 +6,10 @@ class Lfe < Formula
   head "https://github.com/rvirding/lfe.git", :branch => "develop"
 
   bottle do
-    sha256 "3b141e0c7c6d6630883e0ed5a00590e4e5b868fc1817b99c62afaccc4cb361dd" => :mojave
-    sha256 "1a0f582845e8c0c87331c9e9148b06dde79483847cc1bb31674596fe2d3c3422" => :high_sierra
-    sha256 "a6f27b9dd837d866fb471db3556677112c4f8ca3df386596f975083a939c8a16" => :sierra
-    sha256 "47827019926bdbfb6b0fa0c7fe123b0007482670aa651408e736f00c4796ce01" => :el_capitan
-    sha256 "aab3e33761e9db3c4e5cceb8769edca70f2eb618e0bed5e3658ab2fdc3bae2ac" => :yosemite
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "0a9d3537241e897decbe42c6bf25428ad6e0cfd4393b78644431f7eba82e807b" => :mojave
+    sha256 "5c0482a9b11e64c473e13c77d46e036d3ffd38e13278a043eb06772bdc87bcff" => :high_sierra
   end
 
   depends_on "erlang"
