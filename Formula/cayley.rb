@@ -7,8 +7,10 @@ class Cayley < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e647be34623b1a8d635df7508f09111dfd8eb6f368a6979f9c5619b016beda8c" => :mojave
-    sha256 "4177fdcb60422d484f1377e5367844ebcc9be471fffc76e717d8ad90e49ee99c" => :high_sierra
+    rebuild 1
+    sha256 "5190bc885e676a30b80ff47062c7cd963eb41a20a0f537145a75f62ff5752ba9" => :catalina
+    sha256 "3c22cae0efe78a0f7f873ae3ce157a480867033e456104d8dca9e76f6a7ceeb1" => :mojave
+    sha256 "ba8e142da39a10c14bbffdb6b7dac2a166cc359e836a364718d793e18b987acf" => :high_sierra
   end
 
   depends_on "bazaar" => :build
