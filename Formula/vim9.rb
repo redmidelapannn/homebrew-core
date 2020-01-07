@@ -6,6 +6,12 @@ class Vim9 < Formula
   sha256 "67a1bb7b17d1ae4261081848d27c8b65fec620158864dc81143190824fe3c1d6"
   head "https://github.com/brammool/vim9.git"
 
+  bottle do
+    sha256 "54eaad9228482324e4bdc1ee868d00607ad1bb9f2706370b16fce21587a8b67b" => :catalina
+    sha256 "a1b6539e186fdbe7ebd05579a528f92db39dc59eb2cc580179f158deb10d9442" => :mojave
+    sha256 "7901f0bf5075874d399ba93beb03f843c3f74a867473f29acc39eae83c77cfbd" => :high_sierra
+  end
+
   depends_on "gettext"
   depends_on "lua"
   depends_on "perl"
