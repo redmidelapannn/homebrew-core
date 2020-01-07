@@ -6,10 +6,10 @@ class Xidel < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "885e1685c81a6abb9767a6e807894a98b5d296952e60fdad6341961ce4dc737e" => :mojave
-    sha256 "16eb3dc18004c0be8e384714ef543aa6dfe0b026e4ec0a7b6294dd499606bb12" => :high_sierra
-    sha256 "623ba6f72816f4d9cb2055539a023f36a620add9c77a61193fcaea88a08cedf5" => :sierra
+    rebuild 2
+    sha256 "190a27f9a52428dddf17bbe12f264fc1832a16c43a32fcabe47558175e1e7c1d" => :catalina
+    sha256 "1b077dbae36df49e5eea0519bcb7fc4ff9cc34d3f15244018ade5a3d2ed13781" => :mojave
+    sha256 "b81c7c82a3aa73b9ca8f2e6e849e9895673cafeec0fc4a15c9bd3dec893cd044" => :high_sierra
   end
 
   depends_on "fpc"
