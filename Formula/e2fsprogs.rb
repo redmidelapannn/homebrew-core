@@ -6,10 +6,9 @@ class E2fsprogs < Formula
   head "https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git"
 
   bottle do
-    sha256 "a2b0a389e56c197c9a68c3a0598933534c6e0da0b15023dec490cbe3889d49c7" => :catalina
-    sha256 "8bfa7f8116eabc2422696487b228493ddcc2991699a3158de30d6dba6c10ef73" => :mojave
-    sha256 "f0850aaef4670664e086d9a30568f5a50b5da21bf27d03b8e26478d44b2436f7" => :high_sierra
-    sha256 "70bfe479fd8e5769780ad9b408739653c8b4ef94d4752c9b65ebe134c2b03eb4" => :sierra
+    sha256 "dbb3ffccb4bc6226a97e286a9cea43bb3bfce651762938024a599cc3d8535eaf" => :catalina
+    sha256 "7aa04dd0248a378fd1b068832305c75cef5a7fbbdadb6482a7dc03a9096f9abf" => :mojave
+    sha256 "3bdfa972a657c124eb2786f12e2daeaf4ca763bc8ae97171e5f105dcc1e3c046" => :high_sierra
   end
 
   keg_only "this installs several executables which shadow macOS system commands"
