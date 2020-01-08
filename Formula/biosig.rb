@@ -9,6 +9,7 @@ class Biosig < Formula
   depends_on "gnu-tar" => :build
   depends_on "pkg-config" => :build
   depends_on "dcmtk"
+  depends_on "libb64"
   depends_on "suite-sparse"
   depends_on "tinyxml" # if version == "1.9.5"
 
@@ -25,5 +26,6 @@ class Biosig < Formula
   test do
     system "save2gdf", "-h"
     system "physicalunits"
+    system "biosig_fhir"
   end
 end
