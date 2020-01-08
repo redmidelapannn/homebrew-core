@@ -2,7 +2,7 @@ class Libffi < Formula
   desc "Portable Foreign Function Interface library"
   homepage "https://sourceware.org/libffi/"
   url "https://sourceware.org/pub/libffi/libffi-3.3.tar.gz"
-  mirror "http://ftp.debian.org/debian/pool/main/libf/libffi/libffi_3.3.orig.tar.gz"
+  mirror "https://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.3.orig.tar.gz"
   sha256 "72fba7922703ddfa7a028d513ac15a85c8d54c8d67f55fa5a4802885dc652056"
 
   bottle do
