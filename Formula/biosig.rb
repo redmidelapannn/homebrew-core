@@ -11,7 +11,7 @@ class Biosig < Formula
   depends_on "dcmtk"
   depends_on "libb64"
   depends_on "suite-sparse"
-  depends_on "tinyxml" # if version == "1.9.5"
+  depends_on "tinyxml"
 
   def install
     system "./configure", "--disable-debug",
@@ -24,8 +24,9 @@ class Biosig < Formula
   end
 
   test do
-    system "save2gdf", "-h"
-    system "physicalunits"
-    system "biosig_fhir"
+    system "#{bin}/save2gdf", "-h"
+    system "#{bin}/physicalunits"
+    system "#{bin}/biosig_fhir"
+    assert_match "mV\t4274\t0x10b2\t0.001\tV", shell_output("#{bin}/physicalunits mV").strip
   end
 end
