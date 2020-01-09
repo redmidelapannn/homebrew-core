@@ -81,7 +81,7 @@ class Libffi < Formula
       }
     EOS
 
-    flags = ["-L#{lib}", "-lffi", "-I#{lib}/libffi-#{version}/include"]
+    flags = ["-L#{lib}", "-lffi", "-I#{include}"]
     system ENV.cc, "-o", "closure", "closure.c", *(flags + ENV.cflags.to_s.split)
     system "./closure"
   end
