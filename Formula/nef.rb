@@ -4,6 +4,12 @@ class Nef < Formula
   url "https://github.com/bow-swift/nef/archive/0.5.2.tar.gz"
   sha256 "050181c1e541e54428f8214092b17a321fb1e4f2460ae2bd8115063637244b02"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f9e5df43665f19502dac989894bcc63e68d81c98a28e04013b070fec0b250383" => :catalina
+    sha256 "7625d523022c5e6f5c766fe30d6777a946a0488bb61b14f04b88b308b49ef9fb" => :mojave
+  end
+
   depends_on :xcode => "11.0"
 
   def version
