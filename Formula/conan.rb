@@ -7,6 +7,7 @@ class Conan < Formula
   sha256 "c820ed81dc07b7373b5a5a9537d85896435037fe9b35d43052f35ef05a69f411"
   revision 1
   head "https://github.com/conan-io/conan.git"
+  revision 1
 
   bottle do
     cellar :any
