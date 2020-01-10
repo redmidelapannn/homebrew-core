@@ -8,6 +8,7 @@ class Idris < Formula
   url "https://github.com/idris-lang/Idris-dev/archive/v1.3.2.tar.gz"
   sha256 "48429b8ed80980f9a4d38c29e51fcbb51ea511640806cd3cb7752bfdbb4644d2"
   head "https://github.com/idris-lang/Idris-dev.git"
+  revision 1
 
   bottle do
     sha256 "2b3108c6e19675138e12ea5a3056c5d29d3abba503367333070fd68c94cd9253" => :mojave
