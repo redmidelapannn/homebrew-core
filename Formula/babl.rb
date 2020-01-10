@@ -7,10 +7,9 @@ class Babl < Formula
   head "https://github.com/GNOME/babl.git"
 
   bottle do
-    sha256 "e00f9ef31c286109f9f6cbbfb819876306e40c67380338c684b3c63759a94c94" => :catalina
-    sha256 "298f41a91ed4b93bbc29254f40691537ffd14bee7322d862b1b96f5996cfd865" => :mojave
-    sha256 "0d8bf0f5aea427b7d9ca8b05cdf49b0a2bce4c3f41b9d148f42103e2454de667" => :high_sierra
-    sha256 "3cd4d6d3cc86dc1bc2b8411bf4ffb911df58458d54fc938730fdede11587c624" => :sierra
+    sha256 "c9014b4ff7d1fe0e64955cbf46a101acfac4b0b5e2ba7996bf5539a53b077deb" => :catalina
+    sha256 "daeb42fb349632f8f6ea0e8d5fb856c23fe13eb53b9bd04d0203722d2b25544c" => :mojave
+    sha256 "31149b9b996ceea56be79f0e5eb6572363056c42dbcb67c7405ea1cdf163c45f" => :high_sierra
   end
 
   depends_on "meson" => :build
