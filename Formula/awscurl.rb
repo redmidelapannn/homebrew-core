@@ -7,7 +7,7 @@ class Awscurl < Formula
   sha256 "3ce06d105067b42398cf0bb6696742b790258e16487d5e5afa025b7c3ca983e4"
   head "https://github.com/okigan/awscurl.git"
 
-  depends_on "python"
+  depends_on "python@3.8"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/41/bf/9d214a5af07debc6acf7f3f257265618f1db242a3f8e49a9b516f24523a6/certifi-2019.11.28.tar.gz"
@@ -77,7 +77,6 @@ class Awscurl < Formula
     assert_match "Curl", shell_output("#{bin}/awscurl --help")
 
     output = shell_output("#{bin}/awscurl --service s3 https://homebrew-test-none-existant-bucket.s3.amazonaws.com 2>&1", 1)
-
     assert_match "No access key is available", output
   end
 end
