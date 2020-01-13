@@ -9,9 +9,10 @@ class HttpServer < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d54d568edf8a41ba191780c8a5afbc283afc49a71db6a47259752eedbcd157b1" => :catalina
-    sha256 "abbcfb975903d901ed6e2d81e93f527143c76ac1813d181d8a4cbb6c4de58dbe" => :mojave
-    sha256 "df39f65c35d983da959f812f94ba676aa616b7c79ccb4385978ac37ec0055274" => :high_sierra
+    rebuild 1
+    sha256 "67d6514de92ff0b976dd80f3cceb235d4bd929319f02ac5f5f5118c88bd70174" => :catalina
+    sha256 "570cce1ba1c01cec882db141cc4be1be511ddd2d46ed65df98b541a8a9e089ac" => :mojave
+    sha256 "0d910eaa626ca99af283e43ce18094583c1f972486a74cdd3bddb69ab32c774f" => :high_sierra
   end
 
   depends_on "node"
