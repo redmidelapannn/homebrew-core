@@ -7,10 +7,8 @@ class Gforth < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "9a3670647cbf4c87a62a271032ff04b70de04a9b2b3091be0c2a00cbfba860f2" => :catalina
-    sha256 "cba74a11ad3333f1462e3defcbc5903a1bc05ecca2d7686633da15affb12ebf5" => :mojave
-    sha256 "5643950f876b48bab6c92c8e9c016b8cf026907ee0c21f81a6a68db5b0a70e15" => :high_sierra
+    sha256 "6b3a0fd3ad3db74f22e2f5eeebba2b94f9fe09652624b82fc7f0218b47679ed0" => :mojave
+    sha256 "7efff60ab5339a36c6127d506432cb980011bda9f1748ea469019e4e4120eb5f" => :high_sierra
   end
 
   depends_on "emacs" => :build
