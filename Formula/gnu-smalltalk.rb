@@ -8,10 +8,8 @@ class GnuSmalltalk < Formula
   head "https://github.com/gnu-smalltalk/smalltalk.git"
 
   bottle do
-    sha256 "077386aefae2031f572520483582af1b187f7a7ffa47ca47ed417c5bf795eaf3" => :catalina
-    sha256 "15f6824f01f91295ba8d35b3020cae12134bb948dc9fde573ac178ce4fda62c4" => :mojave
-    sha256 "612a100c68c820fd67e05c39f5574589a7fb8803d93fc15ae50f1f343ca577a5" => :high_sierra
-    sha256 "ce5e9408786fee4e48bc2b7413de7e62c0c6f192f754a1403044687c1767f89d" => :sierra
+    sha256 "95bfe185cd8f68faf687ac0563e9dd30eb5755554323dc52669f5d63c0d54fa7" => :mojave
+    sha256 "3916ad78357e4f0d95c83ab90ac2baaaf59f816fcde2ae508795cd223651bec6" => :high_sierra
   end
 
   depends_on "autoconf" => :build
