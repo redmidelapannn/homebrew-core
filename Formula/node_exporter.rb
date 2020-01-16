@@ -8,10 +8,9 @@ class NodeExporter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "ff1a0c237371d710a60ae7692eb08fa96259840e7565f6345ed50821db2d27aa" => :catalina
-    sha256 "9ab6e123c1862749886247564ea64dede482a6cb9efb19c611e2a5a5b4595237" => :mojave
-    sha256 "5de4df63394055e449580b4b583f4411237f84096042eef63d3423b39f75ff2e" => :high_sierra
+    sha256 "76a5d0ea5f0a9073616fb128ba49d8f68d21c35d7a18d5c9e9abf744b2f0c83d" => :catalina
+    sha256 "4c0333f53d7b8e3f0f2c878e7603e8d76c3c274710897138fa6debb00898eb36" => :mojave
+    sha256 "1e3848b5701412583acbd485f93440e6efb397eae558919746b632e863fdca34" => :high_sierra
   end
 
   depends_on "go" => :build
