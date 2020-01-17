@@ -7,12 +7,10 @@ class Liblzf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "83b34b4b95753d9be2ae3abadf136d21d850561ca2e0b1473f560cf78153cff8" => :mojave
-    sha256 "cc8f446e597ea18f409543897acf2b9704779db4904ed833d66469e09fbf0301" => :high_sierra
-    sha256 "b5871cec84c0cb00b6a44fdce75ee519b243d3ea1f048b5634082279bf9234ed" => :sierra
-    sha256 "1319038c7de754dd38b22ec45b616419b60a0a8c19072374da01f5ee48f9e8c8" => :el_capitan
-    sha256 "1d8f96a8336407a1dd20adb305d6ecd7b1d534c0c2e9015596cb4259ea368eb1" => :yosemite
-    sha256 "025ca90ede89fa17407e1aec34f3a7cf3d91e414c2d629401c3b877e91c56661" => :mavericks
+    rebuild 1
+    sha256 "14ecfe46c0eca2e896b541f8de6a6e80bb00437f6334ceaab0705812fc051a9e" => :catalina
+    sha256 "f9bb64796582e2f5184779d76e3a27422b6be1326c0a220a1675e67968e392bb" => :mojave
+    sha256 "e7239f7696d1e143a9ce173429766e67f3a6b30c525681d46ab4a9cff3cd0d15" => :high_sierra
   end
 
   def install
