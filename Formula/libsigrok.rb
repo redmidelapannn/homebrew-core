@@ -4,6 +4,13 @@ class Libsigrok < Formula
   url "https://sigrok.org/download/source/libsigrok/libsigrok-0.5.2.tar.gz"
   sha256 "4d341f90b6220d3e8cb251dacf726c41165285612248f2c52d15df4590a1ce3c"
 
+  bottle do
+    cellar :any
+    sha256 "0996448743205339d130add73dbb878ed57d5993d8517054a5fd3d242103231c" => :catalina
+    sha256 "e962eb354ca39a370ba689ec1b956da899b5b26c8852a0f8b196805bea5eb0b4" => :mojave
+    sha256 "d59d264ecb06f016b238af0b2188ddc7b066f312523e53fd09bd74eacc77ba2d" => :high_sierra
+  end
+
   depends_on "doxygen" => :build
   depends_on "make" => :build
   depends_on "gettext" => [:buld, :test]
