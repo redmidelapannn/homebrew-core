@@ -5,10 +5,11 @@ class Jmeter < Formula
   sha256 "bbb3cb5fe0b16c1fa139727063f18d9aca6890c7edf53f3a614b8f929f1f1de9"
 
   bottle do
-    cellar :any
-    sha256 "be9973637adf70706a9e596b6d8098e3cb6d99757177d07c81a502da8ae6c719" => :catalina
-    sha256 "be9973637adf70706a9e596b6d8098e3cb6d99757177d07c81a502da8ae6c719" => :mojave
-    sha256 "be9973637adf70706a9e596b6d8098e3cb6d99757177d07c81a502da8ae6c719" => :high_sierra
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "b2e3f8f4e25726fee621ff70602919e148d44dac32e6c5dae9eda9673e08f1b7" => :catalina
+    sha256 "b2e3f8f4e25726fee621ff70602919e148d44dac32e6c5dae9eda9673e08f1b7" => :mojave
+    sha256 "b2e3f8f4e25726fee621ff70602919e148d44dac32e6c5dae9eda9673e08f1b7" => :high_sierra
   end
 
   resource "jmeter-plugins-manager" do
