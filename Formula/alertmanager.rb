@@ -4,6 +4,13 @@ class Alertmanager < Formula
   url "https://github.com/prometheus/alertmanager/archive/v0.20.0.tar.gz"
   sha256 "4789ef95b09ba86a66a2923c3535d1bfe30a566390770784c52052c7c83ee1bc"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a7309795dff05c65c486ed3e4d438c1e11416a173220d2b6fdc0367863c2422c" => :catalina
+    sha256 "4a97dcc814b0ee6a14471391f7c20b9ad5e4b9b084014bc4303cfd618b300c25" => :mojave
+    sha256 "6842d7b62180e3dc1fd969bd8afd237954f9b97c5b89331781c319773458f7ad" => :high_sierra
+  end
+
   depends_on "go" => :build
 
   def install
