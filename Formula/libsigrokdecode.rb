@@ -4,6 +4,12 @@ class Libsigrokdecode < Formula
   url "https://sigrok.org/download/source/libsigrokdecode/libsigrokdecode-0.5.3.tar.gz"
   sha256 "c50814aa6743cd8c4e88c84a0cdd8889d883c3be122289be90c63d7d67883fc0"
 
+  bottle do
+    sha256 "77ba71d57f6bf135d04a323e3189ceeeaf5fe4b2d6ebbc38c46b3ea0c0f2cc2c" => :catalina
+    sha256 "9f60ba73d3c7ab7848293ffee0963fa6e88c133faa42fd7378dff6c76c89b0ff" => :mojave
+    sha256 "556aeabbe2088319e154dbb45466a93bacc07de7c710b741dd15039c8d27da72" => :high_sierra
+  end
+
   depends_on "gettext" => [:build, :test]
   depends_on "make" => :build
   depends_on "pkg-config" => [:build, :test]
