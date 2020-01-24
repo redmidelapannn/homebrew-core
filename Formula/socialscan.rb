@@ -6,6 +6,13 @@ class Socialscan < Formula
   url "https://files.pythonhosted.org/packages/29/92/f542e98b8defae23ff45477f8eee750adadb6ab74f7acb3ab73e1e0c8784/socialscan-1.1.4.tar.gz"
   sha256 "7fd6c0babdaf8d1c67ab7bfdd215d669fb267f9f11b20b30749404929ccca38c"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "94b521ebee003928cccf0c1dc67fb14aff79ee7392c5ff5fd547e38f84918ad5" => :catalina
+    sha256 "0e97e948cbe862584e82662bb7456333e839277d6b90a63bb467f6bd7f81a2db" => :mojave
+    sha256 "56aca27ab81cdc770b42ead97f0799a5e1a6421e4aec1a26475b5f565901c02b" => :high_sierra
+  end
+
   depends_on "python"
 
   resource "aiohttp" do
