@@ -6,9 +6,9 @@ class Berglas < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "305e848eb3a7b671b10996b7b145ee8a41d46165c825450399497a920a92e759" => :catalina
-    sha256 "f7df64d6b12b4fe6fa458aa9d9b5d979589c5e0da9a0cf0e545c59d732734806" => :mojave
-    sha256 "e86deac6d0854b9dcdac69df25b5ce838c0ec9adf918c5855c457ff6a9975e95" => :high_sierra
+    sha256 "8698777a23d7603bd6eacef4c730be2fe6b2312b9bdc9c817779cb258b953998" => :catalina
+    sha256 "0f88ee734ebe789b6afe1ab099def0b366d56e1fe5b84d4db296512c6298fa85" => :mojave
+    sha256 "0e23844d9069ebc9652fa74f275f1e46b72467eb02f8436a0a1934032a1ad6bc" => :high_sierra
   end
 
   depends_on "go" => :build
