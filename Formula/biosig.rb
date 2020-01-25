@@ -25,8 +25,10 @@ class Biosig < Formula
 
   test do
     system "#{bin}/save2gdf", "-h"
+    assert_match "usage: save2gdf [OPTIONS] SOURCE DEST", shell_output("#{bin}/save2gdf -h | grep ^usage").strip
     system "#{bin}/physicalunits"
-    system "#{bin}/biosig_fhir"
     assert_match "mV\t4274\t0x10b2\t0.001\tV", shell_output("#{bin}/physicalunits mV").strip
+    system "#{bin}/biosig_fhir"
+    assert_match "biosig_fhir provides fhir binary template for biosignal data", shell_output("#{bin}/biosig_fhir 2>&1 >/dev/null |head -1").strip
   end
 end
