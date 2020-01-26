@@ -5,11 +5,9 @@ class Bochs < Formula
   sha256 "63897b41fbbbdfb1c492d3c4dee1edb4224282a07bbdf442a4a68c19bcc18862"
 
   bottle do
-    rebuild 1
-    sha256 "5a86a2dd7612402c22d0d1383123c69bdcdea2a108976e43b65910b97ea0dd83" => :catalina
-    sha256 "e891728542536430a5d04c6fcd645e53fe3521d9a4f0aa4f3ba7eff175b1066b" => :mojave
-    sha256 "2c21df2f382582ab435e1f9534aea7609a59c080d581ca0b1963f0e1720cdc66" => :high_sierra
-    sha256 "5a80b2f0e3447bebc7c29ba7f3b19b1038e84409f5c33766fb029a49ea64ad5a" => :sierra
+    sha256 "ed107f4c5c36a6186dce161fa1d0370787783c4f60cb07c1d316922c3647bc09" => :catalina
+    sha256 "8ab00cad6fe2bc0513184c5255a74824bf6400316ad9c9654010f6636dae9164" => :mojave
+    sha256 "c703569de39c69053a7efed50228a151d7303ff97f1a24b31d7521bbbade2f18" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
