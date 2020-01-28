@@ -4,6 +4,13 @@ class GitAnnexRemoteRclone < Formula
   url "https://github.com/DanielDent/git-annex-remote-rclone/archive/v0.6.tar.gz"
   sha256 "fb9bb77c6dd30dad4966926af87f63be92ef442cfeabcfd02202c657f40439d0"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "2e4afe444d855ba431b7268405df7388e0e9575d17c188d79c388cf9b1ccabb8" => :catalina
+    sha256 "2e4afe444d855ba431b7268405df7388e0e9575d17c188d79c388cf9b1ccabb8" => :mojave
+    sha256 "2e4afe444d855ba431b7268405df7388e0e9575d17c188d79c388cf9b1ccabb8" => :high_sierra
+  end
+
   depends_on "git-annex"
   depends_on "rclone"
 
