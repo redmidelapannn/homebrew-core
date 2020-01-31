@@ -6,10 +6,10 @@ class John < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "775f6a757aa829e874edb00b184a6c8cff028506f971d5b220b36194feb0c6eb" => :catalina
-    sha256 "3a5ccc4400712b8b3ceeb47ac563cc1fa3fa7b4bb60937d3c1d3218cf51f2e4a" => :mojave
-    sha256 "7e7f9960b5594da1e110c16613c9271e428d035ca468c3ae48ec4231b45aa2f1" => :high_sierra
-    sha256 "a92418e262ea3ca50d92e5677dd2755207d936a31c8042041955235a2907298d" => :sierra
+    rebuild 1
+    sha256 "88e7b8b3dbb79947dbbc1822a29d24c80dd5f6fbcd46c8d1a5479b5e80d84662" => :catalina
+    sha256 "c2cafb624da5756897b57e612cadb74fe591ed1852495cd94847863296af29a4" => :mojave
+    sha256 "61a27e5e70856387eddeab69cd77828c59b400de62f88dd497663c3ac6038f5f" => :high_sierra
   end
 
   conflicts_with "john-jumbo", :because => "both install the same binaries"
