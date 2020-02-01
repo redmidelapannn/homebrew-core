@@ -16,6 +16,12 @@ class Flint < Formula
       patch :DATA
     end
   end
+  bottle do
+    sha256 "bd34a2d87ee3143e65ad802d6e45171541c6b4c21b6cf8d1f9b8f056538f416a" => :catalina
+    sha256 "1ef2a3b0df8fec6b07dcb67222cf324b6c6c2f4341ad400314fa8500b42eee4c" => :mojave
+    sha256 "839f4ce135b04b7b1b8f9f4c6bbb292d3a5cc93fd2ede0243fe87961282c6076" => :high_sierra
+  end
+
     
   def install
     ENV.append "CCFLAGS", "-std=c11"
