@@ -3,7 +3,7 @@ class Lgogdownloader < Formula
   homepage "https://sites.google.com/site/gogdownloader/"
   url "https://sites.google.com/site/gogdownloader/lgogdownloader-3.5.tar.gz"
   sha256 "eeeaad098929a71b5fb42d14e1ca87c73fc08010ab168687bab487a763782ada"
-  revision 5
+  revision 6
 
   bottle do
     cellar :any
@@ -23,7 +23,8 @@ class Lgogdownloader < Formula
   depends_on "tinyxml2"
 
   def install
-    system "cmake", ".", *std_cmake_args
+    system "cmake", ".", "-DJSONCPP_INCLUDE_DIR=#{Formula["libffi"].include}",
+                         *std_cmake_args
     system "make", "install"
   end
 
