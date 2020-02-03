@@ -5,6 +5,13 @@ class Abella < Formula
   sha256 "d1f793b1e34f3adcaf6d28e2c0274bccb281afe89c8e3093c1e64df6ec4b9898"
   head "https://github.com/abella-prover/abella.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "db62ea0ef8eb85cb32789f9d8484aeb2c5d39db89f3e470810c45aebb94f3f25" => :catalina
+    sha256 "8accfd1baad42dd281d273135c8187789602aa8a53225d32835f6a85ee4347d4" => :mojave
+    sha256 "e14a5ecc692aa7ebfb13f1d110603e84dbbb0192650c625209aed33138a1e5ca" => :high_sierra
+  end
+
   depends_on "ocaml-findlib" => :build
   depends_on "ocamlbuild" => :build
   depends_on "ocaml"
