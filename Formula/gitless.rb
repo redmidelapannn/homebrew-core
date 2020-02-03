@@ -9,9 +9,10 @@ class Gitless < Formula
 
   bottle do
     cellar :any
-    sha256 "bcd17099e61887e4d0374cac43163f7b6e3f4737699cf8fd7742e1218b81c680" => :catalina
-    sha256 "72e835991915de55b762658978ad04d98a4f50368c0e7ccd23a326e3d73e15f1" => :mojave
-    sha256 "4c1ff8fd310933d86ae14dc513001c20de0db7465e351574f7babc6b0ba7ad84" => :high_sierra
+    rebuild 1
+    sha256 "198717c8d32b98c4e3649a6011b25dbc1fe6de31458069009ad452b1810582a9" => :catalina
+    sha256 "98000b91d217285ad3128dd5fee174b8deb808cbae88a218dca3f34e299ef942" => :mojave
+    sha256 "1bbb99d8d508694186e4096485a8129bd865c35c0883ef58b3edc46b52b5d360" => :high_sierra
   end
 
   depends_on "libgit2"
