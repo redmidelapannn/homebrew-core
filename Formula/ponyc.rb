@@ -8,9 +8,9 @@ class Ponyc < Formula
 
   bottle do
     cellar :any
-    sha256 "b810571aff7518d81ea773d07f0f8fd1def25f4c795a664b1c770330d07069a8" => :catalina
-    sha256 "2adb6b736e5ed544c6d8535e31f5c7e19b47e6eb57cd34ad6ed3c55b29f619f7" => :mojave
-    sha256 "216889f9856cfb4da8bb46a9aaac3af38e4f1f8f349b5928645ea0d266231b8b" => :high_sierra
+    sha256 "351e76a4d30dbedb4d31a8cf7e0217943b0b9cb541713be3b946d7ed30512ce5" => :catalina
+    sha256 "865424a59f5bab369a3db8f15ea38b94776fae4cbbbdf9b0e9f0feac6efcc674" => :mojave
+    sha256 "9fbbbad8e8f0ffe5e51f94135c66a058ae5a0f9235bb52e59cae6032cb9bbdad" => :high_sierra
   end
 
   # https://github.com/ponylang/ponyc/issues/1274
