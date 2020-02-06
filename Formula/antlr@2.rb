@@ -7,10 +7,9 @@ class AntlrAT2 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cb387dca2bd1e2fb74d7353aaaa9ccf74a958df52f2a852fa520c3ccf43427c5" => :catalina
-    sha256 "9be9c82eba1b6b803c75114ed55947692693785566c59dca392b8bbae6b8aa19" => :mojave
-    sha256 "8befbeeb644d45a1a8edfebc99035b965dfc95a9d5adfa7227428905168062d4" => :high_sierra
-    sha256 "76d763e8d8097435e98239935255d6679e174245b5443f4f87decf4198793444" => :sierra
+    sha256 "c4d1de239fc1d81ad42805cd4b74cc753ebf9fe767720fdace0359c98d55cbc0" => :catalina
+    sha256 "b743d7bcd1e650b3a1e26b499e9dc8da2aa8af87e4d8f7c8886ada82d7f7f2d9" => :mojave
+    sha256 "184108cef500fdbea750fa646f76b33734bc754b3cf63d237ef5c16341e901ec" => :high_sierra
   end
 
   keg_only :versioned_formula
