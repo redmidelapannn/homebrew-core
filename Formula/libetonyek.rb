@@ -7,9 +7,10 @@ class Libetonyek < Formula
 
   bottle do
     cellar :any
-    sha256 "c646035faf6b7213d1aa15a2e37478607f30ec3743b9af7fc4a83190f40b1941" => :catalina
-    sha256 "833ea6922b7e7eadd5446a9a1c8b6fe73fe49e4025703a63a90b8c4be966cb71" => :mojave
-    sha256 "7fdf62c11f4874c487d132fb24307e7a3ede2b03cfb231afff8872ae9c230c06" => :high_sierra
+    rebuild 1
+    sha256 "f490a25f00f65a95ff57b6d5faca384111c4db9f563d8db709140aecf6047ca7" => :catalina
+    sha256 "3eb9baf651c816c7e0d2dac7a4be8cd5870a70185bedc0ee17eefb496fc6770d" => :mojave
+    sha256 "b979412dcda19954b152c0bcfcca0cd50bffca8bd9cfab55cdce5b7992f95bc8" => :high_sierra
   end
 
   depends_on "boost" => :build
