@@ -8,11 +8,11 @@ class Biosig < Formula
   depends_on "gnu-sed" => :build
   depends_on "gnu-tar" => :build
   depends_on "pkg-config" => :build
-  depends_on "wget"
   depends_on "dcmtk"
   depends_on "libb64"
   depends_on "suite-sparse"
   depends_on "tinyxml"
+  depends_on "wget"
 
   def install
     system "./configure", "--disable-debug",
