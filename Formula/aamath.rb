@@ -6,13 +6,10 @@ class Aamath < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "1ac1413ef0322b280ae5bd5663373ed959ee54d28dbdd3261fc4da6e57abf44c" => :catalina
-    sha256 "79ef03b1d334136b693131b133944109545b07aca2dfd9165531016e4250444c" => :mojave
-    sha256 "41223cb51bc006abfba33b6af77b665c28de4155d19e5f43d0561b885b73368f" => :high_sierra
-    sha256 "d537cb11d2dcbac9b5d5356c471775699312e83450635ba7676083f381a531cd" => :sierra
-    sha256 "8b805e37fd5f4536b4fbf7f3ae6251b645b4b132027d56ccd015a6036c304744" => :el_capitan
-    sha256 "1e22022e621e7d2337edf4a80ae2c1618a89089132656d85cc141774565e34d7" => :yosemite
-    sha256 "0212e0b5844ea1a491bc7d4fcab2b590921042b28bc50e79c36cd9e15d08e2aa" => :mavericks
+    rebuild 1
+    sha256 "0b4a100ef096aac3ae3d11311a4afe052c79f1af4180790d85470ffdb940dc8d" => :catalina
+    sha256 "d01d6c93eb24bfb0a80aa48588bd0447787da5326f0006638d9e5fc4cc181397" => :mojave
+    sha256 "679108af1d56dcb07202f8062cb7c3974025d77240d35bf1e09757c75b09a1ce" => :high_sierra
   end
 
   uses_from_macos "bison" => :build # for yacc
