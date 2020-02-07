@@ -8,6 +8,7 @@ class Biosig < Formula
   depends_on "gnu-sed" => :build
   depends_on "gnu-tar" => :build
   depends_on "pkg-config" => :build
+  depends_on "wget" => :build
   depends_on "dcmtk"
   depends_on "libb64"
   depends_on "suite-sparse"
