@@ -30,8 +30,8 @@ class Biosig < Formula
     assert_match "biosig_fhir provides fhir binary template for biosignal data", shell_output("#{bin}/biosig_fhir 2>&1").strip
     file = Dir::Tmpname.create(["test", ".gdf"]) {}
     system "wget", "https://pub.ist.ac.at/~schloegl/download/TEST_44x86_e1.GDF", "-O", file
-    assert_match "1", shell_output("#{bin}/save2gdf -json "+file+" |gawk -F\"[:, ]\" '/NumberOfChannels/ {N=$(NF-1)} /ChannelNumber/ {n++; } END {print n==N;}'").strip
-    assert_match "1", shell_output("#{bin}/biosig_fhir "+file+" |gawk -F\"[:, ]\" '/NumberOfChannels/ {N=$(NF-1)} /ChannelNumber/ {n++; } END {print n==N;}'").strip
+    assert_match "1", shell_output("#{bin}/save2gdf -json "+file+" | awk -F\"[:, ]\" '/NumberOfChannels/ {N=$(NF-1)} /ChannelNumber/ {n++; } END {print n==N;}'").strip
+    assert_match "1", shell_output("#{bin}/biosig_fhir "+file+" | awk -F\"[:, ]\" '/NumberOfChannels/ {N=$(NF-1)} /ChannelNumber/ {n++; } END {print n==N;}'").strip
     rm(file)
   end
 end
