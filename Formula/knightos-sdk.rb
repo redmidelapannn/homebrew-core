@@ -6,6 +6,13 @@ class KnightosSdk < Formula
   url "https://github.com/KnightOS/sdk/archive/2.0.9.tar.gz"
   sha256 "0fd7d1322aa925e06fa595bf52e4a1d04f7661b975d37bb9b78ff481d8ad63bc"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "6cd2d0ee8de850b03b4ff2b3d30dc00c712c77ff0bf2bcf9e2c53b4f040df071" => :catalina
+    sha256 "f8b698edb2626e2831e4a07f1d069d15989e000397b11a2743858b9b532f87de" => :mojave
+    sha256 "9363b1899b0c7189562652308bc44ed8469ade33c84c9b3d41dd2f58a4cce88c" => :high_sierra
+  end
+
   depends_on "genkfs"
   depends_on "kpack"
   depends_on "python"
