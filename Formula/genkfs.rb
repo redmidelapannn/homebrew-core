@@ -2,6 +2,7 @@ class Genkfs < Formula
   desc "Writes a KFS filesystem into a ROM file"
   homepage "https://github.com/KnightOS/genkfs"
   url "https://github.com/KnightOS/genkfs/archive/1.2.2.tar.gz"
+  sha256 "93690989819ee93dd5130b2761879deaa3d70c706b050bd31eb8d5997cb683e8"
 
   depends_on "asciidoc" => :build
   depends_on "cmake" => :build
@@ -16,7 +17,7 @@ class Genkfs < Formula
   test do
     system bin/"genkfs", "--help"
     system "man", "genkfs"
-    system "wget", "https://github.com/KnightOS/kernel/releases/download/0.6.11/kernel-TI83p.rom"
+    curl "https://github.com/KnightOS/kernel/releases/download/0.6.11/kernel-TI83p.rom", "-O"
     mkdir "model-directory"
     touch "model-directory/file.txt"
     system bin/"genkfs", "kernel-TI83p.rom", "model-directory"
