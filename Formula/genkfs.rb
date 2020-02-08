@@ -4,6 +4,13 @@ class Genkfs < Formula
   url "https://github.com/KnightOS/genkfs/archive/1.2.2.tar.gz"
   sha256 "93690989819ee93dd5130b2761879deaa3d70c706b050bd31eb8d5997cb683e8"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8166d467a106b3d353f16a73d613181dca4ad2656916df46fde2fd863cbf8c09" => :catalina
+    sha256 "da6b9f88833bd784599485b860816d635521fa032f38440ecb8864d471f8b22c" => :mojave
+    sha256 "420348c6f4378657c04ae8f28abebbbb0e2b977ed73150c4757a8c452cd8089a" => :high_sierra
+  end
+
   depends_on "asciidoc" => :build
   depends_on "cmake" => :build
 
