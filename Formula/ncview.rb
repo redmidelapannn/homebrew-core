@@ -7,9 +7,9 @@ class Ncview < Formula
   revision 2
 
   bottle do
-    sha256 "22f52c20555686c0bcd09fa3a05d4242206b833077fc733aa07150b693512a9b" => :catalina
-    sha256 "263cf170dcb3cedf1d992f0c70e231e2b1a8b0326e26b34b6f75330ffcf2dc3c" => :mojave
-    sha256 "0c5f57cbcfff8df4006d76b7b6e7d223fce19f2c87ef2fbaa7eae62caf425aef" => :high_sierra
+    sha256 "253989e875740d1dd784b429bbe957e45ee97a98fd35ce77546cdd960b813b28" => :catalina
+    sha256 "3478e89380857e73a7c8cc65f140dbae6613978ba08856da617450792fa20be0" => :mojave
+    sha256 "ce1ea4002799341a4d3edea918cde4fe8dad5c3b2c82e83e71ee7e1564dc09a6" => :high_sierra
   end
 
   depends_on "libpng"
