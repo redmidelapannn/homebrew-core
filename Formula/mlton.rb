@@ -9,10 +9,9 @@ class Mlton < Formula
 
   bottle do
     cellar :any
-    sha256 "9697202bdf505babc899053dfe2cf2377c9062ce97c3f38dc99754ac48fb4c0e" => :mojave
-    sha256 "c3712458c252eba59c3b370f99662cc02e06f6aad3b5e0bb5abe6980541bac9c" => :high_sierra
-    sha256 "7605c1540d4449fdcda1802ee31dd891dc3d197081747744b575300bebe9000c" => :sierra
-    sha256 "7182b0b044b789e03f99577dc993e0cb9737b9c175dd17815018fa777d0f4214" => :el_capitan
+    sha256 "435ab2b78b554c04020520e6bf52c36445d0309ab8af59807ffc199724a85e5c" => :catalina
+    sha256 "687ba1a0ee699c736b9c94bc6a5637edd136a0a7f880b7b6d46de35e744347ca" => :mojave
+    sha256 "dbb75ffe4d84256075e18b251fe6e9bef38912a28d816b5d5ef53aa4afa81228" => :high_sierra
   end
 
   depends_on "gmp"
