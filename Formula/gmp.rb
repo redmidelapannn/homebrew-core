@@ -7,11 +7,9 @@ class Gmp < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "2409417943fceda33eac12a8229fbf7b990eee18ee341b543be575550a077bb0" => :catalina
-    sha256 "84f74594086bccc53bdb141f4d06d7847680374e255ebe016654da1e47db2dfc" => :mojave
-    sha256 "a536c51149806b73b2e1178be94300832b6b151455006bc7f2a32b9dc493c7a3" => :high_sierra
-    sha256 "ada22a8bbfe8532d71f2b565e00b1643beaf72bff6b36064cbad0cd7436e4948" => :sierra
+    sha256 "d2c975b7acab36fd70591ae283acbda3dff3d3f1a3587b75b3b2ea8e4b54a65e" => :catalina
+    sha256 "88f5174bb7c6b56d7ccfa04ef07d1b2ac2d7b276a0a7f27986fb51372c7ba4e5" => :mojave
+    sha256 "c24da7e3d8115f5c162be42465c34553e486f40a2458b920bc139bea84e08fa4" => :high_sierra
   end
 
   def install
