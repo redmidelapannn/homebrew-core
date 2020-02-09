@@ -5,13 +5,10 @@ class FlowTools < Formula
   sha256 "80bbd3791b59198f0d20184761d96ba500386b0a71ea613c214a50aa017a1f67"
 
   bottle do
-    sha256 "b2cf9a7d6690c11dd5894bac2e38175d599341ee18dcd99a3e1185f8d8cd8995" => :catalina
-    sha256 "6246a56252302b21018488ffe774cf5a203c373b1b5a4876a2d70d7d6b0cba20" => :mojave
-    sha256 "be6a9b7233b78e61df362ab06916a1912b1ac197f39849081cd3d9ca4cda5c31" => :high_sierra
-    sha256 "47ae55656be935936a5d3aa505f510c337818bd3c9d1a7fb028044523382dd8b" => :sierra
-    sha256 "2b41c1415b50e7123c5268dce7c656aba825a16c061691ee8eaf06e39d622cec" => :el_capitan
-    sha256 "0d3814f50d6bc8d06c808176bc0b6f725f429b231a21eabe49fadf6729a7d27b" => :yosemite
-    sha256 "dc15779397a7f60c67b20c314b4513133c0883a5eafb3e972e744b8a70ca1060" => :mavericks
+    rebuild 1
+    sha256 "b340f779ac91d57beb62fad917755281e489adff8b5b8a3f1e440cf9e6338c1d" => :catalina
+    sha256 "321e8d4fc1ef2ddb233ca9ea21cb118bcdc88fd742d8b279793326be10dd3013" => :mojave
+    sha256 "0149bf78376625858412d1d2e18add416ded74d5e7a77a5037dd2930b9d9dfd4" => :high_sierra
   end
 
   uses_from_macos "zlib"
