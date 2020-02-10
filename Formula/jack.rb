@@ -8,8 +8,8 @@
 class Jack < Formula
   desc "Audio Connection Kit"
   homepage "https://jackaudio.org/"
-  url "https://jackaudio.org/downloads/jack-audio-connection-kit-0.125.0.tar.gz"
-  sha256 "3517b5bff82139a76b2b66fe2fd9a3b34b6e594c184f95a988524c575b11d444"
+  url "https://github.com/jackaudio/jack1/archive/0.125.0.tar.gz"
+  sha256 "fa2021ccb7e076881a699f17218b5a23705a0215a363e077ad8fd80bfcd76187"
   revision 3
 
   bottle do
@@ -21,12 +21,12 @@ class Jack < Formula
     sha256 "ee93da9885f06dde0f305fca2d5af6d6213c2133466ca93857a87ffb731ce43f" => :el_capitan
   end
 
-  uses_from_macos "util-linux"
-
   depends_on "pkg-config" => :build
   depends_on "berkeley-db"
   depends_on "libsamplerate"
   depends_on "libsndfile"
+
+  uses_from_macos "util-linux"
 
   def install
     sdk = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
