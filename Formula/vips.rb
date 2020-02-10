@@ -1,14 +1,14 @@
 class Vips < Formula
   desc "Image processing library"
   homepage "https://github.com/libvips/libvips"
-  url "https://github.com/libvips/libvips/releases/download/v8.9.0/vips-8.9.0.tar.gz"
-  sha256 "97334a5e70aff343d2587f23cb8068fc846a58cd937c89a446142ccf00ea0349"
-  revision 1
+  url "https://github.com/libvips/libvips/releases/download/v8.9.1/vips-8.9.1.tar.gz"
+  sha256 "45633798877839005016c9d3494e98dee065f5cb9e20f4552d3b315b8e8bce91"
 
   bottle do
-    sha256 "eb22173fc2ca4474d331a4bf008569200fa47f709da4f2762e5356491dcc3750" => :catalina
-    sha256 "9897f9c293197c14e77505cca849b07ad5b9f9192e09e6337aca564e5fd21e90" => :mojave
-    sha256 "b034c46a88d0ce20d64e9c21b2b3a609bf92e3f6d2d6474a2e9c9203af584a7d" => :high_sierra
+    rebuild 1
+    sha256 "b70ae725cab853130ac9a1c14873a8cb4929a4ca8d5ddbfdb65908cb345fe74a" => :catalina
+    sha256 "62b0f72d537fe8b92efaaa37563f6840caafa16f89c602a89a4b560dbb4c5fa2" => :mojave
+    sha256 "4558e29fb5b4ab515e3d21b8d116edead14c847b3fd3f306a47b93e9440e94fd" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
@@ -22,6 +22,7 @@ class Vips < Formula
   depends_on "libexif"
   depends_on "libgsf"
   depends_on "libheif"
+  depends_on "libimagequant"
   depends_on "libmatio"
   depends_on "libpng"
   depends_on "librsvg"
@@ -56,6 +57,10 @@ class Vips < Formula
 
     # --trellis-quant requires mozjpeg, vips warns if it's not present
     cmd = "#{bin}/vips jpegsave #{test_fixtures("test.png")} #{testpath}/test.jpg --trellis-quant 2>&1"
+    assert_equal "", shell_output(cmd)
+
+    # [palette] requires libimagequant, vips warns if it's not present
+    cmd = "#{bin}/vips copy #{test_fixtures("test.png")} #{testpath}/test.png[palette] 2>&1"
     assert_equal "", shell_output(cmd)
   end
 end
