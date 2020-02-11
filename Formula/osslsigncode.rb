@@ -7,9 +7,10 @@ class Osslsigncode < Formula
 
   bottle do
     cellar :any
-    sha256 "9f9d6f343dc0a7e6ecf34a27e97049b62952e5a05319b1f7aa4c235cf793fc5e" => :catalina
-    sha256 "cf48ec533b5cc0db3cf56903091936822c422d484371c28b2397bd02bd3bdbbb" => :mojave
-    sha256 "5999a97a256941d082e171faceb5cbf7fb54720031d71cc1c086d8d08d18ff01" => :high_sierra
+    rebuild 1
+    sha256 "db08b5e426b19abe56a89ce6e46041379690be3d304c24a8891f73b57d4824d4" => :catalina
+    sha256 "c63fa3c4c12b8504b33db4ca92daf31872277d87905b0c3f74a594afb64ae996" => :mojave
+    sha256 "262090d8eaffc4bb84e414582c1d66b7ee21ac39b92c6cf2a83febbc8f205d16" => :high_sierra
   end
 
   depends_on "autoconf" => :build
