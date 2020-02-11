@@ -7,9 +7,10 @@ class Gdb < Formula
   head "https://sourceware.org/git/binutils-gdb.git"
 
   bottle do
-    sha256 "efa76a0bc52bef935730afb32ab848446d92d7f8c38f2ef694fdcf3d20b67a44" => :catalina
-    sha256 "e3159449ff06712174dae7c3f513196eb02439e83057e2779531ec94b422c278" => :mojave
-    sha256 "4cde626aa5d32dde54d70bd531a06e65051e7ac7371f1970b6b9c838f565239c" => :high_sierra
+    rebuild 1
+    sha256 "ac8f86e95e054e0f9d7a86d7249afff0624f337d3747cfba8298bde8d900556a" => :catalina
+    sha256 "1dbbdf58f7f490255b2f7768545a4f0118028b7b7cd56627484117dcd942d531" => :mojave
+    sha256 "c6ecd62046d0e275629cc14743be8fd8a7d7ac252bbfaf696879a54f3968c213" => :high_sierra
   end
 
   conflicts_with "i386-elf-gdb", :because => "both install include/gdb, share/gdb and share/info"
