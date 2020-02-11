@@ -6,10 +6,10 @@ class Gpredict < Formula
   revision 2
 
   bottle do
-    sha256 "99fff9473dcc5eaa0c58cf0b2bf04f4240e1598aada45565e4dbbf050d2ac7dc" => :catalina
-    sha256 "952941a2ecdb5f75805888dfd020acce48c4f1b29a9c2e3ec8742d35fcd9c829" => :mojave
-    sha256 "189249444c490bc7984506a3d041de1d057fff671ff774871f549f6b32efa042" => :high_sierra
-    sha256 "9a0a4b0e63b3b1f84830f508d60ee3fc5b5fd0b9a5731241873168baa88209cf" => :sierra
+    rebuild 1
+    sha256 "229cd3791dcd48b993f3994956d52466bbaa637d2f40f34f90411b5b59856f32" => :catalina
+    sha256 "8d994ed2c6ff6f56c7bae8e79ac832443ee822402718d4a1a59d3feaf22b559a" => :mojave
+    sha256 "5b1be9eece92c9d8dc4edf8595643f963e7239f23c937956091e668c3e06a63d" => :high_sierra
   end
 
   depends_on "intltool" => :build
