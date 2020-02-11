@@ -6,12 +6,10 @@ class Yetris < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "a43b346adc20fc7d4f84ec1300e839bb4e615ab40ccf8e1a591f099092ad6078" => :catalina
-    sha256 "ace31e89cefd33d38a65864d7343baad6dbda23aee0ba2a10f6b19480b9708e0" => :mojave
-    sha256 "21537f5957c5ce90281195e6d962363920bda756a6c965ca107c329ec712f126" => :high_sierra
-    sha256 "cf350d8daaf62f863b7466477aebea02145abf1f14e50ee56ad324c99dcee018" => :sierra
-    sha256 "fd08bc62fc0c4687ed7e76fe604c345a647fb52a348c55cf446fcbf52c7af8dd" => :el_capitan
-    sha256 "a14c5327ab931d7394b3f617422916eafbc76a936ac77e81a959b38aa223dd5e" => :yosemite
+    rebuild 1
+    sha256 "ef924188045a02e9c11290add57829a1c36c2e081502c9fe43afccc31902fb54" => :catalina
+    sha256 "35dc6e9068cfec9f4a4ab56e007fb36f570227cdce75e67e4f8bf865ce969615" => :mojave
+    sha256 "f63e2c5bcf6cb652fa04d40b50c3f7c578d6350a2de2ddf5c66666cf9db76572" => :high_sierra
   end
 
   uses_from_macos "ncurses"
