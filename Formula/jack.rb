@@ -8,9 +8,12 @@
 class Jack < Formula
   desc "Audio Connection Kit"
   homepage "https://jackaudio.org/"
-  url "https://github.com/jackaudio/jack1/archive/0.125.0.tar.gz"
-  sha256 "fa2021ccb7e076881a699f17218b5a23705a0215a363e077ad8fd80bfcd76187"
+  # pull from git tag to get submodules
+  url "https://github.com/jackaudio/jack1.git",
+      :tag      => "0.125.0",
+      :revision => "f5e00e485e7aa4c5baa20355b27e3b84a6912790"
   revision 3
+  head "https://github.com/jackaudio/jack1.git"
 
   bottle do
     rebuild 1
@@ -21,6 +24,9 @@ class Jack < Formula
     sha256 "ee93da9885f06dde0f305fca2d5af6d6213c2133466ca93857a87ffb731ce43f" => :el_capitan
   end
 
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "berkeley-db"
   depends_on "libsamplerate"
@@ -37,9 +43,10 @@ class Jack < Formula
       "#{sdk}/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h"
 
     # https://github.com/jackaudio/jack1/issues/81
-    inreplace "configure", "-mmacosx-version-min=10.4",
-                           "-mmacosx-version-min=#{MacOS.version}"
+    inreplace "configure.ac", "-mmacosx-version-min=10.4",
+                              "-mmacosx-version-min=#{MacOS.version}"
 
+    system "./autogen.sh"
     ENV["LINKFLAGS"] = ENV.ldflags
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
