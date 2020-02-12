@@ -21,12 +21,21 @@ class Cgal < Formula
     args = std_cmake_args + %W[
       -DCMAKE_CXX_FLAGS='-std=c++14'
       -DWITH_Eigen3=ON
-      -DWITH_LAPACK=ON
       -DWITH_CGAL_Qt5=OFF
       -DWITH_CGAL_ImageIO=OFF
     ]
-
     system "cmake", ".", *args
+
+    # Manually edit the file that define CGAL_ROOT so it can work with cgal-qt5
+    # The goal is to make it work at least when cgal and cgal-qt5 are linked
+    rm buildpath/"config/CGALConfig-installation-dirs.cmake"
+    (buildpath/"config/CGALConfig-installation-dirs.cmake").write <<~EOS
+      if( EXISTS #{HOMEBREW_PREFIX}/include/CGAL/AABB_traits.h)
+        set(CGAL_ROOT #{HOMEBREW_PREFIX}/)
+      else()
+        set(CGAL_ROOT #{prefix})
+      endif()
+    EOS
     system "make", "install"
   end
 
