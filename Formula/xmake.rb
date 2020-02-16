@@ -7,9 +7,10 @@ class Xmake < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "060a9e262ac2abb340f7c6329c9bad9dc0926015e863da2b5f6af504884eb0ab" => :catalina
-    sha256 "1de44a55ca9e37aa4e863bb027925d72a9f1975a7131048dd32bebb7d470f9f1" => :mojave
-    sha256 "f5d7779349809fe9f06ffca861a121ad1face3b00bf871079abd336e8fe9fec3" => :high_sierra
+    rebuild 1
+    sha256 "a7709bdb3593814418701f04ca8a14e36ea4c39e273a86dd9392590386ae786f" => :catalina
+    sha256 "da263c4d4e5d204a4f02322a19c37b2e5e40f22bee89f17e7f09eb26ea9ff04e" => :mojave
+    sha256 "4e0032aba9ebde646ce36ddd93a619296ea95f0d6d8ce818b7fd762cfa944055" => :high_sierra
   end
 
   def install
