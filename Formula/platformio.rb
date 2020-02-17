@@ -13,7 +13,7 @@ class Platformio < Formula
     sha256 "c6501bd561ee8d2b77037739484929eade3c4e15cb326b24b90634b32daecd32" => :high_sierra
   end
 
-  depends_on "python@3"
+  depends_on "python@3.8"
 
   resource "bottle" do
     url "https://files.pythonhosted.org/packages/d9/4f/57887a07944140dae0d039d8bc270c249fc7fc4a00744effd73ae2cde0a9/bottle-0.12.18.tar.gz"
