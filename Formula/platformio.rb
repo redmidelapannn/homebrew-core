@@ -3,8 +3,8 @@ class Platformio < Formula
 
   desc "An open-source ecosystem for embedded development"
   homepage "https://platformio.org/"
-  url "https://files.pythonhosted.org/packages/31/6b/6050e999bb94b7b0db86518a345fe118f8727e61f1d261df121d012878cf/platformio-4.2.0.tar.gz"
-  sha256 "bfe062fbe014ed4776f3e56491324bda9049de7a1338ea07972407e324623187"
+  url "https://files.pythonhosted.org/packages/f4/c8/8e472c22602ec6cdc6f93e35357ff5f3dff3434da6fc76cd3cd57c7eefb6/platformio-4.2.1.tar.gz"
+  sha256 "310fa8b624cf938ef95284ae3a40a9caa36aafef32ac30ad588b43df516945c3"
 
   bottle do
     cellar :any_skip_relocation
@@ -13,7 +13,7 @@ class Platformio < Formula
     sha256 "c6501bd561ee8d2b77037739484929eade3c4e15cb326b24b90634b32daecd32" => :high_sierra
   end
 
-  depends_on "python@3.8"
+  depends_on "python@3"
 
   resource "bottle" do
     url "https://files.pythonhosted.org/packages/d9/4f/57887a07944140dae0d039d8bc270c249fc7fc4a00744effd73ae2cde0a9/bottle-0.12.18.tar.gz"
@@ -81,6 +81,7 @@ class Platformio < Formula
   end
 
   def install
+    virtualenv_create(libexec, "python3")
     virtualenv_install_with_resources
   end
 
