@@ -4,6 +4,13 @@ class Biosig < Formula
   url "https://downloads.sourceforge.net/project/biosig/BioSig%20for%20C_C%2B%2B/src/biosig4c%2B%2B-1.9.5.src.tar.gz"
   sha256 "20e72a5a07d1bf8baa649efe437b4d3ed99944f0e4dfc1fbe23bfbe4d9749ed5"
 
+  bottle do
+    cellar :any
+    sha256 "6f798ef1894353d5037a79eec0dfe70a3e388fe83ebc80f3f3b28426c2a15619" => :catalina
+    sha256 "58873353d0a64104a4372738d303d56e604575c7fc09efdad3a54badc6c3d3b1" => :mojave
+    sha256 "9a6a77889818ca182474e2b43309e26f49f6b231768a2471e4b1a319cdf9918b" => :high_sierra
+  end
+
   depends_on "gawk" => :build
   depends_on "gnu-sed" => :build
   depends_on "gnu-tar" => :build
