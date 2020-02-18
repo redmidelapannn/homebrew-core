@@ -5,11 +5,10 @@ class Dnsmasq < Formula
   sha256 "9e4a58f816ce0033ce383c549b7d4058ad9b823968d352d2b76614f83ea39adc"
 
   bottle do
-    rebuild 1
-    sha256 "870a8cbfdfb7d74be6524ccb8432e3c8795234c7b1e0be4eb852aae1d9a0618a" => :catalina
-    sha256 "4d150c19c5c856435f9d38307c4b9fb153f942ea3f19ebf0f80e33f976f4790e" => :mojave
-    sha256 "10122336f50fd20aeb36488b5d4652557eac4da7b921ecf158910b23ad3ec8fb" => :high_sierra
-    sha256 "eac459e515128a405939939da7dd15f4b3f6ad4bede132b18d6d40f84330ae5e" => :sierra
+    rebuild 2
+    sha256 "ccb56a37248c6139823b06cb4efa5de928ca8fe57aa537361e471f756ec85d32" => :catalina
+    sha256 "6c9cab2a6682f20e4ca5f6635ba2dec04ec3511122b89857aed01b004e0e0542" => :mojave
+    sha256 "b54149b61fd28e4fd25654c5038720e22b8de8fa7ad6897823517e63df67feeb" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
