@@ -8,10 +8,9 @@ class Arpack < Formula
 
   bottle do
     cellar :any
-    sha256 "16a4a696da2803d4a427508bd4dc27ccec4ac28b072cc82172945d81a895fa13" => :catalina
-    sha256 "8d6eb8e363467ee3b8a40c875e789edc3c43e3a095b03a383e721495c6905de7" => :mojave
-    sha256 "41856273d9f50a1738a26c290af692414ced685379eebd69c89db308e2cd48fb" => :high_sierra
-    sha256 "2c2dfdc439824d04d14c863d22c75f4e70d5f191e3cba9c6a6e567dcd4e0c1a6" => :sierra
+    sha256 "a0400bac524b9884003a2d3c5b8e4b16e46bc1ffc8450724f245a837bbef986e" => :catalina
+    sha256 "d0ec31683cf67d5e1fea63663b882789eaa28a439002bab3ade40f57101031bc" => :mojave
+    sha256 "05a91d18d7ca3e73ae09bb1729523c9d367cc00f3a787acc8a709d976e543a3e" => :high_sierra
   end
 
   depends_on "autoconf" => :build
