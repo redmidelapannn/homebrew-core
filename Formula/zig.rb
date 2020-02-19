@@ -6,9 +6,10 @@ class Zig < Formula
   head "https://github.com/ziglang/zig.git"
 
   bottle do
-    sha256 "3b5659dac004dcdf68e57bed34f9b7f097524aebecd7cf263ff74d643fcc7d22" => :catalina
-    sha256 "3142c933d0a51bd29119cb242e4241cb012f22d9aa65380f1541bd16876206ae" => :mojave
-    sha256 "db30263fb131a6dce56904b5232dbba1165d58c58545b84a9958102f779fe13b" => :high_sierra
+    rebuild 1
+    sha256 "4edb7402de1ace6c04074f6ea3f15c028a994ac9f9432ad3ee66398de1af79b4" => :catalina
+    sha256 "76196fdd741ce042497646b2c17b0901aed1809f0ed5854b2b899534b29c22b0" => :mojave
+    sha256 "c7b6802cd66b57278cdc8129ab439b357ea36d2c59296ecfaed244c542208293" => :high_sierra
   end
 
   depends_on "cmake" => :build
