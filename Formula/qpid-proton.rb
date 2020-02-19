@@ -8,9 +8,10 @@ class QpidProton < Formula
 
   bottle do
     cellar :any
-    sha256 "d469e523daa8394adaf7d45e877fc287914a33aa33164c89361a390b5e48b9ab" => :catalina
-    sha256 "608f3141669345fe847bea58a150f6959cb9fd2d5f26c235540dda29d0aec779" => :mojave
-    sha256 "3ba386ace69b0795b5e1b1dc65e9bd089564aea03d20bc98271cd559abe906ea" => :high_sierra
+    rebuild 1
+    sha256 "a9ded0c576689823bcbb24efa4c33c57216f7f7e45d57d011af72331f7a46e82" => :catalina
+    sha256 "6416a0734794696f2b5a6c3b827d09eb9ddef8ddfb04344215d7bda39cd2c1b1" => :mojave
+    sha256 "eb8ee38df7cf2b8361dcc6e8923895575f0865f7b1d132b746ebdf8d82efe9f2" => :high_sierra
   end
 
   depends_on "cmake" => :build
