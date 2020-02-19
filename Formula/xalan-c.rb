@@ -8,11 +8,10 @@ class XalanC < Formula
 
   bottle do
     cellar :any
-    sha256 "6a6ac96e65ef391d660c295f6c3a5c349f11cfa0604a6d5111bc88fd0a017304" => :catalina
-    sha256 "5b00fab72d4db7db40495ff5331e6cd9539b30f21d6b1357d9dcc2e7275421ae" => :mojave
-    sha256 "24ddfd8ff41dbe54a5570db2a004247f92ef4bc1c897554ea83dfe7c138a172f" => :high_sierra
-    sha256 "dfe6413a8d4cba234c105d0936a671a34742d2ac0103db863a644bf78538c28c" => :sierra
-    sha256 "0b99ebef6e23b1c0d1e67d4ed8130130ad5c7b6af03f43ea9248c2d78e19a5cc" => :el_capitan
+    rebuild 1
+    sha256 "a863426981ca4725974a12d4460d6f70c19d02e86200a7b3131842c7addf4694" => :catalina
+    sha256 "b4382412901210c78e093b096509163079939613383d1d472d4fa11e81208688" => :mojave
+    sha256 "3416a3a6f8d6087e0617d1a8221983cec953872dc94c706c8b089305293650c7" => :high_sierra
   end
 
   depends_on "xerces-c"
