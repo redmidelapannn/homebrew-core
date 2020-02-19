@@ -6,10 +6,11 @@ class CassandraAT22 < Formula
   sha256 "7109f50a5a12f62b41e692521622344ba1e79381d713fc578e60e554f7c83334"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "efe044b667e3479966bb5a29802a1fcca724d36d07f1eddc29baf59b9f887d0b" => :catalina
-    sha256 "b969cfce702ad4dd02f6495abee2370a3ababd44cc82a567169b8af930fab85e" => :mojave
-    sha256 "1a2aa9db7744896b53bf01ffca7214cc2cd0ef5f026546873c9c02f4bb7471fe" => :high_sierra
+    cellar :any
+    rebuild 1
+    sha256 "e8468ff858ab987adfedbebda813c62490d30a8b86004979e0fb85da78419e27" => :catalina
+    sha256 "0d2bac16902b3c9b23e0561e4af371bf0fa399e5b02407401d405f6820e1ad58" => :mojave
+    sha256 "3f1a5d7166be8cebf07b0d40807a85f94b6fe88252e09e0add2a9bf0620135ae" => :high_sierra
   end
 
   keg_only :versioned_formula
