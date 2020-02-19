@@ -5,9 +5,10 @@ class MysqlClient < Formula
   sha256 "0eccd9d79c04ba0ca661136bb29085e3833d9c48ed022d0b9aba12236994186b"
 
   bottle do
-    sha256 "6aeb496213d40f45bc44123703753012ea889468b7f37101a42772da237ab4ad" => :catalina
-    sha256 "9729c80a49ac7b808bbc26a93130c3ea16797da3824ed9450df53974958de066" => :mojave
-    sha256 "98ae3bb78d4044053cba6acc3cd3e4737cc71df2cd2afb68e0cbccfd27488de7" => :high_sierra
+    rebuild 1
+    sha256 "cac6cd85298953f4c288c742c09ad2b633a037c6f34d3ef74e1d756982317387" => :catalina
+    sha256 "ad49eb936ac7ffa5b6ff757e0e895c2d97d70d809bd40e8c1a12b6a79d1d3560" => :mojave
+    sha256 "8b73a9553261b29a322c29c4c5bf89f2d832c5dda4f1f226a4bfaa6cbe1846ac" => :high_sierra
   end
 
   keg_only "it conflicts with mysql (which contains client libraries)"
