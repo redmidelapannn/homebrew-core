@@ -6,10 +6,10 @@ class Mandoc < Formula
   head "anoncvs@mandoc.bsd.lv:/cvs", :using => :cvs
 
   bottle do
-    sha256 "f408752db9b1ba4cc1fc8f47fdf41e1ade8abbcf243e947938efbbea550006b4" => :catalina
-    sha256 "78ffbf8bee7e5135ea303bb861f432288f2d48d403d7e932753b1ef962348917" => :mojave
-    sha256 "3236fdca9fe2cd8cca29d246d9252eaeea8ceeb7d8f5251574c2bc771a841647" => :high_sierra
-    sha256 "6176fcab59057d2188db3047849f96170bcb2133bfbe1f8c94845895d6a89bec" => :sierra
+    rebuild 1
+    sha256 "381eaebcefe0116722bd2d592231a0c4406869abfb6821f5a06803b547cb10ea" => :catalina
+    sha256 "fa8d517e97b1e74b4d6446821c1a5a36b36124715cfe6967c78af47a7387971e" => :mojave
+    sha256 "d41962146df5a54c06092d230a3591aa5c98ab19bcf260b9403fd6ecaf77bf3e" => :high_sierra
   end
 
   uses_from_macos "zlib"
