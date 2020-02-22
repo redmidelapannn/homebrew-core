@@ -7,10 +7,10 @@ class Jmeter < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "506e7058e3fe83d5357ba4beb860205d253d9f9a548d6ffebc4d2d08213b0117" => :catalina
-    sha256 "506e7058e3fe83d5357ba4beb860205d253d9f9a548d6ffebc4d2d08213b0117" => :mojave
-    sha256 "506e7058e3fe83d5357ba4beb860205d253d9f9a548d6ffebc4d2d08213b0117" => :high_sierra
+    rebuild 2
+    sha256 "65c554ff5413bc800b2a5f6a30837353ebca979e2735c5a51d389149d16c9cbe" => :catalina
+    sha256 "65c554ff5413bc800b2a5f6a30837353ebca979e2735c5a51d389149d16c9cbe" => :mojave
+    sha256 "65c554ff5413bc800b2a5f6a30837353ebca979e2735c5a51d389149d16c9cbe" => :high_sierra
   end
 
   resource "jmeter-plugins-manager" do
