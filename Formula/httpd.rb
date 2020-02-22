@@ -7,10 +7,10 @@ class Httpd < Formula
   revision 1
 
   bottle do
-    sha256 "c532f46853817d18cfaeadecf1ec4e7b47a57b80eee3d01272aaa99a16c93bf6" => :catalina
-    sha256 "9f9969abde4a61949b0279f68d6fcc616d1546dd2c1b4fd61012bde1f5d27ee8" => :mojave
-    sha256 "143af690fd1f26f07e79009da6e674a0cb56c190f6fb486f9e61f82a5ab36a0a" => :high_sierra
-    sha256 "9a085a0b728b5bc75bda265d7d4c5360187038eb339c43a681d789599b814dcf" => :sierra
+    rebuild 1
+    sha256 "a0969e1e2fa8f25782a8c0ee2b05e7e198e718764ea4ed8a4173d129200e4cd7" => :catalina
+    sha256 "93eece75d4643ee8358249478c97930e51ac623ecc1784418d4b35a056f871fb" => :mojave
+    sha256 "7163778eb2d7fd863a660a4ef92713266179ba9672273ed72db22803d3aef4d7" => :high_sierra
   end
 
   depends_on "apr"
