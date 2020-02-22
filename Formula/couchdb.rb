@@ -7,9 +7,10 @@ class Couchdb < Formula
 
   bottle do
     cellar :any
-    sha256 "dfb311a012302ac652bdda777ad47cee4ec2c407b85059e4af1db69c28403802" => :catalina
-    sha256 "9189cb9268f516cdc9028e4ed564626976027b4cb168e58687848f9eaee318e0" => :mojave
-    sha256 "e6cbb9e78593205be70eea02638413dd84bfeff0e73fb1c7fb6c14d8f0181613" => :high_sierra
+    rebuild 1
+    sha256 "bce332a5311f3f791f5e34a97799939221cff5d128b6a8f1fce64091d8cc5925" => :catalina
+    sha256 "9d17e180a1e2566b32cb8802a8dbc06a5329659d30572e88ccbcd82223aef09c" => :mojave
+    sha256 "33dcd0e3830ba35fd0e4da92a8e3e7be6b63357be9460246be1a00c811ebfb5c" => :high_sierra
   end
 
   depends_on "autoconf" => :build
