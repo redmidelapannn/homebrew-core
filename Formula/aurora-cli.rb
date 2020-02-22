@@ -7,9 +7,10 @@ class AuroraCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "b3b61ca0da323c10be32bfb19af28a48b7cf393729076c3ce6608c69d79bff7d" => :catalina
-    sha256 "4aec30f08b06a40ec584c4c570181e5e04909009e4bc8ce2d18f84a0e282629d" => :mojave
-    sha256 "0a1b506e5d75c9fa8d587bfc9945e78c9cb5342c17a4062d18aafb942e111eca" => :high_sierra
+    rebuild 1
+    sha256 "1adcb09eadc442515ea2e53145d61dd4922762a291f07a0925e7ca2786a22fea" => :catalina
+    sha256 "94cb59c143eff8514376c5a281f3fd5db914d458bb8e70481fb426c38aabab98" => :mojave
+    sha256 "cd7f11d19a86813396077ab5f594e30e8b2211b64bb603e0d13359599e3e3b32" => :high_sierra
   end
 
   depends_on "python"
