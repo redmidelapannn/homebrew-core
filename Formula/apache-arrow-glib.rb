@@ -7,9 +7,10 @@ class ApacheArrowGlib < Formula
   head "https://github.com/apache/arrow.git"
 
   bottle do
-    sha256 "53ec05d5303a8436826b0e2d5f63c75e02c0d94f4e9603e9320c51215da50592" => :catalina
-    sha256 "e39f24b25d36332864fc4af1fbe8c4b043c77a029d5f02927cb30428502bd522" => :mojave
-    sha256 "f7232a9864c688cc6147a921f6f000be309009a45921f4461e469ef0f2214873" => :high_sierra
+    rebuild 1
+    sha256 "5bd94c780bc2a62be9f6b28121226155ae0534106f30e8e55770f0cfa395a0a9" => :catalina
+    sha256 "6ca524c3900a121301c83a6680201523743c60901c3a1bbadea29ede6534d132" => :mojave
+    sha256 "3a7c68ed67525a55c3cccf9e80fbf18337ac79e60b7b81b3d73745ad615c3547" => :high_sierra
   end
 
   depends_on "gobject-introspection" => :build
