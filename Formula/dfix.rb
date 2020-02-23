@@ -8,10 +8,10 @@ class Dfix < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "ff3b76977bcbfb5b7a04bbebb53a794cc522b64987f724fe5f8a8236812eb1f8" => :catalina
-    sha256 "24d234e206efa754f8bd900102720280d8efb1af6ec93059a467589acddca3ee" => :mojave
-    sha256 "13a2621737c198bd0540f507293a9b015a0ebe36cd3373589a69ec834a863d8d" => :high_sierra
+    rebuild 2
+    sha256 "4d374b959747ba302699a442882a2ff67fc4bde06048acceb7fe2105104504ba" => :catalina
+    sha256 "ccf6a607699002671d6e90795cdf6118fe8d92a2b5853ffd4e9a3c8c9f695b77" => :mojave
+    sha256 "f24878d02d6f4506aa93e43cc6ecb90afb1ac8db0e9668058e394054a6e0ea09" => :high_sierra
   end
 
   depends_on "dmd" => :build
