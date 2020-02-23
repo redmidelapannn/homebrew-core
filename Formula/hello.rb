@@ -7,13 +7,9 @@ class Hello < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "449de5ea35d0e9431f367f1bb34392e450f6853cdccdc6bd04e6ad6471904ddb" => :catalina
-    sha256 "f9d6285eafa4317c5a653bd02832bdabe4df9f6b18702274d551b28cc45d8b23" => :mojave
-    sha256 "1b66790d42664fe95d44f56d2c82db7ea2ce03e01bda0c8e9932f3b768342c7b" => :high_sierra
-    sha256 "9691f91e7c6897d525b76f5910144e0ed0adcb8bd8f7bb155f29fd431d8ff431" => :sierra
-    sha256 "54ac46b692fcca2abe77aeeca41976172a2dc24a6762f84a47fabcaba336df89" => :el_capitan
-    sha256 "f81a305402e8f8b6cf11a17dac81f604b6f48d940909886a6733cf4f6a64c05f" => :yosemite
-    sha256 "c80495cb6d1ad8f2c3a64c22c9dcee9d0117ca25fa6426f20a6acca275cd6c56" => :mavericks
+    sha256 "36ff4c0457d45865836fcad2a7e87a494702088ace95b3ed71dac82670b16a30" => :catalina
+    sha256 "0da5fa49812b7ff4bc02dfc7ee71ecea0192beb1bc3545648a6a8856e01fed79" => :mojave
+    sha256 "6e34af71ed8b45943aee47505a3ed1143ebad63ede5426702fa794d4a127c3f2" => :high_sierra
   end
 
   conflicts_with "camlistore", :because => "both install `hello` binaries"
