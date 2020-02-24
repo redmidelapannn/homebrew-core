@@ -56,5 +56,11 @@ jobs:
       - name: Cleanup
         if: always()
         run: |
+          BREW_LIST=$(brew list 2>/dev/null)
+          if [ -n "$BREW_LIST" ]; then
+            echo ">> brew uninstall"
+            brew uninstall --force --ignore-dependencies $BREW_LIST
+            echo "::warning::brew test-bot didn't clean up after itself"
+          fi
           find .
           rm -rf *
