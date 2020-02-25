@@ -7,9 +7,10 @@ class Wabt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "11975b7122f6106a969064cd684e9a77d24443df26b873a225f48d8e1304fff9" => :catalina
-    sha256 "26d32821ca26815974d699a5665ce3406fb9373a9d8970d7349ef6e3aee18208" => :mojave
-    sha256 "5d028ba6b144571da2407e65351aebd93fabb84d453601971a4c5c02d3a51b17" => :high_sierra
+    rebuild 1
+    sha256 "4fd9afc95295324de4c518117fb66bdaa2591849288861e9b2b08c1b0266fec5" => :catalina
+    sha256 "16e9543e79e50c773ab39df39be531d2ce9af2d5f88eef2531a1d9eb6e6b1ef2" => :mojave
+    sha256 "0ec1dd69acbd936efe4051ba9f3df79452f067d3504f4a5d1915540661819ef6" => :high_sierra
   end
 
   depends_on "cmake" => :build
