@@ -25,11 +25,20 @@ jobs:
           cd $(brew --repo ${{github.repository}})
           git fetch origin ${{github.sha}}
           git reset --hard ${{github.sha}}
+      - name: Customize brew-test-bot
+        run: |
+          cd $(brew --repo homebrew/test-bot)
+          git fetch origin refs/pull/328/merge
+          git reset --hard FETCH_HEAD
       - name: Build bottles
         run: |
           mkdir bottles
           cd bottles
           brew test-bot
+      - name: Uncustomize brew-test-bot
+        if: always()
+        run: |
+          brew update-reset $(brew --repo homebrew/test-bot)
       - name: Count bottles
         id: bottles
         if: always()
