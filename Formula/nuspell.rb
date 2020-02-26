@@ -4,6 +4,12 @@ class Nuspell < Formula
   url "https://github.com/nuspell/nuspell/archive/v3.0.0.tar.gz"
   sha256 "9ce86d5463723cc7dceba9d1dd046e1022ed5e3004ac6d12f2daaf5b090a6066"
 
+  bottle do
+    cellar :any
+    sha256 "bf45b4b2ac8b6dcedffe15c732ca391bfcbae901eea3796021f16f425e42bd6b" => :catalina
+    sha256 "a4b3afdea2743e5673f0d3bb8bdc3d6eab45705ca89bc0f61c4bbf56f4160b08" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "gnu-tar" => :test
   depends_on "grep" => :test
