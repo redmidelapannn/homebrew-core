@@ -7,14 +7,10 @@ class Anttweakbar < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "38b3f17cf22401dd83d9f2ea375b14b31fbd011e0e2b6cbb8b5be894ac49db0b" => :catalina
-    sha256 "2e68286a46381829f51a5bb91eb03bcdc876b79445c86672395517b4f3322652" => :mojave
-    sha256 "393b87de789337afebed9196404af46fa660fea3b476d874d77b48bb35c8079b" => :high_sierra
-    sha256 "af510970b310b01ee52528e816cdd53e2d4a4e2cfc76e426b1710f758bc99d20" => :sierra
-    sha256 "417278abe012967efcf22b0276527187f6472dd5fd4d271b1ea32604816d46c9" => :el_capitan
-    sha256 "a2e29104a5ef51621faaebd72ccc39bd5fe7bd6e977af74a358c5cc83c65c2c2" => :yosemite
-    sha256 "d1298b92cf6a7498c3b357adf6e696d0b24374e758853783fa228a8af5eecddc" => :mavericks
+    rebuild 2
+    sha256 "83a31545ca6de970f7e27f63f63eab1f12d4194bf6310329cf451c69aafac8f6" => :catalina
+    sha256 "27894a0584905dd8ea45d04c2b0ea8321c7b5ef4a8a39c576b32ffffdcd12e09" => :mojave
+    sha256 "fd84eeb4cc7809859170d09d10f0f3020bf17cff5438c4f03ed28c96d2b995f7" => :high_sierra
   end
 
   # See:
