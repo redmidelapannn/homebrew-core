@@ -2,7 +2,7 @@ class Awsume < Formula
   include Language::Python::Virtualenv
 
   desc "Utility for easily assuming AWS IAM roles from the command-line"
-  homepage "https://www.trek10.com/blog/awsume-aws-assume-made-awesome"
+  homepage "https://awsu.me"
   url "https://github.com/trek10inc/awsume/archive/4.1.10.tar.gz"
   sha256 "962b4f7ce25c4647fdc5c286a78cc8a1bf65d75e799116084b4b362a63ef7eb2"
   head "https://github.com/trek10inc/awsume.git"
@@ -24,6 +24,14 @@ class Awsume < Formula
                               "--ignore-installed", buildpath
     system libexec/"bin/pip", "uninstall", "-y", "awsume"
     venv.pip_install_and_link buildpath
+  end
+
+  def caveats
+    <<~EOS
+      In order for Awsume to work correctly, you will need to add the follwoing to your bash_profile or similar.
+
+      alias aswume=". awsume"
+    EOS
   end
 
   test do
