@@ -5,9 +5,10 @@ class Rsyslog < Formula
   sha256 "58bf06f58cd4a4d796bc5aea65fffc18c25619285adaa90d89d4cea5921ea8da"
 
   bottle do
-    sha256 "5d717a6677e67224805def6c470d4411719e0d0bf7bda863870c0a4c229815ac" => :catalina
-    sha256 "ae98d4b2bfb578cddb20a9bbc164d2539a53759e4d221458514a226227d32fbc" => :mojave
-    sha256 "aacb18864992de6cc73ef11ed26a966e58156df46a2f92ba35032d4207ca145a" => :high_sierra
+    rebuild 1
+    sha256 "94ca87573fc773f743768d266c8cdfda62b192b2cc110f7f87c82f7320d5bbfa" => :catalina
+    sha256 "f520d3c68c47d5d4e71440fca0b1174c173f981fce4a531586b2631543f698c5" => :mojave
+    sha256 "9f33bbd23735476b4a98dea4b2f38f507109a43f41f9725c8adde3aceae49fec" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
