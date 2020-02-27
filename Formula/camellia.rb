@@ -6,13 +6,10 @@ class Camellia < Formula
 
   bottle do
     cellar :any
-    sha256 "c7d2e77a15331cebfeff928b67bd32ee5b0a9325ac5cbea022b2c6ddbe585ff6" => :catalina
-    sha256 "347284dc085d1cd6acad286e8797ba3e001190e7cb04934b1f96d1e67481f302" => :mojave
-    sha256 "fc8cb8a0f24226fd1f93b32192f290107d44283196e1edb48458b184597aa729" => :high_sierra
-    sha256 "b4783ca8cf782a63d09daa1ff363c2fb4c4ea6dd4e75b8beb29167f536227730" => :sierra
-    sha256 "a80b2f52fd6811c5c4017bceac418d241c30342c93c1e9ae8911ed5274630e9c" => :el_capitan
-    sha256 "94196d40772f262cedb88f3dcf8b66c84fcc78cd419b439bd9619c25d602c8b1" => :yosemite
-    sha256 "73db73665d4a3972bc5c0b6250d3bc050de83e54330c88e9282b970bf5ececce" => :mavericks
+    rebuild 1
+    sha256 "4a2433197a94d8fd103277eec1935c19ef26e58517f9d94c5dc3ee1e02fd3dfa" => :catalina
+    sha256 "ad2c33f0b077f501f746e1b8a250dc8f3b9587670502e270fb6d96275b29e7d8" => :mojave
+    sha256 "b68046cf8a380e1368fc65a9d51883aeed4cfe6f08aaa70f494afbc2ae0c9361" => :high_sierra
   end
 
   def install
