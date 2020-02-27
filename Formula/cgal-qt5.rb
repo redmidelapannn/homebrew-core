@@ -4,6 +4,13 @@ class CgalQt5 < Formula
   url "https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-5.0.2/CGAL-5.0.2.tar.xz"
   sha256 "bb3594ba390735404f0972ece301f369b1ff12646ad25e48056b4d49c976e1fa"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "37ce268f5a49b460441da2310e7734d5625ea89259448b77c184ef2b14f8afcd" => :catalina
+    sha256 "37ce268f5a49b460441da2310e7734d5625ea89259448b77c184ef2b14f8afcd" => :mojave
+    sha256 "37ce268f5a49b460441da2310e7734d5625ea89259448b77c184ef2b14f8afcd" => :high_sierra
+  end
+
   depends_on "cmake" => [:build, :test]
   depends_on "boost"
   depends_on "cgal"
