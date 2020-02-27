@@ -6,9 +6,10 @@ class Kpcli < Formula
 
   bottle do
     cellar :any
-    sha256 "5f59575c4711bcc72d546ce158c202fdd38bc548471ff35067bce662d071a8a2" => :catalina
-    sha256 "6911dd04b9f3bbe7dc2cfc4c6fc53079e4a71b40c1718c64291d3f1086fc4c8b" => :mojave
-    sha256 "c1b3100690e04b1b00e9034c6a65e2117e088788efc0d849f8cc9cb350219a0e" => :high_sierra
+    rebuild 1
+    sha256 "48c804111f8bdadde1a2513cae6b7e49516407b162c553d0203de9b73b0d486b" => :catalina
+    sha256 "12450b03e08e7753dae2c28e2e8cdc74118b4f8e70be78bf56e4c6b9fa03adab" => :mojave
+    sha256 "596123101bf46806f072f48495cbc8d39f2f59fb2508a767c56c88537f548822" => :high_sierra
   end
 
   depends_on "readline"
