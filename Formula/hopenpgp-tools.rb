@@ -11,9 +11,10 @@ class HopenpgpTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "ca547dd8864f4013ce6ae6d863576eed574da0f763762ee98ead3f477346a41c" => :mojave
-    sha256 "6a56f27602476e83117b5359cdfe449e7a224b317d9283945d945ea7562fd074" => :high_sierra
-    sha256 "51a39adc8c7d59e1c7d0032a827e9dd2c8055cb7e6b176cc7b679fb118503572" => :sierra
+    rebuild 1
+    sha256 "d140c5af01c4d877c2887b40f13365b36d7d387d9007e78cf453bfafbd3fc8b0" => :catalina
+    sha256 "bfc54de827000c013aee36639cc7eb497c07cd18add24c5e5ce73470664c4863" => :mojave
+    sha256 "12957d94e1f1130e2fe025f8e2fd0813ce1feda83ae9684eba033466f01e86d3" => :high_sierra
   end
 
   depends_on "cabal-install" => :build
