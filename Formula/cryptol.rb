@@ -11,9 +11,10 @@ class Cryptol < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0aca3e2c29be5d4533e6114f0e7fd774173358f92d0f4e73903d0d536fb54160" => :mojave
-    sha256 "04d3178e67b8836a720d82dc3b88d1c69366aae6f0e7abdb9a1155b7dc31c28c" => :high_sierra
-    sha256 "3c3ffec1e47196b6c1767086fb9cc62e792546476cad5c6b92896eb45db13744" => :sierra
+    rebuild 1
+    sha256 "f7704829cb27aa88756696912e6d35001f2aea1e8bf43a35f4cfaa535d745e7b" => :catalina
+    sha256 "8565b45a7900ce46a2ca996e0ba5930f4389b05d3b0a059337ac794f1b1596d3" => :mojave
+    sha256 "843979033150ac4921334a4a11a651056b77037dad4948364b5d29ca2921db8f" => :high_sierra
   end
 
   depends_on "cabal-install" => :build
