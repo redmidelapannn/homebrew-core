@@ -6,13 +6,10 @@ class Rnv < Formula
 
   bottle do
     cellar :any
-    sha256 "9a780a7b9ed3b264a7d0471aba7aac503b60640af76156028ecf118a0c35665e" => :catalina
-    sha256 "06a2cb705d679da7de638434f45e28764dcd448863d31f6b39ab090dfde4c04f" => :mojave
-    sha256 "9bf4571824c6d8e837cfcad7ac5e16c6bfc120d4638f0428cdfb8f14203b8c41" => :high_sierra
-    sha256 "8dd3263bb656dcca22605b12faf4c6f54d65e5040e58a7a464c85b69ca19dc99" => :sierra
-    sha256 "1c1aa519b786f842b39720e33900e92a2f2f8deef403755e79e2d3b518897ff1" => :el_capitan
-    sha256 "6d46cb2e6476e22b8bb04d00f599884aa8e44ba7e199ad860e4f15795b04e83b" => :yosemite
-    sha256 "f9c4575d7384100b1cc97d9f421b5906ea5068f612c346ffa0238db6c8e855be" => :mavericks
+    rebuild 1
+    sha256 "b809df0bda73f89815a433d7fc2612b7e26152d36431261b02eb161b5016780f" => :catalina
+    sha256 "a33a468e8ef70f6dc450f73fb188e2b87e923ad51e7dd75514eadc050e540179" => :mojave
+    sha256 "d1a9b1f67de15887aa5864eef9f71d9a61a76d07f568913c9a1a39d584a91841" => :high_sierra
   end
 
   depends_on "expat"
