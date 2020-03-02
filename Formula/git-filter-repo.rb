@@ -6,9 +6,9 @@ class GitFilterRepo < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c47ad881f6c545f5ef1ba71b0c847f5a3575a8ff626b76412362813c0fc503a5" => :catalina
-    sha256 "336c9a9cf76ad1f46f47f74ad4015a905f8690612e2e02072db2300790e89895" => :mojave
-    sha256 "336c9a9cf76ad1f46f47f74ad4015a905f8690612e2e02072db2300790e89895" => :high_sierra
+    sha256 "38ec75c722d85c6559ab99dff1d6c4d12e9d4ea315701cdd7a1dc9bb63eb55d1" => :catalina
+    sha256 "7d0f5be14f42a60e88c856278954d1b93fbd228ba9bf24d38a86ea6891c615ee" => :mojave
+    sha256 "7d0f5be14f42a60e88c856278954d1b93fbd228ba9bf24d38a86ea6891c615ee" => :high_sierra
   end
 
   # ignore git dependency audit:
