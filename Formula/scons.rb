@@ -7,9 +7,10 @@ class Scons < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d754617c360bfc6701d9b3e345ff08d28530adafb302227ec6fe8eea6760ca28" => :catalina
-    sha256 "d754617c360bfc6701d9b3e345ff08d28530adafb302227ec6fe8eea6760ca28" => :mojave
-    sha256 "d754617c360bfc6701d9b3e345ff08d28530adafb302227ec6fe8eea6760ca28" => :high_sierra
+    rebuild 1
+    sha256 "e5681b7fd963190dc5a53f98b2c69b85fadf01e4f4bb89d50dd3af45d9b5b35d" => :catalina
+    sha256 "e5681b7fd963190dc5a53f98b2c69b85fadf01e4f4bb89d50dd3af45d9b5b35d" => :mojave
+    sha256 "e5681b7fd963190dc5a53f98b2c69b85fadf01e4f4bb89d50dd3af45d9b5b35d" => :high_sierra
   end
 
   depends_on "python@3.8"
