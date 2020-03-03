@@ -6,9 +6,9 @@ class CreateDmg < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f79816fe786969d0c2bbf6c025d1616b04add290a20def2492f73295b36bc76c" => :mojave
-    sha256 "d99f697bf1d22dba54a87890b30f383bf4aec7ca5b54f180646041f9d046c243" => :high_sierra
-    sha256 "d99f697bf1d22dba54a87890b30f383bf4aec7ca5b54f180646041f9d046c243" => :sierra
+    sha256 "500d8ac4f98de7de88a3b42099e4a5375ef382ae43c216a83802a178669aa1d4" => :catalina
+    sha256 "500d8ac4f98de7de88a3b42099e4a5375ef382ae43c216a83802a178669aa1d4" => :mojave
+    sha256 "500d8ac4f98de7de88a3b42099e4a5375ef382ae43c216a83802a178669aa1d4" => :high_sierra
   end
 
   def install
