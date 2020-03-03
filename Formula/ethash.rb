@@ -4,6 +4,13 @@ class Ethash < Formula
   url "https://github.com/chfast/ethash/archive/v0.5.1.tar.gz"
   sha256 "69894698dcdbdaf7c601427e47de7fea12449a73617ab6deac1601167232a1b3"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4d6372b3d3cbb912515d4a79d57146a33ac9141fd9c3507e752ec7168597744c" => :catalina
+    sha256 "2cc5debc8bb212c469ad209fce21310d90dbaec4b4de1981ecf64f951d1239d1" => :mojave
+    sha256 "273197895d585fcdd3eb79b7837b86d680b12c012932f77a1bcef2f9bdbe5f9a" => :high_sierra
+  end
+
   depends_on "cmake" => :build
 
   def install
