@@ -5,9 +5,9 @@ class Libgusb < Formula
   sha256 "581fd24e12496654b9b2a0732f810b554dfd9212516c18c23586c0cd0b382e04"
 
   bottle do
-    sha256 "76f5259965a34d7103b135620a99a241d201ddbbc8ae487f5baf27f2fb5b9c0f" => :catalina
-    sha256 "6e79520023ec8b49404af47096b7daafb31d195feb90026beb4bc445a9a8a1bd" => :mojave
-    sha256 "9878b11715c9148335365c0886554b34f576b9c4a0319fd91afcf278725f067b" => :high_sierra
+    sha256 "d9f9e605871defe1f2e16ae5019133d32a130050aadbc6b6e84b30366f2a67f5" => :catalina
+    sha256 "06ce709c304a791aef5efc44e6cf15daa255394bf75ac5eb652a73ca8e7d886e" => :mojave
+    sha256 "5f1e8593d60b45e1ff7826c5d1497a20b9d7c3f0f06cf97e0383dd4c34a1c719" => :high_sierra
   end
 
   depends_on "gobject-introspection" => :build
