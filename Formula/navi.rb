@@ -22,5 +22,5 @@ class Navi < Formula
 
   test do
     assert_match "navi " + version, shell_output("#{bin}/navi --version")
-  end  
+  end
 end
