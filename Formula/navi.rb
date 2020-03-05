@@ -2,7 +2,7 @@ class Navi < Formula
   desc "Interactive cheatsheet tool for the command-line"
   homepage "https://github.com/denisidoro/navi"
   url "https://github.com/denisidoro/navi/archive/v2.0.0.tar.gz"
-  sha256 "2eb69547237a91fd31327d9fabd8dcfd63dd10c6ae8a086286dbd4299b92b7e7"
+  sha256 "458493f1b50d0a5d8fffcc8656a1faedac51e23eb5f6cf86a0878ef9d6f2512d"
 
   bottle do
     cellar :any_skip_relocation
@@ -15,11 +15,9 @@ class Navi < Formula
   depends_on "fzf"
 
   def install
-    system "cargo", "install", "--root", prefix, "--path", "."
     libexec.install Dir["cheats/*"]
     libexec.install Dir["shell/*"]
-    mv "#{bin}/navi", "#{libexec}/navi"
-    ln_s "#{libexec}/navi", "#{bin}/navi"
+    system "cargo", "install", "--root", prefix, "--path", "."
   end
 
   test do
