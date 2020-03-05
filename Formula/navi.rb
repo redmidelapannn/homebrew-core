@@ -18,7 +18,7 @@ class Navi < Formula
   def install
     rm "navi"
     system "cargo", "build", "--release", "--locked"
-    mv "target/release/navi" "navi"
+    mv "target/release/navi", "navi"
     libexec.install "navi"
     libexec.install Dir["cheats/*"]
     libexec.install Dir["shell/*"]
