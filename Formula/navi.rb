@@ -16,8 +16,10 @@ class Navi < Formula
 
   def install
     system "cargo", "install", "--root", prefix, "--path", "."
-    bin.install Dir["cheats/*"]
-    bin.install Dir["shell/*"]
+    libexec.install Dir["cheats/*"]
+    libexec.install Dir["shell/*"]
+    mv "#{bin}/navi", "#{libexec}/navi"
+    ln_s "#{libexec}/navi", "#{bin}/navi"
   end
 
   test do
