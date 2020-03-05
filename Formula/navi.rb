@@ -2,7 +2,7 @@ class Navi < Formula
   desc "Interactive cheatsheet tool for the command-line"
   homepage "https://github.com/denisidoro/navi"
   url "https://github.com/denisidoro/navi/archive/v2.0.0.tar.gz"
-  sha256 "458493f1b50d0a5d8fffcc8656a1faedac51e23eb5f6cf86a0878ef9d6f2512d"
+  sha256 "de63659887e0fd074543917b492b8f7fdb465c8001efae40f736468dd5def6c6"
 
   bottle do
     cellar :any_skip_relocation
@@ -22,5 +22,7 @@ class Navi < Formula
 
   test do
     assert_match "navi " + version, shell_output("#{bin}/navi --version")
+    cp_r "tests/cheats", testpath
+    assert_match "foo", shell_output("NAVI_PATH=#{testpath} #{bin}/navi best simple")
   end
 end
