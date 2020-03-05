@@ -23,6 +23,6 @@ class Navi < Formula
   test do
     assert_match "navi " + version, shell_output("#{bin}/navi --version")
     cp_r "#{prefix}/tests/cheats", testpath
-    assert_match "foo", shell_output("NAVI_PATH=#{testpath} #{bin}/navi best simple")
+    assert_match "foo", shell_output("NAVI_PATH=#{testpath}/cheats #{bin}/navi best simple")
   end
 end
