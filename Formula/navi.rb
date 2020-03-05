@@ -1,8 +1,7 @@
 class Navi < Formula
-  version "2.0.0"
   desc "Interactive cheatsheet tool for the command-line"
   homepage "https://github.com/denisidoro/navi"
-  url "https://github.com/denisidoro/navi/archive/v#{version}.tar.gz"
+  url "https://github.com/denisidoro/navi/archive/v2.0.0.tar.gz"
   sha256 "2eb69547237a91fd31327d9fabd8dcfd63dd10c6ae8a086286dbd4299b92b7e7"
 
   bottle do
@@ -17,7 +16,7 @@ class Navi < Formula
 
   def install
     rm "navi"
-    system "cargo", "install", "--root", prefix, "--path", "."
+    system "cargo", "build", "--release", "--locked"
     mv "target/release/navi", "navi"
     libexec.install "navi"
     libexec.install Dir["cheats/*"]
