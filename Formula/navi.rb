@@ -15,13 +15,9 @@ class Navi < Formula
   depends_on "fzf"
 
   def install
-    rm "navi"
     system "cargo", "install", "--root", prefix, "--path", "."
-    mv "bin/navi", "navi"
-    libexec.install "navi"
-    libexec.install Dir["cheats/*"]
-    libexec.install Dir["shell/*"]
-    bin.write_exec_script(libexec/"navi")
+    bin.install Dir["cheats/*"]
+    bin.install Dir["shell/*"]
   end
 
   test do
