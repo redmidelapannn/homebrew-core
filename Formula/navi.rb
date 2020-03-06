@@ -29,15 +29,17 @@ class Navi < Formula
 
   test do
     assert_match "navi " + version, shell_output("#{bin}/navi --version")
+
     (testpath/"cheats/test.cheat").write <<~EOS
-% test
+      % test
 
-# foo
-echo "bar"
+      # foo
+      echo "bar"
 
-# lorem
-echo "ipsum"
-    EOS    
+      # lorem
+      echo "ipsum"
+    EOS
+
     assert_match "bar", shell_output("#{bin}/navi --path #{testpath}/cheats best foo")
   end
 end
