@@ -13,7 +13,6 @@ class Navi < Formula
 
   depends_on "rust" => :build
   depends_on "fzf"
-  depends_on "fzf" => :test
 
   def install
     libexec.install Dir["cheats/*"]
