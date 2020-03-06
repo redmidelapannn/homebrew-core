@@ -18,10 +18,10 @@ class Navi < Formula
     # copy resources
     libexec.install Dir["cheats/*"]
     libexec.install Dir["shell/*"]
-    
+
     # build binary
     system "cargo", "install", "--root", prefix, "--path", "."
-    
+
     # make sure the binary is in the same folder as the resources
     mv "#{bin}/navi", "#{libexec}/navi"
     ln_s "#{libexec}/navi", "#{bin}/navi"
