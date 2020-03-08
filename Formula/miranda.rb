@@ -5,6 +5,13 @@ class Miranda < Formula
   version "2.066"
   sha256 "521c281e8c2fde87a2cd7c41d9677daa09514debb71435efc08ff3a7c20016eb"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1895a3a95a0c9598a7cd9332eec0a0a1d7d1f35f5fdaeb5773d81fe83769cddc" => :catalina
+    sha256 "0d06956196fe1a0c9b969deecc7b512d5888f6785c44ca3af171b7ac29bc3cf2" => :mojave
+    sha256 "d0ac35bb1ecea1f81ada691ccb5611a76d52349e1853ff50a9e9bb3b90873918" => :high_sierra
+  end
+
   depends_on "byacc" => :build
 
   def install
