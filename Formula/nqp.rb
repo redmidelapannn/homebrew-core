@@ -5,9 +5,10 @@ class Nqp < Formula
   sha256 "4ccc9c194322c73f4c8ba681e277231479fcc2307642eeeb0f7caa149332965b"
 
   bottle do
-    sha256 "ea972f125bb601106b454b3f1596b7e2aa7b3650487dcdda21e193be82af6943" => :catalina
-    sha256 "12f89f3523ab33211eaf9db859ffcae0aa774efa4a45c68993d17b49a062f579" => :mojave
-    sha256 "5745de9144151d32539d14da3bc1d0407bf2360749bf54978b3775bd827fad6f" => :high_sierra
+    rebuild 1
+    sha256 "571ea8942a500b7cf855255b66f043a59d9272c6e8ba81f8a6923ca8999f4e40" => :catalina
+    sha256 "f0968c795be07040adcadcaedf03fd0849ea77de76d3b78d4a50dc16dd2c055d" => :mojave
+    sha256 "75dd136a7dfee5a12eeffa1871b8558cb13cb602a538b3a08248361156ff0e50" => :high_sierra
   end
 
   depends_on "moarvm"
