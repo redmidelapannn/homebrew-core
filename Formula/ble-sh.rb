@@ -5,6 +5,13 @@ class BleSh < Formula
   sha256 "c0b9a1521e375bcc38252cb0863404a246fe54c1619c58657253698220e78c68"
   head "https://github.com/akinomyoga/ble.sh.git"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "19ec5737998f316bf98f2f7704603800067d9bc5ff7f26e0d76425792fda4dcf" => :catalina
+    sha256 "fe096e33a46fdcce75fcaedbb0ce97810bcbdcc93e971b87fdb30ec875d8a88c" => :mojave
+    sha256 "000a0692dd437acc03a5d9091a843afb045fa064ee526e0450e6be1c2d591859" => :high_sierra
+  end
+
   keg_only "this formula puts files in lib that shouldn't be linked"
 
   depends_on "gawk" => :build
