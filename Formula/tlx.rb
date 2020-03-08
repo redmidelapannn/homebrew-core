@@ -7,11 +7,8 @@ class Tlx < Formula
   depends_on "cmake" => :build
 
   def install
-    args = std_cmake_args + [".."]
-    mkdir "build" do
-      system "cmake", ".", *args
-      system "make", "install"
-    end
+    system "cmake", "."
+    system "make", "install"
   end
 
   test do
