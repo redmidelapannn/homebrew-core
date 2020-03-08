@@ -8,9 +8,10 @@ class Monero < Formula
 
   bottle do
     cellar :any
-    sha256 "97e2127eb9940787ca8fd90fefe51c024a7b7eb31a71831202211a0cb073a1b3" => :catalina
-    sha256 "d11ad52f791fbc14f859bda0bc97e0daa62d4df2ca30ca8a98170a5d091286ef" => :mojave
-    sha256 "a8742fb9b6c349f47398d7327d02674aab87cafcc076f622e3dbc916f65918cc" => :high_sierra
+    rebuild 1
+    sha256 "836c5753d2c50a8818ba8008c335e567c7f2706d2e4c830ce0ecc7a32a8a0cb2" => :catalina
+    sha256 "b5603a9ddd026b25d9428bf2ff696b7aa25a96c3e221b7db328b0d2a04f39c4c" => :mojave
+    sha256 "96035ce161a16f2be9a4111ad66313484d27594733acd890104bbf2e66c9cc95" => :high_sierra
   end
 
   depends_on "cmake" => :build
