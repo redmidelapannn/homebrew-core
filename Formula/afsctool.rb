@@ -5,11 +5,9 @@ class Afsctool < Formula
   sha256 "4ae643ae43aca22e96cd6a2a471f5d975a3d08eafa937c1fc8e562691bcbfb1a"
   bottle do
     cellar :any_skip_relocation
-    rebuild 3
-    sha256 "f418e15be4bafdcb1a85e14c3148c8d4af1b300bd6ed3e4a30eca3725459ac48" => :catalina
-    sha256 "15c264a828ed98a42cc5ac68869c16b8306f73effe108e50bb1f731574311c51" => :mojave
-    sha256 "72e92414d524b82ec1d8381ad50f55bd330f1109a5e10bca4235300fee557caf" => :high_sierra
-    sha256 "96437b04a2974c215979550d3d70b4c8e3f609e76954ca41059c6f246da452ee" => :sierra
+    sha256 "6aa8a197c4798f31a2e43f34dd35ac9598836831017694bc954ebe3eb522eeb8" => :catalina
+    sha256 "4dc0880d117ec9ca6d682f563deb2da864740347bd8e9258a26000739baa7e79" => :mojave
+    sha256 "1219304f901de6f4942b3604abdcaf6ce3c6f6cfbba7ad5633553b4007f76535" => :high_sierra
   end
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
