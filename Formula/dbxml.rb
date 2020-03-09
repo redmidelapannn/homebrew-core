@@ -6,11 +6,11 @@ class Dbxml < Formula
   revision 3
 
   bottle do
-    sha256 "59c12069d26a6be4f542d4c7869841c2bd71e8cb08a1c809d559818fb1cb156a" => :catalina
-    sha256 "b525b9d21d149d533aeb62a169becfe1e140f143d34291d0a8fddf2ada41a018" => :mojave
-    sha256 "1886b654f152fc03a6a6e781ca94e5ca3a08f7f190bc1168326bf46b337c02e9" => :high_sierra
-    sha256 "2a350300c31d639d46e9fafc16747d5cbe1897035acf1c365f795127535693b3" => :sierra
-    sha256 "e2c82383d79f243654a0bbebdfb141334bbf683c6925b5a8f3ce0d1568024fec" => :el_capitan
+    cellar :any
+    rebuild 1
+    sha256 "b023e3331448526c656825b39f3cc2db2643978197198ebf8f277d8d63abf859" => :catalina
+    sha256 "0b7639060f55dacfa0ce65ab35566e5234e16e3298efd45d740910f860dc1565" => :mojave
+    sha256 "4957b5517342f2e4883a0a04f5e46ae1e592e40d0deb160a69ce621a8ce73441" => :high_sierra
   end
 
   depends_on "berkeley-db"
