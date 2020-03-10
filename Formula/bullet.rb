@@ -9,9 +9,9 @@ class Bullet < Formula
   end
 
   bottle do
-    sha256 "2871bb63205a9fb0f9911422729628339be0fa84b903063a8ca39abda15e6f4b" => :catalina
-    sha256 "41b2dfaa33c18ec6875999a4112e9214b1e956cb8b4e86052fd80aa7127a3612" => :mojave
-    sha256 "c9b07e0e13f21cdd31cd71c32b4a5c7cca5bd181867a8a1c5bc95b5e261f3bdd" => :high_sierra
+    sha256 "828dfaf544f3c71ab479de9b077ae5005afb2568efd2b56b60fb94ec17cf2187" => :catalina
+    sha256 "f32d521cfa2a534a1d33ab443491cf0f33b9eead49855bc57aada06db551eb46" => :mojave
+    sha256 "eb4d9c27f94109bf94fc3fd2ee41e358f47727571c08a5c11088e7436b01fe28" => :high_sierra
   end
 
   depends_on "cmake" => :build
