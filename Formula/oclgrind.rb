@@ -6,10 +6,10 @@ class Oclgrind < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ffb53cf7c25cab8764915b0569964de90f16c3486c4b88c1c604467af7211001" => :catalina
-    sha256 "5e22e8e0cd96a5bbc198f9df7f2eb9c1ec4489d693d40ec913a42592f891f5cc" => :mojave
-    sha256 "a87183acf599c5fe68f8bd43c978234af6ecae7ec0cbc33ff50e79548ff438c5" => :high_sierra
+    rebuild 2
+    sha256 "5d9d55b0be357c191345dc7dd670783dd7853af9f08f6697e991949d0bf5c179" => :catalina
+    sha256 "f7e73f3101c823fb8e67e03917646f0544a96192e35e7f3d656f177485619257" => :mojave
+    sha256 "f7b42cacd9846677462626bb14866accfbe851ff50e17b99d429e19b919fa7cc" => :high_sierra
   end
 
   depends_on "cmake" => :build
