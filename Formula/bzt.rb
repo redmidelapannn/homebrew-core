@@ -9,9 +9,10 @@ class Bzt < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "984bf117e673437e02284d04da3bd60bd9d551f7704becbfc1321e1bba53272a" => :catalina
-    sha256 "a7b39a822a6ab5c59b12995191cc7a1a0c0f1b7c82779cef5475201fbc449feb" => :mojave
-    sha256 "26eb2bdc167a18aeea8767d485e3d62412c6ed75338006c0dec68cb304e1f29b" => :high_sierra
+    rebuild 1
+    sha256 "55ac8db1bc68015491893ff7ab0a9bae0f1593bbd00dcf1137c577d50f9f656d" => :catalina
+    sha256 "fa6a45ed4d749f4ac53caef9180f03f5c146db9b813b49bf1c988237111ebe1c" => :mojave
+    sha256 "b6e2363dbf86d4853e36a78af62797c86200fee7131e0f203718b2217a130ef7" => :high_sierra
   end
 
   # can only run with python 3.7 due to this issue, https://github.com/simonpercivall/astunparse/issues/43
