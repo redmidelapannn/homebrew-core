@@ -8,13 +8,10 @@ class Rp < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f173bd7e78a13f9fe20fbe70e3bda26e91a5aec77bd094a4d0b447afee0ff1b9" => :catalina
-    sha256 "9e7dee319426b8db92302fdd19ee37f3ea5b0b3b8ebb1865e29127aa340ec7b5" => :mojave
-    sha256 "40042ba7ad3506a62f79ed836480bf2d33a3ea171a19905a51db60c3a037cb0b" => :high_sierra
-    sha256 "93aea19e1b6c6511e309f87003f173485a36e2b870734b6162e0bc43ae5f2a70" => :sierra
-    sha256 "1ed1c49f3495c6da683908c34d17f345c5f3bde2a5112674bbd41f6a92da1ab2" => :el_capitan
-    sha256 "e85fa182a3b46f8a3cd5a6d3a27359d4981fb1cab0ca5c2d3a1a9c471af1a77c" => :yosemite
-    sha256 "398c2c7776b0da352930a13a9339cd66b4e74c773313eb347740cfd2ea8ccf24" => :mavericks
+    rebuild 1
+    sha256 "78a0e4a670cba65912a6a22a0f192331ca36b03fd5473d3969d4982e84343948" => :catalina
+    sha256 "173b2f0b9471ddacb5b5574001f0c515953282a254c40e751535737259dc3b07" => :mojave
+    sha256 "356f1a12e5b765827341160b5dc051e148ffd0668cf1fafd9dc71754a554a015" => :high_sierra
   end
 
   depends_on "cmake" => :build
