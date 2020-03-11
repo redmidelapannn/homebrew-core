@@ -9,9 +9,10 @@ class MagicWormhole < Formula
 
   bottle do
     cellar :any
-    sha256 "4a87746735a5a32fe36192717f4048f004b485f99aa18e884aa16c5012c16fea" => :catalina
-    sha256 "8451d4f3536521063429103abf169176d65b911a35dfd363de9164fc4eb306ff" => :mojave
-    sha256 "183ae4d0f054889bbf4d5fe594af92ecd18a5a45cb17605124183807ce89281a" => :high_sierra
+    rebuild 1
+    sha256 "362e846474b4acbb170e943d28b9d0b5fb5824fd3c4998605ac873e3a1ac4c3b" => :catalina
+    sha256 "b727becb53845cbf2c8fdc300470b5f65a86b1d286e3398c18c8172812dc43e6" => :mojave
+    sha256 "d6a96cb7e658a8686e983e150d2ab73236c8037fb58192aef99cbf8eef060f7f" => :high_sierra
   end
 
   depends_on "libsodium"
