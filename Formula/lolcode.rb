@@ -9,13 +9,10 @@ class Lolcode < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "546e86a771457249146ea07ff5669f0e19bd26b3d3e3818ed33925497ae6cfda" => :catalina
-    sha256 "766522d1d3730e62d1a05e54962b0493db19d62a3cd7ce66328861630508c4ee" => :mojave
-    sha256 "e6cb7d51d26fe4b54f41a14bf183216bb9ca87a6d0b8db25ebf55e64227ac5aa" => :high_sierra
-    sha256 "47b268e8334d901868a6498738772b1c776fe34ab249befa702658489e53dff9" => :sierra
-    sha256 "74920cea828644c7ad0fe3b12ee5c9a4c06a46ec37c2826280327e37e30f5513" => :el_capitan
-    sha256 "571a57a0fa8b60aac62ce3a358c0b123efcd2af9ec4004c51194c549ad8dd3f1" => :yosemite
-    sha256 "9159a0b5f907f400f7e233c026579568dd2c6a98d952fde2759f84cb52101508" => :mavericks
+    rebuild 1
+    sha256 "0dfb1a4324483b061f9edd43e99c920de1076e4434e3dc9a18e3477dc9e546f6" => :catalina
+    sha256 "235b28385f68e43efa2810b20a092c7887ea678de30abe9de8e61bbcaa21a2a4" => :mojave
+    sha256 "28480aea7c489b29c6db7c8f767363335ee8beb8e66a1d75aa4d535157985263" => :high_sierra
   end
 
   depends_on "cmake" => :build
