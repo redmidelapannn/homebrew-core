@@ -33,6 +33,11 @@ class Efl < Formula
   depends_on "pulseaudio"
   depends_on "shared-mime-info"
 
+  patch do
+    url "https://github.com/Bo98/efl/commit/55970121f361faf4e55ee7d9261566d7e1a1f474.patch?full_index=1"
+    sha256 "2b4d5aeca26ea08258d79195cf1202da454218a62b6c341fa117b272ca886597"
+  end
+
   def install
     ENV.cxx11
 
