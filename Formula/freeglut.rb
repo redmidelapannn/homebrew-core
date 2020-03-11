@@ -6,9 +6,10 @@ class Freeglut < Formula
 
   bottle do
     cellar :any
-    sha256 "48bb8108331861a7f4d1ce70472c53ee8a0f4aec75857f1bfc0ab56a59e53787" => :catalina
-    sha256 "fdc12ba4122ba3128551768b8abddd4815287a5d5b4ffdc6e00008828c43dd43" => :mojave
-    sha256 "c29f4c83e001ee7e6a751769f72b20e5096f30eccf287ca2c572088896e92833" => :high_sierra
+    rebuild 1
+    sha256 "525990d82a25658bdd25c9c00e17be7df014ef49bf2a56037aefbf98a4fe0ea7" => :catalina
+    sha256 "eb85ee39f49e997121b67b2da2a00dbf2997f9b0b482a92a956e30c180cd7dee" => :mojave
+    sha256 "d50975d920c137c59fa27ea1478e164562abe93c0903bda70e5d7ba0a4a29d66" => :high_sierra
   end
 
   depends_on "cmake" => :build
