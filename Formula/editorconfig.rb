@@ -7,10 +7,10 @@ class Editorconfig < Formula
 
   bottle do
     cellar :any
-    sha256 "a1315cb812fd1f626d7924543b80388f88e8cb13ee79e9f305d475bf5787217e" => :catalina
-    sha256 "da824a4d67b8c1c1627d90e222b5f2441caf9cd7eca50de40380d3e7839db047" => :mojave
-    sha256 "26eceb21fd8d34c04799f70ba22ca0da11456c1e3fa30b0b90e592038b840d01" => :high_sierra
-    sha256 "a4655cde0acc92e11b02263337d384770bf0b592d828d44b8bef8be961572ad8" => :sierra
+    rebuild 1
+    sha256 "0c7e428c7a4be374249efc6d861b5242f9514b7400af86aaf5ae7fb6d2c625e0" => :catalina
+    sha256 "e4ae2ae6507bc76eb0a2171b42f4d0711b6525fb3ea2d289c3c8db2257411366" => :mojave
+    sha256 "e9717a42cfcf556bf5df1cd683336498832adb5c7c99496c951dff014f81661f" => :high_sierra
   end
 
   depends_on "cmake" => :build
