@@ -8,10 +8,10 @@ class LeelaZero < Formula
 
   bottle do
     cellar :any
-    sha256 "b9764e2ebdade7c55ffb44f29f3c546be8003348ecca7b6ea0e93969cdce9032" => :catalina
-    sha256 "6e95d7ef2f671bc404fcafd426b47cf3c4c9a9f2ab577772c03a1cf721a20444" => :mojave
-    sha256 "ddb11b34f4a1e210e52ad13c4e789b2f0958278fe3cadfc94dc22afcce59bfa4" => :high_sierra
-    sha256 "decf1639a96bb4fd9a198f74f7c20413cde1109d913769f0a32cc2a6c9527778" => :sierra
+    rebuild 1
+    sha256 "0c3687187b9d8cecf1f6c4c6933422cc81c0fd99f5813b7455a187d0fd6d386a" => :catalina
+    sha256 "562e2126788182f78b65d48a724cebf5837cb3494023c599413d2ed593e1abdd" => :mojave
+    sha256 "8e69eb74cb4e7e6847751d190c9e31c14e3aac72fe22f649d0c6c68bf9871353" => :high_sierra
   end
 
   depends_on "cmake" => :build
