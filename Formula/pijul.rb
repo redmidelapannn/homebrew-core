@@ -7,10 +7,10 @@ class Pijul < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "c5cc98c1979e4e782685774e3e5ff449f6968123f6e79ff68ecf8c4cf8656266" => :catalina
-    sha256 "73bf314aa865452f0f7104430a64be1922f31553c2b41e36e8fc0ba8657ca7b2" => :mojave
-    sha256 "b5dbbecb1823507658c535c4d60d8374a0924169a1994bf68d0210a62f42ea17" => :high_sierra
+    rebuild 2
+    sha256 "9d22e1060b7b24a43a439daa2ac4181611aa11fb0c212a09213733c7ee590c6f" => :catalina
+    sha256 "acc6136b8c098e88b254f418f3746f6ccb22d5d329e63f4e0806ac9659a7a538" => :mojave
+    sha256 "86a715b7b553524787c8dbf5dce559fb4a824c333590c9095d270e880c45a96f" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
