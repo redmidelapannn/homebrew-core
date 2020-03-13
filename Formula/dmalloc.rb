@@ -6,13 +6,10 @@ class Dmalloc < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb7efa95445722da981fd93013f07db5124aa2b74470d783ac4a18df869a6e8c" => :catalina
-    sha256 "f4bd200bf3b14f68387a1110588f10cbd813b5fddcb585d0edf48d48ece5a8ee" => :mojave
-    sha256 "ad501bd5d70dfd3ede2258c0a7c0535b29eba957b67271e4db930ecf6bcc845f" => :high_sierra
-    sha256 "9807e6014702bc1350fe0931dbd9bdabcca169b6c8f196ddf37c9f0abfa1b722" => :sierra
-    sha256 "9e1b5dad96d27fbd31e249de7965963fa2e8028286a5e41ce7ddf4555b344162" => :el_capitan
-    sha256 "9283914d34d43556b6a3779523834a056c78d565efacf4316846b1af90cedaf5" => :yosemite
-    sha256 "182c639d938b8b4fb237f7068bc295debba2539bf500adbb8761dabd99b3fcbf" => :mavericks
+    rebuild 1
+    sha256 "dd7278ff25f50ec5dbd7667c7f34b94d2cda3c000237d6b6a9d76a6fb8eafc2c" => :catalina
+    sha256 "bf0dbebc2d86fa2abf775075b651338478c8af27bdd78bc9fcb2572d4d10bc1d" => :mojave
+    sha256 "1749c979ca1640760691bf1de3332944e3daf7b23792398462d786162a90cabb" => :high_sierra
   end
 
   def install
