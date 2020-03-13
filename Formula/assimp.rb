@@ -7,9 +7,10 @@ class Assimp < Formula
 
   bottle do
     cellar :any
-    sha256 "f049baf0e3bc3941e8449dbfbc997d0448b0a1722bfdceadb69b2eacc48e3464" => :catalina
-    sha256 "620f5f399783c487ae78077da65b65f6a0c81dce23768ae56eb1edd383a57daa" => :mojave
-    sha256 "6dffc67ca984f5870bdc09a1c0adbb3c0d2209c7fb8169e2204c4c2d2d44aebe" => :high_sierra
+    rebuild 1
+    sha256 "7fc14753e0951463527bfab2d38c9199cb7d3efaaa2a8d6246583de960bfbf97" => :catalina
+    sha256 "449e06fa758f12eb91d6c2450c8d362ac4fb453cd9bce0e29117e4494d1cb58c" => :mojave
+    sha256 "0e3ca738fcea750f3b19ec379670483c046accd8be44cd541efc95825589bbde" => :high_sierra
   end
 
   depends_on "cmake" => :build
