@@ -5,10 +5,9 @@ class Libinfinity < Formula
   sha256 "626ee0841bfe24f471580cd17d906dd83b973cf4f10019574adfdfc5327482cb"
 
   bottle do
-    sha256 "4d367978cb9ee0612c37947080939b3006c5bb7972673cc2c6175242c5809c28" => :catalina
-    sha256 "8c9bdd8c7cfb58b1f8c9ce451881c620d574ac749ff0f40e4efa87c0faebba26" => :mojave
-    sha256 "ea90d469694a6da2dd087ceb5f77fc9294b0ce7cee678d135ad466c3a1ae636d" => :high_sierra
-    sha256 "6dd59d33bdc050e1e61d5a7a6efa79a83c0130c237f04c678f7e8fe6a455e4df" => :sierra
+    sha256 "0a47f89cff94435092eb8a6c4311a312859e4b5b012eb61f2df3b8fecf0ca194" => :catalina
+    sha256 "e9d7a1135165d8369a3957955e62a3a6de6e9e0c3d13c5a963c072da46582e6f" => :mojave
+    sha256 "c95c10641edd53f345ca6b683983797cb9d1bfe102ea69fd9d7a7c95773f7b0f" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
