@@ -55,10 +55,9 @@ class Llvm < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ded898b5800305985074c1196d79452a92ed2f006a12a99c8cbb727537f36daf" => :catalina
-    sha256 "2c728a1080f7d8816287690e4ce2833a5cbf407f3d01e5a4021eb707ed90fb70" => :mojave
-    sha256 "627f4f1959f9287eecec7abf337058eee08edc10006fe1d82d9ce689eb90da53" => :high_sierra
+    sha256 "0ec3fc7cb695f929637b2b7745fe6f85d262ef5e1e9e3c9f32d66310af764cf0" => :catalina
+    sha256 "42464393b4e9bbf682b09ab964ec5b3a4fcefaf0ee79d1040781d600165ae24b" => :mojave
+    sha256 "ab2c6458a113b6b2d4806b68b283420ab97fb2ec5929dd244b5db527ba44b4ff" => :high_sierra
   end
 
   # Clang cannot find system headers if Xcode CLT is not installed
