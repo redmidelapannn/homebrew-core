@@ -7,10 +7,10 @@ class IcarusVerilog < Formula
   head "https://github.com/steveicarus/iverilog.git"
 
   bottle do
-    sha256 "bf40a384b8432dfb72276e31e87d550b9b47515dc68bdfb25f0cde9becd4ac10" => :catalina
-    sha256 "0237851e478bcb76567111f14c1e42fe79161a8cd28ca04127295fc40db14113" => :mojave
-    sha256 "96a15af23212d29f9410e073418c9388447955245fa8c38cf3b27ccf8fabd178" => :high_sierra
-    sha256 "ded40d14a1cd74f2b764d9cf667d48ee8b6c010e77d88ca47afc99188ace1255" => :sierra
+    rebuild 1
+    sha256 "e6faa3a78d7adf3b4d4a8e4f36e604c2153911fc54358cdd0d9702981ddc5563" => :catalina
+    sha256 "845d6543f45630bb13be6697b63b74c6b682c8a34e91b97c666471507f72f7ae" => :mojave
+    sha256 "c2b4b4195510eae38174bca4bd9deb5c8826347c611ab9ce0cd68ce6989e3eb0" => :high_sierra
   end
 
   depends_on "autoconf" => :build
