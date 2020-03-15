@@ -7,9 +7,9 @@ class Php < Formula
   revision 1
 
   bottle do
-    sha256 "9370af1b117049783f81968fc800d1710224581cb8d9f396c38d9eef8aedf3ac" => :catalina
-    sha256 "364332e23b489c53fe9efddc881bd9fa8366df5ea66f9e69c9c843d6ec64518d" => :mojave
-    sha256 "c0c2fa82be5609534d3fdf875515e0d98ea17ed4de4f27aece8e275c840e889b" => :high_sierra
+    sha256 "87c8aafbacfe25b7e62290d0200e2fdd22858c91b65823f62f9f0f2335b03c02" => :catalina
+    sha256 "7b0d48eaad5770db1c27b1638ba82c331852b7a741ca410f692902fb6bb5d14c" => :mojave
+    sha256 "c34ff522398cea7d63bc49918a1b773fb7b6ddf94f5e3439ecdf4e510873e4fb" => :high_sierra
   end
 
   head do
