@@ -6,7 +6,6 @@ class NotmuchMutt < Formula
   head "https://git.notmuchmail.org/git/notmuch", :using => :git
 
   depends_on "coreutils" => :build
-  depends_on "markdown" => :build
   depends_on "perl"
 
   uses_from_macos "pod2man"
