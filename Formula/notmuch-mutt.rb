@@ -5,6 +5,13 @@ class NotmuchMutt < Formula
   sha256 "d5f704b9a72395e43303de9b1f4d8e14dd27bf3646fdbb374bb3dbb7d150dc35"
   head "https://git.notmuchmail.org/git/notmuch", :using => :git
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "390b82eb55889648711a35b38edddf0b1af72c5a04e7f5f6999beeaaae6831a7" => :catalina
+    sha256 "390b82eb55889648711a35b38edddf0b1af72c5a04e7f5f6999beeaaae6831a7" => :mojave
+    sha256 "2a56b475d82f4a68d250534a90b4d56d928a79aeb3ef861888e36dd3b4760525" => :high_sierra
+  end
+
   depends_on "coreutils" => :build
   depends_on "perl"
 
