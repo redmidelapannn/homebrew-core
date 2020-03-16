@@ -7,8 +7,9 @@ class NotmuchMutt < Formula
 
   depends_on "coreutils" => :build
   depends_on "markdown" => :build
-  depends_on "pod2man" => :build
   depends_on "perl"
+
+  uses_from_macos "pod2man"
 
   patch :DATA
 
