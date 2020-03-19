@@ -6,6 +6,13 @@ class Microk8s < Formula
   url "https://github.com/ubuntu/microk8s/archive/installer-v1.0.0.tar.gz"
   sha256 "a9bc24c364234c6ead372119009667214b41a00344a8448a0f33861ab3de5112"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "a10fcaf59c73de42d755e1eededfbc4ab672f5c00c6833f0654ffd11e51704ad" => :catalina
+    sha256 "fd1d9a1d6803613511c1c37fcfe2047a9e0414b06c4d070cbdc3d189e5b038de" => :mojave
+    sha256 "5ea3f5891ab5394ae295598e0836002039c9a6ceaee0383a595f457aef79ec92" => :high_sierra
+  end
+
   depends_on :macos
   depends_on "python"
 
