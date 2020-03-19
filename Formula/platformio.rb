@@ -3,8 +3,8 @@ class Platformio < Formula
 
   desc "An open-source ecosystem for embedded development"
   homepage "https://platformio.org/"
-  url "https://files.pythonhosted.org/packages/f4/c8/8e472c22602ec6cdc6f93e35357ff5f3dff3434da6fc76cd3cd57c7eefb6/platformio-4.2.1.tar.gz"
-  sha256 "310fa8b624cf938ef95284ae3a40a9caa36aafef32ac30ad588b43df516945c3"
+  url "https://files.pythonhosted.org/packages/0d/cd/6e7a07fa7bf9c52f7d69572f17fd58feee74013de03519698b44b4735d85/platformio-4.3.0.tar.gz"
+  sha256 "27a34001a622fdf6478562f08d15d5624b11bc702343435802a8dfe6526defcd"
   revision 1
 
   bottle do
@@ -42,13 +42,13 @@ class Platformio < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz"
-    sha256 "c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"
+    url "https://files.pythonhosted.org/packages/cb/19/57503b5de719ee45e83472f339f617b0c01ad75cba44aba1e4c97c2b0abd/idna-2.9.tar.gz"
+    sha256 "7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb"
   end
 
   resource "marshmallow" do
-    url "https://files.pythonhosted.org/packages/58/29/e142bc21808ec966dfcf70fe3a395f61e70bb8abce6bee0bd30a3c1d7a17/marshmallow-3.4.0.tar.gz"
-    sha256 "c9d277f6092f32300395fb83d343be9f61b5e99d66d22bae1e5e7cd82608fee6"
+    url "https://files.pythonhosted.org/packages/a8/74/5aa84008ddc6e8fee93d961a9f04a745a349ad197d95ab89723c097b330d/marshmallow-3.5.1.tar.gz"
+    sha256 "90854221bbb1498d003a0c3cc9d8390259137551917961c8b5258c64026b2f85"
   end
 
   resource "pyelftools" do
@@ -62,8 +62,8 @@ class Platformio < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/01/62/ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz"
-    sha256 "11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"
+    url "https://files.pythonhosted.org/packages/f5/4f/280162d4bd4d8aad241a21aecff7a6e46891b905a4341e7ab549ebaf7915/requests-2.23.0.tar.gz"
+    sha256 "b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"
   end
 
   resource "semantic-version" do
