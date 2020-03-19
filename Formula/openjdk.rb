@@ -1,10 +1,9 @@
 class Openjdk < Formula
   desc "Development kit for the Java programming language"
   homepage "https://openjdk.java.net/"
-  url "https://hg.openjdk.java.net/jdk-updates/jdk13u/archive/jdk-13.0.2+8.tar.bz2"
-  version "13.0.2+8"
-  sha256 "01059532335fefc5e0e7a23cc79eeb1dc6fea477606981b89f259aa0e0f9abc1"
-  revision 2
+  url "https://hg.openjdk.java.net/jdk/jdk/archive/jdk-14+36.tar.bz2"
+  version "14.0.0+36"
+  sha256 "f0b5af8627c36feb3f2e7893a9f5fc1d848a86d4e18a3b2804f8da141c6f3d87"
 
   bottle do
     cellar :any
@@ -17,9 +16,10 @@ class Openjdk < Formula
 
   depends_on "autoconf" => :build
 
+  # From https://jdk.java.net/archive/
   resource "boot-jdk" do
-    url "https://download.java.net/java/GA/jdk12.0.2/e482c34c86bd4bf8b56c0b35558996b9/10/GPL/openjdk-12.0.2_osx-x64_bin.tar.gz"
-    sha256 "675a739ab89b28a8db89510f87cb2ec3206ec6662fb4b4996264c16c72cdd2a1"
+    url "https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_osx-x64_bin.tar.gz"
+    sha256 "08fd2db3a3ab6fb82bb9091a035f9ffe8ae56c31725f4e17d573e48c39ca10dd"
   end
 
   def install
@@ -28,7 +28,7 @@ class Openjdk < Formula
     boot_jdk = boot_jdk_dir/"Contents/Home"
     java_options = ENV.delete("_JAVA_OPTIONS")
 
-    short_version, _, build = version.to_s.rpartition("+")
+    _, _, build = version.to_s.rpartition("+")
 
     chmod 0755, "configure"
     system "./configure", "--without-version-pre",
@@ -46,7 +46,8 @@ class Openjdk < Formula
     ENV["MAKEFLAGS"] = "JOBS=#{ENV.make_jobs}"
     system "make", "images"
 
-    libexec.install "build/macosx-x86_64-server-release/images/jdk-bundle/jdk-#{short_version}.jdk" => "openjdk.jdk"
+    jdk = Dir["build/*/images/jdk-bundle/*"].first
+    libexec.install jdk => "openjdk.jdk"
     bin.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/bin/*"]
     include.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/include/*.h"]
     include.install_symlink Dir["#{libexec}/openjdk.jdk/Contents/Home/include/darwin/*.h"]
