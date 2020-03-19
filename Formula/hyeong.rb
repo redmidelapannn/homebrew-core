@@ -5,6 +5,13 @@ class Hyeong < Formula
   version "0.1.0"
   sha256 "24990f87afe0813a0d67ba6525bc822b73f470c58692b5eedcdb5203dec2aa63"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "27561631c09eb12508dba69658f9b35bc69cf6a63bcb476e1db92789052ee4fe" => :catalina
+    sha256 "27561631c09eb12508dba69658f9b35bc69cf6a63bcb476e1db92789052ee4fe" => :mojave
+    sha256 "27561631c09eb12508dba69658f9b35bc69cf6a63bcb476e1db92789052ee4fe" => :high_sierra
+  end
+
   def install
     bin.install "hyeong"
   end
