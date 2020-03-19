@@ -20,12 +20,10 @@ class Picoc < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "c3c7b26693b0fc4860ce21bafc778ed705e53b4fe85425d7a869b5cc57ff9d38" => :catalina
-    sha256 "a3a2e949287349f46033c961de43fd8122a55b2ebc7881100c464fe965f2b4da" => :mojave
-    sha256 "f321e8e5bb302b30c946fa239709afaf7609f4151803ca3e722eeb26872e119b" => :high_sierra
-    sha256 "456707c08da75cf7ad3f98898dda357617b5295c4a09631366e06f9bdb1e09f4" => :sierra
-    sha256 "abd8328d9db2961516c421b09d0da77f7df9c09314d2d09530af27a0fe2d55d7" => :el_capitan
-    sha256 "5d732cb34ea6a0349f82bf39f948ab9b49be72273a264c52d0a0773ade2acba1" => :yosemite
+    rebuild 1
+    sha256 "1f5805e5cbc046fed0ee4117218d7e3118e1cbe14544ab83bd3c2481ef061c74" => :catalina
+    sha256 "e7047263f1403e28829d32cc535644d821a58885c421138dddedd487753dc66a" => :mojave
+    sha256 "a03e245dd402d70ade14b5ee4a78131e71cf16de1f69cc41e2a8958df0b7ded2" => :high_sierra
   end
 
   def install
