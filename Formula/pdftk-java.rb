@@ -3,6 +3,7 @@ class PdftkJava < Formula
   homepage "https://gitlab.com/pdftk-java/pdftk"
   url "https://gitlab.com/pdftk-java/pdftk/-/archive/v3.0.9/pdftk-v3.0.9.tar.gz"
   sha256 "8210167286849552eff08199e7734223c6ae9b7f1875e4e2b5b6e7996514dd10"
+  revision 1
   head "https://gitlab.com/pdftk-java/pdftk.git"
 
   bottle do
