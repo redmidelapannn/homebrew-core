@@ -1,8 +1,8 @@
 class Newsboat < Formula
   desc "RSS/Atom feed reader for text terminals"
   homepage "https://newsboat.org/"
-  url "https://newsboat.org/releases/2.18/newsboat-2.18.tar.xz"
-  sha256 "f23932c0226ec3f69eac7668da444e73175048498e15e9d773451648b2cba4b0"
+  url "https://newsboat.org/releases/2.19/newsboat-2.19.tar.xz"
+  sha256 "ba484c825bb903daf6d33d55126107b59e41111b455d368362208f1825403d1b"
   head "https://github.com/newsboat/newsboat.git"
 
   bottle do
@@ -12,6 +12,7 @@ class Newsboat < Formula
   end
 
   depends_on "asciidoc" => :build
+  depends_on "asciidoctor" => :build
   depends_on "docbook-xsl" => :build
   depends_on "pkg-config" => :build
   depends_on "rust" => :build
@@ -22,6 +23,12 @@ class Newsboat < Formula
   uses_from_macos "curl"
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
+
+  # fixed some compilation warnings, should be removed in the next release
+  patch do
+    url "https://github.com/newsboat/newsboat/pull/828.patch?full_index=1"
+    sha256 "48774ce0a552bfca38b0aba82d68f4f69737a049b9c0c7733dd8c36cf3113c6c"
+  end
 
   def install
     gettext = Formula["gettext"]
