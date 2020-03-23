@@ -6,9 +6,9 @@ class CargoC < Formula
 
   bottle do
     cellar :any
-    sha256 "0764047a3f1f74e5a1e326d22877c3d5405c7dc290cf1cd8f67b73ab99d647a0" => :catalina
-    sha256 "18c66958772ae8a83f089edf9b5a7c7686b5a568fb6239d0bf82b2b009e192a6" => :mojave
-    sha256 "f3da39b2fc89a234bb15871020bdb510de266e54aa6df2d845dc6c6fed7a9d6a" => :high_sierra
+    sha256 "73e9515f275963c99cd6b2973380031c298f886187c274b305a3a43e66d2e4d4" => :catalina
+    sha256 "bdf13cd86f609debd443e173adb592eb61084e9c0842405093ab1015669a38c7" => :mojave
+    sha256 "20dbd9211441b7039ff831bc68babf390920ecc2c6344e4f0ba05e75583a0a4b" => :high_sierra
   end
 
   depends_on "rust" => :build
