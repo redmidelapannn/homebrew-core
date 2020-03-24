@@ -4,6 +4,13 @@ class Gobo < Formula
   url "https://downloads.sourceforge.net/project/gobo-eiffel/gobo-eiffel/20.01/gobo2001-src.tar.gz"
   sha256 "ff99649a338ab1a1f380d8897a2d9b52ee434d5e9b7de997ed813f29bbeb8000"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "dcf013a3da0f86408968d372de35c1da77a93d683f7b524e5683b7fb9f6eae1f" => :catalina
+    sha256 "a0a66ddea63d350af1abc6b8a47f06657b7235af429ac7de2cc78c20dbba526f" => :mojave
+    sha256 "6595de2d32b3105c69cb6ead517edafb1d9563e56910f56b9914a24a339d4b27" => :high_sierra
+  end
+
   depends_on "eiffelstudio" => :test
 
   def install
