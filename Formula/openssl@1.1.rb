@@ -8,10 +8,9 @@ class OpensslAT11 < Formula
   version_scheme 1
 
   bottle do
-    sha256 "d7f992ebfd78f80828051f6dc6a1a99aed405f86b0f39ea651fd0afeadd1b0f4" => :catalina
-    sha256 "104ef018b7bb8fcc49f57e5a60359a28a02d480d85a959e6141394b0571cbb28" => :mojave
-    sha256 "c7681ee40cb3680cd9fafcdb092bde153b9d4903907d67858baa5f19025f927b" => :high_sierra
-    sha256 "a95d756e9aa3a8d118833f9083112048bf635f20c33943de04163bdcf7412328" => :sierra
+    sha256 "0707bd0544f2362cb432b72dde54f12baac2015d8b37dd8685ef8da8936d101b" => :catalina
+    sha256 "bd73a72f39c2b45f7083dc505e55ef7471ddfc6137872304622e682c840ee4b9" => :mojave
+    sha256 "ae9638112f7083c5f0240f1c804f608f793f22aa619d0c00f143e366516da283" => :high_sierra
   end
 
   keg_only :provided_by_macos,
