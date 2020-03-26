@@ -7,10 +7,10 @@ class Spdylay < Formula
 
   bottle do
     cellar :any
-    sha256 "5607031eb5776de5b4a68e8c50f312771cae89e8b2266df60718b2e07e35d070" => :catalina
-    sha256 "9906d0abfcd17c86df23c18b1ed112de0266ccbc7a50c24f741f78bffa552540" => :mojave
-    sha256 "c89edde9d9229dbe524d28b661265349af72a2dac0b85f066751d4716effe1ab" => :high_sierra
-    sha256 "2f24051eb854a2345e88a1e023aa76fa6c2cb7522ec0fd7644af15694b456f27" => :sierra
+    rebuild 1
+    sha256 "13f88f6cf0de479d990a8caa0ed14fe9081235c360f0ed2327b69bc671b7c186" => :catalina
+    sha256 "51987d5927347f6783f8d69358cb8525d212a4bcb69b221ef3855d648ff73fbf" => :mojave
+    sha256 "765162da6eb77bed205e73d002b9598c5804475fa879e65d947f97641a4d20a7" => :high_sierra
   end
 
   depends_on "autoconf" => :build
