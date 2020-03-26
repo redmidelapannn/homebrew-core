@@ -6,9 +6,10 @@ class R < Formula
   revision 1
 
   bottle do
-    sha256 "87a9a56265163f342725418365989afbdab02abc997df0304e403034094f1117" => :catalina
-    sha256 "fc155a762bf9ba5aef95c50960c69635044eecc55b5cdb95d8974cc15854ba5a" => :mojave
-    sha256 "c272ce6cc5502843f31457c465804b70f990a26ef393b5c62b71cba82dfc7364" => :high_sierra
+    rebuild 1
+    sha256 "3b51f113ea50e2564111a5bd2ffcb902618b556e1552de9cdff1c439006cb23d" => :catalina
+    sha256 "ef48cec32ba10b6f73b9d292125887b8892e473cd0c5400305dc7529e09e2d5b" => :mojave
+    sha256 "93623d537fada2d5e09b9c0bb3ff248a2e6a0a8e3cce8c5140ba97d8b9fa8336" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
