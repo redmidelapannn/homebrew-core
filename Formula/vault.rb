@@ -16,7 +16,7 @@ class Vault < Formula
     sha256 "550fda7af152696f0f8c7e1bbd228b7aa7802e6d9cb6f3a61e1fcbbc65462216" => :high_sierra
   end
 
-  depends_on "go@1.12" => :build
+  depends_on "go@1.13" => :build
   depends_on "gox" => :build
 
   def install
