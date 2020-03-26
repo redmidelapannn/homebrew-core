@@ -7,10 +7,10 @@ class Perkeep < Formula
   head "https://github.com/perkeep/perkeep.git"
 
   bottle do
-    sha256 "1e51d2d991309cec65b66411ff9dbbd1d93ec40c4c595d1b91a786541c15d738" => :mojave
-    sha256 "4db15262421ce0cefad97fd2df3affba61cba2e1ba1e4153614940cec138ae10" => :high_sierra
-    sha256 "9ab629c218f4af8f769520ec269c81c6499c6c9676c5ae43da8fc7ac8212c0ff" => :sierra
-    sha256 "e4e42c68017500af8a8aa7b542e89905849b09b398a547da818323f08a6e680a" => :el_capitan
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "4db4a8a51b5a7fdca08b1392212794fe59dcb778a8e5c02f6c40342a0469889c" => :catalina
+    sha256 "bac805f2fe6906eab5450465d4b1baf966f6e6a914d94161871eaec9afbd6604" => :high_sierra
   end
 
   depends_on "go@1.10" => :build
