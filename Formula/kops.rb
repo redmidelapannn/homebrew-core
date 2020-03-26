@@ -12,7 +12,7 @@ class Kops < Formula
     sha256 "8c010826e2d21041785add51dd9f2de8df67f984d57b5fc96cf8fbb717758a83" => :high_sierra
   end
 
-  depends_on "go@1.12" => :build
+  depends_on "go" => :build
   depends_on "kubernetes-cli"
 
   def install
