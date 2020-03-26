@@ -17,9 +17,10 @@ class Uwsgi < Formula
   end
 
   bottle do
-    sha256 "a918ea316ed8408dae9257ee12ad3df6db84996be08a2e657efab291a688d702" => :catalina
-    sha256 "d7d6455c84e3a0f02ba2843f2a0c05a8433ce12042b54024048fb30457f24035" => :mojave
-    sha256 "5064635530307154b9d08a912ed246b1c0049f9a8bcf1e7e9b9994160be09069" => :high_sierra
+    rebuild 1
+    sha256 "9448a2a714f9c78d0779f5d507f84be43536bc1f839d5e6279069407186ed60c" => :catalina
+    sha256 "8bb815190c9225517e2c7f840ee8bc43417c530174782fe0a7546963fd1a1b84" => :mojave
+    sha256 "78c30c4f56a0df91b256bf1a7a5c1d1ddc1632edcac1d5853c2b08adf669e4b3" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
