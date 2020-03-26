@@ -13,7 +13,7 @@ class Linkerd < Formula
     sha256 "588139f4dc9bc11cb7f4230d44a154c9a50ce924f2a36b556ad90a5b0c5ce714" => :high_sierra
   end
 
-  depends_on "go@1.12" => :build
+  depends_on "go@1.13" => :build
 
   def install
     ENV["GOPATH"] = buildpath
