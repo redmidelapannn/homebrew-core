@@ -7,9 +7,9 @@ class NewrelicCli < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8cec5f941f4debc4ee6aeb677a958aea0bb767779f15cabb5dd36644151353b5" => :catalina
-    sha256 "d0190fc7cfb04544eb7e05125e4888b6226183f4777d5923b3afa45ca8803dfc" => :mojave
-    sha256 "147be967461677898528c16b3561b30e1c5803d8cdddea47bbe9af8d6e667933" => :high_sierra
+    sha256 "7334c6638da4eea52f46b31c82d9812d3de1c91beb220a682f81c4d8bc768469" => :catalina
+    sha256 "d40842d9702eee6e5dfa521303e2938766af891a4729f7196d52a73137f34ffb" => :mojave
+    sha256 "215dd6bb3bdb785df8c8d8fdc87640d73835b216fdfe1c0d284e91bc8c604611" => :high_sierra
   end
 
   depends_on "go" => :build
