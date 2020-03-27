@@ -3,6 +3,7 @@ class Gjs < Formula
   homepage "https://gitlab.gnome.org/GNOME/gjs/wikis/Home"
   url "https://download.gnome.org/sources/gjs/1.64/gjs-1.64.1.tar.xz"
   sha256 "55af83893e99ba2962eca46f47340a4cf8cba5b1966ab00a0f8b9c3034e9987c"
+  revision 1
 
   bottle do
     sha256 "44435c559ec592e03cb5b29039c5cae9fdf935f3eea10ab4e2c2a60d24e126e0" => :catalina
@@ -10,7 +11,6 @@ class Gjs < Formula
     sha256 "62125121215aac4e71de2369723668b8b40e5426522f753ab68235fbe1e9c527" => :high_sierra
   end
 
-  depends_on "autoconf@2.13" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
@@ -21,6 +21,12 @@ class Gjs < Formula
   depends_on "nspr"
   depends_on "readline"
 
+  resource "autoconf@213" do
+    url "https://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz"
+    mirror "https://ftpmirror.gnu.org/autoconf/autoconf-2.13.tar.gz"
+    sha256 "f0611136bee505811e9ca11ca7ac188ef5323a8e2ef19cffd3edb3cf08fd791e"
+  end
+
   resource "mozjs68" do
     url "https://archive.mozilla.org/pub/firefox/releases/68.5.0esr/source/firefox-68.5.0esr.source.tar.xz"
     sha256 "52e784f98a37624e8b207f1b23289c2c88f66dd923798cae891a586a6d94a6d1"
@@ -29,6 +35,16 @@ class Gjs < Formula
   def install
     ENV.cxx11
     ENV["_MACOSX_DEPLOYMENT_TARGET"] = ENV["MACOSX_DEPLOYMENT_TARGET"]
+
+    resource("autoconf@213").stage do
+      system "./configure", "--disable-debug",
+                            "--disable-dependency-tracking",
+                            "--program-suffix=213",
+                            "--prefix=#{buildpath}/autoconf",
+                            "--infodir=#{buildpath}/autoconf/share/info",
+                            "--datadir=#{buildpath}/autoconf/share"
+      system "make", "install"
+    end
 
     resource("mozjs68").stage do
       inreplace "config/rules.mk",
@@ -41,6 +57,7 @@ class Gjs < Formula
 
       mkdir("build") do
         ENV["PYTHON"] = "python"
+        ENV.prepend_path "PATH", buildpath/"autoconf/bin"
         system "../js/src/configure", "--prefix=#{prefix}",
                               "--with-system-nspr",
                               "--with-system-zlib",
