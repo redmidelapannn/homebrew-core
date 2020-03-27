@@ -8,10 +8,9 @@ class Kubebuilder < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "1e36d2456c8b998ac206eea2285056ab96f413c489328876ac21a14feb031bc3" => :catalina
-    sha256 "fd4ea19043bac99346e055a43f7663e36e0b4053b95a883772e65713a0547ccb" => :mojave
-    sha256 "ff71790d113a8fee329e0e908e6a4b3e4f0db929b4ebf04a1b641d91899ac546" => :high_sierra
+    sha256 "a0dba78ce1b4aff1fc50a0302ea7905c7f70b929bf2d54c8a13a6e4ebf8301ed" => :catalina
+    sha256 "d6d9d6714fdddfd32f95d9f3f10d664a8a44e791927a262194d39ec6aab39da7" => :mojave
+    sha256 "ad31d8bb2aec396a87e94ddfed548b0ee239f4f18ec2dd0b25e7d23d975bc9f4" => :high_sierra
   end
 
   depends_on "git-lfs" => :build
