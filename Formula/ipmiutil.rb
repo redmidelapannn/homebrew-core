@@ -6,9 +6,9 @@ class Ipmiutil < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e2ea930b55754e8e0b27b675ebabdf2c12a73ddd0c8d994484c8b7e351350ec5" => :catalina
-    sha256 "c1d4a86dae7aae9e8ce807741c42e91884156eda9b9004ab2f151e2cfda6b74d" => :mojave
-    sha256 "9e4ae6d909010bcff31df4fcef39a9cb0de2083aded6b960483db942c9e18f0f" => :high_sierra
+    sha256 "a699ec4cdbab17257f0941533cbe155ff0e3b56d6acf960c9e4b2729e6d21840" => :catalina
+    sha256 "1decc26df7fe1c99441c0e997e09f35c4f2b066e21d3517e3884bacb4bad84c9" => :mojave
+    sha256 "5b635fd3d1e78df2d96457f130bd094186dbff5f17c5df933d06aeab97cfbf96" => :high_sierra
   end
 
   depends_on "autoconf" => :build
