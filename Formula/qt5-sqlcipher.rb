@@ -5,6 +5,12 @@ class Qt5Sqlcipher < Formula
   sha256 "e60206becbe37dc9edcb9bfdc98d794fe612de68818cb81cef95e95193cbd089"
   head "https://github.com/blizzard4591/qt5-sqlcipher.git", :using => :git, :shallow => false
 
+  bottle do
+    sha256 "c17edaa83280fbf14047bfe616d73235ac21f9302a84b193cc521d05f2248788" => :catalina
+    sha256 "7b669a363d2ef47d9d32afba387f35f0e1f5205d5a73a4f64bacb7df30aac94e" => :mojave
+    sha256 "59fb145bd8eda6aea8848b070f2a85821a55e7cf6cc90b0438258938f3a8f85a" => :high_sierra
+  end
+
   depends_on "cmake" => [:build]
   depends_on "pkg-config" => [:build]
   depends_on "qt"
