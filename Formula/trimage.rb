@@ -17,6 +17,9 @@ class Trimage < Formula
   end
 
   test do
-    system "#{bin}/trimage", "--help"
+    cp test_fixtures("test.png"), testpath
+    cp test_fixtures("test.jpg"), testpath
+    assert_match "New Size", shell_output("#{bin}/trimage -f #{testpath}/test.png 2>1")
+    assert_match "New Size", shell_output("#{bin}/trimage -f #{testpath}/test.jpg 2>1")
   end
 end
