@@ -6,10 +6,10 @@ class Lsyncd < Formula
 
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "37feb9c288332b31a161ab6ac246c7c596713313728bf0cb943f5f92561d12d1" => :catalina
-    sha256 "e4362d2f1e8b295efa92887cff6b3278d705e583d5b1df020f74efc17b15081f" => :mojave
-    sha256 "d0bf0e91103959dff8d10cd8ba68d0f875e09099617e0fcf530076fb8b955bfd" => :high_sierra
+    rebuild 3
+    sha256 "46f71732a251bd42654e8393f68111da1c384c0ef3ca976dbae11134c1f8f237" => :catalina
+    sha256 "6e9b79b3a8a6b5f3f9e2593835d8ae771cc61ff46a7e3a6445406848891222c5" => :mojave
+    sha256 "d626ea7f5e15081fd577abe1b41eee981ddae18e60ee3d2f2b6f0f299f4b9658" => :high_sierra
   end
 
   depends_on "cmake" => :build
