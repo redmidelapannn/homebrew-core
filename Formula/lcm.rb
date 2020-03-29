@@ -8,9 +8,9 @@ class Lcm < Formula
 
   bottle do
     cellar :any
-    sha256 "b8f3be8b771deb122adc99739eda2d3478aac5024126e08c01c9cba713933845" => :catalina
-    sha256 "20d4cade09d8d65b256739cfd02047903a619a99b3b9d843cff6a8ba2fe78f47" => :mojave
-    sha256 "ada0ffb27c286c7283ae3a4d084acdc19cf9ccab29e529eafe137af33b1f3a9f" => :high_sierra
+    sha256 "84b8decd68646ca5f87112caebe4a90eca850b60013fd0424e9ad4c93f5fa5e6" => :catalina
+    sha256 "f7afab158333108cc39c2d6a7fe013440390e8b77b7af43744f7cf67517f099b" => :mojave
+    sha256 "ca54aff41e51a46f0d58ff5c93386af0d8624906d18e70c24db2858537ba9c89" => :high_sierra
   end
 
   depends_on "cmake" => :build
