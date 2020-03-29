@@ -7,9 +7,9 @@ class Openjdk < Formula
 
   bottle do
     cellar :any
-    sha256 "65adca036393f528e3830cab8b0aafec94be870de087d94cfe098fd593517307" => :catalina
-    sha256 "6034ec5a0927803eae37a5e85b6c6efadb930527827b45ecc593e25a9750061c" => :mojave
-    sha256 "358101f25201e4c942297223d854ef95003798fe5396ebc671efa359c27e3d22" => :high_sierra
+    sha256 "d1568b68a5e4958ed79eaaff82729998f4d47013700e0bf89391bf575da4229b" => :catalina
+    sha256 "c1f69e06f0418107132ab2a6aa0002005bf0c4a9be57bcfa5eb49878c9e92ad1" => :mojave
+    sha256 "ec5e3ed264637451eab802887f950531d3bc31c39065372b409de0833977552c" => :high_sierra
   end
 
   keg_only "it shadows the macOS `java` wrapper"
