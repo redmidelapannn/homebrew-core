@@ -8,9 +8,10 @@ class Ungit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "87704d4be9d6df4f14fa2eb449a2afb1917f12556987feb039d31191134ebf30" => :catalina
-    sha256 "0f87c8ecd8379a82da1e5f54f644265a23f51622fa1041ae798cda5e025ec118" => :mojave
-    sha256 "5ae9f072f453bae45286eb8b2c59b871debeaa302422ac2287a3c4f9295bb457" => :high_sierra
+    rebuild 1
+    sha256 "d9898acee78f09585ee59f7aa0f5c9bb1f19e1263f7cf0116289cfe1e34f847d" => :catalina
+    sha256 "2121fab20dc991d876bd856c29375f655b844c9e1c72908c0acab5f9037cb1fd" => :mojave
+    sha256 "67de16b2f3ff9da0172731d41ba6859ff1f10b746ab8c583a8266cc93e266910" => :high_sierra
   end
 
   depends_on "node"
