@@ -8,9 +8,9 @@ class Securefs < Formula
 
   bottle do
     cellar :any
-    sha256 "62611abe101f437d98e59c4b2311abd5645c32c15b57f22f195bc01c7df1d586" => :catalina
-    sha256 "7c9b57a3442b581e1a359035058e348fd51305e4c64113a16fb180c7932f96d9" => :mojave
-    sha256 "ea14d7b4f0ba48c4bdea31f42b0eabfe727a8e54eee923ee570698b5e1d3779f" => :high_sierra
+    sha256 "feeb5d6033fa26d3ebd54483c763b25b6b62ab806d8d3e067a55207f315bdab1" => :catalina
+    sha256 "f414f42daf10003bb24e8e2c1e491d47f477d7e754c9784527515d2b4af6add7" => :mojave
+    sha256 "e10d6b1b7a608d39b6f0bbdade3d1489a0d7e62525412190cc397a063af21e77" => :high_sierra
   end
 
   depends_on "cmake" => :build
