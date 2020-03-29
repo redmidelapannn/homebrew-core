@@ -6,9 +6,9 @@ class GitTrim < Formula
 
   bottle do
     cellar :any
-    sha256 "43c93225e3bced1921b69adf6d503bed99909c57945859a69a63b86c7d5b8c1f" => :catalina
-    sha256 "d0a4dd74552c09184e17bad80436c180697415482fc8487d6cf3cf6c0ac4101a" => :mojave
-    sha256 "78d5690223b4a6124946b5e51aab51190f854a8033d488942484fc38aeb2be82" => :high_sierra
+    sha256 "0c9bc049e41eebec3fa91a0fa885ce921ad13092f7c3f2e9cebb8e0ce423b1c5" => :catalina
+    sha256 "dec9caa9b2e272716179860544b682bf01684023f41e51c6cc22f14123026386" => :mojave
+    sha256 "8b7a800b28e366da219ec7b122a922b2f8a8b65ba8c2a5a0cd5d7d5bfcf3180f" => :high_sierra
   end
 
   depends_on "rust" => :build
