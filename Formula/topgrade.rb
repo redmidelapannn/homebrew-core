@@ -1,7 +1,7 @@
 class Topgrade < Formula
   desc "Upgrade all the things"
   homepage "https://github.com/r-darwish/topgrade"
-  url "https://github.com/r-darwish/topgrade/archive/4.3.1.tar.gz"
+  url "https://github.com/r-darwish/topgrade/archive/v4.3.1.tar.gz"
   sha256 "549b2fe1b807256ec42a16fe5507b115fcd9c75a59a17de46dc3151ae28a1337"
 
   bottle do
