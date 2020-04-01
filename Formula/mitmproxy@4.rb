@@ -8,9 +8,9 @@ class MitmproxyAT4 < Formula
 
   bottle do
     cellar :any
-    sha256 "67a63cedf54af5e2cf26289144335e769075b38dad3bad71c761b2d1425f1eff" => :catalina
-    sha256 "7d6eb3b85bbab030dd305f8df023df97b15eab5dbb176ee9868ca56a26531c50" => :mojave
-    sha256 "d2a1bece180c75e949f3bb316c413c6ad8a672bf1200356462bdfaf03f1ac817" => :high_sierra
+    sha256 "f826e29a58007fb8fb9a3111b02035f51850cea297d1f893a319a8e1455216b3" => :catalina
+    sha256 "3aaddb1f82d1f6f103f062dac798bdc39d246f45dfe804f2718f3eb1e1fe2d66" => :mojave
+    sha256 "8e07c6c102bfd4beb7de178d5785445e66231676f584b8735cf530114e47075d" => :high_sierra
   end
 
   keg_only :versioned_formula
