@@ -6,9 +6,9 @@ class Gh < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "81c94cb5014ae11533870e7365a1998169b8bac194a8cbf361e099f88c8705df" => :catalina
-    sha256 "aea3c4e516c841ef22c0eeec953630053d7a41d7c677df1cf36ca8fece7745b7" => :mojave
-    sha256 "aaec5682ae613f2ad4ef2714eeeb65e1d4d6252974ed8d7b861c82fc7fd849f3" => :high_sierra
+    sha256 "269d98911d4f0d98a35cefb4a2f803b136bee483bbbc9f60f2dfdbb88f0e885f" => :catalina
+    sha256 "1d0de8488c625f060a05843a89c44732a3c08c576a38ca4fb27e6dd0f92ee75c" => :mojave
+    sha256 "9c81c59eaf0b4a3f9fb0a897e4f730d02cc5a544b5684964599e6ae956831881" => :high_sierra
   end
 
   depends_on "go" => :build
