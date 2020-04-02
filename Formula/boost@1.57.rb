@@ -6,12 +6,10 @@ class BoostAT157 < Formula
 
   bottle do
     cellar :any
-    sha256 "1023f6d97a7feec1c4f4d48fece91f3943f1cb3fb55cf909b0cf919742fc8e1b" => :catalina
-    sha256 "662ca2c70c493d0ad0715f93daedf518dfda501bc55de18bc6f393f2e541c075" => :mojave
-    sha256 "a9eab1fbd081d88a4ee1d8102a038784b46ef98d77f11943793f8445341871ae" => :high_sierra
-    sha256 "2a5722e316d528b2ee1b290c2bda772c19c426f32c8bcb6609c250d68c59d6cb" => :sierra
-    sha256 "1c2b58d63f0d0f24a07cb60653cf1e674b78f4529c5e7b89ea4208d4db8fb494" => :el_capitan
-    sha256 "993b2b875755b7a1b0b7bbb97269545705fa3b30df3e4a03868c0e53a1dc7599" => :yosemite
+    rebuild 1
+    sha256 "0c35b364c690fe2010df8d1cddeee790bdb5fa3e6e937a59e59ea6b7a0b05bcc" => :catalina
+    sha256 "431830cdde6228bd55581c28c1c8ac1f5cd28b0451f2c83115704ca0d26ca804" => :mojave
+    sha256 "7af720692fc629b2373dfbde0331070acaaf38944e2be0953053d59aef2c55b3" => :high_sierra
   end
 
   keg_only :versioned_formula
