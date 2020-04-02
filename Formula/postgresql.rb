@@ -4,6 +4,7 @@ class Postgresql < Formula
   url "https://ftp.postgresql.org/pub/source/v12.2/postgresql-12.2.tar.bz2"
   sha256 "ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de"
   head "https://github.com/postgres/postgres.git"
+  revision 1
 
   bottle do
     rebuild 1
