@@ -5,6 +5,13 @@ class Inxi < Formula
   version "3.0.38"
   sha256 "5adbbe8145e970de1d516a404554e887806d31382de81d290e71fe270183c28a"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "05ca8c64a806b173e052a6a75a1ee586ede3cc853ab8d2bd82bdffc818501e05" => :catalina
+    sha256 "05ca8c64a806b173e052a6a75a1ee586ede3cc853ab8d2bd82bdffc818501e05" => :mojave
+    sha256 "05ca8c64a806b173e052a6a75a1ee586ede3cc853ab8d2bd82bdffc818501e05" => :high_sierra
+  end
+
   def install
     bin.install("inxi")
     man.install("inxi.1")
