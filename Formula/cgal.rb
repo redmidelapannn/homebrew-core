@@ -10,10 +10,9 @@ class Cgal < Formula
     sha256 "642c67e59a4bcfc9e22a15f2f7149045ce037c639eb9a8cf2deb3d3195e69ad0" => :mojave
     sha256 "642c67e59a4bcfc9e22a15f2f7149045ce037c639eb9a8cf2deb3d3195e69ad0" => :high_sierra
   end
-  
+
   depends_on "cmake" => [:build, :test]
   depends_on "boost"
-  depends_on "cgal"
   depends_on "eigen"
   depends_on "gmp"
   depends_on "mpfr"
@@ -25,26 +24,35 @@ class Cgal < Formula
       -DWITH_CGAL_Qt5=ON
     ]
 
-    args_qt5 = %w[
-      -DCOMPONENT=CGAL_Qt5
-      -P
-      cmake_install.cmake
-    ]
-
     system "cmake", ".", *args
-    system "cmake", *args_qt5
+    system "make", "install"
   end
   test do
-    # https://doc.cgal.org/latest/Triangulation_2/Triangulation_2_2draw_triangulation_2_8cpp-example.html
+    # https://doc.cgal.org/latest/Triangulation_2/Triangulation_2_2draw_triangulation_2_8cpp-example.html and  https://doc.cgal.org/latest/Algebraic_foundations/Algebraic_foundations_2interoperable_8cpp-example.html
     (testpath/"surprise.cpp").write <<~EOS
       #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
       #include <CGAL/Triangulation_2.h>
       #include <CGAL/draw_triangulation_2.h>
+      #include <CGAL/basic.h>
+      #include <CGAL/Coercion_traits.h>
+      #include <CGAL/IO/io.h>
       #include <fstream>
       typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
       typedef CGAL::Triangulation_2<K>                            Triangulation;
       typedef Triangulation::Point                                Point;
+ 
+      template <typename A, typename B>
+      typename CGAL::Coercion_traits<A,B>::Type	      
+      binary_func(const A& a , const B& b){	      
+          typedef CGAL::Coercion_traits<A,B> CT;	      
+          CGAL_static_assertion((CT::Are_explicit_interoperable::value));	      
+          typename CT::Cast cast;	        
+          return cast(a)*cast(b);
+      }
+
       int main() {
+        std::cout<< binary_func(double(3), int(5)) << std::endl;
+        std::cout<< binary_func(int(3), double(5)) << std::endl;
         std::ifstream in("data/triangulation_prog1.cin");
         std::istream_iterator<Point> begin(in);
         std::istream_iterator<Point> end;
