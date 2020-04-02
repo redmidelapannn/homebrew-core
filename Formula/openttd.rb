@@ -7,9 +7,9 @@ class Openttd < Formula
 
   bottle do
     cellar :any
-    sha256 "3b35f09093139d3d7ea20f306ec456fe593fe3af9cbe7c877293494d25602bb5" => :catalina
-    sha256 "c225e23880d9ff76ce890180247590f9f9762a61d75ae7cce9785a0a6fe55ead" => :mojave
-    sha256 "e176e4b9047426b5bc1ff28a6ba8d979cca9c5f04c5364e1ee59795bec32c1d4" => :high_sierra
+    sha256 "5c2cc0b87392f03b563078bc502370d30a738e11bbf9f7289139ef479548db69" => :catalina
+    sha256 "5b1f971dab4691f54c81dca3de61f663becabde8d8e997b6e4dc9cbc913130f0" => :mojave
+    sha256 "642e0dd664dc48ef78361ba611a04771c35c4babecbd92679e8693a157d8cfad" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
