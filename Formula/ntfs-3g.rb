@@ -15,10 +15,9 @@ class Ntfs3g < Formula
 
   bottle do
     cellar :any
-    sha256 "46eb5418f1e1635be4d1a3d1313f1c0d138e2aa86bf223168c574a160c6ee5f7" => :catalina
-    sha256 "93f106a371fefebf998252de6a0447cd57d47dc0b09d13f35b129fb86992d0db" => :mojave
-    sha256 "d3e45d099078901f1aa402e59fb8e28233f028b0288b0ed03f7b2662b0c39e11" => :high_sierra
-    sha256 "8413e1f0835bfee5536b819686f0df7ad3dfe864503c1735f0df65b1e4ccb507" => :sierra
+    sha256 "9b9732554835e3e8f86aa9eb863bddead0ad2534fd53705ca70b4d0c9eeed3a0" => :catalina
+    sha256 "631d04c7a475c881a11f150ad639b141cd60f92fa099a222a5b01cb64b11d4b7" => :mojave
+    sha256 "7397d4286cb4e103c540824a109fb3b081a02eadfc31efaa2fff348123d3da57" => :high_sierra
   end
 
   head do
