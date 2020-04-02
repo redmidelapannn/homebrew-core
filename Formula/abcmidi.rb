@@ -6,9 +6,9 @@ class Abcmidi < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "eff9881539f74dcbbe32a985353328abf2b1ea734e73f195d288fd91c4df1df5" => :catalina
-    sha256 "d96c7e8af95ab4a4c4f1dc6ef8a9d92f2bd540826b097fccfbf64cd4afdcf029" => :mojave
-    sha256 "bea7de7e86161085291430c0a66f10f6386f92e8be06d4ec7cb995245bf90668" => :high_sierra
+    sha256 "29bd28d19a3f2a24a1c81d518090e781ea73466844f7dcb06cfc0fb03a36e9ce" => :catalina
+    sha256 "a24fbd8f6ce657055cb37387d6fa23760bc84a95f72761f3cd5b1e9a6be324a8" => :mojave
+    sha256 "a22878e8f2123dc904317b11ed3f771ad25653a3095309af76d362a87d236037" => :high_sierra
   end
 
   def install
