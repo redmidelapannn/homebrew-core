@@ -6,9 +6,9 @@ class Quantlib < Formula
 
   bottle do
     cellar :any
-    sha256 "ced07254983567737434dfbd09cbdf9d50bee955a2a6c29d08a8c8d760cae229" => :catalina
-    sha256 "dcd3d6b1148eb321fdd0a4b85f1b7ec595004df4239d8acc18a6636d57149665" => :mojave
-    sha256 "582ec936bf29501cbaaef0d07020247e890ccc8590a442a85d5d90fb7f61c372" => :high_sierra
+    sha256 "11a8094d040b06b9b6d2f92a3bed18fd341168f4561c65c0feffd72b8e21bbfe" => :catalina
+    sha256 "35dde16f5c2c5e5c12ddc3b2fefe64fc521db1dd11f3ed719aa900b324d95915" => :mojave
+    sha256 "af7ce81061b5aafdd557bbbe9635135ea6325c4e72b072709e0d4b7013269d82" => :high_sierra
   end
 
   head do
