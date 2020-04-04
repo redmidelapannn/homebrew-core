@@ -7,9 +7,9 @@ class Gmsh < Formula
 
   bottle do
     cellar :any
-    sha256 "b48f8c67642ae8cedd57af5b78049289a5198454cd697df5e6973f481195306b" => :catalina
-    sha256 "a91bb993bc060301477be0fe35cb1f28680f9a110efb866df80f83ac1522637b" => :mojave
-    sha256 "ff3ed207707dcd6a251bbfcbf325114b3c9daa93ad9495ae21a227f7dbe3ce27" => :high_sierra
+    sha256 "6906f6dcb9bc5c007e2df122046a3b5f89777c1484f0fca727aeae195d1b444f" => :catalina
+    sha256 "cb95fe14c3b26770fe9a32e18e53dcf729bf7d32589771f19585d9a462737589" => :mojave
+    sha256 "cd8a3e06ba1f884d4453f434254a2d267eae4fe4d21b41fabaf62681816f28e1" => :high_sierra
   end
 
   depends_on "cmake" => :build
