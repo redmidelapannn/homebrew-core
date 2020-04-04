@@ -12,8 +12,8 @@ class Trimage < Formula
   depends_on "python"
 
   def install
-    system "python3", "setup.py", "build"
-    system "python3", "setup.py", "install", "--prefix=#{prefix}"
+    system "#{Formula["python"].opt_bin}/python3", "setup.py", "build"
+    system "#{Formula["python"].opt_bin}/python3", "setup.py", "install", "--prefix=#{prefix}"
   end
 
   test do
