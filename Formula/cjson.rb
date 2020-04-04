@@ -6,11 +6,9 @@ class Cjson < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "b402e60f6a786780c9739b91845c2f8df2ea60ce8749e42db11cbcc5f86bb52a" => :catalina
-    sha256 "3364af8e12165cfd7721e8d64e1a4ee021a2fe2fc64b09726a8624f262d8449f" => :mojave
-    sha256 "f8a92b03d0ff1147d604517317366706e93cb398ffa8e208b84b4bd91282231e" => :high_sierra
-    sha256 "be61141bcc7cd3706051ead5a2158b7a92f840e0802f745e4c53052a82616d55" => :sierra
+    sha256 "c2ca30995167c55daacf99a66a3c86ce6dc22b9dc887e7e26c2ae98c5a429c3b" => :catalina
+    sha256 "f2b0d6242519da72b4e84c694af3657e1738fdec1bf671ab5f4945040c3cef87" => :mojave
+    sha256 "750085fd5fb22d6a1ad7c19035b657e46ab6e6e739c628024537740b54077d1b" => :high_sierra
   end
 
   depends_on "cmake" => :build
