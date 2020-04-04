@@ -6,9 +6,11 @@ class Komposition < Formula
   head "https://github.com/owickstrom/komposition.git"
 
   bottle do
-    sha256 "f28f804f8ca5d9c9c23f8fd9d35edb3276e2d397abbbf73fda33b543d5654611" => :catalina
-    sha256 "2f7008e5a901c7c4739104124c0a3faea211f3d7509c0c19f6a28f8de162be08" => :mojave
-    sha256 "75c13e6a1a9f53273974f6445d4d59adc76c16399480f305547e7bddd5237fbd" => :high_sierra
+    cellar :any
+    rebuild 1
+    sha256 "ccc1cf68a43eb73a2bb1b6744d24c208bc3146af9ae78aa4ff7239e617fe7b0b" => :catalina
+    sha256 "66a919c897b28a77479d84c48f44079aea7e85ac89d1867d6abc10aab39e488c" => :mojave
+    sha256 "a88c27b4ac385f749d8d826844b5d80949c9549b9881d6488c55d68f67b370fa" => :high_sierra
   end
 
   depends_on "cabal-install" => :build
