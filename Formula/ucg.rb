@@ -7,12 +7,10 @@ class Ucg < Formula
 
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "2e18cfd35ea53d5326a69f3d21cf32c2e850cd864735e3e45cd645d85e350ec7" => :catalina
-    sha256 "2b073d5a0ee4cb2fe71822ce27c014b00974298cfc656f1fe0279f58bde398f9" => :mojave
-    sha256 "3642e741bc9ffd1cf1982bfc2c373e0ed54a417c08ac46f43e4cf8a09a0a1a8a" => :high_sierra
-    sha256 "dddf2d62a2e582a9356a4da6434ddb0432ce6d6b1d50a5dc6728f9b6254531a5" => :sierra
-    sha256 "e4699a681ae9d2e9d68ce7da85fc050907070bc9650fad0c4f76faf991f3a422" => :el_capitan
+    rebuild 2
+    sha256 "c2d1c481287f693560c3132bb8678c79ac5e89b8f8cd6851dd3267628cdc3420" => :catalina
+    sha256 "b26faecfb3b4740cce7ce4fc919b26416a6b78598499bd8613da5b8db9dc638f" => :mojave
+    sha256 "8cdd5348325ad6252c36cd145dece1c855091d49af30cdd7d62896c13f8070c8" => :high_sierra
   end
 
   depends_on "argp-standalone" => :build
