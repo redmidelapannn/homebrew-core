@@ -7,7 +7,9 @@ class Wsjcpp < Formula
 
   bottle do
     cellar :any
-    rebuild 1
+    sha256 "146139b839d148f1119b9104bb303e97e5e50e5623a14777c103d7bd7364edcf" => :catalina
+    sha256 "6b1607b1df5cd799e9b22c5ca00bfa7d002da00be123ad37310f29d6c161998e" => :mojave
+    sha256 "b5bd82fdb34ed1aef49ae9334d45b6b1532d6977b2fe1320d6118a79efa3322c" => :high_sierra
   end
 
   depends_on "cmake"
