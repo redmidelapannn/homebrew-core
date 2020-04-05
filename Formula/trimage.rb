@@ -4,6 +4,13 @@ class Trimage < Formula
   url "https://github.com/Kilian/Trimage/archive/1.0.6.tar.gz"
   sha256 "60448b5a827691087a1bd016a68f84d8c457fc29179271f310fe5f9fa21415cf"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "b2e485d42f6e5a43d7c866c139630aa2ac7e606fa20149fee71cde2fbc6d5722" => :catalina
+    sha256 "b2e485d42f6e5a43d7c866c139630aa2ac7e606fa20149fee71cde2fbc6d5722" => :mojave
+    sha256 "b2e485d42f6e5a43d7c866c139630aa2ac7e606fa20149fee71cde2fbc6d5722" => :high_sierra
+  end
+
   depends_on "advancecomp"
   depends_on "jpegoptim"
   depends_on "optipng"
