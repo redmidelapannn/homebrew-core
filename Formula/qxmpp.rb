@@ -12,6 +12,7 @@ class Qxmpp < Formula
   end
 
   depends_on "cmake" => :build
+  depends_on :xcode => :build
   depends_on "qt"
 
   def install
