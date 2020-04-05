@@ -6,9 +6,9 @@ class Singular < Formula
   sha256 "743593fa17e0f87ff2ab61e87653e95c6c00a615e3a2e6fb1f0e43461473b89f"
 
   bottle do
-    sha256 "c2be380c490ffaa24b1c01d787c58b32e0e65752fcd17952f0da2905efe8e400" => :catalina
-    sha256 "ba4db9eb480106a1268a94cc73c3fdfcce098328d32df9bfd18189776e99b333" => :mojave
-    sha256 "f610bd3eb0a16d1c09ab1be979bf9ca9e839262a1cdcab7bec4b825b977313c5" => :high_sierra
+    sha256 "6ebe00e9bcf804b5fcfd71200a260e13525648a22e377493f357e115a9203de6" => :catalina
+    sha256 "76f244071719eb7f711cb31e5b35dbba1c8df4e6d8380ccecdc7bb6d8035f65a" => :mojave
+    sha256 "b87674f0cc69b1ad957d54b8af9ca76d2edda2b70f16e0f2d6881b5f7b6f3bf3" => :high_sierra
   end
 
   head do
