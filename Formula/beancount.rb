@@ -6,6 +6,13 @@ class Beancount < Formula
   url "https://files.pythonhosted.org/packages/69/ea/ddf75e1e88aaba807bea3ac101b0e226ddc60832ecfe83ad05cc3a8fff4a/beancount-2.2.3.tar.gz"
   sha256 "1554adfd773d12cb88fd7f4da67fcb608665a9bdedc7e44834e059d1b3a08e5d"
   head "https://bitbucket.org/blais/beancount", :using => :hg
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "f56682adbcabcfb7e438ff72f88682d0161467e7f3d22642106bb51030b945c6" => :catalina
+    sha256 "c38c856022ffa2105b38c1d8dd4131d940d4a94a800d84e21c0f1e81b1a032ff" => :mojave
+    sha256 "a72e4c891c756592919450cadaff03e1712d8e1778af75d920df68150486dd38" => :high_sierra
+  end
+
   depends_on "python@3.8"
 
   resource "attrs" do
