@@ -7,12 +7,9 @@ class Geph2 < Formula
   depends_on "go" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
     bin_path = buildpath/"src/github.com/geph-official/geph2"
     bin_path.install Dir["*"]
     cd bin_path/"cmd/geph-client" do
-      ENV["GOOS"] = "darwin"
-      ENV["GOARCH"] = "amd64"
       ENV["CGO_ENABLED"] = "0"
       system "go", "build", "-o",
        bin/"geph-client", "-v", "-trimpath"
