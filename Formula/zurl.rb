@@ -13,7 +13,8 @@ class Zurl < Formula
   end
 
   depends_on "pkg-config" => :build
-  depends_on "python" => :test
+  depends_on :xcode => :build
+  depends_on "python@3.8" => :test
   depends_on "qt"
   depends_on "zeromq"
 
@@ -25,6 +26,8 @@ class Zurl < Formula
   end
 
   def install
+    ENV.append_to_cflags "-fno-stack-check" if DevelopmentTools.clang_build_version >= 1010
+
     system "./configure", "--prefix=#{prefix}", "--extraconf=QMAKE_MACOSX_DEPLOYMENT_TARGET=#{MacOS.version}"
     system "make"
     system "make", "install"
@@ -35,7 +38,10 @@ class Zurl < Formula
     ipcfile = testpath/"zurl-req"
     runfile = testpath/"test.py"
 
-    resource("pyzmq").stage { system "python3", *Language::Python.setup_install_args(testpath/"vendor") }
+    resource("pyzmq").stage do
+      system Formula["python@3.8"].opt_bin/"python3",
+      *Language::Python.setup_install_args(testpath/"vendor")
+    end
 
     conffile.write(<<~EOS,
       [General]
@@ -94,9 +100,9 @@ class Zurl < Formula
     end
 
     begin
-      xy = Language::Python.major_minor_version "python3"
+      xy = Language::Python.major_minor_version Formula["python@3.8"].opt_bin/"python3"
       ENV["PYTHONPATH"] = testpath/"vendor/lib/python#{xy}/site-packages"
-      system "python3", runfile
+      system Formula["python@3.8"].opt_bin/"python3", runfile
     ensure
       Process.kill("TERM", pid)
       Process.wait(pid)
