@@ -5,10 +5,8 @@ class Swift < Formula
   sha256 "3488e920ad989b1c6a8d25ef241d356a9951184fefcad19e230e3263b6e80f48"
 
   bottle do
-    cellar :any
-    rebuild 1
-    sha256 "eb739a681ff2f5b585422d3b9408dd817724eb7bc0484a31f38db6f7dc387867" => :mojave
-    sha256 "1a82548cd25a4b6a525b7d8a194393e9853843e952c00c2650792141c17a528d" => :high_sierra
+    sha256 "cc4149ba5d97c882124ade448cf7ba340d88bb38df2036acda67bae8a15107a1" => :catalina
+    sha256 "eb5c5a8dd1c1fdd0b47bda926b1a884a2f0f7a99b482f26ff3dc3fcac022d944" => :mojave
   end
 
   keg_only :provided_by_macos, "Apple's CLT package contains Swift"
