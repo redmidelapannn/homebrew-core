@@ -6,9 +6,9 @@ class Bandwhich < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "310b4b97575f46da8bff2e4e7362c9931f2e29c4e02de76ab81bc304cc3d736d" => :catalina
-    sha256 "3a8e1969176673037b44961f650ad659df0214b801210e310a7e245072fbeb1a" => :mojave
-    sha256 "62eac4e3da9092103f95e0a43a76959263978df0018f70430eb3f695391143cf" => :high_sierra
+    sha256 "2afaf25c6eb3d52e5dd03d6a8b8ac17bca391f504cd36a4c1ea025a2cfceba36" => :catalina
+    sha256 "8decf42643152bd68a3c547b70606c492334cbb89105ca21f429f3c0fb53f7f2" => :mojave
+    sha256 "2e7ea94c7a445bf44d142d3ee7bc7fbc29ad0be9223efff9fd9d8029b9dd110c" => :high_sierra
   end
 
   depends_on "rust" => :build
