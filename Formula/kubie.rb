@@ -4,6 +4,13 @@ class Kubie < Formula
   url "https://github.com/sbstp/kubie/archive/v0.7.1.tar.gz"
   sha256 "6e897e6b4877a5fbed8721bee2469c15c1a7846b966bbfae8d43e12e5c0ea0c1"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "14a38a57bf5d15ec84563f0175f52f692f1c0196d38532e6582c7cab3a7c5576" => :catalina
+    sha256 "e4f3ae5ed0bda5f61a5fbf0550a19d393eb1f74da7789d412fc707bd4a7898f4" => :mojave
+    sha256 "10d0f798645a9ecfcd9da44c18cdb2ddc30b78585839ec46e44905924940c517" => :high_sierra
+  end
+
   depends_on "rust" => :build
 
   def install
