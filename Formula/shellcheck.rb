@@ -7,9 +7,10 @@ class Shellcheck < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "77e5385a84164971cd75df484031c79e41eab8454deede5b40b278859a039115" => :catalina
-    sha256 "983f1eb4590e9be83584d68f5b7db13b3c3f2dbc50ad61b1896e8070e2e0d375" => :mojave
-    sha256 "6f371407500c5bfffb2c44e69482c524d8cb96d682ce93d06d148eccd6e4d052" => :high_sierra
+    rebuild 1
+    sha256 "7769ec6fdab1c38c4003ee5a481fe8cdca274b251b420f943f9933bc8dc8a24a" => :catalina
+    sha256 "699414b5c76c90872c9bca622cd751952e9357906e478ecfd1ce5a229ef14eb6" => :mojave
+    sha256 "d5b5256dc342709b92441d4eea93dbc00bbd55a7d321651395c8438615bc84e8" => :high_sierra
   end
 
   depends_on "cabal-install" => :build
