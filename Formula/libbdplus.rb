@@ -7,13 +7,10 @@ class Libbdplus < Formula
 
   bottle do
     cellar :any
-    sha256 "0f6679a9e46eebf5d7a37a7b09d77b57512774fb3766eb4a359a60de8997a0e0" => :catalina
-    sha256 "d8f4b53ec0ea12bbc02b2962e94dfe5df98ef55005f10209f4fd40213a80f601" => :mojave
-    sha256 "478e405b0f9687edcea3f651f4ec922a1bd12c12476c3aa14d1a35d0bb0362bb" => :high_sierra
-    sha256 "8205ed5218393f7aa7f2035f089e91a417f13d73f4b7e3d46f3afc5073ce7e37" => :sierra
-    sha256 "7136cdf433318efb9691d43d078eb20e9647f2ae4999b42cf791736d95047a81" => :el_capitan
-    sha256 "13f271c0bb73d496cda7314d6665478c19193f0eb3b9b7a9fbc1eb4a957894c9" => :yosemite
-    sha256 "e2189073d60ed520ed852355aebf1a5137fec5bead346ebc68f2b202d495db36" => :mavericks
+    rebuild 1
+    sha256 "e0c7f40d9d05884f62bd17f02007d30e9fe2978f11e0eedabf1a470e360f5e97" => :catalina
+    sha256 "f383d40cac371cb9d4e88e4ff2d74e108c1a165386a38700221367c90f1b026a" => :mojave
+    sha256 "1592b81bcb9c64a778e62721c394d7443a0f8465d1967220b04aa1baa1672881" => :high_sierra
   end
 
   head do
