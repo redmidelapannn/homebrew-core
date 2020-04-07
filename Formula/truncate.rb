@@ -7,13 +7,10 @@ class Truncate < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "268e41b71c41a6d5297c7659061953053e2e833bde60d23ff80296950ff4f006" => :catalina
-    sha256 "99e774220ef9a0cdb89f4300c671ac9eb74840cf5ed2d0731f12d20e680ff939" => :mojave
-    sha256 "e1386eda3a93dddd528d1c3bf33b78c9c4da12039d7434b8db956e05eace9482" => :high_sierra
-    sha256 "c4c892f0afbdf3a401ccb0af2a7cf8c65b37ccfdfe2412dda5284faa94f562ff" => :sierra
-    sha256 "299b80454c20134c5d0916da25fb3d5f0b6843e620dac6babebe01a899253a69" => :el_capitan
-    sha256 "a9d1c87d6cfec42674f0e7db25b786ba100a04c8c0da318fd5f6299a7418843f" => :yosemite
-    sha256 "d8751674842b772bd3a5318c1234f262518d05d66a7fe3b06ce5f59b2176bba8" => :mavericks
+    rebuild 1
+    sha256 "ec5f52add960dc5ed74f847a1c55825a3180d0fbfb486f09fac4806396416415" => :catalina
+    sha256 "1e22088ad8548bc6f15c5f2b86a9dcc98c475fd09f25852239a3fcc167efb9f1" => :mojave
+    sha256 "33b4abe82173a660a3cf2e194c4aa6938de16c64ed9dcb91463b91812d0c075a" => :high_sierra
   end
 
   conflicts_with "coreutils", :because => "both install `truncate` binaries"
