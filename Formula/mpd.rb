@@ -7,9 +7,10 @@ class Mpd < Formula
 
   bottle do
     cellar :any
-    sha256 "4e37cc2a8a089c93180b4d7d86edda3da32143970c092dd81e02aa78f416ef99" => :catalina
-    sha256 "fff4a04d43cda607ab73243250c68cf7977f4c67cec7234e3887520544177ed4" => :mojave
-    sha256 "a1242b1437c3d7b2400e3bbccf3601fea8c281a24c95c145eba8070d52a45c58" => :high_sierra
+    rebuild 1
+    sha256 "a28f6e40db49d87283dc9601ab60a5787d6c0f776df52923e7ff6901d1e6687f" => :catalina
+    sha256 "ed771ea5cd5b54b2245e82b305e3299b6cb353419f9cab118dc0025938136ac3" => :mojave
+    sha256 "8b8c4c97d1c9e3cc22fbe564abcce93bf7f7bda4e23d88aaa04cd8dad2e6ec0f" => :high_sierra
   end
 
   depends_on "boost" => :build
