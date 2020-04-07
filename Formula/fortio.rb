@@ -6,10 +6,10 @@ class Fortio < Formula
       :revision => "fd8f4a7177e9ea509f27105ae4e55e6c68ece6f7"
 
   bottle do
-    sha256 "6ee4178877f572edb23e93f2d06ef2292cdfd6f4c70b38244ff082cee125e254" => :catalina
-    sha256 "467956dd9643ecb9b349ce87c854e847d3880afe1e71deb2eb50bf57a8af6e98" => :mojave
-    sha256 "638e50aa75d32f0a9aae6243061df73ed7660fb055a3fcc30b9ee0afc3b19f5b" => :high_sierra
-    sha256 "663aa97525d032d3de935b487183ee478e2d18f92a4c82737a72ac5ed6c648a9" => :sierra
+    rebuild 1
+    sha256 "34521e74f0956b6b604e4818f35e625ca20abcfa8d9e7deb52ce60474a1cfe15" => :catalina
+    sha256 "76be09e359c9dfd5f3d53fc17af233ff40327f55ac7e411fa8a1373545a0ccb7" => :mojave
+    sha256 "75d6f5707322eda4cee83e819c80b168890c7257969a9c4262438ab654f28ce3" => :high_sierra
   end
 
   depends_on "go" => :build
