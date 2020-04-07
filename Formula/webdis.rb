@@ -6,9 +6,10 @@ class Webdis < Formula
 
   bottle do
     cellar :any
-    sha256 "0ed607d2f26d3aa40821e3ef20ae493c58cb12b9df4edd4a0720ff3208f8fce1" => :catalina
-    sha256 "b00e9c19e7cd7846dae7bab59b8a71b18716195222c7b52a2ad2a8fb79f519f8" => :mojave
-    sha256 "906e5885c49a034a676cee68163c749bf1d55df7e26fae1f550bb911ce361bca" => :high_sierra
+    rebuild 1
+    sha256 "f92c9679daf7fec83c3f1e205d1b23b7fe5a00946ed8e644f1b4824cc2484db1" => :catalina
+    sha256 "b669530ebfb96a044e4055237e69183b6ed01db1974b356cd76a512fbff66715" => :mojave
+    sha256 "4a2247faed64bc1e7c59d65c20a7417b8bec0810a281b85b652cd8b6a5c2be4c" => :high_sierra
   end
 
   depends_on "libevent"
