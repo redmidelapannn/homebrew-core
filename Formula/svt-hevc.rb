@@ -5,6 +5,13 @@ class SvtHevc < Formula
   sha256 "08bf2b1075609788194bf983d693ab38ed30214ec966afa67895209fd0bf2179"
   head "https://github.com/OpenVisualCloud/SVT-HEVC.git"
 
+  bottle do
+    cellar :any
+    sha256 "f41a20395f4a77c1e80f678456a161aa592b572e7a18ae713caa4fc3ca57d89e" => :catalina
+    sha256 "1dfcd0ba07c94c448b69fa29ccb4909482d7a4a29b42f03d931b4e7efadb515d" => :mojave
+    sha256 "50a4665a000c89ce0ea35ddc9bc34bc2f8457a228a9b71c3f0a9a6bbad1d260d" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "yasm" => :build
 
