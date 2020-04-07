@@ -7,9 +7,10 @@ class Kafka < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "af2e8113b36f680291fb199f0554ba45d14e67fe733cdc1d18682c0a9fb7fc21" => :catalina
-    sha256 "af2e8113b36f680291fb199f0554ba45d14e67fe733cdc1d18682c0a9fb7fc21" => :mojave
-    sha256 "af2e8113b36f680291fb199f0554ba45d14e67fe733cdc1d18682c0a9fb7fc21" => :high_sierra
+    rebuild 1
+    sha256 "3c4adc1f8c3cb87ae3d6f24b4a5eff13d1fdaf7501677dc45fb91eddd09ea912" => :catalina
+    sha256 "3c4adc1f8c3cb87ae3d6f24b4a5eff13d1fdaf7501677dc45fb91eddd09ea912" => :mojave
+    sha256 "3c4adc1f8c3cb87ae3d6f24b4a5eff13d1fdaf7501677dc45fb91eddd09ea912" => :high_sierra
   end
 
   # Related to https://issues.apache.org/jira/browse/KAFKA-2034
