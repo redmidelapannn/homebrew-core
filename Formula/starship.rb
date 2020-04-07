@@ -7,9 +7,9 @@ class Starship < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "bb42b5ac227280bb6dafe0f7c1f70851cde6273a375461d201f94c96777c87ca" => :catalina
-    sha256 "d9a07177b9b2af743fb294cc391a79df0327e11c9848874e3b170b7ab7a5458c" => :mojave
-    sha256 "14ac37580fb454c23e8d2c6d1a916dc7ea43b60c880012a51c7b0bc8a22549f7" => :high_sierra
+    sha256 "8306db11565e0f37816ae89e3e15e1aa96e58a6cf97df03fbf5cc9bfc9f849f1" => :catalina
+    sha256 "807f14a3c3fb9e15b59d8898214912ed4d8c6b6e3fd22fe7b920cf188802bc82" => :mojave
+    sha256 "9b9e408d1807f729b4502603cff72df262c446043d159fdcbc834828934cb34a" => :high_sierra
   end
 
   depends_on "rust" => :build
