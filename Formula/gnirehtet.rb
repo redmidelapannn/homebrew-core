@@ -7,9 +7,10 @@ class Gnirehtet < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "8f2c4797209bc261df8b2b9ba75d2719070c1c3e587c392d941aac7b18e9da8e" => :catalina
-    sha256 "879106aecceb430220e20e3224e906cb2cbe1fdf92febed03c6f319fb668592d" => :mojave
-    sha256 "86843aab81fac7df1b3fe9c92c47ea6be7367fecefa90398dd2a9d322160455a" => :high_sierra
+    rebuild 1
+    sha256 "ddbfef75e3e46e55c36dfd8cc7f636d8f80008db2b06e8d682948ce0f39bea28" => :catalina
+    sha256 "b9cd55d00215849419542b3cc3461a8a2b470e3229195663c7cf8ee89f82bf8a" => :mojave
+    sha256 "867a431b42cedfc61c2ace06da151ccf0c7d1952cb85f2864807a93b2aa9ddf0" => :high_sierra
   end
 
   depends_on "rust" => :build
