@@ -6,9 +6,10 @@ class Miniserve < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "534cd0d7b79d8c06a5246a3d11dfb0fbbaac5aad634922883ebfd5fe958b2711" => :catalina
-    sha256 "b150191be231782aec0a73ed3a83245de22eedf9682ace58532d67857c042f47" => :mojave
-    sha256 "ccae720adeff3ef96f858a1709657c9a1608fd7a86689f9947174824cf9a4081" => :high_sierra
+    rebuild 1
+    sha256 "9c0a3b0d6d48bbbb8fcdec938742c0ff071b48a65d0e11111fe3a87538c3d9ad" => :catalina
+    sha256 "276c59a1a1f340a05231a70fbca8096ada4ab53698dc1d467d846772943bf007" => :mojave
+    sha256 "654118b2e9d8cae732b69efacfd8624dabbf18f7cb3fc86001a4082fe94d16ac" => :high_sierra
   end
 
   # Miniserve requires a known-good Rust nightly release to use.
