@@ -9,6 +9,12 @@ class GhcAT88 < Formula
   sha256 "e0dcc0aaf3e234c5978f29e6df62947e97720ab404ec0158343df211c5480f89"
 
 
+  bottle do
+    sha256 "32c37b2e75299305a449371bf1d3ae31bf4899427ccf61b10ac7ddfc758961a4" => :catalina
+    sha256 "de00a09a2b5c4cf656f98aa36867971b70ebc11946f20803f0aba901313beb9b" => :mojave
+    sha256 "c429f5e7ff261dd765ac2c1b5327d057653b41d5ee2c1e7fadb1e5e7ed71e0d5" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "python" => :build
