@@ -6,9 +6,9 @@ class Qxmpp < Formula
 
   bottle do
     cellar :any
-    sha256 "e01854fc98ba57c8a082f08f641279d8c85f2c1383593f6838d91b4b2ea62672" => :catalina
-    sha256 "65fda02c202403e53abc8aef554369269a9225354bb0d3c5c4671b20777d1251" => :mojave
-    sha256 "711ed4b4600fcb03d3d78c0aa42a453cf8f8918a6d3e856b948a6d2b3c79228a" => :high_sierra
+    sha256 "85a68a575debebfc4429083df5e6eb8d1ab46c84ad3d2982deffe1d88502fa57" => :catalina
+    sha256 "db79e89a8c122cf2074d37c4834b6cd3869e796ee36639af369f3e900927a8a5" => :mojave
+    sha256 "0b5758e40c16b25ef26b44226ee475fdd1670bd19d34cd3a6881ae91a165a628" => :high_sierra
   end
 
   depends_on "cmake" => :build
