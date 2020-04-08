@@ -4,6 +4,13 @@ class Openfast < Formula
   url "https://github.com/openfast/openfast/archive/v2.3.0.tar.gz"
   sha256 "2b368e8c8211ebed03e87fb3e89ef733b7e4be4848834da4034f8419d618446c"
 
+  bottle do
+    cellar :any
+    sha256 "1938df53d3ad2a11eddd7c21db2ae94f6d7c2b81e0231f02b8dac6fcb00853ce" => :catalina
+    sha256 "ccb048a23e09cf74640998c413d62420522131ecc87295842ba329271c57c308" => :mojave
+    sha256 "a395a83be6d8fb68b872db2e5bffb54085c56c308196bade65c0a12afb4c14d7" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "gcc"
   depends_on "openblas"
