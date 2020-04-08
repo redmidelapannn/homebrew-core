@@ -5,6 +5,13 @@ class Terminalimageviewer < Formula
   sha256 "d28c5746d25d83ea707db52b54288c4fc1851c642ae021951967e69296450c8c"
   head "https://github.com/stefanhaustein/TerminalImageViewer.git"
 
+  bottle do
+    cellar :any
+    sha256 "be062ec7170665da2b5c2168e3de71df2bde1538232db39545aceeaef2ca045c" => :catalina
+    sha256 "e48c2ffc91c82bfe451d1a7708d6faafb45568141e4b804fe31bb6f4d6629c3a" => :mojave
+    sha256 "2363f340fc6278598e30156227073483c7909de9e81dc41b513b4c7708e6aaca" => :high_sierra
+  end
+
   depends_on "gcc"
   depends_on "imagemagick"
 
