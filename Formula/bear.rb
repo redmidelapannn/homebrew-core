@@ -10,9 +10,9 @@ class Bear < Formula
 
   bottle do
     cellar :any
-    sha256 "e25773345f9d8aa3c59c6960f0773de9fb2abd9681f0556a7f4618aaaaf71363" => :catalina
-    sha256 "3b418502dd23b131e1e9dfbe7dc3ea2c4f93fcc538f8dd3e286fcccae55d7f6d" => :mojave
-    sha256 "d7be3483e460d6b959060270c6de75d1fcc46cfcd0a02969dd94102679848e4a" => :high_sierra
+    sha256 "10ced32519f4dcca7f7610195115d94a78bb51ec49672affefe3325e7da1ac75" => :catalina
+    sha256 "f4fb170f81de129558df604149bc6b17b39f711ab04366aeeb845b10ced45417" => :mojave
+    sha256 "1281a322a8260ed6f33ca7c15bad19671a3af1ceed25e2a71a683014f66c8754" => :high_sierra
   end
 
   depends_on "cmake" => :build
