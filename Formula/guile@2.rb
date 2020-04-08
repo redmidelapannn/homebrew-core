@@ -5,6 +5,12 @@ class GuileAT2 < Formula
   mirror "https://ftpmirror.gnu.org/guile/guile-2.2.7.tar.xz"
   sha256 "cdf776ea5f29430b1258209630555beea6d2be5481f9da4d64986b077ff37504"
 
+  bottle do
+    sha256 "ac7bf0619ac3edc48d882ca2926d107e80711d09ec70d248860ae7d39e4a7da3" => :catalina
+    sha256 "ad77fa448d3be7c8bb25bfd7c2c0b66e964294ceec48041098e071b5c1c41012" => :mojave
+    sha256 "e3658f6047bb60b86658b6a7b3ac766e983f9ee16f2a4fe5ec405bd76e3f0fcd" => :high_sierra
+  end
+
   keg_only :versioned_formula
 
   depends_on "gnu-sed" => :build
