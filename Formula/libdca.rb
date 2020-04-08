@@ -6,11 +6,9 @@ class Libdca < Formula
 
   bottle do
     cellar :any
-    sha256 "505fab6df6f542e83a7c8d8a24fb12cb773a93740d64fa19aa685980bbc7b039" => :catalina
-    sha256 "9fb6a391e9e872a2208e5d5a259e5c41b700ffc1b8cd893f642814a83a42c5b8" => :mojave
-    sha256 "9b4fb37c6557a891de3aeec0f79dce74031af488207f6f1170c57c8d3c6f863b" => :high_sierra
-    sha256 "9db0e0e2662aa86d8c8417d13669e1b7cd0d599afede76178f7fbbd0dd3b4b7b" => :sierra
-    sha256 "641d1810fd6ca84d49824335403d79a8834611d1dd615d93300989040135ed1d" => :el_capitan
+    sha256 "222a0b9973e02de9c4e1495e3c508f3fe250758a5cf33f9fa96154623db91685" => :catalina
+    sha256 "c204cb723be649039a1eb344245da22a90d4a55ace3e0d742fe566546ec40f83" => :mojave
+    sha256 "d17a459be7227e71c8a68811d77031cb1d41f2cb790d0c13a60d5527948acc53" => :high_sierra
   end
 
   depends_on "autoconf" => :build
