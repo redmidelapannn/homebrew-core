@@ -5,9 +5,10 @@ class Varnish < Formula
   sha256 "f636ba2d881b146f480fb52efefae468b36c2c3e6620d07460f9ccbe364a76c2"
 
   bottle do
-    sha256 "b112adc0d1789bfe4bea6c3dd7777ce48bbdd8c5d2dd80d42b22b014f5fec988" => :catalina
-    sha256 "432d0cbd340a6e12856a9cba72130142565632c88200386e6f7411dd787f8fa0" => :mojave
-    sha256 "0113688047f37015d042d9650695f885a8fab888e029cd16ea3a62366f06c015" => :high_sierra
+    rebuild 1
+    sha256 "82f9e9573b17f33b69839d9c58815d2630bc649ade0df2d978c64bb9b900350e" => :catalina
+    sha256 "49110b15ebaf3dba650ce67bfe9fccb3aa95bb82f54e92a6ee9b17c4d35c7e52" => :mojave
+    sha256 "a4c2c941c09f556d1a0a463831c81815e213003b3f876645431e02b271380921" => :high_sierra
   end
 
   depends_on "docutils" => :build
