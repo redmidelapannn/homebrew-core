@@ -6,8 +6,8 @@ class Mockolo < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "4eb401eeb9dca2a1067e0c30c05d2ca12158b581cfb778e08659c905d42f0479" => :catalina
-    sha256 "dc848fc644a2830d58bd3eed39706592098b4c4bc52f2d8c740900bcd94846c3" => :mojave
+    sha256 "d105ab65ce84d0f44b2dc05c17a6f2c13faadb0945405a34799d17da8715f4e5" => :catalina
+    sha256 "43873004cf4c7a71b63d5d89ac677471bb61fe79d431bc6f8007eb8066c59079" => :mojave
   end
 
   depends_on :xcode => ["11.0", :build]
