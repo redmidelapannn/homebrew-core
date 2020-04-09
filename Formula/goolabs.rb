@@ -9,10 +9,9 @@ class Goolabs < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f2bdf5b949e9e088544c083e495d9e1b78374a9fadb8c22ab78d41288c0709ef" => :catalina
-    sha256 "56e26842d65342cb5aeb31c22a07bb64e5b04349c8ab17b7085d13bd19923305" => :mojave
-    sha256 "a3228c96960feacfa6a7f6e637261c4214600da27ce48e2fafa73d009c2401a7" => :high_sierra
-    sha256 "1e49980130952d980e63548980b6c37163e5e540d833f8d50745595d8d45eaee" => :sierra
+    sha256 "727852f48362a20295cde6c872f38f3fb2b2431663548854e083b5f619724f5e" => :catalina
+    sha256 "00f3fa6e2e7db8098d47910d5d05ed9a98ccaeec0f7037273f5160976c19c147" => :mojave
+    sha256 "e7bb7a8d4d3d8a2a9f71ea26ef2ab887038675d98dd196958f13d04fce59df4a" => :high_sierra
   end
 
   depends_on "python@3.8"
