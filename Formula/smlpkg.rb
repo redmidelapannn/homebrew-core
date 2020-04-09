@@ -15,6 +15,7 @@ class Smlpkg < Formula
   test do
     (testpath/"sml.pkg.ok").write <<~EOS
       package github.com/diku-dk/testpkg
+
       require {
       }
     EOS
