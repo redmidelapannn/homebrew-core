@@ -2,6 +2,7 @@ class Emscripten < Formula
   desc "LLVM bytecode to JavaScript compiler"
   homepage "https://emscripten.org/"
 
+  revision 1
   stable do
     url "https://github.com/emscripten-core/emscripten/archive/1.39.11.tar.gz"
     sha256 "4da8d99cbc73d71a69020888933245b2ff01b009909230290f7248de76e3881a"
@@ -39,7 +40,7 @@ class Emscripten < Formula
   depends_on "cmake" => :build
   depends_on "binaryen"
   depends_on "node"
-  depends_on "python"
+  depends_on "python@3.8"
   depends_on "yuicompressor"
 
   def install
