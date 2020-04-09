@@ -9,9 +9,9 @@ class Docutils < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "0ef5a1355a1eeb6d30a19ed818494363151bc05446dddeffed214c8d80e85832" => :catalina
-    sha256 "7d1bae12504b75f88a4a3ffe205aafb06ea2666266f8840089fff922b12288bc" => :mojave
-    sha256 "d81d6ad3f2d55b2e77639610b1865571decddf42b4f5f73de02edadc9b8b11df" => :high_sierra
+    sha256 "e5ee6a22e1227a58c6f661415e3a46206f5db1d631d7018833d7d976f0d59a5c" => :catalina
+    sha256 "beb5c18f02c21c09ce19cba65a19cdb3a9401e8391466e16fd039c990b61a0bd" => :mojave
+    sha256 "91f8db9ce4e4dcaab926cf1279fb7339c7760bb4389916674c5483c835bb8fad" => :high_sierra
   end
 
   depends_on "python@3.8"
