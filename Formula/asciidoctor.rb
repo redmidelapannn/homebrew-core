@@ -119,6 +119,16 @@ class Asciidoctor < Formula
     sha256 "3e70d0e513f4d631a4b667fed634700d93b104e0d3b4c33f993979df6a67d3f1"
   end
 
+  resource "coderay" do
+    url "https://rubygems.org/gems/coderay-1.1.2.gem"
+    sha256 "9efc1b3663fa561ccffada890bd1eec3a5466808ebc711ab1c5d300617d96a97"
+  end
+
+  resource "rouge" do
+    url "https://rubygems.org/gems/rouge-3.17.0.gem"
+    sha256 "f98a2702deb1110a3603f9ff06e948ce1b348972965478f529d718a76e998776"
+  end
+
   def install
     ENV["GEM_HOME"] = libexec
     resources.each do |r|
