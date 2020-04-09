@@ -7,10 +7,9 @@ class RipgrepAll < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "687b7bf509f088bdb9cd0058e6346d7aa66fdddd35fe9f1095085ffc59040b69" => :catalina
-    sha256 "8b0b3bb348853c51a99826d326d3bdd1ff52bab521fd6e37deaaaf0004ff77e5" => :mojave
-    sha256 "ef28f16cb59908b17a4e07a39ca3804173204f2ccf333262bab3988866d5c741" => :high_sierra
+    sha256 "3ecbc6686212761db6d4cc72416c269d7a4b4ea9223168d3c5ab290a7a5972b8" => :catalina
+    sha256 "b24b16ee00f5b6aac79f759aadbe4ded837fc968fa7a757746f5c91474031e3b" => :mojave
+    sha256 "64b7891f4e7bdd25e7574eb66abb8041e46385305d686c981984643f9c3cea6b" => :high_sierra
   end
 
   depends_on "rust" => :build
