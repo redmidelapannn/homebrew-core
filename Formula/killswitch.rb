@@ -6,9 +6,9 @@ class Killswitch < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "cb24b225cee702689995d2387bfc3e76c53aca8c7fac7dbbfe4d69c1627e14b3" => :catalina
-    sha256 "7726f82d5e738dc908ca762dab0bd206746c18404eaf982c61056ff85a9f05c8" => :mojave
-    sha256 "8e645c100a3cba5f516cd1ad97fa25a790644899f12c72cf3a1e5b7935fe60b0" => :high_sierra
+    sha256 "685fef6971a2464f7bdaac59c0b2f7f9723a39711378e1ab665d04972089dde1" => :catalina
+    sha256 "c490d5e6ba5826dc8e7db873419d6291642b4c0a7efa57d3d8aa1c0dffcc097c" => :mojave
+    sha256 "b2fa278a3e4de0b3c618064064aef167c4bfb851499d88ba90e925556a2083ed" => :high_sierra
   end
 
   depends_on "go" => :build
