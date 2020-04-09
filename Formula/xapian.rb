@@ -8,9 +8,9 @@ class Xapian < Formula
 
   bottle do
     cellar :any
-    sha256 "67094f9ab78c20e0a129746a94752da7539e6cfa120082b5f834f78f777b794d" => :catalina
-    sha256 "d3941ae6074eff5a7813291cbb4c384ac1c391ca4b452db198ca9a84a2c395f7" => :mojave
-    sha256 "21a4b8ad45725b79136b67377063016cf3a60738db31933088c7a337cd3cb7cc" => :high_sierra
+    sha256 "facacd8aeb68fdb2989e4581ecfceb2986be0b912d1787bf89acf9430cc5e7f8" => :catalina
+    sha256 "e382391097a76927d4c15565e7061acbecfec4056a4f6f598d9d755a433637a6" => :mojave
+    sha256 "5c89c229640b1a7ed27624e026cb62fbafc3063cc870c107d161545fb61b5e96" => :high_sierra
   end
 
   depends_on "sphinx-doc" => :build
