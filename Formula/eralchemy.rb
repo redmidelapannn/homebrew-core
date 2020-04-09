@@ -9,10 +9,9 @@ class Eralchemy < Formula
 
   bottle do
     cellar :any
-    sha256 "2fdbbabde168c657bc5bb1a4ee8416a36aa16695a239c8b63fed1c627ab2cbb8" => :catalina
-    sha256 "7a0b31108c3a7efe0f8662168d178869e2b4e5f0bfe4913c04d8b9f04558b258" => :mojave
-    sha256 "ce898fdfe7beabeaaaad38459168d3de64ccaca1980bd37936e354efdd24e02c" => :high_sierra
-    sha256 "14a0226d77bdadcdfb8b39166e697b4647a43ba819893ceb0cb590e3b405626a" => :sierra
+    sha256 "b1b6541578ef634015dd0f3454845ce1a6d248b390f77ee66fdad83b3fafd7ea" => :catalina
+    sha256 "bf94ca486399eb8ffd1a6edc9f826ca7cb90842bd233282ae885769a2e704d1c" => :mojave
+    sha256 "f031c62ba6875162b17aae1a386140e050c08e485e6d19d095e5d5a4fe272db0" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
