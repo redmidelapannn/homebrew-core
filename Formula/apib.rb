@@ -6,11 +6,10 @@ class Apib < Formula
   head "https://github.com/apigee/apib.git"
 
   bottle do
-    cellar :any
-    sha256 "89a8653925243569be382dc7a7816a836e020973e627ba0a0b3926e3de0ba684" => :catalina
-    sha256 "ca59f86634b3b9282496f95b432aa9e0c9924eb189c1ec2965d427edac8bab4e" => :mojave
-    sha256 "f2adc68de1b28e305ad7530ec097425bcf75beb70d6dd820f025cabcbeb54585" => :high_sierra
-    sha256 "bbe9bc25a8584f163347662675d78b69cdfaac495be5f2fa026dfca112f8d4a4" => :sierra
+    cellar :any_skip_relocation
+    sha256 "a95191cf777c75f2d5f450c08c3d4c6ac8ddd31373fae9140d548389569c7e1c" => :catalina
+    sha256 "e99c3424d6100a347f7b81e31d8a9e703e2afe3a7603734b6c82654c90353c8d" => :mojave
+    sha256 "cb361028c3a174ccec807aa1dc45241311167412ef5cd179b3020c008ed2eaa3" => :high_sierra
   end
 
   depends_on "bazel"
