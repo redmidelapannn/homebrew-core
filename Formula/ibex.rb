@@ -7,9 +7,10 @@ class Ibex < Formula
 
   bottle do
     cellar :any
-    sha256 "0de9cd95f329d455905ef0d562c4bf116b7a634adc70296830da39259b21130f" => :catalina
-    sha256 "ffebafe7aec3708cf61e3f248c891cca974d904c0e987294e45cbf0bf612d13b" => :mojave
-    sha256 "91500e1cd76da6db5afa6e5c0ac70ccf09b2ce3036d4544b2abd21a4ec3beb78" => :high_sierra
+    rebuild 1
+    sha256 "7a394483e833cdb4006beb4a8665a4d19e4e1eee99cfd2c563b82d44f9eaeaf6" => :catalina
+    sha256 "da42da5918051255b6b2730ae7f7a8d143cebb1667d8dc5c865d2d4673a8cd43" => :mojave
+    sha256 "183e2e9d634cf7dbaabfadecc55836dd8f8f511eda1a0c0c56fa9f010de088ce" => :high_sierra
   end
 
   depends_on "bison" => :build
