@@ -7,9 +7,9 @@ class GoAT113 < Formula
   revision 1
 
   bottle do
-    sha256 "74c8d92381dba1fe54ec753587de9c6fe51624d3b094d4e4681e01bfc2fbd3b0" => :catalina
-    sha256 "f3864ad7280ee9d5703da0cdebdb617958cb29e9100d500c6cd38d2a36cda439" => :mojave
-    sha256 "293ec32c45459413124f4d5fec3c340c05e81406defd7be0a75dabc6895863b6" => :high_sierra
+    sha256 "79d05b9df85114da15033a9d2798bc4a1fc1f6ca0b4472d6365229d134b90be7" => :catalina
+    sha256 "4a6bba839a04c65921974a09aa7985eb3f4f2cf3a7f6d0002979a750383c1fd5" => :mojave
+    sha256 "dca02ab32d5b90868362b5cf0bb3829b06719f6d3d99e4988ac508032424d843" => :high_sierra
   end
 
   keg_only :versioned_formula
