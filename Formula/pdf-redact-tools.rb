@@ -8,9 +8,10 @@ class PdfRedactTools < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d36fd54bdf0fecba50c0d2e4c8ec7c4702bc626b7228f55482fa04527837e80a" => :catalina
-    sha256 "1d5dddb4adc486d89537a5368550c787b9dbae0c6cd9cddba9b2e45820b025e1" => :mojave
-    sha256 "1d5dddb4adc486d89537a5368550c787b9dbae0c6cd9cddba9b2e45820b025e1" => :high_sierra
+    rebuild 1
+    sha256 "06935cba640e4fe1aafa72df71fc6d90988853fdc18a1dc6ada275404c554ba5" => :catalina
+    sha256 "e48994033d36307dd82011bc7da9c17e0e2438d5fc17448e9528a1b2b69009c9" => :mojave
+    sha256 "e48994033d36307dd82011bc7da9c17e0e2438d5fc17448e9528a1b2b69009c9" => :high_sierra
   end
 
   depends_on "exiftool"
