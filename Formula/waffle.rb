@@ -4,6 +4,13 @@ class Waffle < Formula
   url "https://gitlab.freedesktop.org/mesa/waffle/-/raw/website/files/release/waffle-1.6.1/waffle-1.6.1.tar.xz"
   sha256 "31565649ff0e2d8dff1b8f7f2264ab7a78452063c7e04adfc4ce03e64b655080"
 
+  bottle do
+    cellar :any
+    sha256 "9a0f154d64e57f6e0375c35069169414dcc83c4c9167fd29b3811bf4ccbefa08" => :catalina
+    sha256 "c372099637e96eb639bb845f39c2cda51af38cbb333e12da4cc42a1c754af9d3" => :mojave
+    sha256 "e0cc305c1ac0a2875b44b0669b37d523f3ea3c186fab3ace6fba50fce6ea6055" => :high_sierra
+  end
+
   depends_on "cmake" => :build
   depends_on "docbook-xsl" => :build
   depends_on "pkg-config" => :test
