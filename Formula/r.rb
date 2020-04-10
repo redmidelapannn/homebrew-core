@@ -7,9 +7,10 @@ class R < Formula
   head "https://stat.ethz.ch/R/daily/R-devel.tar.gz"
 
   bottle do
-    sha256 "87a9a56265163f342725418365989afbdab02abc997df0304e403034094f1117" => :catalina
-    sha256 "fc155a762bf9ba5aef95c50960c69635044eecc55b5cdb95d8974cc15854ba5a" => :mojave
-    sha256 "c272ce6cc5502843f31457c465804b70f990a26ef393b5c62b71cba82dfc7364" => :high_sierra
+    rebuild 1
+    sha256 "f0d133c28a63fb709ca72e175e0c12f668de577d3a9af11606b089f59bd99aef" => :catalina
+    sha256 "55e9965eb0cfb62a6abbc4e0771e28898b34455643814b033382cc03d112e4d7" => :mojave
+    sha256 "877c767845c5b0563faa40b3f7c9cb7fb9f777080b858aeda9590c5b5be16d6c" => :high_sierra
   end
 
   depends_on "pkg-config" => :build
