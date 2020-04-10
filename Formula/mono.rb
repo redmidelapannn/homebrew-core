@@ -5,9 +5,10 @@ class Mono < Formula
   sha256 "578799c44c3c86a9eb5daf6dec6c60a24341940fd376371956d4a46cf8612178"
 
   bottle do
-    sha256 "b60510ffecafb1ccd127a8179324a631bfcd23f4e6bbb6aa3ebd94c908ea4c37" => :catalina
-    sha256 "406fa52ae8748b58cfecefccc180b1227e98e16de28f7e2442898a6d9d256195" => :mojave
-    sha256 "f7c961d63e628703c661ac3cd2922c1e92c7d78941221acd51439a7fc0d9c331" => :high_sierra
+    rebuild 1
+    sha256 "de8b500d4e75d0ceba3090ecf26810391a51b98cf58c98b7fe1576aa85f72cf4" => :catalina
+    sha256 "cce9484f2add1bf9e98c034c22be5981648db889c36611d65eae2843181e4518" => :mojave
+    sha256 "435e63d247e4c9fb5c99165489a1e37dcade15a236d8cd3ed3767f516da1bff6" => :high_sierra
   end
 
   depends_on "cmake" => :build
