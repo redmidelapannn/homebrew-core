@@ -8,9 +8,10 @@ class Csound < Formula
   head "https://github.com/csound/csound.git", :branch => "develop"
 
   bottle do
-    sha256 "72303bfd7ccca776399b59232718ad8d19babb8f55295095193ee14cdf965b5d" => :catalina
-    sha256 "bc0efd5a8683c775a83048f7132beb6976f86b4592183b6898e76167aa264906" => :mojave
-    sha256 "88ad8f044cd3b08ad2632fe09ae8c29e248d98898c6fd2b700ad3e70d3acaddd" => :high_sierra
+    rebuild 1
+    sha256 "9551cc954c412a8e8af00d673b74b05f83b2a48650861e1b6027ec6580a7fd9c" => :catalina
+    sha256 "dd0fca078099f8a929fdbe0021256948f0f28a0b1750f0acb8cb72cfce20318b" => :mojave
+    sha256 "8d44c56af7daa60d1ec58c0ba9e93f7f9e2c8dba21642a5b6dca5589610a8090" => :high_sierra
   end
 
   depends_on "asio" => :build
