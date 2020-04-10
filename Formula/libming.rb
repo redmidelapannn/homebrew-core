@@ -7,9 +7,10 @@ class Libming < Formula
 
   bottle do
     cellar :any
-    sha256 "9c37f5438fb510747686c52cfd2070007ccbb57ecdfb256e344713764aae8782" => :catalina
-    sha256 "6c4230cfec9255a8f4f4d029414807726b44a1fcd597920c2502a1c5ad84ba52" => :mojave
-    sha256 "50d6199171c5d8bc5b7cfb24e6befe9f2c7aefc12d8ee7127202fcf1ea646ae4" => :high_sierra
+    rebuild 1
+    sha256 "0caff6c8953e82d68ef47d329b6b7ef5b332358737c6963a96b1dad03538c37a" => :catalina
+    sha256 "ada149bb795688f677aa5ce2ac3486a1b4b688408447d515f442c1650954c1f0" => :mojave
+    sha256 "8293937e84fba29f415ccdd759f1a64f652638fd69bbc7bc2c1bcca9010f3e79" => :high_sierra
   end
 
   depends_on "autoconf" => :build
