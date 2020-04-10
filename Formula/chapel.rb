@@ -5,10 +5,9 @@ class Chapel < Formula
   sha256 "886f7ba0e0e86c86dba99417e3165f90b1d3eca59c8cd5a7f645ce28cb5d82a0"
 
   bottle do
-    sha256 "057e5c71d41f2ff71434f446ffd8f9aa932b553612313729d4651fdc58233650" => :catalina
-    sha256 "8fcaebe6a3c465a29a66e691581b88b2fc9960726e1f94b3f21aa0f53c424044" => :mojave
-    sha256 "4aee5a0ddf8a44897a2f03c458a8e7e70d76b07f04024119ed482fbc06cf330c" => :high_sierra
-    sha256 "34a5eac538de8fb6ac632109a0154e1d14ff8551bc8f4fec8df8359568697338" => :sierra
+    sha256 "67429811aff30704bfad5e7e2225ae3491608c11232f253d76f5c066e1f64ee2" => :catalina
+    sha256 "9def6459a6dab6ecb693a022552c7c71c510bb4c3dc89a7e7d2588c5609ff631" => :mojave
+    sha256 "64837e9c1af7ed6001db3269dc02a8713bfbb39d77fd554cef3a0ec05eacb655" => :high_sierra
   end
 
   def install
