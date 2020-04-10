@@ -7,9 +7,10 @@ class CassandraAT22 < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "da62e2b0ecaecaa18153a41a4dfd7e4d3430e46e6b8b48fcc1e8af70e01a60dd" => :catalina
-    sha256 "4dd86f0e2a8966109ea77ac5003898c604f1c1239138588c2fded53eb9ac7302" => :mojave
-    sha256 "34f2cf7cd565fbfabfbea6137859835dad092935c47df06391eca2824f9c4552" => :high_sierra
+    rebuild 1
+    sha256 "e58fbbd85188f32ecf6356ff5b03577ae56f08bc89f31d2c2624eff7e7158c22" => :catalina
+    sha256 "292d6566de736688f4bce067dfb7624d6293fba04238facd22ffa485e6178494" => :mojave
+    sha256 "211a9614b43cdccd48a6ca5b7d7493edc20097a749328a7cdffda47b787ebc6b" => :high_sierra
   end
 
   keg_only :versioned_formula
