@@ -7,10 +7,10 @@ class Cassandra < Formula
   revision 2
 
   bottle do
-    cellar :any
-    sha256 "d89e8d63d0baad23c6ad78826d8fe0788d7c8fc20e191738672819ba7d42ea14" => :catalina
-    sha256 "1c7746dcff14d44cf9ab84617a5723aa2178866fabc3005b591dcbcb249b9826" => :mojave
-    sha256 "0e5180c86552204cdf71d1b2140d3c71fe7591d0a68e57155bad212dcecec3e3" => :high_sierra
+    cellar :any_skip_relocation
+    sha256 "9c48af3c8be898ae7b08de3773d75909bfaa35f68a2d894d062e6e67e85d4106" => :catalina
+    sha256 "48db50eff10d54fe8942f9107e942f2f5ab71858dc7726b3ba9e679cfc68ba3d" => :mojave
+    sha256 "1901c5de56de22e4480879a75d1cab8904e6d632af4d72c66f8cfbeaa3dd0e65" => :high_sierra
   end
 
   depends_on :macos # Due to Python 2 (https://issues.apache.org/jira/browse/CASSANDRA-10190)
