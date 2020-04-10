@@ -8,9 +8,10 @@ class AppscaleTools < Formula
 
   bottle do
     cellar :any
-    sha256 "dc2f20c3743a21aa5f06b3068faadf0f00c5da34728ca55af936439213b9f7ad" => :catalina
-    sha256 "eb5e13b06c11ecb6a29eb79e0bcd474ee8320c5ce4d223427809b03f899aebbf" => :mojave
-    sha256 "70e89498336894ae025118e51e418528d8d73da9b1e2786559b6bcbe6055f55b" => :high_sierra
+    rebuild 1
+    sha256 "eac036770eb5ce0beb6f830bad07e7aa4205dc65f3fba05b30fa130966fec695" => :catalina
+    sha256 "ea309500453a69377fbd48605e79a9ffb7a909f9ecb5446db5270a042945f08c" => :mojave
+    sha256 "a06804175a32ff5f7d285665c8d98fbfa4553224d2e3ccf376c6230f04c5520a" => :high_sierra
   end
 
   depends_on "libyaml"
