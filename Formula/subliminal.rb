@@ -10,9 +10,10 @@ class Subliminal < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "5ed1e341a5c814b25e18461ed108c5085f9e2553c86183bc5bf3905b234acd66" => :catalina
-    sha256 "de941a422e12c8ed0f70284c9ec2ae9e2c48d14f7f9d78112bbbfcbd8fcb12b6" => :mojave
-    sha256 "de941a422e12c8ed0f70284c9ec2ae9e2c48d14f7f9d78112bbbfcbd8fcb12b6" => :high_sierra
+    rebuild 1
+    sha256 "c1f4e06300ceab588cd0823cb93e634804e21a059617c465ec11eab53cb204b7" => :catalina
+    sha256 "2ce9138acd5dcf1f6eb0453a0d12ae02cbffca0f03ba624bd0a9eb433ed96ec5" => :mojave
+    sha256 "2ce9138acd5dcf1f6eb0453a0d12ae02cbffca0f03ba624bd0a9eb433ed96ec5" => :high_sierra
   end
 
   depends_on :macos # Due to Python 2
