@@ -10,9 +10,10 @@ class Volatility < Formula
 
   bottle do
     cellar :any
-    sha256 "f41ce1f3f70a5bb1eab7efac3d74ace7dad7bdf581bcb16b7a09d34e27e38d50" => :catalina
-    sha256 "5bcfa94349a26dc291af274bcf3427851ed2654e36781d05e3774018ee8f7781" => :mojave
-    sha256 "0d156b81c472080d117d567167d7a6d294376bab6d3c4751b4ca343a25fefa3d" => :high_sierra
+    rebuild 1
+    sha256 "f7c5ec600d3da0d194da92adf839f9905f8aa5693c0acc0107e4e8fefdf54458" => :catalina
+    sha256 "f3b0fa496dc715e3c8beb07470d123386733c75067bcb4ca03099aaf70bf73a1" => :mojave
+    sha256 "a0b1a7a81a627b2d2599ea467a59a35f3de9b1b4c29b594d556f49a7521b57ab" => :high_sierra
   end
 
   depends_on "freetype"
